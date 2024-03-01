@@ -51,18 +51,6 @@ Update-MgBetaSiteOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property operations in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -497,6 +485,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasiteoperation)
+
 
 
 

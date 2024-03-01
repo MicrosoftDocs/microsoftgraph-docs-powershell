@@ -36,22 +36,6 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-softdelete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -258,6 +242,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Invoke-MgBetaSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagedelete](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagedelete)
+
 
 
 

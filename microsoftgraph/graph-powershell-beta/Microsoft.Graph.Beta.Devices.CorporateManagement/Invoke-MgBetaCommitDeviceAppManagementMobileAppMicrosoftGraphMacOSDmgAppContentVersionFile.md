@@ -54,18 +54,6 @@ Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentV
 ## DESCRIPTION
 Commits a file of a given app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,6 +382,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetacommitdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetacommitdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfile)
+
 
 
 

@@ -28,18 +28,6 @@ Get-MgBetaUserLicenseDetailTeamLicensingDetail -InputObject <IUsersFunctionsIden
 ## DESCRIPTION
 Invoke function getTeamsLicensingDetails
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -177,6 +165,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserlicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserlicensedetailteamlicensingdetail)
+
 
 
 

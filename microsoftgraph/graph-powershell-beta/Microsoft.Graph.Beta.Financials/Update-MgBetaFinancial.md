@@ -28,22 +28,6 @@ Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-ResponseHead
 ## DESCRIPTION
 Update financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1410,6 +1394,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial)
+
 
 
 

@@ -37,18 +37,6 @@ Get-MgBetaReportUserInsightMonthlyActiveUser -InputObject <IReportsIdentity> [-E
 ## DESCRIPTION
 Insights for active users on apps registered in the tenant for a specified period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveUsersMetricId
@@ -343,6 +331,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyactiveuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightmonthlyactiveuser)
+
 
 
 

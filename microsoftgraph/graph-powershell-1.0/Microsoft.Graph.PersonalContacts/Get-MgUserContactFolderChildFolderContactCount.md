@@ -32,18 +32,6 @@ Get-MgUserContactFolderChildFolderContactCount -InputObject <IPersonalContactsId
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -194,6 +182,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Get-MgBetaUserContactFolderChildFolderContactCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderChildFolderContactCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactcount](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolderchildfoldercontactcount)
+
 
 
 

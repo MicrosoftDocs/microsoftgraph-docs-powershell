@@ -58,22 +58,6 @@ Change writable properties on a messageRule object and save the changes.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Actions
@@ -594,6 +578,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Update-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessagerule)
+
 
 
 

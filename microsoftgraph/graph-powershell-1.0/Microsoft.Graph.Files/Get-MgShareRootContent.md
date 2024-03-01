@@ -32,22 +32,6 @@ Get-MgShareRootContent -InputObject <IFilesIdentity> [-Format <String>] -OutFile
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Format
@@ -217,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharerootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharerootcontent)
+
 
 
 

@@ -33,22 +33,6 @@ Remove-MgBetaUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property hostedContents for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -296,6 +280,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMessageHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmessagehostedcontent)
+
 
 
 

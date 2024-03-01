@@ -61,18 +61,6 @@ This allows transfer to be resumed, in case the network connection is dropped du
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printdocument-createuploadsession-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,6 +297,7 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 [New-MgBetaPrintShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareJobDocumentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharejobdocumentuploadsession)
+
 
 
 

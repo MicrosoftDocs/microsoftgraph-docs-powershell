@@ -82,18 +82,6 @@ Update an event object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-event-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1897,6 +1885,7 @@ See below for more possible values.
 [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
+
 
 
 

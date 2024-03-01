@@ -34,22 +34,6 @@ Set-MgBetaApplicationLogo -InputObject <IApplicationsIdentity> [-Data <Stream>]
 The main logo for the application.
 Not nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -276,6 +260,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Set-MgApplicationLogo](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationLogo?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationlogo)
+
 
 
 

@@ -60,18 +60,6 @@ Update the properties of a term object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -695,6 +683,7 @@ Read-only.
 [Update-MgSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresetparentgroupsetterm)
+
 
 
 

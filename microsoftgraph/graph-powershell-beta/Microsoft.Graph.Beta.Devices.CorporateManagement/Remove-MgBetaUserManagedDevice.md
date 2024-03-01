@@ -32,22 +32,6 @@ Remove-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity
 ## DESCRIPTION
 Delete navigation property managedDevices for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -292,6 +276,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Remove-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevice)
+
 
 
 

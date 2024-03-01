@@ -47,22 +47,6 @@ New-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagem
 ## DESCRIPTION
 Create a new deviceConfigurationAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +302,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [New-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment)
+
 
 
 

@@ -34,18 +34,6 @@ This API returns the encrypted passwords as null or empty strings.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-getpasswordsinglesignoncredentials-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -217,6 +205,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserpasswordsinglesignoncredential)
+
 
 
 

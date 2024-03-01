@@ -38,22 +38,6 @@ A square dark version of your company logo that appears in Windows 10 out-of-box
 Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -309,6 +293,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Set-MgOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationsquarelogodark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationsquarelogodark)
+
 
 
 

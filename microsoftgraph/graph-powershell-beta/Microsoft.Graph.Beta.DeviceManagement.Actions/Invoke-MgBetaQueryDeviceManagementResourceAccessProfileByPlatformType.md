@@ -30,22 +30,6 @@ Invoke-MgBetaQueryDeviceManagementResourceAccessProfileByPlatformType
 ## DESCRIPTION
 Invoke action queryByPlatformType
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -193,6 +177,7 @@ BODY `<IPaths1Aw4396DevicemanagementResourceaccessprofilesMicrosoftGraphQuerybyp
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaquerydevicemanagementresourceaccessprofilebyplatformtype)
+
 
 
 

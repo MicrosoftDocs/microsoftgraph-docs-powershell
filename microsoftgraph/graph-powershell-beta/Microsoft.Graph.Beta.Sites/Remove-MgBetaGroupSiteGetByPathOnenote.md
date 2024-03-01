@@ -46,18 +46,6 @@ Remove-MgBetaGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property onenote for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -316,6 +304,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitegetbypathonenote)
+
 
 
 

@@ -23,18 +23,6 @@ Remove-MgBetaAdminEdge [-IfMatch <String>] [-ResponseHeadersVariable <String>] [
 ## DESCRIPTION
 Delete navigation property edge for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -158,6 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedge](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedge)
+
 
 
 

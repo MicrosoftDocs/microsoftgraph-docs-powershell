@@ -46,22 +46,6 @@ Remove-MgBetaShareListItemField -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property fields for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -262,6 +246,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemfield)
+
 
 
 

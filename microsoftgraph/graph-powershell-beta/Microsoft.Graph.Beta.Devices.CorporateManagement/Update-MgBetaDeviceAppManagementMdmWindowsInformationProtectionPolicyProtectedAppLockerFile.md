@@ -52,18 +52,6 @@ Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAp
 ## DESCRIPTION
 Update the navigation property protectedAppLockerFiles in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +383,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyprotectedapplockerfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmdmwindowsinformationprotectionpolicyprotectedapplockerfile)
+
 
 
 

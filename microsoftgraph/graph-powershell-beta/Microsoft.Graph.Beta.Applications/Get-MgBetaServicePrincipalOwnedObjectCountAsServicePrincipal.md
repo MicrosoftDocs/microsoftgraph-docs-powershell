@@ -32,18 +32,6 @@ Get-MgBetaServicePrincipalOwnedObjectCountAsServicePrincipal -InputObject <IAppl
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -205,6 +193,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalOwnedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObjectCountAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectcountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobjectcountasserviceprincipal)
+
 
 
 

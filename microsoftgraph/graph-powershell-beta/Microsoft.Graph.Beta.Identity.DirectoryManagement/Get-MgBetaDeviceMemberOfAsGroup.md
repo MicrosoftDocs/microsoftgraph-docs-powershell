@@ -41,18 +41,6 @@ Get-MgBetaDeviceMemberOfAsGroup -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -380,6 +368,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Get-MgDeviceMemberOfAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOfAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberofasgroup)
+
 
 
 

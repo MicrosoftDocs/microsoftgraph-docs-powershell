@@ -32,18 +32,6 @@ Remove-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property deletedTeams for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeletedTeamId
@@ -237,6 +225,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteam)
+
 
 
 

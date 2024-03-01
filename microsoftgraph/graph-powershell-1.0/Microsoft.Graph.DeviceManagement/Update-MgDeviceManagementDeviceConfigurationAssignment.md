@@ -49,22 +49,6 @@ Update-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMana
 ## DESCRIPTION
 Update the properties of a deviceConfigurationAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,6 +319,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Update-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationassignment)
+
 
 
 

@@ -56,18 +56,6 @@ Validate that the credentials are valid in the tenant.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,6 +354,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential)
+
 
 
 

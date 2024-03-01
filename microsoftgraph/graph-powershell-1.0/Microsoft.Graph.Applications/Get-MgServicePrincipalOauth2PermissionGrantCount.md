@@ -32,18 +32,6 @@ Get-MgServicePrincipalOauth2PermissionGrantCount -InputObject <IApplicationsIden
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -197,6 +185,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaServicePrincipalOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrantCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrantcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrantcount)
+
 
 
 

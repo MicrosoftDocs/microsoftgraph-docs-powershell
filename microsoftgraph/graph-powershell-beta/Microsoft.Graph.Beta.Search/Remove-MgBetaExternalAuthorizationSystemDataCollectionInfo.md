@@ -29,18 +29,6 @@ Remove-MgBetaExternalAuthorizationSystemDataCollectionInfo -InputObject <ISearch
 ## DESCRIPTION
 Delete navigation property dataCollectionInfo for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthorizationSystemId
@@ -220,6 +208,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalauthorizationsystemdatacollectioninfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalauthorizationsystemdatacollectioninfo)
+
 
 
 

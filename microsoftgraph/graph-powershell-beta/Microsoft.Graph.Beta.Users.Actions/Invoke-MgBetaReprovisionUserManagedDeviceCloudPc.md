@@ -33,22 +33,6 @@ Reprovision a Cloud PC with an Intune managed device ID.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-reprovisioncloudpc-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -250,6 +234,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusermanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareprovisionusermanageddevicecloudpc)
+
 
 
 

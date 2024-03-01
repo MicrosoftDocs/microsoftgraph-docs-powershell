@@ -32,18 +32,6 @@ Get-MgBetaSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get allTime from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -226,6 +214,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteAnalyticTime](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteanalytictime)
+
 
 
 

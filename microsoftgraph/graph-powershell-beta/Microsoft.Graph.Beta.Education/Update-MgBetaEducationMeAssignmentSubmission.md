@@ -58,22 +58,6 @@ Update-MgBetaEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property submissions in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -607,6 +591,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmission)
+
 
 
 

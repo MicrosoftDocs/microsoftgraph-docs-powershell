@@ -47,18 +47,6 @@ Only teachers, students, and applications with application permissions can perfo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +341,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmoduleresource)
+
 
 
 

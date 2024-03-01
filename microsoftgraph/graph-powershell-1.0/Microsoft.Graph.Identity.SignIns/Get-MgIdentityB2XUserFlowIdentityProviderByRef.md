@@ -25,22 +25,6 @@ Get-MgIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> [
 ## DESCRIPTION
 Get ref of userFlowIdentityProviders from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -239,6 +223,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref)
+
 
 
 

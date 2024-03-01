@@ -50,22 +50,6 @@ Update-MgBetaDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 ## DESCRIPTION
 Update the navigation property remoteAssistancePartners in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,6 +371,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [Update-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementremoteassistancepartner)
+
 
 
 

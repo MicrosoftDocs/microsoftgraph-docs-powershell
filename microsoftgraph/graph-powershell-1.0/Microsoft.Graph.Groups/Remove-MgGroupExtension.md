@@ -32,22 +32,6 @@ Remove-MgGroupExtension -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExtensionId
@@ -261,6 +245,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Remove-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupextension)
+
 
 
 

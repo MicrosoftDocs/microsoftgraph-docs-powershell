@@ -32,22 +32,6 @@ Set-MgBetaOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDir
 ## DESCRIPTION
 Set mobile device management authority
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -224,6 +208,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Set-MgOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationMobileDeviceManagementAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationmobiledevicemanagementauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationmobiledevicemanagementauthority)
+
 
 
 

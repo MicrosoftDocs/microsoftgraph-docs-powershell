@@ -36,18 +36,6 @@ Retry the orgContact service provisioning.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-retryserviceprovisioning-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +227,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Invoke-MgRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgRetryContactServiceProvisioning?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaUserContactCount -InputObject <IPersonalContactsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -179,6 +167,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Get-MgUserContactCount](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactcount)
+
 
 
 

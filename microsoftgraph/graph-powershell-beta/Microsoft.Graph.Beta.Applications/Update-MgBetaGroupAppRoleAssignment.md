@@ -50,22 +50,6 @@ Update-MgBetaGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property appRoleAssignments in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -436,6 +420,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Update-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Update-MgGroupAppRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetagroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetagroupapproleassignment)
+
 
 
 

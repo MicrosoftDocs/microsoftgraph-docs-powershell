@@ -40,22 +40,6 @@ Get-MgBetaDeviceManagementTroubleshootingEvent -InputObject <IDeviceManagementId
 ## DESCRIPTION
 The list of troubleshooting events for the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -447,6 +431,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementtroubleshootingevent)
+
 
 
 

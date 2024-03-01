@@ -58,18 +58,6 @@ For details about how to use this API to add pull printing support to Universal 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-redirect-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,6 +349,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Invoke-MgBetaRedirectPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaRedirectPrintShareJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/invoke-mgredirectprintsharejob)
+
 
 
 

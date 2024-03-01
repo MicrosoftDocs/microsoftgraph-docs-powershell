@@ -52,22 +52,6 @@ Clear-MgBetaDeviceManagementManagedDevice -InputObject <IDeviceManagementActions
 ## DESCRIPTION
 Wipe a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -406,6 +390,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Clear-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Clear-MgDeviceManagementManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/clear-mgbetadevicemanagementmanageddevice)
+
 
 
 

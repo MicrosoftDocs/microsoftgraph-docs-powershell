@@ -58,22 +58,6 @@ Update-MgBetaDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdm
 ## DESCRIPTION
 Update the navigation property termsAndConditions in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AcceptanceStatement
@@ -653,6 +637,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 [Update-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementtermandcondition)
+
 
 
 

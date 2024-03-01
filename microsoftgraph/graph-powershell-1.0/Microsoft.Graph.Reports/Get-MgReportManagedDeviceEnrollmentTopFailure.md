@@ -38,18 +38,6 @@ Get-MgReportManagedDeviceEnrollmentTopFailure -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function managedDeviceEnrollmentTopFailures
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,6 +190,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure)
+
 
 
 

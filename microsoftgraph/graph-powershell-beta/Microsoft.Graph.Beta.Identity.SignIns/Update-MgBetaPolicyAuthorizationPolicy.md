@@ -57,22 +57,6 @@ Update-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property authorizationPolicy in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -626,6 +610,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Update-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthorizationpolicy)
+
 
 
 

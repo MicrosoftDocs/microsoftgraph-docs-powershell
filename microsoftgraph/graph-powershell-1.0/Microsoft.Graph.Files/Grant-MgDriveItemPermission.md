@@ -53,22 +53,6 @@ Grant users access to a link represented by a \[permission\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +316,7 @@ security groups).
 [Grant-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriveitempermission)
+
 
 
 

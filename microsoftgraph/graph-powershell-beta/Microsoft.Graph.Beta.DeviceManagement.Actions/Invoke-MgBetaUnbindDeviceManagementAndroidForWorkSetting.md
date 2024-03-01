@@ -21,22 +21,6 @@ Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting [-ResponseHeadersVariab
 ## DESCRIPTION
 Invoke action unbind
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -144,6 +128,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaunbinddevicemanagementandroidforworksetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaunbinddevicemanagementandroidforworksetting)
+
 
 
 

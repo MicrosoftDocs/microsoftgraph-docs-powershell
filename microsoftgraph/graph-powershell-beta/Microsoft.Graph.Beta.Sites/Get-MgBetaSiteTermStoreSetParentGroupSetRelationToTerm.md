@@ -34,18 +34,6 @@ Get-MgBetaSiteTermStoreSetParentGroupSetRelationToTerm -InputObject <ISitesIdent
 The to \[term\] of the relation.
 The term to which the relationship is defined.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -273,6 +261,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteTermStoreSetParentGroupSetRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetRelationToTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelationtoterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelationtoterm)
+
 
 
 

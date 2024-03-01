@@ -48,22 +48,6 @@ Callers can differentiate if the permission is inherited or not by checking the 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -384,6 +368,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitempermission)
+
 
 
 

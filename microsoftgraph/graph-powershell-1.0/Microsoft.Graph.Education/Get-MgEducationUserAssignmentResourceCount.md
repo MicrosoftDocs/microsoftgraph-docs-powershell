@@ -32,18 +32,6 @@ Get-MgEducationUserAssignmentResourceCount -InputObject <IEducationIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -202,6 +190,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgBetaEducationUserAssignmentResourceCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentResourceCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresourcecount)
+
 
 
 

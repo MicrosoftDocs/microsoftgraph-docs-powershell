@@ -36,22 +36,6 @@ Unpublish a \[contentType\]\[\] from a content type hub site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -237,6 +221,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Unpublish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgdrivelistcontenttype)
+
 
 
 

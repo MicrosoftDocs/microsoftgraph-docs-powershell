@@ -39,18 +39,6 @@ Get-MgBetaVirtualEventTownhallPresenterSession -InputObject <IBookingsIdentity> 
 ## DESCRIPTION
 Get sessions from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +341,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallpresentersession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventtownhallpresentersession)
+
 
 
 

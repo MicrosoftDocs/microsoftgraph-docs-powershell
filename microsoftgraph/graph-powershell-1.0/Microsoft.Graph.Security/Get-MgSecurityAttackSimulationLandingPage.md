@@ -54,18 +54,6 @@ Get-MgSecurityAttackSimulationLandingPage -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Represents an attack simulation training landing page.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -384,6 +372,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationlandingpage)
+
 
 
 

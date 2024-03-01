@@ -36,18 +36,6 @@ Get the total aggregated remote connection usage of a Cloud PC during a given ti
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,6 +309,7 @@ BODYPARAMETER `<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport)
+
 
 
 

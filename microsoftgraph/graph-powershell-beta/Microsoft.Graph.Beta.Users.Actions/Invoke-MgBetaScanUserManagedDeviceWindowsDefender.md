@@ -48,18 +48,6 @@ Invoke-MgBetaScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Invoke action windowsDefenderScan
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +301,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender)
+
 
 
 

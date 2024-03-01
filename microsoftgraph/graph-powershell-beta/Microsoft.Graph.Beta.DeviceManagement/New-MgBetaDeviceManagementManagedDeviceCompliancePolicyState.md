@@ -52,22 +52,6 @@ New-MgBetaDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -555,6 +539,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>: .
 [New-MgDeviceManagementManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmanageddevicecompliancepolicystate)
+
 
 
 

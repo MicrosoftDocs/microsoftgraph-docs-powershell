@@ -49,18 +49,6 @@ Set-MgChatMessageReplyReaction -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Invoke action setReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,6 +308,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Set-MgBetaChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaChatMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgchatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgchatmessagereplyreaction)
+
 
 
 

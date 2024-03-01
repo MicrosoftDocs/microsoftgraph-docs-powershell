@@ -50,18 +50,6 @@ Update-MgBetaDeviceAppManagementMultiplePolicySet -InputObject <IDevicesCorporat
 ## DESCRIPTION
 Invoke action update
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedPolicySetItems
@@ -427,6 +415,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmultiplepolicyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmultiplepolicyset)
+
 
 
 

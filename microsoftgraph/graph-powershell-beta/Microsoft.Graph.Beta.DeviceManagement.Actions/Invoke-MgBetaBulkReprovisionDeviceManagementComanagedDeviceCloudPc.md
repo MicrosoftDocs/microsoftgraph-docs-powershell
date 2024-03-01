@@ -34,22 +34,6 @@ Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-bulkreprovisioncloudpc-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -197,6 +181,7 @@ BODYPARAMETER `<IPaths1WrkhgvDevicemanagementComanageddevicesMicrosoftGraphBulkr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkreprovisiondevicemanagementcomanageddevicecloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkreprovisiondevicemanagementcomanageddevicecloudpc)
+
 
 
 

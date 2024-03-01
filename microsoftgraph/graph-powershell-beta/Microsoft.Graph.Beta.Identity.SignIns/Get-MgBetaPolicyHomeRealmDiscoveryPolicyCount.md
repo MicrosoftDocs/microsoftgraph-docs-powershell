@@ -24,18 +24,6 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount [-Filter <String>] [-Search <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -128,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgPolicyHomeRealmDiscoveryPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyHomeRealmDiscoveryPolicyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicycount)
+
 
 
 

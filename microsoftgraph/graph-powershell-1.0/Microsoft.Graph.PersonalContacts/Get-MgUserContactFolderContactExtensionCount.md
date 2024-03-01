@@ -32,18 +32,6 @@ Get-MgUserContactFolderContactExtensionCount -InputObject <IPersonalContactsIden
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -194,6 +182,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Get-MgBetaUserContactFolderContactExtensionCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactextensioncount)
+
 
 
 

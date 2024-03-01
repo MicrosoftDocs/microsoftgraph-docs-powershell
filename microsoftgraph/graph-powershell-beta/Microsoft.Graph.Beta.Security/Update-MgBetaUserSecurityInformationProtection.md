@@ -47,18 +47,6 @@ Update-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property informationProtection in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -401,6 +389,7 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetausersecurityinformationprotection)
+
 
 
 

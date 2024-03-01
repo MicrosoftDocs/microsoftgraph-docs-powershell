@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportConfigurationPolicyDeviceSummaryReport -OutFile 
 ## DESCRIPTION
 Invoke action getConfigurationPolicyDeviceSummaryReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +337,7 @@ BODYPARAMETER `<IPathsTq6Um7DevicemanagementReportsMicrosoftGraphGetconfiguratio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationpolicydevicesummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationpolicydevicesummaryreport)
+
 
 
 
