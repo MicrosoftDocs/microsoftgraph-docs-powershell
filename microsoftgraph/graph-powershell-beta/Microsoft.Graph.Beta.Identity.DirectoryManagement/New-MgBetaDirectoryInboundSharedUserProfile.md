@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile
@@ -29,6 +29,22 @@ New-MgBetaDirectoryInboundSharedUserProfile -BodyParameter <IMicrosoftGraphInbou
 
 ## DESCRIPTION
 Create new navigation property to inboundSharedUserProfiles for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -219,22 +235,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInboundSharedUserProfile>`: inboundSharedUserProfile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The name displayed in the address book for the user at the time when the sharing record was created.
+BODYPARAMETER \<IMicrosoftGraphInboundSharedUserProfile\>: inboundSharedUserProfile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The name displayed in the address book for the user at the time when the sharing record was created.
 Read-only.
-  - `[HomeTenantId <String>]`: The home tenant id of the external user.
+  \[HomeTenantId \<String\>\]: The home tenant id of the external user.
 Read-only.
-  - `[UserId <String>]`: The object id of the external user.
+  \[UserId \<String\>\]: The object id of the external user.
 Read-only.
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the external user.
+  \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the external user.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryinboundshareduserprofile)
-
-
-
-
 

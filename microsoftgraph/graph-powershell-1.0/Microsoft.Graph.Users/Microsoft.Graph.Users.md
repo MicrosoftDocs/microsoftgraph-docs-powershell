@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: 71150504-37a3-48c6-82c7-7a00a12168db
 Download Help Link: {{ Update Download Link }}
@@ -394,5 +394,4 @@ Locale: en-US
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
-
 

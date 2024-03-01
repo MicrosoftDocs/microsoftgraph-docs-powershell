@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcloudpcoverview
@@ -60,6 +60,22 @@ Update-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManag
 
 ## DESCRIPTION
 Update the navigation property cloudPcsOverview in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -572,114 +588,110 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcOverview>`: cloudPcOverview
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsCloudPcOverview\>: cloudPcOverview
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusFailed <Int32?>]`: The number of cloud PC connections that have a status of failed.
+  \[NumberOfCloudPcConnectionStatusFailed \<Int32?\>\]: The number of cloud PC connections that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPassed <Int32?>]`: The number of cloud PC connections that have a status of passed.
+  \[NumberOfCloudPcConnectionStatusPassed \<Int32?\>\]: The number of cloud PC connections that have a status of passed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPending <Int32?>]`: The number of cloud PC connections that have a status of pending.
+  \[NumberOfCloudPcConnectionStatusPending \<Int32?\>\]: The number of cloud PC connections that have a status of pending.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusRunning <Int32?>]`: The number of cloud PC connections that have a status of running.
+  \[NumberOfCloudPcConnectionStatusRunning \<Int32?\>\]: The number of cloud PC connections that have a status of running.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32?>]`: The number of cloud PC connections that have a status of unknownFutureValue.
+  \[NumberOfCloudPcConnectionStatusUnkownFutureValue \<Int32?\>\]: The number of cloud PC connections that have a status of unknownFutureValue.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusDeprovisioning <Int32?>]`: The number of cloud PCs that have a status of deprovisioning.
+  \[NumberOfCloudPcStatusDeprovisioning \<Int32?\>\]: The number of cloud PCs that have a status of deprovisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusFailed <Int32?>]`: The number of cloud PCs that have a status of failed.
+  \[NumberOfCloudPcStatusFailed \<Int32?\>\]: The number of cloud PCs that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusInGracePeriod <Int32?>]`: The number of cloud PCs that have a status of inGracePeriod.
+  \[NumberOfCloudPcStatusInGracePeriod \<Int32?\>\]: The number of cloud PCs that have a status of inGracePeriod.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusNotProvisioned <Int32?>]`: The number of cloud PCs that have a status of notProvisioned.
+  \[NumberOfCloudPcStatusNotProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of notProvisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioned <Int32?>]`: The number of cloud PCs that have a status of provisioned.
+  \[NumberOfCloudPcStatusProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of provisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioning <Int32?>]`: The number of cloud PCs that have a status of provisioning.
+  \[NumberOfCloudPcStatusProvisioning \<Int32?\>\]: The number of cloud PCs that have a status of provisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUnknown <Int32?>]`: The number of cloud PCs that have a status of unknown.
+  \[NumberOfCloudPcStatusUnknown \<Int32?\>\]: The number of cloud PCs that have a status of unknown.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUpgrading <Int32?>]`: The number of cloud PCs that have a status of upgrading.
+  \[NumberOfCloudPcStatusUpgrading \<Int32?\>\]: The number of cloud PCs that have a status of upgrading.
 Optional.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: 
-  - `[TotalBusinessLicenses <Int32?>]`: The total number of cloud PC devices that have the Business SKU.
+  \[TenantId \<String\>\]: 
+  \[TotalBusinessLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Business SKU.
 Optional.
 Read-only.
-  - `[TotalCloudPcConnectionStatus <Int32?>]`: The total number of cloud PC connection statuses for the given managed tenant.
+  \[TotalCloudPcConnectionStatus \<Int32?\>\]: The total number of cloud PC connection statuses for the given managed tenant.
 Optional.
 Read-only.
-  - `[TotalCloudPcStatus <Int32?>]`: The total number of cloud PC statues for the given managed tenant.
+  \[TotalCloudPcStatus \<Int32?\>\]: The total number of cloud PC statues for the given managed tenant.
 Optional.
 Read-only.
-  - `[TotalEnterpriseLicenses <Int32?>]`: The total number of cloud PC devices that have the Enterprise SKU.
+  \[TotalEnterpriseLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Enterprise SKU.
 Optional.
 Read-only.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
-  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
-  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
-  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
-  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
-  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
-  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
-  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
-  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
-  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
-  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
-  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
-  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
-  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
-  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
-  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
-  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
-  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
-  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
-  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
-  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
-  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
-  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
-  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
-  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
-  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
-  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
+INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
+  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
+  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
+  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
+  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
+  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
+  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
+  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
+  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
+  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
+  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
+  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
+  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
+  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
+  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
+  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
+  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
+  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
+  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
+  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
+  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
+  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
+  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
+  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
+  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
+  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
+  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
-
-
-
-
 
