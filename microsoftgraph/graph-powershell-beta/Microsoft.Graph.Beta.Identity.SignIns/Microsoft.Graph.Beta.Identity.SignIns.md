@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 Module Guid: 45b83c44-a0bb-4061-8393-a4fa6ec7af48
 Download Help Link: {{ Update Download Link }}
@@ -1912,4 +1912,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult](Update-MgBetaUserInformationProtectionThreatAssessmentRequestResult.md)
 {{ Fill in the Description }}
+
 

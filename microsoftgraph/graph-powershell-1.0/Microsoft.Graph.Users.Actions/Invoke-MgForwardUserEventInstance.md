@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance
@@ -8,8 +8,8 @@ schema: 2.0.0
 # Invoke-MgForwardUserEventInstance
 
 ## SYNOPSIS
-This action allows the organizer or attendee of a meeting event to forward the\nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
@@ -47,8 +47,8 @@ Invoke-MgForwardUserEventInstance -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-This action allows the organizer or attendee of a meeting event to forward the\nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action\nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's\ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
@@ -306,54 +306,57 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Comment \<String\>\]: 
-  \[ToRecipients \<IMicrosoftGraphRecipient\[\]\>\]: 
-    \[EmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Address \<String\>\]: The email address of the person or entity.
-      \[Name \<String\>\]: The display name of the person or entity.
+BODYPARAMETER `<IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Comment <String>]`: 
+  - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of the person or entity.
+      - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
-TORECIPIENTS \<IMicrosoftGraphRecipient\[\]\>: .
-  \[EmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Address \<String\>\]: The email address of the person or entity.
-    \[Name \<String\>\]: The display name of the person or entity.
+TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
+  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of the person or entity.
+    - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance)
+
+
+
 

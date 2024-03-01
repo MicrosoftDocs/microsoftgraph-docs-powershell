@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 987c645b-9ff9-4398-8963-19739c27f5c3
 Download Help Link: {{ Update Download Link }}
@@ -1738,4 +1738,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent](Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent.md)
 {{ Fill in the Description }}
+
 

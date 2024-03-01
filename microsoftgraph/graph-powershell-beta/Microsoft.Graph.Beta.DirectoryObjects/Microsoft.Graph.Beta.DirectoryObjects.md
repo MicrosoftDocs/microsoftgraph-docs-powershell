@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DirectoryObjects
 Module Guid: 04e6b0d9-0f86-4cf4-8442-53b5ae59b27a
 Download Help Link: {{ Update Download Link }}
@@ -49,4 +49,5 @@ Locale: en-US
 
 ### [Update-MgBetaDirectoryObject](Update-MgBetaDirectoryObject.md)
 {{ Fill in the Description }}
+
 
