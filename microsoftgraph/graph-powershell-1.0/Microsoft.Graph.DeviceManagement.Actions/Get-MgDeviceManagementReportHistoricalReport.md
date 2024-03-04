@@ -36,6 +36,36 @@ Get-MgDeviceManagementReportHistoricalReport -OutFile <String>
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+	filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportHistoricalReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportHistoricalReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,7 +356,6 @@ BODYPARAMETER `<IPaths1Mia7W1DevicemanagementReportsMicrosoftGraphGethistoricalr
 [Get-MgBetaDeviceManagementReportHistoricalReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportHistoricalReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreporthistoricalreport)
-
 
 
 

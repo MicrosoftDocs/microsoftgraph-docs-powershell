@@ -9,8 +9,7 @@ ms.prod: groups
 # Get-MgGroupThread
 
 ## SYNOPSIS
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+Get a thread object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
@@ -38,11 +37,10 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Respon
 ```
 
 ## DESCRIPTION
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+Get a thread object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationthread-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -9,7 +9,8 @@ ms.prod: outlook
 # Remove-MgBetaUserMessage
 
 ## SYNOPSIS
-Delete eventMessage.
+Delete a message in the specified user's mailbox, or delete a relationship of the message.
+For example, you can delete a specific @-mention of the specified user in the message.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessage?view=graph-powershell-1.0)
@@ -31,10 +32,11 @@ Remove-MgBetaUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Resp
 ```
 
 ## DESCRIPTION
-Delete eventMessage.
+Delete a message in the specified user's mailbox, or delete a relationship of the message.
+For example, you can delete a specific @-mention of the specified user in the message.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

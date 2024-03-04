@@ -53,6 +53,8 @@ Cancel the specified bookingAppointment in the specified bookingBusiness, and se
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -287,7 +289,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinesscalendarview)
-
 
 
 

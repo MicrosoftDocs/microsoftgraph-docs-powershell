@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomTags
-Array of custom tags associated with an incident.
+The collection of custom tags that are associated with an incident.
 
 ```yaml
 Type: String[]
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+A rich text string describing the incident
 
 ```yaml
 Type: String
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedActions
-.
+A rich text string that represents the actions that are reccomnded to take in order to resolve the incident
 
 ```yaml
 Type: String
@@ -393,7 +393,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendedHuntingQueries
-.
+List of hunting Kusto Query Language (KQL) queries related to the incident
 To construct, see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
 
 ```yaml
@@ -470,7 +470,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-.
+The collection of system tags that are associated with the incident.
 
 ```yaml
 Type: String[]
@@ -593,7 +593,7 @@ Values are free-form.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
-  - `[SystemTags <String- `[]`>]`: 
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
@@ -649,7 +649,7 @@ Values are free-form.
     - `[ServiceSource <String>]`: serviceSource
     - `[Severity <String>]`: alertSeverity
     - `[Status <String>]`: alertStatus
-    - `[SystemTags <String- `[]`>]`: 
+    - `[SystemTags <String- `[]`>]`: The system tags associated with the alert
     - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
     - `[ThreatDisplayName <String>]`: The threat associated with this alert.
     - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
@@ -659,21 +659,21 @@ Free editable text.
   - `[Classification <String>]`: alertClassification
   - `[Comments <IMicrosoftGraphSecurityAlertComment- `[]`>]`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[CreatedDateTime <DateTime?>]`: Time when the incident was first created.
-  - `[CustomTags <String- `[]`>]`: Array of custom tags associated with an incident.
-  - `[Description <String>]`: 
+  - `[CustomTags <String- `[]`>]`: The collection of custom tags that are associated with an incident.
+  - `[Description <String>]`: A rich text string describing the incident
   - `[Determination <String>]`: alertDetermination
   - `[DisplayName <String>]`: The incident name.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
   - `[LastModifiedBy <String>]`: 
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
-  - `[RecommendedActions <String>]`: 
-  - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>]`: 
-    - `[KqlText <String>]`: 
+  - `[RecommendedActions <String>]`: A rich text string that represents the actions that are reccomnded to take in order to resolve the incident
+  - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>]`: List of hunting Kusto Query Language (KQL) queries related to the incident
+    - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
-  - `[SystemTags <String- `[]`>]`: 
+  - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 
 COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
@@ -762,8 +762,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>: .
-  - `[KqlText <String>]`:
+RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>: List of hunting Kusto Query Language (KQL) queries related to the incident
+  - `[KqlText <String>]`: The query string.
 
 ## RELATED LINKS
 [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)

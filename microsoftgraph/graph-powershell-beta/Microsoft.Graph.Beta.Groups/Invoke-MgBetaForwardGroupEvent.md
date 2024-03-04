@@ -9,8 +9,8 @@ ms.prod: outlook
 # Invoke-MgBetaForwardGroupEvent
 
 ## SYNOPSIS
-This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 > [!NOTE]
@@ -51,8 +51,8 @@ Invoke-MgBetaForwardGroupEvent -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-This action allows the organizer or attendee of a meeting event to forward the meeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's copy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward themeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 **Permissions**

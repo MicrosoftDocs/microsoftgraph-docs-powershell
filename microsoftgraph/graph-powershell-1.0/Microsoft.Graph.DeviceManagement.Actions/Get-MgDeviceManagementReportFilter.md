@@ -36,6 +36,37 @@ Get-MgDeviceManagementReportFilter -OutFile <String>
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	name = "Name value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+	sessionId = "Session Id value"
+	filter = "Filter value"
+}
+
+Get-MgDeviceManagementReportFilter -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportFilter Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,7 +373,6 @@ BODYPARAMETER `<IPaths1J4Do9UDevicemanagementReportsMicrosoftGraphGetreportfilte
 [Get-MgBetaDeviceManagementReportFilter](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportFilter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportfilter](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportfilter)
-
 
 
 

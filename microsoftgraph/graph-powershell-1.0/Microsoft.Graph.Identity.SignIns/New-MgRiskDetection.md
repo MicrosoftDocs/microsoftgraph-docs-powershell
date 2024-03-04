@@ -324,7 +324,7 @@ Accept wildcard characters: False
 The type of risk event detected.
 The possible values are adminConfirmedUserCompromised, anomalousToken, anomalousUserActivity, anonymizedIPAddress, generic, impossibleTravel, investigationsThreatIntelligence, leakedCredentials, maliciousIPAddress,malwareInfectedIPAddress, mcasSuspiciousInboxManipulationRules, newCountry, passwordSpray,riskyIPAddress, suspiciousAPITraffic, suspiciousBrowser,suspiciousInboxForwarding, suspiciousIPAddress, tokenIssuerAnomaly, unfamiliarFeatures, unlikelyTravel.
 If the risk detection is a premium detection, will show generic.
-For more information about each value, see riskEventType values.
+For more information about each value, see Risk types and detection.
 
 ```yaml
 Type: String
@@ -537,7 +537,7 @@ This property is null if the risk detection is not associated with a sign-in.
   - `[RiskEventType <String>]`: The type of risk event detected.
 The possible values are adminConfirmedUserCompromised, anomalousToken, anomalousUserActivity, anonymizedIPAddress, generic, impossibleTravel, investigationsThreatIntelligence, leakedCredentials, maliciousIPAddress,malwareInfectedIPAddress, mcasSuspiciousInboxManipulationRules, newCountry, passwordSpray,riskyIPAddress, suspiciousAPITraffic, suspiciousBrowser,suspiciousInboxForwarding, suspiciousIPAddress, tokenIssuerAnomaly, unfamiliarFeatures, unlikelyTravel.
 If the risk detection is a premium detection, will show generic.
-For more information about each value, see riskEventType values.
+For more information about each value, see Risk types and detection.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[Source <String>]`: Source of the risk detection.

@@ -35,6 +35,35 @@ Get-MgDeviceManagementReportCachedReport -OutFile <String>
 ## DESCRIPTION
 Not yet documented
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	id = "Id value"
+	select = @(
+		"Select value"
+	)
+	search = "Search value"
+	groupBy = @(
+		"Group By value"
+	)
+	orderBy = @(
+		"Order By value"
+	)
+	skip = 4
+	top = 3
+}
+
+Get-MgDeviceManagementReportCachedReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportCachedReport Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,7 +338,6 @@ BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedrepor
 [Get-MgBetaDeviceManagementReportCachedReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportCachedReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcachedreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcachedreport)
-
 
 
 

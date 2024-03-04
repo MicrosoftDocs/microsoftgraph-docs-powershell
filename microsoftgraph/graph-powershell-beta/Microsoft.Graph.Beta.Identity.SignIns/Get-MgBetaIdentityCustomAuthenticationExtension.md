@@ -9,8 +9,7 @@ ms.prod: identity-and-sign-in
 # Get-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an authenticationEventListener object.
-The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+Read the properties and relationships of a customAuthenticationExtension object.
 
 ## SYNTAX
 
@@ -37,11 +36,10 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an authenticationEventListener object.
-The @odata.type property in the response object indicates the type of the authenticationEventListener object.
+Read the properties and relationships of a customAuthenticationExtension object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-get-permissions.md)]
 
 ## PARAMETERS
 

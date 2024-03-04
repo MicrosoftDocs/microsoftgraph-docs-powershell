@@ -9,8 +9,7 @@ ms.prod: outlook
 # New-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Use this API to create a new child mailFolder.
-If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
+Create a new mailSearchFolder in the specified user's mailbox.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
@@ -56,11 +55,10 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Use this API to create a new child mailFolder.
-If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
+Create a new mailSearchFolder in the specified user's mailbox.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-childfolders-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailsearchfolder-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

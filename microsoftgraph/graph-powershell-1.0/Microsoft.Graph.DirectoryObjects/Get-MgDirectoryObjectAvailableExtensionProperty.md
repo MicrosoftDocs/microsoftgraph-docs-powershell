@@ -43,7 +43,10 @@ The following entities support extension properties:
 
 Import-Module Microsoft.Graph.DirectoryObjects
 
-Get-MgDirectoryObjectAvailableExtensionProperty
+$params = @{
+}
+
+Get-MgDirectoryObjectAvailableExtensionProperty -BodyParameter $params
 
 ```
 This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.

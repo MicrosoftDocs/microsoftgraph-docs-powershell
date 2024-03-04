@@ -54,16 +54,21 @@ Cancel the specified bookingAppointment in the specified bookingBusiness, and se
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBetaBookingBusinessAppointment Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
+
 $params = @{
-	CancellationMessage = "Your appointment has been successfully cancelled. Please call us again."
+	cancellationMessage = "Your appointment has been successfully cancelled. Please call us again."
 }
+
 Stop-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
 ```
 This example shows how to use the Stop-MgBetaBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

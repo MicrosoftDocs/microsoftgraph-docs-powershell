@@ -9,7 +9,7 @@ ms.prod: security
 # Update-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
-Update the properties of an alert object in an organization based on the specified alert id property.
+Update the properties of an alert object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlertV2?view=graph-powershell-1.0)
@@ -63,7 +63,7 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the properties of an alert object in an organization based on the specified alert id property.
+Update the properties of an alert object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-update-permissions.md)]
@@ -602,7 +602,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-.
+The system tags associated with the alert
 
 ```yaml
 Type: String[]
@@ -770,7 +770,7 @@ Values are free-form.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
-  - `[SystemTags <String- `[]`>]`: 
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.

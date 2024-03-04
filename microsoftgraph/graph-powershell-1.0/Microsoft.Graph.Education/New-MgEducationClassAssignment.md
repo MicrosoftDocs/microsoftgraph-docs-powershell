@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -CloseDateTime
-Date when the assignment will be closed for submissions.
+Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -ModuleUrl
-.
+The URL of the module from which to access the assignment.
 
 ```yaml
 Type: String
@@ -454,7 +454,7 @@ Accept wildcard characters: False
 Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
 
 ```yaml
 Type: String
@@ -624,14 +624,14 @@ If this property isn't specified during create, it defaults to true.
   - `[AllowStudentsToAddResourcesToSubmission <Boolean?>]`: Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
   - `[AssignTo <IMicrosoftGraphEducationAssignmentRecipient>]`: educationAssignmentRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type. 
+  - `[Categories <IMicrosoftGraphEducationCategory- `[]`>]`: When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: Unique identifier for the category.
   - `[ClassId <String>]`: Class to which this assignment belongs.
-  - `[CloseDateTime <DateTime?>]`: Date when the assignment will be closed for submissions.
+  - `[CloseDateTime <DateTime?>]`: Date when the assignment is closed for submissions.
 This is an optional field that can be null if the assignment doesn't allowLateSubmissions or when the closeDateTime is the same as the dueDateTime.
 But if specified, then the closeDateTime must be greater than or equal to the dueDateTime.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
@@ -647,7 +647,7 @@ For example, if a user changes their display name, the API might show the new va
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Name of the assignment.
-  - `[DueDateTime <DateTime?>]`: Date when the students assignment is due. 
+  - `[DueDateTime <DateTime?>]`: Date when the students assignment is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Grading <IMicrosoftGraphEducationAssignmentGradeType>]`: educationAssignmentGradeType
@@ -663,12 +663,12 @@ Read-only.
     - `[Content <String>]`: 
     - `[ContentType <String>]`: bodyType
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[ModuleUrl <String>]`: 
+  - `[ModuleUrl <String>]`: The URL of the module from which to access the assignment.
   - `[NotificationChannelUrl <String>]`: Optional field to specify the URL of the channel to post the assignment publish notification.
 If not specified or null, defaults to the General channel.
 This field only applies to assignments where the assignTo value is educationAssignmentClassRecipient.
-Updating the notificationChannelUrl isn't allowed after the assignment has been published.
-  - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment. 
+Updating the notificationChannelUrl isn't allowed after the assignment is published.
+  - `[Resources <IMicrosoftGraphEducationAssignmentResource- `[]`>]`: Learning objects that are associated with this assignment.
 Only teachers can modify this list.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -703,7 +703,7 @@ Read-only.
       - `[Weight <Single?>]`: If present, a numerical weight for this quality. 
 Weights must add up to 100.
   - `[Status <String>]`: educationAssignmentStatus
-  - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade. 
+  - `[Submissions <IMicrosoftGraphEducationSubmission- `[]`>]`: Once published, there's a submission object for each student representing their work and grade.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.

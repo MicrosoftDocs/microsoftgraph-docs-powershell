@@ -51,6 +51,26 @@ Clear-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIden
 ## DESCRIPTION
 Wipe a device
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.DeviceManagement.Actions
+
+$params = @{
+	keepEnrollmentData = $true
+	keepUserData = $true
+	macOsUnlockCode = "Mac Os Unlock Code value"
+	persistEsimDataPlan = $true
+}
+
+Clear-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId -BodyParameter $params
+
+```
+This example shows how to use the Clear-MgDeviceManagementManagedDevice Cmdlet.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,7 +328,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Clear-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice)
-
 
 
 

@@ -9,7 +9,7 @@ ms.prod: intune
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new editionUpgradeConfiguration object.
+Create a new androidGeneralDeviceConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new editionUpgradeConfiguration object.
+Create a new androidGeneralDeviceConfiguration object.
 
 ## PARAMETERS
 

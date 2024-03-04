@@ -79,6 +79,9 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create an online meeting on behalf of a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-onlinemeetings-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

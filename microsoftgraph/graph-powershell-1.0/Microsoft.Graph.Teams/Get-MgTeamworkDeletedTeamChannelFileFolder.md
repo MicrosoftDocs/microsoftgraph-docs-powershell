@@ -33,6 +33,9 @@ Get-MgTeamworkDeletedTeamChannelFileFolder -InputObject <ITeamsIdentity> [-Expan
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-filesfolder-permissions.md)]
+
 ## PARAMETERS
 
 ### -ChannelId

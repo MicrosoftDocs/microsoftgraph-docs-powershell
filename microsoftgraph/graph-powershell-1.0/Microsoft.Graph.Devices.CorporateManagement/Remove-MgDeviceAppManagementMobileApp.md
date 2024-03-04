@@ -9,7 +9,7 @@ ms.prod: intune
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a iosLobApp.
+Deletes a managedIOSLobApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Deletes a iosLobApp.
+Deletes a managedIOSLobApp.
 
 ## PARAMETERS
 

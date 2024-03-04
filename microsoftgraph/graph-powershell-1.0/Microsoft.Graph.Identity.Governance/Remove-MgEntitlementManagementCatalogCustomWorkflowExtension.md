@@ -9,7 +9,7 @@ ms.prod: governance
 # Remove-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
@@ -31,12 +31,12 @@ Remove-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Delete an accessPackageAssignmentWorkflowExtension object.
+Delete an accessPackageAssignmentRequestWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
 
 ## PARAMETERS
 

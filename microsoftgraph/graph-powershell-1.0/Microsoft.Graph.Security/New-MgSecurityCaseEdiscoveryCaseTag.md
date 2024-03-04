@@ -56,6 +56,43 @@ Create a new ediscoveryReviewTag object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
 
+## EXAMPLES
+### Example 1: Create a tag
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	displayName = "My tag API"
+	description = "Use Graph API to create tags"
+	childSelectability = "Many"
+}
+
+New-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example will create a tag
+
+### Example 2: Create a tag with a parent
+
+```powershell
+
+Import-Module Microsoft.Graph.Security
+
+$params = @{
+	displayName = "My tag API"
+	description = "Use Graph API to create tags"
+	childSelectability = "Many"
+	"parent@odata.bind" = ""
+}
+
+New-MgSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example will create a tag with a parent
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -468,7 +505,6 @@ Read-only.
 [New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag)
-
 
 
 

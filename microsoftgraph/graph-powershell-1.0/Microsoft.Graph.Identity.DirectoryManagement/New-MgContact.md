@@ -238,7 +238,7 @@ Accept wildcard characters: False
 ```
 
 ### -Mail
-The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
+The SMTP address for the contact, for example, 'jeff@contoso.com'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
 
 ```yaml
@@ -561,7 +561,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), 
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
   - `[JobTitle <String>]`: Job title for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[Mail <String>]`: The SMTP address for the contact, for example, 'jeff@contoso.onmicrosoft.com'.
+  - `[Mail <String>]`: The SMTP address for the contact, for example, 'jeff@contoso.com'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
   - `[MailNickname <String>]`: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).

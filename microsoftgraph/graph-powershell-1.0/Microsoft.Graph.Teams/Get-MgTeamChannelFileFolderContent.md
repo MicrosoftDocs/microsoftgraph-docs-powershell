@@ -33,6 +33,9 @@ Get-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Format <Strin
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-filesfolder-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS
