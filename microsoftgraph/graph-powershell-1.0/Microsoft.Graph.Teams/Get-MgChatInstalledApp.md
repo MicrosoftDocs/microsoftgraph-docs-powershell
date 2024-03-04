@@ -41,6 +41,9 @@ Get-MgChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Get an app installed in a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-installedapps-permissions.md)]
+
 ## EXAMPLES
 ### Example 1 : Get the app installed in the specified chat
 

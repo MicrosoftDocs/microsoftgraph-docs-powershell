@@ -63,6 +63,9 @@ New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
+
 ## EXAMPLES
 
 ## PARAMETERS

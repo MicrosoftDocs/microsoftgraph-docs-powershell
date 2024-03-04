@@ -41,6 +41,9 @@ Get-MgBetaChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-members-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 

@@ -63,6 +63,9 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Code snippet
 
