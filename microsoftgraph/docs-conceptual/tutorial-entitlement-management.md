@@ -3,7 +3,7 @@ title: "Manage access to resources in Microsoft Entra entitlement management usi
 description: "Learn how to manage access to resources in Microsoft Entra entitlement management using Microsoft Graph PowerShell."
 
 ms.topic: tutorial
-ms.date: 05/19/2023
+ms.date: 03/05/2024
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -74,7 +74,7 @@ Id                                   DisplayName         Description         Gro
 
 ## Step 2: Add resources to a catalog and create an access package
 
-An **access package** is a bundle of resources that a team or project needs and is governed by policies. Access packages are defined in containers called catalogs. Catalogs can reference resources such as groups, apps and sites that are used in the access package.
+An **access package** is a bundle of resources that a team or project needs and is governed by policies. Access packages are defined in containers called catalogs. Catalogs can reference resources such as groups, apps, and sites that are used in the access package.
 
 In this step, create a **Marketing Campaign** access package in the `General` catalog.
 

@@ -5,7 +5,7 @@ description: "The Microsoft Graph PowerShell SDK contains a large number of comm
 author: msewaweru
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 05/17/2023
+ms.date: 03/05/2024
 ms.author: eunicewaweru
 
 #customer intent: As a user new to the Microsoft Graph PowerShell SDK, I want to find the right command for a specific task, so that I can effectively use the SDK to interact with the Microsoft Graph API.
@@ -35,9 +35,9 @@ For basic REST operations, the verb is determined by the HTTP method used for th
 | PATCH       | Update       | `Update-MgUserEvent` [API reference](/graph/api/event-update?view=graph-rest-1.0&preserve-view=true) |
 | DELETE      | Remove       | `Remove-MgDriveItem` [API reference](/graph/api/driveitem-delete?view=graph-rest-1.0&preserve-view=true) |
 
-For functions and actions, it's a little more complicated. APIs in Microsoft Graph that are implemented as OData functions or actions are typically named with at least a verb. The corresponding command's verb is based on the verb in the function or action name. However, command verbs in PowerShell have to conform to specific [naming rules](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), which can result in non-intuitive name-to-command mappings.
+For functions and actions, it's a little more complicated. APIs in Microsoft Graph that are implemented as OData functions or actions are typically named with at least a verb. The corresponding command's verb is based on the verb in the function or action name. However, command verbs in PowerShell have to conform to specific [naming rules](/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands), which can result in nonintuitive name-to-command mappings.
 
-Let's look at some examples. The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API uses `get`, and `Get` is an approved PowerShell verb, so its command is `Get-MgUserCalendarSchedule`. The [cancel](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) API on an event on the other hand, uses a non-approved verb `cancel`. The approved verb for canceling or discontinuing something is `Stop`, so the command is `Stop-MgUserEvent`. Finally, the [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API's verb, `snooze`, has no PowerShell-approved equivalent. For APIs like that, the SDK uses the verb `Invoke`, so that API's command is `Invoke-MgSnoozeUserEventReminder`.
+Let's look at some examples. The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0&preserve-view=true) API uses `get`, and `Get` is an approved PowerShell verb, so its command is `Get-MgUserCalendarSchedule`. The [cancel](/graph/api/event-cancel?view=graph-rest-beta&preserve-view=true) API on an event on the other hand, uses a nonapproved verb `cancel`. The approved verb for canceling or discontinuing something is `Stop`, so the command is `Stop-MgUserEvent`. Finally, the [snoozeReminder](/graph/api/event-snoozereminder?view=graph-rest-1.0&preserve-view=true) API's verb, `snooze`, has no PowerShell-approved equivalent. For APIs like that, the SDK uses the verb `Invoke`, so that API's command is `Invoke-MgSnoozeUserEventReminder`.
 
 > [!NOTE]
 > For Beta cmdlets add a **Beta** prefix before the resource. For example, the beta version of the Get-MgUser cmdlet is **Get-MgBetaUser**.

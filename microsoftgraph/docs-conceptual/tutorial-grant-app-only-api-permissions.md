@@ -2,7 +2,7 @@
 title: "Grant application permissions programmatically in Microsoft Entra ID"
 description: "Learn how to grant and revoke app-only permissions programmatically in Microsoft Entra ID using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 05/25/2023
+ms.date: 03/05/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -76,7 +76,7 @@ The first step in granting consent is to [create the service principal for the a
 
 ### Register an application with Microsoft Entra ID
 
-If the application is not available, register an application with Microsoft Entra ID.
+If the application isn't available, register an application with Microsoft Entra ID.
 
 ```powershell
 New-MgApplication -DisplayName 'My application' | 
@@ -124,7 +124,7 @@ New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '2cab1707-656d-40cc-
   Format-List Id, AppRoleId, CreatedDateTime, PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName
 ```
 
-The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
+The `ServicePrincipalId` must always be same as the `ResourceId`, which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
 
 ```Output
 Id                   : DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0
