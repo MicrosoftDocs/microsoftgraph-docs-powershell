@@ -37,13 +37,17 @@ Delete a bookingCustomQuestion object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
+
+```
+This example shows how to use the Remove-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

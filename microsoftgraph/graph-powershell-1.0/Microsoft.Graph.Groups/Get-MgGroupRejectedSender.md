@@ -30,12 +30,13 @@ Make sure you don't specify the same user or group in the rejected senders and a
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-rejectedsenders-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgGroupRejectedSender Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupRejectedSender -GroupId $groupId
 ```
+This example shows how to use the Get-MgGroupRejectedSender Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

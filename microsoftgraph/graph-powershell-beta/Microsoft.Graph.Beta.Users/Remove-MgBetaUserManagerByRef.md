@@ -37,13 +37,17 @@ Remove a user's manager.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-manager-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Remove-MgBetaUserManagerByRef -UserId $userId
+```
+This example shows how to use the Remove-MgBetaUserManagerByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

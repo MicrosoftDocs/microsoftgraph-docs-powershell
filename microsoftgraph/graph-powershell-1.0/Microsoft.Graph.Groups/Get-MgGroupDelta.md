@@ -25,12 +25,13 @@ Get-MgGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 Invoke function delta
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgGroupDelta Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupDelta
 ```
+This example shows how to use the Get-MgGroupDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

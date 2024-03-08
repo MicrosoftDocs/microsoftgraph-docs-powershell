@@ -58,11 +58,10 @@ If a user is enabled by policy to use SMS to sign in and the mobile number is ch
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	phoneNumber = "+1 2065555554"
@@ -70,6 +69,11 @@ $params = @{
 }
 
 Update-MgUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserAuthenticationPhoneMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

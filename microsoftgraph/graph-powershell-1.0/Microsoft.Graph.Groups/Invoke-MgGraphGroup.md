@@ -36,12 +36,13 @@ Supported for Microsoft 365 groups only.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-unsubscribebymail-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgGraphGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 Invoke-MgGraphGroup -GroupId $groupId
 ```
+This example shows how to use the Invoke-MgGraphGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

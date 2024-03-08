@@ -33,13 +33,17 @@ Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirecto
 Set mobile device management authority
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId $organizationId
+
+```
+This example shows how to use the Set-MgOrganizationMobileDeviceManagementAuthority Cmdlet.
+
 
 ## PARAMETERS
 

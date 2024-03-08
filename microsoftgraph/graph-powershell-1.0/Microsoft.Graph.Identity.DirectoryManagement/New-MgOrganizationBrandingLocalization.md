@@ -82,11 +82,11 @@ To retrieve the default branding, see Get branding.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-post-localizations-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -95,6 +95,10 @@ $params = @{
 }
 
 New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -56,9 +56,8 @@ Use this API to create a new itemPhone object in a user's profile.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-phones-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserProfilePhone Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	DisplayName = "Car Phone"
@@ -67,6 +66,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePhone -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserProfilePhone Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

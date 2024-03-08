@@ -40,14 +40,18 @@ You can specify a mail folder by its folder ID, or by its well-known folder name
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId
+```
+This example shows how to use the Remove-MgBetaUserMailFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

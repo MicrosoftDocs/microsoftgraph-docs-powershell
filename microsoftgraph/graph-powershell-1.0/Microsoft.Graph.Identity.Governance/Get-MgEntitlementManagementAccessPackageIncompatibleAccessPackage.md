@@ -30,13 +30,17 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 
