@@ -39,6 +39,9 @@ Get-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> 
 Retrieve a single phoneAuthenticationMethod object.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

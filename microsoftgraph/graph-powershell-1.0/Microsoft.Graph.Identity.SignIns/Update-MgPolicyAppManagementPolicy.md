@@ -47,6 +47,9 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update an appManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

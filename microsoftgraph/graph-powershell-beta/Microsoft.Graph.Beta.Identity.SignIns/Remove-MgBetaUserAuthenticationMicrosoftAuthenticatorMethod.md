@@ -30,6 +30,9 @@ Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdent
 ## DESCRIPTION
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

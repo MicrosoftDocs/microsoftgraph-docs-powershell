@@ -30,6 +30,9 @@ Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBo
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

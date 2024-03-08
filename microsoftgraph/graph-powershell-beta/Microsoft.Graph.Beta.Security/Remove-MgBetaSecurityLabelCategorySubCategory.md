@@ -29,6 +29,9 @@ Remove-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Delete a subCategoryTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-categorytemplate-delete-subcategories-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

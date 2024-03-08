@@ -37,6 +37,9 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationoperation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

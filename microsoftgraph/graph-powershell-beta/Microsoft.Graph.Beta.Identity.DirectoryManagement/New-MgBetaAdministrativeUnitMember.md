@@ -44,6 +44,9 @@ New-MgBetaAdministrativeUnitMember -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Create new navigation property to members for administrativeUnits
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

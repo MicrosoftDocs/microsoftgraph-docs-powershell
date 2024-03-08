@@ -29,6 +29,9 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

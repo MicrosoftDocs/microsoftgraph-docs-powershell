@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAssignmentPolicy
@@ -40,6 +41,9 @@ New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAcces
 ## DESCRIPTION
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
 
 ## EXAMPLES
 

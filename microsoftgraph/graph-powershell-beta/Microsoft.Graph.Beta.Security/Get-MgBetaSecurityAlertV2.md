@@ -37,6 +37,9 @@ Get-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties and relationships of an alert object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

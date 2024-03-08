@@ -45,6 +45,9 @@ Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Translate identifiers of Outlook-related resources between formats.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-translateexchangeids-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

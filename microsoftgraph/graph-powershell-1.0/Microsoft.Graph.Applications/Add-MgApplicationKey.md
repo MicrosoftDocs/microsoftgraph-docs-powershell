@@ -55,6 +55,9 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-addkey-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

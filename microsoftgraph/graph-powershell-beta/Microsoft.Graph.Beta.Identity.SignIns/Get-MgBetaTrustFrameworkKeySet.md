@@ -37,6 +37,9 @@ Get-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the properties and associations for a Trustframeworkkeyset.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

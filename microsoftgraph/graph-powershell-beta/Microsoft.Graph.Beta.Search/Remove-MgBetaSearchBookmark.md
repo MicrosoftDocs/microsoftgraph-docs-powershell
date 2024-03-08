@@ -29,6 +29,9 @@ Remove-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a bookmark object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

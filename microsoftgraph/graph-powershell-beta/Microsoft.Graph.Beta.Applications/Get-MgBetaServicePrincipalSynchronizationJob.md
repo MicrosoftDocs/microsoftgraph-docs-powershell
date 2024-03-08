@@ -37,6 +37,9 @@ Get-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

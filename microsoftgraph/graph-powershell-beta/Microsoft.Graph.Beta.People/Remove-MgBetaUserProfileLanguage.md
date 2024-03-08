@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilelanguage
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileLanguage
@@ -28,6 +29,9 @@ Remove-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete a languageProficiency object from a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/languageproficiency-delete-permissions.md)]
 
 ## EXAMPLES
 

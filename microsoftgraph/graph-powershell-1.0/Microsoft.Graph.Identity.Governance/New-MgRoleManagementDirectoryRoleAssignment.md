@@ -32,6 +32,9 @@ New-MgRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifi
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

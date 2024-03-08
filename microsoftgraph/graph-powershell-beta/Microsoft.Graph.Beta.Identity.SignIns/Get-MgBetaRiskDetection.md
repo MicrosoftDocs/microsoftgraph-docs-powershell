@@ -37,6 +37,9 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties of a riskDetection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

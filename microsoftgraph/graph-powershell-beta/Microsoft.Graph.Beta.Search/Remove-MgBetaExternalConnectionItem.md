@@ -29,6 +29,9 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete an externalitem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

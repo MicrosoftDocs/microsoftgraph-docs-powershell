@@ -45,6 +45,9 @@ New-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ## DESCRIPTION
 Create a new certificateBasedAuthConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

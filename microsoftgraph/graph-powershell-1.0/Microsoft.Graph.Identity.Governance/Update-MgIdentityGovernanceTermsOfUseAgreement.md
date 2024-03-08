@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Update-MgIdentityGovernanceTermsOfUseAgreement
@@ -50,6 +51,9 @@ Update-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 
 ## DESCRIPTION
 Update the properties of an agreement object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-update-permissions.md)]
 
 ## EXAMPLES
 

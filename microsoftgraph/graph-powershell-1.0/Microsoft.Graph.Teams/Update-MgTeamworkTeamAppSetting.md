@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamworkTeamAppSetting
@@ -28,6 +29,9 @@ Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings>
 
 ## DESCRIPTION
 Update the tenant-wide teamsAppSettings for all Teams apps in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamsappsettings-update-permissions.md)]
 
 ## EXAMPLES
 

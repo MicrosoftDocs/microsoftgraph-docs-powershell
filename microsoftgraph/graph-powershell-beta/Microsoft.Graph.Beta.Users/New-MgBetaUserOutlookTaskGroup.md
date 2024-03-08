@@ -45,6 +45,9 @@ New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create an Outlook task group in the user's mailbox.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskgroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

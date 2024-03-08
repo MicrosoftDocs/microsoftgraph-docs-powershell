@@ -29,6 +29,9 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-ResponseHead
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

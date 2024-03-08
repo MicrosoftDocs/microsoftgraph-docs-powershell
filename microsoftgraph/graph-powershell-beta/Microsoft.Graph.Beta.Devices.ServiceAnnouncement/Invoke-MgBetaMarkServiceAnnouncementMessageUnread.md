@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Invoke-MgBetaMarkServiceAnnouncementMessageUnread
@@ -29,6 +30,9 @@ Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-markunread-permissions.md)]
 
 ## EXAMPLES
 

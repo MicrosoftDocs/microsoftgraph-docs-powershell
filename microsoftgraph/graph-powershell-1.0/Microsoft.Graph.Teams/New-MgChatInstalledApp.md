@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgChatInstalledApp
@@ -44,6 +45,9 @@ New-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-installedapps-permissions.md)]
 
 ## EXAMPLES
 

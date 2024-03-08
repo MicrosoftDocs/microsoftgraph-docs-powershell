@@ -29,6 +29,9 @@ Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a calendar group other than the default calendar group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

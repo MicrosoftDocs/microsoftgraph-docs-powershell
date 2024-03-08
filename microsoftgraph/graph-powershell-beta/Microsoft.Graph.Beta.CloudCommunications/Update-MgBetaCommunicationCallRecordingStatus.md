@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordingstatus
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # Update-MgBetaCommunicationCallRecordingStatus
@@ -47,6 +48,9 @@ Update-MgBetaCommunicationCallRecordingStatus -InputObject <ICloudCommunications
 ## DESCRIPTION
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-updaterecordingstatus-permissions.md)]
 
 ## EXAMPLES
 

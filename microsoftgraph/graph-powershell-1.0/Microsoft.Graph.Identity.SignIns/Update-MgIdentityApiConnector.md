@@ -45,6 +45,9 @@ Update-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of an identityApiConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

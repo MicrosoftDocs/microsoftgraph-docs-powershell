@@ -47,6 +47,9 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-domains-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

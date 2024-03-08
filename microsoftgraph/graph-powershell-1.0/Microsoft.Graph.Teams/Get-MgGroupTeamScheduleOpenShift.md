@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshift
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleOpenShift
@@ -36,6 +37,9 @@ Get-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an openshift object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-get-permissions.md)]
 
 ## EXAMPLES
 

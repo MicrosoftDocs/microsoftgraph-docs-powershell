@@ -37,6 +37,9 @@ Get-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of a riskyServicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

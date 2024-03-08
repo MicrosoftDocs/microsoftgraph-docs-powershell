@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitetermstoreset
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Update-MgBetaGroupSiteTermStoreSet
@@ -49,6 +50,9 @@ Update-MgBetaGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the properties of a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-set-update-permissions.md)]
 
 ## EXAMPLES
 

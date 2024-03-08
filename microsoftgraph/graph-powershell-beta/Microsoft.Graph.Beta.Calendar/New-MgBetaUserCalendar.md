@@ -57,6 +57,9 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new calendar for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendars-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

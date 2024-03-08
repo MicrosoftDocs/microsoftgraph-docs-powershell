@@ -43,6 +43,9 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 ## DESCRIPTION
 Add a member to the plannerRoster object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

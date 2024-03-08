@@ -29,6 +29,9 @@ Remove-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Delete a homeRealmDiscoveryPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

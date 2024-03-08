@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Remove-MgUserTeamworkInstalledApp
@@ -28,6 +29,9 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Uninstall an app from the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-delete-installedapps-permissions.md)]
 
 ## EXAMPLES
 

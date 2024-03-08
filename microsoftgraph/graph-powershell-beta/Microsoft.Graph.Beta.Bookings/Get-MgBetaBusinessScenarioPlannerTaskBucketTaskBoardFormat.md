@@ -30,6 +30,9 @@ Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBookin
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

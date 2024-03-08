@@ -45,6 +45,9 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Remove a password from a servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removepassword-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

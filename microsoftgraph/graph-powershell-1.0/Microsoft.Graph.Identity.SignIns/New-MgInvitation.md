@@ -35,6 +35,9 @@ Use this API to create a new invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/invitation-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

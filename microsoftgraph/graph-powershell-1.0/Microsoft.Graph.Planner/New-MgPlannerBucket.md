@@ -28,6 +28,9 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-ResponseHead
 ## DESCRIPTION
 Create a new plannerBucket object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-buckets-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelist
 schema: 2.0.0
+ms.prod: browser-management
 ---
 
 # Remove-MgBetaAdminEdgeInternetExplorerModeSiteList
@@ -28,6 +29,9 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 
 ## DESCRIPTION
 Delete a browserSiteList object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-delete-sitelists-permissions.md)]
 
 ## EXAMPLES
 

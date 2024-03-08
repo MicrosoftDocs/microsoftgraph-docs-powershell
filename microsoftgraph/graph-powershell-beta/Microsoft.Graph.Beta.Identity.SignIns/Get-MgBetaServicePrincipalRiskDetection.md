@@ -37,6 +37,9 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

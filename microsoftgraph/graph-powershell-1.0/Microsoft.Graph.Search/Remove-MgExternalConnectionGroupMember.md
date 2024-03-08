@@ -29,6 +29,9 @@ Remove-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete an identity resource to remove the corresponding member from an externalGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroupmember-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

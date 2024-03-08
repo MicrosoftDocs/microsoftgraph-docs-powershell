@@ -33,6 +33,9 @@ Delete an oAuth2PermissionGrant, representing a delegated permission grant.
 When a delegated permission grant is deleted, the access it granted is revoked.
 Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

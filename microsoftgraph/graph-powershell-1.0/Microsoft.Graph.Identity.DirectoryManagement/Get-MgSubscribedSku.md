@@ -35,6 +35,9 @@ Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Proper
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subscribedsku-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

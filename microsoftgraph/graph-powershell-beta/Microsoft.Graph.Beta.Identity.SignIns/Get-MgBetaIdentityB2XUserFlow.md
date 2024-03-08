@@ -37,6 +37,9 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,9 @@ New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -InputObject <IId
 ## DESCRIPTION
 Add groups to be included in a mobile app management policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-post-includedgroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

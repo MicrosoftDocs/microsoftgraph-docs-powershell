@@ -37,6 +37,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Read the properties and relationships of a partner-specific configuration.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationpartner-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

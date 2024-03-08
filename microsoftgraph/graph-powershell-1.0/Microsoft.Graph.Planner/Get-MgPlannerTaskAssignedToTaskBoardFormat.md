@@ -29,6 +29,9 @@ Get-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerAssignedToTaskBoardTaskFormat object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

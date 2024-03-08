@@ -21,6 +21,9 @@ Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/continuousaccessevaluationpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

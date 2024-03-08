@@ -36,6 +36,9 @@ Get-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-Property <String[
 ## DESCRIPTION
 Get the properties and relationships of the specified Outlook task group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

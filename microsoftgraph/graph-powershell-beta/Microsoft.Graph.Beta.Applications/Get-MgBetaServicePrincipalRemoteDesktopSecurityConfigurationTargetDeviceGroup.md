@@ -39,6 +39,9 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ## DESCRIPTION
 Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/targetdevicegroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

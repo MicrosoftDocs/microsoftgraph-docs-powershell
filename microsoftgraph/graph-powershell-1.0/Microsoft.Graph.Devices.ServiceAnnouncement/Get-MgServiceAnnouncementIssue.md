@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementissue
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementIssue
@@ -40,6 +41,9 @@ Get-MgServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity
 Retrieve the properties and relationships of a serviceHealthIssue object.
 This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealthissue-get-permissions.md)]
 
 ## EXAMPLES
 

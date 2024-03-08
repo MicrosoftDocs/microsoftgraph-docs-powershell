@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
 schema: 2.0.0
+ms.prod: cloud-communications
 ---
 
 # New-MgBetaCommunicationCall
@@ -41,6 +42,9 @@ New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeade
 ## DESCRIPTION
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-calls-permissions.md)]
 
 ## EXAMPLES
 

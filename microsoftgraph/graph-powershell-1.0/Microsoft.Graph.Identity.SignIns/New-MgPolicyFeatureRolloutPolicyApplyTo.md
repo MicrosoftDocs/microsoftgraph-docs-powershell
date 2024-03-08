@@ -44,6 +44,9 @@ New-MgPolicyFeatureRolloutPolicyApplyTo -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-post-appliesto-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

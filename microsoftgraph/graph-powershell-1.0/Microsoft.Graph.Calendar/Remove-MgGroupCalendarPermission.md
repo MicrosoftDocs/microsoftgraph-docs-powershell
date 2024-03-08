@@ -29,6 +29,9 @@ Remove-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete calendarPermission.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendarpermission-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of the school object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

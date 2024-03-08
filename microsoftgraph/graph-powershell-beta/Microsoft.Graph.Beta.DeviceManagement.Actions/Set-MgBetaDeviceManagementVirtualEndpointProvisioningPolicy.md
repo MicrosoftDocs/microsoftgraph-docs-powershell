@@ -47,6 +47,9 @@ Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 ## DESCRIPTION
 Assign cloudPcProvisioningPolicy to user groups.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-assign-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

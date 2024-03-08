@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mginstantiateapplicationtemplate
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # Invoke-MgInstantiateApplicationTemplate
@@ -48,6 +49,9 @@ Invoke-MgInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
 Add an instance of an application from the Microsoft Entra application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the applicationTemplate object: 8adf8e6e-67b2-4cf2-a259-e3dc5476c621.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-instantiate-permissions.md)]
 
 ## EXAMPLES
 

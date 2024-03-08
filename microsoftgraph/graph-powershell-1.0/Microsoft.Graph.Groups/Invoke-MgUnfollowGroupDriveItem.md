@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgUnfollowGroupDriveItem
@@ -28,6 +29,9 @@ Invoke-MgUnfollowGroupDriveItem -InputObject <IGroupsIdentity> [-ResponseHeaders
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
 

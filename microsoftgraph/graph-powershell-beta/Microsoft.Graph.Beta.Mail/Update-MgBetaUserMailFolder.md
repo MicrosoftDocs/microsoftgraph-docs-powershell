@@ -55,6 +55,9 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the writable properties of a mailSearchFolder object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailsearchfolder-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

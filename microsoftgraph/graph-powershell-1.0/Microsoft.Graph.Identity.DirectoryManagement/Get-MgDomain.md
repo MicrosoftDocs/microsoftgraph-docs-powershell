@@ -36,6 +36,9 @@ Get-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

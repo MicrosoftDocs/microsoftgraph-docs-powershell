@@ -46,6 +46,9 @@ Set-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity> -Bo
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-put-rubric-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

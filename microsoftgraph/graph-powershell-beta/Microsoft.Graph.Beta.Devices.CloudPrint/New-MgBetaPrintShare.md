@@ -33,6 +33,9 @@ New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHead
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-post-shares-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,9 @@ New-MgBetaIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthent
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-authenticationeventsflows-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

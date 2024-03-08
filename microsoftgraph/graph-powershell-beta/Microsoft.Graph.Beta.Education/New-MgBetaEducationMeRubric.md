@@ -30,6 +30,9 @@ New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Re
 ## DESCRIPTION
 Create a new educationRubric object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-post-rubrics-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySig
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

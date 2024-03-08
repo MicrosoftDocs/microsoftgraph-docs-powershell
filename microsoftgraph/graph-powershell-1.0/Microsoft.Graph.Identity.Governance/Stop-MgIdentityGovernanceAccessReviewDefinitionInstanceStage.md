@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewdefinitioninstancestage
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage
@@ -35,6 +36,9 @@ Stop an access review stage that is inProgress.
 After the access review stage stops, the stage status will be Completed and the reviewers can no longer give input.
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-stop-permissions.md)]
 
 ## EXAMPLES
 

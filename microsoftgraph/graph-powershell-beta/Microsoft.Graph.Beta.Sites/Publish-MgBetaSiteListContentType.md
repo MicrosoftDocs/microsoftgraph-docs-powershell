@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitelistcontenttype
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Publish-MgBetaSiteListContentType
@@ -28,6 +29,9 @@ Publish-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeader
 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 

@@ -59,6 +59,9 @@ New-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new task object in a specified todoTaskList.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

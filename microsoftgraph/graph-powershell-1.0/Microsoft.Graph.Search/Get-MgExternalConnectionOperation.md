@@ -37,6 +37,9 @@ Get-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of a connectionOperation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-connectionoperation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

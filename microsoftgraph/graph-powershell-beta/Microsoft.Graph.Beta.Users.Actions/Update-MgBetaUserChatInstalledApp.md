@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetauserchatinstalledapp
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgBetaUserChatInstalledApp
@@ -46,6 +47,9 @@ Update-MgBetaUserChatInstalledApp -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
 
 ## EXAMPLES
 

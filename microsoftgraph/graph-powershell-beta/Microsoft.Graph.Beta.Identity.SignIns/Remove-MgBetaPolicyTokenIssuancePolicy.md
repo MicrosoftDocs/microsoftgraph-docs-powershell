@@ -29,6 +29,9 @@ Remove-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete a tokenIssuancePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

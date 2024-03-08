@@ -30,6 +30,9 @@ Get-MgBetaEducationMeAssignmentRubricByRef -InputObject <IEducationIdentity>
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-get-rubric-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

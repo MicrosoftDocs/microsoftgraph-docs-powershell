@@ -43,6 +43,9 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> -IfM
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

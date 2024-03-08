@@ -51,6 +51,9 @@ New-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a task folder in the default task group (My Tasks) of the user's mailbox.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskfolders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

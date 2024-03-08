@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserchatactivitynotification
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Send-MgBetaUserChatActivityNotification
@@ -52,6 +53,9 @@ Send-MgBetaUserChatActivityNotification -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Send an activity feed notification in the scope of a chat.
 For more information, see sending Teams activity notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-sendactivitynotification-permissions.md)]
 
 ## EXAMPLES
 

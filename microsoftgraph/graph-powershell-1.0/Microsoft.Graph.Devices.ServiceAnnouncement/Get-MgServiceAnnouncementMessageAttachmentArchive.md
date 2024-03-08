@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # Get-MgServiceAnnouncementMessageAttachmentArchive
@@ -28,6 +29,9 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 
 ## DESCRIPTION
 The zip file that contains all attachments for a message.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncement-list-messages-permissions.md)]
 
 ## EXAMPLES
 

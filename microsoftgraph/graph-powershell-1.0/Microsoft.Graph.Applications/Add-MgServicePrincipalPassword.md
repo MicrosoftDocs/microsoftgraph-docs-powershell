@@ -45,6 +45,9 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Add a strong password or secret to a servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-addpassword-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

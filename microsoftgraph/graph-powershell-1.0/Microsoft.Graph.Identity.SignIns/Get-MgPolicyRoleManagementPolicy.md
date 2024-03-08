@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicy
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Get-MgPolicyRoleManagementPolicy
@@ -36,6 +37,9 @@ Get-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 
 ## DESCRIPTION
 Retrieve the details of a role management policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicy-get-permissions.md)]
 
 ## EXAMPLES
 

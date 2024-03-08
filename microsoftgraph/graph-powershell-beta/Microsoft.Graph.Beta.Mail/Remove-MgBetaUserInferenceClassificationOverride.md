@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetauserinferenceclassificationoverride
 schema: 2.0.0
+ms.prod: mail
 ---
 
 # Remove-MgBetaUserInferenceClassificationOverride
@@ -28,6 +29,9 @@ Remove-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-
 
 ## DESCRIPTION
 Delete a focused Inbox override specified by its ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
 
 ## EXAMPLES
 

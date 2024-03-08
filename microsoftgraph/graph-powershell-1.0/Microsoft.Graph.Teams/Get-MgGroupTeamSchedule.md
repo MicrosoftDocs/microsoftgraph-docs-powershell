@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamschedule
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamSchedule
@@ -36,6 +37,9 @@ The schedule creation process conforms to the One API guideline for resource bas
 During schedule provisioning, clients can use the GET method to get the schedule and look at the provisionStatus property for the current state of the provisioning.
 If the provisioning failed, clients can get additional information from the provisionStatusCode property.
 Clients can also inspect the configuration of the schedule.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-get-permissions.md)]
 
 ## EXAMPLES
 

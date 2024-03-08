@@ -22,6 +22,9 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get the educationUser resources associated with an educationSchool.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-users-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

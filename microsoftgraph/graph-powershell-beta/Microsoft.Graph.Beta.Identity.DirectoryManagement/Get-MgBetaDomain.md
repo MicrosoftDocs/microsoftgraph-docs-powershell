@@ -36,6 +36,9 @@ Get-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

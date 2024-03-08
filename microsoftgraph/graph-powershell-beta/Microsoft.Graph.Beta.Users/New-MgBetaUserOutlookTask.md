@@ -67,6 +67,9 @@ The POST method always ignores the time portion of startDateTime and dueDateTime
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

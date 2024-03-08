@@ -45,6 +45,9 @@ Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Update a user's email address associated with an email Authentication Method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

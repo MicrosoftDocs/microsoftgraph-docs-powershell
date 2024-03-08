@@ -41,6 +41,9 @@ New-MgBetaPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHead
 ## DESCRIPTION
 Create a new plannerTask.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

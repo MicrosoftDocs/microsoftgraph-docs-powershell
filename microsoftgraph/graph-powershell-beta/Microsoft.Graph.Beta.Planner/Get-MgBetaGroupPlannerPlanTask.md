@@ -22,6 +22,9 @@ Get-MgBetaGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-Expan
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-list-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

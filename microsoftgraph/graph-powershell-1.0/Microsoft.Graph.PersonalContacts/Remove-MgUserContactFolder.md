@@ -29,6 +29,9 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete contactFolder other than the default contactFolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

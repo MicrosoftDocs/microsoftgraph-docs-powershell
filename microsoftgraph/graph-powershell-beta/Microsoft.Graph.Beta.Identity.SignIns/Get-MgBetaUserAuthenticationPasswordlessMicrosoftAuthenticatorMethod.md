@@ -38,6 +38,9 @@ Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputObjec
 ## DESCRIPTION
 Retrieve a user's single Microsoft Authenticator Passwordless Phone Sign-in method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordlessmicrosoftauthenticatorauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

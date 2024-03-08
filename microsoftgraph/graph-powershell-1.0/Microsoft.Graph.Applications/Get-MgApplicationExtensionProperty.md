@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgApplicationExtensionProperty
@@ -36,6 +37,9 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
 
 ## EXAMPLES
 

@@ -47,6 +47,9 @@ Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBoo
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in solutions
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

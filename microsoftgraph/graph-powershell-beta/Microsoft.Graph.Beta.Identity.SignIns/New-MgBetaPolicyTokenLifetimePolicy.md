@@ -29,6 +29,9 @@ New-MgBetaPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 ## DESCRIPTION
 Create a new tokenLifetimePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-post-tokenlifetimepolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

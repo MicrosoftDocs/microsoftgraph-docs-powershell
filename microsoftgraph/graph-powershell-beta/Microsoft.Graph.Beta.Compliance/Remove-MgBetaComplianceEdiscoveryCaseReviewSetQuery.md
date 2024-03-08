@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewsetquery
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery
@@ -28,6 +29,9 @@ Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIde
 
 ## DESCRIPTION
 Delete a reviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewsetquery-delete-permissions.md)]
 
 ## EXAMPLES
 

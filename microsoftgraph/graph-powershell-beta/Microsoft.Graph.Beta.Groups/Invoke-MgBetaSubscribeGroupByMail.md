@@ -31,6 +31,9 @@ Invoke-MgBetaSubscribeGroupByMail -InputObject <IGroupsIdentity> [-ResponseHeade
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-subscribebymail-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

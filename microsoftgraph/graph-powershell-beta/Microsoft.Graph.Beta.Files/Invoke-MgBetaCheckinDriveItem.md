@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveitem
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Invoke-MgBetaCheckinDriveItem
@@ -44,6 +45,9 @@ Invoke-MgBetaCheckinDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVar
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 

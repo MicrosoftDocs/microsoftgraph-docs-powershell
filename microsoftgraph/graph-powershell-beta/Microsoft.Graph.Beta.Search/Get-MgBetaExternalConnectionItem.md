@@ -43,6 +43,9 @@ This API is provided for diagnostic purposes only.
 It isn't intended to be used for any other purpose.
 Repeated requests to this API might result in 429 HTTP errors.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

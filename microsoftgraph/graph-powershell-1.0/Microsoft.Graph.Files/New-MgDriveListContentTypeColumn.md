@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgDriveListContentTypeColumn
@@ -64,6 +65,9 @@ New-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-post-columns-permissions.md)]
 
 ## EXAMPLES
 

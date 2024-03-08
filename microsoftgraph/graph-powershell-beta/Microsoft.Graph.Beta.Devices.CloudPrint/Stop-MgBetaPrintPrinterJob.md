@@ -31,6 +31,9 @@ Stop-MgBetaPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseH
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printjob-cancel-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

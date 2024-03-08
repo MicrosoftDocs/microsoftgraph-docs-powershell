@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitetermstoregroup
 schema: 2.0.0
+ms.prod: taxonomy
 ---
 
 # Remove-MgBetaSiteTermStoreGroup
@@ -28,6 +29,9 @@ Remove-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Delete a group object in a term \[store\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-delete-permissions.md)]
 
 ## EXAMPLES
 

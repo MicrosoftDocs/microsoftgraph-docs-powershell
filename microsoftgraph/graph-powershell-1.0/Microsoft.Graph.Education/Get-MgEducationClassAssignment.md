@@ -41,6 +41,9 @@ Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

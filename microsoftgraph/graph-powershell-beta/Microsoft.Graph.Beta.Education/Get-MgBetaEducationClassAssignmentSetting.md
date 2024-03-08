@@ -31,6 +31,9 @@ Get-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Ex
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

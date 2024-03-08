@@ -37,6 +37,9 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryObject object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,9 @@ Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData
 ## DESCRIPTION
 Create a request to remove the personal data for an outboundSharedUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantreference-removepersonaldata-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerPlanDetails object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

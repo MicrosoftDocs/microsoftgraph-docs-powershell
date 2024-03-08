@@ -44,6 +44,9 @@ Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-Re
 ## DESCRIPTION
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-validateauthenticationconfiguration-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

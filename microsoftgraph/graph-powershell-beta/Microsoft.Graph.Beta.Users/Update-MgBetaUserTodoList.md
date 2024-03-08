@@ -45,6 +45,9 @@ Update-MgBetaUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

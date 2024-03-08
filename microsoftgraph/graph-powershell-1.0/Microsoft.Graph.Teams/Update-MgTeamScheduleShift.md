@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamScheduleShift
@@ -50,6 +51,9 @@ Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 Replace an existing shift.
 If the specified shift doesn't exist, this method returns 404 Not found.
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-put-permissions.md)]
 
 ## EXAMPLES
 

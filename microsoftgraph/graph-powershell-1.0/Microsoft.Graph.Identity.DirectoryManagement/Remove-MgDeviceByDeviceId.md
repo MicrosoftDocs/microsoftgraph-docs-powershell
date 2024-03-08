@@ -29,6 +29,9 @@ Remove-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 Delete a registered device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

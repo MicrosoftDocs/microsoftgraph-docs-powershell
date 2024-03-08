@@ -37,6 +37,9 @@ Get-MgIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesstemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -36,6 +36,9 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get a conversation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-conversation-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

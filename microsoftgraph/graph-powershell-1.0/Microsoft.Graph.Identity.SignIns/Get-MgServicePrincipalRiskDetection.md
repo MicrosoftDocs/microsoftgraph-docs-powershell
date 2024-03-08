@@ -37,6 +37,9 @@ Get-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

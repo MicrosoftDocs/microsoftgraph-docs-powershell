@@ -47,6 +47,9 @@ New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

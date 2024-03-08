@@ -30,6 +30,9 @@ Remove-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-delete-excludes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

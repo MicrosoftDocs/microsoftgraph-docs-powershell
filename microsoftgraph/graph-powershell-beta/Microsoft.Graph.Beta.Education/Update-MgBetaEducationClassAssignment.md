@@ -65,6 +65,9 @@ Only teachers in the class can do this.
 You can't use a PATCH request to change the status of an assignment.
 Use the publish action to change the assignment status.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

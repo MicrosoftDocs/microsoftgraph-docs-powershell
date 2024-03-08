@@ -29,6 +29,9 @@ Remove-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete an appManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

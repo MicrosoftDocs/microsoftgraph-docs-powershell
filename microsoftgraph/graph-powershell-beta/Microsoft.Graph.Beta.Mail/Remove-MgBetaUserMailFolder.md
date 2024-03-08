@@ -33,6 +33,9 @@ Delete the specified mailFolder.
 The folder can be a mailSearchFolder.
 You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

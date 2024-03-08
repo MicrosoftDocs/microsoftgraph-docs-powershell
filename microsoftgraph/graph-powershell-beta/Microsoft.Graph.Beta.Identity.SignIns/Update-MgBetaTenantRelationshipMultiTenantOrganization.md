@@ -32,6 +32,9 @@ Update-MgBetaTenantRelationshipMultiTenantOrganization -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the properties of a multi-tenant organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

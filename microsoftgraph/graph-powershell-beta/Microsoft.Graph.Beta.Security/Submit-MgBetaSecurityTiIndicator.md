@@ -30,6 +30,9 @@ Submit-MgBetaSecurityTiIndicator
 ## DESCRIPTION
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-submittiindicators-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

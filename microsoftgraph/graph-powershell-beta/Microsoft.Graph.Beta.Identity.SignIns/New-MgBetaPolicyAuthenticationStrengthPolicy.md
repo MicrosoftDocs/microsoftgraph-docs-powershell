@@ -32,6 +32,9 @@ New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuth
 ## DESCRIPTION
 Create a new custom authenticationStrengthPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthroot-post-policies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

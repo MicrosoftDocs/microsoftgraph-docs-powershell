@@ -29,6 +29,9 @@ Remove-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a claimsMappingPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/claimsmappingpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,9 @@ Remove-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 Delete a localized branding object.
 To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

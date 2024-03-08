@@ -30,6 +30,9 @@ Remove-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMa
 ## DESCRIPTION
 Deletes a linkedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

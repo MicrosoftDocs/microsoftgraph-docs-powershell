@@ -37,6 +37,9 @@ Get-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve a user's single email authentication method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

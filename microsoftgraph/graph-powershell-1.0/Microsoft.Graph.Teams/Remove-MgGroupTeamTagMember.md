@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # Remove-MgGroupTeamTagMember
@@ -28,6 +29,9 @@ Remove-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-delete-permissions.md)]
 
 ## EXAMPLES
 

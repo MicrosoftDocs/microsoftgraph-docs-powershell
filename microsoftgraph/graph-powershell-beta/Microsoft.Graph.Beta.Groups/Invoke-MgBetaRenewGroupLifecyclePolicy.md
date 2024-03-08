@@ -32,6 +32,9 @@ Invoke-MgBetaRenewGroupLifecyclePolicy
 Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-renewgroup-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,9 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ## DESCRIPTION
 Retrieve the properties of a connectorGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemversion
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Get-MgDriveItemListItemVersion
@@ -36,6 +37,9 @@ Get-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
 
 ## EXAMPLES
 

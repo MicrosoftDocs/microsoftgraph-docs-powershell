@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem
 schema: 2.0.0
+ms.prod: project-rome
 ---
 
 # Update-MgUserActivityHistoryItem
@@ -48,6 +49,9 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 
 ## DESCRIPTION
 Create a new or replace an existing history item for an existing user activity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-put-historyitem-permissions.md)]
 
 ## EXAMPLES
 

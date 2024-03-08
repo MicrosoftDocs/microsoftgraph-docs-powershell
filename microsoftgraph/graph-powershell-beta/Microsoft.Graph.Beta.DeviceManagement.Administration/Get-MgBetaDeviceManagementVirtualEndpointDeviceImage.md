@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManage
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcDeviceImage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

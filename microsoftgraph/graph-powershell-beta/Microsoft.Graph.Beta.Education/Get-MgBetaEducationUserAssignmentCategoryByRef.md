@@ -24,6 +24,9 @@ Get-MgBetaEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

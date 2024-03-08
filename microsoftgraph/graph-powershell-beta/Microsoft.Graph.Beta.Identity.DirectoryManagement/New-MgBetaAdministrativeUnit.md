@@ -32,6 +32,9 @@ New-MgBetaAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit>
 ## DESCRIPTION
 Use this API to create a new administrativeUnit.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-administrativeunits-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

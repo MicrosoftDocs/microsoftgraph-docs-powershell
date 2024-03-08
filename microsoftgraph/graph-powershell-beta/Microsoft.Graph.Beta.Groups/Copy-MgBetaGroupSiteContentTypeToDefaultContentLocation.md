@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupsitecontenttypetodefaultcontentlocation
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation
@@ -49,6 +50,9 @@ Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation -InputObject <IGroupsIde
 ## DESCRIPTION
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

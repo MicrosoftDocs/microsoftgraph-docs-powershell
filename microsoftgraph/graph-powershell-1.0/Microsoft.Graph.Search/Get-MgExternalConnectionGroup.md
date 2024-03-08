@@ -37,6 +37,9 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get an externalGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

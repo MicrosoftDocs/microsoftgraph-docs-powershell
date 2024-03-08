@@ -23,6 +23,9 @@ Get-MgBetaEducationClassMemberByRef -EducationClassId <String> [-Filter <String>
 Retrieve the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

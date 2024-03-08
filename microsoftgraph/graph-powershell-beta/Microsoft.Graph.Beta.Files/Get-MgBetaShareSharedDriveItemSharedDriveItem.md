@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetashareshareddriveitemshareddriveitem
 schema: 2.0.0
+ms.prod: files
 ---
 
 # Get-MgBetaShareSharedDriveItemSharedDriveItem
@@ -38,6 +39,9 @@ Get-MgBetaShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-Ex
 ## DESCRIPTION
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shares-get-permissions.md)]
 
 ## EXAMPLES
 

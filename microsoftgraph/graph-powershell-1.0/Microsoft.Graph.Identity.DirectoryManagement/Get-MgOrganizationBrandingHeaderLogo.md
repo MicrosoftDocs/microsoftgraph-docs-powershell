@@ -33,6 +33,9 @@ A company logo that appears in the header of the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

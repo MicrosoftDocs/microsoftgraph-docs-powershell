@@ -47,6 +47,9 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Update the properties of an allowedValue object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/allowedvalue-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

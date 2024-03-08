@@ -47,6 +47,9 @@ New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ## DESCRIPTION
 Create a new publishedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

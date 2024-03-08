@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsharedcookie
 schema: 2.0.0
+ms.prod: browser-management
 ---
 
 # New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie
@@ -50,6 +51,9 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-post-sharedcookies-permissions.md)]
 
 ## EXAMPLES
 
