@@ -32,18 +32,6 @@ Get-MgServicePrincipalEndpointCount -InputObject <IApplicationsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -197,6 +185,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaServicePrincipalEndpointCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalEndpointCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpointcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalendpointcount)
+
 
 
 

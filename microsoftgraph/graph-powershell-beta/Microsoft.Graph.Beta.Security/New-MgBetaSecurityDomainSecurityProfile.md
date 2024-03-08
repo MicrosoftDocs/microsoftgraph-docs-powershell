@@ -33,22 +33,6 @@ New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSec
 ## DESCRIPTION
 Create new navigation property to domainSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -461,6 +445,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile)
+
 
 
 

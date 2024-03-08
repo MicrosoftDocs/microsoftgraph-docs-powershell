@@ -33,18 +33,6 @@ Update-MgBetaReportPartnerBilling -BodyParameter <IMicrosoftGraphPartnersBilling
 ## DESCRIPTION
 Update the navigation property billing in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,6 +326,7 @@ Read-only.
 [Update-MgReportPartnerBilling](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBilling?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbilling)
+
 
 
 

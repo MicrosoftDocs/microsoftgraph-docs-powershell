@@ -40,18 +40,6 @@ Get-MgBetaSecuritySubjectRightsRequestCollaborator -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get collaborators from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -397,6 +385,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecuritySubjectRightsRequestCollaborator](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestCollaborator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestcollaborator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestcollaborator)
+
 
 
 

@@ -36,22 +36,6 @@ The content stream, if the item represents a file.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -236,6 +220,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootChildContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootchildcontent)
+
 
 
 

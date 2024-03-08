@@ -32,18 +32,6 @@ Get-MgExternalConnectionGroupCount -InputObject <ISearchIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -180,6 +168,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Get-MgBetaExternalConnectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupcount)
+
 
 
 

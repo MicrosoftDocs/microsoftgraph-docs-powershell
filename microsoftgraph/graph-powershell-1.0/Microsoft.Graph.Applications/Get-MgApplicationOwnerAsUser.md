@@ -40,18 +40,6 @@ Get-MgApplicationOwnerAsUser -InputObject <IApplicationsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +345,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaApplicationOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerAsUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerasuser)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaGroupConversationThreadPostExtensionCount -InputObject <IGroupsIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationId
@@ -250,6 +238,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgGroupConversationThreadPostExtensionCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostExtensionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostextensioncount)
+
 
 
 

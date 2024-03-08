@@ -32,18 +32,6 @@ Get-MgGroupDriveListOperationCount -InputObject <IFilesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaGroupDriveListOperationCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListOperationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistoperationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistoperationcount)
+
 
 
 

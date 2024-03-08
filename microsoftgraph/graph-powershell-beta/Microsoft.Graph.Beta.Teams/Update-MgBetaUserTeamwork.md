@@ -48,22 +48,6 @@ Update-MgBetaUserTeamwork -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property teamwork in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15586,6 +15570,7 @@ Read-only.
 [Update-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgUserTeamwork?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetauserteamwork)
+
 
 
 

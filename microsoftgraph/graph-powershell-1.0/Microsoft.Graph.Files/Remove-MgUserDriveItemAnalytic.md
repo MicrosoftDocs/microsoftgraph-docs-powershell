@@ -32,18 +32,6 @@ Remove-MgUserDriveItemAnalytic -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property analytics for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -259,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaUserDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitemanalytic)
+
 
 
 

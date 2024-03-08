@@ -52,18 +52,6 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowTask -InputObject <IIdentityGove
 ## DESCRIPTION
 Update the navigation property tasks in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15493,6 +15481,7 @@ Required.Supports $filter(eq, ne).
 [Update-MgIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancelifecycleworkflowtask)
+
 
 
 

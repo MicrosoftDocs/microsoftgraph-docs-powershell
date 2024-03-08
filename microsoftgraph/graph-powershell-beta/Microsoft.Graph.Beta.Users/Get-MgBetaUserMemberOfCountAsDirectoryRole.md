@@ -32,18 +32,6 @@ Get-MgBetaUserMemberOfCountAsDirectoryRole -InputObject <IUsersIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -213,6 +201,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfCountAsDirectoryRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasdirectoryrole)
+
 
 
 

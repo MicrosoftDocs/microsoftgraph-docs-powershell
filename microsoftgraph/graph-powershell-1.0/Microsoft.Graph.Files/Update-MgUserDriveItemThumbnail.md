@@ -49,22 +49,6 @@ Update-MgUserDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property thumbnails in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +413,7 @@ This is only available when a folder thumbnail is requested.
 [Update-MgBetaUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemthumbnail)
+
 
 
 

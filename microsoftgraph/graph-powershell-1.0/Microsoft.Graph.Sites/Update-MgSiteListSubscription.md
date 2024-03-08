@@ -55,22 +55,6 @@ Update-MgSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property subscriptions in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,6 +624,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription)
+
 
 
 

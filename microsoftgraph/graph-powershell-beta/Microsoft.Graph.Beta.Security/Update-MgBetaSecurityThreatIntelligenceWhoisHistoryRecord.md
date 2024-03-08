@@ -64,18 +64,6 @@ Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property whoisHistoryRecords in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Abuse
@@ -1339,6 +1327,7 @@ No format is guaranteed.
 [Update-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencewhoishistoryrecord)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaUserPersonCount -InputObject <IPeopleIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -196,6 +184,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 [Get-MgUserPersonCount](/powershell/module/Microsoft.Graph.People/Get-MgUserPersonCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserpersoncount)
+
 
 
 

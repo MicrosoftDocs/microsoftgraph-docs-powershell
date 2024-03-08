@@ -80,22 +80,6 @@ New-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphDri
 ## DESCRIPTION
 Create new navigation property to items for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29429,6 +29413,7 @@ Read-only.
 [New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitem)
+
 
 
 

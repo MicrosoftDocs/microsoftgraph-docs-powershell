@@ -31,18 +31,6 @@ Get-MgBetaReportServiceActivityMetricForSamlSignInSuccess -InputObject <IReports
 ## DESCRIPTION
 Invoke function getMetricsForSamlSignInSuccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregationIntervalInMinutes
@@ -291,6 +279,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforsamlsigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforsamlsigninsuccess)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementReportGroupPolicySettingDeviceSettingReport -OutFile <
 ## DESCRIPTION
 Invoke action getGroupPolicySettingsDeviceSettingsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +337,7 @@ BODYPARAMETER `<IPathsZ8GcywDevicemanagementReportsMicrosoftGraphGetgrouppolicys
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportgrouppolicysettingdevicesettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportgrouppolicysettingdevicesettingreport)
+
 
 
 

@@ -29,22 +29,6 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceMana
 ## DESCRIPTION
 High level run summary for device health script.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceHealthScriptId
@@ -314,6 +298,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicehealthscriptrunsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicehealthscriptrunsummary)
+
 
 
 

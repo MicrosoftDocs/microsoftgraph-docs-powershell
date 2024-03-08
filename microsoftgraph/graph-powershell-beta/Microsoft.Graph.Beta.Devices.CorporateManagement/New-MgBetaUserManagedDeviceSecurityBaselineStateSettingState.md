@@ -53,22 +53,6 @@ New-MgBetaUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevi
 ## DESCRIPTION
 Create new navigation property to settingStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -496,6 +480,7 @@ SOURCEPOLICIES <IMicrosoftGraphSettingSource- `[]`>: The policies that contribut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddevicesecuritybaselinestatesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddevicesecuritybaselinestatesettingstate)
+
 
 
 

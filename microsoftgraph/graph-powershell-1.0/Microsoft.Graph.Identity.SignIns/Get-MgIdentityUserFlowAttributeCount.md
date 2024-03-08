@@ -23,18 +23,6 @@ Get-MgIdentityUserFlowAttributeCount [-Filter <String>] [-Search <String>] [-Res
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaIdentityUserFlowAttributeCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityUserFlowAttributeCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityuserflowattributecount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityuserflowattributecount)
+
 
 
 

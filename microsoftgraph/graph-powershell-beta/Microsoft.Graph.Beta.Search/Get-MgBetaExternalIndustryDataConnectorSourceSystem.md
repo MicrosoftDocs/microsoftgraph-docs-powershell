@@ -29,18 +29,6 @@ Get-MgBetaExternalIndustryDataConnectorSourceSystem -InputObject <ISearchIdentit
 ## DESCRIPTION
 The sourceSystemDefinition this connector is connected to.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,6 +177,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnectorsourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataconnectorsourcesystem)
+
 
 
 

@@ -43,22 +43,6 @@ Get-MgBetaDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionC
 The list of scheduled action configurations for this compliance policy.
 This collection can contain a maximum of 100 elements.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -479,6 +463,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcompliancepolicyscheduledactionforrulescheduledactionconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementcompliancepolicyscheduledactionforrulescheduledactionconfiguration)
+
 
 
 

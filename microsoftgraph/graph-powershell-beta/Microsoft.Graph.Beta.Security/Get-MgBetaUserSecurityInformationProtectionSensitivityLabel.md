@@ -37,18 +37,6 @@ Get-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISecur
 ## DESCRIPTION
 Read the Microsoft Purview Information Protection labels for the user or organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -393,6 +381,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionsensitivitylabel)
+
 
 
 

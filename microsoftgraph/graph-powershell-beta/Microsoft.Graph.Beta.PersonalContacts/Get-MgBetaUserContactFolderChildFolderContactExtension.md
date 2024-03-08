@@ -43,22 +43,6 @@ Get-MgBetaUserContactFolderChildFolderContactExtension -InputObject <IPersonalCo
 The collection of open extensions defined for the contact.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +345,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Get-MgUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactextension)
+
 
 
 

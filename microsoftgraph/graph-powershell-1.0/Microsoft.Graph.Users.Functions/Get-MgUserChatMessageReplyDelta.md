@@ -34,22 +34,6 @@ Get-MgUserChatMessageReplyDelta -InputObject <IUsersFunctionsIdentity> [-ExpandP
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +356,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Get-MgBetaUserChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserChatMessageReplyDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserchatmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserchatmessagereplydelta)
+
 
 
 

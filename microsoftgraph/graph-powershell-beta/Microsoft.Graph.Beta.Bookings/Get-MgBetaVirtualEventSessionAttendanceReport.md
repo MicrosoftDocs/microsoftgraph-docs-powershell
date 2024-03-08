@@ -43,18 +43,6 @@ Get-MgBetaVirtualEventSessionAttendanceReport -InputObject <IBookingsIdentity> [
 The attendance reports of an online meeting.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +346,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Get-MgVirtualEventSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionattendancereport)
+
 
 
 

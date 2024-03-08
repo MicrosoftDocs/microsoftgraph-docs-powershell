@@ -32,18 +32,6 @@ Get-MgChatMessageReplyCount -InputObject <ITeamsIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -221,6 +209,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaChatMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplycount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplycount)
+
 
 
 

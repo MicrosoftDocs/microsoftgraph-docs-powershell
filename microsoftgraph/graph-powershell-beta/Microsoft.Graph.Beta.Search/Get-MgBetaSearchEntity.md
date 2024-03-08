@@ -23,22 +23,6 @@ Get-MgBetaSearchEntity [-ExpandProperty <String[]>] [-Property <String[]>] [-Res
 ## DESCRIPTION
 Get search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -131,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Get-MgSearchEntity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchentity)
+
 
 
 

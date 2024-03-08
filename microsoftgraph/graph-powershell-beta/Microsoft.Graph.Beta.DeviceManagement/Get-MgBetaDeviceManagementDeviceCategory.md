@@ -40,22 +40,6 @@ Get-MgBetaDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity
 ## DESCRIPTION
 The list of device categories with the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -447,6 +431,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicecategory)
+
 
 
 
