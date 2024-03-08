@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration
@@ -361,61 +361,64 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphVirtualEventRegistration\>: virtualEventRegistration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphVirtualEventRegistration>`: virtualEventRegistration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CancelationDateTime \<DateTime?\>\]: Date and time when the registrant cancels their registration for the virtual event.
+  - `[CancelationDateTime <DateTime?>]`: Date and time when the registrant cancels their registration for the virtual event.
 Only appears when applicable.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Email \<String\>\]: Email address of the registrant.
-  \[FirstName \<String\>\]: First name of the registrant.
-  \[LastName \<String\>\]: Last name of the registrant.
-  \[RegistrationDateTime \<DateTime?\>\]: Date and time when the registrant registers for the virtual event.
+  - `[Email <String>]`: Email address of the registrant.
+  - `[FirstName <String>]`: First name of the registrant.
+  - `[LastName <String>]`: Last name of the registrant.
+  - `[RegistrationDateTime <DateTime?>]`: Date and time when the registrant registers for the virtual event.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[RegistrationQuestionAnswers \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>\]: The registrant's answer to the registration questions.
-    \[BooleanValue \<Boolean?\>\]: Boolean answer of the virtual event registration question.
+  - `[RegistrationQuestionAnswers <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>]`: The registrant's answer to the registration questions.
+    - `[BooleanValue <Boolean?>]`: Boolean answer of the virtual event registration question.
 Only appears when answerInputType is boolean.
-    \[DisplayName \<String\>\]: Display name of the registration question.
-    \[MultiChoiceValues \<String\[\]\>\]: Collection of text answer of the virtual event registration question.
+    - `[DisplayName <String>]`: Display name of the registration question.
+    - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtual event registration question.
 Only appears when answerInputType is multiChoice.
-    \[QuestionId \<String\>\]: id of the virtual event registration question.
-    \[Value \<String\>\]: Text answer of the virtual event registration question.
+    - `[QuestionId <String>]`: id of the virtual event registration question.
+    - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
-  \[Status \<String\>\]: virtualEventAttendeeRegistrationStatus
-  \[UserId \<String\>\]: The registrant's ID in Microsoft Entra ID.
+  - `[Status <String>]`: virtualEventAttendeeRegistrationStatus
+  - `[UserId <String>]`: The registrant's ID in Microsoft Entra ID.
 Only appears when the registrant is registered in Microsoft Entra ID.
 
-INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
-  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
-  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
-  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
-  \[BookingCustomerBaseId \<String\>\]: The unique identifier of bookingCustomerBase
-  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
-  \[BookingStaffMemberBaseId \<String\>\]: The unique identifier of bookingStaffMemberBase
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[Role \<String\>\]: Usage: role='{role}'
-  \[UserId \<String\>\]: Usage: userId='{userId}'
-  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
-  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
-  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
-  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
+  - `[BookingServiceId <String>]`: The unique identifier of bookingService
+  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[Role <String>]`: Usage: role='{role}'
+  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
+  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
-REGISTRATIONQUESTIONANSWERS \<IMicrosoftGraphVirtualEventRegistrationQuestionAnswer\[\]\>: The registrant's answer to the registration questions.
-  \[BooleanValue \<Boolean?\>\]: Boolean answer of the virtual event registration question.
+REGISTRATIONQUESTIONANSWERS <IMicrosoftGraphVirtualEventRegistrationQuestionAnswer- `[]`>: The registrant's answer to the registration questions.
+  - `[BooleanValue <Boolean?>]`: Boolean answer of the virtual event registration question.
 Only appears when answerInputType is boolean.
-  \[DisplayName \<String\>\]: Display name of the registration question.
-  \[MultiChoiceValues \<String\[\]\>\]: Collection of text answer of the virtual event registration question.
+  - `[DisplayName <String>]`: Display name of the registration question.
+  - `[MultiChoiceValues <String- `[]`>]`: Collection of text answer of the virtual event registration question.
 Only appears when answerInputType is multiChoice.
-  \[QuestionId \<String\>\]: id of the virtual event registration question.
-  \[Value \<String\>\]: Text answer of the virtual event registration question.
+  - `[QuestionId <String>]`: id of the virtual event registration question.
+  - `[Value <String>]`: Text answer of the virtual event registration question.
 Appears when answerInputType is text, multilineText or singleChoice.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarregistration)
+
+
+
 

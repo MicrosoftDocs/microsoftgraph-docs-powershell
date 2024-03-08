@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup
@@ -282,35 +282,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphExternalConnectorsExternalGroup\>: externalGroup
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalGroup>`: externalGroup
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: The description of the external group.
+  - `[Description <String>]`: The description of the external group.
 Optional.
-  \[DisplayName \<String\>\]: The friendly name of the external group.
+  - `[DisplayName <String>]`: The friendly name of the external group.
 Optional.
-  \[Members \<IMicrosoftGraphExternalConnectorsIdentity\[\]\>\]: A member added to an externalGroup.
+  - `[Members <IMicrosoftGraphExternalConnectorsIdentity- `[]`>]`: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Type \<String\>\]: identityType
+    - `[Type <String>]`: identityType
 
-INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
-  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
-  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
-  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
-  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
-  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
-  \[IdentityId \<String\>\]: The unique identifier of identity
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+  - `[ExternalItemId <String>]`: The unique identifier of externalItem
+  - `[IdentityId <String>]`: The unique identifier of identity
 
-MEMBERS \<IMicrosoftGraphExternalConnectorsIdentity\[\]\>: A member added to an externalGroup.
+MEMBERS <IMicrosoftGraphExternalConnectorsIdentity- `[]`>: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Type \<String\>\]: identityType
+  - `[Type <String>]`: identityType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup)
+
+
+
 

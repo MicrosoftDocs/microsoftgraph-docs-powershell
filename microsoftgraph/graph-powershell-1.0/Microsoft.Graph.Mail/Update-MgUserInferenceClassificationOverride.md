@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride
@@ -11,7 +11,7 @@ schema: 2.0.0
 Change the classifyAs field of an override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 Change the classifyAs field of an override as specified.
 You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one with\nthe new SMTP address is the only way to 'update' the override for this sender.
+If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 
 ## EXAMPLES
 
@@ -284,32 +284,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphInferenceClassificationOverride\>: inferenceClassificationOverride
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClassificationOverride
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ClassifyAs \<String\>\]: inferenceClassificationType
-  \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Address \<String\>\]: The email address of the person or entity.
-    \[Name \<String\>\]: The display name of the person or entity.
+  - `[ClassifyAs <String>]`: inferenceClassificationType
+  - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of the person or entity.
+    - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
-SENDEREMAILADDRESS \<IMicrosoftGraphEmailAddress\>: emailAddress
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Address \<String\>\]: The email address of the person or entity.
-  \[Name \<String\>\]: The display name of the person or entity.
+SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Address <String>]`: The email address of the person or entity.
+  - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassificationoverride)
+
+
+
 

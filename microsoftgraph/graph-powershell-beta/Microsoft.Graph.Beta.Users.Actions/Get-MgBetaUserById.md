@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid
@@ -210,12 +210,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Ids \<String\[\]\>\]: 
-  \[Types \<String\[\]\>\]:
+BODYPARAMETER `<IPathsBjm3ZyUsersMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String- `[]`>]`: 
+  - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserbyid)
+
+
+
 

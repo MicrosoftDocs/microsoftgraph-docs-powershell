@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity
@@ -184,41 +184,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ImportedWindowsAutopilotDeviceIdentities \<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AssignedUserPrincipalName \<String\>\]: UPN of the user the device will be assigned
-    \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
-    \[HardwareIdentifier \<Byte\[\]\>\]: Hardware Blob of the Windows autopilot device.
-    \[ImportId \<String\>\]: The Import Id of the Windows autopilot device.
-    \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
-    \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
-    \[State \<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState\>\]: importedWindowsAutopilotDeviceIdentityState
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceErrorCode \<Int32?\>\]: Device error code reported by Device Directory Service(DDS).
-      \[DeviceErrorName \<String\>\]: Device error name reported by Device Directory Service(DDS).
-      \[DeviceImportStatus \<ImportedWindowsAutopilotDeviceIdentityImportStatus?\>\]: importedWindowsAutopilotDeviceIdentityImportStatus
-      \[DeviceRegistrationId \<String\>\]: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+    - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
+    - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
+    - `[HardwareIdentifier <Byte- `[]`>]`: Hardware Blob of the Windows autopilot device.
+    - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
+    - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
+    - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
+    - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
+      - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
+      - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
+      - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES \<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AssignedUserPrincipalName \<String\>\]: UPN of the user the device will be assigned
-  \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
-  \[HardwareIdentifier \<Byte\[\]\>\]: Hardware Blob of the Windows autopilot device.
-  \[ImportId \<String\>\]: The Import Id of the Windows autopilot device.
-  \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
-  \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
-  \[State \<IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState\>\]: importedWindowsAutopilotDeviceIdentityState
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceErrorCode \<Int32?\>\]: Device error code reported by Device Directory Service(DDS).
-    \[DeviceErrorName \<String\>\]: Device error name reported by Device Directory Service(DDS).
-    \[DeviceImportStatus \<ImportedWindowsAutopilotDeviceIdentityImportStatus?\>\]: importedWindowsAutopilotDeviceIdentityImportStatus
-    \[DeviceRegistrationId \<String\>\]: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+  - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
+  - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
+  - `[HardwareIdentifier <Byte- `[]`>]`: Hardware Blob of the Windows autopilot device.
+  - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
+  - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
+  - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
+  - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
+    - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
+    - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
+    - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
+
+
+
 

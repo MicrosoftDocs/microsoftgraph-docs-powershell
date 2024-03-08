@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
@@ -241,4 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
+
+
+
 

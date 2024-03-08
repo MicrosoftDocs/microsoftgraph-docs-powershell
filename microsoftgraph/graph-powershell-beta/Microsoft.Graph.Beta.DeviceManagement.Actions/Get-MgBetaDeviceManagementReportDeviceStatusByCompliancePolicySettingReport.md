@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatusbycompliancepolicysettingreport
@@ -319,18 +319,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsZc4O44DevicemanagementReportsMicrosoftGraphGetdevicestatusbycompliancepolicysettingreportPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Filter \<String\>\]: 
-  \[GroupBy \<String\[\]\>\]: 
-  \[OrderBy \<String\[\]\>\]: 
-  \[Search \<String\>\]: 
-  \[Select \<String\[\]\>\]: 
-  \[SessionId \<String\>\]: 
-  \[Skip \<Int32?\>\]: 
-  \[Top \<Int32?\>\]:
+BODYPARAMETER `<IPathsZc4O44DevicemanagementReportsMicrosoftGraphGetdevicestatusbycompliancepolicysettingreportPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Filter <String>]`: 
+  - `[GroupBy <String- `[]`>]`: 
+  - `[OrderBy <String- `[]`>]`: 
+  - `[Search <String>]`: 
+  - `[Select <String- `[]`>]`: 
+  - `[SessionId <String>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatusbycompliancepolicysettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportdevicestatusbycompliancepolicysettingreport)
+
+
+
 
