@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationUserAssignmentCategory
@@ -11,9 +10,6 @@ ms.prod: education
 ## SYNOPSIS
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,8 +24,21 @@ Get-MgBetaEducationUserAssignmentCategory -EducationAssignmentId <String> -Educa
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -271,11 +280,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserassignmentcategory)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to riskDetections for identityProtection
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,17 +34,13 @@ New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-Response
 Create new navigation property to riskDetections for identityProtection
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaRiskDetection
-```
-This example shows how to use the New-MgBetaBetaRiskDetection Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -517,86 +510,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphRiskDetection\>: riskDetection
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Activity <String>]`: activityType
-  - `[ActivityDateTime <DateTime?>]`: Date and time that the risky activity occurred.
+  \[Activity \<String\>\]: activityType
+  \[ActivityDateTime \<DateTime?\>\]: Date and time that the risky activity occurred.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[AdditionalInfo <String>]`: Additional information associated with the risk detection in JSON format.
-  - `[CorrelationId <String>]`: Correlation ID of the sign-in associated with the risk detection.
+  \[AdditionalInfo \<String\>\]: Additional information associated with the risk detection in JSON format.
+  \[CorrelationId \<String\>\]: Correlation ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
-  - `[DetectedDateTime <DateTime?>]`: Date and time that the risk was detected.
+  \[DetectedDateTime \<DateTime?\>\]: Date and time that the risk was detected.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[DetectionTimingType <String>]`: riskDetectionTimingType
-  - `[IPAddress <String>]`: Provides the IP address of the client from where the risk occurred.
-  - `[LastUpdatedDateTime <DateTime?>]`: Date and time that the risk detection was last updated.
-  - `[Location <IMicrosoftGraphSignInLocation>]`: signInLocation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: Provides the city where the sign-in originated.
+  \[DetectionTimingType \<String\>\]: riskDetectionTimingType
+  \[IPAddress \<String\>\]: Provides the IP address of the client from where the risk occurred.
+  \[LastUpdatedDateTime \<DateTime?\>\]: Date and time that the risk detection was last updated.
+  \[Location \<IMicrosoftGraphSignInLocation\>\]: signInLocation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: Provides the city where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
-    - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated. 
+    \[CountryOrRegion \<String\>\]: Provides the country code info (two letter code) where the sign-in originated. 
 This is calculated using latitude/longitude information from the sign-in activity.
-    - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Altitude <Double?>]`: Optional.
+    \[GeoCoordinates \<IMicrosoftGraphGeoCoordinates\>\]: geoCoordinates
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Altitude \<Double?\>\]: Optional.
 The altitude (height), in feet,  above sea level for the item.
 Read-only.
-      - `[Latitude <Double?>]`: Optional.
+      \[Latitude \<Double?\>\]: Optional.
 The latitude, in decimal, for the item.
 Writable on OneDrive Personal.
-      - `[Longitude <Double?>]`: Optional.
+      \[Longitude \<Double?\>\]: Optional.
 The longitude, in decimal, for the item.
 Writable on OneDrive Personal.
-    - `[State <String>]`: Provides the State where the sign-in originated.
+    \[State \<String\>\]: Provides the State where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
-  - `[MitreTechniqueId <String>]`: 
-  - `[RequestId <String>]`: Request ID of the sign-in associated with the risk detection.
+  \[MitreTechniqueId \<String\>\]: 
+  \[RequestId \<String\>\]: Request ID of the sign-in associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in.
-  - `[RiskDetail <String>]`: riskDetail
-  - `[RiskEventType <String>]`: The type of risk event detected.
+  \[RiskDetail \<String\>\]: riskDetail
+  \[RiskEventType \<String\>\]: The type of risk event detected.
 The possible values are adminConfirmedUserCompromised, anomalousUserActivity, anonymizedIPAddress, generic, investigationsThreatIntelligence, investigationsThreatIntelligenceSigninLinked,leakedCredentials, maliciousIPAddress, maliciousIPAddressValidCredentialsBlockedIP, malwareInfectedIPAddress, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, suspiciousAPITraffic, suspiciousIPAddress,   unfamiliarFeatures, unlikelyTravel, userReportedSuspiciousActivity. 
 For more information about each value, see Risk types and detection.
-  - `[RiskLevel <String>]`: riskLevel
-  - `[RiskState <String>]`: riskState
-  - `[RiskType <String>]`: riskEventType
-  - `[Source <String>]`: Source of the risk detection.
+  \[RiskLevel \<String\>\]: riskLevel
+  \[RiskState \<String\>\]: riskState
+  \[RiskType \<String\>\]: riskEventType
+  \[Source \<String\>\]: Source of the risk detection.
 For example, activeDirectory.
-  - `[TokenIssuerType <String>]`: tokenIssuerType
-  - `[UserDisplayName <String>]`: Name of the user.
-  - `[UserId <String>]`: Unique ID of the user. 
+  \[TokenIssuerType \<String\>\]: tokenIssuerType
+  \[UserDisplayName \<String\>\]: Name of the user.
+  \[UserId \<String\>\]: Unique ID of the user. 
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user.
+  \[UserPrincipalName \<String\>\]: The user principal name (UPN) of the user.
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: Provides the city where the sign-in originated.
+LOCATION \<IMicrosoftGraphSignInLocation\>: signInLocation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[City \<String\>\]: Provides the city where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
-  - `[CountryOrRegion <String>]`: Provides the country code info (two letter code) where the sign-in originated. 
+  \[CountryOrRegion \<String\>\]: Provides the country code info (two letter code) where the sign-in originated. 
 This is calculated using latitude/longitude information from the sign-in activity.
-  - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional.
+  \[GeoCoordinates \<IMicrosoftGraphGeoCoordinates\>\]: geoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Altitude \<Double?\>\]: Optional.
 The altitude (height), in feet,  above sea level for the item.
 Read-only.
-    - `[Latitude <Double?>]`: Optional.
+    \[Latitude \<Double?\>\]: Optional.
 The latitude, in decimal, for the item.
 Writable on OneDrive Personal.
-    - `[Longitude <Double?>]`: Optional.
+    \[Longitude \<Double?\>\]: Optional.
 The longitude, in decimal, for the item.
 Writable on OneDrive Personal.
-  - `[State <String>]`: Provides the State where the sign-in originated.
+  \[State \<String\>\]: Provides the State where the sign-in originated.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)
-
-
-
 

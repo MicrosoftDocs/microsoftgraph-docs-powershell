@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the collection of \[contentType\]\[contentType\] resources in a \[site\]\[\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ Get-MgSiteGetByPathContentType -Path <String> -SiteId <String> -Path1 <String> [
 
 ## DESCRIPTION
 Get the collection of \[contentType\]\[contentType\] resources in a \[site\]\[\].
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -289,11 +298,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathcontenttype)
-
-
-
-
 

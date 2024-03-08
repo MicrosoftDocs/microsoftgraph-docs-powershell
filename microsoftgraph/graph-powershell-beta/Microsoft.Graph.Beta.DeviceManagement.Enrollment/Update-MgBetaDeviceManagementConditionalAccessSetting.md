@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementconditionalaccesssetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property conditionalAccessSettings in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,18 @@ Update-MgBetaDeviceManagementConditionalAccessSetting
 
 ## DESCRIPTION
 Update the navigation property conditionalAccessSettings in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -236,23 +245,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphOnPremisesConditionalAccessSettings\>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
-  - `[ExcludedGroups <String- `[]`>]`: User groups that will be exempt by on premises conditional access.
+  \[Enabled \<Boolean?\>\]: Indicates if on premises conditional access is enabled for this organization
+  \[ExcludedGroups \<String\[\]\>\]: User groups that will be exempt by on premises conditional access.
 All users in these groups will be exempt from the conditional access policy.
-  - `[IncludedGroups <String- `[]`>]`: User groups that will be targeted by on premises conditional access.
+  \[IncludedGroups \<String\[\]\>\]: User groups that will be targeted by on premises conditional access.
 All users in these groups will be required to have mobile device managed and compliant for mail access.
-  - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
+  \[OverrideDefaultRule \<Boolean?\>\]: Override the default access rule when allowing a device to ensure access is granted.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementconditionalaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementconditionalaccesssetting)
-
-
-
-
 
