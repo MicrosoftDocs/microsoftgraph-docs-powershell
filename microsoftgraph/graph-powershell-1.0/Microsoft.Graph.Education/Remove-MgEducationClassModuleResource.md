@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -248,6 +251,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassmoduleresource)
 

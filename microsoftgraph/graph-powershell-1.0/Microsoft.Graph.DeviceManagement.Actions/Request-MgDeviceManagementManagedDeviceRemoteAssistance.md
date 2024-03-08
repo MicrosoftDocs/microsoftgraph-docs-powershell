@@ -11,6 +11,9 @@ ms.prod: intune
 ## SYNOPSIS
 Request remote assistance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Request (Default)
@@ -201,6 +204,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/request-mgdevicemanagementmanageddeviceremoteassistance)
 

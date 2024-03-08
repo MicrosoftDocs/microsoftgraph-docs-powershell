@@ -14,6 +14,9 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Note: To create a team, first create a group then add a team to it, see create team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -40569,6 +40572,7 @@ Microsoft Entra security groups can be written back as universalSecurityGroup.
 If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property isn't explicitly configured: Microsoft 365 groups are written back as universalDistributionGroup by defaultSecurity groups are written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+[New-MgGroup](/powershell/module/Microsoft.Graph.Groups/New-MgGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroup)
 

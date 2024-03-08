@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property versions in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -427,6 +430,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemversion)
 

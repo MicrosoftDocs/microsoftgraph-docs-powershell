@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new plannerTask.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -749,6 +752,7 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
+[New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask)
 

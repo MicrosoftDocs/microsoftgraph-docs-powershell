@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Send a new chatMessage in the specified channel or a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1046,6 +1049,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessage)
 

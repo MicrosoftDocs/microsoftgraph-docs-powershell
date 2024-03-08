@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property simulationAutomations in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -531,6 +534,7 @@ Read-only.
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationautomation)
 
