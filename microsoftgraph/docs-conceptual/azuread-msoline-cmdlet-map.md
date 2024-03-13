@@ -3,7 +3,7 @@ title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
 
 ms.topic: reference
-ms.date: 01/16/2024
+ms.date: 03/12/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -66,7 +66,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
-|Get-AzureADApplicationProxyApplication||
+|Get-AzureADApplicationProxyApplication|[Get-MgBetaApplication](/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication)|
 |Get-AzureADApplicationProxyApplicationConnectorGroup||
 |New-AzureADApplicationProxyApplication||
 |Remove-AzureADApplicationProxyApplication||
@@ -79,15 +79,15 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
-|Get-AzureADApplicationProxyConnector||
-|Get-AzureADApplicationProxyConnectorGroup||
-|Get-AzureADApplicationProxyConnectorGroupMembers||
-|Get-AzureADApplicationProxyConnectorMemberOf||
-|New-AzureADApplicationProxyConnectorGroup||
-|Remove-AzureADApplicationProxyConnectorGroup||
-|Set-AzureADApplicationProxyApplicationConnectorGroup||
-|Set-AzureADApplicationProxyConnector||
-|Set-AzureADApplicationProxyConnectorGroup||
+|Get-AzureADApplicationProxyConnector|[Get-MgBetaOnPremisePublishingProfileConnector](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector)|
+|Get-AzureADApplicationProxyConnectorGroup|[Get-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroup)|
+|Get-AzureADApplicationProxyConnectorGroupMembers|[Get-MgBetaOnPremisePublishingProfileConnectorGroupMember](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupmember)|
+|Get-AzureADApplicationProxyConnectorMemberOf|[Get-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectormemberofbyref)|
+|New-AzureADApplicationProxyConnectorGroup|[New-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)|
+|Remove-AzureADApplicationProxyConnectorGroup|[Remove-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileconnectorgroup)|
+|Set-AzureADApplicationProxyApplicationConnectorGroup|[Set-MgBetaApplicationConnectorGroupByRef](/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)|
+|Set-AzureADApplicationProxyConnector|[Update-MgBetaOnPremisePublishingProfileConnector](/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnector)|
+|Set-AzureADApplicationProxyConnectorGroup|[Update-MgBetaOnPremisePublishingProfileConnectorGroup](/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup)|
 
 ### Applications
 
@@ -587,7 +587,6 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy)|
 |Remove-AzureADPolicy <sup>1</sup>|[Remove-MgBetaPolicyTokenLifetimePolicy](/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)|
 |Remove-AzureADScopedRoleMembership|[Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember)|
-|Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalappmanagementpolicy)|
 |Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalclaimmappingpolicybyref)|
 |Remove-AzureADServicePrincipalPolicy <sup>1</sup>|[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)|
 |Set-AzureADAdministrativeUnit|[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit)|
