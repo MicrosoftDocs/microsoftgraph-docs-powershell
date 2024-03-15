@@ -38,11 +38,11 @@ Search results are provided in the response.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Basic call to perform a search request
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	requests = @(
@@ -68,10 +68,14 @@ $params = @{
 
 Invoke-MgQuerySearch -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will basic call to perform a search request
+
+### Example 2: Basic call to use queryTemplate
+
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	requests = @(
@@ -90,6 +94,10 @@ $params = @{
 }
 
 Invoke-MgQuerySearch -BodyParameter $params
+
+```
+This example will basic call to use querytemplate
+
 
 ## PARAMETERS
 

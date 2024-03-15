@@ -26,13 +26,17 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> 
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
+
+```
+This example shows how to use the Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

@@ -52,11 +52,11 @@ Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including an
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-copy-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Copy-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+
+```
+This example shows how to use the Copy-MgDriveItem Cmdlet.
+
 
 ## PARAMETERS
 

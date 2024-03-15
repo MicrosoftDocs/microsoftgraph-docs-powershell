@@ -52,11 +52,10 @@ Create a new checklistItem object as a subtask in a bigger todoTask.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-checklistitems-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	displayName = "Final sign-off from the team"
@@ -64,6 +63,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserTodoListTaskChecklistItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

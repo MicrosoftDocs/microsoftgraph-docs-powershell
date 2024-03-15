@@ -36,14 +36,18 @@ Delete an existing user activity for your app.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/projectrome-delete-activity-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CrossDeviceExperiences
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserActivity -UserId $userId -UserActivityId $userActivityId
+
+```
+This example shows how to use the Remove-MgBetaUserActivity Cmdlet.
+
 
 ## PARAMETERS
 

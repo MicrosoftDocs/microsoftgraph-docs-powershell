@@ -28,13 +28,17 @@ Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitysecuritydefaultsenforcementpolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

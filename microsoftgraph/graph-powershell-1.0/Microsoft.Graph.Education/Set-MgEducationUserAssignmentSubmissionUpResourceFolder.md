@@ -43,16 +43,6 @@ Only a student in the class can determine what files to upload in a given submis
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

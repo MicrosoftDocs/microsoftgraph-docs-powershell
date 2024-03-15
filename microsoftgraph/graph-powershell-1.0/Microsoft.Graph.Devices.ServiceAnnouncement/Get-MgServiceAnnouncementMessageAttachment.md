@@ -45,13 +45,17 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceannouncementattachment-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get an attachment message ID
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
+
+```
+This example will get an attachment message id
+
 
 ## PARAMETERS
 

@@ -62,13 +62,14 @@ Alternatively, reply-all to a message in a single action.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createreplyall-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgUserMessageReplyAll Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
 New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
 ```
+This example shows how to use the New-MgUserMessageReplyAll Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

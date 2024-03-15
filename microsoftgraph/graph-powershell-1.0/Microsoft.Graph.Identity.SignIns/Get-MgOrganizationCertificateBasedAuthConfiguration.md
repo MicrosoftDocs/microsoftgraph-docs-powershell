@@ -45,13 +45,17 @@ Get the properties of a certificateBasedAuthConfiguration object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId
+
+```
+This example shows how to use the Get-MgOrganizationCertificateBasedAuthConfiguration Cmdlet.
+
 
 ## PARAMETERS
 

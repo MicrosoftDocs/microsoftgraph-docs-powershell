@@ -31,13 +31,17 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrganizationId $connectedOrganizationId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor Cmdlet.
+
 
 ## PARAMETERS
 

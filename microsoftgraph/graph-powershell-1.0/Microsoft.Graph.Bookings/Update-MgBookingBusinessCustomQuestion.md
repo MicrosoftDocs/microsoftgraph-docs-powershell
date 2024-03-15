@@ -52,11 +52,11 @@ Update the properties of a bookingCustomQuestion object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 Update-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

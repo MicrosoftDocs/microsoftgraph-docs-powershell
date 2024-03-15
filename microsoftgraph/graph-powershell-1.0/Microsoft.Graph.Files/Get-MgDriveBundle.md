@@ -44,13 +44,17 @@ Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a bundle
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveBundle -DriveId $driveId -DriveItemId $driveItemId
+
+```
+This example will get a bundle
+
 
 ## PARAMETERS
 

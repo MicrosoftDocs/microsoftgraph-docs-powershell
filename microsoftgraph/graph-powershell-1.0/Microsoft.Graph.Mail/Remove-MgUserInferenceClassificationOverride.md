@@ -36,14 +36,18 @@ Delete an override specified by its ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId
+```
+This example shows how to use the Remove-MgUserInferenceClassificationOverride Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -40,13 +40,17 @@ If the printer is shared again in the future, any Windows users who had previous
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintShare -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Remove-MgPrintShare Cmdlet.
+
 
 ## PARAMETERS
 
