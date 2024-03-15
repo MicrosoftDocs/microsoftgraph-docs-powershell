@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitemanalytic)
 

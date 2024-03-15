@@ -17,6 +17,9 @@ Calling this API creates educationSubmission objects and displays the assignment
 The state of the assignment goes back to draft if there is any backend failure during publish process.
 To update the properties of a published assignment, see update an assignment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -197,6 +200,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Publish-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationmeassignment)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -216,6 +219,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschool)
 

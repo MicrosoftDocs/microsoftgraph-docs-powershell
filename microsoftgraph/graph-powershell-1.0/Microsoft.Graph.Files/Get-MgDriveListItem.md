@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,6 +346,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistitem)
 

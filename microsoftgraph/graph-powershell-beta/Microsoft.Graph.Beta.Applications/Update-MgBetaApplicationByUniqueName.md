@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByUniqueName?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -3503,6 +3506,7 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
+[Update-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByUniqueName?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename)
 

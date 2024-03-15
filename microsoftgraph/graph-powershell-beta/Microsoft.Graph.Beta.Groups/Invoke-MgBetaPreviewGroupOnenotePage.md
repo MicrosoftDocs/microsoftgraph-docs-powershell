@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupOnenotePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Preview (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgrouponenotepage)
 

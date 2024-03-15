@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -440,6 +443,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
+[New-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp)
 

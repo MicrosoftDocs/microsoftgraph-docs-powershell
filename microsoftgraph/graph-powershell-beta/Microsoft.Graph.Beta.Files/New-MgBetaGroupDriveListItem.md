@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -45515,6 +45518,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistitem)
 

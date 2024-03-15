@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberAsOrgContact](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsOrgContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -375,6 +378,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupTransitiveMemberAsOrgContact](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberAsOrgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouptransitivememberasorgcontact)
 

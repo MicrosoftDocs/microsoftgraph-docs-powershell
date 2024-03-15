@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property landingPages in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -546,6 +549,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLandingPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationlandingpage)
 

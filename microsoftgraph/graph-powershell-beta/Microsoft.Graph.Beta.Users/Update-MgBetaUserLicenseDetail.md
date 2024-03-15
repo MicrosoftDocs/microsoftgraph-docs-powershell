@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property licenseDetails in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Update-MgUserLicenseDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -354,6 +357,7 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[Update-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Update-MgUserLicenseDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserlicensedetail)
 

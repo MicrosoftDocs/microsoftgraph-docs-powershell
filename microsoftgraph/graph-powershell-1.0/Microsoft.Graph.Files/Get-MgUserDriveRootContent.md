@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -229,6 +232,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootcontent)
 

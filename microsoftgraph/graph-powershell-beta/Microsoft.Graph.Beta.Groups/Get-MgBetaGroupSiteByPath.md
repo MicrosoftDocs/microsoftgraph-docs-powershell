@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getByPath
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -216,6 +219,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitebypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitebypath)
 

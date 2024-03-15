@@ -14,6 +14,9 @@ When a retention label is applied to a folder, all the items in the folder are t
 For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -414,6 +417,7 @@ Read-only.
 Read-write.
 
 ## RELATED LINKS
+[Update-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRootRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriverootretentionlabel)
 

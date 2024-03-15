@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgSite](/powershell/module/Microsoft.Graph.Sites/Add-MgSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -15110,6 +15113,7 @@ Read-only.
     - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Add-MgSite](/powershell/module/Microsoft.Graph.Sites/Add-MgSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasite)
 
