@@ -47,22 +47,6 @@ Update-MgGroupDriveListItemVersionField -InputObject <IFilesIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property fields in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,6 +294,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Update-MgBetaGroupDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistitemversionfield)
+
 
 
 

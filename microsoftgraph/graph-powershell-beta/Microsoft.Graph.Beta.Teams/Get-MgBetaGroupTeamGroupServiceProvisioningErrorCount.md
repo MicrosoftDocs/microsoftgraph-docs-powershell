@@ -32,18 +32,6 @@ Get-MgBetaGroupTeamGroupServiceProvisioningErrorCount -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -215,6 +203,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgGroupTeamGroupServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamGroupServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamgroupserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamgroupserviceprovisioningerrorcount)
+
 
 
 

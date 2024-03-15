@@ -32,22 +32,6 @@ Remove-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property details for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -229,6 +213,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 [Remove-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail)
+
 
 
 

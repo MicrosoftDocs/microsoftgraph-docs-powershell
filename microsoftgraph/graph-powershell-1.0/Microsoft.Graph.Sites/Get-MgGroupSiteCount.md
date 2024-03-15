@@ -32,18 +32,6 @@ Get-MgGroupSiteCount -InputObject <ISitesIdentity> [-Filter <String>] [-Search <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -213,6 +201,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSiteCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecount)
+
 
 
 

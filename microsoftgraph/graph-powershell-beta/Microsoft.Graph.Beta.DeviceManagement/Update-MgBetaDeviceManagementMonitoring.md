@@ -30,18 +30,6 @@ Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceMan
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +341,7 @@ Supported locale values are: en-us, cs-cz, de-de, es-es, fr-fr, hu-hu, it-it, ja
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring)
+
 
 
 

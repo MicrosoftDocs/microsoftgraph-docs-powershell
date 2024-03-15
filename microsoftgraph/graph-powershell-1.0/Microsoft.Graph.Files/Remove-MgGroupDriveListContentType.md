@@ -32,22 +32,6 @@ Remove-MgGroupDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property contentTypes for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -263,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistcontenttype)
+
 
 
 

@@ -31,22 +31,6 @@ Get-MgReportMailboxUsageStorage -InputObject <IReportsIdentity> -OutFile <String
 ## DESCRIPTION
 Invoke function getMailboxUsageStorage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -199,6 +183,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportMailboxUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageStorage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage)
+
 
 
 

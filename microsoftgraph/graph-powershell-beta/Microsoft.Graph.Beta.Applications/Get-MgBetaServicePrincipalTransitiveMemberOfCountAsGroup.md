@@ -32,18 +32,6 @@ Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup -InputObject <IApplicat
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -221,6 +209,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalTransitiveMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOfCountAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup)
+
 
 
 

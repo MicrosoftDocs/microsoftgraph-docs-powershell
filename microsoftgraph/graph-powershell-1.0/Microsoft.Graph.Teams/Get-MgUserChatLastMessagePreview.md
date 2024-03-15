@@ -36,18 +36,6 @@ Preview of the last message sent in the chat.
 Null if no messages have been sent in the chat.
 Currently, only the list chats operation supports this property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -225,6 +213,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaUserChatLastMessagePreview](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatLastMessagePreview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatlastmessagepreview)
+
 
 
 

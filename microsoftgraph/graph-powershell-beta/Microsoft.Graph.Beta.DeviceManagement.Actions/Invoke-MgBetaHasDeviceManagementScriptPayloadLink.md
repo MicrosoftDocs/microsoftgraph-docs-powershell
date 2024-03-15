@@ -30,22 +30,6 @@ Invoke-MgBetaHasDeviceManagementScriptPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -193,6 +177,7 @@ BODY `<IPathsHo5CjoDevicemanagementDevicemanagementscriptsMicrosoftGraphHaspaylo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementscriptpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementscriptpayloadlink)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaGroupDriveListContentTypeColumnPositionCount -InputObject <IFilesIdent
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -228,6 +216,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveListContentTypeColumnPositionCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumnPositionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcontenttypecolumnpositioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistcontenttypecolumnpositioncount)
+
 
 
 

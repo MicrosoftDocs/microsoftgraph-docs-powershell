@@ -23,22 +23,6 @@ Get-MgExternal [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHea
 ## DESCRIPTION
 Get external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -131,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternal)
+
 
 
 

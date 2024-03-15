@@ -35,18 +35,6 @@ Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator -InputObject <IA
 ## DESCRIPTION
 Invoke function filterOperators
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -305,6 +293,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterapplicationsynchronizationtemplateschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfilterapplicationsynchronizationtemplateschemaoperator)
+
 
 
 

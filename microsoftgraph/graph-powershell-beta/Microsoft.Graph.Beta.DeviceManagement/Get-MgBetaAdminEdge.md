@@ -25,18 +25,6 @@ Get-MgBetaAdminEdge [-ExpandProperty <String[]>] [-Property <String[]>] [-Respon
 A container for Microsoft Edge resources.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -129,6 +117,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdge?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedge](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedge)
+
 
 
 

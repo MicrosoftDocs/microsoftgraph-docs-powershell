@@ -60,18 +60,6 @@ Remove-MgEntitlementManagementResourceRequestCatalogResourceRole -InputObject <I
 ## DESCRIPTION
 Delete navigation property resourceRoles for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageResourceId
@@ -345,6 +333,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourcerequestcatalogresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementresourcerequestcatalogresourcerole)
+
 
 
 

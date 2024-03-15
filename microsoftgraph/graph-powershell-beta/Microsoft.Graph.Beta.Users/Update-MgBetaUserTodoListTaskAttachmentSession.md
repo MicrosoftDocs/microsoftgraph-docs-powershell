@@ -50,22 +50,6 @@ Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property attachmentSessions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,6 +352,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Update-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskAttachmentSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskattachmentsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskattachmentsession)
+
 
 
 

@@ -40,18 +40,6 @@ When you call this API, the module appears in the student's class work list.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-publish-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -211,6 +199,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Publish-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule)
+
 
 
 

@@ -38,18 +38,6 @@ Only teachers can perform this action and only one module at a time can be pinne
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-pin-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -209,6 +197,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Invoke-MgBetaPinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaPinEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgpineducationclassmodule)
+
 
 
 

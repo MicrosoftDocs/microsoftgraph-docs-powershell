@@ -35,18 +35,6 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -255,6 +243,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaTeamPrimaryChannelMessageReplySoftDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/undo-mgteamprimarychannelmessagereplysoftdelete)
+
 
 
 

@@ -48,22 +48,6 @@ Add-MgBetaGroupToLifecyclePolicy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action addGroup
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +276,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Add-MgGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupToLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagrouptolifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagrouptolifecyclepolicy)
+
 
 
 

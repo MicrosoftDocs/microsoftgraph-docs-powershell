@@ -33,22 +33,6 @@ Get-MgBetaExternalConnectionItemActivityPerformedBy -InputObject <ISearchIdentit
 ## DESCRIPTION
 Represents an identity used to identify who is responsible for the activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -228,6 +212,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Get-MgExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivityPerformedBy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivityperformedby](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivityperformedby)
+
 
 
 

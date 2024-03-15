@@ -31,22 +31,6 @@ Get-MgReportOffice365ServiceUserCount -InputObject <IReportsIdentity> -OutFile <
 ## DESCRIPTION
 Invoke function getOffice365ServicesUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -199,6 +183,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ServiceUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365serviceusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365serviceusercount)
+
 
 
 

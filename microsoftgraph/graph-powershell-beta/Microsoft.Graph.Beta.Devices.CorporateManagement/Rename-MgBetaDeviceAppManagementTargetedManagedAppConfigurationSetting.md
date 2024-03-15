@@ -51,18 +51,6 @@ Rename-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ## DESCRIPTION
 Invoke action changeSettings
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -418,6 +406,7 @@ Applicable for reusable setting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/rename-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting)
+
 
 
 

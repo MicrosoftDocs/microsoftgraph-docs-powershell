@@ -32,22 +32,6 @@ Remove-MgBetaUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExtensionId
@@ -277,6 +261,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Remove-MgUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttaskextension)
+
 
 
 

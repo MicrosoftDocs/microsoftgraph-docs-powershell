@@ -30,22 +30,6 @@ Enable-MgBetaDeviceManagementTenantAttachRbac
 ## DESCRIPTION
 Invoke action enable
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -208,6 +192,7 @@ BODYPARAMETER `<IPaths118806LDevicemanagementTenantattachrbacMicrosoftGraphEnabl
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementtenantattachrbac](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementtenantattachrbac)
+
 
 
 

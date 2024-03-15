@@ -32,22 +32,6 @@ Unpublish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHe
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -270,6 +254,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Unpublish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupsitecontenttype)
+
 
 
 

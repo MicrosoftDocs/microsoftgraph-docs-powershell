@@ -42,22 +42,6 @@ Get-MgBetaServicePrincipalTokenIssuancePolicy -InputObject <IApplicationsIdentit
 The tokenIssuancePolicies assigned to this service principal.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -355,6 +339,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltokenissuancepolicy)
+
 
 
 

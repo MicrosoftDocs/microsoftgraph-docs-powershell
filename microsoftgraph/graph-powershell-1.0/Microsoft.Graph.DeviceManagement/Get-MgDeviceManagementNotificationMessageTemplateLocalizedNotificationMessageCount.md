@@ -34,18 +34,6 @@ Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCou
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -230,6 +218,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessagecount)
+
 
 
 

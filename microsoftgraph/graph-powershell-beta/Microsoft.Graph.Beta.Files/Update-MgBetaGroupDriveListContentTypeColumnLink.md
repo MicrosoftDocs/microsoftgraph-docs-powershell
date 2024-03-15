@@ -48,22 +48,6 @@ Update-MgBetaGroupDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columnLinks in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -333,6 +317,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Update-MgGroupDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdrivelistcontenttypecolumnlink)
+
 
 
 

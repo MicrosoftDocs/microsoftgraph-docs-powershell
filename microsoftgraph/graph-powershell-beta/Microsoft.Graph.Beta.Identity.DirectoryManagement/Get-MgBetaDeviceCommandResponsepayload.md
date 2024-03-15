@@ -29,22 +29,6 @@ Get-MgBetaDeviceCommandResponsepayload -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Get responsepayload from devices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CommandId
@@ -234,6 +218,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicecommandresponsepayload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicecommandresponsepayload)
+
 
 
 

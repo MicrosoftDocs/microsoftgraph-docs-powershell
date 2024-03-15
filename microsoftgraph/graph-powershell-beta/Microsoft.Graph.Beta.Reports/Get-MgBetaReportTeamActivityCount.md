@@ -31,22 +31,6 @@ Get-MgBetaReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <Stri
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -221,6 +205,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportTeamActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamActivityCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamactivitycount)
+
 
 
 

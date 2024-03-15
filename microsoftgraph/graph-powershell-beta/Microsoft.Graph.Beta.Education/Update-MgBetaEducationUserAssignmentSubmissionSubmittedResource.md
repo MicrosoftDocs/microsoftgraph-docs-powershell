@@ -52,22 +52,6 @@ Update-MgBetaEducationUserAssignmentSubmissionSubmittedResource -InputObject <IE
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -418,6 +402,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionsubmittedresource)
+
 
 
 

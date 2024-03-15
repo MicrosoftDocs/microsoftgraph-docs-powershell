@@ -32,22 +32,6 @@ Restore-MgDeviceManagementManagedDevicePasscode -InputObject <IDeviceManagementA
 ## DESCRIPTION
 Recover passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -206,6 +190,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Restore-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementmanageddevicepasscode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementmanageddevicepasscode)
+
 
 
 

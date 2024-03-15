@@ -46,22 +46,6 @@ New-MgUserDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,6 +300,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [New-MgBetaUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcontenttypecolumnlink)
+
 
 
 

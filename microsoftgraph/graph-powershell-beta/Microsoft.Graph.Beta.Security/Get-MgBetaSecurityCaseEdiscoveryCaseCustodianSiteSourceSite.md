@@ -33,22 +33,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSourceSite -InputObject <ISecur
 ## DESCRIPTION
 The SharePoint site associated with the siteSource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -288,6 +272,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodiansitesourcesite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodiansitesourcesite)
+
 
 
 

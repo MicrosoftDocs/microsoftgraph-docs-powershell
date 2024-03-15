@@ -50,22 +50,6 @@ Update-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -436,6 +420,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Update-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationextensionproperty)
+
 
 
 

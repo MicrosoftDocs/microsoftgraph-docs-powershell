@@ -54,22 +54,6 @@ Update-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property pages in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -892,6 +876,7 @@ Read-only.
 [Update-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotepage)
+
 
 
 

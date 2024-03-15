@@ -31,18 +31,6 @@ Get-MgTeamTagCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -205,6 +193,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaTeamTagCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamTagCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamtagcount)
+
 
 
 

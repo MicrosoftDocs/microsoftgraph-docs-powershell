@@ -60,22 +60,6 @@ Update-MgDriveRootListItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the navigation property listItem in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23612,6 +23596,7 @@ Read-only.
 [Update-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitem)
+
 
 
 

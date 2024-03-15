@@ -41,18 +41,6 @@ Get-MgBetaUserRegisteredDeviceAsEndpoint -InputObject <IUsersIdentity> [-ExpandP
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -358,6 +346,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserRegisteredDeviceAsEndpoint](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceAsEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasendpoint)
+
 
 
 

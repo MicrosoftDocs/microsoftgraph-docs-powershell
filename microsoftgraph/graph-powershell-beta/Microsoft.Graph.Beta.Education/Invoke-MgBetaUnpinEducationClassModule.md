@@ -38,18 +38,6 @@ Only teachers in the class can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-unpin-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Invoke-MgUnpinEducationClassModule](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnpinEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunpineducationclassmodule)
+
 
 
 

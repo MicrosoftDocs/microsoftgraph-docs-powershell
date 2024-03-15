@@ -77,18 +77,6 @@ New-MgGroupSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to termStores for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -571,6 +559,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathtermstore)
+
 
 
 

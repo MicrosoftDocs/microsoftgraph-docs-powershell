@@ -33,22 +33,6 @@ Restore-MgBetaGroupSiteListItemDocumentSetVersion -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Restore a document set version.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -301,6 +285,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Restore-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupsitelistitemdocumentsetversion)
+
 
 
 

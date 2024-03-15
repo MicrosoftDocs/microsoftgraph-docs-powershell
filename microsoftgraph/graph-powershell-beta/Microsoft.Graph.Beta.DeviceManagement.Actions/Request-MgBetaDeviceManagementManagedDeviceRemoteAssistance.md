@@ -32,22 +32,6 @@ Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance -InputObject <IDevic
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -247,6 +231,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [Request-MgDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementmanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementmanageddeviceremoteassistance)
+
 
 
 
