@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag
@@ -370,82 +370,85 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenantTag\>: tenantTag
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenantTag>`: tenantTag
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedByUserId \<String\>\]: The identifier for the account that created the tenant tag.
+  - `[CreatedByUserId <String>]`: The identifier for the account that created the tenant tag.
 Required.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the tenant tag was created.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the tenant tag was created.
 Required.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: The date and time when the tenant tag was deleted.
+  - `[DeletedDateTime <DateTime?>]`: The date and time when the tenant tag was deleted.
 Required.
 Read-only.
-  \[Description \<String\>\]: The description for the tenant tag.
+  - `[Description <String>]`: The description for the tenant tag.
 Optional.
 Read-only.
-  \[DisplayName \<String\>\]: The display name for the tenant tag.
+  - `[DisplayName <String>]`: The display name for the tenant tag.
 Required.
 Read-only.
-  \[LastActionByUserId \<String\>\]: The identifier for the account that lasted on the tenant tag.
+  - `[LastActionByUserId <String>]`: The identifier for the account that lasted on the tenant tag.
 Optional.
 Read-only.
-  \[LastActionDateTime \<DateTime?\>\]: The date and time the last action was performed against the tenant tag.
+  - `[LastActionDateTime <DateTime?>]`: The date and time the last action was performed against the tenant tag.
 Optional.
 Read-only.
-  \[Tenants \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>\]: The collection of managed tenants associated with the tenant tag.
+  - `[Tenants <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>]`: The collection of managed tenants associated with the tenant tag.
 Optional.
-    \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+    - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
-INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
-  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
-  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
-  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
-  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
-  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
-  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
-  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
-  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
-  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
-  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
-  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
-  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
-  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
-  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
-  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
-  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
-  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
-  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
-  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
-  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
-  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
-  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
-  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
-  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
-  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
-  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
-  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
-  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
-  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
+INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
+  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
+  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
+  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
+  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
+  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
+  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
+  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
+  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
+  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
+  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
+  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
+  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
+  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
+  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
+  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
+  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
+  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
+  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
+  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
+  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
+  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
+  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
+  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
+  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
+  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
+  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
+  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
+  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
 
-TENANTS \<IMicrosoftGraphManagedTenantsTenantInfo\[\]\>: The collection of managed tenants associated with the tenant tag.
+TENANTS <IMicrosoftGraphManagedTenantsTenantInfo- `[]`>: The collection of managed tenants associated with the tenant tag.
 Optional.
-  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
+  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
+
+
+
 

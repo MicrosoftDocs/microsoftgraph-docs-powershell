@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule
@@ -255,53 +255,56 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeviceComplianceScheduledActionForRules \<IMicrosoftGraphDeviceComplianceScheduledActionForRule\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[RuleName \<String\>\]: Name of the rule which this scheduled action applies to.
+    - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
 Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
-    \[ScheduledActionConfigurations \<IMicrosoftGraphDeviceComplianceActionItem\[\]\>\]: The list of scheduled action configurations for this compliance policy.
+    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem- `[]`>]`: The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
-      \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[ActionType \<DeviceComplianceActionType?\>\]: Scheduled Action Type Enum
-      \[GracePeriodHours \<Int32?\>\]: Number of hours to wait till the action will be enforced.
+      - `[ActionType <DeviceComplianceActionType?>]`: Scheduled Action Type Enum
+      - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced.
 Valid values 0 to 8760
-      \[NotificationMessageCcList \<String\[\]\>\]: A list of group IDs to speicify who to CC this notification message to.
-      \[NotificationTemplateId \<String\>\]: What notification Message template to use
+      - `[NotificationMessageCcList <String- `[]`>]`: A list of group IDs to speicify who to CC this notification message to.
+      - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-DEVICECOMPLIANCESCHEDULEDACTIONFORRULES \<IMicrosoftGraphDeviceComplianceScheduledActionForRule\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+DEVICECOMPLIANCESCHEDULEDACTIONFORRULES <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[RuleName \<String\>\]: Name of the rule which this scheduled action applies to.
+  - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
 Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
-  \[ScheduledActionConfigurations \<IMicrosoftGraphDeviceComplianceActionItem\[\]\>\]: The list of scheduled action configurations for this compliance policy.
+  - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem- `[]`>]`: The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ActionType \<DeviceComplianceActionType?\>\]: Scheduled Action Type Enum
-    \[GracePeriodHours \<Int32?\>\]: Number of hours to wait till the action will be enforced.
+    - `[ActionType <DeviceComplianceActionType?>]`: Scheduled Action Type Enum
+    - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced.
 Valid values 0 to 8760
-    \[NotificationMessageCcList \<String\[\]\>\]: A list of group IDs to speicify who to CC this notification message to.
-    \[NotificationTemplateId \<String\>\]: What notification Message template to use
+    - `[NotificationMessageCcList <String- `[]`>]`: A list of group IDs to speicify who to CC this notification message to.
+    - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
-  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule)
+
+
+
 

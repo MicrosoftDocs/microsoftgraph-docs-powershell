@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoperation
@@ -309,42 +309,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphLongRunningOperation\>: longRunningOperation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
+  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
+  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
-  \[Status \<String\>\]: longRunningOperationStatus
-  \[StatusDetail \<String\>\]: Details about the status of the operation.
+  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
+  - `[Status <String>]`: longRunningOperationStatus
+  - `[StatusDetail <String>]`: Details about the status of the operation.
 
-INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
-  \[AcronymId \<String\>\]: The unique identifier of acronym
-  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
-  \[BookmarkId \<String\>\]: The unique identifier of bookmark
-  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
-  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
-  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
-  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
-  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
-  \[IdentityId \<String\>\]: The unique identifier of identity
-  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
-  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
-  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
-  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
-  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
-  \[QnaId \<String\>\]: The unique identifier of qna
-  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
-  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
-  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
-  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
+  - `[BookmarkId <String>]`: The unique identifier of bookmark
+  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+  - `[ExternalItemId <String>]`: The unique identifier of externalItem
+  - `[IdentityId <String>]`: The unique identifier of identity
+  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
+  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
+  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
+  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
+  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[QnaId <String>]`: The unique identifier of qna
+  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
+  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
+  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
+  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydataoperation)
+
+
+
 

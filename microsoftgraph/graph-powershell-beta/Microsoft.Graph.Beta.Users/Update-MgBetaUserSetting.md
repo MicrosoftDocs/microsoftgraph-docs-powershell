@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting
@@ -337,250 +337,253 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserSettings\>: userSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserSettings>`: userSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ContactMergeSuggestions \<IMicrosoftGraphContactMergeSuggestions\>\]: contactMergeSuggestions
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ContactMergeSuggestions <IMicrosoftGraphContactMergeSuggestions>]`: contactMergeSuggestions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[IsEnabled \<Boolean?\>\]: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
+    - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
-  \[ContributionToContentDiscoveryAsOrganizationDisabled \<Boolean?\>\]: Reflects the Office Delve organization level setting.
+  - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting.
 When set to true, the organization doesn't have access to Office Delve.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
-  \[ContributionToContentDiscoveryDisabled \<Boolean?\>\]: When set to true, documents in the user's Office Delve are disabled.
+  - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, documents in the user's Office Delve are disabled.
 Users can control this setting in Office Delve.
-  \[ItemInsights \<IMicrosoftGraphUserInsightsSettings\>\]: userInsightsSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ItemInsights <IMicrosoftGraphUserInsightsSettings>]`: userInsightsSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[IsEnabled \<Boolean?\>\]: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
+    - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
 Default is true.
 Optional.
-  \[RegionalAndLanguageSettings \<IMicrosoftGraphRegionalAndLanguageSettings\>\]: regionalAndLanguageSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]`: regionalAndLanguageSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AuthoringLanguages \<IMicrosoftGraphLocaleInfo\[\]\>\]: Prioritized list of languages the user reads and authors in.Returned by default.
+    - `[AuthoringLanguages <IMicrosoftGraphLocaleInfo- `[]`>]`: Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-      \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-      \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+      - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+      - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-    \[DefaultDisplayLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-    \[DefaultRegionalFormat \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-    \[DefaultSpeechInputLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-    \[DefaultTranslationLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-    \[RegionalFormatOverrides \<IMicrosoftGraphRegionalFormatOverrides\>\]: regionalFormatOverrides
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Calendar \<String\>\]: The calendar to use, e.g., Gregorian Calendar.Returned by default.
-      \[FirstDayOfWeek \<String\>\]: The first day of the week to use, e.g., Sunday.Returned by default.
-      \[LongDateFormat \<String\>\]: The long date time format to be used for displaying dates.Returned by default.
-      \[LongTimeFormat \<String\>\]: The long time format to be used for displaying time.Returned by default.
-      \[ShortDateFormat \<String\>\]: The short date time format to be used for displaying dates.Returned by default.
-      \[ShortTimeFormat \<String\>\]: The short time format to be used for displaying time.Returned by default.
-      \[TimeZone \<String\>\]: The timezone to be used for displaying time.Returned by default.
-    \[TranslationPreferences \<IMicrosoftGraphTranslationPreferences\>\]: translationPreferences
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[LanguageOverrides \<IMicrosoftGraphTranslationLanguageOverride\[\]\>\]: Translation override behavior for languages, if any.Returned by default.
-        \[LanguageTag \<String\>\]: The language to apply the override.Returned by default.
+    - `[DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+    - `[DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>]`: localeInfo
+    - `[DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+    - `[DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+    - `[RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]`: regionalFormatOverrides
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Calendar <String>]`: The calendar to use, e.g., Gregorian Calendar.Returned by default.
+      - `[FirstDayOfWeek <String>]`: The first day of the week to use, e.g., Sunday.Returned by default.
+      - `[LongDateFormat <String>]`: The long date time format to be used for displaying dates.Returned by default.
+      - `[LongTimeFormat <String>]`: The long time format to be used for displaying time.Returned by default.
+      - `[ShortDateFormat <String>]`: The short date time format to be used for displaying dates.Returned by default.
+      - `[ShortTimeFormat <String>]`: The short time format to be used for displaying time.Returned by default.
+      - `[TimeZone <String>]`: The timezone to be used for displaying time.Returned by default.
+    - `[TranslationPreferences <IMicrosoftGraphTranslationPreferences>]`: translationPreferences
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride- `[]`>]`: Translation override behavior for languages, if any.Returned by default.
+        - `[LanguageTag <String>]`: The language to apply the override.Returned by default.
 Not nullable.
-        \[TranslationBehavior \<String\>\]: translationBehavior
-      \[TranslationBehavior \<String\>\]: translationBehavior
-      \[UntranslatedLanguages \<String\[\]\>\]: The list of languages the user does not need translated.
+        - `[TranslationBehavior <String>]`: translationBehavior
+      - `[TranslationBehavior <String>]`: translationBehavior
+      - `[UntranslatedLanguages <String- `[]`>]`: The list of languages the user does not need translated.
 This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences.
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
 Read only.
-  \[ShiftPreferences \<IMicrosoftGraphShiftPreferences\>\]: shiftPreferences
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+  - `[ShiftPreferences <IMicrosoftGraphShiftPreferences>]`: shiftPreferences
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
-      \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+    - `[Availability <IMicrosoftGraphShiftAvailability- `[]`>]`: Availability of the user to be scheduled for work and its recurrence pattern.
+      - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-          \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+          - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-          \[FirstDayOfWeek \<String\>\]: dayOfWeek
-          \[Index \<String\>\]: weekIndex
-          \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+          - `[FirstDayOfWeek <String>]`: dayOfWeek
+          - `[Index <String>]`: weekIndex
+          - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-          \[Month \<Int32?\>\]: The month in which the event occurs. 
+          - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
-          \[Type \<String\>\]: recurrencePatternType
-        \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+          - `[Type <String>]`: recurrencePatternType
+        - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-          \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+          - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-          \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+          - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-          \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+          - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-          \[Type \<String\>\]: recurrenceRangeType
-      \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
-        \[EndTime \<String\>\]: End time for the time range.
-        \[StartTime \<String\>\]: Start time for the time range.
-      \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
+          - `[Type <String>]`: recurrenceRangeType
+      - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
+        - `[EndTime <String>]`: End time for the time range.
+        - `[StartTime <String>]`: Start time for the time range.
+      - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
-CONTACTMERGESUGGESTIONS \<IMicrosoftGraphContactMergeSuggestions\>: contactMergeSuggestions
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CONTACTMERGESUGGESTIONS `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsEnabled \<Boolean?\>\]: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
+  - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
 Default value is true.
 
-INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
-  \[AppId \<String\>\]: Alternate key of servicePrincipal
-  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
-  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
-  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
-  \[NotificationId \<String\>\]: The unique identifier of notification
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
-  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
-  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[TrendingId \<String\>\]: The unique identifier of trending
-  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of servicePrincipal
+  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
+  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
+  - `[NotificationId <String>]`: The unique identifier of notification
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
+  - `[UserId <String>]`: The unique identifier of user
 
-ITEMINSIGHTS \<IMicrosoftGraphUserInsightsSettings\>: userInsightsSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsEnabled \<Boolean?\>\]: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
+  - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
 Default is true.
 Optional.
 
-REGIONALANDLANGUAGESETTINGS \<IMicrosoftGraphRegionalAndLanguageSettings\>: regionalAndLanguageSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+REGIONALANDLANGUAGESETTINGS `<IMicrosoftGraphRegionalAndLanguageSettings>`: regionalAndLanguageSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AuthoringLanguages \<IMicrosoftGraphLocaleInfo\[\]\>\]: Prioritized list of languages the user reads and authors in.Returned by default.
+  - `[AuthoringLanguages <IMicrosoftGraphLocaleInfo- `[]`>]`: Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-    \[DisplayName \<String\>\]: A name representing the user's locale in natural language, for example, 'English (United States)'.
-    \[Locale \<String\>\]: A locale representation for the user, which includes the user's preferred language and country/region.
+    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region.
 For example, 'en-us'.
 The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
-  \[DefaultDisplayLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultRegionalFormat \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultSpeechInputLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[DefaultTranslationLanguage \<IMicrosoftGraphLocaleInfo\>\]: localeInfo
-  \[RegionalFormatOverrides \<IMicrosoftGraphRegionalFormatOverrides\>\]: regionalFormatOverrides
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Calendar \<String\>\]: The calendar to use, e.g., Gregorian Calendar.Returned by default.
-    \[FirstDayOfWeek \<String\>\]: The first day of the week to use, e.g., Sunday.Returned by default.
-    \[LongDateFormat \<String\>\]: The long date time format to be used for displaying dates.Returned by default.
-    \[LongTimeFormat \<String\>\]: The long time format to be used for displaying time.Returned by default.
-    \[ShortDateFormat \<String\>\]: The short date time format to be used for displaying dates.Returned by default.
-    \[ShortTimeFormat \<String\>\]: The short time format to be used for displaying time.Returned by default.
-    \[TimeZone \<String\>\]: The timezone to be used for displaying time.Returned by default.
-  \[TranslationPreferences \<IMicrosoftGraphTranslationPreferences\>\]: translationPreferences
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[LanguageOverrides \<IMicrosoftGraphTranslationLanguageOverride\[\]\>\]: Translation override behavior for languages, if any.Returned by default.
-      \[LanguageTag \<String\>\]: The language to apply the override.Returned by default.
+  - `[DefaultDisplayLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultRegionalFormat <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultSpeechInputLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[DefaultTranslationLanguage <IMicrosoftGraphLocaleInfo>]`: localeInfo
+  - `[RegionalFormatOverrides <IMicrosoftGraphRegionalFormatOverrides>]`: regionalFormatOverrides
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Calendar <String>]`: The calendar to use, e.g., Gregorian Calendar.Returned by default.
+    - `[FirstDayOfWeek <String>]`: The first day of the week to use, e.g., Sunday.Returned by default.
+    - `[LongDateFormat <String>]`: The long date time format to be used for displaying dates.Returned by default.
+    - `[LongTimeFormat <String>]`: The long time format to be used for displaying time.Returned by default.
+    - `[ShortDateFormat <String>]`: The short date time format to be used for displaying dates.Returned by default.
+    - `[ShortTimeFormat <String>]`: The short time format to be used for displaying time.Returned by default.
+    - `[TimeZone <String>]`: The timezone to be used for displaying time.Returned by default.
+  - `[TranslationPreferences <IMicrosoftGraphTranslationPreferences>]`: translationPreferences
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LanguageOverrides <IMicrosoftGraphTranslationLanguageOverride- `[]`>]`: Translation override behavior for languages, if any.Returned by default.
+      - `[LanguageTag <String>]`: The language to apply the override.Returned by default.
 Not nullable.
-      \[TranslationBehavior \<String\>\]: translationBehavior
-    \[TranslationBehavior \<String\>\]: translationBehavior
-    \[UntranslatedLanguages \<String\[\]\>\]: The list of languages the user does not need translated.
+      - `[TranslationBehavior <String>]`: translationBehavior
+    - `[TranslationBehavior <String>]`: translationBehavior
+    - `[UntranslatedLanguages <String- `[]`>]`: The list of languages the user does not need translated.
 This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences.
 The list specifies neutral culture values that include the language code without any country or region association.
 For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France.
 Returned by default.
 Read only.
 
-SHIFTPREFERENCES \<IMicrosoftGraphShiftPreferences\>: shiftPreferences
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Availability \<IMicrosoftGraphShiftAvailability\[\]\>\]: Availability of the user to be scheduled for work and its recurrence pattern.
-    \[Recurrence \<IMicrosoftGraphPatternedRecurrence\>\]: patternedRecurrence
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Pattern \<IMicrosoftGraphRecurrencePattern\>\]: recurrencePattern
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DayOfMonth \<Int32?\>\]: The day of the month on which the event occurs.
+  - `[Availability <IMicrosoftGraphShiftAvailability- `[]`>]`: Availability of the user to be scheduled for work and its recurrence pattern.
+    - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs.
 Required if type is absoluteMonthly or absoluteYearly.
-        \[DaysOfWeek \<String\[\]\>\]: A collection of the days of the week on which the event occurs.
+        - `[DaysOfWeek <String- `[]`>]`: A collection of the days of the week on which the event occurs.
 The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday.
 If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern. 
 Required if type is weekly, relativeMonthly, or relativeYearly.
-        \[FirstDayOfWeek \<String\>\]: dayOfWeek
-        \[Index \<String\>\]: weekIndex
-        \[Interval \<Int32?\>\]: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
+        - `[FirstDayOfWeek <String>]`: dayOfWeek
+        - `[Index <String>]`: weekIndex
+        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type.
 Required.
-        \[Month \<Int32?\>\]: The month in which the event occurs. 
+        - `[Month <Int32?>]`: The month in which the event occurs. 
 This is a number from 1 to 12.
-        \[Type \<String\>\]: recurrencePatternType
-      \[Range \<IMicrosoftGraphRecurrenceRange\>\]: recurrenceRange
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[EndDate \<DateTime?\>\]: The date to stop applying the recurrence pattern.
+        - `[Type <String>]`: recurrencePatternType
+      - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern.
 Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date.
 Required if type is endDate.
-        \[NumberOfOccurrences \<Int32?\>\]: The number of times to repeat the event.
+        - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event.
 Required and must be positive if type is numbered.
-        \[RecurrenceTimeZone \<String\>\]: Time zone for the startDate and endDate properties.
+        - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties.
 Optional.
 If not specified, the time zone of the event is used.
-        \[StartDate \<DateTime?\>\]: The date to start applying the recurrence pattern.
+        - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern.
 The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event.
 Must be the same value as the start property of the recurring event.
 Required.
-        \[Type \<String\>\]: recurrenceRangeType
-    \[TimeSlots \<IMicrosoftGraphTimeRange\[\]\>\]: The time slot(s) preferred by the user.
-      \[EndTime \<String\>\]: End time for the time range.
-      \[StartTime \<String\>\]: Start time for the time range.
-    \[TimeZone \<String\>\]: Specifies the time zone for the indicated time.
+        - `[Type <String>]`: recurrenceRangeType
+    - `[TimeSlots <IMicrosoftGraphTimeRange- `[]`>]`: The time slot(s) preferred by the user.
+      - `[EndTime <String>]`: End time for the time range.
+      - `[StartTime <String>]`: Start time for the time range.
+    - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersetting)
+
+
+
 

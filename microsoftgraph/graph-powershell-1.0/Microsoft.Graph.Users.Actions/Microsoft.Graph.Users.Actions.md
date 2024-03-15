@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users.Actions
 Module Guid: 86213a25-bec4-4d70-8793-58670c62686f
 Download Help Link: {{ Update Download Link }}
@@ -526,4 +526,5 @@ Locale: en-US
 
 ### [Update-MgUserPassword](Update-MgUserPassword.md)
 {{ Fill in the Description }}
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Search
 Module Guid: 23722595-b623-452f-bafa-f436a7dbbff9
 Download Help Link: {{ Update Download Link }}
@@ -127,4 +127,5 @@ Locale: en-US
 
 ### [Update-MgSearchEntity](Update-MgSearchEntity.md)
 {{ Fill in the Description }}
+
 

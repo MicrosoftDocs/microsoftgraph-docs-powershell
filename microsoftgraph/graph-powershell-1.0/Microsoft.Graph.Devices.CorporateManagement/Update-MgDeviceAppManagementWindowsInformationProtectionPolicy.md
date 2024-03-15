@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy
@@ -577,7 +577,7 @@ Accept wildcard characters: False
 
 ### -MinutesOfInactivityBeforeDeviceLock
 Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked.
-Range is an integer X where 0 \<= X \<= 999.
+Range is an integer X where 0 `<= X `<= 999.
 
 ```yaml
 Type: Int32
@@ -630,7 +630,7 @@ Accept wildcard characters: False
 ### -PasswordMaximumAttemptCount
 The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
-Range is an integer X where 4 \<= X \<= 16 for desktop and 0 \<= X \<= 999 for mobile devices.
+Range is an integer X where 4 `<= X `<= 16 for desktop and 0 `<= X `<= 999 for mobile devices.
 
 ```yaml
 Type: Int32
@@ -961,242 +961,245 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>: Navigation property to list of security groups targeted for policy.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>: Navigation property to list of security groups targeted for policy.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionPolicy\>: Policy for Windows information protection without MDM
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Assignments \<IMicrosoftGraphTargetedManagedAppPolicyAssignment\[\]\>\]: Navigation property to list of security groups targeted for policy.
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionPolicy>`: Policy for Windows information protection without MDM
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of security groups targeted for policy.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AzureRightsManagementServicesAllowed \<Boolean?\>\]: Specifies whether to allow Azure RMS encryption for WIP
-  \[DataRecoveryCertificate \<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate\>\]: Windows Information Protection DataRecoveryCertificate
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Certificate \<Byte\[\]\>\]: Data recovery Certificate
-    \[Description \<String\>\]: Data recovery Certificate description
-    \[ExpirationDateTime \<DateTime?\>\]: Data recovery Certificate expiration datetime
-    \[SubjectName \<String\>\]: Data recovery Certificate subject name
-  \[EnforcementLevel \<WindowsInformationProtectionEnforcementLevel?\>\]: Possible values for WIP Protection enforcement levels
-  \[EnterpriseDomain \<String\>\]: Primary enterprise domain
-  \[EnterpriseIPRanges \<IMicrosoftGraphWindowsInformationProtectionIPRangeCollection\[\]\>\]: Sets the enterprise IP ranges that define the computers in the enterprise network.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AzureRightsManagementServicesAllowed <Boolean?>]`: Specifies whether to allow Azure RMS encryption for WIP
+  - `[DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]`: Windows Information Protection DataRecoveryCertificate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Certificate <Byte- `[]`>]`: Data recovery Certificate
+    - `[Description <String>]`: Data recovery Certificate description
+    - `[ExpirationDateTime <DateTime?>]`: Data recovery Certificate expiration datetime
+    - `[SubjectName <String>]`: Data recovery Certificate subject name
+  - `[EnforcementLevel <WindowsInformationProtectionEnforcementLevel?>]`: Possible values for WIP Protection enforcement levels
+  - `[EnterpriseDomain <String>]`: Primary enterprise domain
+  - `[EnterpriseIPRanges <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection- `[]`>]`: Sets the enterprise IP ranges that define the computers in the enterprise network.
 Data that comes from those computers will be considered part of the enterprise and protected.
 These locations will be considered a safe destination for enterprise data to be shared to
-    \[DisplayName \<String\>\]: Display name
-    \[Ranges \<IMicrosoftGraphIPRange\[\]\>\]: Collection of ip ranges
-  \[EnterpriseIPRangesAreAuthoritative \<Boolean?\>\]: Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
+    - `[DisplayName <String>]`: Display name
+    - `[Ranges <IMicrosoftGraphIPRange- `[]`>]`: Collection of ip ranges
+  - `[EnterpriseIPRangesAreAuthoritative <Boolean?>]`: Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
 Default is false
-  \[EnterpriseInternalProxyServers \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: This is the comma-separated list of internal proxy servers.
+  - `[EnterpriseInternalProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: This is the comma-separated list of internal proxy servers.
 For example, '157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59'.
 These proxies have been configured by the admin to connect to specific resources on the Internet.
 They are considered to be enterprise network locations.
 The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
-    \[DisplayName \<String\>\]: Display name
-    \[Resources \<String\[\]\>\]: Collection of resources
-  \[EnterpriseNetworkDomainNames \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: This is the list of domains that comprise the boundaries of the enterprise.
+    - `[DisplayName <String>]`: Display name
+    - `[Resources <String- `[]`>]`: Collection of resources
+  - `[EnterpriseNetworkDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: This is the list of domains that comprise the boundaries of the enterprise.
 Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
-  \[EnterpriseProtectedDomainNames \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: List of enterprise domains to be protected
-  \[EnterpriseProxiedDomains \<IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection\[\]\>\]: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
+  - `[EnterpriseProtectedDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: List of enterprise domains to be protected
+  - `[EnterpriseProxiedDomains <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection- `[]`>]`: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
 Connections to these resources are considered enterprise data.
 If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80).
 A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
-    \[DisplayName \<String\>\]: Display name
-    \[ProxiedDomains \<IMicrosoftGraphProxiedDomain\[\]\>\]: Collection of proxied domains
-      \[IPAddressOrFqdn \<String\>\]: The IP address or FQDN
-      \[Proxy \<String\>\]: Proxy IP or FQDN
-  \[EnterpriseProxyServers \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: This is a list of proxy servers.
+    - `[DisplayName <String>]`: Display name
+    - `[ProxiedDomains <IMicrosoftGraphProxiedDomain- `[]`>]`: Collection of proxied domains
+      - `[IPAddressOrFqdn <String>]`: The IP address or FQDN
+      - `[Proxy <String>]`: Proxy IP or FQDN
+  - `[EnterpriseProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: This is a list of proxy servers.
 Any server not on this list is considered non-enterprise
-  \[EnterpriseProxyServersAreAuthoritative \<Boolean?\>\]: Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
+  - `[EnterpriseProxyServersAreAuthoritative <Boolean?>]`: Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
 Default is false
-  \[ExemptAppLockerFiles \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>\]: Another way to input exempt apps through xml files
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExemptAppLockerFiles <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>]`: Another way to input exempt apps through xml files
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: The friendly name
-    \[File \<Byte\[\]\>\]: File as a byte array
-    \[FileHash \<String\>\]: SHA256 hash of the file
-    \[Version \<String\>\]: Version of the entity.
-  \[ExemptApps \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>\]: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
+    - `[DisplayName <String>]`: The friendly name
+    - `[File <Byte- `[]`>]`: File as a byte array
+    - `[FileHash <String>]`: SHA256 hash of the file
+    - `[Version <String>]`: Version of the entity.
+  - `[ExemptApps <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>]`: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
 This is because some critical enterprise applications may have compatibility problems with encrypted data.
-    \[Denied \<Boolean?\>\]: If true, app is denied protection or exemption.
-    \[Description \<String\>\]: The app's description.
-    \[DisplayName \<String\>\]: App display name.
-    \[ProductName \<String\>\]: The product name.
-    \[PublisherName \<String\>\]: The publisher name
-  \[IconsVisible \<Boolean?\>\]: Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu.
+    - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
+    - `[Description <String>]`: The app's description.
+    - `[DisplayName <String>]`: App display name.
+    - `[ProductName <String>]`: The product name.
+    - `[PublisherName <String>]`: The publisher name
+  - `[IconsVisible <Boolean?>]`: Determines whether overlays are added to icons for WIP protected files in Explorer and enterprise only app tiles in the Start menu.
 Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app
-  \[IndexingEncryptedStoresOrItemsBlocked \<Boolean?\>\]: This switch is for the Windows Search Indexer, to allow or disallow indexing of items
-  \[IsAssigned \<Boolean?\>\]: Indicates if the policy is deployed to any inclusion groups or not.
-  \[NeutralDomainResources \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: List of domain names that can used for work or personal resource
-  \[ProtectedAppLockerFiles \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>\]: Another way to input protected apps through xml files
-  \[ProtectedApps \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>\]: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
-  \[ProtectionUnderLockConfigRequired \<Boolean?\>\]: Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured
-  \[RevokeOnUnenrollDisabled \<Boolean?\>\]: This policy controls whether to revoke the WIP keys when a device unenrolls from the management service.
+  - `[IndexingEncryptedStoresOrItemsBlocked <Boolean?>]`: This switch is for the Windows Search Indexer, to allow or disallow indexing of items
+  - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
+  - `[NeutralDomainResources <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: List of domain names that can used for work or personal resource
+  - `[ProtectedAppLockerFiles <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>]`: Another way to input protected apps through xml files
+  - `[ProtectedApps <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>]`: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
+  - `[ProtectionUnderLockConfigRequired <Boolean?>]`: Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured
+  - `[RevokeOnUnenrollDisabled <Boolean?>]`: This policy controls whether to revoke the WIP keys when a device unenrolls from the management service.
 If set to 1 (Don't revoke keys), the keys will not be revoked and the user will continue to have access to protected files after unenrollment.
 If the keys are not revoked, there will be no revoked file cleanup subsequently.
-  \[RightsManagementServicesTemplateId \<String\>\]: TemplateID GUID to use for RMS encryption.
+  - `[RightsManagementServicesTemplateId <String>]`: TemplateID GUID to use for RMS encryption.
 The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access
-  \[SmbAutoEncryptedFileExtensions \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>\]: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the policy was created.
-  \[Description \<String\>\]: The policy's description.
-  \[DisplayName \<String\>\]: Policy display name.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last time the policy was modified.
-  \[Version \<String\>\]: Version of the entity.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[SmbAutoEncryptedFileExtensions <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>]`: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
+  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+  - `[Description <String>]`: The policy's description.
+  - `[DisplayName <String>]`: Policy display name.
+  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+  - `[Version <String>]`: Version of the entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DaysWithoutContactBeforeUnenroll \<Int32?\>\]: Offline interval before app data is wiped (days)
-  \[MdmEnrollmentUrl \<String\>\]: Enrollment url for the MDM
-  \[MinutesOfInactivityBeforeDeviceLock \<Int32?\>\]: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. 
-Range is an integer X where 0 \<= X \<= 999.
-  \[NumberOfPastPinsRemembered \<Int32?\>\]: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
+  - `[DaysWithoutContactBeforeUnenroll <Int32?>]`: Offline interval before app data is wiped (days)
+  - `[MdmEnrollmentUrl <String>]`: Enrollment url for the MDM
+  - `[MinutesOfInactivityBeforeDeviceLock <Int32?>]`: Specifies the maximum amount of time (in minutes) allowed after the device is idle that will cause the device to become PIN or password locked. 
+Range is an integer X where 0 <= X <= 999.
+  - `[NumberOfPastPinsRemembered <Int32?>]`: Integer value that specifies the number of past PINs that can be associated to a user account that can't be reused.
 The largest number you can configure for this policy setting is 50.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then storage of previous PINs is not required.
 This node was added in Windows 10, version 1511.
 Default is 0.
-  \[PasswordMaximumAttemptCount \<Int32?\>\]: The number of authentication failures allowed before the device will be wiped.
+  - `[PasswordMaximumAttemptCount <Int32?>]`: The number of authentication failures allowed before the device will be wiped.
 A value of 0 disables device wipe functionality.
-Range is an integer X where 4 \<= X \<= 16 for desktop and 0 \<= X \<= 999 for mobile devices.
-  \[PinExpirationDays \<Int32?\>\]: Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it.
+Range is an integer X where 4 <= X <= 16 for desktop and 0 <= X <= 999 for mobile devices.
+  - `[PinExpirationDays <Int32?>]`: Integer value specifies the period of time (in days) that a PIN can be used before the system requires the user to change it.
 The largest number you can configure for this policy setting is 730.
 The lowest number you can configure for this policy setting is 0.
 If this policy is set to 0, then the user's PIN will never expire.
 This node was added in Windows 10, version 1511.
 Default is 0.
-  \[PinLowercaseLetters \<WindowsInformationProtectionPinCharacterRequirements?\>\]: Pin Character Requirements
-  \[PinMinimumLength \<Int32?\>\]: Integer value that sets the minimum number of characters required for the PIN.
+  - `[PinLowercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]`: Pin Character Requirements
+  - `[PinMinimumLength <Int32?>]`: Integer value that sets the minimum number of characters required for the PIN.
 Default value is 4.
 The lowest number you can configure for this policy setting is 4.
 The largest number you can configure must be less than the number configured in the Maximum PIN length policy setting or the number 127, whichever is the lowest.
-  \[PinSpecialCharacters \<WindowsInformationProtectionPinCharacterRequirements?\>\]: Pin Character Requirements
-  \[PinUppercaseLetters \<WindowsInformationProtectionPinCharacterRequirements?\>\]: Pin Character Requirements
-  \[RevokeOnMdmHandoffDisabled \<Boolean?\>\]: New property in RS2, pending documentation
-  \[WindowsHelloForBusinessBlocked \<Boolean?\>\]: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
+  - `[PinSpecialCharacters <WindowsInformationProtectionPinCharacterRequirements?>]`: Pin Character Requirements
+  - `[PinUppercaseLetters <WindowsInformationProtectionPinCharacterRequirements?>]`: Pin Character Requirements
+  - `[RevokeOnMdmHandoffDisabled <Boolean?>]`: New property in RS2, pending documentation
+  - `[WindowsHelloForBusinessBlocked <Boolean?>]`: Boolean value that sets Windows Hello for Business as a method for signing into Windows.
 
-DATARECOVERYCERTIFICATE \<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate\>: Windows Information Protection DataRecoveryCertificate
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Certificate \<Byte\[\]\>\]: Data recovery Certificate
-  \[Description \<String\>\]: Data recovery Certificate description
-  \[ExpirationDateTime \<DateTime?\>\]: Data recovery Certificate expiration datetime
-  \[SubjectName \<String\>\]: Data recovery Certificate subject name
+DATARECOVERYCERTIFICATE `<IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>`: Windows Information Protection DataRecoveryCertificate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Certificate <Byte- `[]`>]`: Data recovery Certificate
+  - `[Description <String>]`: Data recovery Certificate description
+  - `[ExpirationDateTime <DateTime?>]`: Data recovery Certificate expiration datetime
+  - `[SubjectName <String>]`: Data recovery Certificate subject name
 
-ENTERPRISEINTERNALPROXYSERVERS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is the comma-separated list of internal proxy servers.
+ENTERPRISEINTERNALPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is the comma-separated list of internal proxy servers.
 For example, '157.54.14.28, 157.54.11.118, 10.202.14.167, 157.53.14.163, 157.69.210.59'.
 These proxies have been configured by the admin to connect to specific resources on the Internet.
 They are considered to be enterprise network locations.
 The proxies are only leveraged in configuring the EnterpriseProxiedDomains policy to force traffic to the matched domains through these proxies
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEIPRANGES \<IMicrosoftGraphWindowsInformationProtectionIPRangeCollection\[\]\>: Sets the enterprise IP ranges that define the computers in the enterprise network.
+ENTERPRISEIPRANGES <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection- `[]`>: Sets the enterprise IP ranges that define the computers in the enterprise network.
 Data that comes from those computers will be considered part of the enterprise and protected.
 These locations will be considered a safe destination for enterprise data to be shared to
-  \[DisplayName \<String\>\]: Display name
-  \[Ranges \<IMicrosoftGraphIPRange\[\]\>\]: Collection of ip ranges
+  - `[DisplayName <String>]`: Display name
+  - `[Ranges <IMicrosoftGraphIPRange- `[]`>]`: Collection of ip ranges
 
-ENTERPRISENETWORKDOMAINNAMES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is the list of domains that comprise the boundaries of the enterprise.
+ENTERPRISENETWORKDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is the list of domains that comprise the boundaries of the enterprise.
 Data from one of these domains that is sent to a device will be considered enterprise data and protected These locations will be considered a safe destination for enterprise data to be shared to
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEPROTECTEDDOMAINNAMES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: List of enterprise domains to be protected
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+ENTERPRISEPROTECTEDDOMAINNAMES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: List of enterprise domains to be protected
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
-ENTERPRISEPROXIEDDOMAINS \<IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection\[\]\>: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
+ENTERPRISEPROXIEDDOMAINS <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection- `[]`>: Contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
 Connections to these resources are considered enterprise data.
 If a proxy is paired with a cloud resource, traffic to the cloud resource will be routed through the enterprise network via the denoted proxy server (on Port 80).
 A proxy server used for this purpose must also be configured using the EnterpriseInternalProxyServers policy
-  \[DisplayName \<String\>\]: Display name
-  \[ProxiedDomains \<IMicrosoftGraphProxiedDomain\[\]\>\]: Collection of proxied domains
-    \[IPAddressOrFqdn \<String\>\]: The IP address or FQDN
-    \[Proxy \<String\>\]: Proxy IP or FQDN
+  - `[DisplayName <String>]`: Display name
+  - `[ProxiedDomains <IMicrosoftGraphProxiedDomain- `[]`>]`: Collection of proxied domains
+    - `[IPAddressOrFqdn <String>]`: The IP address or FQDN
+    - `[Proxy <String>]`: Proxy IP or FQDN
 
-ENTERPRISEPROXYSERVERS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: This is a list of proxy servers.
+ENTERPRISEPROXYSERVERS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: This is a list of proxy servers.
 Any server not on this list is considered non-enterprise
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
-EXEMPTAPPLOCKERFILES \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>: Another way to input exempt apps through xml files
-  \[Id \<String\>\]: The unique identifier for an entity.
+EXEMPTAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>: Another way to input exempt apps through xml files
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The friendly name
-  \[File \<Byte\[\]\>\]: File as a byte array
-  \[FileHash \<String\>\]: SHA256 hash of the file
-  \[Version \<String\>\]: Version of the entity.
+  - `[DisplayName <String>]`: The friendly name
+  - `[File <Byte- `[]`>]`: File as a byte array
+  - `[FileHash <String>]`: SHA256 hash of the file
+  - `[Version <String>]`: Version of the entity.
 
-EXEMPTAPPS \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
+EXEMPTAPPS <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>: Exempt applications can also access enterprise data, but the data handled by those applications are not protected.
 This is because some critical enterprise applications may have compatibility problems with encrypted data.
-  \[Denied \<Boolean?\>\]: If true, app is denied protection or exemption.
-  \[Description \<String\>\]: The app's description.
-  \[DisplayName \<String\>\]: App display name.
-  \[ProductName \<String\>\]: The product name.
-  \[PublisherName \<String\>\]: The publisher name
+  - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
+  - `[Description <String>]`: The app's description.
+  - `[DisplayName <String>]`: App display name.
+  - `[ProductName <String>]`: The product name.
+  - `[PublisherName <String>]`: The publisher name
 
-INPUTOBJECT \<IDevicesCorporateManagementIdentity\>: Identity Parameter
-  \[AndroidManagedAppProtectionId \<String\>\]: The unique identifier of androidManagedAppProtection
-  \[DefaultManagedAppProtectionId \<String\>\]: The unique identifier of defaultManagedAppProtection
-  \[DeviceCompliancePolicyStateId \<String\>\]: The unique identifier of deviceCompliancePolicyState
-  \[DeviceConfigurationStateId \<String\>\]: The unique identifier of deviceConfigurationState
-  \[DeviceInstallStateId \<String\>\]: The unique identifier of deviceInstallState
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementTroubleshootingEventId \<String\>\]: The unique identifier of deviceManagementTroubleshootingEvent
-  \[IosManagedAppProtectionId \<String\>\]: The unique identifier of iosManagedAppProtection
-  \[ManagedAppOperationId \<String\>\]: The unique identifier of managedAppOperation
-  \[ManagedAppPolicyId \<String\>\]: The unique identifier of managedAppPolicy
-  \[ManagedAppRegistrationId \<String\>\]: The unique identifier of managedAppRegistration
-  \[ManagedAppStatusId \<String\>\]: The unique identifier of managedAppStatus
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[ManagedDeviceMobileAppConfigurationAssignmentId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationAssignment
-  \[ManagedDeviceMobileAppConfigurationDeviceStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
-  \[ManagedDeviceMobileAppConfigurationId \<String\>\]: The unique identifier of managedDeviceMobileAppConfiguration
-  \[ManagedDeviceMobileAppConfigurationUserStatusId \<String\>\]: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
-  \[ManagedEBookAssignmentId \<String\>\]: The unique identifier of managedEBookAssignment
-  \[ManagedEBookId \<String\>\]: The unique identifier of managedEBook
-  \[ManagedMobileAppId \<String\>\]: The unique identifier of managedMobileApp
-  \[MdmWindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of mdmWindowsInformationProtectionPolicy
-  \[MobileAppAssignmentId \<String\>\]: The unique identifier of mobileAppAssignment
-  \[MobileAppCategoryId \<String\>\]: The unique identifier of mobileAppCategory
-  \[MobileAppContentFileId \<String\>\]: The unique identifier of mobileAppContentFile
-  \[MobileAppContentId \<String\>\]: The unique identifier of mobileAppContent
-  \[MobileAppId \<String\>\]: The unique identifier of mobileApp
-  \[MobileContainedAppId \<String\>\]: The unique identifier of mobileContainedApp
-  \[TargetedManagedAppConfigurationId \<String\>\]: The unique identifier of targetedManagedAppConfiguration
-  \[TargetedManagedAppPolicyAssignmentId \<String\>\]: The unique identifier of targetedManagedAppPolicyAssignment
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserInstallStateSummaryId \<String\>\]: The unique identifier of userInstallStateSummary
-  \[VppTokenId \<String\>\]: The unique identifier of vppToken
-  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
-  \[WindowsInformationProtectionAppLockerFileId \<String\>\]: The unique identifier of windowsInformationProtectionAppLockerFile
-  \[WindowsInformationProtectionPolicyId \<String\>\]: The unique identifier of windowsInformationProtectionPolicy
+INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+  - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+  - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+  - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+  - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+  - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+  - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+  - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
+  - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
+  - `[MobileAppId <String>]`: The unique identifier of mobileApp
+  - `[MobileContainedAppId <String>]`: The unique identifier of mobileContainedApp
+  - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+  - `[VppTokenId <String>]`: The unique identifier of vppToken
+  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+  - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
-NEUTRALDOMAINRESOURCES \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: List of domain names that can used for work or personal resource
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+NEUTRALDOMAINRESOURCES <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: List of domain names that can used for work or personal resource
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
-PROTECTEDAPPLOCKERFILES \<IMicrosoftGraphWindowsInformationProtectionAppLockerFile\[\]\>: Another way to input protected apps through xml files
-  \[Id \<String\>\]: The unique identifier for an entity.
+PROTECTEDAPPLOCKERFILES <IMicrosoftGraphWindowsInformationProtectionAppLockerFile- `[]`>: Another way to input protected apps through xml files
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The friendly name
-  \[File \<Byte\[\]\>\]: File as a byte array
-  \[FileHash \<String\>\]: SHA256 hash of the file
-  \[Version \<String\>\]: Version of the entity.
+  - `[DisplayName <String>]`: The friendly name
+  - `[File <Byte- `[]`>]`: File as a byte array
+  - `[FileHash <String>]`: SHA256 hash of the file
+  - `[Version <String>]`: Version of the entity.
 
-PROTECTEDAPPS \<IMicrosoftGraphWindowsInformationProtectionApp\[\]\>: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
-  \[Denied \<Boolean?\>\]: If true, app is denied protection or exemption.
-  \[Description \<String\>\]: The app's description.
-  \[DisplayName \<String\>\]: App display name.
-  \[ProductName \<String\>\]: The product name.
-  \[PublisherName \<String\>\]: The publisher name
+PROTECTEDAPPS <IMicrosoftGraphWindowsInformationProtectionApp- `[]`>: Protected applications can access enterprise data and the data handled by those applications are protected with encryption
+  - `[Denied <Boolean?>]`: If true, app is denied protection or exemption.
+  - `[Description <String>]`: The app's description.
+  - `[DisplayName <String>]`: App display name.
+  - `[ProductName <String>]`: The product name.
+  - `[PublisherName <String>]`: The publisher name
 
-SMBAUTOENCRYPTEDFILEEXTENSIONS \<IMicrosoftGraphWindowsInformationProtectionResourceCollection\[\]\>: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
-  \[DisplayName \<String\>\]: Display name
-  \[Resources \<String\[\]\>\]: Collection of resources
+SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResourceCollection- `[]`>: Specifies a list of file extensions, so that files with these extensions are encrypted when copying from an SMB share within the corporate boundary
+  - `[DisplayName <String>]`: Display name
+  - `[Resources <String- `[]`>]`: Collection of resources
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementwindowsinformationprotectionpolicy)
+
+
+
 

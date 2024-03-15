@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance
@@ -325,74 +325,77 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Comment \<String\>\]: 
-  \[ProposedNewTime \<IMicrosoftGraphTimeSlot\>\]: timeSlot
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[End \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+BODYPARAMETER `<IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Comment <String>]`: 
+  - `[ProposedNewTime <IMicrosoftGraphTimeSlot>]`: timeSlot
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-    \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-  \[SendResponse \<Boolean?\>\]: 
+    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
-  \[AccessReviewStageId \<String\>\]: The unique identifier of accessReviewStage
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
-PROPOSEDNEWTIME \<IMicrosoftGraphTimeSlot\>: timeSlot
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[End \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
+PROPOSEDNEWTIME `<IMicrosoftGraphTimeSlot>`: timeSlot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-  \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineusereventinstance)
+
+
+
 
