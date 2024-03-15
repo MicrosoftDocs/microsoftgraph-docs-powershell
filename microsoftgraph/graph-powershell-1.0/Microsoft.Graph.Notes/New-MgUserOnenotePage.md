@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgUserOnenotePage
@@ -13,9 +12,6 @@ Create a new OneNote page in the default section of the default notebook.
 To create a page in a different section in the default notebook, you can use the sectionName query parameter.
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -60,8 +56,21 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-pages-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -445,433 +454,428 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphOnenotePage>`: onenotePage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+BODYPARAMETER \<IMicrosoftGraphOnenotePage\>: onenotePage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page.
+  \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Content <Byte- `[]`>]`: The page's HTML content.
-  - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+  \[Content \<Byte\[\]\>\]: The page's HTML content.
+  \[ContentUrl \<String\>\]: The URL for the page's HTML content. 
 Read-only.
-  - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
+  \[CreatedByAppId \<String\>\]: The unique identifier of the application that created the page.
 Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Level <Int32?>]`: The indentation level of the page.
+  \[Level \<Int32?\>\]: The indentation level of the page.
 Read-only.
-  - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Order <Int32?>]`: The order of the page within its parent section.
+  \[Links \<IMicrosoftGraphPageLinks\>\]: pageLinks
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Href \<String\>\]: The URL of the link.
+    \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+  \[Order \<Int32?\>\]: The order of the page within its parent section.
 Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+  \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[DisplayName <String>]`: The name of the notebook.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[DisplayName \<String\>\]: The name of the notebook.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page.
+    \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+    \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default notebook.
 Read-only.
-    - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+    \[IsShared \<Boolean?\>\]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-    - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+    \[Links \<IMicrosoftGraphNotebookLinks\>\]: notebookLinks
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+    \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the notebook.
 Read-only.
 Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[DisplayName \<String\>\]: The name of the notebook.
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+      \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page.
+      \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+      \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+      \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
+      \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the section.
 Read-only.
 Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: The name of the notebook.
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+      \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
+Read-only.
+      \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the section group.
+Read-only.
+Nullable.
+        \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[DisplayName \<String\>\]: The name of the notebook.
+        \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+        \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page.
+        \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-        - `[Id <String>]`: The unique identifier for an entity.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
+        \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default section.
 Read-only.
-        - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
-Read-only.
-Nullable.
-        - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
-Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
-Read-only.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
-Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+        \[Links \<IMicrosoftGraphSectionLinks\>\]: sectionLinks
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+          \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+        \[Pages \<IMicrosoftGraphOnenotePage\[\]\>\]: The collection of pages in the section. 
 Read-only.
 Nullable.
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+        \[PagesUrl \<String\>\]: The pages endpoint where you can get details for all the pages in the section.
 Read-only.
-    - `[UserRole <String>]`: onenoteUserRole
-  - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-  - `[Title <String>]`: The title of the page.
-  - `[UserTags <String- `[]`>]`: 
+        \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+        \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
+      \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the section group.
+Read-only.
+    \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+Read-only.
+    \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the notebook.
+Read-only.
+Nullable.
+    \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the notebook.
+Read-only.
+    \[UserRole \<String\>\]: onenoteUserRole
+  \[ParentSection \<IMicrosoftGraphOnenoteSection\>\]: onenoteSection
+  \[Title \<String\>\]: The title of the page.
+  \[UserTags \<String\[\]\>\]: 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
-  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<INotesIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
+  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[UserId \<String\>\]: The unique identifier of user
 
-LINKS `<IMicrosoftGraphPageLinks>`: pageLinks
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Href <String>]`: The URL of the link.
-  - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
+LINKS \<IMicrosoftGraphPageLinks\>: pageLinks
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Href \<String\>\]: The URL of the link.
+  \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
 
-PARENTNOTEBOOK `<IMicrosoftGraphNotebook>`: notebook
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+PARENTNOTEBOOK \<IMicrosoftGraphNotebook\>: notebook
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: The name of the notebook.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DisplayName \<String\>\]: The name of the notebook.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page.
+  \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+  \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default notebook.
 Read-only.
-  - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+  \[IsShared \<Boolean?\>\]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-  - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+  \[Links \<IMicrosoftGraphNotebookLinks\>\]: notebookLinks
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Href \<String\>\]: The URL of the link.
+    \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+  \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the notebook.
 Read-only.
 Nullable.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[DisplayName <String>]`: The name of the notebook.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[DisplayName \<String\>\]: The name of the notebook.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page.
+    \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
+    \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+    \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
+    \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the section.
 Read-only.
 Nullable.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
+    \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
-Read-only.
-Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
-The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
-The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page.
-Read-only.
-      - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
-Read-only.
-      - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+    \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the section group.
 Read-only.
 Nullable.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[DisplayName \<String\>\]: The name of the notebook.
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page.
-Read-only.
-        - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-        - `[Content <Byte- `[]`>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content. 
-Read-only.
-        - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
-Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+      \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Level <Int32?>]`: The indentation level of the page.
+      \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-        - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Order <Int32?>]`: The order of the page within its parent section.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-        - `[Title <String>]`: The title of the page.
-        - `[UserTags <String- `[]`>]`: 
-      - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+      \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default section.
 Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
-Read-only.
-  - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
-Read-only.
-  - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+      \[Links \<IMicrosoftGraphSectionLinks\>\]: sectionLinks
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+        \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[Pages \<IMicrosoftGraphOnenotePage\[\]\>\]: The collection of pages in the section. 
 Read-only.
 Nullable.
-  - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+        \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
+The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[UserRole <String>]`: onenoteUserRole
+        \[Self \<String\>\]: The endpoint where you can get details about the page.
+Read-only.
+        \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+        \[Content \<Byte\[\]\>\]: The page's HTML content.
+        \[ContentUrl \<String\>\]: The URL for the page's HTML content. 
+Read-only.
+        \[CreatedByAppId \<String\>\]: The unique identifier of the application that created the page.
+Read-only.
+        \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the page was last modified.
+The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+        \[Level \<Int32?\>\]: The indentation level of the page.
+Read-only.
+        \[Links \<IMicrosoftGraphPageLinks\>\]: pageLinks
+          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+          \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+          \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+        \[Order \<Int32?\>\]: The order of the page within its parent section.
+Read-only.
+        \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+        \[ParentSection \<IMicrosoftGraphOnenoteSection\>\]: onenoteSection
+        \[Title \<String\>\]: The title of the page.
+        \[UserTags \<String\[\]\>\]: 
+      \[PagesUrl \<String\>\]: The pages endpoint where you can get details for all the pages in the section.
+Read-only.
+      \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+      \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
+    \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the section group.
+Read-only.
+  \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
+Read-only.
+  \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the notebook.
+Read-only.
+Nullable.
+  \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the notebook.
+Read-only.
+  \[UserRole \<String\>\]: onenoteUserRole
 
-PARENTSECTION `<IMicrosoftGraphOnenoteSection>`: onenoteSection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+PARENTSECTION \<IMicrosoftGraphOnenoteSection\>: onenoteSection
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: The name of the notebook.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[DisplayName \<String\>\]: The name of the notebook.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page.
+  \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section.
+  \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default section.
 Read-only.
-  - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The URL of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Pages <IMicrosoftGraphOnenotePage- `[]`>]`: The collection of pages in the section. 
+  \[Links \<IMicrosoftGraphSectionLinks\>\]: sectionLinks
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Href \<String\>\]: The URL of the link.
+    \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+  \[Pages \<IMicrosoftGraphOnenotePage\[\]\>\]: The collection of pages in the section. 
 Read-only.
 Nullable.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page.
+    \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Content <Byte- `[]`>]`: The page's HTML content.
-    - `[ContentUrl <String>]`: The URL for the page's HTML content. 
+    \[Content \<Byte\[\]\>\]: The page's HTML content.
+    \[ContentUrl \<String\>\]: The URL for the page's HTML content. 
 Read-only.
-    - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page.
+    \[CreatedByAppId \<String\>\]: The unique identifier of the application that created the page.
 Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified.
+    \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the page was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-    - `[Level <Int32?>]`: The indentation level of the page.
+    \[Level \<Int32?\>\]: The indentation level of the page.
 Read-only.
-    - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[Order <Int32?>]`: The order of the page within its parent section.
+    \[Links \<IMicrosoftGraphPageLinks\>\]: pageLinks
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+    \[Order \<Int32?\>\]: The order of the page within its parent section.
 Read-only.
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+    \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[DisplayName \<String\>\]: The name of the notebook.
+      \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+      \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page.
+      \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-      - `[Id <String>]`: The unique identifier for an entity.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook.
+      \[IsDefault \<Boolean?\>\]: Indicates whether this is the user's default notebook.
 Read-only.
-      - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared.
+      \[IsShared \<Boolean?\>\]: Indicates whether the notebook is shared.
 If true, the contents of the notebook can be seen by people other than the owner.
 Read-only.
-      - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the notebook.
+      \[Links \<IMicrosoftGraphNotebookLinks\>\]: notebookLinks
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[OneNoteClientUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+        \[OneNoteWebUrl \<IMicrosoftGraphExternalLink\>\]: externalLink
+      \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the notebook.
 Read-only.
 Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: The name of the notebook.
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified.
+        \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[DisplayName \<String\>\]: The name of the notebook.
+        \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+        \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the notebook was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created.
+        \[CreatedDateTime \<DateTime?\>\]: The date and time when the page was created.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page.
+        \[Self \<String\>\]: The endpoint where you can get details about the page.
 Read-only.
-        - `[Id <String>]`: The unique identifier for an entity.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-        - `[SectionGroups <IMicrosoftGraphSectionGroup- `[]`>]`: The section groups in the section.
-Read-only.
-Nullable.
-        - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
-Read-only.
-        - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the section group.
+        \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+        \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
+        \[SectionGroups \<IMicrosoftGraphSectionGroup\[\]\>\]: The section groups in the section.
 Read-only.
 Nullable.
-        - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group.
+        \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the section group.
 Read-only.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
-Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection- `[]`>]`: The sections in the notebook.
+        \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the section group.
 Read-only.
 Nullable.
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook.
+        \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the section group.
 Read-only.
-      - `[UserRole <String>]`: onenoteUserRole
-    - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-    - `[Title <String>]`: The title of the page.
-    - `[UserTags <String- `[]`>]`: 
-  - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section.
+      \[SectionGroupsUrl \<String\>\]: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook.
 Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-  - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
+      \[Sections \<IMicrosoftGraphOnenoteSection\[\]\>\]: The sections in the notebook.
+Read-only.
+Nullable.
+      \[SectionsUrl \<String\>\]: The URL for the sections navigation property, which returns all the sections in the notebook.
+Read-only.
+      \[UserRole \<String\>\]: onenoteUserRole
+    \[ParentSection \<IMicrosoftGraphOnenoteSection\>\]: onenoteSection
+    \[Title \<String\>\]: The title of the page.
+    \[UserTags \<String\[\]\>\]: 
+  \[PagesUrl \<String\>\]: The pages endpoint where you can get details for all the pages in the section.
+Read-only.
+  \[ParentNotebook \<IMicrosoftGraphNotebook\>\]: notebook
+  \[ParentSectionGroup \<IMicrosoftGraphSectionGroup\>\]: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotepage)
-
-
-
-
 

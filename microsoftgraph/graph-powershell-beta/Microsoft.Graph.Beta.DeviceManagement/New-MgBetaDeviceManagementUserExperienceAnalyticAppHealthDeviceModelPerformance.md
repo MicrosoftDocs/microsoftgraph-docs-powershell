@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -282,39 +295,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance>`: The user experience analytics device model performance entity contains device model performance details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance\>: The user experience analytics device model performance entity contains device model performance details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the model.
+  \[ActiveDeviceCount \<Int32?\>\]: The number of active devices for the model.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
+  \[DeviceManufacturer \<String\>\]: The manufacturer name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[DeviceModel <String>]`: The model name of the device.
+  \[DeviceModel \<String\>\]: The model name of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes.
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[MeanTimeToFailureInMinutes \<Int32?\>\]: The mean time to failure for the application in minutes.
 Valid values 0 to 2147483647.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[ModelAppHealthScore <Double?>]`: The application health score of the device model.
+  \[ModelAppHealthScore \<Double?\>\]: The application health score of the device model.
 Valid values 0 to 100.
 Supports: $filter, $select, $OrderBy.
 Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthdevicemodelperformance)
-
-
-
-
 

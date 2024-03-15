@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem
 schema: 2.0.0
-ms.prod: project-rome
 ---
 
 # Update-MgBetaUserActivityHistoryItem
 
 ## SYNOPSIS
 Delete an existing history item for an existing user activity.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,8 +49,21 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 ## DESCRIPTION
 Delete an existing history item for an existing user activity.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/projectrome-delete-historyitem-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -395,14 +404,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIVITY `<IMicrosoftGraphUserActivity>`: userActivity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+ACTIVITY \<IMicrosoftGraphUserActivity\>: userActivity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActivationUrl <String>]`: Required.
+  \[ActivationUrl \<String\>\]: Required.
 URL used to launch the activity in the best native experience represented by the appId.
 Might launch a web-based app if no native app exists.
-  - `[ActivitySourceHost <String>]`: Required.
+  \[ActivitySourceHost \<String\>\]: Required.
 URL for the domain representing the cross-platform identity mapping for the app.
 Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center.
 The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain.
@@ -410,69 +419,69 @@ For example: https://contoso.com or https://myapp.contoso.com but NOT https://my
 You must have a unique file and domain (or sub domain) per cross-platform app identity.
 For example, a separate file and domain is needed for Word vs.
 PowerPoint.
-  - `[AppActivityId <String>]`: Required.
+  \[AppActivityId \<String\>\]: Required.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-  - `[AppDisplayName <String>]`: Optional.
+  \[AppDisplayName \<String\>\]: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-  - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentUrl <String>]`: Optional.
+  \[ContentInfo \<IMicrosoftGraphJson\>\]: Json
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentUrl \<String\>\]: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
-  - `[CreatedDateTime <DateTime?>]`: Set by the server.
+  \[CreatedDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object was created on the server.
-  - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+  \[ExpirationDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object expired on the server.
-  - `[FallbackUrl <String>]`: Optional.
+  \[FallbackUrl \<String\>\]: Optional.
 URL used to launch the activity in a web-based app, if available.
-  - `[HistoryItems <IMicrosoftGraphActivityHistoryItem- `[]`>]`: Optional.
+  \[HistoryItems \<IMicrosoftGraphActivityHistoryItem\[\]\>\]: Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ActiveDurationSeconds <Int32?>]`: 
-    - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[ExpirationDateTime <DateTime?>]`: 
-    - `[LastActiveDateTime <DateTime?>]`: 
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[StartedDateTime <DateTime?>]`: 
-    - `[Status <String>]`: status
-    - `[UserTimezone <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: Set by the server.
+    \[ActiveDurationSeconds \<Int32?\>\]: 
+    \[Activity \<IMicrosoftGraphUserActivity\>\]: userActivity
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[ExpirationDateTime \<DateTime?\>\]: 
+    \[LastActiveDateTime \<DateTime?\>\]: 
+    \[LastModifiedDateTime \<DateTime?\>\]: 
+    \[StartedDateTime \<DateTime?\>\]: 
+    \[Status \<String\>\]: status
+    \[UserTimezone \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object was modified on the server.
-  - `[Status <String>]`: status
-  - `[UserTimezone <String>]`: Optional.
+  \[Status \<String\>\]: status
+  \[UserTimezone \<String\>\]: Optional.
 The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
-  - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
+  \[VisualElements \<IMicrosoftGraphVisualInfo\>\]: visualInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Attribution \<IMicrosoftGraphImageInfo\>\]: imageInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AddImageQuery \<Boolean?\>\]: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
 For example - a high contrast image
-      - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
-      - `[AlternativeText <String>]`: 
-      - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
-    - `[BackgroundColor <String>]`: Optional.
+      \[AlternateText \<String\>\]: Optional; alt-text accessible content for the image
+      \[AlternativeText \<String\>\]: 
+      \[IconUrl \<String\>\]: Optional; URI that points to an icon which represents the application used to generate the activity
+    \[BackgroundColor \<String\>\]: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-    - `[Content <IMicrosoftGraphJson>]`: Json
-    - `[Description <String>]`: Optional.
+    \[Content \<IMicrosoftGraphJson\>\]: Json
+    \[Description \<String\>\]: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
-    - `[DisplayText <String>]`: Required.
+    \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
-BODYPARAMETER `<IMicrosoftGraphActivityHistoryItem>`: activityHistoryItem
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphActivityHistoryItem\>: activityHistoryItem
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDurationSeconds <Int32?>]`: 
-  - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[ActiveDurationSeconds \<Int32?\>\]: 
+  \[Activity \<IMicrosoftGraphUserActivity\>\]: userActivity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[ActivationUrl <String>]`: Required.
+    \[ActivationUrl \<String\>\]: Required.
 URL used to launch the activity in the best native experience represented by the appId.
 Might launch a web-based app if no native app exists.
-    - `[ActivitySourceHost <String>]`: Required.
+    \[ActivitySourceHost \<String\>\]: Required.
 URL for the domain representing the cross-platform identity mapping for the app.
 Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center.
 The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain.
@@ -480,68 +489,63 @@ For example: https://contoso.com or https://myapp.contoso.com but NOT https://my
 You must have a unique file and domain (or sub domain) per cross-platform app identity.
 For example, a separate file and domain is needed for Word vs.
 PowerPoint.
-    - `[AppActivityId <String>]`: Required.
+    \[AppActivityId \<String\>\]: Required.
 The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional.
+    \[AppDisplayName \<String\>\]: Optional.
 Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
-    - `[ContentInfo <IMicrosoftGraphJson>]`: Json
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentUrl <String>]`: Optional.
+    \[ContentInfo \<IMicrosoftGraphJson\>\]: Json
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContentUrl \<String\>\]: Optional.
 Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
-    - `[CreatedDateTime <DateTime?>]`: Set by the server.
+    \[CreatedDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object was created on the server.
-    - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+    \[ExpirationDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object expired on the server.
-    - `[FallbackUrl <String>]`: Optional.
+    \[FallbackUrl \<String\>\]: Optional.
 URL used to launch the activity in a web-based app, if available.
-    - `[HistoryItems <IMicrosoftGraphActivityHistoryItem- `[]`>]`: Optional.
+    \[HistoryItems \<IMicrosoftGraphActivityHistoryItem\[\]\>\]: Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
-    - `[LastModifiedDateTime <DateTime?>]`: Set by the server.
+    \[LastModifiedDateTime \<DateTime?\>\]: Set by the server.
 DateTime in UTC when the object was modified on the server.
-    - `[Status <String>]`: status
-    - `[UserTimezone <String>]`: Optional.
+    \[Status \<String\>\]: status
+    \[UserTimezone \<String\>\]: Optional.
 The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
-    - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
+    \[VisualElements \<IMicrosoftGraphVisualInfo\>\]: visualInfo
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Attribution \<IMicrosoftGraphImageInfo\>\]: imageInfo
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[AddImageQuery \<Boolean?\>\]: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.
 For example - a high contrast image
-        - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
-        - `[AlternativeText <String>]`: 
-        - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
-      - `[BackgroundColor <String>]`: Optional.
+        \[AlternateText \<String\>\]: Optional; alt-text accessible content for the image
+        \[AlternativeText \<String\>\]: 
+        \[IconUrl \<String\>\]: Optional; URI that points to an icon which represents the application used to generate the activity
+      \[BackgroundColor \<String\>\]: Optional.
 Background color used to render the activity in the UI - brand color for the application source of the activity.
 Must be a valid hex color
-      - `[Content <IMicrosoftGraphJson>]`: Json
-      - `[Description <String>]`: Optional.
+      \[Content \<IMicrosoftGraphJson\>\]: Json
+      \[Description \<String\>\]: Optional.
 Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
-      - `[DisplayText <String>]`: Required.
+      \[DisplayText \<String\>\]: Required.
 Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[ExpirationDateTime <DateTime?>]`: 
-  - `[LastActiveDateTime <DateTime?>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[StartedDateTime <DateTime?>]`: 
-  - `[Status <String>]`: status
-  - `[UserTimezone <String>]`: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[ExpirationDateTime \<DateTime?\>\]: 
+  \[LastActiveDateTime \<DateTime?\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[StartedDateTime \<DateTime?\>\]: 
+  \[Status \<String\>\]: status
+  \[UserTimezone \<String\>\]: 
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserActivityId <String>]`: The unique identifier of userActivity
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICrossDeviceExperiencesIdentity\>: Identity Parameter
+  \[ActivityHistoryItemId \<String\>\]: The unique identifier of activityHistoryItem
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserActivityId \<String\>\]: The unique identifier of userActivity
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem)
-
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
 Create a new featureRolloutPolicy object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,14 +30,12 @@ New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPo
 ## DESCRIPTION
 Create a new featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicies-post-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.SignIns
+```
 
 $params = @{
 	displayName = "PassthroughAuthentication rollout policy"
@@ -52,11 +46,6 @@ $params = @{
 }
 
 New-MgPolicyFeatureRolloutPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgPolicyFeatureRolloutPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -291,34 +280,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphFeatureRolloutPolicy\>: featureRolloutPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: Nullable.
+  \[AppliesTo \<IMicrosoftGraphDirectoryObject\[\]\>\]: Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Description <String>]`: A description for this feature rollout policy.
-  - `[DisplayName <String>]`: The display name for this  feature rollout policy.
-  - `[Feature <String>]`: stagedFeatureName
-  - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
-  - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
+  \[Description \<String\>\]: A description for this feature rollout policy.
+  \[DisplayName \<String\>\]: The display name for this  feature rollout policy.
+  \[Feature \<String\>\]: stagedFeatureName
+  \[IsAppliedToOrganization \<Boolean?\>\]: Indicates whether this feature rollout policy should be applied to the entire organization.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
-[New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy)
-
-
-
 

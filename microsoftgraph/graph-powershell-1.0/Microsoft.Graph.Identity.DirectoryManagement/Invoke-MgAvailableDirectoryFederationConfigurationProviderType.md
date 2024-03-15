@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function availableProviderTypes
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,22 @@ Invoke-MgAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter
 
 ## DESCRIPTION
 Invoke function availableProviderTypes
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -158,11 +171,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgavailabledirectoryfederationconfigurationprovidertype)
-
-
-
-
 

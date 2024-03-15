@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsupportedregion
@@ -29,6 +29,22 @@ New-MgBetaDeviceManagementVirtualEndpointSupportedRegion -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create new navigation property to supportedRegions for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -232,21 +248,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcSupportedRegion\>: cloudPcSupportedRegion
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The name for the supported region.
+  \[DisplayName \<String\>\]: The name for the supported region.
 Read-only.
-  - `[RegionGroup <String>]`: cloudPcRegionGroup
-  - `[RegionStatus <String>]`: cloudPcSupportedRegionStatus
-  - `[SupportedSolution <String>]`: cloudPcManagementService
+  \[RegionGroup \<String\>\]: cloudPcRegionGroup
+  \[RegionStatus \<String\>\]: cloudPcSupportedRegionStatus
+  \[SupportedSolution \<String\>\]: cloudPcManagementService
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsupportedregion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointsupportedregion)
-
-
-
-
 

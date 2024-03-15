@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to appConsentRequests for identityGovernance
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,28 +32,20 @@ New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppCons
 Create new navigation property to appConsentRequests for identityGovernance
 
 ## EXAMPLES
-### Example 1:  List all appConsentRequests
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceAppConsentRequest
+
+### EXAMPLE 2
 ```
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
-
-```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 Get-MgIdentityGovernanceAppConsentRequest -Filter "userConsentRequests/any (u:u/status eq 'InProgress')"
-```
-This example shows how to use the New-MgIdentityGovernanceAppConsentRequest Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -267,124 +256,120 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAppConsentRequest\>: appConsentRequest
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppDisplayName <String>]`: The display name of the app for which consent is requested.
+  \[AppDisplayName \<String\>\]: The display name of the app for which consent is requested.
 Required.
 Supports $filter (eq only) and $orderby.
-  - `[AppId <String>]`: The identifier of the application.
+  \[AppId \<String\>\]: The identifier of the application.
 Required.
 Supports $filter (eq only) and $orderby.
-  - `[PendingScopes <IMicrosoftGraphAppConsentRequestScope- `[]`>]`: A list of pending scopes waiting for approval.
+  \[PendingScopes \<IMicrosoftGraphAppConsentRequestScope\[\]\>\]: A list of pending scopes waiting for approval.
 Required.
-    - `[DisplayName <String>]`: The name of the scope.
-  - `[UserConsentRequests <IMicrosoftGraphUserConsentRequest- `[]`>]`: A list of pending user consent requests.
+    \[DisplayName \<String\>\]: The name of the scope.
+  \[UserConsentRequests \<IMicrosoftGraphUserConsentRequest\[\]\>\]: A list of pending user consent requests.
 Supports $filter (eq).
-    - `[ApprovalId <String>]`: The identifier of the approval of the request.
-    - `[CompletedDateTime <DateTime?>]`: The request completion date time.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+    \[ApprovalId \<String\>\]: The identifier of the approval of the request.
+    \[CompletedDateTime \<DateTime?\>\]: The request completion date time.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The request creation date time.
-    - `[CustomData <String>]`: Free text field to define any custom data for the request.
+        \[Id \<String\>\]: Unique identifier for the identity.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[CreatedDateTime \<DateTime?\>\]: The request creation date time.
+    \[CustomData \<String\>\]: Free text field to define any custom data for the request.
 Not used.
-    - `[Status <String>]`: The status of the request.
+    \[Status \<String\>\]: The status of the request.
 Not nullable.
 The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated.
 Not nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Approval <IMicrosoftGraphApproval>]`: approval
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Approval \<IMicrosoftGraphApproval\>\]: approval
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Stages <IMicrosoftGraphApprovalStage- `[]`>]`: A collection of stages in the approval decision.
-        - `[Id <String>]`: The unique identifier for an entity.
+      \[Stages \<IMicrosoftGraphApprovalStage\[\]\>\]: A collection of stages in the approval decision.
+        \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-        - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review.
+        \[AssignedToMe \<Boolean?\>\]: Indicates whether the stage is assigned to the calling user to review.
 Read-only.
-        - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage.
+        \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval stage.
 Read-only.
-        - `[Justification <String>]`: The justification associated with the approval stage decision.
-        - `[ReviewResult <String>]`: The result of this approval record.
+        \[Justification \<String\>\]: The justification associated with the approval stage decision.
+        \[ReviewResult \<String\>\]: The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
-        - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
-        - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded.
+        \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+        \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-        - `[Status <String>]`: The stage status.
+        \[Status \<String\>\]: The stage status.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
-    - `[Reason <String>]`: The user's justification for requiring access to the app.
+    \[Reason \<String\>\]: The user's justification for requiring access to the app.
 Supports $filter (eq only) and $orderby.
 
-PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope- `[]`>: A list of pending scopes waiting for approval.
+PENDINGSCOPES \<IMicrosoftGraphAppConsentRequestScope\[\]\>: A list of pending scopes waiting for approval.
 Required.
-  - `[DisplayName <String>]`: The name of the scope.
+  \[DisplayName \<String\>\]: The name of the scope.
 
-USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest- `[]`>: A list of pending user consent requests.
+USERCONSENTREQUESTS \<IMicrosoftGraphUserConsentRequest\[\]\>: A list of pending user consent requests.
 Supports $filter (eq).
-  - `[ApprovalId <String>]`: The identifier of the approval of the request.
-  - `[CompletedDateTime <DateTime?>]`: The request completion date time.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[ApprovalId \<String\>\]: The identifier of the approval of the request.
+  \[CompletedDateTime \<DateTime?\>\]: The request completion date time.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The request creation date time.
-  - `[CustomData <String>]`: Free text field to define any custom data for the request.
+      \[Id \<String\>\]: Unique identifier for the identity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The request creation date time.
+  \[CustomData \<String\>\]: Free text field to define any custom data for the request.
 Not used.
-  - `[Status <String>]`: The status of the request.
+  \[Status \<String\>\]: The status of the request.
 Not nullable.
 The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated.
 Not nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Approval <IMicrosoftGraphApproval>]`: approval
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Approval \<IMicrosoftGraphApproval\>\]: approval
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Stages <IMicrosoftGraphApprovalStage- `[]`>]`: A collection of stages in the approval decision.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Stages \<IMicrosoftGraphApprovalStage\[\]\>\]: A collection of stages in the approval decision.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review.
+      \[AssignedToMe \<Boolean?\>\]: Indicates whether the stage is assigned to the calling user to review.
 Read-only.
-      - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage.
+      \[DisplayName \<String\>\]: The label provided by the policy creator to identify an approval stage.
 Read-only.
-      - `[Justification <String>]`: The justification associated with the approval stage decision.
-      - `[ReviewResult <String>]`: The result of this approval record.
+      \[Justification \<String\>\]: The justification associated with the approval stage decision.
+      \[ReviewResult \<String\>\]: The result of this approval record.
 Possible values include: NotReviewed, Approved, Denied.
-      - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
-      - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded.
+      \[ReviewedBy \<IMicrosoftGraphIdentity\>\]: identity
+      \[ReviewedDateTime \<DateTime?\>\]: The date and time when a decision was recorded.
 The date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-      - `[Status <String>]`: The stage status.
+      \[Status \<String\>\]: The stage status.
 Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
-  - `[Reason <String>]`: The user's justification for requiring access to the app.
+  \[Reason \<String\>\]: The user's justification for requiring access to the app.
 Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest)
-
-
-
 

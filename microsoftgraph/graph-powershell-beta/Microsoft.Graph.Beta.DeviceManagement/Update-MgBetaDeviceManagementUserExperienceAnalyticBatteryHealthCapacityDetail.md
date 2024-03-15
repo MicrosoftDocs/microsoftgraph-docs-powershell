@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail
@@ -31,6 +31,22 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthCapacityDetails in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity >` 80%, devices with capacity 50-80% and devices with capacity `< 50 %.This API provides the count of devices in these 3 categories..
+The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity \> 80%, devices with capacity 50-80% and devices with capacity \< 50 %.This API provides the count of devices in these 3 categories..
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -252,25 +268,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails>`: The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity > 80%, devices with capacity 50-80% and devices with capacity < 50 %.This API provides the count of devices in these 3 categories..
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthCapacityDetails\>: The user experience analytics battery health capacity entity contains count of devices broken down into 3 categories - devices with capacity \> 80%, devices with capacity 50-80% and devices with capacity \< 50 %.This API provides the count of devices in these 3 categories..
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDevices <Int32?>]`: Number of active devices within the tenant.
+  \[ActiveDevices \<Int32?\>\]: Number of active devices within the tenant.
 Valid values 0 to 2147483647
-  - `[BatteryCapacityFair <Int32?>]`: Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%.
+  \[BatteryCapacityFair \<Int32?\>\]: Number of devices whose battery maximum capacity is greater than 50% but lesser than 80%.
 Valid values 0 to 2147483647
-  - `[BatteryCapacityGood <Int32?>]`: Number of devices whose battery maximum capacity is greater than 80%.
+  \[BatteryCapacityGood \<Int32?\>\]: Number of devices whose battery maximum capacity is greater than 80%.
 Valid values 0 to 2147483647
-  - `[BatteryCapacityPoor <Int32?>]`: Number of devices whose battery maximum capacity is lesser than 50%.
+  \[BatteryCapacityPoor \<Int32?\>\]: Number of devices whose battery maximum capacity is lesser than 50%.
 Valid values 0 to 2147483647
-  - `[LastRefreshedDateTime <DateTime?>]`: Recorded date time of this capacity details instance.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Recorded date time of this capacity details instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthcapacitydetail)
-
-
-
-
 

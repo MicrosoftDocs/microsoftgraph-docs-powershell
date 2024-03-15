@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule
@@ -31,8 +31,9 @@ Test-MgBetaGroupDynamicMembershipRule
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaGroupDynamicMembershipRule Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	MemberId = "319b41e8-d9e4-42f8-bdc9-741113f48b33"
@@ -40,8 +41,6 @@ $params = @{
 }
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaGroupDynamicMembershipRule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -198,15 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MemberId <String>]`: 
-  - `[MembershipRule <String>]`:
+BODYPARAMETER \<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MemberId \<String\>\]: 
+  \[MembershipRule \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
-
-
-
 

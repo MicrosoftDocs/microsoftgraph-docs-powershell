@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,6 +32,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceB
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -340,54 +353,49 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion>`: The user experience analytics application performance entity contains app performance details by OS version.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion\>: The user experience analytics application performance entity contains app performance details by OS version.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDeviceCount <Int32?>]`: The number of devices where the application has been active.
+  \[ActiveDeviceCount \<Int32?\>\]: The number of devices where the application has been active.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[AppCrashCount <Int32?>]`: The number of crashes for the application.
+  \[AppCrashCount \<Int32?\>\]: The number of crashes for the application.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[AppDisplayName <String>]`: The friendly name of the application.
+  \[AppDisplayName \<String\>\]: The friendly name of the application.
 Possible values are: Outlook, Excel.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[AppName <String>]`: The name of the application.
+  \[AppName \<String\>\]: The name of the application.
 Possible values are: outlook.exe, excel.exe.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[AppPublisher <String>]`: The publisher of the application.
+  \[AppPublisher \<String\>\]: The publisher of the application.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[AppUsageDuration <Int32?>]`: The total usage time of the application in minutes.
+  \[AppUsageDuration \<Int32?\>\]: The total usage time of the application in minutes.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes.
+  \[MeanTimeToFailureInMinutes \<Int32?\>\]: The mean time to failure for the application in minutes.
 Valid values 0 to 2147483647.
 Supports: $select, $OrderBy.
 Read-only.
 Valid values -2147483648 to 2147483647
-  - `[OSBuildNumber <String>]`: The OS build number of the application.
+  \[OSBuildNumber \<String\>\]: The OS build number of the application.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[OSVersion <String>]`: The OS version of the application.
+  \[OSVersion \<String\>\]: The OS version of the application.
 Supports: $select, $OrderBy.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion)
-
-
-
-
 

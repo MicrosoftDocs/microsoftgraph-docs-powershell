@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to vppTokens for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken>
 
 ## DESCRIPTION
 Create new navigation property to vppTokens for deviceAppManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -437,47 +446,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+BODYPARAMETER \<IMicrosoftGraphVppToken\>: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
 This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
 You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 You can upload multiple Apple VPP Business or Education tokens.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppleId <String>]`: The apple Id associated with the given Apple Volume Purchase Program Token.
-  - `[AutomaticallyUpdateApps <Boolean?>]`: Whether or not apps for the VPP token will be automatically updated.
-  - `[ClaimTokenManagementFromExternalMdm <Boolean?>]`: Admin consent to allow claiming token management from external MDM.
-  - `[CountryOrRegion <String>]`: Whether or not apps for the VPP token will be automatically updated.
-  - `[DataSharingConsentGranted <Boolean?>]`: Consent granted for data sharing with the Apple Volume Purchase Program.
-  - `[DisplayName <String>]`: An admin specified token friendly name.
-  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the Apple Volume Purchase Program Token.
-  - `[LastModifiedDateTime <DateTime?>]`: Last modification date time associated with the Apple Volume Purchase Program Token.
-  - `[LastSyncDateTime <DateTime?>]`: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
-  - `[LastSyncStatus <VppTokenSyncStatus?>]`: Possible sync statuses associated with an Apple Volume Purchase Program token.
-  - `[LocationName <String>]`: Token location returned from Apple VPP.
-  - `[OrganizationName <String>]`: The organization associated with the Apple Volume Purchase Program Token
-  - `[RoleScopeTagIds <String- `[]`>]`: Role Scope Tags IDs assigned to this entity.
-  - `[State <VppTokenState?>]`: Possible states associated with an Apple Volume Purchase Program token.
-  - `[Token <String>]`: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
-  - `[TokenActionResults <IMicrosoftGraphVppTokenActionResult- `[]`>]`: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
-    - `[ActionName <String>]`: Action name
-    - `[ActionState <String>]`: actionState
-    - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-    - `[StartDateTime <DateTime?>]`: Time the action was initiated
-  - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
+  \[AppleId \<String\>\]: The apple Id associated with the given Apple Volume Purchase Program Token.
+  \[AutomaticallyUpdateApps \<Boolean?\>\]: Whether or not apps for the VPP token will be automatically updated.
+  \[ClaimTokenManagementFromExternalMdm \<Boolean?\>\]: Admin consent to allow claiming token management from external MDM.
+  \[CountryOrRegion \<String\>\]: Whether or not apps for the VPP token will be automatically updated.
+  \[DataSharingConsentGranted \<Boolean?\>\]: Consent granted for data sharing with the Apple Volume Purchase Program.
+  \[DisplayName \<String\>\]: An admin specified token friendly name.
+  \[ExpirationDateTime \<DateTime?\>\]: The expiration date time of the Apple Volume Purchase Program Token.
+  \[LastModifiedDateTime \<DateTime?\>\]: Last modification date time associated with the Apple Volume Purchase Program Token.
+  \[LastSyncDateTime \<DateTime?\>\]: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
+  \[LastSyncStatus \<VppTokenSyncStatus?\>\]: Possible sync statuses associated with an Apple Volume Purchase Program token.
+  \[LocationName \<String\>\]: Token location returned from Apple VPP.
+  \[OrganizationName \<String\>\]: The organization associated with the Apple Volume Purchase Program Token
+  \[RoleScopeTagIds \<String\[\]\>\]: Role Scope Tags IDs assigned to this entity.
+  \[State \<VppTokenState?\>\]: Possible states associated with an Apple Volume Purchase Program token.
+  \[Token \<String\>\]: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
+  \[TokenActionResults \<IMicrosoftGraphVppTokenActionResult\[\]\>\]: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+    \[ActionName \<String\>\]: Action name
+    \[ActionState \<String\>\]: actionState
+    \[LastUpdatedDateTime \<DateTime?\>\]: Time the action state was last updated
+    \[StartDateTime \<DateTime?\>\]: Time the action was initiated
+  \[VppTokenAccountType \<VppTokenAccountType?\>\]: Possible types of an Apple Volume Purchase Program token.
 
-TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
-  - `[ActionName <String>]`: Action name
-  - `[ActionState <String>]`: actionState
-  - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
-  - `[StartDateTime <DateTime?>]`: Time the action was initiated
+TOKENACTIONRESULTS \<IMicrosoftGraphVppTokenActionResult\[\]\>: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+  \[ActionName \<String\>\]: Action name
+  \[ActionState \<String\>\]: actionState
+  \[LastUpdatedDateTime \<DateTime?\>\]: Time the action state was last updated
+  \[StartDateTime \<DateTime?\>\]: Time the action was initiated
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
-
-
-
-
 

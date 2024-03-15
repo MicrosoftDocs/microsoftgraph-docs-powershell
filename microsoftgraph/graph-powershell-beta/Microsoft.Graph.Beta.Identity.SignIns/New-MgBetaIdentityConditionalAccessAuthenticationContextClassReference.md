@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
 Create a new authenticationContextClassReference.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,21 +30,14 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ## DESCRIPTION
 Create a new authenticationContextClassReference.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-authenticationcontextclassreferences-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
-```
-This example shows how to use the New-MgBetaBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -242,25 +231,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAuthenticationContextClassReference\>: authenticationContextClassReference
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference.
+  \[Description \<String\>\]: A short explanation of the policies that are enforced by authenticationContextClassReference.
 This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences.
 For example, selection UX.
-  - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
+  \[DisplayName \<String\>\]: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
-  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
+  \[IsAvailable \<Boolean?\>\]: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
 When it's set to false, it shouldn't be shown in selection UX used to tag resources with authentication context class values.
 It will still be shown in the Conditional Access policy authoring experience. 
 Supports $filter (eq).
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
-
-
-
 

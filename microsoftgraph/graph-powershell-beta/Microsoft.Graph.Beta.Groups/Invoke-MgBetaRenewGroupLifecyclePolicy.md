@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Invoke-MgBetaRenewGroupLifecyclePolicy
@@ -33,20 +32,16 @@ Invoke-MgBetaRenewGroupLifecyclePolicy
 Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-renewgroup-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	GroupId = "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 Invoke-MgBetaRenewGroupLifecyclePolicy -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -188,14 +183,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`:
+BODYPARAMETER \<IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[GroupId \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy)
-
-
-
 
