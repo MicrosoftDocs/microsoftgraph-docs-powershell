@@ -37,6 +37,9 @@ Get-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-Expa
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prope
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-tabs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

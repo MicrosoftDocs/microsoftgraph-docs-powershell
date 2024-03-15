@@ -45,6 +45,9 @@ Invoke-MgGraphChat -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Unhide a chat for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-unhideforuser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

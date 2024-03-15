@@ -38,6 +38,9 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

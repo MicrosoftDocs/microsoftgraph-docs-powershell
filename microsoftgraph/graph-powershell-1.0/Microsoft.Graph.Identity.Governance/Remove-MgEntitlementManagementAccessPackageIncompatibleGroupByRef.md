@@ -43,6 +43,9 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <
 ## DESCRIPTION
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

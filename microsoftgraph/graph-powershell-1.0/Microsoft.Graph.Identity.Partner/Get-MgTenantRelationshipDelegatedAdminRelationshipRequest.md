@@ -38,6 +38,9 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIdentit
 ## DESCRIPTION
 Read the properties and relationships of a delegatedAdminRelationshipRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationshiprequest-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

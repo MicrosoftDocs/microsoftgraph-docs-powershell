@@ -49,6 +49,9 @@ Update-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdenti
 Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object: For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:+ Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph+ Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicyrule-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

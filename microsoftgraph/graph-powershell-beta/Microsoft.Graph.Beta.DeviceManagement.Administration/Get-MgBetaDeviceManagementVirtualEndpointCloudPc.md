@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPC object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

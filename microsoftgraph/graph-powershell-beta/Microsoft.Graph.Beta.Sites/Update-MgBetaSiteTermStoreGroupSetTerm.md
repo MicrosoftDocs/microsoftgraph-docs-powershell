@@ -52,6 +52,9 @@ Update-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the properties of a term object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

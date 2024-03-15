@@ -73,6 +73,9 @@ New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new businessScenarioTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

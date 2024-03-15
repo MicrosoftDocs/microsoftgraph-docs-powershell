@@ -29,6 +29,9 @@ Get-MgBetaUserDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <St
 ## DESCRIPTION
 Get content for the navigation property versions from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

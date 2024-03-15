@@ -65,6 +65,9 @@ Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

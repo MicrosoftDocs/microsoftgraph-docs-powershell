@@ -34,6 +34,9 @@ New-MgChat -BodyParameter <IMicrosoftGraphChat> [-ResponseHeadersVariable <Strin
 ## DESCRIPTION
 Create a new chat object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

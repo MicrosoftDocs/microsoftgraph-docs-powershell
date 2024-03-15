@@ -31,6 +31,9 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

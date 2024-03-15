@@ -75,6 +75,9 @@ Update-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of the event object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

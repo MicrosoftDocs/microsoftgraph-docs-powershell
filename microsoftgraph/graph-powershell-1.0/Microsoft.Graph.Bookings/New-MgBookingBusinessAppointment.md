@@ -57,6 +57,9 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

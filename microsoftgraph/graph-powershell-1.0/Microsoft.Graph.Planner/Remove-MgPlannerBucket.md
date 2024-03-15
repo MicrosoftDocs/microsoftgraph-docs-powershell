@@ -29,6 +29,9 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete plannerBucket.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

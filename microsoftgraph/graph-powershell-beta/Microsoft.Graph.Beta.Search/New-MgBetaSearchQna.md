@@ -33,6 +33,9 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new qna object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-qnas-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

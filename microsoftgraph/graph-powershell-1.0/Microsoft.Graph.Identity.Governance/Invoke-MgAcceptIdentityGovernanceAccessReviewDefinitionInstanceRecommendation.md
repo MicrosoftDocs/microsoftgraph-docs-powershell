@@ -29,6 +29,9 @@ Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 ## DESCRIPTION
 Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that haven't been reviewed on an accessReviewInstance object for which the calling user is a reviewer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-acceptrecommendations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

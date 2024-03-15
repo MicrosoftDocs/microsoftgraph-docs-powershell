@@ -29,6 +29,9 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Resume the sync of a specific school data synchronization profile in the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-resume-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

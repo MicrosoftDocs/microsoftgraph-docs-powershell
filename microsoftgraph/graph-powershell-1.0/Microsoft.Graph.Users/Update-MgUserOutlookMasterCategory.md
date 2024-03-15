@@ -46,6 +46,9 @@ Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName propertyonce you have created the category.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookcategory-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

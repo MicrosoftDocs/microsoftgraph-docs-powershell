@@ -39,6 +39,9 @@ Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction -InputObjec
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceAction object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourceaction-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

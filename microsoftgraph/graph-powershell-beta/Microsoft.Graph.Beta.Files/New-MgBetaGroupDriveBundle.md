@@ -79,6 +79,9 @@ New-MgBetaGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to bundles for groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-post-bundles-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

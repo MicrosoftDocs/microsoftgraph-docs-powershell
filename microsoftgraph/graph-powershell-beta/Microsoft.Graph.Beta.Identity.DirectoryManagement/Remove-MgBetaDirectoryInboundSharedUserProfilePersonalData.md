@@ -29,6 +29,9 @@ Remove-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 ## DESCRIPTION
 Create a request to remove the personal data for an inboundSharedUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-removepersonaldata-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

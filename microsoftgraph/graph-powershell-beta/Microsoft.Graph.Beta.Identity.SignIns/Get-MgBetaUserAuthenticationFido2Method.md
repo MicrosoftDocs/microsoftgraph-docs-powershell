@@ -37,6 +37,9 @@ Get-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

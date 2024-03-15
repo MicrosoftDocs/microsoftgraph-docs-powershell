@@ -71,6 +71,9 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the properties of an educationuser object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

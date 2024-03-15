@@ -37,6 +37,9 @@ Get-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

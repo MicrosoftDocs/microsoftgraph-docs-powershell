@@ -22,6 +22,9 @@ Get-MgBetaGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandPropert
 ## DESCRIPTION
 List the recent activities that took place on an item or under a hierarchy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activities-list-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

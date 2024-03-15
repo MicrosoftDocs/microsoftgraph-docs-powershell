@@ -45,6 +45,9 @@ Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Reincorporate a participant previously put on hold to the call.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-stopholdmusic-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

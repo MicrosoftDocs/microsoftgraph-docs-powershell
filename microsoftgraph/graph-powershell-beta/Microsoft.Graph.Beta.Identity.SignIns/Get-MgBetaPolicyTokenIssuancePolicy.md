@@ -37,6 +37,9 @@ Get-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a tokenIssuancePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

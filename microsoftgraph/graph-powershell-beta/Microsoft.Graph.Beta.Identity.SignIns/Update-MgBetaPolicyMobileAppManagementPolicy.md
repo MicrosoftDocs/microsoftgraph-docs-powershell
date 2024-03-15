@@ -47,6 +47,9 @@ Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Update the properties of a mobilityManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

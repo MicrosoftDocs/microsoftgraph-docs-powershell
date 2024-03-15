@@ -37,6 +37,9 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity> [-Ex
 ## DESCRIPTION
 Get an appCredentialSignInActivity object that contains recent activity of an application credential.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appcredentialsigninactivity-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

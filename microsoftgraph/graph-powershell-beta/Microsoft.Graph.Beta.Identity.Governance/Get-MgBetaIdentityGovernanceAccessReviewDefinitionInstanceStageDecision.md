@@ -41,6 +41,9 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

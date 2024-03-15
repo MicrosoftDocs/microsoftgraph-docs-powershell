@@ -80,6 +80,9 @@ New-MgBetaGroupDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to children for groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

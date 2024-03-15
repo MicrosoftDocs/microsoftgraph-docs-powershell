@@ -35,6 +35,9 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 ## DESCRIPTION
 Create a new externalConnection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Read the properties and relationships of a referenceDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

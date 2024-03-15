@@ -21,6 +21,9 @@ Get-MgBetaEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>
 ## DESCRIPTION
 Retrieve a list of users at a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-users-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

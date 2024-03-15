@@ -38,6 +38,9 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule -InputObject <IIden
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

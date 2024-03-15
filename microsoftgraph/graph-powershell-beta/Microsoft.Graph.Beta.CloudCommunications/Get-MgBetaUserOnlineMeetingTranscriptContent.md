@@ -31,6 +31,9 @@ Get-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 The content of the transcript.
 Read-only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

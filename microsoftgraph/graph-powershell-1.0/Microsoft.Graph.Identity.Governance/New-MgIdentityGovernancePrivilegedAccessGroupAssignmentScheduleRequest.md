@@ -38,6 +38,9 @@ New-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ## DESCRIPTION
 Create a new privilegedAccessGroupAssignmentScheduleRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-assignmentschedulerequests-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

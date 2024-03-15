@@ -40,6 +40,9 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

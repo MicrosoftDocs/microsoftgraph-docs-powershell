@@ -32,6 +32,9 @@ Reactivate a completed, dismissed, or postponed recommendation object.
 This action updates the status of the recommendation to active.
 This method only works when the status of the recommendation is completedByUser, dismissed, or postponed.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-reactivate-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

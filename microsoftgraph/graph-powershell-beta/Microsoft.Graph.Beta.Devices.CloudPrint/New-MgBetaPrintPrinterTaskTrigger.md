@@ -47,6 +47,9 @@ New-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 Create a new task trigger on the specified printer.
 Currently, only one task trigger can be specified per printer, but this limit might be removed in the future.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-post-tasktriggers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

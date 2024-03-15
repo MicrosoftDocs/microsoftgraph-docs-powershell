@@ -29,6 +29,9 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ## DESCRIPTION
 Delete a browserSiteList object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internetexplorermode-delete-sitelists-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

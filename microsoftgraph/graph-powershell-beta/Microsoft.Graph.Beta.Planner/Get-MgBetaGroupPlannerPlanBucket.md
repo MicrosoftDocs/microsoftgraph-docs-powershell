@@ -22,6 +22,9 @@ Get-MgBetaGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-Exp
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-list-buckets-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -61,6 +61,9 @@ Once set during creation through the displayName property, the subject of the ce
 The startDateTime is set to the same time the certificate is created using the action.
 The endDateTime can be up to three years after the certificate is created.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-addtokensigningcertificate-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

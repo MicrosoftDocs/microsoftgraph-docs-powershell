@@ -37,6 +37,9 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

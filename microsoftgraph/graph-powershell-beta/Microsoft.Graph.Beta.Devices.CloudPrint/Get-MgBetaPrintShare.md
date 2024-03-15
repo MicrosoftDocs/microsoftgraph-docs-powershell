@@ -36,6 +36,9 @@ Get-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

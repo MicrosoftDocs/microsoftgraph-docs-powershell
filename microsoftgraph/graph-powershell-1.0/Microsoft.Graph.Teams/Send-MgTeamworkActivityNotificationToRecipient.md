@@ -35,6 +35,9 @@ Send-MgTeamworkActivityNotificationToRecipient
 Send activity feed notifications to multiple users, in bulk.
 For more information, see sending Teams activity notifications.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamwork-sendactivitynotificationtorecipients-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

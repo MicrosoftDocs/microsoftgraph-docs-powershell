@@ -37,6 +37,9 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Read the properties and relationships of a passiveDnsRecord object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-passivednsrecord-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

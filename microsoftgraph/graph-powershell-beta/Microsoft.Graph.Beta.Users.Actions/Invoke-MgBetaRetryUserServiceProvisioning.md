@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Invoke-MgBetaRetryUserServiceProvisioning
@@ -28,6 +29,9 @@ Invoke-MgBetaRetryUserServiceProvisioning -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Retry the user service provisioning.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-retryserviceprovisioning-permissions.md)]
 
 ## EXAMPLES
 

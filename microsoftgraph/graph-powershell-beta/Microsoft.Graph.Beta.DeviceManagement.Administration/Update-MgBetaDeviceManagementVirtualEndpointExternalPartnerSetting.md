@@ -47,6 +47,9 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ## DESCRIPTION
 Update the properties of a cloudPcExternalPartnerSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Delete a claimsMappingPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

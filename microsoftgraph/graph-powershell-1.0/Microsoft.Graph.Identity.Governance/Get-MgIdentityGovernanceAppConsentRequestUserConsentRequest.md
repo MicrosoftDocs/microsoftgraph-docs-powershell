@@ -38,6 +38,9 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userconsentrequest-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

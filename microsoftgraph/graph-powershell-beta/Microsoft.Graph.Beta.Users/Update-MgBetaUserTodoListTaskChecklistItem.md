@@ -47,6 +47,9 @@ Update-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a checklistItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

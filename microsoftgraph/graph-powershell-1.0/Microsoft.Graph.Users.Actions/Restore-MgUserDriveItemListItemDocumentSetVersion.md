@@ -29,6 +29,9 @@ Restore-MgUserDriveItemListItemDocumentSetVersion -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Restore a document set version.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

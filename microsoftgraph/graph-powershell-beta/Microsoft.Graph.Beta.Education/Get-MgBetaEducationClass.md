@@ -43,6 +43,9 @@ A class is a universal group with a special property that indicates to the syste
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

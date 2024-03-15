@@ -41,6 +41,9 @@ Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistorydefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

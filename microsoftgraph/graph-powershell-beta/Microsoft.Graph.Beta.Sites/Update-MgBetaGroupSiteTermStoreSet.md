@@ -50,6 +50,9 @@ Update-MgBetaGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the properties of a set object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-set-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

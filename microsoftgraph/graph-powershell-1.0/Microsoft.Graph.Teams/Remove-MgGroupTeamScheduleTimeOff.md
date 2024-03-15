@@ -29,6 +29,9 @@ Remove-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

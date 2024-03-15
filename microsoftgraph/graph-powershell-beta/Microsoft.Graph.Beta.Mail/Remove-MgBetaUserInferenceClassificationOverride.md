@@ -29,6 +29,9 @@ Remove-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-
 ## DESCRIPTION
 Delete a focused Inbox override specified by its ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

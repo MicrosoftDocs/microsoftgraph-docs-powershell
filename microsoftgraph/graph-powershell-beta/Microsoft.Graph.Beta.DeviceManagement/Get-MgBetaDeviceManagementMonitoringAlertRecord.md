@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Read the properties and relationships of an alertRecord object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

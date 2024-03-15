@@ -44,6 +44,9 @@ Update-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the properties of an attributeSet object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attributeset-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -53,6 +53,9 @@ Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 Update the properties of a certificateBasedApplicationConfiguration object.
 To update the trustedCertificateAuthorities within a certificateBasedApplicationConfiguration object, use the Update certificateAuthorityAsEntity operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

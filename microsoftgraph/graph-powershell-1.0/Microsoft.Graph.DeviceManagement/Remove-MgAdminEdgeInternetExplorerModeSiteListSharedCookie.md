@@ -29,6 +29,9 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

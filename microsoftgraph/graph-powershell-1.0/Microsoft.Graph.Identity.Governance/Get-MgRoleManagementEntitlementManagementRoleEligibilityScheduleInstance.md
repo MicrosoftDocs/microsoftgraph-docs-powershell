@@ -39,6 +39,9 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
 ## DESCRIPTION
 Get the instance of a role eligibility.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityscheduleinstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

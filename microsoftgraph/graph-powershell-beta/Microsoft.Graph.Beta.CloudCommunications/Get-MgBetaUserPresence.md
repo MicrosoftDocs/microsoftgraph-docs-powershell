@@ -29,6 +29,9 @@ Get-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get a user's presence information.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

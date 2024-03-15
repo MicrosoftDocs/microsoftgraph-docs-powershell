@@ -42,6 +42,9 @@ Retrieve an accessReviewInstance object using the identifier of an accessReviewI
 This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

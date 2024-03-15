@@ -29,6 +29,9 @@ Remove-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Delete a version of a document set in a list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

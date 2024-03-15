@@ -163,6 +163,9 @@ New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create a new term object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

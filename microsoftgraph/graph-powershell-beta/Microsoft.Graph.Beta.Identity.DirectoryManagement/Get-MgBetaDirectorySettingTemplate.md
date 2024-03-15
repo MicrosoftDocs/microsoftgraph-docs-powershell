@@ -39,6 +39,9 @@ Get-MgBetaDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIde
 A directory setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysettingtemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

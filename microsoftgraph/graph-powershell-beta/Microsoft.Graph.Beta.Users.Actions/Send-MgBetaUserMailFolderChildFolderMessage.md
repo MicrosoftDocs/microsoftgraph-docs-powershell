@@ -35,6 +35,9 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the Sent Items folder.
 Alternatively, send a new message in a single operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-send-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

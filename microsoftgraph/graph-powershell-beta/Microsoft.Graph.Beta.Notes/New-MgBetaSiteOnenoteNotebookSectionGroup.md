@@ -53,6 +53,9 @@ New-MgBetaSiteOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section group in the specified notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sectiongroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

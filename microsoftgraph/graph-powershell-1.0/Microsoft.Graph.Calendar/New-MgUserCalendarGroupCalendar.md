@@ -57,6 +57,9 @@ New-MgUserCalendarGroupCalendar -InputObject <ICalendarIdentity> -BodyParameter 
 ## DESCRIPTION
 Use this API to create a new calendar in a calendar group for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-post-calendars-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IMa
 ## DESCRIPTION
 Read the properties and relationships of a tenantCustomizedInformation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

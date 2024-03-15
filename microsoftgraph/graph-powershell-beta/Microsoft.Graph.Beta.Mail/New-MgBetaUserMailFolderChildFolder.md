@@ -57,6 +57,9 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-childfolders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

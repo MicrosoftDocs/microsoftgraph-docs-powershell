@@ -37,6 +37,9 @@ Get-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a featureRolloutPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

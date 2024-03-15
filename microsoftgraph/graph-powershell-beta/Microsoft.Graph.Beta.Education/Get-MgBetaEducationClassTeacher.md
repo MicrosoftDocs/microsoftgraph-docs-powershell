@@ -24,6 +24,9 @@ Get-MgBetaEducationClassTeacher -EducationClassId <String> [-ExpandProperty <Str
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

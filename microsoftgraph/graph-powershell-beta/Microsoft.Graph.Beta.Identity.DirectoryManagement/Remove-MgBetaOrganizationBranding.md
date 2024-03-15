@@ -31,6 +31,9 @@ Remove-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ Update-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -
 ## DESCRIPTION
 Update the properties of a tokenIssuancePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

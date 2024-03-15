@@ -22,6 +22,9 @@ Get-MgPlannerPlanTask -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Fil
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

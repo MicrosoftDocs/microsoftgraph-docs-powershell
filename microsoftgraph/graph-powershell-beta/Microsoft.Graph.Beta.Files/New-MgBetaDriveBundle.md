@@ -79,6 +79,9 @@ New-MgBetaDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create new navigation property to bundles for drives
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-post-bundles-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

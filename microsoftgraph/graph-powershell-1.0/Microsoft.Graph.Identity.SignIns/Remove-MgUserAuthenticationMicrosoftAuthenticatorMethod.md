@@ -29,6 +29,9 @@ Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentityS
 ## DESCRIPTION
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

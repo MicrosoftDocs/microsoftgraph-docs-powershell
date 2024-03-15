@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcSnapshot object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

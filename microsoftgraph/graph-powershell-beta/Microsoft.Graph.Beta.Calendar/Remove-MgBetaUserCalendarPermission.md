@@ -43,6 +43,9 @@ Remove-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete calendarPermission.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendarpermission-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -34,6 +34,9 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 Create a new inboundFlow object.
 The following prerequisite resources are required when you create an inboundFlow:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
 schema: 2.0.0
+ms.prod: users
 ---
 
 # New-MgUserAppRoleAssignment
@@ -48,6 +49,9 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 

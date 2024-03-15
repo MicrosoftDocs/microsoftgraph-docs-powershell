@@ -31,6 +31,9 @@ New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPoli
 ## DESCRIPTION
 Create an appManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

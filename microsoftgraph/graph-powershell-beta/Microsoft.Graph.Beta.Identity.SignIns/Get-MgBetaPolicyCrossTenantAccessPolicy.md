@@ -21,6 +21,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Read the properties and relationships of a crossTenantAccessPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

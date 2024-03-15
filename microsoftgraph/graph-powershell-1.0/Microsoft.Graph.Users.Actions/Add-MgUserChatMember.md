@@ -47,6 +47,9 @@ Add-MgUserChatMember -InputObject <IUsersActionsIdentity>
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmembers-add-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

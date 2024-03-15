@@ -45,6 +45,9 @@ New-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create a standard tag for members in a team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

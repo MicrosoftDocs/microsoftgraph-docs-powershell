@@ -47,6 +47,9 @@ Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

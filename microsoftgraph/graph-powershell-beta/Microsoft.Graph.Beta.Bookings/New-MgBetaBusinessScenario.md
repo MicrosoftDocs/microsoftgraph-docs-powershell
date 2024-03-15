@@ -30,6 +30,9 @@ New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Re
 ## DESCRIPTION
 Create a new businessScenario object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/solutionsroot-post-businessscenarios-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -22,6 +22,9 @@ Get-MgUserOnenoteNotebookSection -NotebookId <String> -UserId <String> [-ExpandP
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

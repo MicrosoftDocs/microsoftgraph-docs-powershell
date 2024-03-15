@@ -31,6 +31,9 @@ Remove-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> 
 Delete an existing category.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

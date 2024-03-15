@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaccount
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfileAccount
@@ -51,6 +52,9 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of an userAccountInformation object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/useraccountinformation-update-permissions.md)]
 
 ## EXAMPLES
 

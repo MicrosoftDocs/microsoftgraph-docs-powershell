@@ -39,6 +39,9 @@ Get-MgUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [
 Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
 For security, the password itself will never be returned in the object and the password property is always null.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/passwordauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -57,6 +57,9 @@ Update-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ## DESCRIPTION
 Update the properties of domain object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

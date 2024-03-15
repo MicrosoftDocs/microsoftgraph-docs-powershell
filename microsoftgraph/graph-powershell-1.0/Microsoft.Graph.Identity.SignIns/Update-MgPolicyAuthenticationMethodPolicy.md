@@ -33,6 +33,9 @@ Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthent
 ## DESCRIPTION
 Update the properties of an authenticationMethodsPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethodspolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

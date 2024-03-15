@@ -37,6 +37,9 @@ Get-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a categoryTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-delete-categories-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

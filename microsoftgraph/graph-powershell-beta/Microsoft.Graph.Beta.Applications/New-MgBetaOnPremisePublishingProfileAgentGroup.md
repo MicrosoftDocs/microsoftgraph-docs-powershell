@@ -47,6 +47,9 @@ New-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Create a new onPremisesAgentGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

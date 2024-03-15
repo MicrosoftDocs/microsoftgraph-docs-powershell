@@ -39,6 +39,9 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

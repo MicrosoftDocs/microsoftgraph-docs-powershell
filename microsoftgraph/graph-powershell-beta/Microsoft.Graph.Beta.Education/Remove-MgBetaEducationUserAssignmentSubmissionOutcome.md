@@ -32,6 +32,9 @@ Remove-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationId
 Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationfeedbackresourceoutcome-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

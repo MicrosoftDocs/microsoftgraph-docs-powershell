@@ -43,6 +43,9 @@ Remove-MgBetaPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity
 ## DESCRIPTION
 Revoke the specified user's access to submit print jobs to the associated printerShare.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-delete-alloweduser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

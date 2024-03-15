@@ -51,6 +51,9 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

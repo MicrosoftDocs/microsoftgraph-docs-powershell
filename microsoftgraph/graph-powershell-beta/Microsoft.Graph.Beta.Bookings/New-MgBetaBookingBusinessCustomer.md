@@ -79,6 +79,9 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomer object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-customers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

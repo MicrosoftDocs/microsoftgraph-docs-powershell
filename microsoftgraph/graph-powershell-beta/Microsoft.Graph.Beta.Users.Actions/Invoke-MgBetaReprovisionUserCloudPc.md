@@ -45,6 +45,9 @@ Invoke-MgBetaReprovisionUserCloudPc -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Reprovision a specific Cloud PC.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-reprovision-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

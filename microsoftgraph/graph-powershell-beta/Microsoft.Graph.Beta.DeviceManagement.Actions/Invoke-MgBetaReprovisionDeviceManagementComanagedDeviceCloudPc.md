@@ -29,6 +29,9 @@ Invoke-MgBetaReprovisionDeviceManagementComanagedDeviceCloudPc -InputObject <IDe
 ## DESCRIPTION
 Reprovision a Cloud PC with an Intune managed device ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-reprovisioncloudpc-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

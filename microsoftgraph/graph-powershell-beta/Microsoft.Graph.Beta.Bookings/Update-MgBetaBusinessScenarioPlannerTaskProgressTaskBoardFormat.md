@@ -47,6 +47,9 @@ Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IB
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in solutions
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

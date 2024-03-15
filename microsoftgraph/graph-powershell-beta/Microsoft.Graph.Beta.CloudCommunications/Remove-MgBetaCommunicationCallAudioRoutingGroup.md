@@ -29,6 +29,9 @@ Remove-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Delete the specified audioRoutingGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

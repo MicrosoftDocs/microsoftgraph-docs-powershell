@@ -55,6 +55,9 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of a plannerPlan object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

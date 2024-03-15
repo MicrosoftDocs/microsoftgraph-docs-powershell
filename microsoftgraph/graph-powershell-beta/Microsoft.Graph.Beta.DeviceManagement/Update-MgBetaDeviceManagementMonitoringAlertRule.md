@@ -51,6 +51,9 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ## DESCRIPTION
 Update the properties of an alertRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

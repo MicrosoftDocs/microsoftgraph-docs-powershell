@@ -59,6 +59,9 @@ Update the properties of a delegatedAdminRelationship object.
 You can only update a relationship when it's in the created status.
 However, you can update the autoExtendDuration property when the relationship is in either the created or active status.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

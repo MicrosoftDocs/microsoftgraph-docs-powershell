@@ -22,6 +22,9 @@ Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -51,6 +51,9 @@ Get-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

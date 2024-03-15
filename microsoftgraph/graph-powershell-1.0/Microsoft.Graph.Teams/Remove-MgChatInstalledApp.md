@@ -29,6 +29,9 @@ Remove-MgChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Uninstall an app installed within a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-installedapps-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -87,6 +87,9 @@ New-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create a new version of a document set item in a list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-post-documentsetversions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

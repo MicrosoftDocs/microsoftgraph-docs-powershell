@@ -33,6 +33,9 @@ Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

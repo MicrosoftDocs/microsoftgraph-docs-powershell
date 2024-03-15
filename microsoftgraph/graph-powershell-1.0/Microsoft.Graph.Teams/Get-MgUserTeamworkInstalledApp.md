@@ -37,6 +37,9 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the app installed in the personal scope of the specified user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-installedapps-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a businessScenarioTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenarioplanner-delete-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

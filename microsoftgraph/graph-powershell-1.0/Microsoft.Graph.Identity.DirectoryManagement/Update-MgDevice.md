@@ -64,6 +64,9 @@ Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

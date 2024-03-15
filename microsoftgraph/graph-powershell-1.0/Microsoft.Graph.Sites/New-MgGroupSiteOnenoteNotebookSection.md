@@ -52,6 +52,9 @@ New-MgGroupSiteOnenoteNotebookSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of an industryDataConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

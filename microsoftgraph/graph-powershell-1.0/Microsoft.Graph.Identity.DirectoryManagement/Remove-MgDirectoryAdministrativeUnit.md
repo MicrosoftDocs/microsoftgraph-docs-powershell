@@ -29,6 +29,9 @@ Remove-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Delete an administrativeUnit.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

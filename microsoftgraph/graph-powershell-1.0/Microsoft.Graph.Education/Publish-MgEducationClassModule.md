@@ -34,6 +34,9 @@ Only teachers in the class can perform this operation.
 When a module is in draft status, students can't see the module.
 When you call this API, the module appears in the student's class work list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-publish-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

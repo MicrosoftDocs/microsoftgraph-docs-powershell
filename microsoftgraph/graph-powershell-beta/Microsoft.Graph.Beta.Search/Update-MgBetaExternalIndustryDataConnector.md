@@ -45,6 +45,9 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an industryDataConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

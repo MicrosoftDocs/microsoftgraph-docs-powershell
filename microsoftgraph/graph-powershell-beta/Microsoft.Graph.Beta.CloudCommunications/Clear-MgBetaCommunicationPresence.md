@@ -50,6 +50,9 @@ Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful clearPresence changes the user's presence to Offline/Offline.
 Read more about presence sessions and their time-out and expiration.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearpresence-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

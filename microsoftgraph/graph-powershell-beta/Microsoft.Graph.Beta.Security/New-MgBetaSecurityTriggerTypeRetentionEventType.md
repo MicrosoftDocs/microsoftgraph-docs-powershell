@@ -31,6 +31,9 @@ New-MgBetaSecurityTriggerTypeRetentionEventType -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create a new retentionEventType object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

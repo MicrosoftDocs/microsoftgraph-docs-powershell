@@ -37,6 +37,9 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of an inboundFlow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

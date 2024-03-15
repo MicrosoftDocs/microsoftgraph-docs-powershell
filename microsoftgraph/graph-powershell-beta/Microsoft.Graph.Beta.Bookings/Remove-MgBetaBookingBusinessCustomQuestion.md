@@ -43,6 +43,9 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
 ## DESCRIPTION
 Delete the specified bookingCustomQuestion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

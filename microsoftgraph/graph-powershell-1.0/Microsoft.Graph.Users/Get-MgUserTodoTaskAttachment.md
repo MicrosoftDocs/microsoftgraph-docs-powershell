@@ -37,6 +37,9 @@ Get-MgUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a taskFileAttachment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

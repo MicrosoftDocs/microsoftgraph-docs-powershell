@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTenant
 ## DESCRIPTION
 Read the properties and relationships of an auditEvent object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-auditevent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

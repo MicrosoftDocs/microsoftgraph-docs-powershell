@@ -33,6 +33,9 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-Respon
 ## DESCRIPTION
 Create a new bookmark object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

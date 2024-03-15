@@ -30,6 +30,9 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 ## DESCRIPTION
 Deletes a linkedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

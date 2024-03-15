@@ -29,6 +29,9 @@ Get-MgCommunicationOnlineMeetingAttendeeReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 Get attendeeReport for the navigation property onlineMeetings from communications
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

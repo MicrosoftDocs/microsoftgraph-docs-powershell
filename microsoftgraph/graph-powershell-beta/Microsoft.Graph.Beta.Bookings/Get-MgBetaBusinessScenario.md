@@ -37,6 +37,9 @@ Get-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a businessScenario object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -75,6 +75,9 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the properties of the event object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

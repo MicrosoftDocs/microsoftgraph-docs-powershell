@@ -29,6 +29,9 @@ Remove-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Unpin a message from a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-pinnedmessages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

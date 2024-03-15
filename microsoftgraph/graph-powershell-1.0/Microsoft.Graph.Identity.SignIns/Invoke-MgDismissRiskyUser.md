@@ -32,6 +32,9 @@ Invoke-MgDismissRiskyUser
 Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-dismiss-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

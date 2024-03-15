@@ -28,6 +28,9 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 ## DESCRIPTION
 Create a new departmentTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-departments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

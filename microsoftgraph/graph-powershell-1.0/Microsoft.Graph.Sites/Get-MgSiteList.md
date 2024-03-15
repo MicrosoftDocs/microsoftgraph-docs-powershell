@@ -37,6 +37,9 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Returns the metadata for a \[list\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

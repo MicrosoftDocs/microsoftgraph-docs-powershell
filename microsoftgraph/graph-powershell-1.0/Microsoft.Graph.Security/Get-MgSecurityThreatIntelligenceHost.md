@@ -41,6 +41,9 @@ Read the properties and relationships of a host object.
 The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

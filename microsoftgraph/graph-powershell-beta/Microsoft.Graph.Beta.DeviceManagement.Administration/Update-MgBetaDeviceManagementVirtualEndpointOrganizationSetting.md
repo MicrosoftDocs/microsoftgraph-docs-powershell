@@ -30,6 +30,9 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ## DESCRIPTION
 Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcorganizationsettings-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

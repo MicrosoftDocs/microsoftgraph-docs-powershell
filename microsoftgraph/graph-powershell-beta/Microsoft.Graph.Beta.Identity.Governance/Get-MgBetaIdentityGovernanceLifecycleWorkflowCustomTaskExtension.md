@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <I
 ## DESCRIPTION
 Read the properties and relationships of a customTaskExtension object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-customtaskextension-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

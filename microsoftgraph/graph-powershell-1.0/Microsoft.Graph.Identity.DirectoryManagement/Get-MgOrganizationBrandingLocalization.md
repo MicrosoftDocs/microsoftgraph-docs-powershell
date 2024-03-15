@@ -39,6 +39,9 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

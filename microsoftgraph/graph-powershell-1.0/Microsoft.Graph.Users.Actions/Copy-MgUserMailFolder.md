@@ -45,6 +45,9 @@ Copy-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-copy-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

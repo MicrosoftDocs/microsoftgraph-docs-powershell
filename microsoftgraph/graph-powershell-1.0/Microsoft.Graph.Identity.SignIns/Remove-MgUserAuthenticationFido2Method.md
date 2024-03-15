@@ -29,6 +29,9 @@ Remove-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Deletes a user's FIDO2 Security Key Authentication Method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

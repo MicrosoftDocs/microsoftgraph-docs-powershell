@@ -29,6 +29,9 @@ Remove-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete the specified outlookCategory object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
