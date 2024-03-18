@@ -448,9 +448,9 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |New-MsolServicePrincipalCredential|[Add-MgServicePrincipalKey](/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey)|
 |New-MsolUser|[New-MgUser](/powershell/module/microsoft.graph.users/new-mguser)|
 |New-MsolWellKnownGroup||
-|Redo-MsolProvisionContact|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
-|Redo-MsolProvisionGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup)|
-|Redo-MsolProvisionUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)|
+|Redo-MsolProvisionContact|[Invoke-MgRetryContactServiceProvisioning](/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgretrycontactserviceprovisioning)|
+|Redo-MsolProvisionGroup|[Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning)|
+|Redo-MsolProvisionUser|[Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning)|
 |Remove-MsolAdministrativeUnit|[Remove-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit)|
 |Remove-MsolAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)|
 |Remove-MsolApplicationPassword|[Remove-MgApplicationPassword](/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword)|
