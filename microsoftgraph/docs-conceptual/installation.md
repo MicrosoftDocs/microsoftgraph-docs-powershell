@@ -5,7 +5,7 @@ description: "Learn how to install the Microsoft Graph PowerShell SDK with Power
 author: msewaweru
 manager: CelesteDG
 ms.topic: how-to
-ms.date: 05/17/2023
+ms.date: 03/05/2024
 ms.author: eunicewaweru
 
 #customer intent: As a PowerShell user, I want to install the Microsoft Graph PowerShell SDK, so that I can use it to interact with Microsoft Graph and perform tasks using PowerShell.
@@ -13,7 +13,7 @@ ms.author: eunicewaweru
 
 # Install the Microsoft Graph PowerShell SDK
 
-The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). In this article you will learn how to install the Microsoft Graph PowerShell SDK using [PowerShellGet](/powershell/scripting/gallery/installing-psget).
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). In this article, you'll learn how to install the Microsoft Graph PowerShell SDK using [PowerShellGet](/powershell/scripting/gallery/installing-psget).
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ To set the execution policy, run:
 
 ## Installation
 
-The Microsoft Graph PowerShell SDK comes in 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that you will install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the 2 modules on the same PowerShell version.
+The Microsoft Graph PowerShell SDK comes in two modules, Microsoft.Graph and Microsoft.Graph.Beta, that you'll install separately. These modules call the Microsoft Graph v1.0 and Microsoft Graph beta endpoints, respectively. You can install the two modules on the same PowerShell version.
 
 Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell modules.
 
@@ -62,7 +62,7 @@ Install-Module Microsoft.Graph.Beta
 > [!IMPORTANT]
 > We recommend that you always rely on Microsoft Graph v1.0 when writing scripts. Sometimes there is a need to use the beta endpoint for testing or early adoption before a feature is available in v1.0. The Microsoft Graph beta endpoint and any functionality there is still in preview status and can change. This makes the beta endpoints unreliable for production usage since it may break existing scenarios without notice.
 
-Installing the SDK in one version of PowerShell does not install it for the other. Run the installation command inside the version of PowerShell you intend to use it in.
+Installing the SDK in one version of PowerShell doesn't install it for the other. Run the installation command inside the version of PowerShell you intend to use it in.
 
 ### Verify installation
 
@@ -72,7 +72,7 @@ After the installation is completed, you can verify the installed version with t
 Get-InstalledModule Microsoft.Graph
 ```
 
-To verify the installed sub-modules and their versions, run:
+To verify the installed submodules and their versions, run:
 
 ```powershell
 Get-InstalledModule

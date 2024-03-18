@@ -5,7 +5,7 @@ description: "Get started with the Microsoft Graph PowerShell SDK by using it pe
 author: msewaweru
 manager: CelesteDG
 ms.topic: quickstart
-ms.date: 05/17/2023
+ms.date: 03/05/2024
 ms.author: eunicewaweru
 
 #customer intent: As a PowerShell user, I want to learn how to use the Microsoft Graph PowerShell SDK, so that I can perform basic tasks using the Microsoft Graph REST API and authenticate with delegated access.
@@ -17,7 +17,7 @@ In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some bas
 
 ## API version
 
-The SDK contains 2 modules, Microsoft.Graph and Microsoft.Graph.Beta, that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true), respectively. Cmdlets are available for the module that is installed.
+The SDK contains two modules, Microsoft.Graph and Microsoft.Graph.Beta that call the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true) and [Microsoft Graph REST API beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true), respectively. Cmdlets are available for the module that is installed.
 
 ## Authentication
 
