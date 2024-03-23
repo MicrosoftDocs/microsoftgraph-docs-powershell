@@ -36,18 +36,6 @@ New-MgSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersVaria
 ## DESCRIPTION
 Create new navigation property to qnas for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -463,6 +451,7 @@ TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
 [New-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
+
 
 
 

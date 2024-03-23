@@ -32,18 +32,6 @@ Get-MgBetaApplicationFederatedIdentityCredentialCount -InputObject <IApplication
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -206,6 +194,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgApplicationFederatedIdentityCredentialCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredentialCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialcount)
+
 
 
 

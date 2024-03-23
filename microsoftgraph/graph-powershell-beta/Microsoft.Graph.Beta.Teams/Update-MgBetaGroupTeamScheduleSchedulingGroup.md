@@ -51,22 +51,6 @@ Update-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns 404 Not found.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +413,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetagroupteamscheduleschedulinggroup)
+
 
 
 

@@ -52,22 +52,6 @@ If an organizer adds an attachment to a meeting event, the organizer can subsequ
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-post-attachments-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,6 +362,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventexceptionoccurrenceattachment)
+
 
 
 

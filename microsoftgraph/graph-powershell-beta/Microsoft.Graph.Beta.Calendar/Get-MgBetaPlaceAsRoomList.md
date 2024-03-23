@@ -40,18 +40,6 @@ Get-MgBetaPlaceAsRoomList -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -316,6 +304,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgPlaceAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlist)
+
 
 
 

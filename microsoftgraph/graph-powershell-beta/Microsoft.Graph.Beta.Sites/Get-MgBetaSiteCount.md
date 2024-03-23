@@ -23,18 +23,6 @@ Get-MgBetaSiteCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVaria
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSiteCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecount)
+
 
 
 

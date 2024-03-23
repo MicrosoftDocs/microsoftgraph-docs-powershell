@@ -34,22 +34,6 @@ New-MgBetaTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-Respon
 ## DESCRIPTION
 Create new navigation property to devices for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -980,6 +964,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdevice)
+
 
 
 

@@ -45,18 +45,6 @@ This method gets a windowsSettingInstance for the signed-in user.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowssettinginstance-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +341,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindowsInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindowsinstance)
+
 
 
 

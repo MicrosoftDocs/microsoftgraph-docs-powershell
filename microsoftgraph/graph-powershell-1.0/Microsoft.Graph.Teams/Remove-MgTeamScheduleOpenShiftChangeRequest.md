@@ -32,22 +32,6 @@ Remove-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property openShiftChangeRequests for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +241,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshiftchangerequest)
+
 
 
 

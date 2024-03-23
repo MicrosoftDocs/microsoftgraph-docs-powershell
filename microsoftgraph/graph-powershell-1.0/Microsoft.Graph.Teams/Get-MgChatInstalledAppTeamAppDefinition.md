@@ -32,22 +32,6 @@ Get-MgChatInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 The details of this version of the app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -226,6 +210,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaChatInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledAppTeamAppDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledappteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledappteamappdefinition)
+
 
 
 

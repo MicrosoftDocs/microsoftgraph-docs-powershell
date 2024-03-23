@@ -59,22 +59,6 @@ Update the properties of a qna object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -569,6 +553,7 @@ When users click this answer variation in search results, they will go to this U
 [Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
+
 
 
 

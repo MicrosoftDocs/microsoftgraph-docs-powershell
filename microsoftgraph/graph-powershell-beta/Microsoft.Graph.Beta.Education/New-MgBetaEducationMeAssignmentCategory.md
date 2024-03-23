@@ -46,22 +46,6 @@ New-MgBetaEducationMeAssignmentCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to categories for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,6 +264,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [New-MgEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmeassignmentcategory)
+
 
 
 

@@ -51,22 +51,6 @@ Update-MgBetaSecurityAction -InputObject <ISecurityIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property securityActions in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionReason
@@ -630,6 +614,7 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityaction)
+
 
 
 

@@ -32,22 +32,6 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactId
@@ -263,6 +247,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Set-MgBetaUserContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactPhotoContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactphotocontent)
+
 
 
 

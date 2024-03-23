@@ -32,18 +32,6 @@ Get-MgGroupTeamScheduleOpenShiftCount -InputObject <ITeamsIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -207,6 +195,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaGroupTeamScheduleOpenShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleOpenShiftCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshiftcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshiftcount)
+
 
 
 

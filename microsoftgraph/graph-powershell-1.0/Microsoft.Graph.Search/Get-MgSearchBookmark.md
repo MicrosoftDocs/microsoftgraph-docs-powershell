@@ -39,18 +39,6 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get bookmarks from search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -311,6 +299,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark)
+
 
 
 

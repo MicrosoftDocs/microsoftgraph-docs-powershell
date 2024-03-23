@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AndroidManagedAppProtectionId
@@ -244,6 +232,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementandroidmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementandroidmanagedappprotectiondeploymentsummary)
+
 
 
 

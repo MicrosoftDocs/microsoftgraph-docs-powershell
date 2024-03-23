@@ -31,22 +31,6 @@ Test-MgBetaGroupSiteListContentTypePublished -InputObject <IGroupsIdentity> [-Re
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -238,6 +222,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Test-MgGroupSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteListContentTypePublished?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitelistcontenttypepublished)
+
 
 
 

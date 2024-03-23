@@ -48,18 +48,6 @@ New-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 Create new navigation property to gradingCategories for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,6 +282,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [New-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingcategory)
+
 
 
 

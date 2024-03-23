@@ -32,18 +32,6 @@ Get-MgShareContentTypeBaseTypeCount -InputObject <IFilesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareContentTypeBaseTypeCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareContentTypeBaseTypeCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebasetypecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecontenttypebasetypecount)
+
 
 
 

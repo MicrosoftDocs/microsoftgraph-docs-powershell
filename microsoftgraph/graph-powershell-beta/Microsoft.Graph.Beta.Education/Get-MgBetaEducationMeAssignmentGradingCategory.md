@@ -32,18 +32,6 @@ Get-MgBetaEducationMeAssignmentGradingCategory -InputObject <IEducationIdentity>
 ## DESCRIPTION
 When set, enables users to weight assignments differently when computing a class average grade.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -192,6 +180,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgEducationMeAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentGradingCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentgradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentgradingcategory)
+
 
 
 

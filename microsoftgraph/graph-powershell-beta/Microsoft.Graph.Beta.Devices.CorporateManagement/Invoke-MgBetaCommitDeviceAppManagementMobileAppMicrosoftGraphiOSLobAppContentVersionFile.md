@@ -54,18 +54,6 @@ Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVer
 ## DESCRIPTION
 Commits a file of a given app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -394,6 +382,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgCommitDeviceAppManagementMobileAppMicrosoftGraphiOSLobAppContentVersionFile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetacommitdeviceappmanagementmobileappmicrosoftgraphioslobappcontentversionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetacommitdeviceappmanagementmobileappmicrosoftgraphioslobappcontentversionfile)
+
 
 
 

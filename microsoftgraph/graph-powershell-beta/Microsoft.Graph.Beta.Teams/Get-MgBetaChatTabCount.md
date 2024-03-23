@@ -32,18 +32,6 @@ Get-MgBetaChatTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -215,6 +203,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgChatTabCount](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTabCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattabcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattabcount)
+
 
 
 

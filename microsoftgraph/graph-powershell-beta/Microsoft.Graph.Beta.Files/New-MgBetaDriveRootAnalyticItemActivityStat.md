@@ -54,18 +54,6 @@ New-MgBetaDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15472,6 +15460,7 @@ Read-only.
 [New-MgDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootanalyticitemactivitystat)
+
 
 
 

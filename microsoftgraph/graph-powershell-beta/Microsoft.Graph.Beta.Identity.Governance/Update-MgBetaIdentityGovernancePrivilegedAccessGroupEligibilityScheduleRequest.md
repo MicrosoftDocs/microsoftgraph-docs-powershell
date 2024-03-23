@@ -64,18 +64,6 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Update the navigation property eligibilityScheduleRequests in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -23322,6 +23310,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 [Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
+
 
 
 

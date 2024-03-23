@@ -31,18 +31,6 @@ Remove-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
 ## DESCRIPTION
 Delete navigation property importedAppleDeviceIdentities for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -245,6 +233,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementdeponboardingsettingimportedappledeviceidentity)
+
 
 
 

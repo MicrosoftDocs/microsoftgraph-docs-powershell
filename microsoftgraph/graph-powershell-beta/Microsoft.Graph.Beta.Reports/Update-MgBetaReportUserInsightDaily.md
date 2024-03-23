@@ -35,18 +35,6 @@ Update-MgBetaReportUserInsightDaily -BodyParameter <IMicrosoftGraphDailyUserInsi
 ## DESCRIPTION
 Update the navigation property daily in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveUsers
@@ -521,6 +509,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportuserinsightdaily)
+
 
 
 

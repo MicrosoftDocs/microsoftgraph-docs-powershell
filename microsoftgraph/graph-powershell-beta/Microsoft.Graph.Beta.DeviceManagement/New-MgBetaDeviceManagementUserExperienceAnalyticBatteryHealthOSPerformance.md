@@ -34,22 +34,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthOsPerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDevices
@@ -425,6 +409,7 @@ Valid values 0 to 2147483647
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthosperformance)
+
 
 
 

@@ -50,22 +50,6 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <I
 ## DESCRIPTION
 Update the properties of a deviceConfigurationDeviceOverview object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -416,6 +400,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatusoverview)
+
 
 
 

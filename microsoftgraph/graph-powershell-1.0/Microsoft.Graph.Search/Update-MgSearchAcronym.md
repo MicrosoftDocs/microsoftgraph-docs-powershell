@@ -50,18 +50,6 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property acronyms in search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -384,6 +372,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 [Update-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
+
 
 
 

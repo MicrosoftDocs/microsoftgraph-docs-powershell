@@ -47,18 +47,6 @@ Get-MgBetaSiteTermStoreSetChildRelationSet -InputObject <ISitesIdentity> [-Expan
 ## DESCRIPTION
 The \[set\] in which the relation is relevant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -301,6 +289,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteTermStoreSetChildRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildRelationSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildrelationset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetchildrelationset)
+
 
 
 

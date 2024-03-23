@@ -32,18 +32,6 @@ Remove-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property permissionGrants for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -268,6 +256,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpermissiongrant)
+
 
 
 

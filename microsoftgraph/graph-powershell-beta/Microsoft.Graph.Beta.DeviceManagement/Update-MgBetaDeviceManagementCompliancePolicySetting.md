@@ -49,22 +49,6 @@ Update-MgBetaDeviceManagementCompliancePolicySetting -InputObject <IDeviceManage
 ## DESCRIPTION
 Update the navigation property settings in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -516,6 +500,7 @@ SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`:
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancepolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancepolicysetting)
+
 
 
 

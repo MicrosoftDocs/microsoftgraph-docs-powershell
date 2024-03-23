@@ -51,18 +51,6 @@ Unfollow a user's site or multiple sites.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-unfollow-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15289,6 +15277,7 @@ Read-only.
 [Remove-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserFollowedSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserfollowedsite)
+
 
 
 

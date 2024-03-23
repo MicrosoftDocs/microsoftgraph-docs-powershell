@@ -44,22 +44,6 @@ Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Invoke function getM365AppUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -227,6 +211,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
+
 
 
 

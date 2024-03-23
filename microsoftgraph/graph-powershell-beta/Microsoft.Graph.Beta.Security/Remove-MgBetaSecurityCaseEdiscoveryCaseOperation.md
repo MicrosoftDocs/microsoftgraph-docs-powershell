@@ -32,22 +32,6 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property operations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseOperationId
@@ -305,6 +289,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaseoperation)
+
 
 
 

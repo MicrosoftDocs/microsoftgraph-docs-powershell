@@ -50,18 +50,6 @@ Update-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property versions in agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -460,6 +448,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Update-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfileversion)
+
 
 
 

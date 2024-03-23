@@ -71,18 +71,6 @@ Update-MgBetaDeviceManagementExchangeOnPremisePolicy
 ## DESCRIPTION
 Update the navigation property exchangeOnPremisesPolicies in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessRules
@@ -447,6 +435,7 @@ KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass- `[]`>: T
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeonpremisepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeonpremisepolicy)
+
 
 
 

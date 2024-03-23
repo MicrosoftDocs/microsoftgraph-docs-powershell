@@ -57,18 +57,6 @@ Modules start in the draft state, which means that students won't see the module
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-module-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -452,6 +440,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [New-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
+
 
 
 

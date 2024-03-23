@@ -23,18 +23,6 @@ Get-MgSearchQnaCount [-Filter <String>] [-Search <String>] [-ResponseHeadersVari
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaSearchQnaCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQnaCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqnacount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqnacount)
+
 
 
 

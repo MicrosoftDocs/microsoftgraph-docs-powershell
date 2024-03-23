@@ -30,22 +30,6 @@ Connect-MgBetaDeviceManagementChromeOSOnboardingSetting
 ## DESCRIPTION
 Invoke action connect
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -209,6 +193,7 @@ BODY `<IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConne
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/connect-mgbetadevicemanagementchromeosonboardingsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/connect-mgbetadevicemanagementchromeosonboardingsetting)
+
 
 
 

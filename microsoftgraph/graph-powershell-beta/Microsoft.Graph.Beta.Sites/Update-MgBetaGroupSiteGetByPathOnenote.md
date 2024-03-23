@@ -86,18 +86,6 @@ Update-MgBetaGroupSiteGetByPathOnenote -InputObject <ISitesIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property onenote in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1104,6 +1092,7 @@ Read-only.
 [Update-MgGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathonenote)
+
 
 
 

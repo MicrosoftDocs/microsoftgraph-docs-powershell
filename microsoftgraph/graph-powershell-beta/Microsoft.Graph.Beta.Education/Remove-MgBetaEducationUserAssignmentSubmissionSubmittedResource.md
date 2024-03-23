@@ -33,22 +33,6 @@ Remove-MgBetaEducationUserAssignmentSubmissionSubmittedResource -InputObject <IE
 ## DESCRIPTION
 Delete navigation property submittedResources for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -273,6 +257,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Remove-MgEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationuserassignmentsubmissionsubmittedresource)
+
 
 
 

@@ -46,22 +46,6 @@ Remove-MgBetaBookingCurrency -InputObject <IBookingsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete entity from bookingCurrencies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BookingCurrencyId
@@ -245,6 +229,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Remove-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingcurrency)
+
 
 
 

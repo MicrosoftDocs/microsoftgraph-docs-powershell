@@ -56,18 +56,6 @@ Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the navigation property qnas in search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -526,6 +514,7 @@ TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
 [Update-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna)
+
 
 
 

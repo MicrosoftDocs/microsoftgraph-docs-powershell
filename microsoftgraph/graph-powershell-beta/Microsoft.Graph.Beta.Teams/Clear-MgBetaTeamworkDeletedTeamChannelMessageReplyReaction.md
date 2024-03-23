@@ -51,22 +51,6 @@ Clear-MgBetaTeamworkDeletedTeamChannelMessageReplyReaction -InputObject <ITeamsI
 ## DESCRIPTION
 Invoke action unsetReaction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +334,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgTeamworkDeletedTeamChannelMessageReplyReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetateamworkdeletedteamchannelmessagereplyreaction)
+
 
 
 

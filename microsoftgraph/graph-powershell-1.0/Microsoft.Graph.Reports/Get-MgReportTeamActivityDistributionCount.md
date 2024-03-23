@@ -32,18 +32,6 @@ Get-MgReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityDistributionCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -196,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount)
+
 
 
 

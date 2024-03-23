@@ -29,22 +29,6 @@ Remove-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property ipSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -286,6 +270,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityipsecurityprofile)
+
 
 
 

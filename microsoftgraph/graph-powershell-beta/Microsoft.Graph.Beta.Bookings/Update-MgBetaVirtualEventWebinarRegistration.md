@@ -54,18 +54,6 @@ Update-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property registrations in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -722,6 +710,7 @@ Only appears when the registrant is registered in Microsoft Entra ID.
 [Update-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarregistration)
+
 
 
 

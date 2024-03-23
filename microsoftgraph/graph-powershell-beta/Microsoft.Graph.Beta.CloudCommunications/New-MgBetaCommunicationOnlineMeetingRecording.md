@@ -51,18 +51,6 @@ New-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 ## DESCRIPTION
 Create new navigation property to recordings for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,6 +387,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [New-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingrecording)
+
 
 
 

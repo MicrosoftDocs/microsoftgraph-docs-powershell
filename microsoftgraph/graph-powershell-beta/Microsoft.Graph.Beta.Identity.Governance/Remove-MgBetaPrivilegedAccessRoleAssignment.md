@@ -29,22 +29,6 @@ Remove-MgBetaPrivilegedAccessRoleAssignment -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Delete navigation property roleAssignments for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GovernanceRoleAssignmentId
@@ -320,6 +304,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedaccessroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprivilegedaccessroleassignment)
+
 
 
 

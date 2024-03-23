@@ -32,18 +32,6 @@ Get-MgBetaEducationClassGroupServiceProvisioningErrorCount -InputObject <IEducat
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -192,6 +180,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgEducationClassGroupServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroupServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroupserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroupserviceprovisioningerrorcount)
+
 
 
 

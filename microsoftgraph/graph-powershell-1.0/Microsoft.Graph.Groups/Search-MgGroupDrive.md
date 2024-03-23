@@ -34,22 +34,6 @@ Search-MgGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty <St
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -337,6 +321,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdrive)
+
 
 
 

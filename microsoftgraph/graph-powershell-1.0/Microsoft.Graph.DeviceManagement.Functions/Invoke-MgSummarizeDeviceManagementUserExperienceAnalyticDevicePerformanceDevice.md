@@ -36,18 +36,6 @@ Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice
 ## DESCRIPTION
 Invoke function summarizeDevicePerformanceDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -274,6 +262,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice)
+
 
 
 

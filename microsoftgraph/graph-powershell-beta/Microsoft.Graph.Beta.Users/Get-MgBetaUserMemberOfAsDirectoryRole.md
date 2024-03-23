@@ -40,18 +40,6 @@ Get-MgBetaUserMemberOfAsDirectoryRole -InputObject <IUsersIdentity> [-ExpandProp
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -359,6 +347,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserMemberOfAsDirectoryRole](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfAsDirectoryRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofasdirectoryrole)
+
 
 
 

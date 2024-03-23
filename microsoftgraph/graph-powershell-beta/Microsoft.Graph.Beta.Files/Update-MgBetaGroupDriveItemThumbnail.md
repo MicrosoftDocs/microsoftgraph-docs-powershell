@@ -49,22 +49,6 @@ Update-MgBetaGroupDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property thumbnails in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +413,7 @@ This is only available when a folder thumbnail is requested.
 [Update-MgGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemThumbnail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemthumbnail)
+
 
 
 

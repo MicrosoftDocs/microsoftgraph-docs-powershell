@@ -53,22 +53,6 @@ Associate a \[content type\]\[contentType\] with a list of hub sites.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,6 +342,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite)
+
 
 
 

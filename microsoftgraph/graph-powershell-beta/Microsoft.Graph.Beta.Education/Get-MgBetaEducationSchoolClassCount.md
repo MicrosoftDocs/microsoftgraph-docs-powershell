@@ -32,18 +32,6 @@ Get-MgBetaEducationSchoolClassCount -InputObject <IEducationIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -192,6 +180,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Get-MgEducationSchoolClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClassCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclasscount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschoolclasscount)
+
 
 
 

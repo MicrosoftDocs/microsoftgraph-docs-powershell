@@ -50,22 +50,6 @@ New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -364,6 +348,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [New-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelmember)
+
 
 
 

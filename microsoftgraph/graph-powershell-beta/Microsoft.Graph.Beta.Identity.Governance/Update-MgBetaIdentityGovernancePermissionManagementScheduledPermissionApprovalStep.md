@@ -49,18 +49,6 @@ Update-MgBetaIdentityGovernancePermissionManagementScheduledPermissionApprovalSt
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,6 +490,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernancepermissionmanagementscheduledpermissionapprovalstep)
+
 
 
 

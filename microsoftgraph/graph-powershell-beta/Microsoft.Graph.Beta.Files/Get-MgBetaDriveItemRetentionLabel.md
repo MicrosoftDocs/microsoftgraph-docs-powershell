@@ -34,18 +34,6 @@ Get-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-ExpandProperty
 Information about retention label and settings enforced on the driveItem.
 Read-write.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -215,6 +203,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemretentionlabel)
+
 
 
 

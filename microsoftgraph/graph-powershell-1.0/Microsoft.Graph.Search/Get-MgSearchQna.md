@@ -39,18 +39,6 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Get qnas from search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -311,6 +299,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna)
+
 
 
 

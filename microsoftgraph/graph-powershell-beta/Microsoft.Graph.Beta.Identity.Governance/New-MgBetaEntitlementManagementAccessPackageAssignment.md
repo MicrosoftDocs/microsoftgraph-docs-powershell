@@ -32,22 +32,6 @@ New-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageId <String>
 ## DESCRIPTION
 Create a new entitlement management accessPackageAssignment
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -8188,6 +8172,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignment)
+
 
 
 

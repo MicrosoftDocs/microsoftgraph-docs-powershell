@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceStateCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EmbeddedSimActivationCodePoolId
@@ -312,6 +300,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepooldevicestatecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepooldevicestatecount)
+
 
 
 

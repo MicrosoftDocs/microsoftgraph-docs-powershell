@@ -25,18 +25,6 @@ Get-MgBetaSiteListCreatedByUserServiceProvisioningError -ListId <String> -SiteId
 ## DESCRIPTION
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,6 +268,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgSiteListCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcreatedbyuserserviceprovisioningerror)
+
 
 
 

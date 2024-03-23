@@ -32,18 +32,6 @@ Remove-MgBetaTeamworkDeletedChat -InputObject <ITeamsIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property deletedChats for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeletedChatId
@@ -246,6 +234,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedchat)
+
 
 
 

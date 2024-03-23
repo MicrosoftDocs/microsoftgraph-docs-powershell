@@ -40,18 +40,6 @@ Get-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Represents details about attack simulation trainings.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -384,6 +372,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraining)
+
 
 
 

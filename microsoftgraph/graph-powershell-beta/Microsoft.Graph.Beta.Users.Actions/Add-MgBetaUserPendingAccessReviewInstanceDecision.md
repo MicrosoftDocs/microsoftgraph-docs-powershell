@@ -34,22 +34,6 @@ The status of the accessReviewInstance must be Completed to call this method.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-applydecisions-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -251,6 +235,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserpendingaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserpendingaccessreviewinstancedecision)
+
 
 
 

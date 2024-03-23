@@ -21,22 +21,6 @@ Select-MgBetaEntitlementManagementAccessPackage [-AccessPackage <MicrosoftGraphA
 ## DESCRIPTION
 Select matching entitlement management accessPackage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -7907,6 +7891,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackage](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/select-mgbetaentitlementmanagementaccesspackage)
+
 
 
 

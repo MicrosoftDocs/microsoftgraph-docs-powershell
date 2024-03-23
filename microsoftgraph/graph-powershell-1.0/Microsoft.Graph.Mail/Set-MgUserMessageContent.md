@@ -32,22 +32,6 @@ Set-MgUserMessageContent -InputObject <IMailIdentity> [-Data <Stream>] [-Respons
 ## DESCRIPTION
 Update media content for the navigation property messages in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -266,6 +250,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Set-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMessageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermessagecontent)
+
 
 
 

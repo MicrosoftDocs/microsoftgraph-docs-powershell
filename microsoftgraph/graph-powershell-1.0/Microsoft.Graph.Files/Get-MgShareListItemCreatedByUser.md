@@ -48,18 +48,6 @@ Get-MgShareListItemCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty 
 Identity of the user who created the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -229,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgBetaShareListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListItemCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitemcreatedbyuser)
+
 
 
 

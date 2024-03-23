@@ -34,18 +34,6 @@ Get-MgBetaGroupSiteGetByPathSite -GroupId <String> -Path <String> -SiteId <Strin
 ## DESCRIPTION
 Get a collection of subsites defined for a \[site\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -319,6 +307,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgGroupSiteGetByPathSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathsite)
+
 
 
 

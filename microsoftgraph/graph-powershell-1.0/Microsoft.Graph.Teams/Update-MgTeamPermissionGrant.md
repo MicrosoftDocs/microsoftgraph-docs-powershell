@@ -49,18 +49,6 @@ Update-MgTeamPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property permissionGrants in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,6 +391,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgBetaTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteampermissiongrant)
+
 
 
 

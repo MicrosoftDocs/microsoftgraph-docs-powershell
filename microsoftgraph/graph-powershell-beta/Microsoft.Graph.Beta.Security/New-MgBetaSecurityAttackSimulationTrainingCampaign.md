@@ -35,18 +35,6 @@ New-MgBetaSecurityAttackSimulationTrainingCampaign -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to trainingCampaigns for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -634,6 +622,7 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign)
+
 
 
 

@@ -34,22 +34,6 @@ Get-MgChatMessageReplyDelta -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +348,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaChatMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatMessageReplyDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatmessagereplydelta)
+
 
 
 

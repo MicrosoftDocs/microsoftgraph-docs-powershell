@@ -58,18 +58,6 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property bookmarks in search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -560,6 +548,7 @@ TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
 [Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
+
 
 
 

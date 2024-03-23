@@ -52,22 +52,6 @@ Update-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property jobs in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -845,6 +829,7 @@ Some settings are inherited from the template.
 [Update-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob)
+
 
 
 

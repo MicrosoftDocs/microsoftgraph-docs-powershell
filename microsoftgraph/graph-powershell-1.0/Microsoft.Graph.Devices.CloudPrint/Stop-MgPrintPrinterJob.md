@@ -37,18 +37,6 @@ Print jobs can be canceled only on behalf of a user, using delegated permissions
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-cancel-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -223,6 +211,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Stop-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Stop-MgBetaPrintPrinterJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintprinterjob)
+
 
 
 

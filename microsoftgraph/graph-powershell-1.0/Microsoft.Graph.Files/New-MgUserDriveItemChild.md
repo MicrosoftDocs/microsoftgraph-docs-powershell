@@ -85,18 +85,6 @@ Create new navigation property to children for users
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -29814,6 +29802,7 @@ Read-only.
 [New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild)
+
 
 
 

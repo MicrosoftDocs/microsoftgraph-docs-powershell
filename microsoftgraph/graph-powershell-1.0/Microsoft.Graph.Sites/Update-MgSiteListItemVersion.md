@@ -50,22 +50,6 @@ Update-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property versions in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -450,6 +434,7 @@ Read-only.
 [Update-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemversion)
+
 
 
 

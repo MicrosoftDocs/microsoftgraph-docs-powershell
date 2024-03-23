@@ -47,22 +47,6 @@ Update-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> -BodyPar
 ## DESCRIPTION
 Update the navigation property journals in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -463,6 +447,7 @@ JOURNALLINES <IMicrosoftGraphJournalLine- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournal)
+
 
 
 

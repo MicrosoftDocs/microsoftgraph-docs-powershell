@@ -42,22 +42,6 @@ Get-MgBetaOrganizationExtension -InputObject <IIdentityDirectoryManagementIdenti
 The collection of open extensions defined for the organization resource.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +356,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Get-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationextension)
+
 
 
 

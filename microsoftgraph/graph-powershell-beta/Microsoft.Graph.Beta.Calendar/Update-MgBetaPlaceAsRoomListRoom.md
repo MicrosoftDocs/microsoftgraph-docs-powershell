@@ -54,18 +54,6 @@ Update-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property rooms in places
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -588,6 +576,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Update-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom)
+
 
 
 

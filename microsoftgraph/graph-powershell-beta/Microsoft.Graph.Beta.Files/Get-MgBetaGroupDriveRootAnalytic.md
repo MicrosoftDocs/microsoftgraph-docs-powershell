@@ -35,22 +35,6 @@ Get \[itemAnalytics\]\[\] about the views that took place under this resource.Th
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemanalytics-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -220,6 +204,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytic)
+
 
 
 

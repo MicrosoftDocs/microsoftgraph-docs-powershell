@@ -34,18 +34,6 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Invoke function getRelyingPartyDetailedSummary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -288,6 +276,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportRelyingPartyDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportRelyingPartyDetailedSummary?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary)
+
 
 
 

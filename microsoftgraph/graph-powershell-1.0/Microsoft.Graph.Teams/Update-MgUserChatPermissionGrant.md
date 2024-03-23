@@ -49,18 +49,6 @@ Update-MgUserChatPermissionGrant -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property permissionGrants in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -418,6 +406,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant)
+
 
 
 

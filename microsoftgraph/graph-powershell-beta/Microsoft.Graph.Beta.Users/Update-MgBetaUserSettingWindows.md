@@ -48,18 +48,6 @@ Update-MgBetaUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property windows in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -369,6 +357,7 @@ Refers to the user's Windows device that modified the object at the specified da
 [Update-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows)
+
 
 
 

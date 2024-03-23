@@ -33,18 +33,6 @@ New-MgBetaSecurityRuleDetectionRule -BodyParameter <IMicrosoftGraphSecurityDetec
 ## DESCRIPTION
 Create new navigation property to detectionRules for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,6 +430,7 @@ The allowed values are: 0, 1H, 3H, 12H, or 24H.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityruledetectionrule)
+
 
 
 

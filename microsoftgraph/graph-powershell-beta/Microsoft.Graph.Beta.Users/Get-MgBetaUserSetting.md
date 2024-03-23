@@ -32,22 +32,6 @@ Get-MgBetaUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get settings from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -203,6 +187,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersetting)
+
 
 
 

@@ -34,22 +34,6 @@ Get-MgBetaApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-Ex
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -212,6 +196,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationcreatedonbehalfof)
+
 
 
 

@@ -51,22 +51,6 @@ Update-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Update the navigation property sharedWithTeams in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15411,6 +15395,7 @@ This URL should be treated as an opaque blob, and not parsed.
 [Update-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeletedteamchannelsharedwithteam)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgGroupTeamInstalledAppTeamApp -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 The app that is installed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -226,6 +210,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaGroupTeamInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamInstalledAppTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledappteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledappteamapp)
+
 
 
 

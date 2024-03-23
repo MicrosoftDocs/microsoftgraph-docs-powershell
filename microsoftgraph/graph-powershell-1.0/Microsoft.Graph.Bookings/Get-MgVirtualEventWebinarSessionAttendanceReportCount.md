@@ -32,18 +32,6 @@ Get-MgVirtualEventWebinarSessionAttendanceReportCount -InputObject <IBookingsIde
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -204,6 +192,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReportCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereportcount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereportcount)
+
 
 
 

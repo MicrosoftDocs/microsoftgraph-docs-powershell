@@ -36,18 +36,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTarget
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand and $select nested in $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -278,6 +266,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequesttargetschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedulerequesttargetschedule)
+
 
 
 

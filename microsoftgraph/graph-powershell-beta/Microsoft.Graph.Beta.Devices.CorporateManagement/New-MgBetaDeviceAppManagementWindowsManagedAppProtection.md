@@ -43,18 +43,6 @@ New-MgBetaDeviceAppManagementWindowsManagedAppProtection
 ## DESCRIPTION
 Create new navigation property to windowsManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -754,6 +742,7 @@ Default value is FALSE.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsmanagedappprotection)
+
 
 
 

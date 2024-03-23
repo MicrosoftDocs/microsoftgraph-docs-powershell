@@ -55,22 +55,6 @@ Update-MgGroupDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property subscriptions in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,6 +624,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Update-MgBetaGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemsubscription)
+
 
 
 

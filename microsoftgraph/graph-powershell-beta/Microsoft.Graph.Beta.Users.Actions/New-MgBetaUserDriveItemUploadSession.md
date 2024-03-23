@@ -49,22 +49,6 @@ New-MgBetaUserDriveItemUploadSession -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -363,6 +347,7 @@ Read-write.
 [New-MgUserDriveItemUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveItemUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemuploadsession)
+
 
 
 

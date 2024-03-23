@@ -32,18 +32,6 @@ Remove-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityI
 ## DESCRIPTION
 Delete navigation property intelligenceProfileIndicators for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -286,6 +274,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatintelligenceprofileindicator)
+
 
 
 

@@ -34,18 +34,6 @@ New-MgDeviceManagementIoUpdateStatus -BodyParameter <IMicrosoftGraphIosUpdateDev
 ## DESCRIPTION
 Create a new iosUpdateDeviceStatus object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,6 +360,7 @@ Read-only.
 [New-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementioupdatestatus)
+
 
 
 

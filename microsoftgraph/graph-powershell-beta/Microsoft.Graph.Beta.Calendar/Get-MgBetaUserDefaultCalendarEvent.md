@@ -31,18 +31,6 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, orget the instances of an event.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -256,6 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendarevent)
+
 
 
 

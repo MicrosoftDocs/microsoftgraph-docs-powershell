@@ -40,18 +40,6 @@ Get-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 A collection of permissions granted to apps for the chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +354,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatpermissiongrant)
+
 
 
 

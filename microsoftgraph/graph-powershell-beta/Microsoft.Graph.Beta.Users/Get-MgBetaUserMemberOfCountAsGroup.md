@@ -32,18 +32,6 @@ Get-MgBetaUserMemberOfCountAsGroup -InputObject <IUsersIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -215,6 +203,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfCountAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermemberofcountasgroup)
+
 
 
 

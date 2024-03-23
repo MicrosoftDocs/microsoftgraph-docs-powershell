@@ -32,18 +32,6 @@ Remove-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property windows for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -245,6 +233,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Remove-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindows)
+
 
 
 

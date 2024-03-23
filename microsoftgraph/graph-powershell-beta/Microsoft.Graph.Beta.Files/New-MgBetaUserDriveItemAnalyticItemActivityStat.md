@@ -56,18 +56,6 @@ New-MgBetaUserDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15504,6 +15492,7 @@ Read-only.
 [New-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdriveitemanalyticitemactivitystat)
+
 
 
 

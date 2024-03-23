@@ -35,18 +35,6 @@ Retry the group service provisioning.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-retryserviceprovisioning-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -230,6 +218,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Invoke-MgBetaRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRetryGroupServiceProvisioning?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgretrygroupserviceprovisioning)
+
 
 
 
