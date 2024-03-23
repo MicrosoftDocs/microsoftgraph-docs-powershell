@@ -64,19 +64,23 @@ The notifyTeam parameter further specifies which employees can view the item.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-share-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	notifyTeam = $true
-	startDateTime = \[System.DateTime\]::Parse("2018-10-08T00:00:00.000Z")
-	endDateTime = \[System.DateTime\]::Parse("2018-10-15T00:00:00.000Z")
+	startDateTime = [System.DateTime]::Parse("2018-10-08T00:00:00.000Z")
+	endDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
 }
 
 Invoke-MgShareTeamSchedule -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgShareTeamSchedule Cmdlet.
+
 
 ## PARAMETERS
 

@@ -58,11 +58,10 @@ Outlook carries out those actions if an incoming message in the user's Inbox mee
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-messagerules-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	displayName = "From partner"
@@ -88,6 +87,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+```
+This example shows how to use the New-MgUserMailFolderMessageRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

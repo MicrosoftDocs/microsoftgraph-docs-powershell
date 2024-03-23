@@ -59,13 +59,17 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementCatalog
+
+```
+This example shows how to use the Get-MgEntitlementManagementCatalog Cmdlet.
+
 
 ## PARAMETERS
 

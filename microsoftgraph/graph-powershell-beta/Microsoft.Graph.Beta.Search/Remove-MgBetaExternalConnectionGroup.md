@@ -36,13 +36,17 @@ Delete an externalGroup object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Remove-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
+
+```
+This example shows how to use the Remove-MgBetaExternalConnectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

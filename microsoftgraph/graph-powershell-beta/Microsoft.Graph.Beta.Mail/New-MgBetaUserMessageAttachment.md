@@ -54,11 +54,10 @@ An attachment can be one of the following types: All these types of attachment r
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-post-attachments-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Mail
-```
 
 $params = @{
 	"@odata.type" = "#Microsoft.OutlookServices.FileAttachment"
@@ -71,6 +70,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

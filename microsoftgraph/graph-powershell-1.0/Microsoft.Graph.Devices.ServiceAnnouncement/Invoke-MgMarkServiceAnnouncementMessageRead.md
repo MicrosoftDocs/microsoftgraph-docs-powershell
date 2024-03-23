@@ -37,11 +37,11 @@ Mark a list of serviceUpdateMessages as read for the signed in user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markread-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 $params = @{
 	messageIds = @(
@@ -51,6 +51,10 @@ $params = @{
 }
 
 Invoke-MgMarkServiceAnnouncementMessageRead -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgMarkServiceAnnouncementMessageRead Cmdlet.
+
 
 ## PARAMETERS
 

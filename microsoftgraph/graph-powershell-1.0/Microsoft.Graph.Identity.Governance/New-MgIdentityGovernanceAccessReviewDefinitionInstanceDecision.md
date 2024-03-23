@@ -58,13 +58,17 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 Create new navigation property to decisions for identityGovernance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
+```
+This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

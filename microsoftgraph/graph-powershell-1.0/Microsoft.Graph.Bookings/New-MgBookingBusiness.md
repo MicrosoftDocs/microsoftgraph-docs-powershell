@@ -46,17 +46,16 @@ You can include other information such as business address, web site address, an
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-bookingbusinesses-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	displayName = "Fourth Coffee"
 	address = @{
-		postOfficeBox = "P.O.
-Box 123"
+		postOfficeBox = "P.O. Box 123"
 		street = "4567 Main Street"
 		city = "Buffalo"
 		state = "NY"
@@ -70,6 +69,10 @@ Box 123"
 }
 
 New-MgBookingBusiness -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 

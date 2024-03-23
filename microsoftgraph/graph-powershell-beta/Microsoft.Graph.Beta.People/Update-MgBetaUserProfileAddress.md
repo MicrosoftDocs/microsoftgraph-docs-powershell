@@ -56,9 +56,8 @@ Update the properties of an itemAddress object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-update-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaUserProfileAddress Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	AllowedAudiences = "me"
@@ -66,6 +65,8 @@ $params = @{
 }
 Update-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserProfileAddress Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

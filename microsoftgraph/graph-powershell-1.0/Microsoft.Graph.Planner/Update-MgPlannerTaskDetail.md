@@ -52,11 +52,11 @@ Update the navigation property details in planner
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannertaskdetails-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	previewType = "noPreview"
@@ -87,7 +87,12 @@ $params = @{
 	}
 }
 
-Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
+
 
 ## PARAMETERS
 

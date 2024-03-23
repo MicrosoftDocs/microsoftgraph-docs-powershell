@@ -38,13 +38,17 @@ For more information, see Publisher verification.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-unsetverifiedpublisher-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId
+
+```
+This example shows how to use the Clear-MgBetaApplicationVerifiedPublisher Cmdlet.
+
 
 ## PARAMETERS
 
