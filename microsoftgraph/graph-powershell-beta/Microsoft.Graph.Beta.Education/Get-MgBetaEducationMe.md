@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get me from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMe?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -125,6 +128,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMe?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme)
 

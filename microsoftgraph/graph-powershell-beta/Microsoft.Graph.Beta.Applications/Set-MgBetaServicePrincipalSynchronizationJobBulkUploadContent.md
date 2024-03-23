@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property bulkUpload in servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgServicePrincipalSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -282,6 +285,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgServicePrincipalSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaserviceprincipalsynchronizationjobbulkuploadcontent)
 

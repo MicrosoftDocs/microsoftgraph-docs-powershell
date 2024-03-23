@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -276,6 +279,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaUserDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveRootVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootversioncontent)
 

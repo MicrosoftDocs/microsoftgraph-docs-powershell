@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The \[set\] in which the relation is relevant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetTermRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTermRelationSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -281,6 +284,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreGroupSetTermRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTermRelationSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsettermrelationset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoregroupsettermrelationset)
 

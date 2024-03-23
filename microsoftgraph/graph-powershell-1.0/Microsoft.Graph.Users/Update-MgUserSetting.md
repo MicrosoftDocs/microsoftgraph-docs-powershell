@@ -13,6 +13,9 @@ Update the properties of the userSettings object.
 Users in the same organization can have different settings based on their preference or on the organization policies.
 To get the user current settings, see current user settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -477,6 +480,7 @@ Refers to the user's Windows device that modified the object at the specified da
   - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
 ## RELATED LINKS
+[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
 

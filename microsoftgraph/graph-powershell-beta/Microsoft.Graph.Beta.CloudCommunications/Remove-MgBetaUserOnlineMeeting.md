@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an onlineMeeting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -234,6 +237,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting)
 

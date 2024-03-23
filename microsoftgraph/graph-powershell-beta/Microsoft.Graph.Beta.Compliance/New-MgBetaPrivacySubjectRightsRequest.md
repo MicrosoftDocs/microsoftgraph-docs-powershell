@@ -11,6 +11,9 @@ ms.prod: compliance
 ## SYNOPSIS
 Create a new subjectRightsRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -30835,6 +30838,7 @@ It is the URL you get when you right-click a team in the Microsoft Teams client 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[New-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest)
 

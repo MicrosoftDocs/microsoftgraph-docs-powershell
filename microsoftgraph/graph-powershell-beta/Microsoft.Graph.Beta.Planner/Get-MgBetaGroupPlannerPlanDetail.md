@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerPlanDetails object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -194,6 +197,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail)
 

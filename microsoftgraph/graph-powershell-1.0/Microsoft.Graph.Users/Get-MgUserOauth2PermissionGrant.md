@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get oauth2PermissionGrants from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -330,6 +333,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroauth2permissiongrant)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceLogCollectionRequestCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionRequestCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -251,6 +254,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgUserManagedDeviceLogCollectionRequestCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionRequestCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionrequestcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetausermanageddevicelogcollectionrequestcount)
 

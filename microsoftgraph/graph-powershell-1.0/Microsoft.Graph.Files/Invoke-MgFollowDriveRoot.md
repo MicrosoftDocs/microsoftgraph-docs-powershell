@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -198,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaFollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaFollowDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgfollowdriveroot)
 

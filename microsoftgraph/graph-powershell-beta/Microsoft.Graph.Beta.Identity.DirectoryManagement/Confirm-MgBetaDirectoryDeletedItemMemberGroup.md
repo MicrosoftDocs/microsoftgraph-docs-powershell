@@ -14,6 +14,9 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Microsoft Entra ID.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryDeletedItemMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryDeletedItemMemberGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -294,6 +297,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgDirectoryDeletedItemMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryDeletedItemMemberGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectorydeleteditemmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectorydeleteditemmembergroup)
 

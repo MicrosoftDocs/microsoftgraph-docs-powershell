@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserServiceProvisioningError?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -244,6 +247,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationMeUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuserserviceprovisioningerror)
 

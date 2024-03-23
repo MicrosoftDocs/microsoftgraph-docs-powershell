@@ -19,6 +19,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaApplicationProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -276,6 +279,7 @@ BODYPARAMETER `<IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequ
   - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
+[Test-MgBetaApplicationProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaApplicationProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/test-mgapplicationproperty)
 

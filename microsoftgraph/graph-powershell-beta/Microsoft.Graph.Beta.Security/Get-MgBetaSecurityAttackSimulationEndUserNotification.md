@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an end user's notification for an attack simulation training.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -378,6 +381,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationendusernotification)
 

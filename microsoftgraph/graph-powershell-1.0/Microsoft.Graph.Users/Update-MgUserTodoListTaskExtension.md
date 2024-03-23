@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -294,6 +297,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Update-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskextension)
 

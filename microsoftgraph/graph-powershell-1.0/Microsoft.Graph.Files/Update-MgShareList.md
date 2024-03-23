@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property list in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -24374,6 +24377,7 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelist)
 

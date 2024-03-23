@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -525,6 +528,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathoperation)
 

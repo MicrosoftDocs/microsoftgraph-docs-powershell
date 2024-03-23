@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23650,6 +23653,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitem)
 

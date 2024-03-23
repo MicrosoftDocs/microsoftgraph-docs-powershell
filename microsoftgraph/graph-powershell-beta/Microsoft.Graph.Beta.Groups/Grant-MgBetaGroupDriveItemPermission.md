@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -370,6 +373,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupdriveitempermission)
 

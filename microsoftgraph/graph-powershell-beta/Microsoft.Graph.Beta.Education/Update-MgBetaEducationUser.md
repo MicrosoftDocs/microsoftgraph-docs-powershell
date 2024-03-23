@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the relatedContact collection of an educationUser object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -39992,6 +39995,7 @@ Read-only.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
 

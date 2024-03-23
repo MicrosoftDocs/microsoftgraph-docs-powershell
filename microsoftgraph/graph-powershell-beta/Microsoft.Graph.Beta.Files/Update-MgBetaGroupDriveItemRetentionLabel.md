@@ -12,6 +12,9 @@ Lock or unlock a retention label on a driveItem that classifies content as recor
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
 For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -440,6 +443,7 @@ Read-only.
 Read-write.
 
 ## RELATED LINKS
+[Update-MgGroupDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitemretentionlabel)
 

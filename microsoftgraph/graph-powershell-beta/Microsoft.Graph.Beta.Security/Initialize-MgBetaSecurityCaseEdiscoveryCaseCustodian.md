@@ -11,6 +11,9 @@ schema: 2.0.0
 Activate a custodian that has been released from a case to make them part of the case again.
 For details, see Manage custodians in an eDiscovery (Premium) case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Activate (Default)
@@ -278,6 +281,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecuritycaseediscoverycasecustodian)
 

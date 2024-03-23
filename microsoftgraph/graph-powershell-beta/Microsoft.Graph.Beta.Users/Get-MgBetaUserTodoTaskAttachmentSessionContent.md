@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content streams that are uploaded.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentSessionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -238,6 +241,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentSessionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentsessioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentsessioncontent)
 

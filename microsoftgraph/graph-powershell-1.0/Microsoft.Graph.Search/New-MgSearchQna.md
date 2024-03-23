@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to qnas for search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -457,6 +460,7 @@ TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
   - `[WebUrl <String>]`:
 
 ## RELATED LINKS
+[New-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
 

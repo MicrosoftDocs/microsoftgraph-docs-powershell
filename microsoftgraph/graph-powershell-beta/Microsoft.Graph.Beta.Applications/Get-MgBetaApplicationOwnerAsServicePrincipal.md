@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -361,6 +364,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerasserviceprincipal)
 

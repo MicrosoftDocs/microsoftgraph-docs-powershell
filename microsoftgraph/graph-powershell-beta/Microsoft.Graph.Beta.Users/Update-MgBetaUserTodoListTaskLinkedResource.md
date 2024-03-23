@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a linkedResource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -382,6 +385,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource)
 

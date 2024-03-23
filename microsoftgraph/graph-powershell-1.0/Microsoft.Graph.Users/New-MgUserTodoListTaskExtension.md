@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -279,6 +282,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[New-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskextension)
 

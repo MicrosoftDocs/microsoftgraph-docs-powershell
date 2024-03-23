@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The localized version of the terms of use agreement files attached to the agreement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -377,6 +380,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization)
 

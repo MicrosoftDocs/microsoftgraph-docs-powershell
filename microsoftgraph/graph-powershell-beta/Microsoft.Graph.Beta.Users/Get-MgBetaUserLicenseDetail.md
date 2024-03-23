@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get licenseDetails from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -338,6 +341,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserlicensedetail)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Endpoints available for discovery.
 Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalEndpoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -350,6 +353,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalendpoint)
 

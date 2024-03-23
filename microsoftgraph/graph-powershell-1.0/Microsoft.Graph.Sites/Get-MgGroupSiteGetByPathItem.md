@@ -11,6 +11,9 @@ schema: 2.0.0
 Used to address any item contained in this site.
 This collection can't be enumerated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -315,6 +318,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteGetByPathItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathitem)
 

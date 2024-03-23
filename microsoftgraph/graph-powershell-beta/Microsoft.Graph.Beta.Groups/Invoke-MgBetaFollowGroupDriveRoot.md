@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -235,6 +238,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgFollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgFollowGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetafollowgroupdriveroot)
 

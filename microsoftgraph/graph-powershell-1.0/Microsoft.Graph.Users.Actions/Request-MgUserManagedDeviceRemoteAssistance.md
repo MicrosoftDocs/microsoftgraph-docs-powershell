@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Request remote assistance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Request (Default)
@@ -233,6 +236,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance)
 

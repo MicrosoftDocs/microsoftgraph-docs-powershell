@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property jobs for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -227,6 +230,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintsharejob)
 

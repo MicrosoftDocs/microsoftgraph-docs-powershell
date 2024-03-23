@@ -11,6 +11,9 @@ schema: 2.0.0
 Schools to which the user belongs.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -327,6 +330,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserschool)
 

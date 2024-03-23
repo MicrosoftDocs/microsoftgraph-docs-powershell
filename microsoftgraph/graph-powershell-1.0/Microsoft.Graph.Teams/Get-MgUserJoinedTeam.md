@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the teams in Microsoft Teams that the user is a direct member of.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -257,6 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)
 

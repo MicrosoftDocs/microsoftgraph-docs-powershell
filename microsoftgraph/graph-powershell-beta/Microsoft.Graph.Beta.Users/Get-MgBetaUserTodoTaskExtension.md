@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the task.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserTodoTaskExtension](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskextension)
 

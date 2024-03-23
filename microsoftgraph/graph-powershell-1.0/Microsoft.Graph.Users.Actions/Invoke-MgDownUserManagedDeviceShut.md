@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Shut down device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Down (Default)
@@ -233,6 +236,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaDownUserManagedDeviceShut?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdownusermanageddeviceshut](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgdownusermanageddeviceshut)
 

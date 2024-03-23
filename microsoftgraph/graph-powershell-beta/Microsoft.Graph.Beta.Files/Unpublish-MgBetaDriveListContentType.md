@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgDriveListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -230,6 +233,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Unpublish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetadrivelistcontenttype)
 

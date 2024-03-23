@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -344,6 +347,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasadministrativeunit)
 

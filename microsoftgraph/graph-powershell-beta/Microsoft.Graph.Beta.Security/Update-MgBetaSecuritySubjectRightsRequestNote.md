@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property notes in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -414,6 +417,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Update-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysubjectrightsrequestnote)
 

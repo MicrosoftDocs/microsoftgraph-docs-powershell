@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property instances for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWindowsInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -255,6 +258,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Remove-MgUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingWindowsInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersettingwindowsinstance)
 

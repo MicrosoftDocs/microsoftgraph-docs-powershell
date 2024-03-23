@@ -11,6 +11,9 @@ schema: 2.0.0
 Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1048,6 +1051,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessage)
 
