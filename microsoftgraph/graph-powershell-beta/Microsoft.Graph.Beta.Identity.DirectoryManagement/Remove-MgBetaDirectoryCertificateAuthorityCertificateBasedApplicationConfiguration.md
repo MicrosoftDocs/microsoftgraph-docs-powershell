@@ -31,6 +31,9 @@ Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Delete the properties and relationships of a certificateBasedApplicationConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

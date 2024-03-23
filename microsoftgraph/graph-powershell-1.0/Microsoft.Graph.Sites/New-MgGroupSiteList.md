@@ -59,6 +59,9 @@ New-MgGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create a new \[list\]\[\] in a \[site\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-create-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

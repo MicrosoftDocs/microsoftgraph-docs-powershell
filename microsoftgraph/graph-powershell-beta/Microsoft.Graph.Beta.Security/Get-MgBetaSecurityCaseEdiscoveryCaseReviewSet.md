@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet
@@ -36,6 +37,9 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryReviewSet object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-get-permissions.md)]
 
 ## EXAMPLES
 

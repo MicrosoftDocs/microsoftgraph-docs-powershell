@@ -55,6 +55,9 @@ Update-MgBetaEducationSchool -InputObject <IEducationIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a school object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgRoleManagementDirectoryRoleEligibilitySchedule -InputObject <IIdentityGove
 ## DESCRIPTION
 Retrieve the schedule for a role eligibility operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

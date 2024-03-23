@@ -31,6 +31,9 @@ Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-runhealthcheck-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

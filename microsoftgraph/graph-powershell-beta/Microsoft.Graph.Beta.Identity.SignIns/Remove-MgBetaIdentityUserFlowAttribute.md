@@ -29,6 +29,9 @@ Remove-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete a custom identityUserFlowAttribute.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

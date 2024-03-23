@@ -47,6 +47,9 @@ Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Set the availability and activity status in a presence session of an application for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setpresence-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

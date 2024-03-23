@@ -28,6 +28,9 @@ New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Response
 ## DESCRIPTION
 Create a new plannerRoster object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-rosters-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

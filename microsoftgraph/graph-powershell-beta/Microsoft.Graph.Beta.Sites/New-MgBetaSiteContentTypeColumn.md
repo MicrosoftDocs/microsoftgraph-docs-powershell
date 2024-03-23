@@ -65,6 +65,9 @@ New-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

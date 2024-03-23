@@ -37,6 +37,9 @@ Get-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 ## DESCRIPTION
 Retrieve the details of a role management policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedrolemanagementpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -79,6 +79,9 @@ New-MgUserDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

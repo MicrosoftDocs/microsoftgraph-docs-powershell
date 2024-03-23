@@ -48,6 +48,9 @@ Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ## DESCRIPTION
 Update the properties of a plannerPlanConfigurationLocalization object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfigurationlocalization-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISec
 ## DESCRIPTION
 Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmissionpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

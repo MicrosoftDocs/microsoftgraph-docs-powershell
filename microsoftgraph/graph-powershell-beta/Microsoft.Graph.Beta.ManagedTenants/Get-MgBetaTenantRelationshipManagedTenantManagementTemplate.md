@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManag
 ## DESCRIPTION
 Read the properties and relationships of a managementTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementtemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

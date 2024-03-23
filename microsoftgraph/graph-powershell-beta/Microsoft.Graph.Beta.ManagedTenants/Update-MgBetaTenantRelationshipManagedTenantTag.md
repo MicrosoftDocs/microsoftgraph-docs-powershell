@@ -49,6 +49,9 @@ Update-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 ## DESCRIPTION
 Update the properties of a tenantTag object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

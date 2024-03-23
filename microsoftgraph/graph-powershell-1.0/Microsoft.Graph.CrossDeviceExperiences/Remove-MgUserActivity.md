@@ -29,6 +29,9 @@ Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete an existing user activity for your app.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-delete-activity-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

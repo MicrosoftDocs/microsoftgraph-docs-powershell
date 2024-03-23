@@ -37,6 +37,9 @@ Get-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Read the properties and relationships of a mobilityManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

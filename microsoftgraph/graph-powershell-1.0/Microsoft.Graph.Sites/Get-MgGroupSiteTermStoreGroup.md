@@ -59,6 +59,9 @@ Get-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

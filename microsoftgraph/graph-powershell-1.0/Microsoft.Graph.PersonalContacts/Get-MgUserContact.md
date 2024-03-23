@@ -39,6 +39,9 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

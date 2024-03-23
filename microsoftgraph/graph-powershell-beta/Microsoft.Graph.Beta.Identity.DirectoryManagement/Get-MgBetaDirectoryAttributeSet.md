@@ -37,6 +37,9 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Read the properties and relationships of an attributeSet object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attributeset-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

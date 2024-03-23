@@ -37,6 +37,9 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Retrieve the properties and relationships of a countryNamedLocation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/countrynamedlocation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandPro
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

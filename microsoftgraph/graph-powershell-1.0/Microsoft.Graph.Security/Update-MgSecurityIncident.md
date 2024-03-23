@@ -53,6 +53,9 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of an incident object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-incident-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

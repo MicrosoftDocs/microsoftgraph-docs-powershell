@@ -29,6 +29,9 @@ Remove-MgGroupOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete a OneNote page.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

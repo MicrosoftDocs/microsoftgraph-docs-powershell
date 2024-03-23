@@ -30,6 +30,9 @@ Remove-MgBetaSecurityTiIndicatorMultiple
 ## DESCRIPTION
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-deletetiindicators-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

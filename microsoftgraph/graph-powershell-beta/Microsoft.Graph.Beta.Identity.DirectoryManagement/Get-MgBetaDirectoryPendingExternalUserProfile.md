@@ -37,6 +37,9 @@ Get-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Retrieve the properties of a specific pendingExternalUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

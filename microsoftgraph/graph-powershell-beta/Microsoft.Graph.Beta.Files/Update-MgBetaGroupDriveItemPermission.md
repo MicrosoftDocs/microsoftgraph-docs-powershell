@@ -56,6 +56,9 @@ Update-MgBetaGroupDriveItemPermission -InputObject <IFilesIdentity> -BodyParamet
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

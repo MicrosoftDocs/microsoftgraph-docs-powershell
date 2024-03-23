@@ -29,6 +29,9 @@ Remove-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete a bookingCustomQuestion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomquestion-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

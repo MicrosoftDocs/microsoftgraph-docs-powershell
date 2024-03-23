@@ -45,6 +45,9 @@ Remove-MgUserFollowedSite -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Unfollow a user's site or multiple sites.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-unfollow-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

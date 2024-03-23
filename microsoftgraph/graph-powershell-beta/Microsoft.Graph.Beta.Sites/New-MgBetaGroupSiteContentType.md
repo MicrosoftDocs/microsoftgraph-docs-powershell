@@ -55,6 +55,9 @@ New-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new \[contentType\]\[\] for a \[site\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-contenttypes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

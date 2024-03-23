@@ -44,6 +44,9 @@ Set-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> -B
 ## DESCRIPTION
 Assign a connectorGroup to an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-applications-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

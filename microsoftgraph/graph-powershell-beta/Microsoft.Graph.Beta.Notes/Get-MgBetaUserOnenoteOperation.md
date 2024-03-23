@@ -37,6 +37,9 @@ The status applies to operations that return the Operation-Location header in th
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenoteoperation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

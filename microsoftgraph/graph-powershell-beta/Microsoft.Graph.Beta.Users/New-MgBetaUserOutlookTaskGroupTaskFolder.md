@@ -51,6 +51,9 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create an Outlook task folder under a specified outlookTaskGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-post-taskfolders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

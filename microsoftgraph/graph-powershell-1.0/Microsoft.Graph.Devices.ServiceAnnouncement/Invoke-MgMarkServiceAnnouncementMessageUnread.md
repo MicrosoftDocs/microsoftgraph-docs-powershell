@@ -30,6 +30,9 @@ Invoke-MgMarkServiceAnnouncementMessageUnread
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markunread-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

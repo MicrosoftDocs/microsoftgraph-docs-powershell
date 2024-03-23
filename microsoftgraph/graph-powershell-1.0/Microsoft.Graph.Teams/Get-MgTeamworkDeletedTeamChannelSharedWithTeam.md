@@ -55,6 +55,9 @@ Get-MgTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-E
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a membershipType value of shared.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

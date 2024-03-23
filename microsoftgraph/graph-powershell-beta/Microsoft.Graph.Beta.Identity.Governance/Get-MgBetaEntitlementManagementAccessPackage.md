@@ -64,6 +64,9 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

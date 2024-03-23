@@ -59,6 +59,9 @@ New-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-create-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

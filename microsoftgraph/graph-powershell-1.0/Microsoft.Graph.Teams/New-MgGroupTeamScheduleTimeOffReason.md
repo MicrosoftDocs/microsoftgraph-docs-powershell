@@ -45,6 +45,9 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create a new timeOffReason.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timeoffreasons-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

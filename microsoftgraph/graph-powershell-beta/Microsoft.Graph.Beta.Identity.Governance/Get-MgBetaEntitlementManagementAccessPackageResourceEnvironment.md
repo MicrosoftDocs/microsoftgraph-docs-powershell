@@ -37,6 +37,9 @@ Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of an accessPackageResourceEnvironment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackageresourceenvironment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkout-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

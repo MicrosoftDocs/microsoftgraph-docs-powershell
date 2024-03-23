@@ -52,6 +52,9 @@ Invoke-MgBetaParseApplicationSynchronizationTemplateSchemaExpression -InputObjec
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-parseexpression-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -44,6 +44,9 @@ New-MgDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Create new navigation property ref to members for directory
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -43,6 +43,9 @@ Update-MgBetaDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

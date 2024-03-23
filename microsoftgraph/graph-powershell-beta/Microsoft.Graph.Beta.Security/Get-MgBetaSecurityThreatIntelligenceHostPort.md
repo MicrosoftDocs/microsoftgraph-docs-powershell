@@ -59,6 +59,9 @@ Get-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Read the properties and relationships of a hostPort object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostport-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

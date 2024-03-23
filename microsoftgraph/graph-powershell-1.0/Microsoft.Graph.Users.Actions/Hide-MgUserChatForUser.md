@@ -45,6 +45,9 @@ Hide-MgUserChatForUser -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Hide a chat for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-hideforuser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -83,6 +83,9 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new staff member in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-staffmembers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

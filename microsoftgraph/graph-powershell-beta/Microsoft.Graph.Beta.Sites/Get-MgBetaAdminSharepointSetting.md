@@ -21,6 +21,9 @@ Get-MgBetaAdminSharepointSetting [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get the tenant-level settings for SharePoint and OneDrive.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sharepointsettings-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

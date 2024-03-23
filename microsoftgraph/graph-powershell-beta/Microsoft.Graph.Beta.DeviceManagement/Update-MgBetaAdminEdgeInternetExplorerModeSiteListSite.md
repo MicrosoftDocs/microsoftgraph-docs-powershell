@@ -53,6 +53,9 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ## DESCRIPTION
 Update the properties of a browserSite object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersite-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

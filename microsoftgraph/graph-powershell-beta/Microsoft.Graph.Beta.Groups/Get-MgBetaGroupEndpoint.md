@@ -37,6 +37,9 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/endpoint-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -52,6 +52,9 @@ Send-MgChatActivityNotification -InputObject <ITeamsIdentity>
 Send an activity feed notification in scope of a chat.
 For more information about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-sendactivitynotification-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

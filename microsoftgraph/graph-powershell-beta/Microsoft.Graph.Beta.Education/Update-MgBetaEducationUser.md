@@ -71,6 +71,9 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the relatedContact collection of an educationUser object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/relatedcontact-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

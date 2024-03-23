@@ -47,6 +47,9 @@ Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdenti
 ## DESCRIPTION
 Create a request to export the personal data for an inboundSharedUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-exportpersonaldata-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

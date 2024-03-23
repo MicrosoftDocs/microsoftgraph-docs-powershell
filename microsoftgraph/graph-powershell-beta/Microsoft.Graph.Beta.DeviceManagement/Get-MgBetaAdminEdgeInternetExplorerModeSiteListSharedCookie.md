@@ -38,6 +38,9 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 ## DESCRIPTION
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersharedcookie-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

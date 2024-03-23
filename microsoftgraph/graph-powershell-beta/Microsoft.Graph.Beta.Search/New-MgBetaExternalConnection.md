@@ -38,6 +38,9 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 ## DESCRIPTION
 Create a new externalConnection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

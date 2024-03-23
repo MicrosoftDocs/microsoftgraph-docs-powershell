@@ -29,6 +29,9 @@ Remove-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

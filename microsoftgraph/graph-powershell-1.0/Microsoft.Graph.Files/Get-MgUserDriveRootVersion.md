@@ -37,6 +37,9 @@ Get-MgUserDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

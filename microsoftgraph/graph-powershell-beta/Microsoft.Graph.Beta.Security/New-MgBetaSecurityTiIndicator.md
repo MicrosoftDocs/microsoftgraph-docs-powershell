@@ -44,6 +44,9 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Resp
 ## DESCRIPTION
 Create a new tiIndicator object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicators-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

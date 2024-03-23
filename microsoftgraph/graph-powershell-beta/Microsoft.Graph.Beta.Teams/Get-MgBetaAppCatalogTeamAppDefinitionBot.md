@@ -29,6 +29,9 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the bot associated with a specific definition of the  TeamsApp.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkbot-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

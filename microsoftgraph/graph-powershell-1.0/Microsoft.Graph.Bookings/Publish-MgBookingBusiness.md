@@ -31,6 +31,9 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVari
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-publish-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

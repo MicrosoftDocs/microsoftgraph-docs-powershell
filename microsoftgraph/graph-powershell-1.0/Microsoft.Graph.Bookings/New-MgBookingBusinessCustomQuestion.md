@@ -45,6 +45,9 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customquestions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

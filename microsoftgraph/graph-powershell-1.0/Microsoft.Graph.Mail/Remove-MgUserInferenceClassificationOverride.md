@@ -29,6 +29,9 @@ Remove-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-IfMa
 ## DESCRIPTION
 Delete an override specified by its ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

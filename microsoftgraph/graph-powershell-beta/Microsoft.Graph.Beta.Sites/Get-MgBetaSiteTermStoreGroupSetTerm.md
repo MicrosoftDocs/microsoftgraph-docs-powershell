@@ -37,6 +37,9 @@ Get-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a term object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

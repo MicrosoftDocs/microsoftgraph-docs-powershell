@@ -21,6 +21,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest [-ExpandProperty 
 ## DESCRIPTION
 Get the status of a tenant joining a multi-tenant organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationjoinrequestrecord-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -49,6 +49,9 @@ Test-MgServicePrincipalSynchronizationJobCredential -InputObject <IApplicationsI
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

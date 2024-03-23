@@ -54,6 +54,9 @@ Only teachers in the class can perform this operation.
 Note that you can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

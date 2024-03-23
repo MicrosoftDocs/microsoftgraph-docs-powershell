@@ -49,6 +49,9 @@ Update-MgBetaPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity>
 Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtaskdefinition-update-task-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

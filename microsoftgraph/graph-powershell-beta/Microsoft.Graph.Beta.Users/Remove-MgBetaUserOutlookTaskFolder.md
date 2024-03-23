@@ -29,6 +29,9 @@ Remove-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete the specified Outlook task folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

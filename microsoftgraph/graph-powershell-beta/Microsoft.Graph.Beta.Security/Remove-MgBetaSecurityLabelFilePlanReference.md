@@ -29,6 +29,9 @@ Remove-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete a filePlanReferenceTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-delete-fileplanreferences-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

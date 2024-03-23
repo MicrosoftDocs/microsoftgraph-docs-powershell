@@ -40,6 +40,9 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 ## DESCRIPTION
 Read the properties and relationships of a customAccessPackageWorkflowExtension object for an accessPackageCatalog object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customaccesspackageworkflowextension-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

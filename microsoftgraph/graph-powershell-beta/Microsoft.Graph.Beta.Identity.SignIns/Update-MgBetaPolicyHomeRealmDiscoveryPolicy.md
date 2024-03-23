@@ -47,6 +47,9 @@ Update-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Update the properties of a homeRealmDiscoveryPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

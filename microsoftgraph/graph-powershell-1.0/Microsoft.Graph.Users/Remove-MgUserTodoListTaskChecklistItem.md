@@ -29,6 +29,9 @@ Remove-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a checklistItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

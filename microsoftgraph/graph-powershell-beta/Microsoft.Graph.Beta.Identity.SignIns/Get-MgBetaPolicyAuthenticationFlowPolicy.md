@@ -21,6 +21,9 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationflowspolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

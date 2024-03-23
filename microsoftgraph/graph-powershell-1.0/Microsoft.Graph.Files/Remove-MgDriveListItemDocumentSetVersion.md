@@ -29,6 +29,9 @@ Remove-MgDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-IfMatch
 ## DESCRIPTION
 Delete a version of a document set in a list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

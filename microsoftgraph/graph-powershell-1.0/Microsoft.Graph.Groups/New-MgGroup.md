@@ -61,6 +61,9 @@ You can create the following types of groups: This operation returns by default 
 These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-groups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

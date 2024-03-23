@@ -48,6 +48,9 @@ Update-MgBetaPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property buckets in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

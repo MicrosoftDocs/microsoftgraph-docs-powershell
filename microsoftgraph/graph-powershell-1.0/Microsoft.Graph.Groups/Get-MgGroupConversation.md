@@ -36,6 +36,9 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>]
 ## DESCRIPTION
 Retrieve the properties and relationships of conversation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

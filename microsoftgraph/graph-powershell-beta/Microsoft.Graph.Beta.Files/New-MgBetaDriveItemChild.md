@@ -79,6 +79,9 @@ New-MgBetaDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for drives
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

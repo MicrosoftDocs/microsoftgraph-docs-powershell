@@ -29,6 +29,9 @@ Remove-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a trustFrameworkKeySet.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

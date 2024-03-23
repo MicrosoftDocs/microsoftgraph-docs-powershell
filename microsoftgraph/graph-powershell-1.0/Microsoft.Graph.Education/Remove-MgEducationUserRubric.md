@@ -31,6 +31,9 @@ Remove-MgEducationUserRubric -InputObject <IEducationIdentity> [-IfMatch <String
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

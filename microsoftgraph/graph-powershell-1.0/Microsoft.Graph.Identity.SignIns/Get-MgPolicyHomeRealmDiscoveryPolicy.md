@@ -37,6 +37,9 @@ Get-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

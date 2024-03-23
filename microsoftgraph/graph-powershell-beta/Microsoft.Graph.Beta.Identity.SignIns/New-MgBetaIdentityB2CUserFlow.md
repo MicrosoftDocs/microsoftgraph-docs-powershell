@@ -34,6 +34,9 @@ New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow
 ## DESCRIPTION
 Create a new b2cIdentityUserFlow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-b2cuserflows-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

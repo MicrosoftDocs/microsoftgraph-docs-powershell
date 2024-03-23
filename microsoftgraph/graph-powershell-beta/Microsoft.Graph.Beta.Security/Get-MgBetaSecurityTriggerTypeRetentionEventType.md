@@ -37,6 +37,9 @@ Get-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Read the properties and relationships of a retentionEventType object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

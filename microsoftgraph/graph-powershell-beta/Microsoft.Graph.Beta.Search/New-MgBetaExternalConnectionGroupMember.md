@@ -43,6 +43,9 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new externalGroupMember object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

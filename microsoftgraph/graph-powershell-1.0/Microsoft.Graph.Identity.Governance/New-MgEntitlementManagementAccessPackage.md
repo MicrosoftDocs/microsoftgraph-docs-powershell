@@ -36,6 +36,9 @@ New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPa
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

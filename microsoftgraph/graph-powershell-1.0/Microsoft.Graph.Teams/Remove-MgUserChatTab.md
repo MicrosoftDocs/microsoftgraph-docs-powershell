@@ -29,6 +29,9 @@ Remove-MgUserChatTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 ## DESCRIPTION
 Remove (unpin) a tab from the specified chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-tabs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

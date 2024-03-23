@@ -34,6 +34,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -OutF
 Get the device recommendation reports for Cloud PCs, such as the usage category report.
 The usage category report categorizes a Cloud PC as Undersized, Oversized, Rightsized, or Underutilized, and also provides the recommended SKU when the Cloud PC isn't Rightsized.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getcloudpcrecommendationreports-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

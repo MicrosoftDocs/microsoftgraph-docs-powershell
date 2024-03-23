@@ -29,6 +29,9 @@ Remove-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete a registered device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

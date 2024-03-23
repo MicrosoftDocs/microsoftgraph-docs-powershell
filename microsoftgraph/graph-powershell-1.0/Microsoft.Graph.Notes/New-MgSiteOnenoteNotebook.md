@@ -51,6 +51,9 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

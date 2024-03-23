@@ -55,6 +55,9 @@ Get-MgEntitlementManagementCatalog [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

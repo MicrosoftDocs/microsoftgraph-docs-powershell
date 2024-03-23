@@ -56,6 +56,9 @@ New-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new calendar for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendars-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

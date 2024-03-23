@@ -45,6 +45,9 @@ Update-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the properties of calendargroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

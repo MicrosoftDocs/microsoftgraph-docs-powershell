@@ -48,6 +48,9 @@ Invoke-MgBetaReplyGroupThread -InputObject <IGroupsIdentity>
 Reply to a post and add a new post to the specified thread in a group conversation.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-reply-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

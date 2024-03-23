@@ -38,6 +38,9 @@ Get-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 ## DESCRIPTION
 Get the properties of a certificateBasedAuthConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

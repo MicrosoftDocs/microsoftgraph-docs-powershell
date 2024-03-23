@@ -29,6 +29,9 @@ Remove-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Delete a samlOrWsFedExternalDomainFederation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/samlorwsfedexternaldomainfederation-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

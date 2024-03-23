@@ -33,6 +33,9 @@ Delete an accessPackageAssignmentRequest object.
 This request can be made to remove a denied or completed request.
 You cannot delete an access package assignment request if it has any accessPackageAssignment objects.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequest-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

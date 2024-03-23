@@ -43,6 +43,9 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 ## DESCRIPTION
 Add a class to a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-classes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

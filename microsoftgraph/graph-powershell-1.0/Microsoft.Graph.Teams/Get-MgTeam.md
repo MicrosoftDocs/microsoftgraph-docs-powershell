@@ -36,6 +36,9 @@ Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

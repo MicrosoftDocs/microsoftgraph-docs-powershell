@@ -29,6 +29,9 @@ Remove-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ## DESCRIPTION
 Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -33,6 +33,9 @@ New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDev
 ## DESCRIPTION
 Create an alertRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

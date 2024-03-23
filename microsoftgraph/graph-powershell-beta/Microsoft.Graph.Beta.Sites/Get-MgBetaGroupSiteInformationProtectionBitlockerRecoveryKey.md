@@ -45,6 +45,9 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

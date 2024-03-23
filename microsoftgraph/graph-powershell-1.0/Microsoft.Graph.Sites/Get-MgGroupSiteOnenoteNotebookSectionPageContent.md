@@ -29,6 +29,9 @@ Get-MgGroupSiteOnenoteNotebookSectionPageContent -InputObject <ISitesIdentity> -
 ## DESCRIPTION
 The page's HTML content.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

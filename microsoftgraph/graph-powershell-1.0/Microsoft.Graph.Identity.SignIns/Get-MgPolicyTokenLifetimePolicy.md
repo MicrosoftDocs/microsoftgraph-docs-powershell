@@ -37,6 +37,9 @@ Get-MgPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenlifetimepolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

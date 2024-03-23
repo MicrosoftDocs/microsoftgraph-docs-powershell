@@ -37,6 +37,9 @@ Get-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Retrieve the properties and relationships of a connector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connector-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

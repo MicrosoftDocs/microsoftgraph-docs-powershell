@@ -67,6 +67,9 @@ Update-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of contact object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

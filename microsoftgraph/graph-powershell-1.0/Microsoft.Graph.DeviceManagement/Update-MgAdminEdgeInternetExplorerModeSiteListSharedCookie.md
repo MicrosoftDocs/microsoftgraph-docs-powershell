@@ -52,6 +52,9 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 ## DESCRIPTION
 Update the properties of a browserSharedCookie object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

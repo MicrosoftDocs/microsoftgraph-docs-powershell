@@ -49,6 +49,9 @@ Update-MgBetaEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIden
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

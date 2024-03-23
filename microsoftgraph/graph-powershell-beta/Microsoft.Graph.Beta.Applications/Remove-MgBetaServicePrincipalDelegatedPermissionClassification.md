@@ -29,6 +29,9 @@ Remove-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAp
 ## DESCRIPTION
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

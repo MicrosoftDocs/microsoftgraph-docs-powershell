@@ -30,6 +30,9 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ## DESCRIPTION
 Delete a plannerPlanConfigurationLocalization object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-delete-localizations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

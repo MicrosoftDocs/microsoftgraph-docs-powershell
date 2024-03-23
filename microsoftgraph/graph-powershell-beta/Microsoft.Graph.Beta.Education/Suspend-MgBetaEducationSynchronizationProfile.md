@@ -29,6 +29,9 @@ Suspend-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Pause the sync of a specific school data synchronization profile in the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-pause-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

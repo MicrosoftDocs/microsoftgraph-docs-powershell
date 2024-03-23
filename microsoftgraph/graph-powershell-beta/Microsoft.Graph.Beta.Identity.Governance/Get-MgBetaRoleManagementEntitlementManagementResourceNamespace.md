@@ -37,6 +37,9 @@ Get-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <IId
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

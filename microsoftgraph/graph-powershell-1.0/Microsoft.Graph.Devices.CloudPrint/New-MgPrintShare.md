@@ -33,6 +33,9 @@ New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-shares-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -55,6 +55,9 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new mailSearchFolder in the specified user's mailbox.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailsearchfolder-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-authoritytemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

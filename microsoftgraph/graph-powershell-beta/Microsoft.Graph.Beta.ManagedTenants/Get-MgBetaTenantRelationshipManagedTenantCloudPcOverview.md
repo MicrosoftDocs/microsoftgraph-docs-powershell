@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedT
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcOverview object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcoverview-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

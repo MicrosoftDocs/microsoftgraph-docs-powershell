@@ -37,6 +37,9 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get a riskyUserHistoryItem object of a riskyUser.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyuserhistoryitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

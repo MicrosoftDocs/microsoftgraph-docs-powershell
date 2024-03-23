@@ -32,6 +32,9 @@ Remove-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 Delete a connectorGroup.
 All connectors and applications must be removed from the connector group before a connector group can be deleted.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

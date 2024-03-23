@@ -21,6 +21,9 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get properties of the multitenant organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

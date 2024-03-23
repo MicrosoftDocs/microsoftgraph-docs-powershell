@@ -65,6 +65,9 @@ Update-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -73,6 +73,9 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-category-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

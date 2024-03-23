@@ -45,6 +45,9 @@ New-MgBetaUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new lists object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todo-post-lists-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

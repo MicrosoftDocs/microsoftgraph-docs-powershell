@@ -65,6 +65,9 @@ Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

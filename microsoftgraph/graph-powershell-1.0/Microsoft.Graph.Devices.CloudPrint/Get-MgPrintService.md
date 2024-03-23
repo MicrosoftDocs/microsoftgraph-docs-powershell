@@ -36,6 +36,9 @@ Get-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printservice-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

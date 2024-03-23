@@ -29,6 +29,9 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Uninstall an app from the personal scope of the specified user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-delete-installedapps-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

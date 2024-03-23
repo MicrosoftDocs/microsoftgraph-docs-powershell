@@ -37,6 +37,9 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties and relationships of a linkedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

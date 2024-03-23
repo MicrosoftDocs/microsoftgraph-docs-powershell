@@ -29,6 +29,9 @@ Remove-MgBetaUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete eventMessage.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -31,6 +31,9 @@ Remove-MgBetaUserDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <St
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

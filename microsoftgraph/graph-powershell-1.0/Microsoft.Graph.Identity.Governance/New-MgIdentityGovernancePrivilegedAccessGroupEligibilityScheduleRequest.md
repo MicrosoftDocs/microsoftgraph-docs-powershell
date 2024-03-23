@@ -36,6 +36,9 @@ New-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Create a new privilegedAccessGroupEligibilityScheduleRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroup-post-eligibilityschedulerequests-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

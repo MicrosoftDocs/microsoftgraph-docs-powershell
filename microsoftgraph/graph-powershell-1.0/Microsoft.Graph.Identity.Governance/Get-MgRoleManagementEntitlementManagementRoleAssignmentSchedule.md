@@ -37,6 +37,9 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject <II
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

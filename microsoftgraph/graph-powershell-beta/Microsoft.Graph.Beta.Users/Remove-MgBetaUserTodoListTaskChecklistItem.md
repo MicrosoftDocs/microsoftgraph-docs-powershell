@@ -30,6 +30,9 @@ Remove-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMat
 ## DESCRIPTION
 Delete a checklistItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

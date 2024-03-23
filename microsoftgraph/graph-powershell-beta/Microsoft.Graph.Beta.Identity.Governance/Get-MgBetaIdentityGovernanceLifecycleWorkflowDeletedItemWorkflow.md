@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <I
 ## DESCRIPTION
 Retrieve a deleted workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-deleteditemcontainer-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

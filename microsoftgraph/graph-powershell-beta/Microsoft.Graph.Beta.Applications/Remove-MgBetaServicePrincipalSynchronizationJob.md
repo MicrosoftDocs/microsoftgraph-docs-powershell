@@ -31,6 +31,9 @@ Remove-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdent
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

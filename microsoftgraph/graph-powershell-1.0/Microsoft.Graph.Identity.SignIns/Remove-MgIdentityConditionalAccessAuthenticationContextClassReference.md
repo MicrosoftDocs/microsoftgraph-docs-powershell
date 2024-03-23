@@ -30,6 +30,9 @@ Remove-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 ## DESCRIPTION
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

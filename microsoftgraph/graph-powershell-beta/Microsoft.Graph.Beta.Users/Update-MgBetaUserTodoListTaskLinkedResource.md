@@ -47,6 +47,9 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a linkedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

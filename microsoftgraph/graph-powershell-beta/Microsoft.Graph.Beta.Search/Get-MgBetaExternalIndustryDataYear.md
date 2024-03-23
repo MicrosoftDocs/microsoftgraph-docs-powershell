@@ -37,6 +37,9 @@ Get-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a yearTimePeriodDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

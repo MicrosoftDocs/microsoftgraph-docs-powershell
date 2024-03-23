@@ -29,6 +29,9 @@ Get-MgBetaDirectorySubscriptionByOcpSubscriptionId -InputObject <IIdentityDirect
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

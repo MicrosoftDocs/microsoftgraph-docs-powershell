@@ -37,6 +37,9 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

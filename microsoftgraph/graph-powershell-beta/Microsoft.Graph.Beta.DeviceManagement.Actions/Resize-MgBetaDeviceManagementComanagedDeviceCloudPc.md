@@ -47,6 +47,9 @@ Resize-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagem
 ## DESCRIPTION
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-resizecloudpc-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,9 @@ New-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create a new checklistItem object as a subtask in a bigger todoTask.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-checklistitems-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

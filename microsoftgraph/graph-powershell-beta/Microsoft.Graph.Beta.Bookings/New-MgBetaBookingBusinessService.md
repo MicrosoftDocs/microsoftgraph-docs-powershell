@@ -103,6 +103,9 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-services-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

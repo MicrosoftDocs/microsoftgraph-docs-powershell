@@ -37,6 +37,9 @@ Get-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a printConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

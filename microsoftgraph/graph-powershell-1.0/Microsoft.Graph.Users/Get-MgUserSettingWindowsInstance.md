@@ -39,6 +39,9 @@ Get-MgUserSettingWindowsInstance -InputObject <IUsersIdentity> [-ExpandProperty 
 Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL.
 This method gets a windowsSettingInstance for the signed-in user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowssettinginstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

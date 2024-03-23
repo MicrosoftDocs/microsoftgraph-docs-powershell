@@ -49,6 +49,9 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Delete an existing history item for an existing user activity.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-delete-historyitem-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

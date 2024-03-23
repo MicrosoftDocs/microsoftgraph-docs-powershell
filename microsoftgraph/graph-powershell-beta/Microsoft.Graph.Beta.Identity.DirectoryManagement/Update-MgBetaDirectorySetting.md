@@ -45,6 +45,9 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Update the properties of a specific directory setting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

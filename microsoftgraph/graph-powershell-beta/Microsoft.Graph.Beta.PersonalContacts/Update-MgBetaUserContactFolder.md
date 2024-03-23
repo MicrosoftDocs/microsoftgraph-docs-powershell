@@ -51,6 +51,9 @@ Update-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Update the properties of contactfolder object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

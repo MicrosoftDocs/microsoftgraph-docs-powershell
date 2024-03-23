@@ -41,6 +41,9 @@ Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

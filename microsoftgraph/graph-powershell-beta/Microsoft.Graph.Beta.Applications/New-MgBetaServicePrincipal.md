@@ -58,6 +58,9 @@ New-MgBetaServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Re
 ## DESCRIPTION
 Create a new servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

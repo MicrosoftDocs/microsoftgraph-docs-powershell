@@ -37,6 +37,9 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Retrieve the properties and relationships of an onPremisesAgent object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

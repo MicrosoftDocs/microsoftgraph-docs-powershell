@@ -68,6 +68,9 @@ These default properties are noted in the Properties section.
 To get properties that are not returned by default, do a GET operation and specify the properties in a $select OData query option.
 Note: To create a team, first create a group then add a team to it, see create team.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-groups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

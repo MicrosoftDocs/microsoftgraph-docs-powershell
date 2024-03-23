@@ -49,6 +49,9 @@ Update-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

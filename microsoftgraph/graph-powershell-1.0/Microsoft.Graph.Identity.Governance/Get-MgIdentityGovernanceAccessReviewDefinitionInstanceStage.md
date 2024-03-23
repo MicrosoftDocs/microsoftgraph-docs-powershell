@@ -39,6 +39,9 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdent
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

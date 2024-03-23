@@ -37,6 +37,9 @@ Get-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <S
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOffReason object by ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffreason-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -34,6 +34,9 @@ Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDevic
 Update the properties of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/deviceregistrationpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

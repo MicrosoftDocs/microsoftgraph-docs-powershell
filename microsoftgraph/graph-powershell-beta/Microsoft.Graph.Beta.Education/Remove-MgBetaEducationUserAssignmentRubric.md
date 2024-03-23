@@ -31,6 +31,9 @@ Remove-MgBetaEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-I
 Delete an educationRubric from an educationAssignment.
 This method doesn't delete the rubric itself and can only be performed by teachers.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-delete-rubric-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

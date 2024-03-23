@@ -31,6 +31,9 @@ Remove-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-IfM
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

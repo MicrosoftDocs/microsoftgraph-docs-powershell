@@ -39,6 +39,9 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ## DESCRIPTION
 Read the properties and relationships of a certificateBasedApplicationConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

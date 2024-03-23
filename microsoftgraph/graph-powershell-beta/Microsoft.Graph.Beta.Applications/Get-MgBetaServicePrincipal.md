@@ -37,6 +37,9 @@ Get-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

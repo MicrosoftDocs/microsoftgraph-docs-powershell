@@ -27,6 +27,9 @@ Invoke-MgBetaFollowDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Follow a driveItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

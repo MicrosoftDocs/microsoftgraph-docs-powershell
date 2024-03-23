@@ -29,6 +29,9 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ## DESCRIPTION
 Get the contact's manager
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

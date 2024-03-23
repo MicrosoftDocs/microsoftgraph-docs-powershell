@@ -47,6 +47,9 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timesoff-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

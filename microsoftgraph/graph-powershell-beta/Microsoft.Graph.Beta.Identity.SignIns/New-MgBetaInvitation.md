@@ -36,6 +36,9 @@ Create a new invitation.
 The invitation adds an external user to the organization.
 The following options are available for creating an invitation:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/invitation-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

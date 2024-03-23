@@ -41,6 +41,9 @@ Get a servicePrincipalSignInActivity object that contains sign-in activity infor
 You can use a service principal as a client or resource.
 A service principal supports delegated or app-only authentication context.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalsigninactivity-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

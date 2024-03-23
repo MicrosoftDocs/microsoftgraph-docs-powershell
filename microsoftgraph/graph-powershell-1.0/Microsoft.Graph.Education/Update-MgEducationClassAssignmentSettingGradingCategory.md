@@ -48,6 +48,9 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationgradingcategory-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

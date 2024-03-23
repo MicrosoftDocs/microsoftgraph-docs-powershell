@@ -46,6 +46,9 @@ New-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeams
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-tabs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

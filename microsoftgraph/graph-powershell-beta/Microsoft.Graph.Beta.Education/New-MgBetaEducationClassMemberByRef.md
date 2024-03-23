@@ -43,6 +43,9 @@ New-MgBetaEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParam
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

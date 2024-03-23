@@ -59,6 +59,9 @@ Get-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 ## DESCRIPTION
 Get recording for the navigation property onlineMeetings from communications
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

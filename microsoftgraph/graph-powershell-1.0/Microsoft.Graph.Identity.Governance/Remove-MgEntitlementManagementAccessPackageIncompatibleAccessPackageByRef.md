@@ -45,6 +45,9 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 ## DESCRIPTION
 Remove an access package from the list of access packages that have been marked as incompatible on an accessPackage.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-incompatibleaccesspackage-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

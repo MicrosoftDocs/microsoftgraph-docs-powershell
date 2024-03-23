@@ -55,6 +55,9 @@ A team is archived once the async operation completes successfully, which may oc
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-archive-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

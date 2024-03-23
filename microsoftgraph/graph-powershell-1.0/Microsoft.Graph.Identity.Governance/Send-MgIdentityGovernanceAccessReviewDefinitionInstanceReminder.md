@@ -29,6 +29,9 @@ Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -InputObject <II
 ## DESCRIPTION
 Send a reminder to the reviewers of an active accessReviewInstance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

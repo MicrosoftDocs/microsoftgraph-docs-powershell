@@ -29,6 +29,9 @@ New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYe
 ## DESCRIPTION
 Create a new yearTimePeriodDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

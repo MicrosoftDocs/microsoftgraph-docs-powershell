@@ -29,6 +29,9 @@ Get-MgUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <Stri
 ## DESCRIPTION
 Get media content for the navigation property attachments from users
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-list-attachments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

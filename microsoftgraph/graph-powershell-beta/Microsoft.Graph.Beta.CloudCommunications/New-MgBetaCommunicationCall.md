@@ -42,6 +42,9 @@ New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeade
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-calls-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

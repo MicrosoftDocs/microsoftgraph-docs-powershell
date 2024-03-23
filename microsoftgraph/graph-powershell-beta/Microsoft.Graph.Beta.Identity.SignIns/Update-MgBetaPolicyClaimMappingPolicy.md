@@ -47,6 +47,9 @@ Update-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -B
 ## DESCRIPTION
 Update the properties of a claimsMappingPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

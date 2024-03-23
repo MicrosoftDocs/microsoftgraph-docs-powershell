@@ -21,6 +21,9 @@ Get-MgBetaEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String
 ## DESCRIPTION
 Retrieve a list of classes owned by a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-list-classes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

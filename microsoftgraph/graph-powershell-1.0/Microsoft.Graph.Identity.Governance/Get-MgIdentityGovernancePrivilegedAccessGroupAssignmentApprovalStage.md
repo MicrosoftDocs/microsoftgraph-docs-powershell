@@ -40,6 +40,9 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

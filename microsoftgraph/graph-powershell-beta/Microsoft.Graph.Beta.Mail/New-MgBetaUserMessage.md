@@ -83,6 +83,9 @@ By default, this operation saves the draft in the Drafts folder.
 Send the draft message in a subsequent operation.
 Alternatively, send a new message in a single action, or create a draft to forward, to reply or to reply-all to an existing message.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-messages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

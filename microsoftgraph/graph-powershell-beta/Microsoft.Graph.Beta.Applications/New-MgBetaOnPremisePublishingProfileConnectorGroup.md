@@ -47,6 +47,9 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ## DESCRIPTION
 Create a connectorGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

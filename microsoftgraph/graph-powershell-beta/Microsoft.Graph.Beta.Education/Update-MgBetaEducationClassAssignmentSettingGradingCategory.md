@@ -48,6 +48,9 @@ Update-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEduca
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingcategory-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

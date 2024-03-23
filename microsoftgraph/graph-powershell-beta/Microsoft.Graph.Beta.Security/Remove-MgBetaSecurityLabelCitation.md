@@ -29,6 +29,9 @@ Remove-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a citationTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-delete-citations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

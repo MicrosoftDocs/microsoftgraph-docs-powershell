@@ -49,6 +49,9 @@ Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentityS
 ## DESCRIPTION
 Update the properties of a identityUserFlowAttributeAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

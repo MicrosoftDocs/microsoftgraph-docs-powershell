@@ -32,6 +32,9 @@ Invoke-MgBetaQuerySearch
 Run a specified search query.
 Search results are provided in the response.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Read the properties and relationships of a fileThreatSubmission object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

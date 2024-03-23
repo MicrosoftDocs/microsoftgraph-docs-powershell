@@ -49,6 +49,9 @@ Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 Update the properties of an authenticationCombinationConfiguration object.
 The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcombinationconfiguration-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

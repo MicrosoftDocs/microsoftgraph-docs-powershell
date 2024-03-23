@@ -37,6 +37,9 @@ Get-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdentity
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Read the properties and relationships of a plannerTaskConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskconfiguration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
