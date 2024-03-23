@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: 51fa7a02-1099-4183-b155-e14ffb788a3c
 Download Help Link: {{ Update Download Link }}
@@ -15,6 +15,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Confirm-MgBetaAuditLogSignInSafe](Confirm-MgBetaAuditLogSignInSafe.md)
+{{ Fill in the Description }}
+
+### [Export-MgBetaReportPartnerBillingReconciliationBilled](Export-MgBetaReportPartnerBillingReconciliationBilled.md)
 {{ Fill in the Description }}
 
 ### [Export-MgBetaReportPartnerBillingUsageBilled](Export-MgBetaReportPartnerBillingUsageBilled.md)
@@ -324,6 +327,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportPartnerBillingOperationCount](Get-MgBetaReportPartnerBillingOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingReconciliation](Get-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingReconciliationBilled](Get-MgBetaReportPartnerBillingReconciliationBilled.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportPartnerBillingUsage](Get-MgBetaReportPartnerBillingUsage.md)
@@ -686,6 +695,12 @@ Locale: en-US
 ### [Remove-MgBetaReportPartnerBillingOperation](Remove-MgBetaReportPartnerBillingOperation.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaReportPartnerBillingReconciliation](Remove-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingReconciliationBilled](Remove-MgBetaReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaReportPartnerBillingUsage](Remove-MgBetaReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -722,6 +737,12 @@ Locale: en-US
 ### [Update-MgBetaReportPartnerBillingOperation](Update-MgBetaReportPartnerBillingOperation.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaReportPartnerBillingReconciliation](Update-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingReconciliationBilled](Update-MgBetaReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaReportPartnerBillingUsage](Update-MgBetaReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -739,5 +760,4 @@ Locale: en-US
 
 ### [Update-MgBetaReportUserInsightMonthly](Update-MgBetaReportUserInsightMonthly.md)
 {{ Fill in the Description }}
-
 

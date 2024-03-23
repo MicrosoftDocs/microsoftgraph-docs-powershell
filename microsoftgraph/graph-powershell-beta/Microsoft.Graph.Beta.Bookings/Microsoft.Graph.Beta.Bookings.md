@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 6590187a-86e9-40ce-9e6c-7ed5e88a7979
 Download Help Link: {{ Update Download Link }}
@@ -119,9 +119,6 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventPresenterCount](Get-MgBetaVirtualEventPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventPresenterProfilePhoto](Get-MgBetaVirtualEventPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventPresenterSession](Get-MgBetaVirtualEventPresenterSession.md)
 {{ Fill in the Description }}
 
@@ -158,9 +155,6 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventSessionPresenterCount](Get-MgBetaVirtualEventSessionPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventSessionPresenterProfilePhoto](Get-MgBetaVirtualEventSessionPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventSessionRegistration](Get-MgBetaVirtualEventSessionRegistration.md)
 {{ Fill in the Description }}
 
@@ -183,9 +177,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterCount](Get-MgBetaVirtualEventTownhallPresenterCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventTownhallPresenterProfilePhoto](Get-MgBetaVirtualEventTownhallPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventTownhallPresenterSession](Get-MgBetaVirtualEventTownhallPresenterSession.md)
@@ -224,9 +215,6 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventTownhallSessionPresenterCount](Get-MgBetaVirtualEventTownhallSessionPresenterCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto](Get-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaVirtualEventTownhallSessionRegistration](Get-MgBetaVirtualEventTownhallSessionRegistration.md)
 {{ Fill in the Description }}
 
@@ -249,9 +237,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterCount](Get-MgBetaVirtualEventWebinarPresenterCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarPresenterProfilePhoto](Get-MgBetaVirtualEventWebinarPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarPresenterSession](Get-MgBetaVirtualEventWebinarPresenterSession.md)
@@ -306,9 +291,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionPresenterCount](Get-MgBetaVirtualEventWebinarSessionPresenterCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto](Get-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistration](Get-MgBetaVirtualEventWebinarSessionRegistration.md)
@@ -518,24 +500,6 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Remove-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
 
-### [Set-MgBetaVirtualEventPresenterProfilePhoto](Set-MgBetaVirtualEventPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventSessionPresenterProfilePhoto](Set-MgBetaVirtualEventSessionPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventTownhallPresenterProfilePhoto](Set-MgBetaVirtualEventTownhallPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto](Set-MgBetaVirtualEventTownhallSessionPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarPresenterProfilePhoto](Set-MgBetaVirtualEventWebinarPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
-### [Set-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto](Set-MgBetaVirtualEventWebinarSessionPresenterProfilePhoto.md)
-{{ Fill in the Description }}
-
 ### [Stop-MgBetaBookingBusinessAppointment](Stop-MgBetaBookingBusinessAppointment.md)
 {{ Fill in the Description }}
 
@@ -661,5 +625,4 @@ Locale: en-US
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordorganizerv2
@@ -15,8 +15,10 @@ Update the navigation property organizer_v2 in communications
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaCommunicationCallRecordOrganizerV2 -CallRecordId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Identity <IMicrosoftGraphCommunicationsIdentitySet>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
+ [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,7 +31,8 @@ Update-MgBetaCommunicationCallRecordOrganizerV2 -CallRecordId <String> -BodyPara
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -44,6 +47,18 @@ Update-MgBetaCommunicationCallRecordOrganizerV2 -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Update the navigation property organizer_v2 in communications
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -51,6 +66,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AdministrativeUnitInfos
+List of administrativeUnitInfo of the call participant.
+To construct, see NOTES section for ADMINISTRATIVEUNITINFOS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,52 +263,51 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-IDENTITY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+ADMINISTRATIVEUNITINFOS \<IMicrosoftGraphCallRecordsAdministrativeUnitInfo\[\]\>: List of administrativeUnitInfo of the call participant.
+  \[Id \<String\>\]: Unique identifier for the administrative unit.
+
+IDENTITY \<IMicrosoftGraphCommunicationsIdentitySet\>: communicationsIdentitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
-  - `[AssertedIdentity <IMicrosoftGraphIdentity>]`: identity
-  - `[AzureCommunicationServicesUser <IMicrosoftGraphIdentity>]`: identity
-  - `[Encrypted <IMicrosoftGraphIdentity>]`: identity
-  - `[EndpointType <String>]`: endpointType
-  - `[Guest <IMicrosoftGraphIdentity>]`: identity
-  - `[OnPremises <IMicrosoftGraphIdentity>]`: identity
-  - `[Phone <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[ApplicationInstance \<IMicrosoftGraphIdentity\>\]: identity
+  \[AssertedIdentity \<IMicrosoftGraphIdentity\>\]: identity
+  \[AzureCommunicationServicesUser \<IMicrosoftGraphIdentity\>\]: identity
+  \[Encrypted \<IMicrosoftGraphIdentity\>\]: identity
+  \[EndpointType \<String\>\]: endpointType
+  \[Guest \<IMicrosoftGraphIdentity\>\]: identity
+  \[OnPremises \<IMicrosoftGraphIdentity\>\]: identity
+  \[Phone \<IMicrosoftGraphIdentity\>\]: identity
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordorganizerv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallrecordorganizerv2)
-
-
-
-
 

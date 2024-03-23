@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgBetaApplication
 
 ## SYNOPSIS
 Get the properties and relationships of an application object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,54 +37,38 @@ Get-MgBetaApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get the properties and relationships of an application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a list of applications
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+```
 
 Id              : 8ea936e0-cb74-46c0-8408-d4614a596267
 DisplayName     : Test App
 AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
+
+### EXAMPLE 2
 ```
-
-This examples gets a list of all the applications.
-
-To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
-
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
-
-### Example 2: Get an application by Id
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+```
 
 DisplayName     : Test App
 AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : Contoso.com
+
+### EXAMPLE 3
 ```
-
-This examples gets the application by the specified Id.
-
-To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
-
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
-
-### Example 3: Get a count of all applications
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount
+```
 
 Id                                   DisplayName        AppId                                SignInAudience                     PublisherDomain
 --                                   -----------        -----                                --------------                     ---------------
@@ -97,49 +77,28 @@ bce20771-2a69-41e5-a0dd-125ac2fa2708 Example 3 App      ffdf268a-2fe2-49e1-8cd7-
 dcaa0c3a-8dfa-4b47-bc04-0edbab42043a Principal-Test App bd38ad43-6c46-4cc6-b65c-a0db533a2a6f AzureADMyOrg                       Contoso.com
 f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-2ba56093e7e6 AzureADandPersonalMicrosoftAccount Contoso.com
 fe4caed6-6182-4aca-b70b-b114c5334a8a New app            641992e9-d176-4aff-a3b6-a867b3ba48c4 AzureADandPersonalMicrosoftAccount Contoso.com
+
+### EXAMPLE 4
 ```
-
-This example gets a list of all applications. The $appCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
-
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
-
-### Example 4: Use -Search to get all the applications whose display name contains 'Test' including a count of the returned users
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Search '"DisplayName:Test"'
+```
 
 Id                                   DisplayName        AppId                                SignInAudience                     PublisherDomain
 --                                   -----------        -----                                --------------                     ---------------
 dcaa0c3a-8dfa-4b47-bc04-0edbab42043a Principal-Test App bd38ad43-6c46-4cc6-b65c-a0db533a2a6f AzureADMyOrg                       Contoso.com
 f6b30057-7095-4e2c-89f8-224149f591b7 Testing App        00e80963-9bc0-4147-b9e0-2ba56093e7e6 AzureADandPersonalMicrosoftAccount Contoso.com
+
+### EXAMPLE 5
 ```
-
-This example returns all applications whose display name contains 'Test'. The $appCount variable contains the count of the objects in the result. The advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
-
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
-
-### Example 5: Use -Filter to get all the applications with a display name that starts with 'New' including a count of the returned users, with the results ordered by display name
-
-```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
 Get-MgBetaApplication -ConsistencyLevel eventual -Count appCount -Filter "startsWith(DisplayName, 'New')" -OrderBy DisplayName
+```
 
 Id                                   DisplayName AppId                                SignInAudience                     PublisherDomain
 --                                   ----------- -----                                --------------                     ---------------
 fe4caed6-6182-4aca-b70b-b114c5334a8a New app     641992e9-d176-4aff-a3b6-a867b3ba48c4 AzureADandPersonalMicrosoftAccount Contoso.com
 0672d487-4c0c-475a-bf22-0e714f015597 New apps    ced14895-14ac-4dcf-8b93-0779f60c000d AzureADandPersonalMicrosoftAccount Contoso.com
-```
-
-This example returns all applications whose display name starts with 'New'. The $appCount variable contains the count of the objects in the result. The advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
-
-To learn about other permissions for this resource, see the [Application permissions reference](/graph/permissions-reference#application-resource-permissions).
-
-To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
 
 ## PARAMETERS
 
@@ -402,44 +361,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UniqueName <String>]`: Alternate key of application
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of application
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
+  \[ApplicationId \<String\>\]: The unique identifier of application
+  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConnectorGroupId \<String\>\]: The unique identifier of connectorGroup
+  \[ConnectorId \<String\>\]: The unique identifier of connector
+  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
+  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
+  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[Name \<String\>\]: Alternate key of federatedIdentityCredential
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OnPremisesAgentGroupId \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentGroupId1 \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentId \<String\>\]: The unique identifier of onPremisesAgent
+  \[OnPremisesPublishingProfileId \<String\>\]: The unique identifier of onPremisesPublishingProfile
+  \[PublishedResourceId \<String\>\]: The unique identifier of publishedResource
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
+  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
+  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UniqueName \<String\>\]: Alternate key of application
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication)
-
-
-
 

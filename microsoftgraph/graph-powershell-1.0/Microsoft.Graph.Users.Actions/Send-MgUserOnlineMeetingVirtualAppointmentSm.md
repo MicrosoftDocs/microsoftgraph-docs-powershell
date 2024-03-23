@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentsm
@@ -8,10 +8,9 @@ schema: 2.0.0
 # Send-MgUserOnlineMeetingVirtualAppointmentSm
 
 ## SYNOPSIS
-Invoke action sendVirtualAppointmentSms
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled.
+This feature requires Teams premium.
+Attendees must have a valid United States phone number to receive these SMS notifications.
 
 ## SYNTAX
 
@@ -48,7 +47,21 @@ Send-MgUserOnlineMeetingVirtualAppointmentSm -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action sendVirtualAppointmentSms
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled.
+This feature requires Teams premium.
+Attendees must have a valid United States phone number to receive these SMS notifications.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -268,55 +281,56 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
-  - `[PhoneNumber <String>]`: 
-  - `[TimeZone <String>]`: 
+ATTENDEES \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>: .
+  \[PhoneNumber \<String\>\]: The phone number of the external attendee.
+Required.
+  \[TimeZone \<String\>\]: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
 
-BODYPARAMETER `<IPaths16Og72WUsersUserIdOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
-    - `[PhoneNumber <String>]`: 
-    - `[TimeZone <String>]`: 
-  - `[MessageType <String>]`: virtualAppointmentMessageType
+BODYPARAMETER \<IPaths16Og72WUsersUserIdOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Attendees \<IMicrosoftGraphAttendeeNotificationInfo\[\]\>\]: 
+    \[PhoneNumber \<String\>\]: The phone number of the external attendee.
+Required.
+    \[TimeZone \<String\>\]: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
+  \[MessageType \<String\>\]: virtualAppointmentMessageType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
-  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
+  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PhoneAuthenticationMethodId \<String\>\]: The unique identifier of phoneAuthenticationMethod
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentsm)
-
-
-
-
 

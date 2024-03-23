@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 Module Guid: 39dbb3bc-1a84-424a-9efe-683be70a1810
 Download Help Link: {{ Update Download Link }}
@@ -176,7 +176,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
@@ -185,7 +191,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgDeviceAppManagementMobileAppAsAndroidStoreApp.md)
@@ -194,7 +209,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobApp](Get-MgDeviceAppManagementMobileAppAsiOSLobApp.md)
@@ -203,7 +224,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
@@ -212,7 +239,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreApp](Get-MgDeviceAppManagementMobileAppAsIoStoreApp.md)
@@ -221,7 +257,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoStoreAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppApp](Get-MgDeviceAppManagementMobileAppAsIoVppApp.md)
@@ -230,7 +272,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsIoVppAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsIoVppAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgApp.md)
@@ -239,7 +287,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
@@ -248,7 +302,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobApp.md)
@@ -257,7 +320,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
@@ -266,7 +335,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
@@ -275,7 +353,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
@@ -284,7 +368,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobApp.md)
@@ -293,7 +386,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
@@ -302,7 +401,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
@@ -311,7 +419,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
@@ -320,7 +434,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
@@ -329,7 +452,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAssignment](Get-MgDeviceAppManagementMobileAppAssignment.md)
@@ -344,7 +473,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
@@ -353,7 +488,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppX](Get-MgDeviceAppManagementMobileAppAsWindowsAppX.md)
@@ -362,7 +506,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
@@ -371,7 +521,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
@@ -380,7 +539,13 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
@@ -389,7 +554,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
@@ -398,10 +572,19 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
@@ -410,7 +593,16 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgDeviceAppManagementMobileAppAsWindowsWebApp.md)
@@ -419,16 +611,19 @@ Locale: en-US
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount](Get-MgDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCategory](Get-MgDeviceAppManagementMobileAppCategory.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCategoryCount](Get-MgDeviceAppManagementMobileAppCategoryCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgDeviceAppManagementMobileAppCommittedContainedAppCount](Get-MgDeviceAppManagementMobileAppCommittedContainedAppCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfiguration](Get-MgDeviceAppManagementMobileAppConfiguration.md)
@@ -459,15 +654,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-{{ Fill in the Description }}
-
-### [Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount](Get-MgDeviceAppManagementMobileAppContentVersionContainedAppCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgDeviceAppManagementMobileAppContentVersionCount](Get-MgDeviceAppManagementMobileAppContentVersionCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgDeviceAppManagementMobileAppContentVersionFileCount](Get-MgDeviceAppManagementMobileAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDeviceAppManagementMobileAppCount](Get-MgDeviceAppManagementMobileAppCount.md)
@@ -1621,5 +1807,4 @@ Locale: en-US
 
 ### [Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowsProtectionStateDetectedMalwareState.md)
 {{ Fill in the Description }}
-
 

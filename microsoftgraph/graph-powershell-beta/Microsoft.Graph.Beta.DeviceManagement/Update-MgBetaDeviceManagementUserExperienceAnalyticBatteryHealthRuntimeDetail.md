@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail
@@ -31,6 +31,22 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthRuntimeDetails in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -114,7 +130,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analytics battery health runtime entity contains count of devices broken down into 3 categories - devices with runtime >` 5 hours, devices with runtime 3-5 hours and devices with runtime `< 3 hours.This API provides the count of devices in these 3 categories.
+The user experience analytics battery health runtime entity contains count of devices broken down into 3 categories - devices with runtime \> 5 hours, devices with runtime 3-5 hours and devices with runtime \< 3 hours.This API provides the count of devices in these 3 categories.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
@@ -252,25 +268,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails>`: The user experience analytics battery health runtime entity contains count of devices broken down into 3 categories - devices with runtime > 5 hours, devices with runtime 3-5 hours and devices with runtime < 3 hours.This API provides the count of devices in these 3 categories.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails\>: The user experience analytics battery health runtime entity contains count of devices broken down into 3 categories - devices with runtime \> 5 hours, devices with runtime 3-5 hours and devices with runtime \< 3 hours.This API provides the count of devices in these 3 categories.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveDevices <Int32?>]`: Number of active devices within the tenant.
+  \[ActiveDevices \<Int32?\>\]: Number of active devices within the tenant.
 Valid values 0 to 2147483647
-  - `[BatteryRuntimeFair <Int32?>]`: Number of devices whose active runtime is greater than 3 hours but lesser than 5 hours.
+  \[BatteryRuntimeFair \<Int32?\>\]: Number of devices whose active runtime is greater than 3 hours but lesser than 5 hours.
 Valid values 0 to 2147483647
-  - `[BatteryRuntimeGood <Int32?>]`: Number of devices  whose active runtime is greater than 5 hours.
+  \[BatteryRuntimeGood \<Int32?\>\]: Number of devices  whose active runtime is greater than 5 hours.
 Valid values 0 to 2147483647
-  - `[BatteryRuntimePoor <Int32?>]`: Number of devices whose active runtime is lesser than 3 hours.
+  \[BatteryRuntimePoor \<Int32?\>\]: Number of devices whose active runtime is lesser than 3 hours.
 Valid values 0 to 2147483647
-  - `[LastRefreshedDateTime <DateTime?>]`: Recorded date time of this runtime details instance.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Recorded date time of this runtime details instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthruntimedetail)
-
-
-
-
 

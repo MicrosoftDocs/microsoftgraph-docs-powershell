@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Remove-MgDirectoryObject
 
 ## SYNOPSIS
 Delete a directory object, for example, a group, user, application, or service principal.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Remove-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch <Str
 Delete a directory object, for example, a group, user, application, or service principal.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
-
-```
-This example shows how to use the Remove-MgDirectoryObject Cmdlet.
-
 
 ## PARAMETERS
 
@@ -201,14 +193,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+INPUTOBJECT \<IDirectoryObjectsIdentity\>: Identity Parameter
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgBetaDirectoryObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/remove-mgdirectoryobject)
-
-
-
 

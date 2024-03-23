@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## SYNOPSIS
 Update the properties of a termsAndConditionsAcceptanceStatus object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +50,18 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 
 ## DESCRIPTION
 Update the properties of a termsAndConditionsAcceptanceStatus object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -322,97 +330,98 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTermsAndConditionsAcceptanceStatus>`: A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user.
+BODYPARAMETER \<IMicrosoftGraphTermsAndConditionsAcceptanceStatus\>: A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user.
 Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
-  - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
+  \[AcceptedDateTime \<DateTime?\>\]: DateTime when the terms were last accepted by the user.
+  \[AcceptedVersion \<Int32?\>\]: Most recent version number of the T&C accepted by the user.
+  \[TermsAndConditions \<IMicrosoftGraphTermsAndConditions\>\]: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.
+    \[AcceptanceStatement \<String\>\]: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.
 This is shown to the user on prompts to accept the T&C policy.
-    - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus- `[]`>]`: The list of acceptance statuses for this T&C policy.
-    - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment- `[]`>]`: The list of assignments for this T&C policy.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[AcceptanceStatuses \<IMicrosoftGraphTermsAndConditionsAcceptanceStatus\[\]\>\]: The list of acceptance statuses for this T&C policy.
+    \[Assignments \<IMicrosoftGraphTermsAndConditionsAssignment\[\]\>\]: The list of assignments for this T&C policy.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves.
+      \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[BodyText \<String\>\]: Administrator-supplied body text of the terms and conditions, typically the terms themselves.
 This is shown to the user on prompts to accept the T&C policy.
-    - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-    - `[Description <String>]`: Administrator-supplied description of the T&C policy.
-    - `[DisplayName <String>]`: Administrator-supplied name for the T&C policy.
-    - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-    - `[Title <String>]`: Administrator-supplied title of the terms and conditions.
+    \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
+    \[Description \<String\>\]: Administrator-supplied description of the T&C policy.
+    \[DisplayName \<String\>\]: Administrator-supplied name for the T&C policy.
+    \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+    \[Title \<String\>\]: Administrator-supplied title of the terms and conditions.
 This is shown to the user on prompts to accept the T&C policy.
-    - `[Version <Int32?>]`: Integer indicating the current version of the terms.
+    \[Version \<Int32?\>\]: Integer indicating the current version of the terms.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
-  - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
-  - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
+  \[UserDisplayName \<String\>\]: Display name of the user whose acceptance the entity represents.
+  \[UserPrincipalName \<String\>\]: The userPrincipalName of the User that accepted the term.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
-  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
-  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
-  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
-  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
+  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
+  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
+  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
+  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
+  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
+  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
+  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
+  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
+  \[UserId \<String\>\]: The unique identifier of user
 
-TERMSANDCONDITIONS `<IMicrosoftGraphTermsAndConditions>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
+TERMSANDCONDITIONS \<IMicrosoftGraphTermsAndConditions\>: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.
+  \[AcceptanceStatement \<String\>\]: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.
 This is shown to the user on prompts to accept the T&C policy.
-  - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus- `[]`>]`: The list of acceptance statuses for this T&C policy.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AcceptanceStatuses \<IMicrosoftGraphTermsAndConditionsAcceptanceStatus\[\]\>\]: The list of acceptance statuses for this T&C policy.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
-    - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
+    \[AcceptedDateTime \<DateTime?\>\]: DateTime when the terms were last accepted by the user.
+    \[AcceptedVersion \<Int32?\>\]: Most recent version number of the T&C accepted by the user.
+    \[TermsAndConditions \<IMicrosoftGraphTermsAndConditions\>\]: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-    - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
-    - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
-  - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment- `[]`>]`: The list of assignments for this T&C policy.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[UserDisplayName \<String\>\]: Display name of the user whose acceptance the entity represents.
+    \[UserPrincipalName \<String\>\]: The userPrincipalName of the User that accepted the term.
+  \[Assignments \<IMicrosoftGraphTermsAndConditionsAssignment\[\]\>\]: The list of assignments for this T&C policy.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves.
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[BodyText \<String\>\]: Administrator-supplied body text of the terms and conditions, typically the terms themselves.
 This is shown to the user on prompts to accept the T&C policy.
-  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-  - `[Description <String>]`: Administrator-supplied description of the T&C policy.
-  - `[DisplayName <String>]`: Administrator-supplied name for the T&C policy.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[Title <String>]`: Administrator-supplied title of the terms and conditions.
+  \[CreatedDateTime \<DateTime?\>\]: DateTime the object was created.
+  \[Description \<String\>\]: Administrator-supplied description of the T&C policy.
+  \[DisplayName \<String\>\]: Administrator-supplied name for the T&C policy.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[Title \<String\>\]: Administrator-supplied title of the terms and conditions.
 This is shown to the user on prompts to accept the T&C policy.
-  - `[Version <Int32?>]`: Integer indicating the current version of the terms.
+  \[Version \<Int32?\>\]: Integer indicating the current version of the terms.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus)
-
-
-
-
 

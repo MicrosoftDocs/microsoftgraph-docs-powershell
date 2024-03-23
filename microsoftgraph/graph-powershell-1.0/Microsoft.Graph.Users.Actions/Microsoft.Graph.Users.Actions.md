@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
 Module Guid: 86213a25-bec4-4d70-8793-58670c62686f
 Download Help Link: {{ Update Download Link }}
@@ -18,6 +18,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](Add-MgUserDriveListContentTypeCopyFromContentTypeHub.md)
+{{ Fill in the Description }}
+
+### [Add-MgUserFollowedSite](Add-MgUserFollowedSite.md)
 {{ Fill in the Description }}
 
 ### [Clear-MgUserChatMessageReaction](Clear-MgUserChatMessageReaction.md)
@@ -386,6 +389,9 @@ Locale: en-US
 ### [Remove-MgUserDriveRootPermanent](Remove-MgUserDriveRootPermanent.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserFollowedSite](Remove-MgUserFollowedSite.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
 {{ Fill in the Description }}
 
@@ -526,5 +532,4 @@ Locale: en-US
 
 ### [Update-MgUserPassword](Update-MgUserPassword.md)
 {{ Fill in the Description }}
-
 

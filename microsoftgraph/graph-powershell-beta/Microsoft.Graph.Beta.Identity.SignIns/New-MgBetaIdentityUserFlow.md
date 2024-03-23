@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaIdentityUserFlow
@@ -29,12 +28,10 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Re
 ## DESCRIPTION
 Create a new userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-post-userflows-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Id = "Pol1"
@@ -43,8 +40,6 @@ $params = @{
 }
 New-MgBetaIdentityUserFlow -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityUserFlow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -217,17 +212,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlow>`: identityUserFlow
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityUserFlow\>: identityUserFlow
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[UserFlowType <String>]`: userFlowType
-  - `[UserFlowTypeVersion <Single?>]`:
+  \[UserFlowType \<String\>\]: userFlowType
+  \[UserFlowTypeVersion \<Single?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow)
-
-
-
 

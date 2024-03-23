@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Update-MgExternalConnectionSchema
 
 ## SYNOPSIS
 Create a new schema object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,21 +45,14 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new schema object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
-```
-This example shows how to use the Update-MgExternalConnectionSchema Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -271,91 +260,90 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsSchema>`: schema
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphExternalConnectorsSchema\>: schema
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem.
+  \[BaseType \<String\>\]: Must be set to microsoft.graph.externalConnector.externalItem.
 Required.
-  - `[Properties <IMicrosoftGraphExternalConnectorsProperty- `[]`>]`: The properties defined for the items in the connection.
+  \[Properties \<IMicrosoftGraphExternalConnectorsProperty\[\]\>\]: The properties defined for the items in the connection.
 The minimum number of properties is one, the maximum is 128.
-    - `[Aliases <String- `[]`>]`: A set of aliases or a friendly name for the property.
+    \[Aliases \<String\[\]\>\]: A set of aliases or a friendly name for the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), \[, \], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', \<, \>, \`, ^.
 Optional.
-    - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
+    \[IsQueryable \<Boolean?\>\]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-    - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+    \[IsRefinable \<Boolean?\>\]: Specifies if the property is refinable. 
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
-    - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
+    \[IsRetrievable \<Boolean?\>\]: Specifies if the property is retrievable.
 Retrievable properties are returned in the result set when items are returned by the search API.
 Retrievable properties are also available to add to the display template used to render search results.
 Optional.
-    - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable.
+    \[IsSearchable \<Boolean?\>\]: Specifies if the property is searchable.
 Only properties of type String or StringCollection can be searchable.
 Nonsearchable properties aren't added to the search index.
 Optional.
-    - `[Labels <String- `[]`>]`: Specifies one or more well-known tags added against a property.
+    \[Labels \<String\[\]\>\]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
 You must use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: iconUrl.
-    - `[Name <String>]`: The name of the property.
+    \[Name \<String\>\]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), \[, \], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', \<, \>, \`, ^. 
 Required.
-    - `[Type <String>]`: propertyType
+    \[Type \<String\>\]: propertyType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
-PROPERTIES <IMicrosoftGraphExternalConnectorsProperty- `[]`>: The properties defined for the items in the connection.
+PROPERTIES \<IMicrosoftGraphExternalConnectorsProperty\[\]\>: The properties defined for the items in the connection.
 The minimum number of properties is one, the maximum is 128.
-  - `[Aliases <String- `[]`>]`: A set of aliases or a friendly name for the property.
+  \[Aliases \<String\[\]\>\]: A set of aliases or a friendly name for the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^.
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), \[, \], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', \<, \>, \`, ^.
 Optional.
-  - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable.
+  \[IsQueryable \<Boolean?\>\]: Specifies if the property is queryable.
 Queryable properties can be used in Keyword Query Language (KQL) queries.
 Optional.
-  - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable. 
+  \[IsRefinable \<Boolean?\>\]: Specifies if the property is refinable. 
 Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience.
 Optional.
-  - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable.
+  \[IsRetrievable \<Boolean?\>\]: Specifies if the property is retrievable.
 Retrievable properties are returned in the result set when items are returned by the search API.
 Retrievable properties are also available to add to the display template used to render search results.
 Optional.
-  - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable.
+  \[IsSearchable \<Boolean?\>\]: Specifies if the property is searchable.
 Only properties of type String or StringCollection can be searchable.
 Nonsearchable properties aren't added to the search index.
 Optional.
-  - `[Labels <String- `[]`>]`: Specifies one or more well-known tags added against a property.
+  \[Labels \<String\[\]\>\]: Specifies one or more well-known tags added against a property.
 Labels help Microsoft Search understand the semantics of the data in the connection.
 Adding appropriate labels would result in an enhanced search experience (for example, better relevance).
 Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl.
 You must use the Prefer: include-unknown-enum-members request header to get the following value in this evolvable enum: iconUrl.
-  - `[Name <String>]`: The name of the property.
+  \[Name \<String\>\]: The name of the property.
 Maximum 32 characters.
 Only alphanumeric characters allowed.
-For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), - `[, ]`, {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, \`, ^. 
+For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), \[, \], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', \<, \>, \`, ^. 
 Required.
-  - `[Type <String>]`: propertyType
+  \[Type \<String\>\]: propertyType
 
 ## RELATED LINKS
-[Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema)
-
-
-
 

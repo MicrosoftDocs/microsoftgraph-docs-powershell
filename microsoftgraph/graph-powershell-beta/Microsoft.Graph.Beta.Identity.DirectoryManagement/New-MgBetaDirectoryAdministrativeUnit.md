@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to administrativeUnits for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,9 +17,10 @@ Create new navigation property to administrativeUnits for directory
 New-MgBetaDirectoryAdministrativeUnit [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMemberManagementRestricted]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Visibility <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
+ [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -36,10 +34,11 @@ New-MgBetaDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrat
 Create new navigation property to administrativeUnits for directory
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 $params = @{
 	displayName = "Seattle District Technical Schools"
@@ -48,11 +47,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryAdministrativeUnit -BodyParameter $params
-```
-This example shows how to use the New-MgBetaDirectoryAdministrativeUnit Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -219,6 +213,56 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MembershipRule
+Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRuleProcessingState
+Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipType
+Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -330,78 +374,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphAdministrativeUnit\>: administrativeUnit
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: An optional description for the administrative unit.
+  \[Description \<String\>\]: An optional description for the administrative unit.
 Supports $filter (eq, ne, in, startsWith), $search.
-  - `[DisplayName <String>]`: Display name for the administrative unit.
+  \[DisplayName \<String\>\]: Display name for the administrative unit.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
-  - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
+  \[Extensions \<IMicrosoftGraphExtension\[\]\>\]: The collection of open extensions defined for this administrative unit.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
+  \[IsMemberManagementRestricted \<Boolean?\>\]: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
 Default value is false.
 Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
 Immutable, so can't be changed later. 
 For more information about working with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
-  - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
+  \[Members \<IMicrosoftGraphDirectoryObject\[\]\>\]: Users and groups that are members of this administrative unit.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[MembershipRule \<String\>\]: Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+  \[MembershipRuleProcessingState \<String\>\]: Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+  \[MembershipType \<String\>\]: Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
+  \[ScopedRoleMembers \<IMicrosoftGraphScopedRoleMembership\[\]\>\]: Scoped-role members of this administrative unit.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+    \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+    \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+    \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
+  \[Visibility \<String\>\]: Controls whether the administrative unit and its members are hidden or public.
 Can be set to HiddenMembership or Public.
 If not set, the default behavior is Public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
+EXTENSIONS \<IMicrosoftGraphExtension\[\]\>: The collection of open extensions defined for this administrative unit.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users and groups that are members of this administrative unit.
+MEMBERS \<IMicrosoftGraphDirectoryObject\[\]\>: Users and groups that are members of this administrative unit.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Scoped-role members of this administrative unit.
-  - `[Id <String>]`: The unique identifier for an entity.
+SCOPEDROLEMEMBERS \<IMicrosoftGraphScopedRoleMembership\[\]\>: Scoped-role members of this administrative unit.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+  \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
+  \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
+  \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
 
 ## RELATED LINKS
-[New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunit)
-
-
-
 

@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteSectionPage
 
 ## SYNOPSIS
 Retrieve a list of page objects from the specified section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,22 +22,15 @@ Get-MgUserOnenoteSectionPage -OnenoteSectionId <String> -UserId <String> [-Expan
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Notes
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserOnenoteSectionPage -UserId $userId -OnenoteSectionId $onenoteSectionId
-
-```
-This example shows how to use the Get-MgUserOnenoteSectionPage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -283,10 +272,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage)
-
-
-
 

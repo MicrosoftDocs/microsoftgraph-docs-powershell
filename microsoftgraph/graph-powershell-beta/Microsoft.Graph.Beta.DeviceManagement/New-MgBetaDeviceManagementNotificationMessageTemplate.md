@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to notificationMessageTemplates for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,22 @@ New-MgBetaDeviceManagementNotificationMessageTemplate
 
 ## DESCRIPTION
 Create new navigation property to notificationMessageTemplates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -285,47 +298,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphNotificationMessageTemplate>`: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator.
+BODYPARAMETER \<IMicrosoftGraphNotificationMessageTemplate\>: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator.
 Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the "Actions for non-compliance" section.
 Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[BrandingOptions <NotificationTemplateBrandingOptions?>]`: Branding Options for the Message Template.
+  \[BrandingOptions \<NotificationTemplateBrandingOptions?\>\]: Branding Options for the Message Template.
 Branding is defined in the Intune Admin Console.
-  - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
-  - `[Description <String>]`: Display name for the Notification Message Template.
-  - `[DisplayName <String>]`: Display name for the Notification Message Template.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage- `[]`>]`: The list of localized messages for this Notification Message Template.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DefaultLocale \<String\>\]: The default locale to fallback onto when the requested locale is not available.
+  \[Description \<String\>\]: Display name for the Notification Message Template.
+  \[DisplayName \<String\>\]: Display name for the Notification Message Template.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[LocalizedNotificationMessages \<IMicrosoftGraphLocalizedNotificationMessage\[\]\>\]: The list of localized messages for this Notification Message Template.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[IsDefault <Boolean?>]`: Flag to indicate whether or not this is the default locale for language fallback.
+    \[IsDefault \<Boolean?\>\]: Flag to indicate whether or not this is the default locale for language fallback.
 This flag can only be set.
 To unset, set this property to true on another Localized Notification Message.
-    - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-    - `[Locale <String>]`: The Locale for which this message is destined.
-    - `[MessageTemplate <String>]`: The Message Template content.
-    - `[Subject <String>]`: The Message Template Subject.
-  - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
+    \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+    \[Locale \<String\>\]: The Locale for which this message is destined.
+    \[MessageTemplate \<String\>\]: The Message Template content.
+    \[Subject \<String\>\]: The Message Template Subject.
+  \[RoleScopeTagIds \<String\[\]\>\]: List of Scope Tags for this Entity instance.
 
-LOCALIZEDNOTIFICATIONMESSAGES <IMicrosoftGraphLocalizedNotificationMessage- `[]`>: The list of localized messages for this Notification Message Template.
-  - `[Id <String>]`: The unique identifier for an entity.
+LOCALIZEDNOTIFICATIONMESSAGES \<IMicrosoftGraphLocalizedNotificationMessage\[\]\>: The list of localized messages for this Notification Message Template.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: Flag to indicate whether or not this is the default locale for language fallback.
+  \[IsDefault \<Boolean?\>\]: Flag to indicate whether or not this is the default locale for language fallback.
 This flag can only be set.
 To unset, set this property to true on another Localized Notification Message.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[Locale <String>]`: The Locale for which this message is destined.
-  - `[MessageTemplate <String>]`: The Message Template content.
-  - `[Subject <String>]`: The Message Template Subject.
+  \[LastModifiedDateTime \<DateTime?\>\]: DateTime the object was last modified.
+  \[Locale \<String\>\]: The Locale for which this message is destined.
+  \[MessageTemplate \<String\>\]: The Message Template content.
+  \[Subject \<String\>\]: The Message Template Subject.
 
 ## RELATED LINKS
-[New-MgDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate)
-
-
-
-
 

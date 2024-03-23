@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Find-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
 Locate a device
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Find-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdent
 Locate a device
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Actions
+```
 
 Find-MgDeviceManagementManagedDevice -ManagedDeviceId $managedDeviceId
-
-```
-This example shows how to use the Find-MgDeviceManagementManagedDevice Cmdlet.
-
 
 ## PARAMETERS
 
@@ -186,25 +178,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Find-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Find-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/find-mgdevicemanagementmanageddevice)
-
-
-
 

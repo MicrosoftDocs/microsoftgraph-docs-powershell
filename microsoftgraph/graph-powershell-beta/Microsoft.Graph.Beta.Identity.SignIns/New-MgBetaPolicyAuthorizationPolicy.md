@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy
@@ -34,6 +34,22 @@ New-MgBetaPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorization
 ## DESCRIPTION
 Create new navigation property to authorizationPolicy for policies
 
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -67,7 +83,8 @@ Accept wildcard characters: False
 ```
 
 ### -AllowedToUseSspr
-Indicates whether users can use the Self-Service Password Reset feature on the tenant.
+Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
 
 ```yaml
 Type: SwitchParameter
@@ -130,7 +147,7 @@ Accept wildcard characters: False
 
 ### -BlockMsolPowerShell
 To disable the use of the MSOnline PowerShell module set this property to true.
-This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
+This also disables user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
 This doesn't affect Microsoft Entra Connect or Microsoft Graph.
 
 ```yaml
@@ -398,85 +415,82 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy>`: authorizationPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
+BODYPARAMETER \<IMicrosoftGraphAuthorizationPolicy\>: authorizationPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: Description for this policy.
 Required.
-  - `[DisplayName <String>]`: Display name for this policy.
+  \[DisplayName \<String\>\]: Display name for this policy.
 Required.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AllowEmailVerifiedUsersToJoinOrganization <Boolean?>]`: Indicates whether a user can join the tenant by email validation.
-  - `[AllowInvitesFrom <String>]`: allowInvitesFrom
-  - `[AllowUserConsentForRiskyApps <Boolean?>]`: Indicates whether user consent for risky apps is allowed.
+  \[AllowEmailVerifiedUsersToJoinOrganization \<Boolean?\>\]: Indicates whether a user can join the tenant by email validation.
+  \[AllowInvitesFrom \<String\>\]: allowInvitesFrom
+  \[AllowUserConsentForRiskyApps \<Boolean?\>\]: Indicates whether user consent for risky apps is allowed.
 Default value is false.
 We recommend that you keep the value set to false.
-  - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
-  - `[AllowedToUseSspr <Boolean?>]`: Indicates whether users can use the Self-Service Password Reset feature on the tenant.
-  - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of the MSOnline PowerShell module set this property to true.
-This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
+  \[AllowedToSignUpEmailBasedSubscriptions \<Boolean?\>\]: Indicates whether users can sign up for email based subscriptions.
+  \[AllowedToUseSspr \<Boolean?\>\]: Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
+  \[BlockMsolPowerShell \<Boolean?\>\]: To disable the use of the MSOnline PowerShell module set this property to true.
+This also disables user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
 This doesn't affect Microsoft Entra Connect or Microsoft Graph.
-  - `[DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[DefaultUserRoleOverrides \<IMicrosoftGraphDefaultUserRoleOverride\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[IsDefault <Boolean?>]`: 
-    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: 
-      - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    \[IsDefault \<Boolean?\>\]: 
+    \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: 
+      \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+      \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-      - `[ExcludedResourceActions <String- `[]`>]`: 
-  - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>]`: defaultUserRolePermissions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
+      \[ExcludedResourceActions \<String\[\]\>\]: 
+  \[DefaultUserRolePermissions \<IMicrosoftGraphDefaultUserRolePermissions\>\]: defaultUserRolePermissions
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AllowedToCreateApps \<Boolean?\>\]: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
-    - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
+    \[AllowedToCreateSecurityGroups \<Boolean?\>\]: Indicates whether the default user role can create security groups.
 This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu. 
 Users can create security groups setting in the User settings menu.
-    - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
+    \[AllowedToCreateTenants \<Boolean?\>\]: Indicates whether the default user role can create tenants.
 This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center.
 When this setting is false, users assigned the Tenant Creator role can still create tenants.
-    - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
-    - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
+    \[AllowedToReadBitlockerKeysForOwnedDevice \<Boolean?\>\]: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
+    \[AllowedToReadOtherUsers \<Boolean?\>\]: Indicates whether the default user role can read other users.
 DO NOT SET THIS VALUE TO false.
-  - `[EnabledPreviewFeatures <String- `[]`>]`: List of features enabled for private preview on the tenant.
-  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guests.
+  \[EnabledPreviewFeatures \<String\[\]\>\]: List of features enabled for private preview on the tenant.
+  \[GuestUserRoleId \<String\>\]: Represents role templateId for the role that should be granted to guests.
 Refer to List unifiedRoleDefinitions to find the list of available role templates.
 Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
-  - `[PermissionGrantPolicyIdsAssignedToDefaultUserRole <String- `[]`>]`: Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent.
+  \[PermissionGrantPolicyIdsAssignedToDefaultUserRole \<String\[\]\>\]: Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent.
 Values should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy.
 An empty list indicates user consent to apps is disabled.
 
-DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+DEFAULTUSERROLEOVERRIDES \<IMicrosoftGraphDefaultUserRoleOverride\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsDefault <Boolean?>]`: 
-  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: 
-    - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+  \[IsDefault \<Boolean?\>\]: 
+  \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: 
+    \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
+    \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-    - `[ExcludedResourceActions <String- `[]`>]`: 
+    \[ExcludedResourceActions \<String\[\]\>\]: 
 
-DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions>`: defaultUserRolePermissions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
+DEFAULTUSERROLEPERMISSIONS \<IMicrosoftGraphDefaultUserRolePermissions\>: defaultUserRolePermissions
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowedToCreateApps \<Boolean?\>\]: Indicates whether the default user role can create applications.
 This setting corresponds to the Users can register applications setting in the User settings menu in the Microsoft Entra admin center.
-  - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
+  \[AllowedToCreateSecurityGroups \<Boolean?\>\]: Indicates whether the default user role can create security groups.
 This setting corresponds to the following menus in the Microsoft Entra admin center:  The Users can create security groups in Microsoft Entra admin centers, API or PowerShell setting in the Group settings menu. 
 Users can create security groups setting in the User settings menu.
-  - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
+  \[AllowedToCreateTenants \<Boolean?\>\]: Indicates whether the default user role can create tenants.
 This setting corresponds to the Restrict non-admin users from creating tenants setting in the User settings menu in the Microsoft Entra admin center.
 When this setting is false, users assigned the Tenant Creator role can still create tenants.
-  - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
-  - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
+  \[AllowedToReadBitlockerKeysForOwnedDevice \<Boolean?\>\]: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
+  \[AllowedToReadOtherUsers \<Boolean?\>\]: Indicates whether the default user role can read other users.
 DO NOT SET THIS VALUE TO false.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthorizationpolicy)
-
-
-
-
 

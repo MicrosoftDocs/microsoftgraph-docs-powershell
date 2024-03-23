@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
 Download Help Link: {{ Update Download Link }}
@@ -90,6 +90,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationFederatedIdentityCredential](Get-MgBetaApplicationFederatedIdentityCredential.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaApplicationFederatedIdentityCredentialByName](Get-MgBetaApplicationFederatedIdentityCredentialByName.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaApplicationFederatedIdentityCredentialCount](Get-MgBetaApplicationFederatedIdentityCredentialCount.md)
@@ -797,6 +800,9 @@ Locale: en-US
 ### [Remove-MgBetaApplicationFederatedIdentityCredential](Remove-MgBetaApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaApplicationFederatedIdentityCredentialByName](Remove-MgBetaApplicationFederatedIdentityCredentialByName.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaApplicationKey](Remove-MgBetaApplicationKey.md)
 {{ Fill in the Description }}
 
@@ -1019,6 +1025,9 @@ Locale: en-US
 ### [Update-MgBetaApplicationFederatedIdentityCredential](Update-MgBetaApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaApplicationFederatedIdentityCredentialByName](Update-MgBetaApplicationFederatedIdentityCredentialByName.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaApplicationSynchronizationJob](Update-MgBetaApplicationSynchronizationJob.md)
 {{ Fill in the Description }}
 
@@ -1120,5 +1129,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

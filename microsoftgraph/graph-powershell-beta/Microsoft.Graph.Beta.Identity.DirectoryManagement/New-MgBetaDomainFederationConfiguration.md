@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaDomainFederationConfiguration
 
 ## SYNOPSIS
 Create a new internalDomainFederation object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -57,14 +53,12 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Create a new internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-federationconfiguration-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Configure federation settings for a federated domain
 
-```powershell
-New-MgBetaDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List 
+### EXAMPLE 1
+```
+New-MgBetaDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List
+```
 
 ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
 DisplayName                           : Contoso 
@@ -80,10 +74,7 @@ PromptLoginBehavior                   :
 SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
 SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
 SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
-AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
-```
-
-This examples creates new federation settings for the specified domain.
+AdditionalProperties                  : {\[@odata.context, https://graph.microsoft.com/beta/$metadata#domains('contoso.com')/federationConfiguration/$entity\]}
 
 ## PARAMETERS
 
@@ -464,100 +455,98 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IssuerUri <String>]`: Issuer URI of the federation server.
-  - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
-  - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Microsoft Entra services.
-  - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
-  - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform.
+BODYPARAMETER \<IMicrosoftGraphInternalDomainFederation\>: internalDomainFederation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[IssuerUri \<String\>\]: Issuer URI of the federation server.
+  \[MetadataExchangeUri \<String\>\]: URI of the metadata exchange endpoint used for authentication from rich client applications.
+  \[PassiveSignInUri \<String\>\]: URI that web-based clients are directed to when signing in to Microsoft Entra services.
+  \[PreferredAuthenticationProtocol \<String\>\]: authenticationProtocol
+  \[SigningCertificate \<String\>\]: Current certificate used to sign tokens passed to the Microsoft identity platform.
 The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class. 
 This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated. 
 Microsoft Entra ID updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
 If a new certificate isn't available, Microsoft Entra ID monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
-  - `[DisplayName <String>]`: The display name of the identity provider.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[DisplayName \<String\>\]: The display name of the identity provider.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
+  \[ActiveSignInUri \<String\>\]: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Microsoft Entra ID.
 Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
-  - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
+  \[FederatedIdpMfaBehavior \<String\>\]: federatedIdpMfaBehavior
+  \[IsSignedAuthenticationRequestRequired \<Boolean?\>\]: If true, when SAML authentication requests are sent to the federated SAML IdP, Microsoft Entra ID will sign those requests using the OrgID signing key.
 If false (default), the SAML authentication requests sent to the federated IdP aren't signed.
-  - `[NextSigningCertificate <String>]`: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
+  \[NextSigningCertificate \<String\>\]: Fallback token signing certificate that can also be used to sign tokens, for example when the primary signing certificate expires.
 Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
 Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-  - `[PromptLoginBehavior <String>]`: promptLoginBehavior
-  - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Microsoft Entra services.
+  \[PromptLoginBehavior \<String\>\]: promptLoginBehavior
+  \[SignOutUri \<String\>\]: URI that clients are redirected to when they sign out of Microsoft Entra services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CertificateUpdateResult <String>]`: Status of the last certificate update.
+  \[SigningCertificateUpdateStatus \<IMicrosoftGraphSigningCertificateUpdateStatus\>\]: signingCertificateUpdateStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CertificateUpdateResult \<String\>\]: Status of the last certificate update.
 Read-only.
 For a list of statuses, see certificateUpdateResult status.
-    - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
+    \[LastRunDateTime \<DateTime?\>\]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
-  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
-  - `[CommandId <String>]`: The unique identifier of command
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RecommendationId <String>]`: The unique identifier of recommendation
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[UsageRightId <String>]`: The unique identifier of usageRight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
+  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
+  \[CommandId \<String\>\]: The unique identifier of command
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
+  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[ExternalUserProfileId \<String\>\]: The unique identifier of externalUserProfile
+  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
+  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
+  \[PendingExternalUserProfileId \<String\>\]: The unique identifier of pendingExternalUserProfile
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RecommendationId \<String\>\]: The unique identifier of recommendation
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
+  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[UsageRightId \<String\>\]: The unique identifier of usageRight
+  \[UserId \<String\>\]: The unique identifier of user
 
-SIGNINGCERTIFICATEUPDATESTATUS `<IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CertificateUpdateResult <String>]`: Status of the last certificate update.
+SIGNINGCERTIFICATEUPDATESTATUS \<IMicrosoftGraphSigningCertificateUpdateStatus\>: signingCertificateUpdateStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CertificateUpdateResult \<String\>\]: Status of the last certificate update.
 Read-only.
 For a list of statuses, see certificateUpdateResult status.
-  - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
+  \[LastRunDateTime \<DateTime?\>\]: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
-
-
-
 

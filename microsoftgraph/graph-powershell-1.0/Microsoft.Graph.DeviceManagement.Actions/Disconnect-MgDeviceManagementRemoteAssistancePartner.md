@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Disconnect-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
 A request to remove the active TeamViewer connector
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Disconnect-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -34,17 +30,13 @@ Disconnect-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 A request to remove the active TeamViewer connector
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DeviceManagement.Actions
+```
 
 Disconnect-MgDeviceManagementRemoteAssistancePartner -RemoteAssistancePartnerId $remoteAssistancePartnerId
-
-```
-This example shows how to use the Disconnect-MgDeviceManagementRemoteAssistancePartner Cmdlet.
-
 
 ## PARAMETERS
 
@@ -186,25 +178,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Disconnect-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/disconnect-mgdevicemanagementremoteassistancepartner)
-
-
-
 

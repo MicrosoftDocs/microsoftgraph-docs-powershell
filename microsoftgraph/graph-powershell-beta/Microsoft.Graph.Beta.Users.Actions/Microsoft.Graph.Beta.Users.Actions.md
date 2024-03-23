@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -18,6 +18,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub.md)
+{{ Fill in the Description }}
+
+### [Add-MgBetaUserFollowedSite](Add-MgBetaUserFollowedSite.md)
 {{ Fill in the Description }}
 
 ### [Add-MgBetaUserPendingAccessReviewInstanceDecision](Add-MgBetaUserPendingAccessReviewInstanceDecision.md)
@@ -581,6 +584,9 @@ Locale: en-US
 ### [Remove-MgBetaUserDriveRootPermanent](Remove-MgBetaUserDriveRootPermanent.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserFollowedSite](Remove-MgBetaUserFollowedSite.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)
 {{ Fill in the Description }}
 
@@ -847,5 +853,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage
 schema: 2.0.0
-ms.prod: cloud-pc
 ---
 
 # New-MgBetaDeviceManagementVirtualEndpointDeviceImage
@@ -35,12 +34,10 @@ New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftG
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcDeviceImage"
@@ -52,8 +49,6 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -390,41 +385,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcDeviceImage>`: cloudPcDeviceImage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcDeviceImage\>: cloudPcDeviceImage
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the associated device image.
+  \[DisplayName \<String\>\]: The display name of the associated device image.
 The device image display name and the version are used to uniquely identify the Cloud PC device image.
 Read-only.
-  - `[ErrorCode <String>]`: cloudPcDeviceImageErrorCode
-  - `[ExpirationDate <DateTime?>]`: The date when the image became unavailable.
+  \[ErrorCode \<String\>\]: cloudPcDeviceImageErrorCode
+  \[ExpirationDate \<DateTime?\>\]: The date when the image became unavailable.
 Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The data and time when the image was last modified.
+  \[LastModifiedDateTime \<DateTime?\>\]: The data and time when the image was last modified.
 The timestamp represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[OSBuildNumber <String>]`: The OS build version of the image.
+  \[OSBuildNumber \<String\>\]: The OS build version of the image.
 For example, 1909.
 Read-only.
-  - `[OSStatus <String>]`: cloudPcDeviceImageOsStatus
-  - `[OperatingSystem <String>]`: The operating system of the image.
+  \[OSStatus \<String\>\]: cloudPcDeviceImageOsStatus
+  \[OperatingSystem \<String\>\]: The operating system of the image.
 For example, Windows 10 Enterprise.
 Read-only.
-  - `[ScopeIds <String- `[]`>]`: 
-  - `[SourceImageResourceId <String>]`: The unique identifier (ID) of the source image resource on Azure.
+  \[ScopeIds \<String\[\]\>\]: 
+  \[SourceImageResourceId \<String\>\]: The unique identifier (ID) of the source image resource on Azure.
 The required ID format is: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}'.
 Read-only.
-  - `[Status <String>]`: cloudPcDeviceImageStatus
-  - `[StatusDetails <String>]`: cloudPcDeviceImageStatusDetails
-  - `[Version <String>]`: The image version.
+  \[Status \<String\>\]: cloudPcDeviceImageStatus
+  \[StatusDetails \<String\>\]: cloudPcDeviceImageStatusDetails
+  \[Version \<String\>\]: The image version.
 For example, 0.0.1 and 1.5.13.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
-
-
-
 

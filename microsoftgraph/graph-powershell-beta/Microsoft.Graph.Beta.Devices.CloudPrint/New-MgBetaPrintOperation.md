@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +27,22 @@ New-MgBetaPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-Respon
 
 ## DESCRIPTION
 Create new navigation property to operations for print
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -204,30 +217,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintOperation>`: printOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintOperation\>: printOperation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created.
+  \[CreatedDateTime \<DateTime?\>\]: The DateTimeOffset when the operation was created.
 Read-only.
-  - `[Status <IMicrosoftGraphPrintOperationStatus>]`: printOperationStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: A human-readable description of the printOperation's current processing state.
+  \[Status \<IMicrosoftGraphPrintOperationStatus\>\]: printOperationStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: A human-readable description of the printOperation's current processing state.
 Read-only.
-    - `[State <String>]`: printOperationProcessingState
+    \[State \<String\>\]: printOperationProcessingState
 
-STATUS `<IMicrosoftGraphPrintOperationStatus>`: printOperationStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: A human-readable description of the printOperation's current processing state.
+STATUS \<IMicrosoftGraphPrintOperationStatus\>: printOperationStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: A human-readable description of the printOperation's current processing state.
 Read-only.
-  - `[State <String>]`: printOperationProcessingState
+  \[State \<String\>\]: printOperationProcessingState
 
 ## RELATED LINKS
-[New-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintoperation)
-
-
-
-
 

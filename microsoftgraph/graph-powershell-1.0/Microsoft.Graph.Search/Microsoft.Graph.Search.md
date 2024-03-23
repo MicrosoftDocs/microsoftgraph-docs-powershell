@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Search
 Module Guid: 23722595-b623-452f-bafa-f436a7dbbff9
 Download Help Link: {{ Update Download Link }}
@@ -59,7 +59,25 @@ Locale: en-US
 ### [Get-MgExternalConnectionSchema](Get-MgExternalConnectionSchema.md)
 {{ Fill in the Description }}
 
+### [Get-MgSearchAcronym](Get-MgSearchAcronym.md)
+{{ Fill in the Description }}
+
+### [Get-MgSearchAcronymCount](Get-MgSearchAcronymCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSearchBookmark](Get-MgSearchBookmark.md)
+{{ Fill in the Description }}
+
+### [Get-MgSearchBookmarkCount](Get-MgSearchBookmarkCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSearchEntity](Get-MgSearchEntity.md)
+{{ Fill in the Description }}
+
+### [Get-MgSearchQna](Get-MgSearchQna.md)
+{{ Fill in the Description }}
+
+### [Get-MgSearchQnaCount](Get-MgSearchQnaCount.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgQuerySearch](Invoke-MgQuerySearch.md)
@@ -83,6 +101,15 @@ Locale: en-US
 ### [New-MgExternalConnectionOperation](New-MgExternalConnectionOperation.md)
 {{ Fill in the Description }}
 
+### [New-MgSearchAcronym](New-MgSearchAcronym.md)
+{{ Fill in the Description }}
+
+### [New-MgSearchBookmark](New-MgSearchBookmark.md)
+{{ Fill in the Description }}
+
+### [New-MgSearchQna](New-MgSearchQna.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgExternalConnection](Remove-MgExternalConnection.md)
 {{ Fill in the Description }}
 
@@ -99,6 +126,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgExternalConnectionOperation](Remove-MgExternalConnectionOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSearchAcronym](Remove-MgSearchAcronym.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSearchBookmark](Remove-MgSearchBookmark.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSearchQna](Remove-MgSearchQna.md)
 {{ Fill in the Description }}
 
 ### [Set-MgExternalConnectionItem](Set-MgExternalConnectionItem.md)
@@ -125,7 +161,15 @@ Locale: en-US
 ### [Update-MgExternalConnectionSchema](Update-MgExternalConnectionSchema.md)
 {{ Fill in the Description }}
 
+### [Update-MgSearchAcronym](Update-MgSearchAcronym.md)
+{{ Fill in the Description }}
+
+### [Update-MgSearchBookmark](Update-MgSearchBookmark.md)
+{{ Fill in the Description }}
+
 ### [Update-MgSearchEntity](Update-MgSearchEntity.md)
 {{ Fill in the Description }}
 
+### [Update-MgSearchQna](Update-MgSearchQna.md)
+{{ Fill in the Description }}
 

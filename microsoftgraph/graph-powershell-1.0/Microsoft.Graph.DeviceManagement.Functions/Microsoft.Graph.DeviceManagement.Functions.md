@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 Module Guid: a4ee7646-1105-456f-ae3b-1ce5d0e246ef
 Download Help Link: {{ Update Download Link }}
@@ -26,6 +26,9 @@ Locale: en-US
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
 {{ Fill in the Description }}
 
@@ -34,5 +37,4 @@ Locale: en-US
 
 ### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
 {{ Fill in the Description }}
-
 

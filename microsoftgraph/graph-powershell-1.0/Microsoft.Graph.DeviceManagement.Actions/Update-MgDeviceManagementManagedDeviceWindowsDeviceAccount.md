@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementmanageddevicewindowsdeviceaccount
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
 
 ## SYNOPSIS
 Not yet documented
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +48,18 @@ Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDevice
 
 ## DESCRIPTION
 Not yet documented
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -241,50 +249,47 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]`: updateWindowsDeviceAccountActionParameter
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
-    - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Password <String>]`: Not yet documented
-    - `[DeviceAccountEmail <String>]`: Not yet documented
-    - `[ExchangeServer <String>]`: Not yet documented
-    - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
-    - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+BODYPARAMETER \<IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[UpdateWindowsDeviceAccountActionParameter \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>\]: updateWindowsDeviceAccountActionParameter
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+    \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Password \<String\>\]: Not yet documented
+    \[DeviceAccountEmail \<String\>\]: Not yet documented
+    \[ExchangeServer \<String\>\]: Not yet documented
+    \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
+    \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
-  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
-  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
-  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
-  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
+  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
+  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
+  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
+  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
+  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
+  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
+  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
+  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
+  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
+  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
 
-UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
-  - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Password <String>]`: Not yet documented
-  - `[DeviceAccountEmail <String>]`: Not yet documented
-  - `[ExchangeServer <String>]`: Not yet documented
-  - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
-  - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER \<IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter\>: updateWindowsDeviceAccountActionParameter
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CalendarSyncEnabled \<Boolean?\>\]: Not yet documented
+  \[DeviceAccount \<IMicrosoftGraphWindowsDeviceAccount\>\]: windowsDeviceAccount
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Password \<String\>\]: Not yet documented
+  \[DeviceAccountEmail \<String\>\]: Not yet documented
+  \[ExchangeServer \<String\>\]: Not yet documented
+  \[PasswordRotationEnabled \<Boolean?\>\]: Not yet documented
+  \[SessionInitiationProtocalAddress \<String\>\]: Not yet documented
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementmanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementmanageddevicewindowsdeviceaccount)
-
-
-
-
 

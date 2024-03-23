@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to operations for reports
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,6 +28,18 @@ New-MgReportPartnerBillingOperation -BodyParameter <IMicrosoftGraphPartnersBilli
 
 ## DESCRIPTION
 Create new navigation property to operations for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -222,24 +231,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPartnersBillingOperation>`: operation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPartnersBillingOperation\>: operation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
+  \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastActionDateTime <DateTime?>]`: The time of the last action of the operation.
+  \[LastActionDateTime \<DateTime?\>\]: The time of the last action of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Status <String>]`: longRunningOperationStatus
+  \[Status \<String\>\]: longRunningOperationStatus
 
 ## RELATED LINKS
-[New-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation)
-
-
-
-
 

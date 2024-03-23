@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson
@@ -12,9 +12,6 @@ Read-only.
 The most relevant people to the user.
 The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration, and business relationships.
 A person aggregates information from mail, contacts, and social networks.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,18 +42,14 @@ The collection is ordered by their relevance to the user, which is determined by
 A person aggregates information from mail, contacts, and social networks.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPerson -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPerson Cmdlet.
-
 
 ## PARAMETERS
 
@@ -303,35 +296,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
-  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
-  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
-  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
-  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
-  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
-  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
-  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
-  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
-  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
-  - `[PersonAwardId <String>]`: The unique identifier of personAward
-  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[PersonInterestId <String>]`: The unique identifier of personInterest
-  - `[PersonNameId <String>]`: The unique identifier of personName
-  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
-  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebAccountId <String>]`: The unique identifier of webAccount
-  - `[WorkPositionId <String>]`: The unique identifier of workPosition
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
+  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
+  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
+  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
+  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
+  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
+  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
+  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
+  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
+  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
+  \[PersonAwardId \<String\>\]: The unique identifier of personAward
+  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
+  \[PersonNameId \<String\>\]: The unique identifier of personName
+  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
+  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
+  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
+  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebAccountId \<String\>\]: The unique identifier of webAccount
+  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson)
-
-
-
 

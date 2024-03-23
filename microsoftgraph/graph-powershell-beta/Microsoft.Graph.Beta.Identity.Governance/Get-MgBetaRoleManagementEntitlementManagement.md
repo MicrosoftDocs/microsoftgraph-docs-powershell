@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagement
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The RbacApplication for Entitlement Management
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgBetaRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Pro
 
 ## DESCRIPTION
 The RbacApplication for Entitlement Management
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -113,11 +122,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagement)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: 60f889fa-f873-43ad-b7d3-b7fc1273a44f
 Download Help Link: {{ Update Download Link }}
@@ -93,9 +93,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute](Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute.md)
-{{ Fill in the Description }}
-
-### [Get-MgIdentityConditionalAccess](Get-MgIdentityConditionalAccess.md)
 {{ Fill in the Description }}
 
 ### [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](Get-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
@@ -273,6 +270,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgPolicyDeviceRegistrationPolicy](Get-MgPolicyDeviceRegistrationPolicy.md)
 {{ Fill in the Description }}
 
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
@@ -686,9 +686,6 @@ Locale: en-US
 ### [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](Remove-MgIdentityB2XUserFlowUserAttributeAssignment.md)
 {{ Fill in the Description }}
 
-### [Remove-MgIdentityConditionalAccess](Remove-MgIdentityConditionalAccess.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 {{ Fill in the Description }}
 
@@ -893,9 +890,6 @@ Locale: en-US
 ### [Update-MgIdentityB2XUserFlowUserAttributeAssignment](Update-MgIdentityB2XUserFlowUserAttributeAssignment.md)
 {{ Fill in the Description }}
 
-### [Update-MgIdentityConditionalAccess](Update-MgIdentityConditionalAccess.md)
-{{ Fill in the Description }}
-
 ### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
 {{ Fill in the Description }}
 
@@ -1039,5 +1033,4 @@ Locale: en-US
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 {{ Fill in the Description }}
-
 

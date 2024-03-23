@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: bf2ee476-ae5b-4a53-9fa8-943f3a49bf93
 Download Help Link: {{ Update Download Link }}
@@ -77,6 +77,9 @@ Locale: en-US
 ### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
 {{ Fill in the Description }}
 
+### [Get-MgPlaceAsRoomListRoomCount](Get-MgPlaceAsRoomListRoomCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgPlaceCount](Get-MgPlaceCount.md)
 {{ Fill in the Description }}
 
@@ -84,9 +87,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
-{{ Fill in the Description }}
-
-### [Get-MgPlaceRoomCount](Get-MgPlaceRoomCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
@@ -304,5 +304,4 @@ Locale: en-US
 
 ### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
 {{ Fill in the Description }}
-
 

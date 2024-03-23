@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Update the navigation property federatedTokenValidationPolicy in policies
+Update the properties of a federatedTokenValidationPolicy object.
 
 ## SYNTAX
 
@@ -28,7 +28,19 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property federatedTokenValidationPolicy in policies
+Update the properties of a federatedTokenValidationPolicy object.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -203,25 +215,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphFederatedTokenValidationPolicy>`: federatedTokenValidationPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphFederatedTokenValidationPolicy\>: federatedTokenValidationPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ValidatingDomains <IMicrosoftGraphValidatingDomains>]`: validatingDomains
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RootDomains <String>]`: rootDomains
+  \[ValidatingDomains \<IMicrosoftGraphValidatingDomains\>\]: validatingDomains
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[RootDomains \<String\>\]: rootDomains
 
-VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RootDomains <String>]`: rootDomains
+VALIDATINGDOMAINS \<IMicrosoftGraphValidatingDomains\>: validatingDomains
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[RootDomains \<String\>\]: rootDomains
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
-
-
-
-
 

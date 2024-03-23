@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 Module Guid: 7e6b8624-bd9b-41cd-a450-7afc4492a4bc
 Download Help Link: {{ Update Download Link }}
@@ -725,6 +725,9 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 {{ Fill in the Description }}
 
+### [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
+{{ Fill in the Description }}
+
 ### [Rename-MgBetaDeviceManagementVirtualEndpointCloudPc](Rename-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 {{ Fill in the Description }}
 
@@ -1021,5 +1024,4 @@ Locale: en-US
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
 {{ Fill in the Description }}
-
 

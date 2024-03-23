@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: 71150504-37a3-48c6-82c7-7a00a12168db
 Download Help Link: {{ Update Download Link }}
@@ -188,6 +188,18 @@ Locale: en-US
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 {{ Fill in the Description }}
 
+### [Get-MgUserSettingWindows](Get-MgUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSettingWindowsCount](Get-MgUserSettingWindowsCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSettingWindowsInstance](Get-MgUserSettingWindowsInstance.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSettingWindowsInstanceCount](Get-MgUserSettingWindowsInstanceCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 {{ Fill in the Description }}
 
@@ -275,6 +287,12 @@ Locale: en-US
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 {{ Fill in the Description }}
 
+### [New-MgUserSettingWindows](New-MgUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [New-MgUserSettingWindowsInstance](New-MgUserSettingWindowsInstance.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 {{ Fill in the Description }}
 
@@ -311,10 +329,19 @@ Locale: en-US
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
 {{ Fill in the Description }}
 
+### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserSetting](Remove-MgUserSetting.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserSettingShiftPreference](Remove-MgUserSettingShiftPreference.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserSettingWindows](Remove-MgUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserSettingWindowsInstance](Remove-MgUserSettingWindowsInstance.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
@@ -374,6 +401,12 @@ Locale: en-US
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 {{ Fill in the Description }}
 
+### [Update-MgUserSettingWindows](Update-MgUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Update-MgUserSettingWindowsInstance](Update-MgUserSettingWindowsInstance.md)
+{{ Fill in the Description }}
+
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)
 {{ Fill in the Description }}
 
@@ -394,5 +427,4 @@ Locale: en-US
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
-
 

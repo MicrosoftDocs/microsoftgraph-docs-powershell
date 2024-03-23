@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgBetaPolicyHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
 Create a new homeRealmDiscoveryPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,8 +30,21 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -275,18 +284,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy)
-
-
-
-
 

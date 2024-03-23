@@ -1,18 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteNotebookSection
 
 ## SYNOPSIS
 Retrieve a list of onenoteSection objects from the specified notebook.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebookSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,10 +22,17 @@ Get-MgSiteOnenoteNotebookSection -NotebookId <String> -SiteId <String> [-ExpandP
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -271,10 +274,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksection)
-
-
-
 
