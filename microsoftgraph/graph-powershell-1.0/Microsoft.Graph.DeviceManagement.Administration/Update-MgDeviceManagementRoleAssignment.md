@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment
@@ -323,111 +323,114 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceAndAppManagementRoleAssignment\>: The Role Assignment resource.
+BODYPARAMETER `<IMicrosoftGraphDeviceAndAppManagementRoleAssignment>`: The Role Assignment resource.
 Role assignments tie together a role definition with members and scopes.
 There can be one or more role assignments per role.
 This applies to custom and built-in roles.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Description \<String\>\]: Description of the Role Assignment.
-  \[DisplayName \<String\>\]: The display or friendly name of the role Assignment.
-  \[ResourceScopes \<String\[\]\>\]: List of ids of role scope member security groups. 
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: Description of the Role Assignment.
+  - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
+  - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
-  \[RoleDefinition \<IMicrosoftGraphRoleDefinition\>\]: The Role Definition resource.
+  - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: Description of the Role definition.
-    \[DisplayName \<String\>\]: Display Name of the Role definition.
-    \[IsBuiltIn \<Boolean?\>\]: Type of Role.
+    - `[Description <String>]`: Description of the Role definition.
+    - `[DisplayName <String>]`: Display Name of the Role definition.
+    - `[IsBuiltIn <Boolean?>]`: Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
-    \[RoleAssignments \<IMicrosoftGraphRoleAssignment\[\]\>\]: List of Role assignments for this role definition.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[RoleAssignments <IMicrosoftGraphRoleAssignment- `[]`>]`: List of Role assignments for this role definition.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Description \<String\>\]: Description of the Role Assignment.
-      \[DisplayName \<String\>\]: The display or friendly name of the role Assignment.
-      \[ResourceScopes \<String\[\]\>\]: List of ids of role scope member security groups. 
+      - `[Description <String>]`: Description of the Role Assignment.
+      - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
+      - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
-      \[RoleDefinition \<IMicrosoftGraphRoleDefinition\>\]: The Role Definition resource.
+      - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-    \[RolePermissions \<IMicrosoftGraphRolePermission\[\]\>\]: List of Role Permissions this role is allowed to perform.
+    - `[RolePermissions <IMicrosoftGraphRolePermission- `[]`>]`: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-      \[ResourceActions \<IMicrosoftGraphResourceAction\[\]\>\]: Resource Actions each containing a set of allowed and not allowed permissions.
-        \[AllowedResourceActions \<String\[\]\>\]: Allowed Actions
-        \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
-  \[Id \<String\>\]: The unique identifier for an entity.
+      - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
+        - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
+        - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Members \<String\[\]\>\]: The list of ids of role member security groups.
+  - `[Members <String- `[]`>]`: The list of ids of role member security groups.
 These are IDs from Azure Active Directory.
 
-INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
-  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
-  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
-  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
-  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
-  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
-  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
-  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
-  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
-  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
-  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
-  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
-  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
-  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+  - `[UserId <String>]`: The unique identifier of user
 
-ROLEDEFINITION \<IMicrosoftGraphRoleDefinition\>: The Role Definition resource.
+ROLEDEFINITION `<IMicrosoftGraphRoleDefinition>`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Description of the Role definition.
-  \[DisplayName \<String\>\]: Display Name of the Role definition.
-  \[IsBuiltIn \<Boolean?\>\]: Type of Role.
+  - `[Description <String>]`: Description of the Role definition.
+  - `[DisplayName <String>]`: Display Name of the Role definition.
+  - `[IsBuiltIn <Boolean?>]`: Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
-  \[RoleAssignments \<IMicrosoftGraphRoleAssignment\[\]\>\]: List of Role assignments for this role definition.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RoleAssignments <IMicrosoftGraphRoleAssignment- `[]`>]`: List of Role assignments for this role definition.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Description \<String\>\]: Description of the Role Assignment.
-    \[DisplayName \<String\>\]: The display or friendly name of the role Assignment.
-    \[ResourceScopes \<String\[\]\>\]: List of ids of role scope member security groups. 
+    - `[Description <String>]`: Description of the Role Assignment.
+    - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
+    - `[ResourceScopes <String- `[]`>]`: List of ids of role scope member security groups. 
 These are IDs from Azure Active Directory.
-    \[RoleDefinition \<IMicrosoftGraphRoleDefinition\>\]: The Role Definition resource.
+    - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource.
 The role definition is the foundation of role based access in Intune.
 The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource.
 There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-  \[RolePermissions \<IMicrosoftGraphRolePermission\[\]\>\]: List of Role Permissions this role is allowed to perform.
+  - `[RolePermissions <IMicrosoftGraphRolePermission- `[]`>]`: List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-    \[ResourceActions \<IMicrosoftGraphResourceAction\[\]\>\]: Resource Actions each containing a set of allowed and not allowed permissions.
-      \[AllowedResourceActions \<String\[\]\>\]: Allowed Actions
-      \[NotAllowedResourceActions \<String\[\]\>\]: Not Allowed Actions.
+    - `[ResourceActions <IMicrosoftGraphResourceAction- `[]`>]`: Resource Actions each containing a set of allowed and not allowed permissions.
+      - `[AllowedResourceActions <String- `[]`>]`: Allowed Actions
+      - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroleassignment)
+
+
+
 

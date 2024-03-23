@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule
@@ -406,173 +406,176 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityDetectionRule\>: detectionRule
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CreatedBy \<String\>\]: Name of the user or application that created the rule.
-  \[CreatedDateTime \<DateTime?\>\]: Timestamp of rule creation.
-  \[DisplayName \<String\>\]: Name of the rule.
-  \[IsEnabled \<Boolean?\>\]: Whether rule is turned on for the tenant.
-  \[LastModifiedBy \<String\>\]: Name of the user or application who last updated the rule.
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of when the rule was last updated.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityDetectionRule>`: detectionRule
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <String>]`: Name of the user or application that created the rule.
+  - `[CreatedDateTime <DateTime?>]`: Timestamp of rule creation.
+  - `[DisplayName <String>]`: Name of the rule.
+  - `[IsEnabled <Boolean?>]`: Whether rule is turned on for the tenant.
+  - `[LastModifiedBy <String>]`: Name of the user or application who last updated the rule.
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the rule was last updated.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DetectionAction \<IMicrosoftGraphSecurityDetectionAction\>\]: detectionAction
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AlertTemplate \<IMicrosoftGraphSecurityAlertTemplate\>\]: alertTemplate
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Category \<String\>\]: Category assigned to the alert triggered by the custom detection rule.
-      \[Description \<String\>\]: Description of the alert triggered by the custom detection rule.
-      \[ImpactedAssets \<IMicrosoftGraphSecurityImpactedAsset\[\]\>\]: Which asset or assets were impacted based on the alert triggered by the custom detection rule.
-      \[MitreTechniques \<String\[\]\>\]: MITRE technique assigned to the alert triggered by the custom detection rule.
-      \[RecommendedActions \<String\>\]: Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule.
-      \[Severity \<String\>\]: alertSeverity
-      \[Title \<String\>\]: Name of the alert triggered by the custom detection rule.
-    \[OrganizationalScope \<IMicrosoftGraphSecurityOrganizationalScope\>\]: organizationalScope
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[ScopeNames \<String\[\]\>\]: List of groups to which the custom detection rule applies.
-      \[ScopeType \<String\>\]: scopeType
-    \[ResponseActions \<IMicrosoftGraphSecurityResponseAction\[\]\>\]: Actions taken on impacted assets as set in the custom detection rule.
-  \[DetectorId \<String\>\]: The ID of the detector that triggered the alert.
+  - `[DetectionAction <IMicrosoftGraphSecurityDetectionAction>]`: detectionAction
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AlertTemplate <IMicrosoftGraphSecurityAlertTemplate>]`: alertTemplate
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Category <String>]`: Category assigned to the alert triggered by the custom detection rule.
+      - `[Description <String>]`: Description of the alert triggered by the custom detection rule.
+      - `[ImpactedAssets <IMicrosoftGraphSecurityImpactedAsset- `[]`>]`: Which asset or assets were impacted based on the alert triggered by the custom detection rule.
+      - `[MitreTechniques <String- `[]`>]`: MITRE technique assigned to the alert triggered by the custom detection rule.
+      - `[RecommendedActions <String>]`: Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule.
+      - `[Severity <String>]`: alertSeverity
+      - `[Title <String>]`: Name of the alert triggered by the custom detection rule.
+    - `[OrganizationalScope <IMicrosoftGraphSecurityOrganizationalScope>]`: organizationalScope
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ScopeNames <String- `[]`>]`: List of groups to which the custom detection rule applies.
+      - `[ScopeType <String>]`: scopeType
+    - `[ResponseActions <IMicrosoftGraphSecurityResponseAction- `[]`>]`: Actions taken on impacted assets as set in the custom detection rule.
+  - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
 Also see the 'detectorId' field in microsoft.graph.security.alert.
-  \[LastRunDetails \<IMicrosoftGraphSecurityRunDetails\>\]: runDetails
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ErrorCode \<String\>\]: huntingRuleErrorCode
-    \[FailureReason \<String\>\]: Reason for failure when the custom detection last ran and failed.
+  - `[LastRunDetails <IMicrosoftGraphSecurityRunDetails>]`: runDetails
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ErrorCode <String>]`: huntingRuleErrorCode
+    - `[FailureReason <String>]`: Reason for failure when the custom detection last ran and failed.
 See the table below.
-    \[LastRunDateTime \<DateTime?\>\]: Timestamp when the custom detection was last run.
-    \[Status \<String\>\]: huntingRuleRunStatus
-  \[QueryCondition \<IMicrosoftGraphSecurityQueryCondition\>\]: queryCondition
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of when the query in the custom detection rule was last updated.
-    \[QueryText \<String\>\]: Contents of the query.
-  \[Schedule \<IMicrosoftGraphSecurityRuleSchedule\>\]: ruleSchedule
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[NextRunDateTime \<DateTime?\>\]: Timestamp of the custom detection rule's next scheduled run.
-    \[Period \<String\>\]: How often the detection rule is set to run.
+    - `[LastRunDateTime <DateTime?>]`: Timestamp when the custom detection was last run.
+    - `[Status <String>]`: huntingRuleRunStatus
+  - `[QueryCondition <IMicrosoftGraphSecurityQueryCondition>]`: queryCondition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the query in the custom detection rule was last updated.
+    - `[QueryText <String>]`: Contents of the query.
+  - `[Schedule <IMicrosoftGraphSecurityRuleSchedule>]`: ruleSchedule
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[NextRunDateTime <DateTime?>]`: Timestamp of the custom detection rule's next scheduled run.
+    - `[Period <String>]`: How often the detection rule is set to run.
 The allowed values are: 0, 1H, 3H, 12H, or 24H.
 '0' signifies the rule is run continuously.
 
-DETECTIONACTION \<IMicrosoftGraphSecurityDetectionAction\>: detectionAction
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AlertTemplate \<IMicrosoftGraphSecurityAlertTemplate\>\]: alertTemplate
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Category \<String\>\]: Category assigned to the alert triggered by the custom detection rule.
-    \[Description \<String\>\]: Description of the alert triggered by the custom detection rule.
-    \[ImpactedAssets \<IMicrosoftGraphSecurityImpactedAsset\[\]\>\]: Which asset or assets were impacted based on the alert triggered by the custom detection rule.
-    \[MitreTechniques \<String\[\]\>\]: MITRE technique assigned to the alert triggered by the custom detection rule.
-    \[RecommendedActions \<String\>\]: Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule.
-    \[Severity \<String\>\]: alertSeverity
-    \[Title \<String\>\]: Name of the alert triggered by the custom detection rule.
-  \[OrganizationalScope \<IMicrosoftGraphSecurityOrganizationalScope\>\]: organizationalScope
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ScopeNames \<String\[\]\>\]: List of groups to which the custom detection rule applies.
-    \[ScopeType \<String\>\]: scopeType
-  \[ResponseActions \<IMicrosoftGraphSecurityResponseAction\[\]\>\]: Actions taken on impacted assets as set in the custom detection rule.
+DETECTIONACTION `<IMicrosoftGraphSecurityDetectionAction>`: detectionAction
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AlertTemplate <IMicrosoftGraphSecurityAlertTemplate>]`: alertTemplate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Category <String>]`: Category assigned to the alert triggered by the custom detection rule.
+    - `[Description <String>]`: Description of the alert triggered by the custom detection rule.
+    - `[ImpactedAssets <IMicrosoftGraphSecurityImpactedAsset- `[]`>]`: Which asset or assets were impacted based on the alert triggered by the custom detection rule.
+    - `[MitreTechniques <String- `[]`>]`: MITRE technique assigned to the alert triggered by the custom detection rule.
+    - `[RecommendedActions <String>]`: Recommended actions to mitigate the threat related to the alert triggered by the custom detection rule.
+    - `[Severity <String>]`: alertSeverity
+    - `[Title <String>]`: Name of the alert triggered by the custom detection rule.
+  - `[OrganizationalScope <IMicrosoftGraphSecurityOrganizationalScope>]`: organizationalScope
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ScopeNames <String- `[]`>]`: List of groups to which the custom detection rule applies.
+    - `[ScopeType <String>]`: scopeType
+  - `[ResponseActions <IMicrosoftGraphSecurityResponseAction- `[]`>]`: Actions taken on impacted assets as set in the custom detection rule.
 
-INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
-  \[ArticleId \<String\>\]: The unique identifier of article
-  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
-  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
-  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
-  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[CategoryTemplateId \<String\>\]: The unique identifier of categoryTemplate
-  \[CitationTemplateId \<String\>\]: The unique identifier of citationTemplate
-  \[CloudAppSecurityProfileId \<String\>\]: The unique identifier of cloudAppSecurityProfile
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[DepartmentTemplateId \<String\>\]: The unique identifier of departmentTemplate
-  \[DetectionRuleId \<String\>\]: The unique identifier of detectionRule
-  \[DispositionReviewStageId \<String\>\]: The unique identifier of dispositionReviewStage
-  \[DomainSecurityProfileId \<String\>\]: The unique identifier of domainSecurityProfile
-  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
-  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
-  \[EdiscoveryFileId \<String\>\]: The unique identifier of ediscoveryFile
-  \[EdiscoveryHoldPolicyId \<String\>\]: The unique identifier of ediscoveryHoldPolicy
-  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
-  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
-  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
-  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
-  \[EmailThreatSubmissionId \<String\>\]: The unique identifier of emailThreatSubmission
-  \[EmailThreatSubmissionPolicyId \<String\>\]: The unique identifier of emailThreatSubmissionPolicy
-  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
-  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
-  \[FilePlanReferenceTemplateId \<String\>\]: The unique identifier of filePlanReferenceTemplate
-  \[FileSecurityProfileId \<String\>\]: The unique identifier of fileSecurityProfile
-  \[FileThreatSubmissionId \<String\>\]: The unique identifier of fileThreatSubmission
-  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
-  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
-  \[HostId \<String\>\]: The unique identifier of host
-  \[HostPairId \<String\>\]: The unique identifier of hostPair
-  \[HostPortId \<String\>\]: The unique identifier of hostPort
-  \[HostSecurityProfileId \<String\>\]: The unique identifier of hostSecurityProfile
-  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
-  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
-  \[IPSecurityProfileId \<String\>\]: The unique identifier of ipSecurityProfile
-  \[IncidentId \<String\>\]: The unique identifier of incident
-  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
-  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
-  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
-  \[LandingPageId \<String\>\]: The unique identifier of landingPage
-  \[LoginPageId \<String\>\]: The unique identifier of loginPage
-  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
-  \[PayloadId \<String\>\]: The unique identifier of payload
-  \[ProviderTenantSettingId \<String\>\]: The unique identifier of providerTenantSetting
-  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
-  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
-  \[RetentionLabelId \<String\>\]: The unique identifier of retentionLabel
-  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
-  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
-  \[SecurityActionId \<String\>\]: The unique identifier of securityAction
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
-  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
-  \[SimulationId \<String\>\]: The unique identifier of simulation
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
-  \[SubCategoryTemplateId \<String\>\]: The unique identifier of subCategoryTemplate
-  \[SubdomainId \<String\>\]: The unique identifier of subdomain
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TiIndicatorId \<String\>\]: The unique identifier of tiIndicator
-  \[TrainingCampaignId \<String\>\]: The unique identifier of trainingCampaign
-  \[TrainingId \<String\>\]: The unique identifier of training
-  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UrlThreatSubmissionId \<String\>\]: The unique identifier of urlThreatSubmission
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSecurityProfileId \<String\>\]: The unique identifier of userSecurityProfile
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
-  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
-  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
-  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
-  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[AnalyzedEmailId <String>]`: The unique identifier of analyzedEmail
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuditLogQueryId <String>]`: The unique identifier of auditLogQuery
+  - `[AuditLogRecordId <String>]`: The unique identifier of auditLogRecord
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
+  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
+  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SecurityActionId <String>]`: The unique identifier of securityAction
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingCampaignId <String>]`: The unique identifier of trainingCampaign
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-LASTRUNDETAILS \<IMicrosoftGraphSecurityRunDetails\>: runDetails
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ErrorCode \<String\>\]: huntingRuleErrorCode
-  \[FailureReason \<String\>\]: Reason for failure when the custom detection last ran and failed.
+LASTRUNDETAILS `<IMicrosoftGraphSecurityRunDetails>`: runDetails
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ErrorCode <String>]`: huntingRuleErrorCode
+  - `[FailureReason <String>]`: Reason for failure when the custom detection last ran and failed.
 See the table below.
-  \[LastRunDateTime \<DateTime?\>\]: Timestamp when the custom detection was last run.
-  \[Status \<String\>\]: huntingRuleRunStatus
+  - `[LastRunDateTime <DateTime?>]`: Timestamp when the custom detection was last run.
+  - `[Status <String>]`: huntingRuleRunStatus
 
-QUERYCONDITION \<IMicrosoftGraphSecurityQueryCondition\>: queryCondition
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[LastModifiedDateTime \<DateTime?\>\]: Timestamp of when the query in the custom detection rule was last updated.
-  \[QueryText \<String\>\]: Contents of the query.
+QUERYCONDITION `<IMicrosoftGraphSecurityQueryCondition>`: queryCondition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the query in the custom detection rule was last updated.
+  - `[QueryText <String>]`: Contents of the query.
 
-SCHEDULE \<IMicrosoftGraphSecurityRuleSchedule\>: ruleSchedule
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[NextRunDateTime \<DateTime?\>\]: Timestamp of the custom detection rule's next scheduled run.
-  \[Period \<String\>\]: How often the detection rule is set to run.
+SCHEDULE `<IMicrosoftGraphSecurityRuleSchedule>`: ruleSchedule
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[NextRunDateTime <DateTime?>]`: Timestamp of the custom detection rule's next scheduled run.
+  - `[Period <String>]`: How often the detection rule is set to run.
 The allowed values are: 0, 1H, 3H, 12H, or 24H.
 '0' signifies the rule is run continuously.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityruledetectionrule)
+
+
+
 

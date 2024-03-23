@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym
@@ -289,35 +289,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSearchAcronym\>: acronym
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[LastModifiedBy \<IMicrosoftGraphSearchIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: 
-      \[Id \<String\>\]: 
-    \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
-    \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
-  \[LastModifiedDateTime \<DateTime?\>\]: 
-  \[WebUrl \<String\>\]: 
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
+    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[WebUrl <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[StandsFor \<String\>\]: 
-  \[State \<String\>\]: answerState
+  - `[StandsFor <String>]`: 
+  - `[State <String>]`: answerState
 
-LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: 
-    \[Id \<String\>\]: 
-  \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
-  \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
+LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
+  - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+  - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
+
+
+
 

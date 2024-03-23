@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction
@@ -260,31 +260,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONSUMMARY \<IMicrosoftGraphCloudPcBulkActionSummary\>: cloudPcBulkActionSummary
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[FailedCount \<Int32?\>\]: 
-  \[InProgressCount \<Int32?\>\]: 
-  \[NotSupportedCount \<Int32?\>\]: 
-  \[PendingCount \<Int32?\>\]: 
-  \[SuccessfulCount \<Int32?\>\]: 
+ACTIONSUMMARY `<IMicrosoftGraphCloudPcBulkActionSummary>`: cloudPcBulkActionSummary
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[FailedCount <Int32?>]`: 
+  - `[InProgressCount <Int32?>]`: 
+  - `[NotSupportedCount <Int32?>]`: 
+  - `[PendingCount <Int32?>]`: 
+  - `[SuccessfulCount <Int32?>]`: 
 
-BODYPARAMETER \<IMicrosoftGraphCloudPcBulkAction\>: cloudPcBulkAction
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCloudPcBulkAction>`: cloudPcBulkAction
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActionSummary \<IMicrosoftGraphCloudPcBulkActionSummary\>\]: cloudPcBulkActionSummary
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[FailedCount \<Int32?\>\]: 
-    \[InProgressCount \<Int32?\>\]: 
-    \[NotSupportedCount \<Int32?\>\]: 
-    \[PendingCount \<Int32?\>\]: 
-    \[SuccessfulCount \<Int32?\>\]: 
-  \[CloudPcIds \<String\[\]\>\]: 
-  \[CreatedDateTime \<DateTime?\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[ScheduledDuringMaintenanceWindow \<Boolean?\>\]:
+  - `[ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>]`: cloudPcBulkActionSummary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[FailedCount <Int32?>]`: 
+    - `[InProgressCount <Int32?>]`: 
+    - `[NotSupportedCount <Int32?>]`: 
+    - `[PendingCount <Int32?>]`: 
+    - `[SuccessfulCount <Int32?>]`: 
+  - `[CloudPcIds <String- `[]`>]`: 
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[DisplayName <String>]`: 
+  - `[ScheduledDuringMaintenanceWindow <Boolean?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction)
+
+
+
 

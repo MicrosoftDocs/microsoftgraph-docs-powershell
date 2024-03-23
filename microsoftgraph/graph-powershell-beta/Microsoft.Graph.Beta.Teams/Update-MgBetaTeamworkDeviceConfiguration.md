@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration
@@ -440,375 +440,378 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphTeamworkDeviceConfiguration\>: teamworkDeviceConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CameraConfiguration \<IMicrosoftGraphTeamworkCameraConfiguration\>\]: teamworkCameraConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Cameras \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Cameras <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: Display name for the peripheral.
-      \[ProductId \<String\>\]: The product ID of the device.
+      - `[DisplayName <String>]`: Display name for the peripheral.
+      - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-      \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+      - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-    \[ContentCameraConfiguration \<IMicrosoftGraphTeamworkContentCameraConfiguration\>\]: teamworkContentCameraConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IsContentCameraInverted \<Boolean?\>\]: True if the content camera is inverted.
-      \[IsContentCameraOptional \<Boolean?\>\]: True if the content camera is optional.
-      \[IsContentEnhancementEnabled \<Boolean?\>\]: True if the content enhancement is enabled.
-    \[DefaultContentCamera \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+    - `[ContentCameraConfiguration <IMicrosoftGraphTeamworkContentCameraConfiguration>]`: teamworkContentCameraConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsContentCameraInverted <Boolean?>]`: True if the content camera is inverted.
+      - `[IsContentCameraOptional <Boolean?>]`: True if the content camera is optional.
+      - `[IsContentEnhancementEnabled <Boolean?>]`: True if the content enhancement is enabled.
+    - `[DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The UTC date and time when the device configuration document was created.
-  \[DisplayConfiguration \<IMicrosoftGraphTeamworkDisplayConfiguration\>\]: teamworkDisplayConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ConfiguredDisplays \<IMicrosoftGraphTeamworkConfiguredPeripheral\[\]\>\]: The list of configured displays.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The UTC date and time when the device configuration document was created.
+  - `[DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]`: teamworkDisplayConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral- `[]`>]`: The list of configured displays.
 Applicable only for Microsoft Teams Rooms devices.
-      \[IsOptional \<Boolean?\>\]: True if the current peripheral is optional.
+      - `[IsOptional <Boolean?>]`: True if the current peripheral is optional.
 If set to false, this property is also used as part of the calculation of the health state for the device.
-      \[Peripheral \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[DisplayCount \<Int32?\>\]: Total number of connected displays, including the inbuilt display.
+      - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[DisplayCount <Int32?>]`: Total number of connected displays, including the inbuilt display.
 Applicable only for Teams Rooms devices.
-    \[InBuiltDisplayScreenConfiguration \<IMicrosoftGraphTeamworkDisplayScreenConfiguration\>\]: teamworkDisplayScreenConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[BacklightBrightness \<Int32?\>\]: The brightness level on the device (0-100).
+    - `[InBuiltDisplayScreenConfiguration <IMicrosoftGraphTeamworkDisplayScreenConfiguration>]`: teamworkDisplayScreenConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[BacklightBrightness <Int32?>]`: The brightness level on the device (0-100).
 Not applicable for Microsoft Teams Rooms devices.
-      \[BacklightTimeout \<TimeSpan?\>\]: Timeout for backlight (30-3600 secs).
+      - `[BacklightTimeout <TimeSpan?>]`: Timeout for backlight (30-3600 secs).
 Not applicable for Teams Rooms devices.
-      \[IsHighContrastEnabled \<Boolean?\>\]: True if high contrast mode is enabled.
+      - `[IsHighContrastEnabled <Boolean?>]`: True if high contrast mode is enabled.
 Not applicable for Teams Rooms devices.
-      \[IsScreensaverEnabled \<Boolean?\>\]: True if screensaver is enabled.
+      - `[IsScreensaverEnabled <Boolean?>]`: True if screensaver is enabled.
 Not applicable for Teams Rooms devices.
-      \[ScreensaverTimeout \<TimeSpan?\>\]: Screensaver timeout from 30 to 3600 secs.
+      - `[ScreensaverTimeout <TimeSpan?>]`: Screensaver timeout from 30 to 3600 secs.
 Not applicable for Teams Rooms devices.
-    \[IsContentDuplicationAllowed \<Boolean?\>\]: True if content duplication is allowed.
+    - `[IsContentDuplicationAllowed <Boolean?>]`: True if content duplication is allowed.
 Applicable only for Teams Rooms devices.
-    \[IsDualDisplayModeEnabled \<Boolean?\>\]: True if dual display mode is enabled.
+    - `[IsDualDisplayModeEnabled <Boolean?>]`: True if dual display mode is enabled.
 If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device.
 Applicable only for Teams Rooms devices.
-  \[HardwareConfiguration \<IMicrosoftGraphTeamworkHardwareConfiguration\>\]: teamworkHardwareConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Compute \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[HdmiIngest \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[ProcessorModel \<String\>\]: The CPU model on the device.
-  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-  \[LastModifiedDateTime \<DateTime?\>\]: The UTC date and time when the device configuration was last modified.
-  \[MicrophoneConfiguration \<IMicrosoftGraphTeamworkMicrophoneConfiguration\>\]: teamworkMicrophoneConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DefaultMicrophone \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[IsMicrophoneOptional \<Boolean?\>\]: True if the configured microphone is optional.
+  - `[HardwareConfiguration <IMicrosoftGraphTeamworkHardwareConfiguration>]`: teamworkHardwareConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Compute <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[ProcessorModel <String>]`: The CPU model on the device.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time when the device configuration was last modified.
+  - `[MicrophoneConfiguration <IMicrosoftGraphTeamworkMicrophoneConfiguration>]`: teamworkMicrophoneConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[IsMicrophoneOptional <Boolean?>]`: True if the configured microphone is optional.
 False if the microphone is not optional and the health state of the device should be computed.
-    \[Microphones \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
-  \[SoftwareVersions \<IMicrosoftGraphTeamworkDeviceSoftwareVersions\>\]: teamworkDeviceSoftwareVersions
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AdminAgentSoftwareVersion \<String\>\]: The software version for the admin agent running on the device.
-    \[FirmwareSoftwareVersion \<String\>\]: The software version for the firmware running on the device.
-    \[OperatingSystemSoftwareVersion \<String\>\]: The software version for the operating system on the device.
-    \[PartnerAgentSoftwareVersion \<String\>\]: The software version for the partner agent running on the device.
-    \[TeamsClientSoftwareVersion \<String\>\]: The software version for the Teams client running on the device.
-  \[SpeakerConfiguration \<IMicrosoftGraphTeamworkSpeakerConfiguration\>\]: teamworkSpeakerConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DefaultCommunicationSpeaker \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[DefaultSpeaker \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[IsCommunicationSpeakerOptional \<Boolean?\>\]: True if the communication speaker is optional.
+    - `[Microphones <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
+  - `[SoftwareVersions <IMicrosoftGraphTeamworkDeviceSoftwareVersions>]`: teamworkDeviceSoftwareVersions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AdminAgentSoftwareVersion <String>]`: The software version for the admin agent running on the device.
+    - `[FirmwareSoftwareVersion <String>]`: The software version for the firmware running on the device.
+    - `[OperatingSystemSoftwareVersion <String>]`: The software version for the operating system on the device.
+    - `[PartnerAgentSoftwareVersion <String>]`: The software version for the partner agent running on the device.
+    - `[TeamsClientSoftwareVersion <String>]`: The software version for the Teams client running on the device.
+  - `[SpeakerConfiguration <IMicrosoftGraphTeamworkSpeakerConfiguration>]`: teamworkSpeakerConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[DefaultSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[IsCommunicationSpeakerOptional <Boolean?>]`: True if the communication speaker is optional.
 Used to compute the health state if the communication speaker is not optional.
-    \[IsSpeakerOptional \<Boolean?\>\]: True if the configured speaker is optional.
+    - `[IsSpeakerOptional <Boolean?>]`: True if the configured speaker is optional.
 Used to compute the health state if the speaker is not optional.
-    \[Speakers \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
-  \[SystemConfiguration \<IMicrosoftGraphTeamworkSystemConfiguration\>\]: teamworkSystemConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateTimeConfiguration \<IMicrosoftGraphTeamworkDateTimeConfiguration\>\]: teamworkDateTimeConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DateFormat \<String\>\]: The date format for the device.
-      \[OfficeHoursEndTime \<String\>\]: The time of the day when the device is turned off.
-      \[OfficeHoursStartTime \<String\>\]: The time of the day when the device is turned on.
-      \[TimeFormat \<String\>\]: The time format for the device.
-      \[TimeZone \<String\>\]: The time zone to which the office hours apply.
-    \[DefaultPassword \<String\>\]: The default password for the device.
+    - `[Speakers <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
+  - `[SystemConfiguration <IMicrosoftGraphTeamworkSystemConfiguration>]`: teamworkSystemConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]`: teamworkDateTimeConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateFormat <String>]`: The date format for the device.
+      - `[OfficeHoursEndTime <String>]`: The time of the day when the device is turned off.
+      - `[OfficeHoursStartTime <String>]`: The time of the day when the device is turned on.
+      - `[TimeFormat <String>]`: The time format for the device.
+      - `[TimeZone <String>]`: The time zone to which the office hours apply.
+    - `[DefaultPassword <String>]`: The default password for the device.
 Write-Only.
-    \[DeviceLockTimeout \<TimeSpan?\>\]: The device lock timeout in seconds.
-    \[IsDeviceLockEnabled \<Boolean?\>\]: True if the device lock is enabled.
-    \[IsLoggingEnabled \<Boolean?\>\]: True if logging is enabled.
-    \[IsPowerSavingEnabled \<Boolean?\>\]: True if power saving is enabled.
-    \[IsScreenCaptureEnabled \<Boolean?\>\]: True if screen capture is enabled.
-    \[IsSilentModeEnabled \<Boolean?\>\]: True if silent mode is enabled.
-    \[Language \<String\>\]: The language option for the device.
-    \[LockPin \<String\>\]: The pin that unlocks the device.
+    - `[DeviceLockTimeout <TimeSpan?>]`: The device lock timeout in seconds.
+    - `[IsDeviceLockEnabled <Boolean?>]`: True if the device lock is enabled.
+    - `[IsLoggingEnabled <Boolean?>]`: True if logging is enabled.
+    - `[IsPowerSavingEnabled <Boolean?>]`: True if power saving is enabled.
+    - `[IsScreenCaptureEnabled <Boolean?>]`: True if screen capture is enabled.
+    - `[IsSilentModeEnabled <Boolean?>]`: True if silent mode is enabled.
+    - `[Language <String>]`: The language option for the device.
+    - `[LockPin <String>]`: The pin that unlocks the device.
 Write-Only.
-    \[LoggingLevel \<String\>\]: The logging level for the device.
-    \[NetworkConfiguration \<IMicrosoftGraphTeamworkNetworkConfiguration\>\]: teamworkNetworkConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DefaultGateway \<String\>\]: The default gateway is the path used to pass information when the destination is unknown to the device.
-      \[DomainName \<String\>\]: The network domain of the device, for example, contoso.com.
-      \[HostName \<String\>\]: The device name on a network.
-      \[IPAddress \<String\>\]: The IP address is a numerical label that uniquely identifies every device connected to the internet.
-      \[IsDhcpEnabled \<Boolean?\>\]: True if DHCP is enabled.
-      \[IsPcPortEnabled \<Boolean?\>\]: True if the PC port is enabled.
-      \[PrimaryDns \<String\>\]: A primary DNS is the first point of contact for a device that translates the hostname into an IP address.
-      \[SecondaryDns \<String\>\]: A secondary DNS is used when the primary DNS is not available.
-      \[SubnetMask \<String\>\]: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
-  \[TeamsClientConfiguration \<IMicrosoftGraphTeamworkTeamsClientConfiguration\>\]: teamworkTeamsClientConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AccountConfiguration \<IMicrosoftGraphTeamworkAccountConfiguration\>\]: teamworkAccountConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[OnPremisesCalendarSyncConfiguration \<IMicrosoftGraphTeamworkOnPremisesCalendarSyncConfiguration\>\]: teamworkOnPremisesCalendarSyncConfiguration
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Domain \<String\>\]: The fully qualified domain name (FQDN) of the Skype for Business Server.
+    - `[LoggingLevel <String>]`: The logging level for the device.
+    - `[NetworkConfiguration <IMicrosoftGraphTeamworkNetworkConfiguration>]`: teamworkNetworkConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DefaultGateway <String>]`: The default gateway is the path used to pass information when the destination is unknown to the device.
+      - `[DomainName <String>]`: The network domain of the device, for example, contoso.com.
+      - `[HostName <String>]`: The device name on a network.
+      - `[IPAddress <String>]`: The IP address is a numerical label that uniquely identifies every device connected to the internet.
+      - `[IsDhcpEnabled <Boolean?>]`: True if DHCP is enabled.
+      - `[IsPcPortEnabled <Boolean?>]`: True if the PC port is enabled.
+      - `[PrimaryDns <String>]`: A primary DNS is the first point of contact for a device that translates the hostname into an IP address.
+      - `[SecondaryDns <String>]`: A secondary DNS is used when the primary DNS is not available.
+      - `[SubnetMask <String>]`: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
+  - `[TeamsClientConfiguration <IMicrosoftGraphTeamworkTeamsClientConfiguration>]`: teamworkTeamsClientConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]`: teamworkAccountConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[OnPremisesCalendarSyncConfiguration <IMicrosoftGraphTeamworkOnPremisesCalendarSyncConfiguration>]`: teamworkOnPremisesCalendarSyncConfiguration
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Domain <String>]`: The fully qualified domain name (FQDN) of the Skype for Business Server.
 Use the Exchange domain if the Skype for Business SIP domain is different from the Exchange domain of the user.
-        \[DomainUserName \<String\>\]: The domain and username of the console device, for example, Seattle/RanierConf.
-        \[SmtpAddress \<String\>\]: The Simple Mail Transfer Protocol (SMTP) address of the user account.
+        - `[DomainUserName <String>]`: The domain and username of the console device, for example, Seattle/RanierConf.
+        - `[SmtpAddress <String>]`: The Simple Mail Transfer Protocol (SMTP) address of the user account.
 This is only required if a different user principal name (UPN) is used to sign in to Exchange other than Microsoft Teams and Skype for Business.
 This is a common scenario in a hybrid environment where an on-premises Exchange server is used.
-      \[SupportedClient \<String\>\]: teamworkSupportedClient
-    \[FeaturesConfiguration \<IMicrosoftGraphTeamworkFeaturesConfiguration\>\]: teamworkFeaturesConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[EmailToSendLogsAndFeedback \<String\>\]: Email address to send logs and feedback.
-      \[IsAutoScreenShareEnabled \<Boolean?\>\]: True if auto screen shared is enabled.
-      \[IsBluetoothBeaconingEnabled \<Boolean?\>\]: True if Bluetooth beaconing is enabled.
-      \[IsHideMeetingNamesEnabled \<Boolean?\>\]: True if hiding meeting names is enabled.
-      \[IsSendLogsAndFeedbackEnabled \<Boolean?\>\]: True if sending logs and feedback is enabled.
+      - `[SupportedClient <String>]`: teamworkSupportedClient
+    - `[FeaturesConfiguration <IMicrosoftGraphTeamworkFeaturesConfiguration>]`: teamworkFeaturesConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EmailToSendLogsAndFeedback <String>]`: Email address to send logs and feedback.
+      - `[IsAutoScreenShareEnabled <Boolean?>]`: True if auto screen shared is enabled.
+      - `[IsBluetoothBeaconingEnabled <Boolean?>]`: True if Bluetooth beaconing is enabled.
+      - `[IsHideMeetingNamesEnabled <Boolean?>]`: True if hiding meeting names is enabled.
+      - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
-CAMERACONFIGURATION \<IMicrosoftGraphTeamworkCameraConfiguration\>: teamworkCameraConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Cameras \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Cameras <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Display name for the peripheral.
-    \[ProductId \<String\>\]: The product ID of the device.
+    - `[DisplayName <String>]`: Display name for the peripheral.
+    - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-    \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+    - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-  \[ContentCameraConfiguration \<IMicrosoftGraphTeamworkContentCameraConfiguration\>\]: teamworkContentCameraConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsContentCameraInverted \<Boolean?\>\]: True if the content camera is inverted.
-    \[IsContentCameraOptional \<Boolean?\>\]: True if the content camera is optional.
-    \[IsContentEnhancementEnabled \<Boolean?\>\]: True if the content enhancement is enabled.
-  \[DefaultContentCamera \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
+  - `[ContentCameraConfiguration <IMicrosoftGraphTeamworkContentCameraConfiguration>]`: teamworkContentCameraConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsContentCameraInverted <Boolean?>]`: True if the content camera is inverted.
+    - `[IsContentCameraOptional <Boolean?>]`: True if the content camera is optional.
+    - `[IsContentEnhancementEnabled <Boolean?>]`: True if the content enhancement is enabled.
+  - `[DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
 
-CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DISPLAYCONFIGURATION \<IMicrosoftGraphTeamworkDisplayConfiguration\>: teamworkDisplayConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ConfiguredDisplays \<IMicrosoftGraphTeamworkConfiguredPeripheral\[\]\>\]: The list of configured displays.
+DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral- `[]`>]`: The list of configured displays.
 Applicable only for Microsoft Teams Rooms devices.
-    \[IsOptional \<Boolean?\>\]: True if the current peripheral is optional.
+    - `[IsOptional <Boolean?>]`: True if the current peripheral is optional.
 If set to false, this property is also used as part of the calculation of the health state for the device.
-    \[Peripheral \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[DisplayName \<String\>\]: Display name for the peripheral.
-      \[ProductId \<String\>\]: The product ID of the device.
+      - `[DisplayName <String>]`: Display name for the peripheral.
+      - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-      \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+      - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-  \[DisplayCount \<Int32?\>\]: Total number of connected displays, including the inbuilt display.
+  - `[DisplayCount <Int32?>]`: Total number of connected displays, including the inbuilt display.
 Applicable only for Teams Rooms devices.
-  \[InBuiltDisplayScreenConfiguration \<IMicrosoftGraphTeamworkDisplayScreenConfiguration\>\]: teamworkDisplayScreenConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[BacklightBrightness \<Int32?\>\]: The brightness level on the device (0-100).
+  - `[InBuiltDisplayScreenConfiguration <IMicrosoftGraphTeamworkDisplayScreenConfiguration>]`: teamworkDisplayScreenConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[BacklightBrightness <Int32?>]`: The brightness level on the device (0-100).
 Not applicable for Microsoft Teams Rooms devices.
-    \[BacklightTimeout \<TimeSpan?\>\]: Timeout for backlight (30-3600 secs).
+    - `[BacklightTimeout <TimeSpan?>]`: Timeout for backlight (30-3600 secs).
 Not applicable for Teams Rooms devices.
-    \[IsHighContrastEnabled \<Boolean?\>\]: True if high contrast mode is enabled.
+    - `[IsHighContrastEnabled <Boolean?>]`: True if high contrast mode is enabled.
 Not applicable for Teams Rooms devices.
-    \[IsScreensaverEnabled \<Boolean?\>\]: True if screensaver is enabled.
+    - `[IsScreensaverEnabled <Boolean?>]`: True if screensaver is enabled.
 Not applicable for Teams Rooms devices.
-    \[ScreensaverTimeout \<TimeSpan?\>\]: Screensaver timeout from 30 to 3600 secs.
+    - `[ScreensaverTimeout <TimeSpan?>]`: Screensaver timeout from 30 to 3600 secs.
 Not applicable for Teams Rooms devices.
-  \[IsContentDuplicationAllowed \<Boolean?\>\]: True if content duplication is allowed.
+  - `[IsContentDuplicationAllowed <Boolean?>]`: True if content duplication is allowed.
 Applicable only for Teams Rooms devices.
-  \[IsDualDisplayModeEnabled \<Boolean?\>\]: True if dual display mode is enabled.
+  - `[IsDualDisplayModeEnabled <Boolean?>]`: True if dual display mode is enabled.
 If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device.
 Applicable only for Teams Rooms devices.
 
-HARDWARECONFIGURATION \<IMicrosoftGraphTeamworkHardwareConfiguration\>: teamworkHardwareConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Compute \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+HARDWARECONFIGURATION `<IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Compute <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Display name for the peripheral.
-    \[ProductId \<String\>\]: The product ID of the device.
+    - `[DisplayName <String>]`: Display name for the peripheral.
+    - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-    \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+    - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-  \[HdmiIngest \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-  \[ProcessorModel \<String\>\]: The CPU model on the device.
+  - `[HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+  - `[ProcessorModel <String>]`: The CPU model on the device.
 
-INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
-  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
-  \[ChannelId \<String\>\]: The unique identifier of channel
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
-  \[DayNoteId \<String\>\]: The unique identifier of dayNote
-  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
-  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
-  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
-  \[OpenShiftId \<String\>\]: The unique identifier of openShift
-  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
-  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
-  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
-  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
-  \[ShiftId \<String\>\]: The unique identifier of shift
-  \[ShiftsRoleDefinitionId \<String\>\]: The unique identifier of shiftsRoleDefinition
-  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
-  \[TeamId \<String\>\]: The unique identifier of team
-  \[TeamTemplateDefinitionId \<String\>\]: The unique identifier of teamTemplateDefinition
-  \[TeamTemplateId \<String\>\]: The unique identifier of teamTemplate
-  \[TeamsAppDashboardCardDefinitionId \<String\>\]: The unique identifier of teamsAppDashboardCardDefinition
-  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
-  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
-  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
-  \[TeamworkDeviceId \<String\>\]: The unique identifier of teamworkDevice
-  \[TeamworkDeviceOperationId \<String\>\]: The unique identifier of teamworkDeviceOperation
-  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
-  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
-  \[TimeCardId \<String\>\]: The unique identifier of timeCard
-  \[TimeOffId \<String\>\]: The unique identifier of timeOff
-  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
-  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
-  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
+INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
+  - `[ChannelId <String>]`: The unique identifier of channel
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DayNoteId <String>]`: The unique identifier of dayNote
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
+  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: The unique identifier of openShift
+  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: The unique identifier of shift
+  - `[ShiftsRoleDefinitionId <String>]`: The unique identifier of shiftsRoleDefinition
+  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
+  - `[TeamId <String>]`: The unique identifier of team
+  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
+  - `[TeamsAppDashboardCardDefinitionId <String>]`: The unique identifier of teamsAppDashboardCardDefinition
+  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
+  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
+  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
+  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
+  - `[TimeOffId <String>]`: The unique identifier of timeOff
+  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
+  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Application \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    \[Id \<String\>\]: Unique identifier for the identity.
+    - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  \[Device \<IMicrosoftGraphIdentity\>\]: identity
-  \[User \<IMicrosoftGraphIdentity\>\]: identity
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MICROPHONECONFIGURATION \<IMicrosoftGraphTeamworkMicrophoneConfiguration\>: teamworkMicrophoneConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DefaultMicrophone \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+MICROPHONECONFIGURATION `<IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Display name for the peripheral.
-    \[ProductId \<String\>\]: The product ID of the device.
+    - `[DisplayName <String>]`: Display name for the peripheral.
+    - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-    \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+    - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-  \[IsMicrophoneOptional \<Boolean?\>\]: True if the configured microphone is optional.
+  - `[IsMicrophoneOptional <Boolean?>]`: True if the configured microphone is optional.
 False if the microphone is not optional and the health state of the device should be computed.
-  \[Microphones \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
+  - `[Microphones <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
 
-SOFTWAREVERSIONS \<IMicrosoftGraphTeamworkDeviceSoftwareVersions\>: teamworkDeviceSoftwareVersions
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AdminAgentSoftwareVersion \<String\>\]: The software version for the admin agent running on the device.
-  \[FirmwareSoftwareVersion \<String\>\]: The software version for the firmware running on the device.
-  \[OperatingSystemSoftwareVersion \<String\>\]: The software version for the operating system on the device.
-  \[PartnerAgentSoftwareVersion \<String\>\]: The software version for the partner agent running on the device.
-  \[TeamsClientSoftwareVersion \<String\>\]: The software version for the Teams client running on the device.
+SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AdminAgentSoftwareVersion <String>]`: The software version for the admin agent running on the device.
+  - `[FirmwareSoftwareVersion <String>]`: The software version for the firmware running on the device.
+  - `[OperatingSystemSoftwareVersion <String>]`: The software version for the operating system on the device.
+  - `[PartnerAgentSoftwareVersion <String>]`: The software version for the partner agent running on the device.
+  - `[TeamsClientSoftwareVersion <String>]`: The software version for the Teams client running on the device.
 
-SPEAKERCONFIGURATION \<IMicrosoftGraphTeamworkSpeakerConfiguration\>: teamworkSpeakerConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DefaultCommunicationSpeaker \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Display name for the peripheral.
-    \[ProductId \<String\>\]: The product ID of the device.
+    - `[DisplayName <String>]`: Display name for the peripheral.
+    - `[ProductId <String>]`: The product ID of the device.
 Each product from a vendor has its own ID.
-    \[VendorId \<String\>\]: The unique identifier for the vendor of the device.
+    - `[VendorId <String>]`: The unique identifier for the vendor of the device.
 Each vendor has a unique ID.
-  \[DefaultSpeaker \<IMicrosoftGraphTeamworkPeripheral\>\]: teamworkPeripheral
-  \[IsCommunicationSpeakerOptional \<Boolean?\>\]: True if the communication speaker is optional.
+  - `[DefaultSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
+  - `[IsCommunicationSpeakerOptional <Boolean?>]`: True if the communication speaker is optional.
 Used to compute the health state if the communication speaker is not optional.
-  \[IsSpeakerOptional \<Boolean?\>\]: True if the configured speaker is optional.
+  - `[IsSpeakerOptional <Boolean?>]`: True if the configured speaker is optional.
 Used to compute the health state if the speaker is not optional.
-  \[Speakers \<IMicrosoftGraphTeamworkPeripheral\[\]\>\]: 
+  - `[Speakers <IMicrosoftGraphTeamworkPeripheral- `[]`>]`: 
 
-SYSTEMCONFIGURATION \<IMicrosoftGraphTeamworkSystemConfiguration\>: teamworkSystemConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DateTimeConfiguration \<IMicrosoftGraphTeamworkDateTimeConfiguration\>\]: teamworkDateTimeConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DateFormat \<String\>\]: The date format for the device.
-    \[OfficeHoursEndTime \<String\>\]: The time of the day when the device is turned off.
-    \[OfficeHoursStartTime \<String\>\]: The time of the day when the device is turned on.
-    \[TimeFormat \<String\>\]: The time format for the device.
-    \[TimeZone \<String\>\]: The time zone to which the office hours apply.
-  \[DefaultPassword \<String\>\]: The default password for the device.
+SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]`: teamworkDateTimeConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateFormat <String>]`: The date format for the device.
+    - `[OfficeHoursEndTime <String>]`: The time of the day when the device is turned off.
+    - `[OfficeHoursStartTime <String>]`: The time of the day when the device is turned on.
+    - `[TimeFormat <String>]`: The time format for the device.
+    - `[TimeZone <String>]`: The time zone to which the office hours apply.
+  - `[DefaultPassword <String>]`: The default password for the device.
 Write-Only.
-  \[DeviceLockTimeout \<TimeSpan?\>\]: The device lock timeout in seconds.
-  \[IsDeviceLockEnabled \<Boolean?\>\]: True if the device lock is enabled.
-  \[IsLoggingEnabled \<Boolean?\>\]: True if logging is enabled.
-  \[IsPowerSavingEnabled \<Boolean?\>\]: True if power saving is enabled.
-  \[IsScreenCaptureEnabled \<Boolean?\>\]: True if screen capture is enabled.
-  \[IsSilentModeEnabled \<Boolean?\>\]: True if silent mode is enabled.
-  \[Language \<String\>\]: The language option for the device.
-  \[LockPin \<String\>\]: The pin that unlocks the device.
+  - `[DeviceLockTimeout <TimeSpan?>]`: The device lock timeout in seconds.
+  - `[IsDeviceLockEnabled <Boolean?>]`: True if the device lock is enabled.
+  - `[IsLoggingEnabled <Boolean?>]`: True if logging is enabled.
+  - `[IsPowerSavingEnabled <Boolean?>]`: True if power saving is enabled.
+  - `[IsScreenCaptureEnabled <Boolean?>]`: True if screen capture is enabled.
+  - `[IsSilentModeEnabled <Boolean?>]`: True if silent mode is enabled.
+  - `[Language <String>]`: The language option for the device.
+  - `[LockPin <String>]`: The pin that unlocks the device.
 Write-Only.
-  \[LoggingLevel \<String\>\]: The logging level for the device.
-  \[NetworkConfiguration \<IMicrosoftGraphTeamworkNetworkConfiguration\>\]: teamworkNetworkConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DefaultGateway \<String\>\]: The default gateway is the path used to pass information when the destination is unknown to the device.
-    \[DomainName \<String\>\]: The network domain of the device, for example, contoso.com.
-    \[HostName \<String\>\]: The device name on a network.
-    \[IPAddress \<String\>\]: The IP address is a numerical label that uniquely identifies every device connected to the internet.
-    \[IsDhcpEnabled \<Boolean?\>\]: True if DHCP is enabled.
-    \[IsPcPortEnabled \<Boolean?\>\]: True if the PC port is enabled.
-    \[PrimaryDns \<String\>\]: A primary DNS is the first point of contact for a device that translates the hostname into an IP address.
-    \[SecondaryDns \<String\>\]: A secondary DNS is used when the primary DNS is not available.
-    \[SubnetMask \<String\>\]: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
+  - `[LoggingLevel <String>]`: The logging level for the device.
+  - `[NetworkConfiguration <IMicrosoftGraphTeamworkNetworkConfiguration>]`: teamworkNetworkConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DefaultGateway <String>]`: The default gateway is the path used to pass information when the destination is unknown to the device.
+    - `[DomainName <String>]`: The network domain of the device, for example, contoso.com.
+    - `[HostName <String>]`: The device name on a network.
+    - `[IPAddress <String>]`: The IP address is a numerical label that uniquely identifies every device connected to the internet.
+    - `[IsDhcpEnabled <Boolean?>]`: True if DHCP is enabled.
+    - `[IsPcPortEnabled <Boolean?>]`: True if the PC port is enabled.
+    - `[PrimaryDns <String>]`: A primary DNS is the first point of contact for a device that translates the hostname into an IP address.
+    - `[SecondaryDns <String>]`: A secondary DNS is used when the primary DNS is not available.
+    - `[SubnetMask <String>]`: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
 
-TEAMSCLIENTCONFIGURATION \<IMicrosoftGraphTeamworkTeamsClientConfiguration\>: teamworkTeamsClientConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AccountConfiguration \<IMicrosoftGraphTeamworkAccountConfiguration\>\]: teamworkAccountConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[OnPremisesCalendarSyncConfiguration \<IMicrosoftGraphTeamworkOnPremisesCalendarSyncConfiguration\>\]: teamworkOnPremisesCalendarSyncConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Domain \<String\>\]: The fully qualified domain name (FQDN) of the Skype for Business Server.
+TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]`: teamworkAccountConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[OnPremisesCalendarSyncConfiguration <IMicrosoftGraphTeamworkOnPremisesCalendarSyncConfiguration>]`: teamworkOnPremisesCalendarSyncConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Domain <String>]`: The fully qualified domain name (FQDN) of the Skype for Business Server.
 Use the Exchange domain if the Skype for Business SIP domain is different from the Exchange domain of the user.
-      \[DomainUserName \<String\>\]: The domain and username of the console device, for example, Seattle/RanierConf.
-      \[SmtpAddress \<String\>\]: The Simple Mail Transfer Protocol (SMTP) address of the user account.
+      - `[DomainUserName <String>]`: The domain and username of the console device, for example, Seattle/RanierConf.
+      - `[SmtpAddress <String>]`: The Simple Mail Transfer Protocol (SMTP) address of the user account.
 This is only required if a different user principal name (UPN) is used to sign in to Exchange other than Microsoft Teams and Skype for Business.
 This is a common scenario in a hybrid environment where an on-premises Exchange server is used.
-    \[SupportedClient \<String\>\]: teamworkSupportedClient
-  \[FeaturesConfiguration \<IMicrosoftGraphTeamworkFeaturesConfiguration\>\]: teamworkFeaturesConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EmailToSendLogsAndFeedback \<String\>\]: Email address to send logs and feedback.
-    \[IsAutoScreenShareEnabled \<Boolean?\>\]: True if auto screen shared is enabled.
-    \[IsBluetoothBeaconingEnabled \<Boolean?\>\]: True if Bluetooth beaconing is enabled.
-    \[IsHideMeetingNamesEnabled \<Boolean?\>\]: True if hiding meeting names is enabled.
-    \[IsSendLogsAndFeedbackEnabled \<Boolean?\>\]: True if sending logs and feedback is enabled.
+    - `[SupportedClient <String>]`: teamworkSupportedClient
+  - `[FeaturesConfiguration <IMicrosoftGraphTeamworkFeaturesConfiguration>]`: teamworkFeaturesConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EmailToSendLogsAndFeedback <String>]`: Email address to send logs and feedback.
+    - `[IsAutoScreenShareEnabled <Boolean?>]`: True if auto screen shared is enabled.
+    - `[IsBluetoothBeaconingEnabled <Boolean?>]`: True if Bluetooth beaconing is enabled.
+    - `[IsHideMeetingNamesEnabled <Boolean?>]`: True if hiding meeting names is enabled.
+    - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification
@@ -252,45 +252,48 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphInferenceClassification\>: inferenceClassification
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphInferenceClassification>`: inferenceClassification
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Overrides \<IMicrosoftGraphInferenceClassificationOverride\[\]\>\]: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
-Read-only.
-Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
-Read-only.
-    \[ClassifyAs \<String\>\]: inferenceClassificationType
-    \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Address \<String\>\]: The email address of an entity instance.
-      \[Name \<String\>\]: The display name of an entity instance.
-
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MentionId \<String\>\]: The unique identifier of mention
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
-  \[UserId \<String\>\]: The unique identifier of user
-
-OVERRIDES \<IMicrosoftGraphInferenceClassificationOverride\[\]\>: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+  - `[Overrides <IMicrosoftGraphInferenceClassificationOverride- `[]`>]`: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ClassifyAs \<String\>\]: inferenceClassificationType
-  \[SenderEmailAddress \<IMicrosoftGraphEmailAddress\>\]: emailAddress
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Address \<String\>\]: The email address of an entity instance.
-    \[Name \<String\>\]: The display name of an entity instance.
+    - `[ClassifyAs <String>]`: inferenceClassificationType
+    - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MentionId <String>]`: The unique identifier of mention
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
+  - `[UserId <String>]`: The unique identifier of user
+
+OVERRIDES <IMicrosoftGraphInferenceClassificationOverride- `[]`>: A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[ClassifyAs <String>]`: inferenceClassificationType
+  - `[SenderEmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassification)
+
+
+
 

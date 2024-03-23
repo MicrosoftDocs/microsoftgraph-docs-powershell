@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation
@@ -280,21 +280,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDataPolicyOperation\>: dataPolicyOperation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDataPolicyOperation>`: dataPolicyOperation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CompletedDateTime \<DateTime?\>\]: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
+  - `[CompletedDateTime <DateTime?>]`: Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Null until the operation completes.
-  \[Progress \<Double?\>\]: Specifies the progress of an operation.
-  \[Status \<String\>\]: dataPolicyOperationStatus
-  \[StorageLocation \<String\>\]: The URL location to where data is being exported for export requests.
-  \[SubmittedDateTime \<DateTime?\>\]: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
+  - `[Progress <Double?>]`: Specifies the progress of an operation.
+  - `[Status <String>]`: dataPolicyOperationStatus
+  - `[StorageLocation <String>]`: The URL location to where data is being exported for export requests.
+  - `[SubmittedDateTime <DateTime?>]`: Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  \[UserId \<String\>\]: The id for the user on whom the operation is performed.
+  - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation)
+
+
+
 
