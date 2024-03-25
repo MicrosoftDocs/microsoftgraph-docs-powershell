@@ -22,8 +22,8 @@ Update-MgBetaUserSetting -UserId <String> [-ResponseHeadersVariable <String>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Windows <IMicrosoftGraphWindowsSetting[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -40,8 +40,8 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Windows <IMicrosoftGraphWindowsSetting[]>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -276,6 +276,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Windows
+The Windows settings of the user stored in the cloud.
+To construct, see NOTES section for WINDOWS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsSetting[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -389,10 +405,9 @@ Read only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -435,6 +450,22 @@ Required.
         - `[EndTime <String>]`: End time for the time range.
         - `[StartTime <String>]`: Start time for the time range.
       - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+  - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: The Windows settings of the user stored in the cloud.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+      - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+      - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+      - `[Payload <String>]`: Base64-encoded JSON setting value.
+    - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
+    - `[SettingType <String>]`: windowsSettingType
+    - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
 CONTACTMERGESUGGESTIONS `<IMicrosoftGraphContactMergeSuggestions>`: contactMergeSuggestions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -467,6 +498,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ITEMINSIGHTS `<IMicrosoftGraphUserInsightsSettings>`: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -520,10 +553,9 @@ SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -566,6 +598,23 @@ Required.
       - `[EndTime <String>]`: End time for the time range.
       - `[StartTime <String>]`: Start time for the time range.
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: The Windows settings of the user stored in the cloud.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+    - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+    - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+    - `[Payload <String>]`: Base64-encoded JSON setting value.
+  - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
+  - `[SettingType <String>]`: windowsSettingType
+  - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
 ## RELATED LINKS
 [Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)

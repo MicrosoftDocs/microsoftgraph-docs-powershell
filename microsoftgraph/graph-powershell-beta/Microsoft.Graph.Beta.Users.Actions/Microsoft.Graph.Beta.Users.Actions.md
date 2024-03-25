@@ -20,6 +20,9 @@ Locale: en-US
 ### [Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub.md)
 {{ Fill in the Description }}
 
+### [Add-MgBetaUserFollowedSite](Add-MgBetaUserFollowedSite.md)
+{{ Fill in the Description }}
+
 ### [Add-MgBetaUserPendingAccessReviewInstanceDecision](Add-MgBetaUserPendingAccessReviewInstanceDecision.md)
 {{ Fill in the Description }}
 
@@ -579,6 +582,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDriveRootPermanent](Remove-MgBetaUserDriveRootPermanent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserFollowedSite](Remove-MgBetaUserFollowedSite.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement](Remove-MgBetaUserManagedDeviceFirmwareConfigurationInterfaceManagement.md)

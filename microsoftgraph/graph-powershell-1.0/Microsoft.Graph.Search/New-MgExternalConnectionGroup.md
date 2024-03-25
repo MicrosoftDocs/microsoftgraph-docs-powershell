@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgExternalConnectionGroup
@@ -308,12 +307,15 @@ Read-only.
     - `[Type <String>]`: identityType
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
   - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
   - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
   - `[ExternalItemId <String>]`: The unique identifier of externalItem
   - `[IdentityId <String>]`: The unique identifier of identity
+  - `[QnaId <String>]`: The unique identifier of qna
 
 MEMBERS <IMicrosoftGraphExternalConnectorsIdentity- `[]`>: A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or an externalGroup as members.

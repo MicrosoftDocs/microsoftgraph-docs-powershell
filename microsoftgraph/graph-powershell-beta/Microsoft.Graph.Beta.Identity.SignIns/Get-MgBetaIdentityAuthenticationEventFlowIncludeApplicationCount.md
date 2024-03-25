@@ -19,20 +19,6 @@ Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount -Authentication
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### Get1
-```
-Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount -AuthenticationEventsFlowId <String>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount -InputObject <IIdentitySignInsIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount -InputObject <IIdentitySignInsIdentity>
@@ -50,7 +36,7 @@ The unique identifier of authenticationEventsFlow
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -96,7 +82,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True

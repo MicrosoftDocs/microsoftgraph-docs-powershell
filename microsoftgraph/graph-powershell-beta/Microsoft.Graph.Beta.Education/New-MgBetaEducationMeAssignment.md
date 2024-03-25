@@ -22,7 +22,8 @@ New-MgBetaEducationMeAssignment [-ResponseHeadersVariable <String>] [-AddToCalen
  [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
- [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>] [-Id <String>]
+ [-Grading <Hashtable>] [-GradingCategory <IMicrosoftGraphEducationGradingCategory>]
+ [-GradingScheme <IMicrosoftGraphEducationGradingScheme>] [-Id <String>]
  [-Instructions <IMicrosoftGraphEducationItemBody>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-ModuleUrl <String>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
@@ -272,6 +273,22 @@ To construct, see NOTES section for GRADINGCATEGORY properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphEducationGradingCategory
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GradingScheme
+educationGradingScheme
+To construct, see NOTES section for GRADINGSCHEME properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationGradingScheme
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -568,6 +585,16 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 Read-only.
     - `[DisplayName <String>]`: The name of the grading category.
     - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
+  - `[GradingScheme <IMicrosoftGraphEducationGradingScheme>]`: educationGradingScheme
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: 
+    - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
+      - `[DefaultPercentage <Single?>]`: 
+      - `[DisplayName <String>]`: 
+      - `[MinPercentage <Single?>]`: 
+    - `[HidePointsDuringGrading <Boolean?>]`: 
   - `[Instructions <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -668,6 +695,17 @@ GRADINGCATEGORY `<IMicrosoftGraphEducationGradingCategory>`: educationGradingCat
 Read-only.
   - `[DisplayName <String>]`: The name of the grading category.
   - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
+
+GRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DisplayName <String>]`: 
+  - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
+    - `[DefaultPercentage <Single?>]`: 
+    - `[DisplayName <String>]`: 
+    - `[MinPercentage <Single?>]`: 
+  - `[HidePointsDuringGrading <Boolean?>]`: 
 
 INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

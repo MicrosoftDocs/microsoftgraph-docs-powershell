@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgBetaUserTodoListTask
@@ -666,8 +665,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
     - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-    - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-    - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+    - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+    - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
@@ -741,8 +740,8 @@ CHECKLISTITEMS <IMicrosoftGraphChecklistItem- `[]`>: A collection of smaller sub
 Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+  - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+  - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
 
 COMPLETEDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -787,6 +786,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 LINKEDRESOURCES <IMicrosoftGraphLinkedResource- `[]`>: A collection of resources linked to the task.
   - `[Id <String>]`: The unique identifier for an entity.

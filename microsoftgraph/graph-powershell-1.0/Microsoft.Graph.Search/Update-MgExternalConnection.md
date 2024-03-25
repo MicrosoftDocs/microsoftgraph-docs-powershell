@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Update-MgExternalConnection
@@ -590,12 +589,15 @@ Read-only.
     - `[Type <String>]`: identityType
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
   - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
   - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
   - `[ExternalItemId <String>]`: The unique identifier of externalItem
   - `[IdentityId <String>]`: The unique identifier of identity
+  - `[QnaId <String>]`: The unique identifier of qna
 
 ITEMS <IMicrosoftGraphExternalConnectorsExternalItem- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.

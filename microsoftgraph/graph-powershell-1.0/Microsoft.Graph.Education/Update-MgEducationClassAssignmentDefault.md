@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentdefault
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgEducationClassAssignmentDefault
@@ -214,7 +213,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationChannelUrl
-Default Teams channel to which notifications will be sent.
+Default Teams channel to which notifications are sent.
 Default value is null.
 
 ```yaml
@@ -315,7 +314,7 @@ Read-only.
   - `[AddedStudentAction <String>]`: educationAddedStudentAction
   - `[DueTime <String>]`: Class-level default value for due time field.
 Default value is 23:59:00.
-  - `[NotificationChannelUrl <String>]`: Default Teams channel to which notifications will be sent.
+  - `[NotificationChannelUrl <String>]`: Default Teams channel to which notifications are sent.
 Default value is null.
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter

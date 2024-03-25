@@ -41,6 +41,9 @@ Locale: en-US
 ### [Get-MgBetaEducationClassAssignmentGradingCategory](Get-MgBetaEducationClassAssignmentGradingCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaEducationClassAssignmentGradingScheme](Get-MgBetaEducationClassAssignmentGradingScheme.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaEducationClassAssignmentResource](Get-MgBetaEducationClassAssignmentResource.md)
 {{ Fill in the Description }}
 
@@ -62,10 +65,19 @@ Locale: en-US
 ### [Get-MgBetaEducationClassAssignmentSetting](Get-MgBetaEducationClassAssignmentSetting.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaEducationClassAssignmentSettingDefaultGradingScheme](Get-MgBetaEducationClassAssignmentSettingDefaultGradingScheme.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaEducationClassAssignmentSettingGradingCategory](Get-MgBetaEducationClassAssignmentSettingGradingCategory.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount](Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEducationClassAssignmentSettingGradingScheme](Get-MgBetaEducationClassAssignmentSettingGradingScheme.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEducationClassAssignmentSettingGradingSchemeCount](Get-MgBetaEducationClassAssignmentSettingGradingSchemeCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationClassAssignmentSubmission](Get-MgBetaEducationClassAssignmentSubmission.md)
@@ -180,6 +192,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentGradingCategory](Get-MgBetaEducationMeAssignmentGradingCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEducationMeAssignmentGradingScheme](Get-MgBetaEducationMeAssignmentGradingScheme.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationMeAssignmentResource](Get-MgBetaEducationMeAssignmentResource.md)
@@ -345,6 +360,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentGradingCategory](Get-MgBetaEducationUserAssignmentGradingCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaEducationUserAssignmentGradingScheme](Get-MgBetaEducationUserAssignmentGradingScheme.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaEducationUserAssignmentResource](Get-MgBetaEducationUserAssignmentResource.md)
@@ -524,6 +542,9 @@ Locale: en-US
 ### [New-MgBetaEducationClassAssignmentSettingGradingCategory](New-MgBetaEducationClassAssignmentSettingGradingCategory.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaEducationClassAssignmentSettingGradingScheme](New-MgBetaEducationClassAssignmentSettingGradingScheme.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaEducationClassAssignmentSubmission](New-MgBetaEducationClassAssignmentSubmission.md)
 {{ Fill in the Description }}
 
@@ -687,6 +708,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSettingGradingCategory](Remove-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaEducationClassAssignmentSettingGradingScheme](Remove-MgBetaEducationClassAssignmentSettingGradingScheme.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationClassAssignmentSubmission](Remove-MgBetaEducationClassAssignmentSubmission.md)
@@ -906,6 +930,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSettingGradingCategory](Update-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaEducationClassAssignmentSettingGradingScheme](Update-MgBetaEducationClassAssignmentSettingGradingScheme.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaEducationClassAssignmentSubmission](Update-MgBetaEducationClassAssignmentSubmission.md)

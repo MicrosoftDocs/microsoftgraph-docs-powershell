@@ -22,20 +22,6 @@ Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter
  [<CommonParameters>]
 ```
 
-### Get10
-```
-Get-MgDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity10
-```
-Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
@@ -84,7 +70,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity10, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -99,7 +85,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get10
+Parameter Sets: Get
 Aliases:
 
 Required: True

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm
 
 ## SYNOPSIS
-Invoke action sendVirtualAppointmentReminderSms
+Send an SMS reminder to external attendees for a Teams virtual appointment.
+This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
@@ -50,7 +51,11 @@ Send-MgCommunicationOnlineMeetingVirtualAppointmentReminderSm -InputObject <IClo
 ```
 
 ## DESCRIPTION
-Invoke action sendVirtualAppointmentReminderSms
+Send an SMS reminder to external attendees for a Teams virtual appointment.
+This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
 ## PARAMETERS
 
@@ -256,14 +261,20 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
-  - `[PhoneNumber <String>]`: 
-  - `[TimeZone <String>]`: 
+  - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+  - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
 
 BODYPARAMETER `<IPaths1Hwkb04CommunicationsOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
-    - `[PhoneNumber <String>]`: 
-    - `[TimeZone <String>]`: 
+    - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+    - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
   - `[RemindBeforeTimeInMinutesType <String>]`: remindBeforeTimeInMinutesType
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter

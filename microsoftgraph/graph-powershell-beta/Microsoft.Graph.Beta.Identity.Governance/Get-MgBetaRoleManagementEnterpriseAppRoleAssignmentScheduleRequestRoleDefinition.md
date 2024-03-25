@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestRoleDefinition
 
 ## DESCRIPTION
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## PARAMETERS
 

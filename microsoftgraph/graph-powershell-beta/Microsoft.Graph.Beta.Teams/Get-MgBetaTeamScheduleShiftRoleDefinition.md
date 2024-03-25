@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamScheduleShiftRoleDefinition
 
 ## SYNOPSIS
-Get shiftsRoleDefinitions from teams
+The definitions of the roles in the schedule.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTeamScheduleShiftRoleDefinition -InputObject <ITeamsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get shiftsRoleDefinitions from teams
+The definitions of the roles in the schedule.
 
 ## PARAMETERS
 

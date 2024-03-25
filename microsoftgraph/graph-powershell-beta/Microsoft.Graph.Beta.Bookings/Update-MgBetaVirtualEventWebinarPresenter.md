@@ -16,8 +16,7 @@ Update the navigation property presenters in solutions
 ```
 Update-MgBetaVirtualEventWebinarPresenter -VirtualEventPresenterId <String> -VirtualEventWebinarId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
- [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-ProfilePhotoInputFile <String>]
+ [-Identity <IMicrosoftGraphIdentity>] [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -32,9 +31,8 @@ Update-MgBetaVirtualEventWebinarPresenter -VirtualEventPresenterId <String> -Vir
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>]
- [-Identity <IMicrosoftGraphCommunicationsUserIdentity>]
- [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>] [-ProfilePhotoInputFile <String>]
+ [-AdditionalProperties <Hashtable>] [-Email <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>]
+ [-PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]
  [-Sessions <IMicrosoftGraphVirtualEventSession[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -129,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### -Identity
-communicationsUserIdentity
+identity
 To construct, see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommunicationsUserIdentity
+Type: IMicrosoftGraphIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,21 +164,6 @@ To construct, see NOTES section for PRESENTERDETAILS properties and create a has
 
 ```yaml
 Type: IMicrosoftGraphVirtualEventPresenterDetails
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ProfilePhotoInputFile
-Input File for ProfilePhoto (.)
-
-```yaml
-Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -320,14 +303,13 @@ BODYPARAMETER `<IMicrosoftGraphVirtualEventPresenter>`: virtualEventPresenter
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
-  - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
+  - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -338,8 +320,8 @@ When the unique identifier is unavailable, the displayName property is provided 
     - `[JobTitle <String>]`: The presenter's job title.
     - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
     - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
     - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
-  - `[ProfilePhoto <Byte- `[]`>]`: 
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -366,12 +348,6 @@ Read-only.
           - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
         - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
         - `[Role <String>]`: Role of the attendee.
@@ -398,7 +374,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -465,14 +442,13 @@ Appears when answerInputType is text, multilineText or singleChoice.
 Only appears when the registrant is registered in Microsoft Entra ID.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-IDENTITY `<IMicrosoftGraphCommunicationsUserIdentity>`: communicationsUserIdentity
+IDENTITY `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[TenantId <String>]`: The user's tenant ID.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -508,6 +484,7 @@ PRESENTERDETAILS `<IMicrosoftGraphVirtualEventPresenterDetails>`: virtualEventPr
   - `[JobTitle <String>]`: The presenter's job title.
   - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
   - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+  - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 SESSIONS <IMicrosoftGraphVirtualEventSession- `[]`>: .
@@ -568,7 +545,8 @@ Read-only.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowTextOnly <Boolean?>]`: 
+    - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
   - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -613,14 +591,7 @@ See below for possible values.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Email <String>]`: Email address of the presenter.
-    - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[TenantId <String>]`: The user's tenant ID.
+    - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -628,8 +599,8 @@ When the unique identifier is unavailable, the displayName property is provided 
       - `[JobTitle <String>]`: The presenter's job title.
       - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
       - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+      - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
       - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
-    - `[ProfilePhoto <Byte- `[]`>]`: 
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
   - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.

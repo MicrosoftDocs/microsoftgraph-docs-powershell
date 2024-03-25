@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard
 
 ## SYNOPSIS
-Get dashboardCards from appCatalogs
+Dashboard cards specified in the Teams app manifest.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionDashboardCard -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Get dashboardCards from appCatalogs
+Dashboard cards specified in the Teams app manifest.
 
 ## PARAMETERS
 

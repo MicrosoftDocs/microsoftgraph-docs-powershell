@@ -23,12 +23,14 @@ Update-MgBetaDirectory [-ResponseHeadersVariable <String>] [-AdditionalPropertie
  [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
  [-DeviceLocalCredentials <IMicrosoftGraphDeviceLocalCredentialInfo[]>]
+ [-ExternalUserProfiles <IMicrosoftGraphExternalUserProfile[]>]
  [-FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>]
  [-InboundSharedUserProfiles <IMicrosoftGraphInboundSharedUserProfile[]>]
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
+ [-PendingExternalUserProfiles <IMicrosoftGraphPendingExternalUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
  [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Headers <IDictionary>]
@@ -175,6 +177,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExternalUserProfiles
+Collection of external user profiles that represent collaborators in the directory.
+To construct, see NOTES section for EXTERNALUSERPROFILES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphExternalUserProfile[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -FeatureRolloutPolicies
 .
 To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
@@ -293,6 +311,22 @@ To construct, see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and cr
 
 ```yaml
 Type: IMicrosoftGraphOutboundSharedUserProfile[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PendingExternalUserProfiles
+Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+To construct, see NOTES section for PENDINGEXTERNALUSERPROFILES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPendingExternalUserProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -452,6 +486,14 @@ Supports $expand.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[MembershipRule <String>]`: Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+  - `[MembershipRuleProcessingState <String>]`: Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+  - `[MembershipType <String>]`: Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -508,6 +550,14 @@ Supports $expand.
 Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+    - `[MembershipRule <String>]`: Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+    - `[MembershipRuleProcessingState <String>]`: Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+    - `[MembershipType <String>]`: Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
     - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -605,6 +655,39 @@ Read-only.
     - `[DeviceName <String>]`: Display name of the device that the local credentials are associated with.
     - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Microsoft Entra ID.
     - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
+  - `[ExternalUserProfiles <IMicrosoftGraphExternalUserProfile- `[]`>]`: Collection of external user profiles that represent collaborators in the directory.
+    - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[City <String>]`: The city.
+      - `[CountryOrRegion <String>]`: The country or region.
+It's a free-format string value, for example, 'United States'.
+      - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
+      - `[PostalCode <String>]`: The postal code.
+      - `[State <String>]`: The state.
+      - `[Street <String>]`: The street.
+    - `[CompanyName <String>]`: The company name of the external user profile.
+Supports $filter (eq, startswith).
+    - `[CreatedBy <String>]`: The object ID of the user who created the external user profile.
+Read-only.
+Not nullable.
+    - `[CreatedDateTime <DateTime?>]`: Date and time when this external user was created.
+Not nullable.
+Read-only.
+    - `[Department <String>]`: The department of the external user profile.
+    - `[DisplayName <String>]`: The display name of the external user profile.
+    - `[IsDiscoverable <Boolean?>]`: Represents whether the external user profile is discoverable in the directory.
+When true, this external profile shows up in Teams search.
+    - `[IsEnabled <Boolean?>]`: Represents whether the external user profile is enabled in the directory.
+This property is peer to the accountEnabled property on the user object.
+    - `[JobTitle <String>]`: The job title of the external user profile.
+    - `[PhoneNumber <String>]`: The phone number of the external user profile.
+Must be in E164 format.
+    - `[SupervisorId <String>]`: The object ID of the supervisor of the external user profile.
+Supports $filter (eq, startswith).
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -710,6 +793,31 @@ Read-only.
 Read-only.
 Key.
     - `[UserId <String>]`: The object id of the external user.
+Read-only.
+  - `[PendingExternalUserProfiles <IMicrosoftGraphPendingExternalUserProfile- `[]`>]`: Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+    - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
+    - `[CompanyName <String>]`: The company name of the external user profile.
+Supports $filter (eq, startswith).
+    - `[CreatedBy <String>]`: The object ID of the user who created the external user profile.
+Read-only.
+Not nullable.
+    - `[CreatedDateTime <DateTime?>]`: Date and time when this external user was created.
+Not nullable.
+Read-only.
+    - `[Department <String>]`: The department of the external user profile.
+    - `[DisplayName <String>]`: The display name of the external user profile.
+    - `[IsDiscoverable <Boolean?>]`: Represents whether the external user profile is discoverable in the directory.
+When true, this external profile shows up in Teams search.
+    - `[IsEnabled <Boolean?>]`: Represents whether the external user profile is enabled in the directory.
+This property is peer to the accountEnabled property on the user object.
+    - `[JobTitle <String>]`: The job title of the external user profile.
+    - `[PhoneNumber <String>]`: The phone number of the external user profile.
+Must be in E164 format.
+    - `[SupervisorId <String>]`: The object ID of the supervisor of the external user profile.
+Supports $filter (eq, startswith).
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Recommendations <IMicrosoftGraphRecommendation- `[]`>]`: List of recommended improvements to improve tenant posture.
     - `[ActionSteps <IMicrosoftGraphActionStep- `[]`>]`: List of actions to take to complete a recommendation.
@@ -861,6 +969,40 @@ Read-only.
   - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Microsoft Entra ID.
   - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.
 
+EXTERNALUSERPROFILES <IMicrosoftGraphExternalUserProfile- `[]`>: Collection of external user profiles that represent collaborators in the directory.
+  - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region.
+It's a free-format string value, for example, 'United States'.
+    - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+  - `[CompanyName <String>]`: The company name of the external user profile.
+Supports $filter (eq, startswith).
+  - `[CreatedBy <String>]`: The object ID of the user who created the external user profile.
+Read-only.
+Not nullable.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when this external user was created.
+Not nullable.
+Read-only.
+  - `[Department <String>]`: The department of the external user profile.
+  - `[DisplayName <String>]`: The display name of the external user profile.
+  - `[IsDiscoverable <Boolean?>]`: Represents whether the external user profile is discoverable in the directory.
+When true, this external profile shows up in Teams search.
+  - `[IsEnabled <Boolean?>]`: Represents whether the external user profile is enabled in the directory.
+This property is peer to the accountEnabled property on the user object.
+  - `[JobTitle <String>]`: The job title of the external user profile.
+  - `[PhoneNumber <String>]`: The phone number of the external user profile.
+Must be in E164 format.
+  - `[SupervisorId <String>]`: The object ID of the supervisor of the external user profile.
+Supports $filter (eq, startswith).
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+
 FEATUREROLLOUTPOLICIES <IMicrosoftGraphFeatureRolloutPolicy- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -975,6 +1117,40 @@ Read-only.
 Read-only.
 Key.
   - `[UserId <String>]`: The object id of the external user.
+Read-only.
+
+PENDINGEXTERNALUSERPROFILES <IMicrosoftGraphPendingExternalUserProfile- `[]`>: Collection of pending external user profiles representing collaborators in the directory that are unredeemed.
+  - `[Address <IMicrosoftGraphPhysicalOfficeAddress>]`: physicalOfficeAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region.
+It's a free-format string value, for example, 'United States'.
+    - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+  - `[CompanyName <String>]`: The company name of the external user profile.
+Supports $filter (eq, startswith).
+  - `[CreatedBy <String>]`: The object ID of the user who created the external user profile.
+Read-only.
+Not nullable.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when this external user was created.
+Not nullable.
+Read-only.
+  - `[Department <String>]`: The department of the external user profile.
+  - `[DisplayName <String>]`: The display name of the external user profile.
+  - `[IsDiscoverable <Boolean?>]`: Represents whether the external user profile is discoverable in the directory.
+When true, this external profile shows up in Teams search.
+  - `[IsEnabled <Boolean?>]`: Represents whether the external user profile is enabled in the directory.
+This property is peer to the accountEnabled property on the user object.
+  - `[JobTitle <String>]`: The job title of the external user profile.
+  - `[PhoneNumber <String>]`: The phone number of the external user profile.
+Must be in E164 format.
+  - `[SupervisorId <String>]`: The object ID of the supervisor of the external user profile.
+Supports $filter (eq, startswith).
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 RECOMMENDATIONS <IMicrosoftGraphRecommendation- `[]`>: List of recommended improvements to improve tenant posture.

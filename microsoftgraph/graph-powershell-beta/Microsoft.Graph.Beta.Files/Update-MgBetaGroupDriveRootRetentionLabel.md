@@ -3,17 +3,14 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootretentionlabel
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Update-MgBetaGroupDriveRootRetentionLabel
 
 ## SYNOPSIS
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootRetentionLabel?view=graph-powershell-1.0)
@@ -53,11 +50,9 @@ Update-MgBetaGroupDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Apply (set) a retention label on a driveItem (files and folders).
-Retention labels don't need to be published in a retention label policy to be applied using this method.
-When a retention label is applied to a folder, all the items in the folder are tagged with the same retention label.
-For information about conflict resolution for retention labels, see Will an existing label be overridden or removed.
+Lock or unlock a retention label on a driveItem that classifies content as records.
 For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+For more information about how you can lock and unlock retention labels, see Use record versioning to update records stored in SharePoint or OneDrive.
 
 ## PARAMETERS
 

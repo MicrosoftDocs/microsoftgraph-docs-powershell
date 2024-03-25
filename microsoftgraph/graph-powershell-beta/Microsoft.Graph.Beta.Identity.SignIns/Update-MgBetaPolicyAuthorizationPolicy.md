@@ -90,7 +90,8 @@ Accept wildcard characters: False
 ```
 
 ### -AllowedToUseSspr
-Indicates whether users can use the Self-Service Password Reset feature on the tenant.
+Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
 
 ```yaml
 Type: SwitchParameter
@@ -168,7 +169,7 @@ Accept wildcard characters: False
 
 ### -BlockMsolPowerShell
 To disable the use of the MSOnline PowerShell module set this property to true.
-This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
+This also disables user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
 This doesn't affect Microsoft Entra Connect or Microsoft Graph.
 
 ```yaml
@@ -469,9 +470,10 @@ Read-only.
 Default value is false.
 We recommend that you keep the value set to false.
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
-  - `[AllowedToUseSspr <Boolean?>]`: Indicates whether users can use the Self-Service Password Reset feature on the tenant.
+  - `[AllowedToUseSspr <Boolean?>]`: Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
   - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of the MSOnline PowerShell module set this property to true.
-This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
+This also disables user-based access to the legacy service endpoint used by the MSOnline PowerShell module.
 This doesn't affect Microsoft Entra Connect or Microsoft Graph.
   - `[DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.

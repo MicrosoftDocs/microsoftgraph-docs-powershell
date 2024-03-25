@@ -3,17 +3,16 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Update-MgTeamPrimaryChannelMessage
 
 ## SYNOPSIS
 Update a chatMessage object.
-With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
-If one of the participants is using Skype, the operation will fail.
-This method does not support federation.
+If one of the participants is using Skype, the operation fails.
+This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 > [!NOTE]
@@ -67,10 +66,10 @@ Update-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update a chatMessage object.
-With the exception of the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
+Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
 The update only works for chats where members are Microsoft Teams users.
-If one of the participants is using Skype, the operation will fail.
-This method does not support federation.
+If one of the participants is using Skype, the operation fails.
+This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
@@ -813,6 +812,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

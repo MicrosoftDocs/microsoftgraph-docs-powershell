@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
-ms.prod: partner-customer-administration
 ---
 
 # New-MgTenantRelationshipDelegatedAdminRelationship
@@ -176,6 +175,7 @@ Accept wildcard characters: False
 ### -DisplayName
 The display name of the relationship used for ease of identification.
 Must be unique across all delegated admin relationships of the partner and is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+Maximum length is 50 characters.
 
 ```yaml
 Type: String
@@ -457,6 +457,7 @@ Read-only
     - `[TenantId <String>]`: The Microsoft Entra ID-assigned tenant ID of the customer tenant.
   - `[DisplayName <String>]`: The display name of the relationship used for ease of identification.
 Must be unique across all delegated admin relationships of the partner and is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+Maximum length is 50 characters.
   - `[Duration <TimeSpan?>]`: The duration of the relationship in ISO 8601 format.
 Must be a value between P1D and P2Y inclusive.
 This is set by the partner only when the relationship is in the created status and can't be changed by the customer.

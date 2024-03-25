@@ -86,6 +86,7 @@ Accept wildcard characters: False
 
 ### -Code
 The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
 
 ```yaml
 Type: String
@@ -335,6 +336,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
   - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
   - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.

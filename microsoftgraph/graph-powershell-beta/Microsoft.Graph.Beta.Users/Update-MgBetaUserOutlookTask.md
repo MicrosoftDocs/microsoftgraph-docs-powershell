@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserOutlookTask
@@ -328,7 +327,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsReminderOn
-.
+Set to true if an alert is set to remind the user of the task.
 
 ```yaml
 Type: SwitchParameter
@@ -392,7 +391,7 @@ Accept wildcard characters: False
 ```
 
 ### -Owner
-.
+The name of the person who created the task.
 
 ```yaml
 Type: String
@@ -407,7 +406,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentFolderId
-.
+The unique identifier for the task's parent folder.
 
 ```yaml
 Type: String
@@ -548,7 +547,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+A brief description or title of the task.
 
 ```yaml
 Type: String
@@ -680,15 +679,15 @@ See below for possible values.
   - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[HasAttachments <Boolean?>]`: Set to true if the task has attachments.
   - `[Importance <String>]`: importance
-  - `[IsReminderOn <Boolean?>]`: 
+  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the task.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String- `[]`>]`: A collection of property values.
-  - `[Owner <String>]`: 
-  - `[ParentFolderId <String>]`: 
+  - `[Owner <String>]`: The name of the person who created the task.
+  - `[ParentFolderId <String>]`: The unique identifier for the task's parent folder.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -731,7 +730,7 @@ Read-only.
     - `[Value <String>]`: A property value.
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[Status <String>]`: taskStatus
-  - `[Subject <String>]`: 
+  - `[Subject <String>]`: A brief description or title of the task.
 
 COMPLETEDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -771,6 +770,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the task.
 Read-only.

@@ -22,8 +22,9 @@ To get the user current settings, see current user settings.
 ```
 Update-MgUserSetting -UserId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
- [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +39,8 @@ Update-MgUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSetting
 Update-MgUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-ContributionToContentDiscoveryAsOrganizationDisabled]
  [-ContributionToContentDiscoveryDisabled] [-Id <String>] [-ShiftPreferences <IMicrosoftGraphShiftPreferences>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -251,6 +253,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Windows
+.
+To construct, see NOTES section for WINDOWS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsSetting[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -362,6 +380,22 @@ Required.
         - `[EndTime <String>]`: End time for the time range.
         - `[StartTime <String>]`: Start time for the time range.
       - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+  - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+      - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+      - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+      - `[Payload <String>]`: Base64-encoded JSON setting value.
+    - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
+    - `[SettingType <String>]`: windowsSettingType
+    - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -377,6 +411,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 SHIFTPREFERENCES `<IMicrosoftGraphShiftPreferences>`: shiftPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -429,6 +465,23 @@ Required.
       - `[EndTime <String>]`: End time for the time range.
       - `[StartTime <String>]`: Start time for the time range.
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+    - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+    - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+    - `[Payload <String>]`: Base64-encoded JSON setting value.
+  - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
+  - `[SettingType <String>]`: windowsSettingType
+  - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
 
 ## RELATED LINKS
 [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)

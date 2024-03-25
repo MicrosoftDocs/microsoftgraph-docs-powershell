@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship
 schema: 2.0.0
-ms.prod: partner-customer-administration
 ---
 
 # Update-MgBetaTenantRelationshipDelegatedAdminRelationship
@@ -216,6 +215,7 @@ Accept wildcard characters: False
 The display name of the relationship used for ease of identification.
 Must be unique across all delegated admin relationships of the partner.
 This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+Maximum length is 50 characters.
 
 ```yaml
 Type: String
@@ -515,6 +515,7 @@ Read-only
   - `[DisplayName <String>]`: The display name of the relationship used for ease of identification.
 Must be unique across all delegated admin relationships of the partner.
 This is set by the partner only when the relationship is in the created status and can't be changed by the customer.
+Maximum length is 50 characters.
   - `[Duration <TimeSpan?>]`: The duration of the relationship in ISO 8601 format.
 Must be a value between P1D and P2Y inclusive.
 This is set by the partner only when the relationship is in the created status and can't be changed by the customer.

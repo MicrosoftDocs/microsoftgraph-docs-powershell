@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBetaBookingBusinessAppointment
@@ -25,10 +24,10 @@ New-MgBetaBookingBusinessAppointment -BookingBusinessId <String> [-ResponseHeade
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsCustomerAllowedToManageBooking] [-IsLocationOnline]
+ [-JoinWebUrl <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -44,10 +43,10 @@ New-MgBetaBookingBusinessAppointment -BookingBusinessId <String> [-ResponseHeade
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsCustomerAllowedToManageBooking] [-IsLocationOnline]
+ [-JoinWebUrl <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -77,10 +76,10 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-Response
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsCustomerAllowedToManageBooking] [-IsLocationOnline]
+ [-JoinWebUrl <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -96,10 +95,10 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-Response
  [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
  [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
  [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>]
- [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>]
- [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsCustomerAllowedToManageBooking] [-IsLocationOnline]
+ [-JoinWebUrl <String>] [-LastUpdatedDateTime <DateTime>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
  [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
  [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
@@ -655,6 +654,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsCustomerAllowedToManageBooking
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsLocationOnline
 True indicates that the appointment will be held online.
 Default value is false.
@@ -1090,6 +1104,7 @@ See below for possible values.
   - `[InvoiceId <String>]`: The ID of the invoice.
   - `[InvoiceStatus <String>]`: bookingInvoiceStatus
   - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
   - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
 Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.

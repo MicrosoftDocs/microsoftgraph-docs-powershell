@@ -8,7 +8,12 @@ schema: 2.0.0
 # Reset-MgBetaUserAuthenticationMethodPassword
 
 ## SYNOPSIS
-Invoke action resetPassword
+Initiate a reset for the password associated with a password authentication method object.
+This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
+The admin can either provide a new password or have the system generate one.
+The user is prompted to change their password on their next sign in.
+This reset is a long-running operation and will return a Location header with a link where the caller can periodically check for the status of the reset operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Reset-MgUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserAuthenticationMethodPassword?view=graph-powershell-1.0)
@@ -46,7 +51,15 @@ Reset-MgBetaUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action resetPassword
+Initiate a reset for the password associated with a password authentication method object.
+This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
+This flow writes the new password to Microsoft Entra ID and pushes it to on-premises Active Directory if configured using password writeback.
+The admin can either provide a new password or have the system generate one.
+The user is prompted to change their password on their next sign in.
+This reset is a long-running operation and will return a Location header with a link where the caller can periodically check for the status of the reset operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
 ## PARAMETERS
 

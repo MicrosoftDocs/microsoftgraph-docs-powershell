@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description of the role.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The display name of the role.
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShiftsRolePermissions
-.
+The collection of role permissions within the role.
 To construct, see NOTES section for SHIFTSROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
@@ -283,10 +283,11 @@ BODYPARAMETER `<IMicrosoftGraphShiftsRoleDefinition>`: shiftsRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
-    - `[AllowedResourceActions <String- `[]`>]`: 
+  - `[Description <String>]`: The description of the role.
+  - `[DisplayName <String>]`: The display name of the role.
+  - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: The collection of role permissions within the role.
+    - `[AllowedResourceActions <String- `[]`>]`: The permissions that are allowed for a role.
+Permissions that aren't in this collection are disabled.
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
@@ -331,8 +332,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-SHIFTSROLEPERMISSIONS <IMicrosoftGraphShiftsRolePermission- `[]`>: .
-  - `[AllowedResourceActions <String- `[]`>]`:
+SHIFTSROLEPERMISSIONS <IMicrosoftGraphShiftsRolePermission- `[]`>: The collection of role permissions within the role.
+  - `[AllowedResourceActions <String- `[]`>]`: The permissions that are allowed for a role.
+Permissions that aren't in this collection are disabled.
 
 ## RELATED LINKS
 

@@ -17,6 +17,9 @@ Locale: en-US
 ### [Confirm-MgBetaAuditLogSignInSafe](Confirm-MgBetaAuditLogSignInSafe.md)
 {{ Fill in the Description }}
 
+### [Export-MgBetaReportPartnerBillingReconciliationBilled](Export-MgBetaReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Export-MgBetaReportPartnerBillingUsageBilled](Export-MgBetaReportPartnerBillingUsageBilled.md)
 {{ Fill in the Description }}
 
@@ -324,6 +327,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportPartnerBillingOperationCount](Get-MgBetaReportPartnerBillingOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingReconciliation](Get-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaReportPartnerBillingReconciliationBilled](Get-MgBetaReportPartnerBillingReconciliationBilled.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaReportPartnerBillingUsage](Get-MgBetaReportPartnerBillingUsage.md)
@@ -686,6 +695,12 @@ Locale: en-US
 ### [Remove-MgBetaReportPartnerBillingOperation](Remove-MgBetaReportPartnerBillingOperation.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaReportPartnerBillingReconciliation](Remove-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaReportPartnerBillingReconciliationBilled](Remove-MgBetaReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaReportPartnerBillingUsage](Remove-MgBetaReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -720,6 +735,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaReportPartnerBillingOperation](Update-MgBetaReportPartnerBillingOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingReconciliation](Update-MgBetaReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaReportPartnerBillingReconciliationBilled](Update-MgBetaReportPartnerBillingReconciliationBilled.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaReportPartnerBillingUsage](Update-MgBetaReportPartnerBillingUsage.md)

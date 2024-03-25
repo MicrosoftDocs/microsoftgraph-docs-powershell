@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgUserOnlineMeeting
@@ -335,6 +334,7 @@ Accept wildcard characters: False
 
 ### -EndDateTime
 The meeting end time in UTC.
+Required when you create an online meeting.
 
 ```yaml
 Type: DateTime
@@ -614,6 +614,7 @@ Accept wildcard characters: False
 
 ### -StartDateTime
 The meeting start time in UTC.
+Required when you create an online meeting.
 
 ```yaml
 Type: DateTime
@@ -894,6 +895,7 @@ Default value is false.
   - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+Required when you create an online meeting.
   - `[ExternalId <String>]`: 
   - `[IsBroadcast <Boolean?>]`: 
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
@@ -923,6 +925,7 @@ Read-only.
     - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+Required when you create an online meeting.
   - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.

@@ -157,7 +157,8 @@ Accept wildcard characters: False
 
 ### -ServicePlans
 Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
 To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
 
 ```yaml
@@ -189,8 +190,8 @@ Accept wildcard characters: False
 
 ### -SkuId
 Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
 
 ```yaml
 Type: String
@@ -206,8 +207,8 @@ Accept wildcard characters: False
 
 ### -SkuPartNumber
 Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
 
 ```yaml
 Type: String
@@ -274,7 +275,8 @@ BODYPARAMETER `<IMicrosoftGraphLicenseDetails>`: licenseDetails
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
     - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -282,11 +284,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
     - `[ServicePlanId <String>]`: The unique identifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
   - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
   - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
 
 INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of application
@@ -306,6 +308,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
@@ -322,7 +325,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 SERVICEPLANS <IMicrosoftGraphServicePlanInfo- `[]`>: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.

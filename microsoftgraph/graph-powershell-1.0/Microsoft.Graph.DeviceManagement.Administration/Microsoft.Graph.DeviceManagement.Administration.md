@@ -116,6 +116,51 @@ Locale: en-US
 ### [Get-MgDeviceManagementVirtualEndpoint](Get-MgDeviceManagementVirtualEndpoint.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpointAuditEvent](Get-MgDeviceManagementVirtualEndpointAuditEvent.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointAuditEventCount](Get-MgDeviceManagementVirtualEndpointAuditEventCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningError](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningErrorCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignmentCount](Get-MgDeviceManagementVirtualEndpointUserSettingAssignmentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointUserSettingCount](Get-MgDeviceManagementVirtualEndpointUserSettingCount.md)
+{{ Fill in the Description }}
+
 ### [New-MgDeviceManagementAuditEvent](New-MgDeviceManagementAuditEvent.md)
 {{ Fill in the Description }}
 
@@ -159,6 +204,18 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgDeviceManagementTermAndConditionAssignment](New-MgDeviceManagementTermAndConditionAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](New-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointUserSetting](New-MgDeviceManagementVirtualEndpointUserSetting.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointUserSettingAssignment](New-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDeviceManagementApplePushNotificationCertificate](Remove-MgDeviceManagementApplePushNotificationCertificate.md)
@@ -209,6 +266,18 @@ Locale: en-US
 ### [Remove-MgDeviceManagementTermAndConditionAssignment](Remove-MgDeviceManagementTermAndConditionAssignment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceManagementVirtualEndpointUserSetting](Remove-MgDeviceManagementVirtualEndpointUserSetting.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment](Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+{{ Fill in the Description }}
+
 ### [Update-MgDeviceManagementApplePushNotificationCertificate](Update-MgDeviceManagementApplePushNotificationCertificate.md)
 {{ Fill in the Description }}
 
@@ -255,6 +324,21 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementTermAndConditionAssignment](Update-MgDeviceManagementTermAndConditionAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
 {{ Fill in the Description }}
 
 

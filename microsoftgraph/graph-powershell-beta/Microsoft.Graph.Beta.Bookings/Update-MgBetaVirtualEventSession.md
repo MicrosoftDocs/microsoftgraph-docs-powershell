@@ -795,7 +795,8 @@ Read-only.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowTextOnly <Boolean?>]`: 
+    - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
   - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -840,14 +841,7 @@ See below for possible values.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Email <String>]`: Email address of the presenter.
-    - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[TenantId <String>]`: The user's tenant ID.
+    - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -855,8 +849,8 @@ When the unique identifier is unavailable, the displayName property is provided 
       - `[JobTitle <String>]`: The presenter's job title.
       - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
       - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+      - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
       - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
-    - `[ProfilePhoto <Byte- `[]`>]`: 
     - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
   - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
@@ -894,7 +888,8 @@ CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
 
 CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowTextOnly <Boolean?>]`: 
+  - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
 
 ENDDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -953,14 +948,13 @@ PRESENTERS <IMicrosoftGraphVirtualEventPresenter- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Email <String>]`: Email address of the presenter.
-  - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
+  - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -971,8 +965,8 @@ When the unique identifier is unavailable, the displayName property is provided 
     - `[JobTitle <String>]`: The presenter's job title.
     - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
     - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+    - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
     - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
-  - `[ProfilePhoto <Byte- `[]`>]`: 
   - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -999,12 +993,6 @@ Read-only.
           - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
         - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
         - `[Identity <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
         - `[Role <String>]`: Role of the attendee.
@@ -1031,7 +1019,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -1178,7 +1167,8 @@ Read-only.
       - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
     - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowTextOnly <Boolean?>]`: 
+      - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
     - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -1223,14 +1213,7 @@ See below for possible values.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Email <String>]`: Email address of the presenter.
-      - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-        - `[TenantId <String>]`: The user's tenant ID.
+      - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Bio <IMicrosoftGraphItemBody>]`: itemBody
@@ -1238,8 +1221,8 @@ When the unique identifier is unavailable, the displayName property is provided 
         - `[JobTitle <String>]`: The presenter's job title.
         - `[LinkedInProfileWebUrl <String>]`: The presenter's LinkedIn profile URL.
         - `[PersonalSiteWebUrl <String>]`: The presenter's personal website URL.
+        - `[Photo <Byte- `[]`>]`: The content stream of the presenter's photo.
         - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
-      - `[ProfilePhoto <Byte- `[]`>]`: 
       - `[Sessions <IMicrosoftGraphVirtualEventSession- `[]`>]`: 
     - `[Registrations <IMicrosoftGraphVirtualEventRegistration- `[]`>]`: 
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone

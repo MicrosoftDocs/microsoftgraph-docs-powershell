@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgDevice
@@ -24,8 +23,9 @@ Update-MgDevice -DeviceId <String> [-ResponseHeadersVariable <String>] [-Account
  [-ApproximateLastSignInDateTime <DateTime>] [-ComplianceExpirationDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
  [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-EnrollmentProfileName <String>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant] [-IsManaged] [-MdmAppId <String>]
- [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-OnPremisesLastSyncDateTime <DateTime>]
+ [-EnrollmentType <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant]
+ [-IsManaged] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>] [-MdmAppId <String>]
+ [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>] [-OnPremisesLastSyncDateTime <DateTime>]
  [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled] [-OperatingSystem <String>]
  [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>] [-ProfileType <String>]
  [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
@@ -41,8 +41,9 @@ Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementI
  [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
  [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>]
- [-EnrollmentProfileName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsCompliant]
- [-IsManaged] [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-EnrollmentProfileName <String>] [-EnrollmentType <String>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-Id <String>] [-IsCompliant] [-IsManaged] [-IsRooted] [-ManagementType <String>] [-Manufacturer <String>]
+ [-MdmAppId <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Model <String>]
  [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSecurityIdentifier <String>] [-OnPremisesSyncEnabled]
  [-OperatingSystem <String>] [-OperatingSystemVersion <String>] [-PhysicalIds <String[]>]
  [-ProfileType <String>] [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]
@@ -365,6 +366,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EnrollmentType
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Extensions
 The collection of open extensions defined for the device.
 Read-only.
@@ -465,6 +481,52 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsRooted
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagementType
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Manufacturer
+Manufacturer of the device.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MdmAppId
 Application identifier used to register device into MDM.
 Read-only.
@@ -491,6 +553,22 @@ To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Model
+Model of the device.
+Read-only.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -854,6 +932,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
   - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
+  - `[EnrollmentType <String>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -866,6 +945,10 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+  - `[IsRooted <Boolean?>]`: 
+  - `[ManagementType <String>]`: 
+  - `[Manufacturer <String>]`: Manufacturer of the device.
+Read-only.
   - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -877,6 +960,8 @@ Supports $expand.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[Model <String>]`: Model of the device.
+Read-only.
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.

@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgBetaSearchAcronym
 
 ## SYNOPSIS
 Create a new acronym object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -330,6 +332,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
 

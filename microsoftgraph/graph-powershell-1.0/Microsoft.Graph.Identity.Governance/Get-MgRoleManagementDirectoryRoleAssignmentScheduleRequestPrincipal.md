@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The principal that's getting a role assignment through the request.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipal -InputObject
 
 ## DESCRIPTION
 The principal that's getting a role assignment through the request.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 ## PARAMETERS
 

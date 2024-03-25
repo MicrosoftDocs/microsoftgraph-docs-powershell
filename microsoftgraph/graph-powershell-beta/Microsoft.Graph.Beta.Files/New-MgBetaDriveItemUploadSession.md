@@ -243,6 +243,10 @@ BODYPARAMETER `<IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateup
     - `[Description <String>]`: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
+    - `[DriveItemSource <IMicrosoftGraphDriveItemSource>]`: driveItemSource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <String>]`: driveItemSourceApplication
+      - `[ExternalId <String>]`: The external identifier for the drive item from the source.
     - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
 Only on OneDrive Personal.
     - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
@@ -251,6 +255,9 @@ Only on OneDrive Personal.
       - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
 Available for the recent file list only.
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+    - `[MediaSource <IMicrosoftGraphMediaSource>]`: mediaSource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ContentCategory <String>]`: mediaSourceContentCategory
     - `[Name <String>]`: The name of the item (filename and extension).
 Read-write.
 
@@ -285,6 +292,10 @@ ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProper
   - `[Description <String>]`: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
+  - `[DriveItemSource <IMicrosoftGraphDriveItemSource>]`: driveItemSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <String>]`: driveItemSourceApplication
+    - `[ExternalId <String>]`: The external identifier for the drive item from the source.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
 Only on OneDrive Personal.
   - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
@@ -293,6 +304,9 @@ Only on OneDrive Personal.
     - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
 Available for the recent file list only.
     - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+  - `[MediaSource <IMicrosoftGraphMediaSource>]`: mediaSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentCategory <String>]`: mediaSourceContentCategory
   - `[Name <String>]`: The name of the item (filename and extension).
 Read-write.
 

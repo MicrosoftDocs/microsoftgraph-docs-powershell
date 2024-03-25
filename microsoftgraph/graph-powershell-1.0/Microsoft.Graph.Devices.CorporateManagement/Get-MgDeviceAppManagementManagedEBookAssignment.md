@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookassignment
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Get-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the iosVppEBookAssignment object.
+Read properties and relationships of the managedEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -39,7 +38,7 @@ Get-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosVppEBookAssignment object.
+Read properties and relationships of the managedEBookAssignment object.
 
 ## PARAMETERS
 

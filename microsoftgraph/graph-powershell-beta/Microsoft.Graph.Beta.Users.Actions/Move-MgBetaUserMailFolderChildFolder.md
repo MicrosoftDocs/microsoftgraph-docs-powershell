@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Move-MgBetaUserMailFolderChildFolder

@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignmentType
-Type of the assignment which can either be Assigned or Activated.
+The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberType
-How the assignments is inherited.
+How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 ```
 
 ### -RoleAssignmentOriginId
-The identifier of the role assignment in Azure AD.
+The identifier of the role assignment in Microsoft Entra ID.
 
 ```yaml
 Type: String
@@ -659,14 +659,14 @@ Read-only.
 It can either be Inherited, Direct, or Group.
     - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
     - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
-  - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+  - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
   - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-  - `[MemberType <String>]`: How the assignments is inherited.
+  - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-  - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Azure AD.
+  - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Microsoft Entra ID.
   - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 

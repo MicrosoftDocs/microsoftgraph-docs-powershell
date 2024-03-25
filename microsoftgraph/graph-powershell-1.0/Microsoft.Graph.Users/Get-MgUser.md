@@ -3,13 +3,18 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser
 schema: 2.0.0
-ms.prod: intune
+ms.prod: users
 ---
 
 # Get-MgUser
 
 ## SYNOPSIS
-Read properties and relationships of the user object.
+Retrieve the properties and relationships of user object.
+This operation returns by default only a subset of the more commonly used properties for each user.
+These default properties are noted in the Properties section.
+To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
@@ -39,7 +44,15 @@ Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the user object.
+Retrieve the properties and relationships of user object.
+This operation returns by default only a subset of the more commonly used properties for each user.
+These default properties are noted in the Properties section.
+To get properties that are not returned by default, do a GET operation for the user and specify the properties in a $select OData query option.
+Because the user resource supports extensions, you can also use the GET operation to get custom properties and extension data in a user instance.
+Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get the list of all the users
@@ -426,6 +439,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)

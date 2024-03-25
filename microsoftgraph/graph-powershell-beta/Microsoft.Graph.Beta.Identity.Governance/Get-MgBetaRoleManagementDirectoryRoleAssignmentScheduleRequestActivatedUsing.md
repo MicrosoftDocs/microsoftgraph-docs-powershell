@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
 Otherwise, it's null.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing
 ## DESCRIPTION
 If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
 Otherwise, it's null.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## PARAMETERS
 

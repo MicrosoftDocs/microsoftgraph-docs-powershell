@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgBetaRiskDetection
 
 ## SYNOPSIS
-Retrieve the properties of a riskDetection object.
+Retrieve the properties of a collection of riskDetection objects.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
@@ -39,10 +38,10 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a riskDetection object.
+Retrieve the properties of a collection of riskDetection objects.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskdetection-list-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get all riskDetections

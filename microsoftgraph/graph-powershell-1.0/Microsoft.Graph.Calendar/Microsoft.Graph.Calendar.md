@@ -77,6 +77,9 @@ Locale: en-US
 ### [Get-MgPlaceAsRoomListRoom](Get-MgPlaceAsRoomListRoom.md)
 {{ Fill in the Description }}
 
+### [Get-MgPlaceAsRoomListRoomCount](Get-MgPlaceAsRoomListRoomCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgPlaceCount](Get-MgPlaceCount.md)
 {{ Fill in the Description }}
 
@@ -84,9 +87,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
-{{ Fill in the Description }}
-
-### [Get-MgPlaceRoomCount](Get-MgPlaceRoomCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)

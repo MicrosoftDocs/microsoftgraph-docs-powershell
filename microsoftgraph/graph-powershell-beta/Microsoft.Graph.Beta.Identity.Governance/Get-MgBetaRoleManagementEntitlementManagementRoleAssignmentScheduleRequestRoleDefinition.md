@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDe
 
 ## DESCRIPTION
 Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## PARAMETERS
 

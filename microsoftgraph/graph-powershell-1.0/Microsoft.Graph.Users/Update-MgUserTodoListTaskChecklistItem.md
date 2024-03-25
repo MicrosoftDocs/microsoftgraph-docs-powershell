@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttaskchecklistitem
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgUserTodoListTaskChecklistItem
@@ -150,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Field indicating the title of checklistItem.
+Indicates the title of the checklistItem.
 
 ```yaml
 Type: String
@@ -212,7 +211,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsChecked
-State indicating whether the item is checked off or not.
+State that indicates whether the item is checked off or not.
 
 ```yaml
 Type: SwitchParameter
@@ -355,8 +354,8 @@ BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
 Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+  - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+  - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -372,6 +371,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Update-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerTask

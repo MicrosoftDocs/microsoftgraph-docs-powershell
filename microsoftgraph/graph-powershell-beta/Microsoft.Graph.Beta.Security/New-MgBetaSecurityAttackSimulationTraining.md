@@ -19,11 +19,12 @@ Create new navigation property to trainings for security
 ```
 New-MgBetaSecurityAttackSimulationTraining [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-DurationInMinutes <Int32>]
- [-HasEvaluation] [-Id <String>] [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]
- [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-Source <String>]
- [-SupportedLocales <String[]>] [-Tags <String[]>] [-Type <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-CustomUrl <String>] [-Description <String>] [-DisplayName <String>]
+ [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
+ [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
+ [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -107,6 +108,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomUrl
+.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -410,6 +426,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[CreatedDateTime <DateTime?>]`: Date and time when the training was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[CustomUrl <String>]`: 
   - `[Description <String>]`: The description for the training.
   - `[DisplayName <String>]`: The display name for the training.
   - `[DurationInMinutes <Int32?>]`: Training duration.

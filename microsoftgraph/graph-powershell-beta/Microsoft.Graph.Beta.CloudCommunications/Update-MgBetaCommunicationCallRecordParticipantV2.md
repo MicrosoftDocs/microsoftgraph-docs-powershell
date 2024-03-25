@@ -15,7 +15,8 @@ Update the navigation property participants_v2 in communications
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaCommunicationCallRecordParticipantV2 -CallRecordId <String> -ParticipantId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,7 +31,8 @@ Update-MgBetaCommunicationCallRecordParticipantV2 -CallRecordId <String> -Partic
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaCommunicationCallRecordParticipantV2 -InputObject <ICloudCommunicationsIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnitInfos <IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]>] [-Id <String>]
  [-Identity <IMicrosoftGraphCommunicationsIdentitySet>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -52,6 +54,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AdministrativeUnitInfos
+List of administrativeUnitInfo of the call participant.
+To construct, see NOTES section for ADMINISTRATIVEUNITINFOS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCallRecordsAdministrativeUnitInfo[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,6 +265,9 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
+
+ADMINISTRATIVEUNITINFOS <IMicrosoftGraphCallRecordsAdministrativeUnitInfo- `[]`>: List of administrativeUnitInfo of the call participant.
+  - `[Id <String>]`: Unique identifier for the administrative unit.
 
 IDENTITY `<IMicrosoftGraphCommunicationsIdentitySet>`: communicationsIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

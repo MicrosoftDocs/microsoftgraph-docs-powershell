@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileapp
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Deletes a managedIOSLobApp.
+Deletes a iosVppApp.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -31,7 +30,7 @@ Remove-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Deletes a managedIOSLobApp.
+Deletes a iosVppApp.
 
 ## PARAMETERS
 

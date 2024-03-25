@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingbyjoinweburl
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Update-MgBetaUserOnlineMeetingByJoinWebUrl
@@ -29,7 +28,7 @@ Update-MgBetaUserOnlineMeetingByJoinWebUrl -JoinWebUrl <String> -UserId <String>
  [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>] [-JoinWebUrl1 <String>]
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
+ [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
@@ -53,7 +52,7 @@ Update-MgBetaUserOnlineMeetingByJoinWebUrl [-JoinWebUrl <String>] -InputObject <
  [-IsEndToEndEncryptionEnabled] [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>]
  [-JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>] [-JoinUrl <String>]
  [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]
+ [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>] [-MeetingTemplateId <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-RecordingInputFile <String>]
  [-Recordings <IMicrosoftGraphCallRecording[]>] [-Registration <IMicrosoftGraphMeetingRegistration>]
  [-ShareMeetingChatHistoryDefault <String>] [-StartDateTime <DateTime>] [-Subject <String>]
@@ -412,6 +411,7 @@ Accept wildcard characters: False
 
 ### -EndDateTime
 The meeting end time in UTC.
+Required when you create an online meeting.
 
 ```yaml
 Type: DateTime
@@ -656,6 +656,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MeetingTemplateId
+The ID of the meeting template.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Participants
 meetingParticipants
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
@@ -782,6 +797,7 @@ Accept wildcard characters: False
 
 ### -StartDateTime
 The meeting start time in UTC.
+Required when you create an online meeting.
 
 ```yaml
 Type: DateTime
@@ -1022,7 +1038,8 @@ Read-only.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[ChatRestrictions <IMicrosoftGraphChatRestrictions>]`: chatRestrictions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowTextOnly <Boolean?>]`: 
+    - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
   - `[IsEndToEndEncryptionEnabled <Boolean?>]`: 
   - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
   - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
@@ -1080,12 +1097,14 @@ Default value is false.
   - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
   - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+Required when you create an online meeting.
   - `[ExternalId <String>]`: The external ID.
 A custom ID.
 Optional.
   - `[IsBroadcast <Boolean?>]`: 
   - `[JoinUrl <String>]`: 
   - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport>]`: meetingAttendanceReport
+  - `[MeetingTemplateId <String>]`: The ID of the meeting template.
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo- `[]`>]`: Information of the meeting attendees.
@@ -1147,6 +1166,7 @@ Read-only.
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the meeting.
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+Required when you create an online meeting.
   - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1192,7 +1212,8 @@ CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
 
 CHATRESTRICTIONS `<IMicrosoftGraphChatRestrictions>`: chatRestrictions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowTextOnly <Boolean?>]`: 
+  - `[AllowTextOnly <Boolean?>]`: Indicates whether only text is allowed in the meeting chat.
+Optional.
 
 INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord

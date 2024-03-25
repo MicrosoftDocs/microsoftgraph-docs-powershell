@@ -287,6 +287,18 @@ Locale: en-US
 ### [Get-MgBetaUserSettingShiftPreference](Get-MgBetaUserSettingShiftPreference.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserSettingWindows](Get-MgBetaUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingWindowsCount](Get-MgBetaUserSettingWindowsCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingWindowsInstance](Get-MgBetaUserSettingWindowsInstance.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingWindowsInstanceCount](Get-MgBetaUserSettingWindowsInstanceCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
 {{ Fill in the Description }}
 
@@ -425,6 +437,12 @@ Locale: en-US
 ### [New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaUserSettingWindows](New-MgBetaUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaUserSettingWindowsInstance](New-MgBetaUserSettingWindowsInstance.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaUserTodoList](New-MgBetaUserTodoList.md)
 {{ Fill in the Description }}
 
@@ -503,6 +521,9 @@ Locale: en-US
 ### [Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](Remove-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserPhoto](Remove-MgBetaUserPhoto.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserSetting](Remove-MgBetaUserSetting.md)
 {{ Fill in the Description }}
 
@@ -516,6 +537,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserSettingShiftPreference](Remove-MgBetaUserSettingShiftPreference.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserSettingWindows](Remove-MgBetaUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserSettingWindowsInstance](Remove-MgBetaUserSettingWindowsInstance.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserTodoList](Remove-MgBetaUserTodoList.md)
@@ -615,6 +642,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserSettingShiftPreference](Update-MgBetaUserSettingShiftPreference.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserSettingWindows](Update-MgBetaUserSettingWindows.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserSettingWindowsInstance](Update-MgBetaUserSettingWindowsInstance.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserTodoList](Update-MgBetaUserTodoList.md)

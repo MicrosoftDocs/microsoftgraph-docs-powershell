@@ -581,6 +581,12 @@ Locale: en-US
 ### [Get-MgBetaDirectoryDeviceLocalCredentialCount](Get-MgBetaDirectoryDeviceLocalCredentialCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDirectoryExternalUserProfile](Get-MgBetaDirectoryExternalUserProfile.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDirectoryExternalUserProfileCount](Get-MgBetaDirectoryExternalUserProfileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDirectoryFeatureRolloutPolicy](Get-MgBetaDirectoryFeatureRolloutPolicy.md)
 {{ Fill in the Description }}
 
@@ -630,6 +636,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryOutboundSharedUserProfileTenantCount](Get-MgBetaDirectoryOutboundSharedUserProfileTenantCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDirectoryPendingExternalUserProfile](Get-MgBetaDirectoryPendingExternalUserProfile.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDirectoryPendingExternalUserProfileCount](Get-MgBetaDirectoryPendingExternalUserProfileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDirectoryRecommendation](Get-MgBetaDirectoryRecommendation.md)
@@ -1049,6 +1061,9 @@ Locale: en-US
 ### [New-MgBetaDirectoryDeviceLocalCredential](New-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaDirectoryExternalUserProfile](New-MgBetaDirectoryExternalUserProfile.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDirectoryFeatureRolloutPolicy](New-MgBetaDirectoryFeatureRolloutPolicy.md)
 {{ Fill in the Description }}
 
@@ -1074,6 +1089,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaDirectoryOutboundSharedUserProfileTenant](New-MgBetaDirectoryOutboundSharedUserProfileTenant.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaDirectoryPendingExternalUserProfile](New-MgBetaDirectoryPendingExternalUserProfile.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaDirectoryRecommendation](New-MgBetaDirectoryRecommendation.md)
@@ -1223,6 +1241,9 @@ Locale: en-US
 ### [Remove-MgBetaDirectoryDeviceLocalCredential](Remove-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaDirectoryExternalUserProfile](Remove-MgBetaDirectoryExternalUserProfile.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaDirectoryFeatureRolloutPolicy](Remove-MgBetaDirectoryFeatureRolloutPolicy.md)
 {{ Fill in the Description }}
 
@@ -1251,6 +1272,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData](Remove-MgBetaDirectoryOutboundSharedUserProfileTenantPersonalData.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectoryPendingExternalUserProfile](Remove-MgBetaDirectoryPendingExternalUserProfile.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryRecommendation](Remove-MgBetaDirectoryRecommendation.md)
@@ -1502,6 +1526,9 @@ Locale: en-US
 ### [Update-MgBetaDirectoryDeviceLocalCredential](Update-MgBetaDirectoryDeviceLocalCredential.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaDirectoryExternalUserProfile](Update-MgBetaDirectoryExternalUserProfile.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaDirectoryFeatureRolloutPolicy](Update-MgBetaDirectoryFeatureRolloutPolicy.md)
 {{ Fill in the Description }}
 
@@ -1521,6 +1548,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDirectoryOutboundSharedUserProfileTenant](Update-MgBetaDirectoryOutboundSharedUserProfileTenant.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDirectoryPendingExternalUserProfile](Update-MgBetaDirectoryPendingExternalUserProfile.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDirectoryRecommendation](Update-MgBetaDirectoryRecommendation.md)

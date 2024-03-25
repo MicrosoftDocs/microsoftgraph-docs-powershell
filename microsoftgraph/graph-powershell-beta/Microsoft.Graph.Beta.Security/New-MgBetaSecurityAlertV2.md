@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertPolicyId
-.
+The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertWebUrl
-URL for the alert page in the Microsoft 365 Defender portal.
+URL for the Microsoft 365 Defender portal alert page.
 
 ```yaml
 Type: String
@@ -408,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProductName
-.
+The name of the product which published this alert.
 
 ```yaml
 Type: String
@@ -543,7 +543,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-The system tags associated with the alert
+The system tags associated with the alert.
 
 ```yaml
 Type: String[]
@@ -671,8 +671,8 @@ Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AlertPolicyId <String>]`: 
-  - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+  - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
+  - `[AlertWebUrl <String>]`: URL for the Microsoft 365 Defender portal alert page.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -703,14 +703,14 @@ Values are free-form.
   - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
   - `[MitreTechniques <String- `[]`>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
-  - `[ProductName <String>]`: 
+  - `[ProductName <String>]`: The name of the product which published this alert.
   - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
   - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
   - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
-  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert.
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportUserInsightDailyActiveUserBreakdown
 
 ## SYNOPSIS
-Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
+Get activeUsersBreakdown from reports
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaReportUserInsightDailyActiveUserBreakdown -InputObject <IReportsIdenti
 ```
 
 ## DESCRIPTION
-Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
+Get activeUsersBreakdown from reports
 
 ## PARAMETERS
 

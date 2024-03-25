@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookassignment
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Deletes a iosVppEBookAssignment.
+Deletes a managedEBookAssignment.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -31,7 +30,7 @@ Remove-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Deletes a iosVppEBookAssignment.
+Deletes a managedEBookAssignment.
 
 ## PARAMETERS
 

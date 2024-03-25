@@ -92,6 +92,9 @@ Locale: en-US
 ### [Get-MgBetaApplicationFederatedIdentityCredential](Get-MgBetaApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaApplicationFederatedIdentityCredentialByName](Get-MgBetaApplicationFederatedIdentityCredentialByName.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaApplicationFederatedIdentityCredentialCount](Get-MgBetaApplicationFederatedIdentityCredentialCount.md)
 {{ Fill in the Description }}
 
@@ -797,6 +800,9 @@ Locale: en-US
 ### [Remove-MgBetaApplicationFederatedIdentityCredential](Remove-MgBetaApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaApplicationFederatedIdentityCredentialByName](Remove-MgBetaApplicationFederatedIdentityCredentialByName.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaApplicationKey](Remove-MgBetaApplicationKey.md)
 {{ Fill in the Description }}
 
@@ -1017,6 +1023,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationFederatedIdentityCredential](Update-MgBetaApplicationFederatedIdentityCredential.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaApplicationFederatedIdentityCredentialByName](Update-MgBetaApplicationFederatedIdentityCredentialByName.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaApplicationSynchronizationJob](Update-MgBetaApplicationSynchronizationJob.md)

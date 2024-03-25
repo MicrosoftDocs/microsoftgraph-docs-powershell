@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgBetaIdentityConditionalAccessPolicy
@@ -396,10 +395,13 @@ Office365 - For the list of apps included in Office365, see Apps included in Con
 Supported values are c1 through c25.
       - `[IncludeUserActions <String- `[]`>]`: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
+    - `[AuthenticationFlows <IMicrosoftGraphConditionalAccessAuthenticationFlows>]`: conditionalAccessAuthenticationFlows
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[TransferMethods <String>]`: conditionalAccessTransferMethods
     - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required. 
-The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync which includes EAS supported and unsupported platforms.
+The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
     - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeServicePrincipals <String- `[]`>]`: Service principal IDs excluded from the policy scope.
@@ -533,10 +535,13 @@ Office365 - For the list of apps included in Office365, see Apps included in Con
 Supported values are c1 through c25.
     - `[IncludeUserActions <String- `[]`>]`: User actions to include.
 Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
+  - `[AuthenticationFlows <IMicrosoftGraphConditionalAccessAuthenticationFlows>]`: conditionalAccessAuthenticationFlows
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[TransferMethods <String>]`: conditionalAccessTransferMethods
   - `[ClientAppTypes <String- `[]`>]`: Client application types included in the policy.
 Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other.
 Required. 
-The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync which includes EAS supported and unsupported platforms.
+The easUnsupported enumeration member will be deprecated in favor of exchangeActiveSync, which includes EAS supported and unsupported platforms.
   - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeServicePrincipals <String- `[]`>]`: Service principal IDs excluded from the policy scope.

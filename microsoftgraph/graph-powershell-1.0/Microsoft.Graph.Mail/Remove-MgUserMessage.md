@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserMessage
 
 ## SYNOPSIS
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
+Delete eventMessage.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
@@ -31,10 +30,10 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Response
 ```
 
 ## DESCRIPTION
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
+Delete eventMessage.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
