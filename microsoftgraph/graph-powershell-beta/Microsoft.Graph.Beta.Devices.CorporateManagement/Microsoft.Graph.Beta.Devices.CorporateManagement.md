@@ -221,10 +221,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidForWorkAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobApp.md)
@@ -233,7 +242,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersion.md)
@@ -242,10 +257,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreApp.md)
@@ -254,10 +281,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidManagedStoreAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreApp.md)
@@ -266,10 +302,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobApp.md)
@@ -278,7 +323,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersion.md)
@@ -287,10 +338,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsiOSLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreApp.md)
@@ -299,10 +362,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsIoStoreAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp](Get-MgBetaDeviceAppManagementMobileAppAsIoVppApp.md)
@@ -311,13 +383,25 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicense.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicenseCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignedLicenseCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignmentCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsIoVppAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgApp.md)
@@ -326,7 +410,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersion.md)
@@ -335,10 +425,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSDmgAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobApp.md)
@@ -347,7 +449,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersion.md)
@@ -356,10 +464,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgApp.md)
@@ -368,7 +488,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersion.md)
@@ -377,10 +503,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMacOSPkgAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobApp.md)
@@ -389,7 +527,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersion.md)
@@ -398,10 +542,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobApp.md)
@@ -410,7 +566,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersion.md)
@@ -419,10 +581,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagediOSLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp.md)
@@ -431,7 +605,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersion.md)
@@ -440,10 +620,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessApp.md)
@@ -452,16 +644,25 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppContainedAppCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaDeviceAppManagementMobileAppAssignedLicenseCount](Get-MgBetaDeviceAppManagementMobileAppAssignedLicenseCount.md)
+### [Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAssignment.md)
@@ -476,7 +677,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion.md)
@@ -485,10 +692,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppX.md)
@@ -497,7 +716,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersion.md)
@@ -506,10 +731,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsAppXRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsi.md)
@@ -518,7 +755,13 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiCategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersion.md)
@@ -527,10 +770,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsMobileMsiRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreApp.md)
@@ -539,10 +794,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowStoreAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppX.md)
@@ -551,10 +815,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAppCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion.md)
@@ -563,10 +836,22 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedApp.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionContainedAppCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFile.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersionFileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebApp.md)
@@ -575,10 +860,19 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWindowsWebAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp](Get-MgBetaDeviceAppManagementMobileAppAsWinGetApp.md)
@@ -587,19 +881,25 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignment.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignmentCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppAssignmentCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategory.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppCategoryCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategory](Get-MgBetaDeviceAppManagementMobileAppCategory.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCategoryCount](Get-MgBetaDeviceAppManagementMobileAppCategoryCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDeviceAppManagementMobileAppCommittedContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppCommittedContainedAppCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfiguration](Get-MgBetaDeviceAppManagementMobileAppConfiguration.md)
@@ -630,18 +930,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDeviceAppManagementMobileAppContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppContainedAppCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionContainedAppCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDeviceAppManagementMobileAppContentVersionCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaDeviceAppManagementMobileAppContentVersionFileCount](Get-MgBetaDeviceAppManagementMobileAppContentVersionFileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementMobileAppCount](Get-MgBetaDeviceAppManagementMobileAppCount.md)

@@ -44,19 +44,37 @@ Locale: en-US
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlow.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowCondition.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplicationCount](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplicationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAttributeCollection.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart](Get-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowOnAuthenticationMethodLoadStart.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute](Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttribute.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttributeCount](Get-MgBetaIdentityAuthenticationEventFlowAsOnAttributeCollectionExternalUserSelfServiceSignUpAttributeCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider](Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProvider.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityAuthenticationEventFlowAttributeByRef](Get-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityAuthenticationEventFlowAttributeCount](Get-MgBetaIdentityAuthenticationEventFlowAttributeCount.md)
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount](Get-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](Get-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowCondition](Get-MgBetaIdentityAuthenticationEventFlowCondition.md)
@@ -68,25 +86,13 @@ Locale: en-US
 ### [Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow](Get-MgBetaIdentityAuthenticationEventFlowCountAsExternalUserSelfServiceSignUpEventFlow.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderCount](Get-MgBetaIdentityAuthenticationEventFlowIdentityProviderCount.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount](Get-MgBetaIdentityAuthenticationEventFlowIncludeApplicationCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollection](Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollection.md)
-{{ Fill in the Description }}
-
 ### [Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp](Get-MgBetaIdentityAuthenticationEventFlowOnAttributeCollectionAsOnAttributeCollectionExternalUserSelfServiceSignUp.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStart](Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStart.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp](Get-MgBetaIdentityAuthenticationEventFlowOnAuthenticationMethodLoadStartAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUp.md)
@@ -926,10 +932,10 @@ Locale: en-US
 ### [New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](New-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaIdentityAuthenticationEventFlowAttributeByRef](New-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+### [New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](New-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)
+### [New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](New-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaIdentityAuthenticationEventFlowIncludeApplication](New-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
@@ -1187,10 +1193,10 @@ Locale: en-US
 ### [Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaIdentityAuthenticationEventFlowAttributeByRef](Remove-MgBetaIdentityAuthenticationEventFlowAttributeByRef.md)
+### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef](Remove-MgBetaIdentityAuthenticationEventFlowIdentityProviderByRef.md)
+### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)

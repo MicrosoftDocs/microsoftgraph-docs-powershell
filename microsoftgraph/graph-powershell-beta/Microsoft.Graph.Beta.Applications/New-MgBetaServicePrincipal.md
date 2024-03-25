@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipal
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaServicePrincipal
@@ -1579,7 +1578,8 @@ If usage is Sign​, the type should be X509CertAndPassword​, and the password
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
       - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
       - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -1587,11 +1587,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
       - `[ServicePlanId <String>]`: The unique identifier of the service plan.
       - `[ServicePlanName <String>]`: The name of the service plan.
     - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
     - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
   - `[LoginUrl <String>]`: Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
@@ -2187,7 +2187,8 @@ LICENSEDETAILS <IMicrosoftGraphLicenseDetails- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
     - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are: User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -2195,11 +2196,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
     - `[ServicePlanId <String>]`: The unique identifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
   - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
   - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
 
 MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.

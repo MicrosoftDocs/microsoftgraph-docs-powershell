@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Update the navigation property federatedTokenValidationPolicy in policies
+Update the properties of a federatedTokenValidationPolicy object.
 
 ## SYNTAX
 
@@ -28,7 +28,10 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property federatedTokenValidationPolicy in policies
+Update the properties of a federatedTokenValidationPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-update-permissions.md)]
 
 ## PARAMETERS
 

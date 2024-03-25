@@ -392,12 +392,12 @@ See below for possible values.
       - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[HasAttachments <Boolean?>]`: Set to true if the task has attachments.
       - `[Importance <String>]`: importance
-      - `[IsReminderOn <Boolean?>]`: 
+      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the task.
 Read-only.
 Nullable.
-      - `[Owner <String>]`: 
-      - `[ParentFolderId <String>]`: 
+      - `[Owner <String>]`: The name of the person who created the task.
+      - `[ParentFolderId <String>]`: The unique identifier for the task's parent folder.
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -437,7 +437,7 @@ Read-only.
 Nullable.
       - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[Status <String>]`: taskStatus
-      - `[Subject <String>]`: 
+      - `[Subject <String>]`: A brief description or title of the task.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of servicePrincipal
@@ -463,6 +463,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 TASKFOLDERS <IMicrosoftGraphOutlookTaskFolder- `[]`>: The collection of task folders in the task group.
 Read-only.
@@ -523,12 +525,12 @@ See below for possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[HasAttachments <Boolean?>]`: Set to true if the task has attachments.
     - `[Importance <String>]`: importance
-    - `[IsReminderOn <Boolean?>]`: 
+    - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the task.
 Read-only.
 Nullable.
-    - `[Owner <String>]`: 
-    - `[ParentFolderId <String>]`: 
+    - `[Owner <String>]`: The name of the person who created the task.
+    - `[ParentFolderId <String>]`: The unique identifier for the task's parent folder.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -568,7 +570,7 @@ Read-only.
 Nullable.
     - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Status <String>]`: taskStatus
-    - `[Subject <String>]`:
+    - `[Subject <String>]`: A brief description or title of the task.
 
 ## RELATED LINKS
 

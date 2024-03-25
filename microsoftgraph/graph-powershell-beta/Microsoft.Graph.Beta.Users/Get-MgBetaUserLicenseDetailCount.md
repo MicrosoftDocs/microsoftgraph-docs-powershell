@@ -180,6 +180,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Get-MgUserLicenseDetailCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetailCount?view=graph-powershell-1.0)

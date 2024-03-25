@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgBetaOnPremisePublishingProfileConnectorGroup
 
 ## SYNOPSIS
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ## SYNTAX
 
@@ -46,10 +45,10 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-connectorgroups-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
@@ -1937,6 +1936,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
   - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup

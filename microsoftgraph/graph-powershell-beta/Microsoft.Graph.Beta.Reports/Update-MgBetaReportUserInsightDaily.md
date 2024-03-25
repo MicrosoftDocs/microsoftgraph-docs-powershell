@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActiveUsersBreakdown
-Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
+.
 To construct, see NOTES section for ACTIVEUSERSBREAKDOWN properties and create a hash table.
 
 ```yaml
@@ -326,7 +326,7 @@ Read-only.
   - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
   - `[FactDate <DateTime?>]`: Date of the insight.
 
-ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
+ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AppId <String>]`: The ID of the Microsoft Entra application.
@@ -360,7 +360,7 @@ Read-only.
 Read-only.
     - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
     - `[FactDate <DateTime?>]`: Date of the insight.
-  - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: Insights for the breakdown of users who were active on apps registered in the tenant for a specified period.
+  - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AppId <String>]`: The ID of the Microsoft Entra application.

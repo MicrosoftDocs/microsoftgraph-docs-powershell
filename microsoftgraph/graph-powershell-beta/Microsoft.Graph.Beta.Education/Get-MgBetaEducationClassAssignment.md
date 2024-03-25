@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgBetaEducationClassAssignment
@@ -12,7 +11,7 @@ ms.prod: education
 Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
-You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
+You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-1.0)
@@ -45,7 +44,7 @@ Get-MgBetaEducationClassAssignment -InputObject <IEducationIdentity> [-ExpandPro
 Get the properties and relationships of an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
-You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, you will get an unknownFutureValue value in the response.
+You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-get-permissions.md)]
@@ -341,6 +340,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
   - `[EducationModuleId <String>]`: The unique identifier of educationModule
   - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome

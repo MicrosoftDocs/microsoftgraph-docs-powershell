@@ -3,14 +3,13 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mguserevent
 schema: 2.0.0
-ms.prod: non-product-specific
 ---
 
 # New-MgUserEvent
 
 ## SYNOPSIS
-Create one or more multi-value extended properties in a new or existing instance of a resource.
-The following user resources are supported: The following group resources are supported: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
+Create one or more single-value extended properties in a new or existing instance of a resource.
+The following user resources are supported: The following group resources: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEvent?view=graph-powershell-beta)
@@ -77,8 +76,8 @@ New-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create one or more multi-value extended properties in a new or existing instance of a resource.
-The following user resources are supported: The following group resources are supported: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
+Create one or more single-value extended properties in a new or existing instance of a resource.
+The following user resources are supported: The following group resources: See Extended properties overview for more information about when to useopen extensions or extended properties, and how to specify extended properties.
 
 ## EXAMPLES
 ### Example 1: Code snippet

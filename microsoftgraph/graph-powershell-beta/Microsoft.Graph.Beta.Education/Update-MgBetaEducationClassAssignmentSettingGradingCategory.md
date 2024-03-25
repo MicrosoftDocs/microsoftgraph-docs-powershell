@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgBetaEducationClassAssignmentSettingGradingCategory
 
 ## SYNOPSIS
-Update the navigation property gradingCategories in education
+Update a single gradingCategory on the educationAssignmentSettings.
+Only teachers can perform this operation.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-1.0)
@@ -47,7 +48,11 @@ Update-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEduca
 ```
 
 ## DESCRIPTION
-Update the navigation property gradingCategories in education
+Update a single gradingCategory on the educationAssignmentSettings.
+Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingcategory-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -281,6 +286,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
   - `[EducationModuleId <String>]`: The unique identifier of educationModule
   - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome

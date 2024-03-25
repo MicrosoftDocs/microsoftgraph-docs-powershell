@@ -26,6 +26,9 @@ Locale: en-US
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
 {{ Fill in the Description }}
 

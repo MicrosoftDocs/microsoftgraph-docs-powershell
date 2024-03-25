@@ -689,6 +689,12 @@ Locale: en-US
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 {{ Fill in the Description }}
 
+### [Get-MgTeamworkDeletedChat](Get-MgTeamworkDeletedChat.md)
+{{ Fill in the Description }}
+
+### [Get-MgTeamworkDeletedChatCount](Get-MgTeamworkDeletedChatCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgTeamworkDeletedTeam](Get-MgTeamworkDeletedTeam.md)
 {{ Fill in the Description }}
 
@@ -1151,6 +1157,9 @@ Locale: en-US
 ### [New-MgTeamTagMember](New-MgTeamTagMember.md)
 {{ Fill in the Description }}
 
+### [New-MgTeamworkDeletedChat](New-MgTeamworkDeletedChat.md)
+{{ Fill in the Description }}
+
 ### [New-MgTeamworkDeletedTeam](New-MgTeamworkDeletedTeam.md)
 {{ Fill in the Description }}
 
@@ -1439,6 +1448,9 @@ Locale: en-US
 ### [Remove-MgTeamTagMember](Remove-MgTeamTagMember.md)
 {{ Fill in the Description }}
 
+### [Remove-MgTeamworkDeletedChat](Remove-MgTeamworkDeletedChat.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgTeamworkDeletedTeam](Remove-MgTeamworkDeletedTeam.md)
 {{ Fill in the Description }}
 
@@ -1638,6 +1650,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Undo-MgTeamPrimaryChannelMessageSoftDelete](Undo-MgTeamPrimaryChannelMessageSoftDelete.md)
+{{ Fill in the Description }}
+
+### [Undo-MgTeamworkDeletedChatDelete](Undo-MgTeamworkDeletedChatDelete.md)
 {{ Fill in the Description }}
 
 ### [Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete](Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete.md)
@@ -1872,6 +1887,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgTeamwork](Update-MgTeamwork.md)
+{{ Fill in the Description }}
+
+### [Update-MgTeamworkDeletedChat](Update-MgTeamworkDeletedChat.md)
 {{ Fill in the Description }}
 
 ### [Update-MgTeamworkDeletedTeam](Update-MgTeamworkDeletedTeam.md)

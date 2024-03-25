@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamworkDeletedTeamChannelTab
@@ -51,6 +50,9 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]
 
 ## PARAMETERS
 
@@ -372,6 +374,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

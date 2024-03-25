@@ -19,11 +19,12 @@ Update the navigation property trainings in security
 ```
 Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>] [-CreatedBy <IMicrosoftGraphEmailIdentity>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-DurationInMinutes <Int32>]
- [-HasEvaluation] [-Id <String>] [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]
- [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>] [-Source <String>]
- [-SupportedLocales <String[]>] [-Tags <String[]>] [-Type <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-CustomUrl <String>] [-Description <String>] [-DisplayName <String>]
+ [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
+ [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
+ [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -37,8 +38,8 @@ Update-MgBetaSecurityAttackSimulationTraining -TrainingId <String> -BodyParamete
 ```
 Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>]
- [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
+ [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-CustomUrl <String>]
+ [-Description <String>] [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
  [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
  [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
  [-Type <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -126,6 +127,21 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomUrl
+.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -461,6 +477,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[CreatedDateTime <DateTime?>]`: Date and time when the training was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[CustomUrl <String>]`: 
   - `[Description <String>]`: The description for the training.
   - `[DisplayName <String>]`: The display name for the training.
   - `[DurationInMinutes <Int32?>]`: Training duration.
@@ -515,6 +532,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
   - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -568,6 +586,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingCampaignId <String>]`: The unique identifier of trainingCampaign
   - `[TrainingId <String>]`: The unique identifier of training
   - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource

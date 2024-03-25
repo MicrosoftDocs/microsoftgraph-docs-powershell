@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyAuthorizationPolicy
@@ -72,7 +71,8 @@ Accept wildcard characters: False
 ```
 
 ### -AllowedToUseSspr
-Indicates whether users can use the Self-Service Password Reset feature on the tenant.
+Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
 
 ```yaml
 Type: SwitchParameter
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestUserRoleId
-Represents role templateId for the role that should be granted to guest user.
+Represents role templateId for the role that should be granted to guests.
 Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 ```yaml
@@ -370,7 +370,8 @@ Read-only.
 We recommend keeping allowUserConsentForRiskyApps as false.
 Default value is false.
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
-  - `[AllowedToUseSspr <Boolean?>]`: Indicates whether users can use the Self-Service Password Reset feature on the tenant.
+  - `[AllowedToUseSspr <Boolean?>]`: Indicates whether administrators of the tenant can use the Self-Service Password Reset (SSPR).
+For more information, see Self-service password reset for administrators.
   - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell, set this property to true.
 This also disables user-based access to the legacy service endpoint used by MSOL PowerShell.
 This doesn't affect Microsoft Entra Connect or Microsoft Graph.
@@ -390,7 +391,7 @@ DO NOT SET THIS VALUE TO false.
     - `[PermissionGrantPoliciesAssigned <String- `[]`>]`: Indicates if user consent to apps is allowed, and if it is, which permission to grant consent and which app consent policy (permissionGrantPolicy) govern the permission for users to grant consent.
 Value should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy.
 An empty list indicates user consent to apps is disabled.
-  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guest user.
+  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guests.
 Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions>`: defaultUserRolePermissions

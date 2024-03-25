@@ -3,13 +3,15 @@ external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Remove-MgBetaSearchQna
 
 ## SYNOPSIS
 Delete a qna object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchQna?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -219,6 +221,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchQna?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchqna)
 

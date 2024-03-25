@@ -604,6 +604,7 @@ See below for possible values.
   - `[InvoiceId <String>]`: The ID of the invoice.
   - `[InvoiceStatus <String>]`: bookingInvoiceStatus
   - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
   - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
 Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
@@ -704,6 +705,7 @@ See below for possible values.
     - `[InvoiceId <String>]`: The ID of the invoice.
     - `[InvoiceStatus <String>]`: bookingInvoiceStatus
     - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
+    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
     - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
 Default value is false.
     - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
@@ -800,6 +802,17 @@ The phone property, together with address and webSiteUrl, appear in the footer o
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+      - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+      - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
+      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
+      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+    - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+      - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
     - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
 The default value is false
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
@@ -830,6 +843,7 @@ The value of this property is available only when reading this bookingService by
     - `[Description <String>]`: A text description for the service.
     - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
 The default value is false.
+    - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
     - `[IsHiddenFromCustomers <Boolean?>]`: True means this service isn't available to customers for booking.
     - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
 The default value is false.
@@ -962,6 +976,7 @@ See below for possible values.
   - `[InvoiceId <String>]`: The ID of the invoice.
   - `[InvoiceStatus <String>]`: bookingInvoiceStatus
   - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
   - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
 Default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
@@ -1029,6 +1044,23 @@ Read-only.
 SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
+  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+    - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+    - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
+      - `[Day <String>]`: dayOfWeek
+      - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
+        - `[End <String>]`: The time of the day when work stops.
+For example, 17:00:00.0000000.
+        - `[Start <String>]`: The time of the day when work starts.
+For example, 08:00:00.0000000.
+    - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
+    - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+  - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+    - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
   - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
 The default value is false
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
@@ -1089,6 +1121,7 @@ It's denoted in ISO 8601 format.
   - `[Description <String>]`: A text description for the service.
   - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
 The default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
   - `[IsHiddenFromCustomers <Boolean?>]`: True means this service isn't available to customers for booking.
   - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
 The default value is false.
@@ -1103,6 +1136,23 @@ To create a customer, use the Create bookingCustomer operation.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+      - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+      - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
+        - `[Day <String>]`: dayOfWeek
+        - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
+          - `[End <String>]`: The time of the day when work stops.
+For example, 17:00:00.0000000.
+          - `[Start <String>]`: The time of the day when work starts.
+For example, 08:00:00.0000000.
+      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
+      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+    - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
+      - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
+This is set to null if the availability type is not customWeeklyHours
     - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
 The default value is false
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.

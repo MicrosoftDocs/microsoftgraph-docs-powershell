@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Invoke-MgUnarchiveTeam
@@ -39,6 +38,9 @@ This restores users' ability to send messages and edit the team, abiding by tena
 A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-unarchive-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -201,6 +203,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

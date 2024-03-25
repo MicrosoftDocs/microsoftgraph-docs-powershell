@@ -527,6 +527,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
   - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -580,6 +581,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[TrainingCampaignId <String>]`: The unique identifier of trainingCampaign
   - `[TrainingId <String>]`: The unique identifier of training
   - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource

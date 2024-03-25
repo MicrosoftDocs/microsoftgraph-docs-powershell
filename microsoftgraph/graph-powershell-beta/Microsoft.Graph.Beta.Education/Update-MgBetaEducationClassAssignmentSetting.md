@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Update-MgBetaEducationClassAssignmentSetting
@@ -20,9 +19,10 @@ Only teachers can update these settings.
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
- [-Id <String>] [-SubmissionAnimationDisabled] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DefaultGradingScheme <IMicrosoftGraphEducationGradingScheme>]
+ [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
+ [-GradingSchemes <IMicrosoftGraphEducationGradingScheme[]>] [-Id <String>] [-SubmissionAnimationDisabled]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -36,7 +36,9 @@ Update-MgBetaEducationClassAssignmentSetting -EducationClassId <String>
 ```
 Update-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>] [-Id <String>] [-SubmissionAnimationDisabled]
+ [-DefaultGradingScheme <IMicrosoftGraphEducationGradingScheme>]
+ [-GradingCategories <IMicrosoftGraphEducationGradingCategory[]>]
+ [-GradingSchemes <IMicrosoftGraphEducationGradingScheme[]>] [-Id <String>] [-SubmissionAnimationDisabled]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -132,6 +134,22 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DefaultGradingScheme
+educationGradingScheme
+To construct, see NOTES section for DEFAULTGRADINGSCHEME properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationGradingScheme
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -EducationClassId
 The unique identifier of educationClass
 
@@ -153,6 +171,22 @@ To construct, see NOTES section for GRADINGCATEGORIES properties and create a ha
 
 ```yaml
 Type: IMicrosoftGraphEducationGradingCategory[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GradingSchemes
+.
+To construct, see NOTES section for GRADINGSCHEMES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphEducationGradingScheme[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -309,20 +343,52 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignmentSettings>`: educationAssignmen
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[DefaultGradingScheme <IMicrosoftGraphEducationGradingScheme>]`: educationGradingScheme
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: 
+    - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
+      - `[DefaultPercentage <Single?>]`: 
+      - `[DisplayName <String>]`: 
+      - `[MinPercentage <Single?>]`: 
+    - `[HidePointsDuringGrading <Boolean?>]`: 
   - `[GradingCategories <IMicrosoftGraphEducationGradingCategory- `[]`>]`: When set, enables users to weight assignments differently when computing a class average grade.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the grading category.
     - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
+  - `[GradingSchemes <IMicrosoftGraphEducationGradingScheme- `[]`>]`: 
   - `[SubmissionAnimationDisabled <Boolean?>]`: Indicates whether turn-in celebration animation will be shown.
 If true, the animation won't be shown.
 The default value is false.
+
+DEFAULTGRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DisplayName <String>]`: 
+  - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
+    - `[DefaultPercentage <Single?>]`: 
+    - `[DisplayName <String>]`: 
+    - `[MinPercentage <Single?>]`: 
+  - `[HidePointsDuringGrading <Boolean?>]`: 
 
 GRADINGCATEGORIES <IMicrosoftGraphEducationGradingCategory- `[]`>: When set, enables users to weight assignments differently when computing a class average grade.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the grading category.
   - `[PercentageWeight <Int32?>]`: The weight of the category; an integer between 0 and 100.
+
+GRADINGSCHEMES <IMicrosoftGraphEducationGradingScheme- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DisplayName <String>]`: 
+  - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
+    - `[DefaultPercentage <Single?>]`: 
+    - `[DisplayName <String>]`: 
+    - `[MinPercentage <Single?>]`: 
+  - `[HidePointsDuringGrading <Boolean?>]`: 
 
 INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
@@ -331,6 +397,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
   - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+  - `[EducationGradingSchemeId <String>]`: The unique identifier of educationGradingScheme
   - `[EducationModuleId <String>]`: The unique identifier of educationModule
   - `[EducationModuleResourceId <String>]`: The unique identifier of educationModuleResource
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome

@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgBetaEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
@@ -68,12 +65,10 @@ Get-MgBetaEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve an access package with a list of accessPackageResourceRoleScope objects.
-These objects represent the resource roles that an access package assigns to each subject.
-Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
+Retrieve the properties and relationships of an accessPackage object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-accesspackageresourcerolescopes-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of all access packages

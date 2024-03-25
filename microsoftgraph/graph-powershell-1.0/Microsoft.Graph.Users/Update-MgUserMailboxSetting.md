@@ -412,6 +412,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 LANGUAGE `<IMicrosoftGraphLocaleInfo>`: localeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

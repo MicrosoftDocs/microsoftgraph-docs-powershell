@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Copy-MgUserOnenoteNotebook

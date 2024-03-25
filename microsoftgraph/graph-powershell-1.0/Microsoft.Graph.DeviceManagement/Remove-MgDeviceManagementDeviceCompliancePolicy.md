@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Remove-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Deletes a windows10CompliancePolicy.
+Deletes a androidCompliancePolicy.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -31,7 +30,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Deletes a windows10CompliancePolicy.
+Deletes a androidCompliancePolicy.
 
 ## PARAMETERS
 

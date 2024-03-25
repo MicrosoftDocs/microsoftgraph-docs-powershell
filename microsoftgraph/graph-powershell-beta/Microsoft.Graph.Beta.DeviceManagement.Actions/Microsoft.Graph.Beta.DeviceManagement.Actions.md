@@ -725,6 +725,9 @@ Locale: en-US
 ### [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 {{ Fill in the Description }}
 
+### [Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
+{{ Fill in the Description }}
+
 ### [Rename-MgBetaDeviceManagementVirtualEndpointCloudPc](Rename-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 {{ Fill in the Description }}
 

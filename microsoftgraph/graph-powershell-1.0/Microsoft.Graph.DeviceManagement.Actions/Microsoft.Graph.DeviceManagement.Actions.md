@@ -149,6 +149,12 @@ Locale: en-US
 ### [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority.md)
 {{ Fill in the Description }}
 
+### [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](Set-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+{{ Fill in the Description }}
+
+### [Set-MgDeviceManagementVirtualEndpointUserSetting](Set-MgDeviceManagementVirtualEndpointUserSetting.md)
+{{ Fill in the Description }}
+
 ### [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice.md)
 {{ Fill in the Description }}
 

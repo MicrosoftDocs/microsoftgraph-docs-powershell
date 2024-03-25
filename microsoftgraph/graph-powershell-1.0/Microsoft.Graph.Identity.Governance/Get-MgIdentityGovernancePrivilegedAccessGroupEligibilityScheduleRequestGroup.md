@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 References the group that is the scope of the membership or ownership eligibility request through PIM for groups.
-Supports $expand.
+Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequestGroup
 
 ## DESCRIPTION
 References the group that is the scope of the membership or ownership eligibility request through PIM for groups.
-Supports $expand.
+Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
 ## PARAMETERS
 

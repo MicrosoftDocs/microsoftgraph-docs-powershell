@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing
 
 ## SYNOPSIS
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-Otherwise, it is null.
+If the request is from an eligible administrator to activate a role, this parameter shows the related eligible assignment for that activation.
+Otherwise, it's null.
 Supports $expand.
 
 ## SYNTAX
@@ -31,8 +31,8 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing
 ```
 
 ## DESCRIPTION
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-Otherwise, it is null.
+If the request is from an eligible administrator to activate a role, this parameter shows the related eligible assignment for that activation.
+Otherwise, it's null.
 Supports $expand.
 
 ## PARAMETERS

@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignmentType
-Type of the assignment which can either be Assigned or Activated.
+The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberType
-How the assignments is inherited.
+How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -610,10 +610,10 @@ Supports $filter (eq, ne).
     - `[RoleEligibilityScheduleId <String>]`: The identifier of the unifiedRoleEligibilitySchedule object from which this instance was created.
 Supports $filter (eq, ne).
     - `[StartDateTime <DateTime?>]`: When this instance starts.
-  - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+  - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
   - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-  - `[MemberType <String>]`: How the assignments is inherited.
+  - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).

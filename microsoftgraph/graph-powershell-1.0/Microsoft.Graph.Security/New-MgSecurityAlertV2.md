@@ -26,9 +26,9 @@ New-MgSecurityAlertV2 [-ResponseHeadersVariable <String>] [-ActorDisplayName <St
  [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProductName <String>]
  [-ProviderAlertId <String>] [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>]
- [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-TenantId <String>]
- [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ServiceSource <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
+ [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>] [-Title <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertPolicyId
-.
+The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
 
 ```yaml
 Type: String
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertWebUrl
-URL for the alert page in the Microsoft 365 Defender portal.
+.
 
 ```yaml
 Type: String
@@ -542,6 +542,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SystemTags
+The system tags associated with the alert.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TenantId
 The Microsoft Entra tenant the alert was created in.
 
@@ -656,8 +671,8 @@ Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AlertPolicyId <String>]`: 
-  - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+  - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
+  - `[AlertWebUrl <String>]`: 
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -695,6 +710,7 @@ Values are free-form.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert.
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.

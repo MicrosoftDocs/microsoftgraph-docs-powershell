@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The principal that's getting a role assignment through the request.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal
 
 ## DESCRIPTION
 The principal that's getting a role assignment through the request.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 ## PARAMETERS
 

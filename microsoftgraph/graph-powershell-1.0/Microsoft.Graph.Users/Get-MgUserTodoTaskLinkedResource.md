@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserTodoTaskLinkedResource
@@ -348,6 +347,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Get-MgBetaUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResource?view=graph-powershell-beta)

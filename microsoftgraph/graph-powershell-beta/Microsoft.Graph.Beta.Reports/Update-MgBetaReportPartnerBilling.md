@@ -19,8 +19,10 @@ Update the navigation property billing in reports
 ```
 Update-MgBetaReportPartnerBilling [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Manifests <IMicrosoftGraphPartnersBillingManifest[]>]
- [-Operations <IMicrosoftGraphPartnersBillingOperation[]>] [-Usage <IMicrosoftGraphPartnersBillingAzureUsage>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Operations <IMicrosoftGraphPartnersBillingOperation[]>]
+ [-Reconciliation <IMicrosoftGraphPartnersBillingReconciliation>]
+ [-Usage <IMicrosoftGraphPartnersBillingAzureUsage>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -136,6 +138,22 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Reconciliation
+billingReconciliation
+To construct, see NOTES section for RECONCILIATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPartnersBillingReconciliation
+Parameter Sets: UpdateExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -260,6 +278,14 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Status <String>]`: longRunningOperationStatus
+  - `[Reconciliation <IMicrosoftGraphPartnersBillingReconciliation>]`: billingReconciliation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Billed <IMicrosoftGraphPartnersBillingBilledReconciliation>]`: billedReconciliation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[Usage <IMicrosoftGraphPartnersBillingAzureUsage>]`: azureUsage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -308,6 +334,15 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Status <String>]`: longRunningOperationStatus
+
+RECONCILIATION `<IMicrosoftGraphPartnersBillingReconciliation>`: billingReconciliation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Billed <IMicrosoftGraphPartnersBillingBilledReconciliation>]`: billedReconciliation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
 
 USAGE `<IMicrosoftGraphPartnersBillingAzureUsage>`: azureUsage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

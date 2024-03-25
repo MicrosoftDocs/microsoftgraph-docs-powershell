@@ -20,6 +20,9 @@ Locale: en-US
 ### [Add-MgUserDriveListContentTypeCopyFromContentTypeHub](Add-MgUserDriveListContentTypeCopyFromContentTypeHub.md)
 {{ Fill in the Description }}
 
+### [Add-MgUserFollowedSite](Add-MgUserFollowedSite.md)
+{{ Fill in the Description }}
+
 ### [Clear-MgUserChatMessageReaction](Clear-MgUserChatMessageReaction.md)
 {{ Fill in the Description }}
 
@@ -384,6 +387,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgUserDriveRootPermanent](Remove-MgUserDriveRootPermanent.md)
+{{ Fill in the Description }}
+
+### [Remove-MgUserFollowedSite](Remove-MgUserFollowedSite.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)

@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an agreement object.
+Retrieve all files related to an agreement.
+This includes the default file and all localized files.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
@@ -39,10 +39,11 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an agreement object.
+Retrieve all files related to an agreement.
+This includes the default file and all localized files.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-list-files-permissions.md)]
 
 ## PARAMETERS
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Remove-MgUserOnlineMeeting
@@ -32,6 +31,9 @@ Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch
 
 ## DESCRIPTION
 Delete an onlineMeeting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

@@ -22,34 +22,6 @@ Get-MgBetaDeviceAppManagementMobileAppCategoryCount [-Filter <String>] [-Search 
  [<CommonParameters>]
 ```
 
-### Get20
-```
-Get-MgBetaDeviceAppManagementMobileAppCategoryCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### Get10
-```
-Get-MgBetaDeviceAppManagementMobileAppCategoryCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity20
-```
-Get-MgBetaDeviceAppManagementMobileAppCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity10
-```
-Get-MgBetaDeviceAppManagementMobileAppCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceAppManagementMobileAppCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
@@ -98,28 +70,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity20, GetViaIdentity10, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -MobileAppId
-The unique identifier of mobileApp
-
-```yaml
-Type: String
-Parameter Sets: Get20, Get10
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

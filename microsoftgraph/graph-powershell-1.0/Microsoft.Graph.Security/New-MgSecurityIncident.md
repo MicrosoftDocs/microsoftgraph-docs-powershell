@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-A rich text string describing the incident
+Description of the incident.
 
 ```yaml
 Type: String
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedBy
-.
+The identity that last modified the incident.
 
 ```yaml
 Type: String
@@ -300,7 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -RedirectIncidentId
-Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
+Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
 
 ```yaml
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 ```
 
 ### -SystemTags
-The system tags associated with the incident
+The system tags associated with the incident.
 
 ```yaml
 Type: String[]
@@ -444,8 +444,8 @@ Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AlertPolicyId <String>]`: 
-  - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+  - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
+  - `[AlertWebUrl <String>]`: 
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
   - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -483,6 +483,7 @@ Values are free-form.
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the alert.
   - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
@@ -499,8 +500,8 @@ Read-only.
     - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
     - `[AdditionalData <IMicrosoftGraphSecurityDictionary>]`: dictionary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AlertPolicyId <String>]`: 
-    - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+    - `[AlertPolicyId <String>]`: The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.
+    - `[AlertWebUrl <String>]`: 
     - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
     - `[Category <String>]`: The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
@@ -538,6 +539,7 @@ Values are free-form.
     - `[ServiceSource <String>]`: serviceSource
     - `[Severity <String>]`: alertSeverity
     - `[Status <String>]`: alertStatus
+    - `[SystemTags <String- `[]`>]`: The system tags associated with the alert.
     - `[TenantId <String>]`: The Microsoft Entra tenant the alert was created in.
     - `[ThreatDisplayName <String>]`: The threat associated with this alert.
     - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
@@ -548,17 +550,17 @@ Free editable text.
   - `[Comments <IMicrosoftGraphSecurityAlertComment- `[]`>]`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[CreatedDateTime <DateTime?>]`: Time when the incident was first created.
   - `[CustomTags <String- `[]`>]`: Array of custom tags associated with an incident.
-  - `[Description <String>]`: A rich text string describing the incident
+  - `[Description <String>]`: Description of the incident.
   - `[Determination <String>]`: alertDetermination
   - `[DisplayName <String>]`: The incident name.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
-  - `[LastModifiedBy <String>]`: 
+  - `[LastModifiedBy <String>]`: The identity that last modified the incident.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
-  - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
+  - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
-  - `[SystemTags <String- `[]`>]`: The system tags associated with the incident
+  - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
   - `[TenantId <String>]`: The Microsoft Entra tenant in which the alert was created.
 
 COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.

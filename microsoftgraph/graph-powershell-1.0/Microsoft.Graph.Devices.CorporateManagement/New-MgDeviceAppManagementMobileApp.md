@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new managedAndroidStoreApp object.
+Create a new managedIOSStoreApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -35,7 +34,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new managedAndroidStoreApp object.
+Create a new managedIOSStoreApp object.
 
 ## PARAMETERS
 

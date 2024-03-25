@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestPrincipal
 
 ## DESCRIPTION
 References the principal that's in the scope of this membership or ownership assignment request through the group that's governed by PIM.
-Supports $expand.
+Supports $expand and $select nested in $expand for id only.
 
 ## PARAMETERS
 

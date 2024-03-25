@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgBetaAdministrativeUnitScopedRoleMember
@@ -338,6 +337,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
   - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[ExternalUserProfileId <String>]`: The unique identifier of externalUserProfile
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
@@ -351,6 +351,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole

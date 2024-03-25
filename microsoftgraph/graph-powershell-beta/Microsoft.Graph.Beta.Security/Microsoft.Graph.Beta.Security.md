@@ -122,6 +122,12 @@ Locale: en-US
 ### [Get-MgBetaSecurityAttackSimulationTraining](Get-MgBetaSecurityAttackSimulationTraining.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSecurityAttackSimulationTrainingCampaign](Get-MgBetaSecurityAttackSimulationTrainingCampaign.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityAttackSimulationTrainingCampaignCount](Get-MgBetaSecurityAttackSimulationTrainingCampaignCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSecurityAttackSimulationTrainingCount](Get-MgBetaSecurityAttackSimulationTrainingCount.md)
 {{ Fill in the Description }}
 
@@ -456,6 +462,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityProviderTenantSettingCount](Get-MgBetaSecurityProviderTenantSettingCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityRule](Get-MgBetaSecurityRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityRuleDetectionRule](Get-MgBetaSecurityRuleDetectionRule.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityRuleDetectionRuleCount](Get-MgBetaSecurityRuleDetectionRuleCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
@@ -878,6 +893,9 @@ Locale: en-US
 ### [New-MgBetaSecurityAttackSimulationTraining](New-MgBetaSecurityAttackSimulationTraining.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSecurityAttackSimulationTrainingCampaign](New-MgBetaSecurityAttackSimulationTrainingCampaign.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSecurityAttackSimulationTrainingLanguageDetail](New-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
 {{ Fill in the Description }}
 
@@ -984,6 +1002,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityProviderTenantSetting](New-MgBetaSecurityProviderTenantSetting.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaSecurityRuleDetectionRule](New-MgBetaSecurityRuleDetectionRule.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecuritySecureScore](New-MgBetaSecuritySecureScore.md)
@@ -1122,6 +1143,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityAttackSimulationTraining](Remove-MgBetaSecurityAttackSimulationTraining.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityAttackSimulationTrainingCampaign](Remove-MgBetaSecurityAttackSimulationTrainingCampaign.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Remove-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
@@ -1263,6 +1287,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityProviderTenantSetting](Remove-MgBetaSecurityProviderTenantSetting.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityRule](Remove-MgBetaSecurityRule.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityRuleDetectionRule](Remove-MgBetaSecurityRuleDetectionRule.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecuritySecureScore](Remove-MgBetaSecuritySecureScore.md)
@@ -1469,6 +1499,9 @@ Locale: en-US
 ### [Update-MgBetaSecurityAttackSimulationTraining](Update-MgBetaSecurityAttackSimulationTraining.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSecurityAttackSimulationTrainingCampaign](Update-MgBetaSecurityAttackSimulationTrainingCampaign.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail](Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail.md)
 {{ Fill in the Description }}
 
@@ -1608,6 +1641,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityProviderTenantSetting](Update-MgBetaSecurityProviderTenantSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityRule](Update-MgBetaSecurityRule.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityRuleDetectionRule](Update-MgBetaSecurityRuleDetectionRule.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecuritySecureScore](Update-MgBetaSecuritySecureScore.md)

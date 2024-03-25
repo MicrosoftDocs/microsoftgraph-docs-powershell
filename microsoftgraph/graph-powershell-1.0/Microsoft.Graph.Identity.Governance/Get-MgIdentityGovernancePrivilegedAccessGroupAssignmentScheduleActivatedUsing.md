@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship.
-Otherwise, it is null.
+Otherwise, it's null.
 Supports $expand.
 
 > [!NOTE]
@@ -35,7 +35,7 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleActivatedUsing
 
 ## DESCRIPTION
 When the request activates an ownership or membership assignment in PIM for groups, this object represents the eligibility relationship.
-Otherwise, it is null.
+Otherwise, it's null.
 Supports $expand.
 
 ## PARAMETERS

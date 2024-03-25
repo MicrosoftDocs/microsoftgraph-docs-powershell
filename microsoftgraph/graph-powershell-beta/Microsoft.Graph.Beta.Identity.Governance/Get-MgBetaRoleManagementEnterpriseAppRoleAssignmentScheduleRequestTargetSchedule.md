@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestTargetSchedule
 
 ## DESCRIPTION
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
-Supports $expand.
+Supports $expand and $select nested in $expand.
 
 ## PARAMETERS
 

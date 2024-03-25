@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskchecklistitem
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Update-MgBetaUserTodoListTaskChecklistItem
@@ -151,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Field indicating the title of checklistItem.
+Indicates the title of the checklistItem.
 
 ```yaml
 Type: String
@@ -213,7 +212,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsChecked
-State indicating whether the item is checked off or not.
+State that indicates whether the item is checked off or not.
 
 ```yaml
 Type: SwitchParameter
@@ -356,8 +355,8 @@ BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
 Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
   - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+  - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+  - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
 
 INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[AppId <String>]`: Alternate key of servicePrincipal
@@ -383,6 +382,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)

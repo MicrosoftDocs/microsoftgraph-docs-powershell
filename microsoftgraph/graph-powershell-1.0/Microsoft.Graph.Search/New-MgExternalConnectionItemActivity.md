@@ -299,12 +299,15 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Type <String>]`: externalActivityType
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+  - `[AcronymId <String>]`: The unique identifier of acronym
+  - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
   - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
   - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
   - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
   - `[ExternalItemId <String>]`: The unique identifier of externalItem
   - `[IdentityId <String>]`: The unique identifier of identity
+  - `[QnaId <String>]`: The unique identifier of qna
 
 PERFORMEDBY `<IMicrosoftGraphExternalConnectorsIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

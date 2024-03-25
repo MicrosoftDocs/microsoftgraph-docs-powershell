@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolist
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserTodoList
@@ -386,8 +385,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
       - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
       - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-      - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-      - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+      - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+      - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
@@ -473,6 +472,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 TASKS <IMicrosoftGraphTodoTask- `[]`>: The tasks in this task list.
 Read-only.
@@ -511,8 +512,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
     - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
     - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-    - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-    - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+    - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+    - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).

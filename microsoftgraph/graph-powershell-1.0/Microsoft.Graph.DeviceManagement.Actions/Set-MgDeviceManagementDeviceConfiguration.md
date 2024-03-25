@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
-ms.prod: intune
 ---
 
 # Set-MgDeviceManagementDeviceConfiguration
@@ -239,6 +238,8 @@ Read-only.
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
   - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration

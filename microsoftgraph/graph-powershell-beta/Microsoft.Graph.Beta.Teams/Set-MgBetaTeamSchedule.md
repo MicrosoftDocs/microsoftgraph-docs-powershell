@@ -20,6 +20,7 @@ Update the navigation property schedule in teams
 Set-MgBetaTeamSchedule -TeamId <String> [-ResponseHeadersVariable <String>]
  [-ActivitiesIncludedWhenCopyingShiftsEnabled] [-AdditionalProperties <Hashtable>]
  [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
+ [-IsCrossLocationShiftRequestApprovalRequired] [-IsCrossLocationShiftsEnabled]
  [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
@@ -45,6 +46,7 @@ Set-MgBetaTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule>
 Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> [-ResponseHeadersVariable <String>]
  [-ActivitiesIncludedWhenCopyingShiftsEnabled] [-AdditionalProperties <Hashtable>]
  [-DayNotes <IMicrosoftGraphDayNote[]>] [-Enabled] [-Id <String>]
+ [-IsCrossLocationShiftRequestApprovalRequired] [-IsCrossLocationShiftsEnabled]
  [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
  [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
  [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
@@ -192,6 +194,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsCrossLocationShiftRequestApprovalRequired
+Indicates whether approval is required by a manager of this schedule for cross location shift requests.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsCrossLocationShiftsEnabled
+Indicates whether the cross-location marketplace feature is enabled for this schedule.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -351,7 +383,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShiftsRoleDefinitions
-.
+The definitions of the roles in the schedule.
 To construct, see NOTES section for SHIFTSROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
@@ -554,7 +586,7 @@ Accept wildcard characters: False
 ```
 
 ### -WorkforceIntegrationIds
-The Ids for the workforce integrations associated with this schedule.
+The IDs for the workforce integrations associated with this schedule.
 
 ```yaml
 Type: String[]
@@ -644,6 +676,8 @@ Read-only.
     - `[SharedDayNote <IMicrosoftGraphItemBody>]`: itemBody
   - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team.
 Required.
+  - `[IsCrossLocationShiftRequestApprovalRequired <Boolean?>]`: Indicates whether approval is required by a manager of this schedule for cross location shift requests.
+  - `[IsCrossLocationShiftsEnabled <Boolean?>]`: Indicates whether the cross-location marketplace feature is enabled for this schedule.
   - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest- `[]`>]`: The offer requests for shifts in the schedule.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
     - `[ManagerActionMessage <String>]`: 
@@ -720,6 +754,7 @@ Required.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
     - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
     - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
@@ -752,13 +787,14 @@ Required.
       - `[DisplayName <String>]`: The display name for the user.
 Required.
       - `[UserId <String>]`: ID of the user.
-  - `[ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition- `[]`>]`: 
+  - `[ShiftsRoleDefinitions <IMicrosoftGraphShiftsRoleDefinition- `[]`>]`: The definitions of the roles in the schedule.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
-      - `[AllowedResourceActions <String- `[]`>]`: 
+    - `[Description <String>]`: The description of the role.
+    - `[DisplayName <String>]`: The display name of the role.
+    - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: The collection of role permissions within the role.
+      - `[AllowedResourceActions <String- `[]`>]`: The permissions that are allowed for a role.
+Permissions that aren't in this collection are disabled.
   - `[StartDayOfWeek <String>]`: dayOfWeek
   - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>]`: The swap requests for shifts in the schedule.
     - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
@@ -819,6 +855,7 @@ Writable on OneDrive Personal.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
     - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
     - `[IconType <String>]`: timeOffReasonIconType
@@ -859,7 +896,7 @@ Required.
     - `[UserId <String>]`: ID of the user assigned to the timeOff.
 Required.
     - `[UserInfo <IMicrosoftGraphShiftsUserInfo>]`: shiftsUserInfo
-  - `[WorkforceIntegrationIds <String- `[]`>]`: The Ids for the workforce integrations associated with this schedule.
+  - `[WorkforceIntegrationIds <String- `[]`>]`: The IDs for the workforce integrations associated with this schedule.
 
 DAYNOTES <IMicrosoftGraphDayNote- `[]`>: The day notes in the schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1042,6 +1079,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Code <String>]`: The code for the schedulingGroup to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
   - `[DisplayName <String>]`: The display name for the schedulingGroup.
 Required.
   - `[UserIds <String- `[]`>]`: The list of user IDs that are a member of the schedulingGroup.
@@ -1110,13 +1148,14 @@ Required.
 Required.
     - `[UserId <String>]`: ID of the user.
 
-SHIFTSROLEDEFINITIONS <IMicrosoftGraphShiftsRoleDefinition- `[]`>: .
+SHIFTSROLEDEFINITIONS <IMicrosoftGraphShiftsRoleDefinition- `[]`>: The definitions of the roles in the schedule.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: 
-    - `[AllowedResourceActions <String- `[]`>]`: 
+  - `[Description <String>]`: The description of the role.
+  - `[DisplayName <String>]`: The display name of the role.
+  - `[ShiftsRolePermissions <IMicrosoftGraphShiftsRolePermission- `[]`>]`: The collection of role permissions within the role.
+    - `[AllowedResourceActions <String- `[]`>]`: The permissions that are allowed for a role.
+Permissions that aren't in this collection are disabled.
 
 SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest- `[]`>: The swap requests for shifts in the schedule.
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
@@ -1211,6 +1250,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Code <String>]`: The code of the timeOffReason to represent an external identifier.
+This field must be unique within the team in Microsoft Teams and uses an alphanumeric format, with a maximum of 100 characters.
   - `[DisplayName <String>]`: The name of the timeOffReason.
 Required.
   - `[IconType <String>]`: timeOffReasonIconType

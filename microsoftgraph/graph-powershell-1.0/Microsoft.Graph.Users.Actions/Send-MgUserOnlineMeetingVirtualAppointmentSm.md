@@ -8,7 +8,9 @@ schema: 2.0.0
 # Send-MgUserOnlineMeetingVirtualAppointmentSm
 
 ## SYNOPSIS
-Invoke action sendVirtualAppointmentSms
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled.
+This feature requires Teams premium.
+Attendees must have a valid United States phone number to receive these SMS notifications.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Send-MgBetaUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-beta)
@@ -48,7 +50,12 @@ Send-MgUserOnlineMeetingVirtualAppointmentSm -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action sendVirtualAppointmentSms
+Send an SMS notification to external attendees when a Teams virtual appointment is confirmed, rescheduled, or canceled.
+This feature requires Teams premium.
+Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## PARAMETERS
 
@@ -269,14 +276,20 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
-  - `[PhoneNumber <String>]`: 
-  - `[TimeZone <String>]`: 
+  - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+  - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
 
 BODYPARAMETER `<IPaths16Og72WUsersUserIdOnlinemeetingsOnlinemeetingIdMicrosoftGraphSendvirtualappointmentsmsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
-    - `[PhoneNumber <String>]`: 
-    - `[TimeZone <String>]`: 
+    - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+    - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
   - `[MessageType <String>]`: virtualAppointmentMessageType
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter

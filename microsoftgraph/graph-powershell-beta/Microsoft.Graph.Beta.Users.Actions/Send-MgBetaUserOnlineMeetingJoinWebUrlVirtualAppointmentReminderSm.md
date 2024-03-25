@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingjoinweburlvirtualappointmentremindersm
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Send-MgBetaUserOnlineMeetingJoinWebUrlVirtualAppointmentReminderSm
@@ -274,14 +273,20 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ATTENDEES <IMicrosoftGraphAttendeeNotificationInfo- `[]`>: .
-  - `[PhoneNumber <String>]`: 
-  - `[TimeZone <String>]`: 
+  - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+  - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
 
 BODYPARAMETER `<IPaths1Iwum32UsersUserIdOnlinemeetingsJoinweburlMicrosoftGraphSendvirtualappointmentremindersmsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphAttendeeNotificationInfo- `[]`>]`: 
-    - `[PhoneNumber <String>]`: 
-    - `[TimeZone <String>]`: 
+    - `[PhoneNumber <String>]`: The phone number of the external attendee.
+Required.
+    - `[TimeZone <String>]`: The time zone of the external attendee.
+The timeZone property can be set to any of the time zones currently supported by Windows.
+Required.
   - `[RemindBeforeTimeInMinutesType <String>]`: remindBeforeTimeInMinutesType
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter

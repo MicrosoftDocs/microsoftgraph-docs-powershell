@@ -22,34 +22,6 @@ Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Fi
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### Get20
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get10
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -MobileAppId <String> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity20
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity10
-```
-Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgBetaDeviceAppManagementMobileAppAssignmentCount -InputObject <IDevicesCorporateManagementIdentity>
@@ -98,7 +70,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity20, GetViaIdentity10, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -113,7 +85,7 @@ The unique identifier of mobileApp
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get20, Get10
+Parameter Sets: Get
 Aliases:
 
 Required: True

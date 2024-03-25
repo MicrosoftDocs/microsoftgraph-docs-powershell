@@ -468,14 +468,14 @@ Read-only.
 It can either be Inherited, Direct, or Group.
         - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
         - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
-      - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+      - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
       - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-      - `[MemberType <String>]`: How the assignments is inherited.
+      - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-      - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Azure AD.
+      - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Microsoft Entra ID.
       - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
       - `[StartDateTime <DateTime?>]`: When this instance starts.
     - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>]`: 
@@ -621,9 +621,9 @@ Use appScopeId to limit the scope to an application only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-        - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+        - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-        - `[MemberType <String>]`: How the assignments is inherited.
+        - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -1182,14 +1182,14 @@ Read-only.
 It can either be Inherited, Direct, or Group.
       - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
       - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
-    - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+    - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
     - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-    - `[MemberType <String>]`: How the assignments is inherited.
+    - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Azure AD.
+    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Microsoft Entra ID.
     - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
     - `[StartDateTime <DateTime?>]`: When this instance starts.
   - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>]`: 
@@ -1335,9 +1335,9 @@ Use appScopeId to limit the scope to an application only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-      - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+      - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-      - `[MemberType <String>]`: How the assignments is inherited.
+      - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -1605,14 +1605,14 @@ Read-only.
 It can either be Inherited, Direct, or Group.
       - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
       - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
-    - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+    - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
     - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-    - `[MemberType <String>]`: How the assignments is inherited.
+    - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Azure AD.
+    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Microsoft Entra ID.
     - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
     - `[StartDateTime <DateTime?>]`: When this instance starts.
   - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>]`: 
@@ -1758,9 +1758,9 @@ Use appScopeId to limit the scope to an application only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-      - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+      - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-      - `[MemberType <String>]`: How the assignments is inherited.
+      - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -2029,14 +2029,14 @@ Read-only.
 It can either be Inherited, Direct, or Group.
       - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
       - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
-    - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+    - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
     - `[EndDateTime <DateTime?>]`: The end date of the schedule instance.
-    - `[MemberType <String>]`: How the assignments is inherited.
+    - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
-    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Azure AD.
+    - `[RoleAssignmentOriginId <String>]`: The identifier of the role assignment in Microsoft Entra ID.
     - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created.
     - `[StartDateTime <DateTime?>]`: When this instance starts.
   - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest- `[]`>]`: 
@@ -2182,9 +2182,9 @@ Use appScopeId to limit the scope to an application only.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-      - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+      - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-      - `[MemberType <String>]`: How the assignments is inherited.
+      - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).

@@ -22,20 +22,6 @@ Get-MgDeviceAppManagementMobileAppCategoryCount [-Filter <String>] [-Search <Str
  [<CommonParameters>]
 ```
 
-### Get10
-```
-Get-MgDeviceAppManagementMobileAppCategoryCount -MobileAppId <String> [-Filter <String>] [-Search <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity10
-```
-Get-MgDeviceAppManagementMobileAppCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgDeviceAppManagementMobileAppCategoryCount -InputObject <IDevicesCorporateManagementIdentity>
@@ -84,28 +70,13 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity10, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -MobileAppId
-The unique identifier of mobileApp
-
-```yaml
-Type: String
-Parameter Sets: Get10
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

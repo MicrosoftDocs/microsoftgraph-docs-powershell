@@ -1292,6 +1292,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
               - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
+              - `[EnrollmentType <String>]`: 
               - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -1302,6 +1303,10 @@ Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+              - `[IsRooted <Boolean?>]`: 
+              - `[ManagementType <String>]`: 
+              - `[Manufacturer <String>]`: Manufacturer of the device.
+Read-only.
               - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -1309,6 +1314,8 @@ Supports $filter (eq, ne, not, startsWith).
 Read-only.
 Nullable.
 Supports $expand.
+              - `[Model <String>]`: Model of the device.
+Read-only.
               - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
@@ -1686,6 +1693,19 @@ Read-only.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[CloudClipboard <IMicrosoftGraphCloudClipboardRoot>]`: cloudClipboardRoot
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+          - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[ExpirationDateTime <DateTime?>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
+              - `[Content <String>]`: 
+              - `[FormatName <String>]`: 
         - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -3191,6 +3211,29 @@ Nullable.
 Read-only.
 Nullable.
           - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
+          - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: 
+            - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+            - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+            - `[Description <String>]`: Provides a user-visible description of the item.
+Optional.
+            - `[ETag <String>]`: ETag for the item.
+Read-only.
+            - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+            - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+            - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+            - `[Name <String>]`: The name of the item.
+Read-write.
+            - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+            - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[PageLayout <String>]`: pageLayoutType
+            - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+            - `[Title <String>]`: 
           - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The permissions associated with the site.
 Nullable.
           - `[Root <IMicrosoftGraphRoot>]`: root
@@ -3231,8 +3274,8 @@ Returned only on $select.
 Supports $filter (eq) with limitations.
           - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
-For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
-For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com. 
+For guests from other Microsoft Entra organizations, this is the domain of the federated organization, for example contoso.com.
 For more information about filtering behavior for this property, see Filtering on the identities property of a user.
           - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
 64 character limit.
@@ -3642,7 +3685,8 @@ Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
           - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
             - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
             - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -3650,11 +3694,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
             - `[ServicePlanId <String>]`: The unique identifier of the service plan.
             - `[ServicePlanName <String>]`: The name of the service plan.
           - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
           - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
         - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
@@ -4241,6 +4285,7 @@ Default value is false.
           - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
           - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+Required when you create an online meeting.
           - `[ExternalId <String>]`: 
           - `[IsBroadcast <Boolean?>]`: 
           - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
@@ -4266,6 +4311,7 @@ Read-only.
             - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
           - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+Required when you create an online meeting.
           - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -4315,14 +4361,14 @@ For more information on the default password policies, see Microsoft Entra passw
 Supports $filter (ne, not, and eq on null values).
         - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
-          - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.
-The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change.
+          - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+          - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
           - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
-It can be updated, but the user will be required to change the password on the next login.
+It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
         - `[PastProjects <String- `[]`>]`: A list for the user to enumerate their past projects.
@@ -4859,6 +4905,19 @@ Read-only.
                 - `[EndTime <String>]`: End time for the time range.
                 - `[StartTime <String>]`: Start time for the time range.
               - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+          - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[ExpirationDateTime <DateTime?>]`: 
+              - `[LastModifiedDateTime <DateTime?>]`: 
+              - `[Payload <String>]`: 
+            - `[PayloadType <String>]`: 
+            - `[SettingType <String>]`: windowsSettingType
+            - `[WindowsDeviceId <String>]`: 
         - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -6012,6 +6071,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
                 - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
+                - `[EnrollmentType <String>]`: 
                 - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -6022,6 +6082,10 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+                - `[IsRooted <Boolean?>]`: 
+                - `[ManagementType <String>]`: 
+                - `[Manufacturer <String>]`: Manufacturer of the device.
+Read-only.
                 - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -6029,6 +6093,8 @@ Supports $filter (eq, ne, not, startsWith).
 Read-only.
 Nullable.
 Supports $expand.
+                - `[Model <String>]`: Model of the device.
+Read-only.
                 - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
@@ -6406,6 +6472,19 @@ Read-only.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+          - `[CloudClipboard <IMicrosoftGraphCloudClipboardRoot>]`: cloudClipboardRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[ExpirationDateTime <DateTime?>]`: 
+              - `[LastModifiedDateTime <DateTime?>]`: 
+              - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
+                - `[Content <String>]`: 
+                - `[FormatName <String>]`: 
           - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -7911,6 +7990,29 @@ Nullable.
 Read-only.
 Nullable.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
+            - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: 
+              - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+              - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+              - `[Description <String>]`: Provides a user-visible description of the item.
+Optional.
+              - `[ETag <String>]`: ETag for the item.
+Read-only.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+              - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+              - `[Name <String>]`: The name of the item.
+Read-write.
+              - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+              - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[PageLayout <String>]`: pageLayoutType
+              - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+              - `[Title <String>]`: 
             - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The permissions associated with the site.
 Nullable.
             - `[Root <IMicrosoftGraphRoot>]`: root
@@ -7951,8 +8053,8 @@ Returned only on $select.
 Supports $filter (eq) with limitations.
             - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
-For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
-For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com. 
+For guests from other Microsoft Entra organizations, this is the domain of the federated organization, for example contoso.com.
 For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
 64 character limit.
@@ -8362,7 +8464,8 @@ Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
               - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
               - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -8370,11 +8473,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
               - `[ServicePlanId <String>]`: The unique identifier of the service plan.
               - `[ServicePlanName <String>]`: The name of the service plan.
             - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
             - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
           - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
@@ -8961,6 +9064,7 @@ Default value is false.
             - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
             - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+Required when you create an online meeting.
             - `[ExternalId <String>]`: 
             - `[IsBroadcast <Boolean?>]`: 
             - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
@@ -8986,6 +9090,7 @@ Read-only.
               - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
             - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+Required when you create an online meeting.
             - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -9035,14 +9140,14 @@ For more information on the default password policies, see Microsoft Entra passw
 Supports $filter (ne, not, and eq on null values).
           - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
-            - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.
-The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change.
+            - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+            - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
             - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
-It can be updated, but the user will be required to change the password on the next login.
+It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
           - `[PastProjects <String- `[]`>]`: A list for the user to enumerate their past projects.
@@ -9579,6 +9684,19 @@ Read-only.
                   - `[EndTime <String>]`: End time for the time range.
                   - `[StartTime <String>]`: Start time for the time range.
                 - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+            - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[CreatedDateTime <DateTime?>]`: 
+                - `[ExpirationDateTime <DateTime?>]`: 
+                - `[LastModifiedDateTime <DateTime?>]`: 
+                - `[Payload <String>]`: 
+              - `[PayloadType <String>]`: 
+              - `[SettingType <String>]`: windowsSettingType
+              - `[WindowsDeviceId <String>]`: 
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -10813,6 +10931,7 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
                 - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
+                - `[EnrollmentType <String>]`: 
                 - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -10823,6 +10942,10 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
+                - `[IsRooted <Boolean?>]`: 
+                - `[ManagementType <String>]`: 
+                - `[Manufacturer <String>]`: Manufacturer of the device.
+Read-only.
                 - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
 Read-only.
 Supports $filter (eq, ne, not, startsWith).
@@ -10830,6 +10953,8 @@ Supports $filter (eq, ne, not, startsWith).
 Read-only.
 Nullable.
 Supports $expand.
+                - `[Model <String>]`: Model of the device.
+Read-only.
                 - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
@@ -11207,6 +11332,19 @@ Read-only.
 Maximum length is 128 characters.
 Returned only on $select.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+          - `[CloudClipboard <IMicrosoftGraphCloudClipboardRoot>]`: cloudClipboardRoot
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+            - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[ExpirationDateTime <DateTime?>]`: 
+              - `[LastModifiedDateTime <DateTime?>]`: 
+              - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
+                - `[Content <String>]`: 
+                - `[FormatName <String>]`: 
           - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -12712,6 +12850,29 @@ Nullable.
 Read-only.
 Nullable.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
+            - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: 
+              - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[CreatedByUser <IMicrosoftGraphUser>]`: user
+              - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
+Read-only.
+              - `[Description <String>]`: Provides a user-visible description of the item.
+Optional.
+              - `[ETag <String>]`: ETag for the item.
+Read-only.
+              - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+              - `[LastModifiedByUser <IMicrosoftGraphUser>]`: user
+              - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified.
+Read-only.
+              - `[Name <String>]`: The name of the item.
+Read-write.
+              - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
+              - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
+Read-only.
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[PageLayout <String>]`: pageLayoutType
+              - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
+              - `[Title <String>]`: 
             - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The permissions associated with the site.
 Nullable.
             - `[Root <IMicrosoftGraphRoot>]`: root
@@ -12752,8 +12913,8 @@ Returned only on $select.
 Supports $filter (eq) with limitations.
             - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.
 512 character limit.
-For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com.
-For guests from other Microsoft Entra organization, this is the domain of the federated organization, for examplecontoso.com\`. 
+For local accounts (where signInType isn't federated), this property is the local default domain name for the tenant, for example contoso.com. 
+For guests from other Microsoft Entra organizations, this is the domain of the federated organization, for example contoso.com.
 For more information about filtering behavior for this property, see Filtering on the identities property of a user.
             - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer.
 64 character limit.
@@ -13163,7 +13324,8 @@ Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[ServicePlans <IMicrosoftGraphServicePlanInfo- `[]`>]`: Information about the service plans assigned with the license.
-Read-only, Not nullable
+Read-only.
+Not nullable.
               - `[AppliesTo <String>]`: The object the service plan can be assigned to.
 The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
               - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
@@ -13171,11 +13333,11 @@ The possible values are:Success - Service is fully provisioned.Disabled - Servic
               - `[ServicePlanId <String>]`: The unique identifier of the service plan.
               - `[ServicePlanName <String>]`: The name of the service plan.
             - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+Equal to the skuId property on the related subscribedSku object.
+Read-only.
             - `[SkuPartNumber <String>]`: Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+Equal to the skuPartNumber on the related subscribedSku object; for example, AAD_Premium.
+Read-only.
           - `[Mail <String>]`: The SMTP address for the user, for example, jeff@contoso.com.
 Changes to this property update the user's proxyAddresses collection to include the value as an SMTP address.
 This property can't contain accent characters. 
@@ -13762,6 +13924,7 @@ Default value is false.
             - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC.
 Read-only.
             - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+Required when you create an online meeting.
             - `[ExternalId <String>]`: 
             - `[IsBroadcast <Boolean?>]`: 
             - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
@@ -13787,6 +13950,7 @@ Read-only.
               - `[RecordingContentUrl <String>]`: The URL that can be used to access the content of the recording.
 Read-only.
             - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+Required when you create an online meeting.
             - `[Transcripts <IMicrosoftGraphCallTranscript- `[]`>]`: The transcripts of an online meeting.
 Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -13836,14 +14000,14 @@ For more information on the default password policies, see Microsoft Entra passw
 Supports $filter (ne, not, and eq on null values).
           - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
-            - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password.
-The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change.
+            - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
+            - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
             - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
-It can be updated, but the user will be required to change the password on the next login.
+It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
           - `[PastProjects <String- `[]`>]`: A list for the user to enumerate their past projects.
@@ -14380,6 +14544,19 @@ Read-only.
                   - `[EndTime <String>]`: End time for the time range.
                   - `[StartTime <String>]`: Start time for the time range.
                 - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+            - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
+              - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+              - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+                - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+                - `[CreatedDateTime <DateTime?>]`: 
+                - `[ExpirationDateTime <DateTime?>]`: 
+                - `[LastModifiedDateTime <DateTime?>]`: 
+                - `[Payload <String>]`: 
+              - `[PayloadType <String>]`: 
+              - `[SettingType <String>]`: windowsSettingType
+              - `[WindowsDeviceId <String>]`: 
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.

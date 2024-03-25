@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgBetaUserOutlookTask
@@ -237,6 +236,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TrendingId <String>]`: The unique identifier of trending
   - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadministrativeunit
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Update-MgBetaAdministrativeUnit
@@ -18,7 +17,8 @@ Update the properties of an administrativeUnit object.
 Update-MgBetaAdministrativeUnit -AdministrativeUnitId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,8 @@ Update-MgBetaAdministrativeUnit -AdministrativeUnitId <String>
 Update-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-IsMemberManagementRestricted] [-Members <IMicrosoftGraphDirectoryObject[]>] [-MembershipRule <String>]
+ [-MembershipRuleProcessingState <String>] [-MembershipType <String>]
  [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Visibility <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -251,6 +252,56 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MembershipRule
+Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRuleProcessingState
+Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipType
+Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -388,6 +439,14 @@ Supports $expand.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
+  - `[MembershipRule <String>]`: Dynamic membership rule for the administrative unit.
+For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+  - `[MembershipRuleProcessingState <String>]`: Used to control whether the dynamic membership rule is actively processed.
+Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
+If not set, the default behavior is Paused.
+  - `[MembershipType <String>]`: Membership type for the administrative unit.
+Can be dynamic or assigned.
+If not set, the default behavior is assigned.
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -431,6 +490,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
   - `[DomainId <String>]`: The unique identifier of domain
   - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[ExternalUserProfileId <String>]`: The unique identifier of externalUserProfile
   - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
@@ -444,6 +504,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
   - `[RoleTemplateId <String>]`: Alternate key of directoryRole

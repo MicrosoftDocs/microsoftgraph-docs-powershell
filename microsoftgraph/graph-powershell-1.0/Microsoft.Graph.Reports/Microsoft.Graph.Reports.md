@@ -218,6 +218,9 @@ Locale: en-US
 ### [Get-MgReportPrinterArchivedPrintJob](Get-MgReportPrinterArchivedPrintJob.md)
 {{ Fill in the Description }}
 
+### [Get-MgReportRelyingPartyDetailedSummary](Get-MgReportRelyingPartyDetailedSummary.md)
+{{ Fill in the Description }}
+
 ### [Get-MgReportSecurity](Get-MgReportSecurity.md)
 {{ Fill in the Description }}
 

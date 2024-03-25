@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Remove-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Deletes a linkedResource object.
+Delete a linkedResource object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
@@ -32,7 +31,7 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Deletes a linkedResource object.
+Delete a linkedResource object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-delete-permissions.md)]
@@ -265,6 +264,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)

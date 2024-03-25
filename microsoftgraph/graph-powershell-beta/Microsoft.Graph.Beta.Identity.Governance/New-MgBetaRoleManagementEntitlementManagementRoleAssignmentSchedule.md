@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -AssignmentType
-Type of the assignment which can either be Assigned or Activated.
+The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberType
-How the assignments is inherited.
+How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).
@@ -724,9 +724,9 @@ Required.
       - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 In PIM, when the  eligible or active assignment becomes active.
-  - `[AssignmentType <String>]`: Type of the assignment which can either be Assigned or Activated.
+  - `[AssignmentType <String>]`: The type of the assignment that can either be Assigned or Activated.
 Supports $filter (eq, ne).
-  - `[MemberType <String>]`: How the assignments is inherited.
+  - `[MemberType <String>]`: How the assignment is inherited.
 It can either be Inherited, Direct, or Group.
 It can further imply whether the unifiedRoleAssignmentSchedule can be managed by the caller.
 Supports $filter (eq, ne).

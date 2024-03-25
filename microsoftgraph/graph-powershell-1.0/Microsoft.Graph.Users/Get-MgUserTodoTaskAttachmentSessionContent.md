@@ -215,6 +215,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
+  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 [Get-MgBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)

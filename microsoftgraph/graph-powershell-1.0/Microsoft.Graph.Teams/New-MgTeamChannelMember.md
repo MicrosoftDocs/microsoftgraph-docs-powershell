@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamchannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamChannelMember
 
 ## SYNOPSIS
 Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMember?view=graph-powershell-beta)
@@ -49,10 +47,9 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-members-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-add-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -333,6 +330,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
