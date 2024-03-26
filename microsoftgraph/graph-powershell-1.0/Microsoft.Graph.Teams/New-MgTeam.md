@@ -3,7 +3,8 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam
 schema: 2.0.0
-ms.prod: microsoft-teams
+ms.subservice: teams
+ms.service: microsoft-graph
 ---
 
 # New-MgTeam
