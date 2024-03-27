@@ -31,6 +31,9 @@ Get-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagem
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-iteminsights-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

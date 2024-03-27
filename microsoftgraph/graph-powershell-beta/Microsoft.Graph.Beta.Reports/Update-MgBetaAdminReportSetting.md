@@ -29,6 +29,9 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

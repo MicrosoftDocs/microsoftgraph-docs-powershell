@@ -29,6 +29,9 @@ Get-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Read the properties and relationships of a store object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-store-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

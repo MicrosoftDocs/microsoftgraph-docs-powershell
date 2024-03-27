@@ -29,6 +29,9 @@ Remove-MgAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Delete a browserSiteList object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internetexplorermode-delete-sitelists-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

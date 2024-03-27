@@ -45,6 +45,9 @@ Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

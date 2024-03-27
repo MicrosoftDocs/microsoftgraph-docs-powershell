@@ -29,6 +29,9 @@ Remove-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete a tokenLifetimePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

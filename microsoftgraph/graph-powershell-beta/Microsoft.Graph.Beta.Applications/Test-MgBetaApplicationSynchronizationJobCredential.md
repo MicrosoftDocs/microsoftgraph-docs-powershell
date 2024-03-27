@@ -49,6 +49,9 @@ Test-MgBetaApplicationSynchronizationJobCredential -InputObject <IApplicationsId
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

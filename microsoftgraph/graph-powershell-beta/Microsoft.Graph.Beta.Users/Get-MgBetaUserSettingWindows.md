@@ -39,6 +39,9 @@ Get-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <Str
 Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL.
 This method gets the setting for the signed-in user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowssetting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

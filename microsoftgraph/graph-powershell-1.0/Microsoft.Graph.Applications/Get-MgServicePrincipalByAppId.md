@@ -29,6 +29,9 @@ Get-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

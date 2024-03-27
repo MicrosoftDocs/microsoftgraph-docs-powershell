@@ -37,6 +37,9 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Read the properties of a richLongRunningOperation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/richlongrunningoperation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

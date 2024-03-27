@@ -51,6 +51,9 @@ This action allows the organizer or attendee of a meeting event to forward theme
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-forward-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

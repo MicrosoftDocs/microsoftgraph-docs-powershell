@@ -38,6 +38,9 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance -InputObject
 ## DESCRIPTION
 Get the instance of an active role assignment.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

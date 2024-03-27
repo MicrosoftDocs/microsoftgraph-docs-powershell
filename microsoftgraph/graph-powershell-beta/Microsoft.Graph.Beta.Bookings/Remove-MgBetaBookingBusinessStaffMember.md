@@ -43,6 +43,9 @@ Remove-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMat
 ## DESCRIPTION
 Delete a staff member in the specified bookingbusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

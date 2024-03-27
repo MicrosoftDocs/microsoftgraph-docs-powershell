@@ -50,6 +50,9 @@ Copy-MgGroupDriveListContentTypeToDefaultContentLocation -InputObject <IGroupsId
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

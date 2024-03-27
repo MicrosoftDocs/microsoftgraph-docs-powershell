@@ -49,6 +49,9 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 ## DESCRIPTION
 Update the properties of a connectorGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

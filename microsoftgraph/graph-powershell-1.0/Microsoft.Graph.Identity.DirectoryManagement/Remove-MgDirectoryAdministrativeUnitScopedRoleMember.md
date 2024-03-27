@@ -30,6 +30,9 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 ## DESCRIPTION
 Remove a Microsoft Entra role assignment with administrative unit scope.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-scopedrolemembers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

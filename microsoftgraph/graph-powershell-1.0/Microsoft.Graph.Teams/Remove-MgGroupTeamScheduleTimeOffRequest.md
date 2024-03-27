@@ -29,6 +29,9 @@ Remove-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete a timeOffRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

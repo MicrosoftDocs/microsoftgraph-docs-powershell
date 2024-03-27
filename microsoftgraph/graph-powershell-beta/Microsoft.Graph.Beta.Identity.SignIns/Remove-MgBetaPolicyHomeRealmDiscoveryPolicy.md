@@ -29,6 +29,9 @@ Remove-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Delete a homeRealmDiscoveryPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,9 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-Respon
 ## DESCRIPTION
 Create a new securityAction object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityactions-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

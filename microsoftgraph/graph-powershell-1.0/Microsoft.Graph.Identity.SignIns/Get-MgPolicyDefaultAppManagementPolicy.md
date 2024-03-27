@@ -21,6 +21,9 @@ Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <
 ## DESCRIPTION
 Read the properties of a tenantAppManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

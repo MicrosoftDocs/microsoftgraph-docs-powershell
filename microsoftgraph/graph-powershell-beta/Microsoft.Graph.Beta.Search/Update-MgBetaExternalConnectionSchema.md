@@ -45,6 +45,9 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a schema for an externalConnection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-schema-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ New-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create instance of an openShiftChangeRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshiftchangerequest-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

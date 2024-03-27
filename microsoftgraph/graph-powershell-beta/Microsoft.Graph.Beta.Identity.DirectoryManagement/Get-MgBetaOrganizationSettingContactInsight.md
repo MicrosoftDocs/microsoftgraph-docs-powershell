@@ -29,6 +29,9 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-contactinsights-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

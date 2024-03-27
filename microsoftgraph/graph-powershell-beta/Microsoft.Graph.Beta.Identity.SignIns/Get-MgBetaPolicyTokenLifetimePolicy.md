@@ -37,6 +37,9 @@ Get-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

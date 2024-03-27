@@ -37,6 +37,9 @@ Get-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Get the details of an outboundSharedUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outboundshareduserprofile-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

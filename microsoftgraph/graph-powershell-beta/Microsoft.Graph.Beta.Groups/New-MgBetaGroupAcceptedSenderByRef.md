@@ -49,6 +49,9 @@ Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-acceptedsenders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

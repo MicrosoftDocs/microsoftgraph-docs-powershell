@@ -29,6 +29,9 @@ Remove-MgUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Remove a conversationMember from a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

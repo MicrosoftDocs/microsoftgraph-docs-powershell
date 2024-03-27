@@ -29,6 +29,9 @@ Remove-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete contact.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contact-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

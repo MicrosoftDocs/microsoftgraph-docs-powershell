@@ -31,6 +31,9 @@ Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 Retrieve the properties and relationships of a Drive resource.
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

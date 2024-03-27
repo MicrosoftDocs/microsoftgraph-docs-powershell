@@ -47,6 +47,9 @@ New-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 Create a new targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-post-targetdevicegroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -73,6 +73,9 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of an eventMessage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

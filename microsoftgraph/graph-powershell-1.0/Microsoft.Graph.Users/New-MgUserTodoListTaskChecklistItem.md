@@ -45,6 +45,9 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 ## DESCRIPTION
 Create a new checklistItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-checklistitems-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

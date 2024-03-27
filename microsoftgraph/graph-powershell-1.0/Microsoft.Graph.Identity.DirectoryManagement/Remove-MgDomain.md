@@ -29,6 +29,9 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ## DESCRIPTION
 Deletes a domain from a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

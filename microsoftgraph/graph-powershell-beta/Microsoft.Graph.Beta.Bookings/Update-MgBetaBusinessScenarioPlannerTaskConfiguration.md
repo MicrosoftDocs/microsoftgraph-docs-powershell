@@ -45,6 +45,9 @@ Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIde
 ## DESCRIPTION
 Update the properties of a plannerTaskConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskconfiguration-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

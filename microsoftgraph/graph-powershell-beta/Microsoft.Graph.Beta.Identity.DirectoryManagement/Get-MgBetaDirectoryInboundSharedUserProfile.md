@@ -37,6 +37,9 @@ Get-MgBetaDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Read the properties of an inboundSharedUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inboundshareduserprofile-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -63,6 +63,9 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
 Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

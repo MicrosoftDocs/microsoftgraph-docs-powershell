@@ -45,6 +45,9 @@ Remove-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> [-IfMat
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

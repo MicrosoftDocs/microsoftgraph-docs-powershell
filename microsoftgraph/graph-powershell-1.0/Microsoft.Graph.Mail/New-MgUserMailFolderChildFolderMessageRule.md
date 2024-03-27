@@ -51,6 +51,9 @@ New-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-messagerules-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

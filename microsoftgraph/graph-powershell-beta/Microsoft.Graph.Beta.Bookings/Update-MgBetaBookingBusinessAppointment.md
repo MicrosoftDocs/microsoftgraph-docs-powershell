@@ -119,6 +119,9 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

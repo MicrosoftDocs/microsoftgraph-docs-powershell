@@ -37,6 +37,9 @@ Get-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Expan
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service endpoint.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printserviceendpoint-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # New-MgPrivacySubjectRightsRequestNote
@@ -44,6 +45,9 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Create a new authoredNote object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
 
 ## EXAMPLES
 

@@ -45,6 +45,9 @@ Remove-MgEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity>
 Remove an educationCategory from an educationAssignment.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

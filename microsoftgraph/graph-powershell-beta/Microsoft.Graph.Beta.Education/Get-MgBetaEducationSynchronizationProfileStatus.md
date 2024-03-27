@@ -31,6 +31,9 @@ Get-MgBetaEducationSynchronizationProfileStatus -InputObject <IEducationIdentity
 Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofilestatus-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

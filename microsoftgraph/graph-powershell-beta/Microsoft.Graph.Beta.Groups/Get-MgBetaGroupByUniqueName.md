@@ -37,6 +37,9 @@ To get properties that aren't_ returned by default, specify them in a $select OD
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 Because the group resource supports extensions, you can also use the GET operation to get custom properties and extension data in a group instance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

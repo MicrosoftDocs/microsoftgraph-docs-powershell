@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileskill
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfileSkill
@@ -50,6 +51,9 @@ Update-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of a skillProficiency object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/skillproficiency-update-permissions.md)]
 
 ## EXAMPLES
 

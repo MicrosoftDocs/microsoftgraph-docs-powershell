@@ -39,6 +39,9 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest
 In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleeligibilityschedulerequests-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -36,6 +36,9 @@ Get-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the properties and relationships of contract object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contract-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

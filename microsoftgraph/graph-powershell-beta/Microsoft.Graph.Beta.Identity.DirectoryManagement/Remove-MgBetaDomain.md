@@ -29,6 +29,9 @@ Remove-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatc
 ## DESCRIPTION
 Deletes a domain from a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

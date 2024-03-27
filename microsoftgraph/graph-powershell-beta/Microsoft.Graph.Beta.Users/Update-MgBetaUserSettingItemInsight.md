@@ -43,6 +43,9 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the privacy settings for itemInsights and meeting hours insights of a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

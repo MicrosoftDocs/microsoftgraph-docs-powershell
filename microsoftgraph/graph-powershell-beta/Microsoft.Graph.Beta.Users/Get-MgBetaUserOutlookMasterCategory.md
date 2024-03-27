@@ -36,6 +36,9 @@ Get-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <St
 ## DESCRIPTION
 Get the properties and relationships of the specified outlookCategory object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

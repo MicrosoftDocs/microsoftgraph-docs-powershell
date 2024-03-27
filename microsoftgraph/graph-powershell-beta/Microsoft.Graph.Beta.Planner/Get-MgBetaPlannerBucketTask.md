@@ -22,6 +22,9 @@ Get-MgBetaPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-list-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -21,6 +21,9 @@ Get-MgBetaPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Proper
 ## DESCRIPTION
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodspolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Reset-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Reset the sync of a specific school data synchronization profile in the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-reset-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The attachment content.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-list-attachments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

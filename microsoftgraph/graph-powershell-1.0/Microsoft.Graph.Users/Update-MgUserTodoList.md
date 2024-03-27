@@ -45,6 +45,9 @@ Update-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

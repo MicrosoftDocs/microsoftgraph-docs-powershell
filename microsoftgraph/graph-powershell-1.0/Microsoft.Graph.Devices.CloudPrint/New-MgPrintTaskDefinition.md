@@ -32,6 +32,9 @@ New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition>
 Create a new task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-taskdefinitions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

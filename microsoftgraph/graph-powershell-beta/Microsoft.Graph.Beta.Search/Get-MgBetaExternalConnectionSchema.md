@@ -29,6 +29,9 @@ Get-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties of a schema for an externalConnection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-schema-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

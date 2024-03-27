@@ -51,6 +51,9 @@ Get-MgBetaEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Retrieve the properties and relationships of a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationuser-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

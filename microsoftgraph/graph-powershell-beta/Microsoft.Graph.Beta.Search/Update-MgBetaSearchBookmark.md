@@ -55,6 +55,9 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of a bookmark object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

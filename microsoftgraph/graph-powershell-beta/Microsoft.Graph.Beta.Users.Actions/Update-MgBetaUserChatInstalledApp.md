@@ -47,6 +47,9 @@ Update-MgBetaUserChatInstalledApp -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Upgrade an app installation within a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

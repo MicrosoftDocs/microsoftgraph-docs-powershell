@@ -30,6 +30,9 @@ Remove-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfM
 ## DESCRIPTION
 Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -31,6 +31,9 @@ Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 Delete an accessPackage object.
 You cannot delete an access package if it has any accessPackageAssignment.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

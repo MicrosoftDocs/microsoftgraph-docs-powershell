@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPa
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationship object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

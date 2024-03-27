@@ -29,6 +29,9 @@ Remove-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

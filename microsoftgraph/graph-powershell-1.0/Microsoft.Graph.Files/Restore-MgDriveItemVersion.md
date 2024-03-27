@@ -31,6 +31,9 @@ Restore-MgDriveItemVersion -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitemversion-restore-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

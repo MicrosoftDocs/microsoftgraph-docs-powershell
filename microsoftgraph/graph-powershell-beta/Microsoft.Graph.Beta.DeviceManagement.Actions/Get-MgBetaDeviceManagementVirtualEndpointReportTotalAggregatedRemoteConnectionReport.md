@@ -32,6 +32,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionRe
 ## DESCRIPTION
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-gettotalaggregatedremoteconnectionreports-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

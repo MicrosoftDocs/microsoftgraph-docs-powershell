@@ -39,6 +39,9 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
 ## DESCRIPTION
 Create a new partner configuration in a cross-tenant access policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-post-partners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

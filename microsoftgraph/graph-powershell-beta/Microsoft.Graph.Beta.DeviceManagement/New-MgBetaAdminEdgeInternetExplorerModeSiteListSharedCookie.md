@@ -51,6 +51,9 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevic
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-post-sharedcookies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

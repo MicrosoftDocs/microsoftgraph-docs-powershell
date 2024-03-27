@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IManaged
 ## DESCRIPTION
 Read the properties and relationships of a managementAction object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementaction-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

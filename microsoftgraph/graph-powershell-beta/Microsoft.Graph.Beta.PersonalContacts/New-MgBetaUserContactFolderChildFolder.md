@@ -55,6 +55,9 @@ New-MgBetaUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
 Create a new contactFolder as a child of a specified folder.
 You can also create a new contactFolder under the user's default contact folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-childfolders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -39,6 +39,9 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentscheduleinstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

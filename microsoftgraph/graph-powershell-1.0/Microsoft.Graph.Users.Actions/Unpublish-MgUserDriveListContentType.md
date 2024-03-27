@@ -29,6 +29,9 @@ Unpublish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Resp
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

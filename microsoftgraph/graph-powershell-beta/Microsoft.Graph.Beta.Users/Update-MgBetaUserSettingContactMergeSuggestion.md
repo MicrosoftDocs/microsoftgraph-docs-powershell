@@ -43,6 +43,9 @@ Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a contactMergeSuggestions object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

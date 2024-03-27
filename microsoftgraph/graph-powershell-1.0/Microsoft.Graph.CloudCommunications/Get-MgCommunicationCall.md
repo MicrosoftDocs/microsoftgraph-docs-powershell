@@ -29,6 +29,9 @@ Get-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

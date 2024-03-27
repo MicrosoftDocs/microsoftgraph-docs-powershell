@@ -37,6 +37,9 @@ Get-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties of an identityApiConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

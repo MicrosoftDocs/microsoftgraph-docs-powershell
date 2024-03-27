@@ -45,6 +45,9 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new schema object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

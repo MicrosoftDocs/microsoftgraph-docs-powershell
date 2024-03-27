@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgBetaComplianceEdiscoveryCaseCustodian
@@ -52,6 +53,9 @@ Update-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 
 ## DESCRIPTION
 Update the properties of a custodian object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-update-permissions.md)]
 
 ## EXAMPLES
 

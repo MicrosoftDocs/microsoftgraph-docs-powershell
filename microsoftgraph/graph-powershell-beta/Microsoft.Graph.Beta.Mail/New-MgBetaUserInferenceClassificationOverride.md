@@ -47,6 +47,9 @@ New-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 Create a focused Inbox override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,9 @@ Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputOb
 ## DESCRIPTION
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordlessmicrosoftauthenticatorauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

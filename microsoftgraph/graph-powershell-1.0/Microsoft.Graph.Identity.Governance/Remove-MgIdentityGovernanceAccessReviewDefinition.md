@@ -29,6 +29,9 @@ Remove-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Deletes an accessReviewScheduleDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

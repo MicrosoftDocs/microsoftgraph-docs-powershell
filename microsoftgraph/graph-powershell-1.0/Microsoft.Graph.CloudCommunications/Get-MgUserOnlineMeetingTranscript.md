@@ -43,6 +43,9 @@ This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calltranscript-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

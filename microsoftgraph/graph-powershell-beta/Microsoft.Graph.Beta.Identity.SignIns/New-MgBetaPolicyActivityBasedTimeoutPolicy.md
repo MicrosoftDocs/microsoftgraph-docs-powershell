@@ -30,6 +30,9 @@ New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-Response
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

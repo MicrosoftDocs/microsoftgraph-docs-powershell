@@ -37,6 +37,9 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 ## DESCRIPTION
 Read the properties and relationships of a customSecurityAttributeDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

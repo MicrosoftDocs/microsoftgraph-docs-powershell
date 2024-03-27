@@ -29,6 +29,9 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Resp
 ## DESCRIPTION
 Retry the group service provisioning.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-retryserviceprovisioning-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

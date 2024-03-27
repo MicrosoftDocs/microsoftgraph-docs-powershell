@@ -47,6 +47,9 @@ Invoke-MgBetaGraphUserChat -InputObject <IUsersActionsIdentity> [-ResponseHeader
 ## DESCRIPTION
 Unhide a chat for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-unhideforuser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

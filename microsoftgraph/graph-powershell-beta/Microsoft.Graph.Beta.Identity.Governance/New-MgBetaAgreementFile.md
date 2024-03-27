@@ -47,6 +47,9 @@ New-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Create a new localized agreement file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-post-files-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

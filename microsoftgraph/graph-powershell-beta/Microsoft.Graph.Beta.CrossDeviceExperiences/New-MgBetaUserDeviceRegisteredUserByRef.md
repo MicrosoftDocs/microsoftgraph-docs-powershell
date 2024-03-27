@@ -44,6 +44,9 @@ New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIde
 ## DESCRIPTION
 Add a registered user for the device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredusers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

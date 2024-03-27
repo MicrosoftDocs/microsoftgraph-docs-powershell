@@ -69,6 +69,9 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

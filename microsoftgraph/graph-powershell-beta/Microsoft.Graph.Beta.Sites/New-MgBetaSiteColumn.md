@@ -64,6 +64,9 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

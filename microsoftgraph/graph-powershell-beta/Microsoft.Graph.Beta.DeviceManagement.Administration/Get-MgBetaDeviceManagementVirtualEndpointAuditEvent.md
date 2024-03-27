@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagem
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcAuditEvent object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcauditevent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

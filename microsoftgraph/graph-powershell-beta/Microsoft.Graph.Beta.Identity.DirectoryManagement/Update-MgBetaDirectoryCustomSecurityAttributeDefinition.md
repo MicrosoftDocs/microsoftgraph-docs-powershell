@@ -49,6 +49,9 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityD
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customsecurityattributedefinition-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

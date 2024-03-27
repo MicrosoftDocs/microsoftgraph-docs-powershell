@@ -47,6 +47,9 @@ Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-post-emailmethods-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of an externalConnection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ Update-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

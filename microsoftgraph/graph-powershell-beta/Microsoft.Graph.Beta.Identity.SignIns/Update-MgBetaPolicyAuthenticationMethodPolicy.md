@@ -35,6 +35,9 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 ## DESCRIPTION
 Update the properties of an authenticationMethodsPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodspolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete the specified bookingCustomer object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

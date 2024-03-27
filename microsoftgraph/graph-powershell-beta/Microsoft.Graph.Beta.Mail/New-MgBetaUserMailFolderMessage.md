@@ -73,6 +73,9 @@ New-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Use this API to create a new Message in a mailfolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

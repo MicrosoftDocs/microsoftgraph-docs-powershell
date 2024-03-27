@@ -45,6 +45,9 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shiftpreferences-put-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

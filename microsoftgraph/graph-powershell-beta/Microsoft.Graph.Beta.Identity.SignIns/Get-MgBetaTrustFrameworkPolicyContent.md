@@ -29,6 +29,9 @@ Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Get media content for the navigation property policies from trustFramework
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

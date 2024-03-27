@@ -35,6 +35,9 @@ These are the class-level assignment defaults respected by new assignments creat
 Callers can continue to specify custom values on each assignment creation if they don't want the default behaviors.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

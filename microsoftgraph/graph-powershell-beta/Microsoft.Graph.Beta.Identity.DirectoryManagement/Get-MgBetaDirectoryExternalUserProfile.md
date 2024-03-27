@@ -37,6 +37,9 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Retrieve the properties of a specific externalUserProfile.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

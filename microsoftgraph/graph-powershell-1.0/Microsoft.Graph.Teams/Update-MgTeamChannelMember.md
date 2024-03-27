@@ -47,6 +47,9 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-update-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

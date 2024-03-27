@@ -54,6 +54,9 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-forcedelete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Get the externalMeetingRegistration details associated with an onlineMeeting.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalmeetingregistration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

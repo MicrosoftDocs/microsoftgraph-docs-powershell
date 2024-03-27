@@ -49,6 +49,9 @@ Update-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirec
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/customsecurityattributedefinition-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

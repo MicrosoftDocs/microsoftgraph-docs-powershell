@@ -31,6 +31,9 @@ Remove-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <S
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

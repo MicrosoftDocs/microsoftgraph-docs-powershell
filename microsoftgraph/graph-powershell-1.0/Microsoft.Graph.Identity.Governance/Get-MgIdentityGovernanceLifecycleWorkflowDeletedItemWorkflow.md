@@ -37,6 +37,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <IIden
 ## DESCRIPTION
 Retrieve a deleted workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-deleteditemcontainer-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

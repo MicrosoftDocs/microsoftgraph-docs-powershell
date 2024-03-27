@@ -75,6 +75,9 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of a tiIndicator object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

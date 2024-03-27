@@ -36,6 +36,9 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-definitions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

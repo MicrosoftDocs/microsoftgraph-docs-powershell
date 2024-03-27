@@ -29,6 +29,9 @@ Remove-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete a directory setting.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

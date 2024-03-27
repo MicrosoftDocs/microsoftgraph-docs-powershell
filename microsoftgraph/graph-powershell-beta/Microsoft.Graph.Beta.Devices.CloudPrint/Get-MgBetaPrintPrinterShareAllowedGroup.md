@@ -22,6 +22,9 @@ Get-MgBetaPrintPrinterShareAllowedGroup -PrinterShareId <String> [-ExpandPropert
 ## DESCRIPTION
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-list-allowedgroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

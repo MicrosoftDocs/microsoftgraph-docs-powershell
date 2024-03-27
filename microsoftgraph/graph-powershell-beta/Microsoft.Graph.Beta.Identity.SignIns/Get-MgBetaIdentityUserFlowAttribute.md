@@ -37,6 +37,9 @@ Get-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a identityUserFlowAttribute object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

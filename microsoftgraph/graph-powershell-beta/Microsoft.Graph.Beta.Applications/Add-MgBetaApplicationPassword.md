@@ -45,6 +45,9 @@ Add-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Adds a strong password to an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-addpassword-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

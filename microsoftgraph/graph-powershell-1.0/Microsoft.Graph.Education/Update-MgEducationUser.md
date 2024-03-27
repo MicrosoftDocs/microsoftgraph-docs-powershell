@@ -71,6 +71,9 @@ Update-MgEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of an educationUser object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

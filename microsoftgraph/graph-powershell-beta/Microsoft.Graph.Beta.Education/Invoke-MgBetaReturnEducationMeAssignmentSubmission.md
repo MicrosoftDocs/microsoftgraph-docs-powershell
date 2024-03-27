@@ -33,6 +33,9 @@ Make the grade and feedback associated with this submission available to the stu
 This will change the status of the submission from 'submitted' to 'returned' and indicates that feedback is provided or grading is done.
 This action can only be done by the teacher.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-return-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

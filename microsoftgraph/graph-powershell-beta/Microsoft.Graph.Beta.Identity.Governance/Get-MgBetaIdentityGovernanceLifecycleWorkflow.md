@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Read the properties and relationships of a workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ Restore-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

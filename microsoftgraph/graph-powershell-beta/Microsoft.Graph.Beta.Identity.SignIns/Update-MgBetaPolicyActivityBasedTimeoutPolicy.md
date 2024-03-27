@@ -47,6 +47,9 @@ Update-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Update the properties of an activityBasedTimeoutPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activitybasedtimeoutpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

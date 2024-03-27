@@ -45,6 +45,9 @@ Move-MgBetaUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Move a mail folder and its contents to another mail folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-move-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

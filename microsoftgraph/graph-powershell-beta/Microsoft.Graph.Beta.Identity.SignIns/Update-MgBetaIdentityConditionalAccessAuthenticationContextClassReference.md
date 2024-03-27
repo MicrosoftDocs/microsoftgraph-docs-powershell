@@ -49,6 +49,9 @@ Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ## DESCRIPTION
 Update the properties of an authenticationContextClassReference object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcontextclassreference-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

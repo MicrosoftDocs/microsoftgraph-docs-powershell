@@ -47,6 +47,9 @@ Move-MgBetaPlannerPlanToContainer -InputObject <IPlannerIdentity>
 Move a planner plan object from one planner plan container to another.
 Planner plans can only be moved from a user container to a group container.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-movetocontainer-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

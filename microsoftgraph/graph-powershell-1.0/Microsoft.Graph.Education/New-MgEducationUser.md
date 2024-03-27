@@ -41,6 +41,9 @@ New-MgEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHead
 ## DESCRIPTION
 Create a new educationUser object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

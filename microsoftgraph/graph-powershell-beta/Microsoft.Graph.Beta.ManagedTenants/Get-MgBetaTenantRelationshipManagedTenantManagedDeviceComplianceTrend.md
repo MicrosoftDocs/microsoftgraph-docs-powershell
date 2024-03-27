@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputObje
 ## DESCRIPTION
 Read the properties and relationships of a managedDeviceComplianceTrend object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-manageddevicecompliancetrend-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

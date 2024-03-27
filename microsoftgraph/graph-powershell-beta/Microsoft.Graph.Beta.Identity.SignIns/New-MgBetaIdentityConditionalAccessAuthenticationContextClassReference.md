@@ -30,6 +30,9 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ## DESCRIPTION
 Create a new authenticationContextClassReference.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-authenticationcontextclassreferences-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

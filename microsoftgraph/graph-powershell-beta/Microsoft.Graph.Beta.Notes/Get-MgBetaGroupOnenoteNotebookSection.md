@@ -22,6 +22,9 @@ Get-MgBetaGroupOnenoteNotebookSection -GroupId <String> -NotebookId <String> [-E
 ## DESCRIPTION
 Retrieve a list of section objects from the specified notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

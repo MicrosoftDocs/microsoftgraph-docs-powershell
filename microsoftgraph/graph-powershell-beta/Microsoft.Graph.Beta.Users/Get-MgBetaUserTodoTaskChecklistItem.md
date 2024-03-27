@@ -37,6 +37,9 @@ Get-MgBetaUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

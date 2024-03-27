@@ -37,6 +37,9 @@ Get-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -21,6 +21,9 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Retrieve the properties of an entitlementManagementSettings object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagementsettings-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

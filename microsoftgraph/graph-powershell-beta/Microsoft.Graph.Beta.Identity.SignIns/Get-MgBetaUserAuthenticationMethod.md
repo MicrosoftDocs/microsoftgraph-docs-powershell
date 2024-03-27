@@ -37,6 +37,9 @@ Get-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of an authenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

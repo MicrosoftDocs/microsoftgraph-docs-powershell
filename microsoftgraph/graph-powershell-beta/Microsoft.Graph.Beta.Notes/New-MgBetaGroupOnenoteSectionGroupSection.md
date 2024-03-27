@@ -52,6 +52,9 @@ New-MgBetaGroupOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section in the specified section group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-post-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -43,6 +43,9 @@ Remove-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Remove a user as a registered user of the device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-registeredusers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

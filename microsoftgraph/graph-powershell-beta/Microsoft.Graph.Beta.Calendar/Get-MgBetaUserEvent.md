@@ -38,6 +38,9 @@ Get-MgBetaUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>
 Get the properties and relationships of the specified event object.
 An app can get an event in another user's calendar if: Because the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

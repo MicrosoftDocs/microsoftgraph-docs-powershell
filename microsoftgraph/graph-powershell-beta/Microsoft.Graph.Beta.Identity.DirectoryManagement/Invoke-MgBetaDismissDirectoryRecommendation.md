@@ -45,6 +45,9 @@ Invoke-MgBetaDismissDirectoryRecommendation -InputObject <IIdentityDirectoryMana
 ## DESCRIPTION
 Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its status to dismissed .
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-dismiss-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
