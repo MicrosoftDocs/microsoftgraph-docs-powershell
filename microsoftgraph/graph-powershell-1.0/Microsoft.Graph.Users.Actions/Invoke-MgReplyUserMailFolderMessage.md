@@ -64,11 +64,10 @@ Alternatively, create a draft to reply to an existing message and send it later.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-reply-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Reply in JSON format to an existing message
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
-```
 
 $params = @{
 	Message = @{
@@ -92,6 +91,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Invoke-MgReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

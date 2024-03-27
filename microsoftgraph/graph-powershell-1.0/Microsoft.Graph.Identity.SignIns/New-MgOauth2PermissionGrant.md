@@ -39,11 +39,10 @@ A delegated permission grant authorizes a client service principal (representing
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	clientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5"
@@ -53,6 +52,11 @@ $params = @{
 }
 
 New-MgOauth2PermissionGrant -BodyParameter $params
+```
+This example shows how to use the New-MgOauth2PermissionGrant Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

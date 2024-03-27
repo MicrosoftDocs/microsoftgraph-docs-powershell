@@ -50,9 +50,8 @@ Invoke-MgReplyGroupThreadPost -InputObject <IGroupsIdentity>
 Invoke action reply
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgReplyGroupThreadPost Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
 	Post = @{
@@ -108,6 +107,8 @@ $params = @{
 }
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgReplyGroupThreadPost Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

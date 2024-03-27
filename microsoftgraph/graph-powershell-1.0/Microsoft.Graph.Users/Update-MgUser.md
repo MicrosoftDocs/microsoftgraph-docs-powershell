@@ -172,11 +172,13 @@ See Default user permissions in customer tenants for the list of properties they
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update a user's display name
 
-### EXAMPLE 1
-```
+```powershell
 Update-MgUser -UserId '2a1fa0b8-87d6-4f39-be8d-68d0db617b02' -DisplayName 'Kristi Laar'
 ```
+
+This example updates the specified user's display name.
 
 ## PARAMETERS
 

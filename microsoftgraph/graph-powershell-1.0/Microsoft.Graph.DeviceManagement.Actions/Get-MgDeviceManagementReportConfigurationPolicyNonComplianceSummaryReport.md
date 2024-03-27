@@ -36,11 +36,11 @@ Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport -OutFi
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	name = "Name value"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport Cmdlet.
+
 
 ## PARAMETERS
 

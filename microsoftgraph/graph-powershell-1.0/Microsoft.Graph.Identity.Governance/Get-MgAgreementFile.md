@@ -46,13 +46,17 @@ The default file can have multiple versions, each with its own language, that ca
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get the agreement file for a specific language
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgAgreementFile -AgreementId $agreementId
+
+```
+This example will get the agreement file for a specific language
+
 
 ## PARAMETERS
 

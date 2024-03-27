@@ -71,11 +71,11 @@ Update the properties of the specified team.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	memberSettings = @{
@@ -92,6 +92,10 @@ $params = @{
 }
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeam Cmdlet.
+
 
 ## PARAMETERS
 

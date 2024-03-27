@@ -56,11 +56,10 @@ You can create an open extension in a resource instance and store custom data to
 The table in the Permissions section lists the resources that support open extensions.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -92,6 +91,11 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaGroupConversation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

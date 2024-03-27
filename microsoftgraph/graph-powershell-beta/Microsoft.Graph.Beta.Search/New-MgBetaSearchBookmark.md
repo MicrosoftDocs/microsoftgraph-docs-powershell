@@ -40,9 +40,8 @@ Create a new bookmark object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSearchBookmark Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "Contoso Install Site"
@@ -74,6 +73,8 @@ $params = @{
 }
 New-MgBetaSearchBookmark -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

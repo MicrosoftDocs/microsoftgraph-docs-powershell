@@ -48,11 +48,11 @@ Create a new educationUser object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -106,7 +106,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.provisionedPlan"
 		}
 	)
-	refreshTokensValidFromDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
 	showInAddressList = "Boolean"
 	surname = "String"
 	usageLocation = "String"
@@ -118,6 +118,10 @@ $params = @{
 }
 
 New-MgEducationUser -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

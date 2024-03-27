@@ -36,13 +36,17 @@ Clear the preferred availability and activity status for a user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
-```
 
 Clear-MgBetaUserPresenceUserPreferredPresence -UserId $userId
+
+```
+This example shows how to use the Clear-MgBetaUserPresenceUserPreferredPresence Cmdlet.
+
 
 ## PARAMETERS
 

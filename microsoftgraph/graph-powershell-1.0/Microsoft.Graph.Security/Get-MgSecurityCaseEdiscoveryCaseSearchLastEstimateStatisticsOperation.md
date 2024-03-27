@@ -38,13 +38,17 @@ Get the last  ediscoveryEstimateOperation objects and their properties.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverysearch-list-lastestimatestatisticsoperation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
+
 
 ## PARAMETERS
 

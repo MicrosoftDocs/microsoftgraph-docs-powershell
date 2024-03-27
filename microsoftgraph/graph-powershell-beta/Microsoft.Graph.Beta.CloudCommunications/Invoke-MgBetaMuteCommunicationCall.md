@@ -56,17 +56,21 @@ For more details about how to handle mute operations, see muteParticipantOperati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-mute-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

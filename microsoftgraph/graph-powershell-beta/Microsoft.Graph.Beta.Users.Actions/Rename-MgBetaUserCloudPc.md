@@ -51,13 +51,14 @@ Use this API to update the displayName for the Cloud PC entity.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-rename-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Rename-MgBetaUserCloudPc Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Rename-MgBetaUserCloudPc -UserId $userId -CloudPCId $cloudPCId
 ```
+This example shows how to use the Rename-MgBetaUserCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

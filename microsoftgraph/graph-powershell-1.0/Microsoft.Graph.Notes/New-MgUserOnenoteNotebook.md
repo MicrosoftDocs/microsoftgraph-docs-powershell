@@ -58,11 +58,11 @@ Create a new OneNote notebook.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Notes
-```
 
 $params = @{
 	displayName = "My Private notebook"
@@ -70,6 +70,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserOnenoteNotebook -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgUserOnenoteNotebook Cmdlet.
+
 
 ## PARAMETERS
 

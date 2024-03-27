@@ -87,15 +87,15 @@ This method updates any solution that has a record of the referenced alert ID.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -112,14 +112,18 @@ $params = @{
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	assignedTo = "String"
-	closedDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	closedDateTime = [System.DateTime]::Parse("String (timestamp)")
 	comments = @(
 		"String"
 	)
@@ -135,6 +139,10 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

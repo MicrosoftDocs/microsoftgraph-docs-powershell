@@ -36,11 +36,11 @@ Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile 
 Not yet documented
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Actions
-```
 
 $params = @{
 	name = "Name value"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile -BodyParameter $params
+
+```
+This example shows how to use the Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile Cmdlet.
+
 
 ## PARAMETERS
 

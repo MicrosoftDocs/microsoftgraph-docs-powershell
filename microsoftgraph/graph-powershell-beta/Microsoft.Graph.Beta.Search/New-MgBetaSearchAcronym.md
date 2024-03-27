@@ -37,9 +37,8 @@ Create a new acronym object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSearchAcronym Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "DNN"
@@ -50,6 +49,8 @@ $params = @{
 }
 New-MgBetaSearchAcronym -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSearchAcronym Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

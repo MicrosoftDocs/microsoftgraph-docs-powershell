@@ -54,11 +54,11 @@ Get the availability information of staff members of a Microsoft Bookings calend
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Bookings
-```
 
 $params = @{
 	staffIds = @(
@@ -75,6 +75,10 @@ $params = @{
 }
 
 Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the Get-MgBetaBookingBusinessStaffAvailability Cmdlet.
+
 
 ## PARAMETERS
 

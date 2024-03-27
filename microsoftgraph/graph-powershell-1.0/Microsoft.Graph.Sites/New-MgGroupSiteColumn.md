@@ -73,16 +73,6 @@ Create a column for a \[site\]\[site\] with a request that specifies a \[columnD
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
