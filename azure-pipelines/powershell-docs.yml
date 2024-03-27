@@ -53,7 +53,8 @@ extends:
         exclusionFile: $(Build.SourcesDirectory)/azure-pipelines/config/policheck/policheck-exclusions.xml
       sourceRepositoriesToScan:
         exclude:
-        - msgraph-sdk-powershell
+        - microsoftgraph/msgraph-sdk-powershell
+        - microsoftgraph/microsoft-graph-docs
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
