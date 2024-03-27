@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile
@@ -395,122 +395,125 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphSecurityIntelligenceProfile\>: intelligenceProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfile>`: intelligenceProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Aliases \<String\[\]\>\]: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
-  \[CountriesOrRegionsOfOrigin \<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin\[\]\>\]: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-    \[Code \<String\>\]: A codified representation for this country/region of origin.
-    \[Label \<String\>\]: A display label for this ountry/region of origin.
-  \[Description \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Content \<String\>\]: The content of this formattedContent.
-    \[Format \<String\>\]: contentFormat
-  \[FirstActiveDateTime \<DateTime?\>\]: The date and time when this intelligenceProfile was first active.
+  - `[Aliases <String- `[]`>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
+  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>]`: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+    - `[Code <String>]`: A codified representation for this country/region of origin.
+    - `[Label <String>]`: A display label for this ountry/region of origin.
+  - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of this formattedContent.
+    - `[Format <String>]`: contentFormat
+  - `[FirstActiveDateTime <DateTime?>]`: The date and time when this intelligenceProfile was first active.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Indicators \<IMicrosoftGraphSecurityIntelligenceProfileIndicator\[\]\>\]: Includes an assemblage of high-fidelity network indicators of compromise.
-    \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>]`: Includes an assemblage of high-fidelity network indicators of compromise.
+    - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Source \<String\>\]: indicatorSource
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Source <String>]`: indicatorSource
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[FirstSeenDateTime \<DateTime?\>\]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-    \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  \[Kind \<String\>\]: intelligenceProfileKind
-  \[Summary \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
-  \[Targets \<String\[\]\>\]: Known targets related to this intelligenceProfile.
-  \[Title \<String\>\]: The title of this intelligenceProfile.
-  \[Tradecraft \<IMicrosoftGraphSecurityFormattedContent\>\]: formattedContent
+    - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+    - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[Kind <String>]`: intelligenceProfileKind
+  - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+  - `[Targets <String- `[]`>]`: Known targets related to this intelligenceProfile.
+  - `[Title <String>]`: The title of this intelligenceProfile.
+  - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
 
-COUNTRIESORREGIONSOFORIGIN \<IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin\[\]\>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
-  \[Code \<String\>\]: A codified representation for this country/region of origin.
-  \[Label \<String\>\]: A display label for this ountry/region of origin.
+COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin- `[]`>: The country/region of origin for the given actor or threat associated with this intelligenceProfile.
+  - `[Code <String>]`: A codified representation for this country/region of origin.
+  - `[Label <String>]`: A display label for this ountry/region of origin.
 
-DESCRIPTION \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+DESCRIPTION `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
-INDICATORS \<IMicrosoftGraphSecurityIntelligenceProfileIndicator\[\]\>: Includes an assemblage of high-fidelity network indicators of compromise.
-  \[Artifact \<IMicrosoftGraphSecurityArtifact\>\]: artifact
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+INDICATORS <IMicrosoftGraphSecurityIntelligenceProfileIndicator- `[]`>: Includes an assemblage of high-fidelity network indicators of compromise.
+  - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Source \<String\>\]: indicatorSource
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Source <String>]`: indicatorSource
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[FirstSeenDateTime \<DateTime?\>\]: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-  \[LastSeenDateTime \<DateTime?\>\]: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
+  - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
-  \[AlertId \<String\>\]: The unique identifier of alert
-  \[ArticleId \<String\>\]: The unique identifier of article
-  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
-  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
-  \[DataSourceId \<String\>\]: The unique identifier of dataSource
-  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
-  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
-  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
-  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
-  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
-  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
-  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
-  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
-  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
-  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
-  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
-  \[HostId \<String\>\]: The unique identifier of host
-  \[HostPairId \<String\>\]: The unique identifier of hostPair
-  \[HostPortId \<String\>\]: The unique identifier of hostPort
-  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
-  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
-  \[IncidentId \<String\>\]: The unique identifier of incident
-  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
-  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
-  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
-  \[LandingPageId \<String\>\]: The unique identifier of landingPage
-  \[LoginPageId \<String\>\]: The unique identifier of loginPage
-  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
-  \[PayloadId \<String\>\]: The unique identifier of payload
-  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
-  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
-  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
-  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
-  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
-  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
-  \[SimulationId \<String\>\]: The unique identifier of simulation
-  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
-  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
-  \[SubdomainId \<String\>\]: The unique identifier of subdomain
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[TrainingId \<String\>\]: The unique identifier of training
-  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
-  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
-  \[UserId \<String\>\]: The unique identifier of user
-  \[UserSourceId \<String\>\]: The unique identifier of userSource
-  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
-  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
-  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
-  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostPairId <String>]`: The unique identifier of hostPair
+  - `[HostPortId <String>]`: The unique identifier of hostPort
+  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+  - `[LandingPageId <String>]`: The unique identifier of landingPage
+  - `[LoginPageId <String>]`: The unique identifier of loginPage
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubdomainId <String>]`: The unique identifier of subdomain
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TrainingId <String>]`: The unique identifier of training
+  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
+  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SUMMARY \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
-TRADECRAFT \<IMicrosoftGraphSecurityFormattedContent\>: formattedContent
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Content \<String\>\]: The content of this formattedContent.
-  \[Format \<String\>\]: contentFormat
+TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Content <String>]`: The content of this formattedContent.
+  - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceintelprofile)
+
+
+
 

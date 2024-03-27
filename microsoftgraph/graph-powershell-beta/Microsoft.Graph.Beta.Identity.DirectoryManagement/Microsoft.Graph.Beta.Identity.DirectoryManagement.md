@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 Module Guid: ddc572b3-dfd0-4f8b-9f70-bd50b8298164
 Download Help Link: {{ Update Download Link }}
@@ -1639,4 +1639,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserScopedRoleMemberOf](Update-MgBetaUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
+
 

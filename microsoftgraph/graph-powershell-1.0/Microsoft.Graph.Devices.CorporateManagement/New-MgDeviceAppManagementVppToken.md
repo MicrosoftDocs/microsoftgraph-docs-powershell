@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken
@@ -352,26 +352,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphVppToken\>: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+BODYPARAMETER `<IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
 This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
 You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 You can upload multiple Apple VPP Business or Education tokens.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppleId \<String\>\]: The apple Id associated with the given Apple Volume Purchase Program Token.
-  \[AutomaticallyUpdateApps \<Boolean?\>\]: Whether or not apps for the VPP token will be automatically updated.
-  \[CountryOrRegion \<String\>\]: Whether or not apps for the VPP token will be automatically updated.
-  \[ExpirationDateTime \<DateTime?\>\]: The expiration date time of the Apple Volume Purchase Program Token.
-  \[LastModifiedDateTime \<DateTime?\>\]: Last modification date time associated with the Apple Volume Purchase Program Token.
-  \[LastSyncDateTime \<DateTime?\>\]: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
-  \[LastSyncStatus \<VppTokenSyncStatus?\>\]: Possible sync statuses associated with an Apple Volume Purchase Program token.
-  \[OrganizationName \<String\>\]: The organization associated with the Apple Volume Purchase Program Token
-  \[State \<VppTokenState?\>\]: Possible states associated with an Apple Volume Purchase Program token.
-  \[Token \<String\>\]: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
-  \[VppTokenAccountType \<VppTokenAccountType?\>\]: Possible types of an Apple Volume Purchase Program token.
+  - `[AppleId <String>]`: The apple Id associated with the given Apple Volume Purchase Program Token.
+  - `[AutomaticallyUpdateApps <Boolean?>]`: Whether or not apps for the VPP token will be automatically updated.
+  - `[CountryOrRegion <String>]`: Whether or not apps for the VPP token will be automatically updated.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the Apple Volume Purchase Program Token.
+  - `[LastModifiedDateTime <DateTime?>]`: Last modification date time associated with the Apple Volume Purchase Program Token.
+  - `[LastSyncDateTime <DateTime?>]`: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
+  - `[LastSyncStatus <VppTokenSyncStatus?>]`: Possible sync statuses associated with an Apple Volume Purchase Program token.
+  - `[OrganizationName <String>]`: The organization associated with the Apple Volume Purchase Program Token
+  - `[State <VppTokenState?>]`: Possible states associated with an Apple Volume Purchase Program token.
+  - `[Token <String>]`: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
+  - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
+
+
+
 
