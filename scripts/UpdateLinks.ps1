@@ -4,8 +4,7 @@ Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
-    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs")
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
