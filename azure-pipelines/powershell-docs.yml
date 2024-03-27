@@ -51,6 +51,9 @@ extends:
         suppressionsFile: $(Build.SourcesDirectory)/azure-pipelines/config/credscan/credscan-suppressions.json
       policheck:
         exclusionFile: $(Build.SourcesDirectory)/azure-pipelines/config/policheck/policheck-exclusions.xml
+      sourcerepositoriestoscan:
+        exclude:
+        - microsoftgraph/msgraph-sdk-powershell
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
