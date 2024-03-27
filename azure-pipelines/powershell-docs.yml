@@ -1,16 +1,18 @@
-# Copyright (c) Microsoft Corporation.  All Rights Reserved.  Licensed under the MIT License.  See License in the project root for license information.
-
-trigger: none # disable triggers based on commits.
-pr: none # disable as a PR gate.
+# This Yaml Document has been converted by ESAI Yaml Pipeline Conversion Tool.
+# Please make sure to check all the converted content, it is your team's responsibility to make sure that the pipeline is still valid and functions as expected.
+# This pipeline will be extended to the OneESPT template
+# If you are not using the E+D shared hosted pool with windows-2022, replace the pool section with your hosted pool, os, and image name. If you are using a Linux image, you must specify an additional windows image for SDL: https://eng.ms/docs/cloud-ai-platform/devdiv/one-engineering-system-1es/1es-docs/1es-pipeline-templates/features/sdlanalysis/overview#how-to-specify-a-windows-pool-for-the-sdl-source-analysis-stage
+# The Task 'PublishBuildArtifacts@1' has been converted to an output named 'Publish Examples to be reviewed as artifact' in the templateContext section.
+trigger: none
+pr: none
 name: 'PowerShellDocsUpdate Check'
 schedules:
-  - cron: "0 3 * * FRI"  # every Friday at 3AM UTC (off hours for Redmond, Nairobi and Montréal)
-    displayName: 'PowerShellDocsUpdate Check'
-    branches:
-      include:
-      - main
-    always: true
-
+- cron: "0 3 * * FRI"
+  displayName: 'PowerShellDocsUpdate Check'
+  branches:
+    include:
+    - main
+  always: true
 parameters:
 - name: PipelineTimeout
   displayName: PipelineTimeout
@@ -19,110 +21,111 @@ parameters:
 - name: CreatePullRequest
   type: boolean
   default: true
-
 resources:
- repositories:     
-   - repository: msgraph-sdk-powershell
-     type: github
-     endpoint: MicrosoftDocs
-     name: microsoftgraph/msgraph-sdk-powershell
-     ref: dev
-
-   - repository: microsoft-graph-docs
-     type: github
-     endpoint: timayabi2020
-     name: microsoftgraph/microsoft-graph-docs
-     ref: main
-
+  repositories:
+  - repository: msgraph-sdk-powershell
+    type: github
+    endpoint: MicrosoftDocs
+    name: microsoftgraph/msgraph-sdk-powershell
+    ref: dev
+  - repository: microsoft-graph-docs
+    type: github
+    endpoint: timayabi2020
+    name: microsoftgraph/microsoft-graph-docs
+    ref: main
+  - repository: 1ESPipelineTemplates
+    type: git
+    name: 1ESPipelineTemplates/1ESPipelineTemplates
+    ref: refs/tags/release
 variables:
   buildConfiguration: 'Release'
-
-jobs:
-- job: PowerShellDocsUpdate
-  pool: 
-    name: 1es-windows-ps-compute
-  timeoutInMinutes: ${{ parameters.PipelineTimeout }}
-  steps:
-  - template: update-template.yml
-    parameters:
-      projectFileName: $(projectFileName)
-      testType: 'Execution'
-
-  - task: PowerShell@2
-    displayName: 'Generate markdown files from PowerShell help files'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
-
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
-
-  - task: PowerShell@2
-    displayName: 'Update metadata header'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Examples to be reviewed as artifact'
-    inputs:
-      PathtoPublish: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
-      ArtifactName: 'MissingExternalDocs'
-      publishLocation: 'Container'
-
-  - task: PowerShell@2
-    displayName: 'Update Links'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
-  
-  - task: PowerShell@2
-    displayName: 'Repair Examples and Descriptions and Title'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
-
-  - task: PowerShell@2
-    displayName: 'Remove boiler plate code'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
-      
-  - task: PowerShell@2
-    displayName: Pushing to github
-    env:
-      GITHUB_TOKEN: $(GITHUB_TOKEN)
-    inputs:
-      targetType: inline
-      pwsh: true
-      script: |
-        git config --global user.email "timwamalwa@gmail.com"
-        git config --global user.name "Timothy Wamalwa"
-        cd microsoftgraph-docs-powershell
-        $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_v2_docs_update_$date"
-        git add .
-        git commit -m "Updating help files $date"
-        git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
-        git status
-      
-  - template: common-templates/create-pr.yml
-    parameters:
-      BaseBranch: main
-      Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
-      Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
+extends:
+  template: v1/1ES.Official.PipelineTemplate.yml@1ESPipelineTemplates
+  parameters:
+    pool:
+      name: Azure-Pipelines-1ESPT-ExDShared
+      image: windows-2022
+      os: windows
+    customBuildTags:
+    - ES365AIMigrationTooling
+    stages:
+    - stage: stage
+      jobs:
+      - job: PowerShellDocsUpdate
+        timeoutInMinutes: ${{ parameters.PipelineTimeout }}
+        templateContext:
+          outputs:
+          - output: pipelineArtifact
+            displayName: 'Publish Examples to be reviewed as artifact'
+            targetPath: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
+            artifactName: 'MissingExternalDocs'
+            publishLocation: 'Container'
+        steps:
+        - template: azure-pipelines/update-template.yml@self
+          parameters:
+            projectFileName: $(projectFileName)
+            testType: 'Execution'
+        - task: PowerShell@2
+          displayName: 'Generate markdown files from PowerShell help files'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
+        - task: PowerShell@2
+          displayName: 'Escape disallowed html tags'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
+        - task: PowerShell@2
+          displayName: 'Update metadata header'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+        - task: PowerShell@2
+          displayName: 'Update Links'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+        - task: PowerShell@2
+          displayName: 'Repair Examples and Descriptions and Title'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+        - task: PowerShell@2
+          displayName: 'Remove boiler plate code'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+        - task: PowerShell@2
+          displayName: Pushing to github
+          env:
+            GITHUB_TOKEN: $(GITHUB_TOKEN)
+          inputs:
+            targetType: inline
+            pwsh: true
+            script: |
+              git config --global user.email "timwamalwa@gmail.com"
+              git config --global user.name "Timothy Wamalwa"
+              cd microsoftgraph-docs-powershell
+              $date = Get-Date -Format "dd-MM-yyyy"
+              $proposedBranch = "weekly_v2_docs_update_$date"
+              git add .
+              git commit -m "Updating help files $date"
+              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
+              git status
+        - template: azure-pipelines/common-templates/create-pr.yml@self
+          parameters:
+            BaseBranch: main
+            Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
+            Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
