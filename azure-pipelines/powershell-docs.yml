@@ -46,6 +46,11 @@ extends:
       name: Azure-Pipelines-1ESPT-ExDShared
       image: windows-2022
       os: windows
+    sdl:
+      credscan:
+        suppressionsFile: $(Build.SourcesDirectory)/azure-pipelines/config/credscan/credscan-suppressions.json
+      policheck:
+        exclusionFile: $(Build.SourcesDirectory)/azure-pipelines/config/policheck/policheck-exclusions.xml
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
