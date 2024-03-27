@@ -28,11 +28,6 @@ resources:
     endpoint: MicrosoftDocs
     name: microsoftgraph/msgraph-sdk-powershell
     ref: dev
-  - repository: microsoft-graph-docs
-    type: github
-    endpoint: timayabi2020
-    name: microsoftgraph/microsoft-graph-docs
-    ref: main
   - repository: 1ESPipelineTemplates
     type: git
     name: 1ESPipelineTemplates/1ESPipelineTemplates

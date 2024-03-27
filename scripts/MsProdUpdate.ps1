@@ -6,7 +6,6 @@ Param(
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
     [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
-    [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs"),
     [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
 )
 function Get-GraphMapping {
