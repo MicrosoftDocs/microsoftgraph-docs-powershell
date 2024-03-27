@@ -31,18 +31,6 @@ Update-MgBetaReportPartnerBillingUsageUnbilled -BodyParameter <Hashtable> [-Resp
 ## DESCRIPTION
 Update the navigation property unbilled in reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -183,6 +171,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Update-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusageunbilled)
+
 
 
 

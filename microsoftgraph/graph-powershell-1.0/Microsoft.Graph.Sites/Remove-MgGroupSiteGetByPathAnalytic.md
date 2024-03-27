@@ -46,18 +46,6 @@ Remove-MgGroupSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property analytics for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -303,6 +291,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathanalytic)
+
 
 
 

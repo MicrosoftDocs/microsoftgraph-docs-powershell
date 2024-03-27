@@ -56,18 +56,6 @@ Update-MgBetaSecurityAttackSimulationTraining -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property trainings in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -648,6 +636,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [Update-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtraining)
+
 
 
 

@@ -48,18 +48,6 @@ New-MgBetaUserSettingWindows -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to windows for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -354,6 +342,7 @@ Refers to the user's Windows device that modified the object at the specified da
 [New-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindows)
+
 
 
 

@@ -36,18 +36,6 @@ New-MgBetaSecurityThreatIntelligenceHostPort -BodyParameter <IMicrosoftGraphSecu
 ## DESCRIPTION
 Create new navigation property to hostPorts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1492,6 +1480,7 @@ For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 [New-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostport)
+
 
 
 

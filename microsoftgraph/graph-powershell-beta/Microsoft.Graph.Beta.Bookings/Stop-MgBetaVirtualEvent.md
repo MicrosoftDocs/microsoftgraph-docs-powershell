@@ -28,18 +28,6 @@ Stop-MgBetaVirtualEvent -InputObject <IBookingsIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Invoke action cancel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -207,6 +195,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetavirtualevent)
+
 
 
 

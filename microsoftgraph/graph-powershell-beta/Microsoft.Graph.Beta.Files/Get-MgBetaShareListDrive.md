@@ -34,22 +34,6 @@ Get-MgBetaShareListDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,6 +188,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgShareListDrive](/powershell/module/Microsoft.Graph.Files/Get-MgShareListDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistdrive)
+
 
 
 

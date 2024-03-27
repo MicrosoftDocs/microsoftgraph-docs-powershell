@@ -46,22 +46,6 @@ Set-MgBetaUserPhotoContent -InputObject <IUsersIdentity> [-Data <Stream>] [-Resp
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -297,6 +281,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Set-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
 ## DESCRIPTION
 Invoke function getOmaSettingPlainTextValue
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -194,6 +178,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 [Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeviceconfigurationomasettingplaintextvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeviceconfigurationomasettingplaintextvalue)
+
 
 
 

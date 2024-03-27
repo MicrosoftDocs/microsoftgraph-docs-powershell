@@ -46,18 +46,6 @@ Get-MgSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Analytics about the view activities that took place in this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -257,6 +245,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathanalytic)
+
 
 
 

@@ -32,18 +32,6 @@ New-MgBetaReportPartnerBillingOperation -BodyParameter <IMicrosoftGraphPartnersB
 ## DESCRIPTION
 Create new navigation property to operations for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -250,6 +238,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [New-MgReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingoperation)
+
 
 
 

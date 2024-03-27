@@ -32,18 +32,6 @@ Get-MgBetaPrintPrinterConnectorCount -InputObject <IDevicesCloudPrintIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -187,6 +175,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgPrintPrinterConnectorCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterConnectorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnectorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterconnectorcount)
+
 
 
 

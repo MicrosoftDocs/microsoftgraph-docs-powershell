@@ -56,22 +56,6 @@ Update-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property childFolders in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -944,6 +928,7 @@ Read-only.
 [Update-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolderchildfolder)
+
 
 
 

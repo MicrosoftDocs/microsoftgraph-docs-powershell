@@ -54,22 +54,6 @@ New-MgBetaDriveItemSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to subscriptions for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -631,6 +615,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [New-MgDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemsubscription)
+
 
 
 

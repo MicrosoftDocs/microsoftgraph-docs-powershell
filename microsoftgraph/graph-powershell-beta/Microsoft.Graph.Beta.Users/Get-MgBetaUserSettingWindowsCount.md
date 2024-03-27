@@ -32,18 +32,6 @@ Get-MgBetaUserSettingWindowsCount -InputObject <IUsersIdentity> [-Filter <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -199,6 +187,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserSettingWindowsCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindowsCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowscount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindowscount)
+
 
 
 

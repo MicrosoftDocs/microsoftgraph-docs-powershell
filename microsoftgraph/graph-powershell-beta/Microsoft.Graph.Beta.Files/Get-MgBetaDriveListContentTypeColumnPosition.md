@@ -40,22 +40,6 @@ Get-MgBetaDriveListContentTypeColumnPosition -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Column order information in a content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +345,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumnPosition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnposition)
+
 
 
 

@@ -31,18 +31,6 @@ Get-MgBetaUserEventCount -InputObject <ICalendarIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -171,6 +159,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgUserEventCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventcount)
+
 
 
 

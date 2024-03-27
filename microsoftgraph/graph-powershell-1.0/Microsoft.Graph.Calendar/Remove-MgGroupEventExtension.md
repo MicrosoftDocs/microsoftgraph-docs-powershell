@@ -32,22 +32,6 @@ Remove-MgGroupEventExtension -InputObject <ICalendarIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EventId
@@ -250,6 +234,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Remove-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension)
+
 
 
 

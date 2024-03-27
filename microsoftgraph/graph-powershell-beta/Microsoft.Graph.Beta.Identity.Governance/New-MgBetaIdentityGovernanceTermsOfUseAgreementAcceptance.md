@@ -71,18 +71,6 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to agreementAcceptances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,6 +589,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [New-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementacceptance)
+
 
 
 

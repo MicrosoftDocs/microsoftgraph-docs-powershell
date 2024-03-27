@@ -63,22 +63,6 @@ Create a new \[listItem\]\[\] in a \[list\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23925,6 +23909,7 @@ Read-only.
 [New-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem)
+
 
 
 

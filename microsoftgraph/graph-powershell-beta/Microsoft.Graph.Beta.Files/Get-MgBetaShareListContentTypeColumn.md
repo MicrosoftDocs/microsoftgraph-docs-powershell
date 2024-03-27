@@ -44,22 +44,6 @@ Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +349,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistcontenttypecolumn)
+
 
 
 

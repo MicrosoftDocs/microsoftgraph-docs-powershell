@@ -35,18 +35,6 @@ New-MgBetaSecurityAttackSimulationLoginPage -BodyParameter <IMicrosoftGraphLogin
 ## DESCRIPTION
 Create new navigation property to loginPages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,6 +380,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [New-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLoginPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage)
+
 
 
 

@@ -54,22 +54,6 @@ New-MgBetaGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to pages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -801,6 +785,7 @@ Read-only.
 [New-MgGroupOnenotePage](/powershell/module/Microsoft.Graph.Notes/New-MgGroupOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetagrouponenotepage)
+
 
 
 

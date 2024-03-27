@@ -32,18 +32,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageReplyCount -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -245,6 +233,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Get-MgTeamworkDeletedTeamChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReplyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereplycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereplycount)
+
 
 
 

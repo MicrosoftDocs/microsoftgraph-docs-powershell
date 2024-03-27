@@ -80,18 +80,6 @@ Update-MgGroupSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParamete
 ## DESCRIPTION
 Update the properties of a store object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -575,6 +563,7 @@ Read-only.
 [Update-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitegetbypathtermstore)
+
 
 
 

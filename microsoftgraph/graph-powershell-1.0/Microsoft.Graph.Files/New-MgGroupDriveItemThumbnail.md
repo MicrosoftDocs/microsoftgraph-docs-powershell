@@ -49,22 +49,6 @@ New-MgGroupDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to thumbnails for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,6 +398,7 @@ This is only available when a folder thumbnail is requested.
 [New-MgBetaGroupDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriveitemthumbnail)
+
 
 
 

@@ -30,22 +30,6 @@ Confirm-MgBetaGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-Resp
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -223,6 +207,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp)
+
 
 
 

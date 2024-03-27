@@ -50,22 +50,6 @@ Get-MgBetaDriveRootDelta -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +355,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveRootDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootdelta)
+
 
 
 
