@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Bookings
 Module Guid: 6590187a-86e9-40ce-9e6c-7ed5e88a7979
 Download Help Link: {{ Update Download Link }}
@@ -625,5 +625,4 @@ Locale: en-US
 
 ### [Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl](Update-MgBetaVirtualEventWebinarSessionByJoinWebUrl.md)
 {{ Fill in the Description }}
-
 

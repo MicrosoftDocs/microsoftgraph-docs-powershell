@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property participants in communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallParticipant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -53,6 +50,22 @@ Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 
 ## DESCRIPTION
 Update the navigation property participants in communications
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -412,162 +425,157 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphParticipant>`: participant
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphParticipant\>: participant
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+  \[Info \<IMicrosoftGraphParticipantInfo\>\]: participantInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CountryCode \<String\>\]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-    - `[EndpointType <String>]`: endpointType
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+    \[EndpointType \<String\>\]: endpointType
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LanguageId <String>]`: The language culture string.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[LanguageId \<String\>\]: The language culture string.
 Read-only.
-    - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ParticipantId <String>]`: The participant ID of the participant.
+    \[NonAnonymizedIdentity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ParticipantId \<String\>\]: The participant ID of the participant.
 Read-only.
-    - `[PlatformId <String>]`: The client platform ID of the participant.
+    \[PlatformId \<String\>\]: The client platform ID of the participant.
 Read-only.
-    - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region.
+    \[Region \<String\>\]: The home region of the participant, and can be a country, a continent, or a larger geographic region.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
-  - `[IsIdentityAnonymized <Boolean?>]`: 
-  - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
-  - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-  - `[MediaStreams <IMicrosoftGraphMediaStream- `[]`>]`: The list of media streams.
-    - `[Direction <String>]`: mediaDirection
-    - `[Label <String>]`: The media stream label.
-    - `[MediaType <String>]`: modality
-    - `[ServerMuted <Boolean?>]`: Indicates whether the server has muted the media.
-    - `[SourceId <String>]`: The source ID.
-  - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-  - `[PreferredDisplayName <String>]`: The participant's preferred display name that overrides the original display name.
-  - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
-    - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[RecordingStatus <String>]`: recordingStatus
-  - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Reason <String>]`: The removal reason for the participant resource.
-  - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
-    - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-  - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
+  \[IsIdentityAnonymized \<Boolean?\>\]: 
+  \[IsInLobby \<Boolean?\>\]: true if the participant is in lobby.
+  \[IsMuted \<Boolean?\>\]: true if the participant is muted (client or server muted).
+  \[MediaStreams \<IMicrosoftGraphMediaStream\[\]\>\]: The list of media streams.
+    \[Direction \<String\>\]: mediaDirection
+    \[Label \<String\>\]: The media stream label.
+    \[MediaType \<String\>\]: modality
+    \[ServerMuted \<Boolean?\>\]: Indicates whether the server has muted the media.
+    \[SourceId \<String\>\]: The source ID.
+  \[Metadata \<String\>\]: A blob of data provided by the participant in the roster.
+  \[PreferredDisplayName \<String\>\]: The participant's preferred display name that overrides the original display name.
+  \[RecordingInfo \<IMicrosoftGraphRecordingInfo\>\]: recordingInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[InitiatedBy \<IMicrosoftGraphParticipantInfo\>\]: participantInfo
+    \[Initiator \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[RecordingStatus \<String\>\]: recordingStatus
+  \[RemovedState \<IMicrosoftGraphRemovedState\>\]: removedState
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Reason \<String\>\]: The removal reason for the participant resource.
+  \[RestrictedExperience \<IMicrosoftGraphOnlineMeetingRestricted\>\]: onlineMeetingRestricted
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
+    \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
+  \[RosterSequenceNumber \<Int64?\>\]: Indicates the roster sequence number the participant was last updated in.
 
-INFO `<IMicrosoftGraphParticipantInfo>`: participantInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+INFO \<IMicrosoftGraphParticipantInfo\>: participantInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CountryCode \<String\>\]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-  - `[EndpointType <String>]`: endpointType
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[EndpointType \<String\>\]: endpointType
+  \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LanguageId <String>]`: The language culture string.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[LanguageId \<String\>\]: The language culture string.
 Read-only.
-  - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[ParticipantId <String>]`: The participant ID of the participant.
+  \[NonAnonymizedIdentity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[ParticipantId \<String\>\]: The participant ID of the participant.
 Read-only.
-  - `[PlatformId <String>]`: The client platform ID of the participant.
+  \[PlatformId \<String\>\]: The client platform ID of the participant.
 Read-only.
-  - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region.
+  \[Region \<String\>\]: The home region of the participant, and can be a country, a continent, or a larger geographic region.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
-MEDIASTREAMS <IMicrosoftGraphMediaStream- `[]`>: The list of media streams.
-  - `[Direction <String>]`: mediaDirection
-  - `[Label <String>]`: The media stream label.
-  - `[MediaType <String>]`: modality
-  - `[ServerMuted <Boolean?>]`: Indicates whether the server has muted the media.
-  - `[SourceId <String>]`: The source ID.
+MEDIASTREAMS \<IMicrosoftGraphMediaStream\[\]\>: The list of media streams.
+  \[Direction \<String\>\]: mediaDirection
+  \[Label \<String\>\]: The media stream label.
+  \[MediaType \<String\>\]: modality
+  \[ServerMuted \<Boolean?\>\]: Indicates whether the server has muted the media.
+  \[SourceId \<String\>\]: The source ID.
 
-RECORDINGINFO `<IMicrosoftGraphRecordingInfo>`: recordingInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
+RECORDINGINFO \<IMicrosoftGraphRecordingInfo\>: recordingInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[InitiatedBy \<IMicrosoftGraphParticipantInfo\>\]: participantInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CountryCode \<String\>\]: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call.
 Read-only.
-    - `[EndpointType <String>]`: endpointType
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
+    \[EndpointType \<String\>\]: endpointType
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        \[Id \<String\>\]: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LanguageId <String>]`: The language culture string.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[LanguageId \<String\>\]: The language culture string.
 Read-only.
-    - `[NonAnonymizedIdentity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ParticipantId <String>]`: The participant ID of the participant.
+    \[NonAnonymizedIdentity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[ParticipantId \<String\>\]: The participant ID of the participant.
 Read-only.
-    - `[PlatformId <String>]`: The client platform ID of the participant.
+    \[PlatformId \<String\>\]: The client platform ID of the participant.
 Read-only.
-    - `[Region <String>]`: The home region of the participant, and can be a country, a continent, or a larger geographic region.
+    \[Region \<String\>\]: The home region of the participant, and can be a country, a continent, or a larger geographic region.
 The region doesn't change based on the participant's current physical location, unlike countryCode.
 Read-only.
-  - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[RecordingStatus <String>]`: recordingStatus
+  \[Initiator \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[RecordingStatus \<String\>\]: recordingStatus
 
-REMOVEDSTATE `<IMicrosoftGraphRemovedState>`: removedState
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Reason <String>]`: The removal reason for the participant resource.
+REMOVEDSTATE \<IMicrosoftGraphRemovedState\>: removedState
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Reason \<String\>\]: The removal reason for the participant resource.
 
-RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
-  - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
+RESTRICTEDEXPERIENCE \<IMicrosoftGraphOnlineMeetingRestricted\>: onlineMeetingRestricted
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentSharingDisabled \<String\>\]: onlineMeetingContentSharingDisabledReason
+  \[VideoDisabled \<String\>\]: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
-[Update-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallParticipant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant)
-
-
-
-
 

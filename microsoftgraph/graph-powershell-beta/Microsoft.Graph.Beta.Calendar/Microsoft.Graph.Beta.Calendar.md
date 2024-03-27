@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Calendar
 Module Guid: eda98b12-4552-4447-ba9b-8f51cdc715df
 Download Help Link: {{ Update Download Link }}
@@ -535,5 +535,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserEventInstanceExtension](Update-MgBetaUserEventInstanceExtension.md)
 {{ Fill in the Description }}
-
 

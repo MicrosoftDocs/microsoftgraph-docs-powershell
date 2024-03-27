@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new bookingAppointment for the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -122,12 +119,10 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-appointments-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
@@ -275,8 +270,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -1044,211 +1037,207 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBookingAppointment\>: Represents a booked appointment of a service by a customer in a business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
-  - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by the user.
-  - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the appointment was created.
-  - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who is booking the appointment.
-  - `[CustomerId <String>]`: The ID of the bookingCustomer for this appointment.
+  \[AdditionalInformation \<String\>\]: Additional information that is sent to the customer when an appointment is confirmed.
+  \[AnonymousJoinWebUrl \<String\>\]: The URL of the meeting to join anonymously.
+  \[AppointmentLabel \<String\>\]: Custom label that can be stamped on this appointment by the user.
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the appointment was created.
+  \[CustomerEmailAddress \<String\>\]: The SMTP address of the bookingCustomer who is booking the appointment.
+  \[CustomerId \<String\>\]: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
 Once set, you should consider the customerId immutable.
-  - `[CustomerLocation <IMicrosoftGraphLocation>]`: location
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region.
+  \[CustomerLocation \<IMicrosoftGraphLocation\>\]: location
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[City \<String\>\]: The city.
+      \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-      - `[PostOfficeBox <String>]`: The post office box number.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-      - `[Type <String>]`: physicalAddressType
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+      \[PostOfficeBox \<String\>\]: The post office box number.
+      \[PostalCode \<String\>\]: The postal code.
+      \[State \<String\>\]: The state.
+      \[Street \<String\>\]: The street.
+      \[Type \<String\>\]: physicalAddressType
+    \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[CustomerName <String>]`: The customer's name.
-  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+      \[Altitude \<Double?\>\]: The altitude of the location.
+      \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+      \[Latitude \<Double?\>\]: The latitude of the location.
+      \[Longitude \<Double?\>\]: The longitude of the location.
+    \[DisplayName \<String\>\]: The name associated with the location.
+    \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+    \[LocationType \<String\>\]: locationType
+    \[LocationUri \<String\>\]: Optional URI representing the location.
+    \[UniqueId \<String\>\]: For internal use only.
+    \[UniqueIdType \<String\>\]: locationUniqueIdType
+  \[CustomerName \<String\>\]: The customer's name.
+  \[CustomerNotes \<String\>\]: Notes from the customer associated with this appointment.
 You can get the value only when reading this bookingAppointment by its ID. 
 You can set this property only when initially creating an appointment with a new customer.
 After that point, the value is computed from the customer represented by customerId.
-  - `[CustomerPhone <String>]`: The customer's phone number.
-  - `[CustomerTimeZone <String>]`: The time zone of the customer.
+  \[CustomerPhone \<String\>\]: The customer's phone number.
+  \[CustomerTimeZone \<String\>\]: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
-  - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of the customer properties for an appointment.
+  \[Customers \<IMicrosoftGraphBookingCustomerInformationBase\[\]\>\]: A collection of the customer properties for an appointment.
 An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment.
 Optional.
-  - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+  \[End \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-  - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
-  - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[InvoiceId <String>]`: The ID of the invoice.
-  - `[InvoiceStatus <String>]`: bookingInvoiceStatus
-  - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
+  \[InvoiceAmount \<Double?\>\]: The billed amount on the invoice.
+  \[InvoiceDate \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[InvoiceId \<String\>\]: The ID of the invoice.
+  \[InvoiceStatus \<String\>\]: bookingInvoiceStatus
+  \[InvoiceUrl \<String\>\]: The URL of the invoice in Microsoft Bookings.
+  \[IsCustomerAllowedToManageBooking \<Boolean?\>\]: 
+  \[IsLocationOnline \<Boolean?\>\]: True indicates that the appointment will be held online.
 Default value is false.
-  - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time and timezone when the booking business was last updated.
-  - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
+  \[JoinWebUrl \<String\>\]: The URL of the online meeting for the appointment.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the booking business was last updated.
+  \[MaximumAttendeesCount \<Int32?\>\]: The maximum number of customers allowed in an appointment.
 If maximumAttendeesCount of the service is greater than 1, pass valid customer IDs while creating or updating an appointment.
 To create a customer, use the Create bookingCustomer operation.
-  - `[OnlineMeetingUrl <String>]`: 
-  - `[OptOutOfCustomerEmail <Boolean?>]`: True indicates that the bookingCustomer for this appointment does not wish to receive a confirmation for this appointment.
-  - `[PostBuffer <TimeSpan?>]`: The amount of time to reserve after the appointment ends, for cleaning up, as an example.
+  \[OnlineMeetingUrl \<String\>\]: 
+  \[OptOutOfCustomerEmail \<Boolean?\>\]: True indicates that the bookingCustomer for this appointment does not wish to receive a confirmation for this appointment.
+  \[PostBuffer \<TimeSpan?\>\]: The amount of time to reserve after the appointment ends, for cleaning up, as an example.
 The value is expressed in ISO8601 format.
-  - `[PreBuffer <TimeSpan?>]`: The amount of time to reserve before the appointment begins, for preparation, as an example.
+  \[PreBuffer \<TimeSpan?\>\]: The amount of time to reserve before the appointment begins, for preparation, as an example.
 The value is expressed in ISO8601 format.
-  - `[Price <Double?>]`: The regular price for an appointment for the specified bookingService.
-  - `[PriceType <BookingPriceType?>]`: Represents the type of pricing of a booking service.
-  - `[Reminders <IMicrosoftGraphBookingReminder- `[]`>]`: The collection of customer reminders sent for this appointment.
+  \[Price \<Double?\>\]: The regular price for an appointment for the specified bookingService.
+  \[PriceType \<BookingPriceType?\>\]: Represents the type of pricing of a booking service.
+  \[Reminders \<IMicrosoftGraphBookingReminder\[\]\>\]: The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
-    - `[Message <String>]`: The message in the reminder.
-    - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
+    \[Message \<String\>\]: The message in the reminder.
+    \[Offset \<TimeSpan?\>\]: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
-    - `[Recipients <String>]`: bookingReminderRecipients
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
-  - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
-  - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
-  - `[ServiceName <String>]`: The name of the bookingService associated with this appointment.This property is optional when creating a new appointment.
+    \[Recipients \<String\>\]: bookingReminderRecipients
+  \[SelfServiceAppointmentId \<String\>\]: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
+  \[ServiceId \<String\>\]: The ID of the bookingService associated with this appointment.
+  \[ServiceLocation \<IMicrosoftGraphLocation\>\]: location
+  \[ServiceName \<String\>\]: The name of the bookingService associated with this appointment.This property is optional when creating a new appointment.
 If not specified, it is computed from the service associated with the appointment by the serviceId property.
-  - `[ServiceNotes <String>]`: Notes from a bookingStaffMember.
+  \[ServiceNotes \<String\>\]: Notes from a bookingStaffMember.
 The value of this property is available only when reading this bookingAppointment by its ID.
-  - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications will be sent to the customers for the appointment.
+  \[SmsNotificationsEnabled \<Boolean?\>\]: True indicates SMS notifications will be sent to the customers for the appointment.
 Default value is false.
-  - `[StaffMemberIds <String- `[]`>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
-  - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  \[StaffMemberIds \<String\[\]\>\]: The ID of each bookingStaffMember who is scheduled in this appointment.
+  \[Start \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-CUSTOMERLOCATION `<IMicrosoftGraphLocation>`: location
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+CUSTOMERLOCATION \<IMicrosoftGraphLocation\>: location
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+    \[Altitude \<Double?\>\]: The altitude of the location.
+    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+    \[Latitude \<Double?\>\]: The latitude of the location.
+    \[Longitude \<Double?\>\]: The longitude of the location.
+  \[DisplayName \<String\>\]: The name associated with the location.
+  \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+  \[LocationType \<String\>\]: locationType
+  \[LocationUri \<String\>\]: Optional URI representing the location.
+  \[UniqueId \<String\>\]: For internal use only.
+  \[UniqueIdType \<String\>\]: locationUniqueIdType
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+END \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-INVOICEDATE `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+INVOICEDATE \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
-REMINDERS <IMicrosoftGraphBookingReminder- `[]`>: The collection of customer reminders sent for this appointment.
+REMINDERS \<IMicrosoftGraphBookingReminder\[\]\>: The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
-  - `[Message <String>]`: The message in the reminder.
-  - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
+  \[Message \<String\>\]: The message in the reminder.
+  \[Offset \<TimeSpan?\>\]: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
-  - `[Recipients <String>]`: bookingReminderRecipients
+  \[Recipients \<String\>\]: bookingReminderRecipients
 
-SERVICELOCATION `<IMicrosoftGraphLocation>`: location
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+SERVICELOCATION \<IMicrosoftGraphLocation\>: location
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Address \<IMicrosoftGraphPhysicalAddress\>\]: physicalAddress
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[Coordinates \<IMicrosoftGraphOutlookGeoCoordinates\>\]: outlookGeoCoordinates
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Accuracy \<Double?\>\]: The accuracy of the latitude and longitude.
 As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+    \[Altitude \<Double?\>\]: The altitude of the location.
+    \[AltitudeAccuracy \<Double?\>\]: The accuracy of the altitude.
+    \[Latitude \<Double?\>\]: The latitude of the location.
+    \[Longitude \<Double?\>\]: The longitude of the location.
+  \[DisplayName \<String\>\]: The name associated with the location.
+  \[LocationEmailAddress \<String\>\]: Optional email address of the location.
+  \[LocationType \<String\>\]: locationType
+  \[LocationUri \<String\>\]: Optional URI representing the location.
+  \[UniqueId \<String\>\]: For internal use only.
+  \[UniqueIdType \<String\>\]: locationUniqueIdType
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+START \<IMicrosoftGraphDateTimeZone\>: dateTimeTimeZone
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+  \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment)
-
-
-
 
