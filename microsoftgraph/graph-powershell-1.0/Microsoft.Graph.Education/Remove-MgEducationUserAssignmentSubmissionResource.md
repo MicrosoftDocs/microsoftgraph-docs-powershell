@@ -14,6 +14,9 @@ If the resource was copied from the assignment, a new copy of the resource will 
 This allows you to 'reset' the resource to its original state.
 If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -269,6 +272,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentsubmissionresource)
 

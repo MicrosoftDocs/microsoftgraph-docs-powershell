@@ -11,6 +11,9 @@ schema: 2.0.0
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -453,6 +456,7 @@ Not nullable.
     - `[Key <String>]`: Key.
 
 ## RELATED LINKS
+[Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseapplicationsynchronizationtemplateschemaexpression](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseapplicationsynchronizationtemplateschemaexpression)
 

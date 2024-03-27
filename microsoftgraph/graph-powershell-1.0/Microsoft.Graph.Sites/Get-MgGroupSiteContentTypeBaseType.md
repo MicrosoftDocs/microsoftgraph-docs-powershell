@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of content types that are ancestors of this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeBaseType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -419,6 +422,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentTypeBaseType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttypebasetype)
 

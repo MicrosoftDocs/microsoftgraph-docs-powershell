@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getEmailAppUsageUserDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportEmailAppUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail)
 

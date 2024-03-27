@@ -14,6 +14,9 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -338,6 +341,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentsubmissionresource)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a bookingCustomer object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -361,6 +364,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer)
 

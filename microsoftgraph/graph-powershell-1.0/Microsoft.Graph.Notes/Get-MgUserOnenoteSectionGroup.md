@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a sectionGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -332,6 +335,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup)
 

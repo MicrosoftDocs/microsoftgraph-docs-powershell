@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -382,6 +385,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementiosmanagedappprotectionassignment)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceComplianceSettingStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -360,6 +363,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate)
 

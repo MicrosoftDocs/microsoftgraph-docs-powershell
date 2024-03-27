@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCompatibleHubContentTypes
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeCompatibleHubContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -288,6 +291,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeCompatibleHubContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecompatiblehubcontenttype)
 

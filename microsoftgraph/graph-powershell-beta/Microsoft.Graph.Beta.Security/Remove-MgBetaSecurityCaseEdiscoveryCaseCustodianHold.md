@@ -12,6 +12,9 @@ Start the process of removing hold from eDiscovery custodians.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -365,6 +368,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianhold)
 

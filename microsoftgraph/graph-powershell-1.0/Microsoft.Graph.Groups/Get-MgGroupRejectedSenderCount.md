@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -189,6 +192,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupRejectedSenderCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsendercount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsendercount)
 

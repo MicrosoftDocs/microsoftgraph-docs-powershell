@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property usage in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingUsage](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -226,6 +229,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgReportPartnerBillingUsage](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusage)
 

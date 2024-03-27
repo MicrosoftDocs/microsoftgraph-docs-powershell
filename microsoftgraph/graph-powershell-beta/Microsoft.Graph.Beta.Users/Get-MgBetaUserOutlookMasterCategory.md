@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of the specified outlookCategory object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -307,6 +310,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlookmastercategory)
 

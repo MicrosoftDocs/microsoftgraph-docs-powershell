@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default managed app policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -365,6 +368,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementdefaultmanagedappprotection)
 

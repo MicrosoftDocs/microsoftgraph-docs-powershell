@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The artifact related to this passiveDnsRecord entry.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -220,6 +223,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordArtifact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordartifact](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordartifact)
 

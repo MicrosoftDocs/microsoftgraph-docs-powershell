@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new localized agreement file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -519,6 +522,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaAgreementFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgagreementfile)
 

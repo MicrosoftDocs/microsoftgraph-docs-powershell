@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a message to a folder within the user's mailbox.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -301,6 +304,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfoldermessage)
 

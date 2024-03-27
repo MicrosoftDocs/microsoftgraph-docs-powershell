@@ -11,6 +11,9 @@ schema: 2.0.0
 Copy a file to a default content location in a \[content type\]\[contentType\].
 The file can then be added as a default file or template via a POST operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -392,6 +395,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Copy-MgBetaSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypetodefaultcontentlocation)
 

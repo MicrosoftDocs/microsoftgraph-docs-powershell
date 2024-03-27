@@ -12,6 +12,9 @@ This action allows the organizer or attendee of a meeting event to forward theme
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this actionalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer'scopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -349,6 +352,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[Invoke-MgBetaForwardGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupevent)
 

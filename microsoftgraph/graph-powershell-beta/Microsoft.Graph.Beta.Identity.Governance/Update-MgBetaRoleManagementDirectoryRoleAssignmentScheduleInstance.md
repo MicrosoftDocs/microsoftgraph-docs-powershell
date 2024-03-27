@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentScheduleInstances in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -844,6 +847,7 @@ Read-only when isBuiltIn is true.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroleassignmentscheduleinstance)
 

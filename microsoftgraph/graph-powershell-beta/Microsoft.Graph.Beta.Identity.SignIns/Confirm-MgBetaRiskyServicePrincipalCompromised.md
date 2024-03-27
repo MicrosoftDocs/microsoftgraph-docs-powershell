@@ -11,6 +11,9 @@ schema: 2.0.0
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyServicePrincipalCompromised?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
@@ -210,6 +213,7 @@ BODYPARAMETER `<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGr
   - `[ServicePrincipalIds <String- `[]`>]`:
 
 ## RELATED LINKS
+[Confirm-MgRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyServicePrincipalCompromised?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised)
 

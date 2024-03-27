@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -255,6 +258,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformance)
 

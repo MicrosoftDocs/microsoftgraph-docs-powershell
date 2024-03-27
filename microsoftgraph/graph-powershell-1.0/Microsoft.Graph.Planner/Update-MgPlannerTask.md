@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tasks in planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -828,6 +831,7 @@ Read-only.
 For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
+[Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannertask)
 

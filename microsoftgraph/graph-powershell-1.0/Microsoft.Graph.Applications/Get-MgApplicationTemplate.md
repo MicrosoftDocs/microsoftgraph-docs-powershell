@@ -11,6 +11,9 @@ ms.prod: applications
 ## SYNOPSIS
 Retrieve the properties of an applicationTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -321,6 +324,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplate)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new contactFolder as a child of a specified folder.
 You can also create a new contactFolder under the user's default contact folder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -752,6 +755,7 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[New-MgUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolderchildfolder)
 

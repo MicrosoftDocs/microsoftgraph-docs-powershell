@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Security/Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Reset (Default)
@@ -267,6 +270,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Security/Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/reset-mgbetasecuritycaseediscoverycasesettingtodefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/reset-mgbetasecuritycaseediscoverycasesettingtodefault)
 

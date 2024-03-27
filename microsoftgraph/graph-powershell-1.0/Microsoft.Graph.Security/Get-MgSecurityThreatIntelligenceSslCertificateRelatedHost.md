@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The hosts related with this sslCertificate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -364,6 +367,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificateRelatedHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificaterelatedhost)
 

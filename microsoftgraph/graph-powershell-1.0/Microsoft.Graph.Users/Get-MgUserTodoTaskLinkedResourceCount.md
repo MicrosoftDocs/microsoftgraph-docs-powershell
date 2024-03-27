@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskLinkedResourceCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResourceCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -213,6 +216,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoTaskLinkedResourceCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResourceCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresourcecount)
 

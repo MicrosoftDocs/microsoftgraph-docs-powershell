@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new term object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -715,6 +718,7 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
+[New-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetchild)
 

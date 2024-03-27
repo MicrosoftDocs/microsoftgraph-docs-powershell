@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -985,6 +988,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleeligibilityschedulerequest)
 

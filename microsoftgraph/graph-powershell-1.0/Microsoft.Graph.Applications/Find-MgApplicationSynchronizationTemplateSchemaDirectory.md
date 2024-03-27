@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Discover the latest schema definition for provisioning to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Discover (Default)
@@ -225,6 +228,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationtemplateschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationtemplateschemadirectory)
 

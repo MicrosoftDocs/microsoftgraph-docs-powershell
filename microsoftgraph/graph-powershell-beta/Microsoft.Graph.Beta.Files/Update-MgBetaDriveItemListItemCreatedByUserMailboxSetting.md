@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -486,6 +489,7 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemlistitemcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadriveitemlistitemcreatedbyusermailboxsetting)
 

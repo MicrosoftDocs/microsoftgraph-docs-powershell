@@ -12,6 +12,9 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -210,6 +213,7 @@ BODYPARAMETER `<IPaths6Ovq2LDirectoryroletemplatesMicrosoftGraphGetbyidsPostRequ
   - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
+[Get-MgBetaDirectoryRoleTemplateById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleTemplateById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplatebyid)
 

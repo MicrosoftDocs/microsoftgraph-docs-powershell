@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1267,6 +1270,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistcontenttypecolumn)
 

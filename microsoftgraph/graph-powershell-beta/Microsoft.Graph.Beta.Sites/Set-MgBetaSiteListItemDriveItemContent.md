@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteListItemDriveItemContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -304,6 +307,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Set-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent)
 

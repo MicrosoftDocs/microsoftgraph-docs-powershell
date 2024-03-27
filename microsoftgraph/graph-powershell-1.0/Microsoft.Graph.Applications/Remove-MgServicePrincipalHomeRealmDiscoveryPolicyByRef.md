@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -263,6 +266,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicybyref)
 

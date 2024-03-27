@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceManagementTroubleshootingEvents for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Remove-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdevicemanagementtroubleshootingevent)
 

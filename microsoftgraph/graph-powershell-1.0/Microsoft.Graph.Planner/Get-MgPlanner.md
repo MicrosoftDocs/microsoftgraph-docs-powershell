@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -117,6 +120,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner)
 

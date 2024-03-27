@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to decisions for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1304,6 +1307,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision)
 

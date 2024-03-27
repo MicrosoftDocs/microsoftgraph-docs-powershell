@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -313,6 +316,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency)
 

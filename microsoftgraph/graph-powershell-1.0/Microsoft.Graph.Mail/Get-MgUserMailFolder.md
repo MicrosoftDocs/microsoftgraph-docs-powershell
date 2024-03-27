@@ -12,6 +12,9 @@ The user's mail folders.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -333,6 +336,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
 

@@ -11,6 +11,9 @@ ms.prod: microsoft-teams
 ## SYNOPSIS
 Create a new team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29000,6 +29003,7 @@ Read-only.
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
+[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
 

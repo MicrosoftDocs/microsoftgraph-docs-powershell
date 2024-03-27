@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,6 +196,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference)
 

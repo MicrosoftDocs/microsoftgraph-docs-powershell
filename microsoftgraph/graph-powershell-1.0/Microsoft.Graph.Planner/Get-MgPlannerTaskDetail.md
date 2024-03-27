@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerTaskDetails object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -173,6 +176,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail)
 

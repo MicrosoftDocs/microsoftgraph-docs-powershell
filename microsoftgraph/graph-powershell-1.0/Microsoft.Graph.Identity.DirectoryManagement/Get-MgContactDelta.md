@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -239,6 +242,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
 

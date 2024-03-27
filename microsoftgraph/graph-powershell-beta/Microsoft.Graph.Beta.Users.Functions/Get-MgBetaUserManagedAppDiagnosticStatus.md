@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Gets diagnostics validation status for a given user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppDiagnosticStatus?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -251,6 +254,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppDiagnosticStatus?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappdiagnosticstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermanagedappdiagnosticstatus)
 

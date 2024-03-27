@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to timeOffRequests for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -464,6 +467,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoffrequest)
 

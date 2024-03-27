@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property listItem in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemListItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45774,6 +45777,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgUserDriveItemListItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitemlistitem)
 

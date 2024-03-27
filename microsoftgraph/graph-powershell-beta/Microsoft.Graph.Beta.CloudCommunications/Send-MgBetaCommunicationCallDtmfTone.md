@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action sendDtmfTones
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationCallDtmfTone?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -289,6 +292,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationCallDtmfTone?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone)
 

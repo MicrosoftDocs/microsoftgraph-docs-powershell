@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the specified outlookCategory object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -230,6 +233,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Remove-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguseroutlookmastercategory)
 

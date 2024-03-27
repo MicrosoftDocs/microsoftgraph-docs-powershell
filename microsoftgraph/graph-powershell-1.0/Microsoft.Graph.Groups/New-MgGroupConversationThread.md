@@ -14,6 +14,9 @@ Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -616,6 +619,7 @@ Returned only on $select.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
 

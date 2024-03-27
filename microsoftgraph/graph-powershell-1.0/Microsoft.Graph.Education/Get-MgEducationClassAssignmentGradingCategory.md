@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 When set, enables users to weight assignments differently when computing a class average grade.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentGradingCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -196,6 +199,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationClassAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentGradingCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentgradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentgradingcategory)
 

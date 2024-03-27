@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property recordings in communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -409,6 +412,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingRecording?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingrecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingrecording)
 

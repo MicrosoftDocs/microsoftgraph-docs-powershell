@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the tabs in the channel.
 A navigation property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -355,6 +358,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychanneltab)
 
