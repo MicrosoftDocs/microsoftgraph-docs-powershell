@@ -99,8 +99,8 @@ Uninstall-Module Microsoft.Graph -AllVersions
 Then, remove all of the dependency modules by running the following commands.
 
 ```powershell
-Get-InstalledModule Microsoft.Graph.* | ? Name -ne "Microsoft.Graph.Authentication" | Uninstall-Module
-Uninstall-Module Microsoft.Graph.Authentication
+Get-InstalledModule Microsoft.Graph.* | ? Name -ne "Microsoft.Graph.Authentication" | Uninstall-Module -AllVersions
+Uninstall-Module Microsoft.Graph.Authentication -AllVersions
 ```
 
 ## Next steps
