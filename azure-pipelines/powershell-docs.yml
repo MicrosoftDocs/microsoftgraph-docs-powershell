@@ -60,7 +60,7 @@ extends:
           outputs:
           - output: pipelineArtifact
             displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
+            targetPath: 'microsoftgraph-docs-powershell/missingexternaldocsurl'
             artifactName: 'MissingExternalDocs'
             publishLocation: 'Container'
         steps:
