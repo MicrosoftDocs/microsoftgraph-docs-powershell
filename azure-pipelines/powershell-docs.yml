@@ -49,6 +49,7 @@ extends:
       sourceRepositoriesToScan:
         exclude:
           - repository: msgraph-sdk-powershell
+          - folder: microsoftgraph-docs-powershell/missingexternaldocsurl
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
@@ -60,7 +61,7 @@ extends:
           outputs:
           - output: pipelineArtifact
             displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: $(Build.SourcesDirectory)/missingexternaldocsurl
+            targetPath: microsoftgraph-docs-powershell/missingexternaldocsurl
             artifactName: 'MissingExternalDocs'
             publishLocation: 'Container'
         steps:
