@@ -29,6 +29,12 @@
         "graph-powershell-beta\\Microsoft.Graph.Beta.DeviceManagement.Actions\\Update-MgBetaDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md"
       ],
       "_justification": "[DeviceManagement.Actions] Examples contain random values recognized as secret"
+    },
+    {
+      "folder": [
+        "missingexternaldocsurl"
+      ],
+      "_justification": "[Missing external docs folder] contain report for missing external docs url"
     }
   ]
 }

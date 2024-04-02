@@ -75,60 +75,60 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
-        - task: PowerShell@2
-          displayName: 'Escape disallowed html tags'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
-        - task: PowerShell@2
-          displayName: 'Update metadata header'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
-        - task: PowerShell@2
-          displayName: 'Update Links'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
-        - task: PowerShell@2
-          displayName: 'Repair Examples and Descriptions and Title'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
-        - task: PowerShell@2
-          displayName: 'Remove boiler plate code'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
-        - task: PowerShell@2
-          displayName: Pushing to github
-          env:
-            GITHUB_TOKEN: $(GITHUB_TOKEN)
-          inputs:
-            targetType: inline
-            pwsh: true
-            script: |
-              git config --global user.email "timwamalwa@gmail.com"
-              git config --global user.name "Timothy Wamalwa"
-              cd microsoftgraph-docs-powershell
-              $date = Get-Date -Format "dd-MM-yyyy"
-              $proposedBranch = "weekly_v2_docs_update_$date"
-              git add .
-              git commit -m "Updating help files $date"
-              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
-              git status
-        - template: azure-pipelines/common-templates/create-pr.yml@self
-          parameters:
-            BaseBranch: main
-            Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
-            Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
+        # - task: PowerShell@2
+        #   displayName: 'Escape disallowed html tags'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
+        # - task: PowerShell@2
+        #   displayName: 'Update metadata header'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+        # - task: PowerShell@2
+        #   displayName: 'Update Links'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+        # - task: PowerShell@2
+        #   displayName: 'Repair Examples and Descriptions and Title'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+        # - task: PowerShell@2
+        #   displayName: 'Remove boiler plate code'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+        # - task: PowerShell@2
+        #   displayName: Pushing to github
+        #   env:
+        #     GITHUB_TOKEN: $(GITHUB_TOKEN)
+        #   inputs:
+        #     targetType: inline
+        #     pwsh: true
+        #     script: |
+        #       git config --global user.email "timwamalwa@gmail.com"
+        #       git config --global user.name "Timothy Wamalwa"
+        #       cd microsoftgraph-docs-powershell
+        #       $date = Get-Date -Format "dd-MM-yyyy"
+        #       $proposedBranch = "weekly_v2_docs_update_$date"
+        #       git add .
+        #       git commit -m "Updating help files $date"
+        #       git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
+        #       git status
+        # - template: azure-pipelines/common-templates/create-pr.yml@self
+        #   parameters:
+        #     BaseBranch: main
+        #     Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
+        #     Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
