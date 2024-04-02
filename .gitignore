@@ -408,7 +408,6 @@ FodyWeavers.xsd
 
 #Missing external url docs report Folder
 
-missingexternaldocsurl/
 microsoftgraph/EscapeDisallowedHtmlTags.ps1
 microsoftgraph/UpdateHelp.ps1
 scripts/RemoveBoilerPlateCode.ps1
