@@ -49,7 +49,9 @@ extends:
       sourceRepositoriesToScan:
         exclude:
           - repository: msgraph-sdk-powershell
-          - folder: microsoftgraph-docs-powershell/missingexternaldocsurl
+      folderToScan:
+        exclude:
+          - $(Build.SourcesDirectory)/microsoftgraph-docs-powershell/missingexternaldocsurl
     customBuildTags:
     - ES365AIMigrationTooling
     stages:
