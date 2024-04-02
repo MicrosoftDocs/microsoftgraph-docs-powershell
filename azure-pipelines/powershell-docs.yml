@@ -60,7 +60,7 @@ extends:
           outputs:
           - output: pipelineArtifact
             displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: $(Build.SourcesDirectory)/missingexternaldocsurl
+            targetPath: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
             artifactName: 'MissingExternalDocs'
             publishLocation: 'Container'
         steps:
@@ -68,6 +68,14 @@ extends:
           parameters:
             projectFileName: $(projectFileName)
             testType: 'Execution'
+        - task: PowerShell@2
+          displayName: 'Create missing external docs folder'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: microsoftgraph-docs-powershell\scripts\CreateExternalDocsFolder.ps1
+
         # - task: PowerShell@2
         #   displayName: 'Generate markdown files from PowerShell help files'
         #   continueOnError: false
