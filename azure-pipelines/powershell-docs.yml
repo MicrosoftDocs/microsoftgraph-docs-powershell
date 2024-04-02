@@ -43,9 +43,9 @@ extends:
       os: windows
     sdl:
       credscan:
-        suppressionsFile: $(Build.SourcesDirectory)/azure-pipelines/config/credscan/credscan-suppressions.json
+        suppressionsFile: $(Build.SourcesDirectory)/microsoftgraph-docs-powershell/azure-pipelines/config/credscan/credscan-suppressions.json
       policheck:
-        exclusionFile: $(Build.SourcesDirectory)/azure-pipelines/config/policheck/policheck-exclusions.xml
+        exclusionFile: $(Build.SourcesDirectory)/microsoftgraph-docs-powershell/azure-pipelines/config/policheck/policheck-exclusions.xml
       sourceRepositoriesToScan:
         exclude:
           - repository: msgraph-sdk-powershell
@@ -60,10 +60,9 @@ extends:
           outputs:
           - output: pipelineArtifact
             displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
+            targetPath: $(Build.SourcesDirectory)/microsoftgraph-docs-powershell/missingexternaldocsurl'
             artifactName: 'MissingExternalDocs'
             publishLocation: 'Container'
-            continueOnError: true
         steps:
         - template: azure-pipelines/update-template.yml@self
           parameters:
