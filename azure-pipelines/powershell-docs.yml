@@ -68,13 +68,13 @@ extends:
           parameters:
             projectFileName: $(projectFileName)
             testType: 'Execution'
-        - task: PowerShell@2
-          displayName: 'Generate markdown files from PowerShell help files'
-          continueOnError: false
-          inputs:
-            targetType: 'filePath'
-            pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
+        # - task: PowerShell@2
+        #   displayName: 'Generate markdown files from PowerShell help files'
+        #   continueOnError: false
+        #   inputs:
+        #     targetType: 'filePath'
+        #     pwsh: true
+        #     filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
         # - task: PowerShell@2
         #   displayName: 'Escape disallowed html tags'
         #   continueOnError: false
