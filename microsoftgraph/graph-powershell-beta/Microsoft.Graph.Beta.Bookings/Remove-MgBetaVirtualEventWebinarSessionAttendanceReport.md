@@ -33,18 +33,6 @@ Remove-MgBetaVirtualEventWebinarSessionAttendanceReport -InputObject <IBookingsI
 ## DESCRIPTION
 Delete navigation property attendanceReports for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -258,6 +246,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Remove-MgVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarsessionattendancereport)
+
 
 
 
