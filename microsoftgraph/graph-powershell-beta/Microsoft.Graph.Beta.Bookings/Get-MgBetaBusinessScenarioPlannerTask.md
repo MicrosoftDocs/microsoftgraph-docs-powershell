@@ -37,6 +37,9 @@ Get-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenariotask-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

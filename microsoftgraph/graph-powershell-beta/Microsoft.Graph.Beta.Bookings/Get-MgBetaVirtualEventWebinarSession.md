@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sessions for the virtual event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -334,6 +337,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsession)
 

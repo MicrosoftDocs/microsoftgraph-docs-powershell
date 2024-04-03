@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new bookingCustomer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -42,6 +45,9 @@ New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter <H
 
 ## DESCRIPTION
 Create a new bookingCustomer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-customers-permissions.md)]
 
 ## EXAMPLES
 
@@ -252,6 +258,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[New-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer)
 

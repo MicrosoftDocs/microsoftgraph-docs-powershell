@@ -11,6 +11,9 @@ schema: 2.0.0
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -30,6 +33,9 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Make the scheduling page of a business available to external customers.
 Set the isPublished property to true, and the publicUrl property to the URL of the scheduling page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-publish-permissions.md)]
 
 ## EXAMPLES
 
@@ -198,6 +204,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/publish-mgbookingbusiness)
 
