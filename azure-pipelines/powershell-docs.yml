@@ -77,7 +77,7 @@ extends:
           inputs:
             targetType: 'inline'
             script: |
-              $branch = "{0}/{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
+              $branch = "{0}_{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
               Write-Host "Compute branch: $branch"
               Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
         - task: Bash@3
@@ -156,7 +156,7 @@ extends:
               git status
         - template: azure-pipelines/common-templates/create-pr.yml@self
           parameters:
-            BaseBranch: main
+            BaseBranch: "main"
             TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
             Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
             Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
