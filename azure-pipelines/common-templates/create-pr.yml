@@ -29,6 +29,5 @@ steps:
         $Title = "${{ parameters.Title }}"
         $Body = "${{ parameters.Body }}"
         git status
-        gh auth login
         git push "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git"
         gh pr create -t $Title -b $Body -B main -H $BaseBranchName
