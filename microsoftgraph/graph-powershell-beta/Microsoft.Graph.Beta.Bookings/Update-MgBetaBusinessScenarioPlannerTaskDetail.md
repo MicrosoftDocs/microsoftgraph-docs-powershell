@@ -51,6 +51,9 @@ Update-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> 
 ## DESCRIPTION
 Update the navigation property details in solutions
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

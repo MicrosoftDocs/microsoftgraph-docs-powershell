@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property events for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -214,6 +217,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBetaVirtualEvent](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualevent](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualevent)
 

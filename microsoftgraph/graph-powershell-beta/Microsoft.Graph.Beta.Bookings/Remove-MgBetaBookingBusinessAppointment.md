@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookingAppointment in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -42,6 +45,9 @@ Remove-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMat
 
 ## DESCRIPTION
 Delete a bookingAppointment in the specified bookingBusiness.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -246,6 +252,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinessappointment)
 
