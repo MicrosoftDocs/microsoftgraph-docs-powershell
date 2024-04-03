@@ -39,8 +39,6 @@ New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-ResponseHeadersVariab
 ## DESCRIPTION
 Add new entity to contacts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -50,8 +50,6 @@ Update-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 Update the role of a conversationMember in a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

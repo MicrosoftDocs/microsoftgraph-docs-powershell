@@ -62,8 +62,6 @@ Get-MgGroupSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 All sets under the group in a term \[store\].
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

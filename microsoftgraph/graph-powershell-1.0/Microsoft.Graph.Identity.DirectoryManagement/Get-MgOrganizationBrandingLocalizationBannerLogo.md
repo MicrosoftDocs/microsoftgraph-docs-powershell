@@ -39,8 +39,6 @@ We recommend using a transparent image with no padding around the logo.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

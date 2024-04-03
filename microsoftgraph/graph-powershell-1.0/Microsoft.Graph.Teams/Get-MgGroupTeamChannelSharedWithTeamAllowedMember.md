@@ -42,8 +42,6 @@ Get-MgGroupTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity> 
 ## DESCRIPTION
 A collection of team members who have access to the shared channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

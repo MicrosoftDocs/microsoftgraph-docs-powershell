@@ -70,8 +70,6 @@ Update-MgSite -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphSite>
 ## DESCRIPTION
 Update entity in sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

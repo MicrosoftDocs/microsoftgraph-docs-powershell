@@ -34,8 +34,6 @@ New-MgBetaSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-Resp
 ## DESCRIPTION
 Create new navigation property to secureScores for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActiveUserCount

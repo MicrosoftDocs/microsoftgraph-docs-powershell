@@ -35,8 +35,6 @@ Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId

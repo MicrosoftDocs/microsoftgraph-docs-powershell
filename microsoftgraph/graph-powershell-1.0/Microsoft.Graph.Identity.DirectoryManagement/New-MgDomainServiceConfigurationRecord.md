@@ -48,8 +48,6 @@ New-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Create new navigation property to serviceConfigurationRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

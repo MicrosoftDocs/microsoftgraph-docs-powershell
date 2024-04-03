@@ -32,8 +32,6 @@ Remove-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property presence for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

@@ -48,8 +48,6 @@ Update-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the role of a conversationMember in a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

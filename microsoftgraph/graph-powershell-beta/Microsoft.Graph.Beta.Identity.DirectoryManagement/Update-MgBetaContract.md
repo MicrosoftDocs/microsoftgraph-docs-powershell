@@ -48,8 +48,6 @@ Update-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update entity in contracts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -33,8 +33,6 @@ Set-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServ
 ## DESCRIPTION
 The zip file of all attachments for a message.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType

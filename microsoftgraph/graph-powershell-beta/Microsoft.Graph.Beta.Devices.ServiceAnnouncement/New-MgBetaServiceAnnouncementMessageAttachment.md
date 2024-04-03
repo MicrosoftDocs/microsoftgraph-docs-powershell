@@ -48,8 +48,6 @@ New-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnno
 ## DESCRIPTION
 Create new navigation property to attachments for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

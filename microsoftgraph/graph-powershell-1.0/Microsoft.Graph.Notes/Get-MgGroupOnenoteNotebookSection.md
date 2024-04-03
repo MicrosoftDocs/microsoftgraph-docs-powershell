@@ -28,8 +28,6 @@ Retrieve a list of onenoteSection objects from the specified notebook.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -28,8 +28,6 @@ Retrieve a list of plannerTask objects associated with a plannerPlan object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-tasks-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -32,8 +32,6 @@ Remove-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DirectoryRoleId

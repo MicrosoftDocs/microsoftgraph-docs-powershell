@@ -42,8 +42,6 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-ResponseHeader
 ## DESCRIPTION
 Add new entity to organization
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

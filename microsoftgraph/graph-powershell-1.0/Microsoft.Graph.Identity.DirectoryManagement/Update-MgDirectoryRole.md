@@ -50,8 +50,6 @@ Update-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update entity in directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

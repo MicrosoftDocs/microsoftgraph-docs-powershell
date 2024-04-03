@@ -43,8 +43,6 @@ Retrieve the properties and relationships of a timeoffrequest object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -43,8 +43,6 @@ Returns the metadata for a \[list\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

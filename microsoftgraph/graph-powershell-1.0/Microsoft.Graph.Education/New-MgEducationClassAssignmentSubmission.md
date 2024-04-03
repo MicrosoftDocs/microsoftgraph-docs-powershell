@@ -56,8 +56,6 @@ New-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to submissions for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,8 +32,6 @@ Remove-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete navigation property deletedItems for directory
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DirectoryObjectId

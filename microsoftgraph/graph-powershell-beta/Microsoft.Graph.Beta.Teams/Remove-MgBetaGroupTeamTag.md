@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete a tag object permanently.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

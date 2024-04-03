@@ -35,8 +35,6 @@ Removes (unpins) a tab from the specified channel within a team.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-delete-tabs-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

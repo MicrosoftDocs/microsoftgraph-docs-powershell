@@ -63,8 +63,6 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> -BodyParame
 ## DESCRIPTION
 Update entity in contacts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,8 +53,6 @@ New-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to participants for communications
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

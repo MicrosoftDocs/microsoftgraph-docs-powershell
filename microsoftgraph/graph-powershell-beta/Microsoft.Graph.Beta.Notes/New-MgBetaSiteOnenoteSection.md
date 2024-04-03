@@ -54,8 +54,6 @@ New-MgBetaSiteOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to sections for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

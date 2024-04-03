@@ -32,8 +32,6 @@ Remove-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Uninstall an app installed within a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId

@@ -47,8 +47,6 @@ Only a user who is a member of the shared channel can retrieve channel informati
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -58,8 +58,6 @@ Update-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of the specified channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

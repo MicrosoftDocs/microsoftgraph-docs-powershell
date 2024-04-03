@@ -37,8 +37,6 @@ Only teachers can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationRubricId

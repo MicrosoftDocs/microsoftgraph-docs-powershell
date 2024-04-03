@@ -61,8 +61,6 @@ This operation is allowed only for channels with a membershipType value of share
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

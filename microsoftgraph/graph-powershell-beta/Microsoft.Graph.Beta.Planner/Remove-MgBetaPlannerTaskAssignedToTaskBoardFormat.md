@@ -32,8 +32,6 @@ Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity
 ## DESCRIPTION
 Delete navigation property assignedToTaskBoardFormat for planner
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

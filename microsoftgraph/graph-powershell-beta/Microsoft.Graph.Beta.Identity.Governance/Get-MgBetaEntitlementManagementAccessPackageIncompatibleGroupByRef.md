@@ -28,8 +28,6 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-incompatiblegroups-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageId

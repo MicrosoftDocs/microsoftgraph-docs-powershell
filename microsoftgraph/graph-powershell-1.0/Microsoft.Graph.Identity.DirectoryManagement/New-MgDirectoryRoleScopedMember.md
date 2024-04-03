@@ -48,8 +48,6 @@ New-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Create new navigation property to scopedMembers for directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

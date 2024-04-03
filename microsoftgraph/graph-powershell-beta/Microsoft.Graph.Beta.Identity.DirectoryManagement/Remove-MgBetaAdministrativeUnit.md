@@ -32,8 +32,6 @@ Delete an administrativeUnit.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId

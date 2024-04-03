@@ -52,8 +52,6 @@ New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

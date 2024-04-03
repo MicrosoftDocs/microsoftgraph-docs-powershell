@@ -32,8 +32,6 @@ New-MgBetaContract -BodyParameter <IMicrosoftGraphContract> [-ResponseHeadersVar
 ## DESCRIPTION
 Add new entity to contracts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

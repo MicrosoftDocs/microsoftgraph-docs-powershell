@@ -33,8 +33,6 @@ Set-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The attachment content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType

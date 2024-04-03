@@ -52,8 +52,6 @@ New-MgBetaSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to sets for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -32,8 +32,6 @@ Remove-MgBetaDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Delete entity from directoryRoles
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DirectoryRoleId

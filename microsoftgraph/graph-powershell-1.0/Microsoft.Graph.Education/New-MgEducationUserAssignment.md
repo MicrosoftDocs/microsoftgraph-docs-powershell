@@ -62,8 +62,6 @@ New-MgEducationUserAssignment -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to assignments for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AddedStudentAction

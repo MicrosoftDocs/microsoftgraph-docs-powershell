@@ -87,8 +87,6 @@ New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to sets for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

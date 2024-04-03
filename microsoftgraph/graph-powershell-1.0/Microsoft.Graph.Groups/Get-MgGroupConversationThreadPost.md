@@ -54,8 +54,6 @@ Get-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get posts from groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -54,8 +54,6 @@ New-MgSiteOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to sections for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -57,8 +57,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageReplyHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
