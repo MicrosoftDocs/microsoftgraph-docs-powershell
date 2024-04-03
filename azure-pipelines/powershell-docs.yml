@@ -43,9 +43,9 @@ extends:
       os: windows
     sdl:
       credscan:
-        suppressionsFile: microsoftgraph-docs-powershell\azure-pipelines\config\credscan\credscan-suppressions.json
+        suppressionsFile: $(Build.SourcesDirectory)\microsoftgraph-docs-powershell\azure-pipelines\config\credscan\credscan-suppressions.json
       policheck:
-        exclusionFile: microsoftgraph-docs-powershell\azure-pipelines\config\policheck\policheck-exclusions.xml
+        exclusionFile: $(Build.SourcesDirectory)\microsoftgraph-docs-powershell\azure-pipelines\config\policheck\policheck-exclusions.xml
       sourceRepositoriesToScan:
         exclude:
           - repository: msgraph-sdk-powershell
