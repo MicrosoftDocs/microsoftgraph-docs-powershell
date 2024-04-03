@@ -65,9 +65,24 @@ extends:
             publishLocation: 'Container'
         steps:
         - template: azure-pipelines/update-template.yml@self
-          parameters:
-            projectFileName: $(projectFileName)
-            testType: 'Execution'
+        - task : PowerShell@2
+          name: "ComputeBranch"
+          displayName: 'Compute Branch Name'
+          inputs:
+            targetType: 'inline'
+            script: |
+              $branch = "{0}/{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
+              Write-Host "Compute branch: $branch"
+              Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
+        - task: Bash@3
+          displayName: "Create weekly refresh branch"
+          inputs:
+            targetType: inline
+            script: |
+              git status
+              git branch $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git checkout $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git status              
         - task: PowerShell@2
           displayName: 'Create missing external docs folder'
           continueOnError: false
@@ -76,13 +91,13 @@ extends:
             pwsh: true
             filePath: scripts/CreateExternalDocsFolder.ps1
 
-        # - task: PowerShell@2
-        #   displayName: 'Generate markdown files from PowerShell help files'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
+        - task: PowerShell@2
+          displayName: 'Generate markdown files from PowerShell help files'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/GenerateMarkDown.ps1
         # - task: PowerShell@2
         #   displayName: 'Escape disallowed html tags'
         #   continueOnError: false
@@ -118,25 +133,24 @@ extends:
         #     targetType: 'filePath'
         #     pwsh: true
         #     filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
-        # - task: PowerShell@2
-        #   displayName: Pushing to github
-        #   env:
-        #     GITHUB_TOKEN: $(GITHUB_TOKEN)
-        #   inputs:
-        #     targetType: inline
-        #     pwsh: true
-        #     script: |
-        #       git config --global user.email "timwamalwa@gmail.com"
-        #       git config --global user.name "Timothy Wamalwa"
-        #       cd microsoftgraph-docs-powershell
-        #       $date = Get-Date -Format "dd-MM-yyyy"
-        #       $proposedBranch = "weekly_v2_docs_update_$date"
-        #       git add .
-        #       git commit -m "Updating help files $date"
-        #       git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
-        #       git status
-        # - template: azure-pipelines/common-templates/create-pr.yml@self
-        #   parameters:
-        #     BaseBranch: main
-        #     Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
-        #     Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
+        - task: PowerShell@2
+          displayName: Pushing to github
+          env:
+            GITHUB_TOKEN: $(GITHUB_TOKEN)
+          inputs:
+            targetType: inline
+            pwsh: true
+            script: |
+              git config --global user.email "GraphTooling@service.microsoft.com"
+              git config --global user.name "Microsoft Graph DevX Tooling"
+              git status
+              git add .
+              git commit -m "Updating reference docs"
+              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git status
+        - template: azure-pipelines/common-templates/create-pr.yml@self
+          parameters:
+            BaseBranch: main
+            TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
+            Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
+            Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."

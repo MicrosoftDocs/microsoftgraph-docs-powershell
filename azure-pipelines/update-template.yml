@@ -1,6 +1,3 @@
-parameters:
-  projectFileName: PowerShellDocsUpdate
-  testType: 'Execution'
 steps:
 - task: PowerShell@2
   displayName: Install Required Modules
@@ -33,7 +30,3 @@ steps:
           }
 
 - template: checkout.yml
-  parameters:
-    projectFileName: ${{ parameters.projectFileName }}
-    runName: ${{ parameters.projectFileName }}
-    testType: ${{ parameters.testType }}
