@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Bookings-help.xml
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -88,12 +85,10 @@ Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	WorkingHours = @(
@@ -161,8 +156,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaBookingBusinessStaffMember Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -538,72 +531,68 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphBookingStaffMember>`: Represents a staff member who provides services in a business.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EmailAddress <String>]`: The email address of the person.
-  - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphBookingStaffMember\>: Represents a staff member who provides services in a business.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[EmailAddress \<String\>\]: The email address of the person.
+  \[DisplayName \<String\>\]: A name for the derived entity, which interfaces with customers.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailabilityIsAffectedByPersonalCalendar <Boolean?>]`: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
-  - `[ColorIndex <Int32?>]`: Identifies a color to represent the staff member.
+  \[AvailabilityIsAffectedByPersonalCalendar \<Boolean?\>\]: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
+  \[ColorIndex \<Int32?\>\]: Identifies a color to represent the staff member.
 The color corresponds to the color palette in the Staff details page in the Bookings app.
-  - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the staff member was created.
-  - `[IsEmailNotificationEnabled <Boolean?>]`: Indicates that a staff members are  notified via email when a booking assigned to them is created or changed.
+  \[CreatedDateTime \<DateTime?\>\]: The date, time and timezone when the staff member was created.
+  \[IsEmailNotificationEnabled \<Boolean?\>\]: Indicates that a staff members are  notified via email when a booking assigned to them is created or changed.
 The default value is true
-  - `[LastUpdatedDateTime <DateTime?>]`: The date, time and timezone when the staff member was last updated.
-  - `[MembershipStatus <String>]`: bookingStaffMembershipStatus
-  - `[Role <String>]`: bookingStaffRole
-  - `[TimeZone <String>]`: The time zone of the staff member.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date, time and timezone when the staff member was last updated.
+  \[MembershipStatus \<String\>\]: bookingStaffMembershipStatus
+  \[Role \<String\>\]: bookingStaffRole
+  \[TimeZone \<String\>\]: The time zone of the staff member.
 For a list of possible values, see dateTimeTimeZone.
-  - `[UseBusinessHours <Boolean?>]`: True means the staff member's availability is as specified in the businessHours property of the business.
+  \[UseBusinessHours \<Boolean?\>\]: True means the staff member's availability is as specified in the businessHours property of the business.
 False means the availability is determined by the staff member's workingHours property setting.
-  - `[WorkingHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The range of hours each day of the week that the staff member is available for booking.
+  \[WorkingHours \<IMicrosoftGraphBookingWorkHours\[\]\>\]: The range of hours each day of the week that the staff member is available for booking.
 By default, they're initialized to be the same as the businessHours property of the business.
-    - `[Day <String>]`: dayOfWeek
-    - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
-      - `[End <String>]`: The time of the day when work stops.
+    \[Day \<String\>\]: dayOfWeek
+    \[TimeSlots \<IMicrosoftGraphBookingWorkTimeSlot\[\]\>\]: A list of start/end times during a day.
+      \[End \<String\>\]: The time of the day when work stops.
 For example, 17:00:00.0000000.
-      - `[Start <String>]`: The time of the day when work starts.
+      \[Start \<String\>\]: The time of the day when work starts.
 For example, 08:00:00.0000000.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
-  - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
-  - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
-  - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
-  - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
-  - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
-  - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
-  - `[Role <String>]`: Usage: role='{role}'
-  - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
-  - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
-  - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
-  - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
-  - `[VirtualEventTownhallId <String>]`: The unique identifier of virtualEventTownhall
-  - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+INPUTOBJECT \<IBookingsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[BookingAppointmentId \<String\>\]: The unique identifier of bookingAppointment
+  \[BookingBusinessId \<String\>\]: The unique identifier of bookingBusiness
+  \[BookingCurrencyId \<String\>\]: The unique identifier of bookingCurrency
+  \[BookingCustomQuestionId \<String\>\]: The unique identifier of bookingCustomQuestion
+  \[BookingCustomerId \<String\>\]: The unique identifier of bookingCustomer
+  \[BookingServiceId \<String\>\]: The unique identifier of bookingService
+  \[BookingStaffMemberId \<String\>\]: The unique identifier of bookingStaffMember
+  \[BusinessScenarioId \<String\>\]: The unique identifier of businessScenario
+  \[BusinessScenarioTaskId \<String\>\]: The unique identifier of businessScenarioTask
+  \[JoinWebUrl \<String\>\]: Alternate key of virtualEventSession
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[PlannerPlanConfigurationLocalizationId \<String\>\]: The unique identifier of plannerPlanConfigurationLocalization
+  \[Role \<String\>\]: Usage: role='{role}'
+  \[UniqueName \<String\>\]: Alternate key of businessScenario
+  \[UserId \<String\>\]: Usage: userId='{userId}'
+  \[VirtualEventId \<String\>\]: The unique identifier of virtualEvent
+  \[VirtualEventPresenterId \<String\>\]: The unique identifier of virtualEventPresenter
+  \[VirtualEventRegistrationId \<String\>\]: The unique identifier of virtualEventRegistration
+  \[VirtualEventSessionId \<String\>\]: The unique identifier of virtualEventSession
+  \[VirtualEventTownhallId \<String\>\]: The unique identifier of virtualEventTownhall
+  \[VirtualEventWebinarId \<String\>\]: The unique identifier of virtualEventWebinar
 
-WORKINGHOURS <IMicrosoftGraphBookingWorkHours- `[]`>: The range of hours each day of the week that the staff member is available for booking.
+WORKINGHOURS \<IMicrosoftGraphBookingWorkHours\[\]\>: The range of hours each day of the week that the staff member is available for booking.
 By default, they're initialized to be the same as the businessHours property of the business.
-  - `[Day <String>]`: dayOfWeek
-  - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
-    - `[End <String>]`: The time of the day when work stops.
+  \[Day \<String\>\]: dayOfWeek
+  \[TimeSlots \<IMicrosoftGraphBookingWorkTimeSlot\[\]\>\]: A list of start/end times during a day.
+    \[End \<String\>\]: The time of the day when work stops.
 For example, 17:00:00.0000000.
-    - `[Start <String>]`: The time of the day when work starts.
+    \[Start \<String\>\]: The time of the day when work starts.
 For example, 08:00:00.0000000.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember)
-
-
-
 
