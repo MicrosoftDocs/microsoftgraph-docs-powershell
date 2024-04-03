@@ -63,8 +63,6 @@ That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationrubric-update-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

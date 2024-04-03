@@ -32,8 +32,6 @@ Remove-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-
 ## DESCRIPTION
 Delete entity from organization
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

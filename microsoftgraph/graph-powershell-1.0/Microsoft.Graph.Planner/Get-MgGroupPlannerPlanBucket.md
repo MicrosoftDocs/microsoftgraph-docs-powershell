@@ -28,8 +28,6 @@ Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-buckets-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

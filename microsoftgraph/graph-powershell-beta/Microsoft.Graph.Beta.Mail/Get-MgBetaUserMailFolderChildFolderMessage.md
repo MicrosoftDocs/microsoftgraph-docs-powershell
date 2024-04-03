@@ -40,8 +40,6 @@ Get-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-Expand
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

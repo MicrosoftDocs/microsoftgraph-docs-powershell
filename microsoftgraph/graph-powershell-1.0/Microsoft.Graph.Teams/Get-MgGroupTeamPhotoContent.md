@@ -33,8 +33,6 @@ Get-MgGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Format

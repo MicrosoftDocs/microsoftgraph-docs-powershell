@@ -35,8 +35,6 @@ Removes an item from a \[list\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

@@ -48,8 +48,6 @@ New-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Install an app to the specified team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -35,8 +35,6 @@ Delete a OneNote page.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

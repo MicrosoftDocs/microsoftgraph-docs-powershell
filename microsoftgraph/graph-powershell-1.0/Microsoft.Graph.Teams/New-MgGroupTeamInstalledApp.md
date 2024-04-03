@@ -48,8 +48,6 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Install an app to the specified team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

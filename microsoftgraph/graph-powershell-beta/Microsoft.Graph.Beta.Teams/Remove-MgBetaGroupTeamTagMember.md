@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

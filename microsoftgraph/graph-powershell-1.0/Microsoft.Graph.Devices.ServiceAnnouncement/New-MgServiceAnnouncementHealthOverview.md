@@ -32,8 +32,6 @@ New-MgServiceAnnouncementHealthOverview -BodyParameter <IMicrosoftGraphServiceHe
 ## DESCRIPTION
 Create new navigation property to healthOverviews for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

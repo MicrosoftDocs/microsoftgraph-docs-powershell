@@ -48,8 +48,6 @@ New-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Create new navigation property to verificationDnsRecords for domains
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

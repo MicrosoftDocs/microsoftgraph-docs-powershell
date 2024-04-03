@@ -37,8 +37,6 @@ Only teachers can perform this operation.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationClassId

@@ -41,8 +41,6 @@ Get-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-Expan
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

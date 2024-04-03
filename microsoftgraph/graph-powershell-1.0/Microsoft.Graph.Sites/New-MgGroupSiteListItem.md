@@ -63,8 +63,6 @@ Create a new \[listItem\]\[\] in a \[list\]\[\].
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

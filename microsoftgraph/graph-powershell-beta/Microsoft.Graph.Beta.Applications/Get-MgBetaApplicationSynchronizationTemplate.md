@@ -40,8 +40,6 @@ Get-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Pre-configured synchronization settings for a particular application.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

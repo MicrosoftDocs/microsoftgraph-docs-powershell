@@ -50,8 +50,6 @@ New-MgBetaSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to versions for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -25,8 +25,6 @@ Get-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [
 ## DESCRIPTION
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

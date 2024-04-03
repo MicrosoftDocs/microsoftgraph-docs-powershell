@@ -35,8 +35,6 @@ Delete a conversationMember from a channel.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

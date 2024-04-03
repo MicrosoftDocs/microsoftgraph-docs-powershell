@@ -42,8 +42,6 @@ Get-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get outcomes from education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

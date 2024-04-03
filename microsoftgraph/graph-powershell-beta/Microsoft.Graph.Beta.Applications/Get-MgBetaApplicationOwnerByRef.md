@@ -34,8 +34,6 @@ Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-owners-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

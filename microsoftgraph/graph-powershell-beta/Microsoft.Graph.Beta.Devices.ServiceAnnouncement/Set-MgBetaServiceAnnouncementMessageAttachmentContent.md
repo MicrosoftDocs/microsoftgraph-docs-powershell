@@ -33,8 +33,6 @@ Set-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 ## DESCRIPTION
 The attachment content.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentType

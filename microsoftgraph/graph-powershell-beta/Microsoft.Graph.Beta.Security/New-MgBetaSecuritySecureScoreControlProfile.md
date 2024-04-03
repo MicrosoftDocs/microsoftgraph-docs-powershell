@@ -38,8 +38,6 @@ New-MgBetaSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create new navigation property to secureScoreControlProfiles for security
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActionType

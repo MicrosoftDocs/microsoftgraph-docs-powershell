@@ -32,8 +32,6 @@ Remove-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Unpin a message from a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChatId

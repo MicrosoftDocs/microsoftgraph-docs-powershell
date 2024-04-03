@@ -40,8 +40,6 @@ Get-MgGroupTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 List of channels shared with the team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

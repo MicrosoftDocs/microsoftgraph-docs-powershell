@@ -56,8 +56,6 @@ New-MgUserOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to sectionGroups for users
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

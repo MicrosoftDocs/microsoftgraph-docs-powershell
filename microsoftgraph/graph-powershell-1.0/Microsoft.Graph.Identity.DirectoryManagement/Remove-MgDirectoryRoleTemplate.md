@@ -32,8 +32,6 @@ Remove-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete entity from directoryRoleTemplates
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -DirectoryRoleTemplateId

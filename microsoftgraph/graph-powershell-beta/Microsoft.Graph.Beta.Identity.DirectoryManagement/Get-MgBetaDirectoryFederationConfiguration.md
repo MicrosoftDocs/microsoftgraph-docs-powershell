@@ -40,8 +40,6 @@ Get-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

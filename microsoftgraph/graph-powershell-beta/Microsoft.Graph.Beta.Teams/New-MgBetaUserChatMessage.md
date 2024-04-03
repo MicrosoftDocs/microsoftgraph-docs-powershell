@@ -64,8 +64,6 @@ New-MgBetaUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Send a new chatMessage in the specified channel or a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

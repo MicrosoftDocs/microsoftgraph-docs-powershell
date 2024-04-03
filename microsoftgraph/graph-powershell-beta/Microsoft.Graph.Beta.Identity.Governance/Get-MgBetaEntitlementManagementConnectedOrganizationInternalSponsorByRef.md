@@ -30,8 +30,6 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

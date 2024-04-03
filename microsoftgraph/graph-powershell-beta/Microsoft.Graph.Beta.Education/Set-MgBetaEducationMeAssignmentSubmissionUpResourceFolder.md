@@ -41,8 +41,6 @@ Only a student in the class can determine what files to upload in a given submis
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

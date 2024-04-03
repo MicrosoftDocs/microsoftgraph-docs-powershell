@@ -25,8 +25,6 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 ## DESCRIPTION
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

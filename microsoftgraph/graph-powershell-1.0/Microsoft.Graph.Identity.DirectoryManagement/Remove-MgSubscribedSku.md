@@ -32,8 +32,6 @@ Remove-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from subscribedSkus
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

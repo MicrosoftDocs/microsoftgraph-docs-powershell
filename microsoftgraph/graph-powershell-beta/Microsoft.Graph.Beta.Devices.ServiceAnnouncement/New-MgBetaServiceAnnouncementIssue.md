@@ -35,8 +35,6 @@ New-MgBetaServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthI
 ## DESCRIPTION
 Create new navigation property to issues for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

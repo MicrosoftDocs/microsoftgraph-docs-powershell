@@ -43,8 +43,6 @@ Retrieve the properties and relationships of a section object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

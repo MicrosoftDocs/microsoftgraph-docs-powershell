@@ -32,8 +32,6 @@ Get-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the default channel, General, of a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ExpandProperty

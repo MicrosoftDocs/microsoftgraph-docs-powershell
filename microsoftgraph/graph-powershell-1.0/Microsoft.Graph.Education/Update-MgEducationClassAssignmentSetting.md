@@ -54,7 +54,7 @@ Only teachers can update these settings.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentsettings-update-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update submissionAnimationDisabled
 
 ```powershell
 
@@ -67,9 +67,9 @@ $params = @{
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ```
-This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+This example will update submissionanimationdisabled
 
-### Example 2: Code snippet
+### Example 2: Create grading categories
 
 ```powershell
 
@@ -95,7 +95,7 @@ $params = @{
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
 ```
-This example shows how to use the Update-MgEducationClassAssignmentSetting Cmdlet.
+This example will create grading categories
 
 
 ## PARAMETERS

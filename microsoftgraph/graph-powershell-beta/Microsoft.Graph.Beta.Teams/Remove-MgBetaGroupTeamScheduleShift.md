@@ -32,8 +32,6 @@ Remove-MgBetaGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a shift from the schedule.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -GroupId

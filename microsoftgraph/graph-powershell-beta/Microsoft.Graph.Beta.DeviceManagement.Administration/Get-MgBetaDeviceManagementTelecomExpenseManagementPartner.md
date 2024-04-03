@@ -41,8 +41,6 @@ Get-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 The telecom expense management partners.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

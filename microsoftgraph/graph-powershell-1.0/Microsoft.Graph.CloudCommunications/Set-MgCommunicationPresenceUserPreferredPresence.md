@@ -63,8 +63,6 @@ For more details, see presence sessions and time-out and expiration.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setuserpreferredpresence-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Activity

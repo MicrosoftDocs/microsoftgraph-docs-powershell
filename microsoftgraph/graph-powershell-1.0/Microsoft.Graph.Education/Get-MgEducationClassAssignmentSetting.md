@@ -32,8 +32,6 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 ## DESCRIPTION
 Specifies class-level assignments settings.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -EducationClassId

@@ -65,8 +65,6 @@ Read the properties and relationships of a set object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

@@ -35,8 +35,6 @@ Delete the channel.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ChannelId

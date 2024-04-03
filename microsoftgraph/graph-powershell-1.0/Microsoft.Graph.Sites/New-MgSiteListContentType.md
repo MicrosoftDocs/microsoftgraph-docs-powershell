@@ -58,8 +58,6 @@ New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to contentTypes for sites
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

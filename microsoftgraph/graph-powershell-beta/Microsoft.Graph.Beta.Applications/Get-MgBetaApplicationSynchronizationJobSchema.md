@@ -35,8 +35,6 @@ Retrieve the schema for a given synchronization job or template.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ApplicationId

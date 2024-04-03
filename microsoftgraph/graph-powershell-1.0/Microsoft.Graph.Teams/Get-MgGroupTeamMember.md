@@ -40,8 +40,6 @@ Get-MgGroupTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get a conversationMember from a team.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

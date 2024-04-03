@@ -48,8 +48,6 @@ New-MgBetaUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

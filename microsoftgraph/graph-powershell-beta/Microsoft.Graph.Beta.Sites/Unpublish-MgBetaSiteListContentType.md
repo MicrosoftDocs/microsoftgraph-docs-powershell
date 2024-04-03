@@ -35,8 +35,6 @@ Unpublish a \[contentType\]\[\] from a content type hub site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId

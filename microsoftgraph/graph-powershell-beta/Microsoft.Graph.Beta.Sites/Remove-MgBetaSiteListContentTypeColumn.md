@@ -35,8 +35,6 @@ Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[c
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId

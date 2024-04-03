@@ -35,8 +35,6 @@ Publishes a \[contentType\]\[\] present in a content type hub site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ContentTypeId

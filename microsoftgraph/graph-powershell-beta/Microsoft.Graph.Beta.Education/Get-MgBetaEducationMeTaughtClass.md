@@ -40,8 +40,6 @@ Get-MgBetaEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandPrope
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

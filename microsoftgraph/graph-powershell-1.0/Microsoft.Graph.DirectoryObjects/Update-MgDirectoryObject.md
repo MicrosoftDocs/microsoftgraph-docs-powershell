@@ -46,8 +46,6 @@ Update-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity>
 ## DESCRIPTION
 Update entity in directoryObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

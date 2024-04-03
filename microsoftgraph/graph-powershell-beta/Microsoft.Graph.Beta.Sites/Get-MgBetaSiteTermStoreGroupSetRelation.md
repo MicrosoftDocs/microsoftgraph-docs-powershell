@@ -40,8 +40,6 @@ Get-MgBetaSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandPr
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

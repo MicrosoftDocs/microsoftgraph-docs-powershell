@@ -53,8 +53,6 @@ An attachment can be one of the following types: All these types of attachment r
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-post-attachments-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

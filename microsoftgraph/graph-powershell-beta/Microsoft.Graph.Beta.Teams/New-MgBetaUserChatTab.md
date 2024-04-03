@@ -52,8 +52,6 @@ New-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

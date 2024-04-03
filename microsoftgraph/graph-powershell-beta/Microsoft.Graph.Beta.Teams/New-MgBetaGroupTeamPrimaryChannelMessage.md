@@ -64,8 +64,6 @@ New-MgBetaGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new chatMessage in the specified channel.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

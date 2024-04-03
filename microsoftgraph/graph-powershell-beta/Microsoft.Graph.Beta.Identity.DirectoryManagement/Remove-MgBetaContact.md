@@ -32,8 +32,6 @@ Remove-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-IfMat
 ## DESCRIPTION
 Delete entity from contacts
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -Headers

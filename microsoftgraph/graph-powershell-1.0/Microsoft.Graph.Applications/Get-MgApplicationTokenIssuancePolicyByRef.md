@@ -24,8 +24,6 @@ Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <Stri
 ## DESCRIPTION
 List the tokenIssuancePolicy objects that are assigned to an application.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All

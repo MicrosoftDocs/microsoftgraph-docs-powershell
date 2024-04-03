@@ -37,8 +37,6 @@ New-MgBetaServiceAnnouncementMessage -BodyParameter <IMicrosoftGraphServiceUpdat
 ## DESCRIPTION
 Create new navigation property to messages for admin
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -ActionRequiredByDateTime

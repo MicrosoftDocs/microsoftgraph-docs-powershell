@@ -50,8 +50,6 @@ New-MgEducationUserAssignmentSubmissionSubmittedResource -InputObject <IEducatio
 ## DESCRIPTION
 Create new navigation property to submittedResources for education
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

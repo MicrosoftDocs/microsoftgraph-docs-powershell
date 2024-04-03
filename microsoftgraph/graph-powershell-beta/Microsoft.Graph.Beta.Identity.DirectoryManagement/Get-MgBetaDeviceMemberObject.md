@@ -48,8 +48,6 @@ Get-MgBetaDeviceMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Invoke action getMemberObjects
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

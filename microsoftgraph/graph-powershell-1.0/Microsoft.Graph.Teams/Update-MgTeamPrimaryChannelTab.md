@@ -51,8 +51,6 @@ Update the properties of the specified tab.This can be used to configure the con
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-tabs-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

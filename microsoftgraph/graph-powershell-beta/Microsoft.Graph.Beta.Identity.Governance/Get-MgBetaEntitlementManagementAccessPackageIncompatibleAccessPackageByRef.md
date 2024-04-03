@@ -28,8 +28,6 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-list-incompatibleaccesspackages-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AccessPackageId

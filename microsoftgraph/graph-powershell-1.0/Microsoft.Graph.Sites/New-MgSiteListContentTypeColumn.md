@@ -71,8 +71,6 @@ Add a column to a \[content type\]\[contentType\] in a site, or a list with a re
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-post-columns-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -43,8 +43,6 @@ Retrieve the properties and relationships of a permission object on a site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-get-permission-permissions.md)]
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -All
