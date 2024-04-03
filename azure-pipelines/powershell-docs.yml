@@ -22,12 +22,6 @@ parameters:
   type: boolean
   default: true
 resources:
-  repositories:
-  - repository: msgraph-sdk-powershell
-    type: github
-    endpoint: MicrosoftDocs
-    name: microsoftgraph/msgraph-sdk-powershell
-    ref: dev
   - repository: 1ESPipelineTemplates
     type: git
     name: 1ESPipelineTemplates/1ESPipelineTemplates
@@ -71,6 +65,7 @@ extends:
           inputs:
             targetType: 'inline'
             script: |
+              git submodule update --init --recursive
               $branch = "{0}_{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
               Write-Host "Compute branch: $branch"
               Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
