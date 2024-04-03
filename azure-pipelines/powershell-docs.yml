@@ -23,6 +23,11 @@ parameters:
   default: true
 resources:
   repositories:
+  - repository: msgraph-sdk-powershell
+    type: github
+    endpoint: MicrosoftDocs
+    name: microsoftgraph/msgraph-sdk-powershell
+    ref: dev
   - repository: 1ESPipelineTemplates
     type: git
     name: 1ESPipelineTemplates/1ESPipelineTemplates
