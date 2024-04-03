@@ -52,18 +52,6 @@ New-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 Create new navigation property to attendanceRecords for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,6 +385,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventwebinarsessionattendancereportattendancerecord)
+
 
 
 
