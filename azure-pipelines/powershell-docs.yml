@@ -98,41 +98,41 @@ extends:
             targetType: 'filePath'
             pwsh: true
             filePath: scripts/GenerateMarkDown.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Escape disallowed html tags'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Update metadata header'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Update Links'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Repair Examples and Descriptions and Title'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
-        # - task: PowerShell@2
-        #   displayName: 'Remove boiler plate code'
-        #   continueOnError: false
-        #   inputs:
-        #     targetType: 'filePath'
-        #     pwsh: true
-        #     filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+        - task: PowerShell@2
+          displayName: 'Escape disallowed html tags'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/EscapeDisallowedHtmlTags.ps1
+        - task: PowerShell@2
+          displayName: 'Update metadata header'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/MsProdUpdate.ps1
+        - task: PowerShell@2
+          displayName: 'Update Links'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/UpdateLinks.ps1
+        - task: PowerShell@2
+          displayName: 'Repair Examples and Descriptions and Title'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/RepairExamplesDescriptionsAndTitle.ps1
+        - task: PowerShell@2
+          displayName: 'Remove boiler plate code'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/RemoveBoilerPlateCode.ps1
         - task: PowerShell@2
           displayName: Pushing to github
           env:
@@ -143,6 +143,7 @@ extends:
             script: |
               git config --global user.email "GraphTooling@service.microsoft.com"
               git config --global user.name "Microsoft Graph DevX Tooling"
+              git config --system core.longpaths true
               git status
               git add .
               git commit -m "Updating reference docs"
