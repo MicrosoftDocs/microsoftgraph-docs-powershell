@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
@@ -240,28 +240,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAuthenticationFlowsPolicy\>: authenticationFlowsPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphAuthenticationFlowsPolicy>`: authenticationFlowsPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: Inherited property.
+  - `[Description <String>]`: Inherited property.
 A description of the policy.
 Optional.
 Read-only.
-  \[DisplayName \<String\>\]: Inherited property.
+  - `[DisplayName <String>]`: Inherited property.
 The human-readable name of the policy.
 Optional.
 Read-only.
-  \[SelfServiceSignUp \<IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration\>\]: selfServiceSignUpAuthenticationFlowConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsEnabled \<Boolean?\>\]: Indicates whether self-service sign-up flow is enabled or disabled.
+  - `[SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>]`: selfServiceSignUpAuthenticationFlowConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled.
 The default value is false.
 This property isn't a key.
 Required.
 
-SELFSERVICESIGNUP \<IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration\>: selfServiceSignUpAuthenticationFlowConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsEnabled \<Boolean?\>\]: Indicates whether self-service sign-up flow is enabled or disabled.
+SELFSERVICESIGNUP `<IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>`: selfServiceSignUpAuthenticationFlowConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled.
 The default value is false.
 This property isn't a key.
 Required.
@@ -269,4 +269,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy)
+
+
+
 

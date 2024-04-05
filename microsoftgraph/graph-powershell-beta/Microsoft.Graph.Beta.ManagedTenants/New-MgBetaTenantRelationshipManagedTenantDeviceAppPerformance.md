@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance
@@ -426,28 +426,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphManagedTenantsDeviceAppPerformance\>: deviceAppPerformance
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedTenantsDeviceAppPerformance>`: deviceAppPerformance
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppFriendlyName \<String\>\]: 
-  \[AppName \<String\>\]: 
-  \[AppPublisher \<String\>\]: 
-  \[AppVersion \<String\>\]: 
-  \[DeviceId \<String\>\]: 
-  \[DeviceManufacturer \<String\>\]: 
-  \[DeviceModel \<String\>\]: 
-  \[DeviceName \<String\>\]: 
-  \[HealthStatus \<String\>\]: 
-  \[IsLatestUsedVersion \<Int32?\>\]: 
-  \[IsMostUsedVersion \<Int32?\>\]: 
-  \[LastUpdatedDateTime \<DateTime?\>\]: 
-  \[TenantDisplayName \<String\>\]: 
-  \[TenantId \<String\>\]: 
-  \[TotalAppCrashCount \<Int32?\>\]: 
-  \[TotalAppFreezeCount \<Int32?\>\]:
+  - `[AppFriendlyName <String>]`: 
+  - `[AppName <String>]`: 
+  - `[AppPublisher <String>]`: 
+  - `[AppVersion <String>]`: 
+  - `[DeviceId <String>]`: 
+  - `[DeviceManufacturer <String>]`: 
+  - `[DeviceModel <String>]`: 
+  - `[DeviceName <String>]`: 
+  - `[HealthStatus <String>]`: 
+  - `[IsLatestUsedVersion <Int32?>]`: 
+  - `[IsMostUsedVersion <Int32?>]`: 
+  - `[LastUpdatedDateTime <DateTime?>]`: 
+  - `[TenantDisplayName <String>]`: 
+  - `[TenantId <String>]`: 
+  - `[TotalAppCrashCount <Int32?>]`: 
+  - `[TotalAppFreezeCount <Int32?>]`:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantdeviceappperformance)
+
+
+
 

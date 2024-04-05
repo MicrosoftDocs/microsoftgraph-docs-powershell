@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
@@ -323,42 +323,45 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphConnectedOrganization\>: connectedOrganization
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphConnectedOrganization>`: connectedOrganization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[Description \<String\>\]: The description of the connected organization.
-  \[DisplayName \<String\>\]: The display name of the connected organization.
+  - `[Description <String>]`: The description of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization.
 Supports $filter (eq).
-  \[ExternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[IdentitySources \<IMicrosoftGraphIdentitySource\[\]\>\]: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
+  - `[IdentitySources <IMicrosoftGraphIdentitySource- `[]`>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource, externalDomainFederation, or socialIdentitySource.
 Nullable.
-  \[InternalSponsors \<IMicrosoftGraphDirectoryObject\[\]\>\]: 
-  \[ModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: 
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[State \<String\>\]: connectedOrganizationState
+  - `[State <String>]`: connectedOrganizationState
 
-EXTERNALSPONSORS \<IMicrosoftGraphDirectoryObject\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INTERNALSPONSORS \<IMicrosoftGraphDirectoryObject\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+INTERNALSPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization)
+
+
+
 

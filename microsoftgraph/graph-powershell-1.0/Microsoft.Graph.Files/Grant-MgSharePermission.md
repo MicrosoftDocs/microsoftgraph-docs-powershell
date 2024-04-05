@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission
@@ -254,48 +254,51 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Recipients \<IMicrosoftGraphDriveRecipient\[\]\>\]: 
-    \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+BODYPARAMETER `<IPaths1Mcxy93SharesShareddriveitemIdPermissionMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Recipients <IMicrosoftGraphDriveRecipient- `[]`>]`: 
+    - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-    \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
-    \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
-  \[Roles \<String\[\]\>\]: 
+    - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+    - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
+  - `[Roles <String- `[]`>]`: 
 
-INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
-  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
-  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[Q \<String\>\]: Usage: q='{q}'
-  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
-  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[Q <String>]`: Usage: q='{q}'
+  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS \<IMicrosoftGraphDriveRecipient\[\]\>: .
-  \[Alias \<String\>\]: The alias of the domain object, for cases where an email address is unavailable (e.g.
+RECIPIENTS <IMicrosoftGraphDriveRecipient- `[]`>: .
+  - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g.
 security groups).
-  \[Email \<String\>\]: The email address for the recipient, if the recipient has an associated email address.
-  \[ObjectId \<String\>\]: The unique identifier for the recipient in the directory.
+  - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
+  - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgsharepermission)
+
+
+
 

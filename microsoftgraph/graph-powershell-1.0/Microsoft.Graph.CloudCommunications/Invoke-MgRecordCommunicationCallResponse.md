@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRecordCommunicationCallResponse
 
 ## SYNOPSIS
-Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -51,7 +51,7 @@ Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Records a short audio response from the caller.\nA bot can utilize this to capture a voice response from a caller after they are prompted for a response.
+Records a short audio response from the caller.A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 For further information on how to handle operations, please review commsOperation This action is not intended to record the entire call.
 The maximum length of recording is 2 minutes.
 The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends.
@@ -362,34 +362,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[BargeInAllowed \<Boolean?\>\]: 
-  \[ClientContext \<String\>\]: 
-  \[InitialSilenceTimeoutInSeconds \<Int32?\>\]: 
-  \[MaxRecordDurationInSeconds \<Int32?\>\]: 
-  \[MaxSilenceTimeoutInSeconds \<Int32?\>\]: 
-  \[PlayBeep \<Boolean?\>\]: 
-  \[Prompts \<IMicrosoftGraphPrompt\[\]\>\]: 
-  \[StopTones \<String\[\]\>\]: 
+BODYPARAMETER `<IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BargeInAllowed <Boolean?>]`: 
+  - `[ClientContext <String>]`: 
+  - `[InitialSilenceTimeoutInSeconds <Int32?>]`: 
+  - `[MaxRecordDurationInSeconds <Int32?>]`: 
+  - `[MaxSilenceTimeoutInSeconds <Int32?>]`: 
+  - `[PlayBeep <Boolean?>]`: 
+  - `[Prompts <IMicrosoftGraphPrompt- `[]`>]`: 
+  - `[StopTones <String- `[]`>]`: 
 
-INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
-  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
-  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
-  \[CallId \<String\>\]: The unique identifier of call
-  \[CallRecordId \<String\>\]: The unique identifier of callRecord
-  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
-  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
-  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
-  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
-  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[ParticipantId \<String\>\]: The unique identifier of participant
-  \[PresenceId \<String\>\]: The unique identifier of presence
-  \[SessionId \<String\>\]: The unique identifier of session
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse)
+
+
+
 
