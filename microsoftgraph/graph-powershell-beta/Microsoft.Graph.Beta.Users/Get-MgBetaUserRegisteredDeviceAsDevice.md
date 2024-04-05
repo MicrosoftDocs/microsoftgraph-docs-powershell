@@ -41,18 +41,6 @@ Get-MgBetaUserRegisteredDeviceAsDevice -InputObject <IUsersIdentity> [-ExpandPro
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgUserRegisteredDeviceAsDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceAsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddeviceasdevice)
+
 
 
 

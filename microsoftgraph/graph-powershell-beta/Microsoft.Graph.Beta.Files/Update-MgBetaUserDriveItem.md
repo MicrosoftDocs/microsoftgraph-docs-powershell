@@ -86,22 +86,6 @@ Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.Yo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -54629,6 +54613,7 @@ Read-only.
 [Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem)
+
 
 
 

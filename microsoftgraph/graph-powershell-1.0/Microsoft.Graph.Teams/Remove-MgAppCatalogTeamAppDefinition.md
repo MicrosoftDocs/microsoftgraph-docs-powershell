@@ -32,22 +32,6 @@ Remove-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property appDefinitions for appCatalogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +241,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinition)
+
 
 
 

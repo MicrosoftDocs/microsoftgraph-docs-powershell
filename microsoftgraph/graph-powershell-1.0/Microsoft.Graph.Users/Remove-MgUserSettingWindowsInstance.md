@@ -33,18 +33,6 @@ Remove-MgUserSettingWindowsInstance -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property instances for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -251,6 +239,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Remove-MgBetaUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSettingWindowsInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingwindowsinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersettingwindowsinstance)
+
 
 
 

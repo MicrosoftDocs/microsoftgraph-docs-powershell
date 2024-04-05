@@ -32,18 +32,6 @@ Delete a departmentTemplate object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-delete-departments-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepartmentTemplateId
@@ -285,6 +273,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabeldepartment)
+
 
 
 

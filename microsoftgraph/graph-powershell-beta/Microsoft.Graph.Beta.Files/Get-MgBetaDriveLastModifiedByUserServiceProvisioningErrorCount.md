@@ -46,18 +46,6 @@ Get-MgBetaDriveLastModifiedByUserServiceProvisioningErrorCount -InputObject <IFi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -212,6 +200,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelastmodifiedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelastmodifiedbyuserserviceprovisioningerrorcount)
+
 
 
 

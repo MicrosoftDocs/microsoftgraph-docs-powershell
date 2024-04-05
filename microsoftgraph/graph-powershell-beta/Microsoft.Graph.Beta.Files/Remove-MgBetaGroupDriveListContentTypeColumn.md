@@ -36,22 +36,6 @@ Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[c
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -282,6 +266,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistcontenttypecolumn)
+
 
 
 

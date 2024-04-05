@@ -45,18 +45,6 @@ Getting page information Access a page's metadata by page identifier: Getting pa
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -377,6 +365,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepage)
+
 
 
 

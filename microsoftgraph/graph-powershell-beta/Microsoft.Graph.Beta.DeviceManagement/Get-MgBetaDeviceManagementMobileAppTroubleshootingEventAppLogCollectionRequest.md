@@ -43,22 +43,6 @@ Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 The collection property of AppLogUploadRequest.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -465,6 +449,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
+
 
 
 

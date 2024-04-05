@@ -30,18 +30,6 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property alertIncidents for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -317,6 +305,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancerolemanagementalertincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancerolemanagementalertincident)
+
 
 
 

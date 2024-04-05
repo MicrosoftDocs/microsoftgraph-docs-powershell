@@ -33,18 +33,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy
 ## DESCRIPTION
 The user who created the workflow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -275,6 +263,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowcreatedby](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowcreatedby)
+
 
 
 

@@ -31,22 +31,6 @@ Complete-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignup
 ## DESCRIPTION
 Invoke action completeSignup
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -209,6 +193,7 @@ BODYPARAMETER `<IPathsRk2EjiDevicemanagementAndroidmanagedstoreaccountenterprise
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/complete-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/complete-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingsignup)
+
 
 
 

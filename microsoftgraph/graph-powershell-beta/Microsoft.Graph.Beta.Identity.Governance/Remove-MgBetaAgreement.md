@@ -32,22 +32,6 @@ Remove-MgBetaAgreement -InputObject <IIdentityGovernanceIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete entity from agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -309,6 +293,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Remove-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaagreement)
+
 
 
 

@@ -34,18 +34,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask
 ## DESCRIPTION
 The related workflow task
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -274,6 +262,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskreporttaskprocessingresulttask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskreporttaskprocessingresulttask)
+
 
 
 

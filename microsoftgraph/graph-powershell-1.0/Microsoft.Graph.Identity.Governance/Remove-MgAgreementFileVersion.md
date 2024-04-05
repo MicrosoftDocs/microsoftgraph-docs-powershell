@@ -32,18 +32,6 @@ Remove-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property versions for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -303,6 +291,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Remove-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfileversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfileversion)
+
 
 
 

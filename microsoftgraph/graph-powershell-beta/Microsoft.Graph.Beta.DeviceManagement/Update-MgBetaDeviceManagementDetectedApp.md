@@ -50,22 +50,6 @@ Update-MgBetaDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity
 ## DESCRIPTION
 Update the navigation property detectedApps in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15501,6 +15485,7 @@ Defaults to setting on client device.
 [Update-MgDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDetectedApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdetectedapp)
+
 
 
 

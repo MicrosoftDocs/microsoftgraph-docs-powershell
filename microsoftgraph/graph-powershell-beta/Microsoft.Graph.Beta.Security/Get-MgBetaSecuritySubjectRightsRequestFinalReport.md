@@ -32,22 +32,6 @@ Get-MgBetaSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Invoke function getFinalReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -259,6 +243,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecuritySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport)
+
 
 
 

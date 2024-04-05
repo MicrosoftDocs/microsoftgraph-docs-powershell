@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,6 +232,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementtargetedmanagedappconfigurationdeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementtargetedmanagedappconfigurationdeploymentsummary)
+
 
 
 

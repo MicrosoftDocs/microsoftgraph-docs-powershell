@@ -43,22 +43,6 @@ Remove-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete ref of navigation property members for administrativeUnits
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -296,6 +280,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadministrativeunitmemberbyref)
+
 
 
 

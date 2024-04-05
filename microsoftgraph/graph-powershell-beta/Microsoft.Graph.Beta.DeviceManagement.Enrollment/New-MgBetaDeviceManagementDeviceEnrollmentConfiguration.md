@@ -36,18 +36,6 @@ New-MgBetaDeviceManagementDeviceEnrollmentConfiguration
 ## DESCRIPTION
 Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -363,6 +351,7 @@ Users are subject only to the configuration with the lowest priority value.
 [New-MgDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeviceenrollmentconfiguration)
+
 
 
 

@@ -48,22 +48,6 @@ New-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -391,6 +375,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [New-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationoperation)
+
 
 
 

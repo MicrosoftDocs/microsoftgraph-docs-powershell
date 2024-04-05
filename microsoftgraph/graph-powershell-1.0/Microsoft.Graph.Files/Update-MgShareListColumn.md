@@ -68,22 +68,6 @@ Update-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property columns in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1270,6 +1254,7 @@ For examples, see Examples of common formulas in lists.
 [Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcolumn)
+
 
 
 

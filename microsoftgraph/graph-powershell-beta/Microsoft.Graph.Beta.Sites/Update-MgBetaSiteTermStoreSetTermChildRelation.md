@@ -51,18 +51,6 @@ Update-MgBetaSiteTermStoreSetTermChildRelation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property relations in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -625,6 +613,7 @@ Read-only.
 [Update-MgSiteTermStoreSetTermChildRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetTermChildRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresettermchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoresettermchildrelation)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount -InputObject <IRepo
 ## DESCRIPTION
 Invoke function getSkypeForBusinessDeviceUsageDistributionUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -200,6 +184,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusagedistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusagedistributionusercount)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaSiteTermStoreSetParentGroupSetTermSet -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 The \[set\] in which the term is created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -271,6 +259,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteTermStoreSetParentGroupSetTermSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetTermSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsettermset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsettermset)
+
 
 
 

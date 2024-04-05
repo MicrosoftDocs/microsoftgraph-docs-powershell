@@ -32,18 +32,6 @@ Get-MgBetaUserDriveBundleCount -InputObject <IFilesIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgUserDriveBundleCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveBundleCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundlecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivebundlecount)
+
 
 
 

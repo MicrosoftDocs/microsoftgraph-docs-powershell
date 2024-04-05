@@ -45,22 +45,6 @@ Get an open extension (openTypeExtension object) identified by name or fully qua
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +337,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Get-MgUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageextension)
+
 
 
 

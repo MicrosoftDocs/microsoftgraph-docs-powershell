@@ -34,18 +34,6 @@ Get-MgBetaPrintPrinterJobTaskDefinition -InputObject <IDevicesCloudPrintIdentity
 The printTaskDefinition that was used to create this task.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -219,6 +207,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Get-MgPrintPrinterJobTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobTaskDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobtaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinterjobtaskdefinition)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgGroupMemberOfAsGroup -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +359,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgBetaGroupMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOfAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberofasgroup)
+
 
 
 

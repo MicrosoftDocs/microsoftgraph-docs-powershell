@@ -33,22 +33,6 @@ New-MgBetaDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCa
 ## DESCRIPTION
 Create new navigation property to deviceCategories for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,6 +236,7 @@ Read-only.
 [New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory)
+
 
 
 

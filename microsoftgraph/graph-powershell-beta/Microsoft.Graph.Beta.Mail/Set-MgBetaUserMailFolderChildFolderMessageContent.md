@@ -33,22 +33,6 @@ Set-MgBetaUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> [
 ## DESCRIPTION
 Update media content for the navigation property messages in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -299,6 +283,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Set-MgUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Set-MgUserMailFolderChildFolderMessageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfolderchildfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/set-mgbetausermailfolderchildfoldermessagecontent)
+
 
 
 

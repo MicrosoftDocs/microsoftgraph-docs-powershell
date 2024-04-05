@@ -78,22 +78,6 @@ Remove-MgGroupSiteTermStoreSetChildRelation -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property relations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -384,6 +368,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoresetchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoresetchildrelation)
+
 
 
 

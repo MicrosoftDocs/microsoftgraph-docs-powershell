@@ -48,18 +48,6 @@ Update-MgBetaGroupSiteAnalytic -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30197,6 +30185,7 @@ Read-only.
 [Update-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiteanalytic)
+
 
 
 

@@ -34,22 +34,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerforman
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -351,6 +335,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion)
+
 
 
 

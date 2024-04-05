@@ -32,18 +32,6 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete navigation property qnas for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -214,6 +202,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Remove-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna)
+
 
 
 

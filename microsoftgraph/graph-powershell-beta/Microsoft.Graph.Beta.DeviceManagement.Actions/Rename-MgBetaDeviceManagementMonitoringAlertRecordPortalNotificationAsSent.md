@@ -30,18 +30,6 @@ Rename-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 ## DESCRIPTION
 Invoke action changeAlertRecordsPortalNotificationAsSent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -204,6 +192,7 @@ BODYPARAMETER `<IPaths180CsoDevicemanagementMonitoringAlertrecordsMicrosoftGraph
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementmonitoringalertrecordportalnotificationassent)
+
 
 
 

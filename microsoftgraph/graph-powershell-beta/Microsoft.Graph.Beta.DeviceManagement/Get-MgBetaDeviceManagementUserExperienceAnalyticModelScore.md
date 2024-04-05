@@ -40,22 +40,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDevice
 ## DESCRIPTION
 User experience analytics model scores
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -447,6 +431,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgDeviceManagementUserExperienceAnalyticModelScore](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticModelScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticmodelscore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticmodelscore)
+
 
 
 

@@ -52,18 +52,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject
 ## DESCRIPTION
 Update the navigation property tasks in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9827,6 +9815,7 @@ Required.Supports $filter(eq, ne).
 [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowdeleteditemworkflowtask)
+
 
 
 

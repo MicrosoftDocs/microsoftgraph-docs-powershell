@@ -33,22 +33,6 @@ Remove-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplications
 ## DESCRIPTION
 Delete navigation property templates for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +241,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Remove-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalsynchronizationtemplate)
+
 
 
 

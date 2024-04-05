@@ -62,22 +62,6 @@ Update-MgGroupDrive -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the navigation property drives in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -42525,6 +42509,7 @@ Read-only.
 [Update-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrive)
+
 
 
 

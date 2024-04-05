@@ -51,18 +51,6 @@ New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion
 ## DESCRIPTION
 Create new navigation property to contentVersions for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -419,6 +407,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXContentVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcontentversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmobileappaswindowsuniversalappxcontentversion)
+
 
 
 

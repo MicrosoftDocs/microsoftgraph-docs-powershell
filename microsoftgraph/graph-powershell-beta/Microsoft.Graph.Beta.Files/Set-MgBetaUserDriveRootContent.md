@@ -32,22 +32,6 @@ Set-MgBetaUserDriveRootContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -267,6 +251,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgUserDriveRootContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootcontent)
+
 
 
 

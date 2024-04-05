@@ -51,22 +51,6 @@ New-MgBetaDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationStat
 ## DESCRIPTION
 Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -553,6 +537,7 @@ SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState- `
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicemanageddevicemobileappconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicemanageddevicemobileappconfigurationstate)
+
 
 
 

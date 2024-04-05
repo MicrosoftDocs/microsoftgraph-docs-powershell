@@ -32,18 +32,6 @@ Get-MgUserAuthenticationFido2MethodCount -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -229,6 +217,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Get-MgBetaUserAuthenticationFido2MethodCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2MethodCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2methodcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2methodcount)
+
 
 
 

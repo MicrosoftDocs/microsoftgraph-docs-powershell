@@ -35,18 +35,6 @@ Get \[itemAnalytics\]\[\] about the views that took place under this resource.Th
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/itemanalytics-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -216,6 +204,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticTime?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalytictime)
+
 
 
 

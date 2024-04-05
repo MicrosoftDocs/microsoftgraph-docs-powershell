@@ -32,22 +32,6 @@ Remove-MgBetaUserSetting -InputObject <IUsersIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property settings for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -234,6 +218,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Remove-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausersetting)
+
 
 
 

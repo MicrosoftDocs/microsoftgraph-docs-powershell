@@ -52,18 +52,6 @@ New-MgBetaSiteTermStoreSetParentGroupSet -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to sets for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -700,6 +688,7 @@ Read-only.
 [New-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoresetparentgroupset)
+
 
 
 

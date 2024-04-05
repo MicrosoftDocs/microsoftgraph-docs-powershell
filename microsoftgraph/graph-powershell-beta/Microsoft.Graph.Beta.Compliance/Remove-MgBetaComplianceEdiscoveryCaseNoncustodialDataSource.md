@@ -29,22 +29,6 @@ Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <ICompl
 ## DESCRIPTION
 Delete navigation property noncustodialDataSources for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -237,6 +221,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasenoncustodialdatasource)
+
 
 
 

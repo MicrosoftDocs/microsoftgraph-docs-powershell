@@ -32,22 +32,6 @@ Remove-MgUserDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property contentTypes for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -263,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttype)
+
 
 
 

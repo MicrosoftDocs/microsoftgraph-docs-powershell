@@ -46,22 +46,6 @@ Get-MgBetaShareListItemDriveItemContent -InputObject <IFilesIdentity> [-Format <
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Format
@@ -246,6 +230,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgShareListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdriveitemcontent)
+
 
 
 

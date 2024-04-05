@@ -50,22 +50,6 @@ Update-MgDriveItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property versions in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -433,6 +417,7 @@ Read-only.
 [Update-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemversion)
+
 
 
 

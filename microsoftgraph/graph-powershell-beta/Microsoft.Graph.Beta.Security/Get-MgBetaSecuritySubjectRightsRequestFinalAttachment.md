@@ -32,22 +32,6 @@ Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIde
 ## DESCRIPTION
 Invoke function getFinalAttachment
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -259,6 +243,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment)
+
 
 
 

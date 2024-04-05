@@ -52,22 +52,6 @@ New-MgBetaDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceMana
 ## DESCRIPTION
 Create new navigation property to roleAssignments for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +474,7 @@ These must match the actionName that is defined as part of the rolePermission.
 [New-MgDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroledefinitionroleassignment)
+
 
 
 

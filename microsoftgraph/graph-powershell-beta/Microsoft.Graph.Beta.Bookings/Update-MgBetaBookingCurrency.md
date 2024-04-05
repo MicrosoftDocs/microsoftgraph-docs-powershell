@@ -74,22 +74,6 @@ Update-MgBetaBookingCurrency -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update entity in bookingCurrencies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -314,6 +298,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [Update-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingcurrency)
+
 
 
 

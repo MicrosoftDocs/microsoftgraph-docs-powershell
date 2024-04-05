@@ -37,22 +37,6 @@ New-MgBetaDeviceManagementMobileAppTroubleshootingEvent
 ## DESCRIPTION
 Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -440,6 +424,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
 [New-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmobileapptroubleshootingevent)
+
 
 
 

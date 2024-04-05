@@ -35,22 +35,6 @@ Publishes a \[contentType\]\[\] present in a content type hub site.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -236,6 +220,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Publish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
+
 
 
 

@@ -50,18 +50,6 @@ Set-MgBetaDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagem
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,6 +332,7 @@ Read-only.
 [Set-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementManagedEBook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementmanagedebook)
+
 
 
 

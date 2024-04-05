@@ -46,18 +46,6 @@ Remove-MgBetaSiteGetByPathTermStore -InputObject <ISitesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property termStore for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -301,6 +289,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteGetByPathTermStore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitegetbypathtermstore)
+
 
 
 

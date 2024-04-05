@@ -27,18 +27,6 @@ Get-MgInvitationInvitedUserServiceProvisioningError -InvitationId <String> [-Exp
 Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -267,6 +255,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaInvitationInvitedUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinviteduserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinviteduserserviceprovisioningerror)
+
 
 
 

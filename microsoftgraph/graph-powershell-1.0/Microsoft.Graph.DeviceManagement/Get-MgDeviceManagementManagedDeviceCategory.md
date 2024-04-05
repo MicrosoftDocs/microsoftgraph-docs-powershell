@@ -32,22 +32,6 @@ Get-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Read properties and relationships of the deviceCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -232,6 +216,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [Get-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevicecategory)
+
 
 
 

@@ -31,22 +31,6 @@ Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvan
 ## DESCRIPTION
 Delete navigation property advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStateId
@@ -347,6 +331,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate)
+
 
 
 

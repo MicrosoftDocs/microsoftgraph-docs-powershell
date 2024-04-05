@@ -36,18 +36,6 @@ The host related to this component.
 This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -230,6 +218,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponenthost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponenthost)
+
 
 
 

@@ -34,18 +34,6 @@ Remove-MgDeviceAppManagementiOSManagedAppProtectionAssignment
 ## DESCRIPTION
 Delete navigation property assignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +245,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotectionassignment)
+
 
 
 

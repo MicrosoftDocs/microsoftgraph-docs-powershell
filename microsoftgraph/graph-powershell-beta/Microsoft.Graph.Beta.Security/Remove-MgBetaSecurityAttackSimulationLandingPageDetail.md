@@ -32,18 +32,6 @@ Remove-MgBetaSecurityAttackSimulationLandingPageDetail -InputObject <ISecurityId
 ## DESCRIPTION
 Delete navigation property details for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -301,6 +289,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationlandingpagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationlandingpagedetail)
+
 
 
 

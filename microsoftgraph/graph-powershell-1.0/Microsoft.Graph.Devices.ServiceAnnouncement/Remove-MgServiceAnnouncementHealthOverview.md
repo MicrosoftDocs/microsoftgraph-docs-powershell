@@ -32,22 +32,6 @@ Remove-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnounce
 ## DESCRIPTION
 Delete navigation property healthOverviews for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -213,6 +197,7 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 [Remove-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementhealthoverview)
+
 
 
 

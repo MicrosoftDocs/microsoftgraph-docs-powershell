@@ -46,22 +46,6 @@ New-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to columnLinks for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,6 +300,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgBetaSiteContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumnlink)
+
 
 
 

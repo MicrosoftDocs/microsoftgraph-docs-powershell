@@ -37,22 +37,6 @@ New-MgBetaSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-Re
 ## DESCRIPTION
 Create new navigation property to incidents for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -626,6 +610,7 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 [New-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/New-MgSecurityIncident?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityincident)
+
 
 
 

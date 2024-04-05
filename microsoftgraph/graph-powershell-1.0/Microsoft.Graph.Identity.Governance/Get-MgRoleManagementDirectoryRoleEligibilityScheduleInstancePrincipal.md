@@ -34,18 +34,6 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,6 +232,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleeligibilityscheduleinstanceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroleeligibilityscheduleinstanceprincipal)
+
 
 
 

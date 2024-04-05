@@ -48,18 +48,6 @@ Update the properties of a federatedIdentityCredential object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-update-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -422,6 +410,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationfederatedidentitycredentialbyname)
+
 
 
 

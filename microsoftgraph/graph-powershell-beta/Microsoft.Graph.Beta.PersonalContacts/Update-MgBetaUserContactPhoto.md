@@ -46,22 +46,6 @@ Update-MgBetaUserContactPhoto -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Update the navigation property photo in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,6 +286,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 [Update-MgUserContactPhoto](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactphoto)
+
 
 
 

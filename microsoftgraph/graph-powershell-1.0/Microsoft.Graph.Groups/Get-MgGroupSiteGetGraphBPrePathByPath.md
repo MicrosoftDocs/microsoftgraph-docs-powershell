@@ -31,18 +31,6 @@ Get-MgGroupSiteGetGraphBPrePathByPath -InputObject <IGroupsIdentity> [-ResponseH
 ## DESCRIPTION
 Invoke function getByPath
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -225,6 +213,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgBetaGroupSiteGetGraphBPrePathByPath](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteGetGraphBPrePathByPath?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathbypath)
+
 
 
 

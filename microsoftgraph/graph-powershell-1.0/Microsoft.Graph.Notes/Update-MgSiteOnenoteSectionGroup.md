@@ -56,22 +56,6 @@ Update-MgSiteOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property sectionGroups in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1169,6 +1153,7 @@ Read-only.
 [Update-MgBetaSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaSiteOnenoteSectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotesectiongroup)
+
 
 
 

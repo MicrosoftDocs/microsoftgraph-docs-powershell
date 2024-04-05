@@ -32,18 +32,6 @@ Get-MgBetaSiteListContentTypeCount -InputObject <ISitesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -241,6 +229,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteListContentTypeCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentTypeCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttypecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcontenttypecount)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Get bulkUpload from applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -212,6 +200,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Get-MgBetaApplicationSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUpload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobbulkupload](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobbulkupload)
+
 
 
 

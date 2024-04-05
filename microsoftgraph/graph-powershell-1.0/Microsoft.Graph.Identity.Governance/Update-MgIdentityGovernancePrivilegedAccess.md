@@ -32,18 +32,6 @@ Update-MgIdentityGovernancePrivilegedAccess -BodyParameter <IMicrosoftGraphPrivi
 ## DESCRIPTION
 Update the navigation property privilegedAccess in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9875,6 +9863,7 @@ Optional.
 [Update-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccess)
+
 
 
 

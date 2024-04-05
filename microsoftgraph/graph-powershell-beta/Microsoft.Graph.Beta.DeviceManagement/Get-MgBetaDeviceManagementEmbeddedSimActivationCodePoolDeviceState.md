@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePoolDeviceState -InputObject 
 ## DESCRIPTION
 Navigational property to a list of device states for this pool.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -459,6 +443,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepooldevicestate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementembeddedsimactivationcodepooldevicestate)
+
 
 
 

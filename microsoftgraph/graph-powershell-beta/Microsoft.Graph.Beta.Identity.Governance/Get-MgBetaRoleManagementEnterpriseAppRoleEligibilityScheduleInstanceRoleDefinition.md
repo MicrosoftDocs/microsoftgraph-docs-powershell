@@ -31,18 +31,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefiniti
 ## DESCRIPTION
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -287,6 +275,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityscheduleinstanceroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleeligibilityscheduleinstanceroledefinition)
+
 
 
 

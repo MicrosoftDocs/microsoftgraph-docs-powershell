@@ -47,22 +47,6 @@ Invoke-MgBetaDeprovisionDeviceManagementManagedDevice -InputObject <IDeviceManag
 ## DESCRIPTION
 Invoke action deprovision
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,6 +296,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadeprovisiondevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadeprovisiondevicemanagementmanageddevice)
+
 
 
 

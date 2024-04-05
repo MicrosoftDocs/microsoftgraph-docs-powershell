@@ -54,18 +54,6 @@ New-MgGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -9664,6 +9652,7 @@ Read-only.
 [New-MgBetaGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteanalyticitemactivitystat)
+
 
 
 
