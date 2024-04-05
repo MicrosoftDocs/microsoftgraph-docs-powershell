@@ -39,36 +39,40 @@ Search results are provided in the response.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	requests = @(
 		@{
 			entityTypes = @(
-				"externalItem"
-			)
-			contentSources = @(
-				"/external/connections/connectionfriendlyname"
-			)
-			region = "US"
-			query = @{
-				queryString = "contoso product"
-			}
-			from = 0
-			size = 25
-			fields = @(
-				"title"
-				"description"
-			)
-		}
+			"externalItem"
+		)
+		contentSources = @(
+		"/external/connections/connectionfriendlyname"
 	)
+	region = "US"
+	query = @{
+		queryString = "contoso product"
+	}
+	from = 0
+	size = 25
+	fields = @(
+	"title"
+"description"
+)
+}
+)
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
+
 
 ## PARAMETERS
 

@@ -48,11 +48,11 @@ Create a new educationUser object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -87,37 +87,41 @@ $params = @{
 		}
 	)
 	businessPhones = @(
-		"String"
-	)
-	department = "String"
-	displayName = "String"
-	givenName = "String"
-	mail = "String"
-	mailNickname = "String"
-	mobilePhone = "String"
-	passwordPolicies = "String"
-	passwordProfile = @{
-		"@odata.type" = "microsoft.graph.passwordProfile"
+	"String"
+)
+department = "String"
+displayName = "String"
+givenName = "String"
+mail = "String"
+mailNickname = "String"
+mobilePhone = "String"
+passwordPolicies = "String"
+passwordProfile = @{
+	"@odata.type" = "microsoft.graph.passwordProfile"
+}
+officeLocation = "String"
+preferredLanguage = "String"
+provisionedPlans = @(
+	@{
+		"@odata.type" = "microsoft.graph.provisionedPlan"
 	}
-	officeLocation = "String"
-	preferredLanguage = "String"
-	provisionedPlans = @(
-		@{
-			"@odata.type" = "microsoft.graph.provisionedPlan"
-		}
-	)
-	refreshTokensValidFromDateTime = \[System.DateTime\]::Parse("String (timestamp)")
-	showInAddressList = "Boolean"
-	surname = "String"
-	usageLocation = "String"
-	userPrincipalName = "String"
-	userType = "String"
-	onPremisesInfo = @{
-		"@odata.type" = "microsoft.graph.educationOnPremisesInfo"
-	}
+)
+refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
+showInAddressList = "Boolean"
+surname = "String"
+usageLocation = "String"
+userPrincipalName = "String"
+userType = "String"
+onPremisesInfo = @{
+	"@odata.type" = "microsoft.graph.educationOnPremisesInfo"
+}
 }
 
 New-MgEducationUser -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

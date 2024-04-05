@@ -53,18 +53,21 @@ Cancel the specified bookingAppointment in the specified bookingBusiness and sen
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingappointment-cancel-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
-	cancellationMessage = "Your appointment has been successfully cancelled.
-Please call us again."
+	cancellationMessage = "Your appointment has been successfully cancelled. Please call us again."
 }
 
 Stop-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgBookingBusinessAppointment Cmdlet.
+
 
 ## PARAMETERS
 

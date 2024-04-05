@@ -40,20 +40,22 @@ Get the properties and relationships of the specified Outlook task group.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskGroup -UserId $userId -OutlookTaskGroupId $outlookTaskGroupId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaUserOutlookTaskGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskGroup -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserOutlookTaskGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

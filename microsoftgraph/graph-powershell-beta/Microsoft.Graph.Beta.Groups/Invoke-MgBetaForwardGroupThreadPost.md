@@ -56,9 +56,8 @@ You can specify both the parent conversation and thread in the request, or, you 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-forward-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaForwardGroupThreadPost Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
 	Comment = "comment-value"
@@ -73,6 +72,8 @@ $params = @{
 }
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaForwardGroupThreadPost Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

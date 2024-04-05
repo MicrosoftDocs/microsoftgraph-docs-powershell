@@ -52,24 +52,28 @@ Create a new audioRoutingGroup.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-post-audioroutinggroups-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	id = "oneToOne"
 	routingMode = "oneToOne"
 	sources = @(
-		"632899f8-2ea1-4604-8413-27bd2892079f"
-	)
-	receivers = @(
-		"550fae72-d251-43ec-868c-373732c2704f"
-	)
+	"632899f8-2ea1-4604-8413-27bd2892079f"
+)
+receivers = @(
+"550fae72-d251-43ec-868c-373732c2704f"
+)
 }
 
 New-MgCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the New-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

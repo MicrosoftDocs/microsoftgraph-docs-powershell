@@ -42,94 +42,106 @@ Depending on the state of the extension, the owner app, and only the owner app, 
 See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
 
 ## EXAMPLES
+### Example 1: Creating a schema extension using a verified domain
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "graphlearn_courses"
 	description = "Graph Learn training courses extensions"
 	targetTypes = @(
-		"Group"
-	)
-	properties = @(
-		@{
-			name = "courseId"
-			type = "Integer"
-		}
-		@{
-			name = "courseName"
-			type = "String"
-		}
-		@{
-			name = "courseType"
-			type = "String"
-		}
-	)
+	"Group"
+)
+properties = @(
+	@{
+		name = "courseId"
+		type = "Integer"
+	}
+	@{
+		name = "courseName"
+		type = "String"
+	}
+	@{
+		name = "courseType"
+		type = "String"
+	}
+)
 }
 
 New-MgSchemaExtension -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows creating a schema extension using a verified domain
+
+### Example 2: Creating a schema extension using just a name
+
+```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
 	description = "Graph Learn training courses extensions"
 	targetTypes = @(
-		"Group"
-	)
-	properties = @(
-		@{
-			name = "courseId"
-			type = "Integer"
-		}
-		@{
-			name = "courseName"
-			type = "String"
-		}
-		@{
-			name = "courseType"
-			type = "String"
-		}
-	)
+	"Group"
+)
+properties = @(
+	@{
+		name = "courseId"
+		type = "Integer"
+	}
+	@{
+		name = "courseName"
+		type = "String"
+	}
+	@{
+		name = "courseType"
+		type = "String"
+	}
+)
 }
 
 New-MgSchemaExtension -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows creating a schema extension using just a name
+
+### Example 3: Creating a schema extension setting the owner
+
+```powershell
+
 Import-Module Microsoft.Graph.SchemaExtensions
-```
 
 $params = @{
 	id = "courses"
 	description = "Graph Learn training courses extensions"
 	targetTypes = @(
-		"Group"
-	)
-	owner = "50897f70-a455-4adf-87bc-4cf17091d5ac"
-	properties = @(
-		@{
-			name = "courseId"
-			type = "Integer"
-		}
-		@{
-			name = "courseName"
-			type = "String"
-		}
-		@{
-			name = "courseType"
-			type = "String"
-		}
-	)
+	"Group"
+)
+owner = "50897f70-a455-4adf-87bc-4cf17091d5ac"
+properties = @(
+	@{
+		name = "courseId"
+		type = "Integer"
+	}
+	@{
+		name = "courseName"
+		type = "String"
+	}
+	@{
+		name = "courseType"
+		type = "String"
+	}
+)
 }
 
 New-MgSchemaExtension -BodyParameter $params
+
+```
+This example shows creating a schema extension setting the owner
+
 
 ## PARAMETERS
 

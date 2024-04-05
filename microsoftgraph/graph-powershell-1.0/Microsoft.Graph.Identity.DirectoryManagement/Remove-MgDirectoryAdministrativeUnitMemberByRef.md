@@ -50,13 +50,17 @@ Use this API to remove a member (user, group, or device) from an administrative 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -DirectoryObjectId $directoryObjectId
+
+```
+This example shows how to use the Remove-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
+
 
 ## PARAMETERS
 

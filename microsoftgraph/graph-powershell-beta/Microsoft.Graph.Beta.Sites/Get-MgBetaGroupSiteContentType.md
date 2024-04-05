@@ -45,16 +45,6 @@ Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

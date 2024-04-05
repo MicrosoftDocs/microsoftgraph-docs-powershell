@@ -45,11 +45,11 @@ Create an attack simulation campaign for a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -66,24 +66,33 @@ $params = @{
 		"@odata.type" = "#microsoft.graph.addressBookAccountTargetContent"
 		type = "addressBook"
 		accountTargetEmails = @(
-			"john@contoso.com"
-		)
+		"john@contoso.com"
+	)
+}
+trainingSetting = @{
+	settingType = "noTraining"
+}
+endUserNotificationSetting = @{
+	notificationPreference = "microsoft"
+	settingType = "noTraining"
+	positiveReinforcement = @{
+		deliveryPreference = "deliverAfterCampaignEnd"
+		endUserNotification = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
+		defaultLanguage = "en"
 	}
-	trainingSetting = @{
-		settingType = "noTraining"
+	simulationNotification = @{
+		targettedUserType = "compromised"
+		"endUserNotification@odata.bind" = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a"
+		defaultLanguage = "en"
 	}
-	endUserNotificationSetting = @{
-		notificationPreference = "microsoft"
-		settingType = "noTraining"
-		positiveReinforcement = @{
-			deliveryPreference = "deliverAfterCampaignEnd"
-			endUserNotification = "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a"
-			defaultLanguage = "en"
-		}
-	}
+}
 }
 
 New-MgSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

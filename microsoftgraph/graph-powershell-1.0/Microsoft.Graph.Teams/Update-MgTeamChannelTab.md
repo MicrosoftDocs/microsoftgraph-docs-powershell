@@ -53,17 +53,21 @@ Update the properties of the specified tab.This can be used to configure the con
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-tabs-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "My Contoso Tab - updated"
 }
 
 Update-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -TeamsTabId $teamsTabId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgTeamChannelTab Cmdlet.
+
 
 ## PARAMETERS
 

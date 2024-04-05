@@ -44,13 +44,17 @@ Retrieve the properties and relationships of a permission object on a site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSitePermission -SiteId $siteId
+
+```
+This example shows how to use the Get-MgBetaSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

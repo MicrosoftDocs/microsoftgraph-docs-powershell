@@ -37,20 +37,24 @@ Remove the favorite status of serviceUpdateMessages for the signed in user.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-unfavorite-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 $params = @{
 	messageIds = @(
-		"MC172851"
-		"MC167983"
-	)
+	"MC172851"
+"MC167983"
+)
 }
 
 Invoke-MgBetaUnfavoriteServiceAnnouncementMessage -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

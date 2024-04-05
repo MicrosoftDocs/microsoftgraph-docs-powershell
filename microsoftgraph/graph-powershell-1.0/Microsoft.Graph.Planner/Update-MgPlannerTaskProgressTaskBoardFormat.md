@@ -50,17 +50,22 @@ Update the navigation property progressTaskBoardFormat in planner
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	orderHint = "A6673H Ejkl!"
 }
 
-Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Update-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

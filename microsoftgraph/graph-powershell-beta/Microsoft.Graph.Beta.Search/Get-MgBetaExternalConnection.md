@@ -44,13 +44,17 @@ Retrieve the properties and relationships of an externalConnection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnection
+
+```
+This example shows how to use the Get-MgBetaExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

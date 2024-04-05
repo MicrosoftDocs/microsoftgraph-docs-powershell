@@ -63,11 +63,11 @@ Update an editable secureScoreControlProfile object within any integrated soluti
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescorecontrolprofile-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -83,10 +83,14 @@ $params = @{
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -101,6 +105,10 @@ $params = @{
 }
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

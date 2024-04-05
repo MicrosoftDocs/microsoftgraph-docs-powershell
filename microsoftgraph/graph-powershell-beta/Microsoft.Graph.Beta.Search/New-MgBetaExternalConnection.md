@@ -45,11 +45,11 @@ Create a new externalConnection.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	id = "contosohr"
@@ -58,6 +58,10 @@ $params = @{
 }
 
 New-MgBetaExternalConnection -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 
