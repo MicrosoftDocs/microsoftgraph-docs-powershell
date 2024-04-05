@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary
@@ -36,6 +36,18 @@ New-MgBetaTenantRelationshipManagedTenantManagementTemplateStepTenantSummary
 
 ## DESCRIPTION
 Create new navigation property to managementTemplateStepTenantSummaries for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -403,31 +415,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary>`: managementTemplateStepTenantSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsManagementTemplateStepTenantSummary\>: managementTemplateStepTenantSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignedTenantsCount <Int32?>]`: 
-  - `[CompliantTenantsCount <Int32?>]`: 
-  - `[CreatedByUserId <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DismissedTenantsCount <Int32?>]`: 
-  - `[IneligibleTenantsCount <Int32?>]`: 
-  - `[LastActionByUserId <String>]`: 
-  - `[LastActionDateTime <DateTime?>]`: 
-  - `[ManagementTemplateCollectionDisplayName <String>]`: 
-  - `[ManagementTemplateCollectionId <String>]`: 
-  - `[ManagementTemplateDisplayName <String>]`: 
-  - `[ManagementTemplateId <String>]`: 
-  - `[ManagementTemplateStepDisplayName <String>]`: 
-  - `[ManagementTemplateStepId <String>]`: 
-  - `[NotCompliantTenantsCount <Int32?>]`:
+  \[AssignedTenantsCount \<Int32?\>\]: 
+  \[CompliantTenantsCount \<Int32?\>\]: 
+  \[CreatedByUserId \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DismissedTenantsCount \<Int32?\>\]: 
+  \[IneligibleTenantsCount \<Int32?\>\]: 
+  \[LastActionByUserId \<String\>\]: 
+  \[LastActionDateTime \<DateTime?\>\]: 
+  \[ManagementTemplateCollectionDisplayName \<String\>\]: 
+  \[ManagementTemplateCollectionId \<String\>\]: 
+  \[ManagementTemplateDisplayName \<String\>\]: 
+  \[ManagementTemplateId \<String\>\]: 
+  \[ManagementTemplateStepDisplayName \<String\>\]: 
+  \[ManagementTemplateStepId \<String\>\]: 
+  \[NotCompliantTenantsCount \<Int32?\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantmanagementtemplatesteptenantsummary)
-
-
-
-
 

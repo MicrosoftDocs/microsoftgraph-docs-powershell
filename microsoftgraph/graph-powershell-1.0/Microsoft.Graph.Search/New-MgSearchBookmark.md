@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to bookmarks for search
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +32,18 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-ResponseHe
 
 ## DESCRIPTION
 Create new navigation property to bookmarks for search
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -420,71 +429,66 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSearchBookmark\>: bookmark
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphSearchIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
+    \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[WebUrl \<String\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: 
-  - `[AvailabilityStartDateTime <DateTime?>]`: 
-  - `[Categories <String- `[]`>]`: 
-  - `[GroupIds <String- `[]`>]`: 
-  - `[IsSuggested <Boolean?>]`: 
-  - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String- `[]`>]`: 
-    - `[MatchSimilarKeywords <Boolean?>]`: 
-    - `[ReservedKeywords <String- `[]`>]`: 
-  - `[LanguageTags <String- `[]`>]`: 
-  - `[Platforms <DevicePlatformType- `[]`>]`: 
-  - `[PowerAppIds <String- `[]`>]`: 
-  - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[LanguageTag <String>]`: 
-    - `[Platform <DevicePlatformType?>]`: Supported platform types.
-    - `[WebUrl <String>]`: 
+  \[AvailabilityEndDateTime \<DateTime?\>\]: 
+  \[AvailabilityStartDateTime \<DateTime?\>\]: 
+  \[Categories \<String\[\]\>\]: 
+  \[GroupIds \<String\[\]\>\]: 
+  \[IsSuggested \<Boolean?\>\]: 
+  \[Keywords \<IMicrosoftGraphSearchAnswerKeyword\>\]: answerKeyword
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Keywords \<String\[\]\>\]: 
+    \[MatchSimilarKeywords \<Boolean?\>\]: 
+    \[ReservedKeywords \<String\[\]\>\]: 
+  \[LanguageTags \<String\[\]\>\]: 
+  \[Platforms \<DevicePlatformType\[\]\>\]: 
+  \[PowerAppIds \<String\[\]\>\]: 
+  \[State \<String\>\]: answerState
+  \[TargetedVariations \<IMicrosoftGraphSearchAnswerVariant\[\]\>\]: 
+    \[Description \<String\>\]: 
+    \[DisplayName \<String\>\]: 
+    \[LanguageTag \<String\>\]: 
+    \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+    \[WebUrl \<String\>\]: 
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Keywords <String- `[]`>]`: 
-  - `[MatchSimilarKeywords <Boolean?>]`: 
-  - `[ReservedKeywords <String- `[]`>]`: 
+KEYWORDS \<IMicrosoftGraphSearchAnswerKeyword\>: answerKeyword
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Keywords \<String\[\]\>\]: 
+  \[MatchSimilarKeywords \<Boolean?\>\]: 
+  \[ReservedKeywords \<String\[\]\>\]: 
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-  - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+  \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LanguageTag <String>]`: 
-  - `[Platform <DevicePlatformType?>]`: Supported platform types.
-  - `[WebUrl <String>]`:
+TARGETEDVARIATIONS \<IMicrosoftGraphSearchAnswerVariant\[\]\>: .
+  \[Description \<String\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[LanguageTag \<String\>\]: 
+  \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+  \[WebUrl \<String\>\]:
 
 ## RELATED LINKS
-[New-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
-
-
-
-
 

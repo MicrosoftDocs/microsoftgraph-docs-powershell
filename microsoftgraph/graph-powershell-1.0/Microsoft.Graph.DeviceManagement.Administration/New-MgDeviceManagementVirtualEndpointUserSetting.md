@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userSettings for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraph
 
 ## DESCRIPTION
 Create new navigation property to userSettings for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -282,44 +291,39 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: .
-  - `[Id <String>]`: The unique identifier for an entity.
+ASSIGNMENTS \<IMicrosoftGraphCloudPcUserSettingAssignment\[\]\>: .
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcUserSetting\>: cloudPcUserSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>]`: 
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Assignments \<IMicrosoftGraphCloudPcUserSettingAssignment\[\]\>\]: 
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[LocalAdminEnabled <Boolean?>]`: 
-  - `[ResetEnabled <Boolean?>]`: 
-  - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
-    - `[UserRestoreEnabled <Boolean?>]`: 
+    \[CreatedDateTime \<DateTime?\>\]: 
+    \[Target \<IMicrosoftGraphCloudPcManagementAssignmentTarget\>\]: cloudPcManagementAssignmentTarget
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedDateTime \<DateTime?\>\]: 
+  \[DisplayName \<String\>\]: 
+  \[LastModifiedDateTime \<DateTime?\>\]: 
+  \[LocalAdminEnabled \<Boolean?\>\]: 
+  \[ResetEnabled \<Boolean?\>\]: 
+  \[RestorePointSetting \<IMicrosoftGraphCloudPcRestorePointSetting\>\]: cloudPcRestorePointSetting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
+    \[UserRestoreEnabled \<Boolean?\>\]: 
 
-RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
-  - `[UserRestoreEnabled <Boolean?>]`:
+RESTOREPOINTSETTING \<IMicrosoftGraphCloudPcRestorePointSetting\>: cloudPcRestorePointSetting
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[FrequencyType \<String\>\]: cloudPcRestorePointFrequencyType
+  \[UserRestoreEnabled \<Boolean?\>\]:
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting)
-
-
-
-
 

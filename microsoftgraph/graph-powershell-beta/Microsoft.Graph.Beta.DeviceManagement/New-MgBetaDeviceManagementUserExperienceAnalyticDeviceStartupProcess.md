@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -263,35 +276,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess>`: The user experience analytics device startup process details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess\>: The user experience analytics device startup process details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ManagedDeviceId <String>]`: The Intune device id of the device.
+  \[ManagedDeviceId \<String\>\]: The Intune device id of the device.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[ProcessName <String>]`: The name of the process.
+  \[ProcessName \<String\>\]: The name of the process.
 Examples: outlook, excel.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[ProductName <String>]`: The product name of the process.
+  \[ProductName \<String\>\]: The product name of the process.
 Examples: Microsoft Outlook, Microsoft Excel.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[Publisher <String>]`: The publisher of the process.
+  \[Publisher \<String\>\]: The publisher of the process.
 Examples: Microsoft Corporation, Contoso Corp.
 Supports: $select, $OrderBy.
 Read-only.
-  - `[StartupImpactInMS <Int32?>]`: The impact of startup process on device boot time in milliseconds.
+  \[StartupImpactInMS \<Int32?\>\]: The impact of startup process on device boot time in milliseconds.
 Supports: $select, $OrderBy.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartupprocess)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetadevicemanagementreport
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property reports for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Remove-MgDeviceManagementReport?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,22 @@ Remove-MgBetaDeviceManagementReport [-IfMatch <String>] [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Delete navigation property reports for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -144,11 +157,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Remove-MgDeviceManagementReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetadevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetadevicemanagementreport)
-
-
-
-
 
