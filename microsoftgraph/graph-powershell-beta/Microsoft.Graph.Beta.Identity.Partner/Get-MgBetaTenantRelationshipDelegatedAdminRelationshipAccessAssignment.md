@@ -38,6 +38,9 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 ## DESCRIPTION
 Read the properties of a delegatedAdminAccessAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

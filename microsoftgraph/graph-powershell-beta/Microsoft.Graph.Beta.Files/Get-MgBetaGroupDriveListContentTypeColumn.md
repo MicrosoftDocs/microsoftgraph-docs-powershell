@@ -38,6 +38,9 @@ Get-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Restore-MgPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Restore a printer's default settings to the values specified by the manufacturer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-restorefactorydefaults-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

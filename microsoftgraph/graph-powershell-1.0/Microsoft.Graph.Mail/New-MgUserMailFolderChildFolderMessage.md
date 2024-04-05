@@ -70,6 +70,9 @@ New-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Use this API to create a new Message in a mailfolder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-messages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

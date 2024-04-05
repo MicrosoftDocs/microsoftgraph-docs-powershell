@@ -37,6 +37,9 @@ If the job is in quarantine, the quarantine status is cleared.
 Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running.
 Use the start job only when the job is currently paused or in quarantine.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-start-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

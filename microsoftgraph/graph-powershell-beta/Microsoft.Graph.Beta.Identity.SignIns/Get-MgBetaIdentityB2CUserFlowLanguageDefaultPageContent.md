@@ -30,6 +30,9 @@ Get-MgBetaIdentityB2CUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 ## DESCRIPTION
 Get media content for the navigation property defaultPages from identity
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-defaultpages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -27,6 +27,9 @@ Invoke-MgFollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariable
 ## DESCRIPTION
 Follow a driveItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-follow-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

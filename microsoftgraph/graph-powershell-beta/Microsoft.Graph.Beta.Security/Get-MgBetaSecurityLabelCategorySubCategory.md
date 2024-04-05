@@ -37,6 +37,9 @@ Get-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a subCategoryTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-subcategorytemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

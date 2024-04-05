@@ -31,6 +31,9 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -33,6 +33,9 @@ Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentmultiple-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -31,6 +31,9 @@ Get-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandPrope
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

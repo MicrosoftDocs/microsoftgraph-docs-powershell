@@ -29,6 +29,9 @@ Start-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHead
 Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending jobs are completed, aborted, or canceled.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printjob-start-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

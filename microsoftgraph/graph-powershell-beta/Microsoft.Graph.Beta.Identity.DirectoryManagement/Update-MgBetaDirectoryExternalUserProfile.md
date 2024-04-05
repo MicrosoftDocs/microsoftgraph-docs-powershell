@@ -50,6 +50,9 @@ Update-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Update the properties of a externalUserProfile object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externaluserprofile-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,9 @@ Remove-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Removes a password from an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-removepassword-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

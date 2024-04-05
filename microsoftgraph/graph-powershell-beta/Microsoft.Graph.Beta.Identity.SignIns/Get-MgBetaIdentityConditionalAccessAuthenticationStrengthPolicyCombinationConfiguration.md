@@ -40,6 +40,9 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 ## DESCRIPTION
 Read the properties and relationships of an authenticationCombinationConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcombinationconfiguration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

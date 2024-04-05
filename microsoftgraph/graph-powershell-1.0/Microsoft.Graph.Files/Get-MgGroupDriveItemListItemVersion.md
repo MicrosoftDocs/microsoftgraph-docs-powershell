@@ -38,6 +38,9 @@ Get-MgGroupDriveItemListItemVersion -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

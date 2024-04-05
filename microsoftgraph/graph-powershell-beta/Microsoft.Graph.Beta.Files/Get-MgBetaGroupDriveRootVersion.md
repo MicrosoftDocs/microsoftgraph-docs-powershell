@@ -37,6 +37,9 @@ Get-MgBetaGroupDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

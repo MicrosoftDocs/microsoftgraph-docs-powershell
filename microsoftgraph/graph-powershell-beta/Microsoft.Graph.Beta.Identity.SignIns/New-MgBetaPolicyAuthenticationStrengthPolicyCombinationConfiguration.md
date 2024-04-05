@@ -45,6 +45,9 @@ New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObjec
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

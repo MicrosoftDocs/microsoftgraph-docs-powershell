@@ -43,6 +43,9 @@ New-MgBetaEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParame
 ## DESCRIPTION
 Add a user to a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-post-users-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

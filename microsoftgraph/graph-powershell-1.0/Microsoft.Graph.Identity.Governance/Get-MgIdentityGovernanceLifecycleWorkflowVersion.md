@@ -37,6 +37,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGovernan
 ## DESCRIPTION
 Read the properties and relationships of a workflowVersion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

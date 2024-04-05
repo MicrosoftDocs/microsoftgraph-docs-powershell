@@ -79,6 +79,9 @@ Update-MgDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests will be ignored.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

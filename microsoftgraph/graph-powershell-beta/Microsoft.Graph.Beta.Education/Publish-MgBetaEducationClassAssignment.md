@@ -42,6 +42,9 @@ The state of the assignment goes back to draft if there is any backend failure d
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-publish-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

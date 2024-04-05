@@ -22,6 +22,9 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccesspolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

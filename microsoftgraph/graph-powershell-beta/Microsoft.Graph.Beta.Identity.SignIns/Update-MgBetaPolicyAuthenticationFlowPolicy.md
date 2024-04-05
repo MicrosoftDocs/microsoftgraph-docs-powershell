@@ -32,6 +32,9 @@ Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthe
 Update the Boolean selfServiceSignUp property of an authenticationFlowsPolicy object.
 The properties id, type, and description cannot be modified.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationflowspolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

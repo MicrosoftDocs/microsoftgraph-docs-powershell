@@ -59,6 +59,9 @@ New-MgBetaGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new \[list\]\[\] in a \[site\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-create-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

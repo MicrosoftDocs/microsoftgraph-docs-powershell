@@ -45,6 +45,9 @@ New-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Use this API to create a new CalendarGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendargroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

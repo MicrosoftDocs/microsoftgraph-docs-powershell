@@ -31,6 +31,9 @@ Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-cancel-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

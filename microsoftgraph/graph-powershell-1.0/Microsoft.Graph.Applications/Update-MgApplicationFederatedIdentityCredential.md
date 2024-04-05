@@ -45,6 +45,9 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update the properties of a federatedIdentityCredential object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

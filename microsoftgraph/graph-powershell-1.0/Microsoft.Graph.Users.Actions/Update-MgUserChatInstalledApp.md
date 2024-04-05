@@ -47,6 +47,9 @@ Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Upgrade an app installation within a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

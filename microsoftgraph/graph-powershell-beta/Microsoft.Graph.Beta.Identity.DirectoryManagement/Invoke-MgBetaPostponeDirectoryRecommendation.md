@@ -47,6 +47,9 @@ Invoke-MgBetaPostponeDirectoryRecommendation -InputObject <IIdentityDirectoryMan
 Postpone action on a recommendation object to a specified future date and time by marking its status as postponed.
 On the date and time provided, Microsoft Entra ID will automatically update the status of the recommendation object to active again.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-postpone-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

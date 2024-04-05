@@ -30,6 +30,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
 ## DESCRIPTION
 Get the user synchronization policy of a partner-specific configuration.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantidentitysyncpolicypartner-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

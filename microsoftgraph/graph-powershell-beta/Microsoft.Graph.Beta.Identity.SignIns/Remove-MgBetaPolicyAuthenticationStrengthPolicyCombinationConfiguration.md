@@ -30,6 +30,9 @@ Remove-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 ## DESCRIPTION
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-delete-combinationconfigurations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

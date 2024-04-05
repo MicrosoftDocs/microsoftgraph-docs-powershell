@@ -22,6 +22,9 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementP
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

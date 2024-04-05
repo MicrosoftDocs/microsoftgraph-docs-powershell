@@ -57,6 +57,9 @@ Students will not see the grade or feedback until the assignment has been releas
 Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
 For details, see the examples section.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

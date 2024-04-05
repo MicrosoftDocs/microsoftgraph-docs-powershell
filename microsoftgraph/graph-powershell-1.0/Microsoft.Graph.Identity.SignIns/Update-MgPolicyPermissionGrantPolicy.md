@@ -47,6 +47,9 @@ Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update properties of a  permissionGrantPolicy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

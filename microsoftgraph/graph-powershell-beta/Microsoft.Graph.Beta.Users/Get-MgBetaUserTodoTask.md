@@ -37,6 +37,9 @@ Get-MgBetaUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a todoTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

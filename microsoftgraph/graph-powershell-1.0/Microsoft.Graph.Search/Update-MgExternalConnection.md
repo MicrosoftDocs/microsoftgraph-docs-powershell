@@ -55,6 +55,9 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an externalConnection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,9 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule -InputObject <IIdent
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

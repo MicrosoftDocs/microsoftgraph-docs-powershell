@@ -39,6 +39,9 @@ Get-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Ex
 Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtasktrigger-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

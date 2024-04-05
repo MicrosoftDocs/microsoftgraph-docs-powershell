@@ -43,6 +43,9 @@ Remove-MgBetaEducationSchoolClassByRef -InputObject <IEducationIdentity> [-IfMat
 ## DESCRIPTION
 Delete a class from a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-classes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

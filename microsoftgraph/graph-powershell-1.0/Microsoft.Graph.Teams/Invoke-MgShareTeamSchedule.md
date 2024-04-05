@@ -57,6 +57,9 @@ The draft version is viewable by only managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The notifyTeam parameter further specifies which employees can view the item.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-share-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

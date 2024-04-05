@@ -49,6 +49,9 @@ Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they're the only type of authenticationCombinationConfiguration that may be created.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcombinationconfiguration-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

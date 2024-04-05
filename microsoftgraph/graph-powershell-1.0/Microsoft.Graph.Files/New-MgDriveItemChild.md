@@ -79,6 +79,9 @@ New-MgDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to children for drives
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

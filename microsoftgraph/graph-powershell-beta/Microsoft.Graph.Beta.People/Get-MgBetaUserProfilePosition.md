@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileposition
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgBetaUserProfilePosition
@@ -36,6 +37,9 @@ Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a workPosition object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/workposition-get-permissions.md)]
 
 ## EXAMPLES
 

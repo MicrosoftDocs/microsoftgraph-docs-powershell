@@ -60,6 +60,9 @@ New-MgTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-post-replies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

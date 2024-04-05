@@ -36,6 +36,9 @@ Get-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a calendar group object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

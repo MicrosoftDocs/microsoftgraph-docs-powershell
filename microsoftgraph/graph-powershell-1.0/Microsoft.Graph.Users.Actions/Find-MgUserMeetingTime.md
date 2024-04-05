@@ -57,6 +57,9 @@ If findMeetingTimes cannot return any meeting suggestions, the response would in
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-findmeetingtimes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

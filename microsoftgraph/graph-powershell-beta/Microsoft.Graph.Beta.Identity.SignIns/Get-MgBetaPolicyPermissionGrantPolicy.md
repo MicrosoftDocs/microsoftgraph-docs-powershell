@@ -37,6 +37,9 @@ Get-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

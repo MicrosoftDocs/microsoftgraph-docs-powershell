@@ -22,6 +22,9 @@ Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <Strin
 ## DESCRIPTION
 Get the identity providers in a b2cIdentityUserFlow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-list-identityproviders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

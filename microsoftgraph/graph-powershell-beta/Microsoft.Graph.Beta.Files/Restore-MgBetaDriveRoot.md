@@ -45,6 +45,9 @@ Restore-MgBetaDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

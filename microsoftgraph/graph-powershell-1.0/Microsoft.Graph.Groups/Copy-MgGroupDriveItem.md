@@ -46,6 +46,9 @@ Copy-MgGroupDriveItem -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-copy-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

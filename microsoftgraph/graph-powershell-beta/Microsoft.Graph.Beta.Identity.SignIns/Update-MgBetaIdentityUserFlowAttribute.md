@@ -45,6 +45,9 @@ Update-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of a custom identityUserFlowAttribute object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

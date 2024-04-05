@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequest
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # Get-MgBetaPrivacySubjectRightsRequest
@@ -36,6 +37,9 @@ Get-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-Expan
 
 ## DESCRIPTION
 Read the properties and relationships of a subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-get-permissions.md)]
 
 ## EXAMPLES
 

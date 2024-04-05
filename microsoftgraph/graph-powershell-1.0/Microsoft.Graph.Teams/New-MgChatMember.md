@@ -44,6 +44,9 @@ New-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

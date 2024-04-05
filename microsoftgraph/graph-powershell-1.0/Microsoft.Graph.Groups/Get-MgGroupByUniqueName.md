@@ -35,6 +35,9 @@ This operation returns by default only a subset of all the available properties,
 To get properties that aren't_ returned by default, specify them in a $select OData query option.
 The hasMembersWithLicenseErrors and isArchived properties are an exception and aren't returned in the $select query.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

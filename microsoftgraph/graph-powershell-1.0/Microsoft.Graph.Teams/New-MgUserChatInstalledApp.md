@@ -45,6 +45,9 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-installedapps-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

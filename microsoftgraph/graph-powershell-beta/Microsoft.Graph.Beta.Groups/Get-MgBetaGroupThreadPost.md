@@ -55,6 +55,9 @@ Get the properties and relationships of a post in a specified thread.
 You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
 Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/post-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

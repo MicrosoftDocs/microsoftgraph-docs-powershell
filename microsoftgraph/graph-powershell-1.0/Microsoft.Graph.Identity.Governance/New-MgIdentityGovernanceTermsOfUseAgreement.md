@@ -33,6 +33,9 @@ New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgree
 ## DESCRIPTION
 Create a new agreement object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termsofusecontainer-post-agreements-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

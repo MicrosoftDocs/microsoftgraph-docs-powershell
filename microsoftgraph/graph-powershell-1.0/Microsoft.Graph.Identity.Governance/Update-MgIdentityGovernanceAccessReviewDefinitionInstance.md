@@ -60,6 +60,9 @@ Only the reviewers and fallbackReviewers properties can be updated but the scope
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, it's status must be InProgress.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

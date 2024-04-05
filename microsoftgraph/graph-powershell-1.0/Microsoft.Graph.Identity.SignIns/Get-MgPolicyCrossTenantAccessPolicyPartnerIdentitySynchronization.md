@@ -30,6 +30,9 @@ Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <
 ## DESCRIPTION
 Get the user synchronization policy of a partner-specific configuration.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantidentitysyncpolicypartner-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

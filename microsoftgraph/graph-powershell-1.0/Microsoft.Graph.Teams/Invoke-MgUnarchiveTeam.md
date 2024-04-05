@@ -36,6 +36,9 @@ A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-unarchive-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

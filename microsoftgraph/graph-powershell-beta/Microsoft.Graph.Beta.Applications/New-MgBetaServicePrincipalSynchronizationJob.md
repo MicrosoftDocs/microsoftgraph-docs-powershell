@@ -53,6 +53,9 @@ Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

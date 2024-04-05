@@ -34,6 +34,9 @@ New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageC
 ## DESCRIPTION
 Create a new accessPackageCatalog object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-catalogs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

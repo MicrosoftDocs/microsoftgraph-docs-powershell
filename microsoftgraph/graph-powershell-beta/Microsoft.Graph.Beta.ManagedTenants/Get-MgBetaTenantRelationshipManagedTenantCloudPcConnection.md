@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IManage
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcConnection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcconnection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

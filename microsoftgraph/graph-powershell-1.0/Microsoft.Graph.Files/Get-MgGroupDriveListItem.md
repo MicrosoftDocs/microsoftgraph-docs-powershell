@@ -37,6 +37,9 @@ Get-MgGroupDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

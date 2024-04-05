@@ -45,6 +45,9 @@ Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySig
 Delete an identity provider from a b2cIdentityUserFlow object.
 For more information about identity providers available for user flows, see the identityProviders API reference.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-delete-identityproviders-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

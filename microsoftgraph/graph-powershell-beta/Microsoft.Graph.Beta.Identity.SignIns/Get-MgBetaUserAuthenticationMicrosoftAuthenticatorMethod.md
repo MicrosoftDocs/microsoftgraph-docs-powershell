@@ -37,6 +37,9 @@ Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentity
 ## DESCRIPTION
 Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/microsoftauthenticatorauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

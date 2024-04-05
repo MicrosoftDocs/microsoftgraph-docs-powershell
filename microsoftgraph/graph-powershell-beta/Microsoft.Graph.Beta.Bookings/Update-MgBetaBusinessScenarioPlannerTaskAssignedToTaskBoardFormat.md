@@ -48,6 +48,9 @@ Update-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <
 ## DESCRIPTION
 Update the navigation property assignedToTaskBoardFormat in solutions
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

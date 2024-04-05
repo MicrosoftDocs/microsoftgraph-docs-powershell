@@ -37,6 +37,9 @@ Get-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties of an appManagementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

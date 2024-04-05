@@ -48,6 +48,9 @@ Update-MgCommunicationCallRecordingStatus -InputObject <ICloudCommunicationsIden
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-updaterecordingstatus-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,9 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentit
 ## DESCRIPTION
 Read the properties and relationships of a windowsHelloForBusinessAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

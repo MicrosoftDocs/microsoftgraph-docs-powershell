@@ -47,6 +47,9 @@ Get-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-E
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

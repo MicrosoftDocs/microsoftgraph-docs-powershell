@@ -47,6 +47,9 @@ Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <IIde
 Update the allowedCombinations property of an authenticationStrengthPolicy object.
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthpolicy-updateallowedcombinations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

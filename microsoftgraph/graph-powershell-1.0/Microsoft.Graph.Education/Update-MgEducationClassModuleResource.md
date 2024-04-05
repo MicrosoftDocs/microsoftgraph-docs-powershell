@@ -49,6 +49,9 @@ Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

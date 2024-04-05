@@ -41,6 +41,9 @@ The user's mail folders.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

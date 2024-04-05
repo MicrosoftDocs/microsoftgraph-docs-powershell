@@ -29,6 +29,9 @@ Remove-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a term object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

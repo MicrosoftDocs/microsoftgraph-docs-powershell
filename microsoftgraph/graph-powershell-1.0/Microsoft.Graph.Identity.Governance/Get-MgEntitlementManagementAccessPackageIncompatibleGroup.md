@@ -22,6 +22,9 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <Stri
 ## DESCRIPTION
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-list-incompatiblegroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Invoke-MgRenewGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-renew-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

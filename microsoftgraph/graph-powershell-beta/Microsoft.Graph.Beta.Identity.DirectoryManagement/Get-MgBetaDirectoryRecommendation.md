@@ -37,6 +37,9 @@ Get-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Read the properties and relationships of a recommendation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

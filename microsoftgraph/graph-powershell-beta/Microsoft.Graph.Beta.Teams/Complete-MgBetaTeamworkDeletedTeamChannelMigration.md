@@ -35,6 +35,9 @@ Migration mode is a special state that prevents certain operations, like sending
 After a completeMigration request is made, you can't import more messages into the team.
 You can add members to the team after the request returns a successful response.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/channel-completemigration-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

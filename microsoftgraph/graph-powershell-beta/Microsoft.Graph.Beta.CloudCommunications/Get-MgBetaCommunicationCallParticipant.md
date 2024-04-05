@@ -37,6 +37,9 @@ Get-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Retrieve the properties and relationships of a participant object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

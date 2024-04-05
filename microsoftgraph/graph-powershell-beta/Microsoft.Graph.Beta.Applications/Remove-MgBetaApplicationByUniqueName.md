@@ -33,6 +33,9 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

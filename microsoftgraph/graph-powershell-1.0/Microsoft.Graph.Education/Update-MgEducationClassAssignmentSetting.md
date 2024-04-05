@@ -47,6 +47,9 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentsettings-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

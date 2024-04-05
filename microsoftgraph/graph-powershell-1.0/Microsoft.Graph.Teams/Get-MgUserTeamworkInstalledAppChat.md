@@ -29,6 +29,9 @@ Get-MgUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the chat of the specified user and Teams app.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userscopeteamsappinstallation-get-chat-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

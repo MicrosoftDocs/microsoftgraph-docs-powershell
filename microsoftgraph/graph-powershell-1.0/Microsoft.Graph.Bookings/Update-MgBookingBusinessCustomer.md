@@ -43,6 +43,9 @@ Update-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of a bookingCustomer object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcustomer-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

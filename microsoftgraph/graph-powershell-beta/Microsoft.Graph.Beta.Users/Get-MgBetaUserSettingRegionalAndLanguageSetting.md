@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserSettingRegionalAndLanguageSetting
@@ -28,6 +29,9 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 
 ## DESCRIPTION
 Retrieve the properties of a user's regionalAndLanguageSettings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/regionalandlanguagesettings-get-permissions.md)]
 
 ## EXAMPLES
 

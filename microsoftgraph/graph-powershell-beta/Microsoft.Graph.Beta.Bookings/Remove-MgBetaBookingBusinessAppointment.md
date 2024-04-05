@@ -43,6 +43,9 @@ Remove-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMat
 ## DESCRIPTION
 Delete a bookingAppointment in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

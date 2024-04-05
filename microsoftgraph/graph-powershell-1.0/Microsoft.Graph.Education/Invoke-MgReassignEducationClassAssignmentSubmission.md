@@ -39,6 +39,9 @@ This means that the reassigned status is mapped to the returned status, and reas
 If the header Prefer: include-unknown-enum-members is provided, a reassigned submission retains the reassigned status.
 For details, see the examples section.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-reassign-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

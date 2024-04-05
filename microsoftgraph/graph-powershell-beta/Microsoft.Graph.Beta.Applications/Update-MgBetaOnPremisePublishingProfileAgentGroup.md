@@ -49,6 +49,9 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 ## DESCRIPTION
 Update the properties of an onPremisesAgentGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

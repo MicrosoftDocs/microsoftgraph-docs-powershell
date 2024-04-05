@@ -37,6 +37,9 @@ Get-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Read the properties and relationships of an internalDomainFederation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internaldomainfederation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

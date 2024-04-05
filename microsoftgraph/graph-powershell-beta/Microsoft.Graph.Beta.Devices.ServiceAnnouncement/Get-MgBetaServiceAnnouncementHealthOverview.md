@@ -39,6 +39,9 @@ Get-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnounc
 Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealth-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

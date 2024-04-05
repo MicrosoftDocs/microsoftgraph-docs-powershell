@@ -29,6 +29,9 @@ Remove-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMat
 ## DESCRIPTION
 Delete an existing user activity for your app.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/projectrome-delete-activity-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

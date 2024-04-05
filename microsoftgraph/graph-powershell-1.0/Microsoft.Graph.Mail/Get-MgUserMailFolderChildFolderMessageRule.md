@@ -37,6 +37,9 @@ Get-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-Proper
 ## DESCRIPTION
 Get the properties and relationships of a messageRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

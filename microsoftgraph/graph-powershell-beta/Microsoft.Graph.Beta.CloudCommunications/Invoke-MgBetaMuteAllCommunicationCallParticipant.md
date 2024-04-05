@@ -46,6 +46,9 @@ Invoke-MgBetaMuteAllCommunicationCallParticipant -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Mute all participants in the call.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-muteall-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

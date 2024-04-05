@@ -22,6 +22,9 @@ Get-MgBetaUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter
 ## DESCRIPTION
 Retrieve a list of plannerplan objects shared with a user object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-plans-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

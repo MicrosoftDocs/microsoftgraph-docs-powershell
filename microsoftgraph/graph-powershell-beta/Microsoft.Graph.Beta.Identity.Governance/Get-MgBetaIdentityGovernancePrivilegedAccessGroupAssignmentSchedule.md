@@ -38,6 +38,9 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentSchedule -InputObject
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupAssignmentSchedule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/privilegedaccessgroupassignmentschedule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

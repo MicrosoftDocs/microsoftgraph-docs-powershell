@@ -43,6 +43,9 @@ Remove-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Remove a user as a registered owner of the device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-delete-registeredowners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

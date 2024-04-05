@@ -32,6 +32,9 @@ Remove-MgEducationClassModuleResource -InputObject <IEducationIdentity> [-IfMatc
 Delete a specific educationModuleResource attached to a module.
 Only teachers in the class can remove a resource.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmoduleresource-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

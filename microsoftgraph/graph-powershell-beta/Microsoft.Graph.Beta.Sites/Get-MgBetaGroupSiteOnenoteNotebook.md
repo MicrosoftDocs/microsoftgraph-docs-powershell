@@ -37,6 +37,9 @@ Get-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

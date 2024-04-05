@@ -32,6 +32,9 @@ New-MgOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant
 Create a delegated permission grant represented by an oAuth2PermissionGrant object.
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/oauth2permissiongrant-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -49,6 +49,9 @@ Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 Create an authenticationContextClassReference object, if the ID has not been used.
 If ID has been used, this call updates the authenticationContextClassReference object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -36,6 +36,9 @@ Get-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

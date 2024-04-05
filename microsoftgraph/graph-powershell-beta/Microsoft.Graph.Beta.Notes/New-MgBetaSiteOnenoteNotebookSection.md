@@ -51,6 +51,9 @@ New-MgBetaSiteOnenoteNotebookSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section in the specified notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-post-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

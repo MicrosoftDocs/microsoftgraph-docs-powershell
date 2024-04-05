@@ -45,6 +45,9 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-requests-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -22,6 +22,9 @@ Get-MgBetaGroupLifecyclePolicyByGroup -GroupId <String> [-ExpandProperty <String
 ## DESCRIPTION
 Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-grouplifecyclepolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

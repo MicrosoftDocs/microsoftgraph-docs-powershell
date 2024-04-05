@@ -29,6 +29,9 @@ Remove-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplica
 ## DESCRIPTION
 Deletes a federatedIdentityCredential object from an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

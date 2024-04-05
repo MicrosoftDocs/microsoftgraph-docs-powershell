@@ -45,6 +45,9 @@ New-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new externalGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

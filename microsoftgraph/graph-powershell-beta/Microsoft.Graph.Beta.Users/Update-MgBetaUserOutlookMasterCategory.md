@@ -46,6 +46,9 @@ Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName propertyonce you have created the category.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

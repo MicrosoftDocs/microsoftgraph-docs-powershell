@@ -30,6 +30,9 @@ Stop-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ## DESCRIPTION
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupassignmentschedulerequest-cancel-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

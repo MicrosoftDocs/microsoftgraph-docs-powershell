@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdent
 ## DESCRIPTION
 Read the details of a built-in workflow task.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-taskdefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

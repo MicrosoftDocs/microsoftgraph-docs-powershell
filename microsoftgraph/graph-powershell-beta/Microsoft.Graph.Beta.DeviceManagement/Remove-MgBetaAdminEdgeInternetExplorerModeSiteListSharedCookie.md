@@ -29,6 +29,9 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDe
 ## DESCRIPTION
 Delete a browserSharedCookie from a browserSiteList.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sharedcookies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

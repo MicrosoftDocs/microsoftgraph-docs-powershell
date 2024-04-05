@@ -47,6 +47,9 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IA
 Update the properties of a remoteDesktopSecurityConfiguration object on the servicePrincipal.
 Use this configuration to enable or disable the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

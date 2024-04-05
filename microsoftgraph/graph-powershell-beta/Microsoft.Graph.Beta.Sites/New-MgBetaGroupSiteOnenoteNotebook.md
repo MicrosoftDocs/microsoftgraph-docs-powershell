@@ -51,6 +51,9 @@ New-MgBetaGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-post-notebooks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

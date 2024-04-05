@@ -59,6 +59,9 @@ Get-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of a bookingCustomQuestion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

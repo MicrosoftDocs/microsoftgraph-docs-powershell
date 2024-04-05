@@ -32,6 +32,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportFrontlineReport -OutFile <String>
 ## DESCRIPTION
 Get the Windows 365 Frontline reports, such as real-time or historical data reports.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getfrontlinereport-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

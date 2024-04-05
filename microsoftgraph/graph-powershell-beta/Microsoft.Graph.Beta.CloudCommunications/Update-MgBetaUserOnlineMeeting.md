@@ -77,6 +77,9 @@ Update-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -45,6 +45,9 @@ Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of calendargroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a plannerPlan object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplan-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

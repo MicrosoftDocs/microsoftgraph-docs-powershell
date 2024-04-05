@@ -38,6 +38,9 @@ Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

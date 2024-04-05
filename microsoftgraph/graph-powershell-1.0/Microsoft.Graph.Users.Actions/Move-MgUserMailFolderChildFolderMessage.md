@@ -49,6 +49,9 @@ Move-MgUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-move-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shiftpreferences-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

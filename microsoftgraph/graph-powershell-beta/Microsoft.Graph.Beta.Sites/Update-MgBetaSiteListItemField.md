@@ -43,6 +43,9 @@ Update-MgBetaSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Has
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

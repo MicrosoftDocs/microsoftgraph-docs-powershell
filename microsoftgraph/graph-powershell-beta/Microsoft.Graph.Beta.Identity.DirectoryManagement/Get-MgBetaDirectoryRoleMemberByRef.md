@@ -30,6 +30,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-list-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

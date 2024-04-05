@@ -32,6 +32,9 @@ Confirm-MgRiskyServicePrincipalCompromised
 Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to high.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyserviceprincipal-confirmcompromised-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

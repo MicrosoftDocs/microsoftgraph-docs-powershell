@@ -37,6 +37,9 @@ Get-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a sourceSystemDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

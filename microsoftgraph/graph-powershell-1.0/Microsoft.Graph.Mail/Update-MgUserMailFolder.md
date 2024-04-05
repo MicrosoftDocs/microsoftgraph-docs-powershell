@@ -53,6 +53,9 @@ Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the writable properties of a mailSearchFolder object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailsearchfolder-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

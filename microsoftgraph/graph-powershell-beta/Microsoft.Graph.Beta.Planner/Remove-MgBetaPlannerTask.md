@@ -29,6 +29,9 @@ Remove-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a plannerTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

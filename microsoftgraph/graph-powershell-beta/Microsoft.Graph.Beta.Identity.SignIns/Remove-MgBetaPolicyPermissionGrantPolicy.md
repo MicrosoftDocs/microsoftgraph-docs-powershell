@@ -29,6 +29,9 @@ Remove-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Delete a permissionGrantPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

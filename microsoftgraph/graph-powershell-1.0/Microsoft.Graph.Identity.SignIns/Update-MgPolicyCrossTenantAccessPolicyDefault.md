@@ -36,6 +36,9 @@ Update-MgPolicyCrossTenantAccessPolicyDefault
 ## DESCRIPTION
 Update the default configuration of a cross-tenant access policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/crosstenantaccesspolicyconfigurationdefault-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

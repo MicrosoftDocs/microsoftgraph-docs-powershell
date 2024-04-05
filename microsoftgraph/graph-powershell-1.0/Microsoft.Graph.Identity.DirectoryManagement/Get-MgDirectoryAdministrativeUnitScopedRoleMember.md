@@ -38,6 +38,9 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 ## DESCRIPTION
 Get a Microsoft Entra role assignment with administrative unit scope.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-get-scopedrolemembers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

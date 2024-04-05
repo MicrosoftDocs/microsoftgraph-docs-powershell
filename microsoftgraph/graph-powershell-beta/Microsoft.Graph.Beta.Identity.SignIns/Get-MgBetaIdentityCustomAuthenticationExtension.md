@@ -37,6 +37,9 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Read the properties and relationships of a customAuthenticationExtension object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

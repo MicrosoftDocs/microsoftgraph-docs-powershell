@@ -53,6 +53,9 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this API can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a ubscribeToTone operation because it operates independent of any operation queue.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-cancelmediaprocessing-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Delete a custom authenticationStrengthPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthroot-delete-policies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

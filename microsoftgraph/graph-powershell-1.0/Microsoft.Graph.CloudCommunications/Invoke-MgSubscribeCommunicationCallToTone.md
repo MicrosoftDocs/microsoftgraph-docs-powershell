@@ -45,6 +45,9 @@ Invoke-MgSubscribeCommunicationCallToTone -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Subscribe to DTMF (dual-tone multi-frequency signaling) which allows you to be notified when the user presses keys on a 'dialpad'.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-subscribetotone-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
