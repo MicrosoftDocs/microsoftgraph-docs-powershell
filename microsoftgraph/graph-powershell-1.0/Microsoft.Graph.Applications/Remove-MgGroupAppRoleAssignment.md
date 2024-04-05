@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes an appRoleAssignment that a group has been granted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -237,6 +240,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mggroupapproleassignment)
 

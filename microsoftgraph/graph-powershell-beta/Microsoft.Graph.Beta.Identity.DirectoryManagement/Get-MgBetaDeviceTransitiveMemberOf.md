@@ -12,6 +12,9 @@ Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceTransitiveMemberOf?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -377,6 +380,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceTransitiveMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicetransitivememberof)
 

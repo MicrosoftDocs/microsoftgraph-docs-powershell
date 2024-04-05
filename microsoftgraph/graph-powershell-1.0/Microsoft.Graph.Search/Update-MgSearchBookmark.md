@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property bookmarks in search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -554,6 +557,7 @@ TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: .
   - `[WebUrl <String>]`:
 
 ## RELATED LINKS
+[Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resources in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -382,6 +385,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentresource)
 

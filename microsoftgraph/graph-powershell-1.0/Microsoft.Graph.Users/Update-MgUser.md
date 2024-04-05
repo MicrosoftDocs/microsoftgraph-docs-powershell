@@ -15,6 +15,9 @@ Compare member and guest default permissions to see properties they can manage.
 Customers through Microsoft Entra ID for customers can also use this API operation to update their details.
 See Default user permissions in customer tenants for the list of properties they can update.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -43717,6 +43720,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
 

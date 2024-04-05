@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOmaSettingPlainTextValue
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -188,6 +191,7 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeviceconfigurationomasettingplaintextvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdeviceconfigurationomasettingplaintextvalue)
 

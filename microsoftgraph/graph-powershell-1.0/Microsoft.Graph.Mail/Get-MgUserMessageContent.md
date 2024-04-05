@@ -11,6 +11,9 @@ ms.prod: extensions
 ## SYNOPSIS
 Get media content for the navigation property messages from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessagecontent)
 

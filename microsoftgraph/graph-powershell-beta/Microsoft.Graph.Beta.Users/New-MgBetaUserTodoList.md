@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new lists object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -587,6 +590,7 @@ Required.
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
+[New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist)
 

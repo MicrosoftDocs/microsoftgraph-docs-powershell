@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property managedDevices in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23895,6 +23898,7 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
+[Update-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevice)
 

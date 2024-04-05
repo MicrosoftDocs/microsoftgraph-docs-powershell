@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get deletedChats from teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,6 +334,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat)
 

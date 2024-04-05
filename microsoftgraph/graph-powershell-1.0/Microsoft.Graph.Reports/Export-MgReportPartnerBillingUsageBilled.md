@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Export the billed Azure usage data.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageBilled?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -203,6 +206,7 @@ BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPart
   - `[InvoiceId <String>]`:
 
 ## RELATED LINKS
+[Export-MgBetaReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageBilled?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusagebilled)
 

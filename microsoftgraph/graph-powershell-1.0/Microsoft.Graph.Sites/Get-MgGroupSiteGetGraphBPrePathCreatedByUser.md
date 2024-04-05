@@ -11,6 +11,9 @@ schema: 2.0.0
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -268,6 +271,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetGraphBPrePathCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetgraphbprepathcreatedbyuser)
 

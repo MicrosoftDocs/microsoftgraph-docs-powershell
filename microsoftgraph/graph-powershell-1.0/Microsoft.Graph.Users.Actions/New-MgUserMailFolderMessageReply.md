@@ -15,6 +15,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -491,6 +494,7 @@ Read-only.
   - `[WebLink <String>]`:
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereply)
 

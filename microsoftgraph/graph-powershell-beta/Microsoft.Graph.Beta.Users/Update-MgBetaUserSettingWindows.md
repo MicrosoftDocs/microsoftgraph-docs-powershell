@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windows in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWindows?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -363,6 +366,7 @@ Refers to the user's Windows device that modified the object at the specified da
   - `[Payload <String>]`: Base64-encoded JSON setting value.
 
 ## RELATED LINKS
+[Update-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingwindows)
 

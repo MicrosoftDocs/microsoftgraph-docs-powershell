@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)
@@ -202,6 +205,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/lock-mgdevicemanagementmanageddeviceremote)
 

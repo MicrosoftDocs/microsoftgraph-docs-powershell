@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete (unregister) a printer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -212,6 +215,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprinter)
 

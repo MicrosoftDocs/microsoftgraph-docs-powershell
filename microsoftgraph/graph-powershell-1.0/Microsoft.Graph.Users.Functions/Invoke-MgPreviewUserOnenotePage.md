@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Preview (Default)
@@ -181,6 +184,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaPreviewUserOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgpreviewuseronenotepage)
 

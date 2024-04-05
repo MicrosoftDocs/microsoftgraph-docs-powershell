@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of an application object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationByAppId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -203,6 +206,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationbyappid)
 

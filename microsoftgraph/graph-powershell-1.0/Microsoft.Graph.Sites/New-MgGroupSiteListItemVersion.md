@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to versions for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -444,6 +447,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion)
 

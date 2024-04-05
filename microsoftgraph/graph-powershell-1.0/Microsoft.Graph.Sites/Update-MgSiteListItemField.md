@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties on a \[listItem\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -304,6 +307,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield)
 

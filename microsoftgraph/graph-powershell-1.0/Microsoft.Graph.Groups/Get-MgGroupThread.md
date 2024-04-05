@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a thread object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,6 +320,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
 

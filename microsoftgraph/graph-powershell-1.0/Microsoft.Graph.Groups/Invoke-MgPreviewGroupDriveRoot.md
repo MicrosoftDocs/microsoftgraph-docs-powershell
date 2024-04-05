@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)
@@ -308,6 +311,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveroot)
 

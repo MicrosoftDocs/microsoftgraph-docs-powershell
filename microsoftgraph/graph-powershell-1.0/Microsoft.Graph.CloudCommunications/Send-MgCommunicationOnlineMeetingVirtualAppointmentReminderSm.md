@@ -11,6 +11,9 @@ schema: 2.0.0
 Send an SMS reminder to external attendees for a Teams virtual appointment.
 This feature requires Teams premium and attendees must have a valid United States phone number to receive SMS notifications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -303,6 +306,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationonlinemeetingvirtualappointmentremindersm)
 

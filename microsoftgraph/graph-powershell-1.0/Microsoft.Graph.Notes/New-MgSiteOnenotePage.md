@@ -13,6 +13,9 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenotePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -879,6 +882,7 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgBetaSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotepage)
 

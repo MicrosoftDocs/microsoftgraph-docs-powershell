@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property list in drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgDriveList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46195,6 +46198,7 @@ Do not include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgDriveList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelist)
 

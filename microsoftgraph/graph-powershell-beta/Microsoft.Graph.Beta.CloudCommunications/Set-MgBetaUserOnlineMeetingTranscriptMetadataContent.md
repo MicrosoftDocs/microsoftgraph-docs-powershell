@@ -11,6 +11,9 @@ schema: 2.0.0
 The time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserOnlineMeetingTranscriptMetadataContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingTranscriptMetadataContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingtranscriptmetadatacontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetauseronlinemeetingtranscriptmetadatacontent)
 

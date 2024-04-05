@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpin a message from a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -265,6 +268,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -319,6 +322,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgCheckinDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetacheckindriveroot)
 

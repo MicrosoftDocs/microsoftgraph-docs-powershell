@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property columnLinks for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -287,6 +290,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistcontenttypecolumnlink)
 

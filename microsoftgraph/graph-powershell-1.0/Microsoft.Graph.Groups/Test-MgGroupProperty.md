@@ -16,6 +16,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaGroupProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -334,6 +337,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Test-MgBetaGroupProperty](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupproperty)
 

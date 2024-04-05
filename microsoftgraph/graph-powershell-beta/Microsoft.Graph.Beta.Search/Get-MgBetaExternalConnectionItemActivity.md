@@ -11,6 +11,9 @@ schema: 2.0.0
 Returns a list of activities performed on the item.
 Write-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -353,6 +356,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitemactivity)
 

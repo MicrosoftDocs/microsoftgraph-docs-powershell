@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -759,6 +762,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpermission)
 

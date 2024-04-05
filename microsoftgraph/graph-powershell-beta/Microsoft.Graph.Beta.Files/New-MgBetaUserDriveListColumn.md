@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1267,6 +1270,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivelistcolumn)
 

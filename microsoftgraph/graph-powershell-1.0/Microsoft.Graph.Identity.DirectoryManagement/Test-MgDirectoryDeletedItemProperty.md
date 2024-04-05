@@ -19,6 +19,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaDirectoryDeletedItemProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryDeletedItemProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -272,6 +275,7 @@ BODYPARAMETER `<IPaths12Jg47YDirectoryDeleteditemsMicrosoftGraphValidateproperti
   - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
+[Test-MgBetaDirectoryDeletedItemProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaDirectoryDeletedItemProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectorydeleteditemproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgdirectorydeleteditemproperty)
 

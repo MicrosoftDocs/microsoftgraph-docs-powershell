@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -2288,6 +2291,7 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
+[New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendarevent)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new bookingService for the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -693,6 +696,7 @@ Use the email address specified in the email property of the bookingBusiness ent
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
+[New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice)
 

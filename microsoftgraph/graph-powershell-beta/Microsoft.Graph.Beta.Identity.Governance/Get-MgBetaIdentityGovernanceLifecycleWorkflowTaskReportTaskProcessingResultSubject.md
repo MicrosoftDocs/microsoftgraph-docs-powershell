@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The unique identifier of the Microsoft Entra user targeted for the task execution.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -304,6 +307,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresultsubject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowtaskreporttaskprocessingresultsubject)
 

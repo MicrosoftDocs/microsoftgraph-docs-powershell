@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a \[content type\]\[contentType\] with a list of hub sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -354,6 +357,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Join-MgSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsite)
 

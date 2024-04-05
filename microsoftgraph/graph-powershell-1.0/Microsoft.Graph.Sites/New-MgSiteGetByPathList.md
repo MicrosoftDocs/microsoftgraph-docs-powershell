@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[list\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -24164,6 +24167,7 @@ Do not include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[New-MgBetaSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist)
 

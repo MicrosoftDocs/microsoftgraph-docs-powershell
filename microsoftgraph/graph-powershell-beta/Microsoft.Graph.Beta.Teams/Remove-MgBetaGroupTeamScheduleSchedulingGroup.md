@@ -11,6 +11,9 @@ schema: 2.0.0
 Mark a schedulingGroup as inactive by setting its isActive property.This method does not remove the schedulingGroup from the schedule.
 Existing shift instances assigned to the scheduling group remain part of the group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,6 +260,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduleschedulinggroup)
 

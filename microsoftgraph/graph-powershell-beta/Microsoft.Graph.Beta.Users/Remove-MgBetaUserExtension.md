@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserExtension](/powershell/module/Microsoft.Graph.Users/Remove-MgUserExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -243,6 +246,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Remove-MgUserExtension](/powershell/module/Microsoft.Graph.Users/Remove-MgUserExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauserextension)
 

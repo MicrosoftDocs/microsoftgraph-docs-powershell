@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to participants for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallParticipant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -554,6 +557,7 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
+[New-MgCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallParticipant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcallparticipant)
 

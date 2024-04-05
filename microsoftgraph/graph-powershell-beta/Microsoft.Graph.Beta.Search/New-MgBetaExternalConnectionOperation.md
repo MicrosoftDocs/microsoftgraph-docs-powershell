@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -322,6 +325,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[New-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionoperation)
 

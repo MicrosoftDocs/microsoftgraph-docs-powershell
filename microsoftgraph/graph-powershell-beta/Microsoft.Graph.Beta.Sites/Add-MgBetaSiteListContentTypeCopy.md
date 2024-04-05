@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -307,6 +310,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitelistcontenttypecopy)
 

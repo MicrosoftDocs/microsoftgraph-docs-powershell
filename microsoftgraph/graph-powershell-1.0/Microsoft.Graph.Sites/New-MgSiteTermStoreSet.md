@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -728,6 +731,7 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[New-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoreset)
 

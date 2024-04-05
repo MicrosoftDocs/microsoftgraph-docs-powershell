@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a todoTask object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -355,6 +358,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
 

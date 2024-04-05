@@ -14,6 +14,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberof)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property bulkUpload from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -206,6 +209,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobbulkuploadcontent)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -2434,6 +2437,7 @@ Supports $filter (eq, in).
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment- `[]`>]`: Resource to grant access to users or groups that are transitive.
 
 ## RELATED LINKS
+[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement)
 

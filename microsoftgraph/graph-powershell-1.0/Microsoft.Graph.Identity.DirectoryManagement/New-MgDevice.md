@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create and register a new device in the organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -967,6 +970,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
 

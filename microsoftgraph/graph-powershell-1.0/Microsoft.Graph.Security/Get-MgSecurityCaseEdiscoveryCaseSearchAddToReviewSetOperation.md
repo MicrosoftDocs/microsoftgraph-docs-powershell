@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds the results of the eDiscovery search to the specified reviewSet.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -240,6 +243,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchaddtoreviewsetoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchaddtoreviewsetoperation)
 

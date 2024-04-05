@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a plannerBucket object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -305,6 +308,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerbucket)
 

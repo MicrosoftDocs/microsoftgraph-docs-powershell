@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new version of a document set item in a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -545,6 +548,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemdocumentsetversion)
 
