@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 50bc9e18-e281-4208-8913-c9e1bef6083d
 Download Help Link: {{ Update Download Link }}
@@ -437,6 +437,15 @@ Locale: en-US
 ### [Get-MgGroupSiteListItemActivityByInterval](Get-MgGroupSiteListItemActivityByInterval.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
 {{ Fill in the Description }}
 
@@ -815,6 +824,9 @@ Locale: en-US
 ### [Remove-MgGroupAcceptedSenderByRef](Remove-MgGroupAcceptedSenderByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](Remove-MgGroupAcceptedSenderDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupByUniqueName](Remove-MgGroupByUniqueName.md)
 {{ Fill in the Description }}
 
@@ -857,13 +869,25 @@ Locale: en-US
 ### [Remove-MgGroupMemberByRef](Remove-MgGroupMemberByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupMemberDirectoryObjectByRef](Remove-MgGroupMemberDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupOwnerByRef](Remove-MgGroupOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupOwnerDirectoryObjectByRef](Remove-MgGroupOwnerDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupRejectedSenderByRef](Remove-MgGroupRejectedSenderByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupRejectedSenderDirectoryObjectByRef](Remove-MgGroupRejectedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupSetting](Remove-MgGroupSetting.md)
@@ -1030,5 +1054,4 @@ Locale: en-US
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
 {{ Fill in the Description }}
-
 

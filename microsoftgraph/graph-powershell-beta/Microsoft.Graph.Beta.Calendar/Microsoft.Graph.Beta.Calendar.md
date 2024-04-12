@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Calendar
 Module Guid: eda98b12-4552-4447-ba9b-8f51cdc715df
 Download Help Link: {{ Update Download Link }}
@@ -140,7 +140,13 @@ Locale: en-US
 ### [Get-MgBetaPlaceAsRoomListRoom](Get-MgBetaPlaceAsRoomListRoom.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaPlaceAsRoomListRoomCount](Get-MgBetaPlaceAsRoomListRoomCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaPlaceAsRoomListWorkspace](Get-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaPlaceAsRoomListWorkspaceCount](Get-MgBetaPlaceAsRoomListWorkspaceCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCount](Get-MgBetaPlaceCount.md)
@@ -150,12 +156,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCountAsRoomList](Get-MgBetaPlaceCountAsRoomList.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaPlaceRoomCount](Get-MgBetaPlaceRoomCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaPlaceWorkspaceCount](Get-MgBetaPlaceWorkspaceCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
@@ -440,6 +440,9 @@ Locale: en-US
 ### [Remove-MgBetaPlaceAsRoomListWorkspace](Remove-MgBetaPlaceAsRoomListWorkspace.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaPlaceByPlaceId](Remove-MgBetaPlaceByPlaceId.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserCalendarGroup](Remove-MgBetaUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -512,6 +515,9 @@ Locale: en-US
 ### [Update-MgBetaPlaceAsRoomListWorkspace](Update-MgBetaPlaceAsRoomListWorkspace.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaPlaceByPlaceId](Update-MgBetaPlaceByPlaceId.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaUserCalendarGroup](Update-MgBetaUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -535,5 +541,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserEventInstanceExtension](Update-MgBetaUserEventInstanceExtension.md)
 {{ Fill in the Description }}
-
 

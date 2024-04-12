@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbilling
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property billing for reports
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBilling?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Remove-MgReportPartnerBilling [-IfMatch <String>] [-ResponseHeadersVariable <Str
 
 ## DESCRIPTION
 Delete navigation property billing for reports
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -143,11 +152,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbilling)
-
-
-
-
 

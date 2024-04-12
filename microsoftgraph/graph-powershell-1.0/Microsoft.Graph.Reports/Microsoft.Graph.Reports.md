@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: 0bfc88b7-a8ad-471a-8c86-5f0aa3c84217
 Download Help Link: {{ Update Download Link }}
@@ -11,6 +11,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ## Microsoft.Graph.Reports Cmdlets
+### [Export-MgReportPartnerBillingReconciliationBilled](Export-MgReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Export-MgReportPartnerBillingUsageBilled](Export-MgReportPartnerBillingUsageBilled.md)
 {{ Fill in the Description }}
 
@@ -206,6 +209,12 @@ Locale: en-US
 ### [Get-MgReportPartnerBillingOperationCount](Get-MgReportPartnerBillingOperationCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgReportPartnerBillingReconciliation](Get-MgReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Get-MgReportPartnerBillingReconciliationBilled](Get-MgReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Get-MgReportPartnerBillingUsage](Get-MgReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -392,6 +401,12 @@ Locale: en-US
 ### [Remove-MgReportPartnerBillingOperation](Remove-MgReportPartnerBillingOperation.md)
 {{ Fill in the Description }}
 
+### [Remove-MgReportPartnerBillingReconciliation](Remove-MgReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgReportPartnerBillingReconciliationBilled](Remove-MgReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgReportPartnerBillingUsage](Remove-MgReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -416,6 +431,12 @@ Locale: en-US
 ### [Update-MgReportPartnerBillingOperation](Update-MgReportPartnerBillingOperation.md)
 {{ Fill in the Description }}
 
+### [Update-MgReportPartnerBillingReconciliation](Update-MgReportPartnerBillingReconciliation.md)
+{{ Fill in the Description }}
+
+### [Update-MgReportPartnerBillingReconciliationBilled](Update-MgReportPartnerBillingReconciliationBilled.md)
+{{ Fill in the Description }}
+
 ### [Update-MgReportPartnerBillingUsage](Update-MgReportPartnerBillingUsage.md)
 {{ Fill in the Description }}
 
@@ -424,5 +445,4 @@ Locale: en-US
 
 ### [Update-MgReportPartnerBillingUsageUnbilled](Update-MgReportPartnerBillingUsageUnbilled.md)
 {{ Fill in the Description }}
-
 

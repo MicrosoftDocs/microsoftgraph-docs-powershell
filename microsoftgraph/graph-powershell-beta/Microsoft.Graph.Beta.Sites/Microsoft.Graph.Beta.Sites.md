@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: 7587c600-0c13-4efa-bc56-869a6245ef96
 Download Help Link: {{ Update Download Link }}
@@ -105,6 +105,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream](Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteAnalyticItemActivityStatCount](Get-MgBetaGroupSiteAnalyticItemActivityStatCount.md)
@@ -401,6 +404,9 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteListItemActivityDriveItemContent](Get-MgBetaGroupSiteListItemActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSiteListItemActivityDriveItemContentStream](Get-MgBetaGroupSiteListItemActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSiteListItemActivityListItem](Get-MgBetaGroupSiteListItemActivityListItem.md)
 {{ Fill in the Description }}
 
@@ -432,6 +438,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteListItemDriveItemContent](Get-MgBetaGroupSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteListItemDriveItemContentStream](Get-MgBetaGroupSiteListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteListItemField](Get-MgBetaGroupSiteListItemField.md)
@@ -650,7 +659,16 @@ Locale: en-US
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
@@ -659,25 +677,37 @@ Locale: en-US
 ### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSitePageAsSitePageCreatedByUser](Get-MgBetaGroupSitePageAsSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting](Get-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError](Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUser](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUser.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserMailboxSetting](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSitePageAsSitePageWebPart](Get-MgBetaGroupSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+### [Get-MgBetaGroupSitePageAsSitePageWebPartCount](Get-MgBetaGroupSitePageAsSitePageWebPartCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSitePageCount](Get-MgBetaGroupSitePageCount.md)
@@ -708,9 +738,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaGroupSitePageWebPartCount](Get-MgBetaGroupSitePageWebPartCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSitePermission](Get-MgBetaGroupSitePermission.md)
@@ -1100,6 +1127,9 @@ Locale: en-US
 ### [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent](Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream](Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSiteAnalyticItemActivityStatCount](Get-MgBetaSiteAnalyticItemActivityStatCount.md)
 {{ Fill in the Description }}
 
@@ -1331,6 +1361,9 @@ Locale: en-US
 ### [Get-MgBetaSiteListItemActivityDriveItemContent](Get-MgBetaSiteListItemActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSiteListItemActivityDriveItemContentStream](Get-MgBetaSiteListItemActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSiteListItemActivityListItem](Get-MgBetaSiteListItemActivityListItem.md)
 {{ Fill in the Description }}
 
@@ -1365,6 +1398,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteListItemDriveItemContent](Get-MgBetaSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteListItemDriveItemContentStream](Get-MgBetaSiteListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteListItemField](Get-MgBetaSiteListItemField.md)
@@ -1415,7 +1451,16 @@ Locale: en-US
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSection.md)
@@ -1424,25 +1469,37 @@ Locale: en-US
 ### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSitePageAsSitePageCreatedByUser](Get-MgBetaSitePageAsSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageCreatedByUserMailboxSetting](Get-MgBetaSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageCreatedByUserServiceProvisioningError](Get-MgBetaSitePageAsSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgBetaSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSitePageAsSitePageLastModifiedByUser](Get-MgBetaSitePageAsSitePageLastModifiedByUser.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSitePageAsSitePageLastModifiedByUserMailboxSetting](Get-MgBetaSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgBetaSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSitePageAsSitePageWebPart](Get-MgBetaSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumnCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgBetaSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSitePageCanvaLayoutHorizontalSectionCount](Get-MgBetaSitePageCanvaLayoutHorizontalSectionCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgBetaSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+### [Get-MgBetaSitePageAsSitePageWebPartCount](Get-MgBetaSitePageAsSitePageWebPartCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSitePageCount](Get-MgBetaSitePageCount.md)
@@ -1482,9 +1539,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaSitePageWebPartCount](Get-MgBetaSitePageWebPartCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSitePermission](Get-MgBetaSitePermission.md)
@@ -2726,10 +2780,19 @@ Locale: en-US
 ### [Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent](Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream](Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupSiteListItemActivityDriveItemContent](Set-MgBetaGroupSiteListItemActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupSiteListItemActivityDriveItemContentStream](Set-MgBetaGroupSiteListItemActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupSiteListItemDriveItemContent](Set-MgBetaGroupSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupSiteListItemDriveItemContentStream](Set-MgBetaGroupSiteListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent.md)
@@ -2753,10 +2816,19 @@ Locale: en-US
 ### [Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent](Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream](Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaSiteListItemActivityDriveItemContent](Set-MgBetaSiteListItemActivityDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaSiteListItemActivityDriveItemContentStream](Set-MgBetaSiteListItemActivityDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaSiteListItemDriveItemContent](Set-MgBetaSiteListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaSiteListItemDriveItemContentStream](Set-MgBetaSiteListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Test-MgBetaSiteContentTypePublished](Test-MgBetaSiteContentTypePublished.md)
@@ -2988,6 +3060,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting](Update-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaGroupSitePageAsSitePageLastModifiedByUserMailboxSetting](Update-MgBetaGroupSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaGroupSitePageAsSitePageWebPart](Update-MgBetaGroupSitePageAsSitePageWebPart.md)
@@ -3227,6 +3305,12 @@ Locale: en-US
 ### [Update-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSitePageAsSitePageCreatedByUserMailboxSetting](Update-MgBetaSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSitePageAsSitePageLastModifiedByUserMailboxSetting](Update-MgBetaSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSitePageAsSitePageWebPart](Update-MgBetaSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
@@ -3322,5 +3406,4 @@ Locale: en-US
 
 ### [Update-MgBetaSiteTermStoreSetTermRelation](Update-MgBetaSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

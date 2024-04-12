@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplate
@@ -33,6 +33,22 @@ New-MgBetaDeviceManagementTemplate -BodyParameter <IMicrosoftGraphDeviceManageme
 
 ## DESCRIPTION
 Create new navigation property to templates for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -359,129 +375,125 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementTemplate>`: Entity that represents a defined collection of device settings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceManagementTemplate\>: Entity that represents a defined collection of device settings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>]`: Collection of setting categories within the template
-    - `[DisplayName <String>]`: The category name
-    - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-    - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
-      - `[Id <String>]`: The unique identifier for an entity.
+  \[Categories \<IMicrosoftGraphDeviceManagementTemplateSettingCategory\[\]\>\]: Collection of setting categories within the template
+    \[DisplayName \<String\>\]: The category name
+    \[HasRequiredSetting \<Boolean?\>\]: The category contains top level required setting
+    \[SettingDefinitions \<IMicrosoftGraphDeviceManagementSettingDefinition\[\]\>\]: The setting definitions this category contains
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
-      - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>]`: Collection of dependencies on other settings
-        - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
-        - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-      - `[Description <String>]`: The setting's description
-      - `[DisplayName <String>]`: The setting's display name
-      - `[DocumentationUrl <String>]`: Url to setting documentation
-      - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-      - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-      - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-      - `[Keywords <String- `[]`>]`: Keywords associated with the setting
-      - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-      - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: The unique identifier for an entity.
+      \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the setting value
+      \[Dependencies \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>\]: Collection of dependencies on other settings
+        \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the dependency setting value
+        \[DefinitionId \<String\>\]: The setting definition ID of the setting depended on
+      \[Description \<String\>\]: The setting's description
+      \[DisplayName \<String\>\]: The setting's display name
+      \[DocumentationUrl \<String\>\]: Url to setting documentation
+      \[HeaderSubtitle \<String\>\]: subtitle of the setting header for more details about the category/section
+      \[HeaderTitle \<String\>\]: title of the setting header represents a category/section of a setting/settings
+      \[IsTopLevel \<Boolean?\>\]: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
+      \[Keywords \<String\[\]\>\]: Keywords associated with the setting
+      \[PlaceholderText \<String\>\]: Placeholder text as an example of valid input
+      \[ValueType \<DeviceManangementIntentValueType?\>\]: deviceManangementIntentValueType
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>]`: The settings this category contains
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[RecommendedSettings \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>\]: The settings this category contains
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-      - `[ValueJson <String>]`: JSON representation of the value
-  - `[Description <String>]`: The template's description
-  - `[DisplayName <String>]`: The template's display name
-  - `[IntentCount <Int32?>]`: Number of Intents created from this template.
-  - `[IsDeprecated <Boolean?>]`: The template is deprecated or not.
+      \[DefinitionId \<String\>\]: The ID of the setting definition for this instance
+      \[ValueJson \<String\>\]: JSON representation of the value
+  \[Description \<String\>\]: The template's description
+  \[DisplayName \<String\>\]: The template's display name
+  \[IntentCount \<Int32?\>\]: Number of Intents created from this template.
+  \[IsDeprecated \<Boolean?\>\]: The template is deprecated or not.
 Intents cannot be created from a deprecated template.
-  - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate- `[]`>]`: Collection of templates this template can migrate to
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[PublishedDateTime <DateTime?>]`: When the template was published
-  - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>]`: Collection of all settings this template has
-  - `[TemplateSubtype <DeviceManagementTemplateSubtype?>]`: Template subtype
-  - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
-  - `[VersionInfo <String>]`: The template's version information
+  \[MigratableTo \<IMicrosoftGraphDeviceManagementTemplate\[\]\>\]: Collection of templates this template can migrate to
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
+  \[PublishedDateTime \<DateTime?\>\]: When the template was published
+  \[Settings \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>\]: Collection of all settings this template has
+  \[TemplateSubtype \<DeviceManagementTemplateSubtype?\>\]: Template subtype
+  \[TemplateType \<DeviceManagementTemplateType?\>\]: Template type
+  \[VersionInfo \<String\>\]: The template's version information
 
-CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>: Collection of setting categories within the template
-  - `[DisplayName <String>]`: The category name
-  - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-  - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
-    - `[Id <String>]`: The unique identifier for an entity.
+CATEGORIES \<IMicrosoftGraphDeviceManagementTemplateSettingCategory\[\]\>: Collection of setting categories within the template
+  \[DisplayName \<String\>\]: The category name
+  \[HasRequiredSetting \<Boolean?\>\]: The category contains top level required setting
+  \[SettingDefinitions \<IMicrosoftGraphDeviceManagementSettingDefinition\[\]\>\]: The setting definitions this category contains
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
-    - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>]`: Collection of dependencies on other settings
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
-      - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-    - `[Description <String>]`: The setting's description
-    - `[DisplayName <String>]`: The setting's display name
-    - `[DocumentationUrl <String>]`: Url to setting documentation
-    - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-    - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-    - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-    - `[Keywords <String- `[]`>]`: Keywords associated with the setting
-    - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-    - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the setting value
+    \[Dependencies \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>\]: Collection of dependencies on other settings
+      \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the dependency setting value
+      \[DefinitionId \<String\>\]: The setting definition ID of the setting depended on
+    \[Description \<String\>\]: The setting's description
+    \[DisplayName \<String\>\]: The setting's display name
+    \[DocumentationUrl \<String\>\]: Url to setting documentation
+    \[HeaderSubtitle \<String\>\]: subtitle of the setting header for more details about the category/section
+    \[HeaderTitle \<String\>\]: title of the setting header represents a category/section of a setting/settings
+    \[IsTopLevel \<Boolean?\>\]: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
+    \[Keywords \<String\[\]\>\]: Keywords associated with the setting
+    \[PlaceholderText \<String\>\]: Placeholder text as an example of valid input
+    \[ValueType \<DeviceManangementIntentValueType?\>\]: deviceManangementIntentValueType
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>]`: The settings this category contains
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[RecommendedSettings \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>\]: The settings this category contains
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-    - `[ValueJson <String>]`: JSON representation of the value
+    \[DefinitionId \<String\>\]: The ID of the setting definition for this instance
+    \[ValueJson \<String\>\]: JSON representation of the value
 
-MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate- `[]`>: Collection of templates this template can migrate to
-  - `[Id <String>]`: The unique identifier for an entity.
+MIGRATABLETO \<IMicrosoftGraphDeviceManagementTemplate\[\]\>: Collection of templates this template can migrate to
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Categories <IMicrosoftGraphDeviceManagementTemplateSettingCategory- `[]`>]`: Collection of setting categories within the template
-    - `[DisplayName <String>]`: The category name
-    - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-    - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition- `[]`>]`: The setting definitions this category contains
-      - `[Id <String>]`: The unique identifier for an entity.
+  \[Categories \<IMicrosoftGraphDeviceManagementTemplateSettingCategory\[\]\>\]: Collection of setting categories within the template
+    \[DisplayName \<String\>\]: The category name
+    \[HasRequiredSetting \<Boolean?\>\]: The category contains top level required setting
+    \[SettingDefinitions \<IMicrosoftGraphDeviceManagementSettingDefinition\[\]\>\]: The setting definitions this category contains
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the setting value
-      - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency- `[]`>]`: Collection of dependencies on other settings
-        - `[Constraints <IMicrosoftGraphDeviceManagementConstraint- `[]`>]`: Collection of constraints for the dependency setting value
-        - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-      - `[Description <String>]`: The setting's description
-      - `[DisplayName <String>]`: The setting's display name
-      - `[DocumentationUrl <String>]`: Url to setting documentation
-      - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-      - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-      - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-      - `[Keywords <String- `[]`>]`: Keywords associated with the setting
-      - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-      - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: The unique identifier for an entity.
+      \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the setting value
+      \[Dependencies \<IMicrosoftGraphDeviceManagementSettingDependency\[\]\>\]: Collection of dependencies on other settings
+        \[Constraints \<IMicrosoftGraphDeviceManagementConstraint\[\]\>\]: Collection of constraints for the dependency setting value
+        \[DefinitionId \<String\>\]: The setting definition ID of the setting depended on
+      \[Description \<String\>\]: The setting's description
+      \[DisplayName \<String\>\]: The setting's display name
+      \[DocumentationUrl \<String\>\]: Url to setting documentation
+      \[HeaderSubtitle \<String\>\]: subtitle of the setting header for more details about the category/section
+      \[HeaderTitle \<String\>\]: title of the setting header represents a category/section of a setting/settings
+      \[IsTopLevel \<Boolean?\>\]: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
+      \[Keywords \<String\[\]\>\]: Keywords associated with the setting
+      \[PlaceholderText \<String\>\]: Placeholder text as an example of valid input
+      \[ValueType \<DeviceManangementIntentValueType?\>\]: deviceManangementIntentValueType
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>]`: The settings this category contains
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[RecommendedSettings \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>\]: The settings this category contains
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-      - `[ValueJson <String>]`: JSON representation of the value
-  - `[Description <String>]`: The template's description
-  - `[DisplayName <String>]`: The template's display name
-  - `[IntentCount <Int32?>]`: Number of Intents created from this template.
-  - `[IsDeprecated <Boolean?>]`: The template is deprecated or not.
+      \[DefinitionId \<String\>\]: The ID of the setting definition for this instance
+      \[ValueJson \<String\>\]: JSON representation of the value
+  \[Description \<String\>\]: The template's description
+  \[DisplayName \<String\>\]: The template's display name
+  \[IntentCount \<Int32?\>\]: Number of Intents created from this template.
+  \[IsDeprecated \<Boolean?\>\]: The template is deprecated or not.
 Intents cannot be created from a deprecated template.
-  - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate- `[]`>]`: Collection of templates this template can migrate to
-  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
-  - `[PublishedDateTime <DateTime?>]`: When the template was published
-  - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>]`: Collection of all settings this template has
-  - `[TemplateSubtype <DeviceManagementTemplateSubtype?>]`: Template subtype
-  - `[TemplateType <DeviceManagementTemplateType?>]`: Template type
-  - `[VersionInfo <String>]`: The template's version information
+  \[MigratableTo \<IMicrosoftGraphDeviceManagementTemplate\[\]\>\]: Collection of templates this template can migrate to
+  \[PlatformType \<PolicyPlatformType?\>\]: Supported platform types for policies.
+  \[PublishedDateTime \<DateTime?\>\]: When the template was published
+  \[Settings \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>\]: Collection of all settings this template has
+  \[TemplateSubtype \<DeviceManagementTemplateSubtype?\>\]: Template subtype
+  \[TemplateType \<DeviceManagementTemplateType?\>\]: Template type
+  \[VersionInfo \<String\>\]: The template's version information
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance- `[]`>: Collection of all settings this template has
-  - `[Id <String>]`: The unique identifier for an entity.
+SETTINGS \<IMicrosoftGraphDeviceManagementSettingInstance\[\]\>: Collection of all settings this template has
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-  - `[ValueJson <String>]`: JSON representation of the value
+  \[DefinitionId \<String\>\]: The ID of the setting definition for this instance
+  \[ValueJson \<String\>\]: JSON representation of the value
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementtemplate)
-
-
-
-
 

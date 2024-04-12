@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Files
 Module Guid: d6278476-f9b5-4d1e-909c-110aff851952
 Download Help Link: {{ Update Download Link }}
@@ -47,6 +47,9 @@ Locale: en-US
 ### [Get-MgBetaDriveBundleContent](Get-MgBetaDriveBundleContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveBundleContentStream](Get-MgBetaDriveBundleContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveBundleCount](Get-MgBetaDriveBundleCount.md)
 {{ Fill in the Description }}
 
@@ -75,6 +78,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveFollowingContent](Get-MgBetaDriveFollowingContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDriveFollowingContentStream](Get-MgBetaDriveFollowingContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveFollowingCount](Get-MgBetaDriveFollowingCount.md)
@@ -113,10 +119,16 @@ Locale: en-US
 ### [Get-MgBetaDriveItemChildContent](Get-MgBetaDriveItemChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveItemChildContentStream](Get-MgBetaDriveItemChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveItemChildCount](Get-MgBetaDriveItemChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveItemContent](Get-MgBetaDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDriveItemContentStream](Get-MgBetaDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveItemCount](Get-MgBetaDriveItemCount.md)
@@ -198,6 +210,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveItemListItemDriveItemContent](Get-MgBetaDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDriveItemListItemDriveItemContentStream](Get-MgBetaDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveItemListItemField](Get-MgBetaDriveItemListItemField.md)
@@ -359,6 +374,9 @@ Locale: en-US
 ### [Get-MgBetaDriveListItemDriveItemContent](Get-MgBetaDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveListItemDriveItemContentStream](Get-MgBetaDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveListItemField](Get-MgBetaDriveListItemField.md)
 {{ Fill in the Description }}
 
@@ -416,10 +434,16 @@ Locale: en-US
 ### [Get-MgBetaDriveRootChildContent](Get-MgBetaDriveRootChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveRootChildContentStream](Get-MgBetaDriveRootChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveRootChildCount](Get-MgBetaDriveRootChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveRootContent](Get-MgBetaDriveRootContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDriveRootContentStream](Get-MgBetaDriveRootContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDriveRootCreatedByUser](Get-MgBetaDriveRootCreatedByUser.md)
@@ -500,6 +524,9 @@ Locale: en-US
 ### [Get-MgBetaDriveRootListItemDriveItemContent](Get-MgBetaDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveRootListItemDriveItemContentStream](Get-MgBetaDriveRootListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveRootListItemField](Get-MgBetaDriveRootListItemField.md)
 {{ Fill in the Description }}
 
@@ -548,6 +575,9 @@ Locale: en-US
 ### [Get-MgBetaDriveSpecialContent](Get-MgBetaDriveSpecialContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDriveSpecialContentStream](Get-MgBetaDriveSpecialContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDriveSpecialCount](Get-MgBetaDriveSpecialCount.md)
 {{ Fill in the Description }}
 
@@ -564,6 +594,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveBundleContent](Get-MgBetaGroupDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupDriveBundleContentStream](Get-MgBetaGroupDriveBundleContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveBundleCount](Get-MgBetaGroupDriveBundleCount.md)
@@ -599,6 +632,9 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveFollowingContent](Get-MgBetaGroupDriveFollowingContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveFollowingContentStream](Get-MgBetaGroupDriveFollowingContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveFollowingCount](Get-MgBetaGroupDriveFollowingCount.md)
 {{ Fill in the Description }}
 
@@ -632,10 +668,16 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveItemChildContent](Get-MgBetaGroupDriveItemChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveItemChildContentStream](Get-MgBetaGroupDriveItemChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveItemChildCount](Get-MgBetaGroupDriveItemChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveItemContent](Get-MgBetaGroupDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupDriveItemContentStream](Get-MgBetaGroupDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveItemCount](Get-MgBetaGroupDriveItemCount.md)
@@ -711,6 +753,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveItemListItemDriveItemContent](Get-MgBetaGroupDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupDriveItemListItemDriveItemContentStream](Get-MgBetaGroupDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveItemListItemField](Get-MgBetaGroupDriveItemListItemField.md)
@@ -860,6 +905,9 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveListItemDriveItemContent](Get-MgBetaGroupDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveListItemDriveItemContentStream](Get-MgBetaGroupDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveListItemField](Get-MgBetaGroupDriveListItemField.md)
 {{ Fill in the Description }}
 
@@ -914,10 +962,16 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveRootChildContent](Get-MgBetaGroupDriveRootChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveRootChildContentStream](Get-MgBetaGroupDriveRootChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveRootChildCount](Get-MgBetaGroupDriveRootChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveRootContent](Get-MgBetaGroupDriveRootContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupDriveRootContentStream](Get-MgBetaGroupDriveRootContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupDriveRootCreatedByUser](Get-MgBetaGroupDriveRootCreatedByUser.md)
@@ -992,6 +1046,9 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveRootListItemDriveItemContent](Get-MgBetaGroupDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveRootListItemDriveItemContentStream](Get-MgBetaGroupDriveRootListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveRootListItemField](Get-MgBetaGroupDriveRootListItemField.md)
 {{ Fill in the Description }}
 
@@ -1040,6 +1097,9 @@ Locale: en-US
 ### [Get-MgBetaGroupDriveSpecialContent](Get-MgBetaGroupDriveSpecialContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupDriveSpecialContentStream](Get-MgBetaGroupDriveSpecialContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupDriveSpecialCount](Get-MgBetaGroupDriveSpecialCount.md)
 {{ Fill in the Description }}
 
@@ -1073,10 +1133,16 @@ Locale: en-US
 ### [Get-MgBetaShareDriveItemContent](Get-MgBetaShareDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaShareDriveItemContentStream](Get-MgBetaShareDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaShareItem](Get-MgBetaShareItem.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaShareItemContent](Get-MgBetaShareItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaShareItemContentStream](Get-MgBetaShareItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaShareItemCount](Get-MgBetaShareItemCount.md)
@@ -1208,6 +1274,9 @@ Locale: en-US
 ### [Get-MgBetaShareListItemDriveItemContent](Get-MgBetaShareListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaShareListItemDriveItemContentStream](Get-MgBetaShareListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaShareListItemField](Get-MgBetaShareListItemField.md)
 {{ Fill in the Description }}
 
@@ -1241,6 +1310,9 @@ Locale: en-US
 ### [Get-MgBetaShareRootContent](Get-MgBetaShareRootContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaShareRootContentStream](Get-MgBetaShareRootContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaShareSharedDriveItemSharedDriveItem](Get-MgBetaShareSharedDriveItemSharedDriveItem.md)
 {{ Fill in the Description }}
 
@@ -1260,6 +1332,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveBundleContent](Get-MgBetaUserDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDriveBundleContentStream](Get-MgBetaUserDriveBundleContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveBundleCount](Get-MgBetaUserDriveBundleCount.md)
@@ -1295,6 +1370,9 @@ Locale: en-US
 ### [Get-MgBetaUserDriveFollowingContent](Get-MgBetaUserDriveFollowingContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDriveFollowingContentStream](Get-MgBetaUserDriveFollowingContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDriveFollowingCount](Get-MgBetaUserDriveFollowingCount.md)
 {{ Fill in the Description }}
 
@@ -1328,10 +1406,16 @@ Locale: en-US
 ### [Get-MgBetaUserDriveItemChildContent](Get-MgBetaUserDriveItemChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDriveItemChildContentStream](Get-MgBetaUserDriveItemChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDriveItemChildCount](Get-MgBetaUserDriveItemChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveItemContent](Get-MgBetaUserDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDriveItemContentStream](Get-MgBetaUserDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveItemCount](Get-MgBetaUserDriveItemCount.md)
@@ -1407,6 +1491,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveItemListItemDriveItemContent](Get-MgBetaUserDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDriveItemListItemDriveItemContentStream](Get-MgBetaUserDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveItemListItemField](Get-MgBetaUserDriveItemListItemField.md)
@@ -1556,6 +1643,9 @@ Locale: en-US
 ### [Get-MgBetaUserDriveListItemDriveItemContent](Get-MgBetaUserDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDriveListItemDriveItemContentStream](Get-MgBetaUserDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDriveListItemField](Get-MgBetaUserDriveListItemField.md)
 {{ Fill in the Description }}
 
@@ -1610,10 +1700,16 @@ Locale: en-US
 ### [Get-MgBetaUserDriveRootChildContent](Get-MgBetaUserDriveRootChildContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDriveRootChildContentStream](Get-MgBetaUserDriveRootChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDriveRootChildCount](Get-MgBetaUserDriveRootChildCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveRootContent](Get-MgBetaUserDriveRootContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDriveRootContentStream](Get-MgBetaUserDriveRootContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveRootCreatedByUser](Get-MgBetaUserDriveRootCreatedByUser.md)
@@ -1688,6 +1784,9 @@ Locale: en-US
 ### [Get-MgBetaUserDriveRootListItemDriveItemContent](Get-MgBetaUserDriveRootListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserDriveRootListItemDriveItemContentStream](Get-MgBetaUserDriveRootListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserDriveRootListItemField](Get-MgBetaUserDriveRootListItemField.md)
 {{ Fill in the Description }}
 
@@ -1734,6 +1833,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveSpecialContent](Get-MgBetaUserDriveSpecialContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserDriveSpecialContentStream](Get-MgBetaUserDriveSpecialContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserDriveSpecialCount](Get-MgBetaUserDriveSpecialCount.md)
@@ -2609,16 +2711,31 @@ Locale: en-US
 ### [Set-MgBetaDriveBundleContent](Set-MgBetaDriveBundleContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveBundleContentStream](Set-MgBetaDriveBundleContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDriveFollowingContent](Set-MgBetaDriveFollowingContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDriveFollowingContentStream](Set-MgBetaDriveFollowingContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDriveItemChildContent](Set-MgBetaDriveItemChildContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveItemChildContentStream](Set-MgBetaDriveItemChildContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDriveItemContent](Set-MgBetaDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveItemContentStream](Set-MgBetaDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDriveItemListItemDriveItemContent](Set-MgBetaDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDriveItemListItemDriveItemContentStream](Set-MgBetaDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDriveItemSensitivityLabel](Set-MgBetaDriveItemSensitivityLabel.md)
@@ -2630,13 +2747,25 @@ Locale: en-US
 ### [Set-MgBetaDriveListItemDriveItemContent](Set-MgBetaDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveListItemDriveItemContentStream](Set-MgBetaDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDriveRootChildContent](Set-MgBetaDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDriveRootChildContentStream](Set-MgBetaDriveRootChildContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDriveRootContent](Set-MgBetaDriveRootContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveRootContentStream](Set-MgBetaDriveRootContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDriveRootListItemDriveItemContent](Set-MgBetaDriveRootListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDriveRootListItemDriveItemContentStream](Set-MgBetaDriveRootListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDriveRootSensitivityLabel](Set-MgBetaDriveRootSensitivityLabel.md)
@@ -2648,19 +2777,37 @@ Locale: en-US
 ### [Set-MgBetaDriveSpecialContent](Set-MgBetaDriveSpecialContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDriveSpecialContentStream](Set-MgBetaDriveSpecialContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupDriveBundleContent](Set-MgBetaGroupDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupDriveBundleContentStream](Set-MgBetaGroupDriveBundleContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupDriveFollowingContent](Set-MgBetaGroupDriveFollowingContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupDriveFollowingContentStream](Set-MgBetaGroupDriveFollowingContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupDriveItemChildContent](Set-MgBetaGroupDriveItemChildContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupDriveItemChildContentStream](Set-MgBetaGroupDriveItemChildContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupDriveItemContent](Set-MgBetaGroupDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupDriveItemContentStream](Set-MgBetaGroupDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupDriveItemListItemDriveItemContent](Set-MgBetaGroupDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupDriveItemListItemDriveItemContentStream](Set-MgBetaGroupDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupDriveItemVersionContent](Set-MgBetaGroupDriveItemVersionContent.md)
@@ -2669,13 +2816,25 @@ Locale: en-US
 ### [Set-MgBetaGroupDriveListItemDriveItemContent](Set-MgBetaGroupDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupDriveListItemDriveItemContentStream](Set-MgBetaGroupDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupDriveRootChildContent](Set-MgBetaGroupDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupDriveRootChildContentStream](Set-MgBetaGroupDriveRootChildContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupDriveRootContent](Set-MgBetaGroupDriveRootContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupDriveRootContentStream](Set-MgBetaGroupDriveRootContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupDriveRootListItemDriveItemContent](Set-MgBetaGroupDriveRootListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaGroupDriveRootListItemDriveItemContentStream](Set-MgBetaGroupDriveRootListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaGroupDriveRootVersionContent](Set-MgBetaGroupDriveRootVersionContent.md)
@@ -2684,31 +2843,61 @@ Locale: en-US
 ### [Set-MgBetaGroupDriveSpecialContent](Set-MgBetaGroupDriveSpecialContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupDriveSpecialContentStream](Set-MgBetaGroupDriveSpecialContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaShareDriveItemContent](Set-MgBetaShareDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaShareDriveItemContentStream](Set-MgBetaShareDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaShareItemContent](Set-MgBetaShareItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaShareItemContentStream](Set-MgBetaShareItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaShareListItemDriveItemContent](Set-MgBetaShareListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaShareListItemDriveItemContentStream](Set-MgBetaShareListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaShareRootContent](Set-MgBetaShareRootContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaShareRootContentStream](Set-MgBetaShareRootContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaUserDriveBundleContent](Set-MgBetaUserDriveBundleContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveBundleContentStream](Set-MgBetaUserDriveBundleContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveFollowingContent](Set-MgBetaUserDriveFollowingContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaUserDriveFollowingContentStream](Set-MgBetaUserDriveFollowingContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaUserDriveItemChildContent](Set-MgBetaUserDriveItemChildContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveItemChildContentStream](Set-MgBetaUserDriveItemChildContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveItemContent](Set-MgBetaUserDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaUserDriveItemContentStream](Set-MgBetaUserDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaUserDriveItemListItemDriveItemContent](Set-MgBetaUserDriveItemListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveItemListItemDriveItemContentStream](Set-MgBetaUserDriveItemListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveItemVersionContent](Set-MgBetaUserDriveItemVersionContent.md)
@@ -2717,19 +2906,34 @@ Locale: en-US
 ### [Set-MgBetaUserDriveListItemDriveItemContent](Set-MgBetaUserDriveListItemDriveItemContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaUserDriveListItemDriveItemContentStream](Set-MgBetaUserDriveListItemDriveItemContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaUserDriveRootChildContent](Set-MgBetaUserDriveRootChildContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveRootChildContentStream](Set-MgBetaUserDriveRootChildContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveRootContent](Set-MgBetaUserDriveRootContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaUserDriveRootContentStream](Set-MgBetaUserDriveRootContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaUserDriveRootListItemDriveItemContent](Set-MgBetaUserDriveRootListItemDriveItemContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveRootListItemDriveItemContentStream](Set-MgBetaUserDriveRootListItemDriveItemContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveRootVersionContent](Set-MgBetaUserDriveRootVersionContent.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaUserDriveSpecialContent](Set-MgBetaUserDriveSpecialContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaUserDriveSpecialContentStream](Set-MgBetaUserDriveSpecialContentStream.md)
 {{ Fill in the Description }}
 
 ### [Test-MgBetaDriveItemPermission](Test-MgBetaDriveItemPermission.md)
@@ -3316,5 +3520,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserDriveRootVersion](Update-MgBetaUserDriveRootVersion.md)
 {{ Fill in the Description }}
-
 

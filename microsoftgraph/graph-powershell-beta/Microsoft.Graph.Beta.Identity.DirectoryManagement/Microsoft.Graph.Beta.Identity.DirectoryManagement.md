@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 Module Guid: ddc572b3-dfd0-4f8b-9f70-bd50b8298164
 Download Help Link: {{ Update Download Link }}
@@ -1163,6 +1163,9 @@ Locale: en-US
 ### [Remove-MgBetaAdministrativeUnitMemberByRef](Remove-MgBetaAdministrativeUnitMemberByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaAdministrativeUnitMemberDirectoryObjectByRef](Remove-MgBetaAdministrativeUnitMemberDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaAdministrativeUnitScopedRoleMember](Remove-MgBetaAdministrativeUnitScopedRoleMember.md)
 {{ Fill in the Description }}
 
@@ -1199,7 +1202,13 @@ Locale: en-US
 ### [Remove-MgBetaDeviceRegisteredOwnerByRef](Remove-MgBetaDeviceRegisteredOwnerByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef](Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaDeviceRegisteredUserByRef](Remove-MgBetaDeviceRegisteredUserByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef](Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceUsageRights](Remove-MgBetaDeviceUsageRights.md)
@@ -1212,6 +1221,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](Remove-MgBetaDirectoryAdministrativeUnitMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef](Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember.md)
@@ -1248,6 +1260,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef](Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryFederationConfiguration](Remove-MgBetaDirectoryFederationConfiguration.md)
@@ -1290,6 +1305,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryRoleMemberByRef](Remove-MgBetaDirectoryRoleMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDirectoryRoleMemberDirectoryObjectByRef](Remove-MgBetaDirectoryRoleMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDirectoryRoleScopedMember](Remove-MgBetaDirectoryRoleScopedMember.md)
@@ -1639,5 +1657,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserScopedRoleMemberOf](Update-MgBetaUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
-
 

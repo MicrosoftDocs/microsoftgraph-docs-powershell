@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 06b0769e-2c63-4d60-9fb4-9ca0ec87e0d7
 Download Help Link: {{ Update Download Link }}
@@ -255,6 +255,78 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgSecurityIncidentCount](Get-MgSecurityIncidentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabel](Get-MgSecurityLabel.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelAuthority](Get-MgSecurityLabelAuthority.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelAuthorityCount](Get-MgSecurityLabelAuthorityCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCategory](Get-MgSecurityLabelCategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCategoryCount](Get-MgSecurityLabelCategoryCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCategorySubcategory](Get-MgSecurityLabelCategorySubcategory.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCategorySubcategoryCount](Get-MgSecurityLabelCategorySubcategoryCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCitation](Get-MgSecurityLabelCitation.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelCitationCount](Get-MgSecurityLabelCitationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelDepartment](Get-MgSecurityLabelDepartment.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelDepartmentCount](Get-MgSecurityLabelDepartmentCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelFilePlanReference](Get-MgSecurityLabelFilePlanReference.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelFilePlanReferenceCount](Get-MgSecurityLabelFilePlanReferenceCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionEventType](Get-MgSecurityLabelRetentionEventType.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabel](Get-MgSecurityLabelRetentionLabel.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelCount](Get-MgSecurityLabelRetentionLabelCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptor](Get-MgSecurityLabelRetentionLabelDescriptor.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptorAuthorityTemplate](Get-MgSecurityLabelRetentionLabelDescriptorAuthorityTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate](Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate](Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDispositionReviewStage](Get-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
+### [Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount](Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
@@ -653,6 +725,30 @@ Locale: en-US
 ### [New-MgSecurityIncident](New-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
+### [New-MgSecurityLabelAuthority](New-MgSecurityLabelAuthority.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelCategory](New-MgSecurityLabelCategory.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelCategorySubcategory](New-MgSecurityLabelCategorySubcategory.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelCitation](New-MgSecurityLabelCitation.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelDepartment](New-MgSecurityLabelDepartment.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelFilePlanReference](New-MgSecurityLabelFilePlanReference.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelRetentionLabel](New-MgSecurityLabelRetentionLabel.md)
+{{ Fill in the Description }}
+
+### [New-MgSecurityLabelRetentionLabelDispositionReviewStage](New-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
 ### [New-MgSecuritySecureScore](New-MgSecuritySecureScore.md)
 {{ Fill in the Description }}
 
@@ -819,6 +915,36 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabel](Remove-MgSecurityLabel.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelAuthority](Remove-MgSecurityLabelAuthority.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelCategory](Remove-MgSecurityLabelCategory.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelCategorySubcategory](Remove-MgSecurityLabelCategorySubcategory.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelCitation](Remove-MgSecurityLabelCitation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelDepartment](Remove-MgSecurityLabelDepartment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelFilePlanReference](Remove-MgSecurityLabelFilePlanReference.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelRetentionLabel](Remove-MgSecurityLabelRetentionLabel.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelRetentionLabelDescriptor](Remove-MgSecurityLabelRetentionLabelDescriptor.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](Remove-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgSecuritySecureScore](Remove-MgSecuritySecureScore.md)
@@ -1007,6 +1133,36 @@ Locale: en-US
 ### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
 {{ Fill in the Description }}
 
+### [Update-MgSecurityLabel](Update-MgSecurityLabel.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelAuthority](Update-MgSecurityLabelAuthority.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelCategory](Update-MgSecurityLabelCategory.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelCategorySubcategory](Update-MgSecurityLabelCategorySubcategory.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelCitation](Update-MgSecurityLabelCitation.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelDepartment](Update-MgSecurityLabelDepartment.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelFilePlanReference](Update-MgSecurityLabelFilePlanReference.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelRetentionLabel](Update-MgSecurityLabelRetentionLabel.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelRetentionLabelDescriptor](Update-MgSecurityLabelRetentionLabelDescriptor.md)
+{{ Fill in the Description }}
+
+### [Update-MgSecurityLabelRetentionLabelDispositionReviewStage](Update-MgSecurityLabelRetentionLabelDispositionReviewStage.md)
+{{ Fill in the Description }}
+
 ### [Update-MgSecuritySecureScore](Update-MgSecuritySecureScore.md)
 {{ Fill in the Description }}
 
@@ -1096,5 +1252,4 @@ Locale: en-US
 
 ### [Update-MgSecurityTriggerTypeRetentionEventType](Update-MgSecurityTriggerTypeRetentionEventType.md)
 {{ Fill in the Description }}
-
 

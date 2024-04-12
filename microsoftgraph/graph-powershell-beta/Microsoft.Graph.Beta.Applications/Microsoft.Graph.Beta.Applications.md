@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Applications
 Module Guid: fae868a9-cfb4-4875-82ce-3954ba828375
 Download Help Link: {{ Update Download Link }}
@@ -782,6 +782,9 @@ Locale: en-US
 ### [Remove-MgBetaApplication](Remove-MgBetaApplication.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef](Remove-MgBetaApplicationAppManagementPolicyAppManagementPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaApplicationAppManagementPolicyByRef](Remove-MgBetaApplicationAppManagementPolicyByRef.md)
 {{ Fill in the Description }}
 
@@ -807,6 +810,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationOwnerByRef](Remove-MgBetaApplicationOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaApplicationOwnerDirectoryObjectByRef](Remove-MgBetaApplicationOwnerDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaApplicationPassword](Remove-MgBetaApplicationPassword.md)
@@ -839,7 +845,13 @@ Locale: en-US
 ### [Remove-MgBetaApplicationTokenIssuancePolicyByRef](Remove-MgBetaApplicationTokenIssuancePolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaApplicationTokenLifetimePolicyByRef](Remove-MgBetaApplicationTokenLifetimePolicyByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupAppRoleAssignment](Remove-MgBetaGroupAppRoleAssignment.md)
@@ -860,10 +872,16 @@ Locale: en-US
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaOnPremisePublishingProfileAgentGroupOnPremiseAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupOnPremiseAgentGroupByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource](Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResource.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupOnPremiseAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupOnPremiseAgentGroupByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfileConnector](Remove-MgBetaOnPremisePublishingProfileConnector.md)
@@ -875,13 +893,22 @@ Locale: en-US
 ### [Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberConnectorByRef](Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberConnectorByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef](Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfConnectorGroupByRef](Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfConnectorGroupByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResource](Remove-MgBetaOnPremisePublishingProfilePublishedResource.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupOnPremiseAgentGroupByRef](Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupOnPremiseAgentGroupByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipal](Remove-MgBetaServicePrincipal.md)
@@ -899,6 +926,9 @@ Locale: en-US
 ### [Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](Remove-MgBetaServicePrincipalClaimMappingPolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaServicePrincipalDelegatedPermissionClassification](Remove-MgBetaServicePrincipalDelegatedPermissionClassification.md)
 {{ Fill in the Description }}
 
@@ -908,10 +938,16 @@ Locale: en-US
 ### [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaServicePrincipalLicenseDetail](Remove-MgBetaServicePrincipalLicenseDetail.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalOwnerByRef](Remove-MgBetaServicePrincipalOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential](Remove-MgBetaServicePrincipalPasswordSingleSignOnCredential.md)
@@ -1129,5 +1165,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserAppRoleAssignment](Update-MgBetaUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

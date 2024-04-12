@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Search-help.xml
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of a bookmark object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,20 +55,16 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-update-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	Description = "Book a fancy vacation in Tuscany or browse museums in Florence."
 }
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -91,8 +84,10 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilityEndDateTime
-Timestamp of when the bookmark will stop to appear as a search result.
+Date and time when the bookmark stops appearing as a search result.
 Set as null for always available.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -107,8 +102,10 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilityStartDateTime
-Timestamp of when the bookmark will start to appear as a search result.
+Date and time when the bookmark starts to appear as a search result.
 Set as null for always available.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -170,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Search answer description shown on search results page.
+The search answer description that is shown on the search results page.
 
 ```yaml
 Type: String
@@ -185,7 +182,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Search answer name displayed in search results.
+The search answer name that is displayed in search results.
 
 ```yaml
 Type: String
@@ -200,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupIds
-List of security groups able to view this bookmark.
+The list of security groups that are able to view this bookmark.
 
 ```yaml
 Type: String[]
@@ -262,7 +259,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsSuggested
-True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft.
+True if this bookmark was suggested to the admin, by a user, or was mined and suggested by Microsoft.
 Read-only.
 
 ```yaml
@@ -294,10 +291,10 @@ Accept wildcard characters: False
 ```
 
 ### -LanguageTags
-A list of language names that are geographically specific and that this bookmark can be viewed in.
+A list of geographically specific language names in which this bookmark can be viewed.
 Each language tag value follows the pattern {language}-{region}.
-As an example, en-us is English as used in the United States.
-See supported language tags for the list of possible values.
+For example, en-us is English as used in the United States.
+For the list of possible values, see Supported language tags.
 
 ```yaml
 Type: String[]
@@ -328,7 +325,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Timestamp of when the search answer is created or edited.
+Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
@@ -344,8 +343,8 @@ Accept wildcard characters: False
 ```
 
 ### -Platforms
-List of devices and operating systems able to view this bookmark.
-Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+List of devices and operating systems that are able to view this bookmark.
+Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
 
 ```yaml
 Type: DevicePlatformType[]
@@ -361,7 +360,7 @@ Accept wildcard characters: False
 
 ### -PowerAppIds
 List of Power Apps associated with this bookmark.
-If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
+If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
 
 ```yaml
 Type: String[]
@@ -423,7 +422,7 @@ Accept wildcard characters: False
 ### -TargetedVariations
 Variations of a bookmark for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
-The date and group settings will apply to all variations.
+The date and group settings apply to all variations.
 To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
 
 ```yaml
@@ -439,8 +438,8 @@ Accept wildcard characters: False
 ```
 
 ### -WebUrl
-Search answer URL link.
-When users click this search answer in search results, they'll go to this URL.
+The URL link for the search answer.
+When users select this search answer from the search results, they're directed to the specified URL.
 
 ```yaml
 Type: String
@@ -502,108 +501,110 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSearchBookmark>`: bookmark
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Search answer description shown on search results page.
-  - `[DisplayName <String>]`: Search answer name displayed in search results.
-  - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-      - `[Id <String>]`: 
-    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited.
+BODYPARAMETER \<IMicrosoftGraphSearchBookmark\>: bookmark
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Description \<String\>\]: The search answer description that is shown on the search results page.
+  \[DisplayName \<String\>\]: The search answer name that is displayed in search results.
+  \[LastModifiedBy \<IMicrosoftGraphSearchIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: 
+      \[Id \<String\>\]: 
+    \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[WebUrl <String>]`: Search answer URL link.
-When users click this search answer in search results, they'll go to this URL.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[WebUrl \<String\>\]: The URL link for the search answer.
+When users select this search answer from the search results, they're directed to the specified URL.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result.
+  \[AvailabilityEndDateTime \<DateTime?\>\]: Date and time when the bookmark stops appearing as a search result.
 Set as null for always available.
-  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[AvailabilityStartDateTime \<DateTime?\>\]: Date and time when the bookmark starts to appear as a search result.
 Set as null for always available.
-  - `[Categories <String- `[]`>]`: Categories commonly used to describe this bookmark.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[Categories \<String\[\]\>\]: Categories commonly used to describe this bookmark.
 For example, IT and HR.
-  - `[GroupIds <String- `[]`>]`: List of security groups able to view this bookmark.
-  - `[IsSuggested <Boolean?>]`: True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft.
+  \[GroupIds \<String\[\]\>\]: The list of security groups that are able to view this bookmark.
+  \[IsSuggested \<Boolean?\>\]: True if this bookmark was suggested to the admin, by a user, or was mined and suggested by Microsoft.
 Read-only.
-  - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String- `[]`>]`: A collection of keywords used to trigger the search answer.
-    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
-    - `[ReservedKeywords <String- `[]`>]`: Unique keywords that will guarantee the search answer is triggered.
-  - `[LanguageTags <String- `[]`>]`: A list of language names that are geographically specific and that this bookmark can be viewed in.
+  \[Keywords \<IMicrosoftGraphSearchAnswerKeyword\>\]: answerKeyword
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Keywords \<String\[\]\>\]: A collection of keywords used to trigger the search answer.
+    \[MatchSimilarKeywords \<Boolean?\>\]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    \[ReservedKeywords \<String\[\]\>\]: Unique keywords that guarantee the search answer is triggered.
+  \[LanguageTags \<String\[\]\>\]: A list of geographically specific language names in which this bookmark can be viewed.
 Each language tag value follows the pattern {language}-{region}.
-As an example, en-us is English as used in the United States.
-See supported language tags for the list of possible values.
-  - `[Platforms <DevicePlatformType- `[]`>]`: List of devices and operating systems able to view this bookmark.
-Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
-  - `[PowerAppIds <String- `[]`>]`: List of Power Apps associated with this bookmark.
-If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
-  - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant- `[]`>]`: Variations of a bookmark for different countries or devices.
+For example, en-us is English as used in the United States.
+For the list of possible values, see Supported language tags.
+  \[Platforms \<DevicePlatformType\[\]\>\]: List of devices and operating systems that are able to view this bookmark.
+Possible values are: android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, unknown, androidASOP, androidMobileApplicationManagement, iOSMobileApplicationManagement, unknownFutureValue.
+  \[PowerAppIds \<String\[\]\>\]: List of Power Apps associated with this bookmark.
+If users add existing Power Apps to a bookmark, they can complete tasks directly on the search results page, such as entering vacation time or reporting expenses.
+  \[State \<String\>\]: answerState
+  \[TargetedVariations \<IMicrosoftGraphSearchAnswerVariant\[\]\>\]: Variations of a bookmark for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
-The date and group settings will apply to all variations.
-    - `[Description <String>]`: Answer variation description shown on search results page.
-    - `[DisplayName <String>]`: Answer variation name displayed in search results.
-    - `[LanguageTag <String>]`: 
-    - `[Platform <DevicePlatformType?>]`: Supported platform types.
-    - `[WebUrl <String>]`: Answer variation URL link.
-When users click this answer variation in search results, they will go to this URL.
+The date and group settings apply to all variations.
+    \[Description \<String\>\]: The answer variation description that is shown on the search results page.
+    \[DisplayName \<String\>\]: The answer variation name that is displayed in search results.
+    \[LanguageTag \<String\>\]: The country or region that can view this answer variation.
+    \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+    \[WebUrl \<String\>\]: The URL link for the answer variation.
+When users select this answer variation from the search results, they're directed to the specified URL.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[AuthorizationSystemId <String>]`: The unique identifier of authorizationSystem
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
-  - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
-  - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
-  - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
-  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
-  - `[QnaId <String>]`: The unique identifier of qna
-  - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
-  - `[RoleGroupId <String>]`: The unique identifier of roleGroup
-  - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
-  - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[AuthorizationSystemId \<String\>\]: The unique identifier of authorizationSystem
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[InboundFlowId \<String\>\]: The unique identifier of inboundFlow
+  \[IndustryDataConnectorId \<String\>\]: The unique identifier of industryDataConnector
+  \[IndustryDataRunActivityId \<String\>\]: The unique identifier of industryDataRunActivity
+  \[IndustryDataRunId \<String\>\]: The unique identifier of industryDataRun
+  \[LongRunningOperationId \<String\>\]: The unique identifier of longRunningOperation
+  \[QnaId \<String\>\]: The unique identifier of qna
+  \[ReferenceDefinitionId \<String\>\]: The unique identifier of referenceDefinition
+  \[RoleGroupId \<String\>\]: The unique identifier of roleGroup
+  \[SourceSystemDefinitionId \<String\>\]: The unique identifier of sourceSystemDefinition
+  \[YearTimePeriodDefinitionId \<String\>\]: The unique identifier of yearTimePeriodDefinition
 
-KEYWORDS `<IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Keywords <String- `[]`>]`: A collection of keywords used to trigger the search answer.
-  - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
-  - `[ReservedKeywords <String- `[]`>]`: Unique keywords that will guarantee the search answer is triggered.
+KEYWORDS \<IMicrosoftGraphSearchAnswerKeyword\>: answerKeyword
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Keywords \<String\[\]\>\]: A collection of keywords used to trigger the search answer.
+  \[MatchSimilarKeywords \<Boolean?\>\]: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+  \[ReservedKeywords \<String\[\]\>\]: Unique keywords that guarantee the search answer is triggered.
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: 
-    - `[Id <String>]`: 
-  - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+LASTMODIFIEDBY \<IMicrosoftGraphSearchIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphSearchIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: 
+    \[Id \<String\>\]: 
+  \[Device \<IMicrosoftGraphSearchIdentity\>\]: identity
+  \[User \<IMicrosoftGraphSearchIdentity\>\]: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant- `[]`>: Variations of a bookmark for different countries or devices.
+TARGETEDVARIATIONS \<IMicrosoftGraphSearchAnswerVariant\[\]\>: Variations of a bookmark for different countries or devices.
 Use when you need to show different content to users based on their device, country/region, or both.
-The date and group settings will apply to all variations.
-  - `[Description <String>]`: Answer variation description shown on search results page.
-  - `[DisplayName <String>]`: Answer variation name displayed in search results.
-  - `[LanguageTag <String>]`: 
-  - `[Platform <DevicePlatformType?>]`: Supported platform types.
-  - `[WebUrl <String>]`: Answer variation URL link.
-When users click this answer variation in search results, they will go to this URL.
+The date and group settings apply to all variations.
+  \[Description \<String\>\]: The answer variation description that is shown on the search results page.
+  \[DisplayName \<String\>\]: The answer variation name that is displayed in search results.
+  \[LanguageTag \<String\>\]: The country or region that can view this answer variation.
+  \[Platform \<DevicePlatformType?\>\]: Supported platform types.
+  \[WebUrl \<String\>\]: The URL link for the answer variation.
+When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
-[Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
-
-
-
 

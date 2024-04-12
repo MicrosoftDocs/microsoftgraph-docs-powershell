@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldescriptor
@@ -16,8 +16,9 @@ Update the navigation property descriptors in security
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -RetentionLabelId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>]
- [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityAppliedCategory>]
- [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>] [-Citation <IMicrosoftGraphSecurityCitation>]
+ [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityFilePlanAppliedCategory>]
+ [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>]
+ [-Citation <IMicrosoftGraphSecurityFilePlanCitation>]
  [-CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>] [-Department <Hashtable>]
  [-DepartmentTemplate <Hashtable>] [-FilePlanReference <Hashtable>] [-FilePlanReferenceTemplate <Hashtable>]
  [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -35,8 +36,9 @@ Update-MgBetaSecurityLabelRetentionLabelDescriptor -RetentionLabelId <String>
 ```
 Update-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Authority <Hashtable>]
- [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityAppliedCategory>]
- [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>] [-Citation <IMicrosoftGraphSecurityCitation>]
+ [-AuthorityTemplate <Hashtable>] [-Category <IMicrosoftGraphSecurityFilePlanAppliedCategory>]
+ [-CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>]
+ [-Citation <IMicrosoftGraphSecurityFilePlanCitation>]
  [-CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>] [-Department <Hashtable>]
  [-DepartmentTemplate <Hashtable>] [-FilePlanReference <Hashtable>] [-FilePlanReferenceTemplate <Hashtable>]
  [-Id <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -52,6 +54,18 @@ Update-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Update the navigation property descriptors in security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -71,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Authority
-authority
+filePlanAuthority
 
 ```yaml
 Type: Hashtable
@@ -117,11 +131,11 @@ Accept wildcard characters: False
 ```
 
 ### -Category
-appliedCategory
+filePlanAppliedCategory
 To construct, see NOTES section for CATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAppliedCategory
+Type: IMicrosoftGraphSecurityFilePlanAppliedCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,11 +163,11 @@ Accept wildcard characters: False
 ```
 
 ### -Citation
-citation
+filePlanCitation
 To construct, see NOTES section for CITATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityCitation
+Type: IMicrosoftGraphSecurityFilePlanCitation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +195,7 @@ Accept wildcard characters: False
 ```
 
 ### -Department
-department
+filePlanDepartment
 
 ```yaml
 Type: Hashtable
@@ -380,229 +394,232 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityFilePlanDescriptor>`: filePlanDescriptor
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityFilePlanDescriptor\>: filePlanDescriptor
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Authority <IMicrosoftGraphSecurityAuthority>]`: authority
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[AuthorityTemplate <IMicrosoftGraphSecurityAuthorityTemplate>]`: authorityTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Authority \<IMicrosoftGraphSecurityFilePlanAuthority\>\]: filePlanAuthority
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[AuthorityTemplate \<IMicrosoftGraphSecurityAuthorityTemplate\>\]: authorityTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+        \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[Category <IMicrosoftGraphSecurityAppliedCategory>]`: appliedCategory
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-    - `[SubCategory <IMicrosoftGraphSecuritySubCategory>]`: subCategory
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>]`: categoryTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-      - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-      - `[Id <String>]`: The unique identifier for an entity.
+  \[Category \<IMicrosoftGraphSecurityFilePlanAppliedCategory\>\]: filePlanAppliedCategory
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+    \[Subcategory \<IMicrosoftGraphSecurityFilePlanSubcategory\>\]: filePlanSubcategory
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[CategoryTemplate \<IMicrosoftGraphSecurityCategoryTemplate\>\]: categoryTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[Citation <IMicrosoftGraphSecurityCitation>]`: citation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-    - `[CitationUrl <String>]`: Represents the URL to the published citation.
-  - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-    - `[CitationUrl <String>]`: Represents the URL to the published citation.
-  - `[Department <IMicrosoftGraphSecurityDepartment>]`: department
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[DepartmentTemplate <IMicrosoftGraphSecurityDepartmentTemplate>]`: departmentTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Subcategories \<IMicrosoftGraphSecuritySubcategoryTemplate\[\]\>\]: 
+      \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[FilePlanReference <IMicrosoftGraphSecurityFilePlanReference>]`: filePlanReference
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[FilePlanReferenceTemplate <IMicrosoftGraphSecurityFilePlanReferenceTemplate>]`: filePlanReferenceTemplate
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+      \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-
-CATEGORY `<IMicrosoftGraphSecurityAppliedCategory>`: appliedCategory
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[SubCategory <IMicrosoftGraphSecuritySubCategory>]`: subCategory
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-
-CATEGORYTEMPLATE `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-  - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Citation \<IMicrosoftGraphSecurityFilePlanCitation\>\]: filePlanCitation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+    \[CitationJurisdiction \<String\>\]: 
+    \[CitationUrl \<String\>\]: 
+  \[CitationTemplate \<IMicrosoftGraphSecurityCitationTemplate\>\]: citationTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-    - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+    \[CitationJurisdiction \<String\>\]: Represents the jurisdiction or agency that published the citation.
+    \[CitationUrl \<String\>\]: Represents the URL to the published citation.
+  \[Department \<IMicrosoftGraphSecurityFilePlanDepartment\>\]: filePlanDepartment
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[DepartmentTemplate \<IMicrosoftGraphSecurityDepartmentTemplate\>\]: departmentTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[FilePlanReference \<IMicrosoftGraphSecurityFilePlanReference\>\]: filePlanReference
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[FilePlanReferenceTemplate \<IMicrosoftGraphSecurityFilePlanReferenceTemplate\>\]: filePlanReferenceTemplate
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-CITATION `<IMicrosoftGraphSecurityCitation>`: citation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-  - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-  - `[CitationUrl <String>]`: Represents the URL to the published citation.
+CATEGORY \<IMicrosoftGraphSecurityFilePlanAppliedCategory\>: filePlanAppliedCategory
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[Subcategory \<IMicrosoftGraphSecurityFilePlanSubcategory\>\]: filePlanSubcategory
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
 
-CITATIONTEMPLATE `<IMicrosoftGraphSecurityCitationTemplate>`: citationTemplate
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
-  - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
-  - `[Id <String>]`: The unique identifier for an entity.
+CATEGORYTEMPLATE \<IMicrosoftGraphSecurityCategoryTemplate\>: categoryTemplate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
 Read-only.
-  - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-  - `[CitationUrl <String>]`: Represents the URL to the published citation.
+  \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[Subcategories \<IMicrosoftGraphSecuritySubcategoryTemplate\[\]\>\]: 
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
+    \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+    \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
-  - `[AlertId <String>]`: The unique identifier of alert
-  - `[AnalyzedEmailId <String>]`: The unique identifier of analyzedEmail
-  - `[ArticleId <String>]`: The unique identifier of article
-  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
-  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
-  - `[AuditLogQueryId <String>]`: The unique identifier of auditLogQuery
-  - `[AuditLogRecordId <String>]`: The unique identifier of auditLogRecord
-  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
-  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
-  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
-  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
-  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
-  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
-  - `[DataSourceId <String>]`: The unique identifier of dataSource
-  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
-  - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
-  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
-  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
-  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
-  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
-  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
-  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
-  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
-  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
-  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
-  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
-  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
-  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
-  - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
-  - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
-  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
-  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
-  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
-  - `[HostComponentId <String>]`: The unique identifier of hostComponent
-  - `[HostCookieId <String>]`: The unique identifier of hostCookie
-  - `[HostId <String>]`: The unique identifier of host
-  - `[HostPairId <String>]`: The unique identifier of hostPair
-  - `[HostPortId <String>]`: The unique identifier of hostPort
-  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
-  - `[HostSslCertificateId <String>]`: The unique identifier of hostSslCertificate
-  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
-  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
-  - `[IncidentId <String>]`: The unique identifier of incident
-  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
-  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
-  - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
-  - `[LandingPageId <String>]`: The unique identifier of landingPage
-  - `[LoginPageId <String>]`: The unique identifier of loginPage
-  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
-  - `[PayloadId <String>]`: The unique identifier of payload
-  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
-  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
-  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
-  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
-  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: The unique identifier of secureScore
-  - `[SecurityActionId <String>]`: The unique identifier of securityAction
-  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
-  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
-  - `[SimulationId <String>]`: The unique identifier of simulation
-  - `[SiteSourceId <String>]`: The unique identifier of siteSource
-  - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
-  - `[SubdomainId <String>]`: The unique identifier of subdomain
-  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
-  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
-  - `[TrainingCampaignId <String>]`: The unique identifier of trainingCampaign
-  - `[TrainingId <String>]`: The unique identifier of training
-  - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
-  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
-  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
-  - `[UserSourceId <String>]`: The unique identifier of userSource
-  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
-  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
-  - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
-  - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
+CITATION \<IMicrosoftGraphSecurityFilePlanCitation\>: filePlanCitation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+  \[CitationJurisdiction \<String\>\]: 
+  \[CitationUrl \<String\>\]: 
+
+CITATIONTEMPLATE \<IMicrosoftGraphSecurityCitationTemplate\>: citationTemplate
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+      \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
+  \[DisplayName \<String\>\]: Unique string that defines a filePlanDescriptorTemplate name.
+  \[Id \<String\>\]: The unique identifier for an entity.
+Read-only.
+  \[CitationJurisdiction \<String\>\]: Represents the jurisdiction or agency that published the citation.
+  \[CitationUrl \<String\>\]: Represents the URL to the published citation.
+
+INPUTOBJECT \<ISecurityIdentity\>: Identity Parameter
+  \[AlertId \<String\>\]: The unique identifier of alert
+  \[AnalyzedEmailId \<String\>\]: The unique identifier of analyzedEmail
+  \[ArticleId \<String\>\]: The unique identifier of article
+  \[ArticleIndicatorId \<String\>\]: The unique identifier of articleIndicator
+  \[AttackSimulationOperationId \<String\>\]: The unique identifier of attackSimulationOperation
+  \[AuditLogQueryId \<String\>\]: The unique identifier of auditLogQuery
+  \[AuditLogRecordId \<String\>\]: The unique identifier of auditLogRecord
+  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
+  \[AuthorityTemplateId \<String\>\]: The unique identifier of authorityTemplate
+  \[CaseOperationId \<String\>\]: The unique identifier of caseOperation
+  \[CategoryTemplateId \<String\>\]: The unique identifier of categoryTemplate
+  \[CitationTemplateId \<String\>\]: The unique identifier of citationTemplate
+  \[CloudAppSecurityProfileId \<String\>\]: The unique identifier of cloudAppSecurityProfile
+  \[DataSourceId \<String\>\]: The unique identifier of dataSource
+  \[DepartmentTemplateId \<String\>\]: The unique identifier of departmentTemplate
+  \[DetectionRuleId \<String\>\]: The unique identifier of detectionRule
+  \[DispositionReviewStageNumber \<String\>\]: The unique identifier of dispositionReviewStage
+  \[DomainSecurityProfileId \<String\>\]: The unique identifier of domainSecurityProfile
+  \[EdiscoveryCaseId \<String\>\]: The unique identifier of ediscoveryCase
+  \[EdiscoveryCustodianId \<String\>\]: The unique identifier of ediscoveryCustodian
+  \[EdiscoveryFileId \<String\>\]: The unique identifier of ediscoveryFile
+  \[EdiscoveryHoldPolicyId \<String\>\]: The unique identifier of ediscoveryHoldPolicy
+  \[EdiscoveryNoncustodialDataSourceId \<String\>\]: The unique identifier of ediscoveryNoncustodialDataSource
+  \[EdiscoveryReviewSetId \<String\>\]: The unique identifier of ediscoveryReviewSet
+  \[EdiscoveryReviewSetQueryId \<String\>\]: The unique identifier of ediscoveryReviewSetQuery
+  \[EdiscoveryReviewTagId \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoveryReviewTagId1 \<String\>\]: The unique identifier of ediscoveryReviewTag
+  \[EdiscoverySearchId \<String\>\]: The unique identifier of ediscoverySearch
+  \[EmailThreatSubmissionId \<String\>\]: The unique identifier of emailThreatSubmission
+  \[EmailThreatSubmissionPolicyId \<String\>\]: The unique identifier of emailThreatSubmissionPolicy
+  \[EndUserNotificationDetailId \<String\>\]: The unique identifier of endUserNotificationDetail
+  \[EndUserNotificationId \<String\>\]: The unique identifier of endUserNotification
+  \[FilePlanReferenceTemplateId \<String\>\]: The unique identifier of filePlanReferenceTemplate
+  \[FileSecurityProfileId \<String\>\]: The unique identifier of fileSecurityProfile
+  \[FileThreatSubmissionId \<String\>\]: The unique identifier of fileThreatSubmission
+  \[HealthIssueId \<String\>\]: The unique identifier of healthIssue
+  \[HostComponentId \<String\>\]: The unique identifier of hostComponent
+  \[HostCookieId \<String\>\]: The unique identifier of hostCookie
+  \[HostId \<String\>\]: The unique identifier of host
+  \[HostPairId \<String\>\]: The unique identifier of hostPair
+  \[HostPortId \<String\>\]: The unique identifier of hostPort
+  \[HostSecurityProfileId \<String\>\]: The unique identifier of hostSecurityProfile
+  \[HostSslCertificateId \<String\>\]: The unique identifier of hostSslCertificate
+  \[HostTrackerId \<String\>\]: The unique identifier of hostTracker
+  \[IPSecurityProfileId \<String\>\]: The unique identifier of ipSecurityProfile
+  \[IncidentId \<String\>\]: The unique identifier of incident
+  \[IntelligenceProfileId \<String\>\]: The unique identifier of intelligenceProfile
+  \[IntelligenceProfileIndicatorId \<String\>\]: The unique identifier of intelligenceProfileIndicator
+  \[LandingPageDetailId \<String\>\]: The unique identifier of landingPageDetail
+  \[LandingPageId \<String\>\]: The unique identifier of landingPage
+  \[LoginPageId \<String\>\]: The unique identifier of loginPage
+  \[PassiveDnsRecordId \<String\>\]: The unique identifier of passiveDnsRecord
+  \[PayloadId \<String\>\]: The unique identifier of payload
+  \[ProviderTenantSettingId \<String\>\]: The unique identifier of providerTenantSetting
+  \[RetentionEventId \<String\>\]: The unique identifier of retentionEvent
+  \[RetentionEventTypeId \<String\>\]: The unique identifier of retentionEventType
+  \[RetentionLabelId \<String\>\]: The unique identifier of retentionLabel
+  \[SecureScoreControlProfileId \<String\>\]: The unique identifier of secureScoreControlProfile
+  \[SecureScoreId \<String\>\]: The unique identifier of secureScore
+  \[SecurityActionId \<String\>\]: The unique identifier of securityAction
+  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
+  \[SimulationAutomationId \<String\>\]: The unique identifier of simulationAutomation
+  \[SimulationAutomationRunId \<String\>\]: The unique identifier of simulationAutomationRun
+  \[SimulationId \<String\>\]: The unique identifier of simulation
+  \[SiteSourceId \<String\>\]: The unique identifier of siteSource
+  \[SslCertificateId \<String\>\]: The unique identifier of sslCertificate
+  \[SubcategoryTemplateId \<String\>\]: The unique identifier of subcategoryTemplate
+  \[SubdomainId \<String\>\]: The unique identifier of subdomain
+  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
+  \[TiIndicatorId \<String\>\]: The unique identifier of tiIndicator
+  \[TrainingCampaignId \<String\>\]: The unique identifier of trainingCampaign
+  \[TrainingId \<String\>\]: The unique identifier of training
+  \[TrainingLanguageDetailId \<String\>\]: The unique identifier of trainingLanguageDetail
+  \[UnifiedGroupSourceId \<String\>\]: The unique identifier of unifiedGroupSource
+  \[UrlThreatSubmissionId \<String\>\]: The unique identifier of urlThreatSubmission
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserSecurityProfileId \<String\>\]: The unique identifier of userSecurityProfile
+  \[UserSourceId \<String\>\]: The unique identifier of userSource
+  \[VulnerabilityComponentId \<String\>\]: The unique identifier of vulnerabilityComponent
+  \[VulnerabilityId \<String\>\]: The unique identifier of vulnerability
+  \[WhoisHistoryRecordId \<String\>\]: The unique identifier of whoisHistoryRecord
+  \[WhoisRecordId \<String\>\]: The unique identifier of whoisRecord
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldescriptor)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult
@@ -37,6 +37,22 @@ Use the classification results to compute the sensitivity label that should be a
 This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -195,42 +211,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ClassificationResults <IMicrosoftGraphSecurityClassificationResult- `[]`>]`: 
-    - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
-    - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
-    - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
-  - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContentFormat <String>]`: The format of the content to be labeled.
+BODYPARAMETER \<IPaths1P6SiigSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClassificationResults \<IMicrosoftGraphSecurityClassificationResult\[\]\>\]: 
+    \[ConfidenceLevel \<Int32?\>\]: The confidence level, 0 to 100, of the result.
+    \[Count \<Int32?\>\]: The number of instances of the specific information type in the input.
+    \[SensitiveTypeId \<String\>\]: The GUID of the discovered sensitive information type.
+  \[ContentInfo \<IMicrosoftGraphSecurityContentInfo\>\]: contentInfo
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContentFormat \<String\>\]: The format of the content to be labeled.
 Possible values are: file, email.
-    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
-      - `[Name <String>]`: Name for this key-value pair.
-      - `[Value <String>]`: Value for this key-value pair.
-    - `[State <String>]`: contentState
+    \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+    \[Metadata \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
+      \[Name \<String\>\]: Name for this key-value pair.
+      \[Value \<String\>\]: Value for this key-value pair.
+    \[State \<String\>\]: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphSecurityClassificationResult- `[]`>: .
-  - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
-  - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
-  - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
+CLASSIFICATIONRESULTS \<IMicrosoftGraphSecurityClassificationResult\[\]\>: .
+  \[ConfidenceLevel \<Int32?\>\]: The confidence level, 0 to 100, of the result.
+  \[Count \<Int32?\>\]: The number of instances of the specific information type in the input.
+  \[SensitiveTypeId \<String\>\]: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContentFormat <String>]`: The format of the content to be labeled.
+CONTENTINFO \<IMicrosoftGraphSecurityContentInfo\>: contentInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContentFormat \<String\>\]: The format of the content to be labeled.
 Possible values are: file, email.
-  - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
-  - `[Metadata <IMicrosoftGraphSecurityKeyValuePair- `[]`>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
-    - `[Name <String>]`: Name for this key-value pair.
-    - `[Value <String>]`: Value for this key-value pair.
-  - `[State <String>]`: contentState
+  \[Identifier \<String\>\]: Identifier used for Azure Information Protection Analytics.
+  \[Metadata \<IMicrosoftGraphSecurityKeyValuePair\[\]\>\]: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIPLabelGUID_PropName.
+    \[Name \<String\>\]: Name for this key-value pair.
+    \[Value \<String\>\]: Value for this key-value pair.
+  \[State \<String\>\]: contentState
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelclassificationresult)
-
-
-
-
 

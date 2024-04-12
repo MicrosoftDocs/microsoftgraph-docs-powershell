@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBetaAdminPeopleItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in admin
+Update privacy settings to display or return the specified type of insights in an organization.
+The type of settings can be contact insights, item insights, or people insights.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
 ## SYNTAX
 
@@ -27,7 +29,21 @@ Update-MgBetaAdminPeopleItemInsight -BodyParameter <IMicrosoftGraphInsightsSetti
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in admin
+Update privacy settings to display or return the specified type of insights in an organization.
+The type of settings can be contact insights, item insights, or people insights.
+To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabledInOrganization
-true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 
@@ -204,22 +220,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphInsightsSettings>`: insightsSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphInsightsSettings\>: insightsSettings
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
+  \[DisabledForGroup \<String\>\]: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-  - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+  \[IsEnabledInOrganization \<Boolean?\>\]: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight)
-
-
-
-
 

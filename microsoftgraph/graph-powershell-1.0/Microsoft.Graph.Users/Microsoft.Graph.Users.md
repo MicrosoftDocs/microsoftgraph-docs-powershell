@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
 Module Guid: 71150504-37a3-48c6-82c7-7a00a12168db
 Download Help Link: {{ Update Download Link }}
@@ -198,6 +198,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgUserSettingWindowsInstanceCount](Get-MgUserSettingWindowsInstanceCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSponsor](Get-MgUserSponsor.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
@@ -427,5 +433,4 @@ Locale: en-US
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
 {{ Fill in the Description }}
-
 

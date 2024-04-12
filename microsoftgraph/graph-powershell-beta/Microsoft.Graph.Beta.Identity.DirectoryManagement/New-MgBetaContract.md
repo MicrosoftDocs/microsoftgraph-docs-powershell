@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contracts
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,6 +30,16 @@ New-MgBetaContract -BodyParameter <IMicrosoftGraphContract> [-ResponseHeadersVar
 Add new entity to contracts
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -258,29 +265,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContract>`: contract
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphContract\>: contract
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContractType <String>]`: Type of contract.
+  \[ContractType \<String\>\]: Type of contract.
 Possible values are:  SyndicationPartner, BreadthPartner, ResellerPartner.
 See more in the table below.
-  - `[CustomerId <String>]`: The unique identifier for the customer tenant referenced by this partnership.
+  \[CustomerId \<String\>\]: The unique identifier for the customer tenant referenced by this partnership.
 Corresponds to the id property of the customer tenant's organization resource.
-  - `[DefaultDomainName <String>]`: A copy of the customer tenant's default domain name.
+  \[DefaultDomainName \<String\>\]: A copy of the customer tenant's default domain name.
 The copy is made when the partnership with the customer is established.
 It isn't automatically updated if the customer tenant's default domain name changes.
-  - `[DisplayName <String>]`: A copy of the customer tenant's display name.
+  \[DisplayName \<String\>\]: A copy of the customer tenant's display name.
 The copy is made when the partnership with the customer is established.
 It isn't automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
-[New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
-
-
-
 
