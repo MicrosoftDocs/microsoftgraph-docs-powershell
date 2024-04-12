@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
@@ -377,60 +377,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAppRoleAssignment\>: appRoleAssignment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphAppRoleAssignment>`: appRoleAssignment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppRoleId \<String\>\]: The identifier (id) for the app role which is assigned to the principal.
+  - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal.
 This app role must be exposed in the appRoles property on the resource application's service principal (resourceId).
 If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles.
 Required on create.
-  \[CreatedDateTime \<DateTime?\>\]: The time when the app role assignment was created.
+  - `[CreatedDateTime <DateTime?>]`: The time when the app role assignment was created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  \[PrincipalDisplayName \<String\>\]: The display name of the user, group, or service principal that was granted the app role assignment.
+  - `[PrincipalDisplayName <String>]`: The display name of the user, group, or service principal that was granted the app role assignment.
 Read-only.
 Supports $filter (eq and startswith).
-  \[PrincipalId \<String\>\]: The unique identifier (id) for the user, security group, or service principal being granted the app role.
+  - `[PrincipalId <String>]`: The unique identifier (id) for the user, security group, or service principal being granted the app role.
 Security groups with dynamic memberships are supported.
 Required on create.
-  \[PrincipalType \<String\>\]: The type of the assigned principal.
+  - `[PrincipalType <String>]`: The type of the assigned principal.
 This can either be User, Group, or ServicePrincipal.
 Read-only.
-  \[ResourceDisplayName \<String\>\]: The display name of the resource app's service principal to which the assignment is made.
-  \[ResourceId \<String\>\]: The unique identifier (id) for the resource service principal for which the assignment is made.
+  - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
+  - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made.
 Required on create.
 Supports $filter (eq only).
 
-INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
-  \[AppId \<String\>\]: Alternate key of application
-  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
-  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
-  \[ApplicationId \<String\>\]: The unique identifier of application
-  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
-  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
-  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
-  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[EndpointId \<String\>\]: The unique identifier of endpoint
-  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
-  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
-  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
-  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
-  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
-  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
-  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
-  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
-  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
-  \[UniqueName \<String\>\]: Alternate key of application
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
+  - `[ApplicationId <String>]`: The unique identifier of application
+  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EndpointId <String>]`: The unique identifier of endpoint
+  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
+  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[UniqueName <String>]`: Alternate key of application
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
+
+
+
 

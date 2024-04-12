@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit
@@ -408,115 +408,118 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphAdministrativeUnit\>: administrativeUnit
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[Extensions \<IMicrosoftGraphExtension\[\]\>\]: The collection of open extensions defined for this administrative unit.
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[IsMemberManagementRestricted \<Boolean?\>\]: 
-  \[Members \<IMicrosoftGraphDirectoryObject\[\]\>\]: Users and groups that are members of this administrative unit.
+  - `[IsMemberManagementRestricted <Boolean?>]`: 
+  - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[MembershipRule \<String\>\]: 
-  \[MembershipRuleProcessingState \<String\>\]: 
-  \[MembershipType \<String\>\]: 
-  \[ScopedRoleMembers \<IMicrosoftGraphScopedRoleMembership\[\]\>\]: Scoped-role members of this administrative unit.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[MembershipRule <String>]`: 
+  - `[MembershipRuleProcessingState <String>]`: 
+  - `[MembershipType <String>]`: 
+  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
-    \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
-    \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
+    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
+    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-      \[Id \<String\>\]: The identifier of the identity.
+      - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Visibility \<String\>\]: 
+  - `[Visibility <String>]`: 
 
-EXTENSIONS \<IMicrosoftGraphExtension\[\]\>: The collection of open extensions defined for this administrative unit.
+EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
 Nullable.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
-INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
-  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
-  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
-  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
-  \[CertificateAuthorityAsEntityId \<String\>\]: The unique identifier of certificateAuthorityAsEntity
-  \[CertificateBasedApplicationConfigurationId \<String\>\]: The unique identifier of certificateBasedApplicationConfiguration
-  \[CommandId \<String\>\]: The unique identifier of command
-  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
-  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
-  \[ContractId \<String\>\]: The unique identifier of contract
-  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
-  \[DeviceId \<String\>\]: The unique identifier of device
-  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
-  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
-  \[DirectorySettingId \<String\>\]: The unique identifier of directorySetting
-  \[DirectorySettingTemplateId \<String\>\]: The unique identifier of directorySettingTemplate
-  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
-  \[DomainId \<String\>\]: The unique identifier of domain
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[ExternalUserProfileId \<String\>\]: The unique identifier of externalUserProfile
-  \[FeatureRolloutPolicyId \<String\>\]: The unique identifier of featureRolloutPolicy
-  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
-  \[ImpactedResourceId \<String\>\]: The unique identifier of impactedResource
-  \[InboundSharedUserProfileUserId \<String\>\]: The unique identifier of inboundSharedUserProfile
-  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
-  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
-  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
-  \[OcpSubscriptionId \<String\>\]: Alternate key of companySubscription
-  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
-  \[OrgContactId \<String\>\]: The unique identifier of orgContact
-  \[OrganizationId \<String\>\]: The unique identifier of organization
-  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
-  \[OutboundSharedUserProfileUserId \<String\>\]: The unique identifier of outboundSharedUserProfile
-  \[PendingExternalUserProfileId \<String\>\]: The unique identifier of pendingExternalUserProfile
-  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
-  \[RecommendationId \<String\>\]: The unique identifier of recommendation
-  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
-  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
-  \[SharedEmailDomainId \<String\>\]: The unique identifier of sharedEmailDomain
-  \[SharedEmailDomainInvitationId \<String\>\]: The unique identifier of sharedEmailDomainInvitation
-  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
-  \[TenantId \<String\>\]: The unique identifier of tenant
-  \[TenantReferenceTenantId \<String\>\]: The unique identifier of tenantReference
-  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
-  \[UsageRightId \<String\>\]: The unique identifier of usageRight
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[ExternalUserProfileId <String>]`: The unique identifier of externalUserProfile
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
+  - `[OcpSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[PendingExternalUserProfileId <String>]`: The unique identifier of pendingExternalUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS \<IMicrosoftGraphDirectoryObject\[\]\>: Users and groups that are members of this administrative unit.
+MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users and groups that are members of this administrative unit.
 Supports $expand.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-SCOPEDROLEMEMBERS \<IMicrosoftGraphScopedRoleMembership\[\]\>: Scoped-role members of this administrative unit.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership- `[]`>: Scoped-role members of this administrative unit.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AdministrativeUnitId \<String\>\]: Unique identifier for the administrative unit that the directory role is scoped to
-  \[RoleId \<String\>\]: Unique identifier for the directory role that the member is in.
-  \[RoleMemberInfo \<IMicrosoftGraphIdentity\>\]: identity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
+  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
+  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryadministrativeunit)
+
+
+
 

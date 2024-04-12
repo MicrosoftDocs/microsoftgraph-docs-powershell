@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertoperation
@@ -262,21 +262,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphLongRunningOperation\>: longRunningOperation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[CreatedDateTime \<DateTime?\>\]: The start time of the operation.
+  - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[LastActionDateTime \<DateTime?\>\]: The time of the last action in the operation.
+  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ResourceLocation \<String\>\]: URI of the resource that the operation is performed on.
-  \[Status \<String\>\]: longRunningOperationStatus
-  \[StatusDetail \<String\>\]: Details about the status of the operation.
+  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
+  - `[Status <String>]`: longRunningOperationStatus
+  - `[StatusDetail <String>]`: Details about the status of the operation.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertoperation)
+
+
+
 

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant
@@ -333,41 +333,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphMultiTenantOrganizationMember\>: multiTenantOrganizationMember
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationMember>`: multiTenantOrganizationMember
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AddedByTenantId \<String\>\]: Tenant ID of the tenant that added the tenant to the multitenant organization.
+  - `[AddedByTenantId <String>]`: Tenant ID of the tenant that added the tenant to the multitenant organization.
 Read-only.
-  \[AddedDateTime \<DateTime?\>\]: Date and time when the tenant was added to the multitenant organization.
+  - `[AddedDateTime <DateTime?>]`: Date and time when the tenant was added to the multitenant organization.
 Read-only.
-  \[DisplayName \<String\>\]: Display name of the tenant added to the multitenant organization.
-  \[JoinedDateTime \<DateTime?\>\]: Date and time when the tenant joined the multitenant organization.
+  - `[DisplayName <String>]`: Display name of the tenant added to the multitenant organization.
+  - `[JoinedDateTime <DateTime?>]`: Date and time when the tenant joined the multitenant organization.
 Read-only.
-  \[Role \<String\>\]: multiTenantOrganizationMemberRole
-  \[State \<String\>\]: multiTenantOrganizationMemberState
-  \[TenantId \<String\>\]: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
+  - `[Role <String>]`: multiTenantOrganizationMemberRole
+  - `[State <String>]`: multiTenantOrganizationMemberState
+  - `[TenantId <String>]`: Tenant ID of the Microsoft Entra tenant added to the multitenant organization.
 Set at the time tenant is added.Supports $filter.
 Key.
-  \[TransitionDetails \<IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails\>\]: multiTenantOrganizationMemberTransitionDetails
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DesiredRole \<String\>\]: multiTenantOrganizationMemberRole
-    \[DesiredState \<String\>\]: multiTenantOrganizationMemberState
-    \[Details \<String\>\]: Details that explain the processing status if any.
+  - `[TransitionDetails <IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>]`: multiTenantOrganizationMemberTransitionDetails
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
+    - `[DesiredState <String>]`: multiTenantOrganizationMemberState
+    - `[Details <String>]`: Details that explain the processing status if any.
 Read-only.
-    \[Status \<String\>\]: multiTenantOrganizationMemberProcessingStatus
+    - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
-TRANSITIONDETAILS \<IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails\>: multiTenantOrganizationMemberTransitionDetails
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DesiredRole \<String\>\]: multiTenantOrganizationMemberRole
-  \[DesiredState \<String\>\]: multiTenantOrganizationMemberState
-  \[Details \<String\>\]: Details that explain the processing status if any.
+TRANSITIONDETAILS `<IMicrosoftGraphMultiTenantOrganizationMemberTransitionDetails>`: multiTenantOrganizationMemberTransitionDetails
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DesiredRole <String>]`: multiTenantOrganizationMemberRole
+  - `[DesiredState <String>]`: multiTenantOrganizationMemberState
+  - `[Details <String>]`: Details that explain the processing status if any.
 Read-only.
-  \[Status \<String\>\]: multiTenantOrganizationMemberProcessingStatus
+  - `[Status <String>]`: multiTenantOrganizationMemberProcessingStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
+
+
+
 

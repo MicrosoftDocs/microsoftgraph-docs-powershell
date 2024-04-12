@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
@@ -282,94 +282,94 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODY \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Mail \<String\>\]: 
-  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+BODY `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Mail <String>]`: 
+  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    \[Password \<String\>\]: The password for the user.
+    - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  \[UserPrincipalName \<String\>\]: 
+  - `[UserPrincipalName <String>]`: 
 
-BODYPARAMETER \<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Mail \<String\>\]: 
-  \[PasswordProfile \<IMicrosoftGraphPasswordProfile\>\]: passwordProfile
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+BODYPARAMETER `<IComponents189ZsniRequestbodiesConvertexternaltointernalmemberuserrequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Mail <String>]`: 
+  - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-    \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+    - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-    \[Password \<String\>\]: The password for the user.
+    - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
 By default, a strong password is required.
-  \[UserPrincipalName \<String\>\]: 
+  - `[UserPrincipalName <String>]`: 
 
-INPUTOBJECT \<IUsersActionsIdentity\>: Identity Parameter
-  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
-  \[AccessReviewStageId \<String\>\]: The unique identifier of accessReviewStage
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[AuthenticationMethodId \<String\>\]: The unique identifier of authenticationMethod
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[ChatId \<String\>\]: The unique identifier of chat
-  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
-  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[DriveItemId \<String\>\]: The unique identifier of driveItem
-  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
-  \[OutlookTaskFolderId \<String\>\]: The unique identifier of outlookTaskFolder
-  \[OutlookTaskGroupId \<String\>\]: The unique identifier of outlookTaskGroup
-  \[OutlookTaskId \<String\>\]: The unique identifier of outlookTask
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
-  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
-  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[DriveItemId <String>]`: The unique identifier of driveItem
+  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[OutlookTaskFolderId <String>]`: The unique identifier of outlookTaskFolder
+  - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
+  - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TodoTaskId <String>]`: The unique identifier of todoTask
+  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[UserId <String>]`: The unique identifier of user
 
-PASSWORDPROFILE \<IMicrosoftGraphPasswordProfile\>: passwordProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[ForceChangePasswordNextSignIn \<Boolean?\>\]: true if the user must change their password on the next sign-in; otherwise false.
+PASSWORDPROFILE `<IMicrosoftGraphPasswordProfile>`: passwordProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change their password on the next sign-in; otherwise false.
 If not set, default is false.
-  \[ForceChangePasswordNextSignInWithMfa \<Boolean?\>\]: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
+  - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multifactor authentication (MFA) before being forced to change their password.
 The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multifactor authentication before password change.
 After a password change, this property will be automatically reset to false.
 If not set, default is false.
-  \[Password \<String\>\]: The password for the user.
+  - `[Password <String>]`: The password for the user.
 This property is required when a user is created.
 It can be updated, but the user will be required to change the password on the next sign-in.
 The password must satisfy minimum requirements as specified by the user's passwordPolicies property.
@@ -378,4 +378,7 @@ By default, a strong password is required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
+
+
+
 

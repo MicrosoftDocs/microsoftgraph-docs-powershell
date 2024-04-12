@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile
@@ -403,62 +403,65 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDomainSecurityProfile\>: domainSecurityProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActivityGroupNames \<String\[\]\>\]: 
-  \[AzureSubscriptionId \<String\>\]: 
-  \[AzureTenantId \<String\>\]: 
-  \[CountHits \<Int32?\>\]: 
-  \[CountInOrg \<Int32?\>\]: 
-  \[DomainCategories \<IMicrosoftGraphReputationCategory\[\]\>\]: 
-    \[Description \<String\>\]: 
-    \[Name \<String\>\]: 
-    \[Vendor \<String\>\]: 
-  \[DomainRegisteredDateTime \<DateTime?\>\]: 
-  \[FirstSeenDateTime \<DateTime?\>\]: 
-  \[LastSeenDateTime \<DateTime?\>\]: 
-  \[Name \<String\>\]: 
-  \[Registrant \<IMicrosoftGraphDomainRegistrant\>\]: domainRegistrant
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[CountryOrRegionCode \<String\>\]: 
-    \[Organization \<String\>\]: 
-    \[Url \<String\>\]: 
-    \[Vendor \<String\>\]: 
-  \[RiskScore \<String\>\]: 
-  \[Tags \<String\[\]\>\]: 
-  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+  - `[ActivityGroupNames <String- `[]`>]`: 
+  - `[AzureSubscriptionId <String>]`: 
+  - `[AzureTenantId <String>]`: 
+  - `[CountHits <Int32?>]`: 
+  - `[CountInOrg <Int32?>]`: 
+  - `[DomainCategories <IMicrosoftGraphReputationCategory- `[]`>]`: 
+    - `[Description <String>]`: 
+    - `[Name <String>]`: 
+    - `[Vendor <String>]`: 
+  - `[DomainRegisteredDateTime <DateTime?>]`: 
+  - `[FirstSeenDateTime <DateTime?>]`: 
+  - `[LastSeenDateTime <DateTime?>]`: 
+  - `[Name <String>]`: 
+  - `[Registrant <IMicrosoftGraphDomainRegistrant>]`: domainRegistrant
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CountryOrRegionCode <String>]`: 
+    - `[Organization <String>]`: 
+    - `[Url <String>]`: 
+    - `[Vendor <String>]`: 
+  - `[RiskScore <String>]`: 
+  - `[Tags <String- `[]`>]`: 
+  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-DOMAINCATEGORIES \<IMicrosoftGraphReputationCategory\[\]\>: .
-  \[Description \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Vendor \<String\>\]: 
+DOMAINCATEGORIES <IMicrosoftGraphReputationCategory- `[]`>: .
+  - `[Description <String>]`: 
+  - `[Name <String>]`: 
+  - `[Vendor <String>]`: 
 
-REGISTRANT \<IMicrosoftGraphDomainRegistrant\>: domainRegistrant
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[CountryOrRegionCode \<String\>\]: 
-  \[Organization \<String\>\]: 
-  \[Url \<String\>\]: 
-  \[Vendor \<String\>\]: 
+REGISTRANT `<IMicrosoftGraphDomainRegistrant>`: domainRegistrant
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CountryOrRegionCode <String>]`: 
+  - `[Organization <String>]`: 
+  - `[Url <String>]`: 
+  - `[Vendor <String>]`: 
 
-VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile)
+
+
+
 
