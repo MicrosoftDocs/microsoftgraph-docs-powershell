@@ -14,6 +14,9 @@ schedules:
     - main
   always: true
 parameters:
+- name: BuildAgent
+  displayName: Build Agent
+  default: 1es-windows-ps-compute
 - name: PipelineTimeout
   displayName: PipelineTimeout
   type: number
@@ -32,10 +35,7 @@ variables:
 extends:
   template: v1/1ES.Official.PipelineTemplate.yml@1ESPipelineTemplates
   parameters:
-    pool:
-      name: Azure-Pipelines-1ESPT-ExDShared
-      image: windows-2022
-      os: windows
+    pool: $(BuildAgent)
     sdl:
       credscan:
         suppressionsFile: $(Build.SourcesDirectory)/azure-pipelines/config/credscan/credscan-suppressions.json
