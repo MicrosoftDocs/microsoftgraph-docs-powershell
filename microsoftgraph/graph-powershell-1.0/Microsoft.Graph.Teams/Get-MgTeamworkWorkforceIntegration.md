@@ -37,6 +37,9 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a workforceIntegration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

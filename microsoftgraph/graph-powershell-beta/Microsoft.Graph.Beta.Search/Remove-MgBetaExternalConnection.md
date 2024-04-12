@@ -29,6 +29,9 @@ Remove-MgBetaExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete an externalConnection.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

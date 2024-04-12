@@ -49,6 +49,9 @@ Create a new federatedIdentityCredential object for an application.
 By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
 Maximum of 20 objects can be added to an application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-federatedidentitycredentials-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

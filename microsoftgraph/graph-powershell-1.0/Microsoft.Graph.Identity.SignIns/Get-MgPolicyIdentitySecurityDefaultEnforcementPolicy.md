@@ -21,6 +21,9 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitysecuritydefaultsenforcementpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

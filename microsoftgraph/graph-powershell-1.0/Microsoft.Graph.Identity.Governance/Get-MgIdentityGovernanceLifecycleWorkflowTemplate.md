@@ -37,6 +37,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Read the properties and relationships of a workflowTemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowtemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

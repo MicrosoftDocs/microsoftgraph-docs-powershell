@@ -37,6 +37,9 @@ If the Accept-Language header is set to an existing locale identified by the val
 This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
 To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -55,6 +55,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createreplyall-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

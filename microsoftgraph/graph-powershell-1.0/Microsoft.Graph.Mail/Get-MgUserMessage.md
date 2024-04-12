@@ -41,6 +41,9 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,9 @@ Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ## DESCRIPTION
 Read the properties and relationships of a plannerPlanConfigurationLocalization object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfigurationlocalization-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

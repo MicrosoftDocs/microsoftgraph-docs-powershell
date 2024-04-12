@@ -31,6 +31,9 @@ Remove-MgApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIdentit
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delete-owners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

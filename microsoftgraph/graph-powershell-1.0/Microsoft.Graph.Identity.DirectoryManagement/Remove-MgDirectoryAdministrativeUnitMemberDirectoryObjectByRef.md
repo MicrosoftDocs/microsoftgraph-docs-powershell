@@ -30,6 +30,9 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 ## DESCRIPTION
 Use this API to remove a member (user, group, or device) from an administrative unit.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-delete-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

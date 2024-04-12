@@ -70,6 +70,9 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbranding-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

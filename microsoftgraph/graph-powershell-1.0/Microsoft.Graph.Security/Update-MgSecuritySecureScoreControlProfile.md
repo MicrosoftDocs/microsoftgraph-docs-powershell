@@ -56,6 +56,9 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescorecontrolprofile-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

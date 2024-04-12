@@ -29,6 +29,9 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-addfavorite-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -36,6 +36,9 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the properties and relationships of an alert object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

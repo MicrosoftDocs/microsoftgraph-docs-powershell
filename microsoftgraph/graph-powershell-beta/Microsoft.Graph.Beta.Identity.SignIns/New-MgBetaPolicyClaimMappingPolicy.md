@@ -29,6 +29,9 @@ New-MgBetaPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new claimsMappingPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

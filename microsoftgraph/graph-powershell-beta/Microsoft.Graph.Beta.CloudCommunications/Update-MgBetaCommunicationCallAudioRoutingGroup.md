@@ -45,6 +45,9 @@ Update-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Modify sources and receivers of an audioRoutingGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

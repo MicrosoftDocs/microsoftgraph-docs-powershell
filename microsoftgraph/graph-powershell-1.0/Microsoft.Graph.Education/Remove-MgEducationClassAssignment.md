@@ -31,6 +31,9 @@ Remove-MgEducationClassAssignment -InputObject <IEducationIdentity> [-IfMatch <S
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

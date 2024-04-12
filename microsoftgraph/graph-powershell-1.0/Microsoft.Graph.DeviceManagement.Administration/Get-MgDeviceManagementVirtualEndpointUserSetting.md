@@ -37,6 +37,9 @@ Get-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcUserSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

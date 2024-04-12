@@ -48,6 +48,9 @@ Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation -InputObject <IGroup
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

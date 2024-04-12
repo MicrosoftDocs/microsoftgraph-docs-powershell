@@ -53,6 +53,9 @@ Update-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the permission object on a site.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-update-permission-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

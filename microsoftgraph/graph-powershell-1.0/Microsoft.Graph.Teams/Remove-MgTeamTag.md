@@ -29,6 +29,9 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 ## DESCRIPTION
 Delete a tag object permanently.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

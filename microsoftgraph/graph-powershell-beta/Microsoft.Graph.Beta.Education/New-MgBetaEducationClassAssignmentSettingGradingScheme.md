@@ -45,6 +45,9 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 ## DESCRIPTION
 Create a new educationGradingScheme object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

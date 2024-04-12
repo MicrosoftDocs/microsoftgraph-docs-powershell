@@ -31,6 +31,9 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 Runs the query specified in the request body.
 Search results are provided in the response.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

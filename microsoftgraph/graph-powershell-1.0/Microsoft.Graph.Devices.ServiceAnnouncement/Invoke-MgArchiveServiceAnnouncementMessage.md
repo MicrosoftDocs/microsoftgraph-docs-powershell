@@ -30,6 +30,9 @@ Invoke-MgArchiveServiceAnnouncementMessage
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-archive-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

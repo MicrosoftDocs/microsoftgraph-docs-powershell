@@ -29,6 +29,9 @@ Remove-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete an acronym object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

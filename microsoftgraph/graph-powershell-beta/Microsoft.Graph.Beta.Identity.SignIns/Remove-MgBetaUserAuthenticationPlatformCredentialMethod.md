@@ -29,6 +29,9 @@ Remove-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentityS
 ## DESCRIPTION
 Delete a platformCredentialAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/platformcredentialauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

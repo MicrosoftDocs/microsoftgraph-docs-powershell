@@ -29,6 +29,9 @@ Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentity
 ## DESCRIPTION
 Delete a users's temporaryAccessPassAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/temporaryaccesspassauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

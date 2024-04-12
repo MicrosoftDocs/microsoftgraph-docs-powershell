@@ -22,6 +22,9 @@ Get-MgBetaSiteOnenoteSectionGroupSection -SectionGroupId <String> -SiteId <Strin
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified section group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-list-sections-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

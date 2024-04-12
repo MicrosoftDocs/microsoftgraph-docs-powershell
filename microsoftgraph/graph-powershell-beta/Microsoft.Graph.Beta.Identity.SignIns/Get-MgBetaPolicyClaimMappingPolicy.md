@@ -37,6 +37,9 @@ Get-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of a claimsMappingPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

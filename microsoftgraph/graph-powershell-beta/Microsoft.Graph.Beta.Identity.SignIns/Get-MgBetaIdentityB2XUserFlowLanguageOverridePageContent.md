@@ -30,6 +30,9 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentity
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

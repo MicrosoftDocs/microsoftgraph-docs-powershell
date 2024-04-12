@@ -47,6 +47,9 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ## DESCRIPTION
 Create a new plannerPlanConfigurationLocalization object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-post-localizations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

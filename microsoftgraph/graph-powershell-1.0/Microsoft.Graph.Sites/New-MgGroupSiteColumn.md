@@ -65,6 +65,9 @@ New-MgGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-columns-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

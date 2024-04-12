@@ -47,6 +47,9 @@ Set-MgBetaApplicationVerifiedPublisher -InputObject <IApplicationsIdentity>
 Set the the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-setverifiedpublisher-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Retrieve the properties of a contentSharingSession object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentsharingsession-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

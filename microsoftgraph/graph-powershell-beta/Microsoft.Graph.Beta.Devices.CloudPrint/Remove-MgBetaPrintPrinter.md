@@ -29,6 +29,9 @@ Remove-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete (unregister) a printer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -53,6 +53,9 @@ This method fully replaces the current schema with the one provided in the reque
 To update the schema of a template, make the call on the application object.
 You must be the owner of the application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

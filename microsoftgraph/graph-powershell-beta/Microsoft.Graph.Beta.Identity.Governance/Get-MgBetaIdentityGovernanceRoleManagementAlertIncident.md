@@ -40,6 +40,9 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 Read the properties and relationships of an alert incident.
 The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementalertincident-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

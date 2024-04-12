@@ -43,6 +43,9 @@ Update-MgGroupDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <H
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

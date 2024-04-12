@@ -47,6 +47,9 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of an acronym object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -85,6 +85,9 @@ Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

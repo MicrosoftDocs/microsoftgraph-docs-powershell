@@ -60,6 +60,9 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-manifest-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

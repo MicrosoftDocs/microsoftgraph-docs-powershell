@@ -29,6 +29,9 @@ Remove-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete a cloudPcUserSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

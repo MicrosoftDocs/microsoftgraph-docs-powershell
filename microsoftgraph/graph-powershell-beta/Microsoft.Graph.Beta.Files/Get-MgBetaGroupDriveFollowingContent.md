@@ -29,6 +29,9 @@ Get-MgBetaGroupDriveFollowingContent -InputObject <IFilesIdentity> [-Format <Str
 ## DESCRIPTION
 Get content for the navigation property following from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -59,6 +59,9 @@ Get-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingservice-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

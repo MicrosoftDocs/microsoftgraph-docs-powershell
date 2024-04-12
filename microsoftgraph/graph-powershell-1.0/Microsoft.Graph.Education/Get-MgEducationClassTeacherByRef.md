@@ -23,6 +23,9 @@ Get-MgEducationClassTeacherByRef -EducationClassId <String> [-Filter <String>] [
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-list-teachers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

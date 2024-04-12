@@ -38,6 +38,9 @@ Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -InputObj
 ## DESCRIPTION
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcontextclassreference-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

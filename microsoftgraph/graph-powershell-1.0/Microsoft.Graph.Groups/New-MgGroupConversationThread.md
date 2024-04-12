@@ -55,6 +55,9 @@ Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-post-threads-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

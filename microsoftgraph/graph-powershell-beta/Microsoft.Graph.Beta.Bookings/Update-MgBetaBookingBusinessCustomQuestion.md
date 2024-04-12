@@ -77,6 +77,9 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

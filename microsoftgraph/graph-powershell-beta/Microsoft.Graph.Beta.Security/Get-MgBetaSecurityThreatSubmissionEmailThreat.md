@@ -37,6 +37,9 @@ Get-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of an emailThreatSubmission object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmission-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

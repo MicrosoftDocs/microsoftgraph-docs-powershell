@@ -31,6 +31,9 @@ Remove-MgBetaApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIde
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-owners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

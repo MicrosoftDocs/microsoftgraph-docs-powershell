@@ -37,6 +37,9 @@ Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -InputObject <IIdent
 ## DESCRIPTION
 Get the instance of an active role assignment.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentscheduleinstance-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

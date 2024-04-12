@@ -47,6 +47,9 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

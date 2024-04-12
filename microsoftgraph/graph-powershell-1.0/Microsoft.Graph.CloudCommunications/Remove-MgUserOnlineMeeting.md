@@ -29,6 +29,9 @@ Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete an onlineMeeting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

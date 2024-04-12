@@ -60,6 +60,9 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new reply to a chatMessage in a specified channel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-messagereply-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

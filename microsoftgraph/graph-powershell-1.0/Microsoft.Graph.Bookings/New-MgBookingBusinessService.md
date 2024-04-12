@@ -57,6 +57,9 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a new bookingService for the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-services-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

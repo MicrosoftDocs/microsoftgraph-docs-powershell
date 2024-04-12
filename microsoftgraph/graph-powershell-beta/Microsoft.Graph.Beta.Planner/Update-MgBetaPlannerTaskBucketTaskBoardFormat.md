@@ -43,6 +43,9 @@ Update-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -I
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

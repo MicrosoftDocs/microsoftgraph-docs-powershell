@@ -29,6 +29,9 @@ Remove-MgBetaUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Deletes a todoTaskList object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

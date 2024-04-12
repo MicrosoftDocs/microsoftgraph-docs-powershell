@@ -49,6 +49,9 @@ Update-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

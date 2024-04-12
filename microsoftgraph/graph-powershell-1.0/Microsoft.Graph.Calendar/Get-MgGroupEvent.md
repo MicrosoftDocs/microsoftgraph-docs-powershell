@@ -34,6 +34,9 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Get an event object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-event-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

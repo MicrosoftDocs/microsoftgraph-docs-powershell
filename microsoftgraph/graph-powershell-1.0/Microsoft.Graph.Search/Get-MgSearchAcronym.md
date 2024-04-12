@@ -36,6 +36,9 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Read the properties and relationships of an acronym object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -32,6 +32,9 @@ Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

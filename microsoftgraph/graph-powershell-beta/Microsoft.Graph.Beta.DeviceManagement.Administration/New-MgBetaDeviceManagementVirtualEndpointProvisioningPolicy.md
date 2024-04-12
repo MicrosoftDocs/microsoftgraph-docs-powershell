@@ -38,6 +38,9 @@ New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Create a new cloudPcProvisioningPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-provisioningpolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

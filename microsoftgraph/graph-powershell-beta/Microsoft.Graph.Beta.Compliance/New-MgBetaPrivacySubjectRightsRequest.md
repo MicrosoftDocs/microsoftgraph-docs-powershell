@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetaprivacysubjectrightsrequest
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # New-MgBetaPrivacySubjectRightsRequest
@@ -38,6 +39,9 @@ New-MgBetaPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRigh
 
 ## DESCRIPTION
 Create a new subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subjectrightsrequest-post-permissions.md)]
 
 ## EXAMPLES
 

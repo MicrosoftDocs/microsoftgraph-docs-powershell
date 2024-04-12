@@ -37,6 +37,9 @@ Get-MgBetaUserDriveBundle -InputObject <IFilesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

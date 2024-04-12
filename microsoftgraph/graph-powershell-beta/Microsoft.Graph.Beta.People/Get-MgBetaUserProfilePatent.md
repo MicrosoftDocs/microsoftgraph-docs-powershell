@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepatent
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Get-MgBetaUserProfilePatent
@@ -36,6 +37,9 @@ Get-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Read the properties and relationships of an itemPatent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempatent-get-permissions.md)]
 
 ## EXAMPLES
 

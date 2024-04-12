@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtrainingcampaign
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgBetaSecurityAttackSimulationTrainingCampaign
@@ -36,6 +37,9 @@ Get-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIdenti
 
 ## DESCRIPTION
 Read the properties and relationships of a trainingCampaign object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trainingcampaign-get-permissions.md)]
 
 ## EXAMPLES
 

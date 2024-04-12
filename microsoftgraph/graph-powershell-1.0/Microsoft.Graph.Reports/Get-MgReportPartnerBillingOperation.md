@@ -37,6 +37,9 @@ Get-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-ExpandProp
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-operation-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

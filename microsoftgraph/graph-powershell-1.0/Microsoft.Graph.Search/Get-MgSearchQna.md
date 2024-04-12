@@ -36,6 +36,9 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

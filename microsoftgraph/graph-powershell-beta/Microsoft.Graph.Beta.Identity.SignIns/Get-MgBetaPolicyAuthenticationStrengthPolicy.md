@@ -37,6 +37,9 @@ Get-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Read the properties and relationships of an authenticationStrengthPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

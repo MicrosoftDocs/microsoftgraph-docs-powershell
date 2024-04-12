@@ -29,6 +29,9 @@ Remove-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a set object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-set-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Delete an administrativeUnit.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

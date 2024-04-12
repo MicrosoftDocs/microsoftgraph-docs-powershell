@@ -53,6 +53,9 @@ Update-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Update the properties of an internalDomainFederation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internaldomainfederation-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

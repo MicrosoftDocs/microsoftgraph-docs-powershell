@@ -48,6 +48,9 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 Assign a Microsoft Entra role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-post-scopedrolemembers-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

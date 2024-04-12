@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Read the properties and relationships of an appConsentRequest object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appconsentrequest-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

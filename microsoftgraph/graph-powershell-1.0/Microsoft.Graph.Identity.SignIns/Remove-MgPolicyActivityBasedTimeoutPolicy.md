@@ -29,6 +29,9 @@ Remove-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Delete an activityBasedTimeoutPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

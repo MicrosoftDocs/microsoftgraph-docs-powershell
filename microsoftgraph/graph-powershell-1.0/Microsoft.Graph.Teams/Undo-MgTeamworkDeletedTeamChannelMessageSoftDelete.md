@@ -29,6 +29,9 @@ Undo-MgTeamworkDeletedTeamChannelMessageSoftDelete -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chatmessage-undosoftdelete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete a qna object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

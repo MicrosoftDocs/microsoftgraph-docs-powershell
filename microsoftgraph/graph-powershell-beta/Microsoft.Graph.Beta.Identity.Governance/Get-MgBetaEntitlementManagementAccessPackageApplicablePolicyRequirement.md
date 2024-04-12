@@ -31,6 +31,9 @@ Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement
 In Microsoft Entra entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

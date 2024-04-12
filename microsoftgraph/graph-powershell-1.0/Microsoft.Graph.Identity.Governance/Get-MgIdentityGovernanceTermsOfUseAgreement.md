@@ -39,6 +39,9 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-list-files-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

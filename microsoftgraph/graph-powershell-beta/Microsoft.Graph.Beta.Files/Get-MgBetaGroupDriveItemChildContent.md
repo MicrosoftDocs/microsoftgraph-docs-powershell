@@ -29,6 +29,9 @@ Get-MgBetaGroupDriveItemChildContent -InputObject <IFilesIdentity> [-Format <Str
 ## DESCRIPTION
 Get content for the navigation property children from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

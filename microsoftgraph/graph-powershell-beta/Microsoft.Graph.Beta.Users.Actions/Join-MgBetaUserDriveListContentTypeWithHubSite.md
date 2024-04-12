@@ -47,6 +47,9 @@ Join-MgBetaUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdenti
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

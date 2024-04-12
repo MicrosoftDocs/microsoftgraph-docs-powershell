@@ -29,6 +29,9 @@ Remove-MgBetaDeviceRegisteredOwnerDirectoryObjectByRef -InputObject <IIdentityDi
 ## DESCRIPTION
 Remove a user as a registered owner of the device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredowners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

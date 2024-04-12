@@ -53,6 +53,9 @@ Send-MgBetaUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
 Send an activity feed notification to a user.
 For more information, see sending Teams activity notifications.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userteamwork-sendactivitynotification-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

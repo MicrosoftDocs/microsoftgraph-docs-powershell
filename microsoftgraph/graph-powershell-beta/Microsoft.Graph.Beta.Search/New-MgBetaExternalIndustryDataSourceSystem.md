@@ -30,6 +30,9 @@ New-MgBetaExternalIndustryDataSourceSystem -BodyParameter <IMicrosoftGraphIndust
 ## DESCRIPTION
 Create a new sourceSystemDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

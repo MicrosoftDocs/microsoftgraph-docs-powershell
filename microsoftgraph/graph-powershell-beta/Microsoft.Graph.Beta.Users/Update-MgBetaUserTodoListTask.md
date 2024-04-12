@@ -59,6 +59,9 @@ Update-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of a todoTask object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

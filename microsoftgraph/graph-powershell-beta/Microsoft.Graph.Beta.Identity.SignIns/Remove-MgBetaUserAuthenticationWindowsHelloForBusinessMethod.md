@@ -30,6 +30,9 @@ Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIden
 ## DESCRIPTION
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

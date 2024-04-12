@@ -44,6 +44,9 @@ New-MgBetaDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Add a user as a registered owner of the device.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredowners-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

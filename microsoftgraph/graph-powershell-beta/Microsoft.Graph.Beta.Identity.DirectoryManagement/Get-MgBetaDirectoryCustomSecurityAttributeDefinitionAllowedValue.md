@@ -39,6 +39,9 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Read the properties and relationships of an allowedValue object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/allowedvalue-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

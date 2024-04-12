@@ -29,6 +29,9 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet>
 ## DESCRIPTION
 Create a new attributeSet object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directory-post-attributesets-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

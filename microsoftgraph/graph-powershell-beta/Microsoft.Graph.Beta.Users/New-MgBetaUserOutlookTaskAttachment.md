@@ -47,6 +47,9 @@ New-MgBetaUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-post-attachments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

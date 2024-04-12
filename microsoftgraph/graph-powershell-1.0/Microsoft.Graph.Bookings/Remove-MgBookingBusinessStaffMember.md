@@ -29,6 +29,9 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a bookingStaffMember in the specified bookingBusiness.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

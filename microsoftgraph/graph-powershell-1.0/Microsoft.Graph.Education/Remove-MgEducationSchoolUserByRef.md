@@ -29,6 +29,9 @@ Remove-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> -Id <String>
 ## DESCRIPTION
 Delete a user from a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-users-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

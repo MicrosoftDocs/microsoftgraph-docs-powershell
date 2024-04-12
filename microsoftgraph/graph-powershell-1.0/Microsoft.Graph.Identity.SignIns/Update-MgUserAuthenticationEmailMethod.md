@@ -45,6 +45,9 @@ Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update a user's email address represented by an emailAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

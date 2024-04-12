@@ -45,6 +45,9 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ## DESCRIPTION
 Create a new audioRoutingGroup.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-post-audioroutinggroups-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

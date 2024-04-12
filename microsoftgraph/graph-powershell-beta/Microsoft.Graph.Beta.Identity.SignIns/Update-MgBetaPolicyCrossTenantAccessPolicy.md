@@ -33,6 +33,9 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 ## DESCRIPTION
 Update the properties of a cross-tenant access policy.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

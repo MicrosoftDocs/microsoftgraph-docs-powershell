@@ -51,6 +51,9 @@ Update-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ## DESCRIPTION
 Change writable properties on a messageRule object and save the changes.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

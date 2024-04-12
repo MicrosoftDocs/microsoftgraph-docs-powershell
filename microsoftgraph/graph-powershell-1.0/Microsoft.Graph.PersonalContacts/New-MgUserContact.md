@@ -69,6 +69,9 @@ New-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-contacts-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

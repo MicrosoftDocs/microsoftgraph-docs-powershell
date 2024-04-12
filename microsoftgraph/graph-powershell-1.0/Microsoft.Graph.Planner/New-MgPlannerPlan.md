@@ -31,6 +31,9 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersV
 ## DESCRIPTION
 Use this API to create a new plannerPlan.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

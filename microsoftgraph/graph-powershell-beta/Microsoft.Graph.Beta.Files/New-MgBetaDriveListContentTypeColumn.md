@@ -65,6 +65,9 @@ New-MgBetaDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create columnDefinition for a content type
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

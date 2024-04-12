@@ -39,6 +39,9 @@ Get-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagementEn
 Get the properties of a customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

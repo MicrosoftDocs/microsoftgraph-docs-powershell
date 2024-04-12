@@ -45,6 +45,9 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the role of a conversationMember in a team or channel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

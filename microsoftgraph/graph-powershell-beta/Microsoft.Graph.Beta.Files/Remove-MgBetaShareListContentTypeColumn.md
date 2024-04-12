@@ -29,6 +29,9 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete columnDefinition
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

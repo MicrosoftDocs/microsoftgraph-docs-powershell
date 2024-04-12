@@ -79,6 +79,9 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingCustomer object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

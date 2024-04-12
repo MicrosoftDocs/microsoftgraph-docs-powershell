@@ -59,6 +59,9 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new task object in a specified todoTaskList.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-post-tasks-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

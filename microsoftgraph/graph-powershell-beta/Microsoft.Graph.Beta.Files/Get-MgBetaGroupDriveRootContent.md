@@ -29,6 +29,9 @@ Get-MgBetaGroupDriveRootContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property root from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

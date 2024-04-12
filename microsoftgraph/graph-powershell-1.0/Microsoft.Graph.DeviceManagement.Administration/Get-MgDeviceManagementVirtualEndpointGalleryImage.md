@@ -37,6 +37,9 @@ Get-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcGalleryImage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcgalleryimage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

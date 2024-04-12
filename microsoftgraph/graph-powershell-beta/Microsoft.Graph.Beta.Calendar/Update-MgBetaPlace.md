@@ -46,6 +46,9 @@ Update-MgBetaPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

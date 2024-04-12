@@ -29,6 +29,9 @@ Remove-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdenti
 ## DESCRIPTION
 Delete a certificateBasedAuthConfiguration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedauthconfiguration-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

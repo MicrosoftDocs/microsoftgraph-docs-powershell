@@ -31,6 +31,9 @@ Remove-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 Delete a workflow object and its associated tasks, taskProcessingResults and versions.
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

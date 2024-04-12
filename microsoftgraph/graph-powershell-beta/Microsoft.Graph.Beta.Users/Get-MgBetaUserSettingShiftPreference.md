@@ -29,6 +29,9 @@ Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shiftpreferences-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

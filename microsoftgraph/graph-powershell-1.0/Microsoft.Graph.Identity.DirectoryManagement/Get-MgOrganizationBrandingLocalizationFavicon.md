@@ -29,6 +29,9 @@ Get-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

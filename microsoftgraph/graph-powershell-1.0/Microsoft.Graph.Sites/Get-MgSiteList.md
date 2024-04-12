@@ -37,6 +37,9 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get a list of rich long-running operations associated with a list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-operations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,9 @@ New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-Response
 ## DESCRIPTION
 Create a new acronym object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

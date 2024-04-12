@@ -96,6 +96,9 @@ If the meeting is rescheduled,the server automatically updates the event in the 
 Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executivesor their delegates can book a private meeting room.
 If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-events-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -InputObject <IDeviceMa
 ## DESCRIPTION
 Read the properties and relationships of the cloudPcOnPremisesConnection object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

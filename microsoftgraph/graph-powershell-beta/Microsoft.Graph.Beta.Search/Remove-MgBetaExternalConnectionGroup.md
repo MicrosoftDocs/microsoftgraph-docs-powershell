@@ -29,6 +29,9 @@ Remove-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete an externalGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

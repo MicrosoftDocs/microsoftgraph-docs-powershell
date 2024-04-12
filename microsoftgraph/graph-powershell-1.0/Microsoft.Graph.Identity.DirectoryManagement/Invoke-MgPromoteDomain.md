@@ -29,6 +29,9 @@ Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Res
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-promote-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

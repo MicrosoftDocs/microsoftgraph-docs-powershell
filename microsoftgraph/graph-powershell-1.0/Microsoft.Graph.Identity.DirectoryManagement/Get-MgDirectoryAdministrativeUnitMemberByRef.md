@@ -24,6 +24,9 @@ Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Fi
 Users and groups that are members of this administrative unit.
 Supports $expand.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-list-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

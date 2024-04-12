@@ -65,6 +65,9 @@ Create a new assignment.
 Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-assignments-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

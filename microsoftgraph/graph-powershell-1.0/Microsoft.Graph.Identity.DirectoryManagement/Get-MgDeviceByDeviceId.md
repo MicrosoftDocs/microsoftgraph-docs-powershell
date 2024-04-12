@@ -29,6 +29,9 @@ Get-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -47,6 +47,9 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Use reply thread or reply post to further post to that conversation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

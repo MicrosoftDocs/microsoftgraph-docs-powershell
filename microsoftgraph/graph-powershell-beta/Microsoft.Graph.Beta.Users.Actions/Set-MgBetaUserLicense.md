@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserlicense
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Set-MgBetaUserLicense
@@ -54,6 +55,9 @@ For example, an organization can have a Microsoft 365 Enterprise E3 subscription
 You can also enable and disable specific plans associated with a subscription.
 To learn more about subscriptions and licenses, see this Technet article.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-assignlicense-permissions.md)]
 
 ## EXAMPLES
 

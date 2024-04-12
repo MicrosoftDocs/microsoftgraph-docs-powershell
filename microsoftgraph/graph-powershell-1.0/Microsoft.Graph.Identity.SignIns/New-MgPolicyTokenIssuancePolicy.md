@@ -29,6 +29,9 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeadersVari
 ## DESCRIPTION
 Create a new tokenIssuancePolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

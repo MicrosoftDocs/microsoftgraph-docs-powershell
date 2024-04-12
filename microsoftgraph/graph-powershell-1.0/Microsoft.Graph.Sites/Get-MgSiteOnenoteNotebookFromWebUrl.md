@@ -47,6 +47,9 @@ Get-MgSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity>
 Retrieve the properties and relationships of a notebook object by using its URL path.
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-getnotebookfromweburl-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Remove-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Deletes a user's email Authentication Method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

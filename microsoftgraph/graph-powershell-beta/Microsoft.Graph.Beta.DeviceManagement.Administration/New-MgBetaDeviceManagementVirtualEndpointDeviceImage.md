@@ -34,6 +34,9 @@ New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftG
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

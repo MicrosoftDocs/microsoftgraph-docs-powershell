@@ -39,6 +39,9 @@ Get-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

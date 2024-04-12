@@ -57,6 +57,9 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Update the properties of a cloudPcProvisioningPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

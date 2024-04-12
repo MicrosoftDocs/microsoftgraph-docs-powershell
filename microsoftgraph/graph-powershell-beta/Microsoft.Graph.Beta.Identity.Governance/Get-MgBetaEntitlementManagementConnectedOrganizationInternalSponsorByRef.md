@@ -24,6 +24,9 @@ Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -Connec
 Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-list-internalsponsors-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

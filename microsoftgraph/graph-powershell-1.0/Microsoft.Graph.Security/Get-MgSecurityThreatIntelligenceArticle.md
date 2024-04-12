@@ -37,6 +37,9 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of an article object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-article-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

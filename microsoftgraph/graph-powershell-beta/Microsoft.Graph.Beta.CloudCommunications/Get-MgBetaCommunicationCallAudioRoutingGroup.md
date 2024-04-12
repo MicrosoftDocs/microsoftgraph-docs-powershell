@@ -37,6 +37,9 @@ Get-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Retrieve the properties and relationships of an audioRoutingGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/audioroutinggroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

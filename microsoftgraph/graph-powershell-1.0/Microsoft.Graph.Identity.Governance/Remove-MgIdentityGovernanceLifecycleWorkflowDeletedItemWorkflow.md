@@ -29,6 +29,9 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <II
 ## DESCRIPTION
 Delete a workflow object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-deletedItemcontainer-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

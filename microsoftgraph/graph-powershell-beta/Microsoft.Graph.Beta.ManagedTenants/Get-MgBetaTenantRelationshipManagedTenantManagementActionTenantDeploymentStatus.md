@@ -39,6 +39,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus
 ## DESCRIPTION
 Read the properties and relationships of a managementActionTenantDeploymentStatus object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementactiontenantdeploymentstatus-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

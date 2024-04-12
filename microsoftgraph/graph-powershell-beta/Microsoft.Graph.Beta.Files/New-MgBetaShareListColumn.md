@@ -65,6 +65,9 @@ New-MgBetaShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create columnDefinition
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

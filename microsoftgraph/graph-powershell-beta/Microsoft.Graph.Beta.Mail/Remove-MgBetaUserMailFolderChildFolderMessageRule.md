@@ -30,6 +30,9 @@ Remove-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [
 ## DESCRIPTION
 Delete the specified messageRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

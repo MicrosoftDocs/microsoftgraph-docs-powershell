@@ -56,6 +56,9 @@ Update-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update contentType
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -30,6 +30,9 @@ Remove-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 ## DESCRIPTION
 Delete an identityUserFlowAttributeAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

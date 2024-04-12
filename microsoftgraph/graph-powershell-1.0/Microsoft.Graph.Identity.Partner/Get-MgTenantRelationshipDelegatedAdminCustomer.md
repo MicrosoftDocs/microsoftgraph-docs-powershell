@@ -37,6 +37,9 @@ Get-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartnerIde
 ## DESCRIPTION
 Read the properties of a delegatedAdminCustomer object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadmincustomer-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

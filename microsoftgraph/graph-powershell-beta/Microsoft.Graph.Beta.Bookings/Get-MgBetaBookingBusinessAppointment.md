@@ -61,6 +61,9 @@ Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandPr
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

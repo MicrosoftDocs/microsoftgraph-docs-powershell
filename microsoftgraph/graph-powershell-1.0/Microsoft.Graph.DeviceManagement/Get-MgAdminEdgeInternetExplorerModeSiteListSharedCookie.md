@@ -38,6 +38,9 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 ## DESCRIPTION
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersharedcookie-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

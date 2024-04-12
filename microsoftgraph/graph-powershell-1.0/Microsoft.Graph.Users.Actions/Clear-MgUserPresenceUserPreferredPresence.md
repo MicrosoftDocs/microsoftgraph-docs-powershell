@@ -29,6 +29,9 @@ Clear-MgUserPresenceUserPreferredPresence -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

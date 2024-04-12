@@ -68,6 +68,9 @@ New-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-contacts-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

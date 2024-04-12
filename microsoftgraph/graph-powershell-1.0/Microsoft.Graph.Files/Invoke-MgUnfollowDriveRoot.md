@@ -28,6 +28,9 @@ Invoke-MgUnfollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Unfollow a driveItem.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

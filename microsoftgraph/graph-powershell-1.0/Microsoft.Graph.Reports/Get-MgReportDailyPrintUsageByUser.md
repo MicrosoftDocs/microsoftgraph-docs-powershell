@@ -39,6 +39,9 @@ Get-MgReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProper
 Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyuser-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

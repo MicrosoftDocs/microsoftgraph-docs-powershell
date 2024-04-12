@@ -47,6 +47,9 @@ Update-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 Update the properties of the specified tab in a chat.
 This can be used to configure the content of the tab.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-patch-tabs-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -38,6 +38,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResult -InputObject <I
 ## DESCRIPTION
 Get the user processing result of a user processing result of a run.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-userprocessingresult-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -34,6 +34,9 @@ New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHead
 ## DESCRIPTION
 Create a new plannerPlan.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-plans-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

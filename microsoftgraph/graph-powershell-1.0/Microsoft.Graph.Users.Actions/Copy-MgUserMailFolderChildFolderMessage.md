@@ -47,6 +47,9 @@ Copy-MgUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Copy a message to a folder within the user's mailbox.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-copy-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

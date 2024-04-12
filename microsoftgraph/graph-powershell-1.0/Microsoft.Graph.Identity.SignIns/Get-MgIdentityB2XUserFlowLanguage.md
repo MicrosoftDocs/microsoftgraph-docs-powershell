@@ -41,6 +41,9 @@ Read the properties and relationships of a userFlowLanguageConfiguration object.
 These objects represent a language available in a user flow.
 Note: Language customization is enabled by default in Microsoft Entra user flows.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

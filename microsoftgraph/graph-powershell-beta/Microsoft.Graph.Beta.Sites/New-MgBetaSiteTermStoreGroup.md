@@ -47,6 +47,9 @@ New-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new group object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

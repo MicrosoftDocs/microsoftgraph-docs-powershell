@@ -75,6 +75,9 @@ New-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Use this API to create a new event.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-events-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties of an identityApiConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

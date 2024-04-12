@@ -59,6 +59,9 @@ Get-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Read the properties and relationships of a term object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

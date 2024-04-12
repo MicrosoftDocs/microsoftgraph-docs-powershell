@@ -37,6 +37,9 @@ Get-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentitySign
 ## DESCRIPTION
 Read the properties and relationships of a platformCredentialAuthenticationMethod object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

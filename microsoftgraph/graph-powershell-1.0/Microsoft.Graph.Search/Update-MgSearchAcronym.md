@@ -47,6 +47,9 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the properties of an acronym object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

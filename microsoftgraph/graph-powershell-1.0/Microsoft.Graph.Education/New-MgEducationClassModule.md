@@ -51,6 +51,9 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students can't see the modules until publication.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-module-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

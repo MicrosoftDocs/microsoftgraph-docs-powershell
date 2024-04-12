@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTen
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcDevice object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcdevice-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

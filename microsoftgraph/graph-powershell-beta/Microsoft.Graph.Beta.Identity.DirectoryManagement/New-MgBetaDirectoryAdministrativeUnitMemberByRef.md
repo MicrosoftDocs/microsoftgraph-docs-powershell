@@ -45,6 +45,9 @@ New-MgBetaDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirector
 ## DESCRIPTION
 Create new navigation property ref to members for directory
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

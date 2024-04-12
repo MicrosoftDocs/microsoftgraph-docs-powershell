@@ -29,6 +29,9 @@ Get-MgGroupDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

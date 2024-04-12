@@ -29,6 +29,9 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a yearTimePeriodDefinition object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-yeartimeperioddefinition-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

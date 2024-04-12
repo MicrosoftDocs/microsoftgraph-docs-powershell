@@ -39,6 +39,9 @@ Get-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

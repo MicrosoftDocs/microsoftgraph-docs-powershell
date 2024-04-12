@@ -37,6 +37,9 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Respon
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

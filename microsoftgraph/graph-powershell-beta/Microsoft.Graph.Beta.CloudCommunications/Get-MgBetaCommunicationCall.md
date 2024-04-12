@@ -29,6 +29,9 @@ Get-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

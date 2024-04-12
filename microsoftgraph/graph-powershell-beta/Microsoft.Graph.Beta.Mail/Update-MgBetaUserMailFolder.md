@@ -55,6 +55,9 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of mailFolder object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

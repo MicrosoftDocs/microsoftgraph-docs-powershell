@@ -45,6 +45,9 @@ Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property details in planner
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplandetails-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

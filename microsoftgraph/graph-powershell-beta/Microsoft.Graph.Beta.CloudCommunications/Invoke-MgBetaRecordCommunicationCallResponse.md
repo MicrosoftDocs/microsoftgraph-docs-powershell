@@ -61,6 +61,9 @@ This action isn't intended to record the entire call.
 The maximum length of recording is 2 minutes.The Cloud Communications Platform doesn't save the recording permanently and discards it shortly after the call ends.
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value provided in the completed notification.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-record-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

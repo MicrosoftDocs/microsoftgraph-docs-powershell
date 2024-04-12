@@ -29,6 +29,9 @@ Get-MgBetaDriveRootChildContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property children from drives
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

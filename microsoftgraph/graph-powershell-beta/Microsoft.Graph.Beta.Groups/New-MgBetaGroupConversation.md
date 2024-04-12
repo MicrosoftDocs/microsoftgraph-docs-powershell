@@ -49,6 +49,9 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-conversations-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -41,6 +41,9 @@ Retrieve the properties and relationships of a serviceUpdateMessage object.
 This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

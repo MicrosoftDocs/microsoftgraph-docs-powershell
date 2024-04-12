@@ -37,6 +37,9 @@ Get-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Retrieve a user's single email Authentication Method object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

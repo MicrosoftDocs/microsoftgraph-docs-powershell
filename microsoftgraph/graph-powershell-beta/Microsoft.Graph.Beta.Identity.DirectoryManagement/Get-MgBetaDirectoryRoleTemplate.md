@@ -37,6 +37,9 @@ Get-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryroletemplate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

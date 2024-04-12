@@ -49,6 +49,9 @@ Update-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

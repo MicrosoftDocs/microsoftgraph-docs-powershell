@@ -29,6 +29,9 @@ Remove-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete an event object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-event-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

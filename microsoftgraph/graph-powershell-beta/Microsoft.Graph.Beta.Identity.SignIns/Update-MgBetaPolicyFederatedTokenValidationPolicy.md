@@ -30,6 +30,9 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 ## DESCRIPTION
 Update the properties of a federatedTokenValidationPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

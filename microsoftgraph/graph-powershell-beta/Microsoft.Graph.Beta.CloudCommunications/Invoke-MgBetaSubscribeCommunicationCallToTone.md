@@ -47,6 +47,9 @@ Invoke-MgBetaSubscribeCommunicationCallToTone -InputObject <ICloudCommunications
 Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a dialpad.
 This action is supported only for calls that are initiated with serviceHostedMediaConfig.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-subscribetotone-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

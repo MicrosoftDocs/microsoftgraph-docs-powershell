@@ -29,6 +29,9 @@ Get-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-host-get-reputation-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

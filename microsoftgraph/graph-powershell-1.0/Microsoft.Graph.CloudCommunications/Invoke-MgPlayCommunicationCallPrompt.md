@@ -48,6 +48,9 @@ Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-playprompt-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

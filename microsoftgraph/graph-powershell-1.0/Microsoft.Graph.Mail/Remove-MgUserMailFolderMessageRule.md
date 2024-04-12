@@ -29,6 +29,9 @@ Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete the specified messageRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/messagerule-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

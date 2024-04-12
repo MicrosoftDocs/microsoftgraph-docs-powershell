@@ -29,6 +29,9 @@ Get-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property driveItem from shares
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shares-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

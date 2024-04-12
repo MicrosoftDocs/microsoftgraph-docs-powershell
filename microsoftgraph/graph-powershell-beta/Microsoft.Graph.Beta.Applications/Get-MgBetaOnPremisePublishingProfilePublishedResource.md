@@ -38,6 +38,9 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ## DESCRIPTION
 Retrieve the properties and relationships of publishedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

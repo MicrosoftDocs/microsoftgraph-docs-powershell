@@ -78,6 +78,9 @@ New-MgDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphD
 ## DESCRIPTION
 Create new navigation property to bundles for drives
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-post-bundles-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

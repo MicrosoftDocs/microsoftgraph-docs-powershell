@@ -33,6 +33,9 @@ Create a SharePoint folder to upload files for a given educationAssignment.
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-setupresourcesfolder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

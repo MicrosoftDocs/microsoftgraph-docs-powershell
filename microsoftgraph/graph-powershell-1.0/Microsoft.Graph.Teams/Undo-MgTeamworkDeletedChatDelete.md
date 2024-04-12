@@ -29,6 +29,9 @@ Undo-MgTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Restore a  deletedChat to an active chat.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-undodelete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

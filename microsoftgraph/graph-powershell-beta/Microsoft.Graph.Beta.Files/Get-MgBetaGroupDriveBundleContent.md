@@ -29,6 +29,9 @@ Get-MgBetaGroupDriveBundleContent -InputObject <IFilesIdentity> [-Format <String
 ## DESCRIPTION
 Get content for the navigation property bundles from groups
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

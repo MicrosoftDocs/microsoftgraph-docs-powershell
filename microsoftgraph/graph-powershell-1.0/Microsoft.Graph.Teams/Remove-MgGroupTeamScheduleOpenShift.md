@@ -29,6 +29,9 @@ Remove-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete an openShift object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

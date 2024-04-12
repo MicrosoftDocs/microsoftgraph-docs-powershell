@@ -49,6 +49,9 @@ Copy-MgGroupOnenotePageToSection -InputObject <IGroupsIdentity>
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/page-copytosection-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

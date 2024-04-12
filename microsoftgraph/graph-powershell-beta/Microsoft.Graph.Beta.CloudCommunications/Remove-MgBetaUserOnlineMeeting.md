@@ -29,6 +29,9 @@ Remove-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete an onlineMeeting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

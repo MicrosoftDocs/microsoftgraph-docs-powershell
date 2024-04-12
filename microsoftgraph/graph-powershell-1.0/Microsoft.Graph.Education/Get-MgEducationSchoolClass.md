@@ -22,6 +22,9 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the educationClass resources owned by an educationSchool.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-classes-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

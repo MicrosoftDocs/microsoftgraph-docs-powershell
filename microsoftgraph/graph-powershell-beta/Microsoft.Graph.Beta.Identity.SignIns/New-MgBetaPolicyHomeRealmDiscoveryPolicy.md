@@ -30,6 +30,9 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

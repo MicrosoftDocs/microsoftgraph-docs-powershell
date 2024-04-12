@@ -37,6 +37,9 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sslcertificate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

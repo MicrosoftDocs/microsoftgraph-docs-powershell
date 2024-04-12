@@ -33,6 +33,9 @@ Create a SharePoint folder to upload feedback files for a given educationSubmiss
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-setupfeedbackresourcesfolder-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

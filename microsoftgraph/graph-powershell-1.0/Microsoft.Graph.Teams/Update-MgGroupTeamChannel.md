@@ -53,6 +53,9 @@ Update-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of the specified channel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

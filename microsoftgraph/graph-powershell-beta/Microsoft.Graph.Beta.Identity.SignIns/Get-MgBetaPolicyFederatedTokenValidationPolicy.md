@@ -21,6 +21,9 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of a federatedTokenValidationPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

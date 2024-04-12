@@ -22,6 +22,9 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [
 ## DESCRIPTION
 Retrieve a list of calendars belonging to a calendar group.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-list-calendars-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

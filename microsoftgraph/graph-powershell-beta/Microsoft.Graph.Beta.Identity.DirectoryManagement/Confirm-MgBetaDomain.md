@@ -27,6 +27,9 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Respo
 ## DESCRIPTION
 Validates the ownership of the domain.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-verify-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -29,6 +29,9 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 ## DESCRIPTION
 Get a list of administrativeUnits associated with an educationSchool object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-administrativeunit-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

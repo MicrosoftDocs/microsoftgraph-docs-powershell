@@ -73,6 +73,9 @@ New-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-category-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -37,6 +37,9 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Retrieve the properties and relationships of an agreement object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-files-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

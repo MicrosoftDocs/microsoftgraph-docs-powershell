@@ -29,6 +29,9 @@ Remove-MgBetaEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete a school.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

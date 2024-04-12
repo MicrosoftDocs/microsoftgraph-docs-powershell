@@ -69,6 +69,9 @@ Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationalbrandinglocalization-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
