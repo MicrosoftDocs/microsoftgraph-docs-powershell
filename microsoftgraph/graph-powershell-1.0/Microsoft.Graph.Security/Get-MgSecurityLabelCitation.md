@@ -41,18 +41,6 @@ Get-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Read the properties and relationships of a citationTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +352,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation)
+
 
 
 

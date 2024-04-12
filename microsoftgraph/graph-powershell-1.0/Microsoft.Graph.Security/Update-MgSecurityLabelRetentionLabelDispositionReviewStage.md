@@ -49,18 +49,6 @@ Update-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property dispositionReviewStages in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -368,6 +356,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldispositionreviewstage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldispositionreviewstage)
+
 
 
 

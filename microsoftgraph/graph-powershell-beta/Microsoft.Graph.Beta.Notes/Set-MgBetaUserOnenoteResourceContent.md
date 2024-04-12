@@ -32,22 +32,6 @@ Set-MgBetaUserOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Strea
 ## DESCRIPTION
 Update content for the navigation property resources in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -254,6 +238,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Set-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetauseronenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetauseronenoteresourcecontent)
+
 
 
 

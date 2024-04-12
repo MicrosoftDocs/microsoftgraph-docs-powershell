@@ -29,22 +29,6 @@ Set-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Update media content for the navigation property policies in trustFramework
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -316,6 +300,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetatrustframeworkpolicycontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetatrustframeworkpolicycontent)
+
 
 
 

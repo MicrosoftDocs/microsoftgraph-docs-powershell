@@ -29,18 +29,6 @@ Remove-MgBetaVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdent
 ## DESCRIPTION
 Delete navigation property registrations for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Email
@@ -239,6 +227,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationbyemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetavirtualeventwebinarregistrationbyemail)
+
 
 
 

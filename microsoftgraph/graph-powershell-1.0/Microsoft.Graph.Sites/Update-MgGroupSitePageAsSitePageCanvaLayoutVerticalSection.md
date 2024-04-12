@@ -48,18 +48,6 @@ Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesI
 ## DESCRIPTION
 Update the navigation property verticalSection in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,6 +344,7 @@ Read-only.
 [Update-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayoutverticalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayoutverticalsection)
+
 
 
 

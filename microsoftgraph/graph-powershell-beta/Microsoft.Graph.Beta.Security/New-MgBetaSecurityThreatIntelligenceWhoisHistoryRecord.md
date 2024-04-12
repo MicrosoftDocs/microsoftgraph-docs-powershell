@@ -40,18 +40,6 @@ New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord -BodyParameter <Hashtable
 ## DESCRIPTION
 Create new navigation property to whoisHistoryRecords for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Abuse
@@ -1202,6 +1190,7 @@ No format is guaranteed.
 [New-MgSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoishistoryrecord)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgGroupSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete navigation property pages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -278,6 +266,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepage)
+
 
 
 

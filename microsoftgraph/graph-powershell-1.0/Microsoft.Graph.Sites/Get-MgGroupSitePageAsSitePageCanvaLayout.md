@@ -32,18 +32,6 @@ Get-MgGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 Get canvasLayout from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -247,6 +235,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagecanvalayout)
+
 
 
 

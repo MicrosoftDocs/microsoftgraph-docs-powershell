@@ -49,22 +49,6 @@ Update-MgBetaDeviceManagementAndroidManagedStoreAppConfigurationSchema -InputObj
 ## DESCRIPTION
 Update the navigation property androidManagedStoreAppConfigurationSchemas in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -487,6 +471,7 @@ It only contains the root-level configuration.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidmanagedstoreappconfigurationschema)
+
 
 
 

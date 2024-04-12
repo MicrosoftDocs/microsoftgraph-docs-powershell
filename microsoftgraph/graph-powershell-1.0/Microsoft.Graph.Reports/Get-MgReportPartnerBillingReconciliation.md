@@ -24,18 +24,6 @@ Get-MgReportPartnerBillingReconciliation [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Represents details for billed invoice reconciliation data.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -128,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaReportPartnerBillingReconciliation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingReconciliation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingreconciliation)
+
 
 
 

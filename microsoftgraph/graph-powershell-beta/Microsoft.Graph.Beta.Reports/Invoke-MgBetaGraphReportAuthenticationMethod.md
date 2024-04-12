@@ -52,22 +52,6 @@ Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Invoke function usersRegisteredByFeature
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -228,6 +212,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod)
+
 
 
 

@@ -33,22 +33,6 @@ Remove-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property results for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -280,6 +264,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Remove-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mginformationprotectionthreatassessmentrequestresult)
+
 
 
 

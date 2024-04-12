@@ -33,18 +33,6 @@ Remove-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-IfMat
 ## DESCRIPTION
 Delete a filePlanReferenceTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -FilePlanReferenceTemplateId
@@ -266,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelfileplanreference)
+
 
 
 

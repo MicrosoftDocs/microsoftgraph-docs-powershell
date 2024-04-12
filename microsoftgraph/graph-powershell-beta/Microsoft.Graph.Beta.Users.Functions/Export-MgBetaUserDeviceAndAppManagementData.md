@@ -46,22 +46,6 @@ Export-MgBetaUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentit
 ## DESCRIPTION
 Invoke function exportDeviceAndAppManagementData
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -260,6 +244,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Export-MgUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Users.Functions/Export-MgUserDeviceAndAppManagementData?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata)
+
 
 
 

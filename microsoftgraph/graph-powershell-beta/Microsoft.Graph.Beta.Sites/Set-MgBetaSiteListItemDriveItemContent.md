@@ -32,22 +32,6 @@ Set-MgBetaSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data <Str
 ## DESCRIPTION
 Update content for the navigation property driveItem in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -310,6 +294,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Set-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasitelistitemdriveitemcontent)
+
 
 
 

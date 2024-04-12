@@ -34,18 +34,6 @@ New-MgSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryTempl
 ## DESCRIPTION
 Create a new categoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,6 +291,7 @@ Read-only.
 [New-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
+
 
 
 

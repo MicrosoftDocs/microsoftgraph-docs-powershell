@@ -50,18 +50,6 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISites
 ## DESCRIPTION
 Update the navigation property horizontalSections in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -397,6 +385,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsection)
+
 
 
 

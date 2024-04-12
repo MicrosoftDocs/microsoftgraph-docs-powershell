@@ -33,18 +33,6 @@ Set-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISi
 ## DESCRIPTION
 Update content for the navigation property driveItem in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -307,6 +295,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasiteanalyticitemactivitystatactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetasiteanalyticitemactivitystatactivitydriveitemcontent)
+
 
 
 

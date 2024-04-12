@@ -29,22 +29,6 @@ Revoke-MgBetaUserManagedDeviceAppleVppLicense -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Revoke all Apple Vpp licenses for a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -246,6 +230,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausermanageddeviceapplevpplicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetausermanageddeviceapplevpplicense)
+
 
 
 

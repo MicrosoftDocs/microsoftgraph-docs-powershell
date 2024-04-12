@@ -32,18 +32,6 @@ Get-MgBetaGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-Exp
 ## DESCRIPTION
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -256,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayout)
+
 
 
 

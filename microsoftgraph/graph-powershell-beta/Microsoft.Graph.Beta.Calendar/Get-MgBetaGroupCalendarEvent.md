@@ -44,18 +44,6 @@ The events in the calendar.
 Navigation property.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,6 +308,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgGroupCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendarevent)
+
 
 
 

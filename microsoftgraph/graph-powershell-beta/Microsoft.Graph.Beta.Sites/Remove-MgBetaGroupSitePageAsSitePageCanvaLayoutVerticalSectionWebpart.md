@@ -33,18 +33,6 @@ Remove-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObje
 ## DESCRIPTION
 Delete navigation property webparts for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -303,6 +291,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagecanvalayoutverticalsectionwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagecanvalayoutverticalsectionwebpart)
+
 
 
 

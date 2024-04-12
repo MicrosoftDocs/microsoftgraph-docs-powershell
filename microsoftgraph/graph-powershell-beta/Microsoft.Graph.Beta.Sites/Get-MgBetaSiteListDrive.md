@@ -34,22 +34,6 @@ Get-MgBetaSiteListDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -247,6 +231,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSiteListDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistdrive)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property canvasLayout for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -263,6 +251,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagecanvalayout)
+
 
 
 

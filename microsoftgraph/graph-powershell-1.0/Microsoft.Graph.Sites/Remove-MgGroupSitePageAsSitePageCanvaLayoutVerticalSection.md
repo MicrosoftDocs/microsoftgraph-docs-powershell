@@ -32,18 +32,6 @@ Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesI
 ## DESCRIPTION
 Delete navigation property verticalSection for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -278,6 +266,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepageassitepagecanvalayoutverticalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepageassitepagecanvalayoutverticalsection)
+
 
 
 

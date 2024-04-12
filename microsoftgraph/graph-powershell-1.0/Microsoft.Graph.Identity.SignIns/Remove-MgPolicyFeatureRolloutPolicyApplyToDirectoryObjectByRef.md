@@ -36,18 +36,6 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -279,6 +267,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytodirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytodirectoryobjectbyref)
+
 
 
 

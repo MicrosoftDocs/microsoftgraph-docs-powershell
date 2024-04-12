@@ -31,18 +31,6 @@ Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 ## DESCRIPTION
 Invoke action wipe
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -257,6 +245,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/clear-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/clear-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration)
+
 
 
 

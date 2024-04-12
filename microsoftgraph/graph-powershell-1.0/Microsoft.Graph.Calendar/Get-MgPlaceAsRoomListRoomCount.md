@@ -32,18 +32,6 @@ Get-MgPlaceAsRoomListRoomCount -InputObject <ICalendarIdentity> [-Filter <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -185,6 +173,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgBetaPlaceAsRoomListRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoomCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount)
+
 
 
 

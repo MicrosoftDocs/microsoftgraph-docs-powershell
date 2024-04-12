@@ -32,18 +32,6 @@ Get-MgBetaDriveRootAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get allTime from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -198,6 +186,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Get-MgDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootAnalyticTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootanalytictime)
+
 
 
 

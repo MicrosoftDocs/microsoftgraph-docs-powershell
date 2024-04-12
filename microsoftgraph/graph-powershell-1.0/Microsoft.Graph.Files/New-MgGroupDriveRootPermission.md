@@ -56,22 +56,6 @@ New-MgGroupDriveRootPermission -InputObject <IFilesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create new navigation property to permissions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -686,6 +670,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 [New-MgBetaGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdriverootpermission)
+
 
 
 

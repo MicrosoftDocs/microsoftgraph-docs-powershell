@@ -33,18 +33,6 @@ Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject
 ## DESCRIPTION
 Remove a tokenIssuancePolicy from an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -253,6 +241,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref)
+
 
 
 

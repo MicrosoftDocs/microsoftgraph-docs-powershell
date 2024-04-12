@@ -31,18 +31,6 @@ New-MgTeamworkDeletedChat -BodyParameter <Hashtable> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Create new navigation property to deletedChats for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -183,6 +171,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [New-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedchat)
+
 
 
 

@@ -48,18 +48,6 @@ New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputObj
 ## DESCRIPTION
 Create new navigation property to webparts for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,6 +329,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
+
 
 
 

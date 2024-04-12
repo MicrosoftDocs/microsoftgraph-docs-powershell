@@ -94,18 +94,6 @@ New-MgBetaGroupSiteGetByPathPage -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create a new \[sitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23416,6 +23404,7 @@ Read-only.
 [New-MgGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitegetbypathpage)
+
 
 
 

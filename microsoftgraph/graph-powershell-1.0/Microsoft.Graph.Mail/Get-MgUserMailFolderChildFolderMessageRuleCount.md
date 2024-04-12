@@ -32,18 +32,6 @@ Get-MgUserMailFolderChildFolderMessageRuleCount -InputObject <IMailIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -197,6 +185,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [Get-MgBetaUserMailFolderChildFolderMessageRuleCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageRuleCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagerulecount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagerulecount)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgSitePageCreatedByUserServiceProvisioningErrorCount -InputObject <ISitesIde
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -232,6 +220,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagecreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagecreatedbyuserserviceprovisioningerrorcount)
+
 
 
 

@@ -32,22 +32,6 @@ Set-MgBetaGroupDriveRootListItemDriveItemContent -InputObject <IFilesIdentity> [
 ## DESCRIPTION
 Update content for the navigation property driveItem in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -267,6 +251,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgGroupDriveRootListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveRootListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootlistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootlistitemdriveitemcontent)
+
 
 
 

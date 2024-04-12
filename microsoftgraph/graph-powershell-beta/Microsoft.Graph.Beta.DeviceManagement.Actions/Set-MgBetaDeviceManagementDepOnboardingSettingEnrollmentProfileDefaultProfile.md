@@ -29,22 +29,6 @@ Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile
 ## DESCRIPTION
 Invoke action setDefaultProfile
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -258,6 +242,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeponboardingsettingenrollmentprofiledefaultprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeponboardingsettingenrollmentprofiledefaultprofile)
+
 
 
 

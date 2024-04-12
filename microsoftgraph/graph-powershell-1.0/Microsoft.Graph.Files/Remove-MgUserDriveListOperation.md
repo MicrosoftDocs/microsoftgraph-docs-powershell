@@ -32,22 +32,6 @@ Remove-MgUserDriveListOperation -InputObject <IFilesIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property operations for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -263,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaUserDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistoperation)
+
 
 
 

@@ -49,18 +49,6 @@ New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject
 ## DESCRIPTION
 Create new navigation property to columns for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,6 +375,7 @@ Read-only.
 [New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumn)
+
 
 
 

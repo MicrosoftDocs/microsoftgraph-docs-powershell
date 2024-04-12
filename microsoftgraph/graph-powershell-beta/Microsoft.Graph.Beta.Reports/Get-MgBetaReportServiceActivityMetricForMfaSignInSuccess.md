@@ -31,18 +31,6 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess -InputObject <IReportsI
 ## DESCRIPTION
 Invoke function getMetricsForMfaSignInSuccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregationIntervalInMinutes
@@ -291,6 +279,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess)
+
 
 
 

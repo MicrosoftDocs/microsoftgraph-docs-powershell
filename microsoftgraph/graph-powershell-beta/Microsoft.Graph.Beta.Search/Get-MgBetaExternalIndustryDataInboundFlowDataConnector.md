@@ -29,18 +29,6 @@ Get-MgBetaExternalIndustryDataInboundFlowDataConnector -InputObject <ISearchIden
 ## DESCRIPTION
 The data connector in the context of which this flow pulls in data from a source system.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -189,6 +177,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowdataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflowdataconnector)
+
 
 
 

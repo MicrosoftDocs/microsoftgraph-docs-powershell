@@ -32,22 +32,6 @@ Remove-MgBetaSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-Respon
 ## DESCRIPTION
 Delete navigation property pages for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -276,6 +260,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepage)
+
 
 
 

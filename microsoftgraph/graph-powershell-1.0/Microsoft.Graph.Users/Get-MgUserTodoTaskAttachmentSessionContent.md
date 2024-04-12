@@ -32,18 +32,6 @@ Get-MgUserTodoTaskAttachmentSessionContent -InputObject <IUsersIdentity> -OutFil
 ## DESCRIPTION
 The content streams that are uploaded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -234,6 +222,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachmentSessionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsessioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachmentsessioncontent)
+
 
 
 

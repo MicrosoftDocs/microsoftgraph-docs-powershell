@@ -48,22 +48,6 @@ Confirm-MgBetaGroupMemberObject -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +276,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Confirm-MgGroupMemberObject](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject)
+
 
 
 

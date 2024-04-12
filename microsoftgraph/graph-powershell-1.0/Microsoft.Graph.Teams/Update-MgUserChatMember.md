@@ -48,22 +48,6 @@ Update-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property members in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -369,6 +353,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Update-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatmember)
+
 
 
 

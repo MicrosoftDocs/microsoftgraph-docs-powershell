@@ -40,18 +40,6 @@ Get-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Get subcategories from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -400,6 +388,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
+
 
 
 

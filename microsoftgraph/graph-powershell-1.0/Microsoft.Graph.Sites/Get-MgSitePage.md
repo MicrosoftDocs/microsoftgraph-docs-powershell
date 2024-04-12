@@ -40,18 +40,6 @@ Get-MgSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get pages from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepage)
+
 
 
 

@@ -37,22 +37,6 @@ Only sharing permissions that are not inherited can be deleted.The inheritedFrom
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -268,6 +252,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaUserDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootpermission)
+
 
 
 

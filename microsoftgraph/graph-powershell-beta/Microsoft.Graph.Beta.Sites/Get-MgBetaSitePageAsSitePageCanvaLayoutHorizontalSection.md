@@ -40,18 +40,6 @@ Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIde
 ## DESCRIPTION
 Collection of horizontal sections on the SharePoint page.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -385,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagecanvalayouthorizontalsection)
+
 
 
 

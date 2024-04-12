@@ -46,22 +46,6 @@ Update-MgBetaPrintService -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property services in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,6 +278,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [Update-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintService?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintservice)
+
 
 
 

@@ -34,18 +34,6 @@ New-MgSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationTempl
 ## DESCRIPTION
 Create a new citationTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,6 +285,7 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
+
 
 
 

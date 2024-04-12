@@ -35,18 +35,6 @@ Delete a class from a school.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-delete-classes-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -241,6 +229,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Remove-MgEducationSchoolClassEducationClassByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchoolClassEducationClassByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclasseducationclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationschoolclasseducationclassbyref)
+
 
 
 

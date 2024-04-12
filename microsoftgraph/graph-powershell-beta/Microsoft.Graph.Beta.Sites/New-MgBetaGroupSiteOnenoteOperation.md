@@ -50,18 +50,6 @@ New-MgBetaGroupSiteOnenoteOperation -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -436,6 +424,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOnenoteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteonenoteoperation)
+
 
 
 
