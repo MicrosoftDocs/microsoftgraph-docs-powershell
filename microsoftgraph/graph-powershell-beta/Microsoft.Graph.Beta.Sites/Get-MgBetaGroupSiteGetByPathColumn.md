@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathcolumn
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteGetByPathColumn
 
 ## SYNOPSIS
-Get the collection of columns, represented as \[columnDefinition\]\[columnDefinition\] resources, in a \[site\]\[site\].
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
+The collection of column definitions reusable across lists under this site.
 
 ## SYNTAX
 
@@ -32,7 +29,19 @@ Get-MgBetaGroupSiteGetByPathColumn -GroupId <String> -Path <String> -SiteId <Str
 ```
 
 ## DESCRIPTION
-Get the collection of columns, represented as \[columnDefinition\]\[columnDefinition\] resources, in a \[site\]\[site\].
+The collection of column definitions reusable across lists under this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -304,11 +313,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathcolumn)
-
-
-
-
 

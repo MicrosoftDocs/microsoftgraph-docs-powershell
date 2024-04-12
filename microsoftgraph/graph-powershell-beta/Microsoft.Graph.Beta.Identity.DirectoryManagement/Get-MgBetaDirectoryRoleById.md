@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,10 +32,17 @@ Get-MgBetaDirectoryRoleById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -195,16 +199,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Ig9RahDirectoryrolesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPaths1Ig9RahDirectoryrolesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid)
-
-
-
 

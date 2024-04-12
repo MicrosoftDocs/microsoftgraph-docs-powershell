@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: 467f54f2-44a8-4993-8e75-b96c3e443098
 Download Help Link: {{ Update Download Link }}
@@ -620,6 +620,9 @@ Locale: en-US
 ### [Remove-MgApplication](Remove-MgApplication.md)
 {{ Fill in the Description }}
 
+### [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgApplicationAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyByRef.md)
 {{ Fill in the Description }}
 
@@ -639,6 +642,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationOwnerByRef](Remove-MgApplicationOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgApplicationOwnerDirectoryObjectByRef](Remove-MgApplicationOwnerDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationPassword](Remove-MgApplicationPassword.md)
@@ -671,7 +677,13 @@ Locale: en-US
 ### [Remove-MgApplicationTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgApplicationTokenLifetimePolicyByRef](Remove-MgApplicationTokenLifetimePolicyByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupAppRoleAssignment](Remove-MgGroupAppRoleAssignment.md)
@@ -692,6 +704,9 @@ Locale: en-US
 ### [Remove-MgServicePrincipalClaimMappingPolicyByRef](Remove-MgServicePrincipalClaimMappingPolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgServicePrincipalDelegatedPermissionClassification](Remove-MgServicePrincipalDelegatedPermissionClassification.md)
 {{ Fill in the Description }}
 
@@ -701,10 +716,16 @@ Locale: en-US
 ### [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](Remove-MgServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgServicePrincipalKey](Remove-MgServicePrincipalKey.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgServicePrincipalOwnerByRef](Remove-MgServicePrincipalOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgServicePrincipalOwnerDirectoryObjectByRef](Remove-MgServicePrincipalOwnerDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgServicePrincipalPassword](Remove-MgServicePrincipalPassword.md)
@@ -883,5 +904,4 @@ Locale: en-US
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
 {{ Fill in the Description }}
-
 

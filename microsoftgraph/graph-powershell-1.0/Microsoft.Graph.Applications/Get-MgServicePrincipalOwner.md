@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner
@@ -9,13 +9,10 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,26 +25,21 @@ Get-MgServicePrincipalOwner -ServicePrincipalId <String> [-ExpandProperty <Strin
 
 ## DESCRIPTION
 Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-list-owners-permissions.md)]
-
 ## EXAMPLES
-### Example 1: List the owners of a service principal
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgServicePrincipalOwner -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
-```
-
-This command lists the owners of the specified service principal.
 
 ## PARAMETERS
 
@@ -290,10 +282,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalowner)
-
-
-
 

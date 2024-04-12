@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan
@@ -15,9 +15,9 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>]
- [-UsedCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AllotmentLicensesCount <Int32>] [-DisplayName <String>] [-Id <String>]
+ [-TotalCount <Int32>] [-UsedCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -29,6 +29,18 @@ New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan
 
 ## DESCRIPTION
 Create new navigation property to frontLineServicePlans for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -43,6 +55,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllotmentLicensesCount
+.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,20 +244,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcFrontLineServicePlan>`: cloudPcFrontLineServicePlan
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcFrontLineServicePlan\>: cloudPcFrontLineServicePlan
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: The display name of the front-line service plan.
+  \[AllotmentLicensesCount \<Int32?\>\]: 
+  \[DisplayName \<String\>\]: The display name of the front-line service plan.
 For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
-  - `[TotalCount <Int32?>]`: The total number of front-line service plans purchased by the customer.
-  - `[UsedCount <Int32?>]`: The number of service plans that have been used for the account.
+  \[TotalCount \<Int32?\>\]: The total number of front-line service plans purchased by the customer.
+  \[UsedCount \<Int32?\>\]: The number of service plans that have been used for the account.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointfrontlineserviceplan)
-
-
-
-
 

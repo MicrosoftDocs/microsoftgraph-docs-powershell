@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgrolemanagement
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleManagement
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaRoleManagement?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgRoleManagement [-ExpandProperty <String[]>] [-Property <String[]>] [-Respo
 
 ## DESCRIPTION
 Get roleManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,11 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaRoleManagement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgrolemanagement](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgrolemanagement)
-
-
-
-
 

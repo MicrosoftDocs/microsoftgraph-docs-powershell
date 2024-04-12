@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Education
 Module Guid: c413b855-1538-4f43-80a9-cb453e059e8a
 Download Help Link: {{ Update Download Link }}
@@ -371,6 +371,24 @@ Locale: en-US
 ### [Get-MgEducationUserTaughtClassCount](Get-MgEducationUserTaughtClassCount.md)
 {{ Fill in the Description }}
 
+### [Initialize-MgEducationClassAssignment](Initialize-MgEducationClassAssignment.md)
+{{ Fill in the Description }}
+
+### [Initialize-MgEducationMeAssignment](Initialize-MgEducationMeAssignment.md)
+{{ Fill in the Description }}
+
+### [Initialize-MgEducationUserAssignment](Initialize-MgEducationUserAssignment.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgDeactivateEducationClassAssignment](Invoke-MgDeactivateEducationClassAssignment.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgDeactivateEducationMeAssignment](Invoke-MgDeactivateEducationMeAssignment.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgDeactivateEducationUserAssignment](Invoke-MgDeactivateEducationUserAssignment.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgPinEducationClassModule](Invoke-MgPinEducationClassModule.md)
 {{ Fill in the Description }}
 
@@ -536,6 +554,9 @@ Locale: en-US
 ### [Remove-MgEducationClassAssignmentCategoryByRef](Remove-MgEducationClassAssignmentCategoryByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef](Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgEducationClassAssignmentDefault](Remove-MgEducationClassAssignmentDefault.md)
 {{ Fill in the Description }}
 
@@ -569,6 +590,9 @@ Locale: en-US
 ### [Remove-MgEducationClassMemberByRef](Remove-MgEducationClassMemberByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgEducationClassMemberEducationUserByRef](Remove-MgEducationClassMemberEducationUserByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgEducationClassModule](Remove-MgEducationClassModule.md)
 {{ Fill in the Description }}
 
@@ -578,6 +602,9 @@ Locale: en-US
 ### [Remove-MgEducationClassTeacherByRef](Remove-MgEducationClassTeacherByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgEducationClassTeacherEducationUserByRef](Remove-MgEducationClassTeacherEducationUserByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgEducationMe](Remove-MgEducationMe.md)
 {{ Fill in the Description }}
 
@@ -585,6 +612,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationMeAssignmentCategoryByRef](Remove-MgEducationMeAssignmentCategoryByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationMeAssignmentCategoryEducationCategoryByRef](Remove-MgEducationMeAssignmentCategoryEducationCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationMeAssignmentResource](Remove-MgEducationMeAssignmentResource.md)
@@ -617,7 +647,13 @@ Locale: en-US
 ### [Remove-MgEducationSchoolClassByRef](Remove-MgEducationSchoolClassByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgEducationSchoolClassEducationClassByRef](Remove-MgEducationSchoolClassEducationClassByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgEducationSchoolUserByRef](Remove-MgEducationSchoolUserByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationSchoolUserEducationUserByRef](Remove-MgEducationSchoolUserEducationUserByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationUser](Remove-MgEducationUser.md)
@@ -627,6 +663,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationUserAssignmentCategoryByRef](Remove-MgEducationUserAssignmentCategoryByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef](Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationUserAssignmentResource](Remove-MgEducationUserAssignmentResource.md)
@@ -811,5 +850,4 @@ Locale: en-US
 
 ### [Update-MgEducationUserRubric](Update-MgEducationUserRubric.md)
 {{ Fill in the Description }}
-
 

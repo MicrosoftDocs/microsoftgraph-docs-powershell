@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactphotocontent
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property photo from users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactPhotoContent?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaUserContactPhotoContent -ContactId <String> -UserId <String> [-Format <String>] -OutFile <String>
+Get-MgBetaUserContactPhotoContent -ContactId <String> -UserId <String> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Format <String>] -OutFile <String>
+Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get media content for the navigation property photo from users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -43,21 +56,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -186,19 +184,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactphotocontent)
-
-
-
-
 

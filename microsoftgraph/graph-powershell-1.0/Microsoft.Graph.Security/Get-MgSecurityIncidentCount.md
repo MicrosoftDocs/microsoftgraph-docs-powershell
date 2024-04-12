@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentcount
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Get-MgSecurityIncidentCount [-Filter <String>] [-Search <String>] [-ResponseHead
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,11 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincidentcount)
-
-
-
-
 

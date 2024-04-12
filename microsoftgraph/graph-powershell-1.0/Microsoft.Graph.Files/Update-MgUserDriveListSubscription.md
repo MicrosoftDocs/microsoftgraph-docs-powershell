@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property subscriptions in users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -54,6 +51,22 @@ Update-MgUserDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter 
 
 ## DESCRIPTION
 Update the navigation property subscriptions in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -107,12 +120,12 @@ Accept wildcard characters: False
 
 ### -ChangeType
 Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note: Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted.
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
 
 ```yaml
@@ -148,8 +161,8 @@ Accept wildcard characters: False
 ### -CreatorId
 Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
 
 ```yaml
@@ -216,7 +229,7 @@ Accept wildcard characters: False
 Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
 
 ```yaml
 Type: DateTime
@@ -336,7 +349,7 @@ Accept wildcard characters: False
 Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
@@ -355,9 +368,9 @@ Accept wildcard characters: False
 
 ### -NotificationUrl
 Required.
-The URL of the endpoint that will receive the change notifications.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
 
 ```yaml
 Type: String
@@ -374,7 +387,7 @@ Accept wildcard characters: False
 ### -NotificationUrlAppId
 Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
 
 ```yaml
 Type: String
@@ -405,8 +418,8 @@ Accept wildcard characters: False
 
 ### -Resource
 Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ```yaml
@@ -514,103 +527,98 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSubscription>`: subscription
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSubscription\>: subscription
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationId <String>]`: Optional.
+  \[ApplicationId \<String\>\]: Optional.
 Identifier of the application used to create the subscription.
 Read-only.
-  - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+  \[ChangeType \<String\>\]: Required.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
-  - `[ClientState <String>]`: Optional.
+  \[ClientState \<String\>\]: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
 The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
-  - `[CreatorId <String>]`: Optional.
+  \[CreatorId \<String\>\]: Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
-  - `[EncryptionCertificate <String>]`: Optional.
+  \[EncryptionCertificate \<String\>\]: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
 Optional but required when includeResourceData is true.
-  - `[EncryptionCertificateId <String>]`: Optional.
+  \[EncryptionCertificateId \<String\>\]: Optional.
 A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
-  - `[ExpirationDateTime <DateTime?>]`: Required.
+  \[ExpirationDateTime \<DateTime?\>\]: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
-  - `[IncludeResourceData <Boolean?>]`: Optional.
+For the maximum supported subscription length of time, see Subscription lifetime.
+  \[IncludeResourceData \<Boolean?\>\]: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
-  - `[LatestSupportedTlsVersion <String>]`: Optional.
+  \[LatestSupportedTlsVersion \<String\>\]: Optional.
 Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports.
 The possible values are: v10, v11, v12, v13.
 For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2.
 For these subscribers, not setting this property per the timeline would result in subscription operations failing.
 For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional.
 In such cases, Microsoft Graph defaults the property to v1_2.
-  - `[LifecycleNotificationUrl <String>]`: Required for Teams resources if  the expirationDateTime value is more than 1 hour from now; optional otherwise.
+  \[LifecycleNotificationUrl \<String\>\]: Required for Teams resources if  the expirationDateTime value is more than 1 hour from now; optional otherwise.
 The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications.
 This URL must make use of the HTTPS protocol.
 For more information, see Reduce missing subscriptions and change notifications.
-  - `[NotificationQueryOptions <String>]`: Optional.
+  \[NotificationQueryOptions \<String\>\]: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-  - `[NotificationUrl <String>]`: Required.
-The URL of the endpoint that will receive the change notifications.
+  \[NotificationUrl \<String\>\]: Required.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
-  - `[NotificationUrlAppId <String>]`: Optional.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
+  \[NotificationUrlAppId \<String\>\]: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
-  - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+The value allows the client to validate the authenticity of the notification received.
+  \[Resource \<String\>\]: Required.
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistsubscription)
-
-
-
-
 

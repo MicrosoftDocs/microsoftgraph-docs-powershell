@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to trainings for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +33,18 @@ New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraini
 
 ## DESCRIPTION
 Create new navigation property to trainings for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -102,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-Date and time when the training was created.
+The date and time when the training was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
@@ -119,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -CustomUrl
-.
+The training URL
 
 ```yaml
 Type: String
@@ -164,7 +173,7 @@ Accept wildcard characters: False
 ```
 
 ### -DurationInMinutes
-Training duration.
+The duration of the training in minutes.
 
 ```yaml
 Type: Int32
@@ -179,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -HasEvaluation
-Indicates whether the training has any evaluation.
+Whether the training has any evaluation.
 
 ```yaml
 Type: SwitchParameter
@@ -225,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -LanguageDetails
-Language specific details on a training.
+Details about the language used in the training.
 To construct, see NOTES section for LANGUAGEDETAILS properties and create a hash table.
 
 ```yaml
@@ -257,7 +266,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Date and time when the training was last modified.
+The date and time when the training was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
@@ -319,7 +328,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedLocales
-Supported locales for content for the associated training.
+The supported locales for content for the associated training.
 
 ```yaml
 Type: String[]
@@ -410,100 +419,91 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphTraining>`: training
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphTraining\>: training
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AvailabilityStatus <String>]`: trainingAvailabilityStatus
-  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: Date and time when the training was created.
+  \[AvailabilityStatus \<String\>\]: trainingAvailabilityStatus
+  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Email \<String\>\]: Email address of the user.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the training was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[CustomUrl <String>]`: 
-  - `[Description <String>]`: The description for the training.
-  - `[DisplayName <String>]`: The display name for the training.
-  - `[DurationInMinutes <Int32?>]`: Training duration.
-  - `[HasEvaluation <Boolean?>]`: Indicates whether the training has any evaluation.
-  - `[LanguageDetails <IMicrosoftGraphTrainingLanguageDetail- `[]`>]`: Language specific details on a training.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[CustomUrl \<String\>\]: The training URL
+  \[Description \<String\>\]: The description for the training.
+  \[DisplayName \<String\>\]: The display name for the training.
+  \[DurationInMinutes \<Int32?\>\]: The duration of the training in minutes.
+  \[HasEvaluation \<Boolean?\>\]: Whether the training has any evaluation.
+  \[LanguageDetails \<IMicrosoftGraphTrainingLanguageDetail\[\]\>\]: Details about the language used in the training.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Content <String>]`: Language specific content for the training.
-    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[CreatedDateTime <DateTime?>]`: Date and time when the language details were created.
+    \[Content \<String\>\]: Language specific content for the training.
+    \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[CreatedDateTime \<DateTime?\>\]: Date and time when the language details were created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Description <String>]`: Description as defined by the user.
-    - `[DisplayName <String>]`: Display name as defined by the user.
-    - `[IsDefaultLangauge <Boolean?>]`: Indicates whether the training has a default language.
-    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[LastModifiedDateTime <DateTime?>]`: Date and time when the trainingLanguageDetail was last modified.
+    \[Description \<String\>\]: Description as defined by the user.
+    \[DisplayName \<String\>\]: Display name as defined by the user.
+    \[IsDefaultLangauge \<Boolean?\>\]: Indicates whether the training has a default language.
+    \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the trainingLanguageDetail was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Locale <String>]`: Content locale for the training detail.
-  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the training was last modified.
+    \[Locale \<String\>\]: Content locale for the training detail.
+  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the training was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Source <String>]`: simulationContentSource
-  - `[SupportedLocales <String- `[]`>]`: Supported locales for content for the associated training.
-  - `[Tags <String- `[]`>]`: Training tags.
-  - `[Type <String>]`: trainingType
+  \[Source \<String\>\]: simulationContentSource
+  \[SupportedLocales \<String\[\]\>\]: The supported locales for content for the associated training.
+  \[Tags \<String\[\]\>\]: Training tags.
+  \[Type \<String\>\]: trainingType
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Email <String>]`: Email address of the user.
+CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+  \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+  \[Email \<String\>\]: Email address of the user.
 
-LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail- `[]`>: Language specific details on a training.
-  - `[Id <String>]`: The unique identifier for an entity.
+LANGUAGEDETAILS \<IMicrosoftGraphTrainingLanguageDetail\[\]\>: Details about the language used in the training.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Content <String>]`: Language specific content for the training.
-  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: Date and time when the language details were created.
+  \[Content \<String\>\]: Language specific content for the training.
+  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+    \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+    \[Email \<String\>\]: Email address of the user.
+  \[CreatedDateTime \<DateTime?\>\]: Date and time when the language details were created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Description <String>]`: Description as defined by the user.
-  - `[DisplayName <String>]`: Display name as defined by the user.
-  - `[IsDefaultLangauge <Boolean?>]`: Indicates whether the training has a default language.
-  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the trainingLanguageDetail was last modified.
+  \[Description \<String\>\]: Description as defined by the user.
+  \[DisplayName \<String\>\]: Display name as defined by the user.
+  \[IsDefaultLangauge \<Boolean?\>\]: Indicates whether the training has a default language.
+  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
+  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the trainingLanguageDetail was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Locale <String>]`: Content locale for the training detail.
+  \[Locale \<String\>\]: Content locale for the training detail.
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Email <String>]`: Email address of the user.
+LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DisplayName \<String\>\]: The display name of the identity.
+This property is read-only.
+  \[Id \<String\>\]: The identifier of the identity.
+This property is read-only.
+  \[Email \<String\>\]: Email address of the user.
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTraining?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining)
-
-
-
-
 

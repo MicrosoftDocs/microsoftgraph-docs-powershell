@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 Module Guid: 7e6b8624-bd9b-41cd-a450-7afc4492a4bc
 Download Help Link: {{ Update Download Link }}
@@ -117,6 +117,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementConfigurationPolicyJust](Get-MgBetaDeviceManagementConfigurationPolicyJust.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire.md)
@@ -342,6 +345,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust](Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById.md)
@@ -836,6 +842,9 @@ Locale: en-US
 ### [Set-MgBetaDeviceManagementConfigurationPolicy](Set-MgBetaDeviceManagementConfigurationPolicy.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaDeviceManagementConfigurationPolicyJust](Set-MgBetaDeviceManagementConfigurationPolicyJust.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile.md)
 {{ Fill in the Description }}
 
@@ -1024,5 +1033,4 @@ Locale: en-US
 
 ### [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty.md)
 {{ Fill in the Description }}
-
 

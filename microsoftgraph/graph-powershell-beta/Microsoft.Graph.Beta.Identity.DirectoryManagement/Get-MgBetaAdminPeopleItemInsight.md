@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaAdminPeopleItemInsight
 
 ## SYNOPSIS
-Get itemInsights from admin
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ## SYNTAX
 
@@ -19,7 +20,20 @@ Get-MgBetaAdminPeopleItemInsight [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Get itemInsights from admin
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,8 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeopleiteminsight)
-
-
-
-
 

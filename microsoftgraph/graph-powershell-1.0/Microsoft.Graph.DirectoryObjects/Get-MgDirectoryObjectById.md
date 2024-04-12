@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid
@@ -11,9 +11,6 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectById](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,35 +34,28 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.DirectoryObjects
+```
 
 $params = @{
 	ids = @(
-		"84b80893-8749-40a3-97b7-68513b600544"
-		"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
-		"0b944de3-e0fc-4774-a49a-b135213725ef"
-		"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
-	)
-	types = @(
-		"user"
-		"group"
-		"device"
-	)
+	"84b80893-8749-40a3-97b7-68513b600544"
+"5d6059b6-368d-45f8-91e1-8e07d485f1d0"
+"0b944de3-e0fc-4774-a49a-b135213725ef"
+"b75a5ab2-fe55-4463-bd31-d21ad555c6e0"
+)
+types = @(
+"user"
+"group"
+"device"
+)
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
-
-```
-This example shows how to use the Get-MgDirectoryObjectById Cmdlet.
-
 
 ## PARAMETERS
 
@@ -222,16 +212,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryObjectById](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid)
-
-
-
 

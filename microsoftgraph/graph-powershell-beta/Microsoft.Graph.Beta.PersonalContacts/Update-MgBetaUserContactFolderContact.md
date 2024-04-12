@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property contacts in users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -71,6 +68,22 @@ Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Update the navigation property contacts in users
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -417,7 +430,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImAddresses
-.
+The contact's instant messaging (IM) addresses.
 
 ```yaml
 Type: String[]
@@ -432,7 +445,7 @@ Accept wildcard characters: False
 ```
 
 ### -Initials
-.
+The contact's initials.
 
 ```yaml
 Type: String
@@ -478,7 +491,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-.
+The contact's job title.
 
 ```yaml
 Type: String
@@ -509,7 +522,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manager
-.
+The name of the contact's manager.
 
 ```yaml
 Type: String
@@ -524,7 +537,7 @@ Accept wildcard characters: False
 ```
 
 ### -MiddleName
-.
+The contact's middle name.
 
 ```yaml
 Type: String
@@ -557,7 +570,7 @@ Accept wildcard characters: False
 ```
 
 ### -NickName
-.
+The contact's nickname.
 
 ```yaml
 Type: String
@@ -572,7 +585,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfficeLocation
-.
+The location of the contact's office.
 
 ```yaml
 Type: String
@@ -587,7 +600,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentFolderId
-.
+The ID of the contact's parent folder.
 
 ```yaml
 Type: String
@@ -602,7 +615,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalNotes
-.
+The user's notes about the contact.
 
 ```yaml
 Type: String
@@ -617,7 +630,7 @@ Accept wildcard characters: False
 ```
 
 ### -Phones
-.
+Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
 To construct, see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
@@ -649,7 +662,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostalAddresses
-.
+Addresses associated with the contact, for example, home address and business address.
 To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
@@ -665,7 +678,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profession
-.
+The contact's profession.
 
 ```yaml
 Type: String
@@ -728,7 +741,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpouseName
-.
+The name of the contact's spouse/partner.
 
 ```yaml
 Type: String
@@ -743,7 +756,7 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-.
+The contact's surname.
 
 ```yaml
 Type: String
@@ -758,7 +771,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+The contact's title.
 
 ```yaml
 Type: String
@@ -788,7 +801,7 @@ Accept wildcard characters: False
 ```
 
 ### -Websites
-.
+Web sites associated with the contact.
 To construct, see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
@@ -804,7 +817,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeddingAnniversary
-.
+The contact's wedding anniversary.
 
 ```yaml
 Type: DateTime
@@ -819,7 +832,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiCompanyName
-.
+The phonetic Japanese company name of the contact.
 
 ```yaml
 Type: String
@@ -834,7 +847,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiGivenName
-.
+The phonetic Japanese given name (first name) of the contact.
 
 ```yaml
 Type: String
@@ -849,7 +862,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiSurname
-.
+The phonetic Japanese surname (last name) of the contact.
 
 ```yaml
 Type: String
@@ -911,188 +924,183 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphContact>`: contact
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String- `[]`>]`: 
-  - `[ChangeKey <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+BODYPARAMETER \<IMicrosoftGraphContact\>: contact
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Categories \<String\[\]\>\]: 
+  \[ChangeKey \<String\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssistantName <String>]`: The name of the contact's assistant.
-  - `[Birthday <DateTime?>]`: The contact's birthday.
+  \[AssistantName \<String\>\]: The name of the contact's assistant.
+  \[Birthday \<DateTime?\>\]: The contact's birthday.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Children <String- `[]`>]`: The names of the contact's children.
-  - `[CompanyName <String>]`: The name of the contact's company.
-  - `[Department <String>]`: The contact's department.
-  - `[DisplayName <String>]`: The contact's display name.
+  \[Children \<String\[\]\>\]: The names of the contact's children.
+  \[CompanyName \<String\>\]: The name of the contact's company.
+  \[Department \<String\>\]: The contact's department.
+  \[DisplayName \<String\>\]: The contact's display name.
 You can specify the display name in a create or update operation.
 Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
 To preserve a pre-existing value, always include it as displayName in an update operation.
-  - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress- `[]`>]`: The contact's email addresses.
-    - `[Address <String>]`: The email address of an entity instance.
-    - `[Name <String>]`: The display name of an entity instance.
-    - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string.
+  \[EmailAddresses \<IMicrosoftGraphTypedEmailAddress\[\]\>\]: The contact's email addresses.
+    \[Address \<String\>\]: The email address of an entity instance.
+    \[Name \<String\>\]: The display name of an entity instance.
+    \[OtherLabel \<String\>\]: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string.
 For example, you may use a specific email address for your volunteer activities.
 Set type to other, and set otherLabel to a custom string such as Volunteer work.
-    - `[Type <String>]`: emailType
-  - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the contact.
+    \[Type \<String\>\]: emailType
+  \[Extensions \<IMicrosoftGraphExtension\[\]\>\]: The collection of open extensions defined for the contact.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[FileAs <String>]`: The name the contact is filed under.
-  - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+  \[FileAs \<String\>\]: The name the contact is filed under.
+  \[Flag \<IMicrosoftGraphFollowupFlag\>\]: followupFlag
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[CompletedDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+      \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[FlagStatus <String>]`: followupFlagStatus
-    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Gender <String>]`: The contact's gender.
-  - `[Generation <String>]`: The contact's generation.
-  - `[GivenName <String>]`: The contact's given name.
-  - `[ImAddresses <String- `[]`>]`: 
-  - `[Initials <String>]`: 
-  - `[IsFavorite <Boolean?>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
+    \[DueDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[FlagStatus \<String\>\]: followupFlagStatus
+    \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[Gender \<String\>\]: The contact's gender.
+  \[Generation \<String\>\]: The contact's generation.
+  \[GivenName \<String\>\]: The contact's given name.
+  \[ImAddresses \<String\[\]\>\]: The contact's instant messaging (IM) addresses.
+  \[Initials \<String\>\]: The contact's initials.
+  \[IsFavorite \<Boolean?\>\]: 
+  \[JobTitle \<String\>\]: The contact's job title.
+  \[Manager \<String\>\]: The name of the contact's manager.
+  \[MiddleName \<String\>\]: The contact's middle name.
+  \[MultiValueExtendedProperties \<IMicrosoftGraphMultiValueLegacyExtendedProperty\[\]\>\]: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Value <String- `[]`>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
-  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: 
-    - `[Number <String>]`: The phone number.
-    - `[Type <String>]`: phoneType
-  - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Value \<String\[\]\>\]: A collection of property values.
+  \[NickName \<String\>\]: The contact's nickname.
+  \[OfficeLocation \<String\>\]: The location of the contact's office.
+  \[ParentFolderId \<String\>\]: The ID of the contact's parent folder.
+  \[PersonalNotes \<String\>\]: The user's notes about the contact.
+  \[Phones \<IMicrosoftGraphPhone\[\]\>\]: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
+    \[Number \<String\>\]: The phone number.
+    \[Type \<String\>\]: phoneType
+  \[Photo \<IMicrosoftGraphProfilePhoto\>\]: profilePhoto
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Height <Int32?>]`: The height of the photo.
+    \[Height \<Int32?\>\]: The height of the photo.
 Read-only.
-    - `[Width <Int32?>]`: The width of the photo.
+    \[Width \<Int32?\>\]: The width of the photo.
 Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: 
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+  \[PostalAddresses \<IMicrosoftGraphPhysicalAddress\[\]\>\]: Addresses associated with the contact, for example, home address and business address.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[PostOfficeBox <String>]`: The post office box number.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-    - `[Type <String>]`: physicalAddressType
-  - `[Profession <String>]`: 
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
+    \[PostOfficeBox \<String\>\]: The post office box number.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+    \[Type \<String\>\]: physicalAddressType
+  \[Profession \<String\>\]: The contact's profession.
+  \[SingleValueExtendedProperties \<IMicrosoftGraphSingleValueLegacyExtendedProperty\[\]\>\]: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: 
-    - `[Address <String>]`: The URL of the website.
-    - `[DisplayName <String>]`: The display name of the web site.
-    - `[Type <String>]`: websiteType
-  - `[WeddingAnniversary <DateTime?>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+    \[Value \<String\>\]: A property value.
+  \[SpouseName \<String\>\]: The name of the contact's spouse/partner.
+  \[Surname \<String\>\]: The contact's surname.
+  \[Title \<String\>\]: The contact's title.
+  \[Websites \<IMicrosoftGraphWebsite\[\]\>\]: Web sites associated with the contact.
+    \[Address \<String\>\]: The URL of the website.
+    \[DisplayName \<String\>\]: The display name of the web site.
+    \[Type \<String\>\]: websiteType
+  \[WeddingAnniversary \<DateTime?\>\]: The contact's wedding anniversary.
+  \[YomiCompanyName \<String\>\]: The phonetic Japanese company name of the contact.
+  \[YomiGivenName \<String\>\]: The phonetic Japanese given name (first name) of the contact.
+  \[YomiSurname \<String\>\]: The phonetic Japanese surname (last name)  of the contact.
 
-EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress- `[]`>: The contact's email addresses.
-  - `[Address <String>]`: The email address of an entity instance.
-  - `[Name <String>]`: The display name of an entity instance.
-  - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string.
+EMAILADDRESSES \<IMicrosoftGraphTypedEmailAddress\[\]\>: The contact's email addresses.
+  \[Address \<String\>\]: The email address of an entity instance.
+  \[Name \<String\>\]: The display name of an entity instance.
+  \[OtherLabel \<String\>\]: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string.
 For example, you may use a specific email address for your volunteer activities.
 Set type to other, and set otherLabel to a custom string such as Volunteer work.
-  - `[Type <String>]`: emailType
+  \[Type \<String\>\]: emailType
 
-EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the contact.
+EXTENSIONS \<IMicrosoftGraphExtension\[\]\>: The collection of open extensions defined for the contact.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}).
+FLAG \<IMicrosoftGraphFollowupFlag\>: followupFlag
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[CompletedDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DateTime \<String\>\]: A single point of time in a combined date and time representation ({date}T{time}).
 For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'.
+    \[TimeZone \<String\>\]: Represents a time zone, for example, 'Pacific Standard Time'.
 See below for possible values.
-  - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[FlagStatus <String>]`: followupFlagStatus
-  - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  \[DueDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
+  \[FlagStatus \<String\>\]: followupFlagStatus
+  \[StartDateTime \<IMicrosoftGraphDateTimeZone\>\]: dateTimeTimeZone
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>: The collection of multi-value extended properties defined for the contact.
+MULTIVALUEEXTENDEDPROPERTIES \<IMicrosoftGraphMultiValueLegacyExtendedProperty\[\]\>: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Value <String- `[]`>]`: A collection of property values.
+  \[Value \<String\[\]\>\]: A collection of property values.
 
-PHONES <IMicrosoftGraphPhone- `[]`>: .
-  - `[Number <String>]`: The phone number.
-  - `[Type <String>]`: phoneType
+PHONES \<IMicrosoftGraphPhone\[\]\>: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
+  \[Number \<String\>\]: The phone number.
+  \[Type \<String\>\]: phoneType
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+PHOTO \<IMicrosoftGraphProfilePhoto\>: profilePhoto
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Height <Int32?>]`: The height of the photo.
+  \[Height \<Int32?\>\]: The height of the photo.
 Read-only.
-  - `[Width <Int32?>]`: The width of the photo.
+  \[Width \<Int32?\>\]: The width of the photo.
 Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress- `[]`>: .
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+POSTALADDRESSES \<IMicrosoftGraphPhysicalAddress\[\]\>: Addresses associated with the contact, for example, home address and business address.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[PostOfficeBox <String>]`: The post office box number.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
-  - `[Type <String>]`: physicalAddressType
+  \[PostOfficeBox \<String\>\]: The post office box number.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
+  \[Type \<String\>\]: physicalAddressType
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>: The collection of single-value extended properties defined for the contact.
+SINGLEVALUEEXTENDEDPROPERTIES \<IMicrosoftGraphSingleValueLegacyExtendedProperty\[\]\>: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Value <String>]`: A property value.
+  \[Value \<String\>\]: A property value.
 
-WEBSITES <IMicrosoftGraphWebsite- `[]`>: .
-  - `[Address <String>]`: The URL of the website.
-  - `[DisplayName <String>]`: The display name of the web site.
-  - `[Type <String>]`: websiteType
+WEBSITES \<IMicrosoftGraphWebsite\[\]\>: Web sites associated with the contact.
+  \[Address \<String\>\]: The URL of the website.
+  \[DisplayName \<String\>\]: The display name of the web site.
+  \[Type \<String\>\]: websiteType
 
 ## RELATED LINKS
-[Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
-
-
-
-
 

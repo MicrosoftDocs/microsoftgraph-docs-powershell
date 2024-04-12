@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: c767240d-585c-42cb-bb2f-6e76e6d639d4
 Download Help Link: {{ Update Download Link }}
@@ -776,7 +776,13 @@ Locale: en-US
 ### [Remove-MgDeviceRegisteredOwnerByRef](Remove-MgDeviceRegisteredOwnerByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDeviceRegisteredUserByRef](Remove-MgDeviceRegisteredUserByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](Remove-MgDeviceRegisteredUserDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnit](Remove-MgDirectoryAdministrativeUnit.md)
@@ -786,6 +792,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitMemberByRef](Remove-MgDirectoryAdministrativeUnitMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef](Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](Remove-MgDirectoryAdministrativeUnitScopedRoleMember.md)
@@ -819,6 +828,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryRoleMemberByRef](Remove-MgDirectoryRoleMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectoryRoleMemberDirectoryObjectByRef](Remove-MgDirectoryRoleMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryRoleScopedMember](Remove-MgDirectoryRoleScopedMember.md)
@@ -1018,5 +1030,4 @@ Locale: en-US
 
 ### [Update-MgUserScopedRoleMemberOf](Update-MgUserScopedRoleMemberOf.md)
 {{ Fill in the Description }}
-
 

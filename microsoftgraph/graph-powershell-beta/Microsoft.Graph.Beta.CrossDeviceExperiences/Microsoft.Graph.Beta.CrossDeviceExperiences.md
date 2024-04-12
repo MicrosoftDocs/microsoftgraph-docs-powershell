@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
 Module Guid: 292e8ddf-b97f-4c33-908c-16f3d732c771
 Download Help Link: {{ Update Download Link }}
@@ -191,7 +191,13 @@ Locale: en-US
 ### [Remove-MgBetaUserDeviceRegisteredOwnerByRef](Remove-MgBetaUserDeviceRegisteredOwnerByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaUserDeviceRegisteredOwnerDirectoryObjectByRef](Remove-MgBetaUserDeviceRegisteredOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserDeviceRegisteredUserByRef](Remove-MgBetaUserDeviceRegisteredUserByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef](Remove-MgBetaUserDeviceRegisteredUserDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserDeviceUsageRights](Remove-MgBetaUserDeviceUsageRights.md)
@@ -217,5 +223,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserDeviceUsageRights](Update-MgBetaUserDeviceUsageRights.md)
 {{ Fill in the Description }}
-
 

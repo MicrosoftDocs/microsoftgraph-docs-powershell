@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroupbyref
@@ -15,20 +15,12 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 ### Delete (Default)
 ```
 Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
- -OnPremisesAgentGroupId <String> -OnPremisesAgentGroupId1 <String> -OnPremisesPublishingProfileId <String>
- -PublishedResourceId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
  -OnPremisesAgentGroupId <String> -OnPremisesPublishingProfileId <String> -PublishedResourceId <String>
  -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
  -InputObject <IApplicationsIdentity> -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
@@ -36,16 +28,24 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRe
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef
- -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -69,7 +69,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -111,21 +111,6 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesAgentGroupId
-The unique identifier of onPremisesAgentGroup
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OnPremisesAgentGroupId1
 The unique identifier of onPremisesAgentGroup
 
 ```yaml
@@ -145,7 +130,7 @@ The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -190,7 +175,7 @@ The unique identifier of publishedResource
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -262,45 +247,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
-  - `[AppId <String>]`: Alternate key of application
-  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
-  - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
-  - `[ApplicationId <String>]`: The unique identifier of application
-  - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
-  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
-  - `[ConnectorGroupId <String>]`: The unique identifier of connectorGroup
-  - `[ConnectorId <String>]`: The unique identifier of connector
-  - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[EndpointId <String>]`: The unique identifier of endpoint
-  - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
-  - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[Name <String>]`: Alternate key of federatedIdentityCredential
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OnPremisesAgentGroupId <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: The unique identifier of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: The unique identifier of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: The unique identifier of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: The unique identifier of publishedResource
-  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
-  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
-  - `[TargetDeviceGroupId <String>]`: The unique identifier of targetDeviceGroup
-  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
-  - `[UniqueName <String>]`: Alternate key of application
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IApplicationsIdentity\>: Identity Parameter
+  \[AppId \<String\>\]: Alternate key of application
+  \[AppManagementPolicyId \<String\>\]: The unique identifier of appManagementPolicy
+  \[AppRoleAssignmentId \<String\>\]: The unique identifier of appRoleAssignment
+  \[ApplicationId \<String\>\]: The unique identifier of application
+  \[ApplicationTemplateId \<String\>\]: The unique identifier of applicationTemplate
+  \[ClaimsMappingPolicyId \<String\>\]: The unique identifier of claimsMappingPolicy
+  \[ConnectorGroupId \<String\>\]: The unique identifier of connectorGroup
+  \[ConnectorId \<String\>\]: The unique identifier of connector
+  \[DelegatedPermissionClassificationId \<String\>\]: The unique identifier of delegatedPermissionClassification
+  \[DirectoryDefinitionId \<String\>\]: The unique identifier of directoryDefinition
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[EndpointId \<String\>\]: The unique identifier of endpoint
+  \[ExtensionPropertyId \<String\>\]: The unique identifier of extensionProperty
+  \[FederatedIdentityCredentialId \<String\>\]: The unique identifier of federatedIdentityCredential
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[HomeRealmDiscoveryPolicyId \<String\>\]: The unique identifier of homeRealmDiscoveryPolicy
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[Name \<String\>\]: Alternate key of federatedIdentityCredential
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OnPremisesAgentGroupId \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentGroupId1 \<String\>\]: The unique identifier of onPremisesAgentGroup
+  \[OnPremisesAgentId \<String\>\]: The unique identifier of onPremisesAgent
+  \[OnPremisesPublishingProfileId \<String\>\]: The unique identifier of onPremisesPublishingProfile
+  \[PublishedResourceId \<String\>\]: The unique identifier of publishedResource
+  \[ServicePrincipalId \<String\>\]: The unique identifier of servicePrincipal
+  \[SynchronizationJobId \<String\>\]: The unique identifier of synchronizationJob
+  \[SynchronizationTemplateId \<String\>\]: The unique identifier of synchronizationTemplate
+  \[TargetDeviceGroupId \<String\>\]: The unique identifier of targetDeviceGroup
+  \[TokenIssuancePolicyId \<String\>\]: The unique identifier of tokenIssuancePolicy
+  \[TokenLifetimePolicyId \<String\>\]: The unique identifier of tokenLifetimePolicy
+  \[UniqueName \<String\>\]: Alternate key of application
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroupbyref)
-
-
-
-
 
