@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Notes
 Module Guid: 21a6a116-6d91-49d3-a034-45218f5b5e72
 Download Help Link: {{ Update Download Link }}
@@ -352,4 +352,5 @@ Locale: en-US
 
 ### [Update-MgUserOnenoteSectionGroup](Update-MgUserOnenoteSectionGroup.md)
 {{ Fill in the Description }}
+
 
