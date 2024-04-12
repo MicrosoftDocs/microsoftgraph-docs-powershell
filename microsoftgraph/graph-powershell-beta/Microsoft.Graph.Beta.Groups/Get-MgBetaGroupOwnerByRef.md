@@ -37,13 +37,17 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-owners-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupOwner -GroupId $groupId
+```
+This example shows how to use the Get-MgBetaGroupOwnerByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

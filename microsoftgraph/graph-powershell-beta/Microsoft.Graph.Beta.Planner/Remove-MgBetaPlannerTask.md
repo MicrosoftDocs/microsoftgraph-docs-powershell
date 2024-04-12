@@ -36,13 +36,18 @@ Delete a plannerTask object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
-Remove-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="'
+Remove-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -IfMatch W/'"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="' 
+
+
+```
+This example shows how to use the Remove-MgBetaPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

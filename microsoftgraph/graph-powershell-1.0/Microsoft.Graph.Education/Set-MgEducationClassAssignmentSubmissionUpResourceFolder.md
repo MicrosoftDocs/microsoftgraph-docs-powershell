@@ -42,36 +42,48 @@ Only a student in the class can determine what files to upload in a given submis
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
+### Example 3: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 }
 
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,9 +51,8 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-post-attachments-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserOutlookTaskAttachment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
@@ -63,9 +62,10 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the New-MgBetaUserOutlookTaskAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaUserOutlookTaskAttachment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
@@ -78,6 +78,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOutlookTaskAttachment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

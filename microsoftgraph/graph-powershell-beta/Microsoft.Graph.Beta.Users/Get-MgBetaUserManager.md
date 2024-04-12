@@ -39,15 +39,17 @@ Optionally, you can expand the manager's chain up to the root node.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-manager-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get a user's manager
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgBetaUserManager -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 e1428c8c-4219-4beb-b5cb-765c2590278b
+```
+
+The commands gets the manager of the specified user.
 
 ## PARAMETERS
 

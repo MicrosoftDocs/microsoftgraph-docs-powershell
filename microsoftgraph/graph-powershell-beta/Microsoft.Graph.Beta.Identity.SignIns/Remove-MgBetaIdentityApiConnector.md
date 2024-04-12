@@ -36,13 +36,17 @@ Deletes an identityApiConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId
+```
+This example shows how to use the Remove-MgBetaIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

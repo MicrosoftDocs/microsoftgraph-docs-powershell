@@ -35,12 +35,13 @@ The response will indicate the status of the sync.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofilestatus-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
+This example shows how to use the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

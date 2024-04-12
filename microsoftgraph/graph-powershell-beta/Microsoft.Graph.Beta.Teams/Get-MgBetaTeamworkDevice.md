@@ -40,18 +40,20 @@ Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaTeamworkDevice Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTeamworkDevice Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice
 ```
+This example shows how to use the Get-MgBetaTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

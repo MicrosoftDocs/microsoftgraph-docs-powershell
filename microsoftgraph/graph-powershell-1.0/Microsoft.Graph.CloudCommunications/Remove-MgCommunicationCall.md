@@ -38,13 +38,17 @@ For group calls, this will only delete your call leg and the underlying group ca
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCall -CallId $callId
+
+```
+This example shows how to use the Remove-MgCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

@@ -29,14 +29,18 @@ Retrieve a list of plannertask objects assigned to a User.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-tasks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
+
+```
+This example shows how to use the Get-MgUserPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

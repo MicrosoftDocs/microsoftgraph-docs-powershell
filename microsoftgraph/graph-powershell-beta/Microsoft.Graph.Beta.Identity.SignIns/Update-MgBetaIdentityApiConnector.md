@@ -52,11 +52,10 @@ Update the properties of an identityApiConnector object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "New Test API"
@@ -69,11 +68,15 @@ $params = @{
 }
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaIdentityApiConnector Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Changing API connector to use client certificate authentication
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	authenticationConfiguration = @{
@@ -84,6 +87,11 @@ $params = @{
 }
 
 Update-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

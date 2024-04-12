@@ -52,9 +52,8 @@ New-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <IMi
 Create a timeCard instance in a schedule.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaTeamScheduleTimeCard Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	OnBehalfOfUserId = "a3601044-a1b5-438e-b742-f78d01d68a67"
@@ -90,6 +89,8 @@ $params = @{
 }
 New-MgBetaTeamScheduleTimeCard -TeamId $teamId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaTeamScheduleTimeCard Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
