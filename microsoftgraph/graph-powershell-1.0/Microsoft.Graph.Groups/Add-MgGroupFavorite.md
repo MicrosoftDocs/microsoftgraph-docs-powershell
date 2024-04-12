@@ -11,6 +11,9 @@ schema: 2.0.0
 Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Add (Default)
@@ -225,6 +228,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupfavorite)
 

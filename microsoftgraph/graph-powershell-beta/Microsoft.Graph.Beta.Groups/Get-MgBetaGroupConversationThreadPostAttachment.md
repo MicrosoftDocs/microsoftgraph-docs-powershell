@@ -13,6 +13,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -395,6 +398,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostattachment)
 

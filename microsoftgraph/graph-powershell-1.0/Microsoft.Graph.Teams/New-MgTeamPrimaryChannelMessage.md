@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a new chatMessage in the specified channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1019,6 +1022,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessage)
 

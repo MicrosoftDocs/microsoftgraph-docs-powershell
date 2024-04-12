@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/New-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -558,6 +561,7 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
+[New-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/New-MgSearchBookmark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark)
 

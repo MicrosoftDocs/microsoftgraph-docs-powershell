@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -259,6 +262,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Publish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Publish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/publish-mggroupdrivelistcontenttype)
 

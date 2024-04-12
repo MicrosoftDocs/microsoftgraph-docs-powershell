@@ -11,6 +11,9 @@ schema: 2.0.0
 A member added to an externalGroup.
 You can add Microsoft Entra users, Microsoft Entra groups, or other externalGroups as members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -348,6 +351,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectiongroupmember)
 

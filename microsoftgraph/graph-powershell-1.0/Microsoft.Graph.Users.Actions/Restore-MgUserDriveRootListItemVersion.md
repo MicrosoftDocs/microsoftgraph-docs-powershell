@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -246,6 +249,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaUserDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriverootlistitemversion)
 

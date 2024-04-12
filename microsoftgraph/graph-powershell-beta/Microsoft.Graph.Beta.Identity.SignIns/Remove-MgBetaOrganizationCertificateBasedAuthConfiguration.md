@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a certificateBasedAuthConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -294,6 +297,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration)
 

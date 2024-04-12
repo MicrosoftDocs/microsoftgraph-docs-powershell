@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the role of a conversationMember in a team or channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -347,6 +350,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmember)
 

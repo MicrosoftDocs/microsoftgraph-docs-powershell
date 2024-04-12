@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subcategories for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -274,6 +277,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategorysubcategory)
 

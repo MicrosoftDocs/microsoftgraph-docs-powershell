@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onenote from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathOnenote?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -279,6 +282,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathonenote)
 

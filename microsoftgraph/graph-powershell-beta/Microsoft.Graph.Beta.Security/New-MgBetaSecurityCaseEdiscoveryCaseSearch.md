@@ -11,6 +11,9 @@ ms.prod: ediscovery
 ## SYNOPSIS
 Create a new ediscoverySearch object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23865,6 +23868,7 @@ This property is read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permissionGrants in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -409,6 +412,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant)
 

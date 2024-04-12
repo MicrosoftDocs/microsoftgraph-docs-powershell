@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The \[set\] in which the relation is relevant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSetChildRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetChildRelationSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -311,6 +314,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreSetParentGroupSetChildRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetChildRelationSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetchildrelationset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetchildrelationset)
 

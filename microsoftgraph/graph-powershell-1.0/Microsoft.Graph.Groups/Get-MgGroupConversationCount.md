@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -209,6 +212,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupConversationCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationcount)
 

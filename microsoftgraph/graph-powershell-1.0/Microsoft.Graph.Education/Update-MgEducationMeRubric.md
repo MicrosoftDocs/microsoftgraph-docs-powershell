@@ -14,6 +14,9 @@ Updating a rubric attached to an assignment (PATCH /education/classes/{class-id}
 After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
 That rubric can be retrieved using GET /education/classes/{class-id}/assignments/{assignment-id}/rubric, but it cannot be updated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -457,6 +460,7 @@ QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
+[Update-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmerubric)
 

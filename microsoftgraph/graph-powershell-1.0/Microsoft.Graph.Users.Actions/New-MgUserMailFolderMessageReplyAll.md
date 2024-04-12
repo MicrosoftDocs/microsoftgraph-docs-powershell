@@ -15,6 +15,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageReplyAll?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -515,6 +518,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageReplyAll?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereplyall](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereplyall)
 

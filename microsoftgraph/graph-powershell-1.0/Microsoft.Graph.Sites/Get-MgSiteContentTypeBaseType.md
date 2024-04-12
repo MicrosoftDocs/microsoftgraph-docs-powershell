@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of content types that are ancestors of this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBaseType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -407,6 +410,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeBaseType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebasetype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebasetype)
 

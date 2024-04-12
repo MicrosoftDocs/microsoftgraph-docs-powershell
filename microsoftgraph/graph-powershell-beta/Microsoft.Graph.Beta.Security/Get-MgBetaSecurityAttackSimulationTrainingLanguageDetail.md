@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Details about the language used in the training.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -395,6 +398,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationTrainingLanguageDetail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTrainingLanguageDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraininglanguagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtraininglanguagedetail)
 

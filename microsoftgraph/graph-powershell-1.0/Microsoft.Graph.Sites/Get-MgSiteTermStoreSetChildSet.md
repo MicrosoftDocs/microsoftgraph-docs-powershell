@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The \[set\] in which the term is created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -317,6 +320,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteTermStoreSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetChildSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildset)
 

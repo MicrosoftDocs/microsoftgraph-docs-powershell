@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a bookmark object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -599,6 +602,7 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
+[Update-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
 

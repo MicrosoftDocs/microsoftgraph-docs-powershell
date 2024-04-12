@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -242,6 +245,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype)
 

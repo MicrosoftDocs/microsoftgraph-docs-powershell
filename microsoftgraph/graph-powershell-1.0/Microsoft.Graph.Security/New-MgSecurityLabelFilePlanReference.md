@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Create a new filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -239,6 +242,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
 

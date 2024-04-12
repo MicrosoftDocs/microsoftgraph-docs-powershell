@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -335,6 +338,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Search-MgBetaGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdriveroot)
 

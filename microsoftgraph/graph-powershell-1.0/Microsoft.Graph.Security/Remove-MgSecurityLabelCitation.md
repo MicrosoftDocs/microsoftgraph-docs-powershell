@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Delete a citationTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -260,6 +263,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation)
 

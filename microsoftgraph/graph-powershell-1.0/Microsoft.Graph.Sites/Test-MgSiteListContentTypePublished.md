@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -214,6 +217,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Test-MgBetaSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Sites/Test-MgBetaSiteListContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/test-mgsitelistcontenttypepublished)
 

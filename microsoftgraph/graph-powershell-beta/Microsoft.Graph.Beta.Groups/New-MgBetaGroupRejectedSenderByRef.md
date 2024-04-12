@@ -13,6 +13,9 @@ Specify the user or group in @odata.id in the request body.
 Users in the rejected senders list can't post to conversations of the group (identified in the POST request URL).
 Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -304,6 +307,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupRejectedSenderByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagrouprejectedsenderbyref)
 

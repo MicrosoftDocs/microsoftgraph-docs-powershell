@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -494,6 +497,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistoperation)
 

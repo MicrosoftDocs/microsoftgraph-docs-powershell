@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a plannerPlan object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -204,6 +207,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan)
 

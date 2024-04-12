@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15602,6 +15605,7 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
+[Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
 

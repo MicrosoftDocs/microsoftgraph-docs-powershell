@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property list for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -242,6 +245,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelist)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new qna object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -498,6 +501,7 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
+[New-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
 

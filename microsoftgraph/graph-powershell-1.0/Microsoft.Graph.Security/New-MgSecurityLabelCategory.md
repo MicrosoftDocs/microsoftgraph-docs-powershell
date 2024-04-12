@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Create a new categoryTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -297,6 +300,7 @@ For example, if a user changes their display name, the API might show the new va
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategory)
 

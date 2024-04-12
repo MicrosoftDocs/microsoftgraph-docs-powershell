@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property canvasLayout for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,6 +260,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepageassitepagecanvalayout)
 

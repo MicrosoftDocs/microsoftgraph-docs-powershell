@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[sitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -23349,6 +23352,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgSitePage](/powershell/module/Microsoft.Graph.Sites/New-MgSitePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepage)
 

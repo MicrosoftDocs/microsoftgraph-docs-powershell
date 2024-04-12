@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -374,6 +377,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistsubscription)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Rename a specific Cloud PC.
 Use this API to update the displayName for the Cloud PC entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Rename-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RenameExpanded (Default)
@@ -314,6 +317,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Rename-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpc)
 

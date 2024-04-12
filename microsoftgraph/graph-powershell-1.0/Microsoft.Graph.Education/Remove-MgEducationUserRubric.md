@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -232,6 +235,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserrubric)
 

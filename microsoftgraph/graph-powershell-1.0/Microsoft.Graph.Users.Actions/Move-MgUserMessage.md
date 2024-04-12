@@ -11,6 +11,9 @@ schema: 2.0.0
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermessage)
 

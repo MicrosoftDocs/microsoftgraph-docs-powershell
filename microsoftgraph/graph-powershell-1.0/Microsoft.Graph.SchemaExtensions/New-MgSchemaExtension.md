@@ -15,6 +15,9 @@ The app that creates a schema extension is the owner app.
 Depending on the state of the extension, the owner app, and only the owner app, may update or delete the extension.
 See examples of how to define a schema extension that describes a training course, use the schema extension definition to create a new group with training course data, and add training course data to an existing group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -392,6 +395,7 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
 
 ## RELATED LINKS
+[New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension)
 

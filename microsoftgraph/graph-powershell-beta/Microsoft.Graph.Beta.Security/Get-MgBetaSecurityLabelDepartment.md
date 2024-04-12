@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a departmentTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelDepartment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -382,6 +385,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelDepartment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabeldepartment)
 

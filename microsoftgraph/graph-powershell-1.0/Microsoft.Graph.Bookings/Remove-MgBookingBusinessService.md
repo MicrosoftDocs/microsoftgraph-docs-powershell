@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookingService object in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessService?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -236,6 +239,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
 

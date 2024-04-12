@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function reminderView
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### View (Default)
@@ -273,6 +276,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
 

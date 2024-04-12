@@ -12,6 +12,9 @@ Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -826,6 +829,7 @@ Some settings are inherited from the template.
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob)
 

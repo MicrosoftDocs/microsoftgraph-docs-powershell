@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function isPublished
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Is (Default)
@@ -198,6 +201,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished)
 

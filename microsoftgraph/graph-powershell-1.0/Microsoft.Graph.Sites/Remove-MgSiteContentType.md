@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,6 +260,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitecontenttype)
 

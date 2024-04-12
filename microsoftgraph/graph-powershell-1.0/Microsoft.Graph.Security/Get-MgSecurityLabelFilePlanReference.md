@@ -11,6 +11,9 @@ ms.prod: security
 ## SYNOPSIS
 Read the properties and relationships of a filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -358,6 +361,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference)
 

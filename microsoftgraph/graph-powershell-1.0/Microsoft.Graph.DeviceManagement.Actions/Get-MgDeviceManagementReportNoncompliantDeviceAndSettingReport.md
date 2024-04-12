@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -362,6 +365,7 @@ BODYPARAMETER `<IPaths11Lc6EuDevicemanagementReportsMicrosoftGraphGetnoncomplian
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportnoncompliantdeviceandsettingreport)
 

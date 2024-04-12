@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a qna object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -575,6 +578,7 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
+[Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna)
 

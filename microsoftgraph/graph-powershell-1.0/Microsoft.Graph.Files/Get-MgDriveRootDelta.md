@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -365,6 +368,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootDelta](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootdelta)
 

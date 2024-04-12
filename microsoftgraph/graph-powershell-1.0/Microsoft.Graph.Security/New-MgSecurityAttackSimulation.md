@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1059,6 +1062,7 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
   - `[SettingType <String>]`: trainingSettingType
 
 ## RELATED LINKS
+[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation)
 

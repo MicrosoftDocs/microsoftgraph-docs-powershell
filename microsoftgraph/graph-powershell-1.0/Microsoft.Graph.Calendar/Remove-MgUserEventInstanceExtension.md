@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -259,6 +262,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventInstanceExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceextension)
 

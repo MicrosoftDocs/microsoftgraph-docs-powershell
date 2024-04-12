@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -406,6 +409,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Copy-MgGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupsitecontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupsitecontenttypetodefaultcontentlocation)
 

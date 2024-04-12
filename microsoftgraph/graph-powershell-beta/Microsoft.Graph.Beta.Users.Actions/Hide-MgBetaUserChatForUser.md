@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Hide a chat for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### HideExpanded (Default)
@@ -347,6 +350,7 @@ This property is read-only.
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Hide-MgUserChatForUser](/powershell/module/Microsoft.Graph.Users.Actions/Hide-MgUserChatForUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/hide-mgbetauserchatforuser)
 

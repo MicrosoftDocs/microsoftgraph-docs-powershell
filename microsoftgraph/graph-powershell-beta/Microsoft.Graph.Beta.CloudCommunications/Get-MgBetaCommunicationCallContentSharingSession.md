@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a contentSharingSession object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -332,6 +335,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession)
 

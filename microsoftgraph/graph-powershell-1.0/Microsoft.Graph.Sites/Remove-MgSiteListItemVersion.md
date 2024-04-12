@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property versions for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -291,6 +294,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemversion)
 

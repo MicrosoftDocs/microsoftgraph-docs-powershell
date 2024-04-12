@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a conversationMember to a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -352,6 +355,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatmember)
 
