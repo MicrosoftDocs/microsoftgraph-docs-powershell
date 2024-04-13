@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a OneNote page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenotePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaUserOnenotePage -InputObject <INotesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a OneNote page.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -223,6 +229,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserOnenotePage](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetauseronenotepage)
 

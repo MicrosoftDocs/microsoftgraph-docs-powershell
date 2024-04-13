@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -380,6 +383,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemDelta?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemdelta)
 

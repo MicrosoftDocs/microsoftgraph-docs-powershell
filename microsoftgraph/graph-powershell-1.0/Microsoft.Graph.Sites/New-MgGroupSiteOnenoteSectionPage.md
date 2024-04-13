@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new page in the specified section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgGroupSiteOnenoteSectionPage -InputObject <ISitesIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Create a new page in the specified section.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-post-pages-permissions.md)]
 
 ## EXAMPLES
 
@@ -929,6 +935,7 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectionpage)
 

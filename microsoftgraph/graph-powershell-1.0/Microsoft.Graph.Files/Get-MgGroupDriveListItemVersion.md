@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -37,6 +40,9 @@ Get-MgGroupDriveListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -371,6 +377,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemversion)
 

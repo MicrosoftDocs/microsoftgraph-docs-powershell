@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Uninstall an app installed within a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Uninstall an app installed within a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-installedapps-permissions.md)]
 
 ## EXAMPLES
 
@@ -262,6 +268,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatinstalledapp)
 

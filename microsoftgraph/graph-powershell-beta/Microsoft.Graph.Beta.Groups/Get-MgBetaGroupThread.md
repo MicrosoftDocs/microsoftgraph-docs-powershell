@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a thread object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -34,6 +37,9 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Re
 
 ## DESCRIPTION
 Get a thread object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-thread-permissions.md)]
 
 ## EXAMPLES
 
@@ -323,6 +329,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthread)
 

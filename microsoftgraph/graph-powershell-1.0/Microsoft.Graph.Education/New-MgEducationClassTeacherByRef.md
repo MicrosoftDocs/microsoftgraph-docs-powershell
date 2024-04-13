@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a teacher to a class.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -42,6 +45,9 @@ New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParamete
 
 ## DESCRIPTION
 Add a teacher to a class.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-teachers-permissions.md)]
 
 ## EXAMPLES
 
@@ -265,6 +271,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref)
 

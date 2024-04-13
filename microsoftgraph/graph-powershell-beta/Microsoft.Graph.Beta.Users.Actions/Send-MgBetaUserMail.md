@@ -14,6 +14,9 @@ When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserMail](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -53,6 +56,9 @@ When using JSON format, you can include an attachment and use a mention to call 
 When using MIME format: This method saves the message in the Sent Items folder.
 Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-sendmail-permissions.md)]
 
 ## EXAMPLES
 
@@ -685,6 +691,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
 ## RELATED LINKS
+[Send-MgUserMail](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermail)
 

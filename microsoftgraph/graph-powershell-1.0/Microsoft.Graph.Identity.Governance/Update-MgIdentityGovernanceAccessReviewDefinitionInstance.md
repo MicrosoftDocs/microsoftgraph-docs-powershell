@@ -13,6 +13,9 @@ Only the reviewers and fallbackReviewers properties can be updated but the scope
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, it's status must be InProgress.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -59,6 +62,9 @@ Update the properties of an accessReviewInstance object.
 Only the reviewers and fallbackReviewers properties can be updated but the scope property is also required in the request body.
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, it's status must be InProgress.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -836,6 +842,7 @@ Supports $orderby, and $filter (eq only).
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance)
 

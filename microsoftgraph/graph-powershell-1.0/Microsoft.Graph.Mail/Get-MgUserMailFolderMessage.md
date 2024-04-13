@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of messages in the mailFolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -333,6 +336,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessage)
 

@@ -16,6 +16,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -60,6 +63,9 @@ Specifying both or specifying neither will return an HTTP 400 Bad Request error.
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to forward a message, and send it later.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-forward-permissions.md)]
 
 ## EXAMPLES
 
@@ -582,6 +588,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[Invoke-MgBetaForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfolderchildfoldermessage)
 

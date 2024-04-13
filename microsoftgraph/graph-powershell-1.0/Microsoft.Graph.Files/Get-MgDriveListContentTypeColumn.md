@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -355,6 +361,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecolumn)
 

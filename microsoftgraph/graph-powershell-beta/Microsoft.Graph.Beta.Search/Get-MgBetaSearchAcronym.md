@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Read the properties and relationships of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-acronym-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -318,6 +324,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym)
 

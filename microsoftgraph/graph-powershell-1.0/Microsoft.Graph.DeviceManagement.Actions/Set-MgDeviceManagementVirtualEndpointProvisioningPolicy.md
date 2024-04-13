@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a cloudPcProvisioningPolicy to user groups.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -46,6 +49,9 @@ Set-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Assign a cloudPcProvisioningPolicy to user groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-assign-permissions.md)]
 
 ## EXAMPLES
 
@@ -9666,6 +9672,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointprovisioningpolicy)
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetauserpasswordsinglesignoncredential
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Remove-MgBetaUserPasswordSingleSignOnCredential
@@ -45,6 +46,9 @@ Remove-MgBetaUserPasswordSingleSignOnCredential -InputObject <IUsersActionsIdent
 
 ## DESCRIPTION
 Delete the password-based single sign-on credentials for a given user to a given service principal.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-deletepasswordsinglesignoncredentials-permissions.md)]
 
 ## EXAMPLES
 

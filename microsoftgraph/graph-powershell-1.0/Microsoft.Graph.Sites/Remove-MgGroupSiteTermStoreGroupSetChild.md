@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property children for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -381,6 +384,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroupsetchild)
 

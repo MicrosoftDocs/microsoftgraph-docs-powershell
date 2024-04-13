@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.prod: people
 ---
 
 # New-MgAdminPeopleProfileCardProperty
@@ -11,6 +12,9 @@ schema: 2.0.0
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +36,9 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardP
 Create a new profileCardProperty for an organization.
 The new property is identified by its directoryPropertyName property.
 For more information about how to add properties to the profile card for an organization, see Add or remove custom attributes on a profile card using the profile card API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/peopleadminsettings-post-profilecardproperties-permissions.md)]
 
 ## EXAMPLES
 
@@ -243,6 +250,7 @@ When present, the Microsoft Entra ID field referenced in this property is visibl
 Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
 ## RELATED LINKS
+[New-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
 

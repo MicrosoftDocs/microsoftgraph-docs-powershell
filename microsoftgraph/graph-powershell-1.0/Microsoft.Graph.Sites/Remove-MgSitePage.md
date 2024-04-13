@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property pages for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -257,6 +260,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitepage)
 

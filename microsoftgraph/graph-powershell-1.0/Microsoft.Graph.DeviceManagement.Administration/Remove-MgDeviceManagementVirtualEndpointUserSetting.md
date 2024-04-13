@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a cloudPcUserSetting object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 
 ## DESCRIPTION
 Delete a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -224,6 +230,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointusersetting)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -189,6 +192,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportTeamActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount)
 

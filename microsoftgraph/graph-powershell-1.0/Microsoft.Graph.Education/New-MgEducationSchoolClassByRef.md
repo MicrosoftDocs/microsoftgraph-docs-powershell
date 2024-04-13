@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a class to a school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -42,6 +45,9 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 
 ## DESCRIPTION
 Add a class to a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-classes-permissions.md)]
 
 ## EXAMPLES
 
@@ -265,6 +271,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
 

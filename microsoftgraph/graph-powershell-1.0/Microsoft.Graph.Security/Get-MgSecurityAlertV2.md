@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of an alert object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -35,6 +38,9 @@ Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of an alert object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -356,6 +362,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2)
 

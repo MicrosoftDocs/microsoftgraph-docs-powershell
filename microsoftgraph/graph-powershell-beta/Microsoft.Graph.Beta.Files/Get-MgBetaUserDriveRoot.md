@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -211,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveroot)
 

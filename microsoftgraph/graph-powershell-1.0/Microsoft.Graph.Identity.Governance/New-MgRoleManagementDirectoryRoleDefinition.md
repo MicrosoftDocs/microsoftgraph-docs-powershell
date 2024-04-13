@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -33,6 +36,9 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ## DESCRIPTION
 Create a new custom unifiedRoleDefinition object.
 This feature requires a Microsoft Entra ID P1 or P2 license.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roledefinitions-permissions.md)]
 
 ## EXAMPLES
 
@@ -433,6 +439,7 @@ Not supported for custom roles.
 Not yet supported.
 
 ## RELATED LINKS
+[New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroledefinition)
 

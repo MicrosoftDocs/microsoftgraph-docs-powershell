@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to children for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -80,6 +83,9 @@ New-MgBetaDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 
 ## DESCRIPTION
 Create new navigation property to children for drives
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
 
 ## EXAMPLES
 
@@ -55161,6 +55167,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemchild)
 

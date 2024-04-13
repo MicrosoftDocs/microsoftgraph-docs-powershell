@@ -21,6 +21,9 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCase
 
 ## SYNOPSIS
 Delete an ediscoveryCase object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Remove-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete an ediscoveryCase object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-casesroot-delete-ediscoverycases-permissions.md)]
 
 ## EXAMPLES
 
@@ -256,6 +263,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase)
 

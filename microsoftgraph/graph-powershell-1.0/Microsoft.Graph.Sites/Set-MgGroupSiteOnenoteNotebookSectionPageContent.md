@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -322,6 +325,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Set-MgBetaGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotenotebooksectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenotenotebooksectionpagecontent)
 

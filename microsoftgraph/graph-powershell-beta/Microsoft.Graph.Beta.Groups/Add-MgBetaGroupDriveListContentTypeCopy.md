@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addCopy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupDriveListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgBetaGroupDriveListContentTypeCopy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Invoke action addCopy
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 
@@ -297,6 +303,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgGroupDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupDriveListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupdrivelistcontenttypecopy)
 

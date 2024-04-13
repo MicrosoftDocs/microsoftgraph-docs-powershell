@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-filesfolder-permissions.md)]
 
 ## EXAMPLES
 
@@ -213,6 +219,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelfilefolder)
 

@@ -15,6 +15,9 @@ During the submit process, all the resources are copied from submittedResources 
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unsubmit (Default)
@@ -38,6 +41,9 @@ This method changes the status of the submission from submitted to working.
 During the submit process, all the resources are copied from submittedResources to  workingResources.
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-unsubmit-permissions.md)]
 
 ## EXAMPLES
 
@@ -212,6 +218,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationmeassignmentsubmission)
 

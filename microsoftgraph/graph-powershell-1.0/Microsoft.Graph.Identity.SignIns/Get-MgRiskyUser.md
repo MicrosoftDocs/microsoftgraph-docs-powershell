@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a riskyUser object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -35,6 +38,9 @@ Get-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a riskyUser object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -348,6 +354,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser)
 

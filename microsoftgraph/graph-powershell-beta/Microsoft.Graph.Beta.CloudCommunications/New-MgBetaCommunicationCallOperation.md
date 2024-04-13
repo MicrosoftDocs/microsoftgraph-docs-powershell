@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -322,6 +325,7 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
+[New-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcalloperation)
 

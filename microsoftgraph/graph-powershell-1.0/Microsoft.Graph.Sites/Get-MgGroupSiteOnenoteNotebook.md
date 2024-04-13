@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -370,6 +376,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebook)
 

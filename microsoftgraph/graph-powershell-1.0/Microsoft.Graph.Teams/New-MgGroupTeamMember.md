@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a new conversationMember to a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -43,6 +46,9 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Add a new conversationMember to a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-post-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -328,6 +334,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteammember)
 

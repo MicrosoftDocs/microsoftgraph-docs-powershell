@@ -30,6 +30,9 @@ New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ## DESCRIPTION
 Create a new cloudPcExternalPartnerSetting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-externalpartnersettings-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

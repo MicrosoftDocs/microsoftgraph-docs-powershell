@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,9 @@ Remove-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -312,6 +318,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistcontenttypecolumn)
 

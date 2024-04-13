@@ -21,6 +21,9 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Read the properties of a b2cAuthenticationMethodsPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cauthenticationmethodspolicy-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

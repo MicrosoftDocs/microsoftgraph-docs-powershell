@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesearch
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
 Update the properties of an ediscoverySearch object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -58,6 +62,9 @@ Update-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoverySearch object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverysearch-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -23868,6 +23875,7 @@ This property is read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasesearch)
 

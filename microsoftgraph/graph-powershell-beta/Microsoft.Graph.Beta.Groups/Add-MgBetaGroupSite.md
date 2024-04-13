@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgBetaGroupSite -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 
@@ -15443,6 +15449,7 @@ Read-only.
     - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Add-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupsite)
 

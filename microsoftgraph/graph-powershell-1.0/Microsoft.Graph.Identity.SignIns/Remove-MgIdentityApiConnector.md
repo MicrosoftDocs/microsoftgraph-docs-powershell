@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an identityApiConnector object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete an identityApiConnector object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityapiconnector-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -251,6 +257,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityapiconnector)
 

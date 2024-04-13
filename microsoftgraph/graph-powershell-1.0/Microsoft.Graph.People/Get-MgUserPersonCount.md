@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -173,6 +176,7 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount)
 

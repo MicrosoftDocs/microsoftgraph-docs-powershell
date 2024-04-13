@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
 Update the properties of an ediscoveryReviewSetQuery object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -49,6 +53,9 @@ Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Update the properties of an ediscoveryReviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -480,6 +487,7 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery)
 

@@ -12,6 +12,9 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -421,6 +424,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebooksectiongroupsectionpage)
 

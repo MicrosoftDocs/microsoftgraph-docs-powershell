@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -44,6 +47,9 @@ New-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]
 
 ## EXAMPLES
 
@@ -324,6 +330,7 @@ Read-only.
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
+[New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
 

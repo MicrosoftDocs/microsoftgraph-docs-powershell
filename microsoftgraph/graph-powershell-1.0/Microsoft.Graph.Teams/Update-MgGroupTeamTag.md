@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a tag object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -44,6 +47,9 @@ Update-MgGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of a tag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -397,6 +403,7 @@ Read-only.
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
+[Update-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamtag)
 

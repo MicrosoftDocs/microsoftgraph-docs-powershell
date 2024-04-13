@@ -15,6 +15,9 @@ Additionally, a user must always have a mobile phone before adding an alternateM
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -54,6 +57,9 @@ This means, for example, adding a mobile phone to a user with a pre-existing mob
 Additionally, a user must always have a mobile phone before adding an alternateMobile phone.
 Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
 Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-post-phonemethods-permissions.md)]
 
 ## EXAMPLES
 
@@ -359,6 +365,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod)
 

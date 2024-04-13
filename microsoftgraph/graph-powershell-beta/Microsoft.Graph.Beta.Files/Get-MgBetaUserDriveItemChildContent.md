@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property children from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemChildContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaUserDriveItemChildContent -InputObject <IFilesIdentity> [-Format <Stri
 
 ## DESCRIPTION
 Get content for the navigation property children from users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
 
 ## EXAMPLES
 
@@ -256,6 +262,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemChildContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemchildcontent)
 

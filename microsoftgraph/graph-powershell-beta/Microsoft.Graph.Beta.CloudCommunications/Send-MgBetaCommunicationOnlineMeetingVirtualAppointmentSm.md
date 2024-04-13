@@ -12,6 +12,9 @@ Send an SMS notification to external attendees when a Teams Virtual Appointment 
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgCommunicationOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -50,6 +53,9 @@ Send-MgBetaCommunicationOnlineMeetingVirtualAppointmentSm -InputObject <ICloudCo
 Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## EXAMPLES
 
@@ -305,6 +311,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgCommunicationOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingvirtualappointmentsm)
 

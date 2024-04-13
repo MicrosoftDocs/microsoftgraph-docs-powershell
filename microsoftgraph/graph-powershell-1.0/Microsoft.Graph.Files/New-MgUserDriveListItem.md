@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -56,6 +59,9 @@ New-MgUserDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
 
 ## EXAMPLES
 
@@ -24166,6 +24172,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaUserDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistitem)
 

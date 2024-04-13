@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String>
 
 ## DESCRIPTION
 The content stream for this version of the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 
@@ -211,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent)
 

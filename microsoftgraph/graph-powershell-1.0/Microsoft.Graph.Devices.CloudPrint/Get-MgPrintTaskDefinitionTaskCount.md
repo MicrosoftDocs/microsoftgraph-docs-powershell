@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinitionTaskCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinitionTaskCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -181,6 +184,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPrintTaskDefinitionTaskCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinitionTaskCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontaskcount](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontaskcount)
 

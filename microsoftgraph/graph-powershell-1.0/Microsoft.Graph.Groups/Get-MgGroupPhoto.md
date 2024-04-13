@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's profile photo
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -330,6 +333,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphoto)
 

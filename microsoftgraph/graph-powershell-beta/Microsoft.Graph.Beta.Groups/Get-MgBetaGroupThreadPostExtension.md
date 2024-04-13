@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgBetaGroupThreadPostExtension
@@ -11,6 +12,9 @@ schema: 2.0.0
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -375,6 +379,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupthreadpostextension)
 

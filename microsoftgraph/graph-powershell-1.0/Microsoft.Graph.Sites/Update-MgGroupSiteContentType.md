@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a \[content type\]\[contentType\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -55,6 +58,9 @@ Update-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update a \[content type\]\[contentType\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -1854,6 +1860,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecontenttype)
 

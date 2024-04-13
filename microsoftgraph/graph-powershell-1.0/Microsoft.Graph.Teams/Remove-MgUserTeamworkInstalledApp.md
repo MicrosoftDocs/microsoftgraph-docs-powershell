@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Uninstall an app from the personal scope of the specified user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Uninstall an app from the personal scope of the specified user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-delete-installedapps-permissions.md)]
 
 ## EXAMPLES
 
@@ -244,6 +250,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp)
 

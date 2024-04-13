@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicates which terms have been pinned or reused directly under the set.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -422,6 +425,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetRelation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetrelation)
 

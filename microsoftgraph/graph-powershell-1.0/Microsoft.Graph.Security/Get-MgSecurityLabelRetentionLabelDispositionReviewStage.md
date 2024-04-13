@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -373,6 +376,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldispositionreviewstage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldispositionreviewstage)
 

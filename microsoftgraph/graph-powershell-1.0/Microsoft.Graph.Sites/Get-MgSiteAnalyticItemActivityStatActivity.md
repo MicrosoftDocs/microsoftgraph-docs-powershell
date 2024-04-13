@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the itemActivities represented in this itemActivityStat resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticitemactivitystatactivity)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a cloudPcProvisioningPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -56,6 +59,9 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Update the properties of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -10015,6 +10021,7 @@ WINDOWSSETTING `<IMicrosoftGraphCloudPcWindowsSetting>`: cloudPcWindowsSetting
 The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
+[Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy)
 

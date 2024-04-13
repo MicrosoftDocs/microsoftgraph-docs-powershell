@@ -32,6 +32,9 @@ New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphMana
 ## DESCRIPTION
 Create a new tenantTag object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managedtenant-post-tenanttags-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

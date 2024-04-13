@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentityS
 
 ## DESCRIPTION
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/microsoftauthenticatorauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -266,6 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationmicrosoftauthenticatormethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationmicrosoftauthenticatormethod)
 

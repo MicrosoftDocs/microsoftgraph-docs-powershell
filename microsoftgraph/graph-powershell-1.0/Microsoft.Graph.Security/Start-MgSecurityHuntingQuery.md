@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action runHuntingQuery
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RunExpanded (Default)
@@ -187,6 +190,7 @@ BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostReq
   - `[Query <String>]`:
 
 ## RELATED LINKS
+[Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgBetaSecurityHuntingQuery?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/start-mgsecurityhuntingquery)
 

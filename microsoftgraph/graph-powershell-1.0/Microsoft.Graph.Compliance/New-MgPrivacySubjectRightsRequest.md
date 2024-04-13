@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # New-MgPrivacySubjectRightsRequest
 
 ## SYNOPSIS
 Create a new subjectRightsRequest object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,6 +42,9 @@ New-MgPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRightsRe
 
 ## DESCRIPTION
 Create a new subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -19591,6 +19598,7 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[New-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest)
 

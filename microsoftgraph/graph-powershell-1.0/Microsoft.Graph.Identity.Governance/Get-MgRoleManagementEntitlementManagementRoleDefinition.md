@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -38,6 +41,9 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 ## DESCRIPTION
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -366,6 +372,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition)
 

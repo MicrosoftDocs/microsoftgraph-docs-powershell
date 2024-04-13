@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -52,6 +55,9 @@ New-MgGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-permissions-permissions.md)]
 
 ## EXAMPLES
 
@@ -695,6 +701,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[New-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepermission)
 

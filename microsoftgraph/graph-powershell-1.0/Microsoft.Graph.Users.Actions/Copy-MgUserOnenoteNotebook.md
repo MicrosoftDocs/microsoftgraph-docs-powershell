@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -46,6 +49,9 @@ Copy-MgUserOnenoteNotebook -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-copynotebook-permissions.md)]
 
 ## EXAMPLES
 
@@ -348,6 +354,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotenotebook)
 

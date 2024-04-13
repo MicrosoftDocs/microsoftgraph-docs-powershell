@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityLabelCitation
 
 ## SYNOPSIS
 Read the properties and relationships of a citationTemplate object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -357,6 +361,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcitation)
 

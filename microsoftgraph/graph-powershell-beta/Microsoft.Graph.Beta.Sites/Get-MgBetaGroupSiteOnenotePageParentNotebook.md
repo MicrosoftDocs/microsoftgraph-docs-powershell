@@ -11,6 +11,9 @@ schema: 2.0.0
 The notebook that contains the page.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenotePageParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenotePageParentNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -252,6 +255,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenotePageParentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenotePageParentNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotepageparentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotepageparentnotebook)
 

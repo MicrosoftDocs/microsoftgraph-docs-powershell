@@ -45,6 +45,9 @@ New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 ## DESCRIPTION
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-customquestions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChildContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgUserDriveRootChildContent -InputObject <IFilesIdentity> [-Format <String>]
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-list-children-permissions.md)]
 
 ## EXAMPLES
 
@@ -241,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDriveRootChildContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootChildContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootchildcontent)
 

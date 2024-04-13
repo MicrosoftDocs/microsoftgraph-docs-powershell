@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get allTime from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -207,6 +210,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootAnalyticTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalytictime)
 

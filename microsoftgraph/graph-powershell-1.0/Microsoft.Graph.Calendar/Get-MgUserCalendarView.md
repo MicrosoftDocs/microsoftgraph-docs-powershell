@@ -12,6 +12,9 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -34,6 +37,9 @@ Get-MgUserCalendarView -UserId <String> -CalendarId <String> -EndDateTime <Strin
 The calendar view for the calendar.
 Navigation property.
 Read-only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-calendarview-permissions.md)]
 
 ## EXAMPLES
 
@@ -286,6 +292,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaUserCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarView?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarview)
 

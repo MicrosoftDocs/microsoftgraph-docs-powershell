@@ -12,6 +12,9 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModuleResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -47,6 +50,9 @@ New-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity>
 Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-post-resources-permissions.md)]
 
 ## EXAMPLES
 
@@ -319,6 +325,7 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[New-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModuleResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmoduleresource)
 

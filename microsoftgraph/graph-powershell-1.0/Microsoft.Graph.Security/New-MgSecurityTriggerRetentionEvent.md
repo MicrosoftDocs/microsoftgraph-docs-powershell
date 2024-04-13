@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -33,6 +36,9 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 
 ## DESCRIPTION
 Create a new retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -505,6 +511,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
 

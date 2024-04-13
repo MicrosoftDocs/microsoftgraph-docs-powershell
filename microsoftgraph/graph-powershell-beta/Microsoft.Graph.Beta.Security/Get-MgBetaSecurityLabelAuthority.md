@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a authorityTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelAuthority?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-authoritytemplate-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -379,6 +385,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Dismiss a reminder that has been triggered for an event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupEventReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Dismiss (Default)
@@ -28,6 +31,9 @@ Invoke-MgBetaDismissGroupEventReminder -InputObject <IGroupsIdentity> [-Response
 
 ## DESCRIPTION
 Dismiss a reminder that has been triggered for an event in a user calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-dismissreminder-permissions.md)]
 
 ## EXAMPLES
 
@@ -243,6 +249,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupEventReminder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupeventreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupeventreminder)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -47,6 +50,9 @@ Update-MgCommunicationCallRecordingStatus -InputObject <ICloudCommunicationsIden
 ## DESCRIPTION
 Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-updaterecordingstatus-permissions.md)]
 
 ## EXAMPLES
 
@@ -271,6 +277,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordingstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordingstatus)
 

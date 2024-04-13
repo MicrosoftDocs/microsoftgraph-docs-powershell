@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Archive a list of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
@@ -29,6 +32,9 @@ Invoke-MgArchiveServiceAnnouncementMessage
 
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-archive-permissions.md)]
 
 ## EXAMPLES
 
@@ -191,6 +197,7 @@ BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchi
   - `[MessageIds <String- `[]`>]`:
 
 ## RELATED LINKS
+[Invoke-MgBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage)
 

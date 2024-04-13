@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
 Create a new ediscoveryReviewTag object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -48,6 +52,9 @@ New-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryReviewTag object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
 
 ## EXAMPLES
 
@@ -495,6 +502,7 @@ Read-only.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasetag)
 

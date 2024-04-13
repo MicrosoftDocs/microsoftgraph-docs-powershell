@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get createdByUser from shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareCreatedByUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -192,6 +195,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecreatedbyuser)
 

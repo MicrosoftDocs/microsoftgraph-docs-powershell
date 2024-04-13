@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -42,6 +45,9 @@ Remove-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -301,6 +307,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoreset)
 

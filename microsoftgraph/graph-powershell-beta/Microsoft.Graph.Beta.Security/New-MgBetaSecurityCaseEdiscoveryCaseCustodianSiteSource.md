@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodiansitesource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
 Create a new siteSource object associated with an eDiscovery custodian.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -47,6 +51,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityI
 
 ## DESCRIPTION
 Create a new siteSource object associated with an eDiscovery custodian.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycustodian-post-sitesources-permissions.md)]
 
 ## EXAMPLES
 
@@ -15596,6 +15603,7 @@ Read-only.
     - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodiansitesource)
 

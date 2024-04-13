@@ -17,6 +17,9 @@ Request headers for each PUT operation let you specify the exact range of bytes 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageAttachmentUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -60,6 +63,9 @@ As part of the response, this action returns an upload URL that you can use in s
 Request headers for each PUT operation let you specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attachment-createuploadsession-permissions.md)]
 
 ## EXAMPLES
 
@@ -365,6 +371,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderMessageAttachmentUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessageattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessageattachmentuploadsession)
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # New-MgBetaSubscription
@@ -12,6 +13,9 @@ Subscribes a listener application to receive change notifications when the reque
 To identify the resources for which you can create subscriptions and the limitations on subscriptions, see Set up notifications for changes in resource data: Supported resources.
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -541,6 +545,7 @@ Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
 

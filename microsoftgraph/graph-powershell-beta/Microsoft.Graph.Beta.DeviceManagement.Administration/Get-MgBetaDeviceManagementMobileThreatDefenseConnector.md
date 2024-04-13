@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of Mobile threat Defense connectors configured by the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -358,6 +361,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementmobilethreatdefenseconnector)
 

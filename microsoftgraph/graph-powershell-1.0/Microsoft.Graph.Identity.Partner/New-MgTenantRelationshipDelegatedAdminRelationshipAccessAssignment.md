@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new delegatedAdminAccessAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -46,6 +49,9 @@ New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 
 ## DESCRIPTION
 Create a new delegatedAdminAccessAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-post-accessassignments-permissions.md)]
 
 ## EXAMPLES
 
@@ -352,6 +358,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+[New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
 

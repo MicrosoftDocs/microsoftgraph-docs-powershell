@@ -12,6 +12,9 @@ Delete a unifiedRoleDefinition object.
 You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -32,6 +35,9 @@ Remove-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdenti
 Delete a unifiedRoleDefinition object.
 You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -270,6 +276,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagemententitlementmanagementroledefinition)
 

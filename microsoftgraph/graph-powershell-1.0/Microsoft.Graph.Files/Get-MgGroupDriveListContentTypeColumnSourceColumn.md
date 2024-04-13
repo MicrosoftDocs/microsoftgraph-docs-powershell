@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The source column for the content type column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumnSourceColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -242,6 +245,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListContentTypeColumnSourceColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttypecolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistcontenttypecolumnsourcecolumn)
 

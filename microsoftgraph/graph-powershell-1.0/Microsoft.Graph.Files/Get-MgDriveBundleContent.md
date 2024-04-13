@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundleContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgDriveBundleContent -InputObject <IFilesIdentity> [-Format <String>] -OutFi
 
 ## DESCRIPTION
 The content stream, if the item represents a file.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
 
 ## EXAMPLES
 
@@ -222,6 +228,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundleContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundlecontent)
 

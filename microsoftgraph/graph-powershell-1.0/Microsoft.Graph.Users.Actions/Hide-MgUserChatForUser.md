@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Hide a chat for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Hide-MgBetaUserChatForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Hide-MgBetaUserChatForUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### HideExpanded (Default)
@@ -44,6 +47,9 @@ Hide-MgUserChatForUser -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Hide a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-hideforuser-permissions.md)]
 
 ## EXAMPLES
 
@@ -315,6 +321,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Hide-MgBetaUserChatForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Hide-MgBetaUserChatForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser)
 

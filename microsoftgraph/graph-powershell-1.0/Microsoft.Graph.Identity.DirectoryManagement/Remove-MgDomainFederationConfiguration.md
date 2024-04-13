@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 
 ## DESCRIPTION
 Delete an internalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -233,6 +239,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration)
 

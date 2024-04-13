@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <
 
 ## DESCRIPTION
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-incompatiblegroup-permissions.md)]
 
 ## EXAMPLES
 
@@ -278,6 +284,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageincompatiblegroupbyref)
 

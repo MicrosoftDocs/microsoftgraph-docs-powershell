@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -260,6 +263,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemfield)
 

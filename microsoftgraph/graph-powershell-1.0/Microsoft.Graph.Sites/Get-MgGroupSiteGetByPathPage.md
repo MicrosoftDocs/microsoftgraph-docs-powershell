@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get pages from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -313,6 +316,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpage)
 

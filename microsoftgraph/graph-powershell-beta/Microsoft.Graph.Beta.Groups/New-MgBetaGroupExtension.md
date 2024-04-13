@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to extensions for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/New-MgGroupExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -279,6 +282,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgGroupExtension](/powershell/module/Microsoft.Graph.Groups/New-MgGroupExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupextension)
 

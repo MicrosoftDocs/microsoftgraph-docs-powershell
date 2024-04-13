@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
 Delete an ediscoveryReviewSetQuery object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,6 +33,9 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 ## EXAMPLES
 
@@ -309,6 +316,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetquery)
 

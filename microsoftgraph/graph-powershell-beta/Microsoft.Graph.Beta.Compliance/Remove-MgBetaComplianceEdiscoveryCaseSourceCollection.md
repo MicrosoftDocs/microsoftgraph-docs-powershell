@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasesourcecollection
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseSourceCollection
@@ -28,6 +29,9 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 
 ## DESCRIPTION
 Delete a sourceCollection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sourcecollection-delete-permissions.md)]
 
 ## EXAMPLES
 

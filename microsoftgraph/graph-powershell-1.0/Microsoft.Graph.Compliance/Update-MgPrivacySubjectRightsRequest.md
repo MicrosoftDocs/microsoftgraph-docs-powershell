@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest
 schema: 2.0.0
+ms.prod: compliance
 ---
 
 # Update-MgPrivacySubjectRightsRequest
 
 ## SYNOPSIS
 Update the properties of a subjectRightsRequest object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -64,6 +68,9 @@ Update-MgPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Update the properties of a subjectRightsRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -19654,6 +19661,7 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
+[Update-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/update-mgprivacysubjectrightsrequest)
 

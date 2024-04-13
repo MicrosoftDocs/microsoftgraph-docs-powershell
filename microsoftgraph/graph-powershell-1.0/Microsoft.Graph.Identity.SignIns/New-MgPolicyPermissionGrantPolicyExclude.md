@@ -11,6 +11,9 @@ schema: 2.0.0
 Add conditions under which a permission grant event is *excluded* in a permission grant policy.
 You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Add conditions under which a permission grant event is *excluded* in a permission grant policy.
 You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-post-excludes-permissions.md)]
 
 ## EXAMPLES
 
@@ -456,6 +462,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyexclude)
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgUserMailFolderChildFolderMessageExtension
@@ -11,6 +12,9 @@ schema: 2.0.0
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -356,6 +360,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessageextension)
 

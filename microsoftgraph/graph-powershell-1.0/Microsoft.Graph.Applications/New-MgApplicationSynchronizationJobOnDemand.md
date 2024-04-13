@@ -11,6 +11,9 @@ schema: 2.0.0
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ProvisionExpanded (Default)
@@ -48,6 +51,9 @@ New-MgApplicationSynchronizationJobOnDemand -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-provisionondemand-permissions.md)]
 
 ## EXAMPLES
 
@@ -307,6 +313,7 @@ Can be one of the following: user for synchronizing between Active Directory and
 Worker for synchronization a user between Workday and either Active Directory or Microsoft Entra ID.Group for synchronizing a group between Microsoft Entra ID and a third-party application.
 
 ## RELATED LINKS
+[New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobondemand)
 

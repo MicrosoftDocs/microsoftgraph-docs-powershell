@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -177,6 +180,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Get-MgBetaExternalConnectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroupcount)
 

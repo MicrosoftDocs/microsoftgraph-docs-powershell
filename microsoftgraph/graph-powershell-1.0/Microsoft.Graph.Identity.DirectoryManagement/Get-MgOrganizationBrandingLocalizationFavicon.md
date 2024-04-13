@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgOrganizationBrandingLocalizationFavicon -InputObject <IIdentityDirectoryMa
 
 ## DESCRIPTION
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 ## EXAMPLES
 
@@ -207,6 +213,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationfavicon](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationfavicon)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property driveItem in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveRootListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootListItemDriveItemContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -261,6 +264,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserDriveRootListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveRootListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootlistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdriverootlistitemdriveitemcontent)
 

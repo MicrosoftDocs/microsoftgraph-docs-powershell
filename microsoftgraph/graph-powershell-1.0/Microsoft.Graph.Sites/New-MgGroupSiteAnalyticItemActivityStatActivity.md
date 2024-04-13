@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to activities for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9767,6 +9770,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteanalyticitemactivitystatactivity)
 

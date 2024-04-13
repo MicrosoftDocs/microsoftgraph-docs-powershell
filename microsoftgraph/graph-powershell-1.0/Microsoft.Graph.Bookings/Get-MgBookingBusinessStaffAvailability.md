@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the availability information of staff members of a Microsoft Bookings calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffAvailability?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -46,6 +49,9 @@ Get-MgBookingBusinessStaffAvailability -InputObject <IBookingsIdentity>
 
 ## DESCRIPTION
 Get the availability information of staff members of a Microsoft Bookings calendar.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-getstaffavailability-permissions.md)]
 
 ## EXAMPLES
 
@@ -314,6 +320,7 @@ STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
+[Get-MgBetaBookingBusinessStaffAvailability](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffAvailability?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessstaffavailability)
 

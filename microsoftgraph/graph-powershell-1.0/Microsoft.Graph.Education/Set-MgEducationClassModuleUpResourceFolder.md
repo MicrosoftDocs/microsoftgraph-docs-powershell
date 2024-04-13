@@ -12,6 +12,9 @@ Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaEducationClassModuleUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassModuleUpResourceFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -32,6 +35,9 @@ Set-MgEducationClassModuleUpResourceFolder -InputObject <IEducationIdentity>
 Create a SharePoint folder to upload files for a given educationModule.
 Only teachers can perform this operation.
 The teacher determines what resources to upload to the SharePoint folder for the module.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-setupresourcesfolder-permissions.md)]
 
 ## EXAMPLES
 
@@ -201,6 +207,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Set-MgBetaEducationClassModuleUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassModuleUpResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassmoduleupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassmoduleupresourcefolder)
 

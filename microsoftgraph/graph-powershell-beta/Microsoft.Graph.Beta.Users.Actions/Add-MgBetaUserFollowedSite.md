@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserFollowedSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgBetaUserFollowedSite -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Follow a user's site or multiple sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-follow-permissions.md)]
 
 ## EXAMPLES
 
@@ -15438,6 +15444,7 @@ Read-only.
     - `[Sets <IMicrosoftGraphTermStoreSet- `[]`>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Add-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserFollowedSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserfollowedsite)
 

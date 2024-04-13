@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update (override) the synchronization template associated with a given application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Update (override) the synchronization template associated with a given application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationtemplate-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -689,6 +695,7 @@ Must match one of the directory definitions in synchronizationSchema.
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
+[Update-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplate)
 

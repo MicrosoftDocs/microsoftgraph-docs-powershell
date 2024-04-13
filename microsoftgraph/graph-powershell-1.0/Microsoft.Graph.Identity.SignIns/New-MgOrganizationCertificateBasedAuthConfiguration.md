@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new certificateBasedAuthConfiguration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -44,6 +47,9 @@ New-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 
 ## DESCRIPTION
 Create a new certificateBasedAuthConfiguration object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration-permissions.md)]
 
 ## EXAMPLES
 
@@ -332,6 +338,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgorganizationcertificatebasedauthconfiguration)
 

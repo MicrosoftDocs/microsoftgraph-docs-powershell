@@ -29,6 +29,9 @@ Get-MgBetaDriveFollowingContentStream -InputObject <IFilesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property bundles from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaDriveBundleContent -InputObject <IFilesIdentity> [-Format <String>] -O
 
 ## DESCRIPTION
 Get content for the navigation property bundles from drives
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]
 
 ## EXAMPLES
 
@@ -222,6 +228,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivebundlecontent)
 

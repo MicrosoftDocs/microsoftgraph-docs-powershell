@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to submissions for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -548,6 +551,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmission)
 

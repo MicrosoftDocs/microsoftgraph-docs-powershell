@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -103,6 +106,9 @@ Update-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-upsert-permissions.md)]
 
 ## EXAMPLES
 
@@ -2758,6 +2764,7 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
+[Update-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
 

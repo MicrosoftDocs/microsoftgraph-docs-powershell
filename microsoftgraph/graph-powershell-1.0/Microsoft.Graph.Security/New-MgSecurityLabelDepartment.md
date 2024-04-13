@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgSecurityLabelDepartment
 
 ## SYNOPSIS
 Create a new departmentTemplate object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -238,6 +242,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment)
 

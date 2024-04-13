@@ -29,6 +29,9 @@ Get-MgBetaGroupDriveRootContentStream -InputObject <IFilesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

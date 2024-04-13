@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an externalitem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete an externalitem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -230,6 +236,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem)
 

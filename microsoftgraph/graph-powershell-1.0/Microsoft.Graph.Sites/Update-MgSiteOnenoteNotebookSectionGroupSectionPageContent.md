@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action onenotePatchContent
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)
@@ -373,6 +376,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsiteonenotenotebooksectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsiteonenotenotebooksectiongroupsectionpagecontent)
 

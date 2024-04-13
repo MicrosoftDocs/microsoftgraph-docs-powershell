@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to pages for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14667,6 +14670,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitepage)
 

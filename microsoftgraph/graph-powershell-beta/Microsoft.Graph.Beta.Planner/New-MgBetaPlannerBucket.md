@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new plannerBucket object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,6 +32,9 @@ New-MgBetaPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-Response
 
 ## DESCRIPTION
 Create a new plannerBucket object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planner-post-buckets-permissions.md)]
 
 ## EXAMPLES
 
@@ -700,6 +706,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
+[New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerbucket)
 

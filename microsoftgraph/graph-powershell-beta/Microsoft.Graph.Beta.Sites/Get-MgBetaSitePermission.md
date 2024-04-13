@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a permission object on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-get-permission-permissions.md)]
 
 ## EXAMPLES
 
@@ -361,6 +367,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepermission)
 

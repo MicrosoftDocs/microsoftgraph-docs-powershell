@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update search
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -473,6 +476,7 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
+[Update-MgSearchEntity](/powershell/module/Microsoft.Graph.Search/Update-MgSearchEntity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity)
 

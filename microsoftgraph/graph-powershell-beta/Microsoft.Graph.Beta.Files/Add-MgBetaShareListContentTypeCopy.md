@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addCopy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgShareListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgShareListContentTypeCopy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgBetaShareListContentTypeCopy -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Invoke action addCopy
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 
@@ -260,6 +266,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgShareListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgShareListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopy)
 

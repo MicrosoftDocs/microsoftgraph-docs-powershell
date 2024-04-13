@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgBetaGroupEventInstanceExtension
@@ -11,6 +12,9 @@ schema: 2.0.0
 Get an open extension (openTypeExtension object) identified by name or fully qualified name.
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -345,6 +349,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+[Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceextension)
 

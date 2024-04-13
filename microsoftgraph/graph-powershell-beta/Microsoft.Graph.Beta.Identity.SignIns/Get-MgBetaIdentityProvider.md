@@ -12,6 +12,9 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -40,6 +43,9 @@ Get-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 Get the properties and relationships of the specified identity provider configured in the tenant.
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -382,6 +388,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete (unregister) a printConnector.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete (unregister) a printConnector.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printconnector-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -209,6 +215,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintconnector)
 

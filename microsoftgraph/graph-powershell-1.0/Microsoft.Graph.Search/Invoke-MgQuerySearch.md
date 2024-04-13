@@ -11,6 +11,9 @@ schema: 2.0.0
 Runs the query specified in the request body.
 Search results are provided in the response.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)
@@ -30,6 +33,9 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 ## DESCRIPTION
 Runs the query specified in the request body.
 Search results are provided in the response.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
 
 ## EXAMPLES
 
@@ -429,6 +435,7 @@ Optional.
 Required.
 
 ## RELATED LINKS
+[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
 

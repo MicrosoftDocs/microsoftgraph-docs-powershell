@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an override specified by its ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-IfMa
 
 ## DESCRIPTION
 Delete an override specified by its ID.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -220,6 +226,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mguserinferenceclassificationoverride)
 

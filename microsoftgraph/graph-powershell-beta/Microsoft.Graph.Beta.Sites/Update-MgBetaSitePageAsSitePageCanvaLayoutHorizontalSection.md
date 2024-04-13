@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property horizontalSections in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -391,6 +394,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsection)
 

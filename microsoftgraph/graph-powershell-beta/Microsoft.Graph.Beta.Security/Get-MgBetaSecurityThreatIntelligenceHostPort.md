@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a hostPort object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -58,6 +61,9 @@ Get-MgBetaSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-
 
 ## DESCRIPTION
 Read the properties and relationships of a hostPort object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostport-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -416,6 +422,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPort?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostport)
 

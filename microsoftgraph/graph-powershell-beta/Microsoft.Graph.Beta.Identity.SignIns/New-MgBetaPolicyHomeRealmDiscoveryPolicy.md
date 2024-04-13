@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new homeRealmDiscoveryPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,6 +32,9 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies-permissions.md)]
 
 ## EXAMPLES
 
@@ -291,6 +297,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy)
 

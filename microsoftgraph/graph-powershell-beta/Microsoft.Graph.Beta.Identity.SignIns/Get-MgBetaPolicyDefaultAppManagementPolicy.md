@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties of a tenantAppManagementPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -20,6 +23,9 @@ Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Proper
 
 ## DESCRIPTION
 Read the properties of a tenantAppManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantappmanagementpolicy-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -119,6 +125,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy)
 

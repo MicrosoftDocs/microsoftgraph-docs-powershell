@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of column definitions reusable across lists under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -352,6 +355,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecolumn)
 

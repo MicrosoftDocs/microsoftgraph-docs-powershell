@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -20,6 +23,9 @@ Get-MgBetaPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Proper
 
 ## DESCRIPTION
 Read the properties and relationships of an authenticationMethodsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethodspolicy-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -119,6 +125,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationmethodpolicy)
 

@@ -12,6 +12,9 @@ Retrieve an accessReviewHistoryDefinition object by its identifier.
 All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -40,6 +43,9 @@ Get-MgIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentityGov
 Retrieve an accessReviewHistoryDefinition object by its identifier.
 All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewhistorydefinition-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -365,6 +371,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewhistorydefinition)
 

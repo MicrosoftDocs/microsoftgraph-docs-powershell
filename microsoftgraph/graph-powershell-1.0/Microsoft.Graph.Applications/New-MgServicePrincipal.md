@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -55,6 +58,9 @@ New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal> [-Respon
 
 ## DESCRIPTION
 Create a new servicePrincipal object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-post-serviceprincipals-permissions.md)]
 
 ## EXAMPLES
 
@@ -2474,6 +2480,7 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
+[New-MgBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipal)
 

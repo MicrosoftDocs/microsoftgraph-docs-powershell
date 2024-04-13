@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategory
 schema: 2.0.0
+ms.prod: security
 ---
 
 # Get-MgSecurityLabelCategory
 
 ## SYNOPSIS
 Read the properties and relationships of a categoryTemplate object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -357,6 +361,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategory)
 

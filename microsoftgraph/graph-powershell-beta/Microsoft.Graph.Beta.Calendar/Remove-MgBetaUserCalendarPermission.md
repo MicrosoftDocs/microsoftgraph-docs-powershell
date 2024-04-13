@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete calendarPermission.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -42,6 +45,9 @@ Remove-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete calendarPermission.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendarpermission-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -253,6 +259,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
+[Remove-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendarpermission)
 

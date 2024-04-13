@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a user's email address associated with an email Authentication Method object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -44,6 +47,9 @@ Update-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 
 ## DESCRIPTION
 Update a user's email address associated with an email Authentication Method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/emailauthenticationmethod-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -347,6 +353,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationemailmethod)
 

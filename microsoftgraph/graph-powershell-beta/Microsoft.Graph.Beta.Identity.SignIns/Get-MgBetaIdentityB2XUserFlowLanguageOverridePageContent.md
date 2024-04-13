@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property overridesPages from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,9 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentity
 
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-overridespages-permissions.md)]
 
 ## EXAMPLES
 
@@ -276,6 +282,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguageoverridepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguageoverridepagecontent)
 

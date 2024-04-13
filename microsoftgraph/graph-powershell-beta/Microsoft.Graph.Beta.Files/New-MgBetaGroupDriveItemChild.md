@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to children for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemChild?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -80,6 +83,9 @@ New-MgBetaGroupDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create new navigation property to children for groups
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-additem-permissions.md)]
 
 ## EXAMPLES
 
@@ -55176,6 +55182,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveItemChild](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveItemChild?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitemchild)
 

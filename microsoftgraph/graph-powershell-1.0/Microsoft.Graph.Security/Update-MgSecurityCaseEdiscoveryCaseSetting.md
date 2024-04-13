@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Update-MgSecurityCaseEdiscoveryCaseSetting
 
 ## SYNOPSIS
 Update the properties of an ediscoveryCaseSettings object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -46,6 +50,9 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoveryCaseSettings object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycasesettings-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -409,6 +416,7 @@ To learn more, see Include numbers in themes.
 To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
+[Update-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting)
 

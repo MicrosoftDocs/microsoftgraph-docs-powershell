@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,6 +32,9 @@ New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-Response
 
 ## DESCRIPTION
 Create a new acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
 
 ## EXAMPLES
 
@@ -329,6 +335,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym)
 

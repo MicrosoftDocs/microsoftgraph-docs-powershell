@@ -14,6 +14,9 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -29,6 +32,9 @@ Supports the List members, Add member, and Remove member operations.
 Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -285,6 +291,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmember)
 

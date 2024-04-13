@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a \[contentType\]\[\] present in the content type hub site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -28,6 +31,9 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVariabl
 
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in the content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
 
 ## EXAMPLES
 
@@ -239,6 +245,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Publish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype)
 

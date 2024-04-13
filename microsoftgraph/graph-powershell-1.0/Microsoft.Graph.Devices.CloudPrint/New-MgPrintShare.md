@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new printerShare for the specified printer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShare?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -32,6 +35,9 @@ New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHeadersV
 
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-post-shares-permissions.md)]
 
 ## EXAMPLES
 
@@ -19392,6 +19398,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+[New-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShare?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare)
 

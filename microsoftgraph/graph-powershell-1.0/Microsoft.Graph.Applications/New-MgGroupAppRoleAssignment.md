@@ -13,6 +13,9 @@ All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -52,6 +55,9 @@ Use this API to assign an app role to a security group.
 All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-approleassignments-permissions.md)]
 
 ## EXAMPLES
 
@@ -441,6 +447,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment)
 

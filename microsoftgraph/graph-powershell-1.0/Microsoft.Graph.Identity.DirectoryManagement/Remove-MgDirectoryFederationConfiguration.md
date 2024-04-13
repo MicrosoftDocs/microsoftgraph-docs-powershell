@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a samlOrWsFedExternalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManage
 
 ## DESCRIPTION
 Delete a samlOrWsFedExternalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/samlorwsfedexternaldomainfederation-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -220,6 +226,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -46,6 +49,9 @@ New-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 
 ## DESCRIPTION
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-post-userattributeassignments-permissions.md)]
 
 ## EXAMPLES
 
@@ -459,6 +465,7 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
+[New-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2xuserflowuserattributeassignment)
 

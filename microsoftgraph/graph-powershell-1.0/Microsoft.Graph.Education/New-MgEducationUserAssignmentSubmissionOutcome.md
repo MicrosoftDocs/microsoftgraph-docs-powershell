@@ -13,6 +13,9 @@ Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or isn't in that folder, the POST request will fail.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ Create a new feedback resource for a submission.
 Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or isn't in that folder, the POST request will fail.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationfeedbackresourceoutcome-post-outcomes-permissions.md)]
 
 ## EXAMPLES
 
@@ -344,6 +350,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionoutcome)
 

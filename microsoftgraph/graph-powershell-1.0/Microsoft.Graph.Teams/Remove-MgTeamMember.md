@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a conversationMember from a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Response
 
 ## DESCRIPTION
 Remove a conversationMember from a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -244,6 +250,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteammember)
 

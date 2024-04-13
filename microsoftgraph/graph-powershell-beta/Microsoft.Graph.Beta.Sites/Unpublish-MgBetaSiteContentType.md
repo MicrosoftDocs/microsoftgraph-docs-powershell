@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unpublish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)
@@ -28,6 +31,9 @@ Unpublish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersV
 
 ## DESCRIPTION
 Invoke action unpublish
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
 
@@ -248,6 +254,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitecontenttype)
 

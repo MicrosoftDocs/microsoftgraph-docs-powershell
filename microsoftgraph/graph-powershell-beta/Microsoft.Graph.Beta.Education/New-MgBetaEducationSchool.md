@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -32,6 +35,9 @@ New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Resp
 
 ## DESCRIPTION
 Create a school.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-schools-permissions.md)]
 
 ## EXAMPLES
 
@@ -24233,6 +24239,7 @@ See standard - `[user]` resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
+[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
 

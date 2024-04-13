@@ -14,6 +14,9 @@ A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unarchive (Default)
@@ -35,6 +38,9 @@ This API restores users' ability to send messages and edit the team, abiding by 
 A Team is archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-unarchive-permissions.md)]
 
 ## EXAMPLES
 
@@ -221,6 +227,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam)
 

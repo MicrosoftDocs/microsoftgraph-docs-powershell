@@ -12,6 +12,9 @@ Read the properties and relationships of a remoteDesktopSecurityConfiguration ob
 Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
 Additionally you can view any targetDeviceGroups that have been configured for SSO.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,9 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppl
 Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
 Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
 Additionally you can view any targetDeviceGroups that have been configured for SSO.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/remotedesktopsecurityconfiguration-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -204,6 +210,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
 

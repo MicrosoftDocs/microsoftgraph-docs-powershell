@@ -12,6 +12,9 @@ Send an SMS notification to external attendees when a Teams Virtual Appointment 
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SendExpanded (Default)
@@ -50,6 +53,9 @@ Send-MgBetaUserOnlineMeetingVirtualAppointmentSm -InputObject <IUsersActionsIden
 Send an SMS notification to external attendees when a Teams Virtual Appointment is confirmed, rescheduled, or canceled.
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
 
 ## EXAMPLES
 
@@ -342,6 +348,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgUserOnlineMeetingVirtualAppointmentSm](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserOnlineMeetingVirtualAppointmentSm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentsm)
 

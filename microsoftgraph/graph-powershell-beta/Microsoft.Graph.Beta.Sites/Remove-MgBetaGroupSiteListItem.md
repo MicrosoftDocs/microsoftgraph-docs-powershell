@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Removes an item from a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -296,6 +302,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitelistitem)
 

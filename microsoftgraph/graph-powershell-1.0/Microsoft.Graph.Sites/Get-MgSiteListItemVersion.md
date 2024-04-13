@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a ListItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -382,6 +388,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversion)
 

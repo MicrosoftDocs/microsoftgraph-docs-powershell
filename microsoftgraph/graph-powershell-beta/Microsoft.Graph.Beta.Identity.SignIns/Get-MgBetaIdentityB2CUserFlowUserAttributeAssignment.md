@@ -38,6 +38,9 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ## DESCRIPTION
 Read the properties and relationships of an identityUserFlowAttributeAssignment object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

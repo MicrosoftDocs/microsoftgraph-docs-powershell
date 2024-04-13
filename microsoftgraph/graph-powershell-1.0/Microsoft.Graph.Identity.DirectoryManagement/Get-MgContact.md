@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of an organizational contact.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/orgcontact-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -337,6 +343,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)
 

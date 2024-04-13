@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windows for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingWindows?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -338,6 +341,7 @@ Refers to the user's Windows device that modified the object at the specified da
   - `[Payload <String>]`: Base64-encoded JSON setting value.
 
 ## RELATED LINKS
+[New-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserSettingWindows?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusersettingwindows)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function allowedCalendarSharingRoles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCalendarGroupCalendar?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Calendar (Default)
@@ -278,6 +281,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCalendarGroupCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar)
 

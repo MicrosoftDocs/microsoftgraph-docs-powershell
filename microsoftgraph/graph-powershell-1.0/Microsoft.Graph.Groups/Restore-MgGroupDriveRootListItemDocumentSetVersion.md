@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -259,6 +262,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Restore-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupdriverootlistitemdocumentsetversion)
 

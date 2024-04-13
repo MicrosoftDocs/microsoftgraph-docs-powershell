@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property versions from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemVersionContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaUserDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <St
 
 ## DESCRIPTION
 Get content for the navigation property versions from users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
 
 ## EXAMPLES
 
@@ -241,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversioncontent)
 

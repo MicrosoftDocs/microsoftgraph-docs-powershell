@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get externalColumns from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathExternalColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -313,6 +316,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathExternalColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathexternalcolumn)
 

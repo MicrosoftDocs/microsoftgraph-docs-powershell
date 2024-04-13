@@ -43,6 +43,9 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkhostedcontent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

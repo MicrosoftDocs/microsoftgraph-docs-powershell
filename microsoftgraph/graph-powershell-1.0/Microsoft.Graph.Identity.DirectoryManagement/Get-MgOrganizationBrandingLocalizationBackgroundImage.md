@@ -12,6 +12,9 @@ Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,9 @@ Get-MgOrganizationBrandingLocalizationBackgroundImage -InputObject <IIdentityDir
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 ## EXAMPLES
 
@@ -211,6 +217,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbackgroundimage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbackgroundimage)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -366,6 +372,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepage)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fields for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -303,6 +306,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemdocumentsetversionfield)
 

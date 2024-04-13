@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgCheckinGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CheckinExpanded (Default)
@@ -44,6 +47,9 @@ Invoke-MgBetaCheckinGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHead
 
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-checkin-permissions.md)]
 
 ## EXAMPLES
 
@@ -350,6 +356,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgCheckinGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckinGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckingroupdriveroot)
 

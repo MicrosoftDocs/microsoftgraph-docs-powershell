@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -67,6 +70,9 @@ New-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-post-contacts-permissions.md)]
 
 ## EXAMPLES
 
@@ -1088,6 +1094,7 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
+[New-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfoldercontact)
 

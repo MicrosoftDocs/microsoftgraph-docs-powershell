@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of featureRolloutPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -45,6 +48,9 @@ Update-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Update the properties of featureRolloutPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -430,6 +436,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfeaturerolloutpolicy)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -228,6 +231,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorauthoritytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorauthoritytemplate)
 

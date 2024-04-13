@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests are ignored.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -80,6 +83,9 @@ Update-MgBetaUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests are ignored.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -55180,6 +55186,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdriveitem)
 

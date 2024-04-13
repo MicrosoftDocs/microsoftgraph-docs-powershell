@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -30,6 +33,9 @@ Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef -InputObject <IApplicatio
 ## DESCRIPTION
 Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-owners-permissions.md)]
 
 ## EXAMPLES
 
@@ -248,6 +254,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipalownerdirectoryobjectbyref)
 

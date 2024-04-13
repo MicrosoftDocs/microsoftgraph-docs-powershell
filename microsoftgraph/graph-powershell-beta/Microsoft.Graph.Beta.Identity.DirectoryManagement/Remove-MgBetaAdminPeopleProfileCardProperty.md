@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilecardproperty
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Remove-MgBetaAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Remove-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryMana
 
 ## DESCRIPTION
 Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profilecardproperty-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -246,6 +253,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdminPeopleProfileCardProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetaadminpeopleprofilecardproperty)
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Remove-MgBetaSchemaExtension
@@ -13,6 +14,9 @@ In app-only scenarios, only the app that created the schema extension (owner app
 In delegated scenarios, the owner of the owner app can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition before deleting the data associated with the extension in the target resources makes the data inaccessible.
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Remove-MgSchemaExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ In app-only scenarios, only the app that created the schema extension (owner app
 In delegated scenarios, the owner of the owner app can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition before deleting the data associated with the extension in the target resources makes the data inaccessible.
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -205,6 +212,7 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+[Remove-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Remove-MgSchemaExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/remove-mgbetaschemaextension)
 

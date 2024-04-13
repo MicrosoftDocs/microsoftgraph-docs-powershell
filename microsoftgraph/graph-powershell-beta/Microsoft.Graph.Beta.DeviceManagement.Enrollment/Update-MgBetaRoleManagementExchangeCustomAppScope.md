@@ -47,6 +47,9 @@ Update-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 Update an existing customAppScope object of an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customappscope-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

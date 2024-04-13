@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a permissionGrantPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 
 ## DESCRIPTION
 Delete a permissionGrantPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -272,6 +278,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy)
 

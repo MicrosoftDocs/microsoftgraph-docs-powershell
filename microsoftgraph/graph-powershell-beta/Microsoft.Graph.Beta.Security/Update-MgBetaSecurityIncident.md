@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an incident object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -54,6 +57,9 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the properties of an incident object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -774,6 +780,7 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
   - `[KqlText <String>]`: The query string.
 
 ## RELATED LINKS
+[Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
 

@@ -37,6 +37,9 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 ## DESCRIPTION
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

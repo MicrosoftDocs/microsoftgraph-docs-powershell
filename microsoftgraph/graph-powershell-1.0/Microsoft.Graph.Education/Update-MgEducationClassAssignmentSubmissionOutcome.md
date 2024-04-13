@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -48,6 +51,9 @@ Update-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 ## DESCRIPTION
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationoutcome-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -388,6 +394,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionoutcome)
 

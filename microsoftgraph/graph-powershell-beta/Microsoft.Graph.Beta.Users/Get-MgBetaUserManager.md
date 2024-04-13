@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanager
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Get-MgBetaUserManager
@@ -10,6 +11,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManager](/powershell/module/Microsoft.Graph.Users/Get-MgUserManager?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,6 +34,9 @@ Get-MgBetaUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-manager-permissions.md)]
 
 ## EXAMPLES
 
@@ -195,6 +202,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgUserManager](/powershell/module/Microsoft.Graph.Users/Get-MgUserManager?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanager)
 

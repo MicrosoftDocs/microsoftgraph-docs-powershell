@@ -15,6 +15,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -57,6 +60,9 @@ Specifying both will return an HTTP 400 Bad Request error.- If replyTo is specif
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/message-createreply-permissions.md)]
 
 ## EXAMPLES
 
@@ -529,6 +535,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderChildFolderMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMailFolderChildFolderMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfolderchildfoldermessagereply)
 

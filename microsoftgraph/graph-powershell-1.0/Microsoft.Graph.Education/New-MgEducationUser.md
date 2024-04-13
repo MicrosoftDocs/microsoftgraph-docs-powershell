@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationUser object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -40,6 +43,9 @@ New-MgEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-ResponseHead
 
 ## DESCRIPTION
 Create a new educationUser object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -25824,6 +25830,7 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
 
 ## RELATED LINKS
+[New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuser)
 

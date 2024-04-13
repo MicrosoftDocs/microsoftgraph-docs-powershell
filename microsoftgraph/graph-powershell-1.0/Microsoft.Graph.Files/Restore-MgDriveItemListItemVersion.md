@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -30,6 +33,9 @@ Restore-MgDriveItemListItemVersion -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -244,6 +250,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitemlistitemversion)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -367,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
 

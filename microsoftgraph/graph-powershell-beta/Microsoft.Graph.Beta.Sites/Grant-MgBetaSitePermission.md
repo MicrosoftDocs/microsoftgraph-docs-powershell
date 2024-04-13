@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -44,6 +47,9 @@ Grant-MgBetaSitePermission -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 
@@ -330,6 +336,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/grant-mgbetasitepermission)
 

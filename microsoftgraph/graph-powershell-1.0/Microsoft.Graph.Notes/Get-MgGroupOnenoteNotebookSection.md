@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of onenoteSection objects from the specified notebook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -21,6 +24,9 @@ Get-MgGroupOnenoteNotebookSection -GroupId <String> -NotebookId <String> [-Expan
 
 ## DESCRIPTION
 Retrieve a list of onenoteSection objects from the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-list-sections-permissions.md)]
 
 ## EXAMPLES
 
@@ -274,6 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection)
 

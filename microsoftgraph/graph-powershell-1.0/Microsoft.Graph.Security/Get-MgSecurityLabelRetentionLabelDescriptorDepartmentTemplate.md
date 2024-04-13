@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the  department or business unit of an organization to which a label belongs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -228,6 +231,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptordepartmenttemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptordepartmenttemplate)
 

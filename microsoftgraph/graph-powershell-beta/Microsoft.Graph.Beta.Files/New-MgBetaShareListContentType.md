@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contentTypes for shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1808,6 +1811,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/New-MgShareListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetasharelistcontenttype)
 

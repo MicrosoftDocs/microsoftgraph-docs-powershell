@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a federatedIdentityCredential object from an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 
 ## DESCRIPTION
 Delete a federatedIdentityCredential object from an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -234,6 +240,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationfederatedidentitycredential)
 

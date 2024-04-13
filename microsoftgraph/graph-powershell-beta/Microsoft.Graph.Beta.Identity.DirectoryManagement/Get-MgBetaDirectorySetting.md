@@ -36,6 +36,9 @@ Get-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Retrieve the properties of a specific directory setting object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

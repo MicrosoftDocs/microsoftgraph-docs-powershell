@@ -13,6 +13,9 @@ Prior to calling forceDelete, you must update or remove any references to Exchan
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForceExpanded (Default)
@@ -51,6 +54,9 @@ Deletes a domain using an asynchronous long-running operation.
 Prior to calling forceDelete, you must update or remove any references to Exchange as the provisioning service.
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return an HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-forcedelete-permissions.md)]
 
 ## EXAMPLES
 
@@ -283,6 +289,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgforcedomaindelete)
 

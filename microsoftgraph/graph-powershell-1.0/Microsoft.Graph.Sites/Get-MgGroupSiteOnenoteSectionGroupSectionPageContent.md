@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -29,6 +32,9 @@ Get-MgGroupSiteOnenoteSectionGroupSectionPageContent -InputObject <ISitesIdentit
 
 ## DESCRIPTION
 The page's HTML content.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
 
 ## EXAMPLES
 
@@ -272,6 +278,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpagecontent)
 

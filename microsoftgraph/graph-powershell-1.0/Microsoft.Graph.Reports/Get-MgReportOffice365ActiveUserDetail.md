@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOffice365ActiveUserDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -221,6 +224,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeuserdetail)
 

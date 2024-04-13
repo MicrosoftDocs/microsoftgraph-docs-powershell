@@ -37,6 +37,9 @@ Get-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a healthIssue object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-healthissue-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

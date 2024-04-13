@@ -12,6 +12,9 @@ Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -52,6 +55,9 @@ New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 Create new synchronization job with a default synchronization schema.
 The job is created in a disabled state.
 Call Start job to start synchronization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronization-post-jobs-permissions.md)]
 
 ## EXAMPLES
 
@@ -807,6 +813,7 @@ Some settings are inherited from the template.
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[New-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjob)
 

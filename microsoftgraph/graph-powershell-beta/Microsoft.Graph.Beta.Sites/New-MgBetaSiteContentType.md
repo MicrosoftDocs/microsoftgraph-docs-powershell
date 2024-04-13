@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[contentType\]\[\] for a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -54,6 +57,9 @@ New-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new \[contentType\]\[\] for a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-contenttypes-permissions.md)]
 
 ## EXAMPLES
 
@@ -1839,6 +1845,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecontenttype)
 

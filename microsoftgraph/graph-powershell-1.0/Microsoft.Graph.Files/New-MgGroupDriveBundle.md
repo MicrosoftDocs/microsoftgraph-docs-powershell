@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to bundles for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -78,6 +81,9 @@ New-MgGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Create new navigation property to bundles for groups
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-post-bundles-permissions.md)]
 
 ## EXAMPLES
 
@@ -30090,6 +30096,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle)
 

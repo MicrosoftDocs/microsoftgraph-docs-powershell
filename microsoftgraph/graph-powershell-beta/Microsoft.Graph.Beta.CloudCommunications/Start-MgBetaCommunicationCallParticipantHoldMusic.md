@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Put a participant on hold and play music in the background.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.CloudCommunications/Start-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### StartExpanded (Default)
@@ -46,6 +49,9 @@ Start-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicat
 
 ## DESCRIPTION
 Put a participant on hold and play music in the background.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-startholdmusic-permissions.md)]
 
 ## EXAMPLES
 
@@ -295,6 +301,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Start-MgCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.CloudCommunications/Start-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/start-mgbetacommunicationcallparticipantholdmusic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/start-mgbetacommunicationcallparticipantholdmusic)
 

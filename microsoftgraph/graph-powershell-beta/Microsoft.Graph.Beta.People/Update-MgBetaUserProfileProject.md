@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileproject
 schema: 2.0.0
+ms.prod: people
 ---
 
 # Update-MgBetaUserProfileProject
@@ -54,6 +55,9 @@ Update-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of a projectParticipation object in a user's profile.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/projectparticipation-update-permissions.md)]
 
 ## EXAMPLES
 

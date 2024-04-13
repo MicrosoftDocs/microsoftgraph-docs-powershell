@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -388,6 +391,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoattachment)
 

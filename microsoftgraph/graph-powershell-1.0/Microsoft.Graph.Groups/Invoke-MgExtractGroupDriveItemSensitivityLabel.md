@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaExtractGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Extract (Default)
@@ -240,6 +243,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaExtractGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgextractgroupdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgextractgroupdriveitemsensitivitylabel)
 

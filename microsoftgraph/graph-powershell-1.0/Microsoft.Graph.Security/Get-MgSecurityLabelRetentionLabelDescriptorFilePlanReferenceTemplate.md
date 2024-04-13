@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -228,6 +231,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorfileplanreferencetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorfileplanreferencetemplate)
 

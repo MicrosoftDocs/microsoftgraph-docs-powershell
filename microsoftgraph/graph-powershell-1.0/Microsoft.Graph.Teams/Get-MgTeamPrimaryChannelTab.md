@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-tabs-permissions.md)]
 
 ## EXAMPLES
 
@@ -345,6 +351,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychanneltab)
 

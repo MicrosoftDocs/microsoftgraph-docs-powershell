@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property webparts in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -359,6 +362,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
 

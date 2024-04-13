@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeUserDriveListSubscription
 
 ## SYNOPSIS
 Reauthorize a subscription when you receive a reauthorizationRequired challenge.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReauthorizeUserDriveListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -248,6 +252,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaReauthorizeUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReauthorizeUserDriveListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdrivelistsubscription)
 

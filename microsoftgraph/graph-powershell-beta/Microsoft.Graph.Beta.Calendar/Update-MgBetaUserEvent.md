@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the event object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -74,6 +77,9 @@ Update-MgBetaUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of the event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -2370,6 +2376,7 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
+[Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetauserevent)
 

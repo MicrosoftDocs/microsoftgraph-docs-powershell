@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastSevenDays from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -211,6 +214,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticLastSevenDay?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteanalyticlastsevenday)
 

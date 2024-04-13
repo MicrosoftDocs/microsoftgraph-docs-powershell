@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a printer object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -54,6 +57,9 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 
 ## DESCRIPTION
 Update the properties of a printer object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -10157,6 +10163,7 @@ Read-only.
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter)
 

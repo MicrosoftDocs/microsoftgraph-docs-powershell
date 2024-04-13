@@ -37,6 +37,9 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

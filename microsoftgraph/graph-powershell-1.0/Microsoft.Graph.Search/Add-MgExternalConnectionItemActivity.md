@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addActivities
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -286,6 +289,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgBetaExternalConnectionItemActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/add-mgexternalconnectionitemactivity)
 

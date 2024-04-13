@@ -31,6 +31,9 @@ Remove-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 Delete a specific authenticationEventsFlow resource by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an eventMessage object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -72,6 +75,9 @@ Update-MgBetaUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of an eventMessage object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -1160,6 +1166,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Update-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermessage)
 
