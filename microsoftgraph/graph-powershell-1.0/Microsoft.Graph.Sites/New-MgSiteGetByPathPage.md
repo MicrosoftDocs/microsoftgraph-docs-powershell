@@ -94,18 +94,6 @@ New-MgSiteGetByPathPage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14726,6 +14714,7 @@ Read-only.
 [New-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpage)
+
 
 
 

@@ -37,18 +37,6 @@ Get-MgBetaUserPlannerMyDayTask -InputObject <IPlannerIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get myDayTasks from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,6 +310,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannermydaytask)
+
 
 
 

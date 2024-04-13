@@ -32,18 +32,6 @@ Get-MgBetaGroupSitePageAsSitePageLastModifiedByUser -InputObject <ISitesIdentity
 ## DESCRIPTION
 Get lastModifiedByUser from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -256,6 +244,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgGroupSitePageAsSitePageLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageLastModifiedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagelastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagelastmodifiedbyuser)
+
 
 
 

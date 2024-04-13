@@ -58,18 +58,6 @@ Update-MgSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property descriptors in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -595,6 +583,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgBetaSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelRetentionLabelDescriptor?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelretentionlabeldescriptor)
+
 
 
 

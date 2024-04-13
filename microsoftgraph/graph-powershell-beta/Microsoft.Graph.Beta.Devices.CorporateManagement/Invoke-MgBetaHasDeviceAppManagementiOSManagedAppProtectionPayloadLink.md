@@ -30,18 +30,6 @@ Invoke-MgBetaHasDeviceAppManagementiOSManagedAppProtectionPayloadLink
 ## DESCRIPTION
 Invoke action hasPayloadLinks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -189,6 +177,7 @@ BODY `<IPaths1DydaoiDeviceappmanagementIosmanagedappprotectionsMicrosoftGraphHas
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementiosmanagedappprotectionpayloadlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetahasdeviceappmanagementiosmanagedappprotectionpayloadlink)
+
 
 
 

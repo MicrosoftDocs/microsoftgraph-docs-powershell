@@ -32,18 +32,6 @@ Get-MgSecurityLabelRetentionEventType -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Represents the type associated with a retention event.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -234,6 +222,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityLabelRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionEventType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentioneventtype)
+
 
 
 

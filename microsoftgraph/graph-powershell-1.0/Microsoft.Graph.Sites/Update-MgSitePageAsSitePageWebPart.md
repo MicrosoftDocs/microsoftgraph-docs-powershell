@@ -46,18 +46,6 @@ Update-MgSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property webParts in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,6 +297,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgBetaSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageWebPart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagewebpart)
+
 
 
 

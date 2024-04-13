@@ -48,18 +48,6 @@ New-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISit
 ## DESCRIPTION
 Create new navigation property to horizontalSections for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -395,6 +383,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagecanvalayouthorizontalsection)
+
 
 
 

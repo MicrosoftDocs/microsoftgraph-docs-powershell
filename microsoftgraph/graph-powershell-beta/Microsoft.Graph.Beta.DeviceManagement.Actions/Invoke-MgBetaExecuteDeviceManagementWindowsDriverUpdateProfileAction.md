@@ -49,18 +49,6 @@ Invoke-MgBetaExecuteDeviceManagementWindowsDriverUpdateProfileAction
 ## DESCRIPTION
 Invoke action executeAction
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionName
@@ -327,6 +315,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementwindowsdriverupdateprofileaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementwindowsdriverupdateprofileaction)
+
 
 
 

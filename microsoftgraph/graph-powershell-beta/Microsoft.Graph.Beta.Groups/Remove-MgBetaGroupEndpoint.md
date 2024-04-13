@@ -29,22 +29,6 @@ Remove-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property endpoints for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EndpointId
@@ -266,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupendpoint)
+
 
 
 

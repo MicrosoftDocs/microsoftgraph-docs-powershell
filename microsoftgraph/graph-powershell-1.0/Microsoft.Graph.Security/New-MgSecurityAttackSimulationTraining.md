@@ -36,18 +36,6 @@ New-MgSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining>
 ## DESCRIPTION
 Create new navigation property to trainings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -493,6 +481,7 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationTraining?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraining](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationtraining)
+
 
 
 

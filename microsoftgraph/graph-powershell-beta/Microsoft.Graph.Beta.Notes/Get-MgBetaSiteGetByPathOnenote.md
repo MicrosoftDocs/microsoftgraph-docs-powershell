@@ -46,18 +46,6 @@ Get-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get onenote from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -229,6 +217,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 [Get-MgSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteGetByPathOnenote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasitegetbypathonenote)
+
 
 
 

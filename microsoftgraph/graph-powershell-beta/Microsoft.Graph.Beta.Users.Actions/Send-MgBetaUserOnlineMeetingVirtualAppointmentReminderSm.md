@@ -57,18 +57,6 @@ This feature requires Teams Premium and attendees must have a valid United State
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentremindersms-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +339,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Send-MgUserOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauseronlinemeetingvirtualappointmentremindersm)
+
 
 
 

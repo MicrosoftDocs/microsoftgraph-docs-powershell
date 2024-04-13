@@ -35,18 +35,6 @@ Delete a bookmark object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookmarkId
@@ -217,6 +205,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Remove-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
+
 
 
 

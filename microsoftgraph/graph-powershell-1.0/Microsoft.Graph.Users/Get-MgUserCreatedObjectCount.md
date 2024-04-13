@@ -32,18 +32,6 @@ Get-MgUserCreatedObjectCount -InputObject <IUsersIdentity> [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -189,6 +177,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [Get-MgBetaUserCreatedObjectCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcount)
+
 
 
 

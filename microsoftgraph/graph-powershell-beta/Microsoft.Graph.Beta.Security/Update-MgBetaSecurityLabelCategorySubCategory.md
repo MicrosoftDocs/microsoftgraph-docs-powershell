@@ -48,18 +48,6 @@ Update-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -
 ## DESCRIPTION
 Update the navigation property subcategories in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -393,6 +381,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory)
+
 
 
 

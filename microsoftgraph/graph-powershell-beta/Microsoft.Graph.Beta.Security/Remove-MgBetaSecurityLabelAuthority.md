@@ -32,18 +32,6 @@ Remove-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property authorities for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthorityTemplateId
@@ -287,6 +275,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelauthority)
+
 
 
 

@@ -48,22 +48,6 @@ New-MgIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIde
 ## DESCRIPTION
 Create new navigation property ref to userFlowIdentityProviders for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +302,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [New-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowidentityproviderbyref)
+
 
 
 

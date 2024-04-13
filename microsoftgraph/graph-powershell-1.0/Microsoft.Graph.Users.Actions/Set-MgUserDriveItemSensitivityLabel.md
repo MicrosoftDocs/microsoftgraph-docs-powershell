@@ -50,18 +50,6 @@ Set-MgUserDriveItemSensitivityLabel -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +339,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Set-MgBetaUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserdriveitemsensitivitylabel)
+
 
 
 

@@ -56,22 +56,6 @@ Update-MgRiskDetection -InputObject <IIdentitySignInsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the navigation property riskDetections in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -682,6 +666,7 @@ This is calculated using latitude/longitude information from the sign-in activit
 [Update-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaRiskDetection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgriskdetection)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart -InputObject <I
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -257,6 +245,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagemicrosoftgraphsitepagewebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagemicrosoftgraphsitepagewebpartpositionofwebpart)
+
 
 
 

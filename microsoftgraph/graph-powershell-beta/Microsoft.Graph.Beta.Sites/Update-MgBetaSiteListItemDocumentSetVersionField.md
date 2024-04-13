@@ -47,18 +47,6 @@ Update-MgBetaSiteListItemDocumentSetVersionField -InputObject <ISitesIdentity> -
 ## DESCRIPTION
 Update the navigation property fields in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -334,6 +322,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield)
+
 
 
 

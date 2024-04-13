@@ -32,22 +32,6 @@ Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtect
 ## DESCRIPTION
 Update informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,6 +286,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection)
+
 
 
 

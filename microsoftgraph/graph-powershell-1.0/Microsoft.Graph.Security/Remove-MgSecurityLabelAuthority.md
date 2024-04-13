@@ -33,18 +33,6 @@ Remove-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a authorityTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthorityTemplateId
@@ -266,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelauthority)
+
 
 
 

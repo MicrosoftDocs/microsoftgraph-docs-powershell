@@ -48,18 +48,6 @@ Update-MgSecurityLabelCitation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property citations in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -405,6 +393,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcitation)
+
 
 
 
