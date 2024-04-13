@@ -50,17 +50,21 @@ Grant the specified user access to submit print jobs to the associated printerSh
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedusers-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{userId}"
 }
 
 New-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the New-MgPrintShareAllowedUserByRef Cmdlet.
+
 
 ## PARAMETERS
 

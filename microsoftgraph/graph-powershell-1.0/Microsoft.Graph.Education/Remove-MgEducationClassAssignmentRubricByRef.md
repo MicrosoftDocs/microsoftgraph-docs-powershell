@@ -38,13 +38,17 @@ This method doesn't delete the rubric itself and can only be performed by teache
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-rubric-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentRubricByRef Cmdlet.
+
 
 ## PARAMETERS
 

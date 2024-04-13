@@ -50,13 +50,17 @@ Delete a set object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Remove-MgSiteTermStoreSet Cmdlet.
+
 
 ## PARAMETERS
 

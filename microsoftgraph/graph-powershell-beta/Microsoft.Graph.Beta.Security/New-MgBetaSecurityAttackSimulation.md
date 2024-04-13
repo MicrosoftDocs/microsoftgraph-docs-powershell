@@ -46,11 +46,11 @@ Create an attack simulation campaign for a tenant.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -90,6 +90,10 @@ endUserNotificationSetting = @{
 }
 
 New-MgBetaSecurityAttackSimulation -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityAttackSimulation Cmdlet.
+
 
 ## PARAMETERS
 

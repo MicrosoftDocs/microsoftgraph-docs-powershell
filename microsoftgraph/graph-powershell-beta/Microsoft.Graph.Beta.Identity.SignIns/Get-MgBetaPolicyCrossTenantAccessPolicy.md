@@ -28,13 +28,17 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicy-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyCrossTenantAccessPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
+
 
 ## PARAMETERS
 

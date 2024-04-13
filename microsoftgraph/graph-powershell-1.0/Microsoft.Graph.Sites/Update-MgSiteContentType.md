@@ -62,11 +62,11 @@ Update a \[content type\]\[contentType\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	name = "updatedCt"
@@ -112,6 +112,10 @@ $params = @{
 }
 
 Update-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

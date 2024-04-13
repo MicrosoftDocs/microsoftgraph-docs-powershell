@@ -68,16 +68,6 @@ Create a new \[listItem\]\[\] in a \[list\]\[\].
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities

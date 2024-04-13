@@ -36,13 +36,17 @@ Delete a shift from the schedule.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
+
+```
+This example shows how to use the Remove-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

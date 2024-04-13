@@ -44,13 +44,17 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryroletemplate-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRoleTemplate
+
+```
+This example shows how to use the Get-MgDirectoryRoleTemplate Cmdlet.
+
 
 ## PARAMETERS
 

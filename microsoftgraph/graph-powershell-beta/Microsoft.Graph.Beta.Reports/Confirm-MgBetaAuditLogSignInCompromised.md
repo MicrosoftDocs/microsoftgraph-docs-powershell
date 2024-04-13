@@ -40,9 +40,8 @@ For details about investigating Identity Protection risks, see How to investigat
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
@@ -53,6 +52,8 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaAuditLogSignInCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

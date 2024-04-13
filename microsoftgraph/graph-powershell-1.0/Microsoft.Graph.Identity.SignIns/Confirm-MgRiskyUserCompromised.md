@@ -39,11 +39,11 @@ This action sets the targeted user's risk level to high.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-confirmcompromised-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	userIds = @(
@@ -53,6 +53,10 @@ $params = @{
 }
 
 Confirm-MgRiskyUserCompromised -BodyParameter $params
+
+```
+This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
+
 
 ## PARAMETERS
 

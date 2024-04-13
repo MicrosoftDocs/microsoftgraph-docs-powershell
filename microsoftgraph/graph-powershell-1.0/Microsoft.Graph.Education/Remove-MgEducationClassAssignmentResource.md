@@ -41,13 +41,17 @@ However, teachers can't remove resources marked as 'distributeToStudents', after
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentresource-delete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 

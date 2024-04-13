@@ -54,17 +54,21 @@ The application template with ID 8adf8e6e-67b2-4cf2-a259-e3dc5476c621 can be use
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/applicationtemplate-instantiate-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	displayName = "Azure AD SAML Toolkit"
 }
 
 Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgInstantiateApplicationTemplate Cmdlet.
+
 
 ## PARAMETERS
 
