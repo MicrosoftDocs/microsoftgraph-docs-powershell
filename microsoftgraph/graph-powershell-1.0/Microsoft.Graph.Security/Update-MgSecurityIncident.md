@@ -22,9 +22,9 @@ Update-MgSecurityIncident -IncidentId <String> [-ResponseHeadersVariable <String
  [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>]
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
- [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -41,9 +41,9 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> [-ResponseHeadersVari
  [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>]
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
- [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -369,6 +369,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResolvingComment
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -613,6 +628,7 @@ Free editable text.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
+  - `[ResolvingComment <String>]`: 
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
@@ -629,8 +645,13 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
   - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+  - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
   - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
   - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
@@ -641,6 +662,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
   - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
   - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+  - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -658,6 +680,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[PayloadId <String>]`: The unique identifier of payload
   - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
   - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
   - `[SecureScoreId <String>]`: The unique identifier of secureScore
   - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
@@ -665,6 +688,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TrainingId <String>]`: The unique identifier of training

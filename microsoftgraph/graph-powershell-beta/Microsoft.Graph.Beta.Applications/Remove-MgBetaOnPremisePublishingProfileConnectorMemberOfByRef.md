@@ -14,30 +14,15 @@ Delete ref of navigation property memberOf for onPremisesPublishingProfiles
 
 ### Delete (Default)
 ```
-Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorGroupId <String> -ConnectorId <String>
- -OnPremisesPublishingProfileId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -ConnectorId <String>
  -OnPremisesPublishingProfileId <String> -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
-```
-Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -InputObject <IApplicationsIdentity> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### DeleteViaIdentity
 ```
-Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -InputObject <IApplicationsIdentity>
+Remove-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -InputObject <IApplicationsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,27 +32,12 @@ Delete ref of navigation property memberOf for onPremisesPublishingProfiles
 
 ## PARAMETERS
 
-### -ConnectorGroupId
-The unique identifier of connectorGroup
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ConnectorId
 The unique identifier of connector
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -97,7 +67,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -128,7 +98,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -143,7 +113,7 @@ The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True

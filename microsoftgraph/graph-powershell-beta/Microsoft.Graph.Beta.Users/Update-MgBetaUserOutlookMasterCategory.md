@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
+You can't modify the displayName property once you have created the category.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the writable property, color, of the specified outlookCategory object.
-You can't modify the displayName propertyonce you have created the category.
+You can't modify the displayName property once you have created the category.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-update-permissions.md)]
@@ -317,6 +317,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
   - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList

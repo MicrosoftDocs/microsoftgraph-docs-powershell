@@ -28,8 +28,8 @@ function Start-Repair {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
+    git config --global user.email "GraphTooling@service.microsoft.com"
+    git config --global user.name "Microsoft Graph DevX Tooling"
     git add .
     git commit -m "Remove boiler plate code injected by Autorest" 
 }
@@ -90,17 +90,6 @@ function Repair-Examples{
     }
 }
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
-
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -109,7 +98,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Repair -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

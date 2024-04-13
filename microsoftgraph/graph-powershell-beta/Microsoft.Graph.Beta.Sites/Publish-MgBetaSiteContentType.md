@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgBetaSiteContentType
 
 ## SYNOPSIS
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Publish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ```
 
 ## DESCRIPTION
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]

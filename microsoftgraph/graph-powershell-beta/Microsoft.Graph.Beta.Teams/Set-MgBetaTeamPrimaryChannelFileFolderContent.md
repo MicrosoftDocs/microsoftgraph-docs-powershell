@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaTeamPrimaryChannelFileFolderContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property filesFolder in teams
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPrimaryChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-Da
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property filesFolder in teams
 
 ## EXAMPLES
 ### Example 1: Code snippet

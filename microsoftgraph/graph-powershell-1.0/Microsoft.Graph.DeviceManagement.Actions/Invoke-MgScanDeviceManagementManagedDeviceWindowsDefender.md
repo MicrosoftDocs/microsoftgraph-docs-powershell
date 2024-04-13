@@ -241,6 +241,8 @@ BODYPARAMETER `<IPathsByrzneDevicemanagementManageddevicesManageddeviceIdMicroso
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
   - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy

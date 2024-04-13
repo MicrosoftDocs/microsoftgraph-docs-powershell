@@ -8,7 +8,7 @@ schema: 2.0.0
 # Undo-MgTeamworkDeletedChatDelete
 
 ## SYNOPSIS
-Invoke action undoDelete
+Restore a  deletedChat to an active chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Undo-MgBetaTeamworkDeletedChatDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgBetaTeamworkDeletedChatDelete?view=graph-powershell-beta)
@@ -30,7 +30,10 @@ Undo-MgTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHeaders
 ```
 
 ## DESCRIPTION
-Invoke action undoDelete
+Restore a  deletedChat to an active chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-undodelete-permissions.md)]
 
 ## PARAMETERS
 

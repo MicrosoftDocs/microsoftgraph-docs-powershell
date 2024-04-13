@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDriveSpecialContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property special from drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecialContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecialContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaDriveSpecialContent -InputObject <IFilesIdentity> [-Format <String>] -
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property special from drives
 
 ## PARAMETERS
 

@@ -19,14 +19,12 @@ Update the navigation property mobileApps in deviceAppManagement
 ```
 Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphMobileAppAssignment[]>]
- [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>]
- [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
- [-InformationUrl <String>] [-IsAssigned] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
- [-Publisher <String>] [-PublishingState <MobileAppPublishingState>]
+ [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-Description <String>] [-Developer <String>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsFeatured]
+ [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>] [-Owner <String>]
+ [-PrivacyInformationUrl <String>] [-Publisher <String>] [-PublishingState <MobileAppPublishingState>]
  [-Relationships <IMicrosoftGraphMobileAppRelationship[]>] [-RoleScopeTagIds <String[]>]
- [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>] [-UploadState <Int32>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -41,14 +39,12 @@ Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <
 Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
- [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
- [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
- [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
+ [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>]
  [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
  [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
- [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
- [-UploadState <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -125,36 +121,6 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time the app was created.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DependentAppCount
-The total number of dependencies the child app has.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -266,21 +232,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -IsAssigned
-The value indicating whether the app is assigned to at least one group.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -IsFeatured
 The value indicating whether the app is marked as featured by the admin.
 
@@ -302,21 +253,6 @@ To construct, see NOTES section for LARGEICON properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastModifiedDateTime
-The date and time the app was last modified.
-
-```yaml
-Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -478,51 +414,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SupersededAppCount
-The total number of apps this app is directly or indirectly superseded by.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SupersedingAppCount
-The total number of apps this app directly or indirectly supersedes.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UploadState
-The upload state.
-
-```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -578,7 +469,6 @@ Read-only.
   - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: The identifier of the source of the assignment.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -598,7 +488,6 @@ Read-only.
     - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: The identifier of the source of the assignment.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -607,20 +496,15 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-  - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[InformationUrl <String>]`: The more information Url.
-  - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
   - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
   - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: Indicates the content mime type.
     - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
   - `[Notes <String>]`: Notes for the app.
   - `[Owner <String>]`: The owner of the app.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -629,21 +513,14 @@ Read-only.
   - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[TargetDisplayName <String>]`: The target mobile app's display name.
-    - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
     - `[TargetId <String>]`: The target mobile app's app id.
-    - `[TargetPublisher <String>]`: The target mobile app's publisher.
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
-  - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-  - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-  - `[UploadState <Int32?>]`: The upload state.
 
 CATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The list of categories for this app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
@@ -685,6 +562,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
@@ -723,10 +601,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: List of relationships for this mobile app.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetDisplayName <String>]`: The target mobile app's display name.
-  - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
   - `[TargetId <String>]`: The target mobile app's app id.
-  - `[TargetPublisher <String>]`: The target mobile app's publisher.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS

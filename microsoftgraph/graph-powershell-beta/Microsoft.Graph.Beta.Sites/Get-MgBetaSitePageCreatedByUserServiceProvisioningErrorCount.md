@@ -10,26 +10,15 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
 ```
 Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount -BaseSitePageId <String> -SiteId <String>
  [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount -BaseSitePageId <String> -SiteId <String>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaSitePageCreatedByUserServiceProvisioningErrorCount -InputObject <ISitesIdentity> [-Filter <String>]
- [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
@@ -50,7 +39,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -96,7 +85,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -156,7 +145,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -237,6 +226,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePageCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecreatedbyuserserviceprovisioningerrorcount)
 

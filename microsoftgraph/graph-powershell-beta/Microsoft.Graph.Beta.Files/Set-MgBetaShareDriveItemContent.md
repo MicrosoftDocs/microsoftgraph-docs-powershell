@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaShareDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in shares
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgShareDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgShareDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in shares
 
 ## PARAMETERS
 

@@ -3,8 +3,8 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
-    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell"),
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
+    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
 )
@@ -28,10 +28,10 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add .
-    git commit -m "Updated metadata parameters" 
+    # git config --global user.email "GraphTooling@service.microsoft.com"
+    # git config --global user.name "Microsoft Graph DevX Tooling"
+    # git add .
+    # git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -85,6 +85,7 @@ function Get-Files {
 
 
     try {
+        Write-Host $GraphProfilePath
         if (Test-Path $GraphProfilePath) {
             $ModuleMetaData = $GraphProfile -eq "v1.0" ? "Microsoft.Graph.$Module" : "Microsoft.Graph.Beta.$Module"
             foreach ($File in Get-ChildItem $GraphProfilePath) {
@@ -357,17 +358,6 @@ function ConfirmHttpStatus {
     }
 }
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
 
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
@@ -384,7 +374,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Preview of the last message sent in the chat.
-Null if no messages have been sent in the chat.
+Null if no messages were sent in the chat.
 Currently, only the list chats operation supports this property.
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Get-MgChatLastMessagePreview -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Preview of the last message sent in the chat.
-Null if no messages have been sent in the chat.
+Null if no messages were sent in the chat.
 Currently, only the list chats operation supports this property.
 
 ## PARAMETERS

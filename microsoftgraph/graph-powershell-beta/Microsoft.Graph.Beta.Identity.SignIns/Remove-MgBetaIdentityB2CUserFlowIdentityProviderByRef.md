@@ -15,28 +15,28 @@ For more information about identity providers available for user flows, see the 
 
 ### Delete (Default)
 ```
-Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String>
- -IdentityProviderId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Delete1
+```
+Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <String>
+ -IdentityProviderId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
+ [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### DeleteViaIdentity1
 ```
-Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
+Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -94,7 +94,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -109,7 +109,7 @@ The unique identifier of identityProvider
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

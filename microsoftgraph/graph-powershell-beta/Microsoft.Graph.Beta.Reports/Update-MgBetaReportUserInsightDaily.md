@@ -323,8 +323,13 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ACTIVEUSERS <IMicrosoftGraphActiveUsersMetric- `[]`>: Insights for active users on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AppId <String>]`: 
+  - `[AppName <String>]`: 
   - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
+  - `[Country <String>]`: 
   - `[FactDate <DateTime?>]`: Date of the insight.
+  - `[Language <String>]`: 
+  - `[OS <String>]`: 
 
 ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
@@ -346,6 +351,8 @@ Supports $filter (eq).
   - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
   - `[FactDate <DateTime?>]`: The date of the user insight.
+  - `[IdentityProvider <String>]`: 
+  - `[Language <String>]`: 
   - `[OS <String>]`: The platform for the device that the customers used.
 Supports $filter (eq).
   - `[SuccessCount <Int64?>]`: Number of successful authentication requests.
@@ -358,8 +365,13 @@ Read-only.
   - `[ActiveUsers <IMicrosoftGraphActiveUsersMetric- `[]`>]`: Insights for active users on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AppId <String>]`: 
+    - `[AppName <String>]`: 
     - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
+    - `[Country <String>]`: 
     - `[FactDate <DateTime?>]`: Date of the insight.
+    - `[Language <String>]`: 
+    - `[OS <String>]`: 
   - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -379,11 +391,14 @@ Supports $filter (eq).
     - `[Country <String>]`: The location where the customers authenticated from.
 Supports $filter (eq).
     - `[FactDate <DateTime?>]`: The date of the user insight.
+    - `[IdentityProvider <String>]`: 
+    - `[Language <String>]`: 
     - `[OS <String>]`: The platform for the device that the customers used.
 Supports $filter (eq).
     - `[SuccessCount <Int64?>]`: Number of successful authentication requests.
 Supports $filter (eq).
   - `[InactiveUsers <IMicrosoftGraphDailyInactiveUsersMetric- `[]`>]`: 
+    - `[AppId <String>]`: 
     - `[FactDate <DateTime?>]`: 
     - `[Inactive30DayCount <Int64?>]`: 
     - `[Inactive60DayCount <Int64?>]`: 
@@ -407,7 +422,16 @@ Read-only.
 Supports $filter (eq).
     - `[AttemptsCount <Int64?>]`: Number of users who attempted to sign up.
 Supports $filter (eq).
+    - `[Country <String>]`: 
     - `[FactDate <DateTime?>]`: The date of the user insight.
+    - `[IdentityProvider <String>]`: 
+    - `[Language <String>]`: 
+    - `[MfaFailures <IMicrosoftGraphMfaFailure- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Count <Int64?>]`: 
+      - `[Reason <String>]`: 
+      - `[ReasonCode <String>]`: mfaFailureReasonCode
     - `[MfaMethod <String>]`: The MFA authentication method used by the customers.
 Supports $filter (eq).
     - `[OS <String>]`: The platform of the device that the customers used.
@@ -417,9 +441,13 @@ Supports $filter (eq).
   - `[SignUps <IMicrosoftGraphUserSignUpMetric- `[]`>]`: Total sign-ups on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[AppId <String>]`: 
     - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
+    - `[Country <String>]`: 
     - `[FactDate <DateTime?>]`: The date of the user insight.
+    - `[IdentityProvider <String>]`: 
+    - `[Language <String>]`: 
     - `[OS <String>]`: The device plaform that the customers used.
 Supports $filter (eq).
   - `[Summary <IMicrosoftGraphInsightSummary- `[]`>]`: Summary of all usage insights on apps registered in the tenant for a specified period.
@@ -441,8 +469,10 @@ Supports $filter (eq).
 Read-only.
     - `[Count <Int64?>]`: The total number of users in the tenant over time.
     - `[FactDate <DateTime?>]`: The date of the insight.
+    - `[Language <String>]`: 
 
 INACTIVEUSERS <IMicrosoftGraphDailyInactiveUsersMetric- `[]`>: .
+  - `[AppId <String>]`: 
   - `[FactDate <DateTime?>]`: 
   - `[Inactive30DayCount <Int64?>]`: 
   - `[Inactive60DayCount <Int64?>]`: 
@@ -468,7 +498,16 @@ Read-only.
 Supports $filter (eq).
   - `[AttemptsCount <Int64?>]`: Number of users who attempted to sign up.
 Supports $filter (eq).
+  - `[Country <String>]`: 
   - `[FactDate <DateTime?>]`: The date of the user insight.
+  - `[IdentityProvider <String>]`: 
+  - `[Language <String>]`: 
+  - `[MfaFailures <IMicrosoftGraphMfaFailure- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Count <Int64?>]`: 
+    - `[Reason <String>]`: 
+    - `[ReasonCode <String>]`: mfaFailureReasonCode
   - `[MfaMethod <String>]`: The MFA authentication method used by the customers.
 Supports $filter (eq).
   - `[OS <String>]`: The platform of the device that the customers used.
@@ -479,9 +518,13 @@ Supports $filter (eq).
 SIGNUPS <IMicrosoftGraphUserSignUpMetric- `[]`>: Total sign-ups on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AppId <String>]`: 
   - `[Count <Int64?>]`: The total number of users who signed up in the specified period.
 Supports $filter (eq).
+  - `[Country <String>]`: 
   - `[FactDate <DateTime?>]`: The date of the user insight.
+  - `[IdentityProvider <String>]`: 
+  - `[Language <String>]`: 
   - `[OS <String>]`: The device plaform that the customers used.
 Supports $filter (eq).
 
@@ -505,6 +548,7 @@ USERCOUNT <IMicrosoftGraphUserCountMetric- `[]`>: Insights for total users on ap
 Read-only.
   - `[Count <Int64?>]`: The total number of users in the tenant over time.
   - `[FactDate <DateTime?>]`: The date of the insight.
+  - `[Language <String>]`:
 
 ## RELATED LINKS
 

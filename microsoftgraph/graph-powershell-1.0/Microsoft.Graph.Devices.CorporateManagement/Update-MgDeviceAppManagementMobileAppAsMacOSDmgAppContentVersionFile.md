@@ -19,11 +19,9 @@ Update the navigation property files in deviceAppManagement
 ```
 Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile -MobileAppContentFileId <String>
  -MobileAppContentId <String> -MobileAppId <String> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
- [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManifestInputFile <String>] [-Name <String>]
+ [-Size <Int64>] [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,11 +36,9 @@ Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile -MobileAppC
 ```
 Update-MgDeviceAppManagementMobileAppAsMacOSDmgAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
- [-UploadState <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-ManifestInputFile <String>] [-Name <String>]
+ [-Size <Int64>] [-SizeEncrypted <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -73,36 +69,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AzureStorageUri
-The Azure Storage URI.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AzureStorageUriExpirationDateTime
-The time the Azure storage Uri expires.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
 Contains properties for a single installer file that is associated with a given mobileAppContent version.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -116,21 +82,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The time the file was created.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -178,21 +129,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -IsCommitted
-A value indicating whether the file is committed.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -398,10 +334,6 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppContentFile>`: Contains properties for a
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AzureStorageUri <String>]`: The Azure Storage URI.
-  - `[AzureStorageUriExpirationDateTime <DateTime?>]`: The time the Azure storage Uri expires.
-  - `[CreatedDateTime <DateTime?>]`: The time the file was created.
-  - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
   - `[Manifest <Byte- `[]`>]`: The manifest information.
   - `[Name <String>]`: the file name.
   - `[Size <Int64?>]`: The size of the file prior to encryption.

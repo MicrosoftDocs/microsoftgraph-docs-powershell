@@ -17,28 +17,28 @@ Revoke the specified user's access to submit print jobs to the associated printe
 
 ### Delete (Default)
 ```
-Remove-MgPrintShareAllowedUserByRef -PrinterShareId <String> -UserId <String> [-IfMatch <String>]
+Remove-MgPrintShareAllowedUserByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgPrintShareAllowedUserByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
+Remove-MgPrintShareAllowedUserByRef -PrinterShareId <String> -UserId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String> [-IfMatch <String>]
+Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
+Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -84,7 +84,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -190,7 +190,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

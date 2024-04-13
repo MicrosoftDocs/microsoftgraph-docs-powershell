@@ -448,7 +448,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsCustomerAllowedToManageBooking
-.
+Indicates that the customer can manage bookings created by the staff.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -759,7 +760,8 @@ It's denoted in ISO 8601 format.
   - `[Description <String>]`: A text description for the service.
   - `[IsAnonymousJoinEnabled <Boolean?>]`: Indicates if an anonymousJoinWebUrl(webrtcUrl) is generated for the appointment booked for this service.
 The default value is false.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
   - `[IsHiddenFromCustomers <Boolean?>]`: True means this service isn't available to customers for booking.
   - `[IsLocationOnline <Boolean?>]`: Indicates that the appointments for the service are held online.
 The default value is false.
@@ -774,23 +776,23 @@ To create a customer, use the Create bookingCustomer operation.
   - `[SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>]`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+    - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame of the service.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
         - `[Day <String>]`: dayOfWeek
         - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
           - `[End <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
           - `[Start <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-      - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-      - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+      - `[EndDate <DateTime?>]`: End date of the availability window.
+      - `[StartDate <DateTime?>]`: Start date of the availability window.
     - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
       - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
     - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
 The default value is false
     - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.
@@ -853,12 +855,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[Role <String>]`: Usage: role='{role}'
   - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
@@ -869,23 +872,23 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 SCHEDULINGPOLICY `<IMicrosoftGraphBookingSchedulingPolicy>`: This type represents the set of policies that dictate how bookings can be created in a Booking Calendar.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowStaffSelection <Boolean?>]`: True if to allow customers to choose a specific person for the booking.
-  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: collection of custom availabilities for a given time range.
+  - `[CustomAvailabilities <IMicrosoftGraphBookingsAvailabilityWindow- `[]`>]`: Custom availability of the service in a given time frame of the service.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
       - `[Day <String>]`: dayOfWeek
       - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot- `[]`>]`: A list of start/end times during a day.
         - `[End <String>]`: The time of the day when work stops.
 For example, 17:00:00.0000000.
         - `[Start <String>]`: The time of the day when work starts.
 For example, 08:00:00.0000000.
-    - `[EndDate <DateTime?>]`: Allow customers to end date of availability window.
-    - `[StartDate <DateTime?>]`: Allow customers to start date of availability window.
+    - `[EndDate <DateTime?>]`: End date of the availability window.
+    - `[StartDate <DateTime?>]`: Start date of the availability window.
   - `[GeneralAvailability <IMicrosoftGraphBookingsAvailability>]`: bookingsAvailability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AvailabilityType <String>]`: bookingsServiceAvailabilityType
     - `[BusinessHours <IMicrosoftGraphBookingWorkHours- `[]`>]`: The hours of operation in a week.
-This is set to null if the availability type is not customWeeklyHours
+The business hours value is set to null if the availability type isn't customWeeklyHours.
   - `[IsMeetingInviteToCustomersEnabled <Boolean?>]`: Indicates if the meeting invite is sent to the customers.
 The default value is false
   - `[MaximumAdvance <TimeSpan?>]`: Maximum number of days in advance that a booking can be made.

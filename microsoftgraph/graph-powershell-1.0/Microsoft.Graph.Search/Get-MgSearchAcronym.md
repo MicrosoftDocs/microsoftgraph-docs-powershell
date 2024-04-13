@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchAcronym
 
 ## SYNOPSIS
-Get acronyms from search
+Read the properties and relationships of an acronym object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronym?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get acronyms from search
+Read the properties and relationships of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-get-permissions.md)]
 
 ## PARAMETERS
 

@@ -56,6 +56,9 @@ This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageAp
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
+	subject = @{
+		objectId = "5acd375c-8acb-45de-a958-fa0dd89259ad"
+	}
 }
 
 Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId -BodyParameter $params
@@ -238,7 +241,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

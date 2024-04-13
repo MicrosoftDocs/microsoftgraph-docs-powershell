@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupThread
 
 ## SYNOPSIS
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
@@ -36,7 +37,8 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Respon
 ```
 
 ## DESCRIPTION
-Get a thread object.
+Get a specific thread that belongs to a group.
+You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
@@ -286,6 +288,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -301,6 +304,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
@@ -322,6 +327,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UniqueName <String>]`: Alternate key of group
   - `[User <String>]`: Usage: User='{User}'
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)

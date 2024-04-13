@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Invoke action assign
+Assign a cloudPcUserSetting to user groups.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
@@ -48,7 +48,10 @@ Set-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Invoke action assign
+Assign a cloudPcUserSetting to user groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-assign-permissions.md)]
 
 ## PARAMETERS
 
@@ -241,7 +244,9 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when this assignment was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
@@ -250,12 +255,16 @@ BODYPARAMETER `<IPaths7Tr5RcDevicemanagementVirtualendpointUsersettingsCloudpcus
   - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date and time when this assignment was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
   - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy

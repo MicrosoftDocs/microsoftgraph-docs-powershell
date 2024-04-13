@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupSiteContentTypeColumn
 
 ## SYNOPSIS
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+Delete columnDefinition
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\].
+Delete columnDefinition
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]

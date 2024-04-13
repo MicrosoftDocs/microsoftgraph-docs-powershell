@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold
 
 ## SYNOPSIS
-Start the process of removing hold from eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
-The location provides a URL that will return an eDiscoveryHoldOperation object.
+Invoke action removeHold
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-1.0)
@@ -66,9 +64,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIden
 ```
 
 ## DESCRIPTION
-Start the process of removing hold from eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
-The location provides a URL that will return an eDiscoveryHoldOperation object.
+Invoke action removeHold
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
@@ -302,7 +298,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -321,6 +317,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -351,7 +348,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator

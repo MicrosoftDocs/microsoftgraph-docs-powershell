@@ -3,8 +3,8 @@
 Param(
     $ModulesToGenerate = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
-    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell"),
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell/src"),
+    [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
 )
@@ -27,11 +27,7 @@ function Start-Generator {
             $ProfilePath = "graph-powershell-beta"
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
-    }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Updated metadata parameters" 
+    } 
 }
 function Get-FilesByProfile {
     Param(

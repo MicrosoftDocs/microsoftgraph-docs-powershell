@@ -11,7 +11,7 @@ schema: 2.0.0
 Restore an archived team and restores users' ability to send messages and edit the team, abiding by tenant and team settings.
 Teams are archived using the archive API.
 Unarchiving is an async operation.
-A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
+A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgUnarchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveTeam?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ Invoke-MgBetaUnarchiveTeam -InputObject <ITeamsIdentity> [-ResponseHeadersVariab
 Restore an archived team and restores users' ability to send messages and edit the team, abiding by tenant and team settings.
 Teams are archived using the archive API.
 Unarchiving is an async operation.
-A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
+A team is unarchived once the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## EXAMPLES
 ### Example 1: Code snippet

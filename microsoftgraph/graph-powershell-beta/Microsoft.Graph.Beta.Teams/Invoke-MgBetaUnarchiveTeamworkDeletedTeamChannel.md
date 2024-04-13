@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannel
 
 ## SYNOPSIS
-Invoke action unarchive
+Restore an archived channel.
+Unarchiving restores the ability for users to send messages and edit the channel.
+Channels are archived via the archive API.
+Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
 ## SYNTAX
 
@@ -27,7 +30,10 @@ Invoke-MgBetaUnarchiveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action unarchive
+Restore an archived channel.
+Unarchiving restores the ability for users to send messages and edit the channel.
+Channels are archived via the archive API.
+Unarchiving is an asynchronous operation; a channel is unarchived when the asynchronous unarchive operation completes successfully, which might occur after this method responds.
 
 ## PARAMETERS
 

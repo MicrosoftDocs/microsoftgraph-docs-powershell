@@ -200,6 +200,12 @@ Locale: en-US
 ### [Get-MgUserSettingWindowsInstanceCount](Get-MgUserSettingWindowsInstanceCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgUserSponsor](Get-MgUserSponsor.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserSponsorCount](Get-MgUserSponsorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
 {{ Fill in the Description }}
 

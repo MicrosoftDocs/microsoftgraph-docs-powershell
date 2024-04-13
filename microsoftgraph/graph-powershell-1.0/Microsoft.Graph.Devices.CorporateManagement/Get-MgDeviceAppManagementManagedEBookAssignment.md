@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the managedEBookAssignment object.
+Read properties and relationships of the iosVppEBookAssignment object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedEBookAssignment object.
+Read properties and relationships of the iosVppEBookAssignment object.
 
 ## PARAMETERS
 

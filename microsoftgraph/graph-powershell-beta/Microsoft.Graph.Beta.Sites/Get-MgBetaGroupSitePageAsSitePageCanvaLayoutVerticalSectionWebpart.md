@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of web parts in this section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -384,6 +387,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayoutverticalsectionwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayoutverticalsectionwebpart)
 

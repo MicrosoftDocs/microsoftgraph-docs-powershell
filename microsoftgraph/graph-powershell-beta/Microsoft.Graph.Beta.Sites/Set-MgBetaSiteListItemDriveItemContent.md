@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaSiteListItemDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data <Str
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in sites
 
 ## PARAMETERS
 

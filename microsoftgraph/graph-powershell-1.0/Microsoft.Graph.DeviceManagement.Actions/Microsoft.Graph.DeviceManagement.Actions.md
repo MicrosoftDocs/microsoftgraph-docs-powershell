@@ -104,6 +104,9 @@ Locale: en-US
 ### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice.md)
 {{ Fill in the Description }}
 
@@ -122,6 +125,9 @@ Locale: en-US
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
 {{ Fill in the Description }}
 
+### [Rename-MgDeviceManagementVirtualEndpointCloudPc](Rename-MgDeviceManagementVirtualEndpointCloudPc.md)
+{{ Fill in the Description }}
+
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
 {{ Fill in the Description }}
 
@@ -131,7 +137,13 @@ Locale: en-US
 ### [Restart-MgDeviceManagementManagedDeviceNow](Restart-MgDeviceManagementManagedDeviceNow.md)
 {{ Fill in the Description }}
 
+### [Restart-MgDeviceManagementVirtualEndpointCloudPc](Restart-MgDeviceManagementVirtualEndpointCloudPc.md)
+{{ Fill in the Description }}
+
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
+{{ Fill in the Description }}
+
+### [Restore-MgDeviceManagementVirtualEndpointCloudPc](Restore-MgDeviceManagementVirtualEndpointCloudPc.md)
 {{ Fill in the Description }}
 
 ### [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](Send-MgDeviceManagementNotificationMessageTemplateTestMessage.md)
@@ -159,6 +171,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
+{{ Fill in the Description }}
+
+### [Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck.md)
+{{ Fill in the Description }}
+
+### [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod.md)
 {{ Fill in the Description }}
 
 ### [Sync-MgDeviceManagementExchangeConnector](Sync-MgDeviceManagementExchangeConnector.md)

@@ -453,7 +453,9 @@ Read-only.
 Read-only.
   - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+Supports $filter (eq).
   - `[ResourceType <String>]`: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
   - `[Url <String>]`: A unique resource locator for the resource, such as the URL for signing a user into an application.
 
@@ -535,7 +537,9 @@ Read-only.
 Read-only.
     - `[OriginId <String>]`: The unique identifier of the resource in the origin system.
 In the case of a Microsoft Entra group, originId is the identifier of the group.
+Supports $filter (eq).
     - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication, or AadGroup.
+Supports $filter (eq).
     - `[ResourceType <String>]`: The type of the resource, such as Application if it is a Microsoft Entra connected application, or SharePoint Online Site for a SharePoint Online site.
     - `[Url <String>]`: A unique resource locator for the resource, such as the URL for signing a user into an application.
   - `[CatalogId <String>]`: The unique ID of the access package catalog.
@@ -645,7 +649,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

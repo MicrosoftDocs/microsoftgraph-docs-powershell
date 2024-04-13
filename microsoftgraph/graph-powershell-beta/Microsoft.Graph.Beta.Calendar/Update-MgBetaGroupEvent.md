@@ -482,7 +482,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsAllDay
-.
+Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
 
 ```yaml
 Type: SwitchParameter
@@ -497,7 +498,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsCancelled
-.
+Set to true if the event has been canceled.
 
 ```yaml
 Type: SwitchParameter
@@ -512,7 +513,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsDraft
-.
+Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
 
 ```yaml
 Type: SwitchParameter
@@ -527,7 +529,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsOnlineMeeting
-.
+True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional.
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
 
 ```yaml
 Type: SwitchParameter
@@ -542,7 +548,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsOrganizer
-.
+Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
 
 ```yaml
 Type: SwitchParameter
@@ -557,7 +564,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsReminderOn
-.
+Set to true if an alert is set to remind the user of the event.
 
 ```yaml
 Type: SwitchParameter
@@ -604,7 +611,9 @@ Accept wildcard characters: False
 ```
 
 ### -Locations
-.
+The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
 To construct, see NOTES section for LOCATIONS properties and create a hash table.
 
 ```yaml
@@ -638,7 +647,10 @@ Accept wildcard characters: False
 ```
 
 ### -OccurrenceId
-.
+An identifier for an occurrence in a recurring event series.
+Null if the event isn't part of a recurring series.The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}.
+The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding recurrenceRange.This property can identify any occurrence in a recurring series, including an occurrence that has been modified or canceled.
+You can use this property to perform all operations supported by occurrences in the recurring series.
 
 ```yaml
 Type: String
@@ -684,7 +696,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineMeetingUrl
-.
+A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
 
 ```yaml
 Type: String
@@ -715,7 +730,8 @@ Accept wildcard characters: False
 ```
 
 ### -OriginalEndTimeZone
-.
+The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
 
 ```yaml
 Type: String
@@ -730,7 +746,10 @@ Accept wildcard characters: False
 ```
 
 ### -OriginalStart
-.
+Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property isn't returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
@@ -745,7 +764,8 @@ Accept wildcard characters: False
 ```
 
 ### -OriginalStartTimeZone
-.
+The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
 
 ```yaml
 Type: String
@@ -791,7 +811,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReminderMinutesBeforeStart
-.
+The number of minutes before the event start time that the reminder alert occurs.
 
 ```yaml
 Type: Int32
@@ -821,7 +841,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResponseRequested
-.
+Default is true, which represents the organizer would like an invitee to send a response to the event.
 
 ```yaml
 Type: SwitchParameter
@@ -867,7 +887,7 @@ Accept wildcard characters: False
 ```
 
 ### -SeriesMasterId
-.
+The ID for the recurring series master item, if this event is part of a recurring series.
 
 ```yaml
 Type: String
@@ -931,7 +951,7 @@ Accept wildcard characters: False
 ```
 
 ### -Subject
-.
+The text of the event's subject line.
 
 ```yaml
 Type: String
@@ -946,7 +966,11 @@ Accept wildcard characters: False
 ```
 
 ### -TransactionId
-.
+A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
 
 ```yaml
 Type: String
@@ -976,7 +1000,8 @@ Accept wildcard characters: False
 ```
 
 ### -Uid
-.
+A unique identifier for calendar events.
+For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
 
 ```yaml
 Type: String
@@ -991,7 +1016,8 @@ Accept wildcard characters: False
 ```
 
 ### -WebLink
-.
+The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
 ```yaml
 Type: String
@@ -1233,12 +1259,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-  - `[IsAllDay <Boolean?>]`: 
-  - `[IsCancelled <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsOnlineMeeting <Boolean?>]`: 
-  - `[IsOrganizer <Boolean?>]`: 
-  - `[IsReminderOn <Boolean?>]`: 
+  - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+  - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+  - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+  - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
   - `[Location <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1265,11 +1298,16 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[LocationUri <String>]`: Optional URI representing the location.
     - `[UniqueId <String>]`: For internal use only.
     - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
-  - `[OccurrenceId <String>]`: 
+  - `[OccurrenceId <String>]`: An identifier for an occurrence in a recurring event series.
+Null if the event isn't part of a recurring series.The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}.
+The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding recurrenceRange.This property can identify any occurrence in a recurring series, including an occurrence that has been modified or canceled.
+You can use this property to perform all operations supported by occurrences in the recurring series.
   - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The ID of the conference.
@@ -1282,13 +1320,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
     - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
     - `[TollNumber <String>]`: The toll number that can be used to join the conference.
   - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-  - `[OnlineMeetingUrl <String>]`: 
+  - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
   - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[OriginalEndTimeZone <String>]`: 
-  - `[OriginalStart <DateTime?>]`: 
-  - `[OriginalStartTimeZone <String>]`: 
+  - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property isn't returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -1321,21 +1367,27 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderMinutesBeforeStart <Int32?>]`: 
-  - `[ResponseRequested <Boolean?>]`: 
+  - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+  - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
   - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
   - `[Sensitivity <String>]`: sensitivity
-  - `[SeriesMasterId <String>]`: 
+  - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
   - `[ShowAs <String>]`: freeBusyStatus
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Subject <String>]`: 
-  - `[TransactionId <String>]`: 
+  - `[Subject <String>]`: The text of the event's subject line.
+  - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
   - `[Type <String>]`: eventType
-  - `[Uid <String>]`: 
-  - `[WebLink <String>]`: 
+  - `[Uid <String>]`: A unique identifier for calendar events.
+For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
+  - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
 CALENDAR `<IMicrosoftGraphCalendar>`: calendar
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1428,12 +1480,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-    - `[IsAllDay <Boolean?>]`: 
-    - `[IsCancelled <Boolean?>]`: 
-    - `[IsDraft <Boolean?>]`: 
-    - `[IsOnlineMeeting <Boolean?>]`: 
-    - `[IsOrganizer <Boolean?>]`: 
-    - `[IsReminderOn <Boolean?>]`: 
+    - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+    - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+    - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+    - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+    - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+    - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
     - `[Location <IMicrosoftGraphLocation>]`: location
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1460,14 +1519,19 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
       - `[LocationUri <String>]`: Optional URI representing the location.
       - `[UniqueId <String>]`: For internal use only.
       - `[UniqueIdType <String>]`: locationUniqueIdType
-    - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+    - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String- `[]`>]`: A collection of property values.
-    - `[OccurrenceId <String>]`: 
+    - `[OccurrenceId <String>]`: An identifier for an occurrence in a recurring event series.
+Null if the event isn't part of a recurring series.The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}.
+The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding recurrenceRange.This property can identify any occurrence in a recurring series, including an occurrence that has been modified or canceled.
+You can use this property to perform all operations supported by occurrences in the recurring series.
     - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The ID of the conference.
@@ -1480,13 +1544,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
       - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
       - `[TollNumber <String>]`: The toll number that can be used to join the conference.
     - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[OnlineMeetingUrl <String>]`: 
+    - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
     - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[OriginalEndTimeZone <String>]`: 
-    - `[OriginalStart <DateTime?>]`: 
-    - `[OriginalStartTimeZone <String>]`: 
+    - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+    - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property isn't returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -1519,11 +1591,11 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
         - `[Type <String>]`: recurrenceRangeType
-    - `[ReminderMinutesBeforeStart <Int32?>]`: 
-    - `[ResponseRequested <Boolean?>]`: 
+    - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+    - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
     - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
     - `[Sensitivity <String>]`: sensitivity
-    - `[SeriesMasterId <String>]`: 
+    - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
     - `[ShowAs <String>]`: freeBusyStatus
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
@@ -1532,11 +1604,17 @@ Nullable.
 Read-only.
       - `[Value <String>]`: A property value.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[Subject <String>]`: 
-    - `[TransactionId <String>]`: 
+    - `[Subject <String>]`: The text of the event's subject line.
+    - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
     - `[Type <String>]`: eventType
-    - `[Uid <String>]`: 
-    - `[WebLink <String>]`: 
+    - `[Uid <String>]`: A unique identifier for calendar events.
+For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
+    - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
   - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource.
@@ -1724,12 +1802,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-  - `[IsAllDay <Boolean?>]`: 
-  - `[IsCancelled <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsOnlineMeeting <Boolean?>]`: 
-  - `[IsOrganizer <Boolean?>]`: 
-  - `[IsReminderOn <Boolean?>]`: 
+  - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+  - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+  - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+  - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
   - `[Location <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -1756,11 +1841,16 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[LocationUri <String>]`: Optional URI representing the location.
     - `[UniqueId <String>]`: For internal use only.
     - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
-  - `[OccurrenceId <String>]`: 
+  - `[OccurrenceId <String>]`: An identifier for an occurrence in a recurring event series.
+Null if the event isn't part of a recurring series.The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}.
+The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding recurrenceRange.This property can identify any occurrence in a recurring series, including an occurrence that has been modified or canceled.
+You can use this property to perform all operations supported by occurrences in the recurring series.
   - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The ID of the conference.
@@ -1773,13 +1863,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
     - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
     - `[TollNumber <String>]`: The toll number that can be used to join the conference.
   - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-  - `[OnlineMeetingUrl <String>]`: 
+  - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
   - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[OriginalEndTimeZone <String>]`: 
-  - `[OriginalStart <DateTime?>]`: 
-  - `[OriginalStartTimeZone <String>]`: 
+  - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property isn't returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -1812,21 +1910,27 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderMinutesBeforeStart <Int32?>]`: 
-  - `[ResponseRequested <Boolean?>]`: 
+  - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+  - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
   - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
   - `[Sensitivity <String>]`: sensitivity
-  - `[SeriesMasterId <String>]`: 
+  - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
   - `[ShowAs <String>]`: freeBusyStatus
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Subject <String>]`: 
-  - `[TransactionId <String>]`: 
+  - `[Subject <String>]`: The text of the event's subject line.
+  - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
   - `[Type <String>]`: eventType
-  - `[Uid <String>]`: 
-  - `[WebLink <String>]`: 
+  - `[Uid <String>]`: A unique identifier for calendar events.
+For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
+  - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
 EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for the event.
 Nullable.
@@ -1990,12 +2094,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-  - `[IsAllDay <Boolean?>]`: 
-  - `[IsCancelled <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsOnlineMeeting <Boolean?>]`: 
-  - `[IsOrganizer <Boolean?>]`: 
-  - `[IsReminderOn <Boolean?>]`: 
+  - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+  - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+  - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but hasn't sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+  - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+  - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
   - `[Location <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -2022,11 +2133,16 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[LocationUri <String>]`: Optional URI representing the location.
     - `[UniqueId <String>]`: For internal use only.
     - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+  - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
-  - `[OccurrenceId <String>]`: 
+  - `[OccurrenceId <String>]`: An identifier for an occurrence in a recurring event series.
+Null if the event isn't part of a recurring series.The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}.
+The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding recurrenceRange.This property can identify any occurrence in a recurring series, including an occurrence that has been modified or canceled.
+You can use this property to perform all operations supported by occurrences in the recurring series.
   - `[OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>]`: onlineMeetingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConferenceId <String>]`: The ID of the conference.
@@ -2039,13 +2155,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
     - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
     - `[TollNumber <String>]`: The toll number that can be used to join the conference.
   - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-  - `[OnlineMeetingUrl <String>]`: 
+  - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
   - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-  - `[OriginalEndTimeZone <String>]`: 
-  - `[OriginalStart <DateTime?>]`: 
-  - `[OriginalStartTimeZone <String>]`: 
+  - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+  - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property isn't returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -2078,21 +2202,27 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
       - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderMinutesBeforeStart <Int32?>]`: 
-  - `[ResponseRequested <Boolean?>]`: 
+  - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+  - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
   - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
   - `[Sensitivity <String>]`: sensitivity
-  - `[SeriesMasterId <String>]`: 
+  - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
   - `[ShowAs <String>]`: freeBusyStatus
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Subject <String>]`: 
-  - `[TransactionId <String>]`: 
+  - `[Subject <String>]`: The text of the event's subject line.
+  - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
   - `[Type <String>]`: eventType
-  - `[Uid <String>]`: 
-  - `[WebLink <String>]`: 
+  - `[Uid <String>]`: A unique identifier for calendar events.
+For recurring events, the value is the same for the series master and all of its occurrences including exceptions.
+  - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
 
 LOCATION `<IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2121,7 +2251,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-LOCATIONS <IMicrosoftGraphLocation- `[]`>: .
+LOCATIONS <IMicrosoftGraphLocation- `[]`>: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.

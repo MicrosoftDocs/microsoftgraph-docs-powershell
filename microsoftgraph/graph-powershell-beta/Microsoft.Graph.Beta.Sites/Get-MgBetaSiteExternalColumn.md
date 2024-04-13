@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteExternalColumn
 
 ## SYNOPSIS
-The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
+The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteExternalColumn?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
+The collection of column definitions available in the site that is referenced from the sites in the parent hierarchy of the current site.
 
 ## PARAMETERS
 

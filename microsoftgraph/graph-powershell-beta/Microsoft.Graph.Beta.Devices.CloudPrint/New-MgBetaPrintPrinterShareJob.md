@@ -471,10 +471,9 @@ Read-only.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created.
@@ -539,9 +538,9 @@ Read-only.
 Read-only.
       - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Microsoft Entra ID.
+        - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
         - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-        - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Microsoft Entra ID for the corresponding App.
+        - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
         - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
       - `[DisplayName <String>]`: The name of the printTaskDefinition.
       - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
@@ -602,10 +601,9 @@ Read-only.
 CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
@@ -690,9 +688,9 @@ Read-only.
 Read-only.
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Microsoft Entra ID.
+      - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
       - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Microsoft Entra ID for the corresponding App.
+      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.
     - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.

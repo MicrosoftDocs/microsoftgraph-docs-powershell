@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserDriveItemChildContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property children from users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemChildContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaUserDriveItemChildContent -InputObject <IFilesIdentity> [-Format <Stri
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property children from users
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]

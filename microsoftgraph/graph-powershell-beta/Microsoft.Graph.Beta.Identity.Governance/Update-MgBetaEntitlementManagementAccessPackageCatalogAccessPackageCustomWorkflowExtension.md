@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-Update the properties of an accessPackageAssignmentRequestWorkflowExtension object.
+Update the properties of an accessPackageAssignmentWorkflowExtension object.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflo
 ```
 
 ## DESCRIPTION
-Update the properties of an accessPackageAssignmentRequestWorkflowExtension object.
+Update the properties of an accessPackageAssignmentWorkflowExtension object.
 
 ## PARAMETERS
 
@@ -392,7 +392,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

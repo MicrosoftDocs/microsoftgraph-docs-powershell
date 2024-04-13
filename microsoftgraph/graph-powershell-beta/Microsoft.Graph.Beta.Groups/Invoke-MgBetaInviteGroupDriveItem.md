@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaInviteGroupDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgInviteGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgInviteGroupDriveItem?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ Invoke-MgBetaInviteGroupDriveItem -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a DriveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-invite-permissions.md)]

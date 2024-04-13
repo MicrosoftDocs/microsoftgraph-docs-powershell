@@ -224,6 +224,9 @@ Locale: en-US
 ### [Get-MgBetaGroupTeamChannelFileFolderContent](Get-MgBetaGroupTeamChannelFileFolderContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupTeamChannelFileFolderContentStream](Get-MgBetaGroupTeamChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupTeamChannelMember](Get-MgBetaGroupTeamChannelMember.md)
 {{ Fill in the Description }}
 
@@ -348,6 +351,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupTeamPrimaryChannelFileFolderContent](Get-MgBetaGroupTeamPrimaryChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupTeamPrimaryChannelFileFolderContentStream](Get-MgBetaGroupTeamPrimaryChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupTeamPrimaryChannelMember](Get-MgBetaGroupTeamPrimaryChannelMember.md)
@@ -512,6 +518,9 @@ Locale: en-US
 ### [Get-MgBetaTeamChannelFileFolderContent](Get-MgBetaTeamChannelFileFolderContent.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaTeamChannelFileFolderContentStream](Get-MgBetaTeamChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaTeamChannelMember](Get-MgBetaTeamChannelMember.md)
 {{ Fill in the Description }}
 
@@ -648,6 +657,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamPrimaryChannelFileFolderContent](Get-MgBetaTeamPrimaryChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamPrimaryChannelFileFolderContentStream](Get-MgBetaTeamPrimaryChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamPrimaryChannelMember](Get-MgBetaTeamPrimaryChannelMember.md)
@@ -831,6 +843,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent](Get-MgBetaTeamworkDeletedTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream](Get-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaTeamworkDeletedTeamChannelMember](Get-MgBetaTeamworkDeletedTeamChannelMember.md)
@@ -1877,6 +1892,9 @@ Locale: en-US
 ### [Set-MgBetaGroupTeamChannelFileFolderContent](Set-MgBetaGroupTeamChannelFileFolderContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupTeamChannelFileFolderContentStream](Set-MgBetaGroupTeamChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupTeamChannelMessageHostedContent](Set-MgBetaGroupTeamChannelMessageHostedContent.md)
 {{ Fill in the Description }}
 
@@ -1889,6 +1907,9 @@ Locale: en-US
 ### [Set-MgBetaGroupTeamPrimaryChannelFileFolderContent](Set-MgBetaGroupTeamPrimaryChannelFileFolderContent.md)
 {{ Fill in the Description }}
 
+### [Set-MgBetaGroupTeamPrimaryChannelFileFolderContentStream](Set-MgBetaGroupTeamPrimaryChannelFileFolderContentStream.md)
+{{ Fill in the Description }}
+
 ### [Set-MgBetaGroupTeamPrimaryChannelMessageHostedContent](Set-MgBetaGroupTeamPrimaryChannelMessageHostedContent.md)
 {{ Fill in the Description }}
 
@@ -1899,6 +1920,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamChannelFileFolderContent](Set-MgBetaTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaTeamChannelFileFolderContentStream](Set-MgBetaTeamChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamChannelMessageHostedContent](Set-MgBetaTeamChannelMessageHostedContent.md)
@@ -1917,6 +1941,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamPrimaryChannelFileFolderContent](Set-MgBetaTeamPrimaryChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaTeamPrimaryChannelFileFolderContentStream](Set-MgBetaTeamPrimaryChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamPrimaryChannelMessageHostedContent](Set-MgBetaTeamPrimaryChannelMessageHostedContent.md)
@@ -1938,6 +1965,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent](Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream](Set-MgBetaTeamworkDeletedTeamChannelFileFolderContentStream.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](Set-MgBetaTeamworkDeletedTeamChannelMessageHostedContent.md)

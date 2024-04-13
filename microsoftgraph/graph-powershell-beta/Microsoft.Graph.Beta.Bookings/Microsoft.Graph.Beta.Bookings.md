@@ -158,6 +158,12 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventSessionRegistration](Get-MgBetaVirtualEventSessionRegistration.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventSessionRegistrationByEmail](Get-MgBetaVirtualEventSessionRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventSessionRegistrationByUserId](Get-MgBetaVirtualEventSessionRegistrationByUserId.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventSessionRegistrationCount](Get-MgBetaVirtualEventSessionRegistrationCount.md)
 {{ Fill in the Description }}
 
@@ -218,6 +224,12 @@ Locale: en-US
 ### [Get-MgBetaVirtualEventTownhallSessionRegistration](Get-MgBetaVirtualEventTownhallSessionRegistration.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaVirtualEventTownhallSessionRegistrationByEmail](Get-MgBetaVirtualEventTownhallSessionRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventTownhallSessionRegistrationByUserId](Get-MgBetaVirtualEventTownhallSessionRegistrationByUserId.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaVirtualEventTownhallSessionRegistrationCount](Get-MgBetaVirtualEventTownhallSessionRegistrationCount.md)
 {{ Fill in the Description }}
 
@@ -249,6 +261,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistration](Get-MgBetaVirtualEventWebinarRegistration.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarRegistrationByEmail](Get-MgBetaVirtualEventWebinarRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarRegistrationByUserId](Get-MgBetaVirtualEventWebinarRegistrationByUserId.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarRegistrationConfiguration](Get-MgBetaVirtualEventWebinarRegistrationConfiguration.md)
@@ -294,6 +312,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistration](Get-MgBetaVirtualEventWebinarSessionRegistration.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarSessionRegistrationByEmail](Get-MgBetaVirtualEventWebinarSessionRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaVirtualEventWebinarSessionRegistrationByUserId](Get-MgBetaVirtualEventWebinarSessionRegistrationByUserId.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaVirtualEventWebinarSessionRegistrationCount](Get-MgBetaVirtualEventWebinarSessionRegistrationCount.md)
@@ -488,6 +512,12 @@ Locale: en-US
 ### [Remove-MgBetaVirtualEventWebinarRegistration](Remove-MgBetaVirtualEventWebinarRegistration.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaVirtualEventWebinarRegistrationByEmail](Remove-MgBetaVirtualEventWebinarRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaVirtualEventWebinarRegistrationByUserId](Remove-MgBetaVirtualEventWebinarRegistrationByUserId.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaVirtualEventWebinarSession](Remove-MgBetaVirtualEventWebinarSession.md)
 {{ Fill in the Description }}
 
@@ -612,6 +642,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarRegistration](Update-MgBetaVirtualEventWebinarRegistration.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaVirtualEventWebinarRegistrationByEmail](Update-MgBetaVirtualEventWebinarRegistrationByEmail.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaVirtualEventWebinarRegistrationByUserId](Update-MgBetaVirtualEventWebinarRegistrationByUserId.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaVirtualEventWebinarSession](Update-MgBetaVirtualEventWebinarSession.md)

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISi
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 ## PARAMETERS
 

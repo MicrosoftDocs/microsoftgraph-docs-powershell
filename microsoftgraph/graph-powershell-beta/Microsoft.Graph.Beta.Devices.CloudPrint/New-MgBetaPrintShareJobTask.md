@@ -311,9 +311,9 @@ Read-only.
 Read-only.
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Microsoft Entra ID.
+      - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
       - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Microsoft Entra ID for the corresponding App.
+      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.
     - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
@@ -339,9 +339,9 @@ DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
 Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Microsoft Entra ID.
+    - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
     - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-    - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Microsoft Entra ID for the corresponding App.
+    - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
     - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
   - `[DisplayName <String>]`: The name of the printTaskDefinition.
   - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
@@ -394,9 +394,9 @@ Read-only.
 Read-only.
     - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique identifier representing Application Id in the Microsoft Entra ID.
+      - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
       - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating Service Principal Id in Microsoft Entra ID for the corresponding App.
+      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.
     - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.

@@ -13,6 +13,9 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -20,20 +23,6 @@ Returned only on $select.
 Get-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -SiteId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -SiteId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -56,7 +45,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -102,7 +91,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +151,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -243,6 +232,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagelastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagelastmodifiedbyusermailboxsetting)
 

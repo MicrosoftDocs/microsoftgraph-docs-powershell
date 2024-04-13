@@ -5,16 +5,19 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ---
 
-# Get-MgBetaSecurityLabelCategorySubCategory
+# Get-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Read the properties and relationships of a subCategoryTemplate object.
+Get subcategories from security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
@@ -22,23 +25,20 @@ Get-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> [-Expand
 
 ### Get
 ```
-Get-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> -SubCategoryTemplateId <String>
+Get-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a subCategoryTemplate object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-subcategorytemplate-get-permissions.md)]
+Get subcategories from security
 
 ## PARAMETERS
 
@@ -239,8 +239,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SubCategoryTemplateId
-The unique identifier of subCategoryTemplate
+### -SubcategoryTemplateId
+The unique identifier of subcategoryTemplate
 
 ```yaml
 Type: String
@@ -293,7 +293,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubCategoryTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubcategoryTemplate
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -317,7 +317,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -336,6 +336,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -366,7 +367,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
@@ -384,6 +385,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategorysubcategory)
 

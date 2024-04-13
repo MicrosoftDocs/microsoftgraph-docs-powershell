@@ -17,14 +17,14 @@ Get media content for the navigation property photo from users
 
 ### Get (Default)
 ```
-Get-MgBetaUserContactPhotoContent -ContactId <String> -UserId <String> [-Format <String>] -OutFile <String>
+Get-MgBetaUserContactPhotoContent -ContactId <String> -UserId <String> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Format <String>] -OutFile <String>
+Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -43,21 +43,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaShareItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property items in shares
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgShareItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgShareItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaShareItemContent -InputObject <IFilesIdentity> [-Data <Stream>] [-Resp
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property items in shares
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaUserDriveSpecialContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property special in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserDriveSpecialContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveSpecialContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaUserDriveSpecialContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property special in users
 
 ## PARAMETERS
 

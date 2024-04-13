@@ -198,8 +198,8 @@ Read-only.
 Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
-    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
-    - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized
+    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
+    - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
     - `[ReportName <String>]`: Name of the report
     - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
     - `[Select <String- `[]`>]`: Columns selected from the report
@@ -207,7 +207,7 @@ Read-only.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
-    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
     - `[Url <String>]`: Temporary location of the exported report
 
 EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob- `[]`>: Entity representing a job to export a report
@@ -215,8 +215,8 @@ EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob- `[]`>: Entity representing
 Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
-  - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
-  - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized
+  - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report.
+  - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized.
   - `[ReportName <String>]`: Name of the report
   - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
   - `[Select <String- `[]`>]`: Columns selected from the report
@@ -224,7 +224,7 @@ Read-only.
 A sessionId or CachedReportConfiguration id can be used here.
 If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.
 Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
-  - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+  - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report.
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS

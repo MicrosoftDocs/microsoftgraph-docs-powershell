@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaGroupDriveItemListItemDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveItemListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaGroupDriveItemListItemDriveItemContent -InputObject <IFilesIdentity> [
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in groups
 
 ## PARAMETERS
 

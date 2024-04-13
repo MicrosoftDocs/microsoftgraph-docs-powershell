@@ -641,6 +641,7 @@ DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription- `[]`>: Description a
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -650,6 +651,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupId1 <String>]`: The unique identifier of group
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
@@ -679,6 +682,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
   - `[UserId <String>]`: The unique identifier of user
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 LABELS <IMicrosoftGraphTermStoreLocalizedLabel- `[]`>: Label metadata for a term.
   - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.

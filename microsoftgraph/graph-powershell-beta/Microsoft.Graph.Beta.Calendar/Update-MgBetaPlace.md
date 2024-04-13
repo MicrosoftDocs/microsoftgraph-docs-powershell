@@ -20,6 +20,14 @@ You can identify the room, workspace, or roomList by specifying the id or emailA
 ```
 Update-MgBetaPlace -PlaceId <String> [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-PlaceId1 <String>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlace [-PlaceId <String>] -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
+ [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,14 +35,6 @@ Update-MgBetaPlace -PlaceId <String> [-ResponseHeadersVariable <String>] [-Addit
 ### Update
 ```
 Update-MgBetaPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPlace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -251,6 +251,35 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+```yaml
+Type: String
+Parameter Sets: UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlaceId1
+A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -364,6 +393,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[Latitude <Double?>]`: The latitude of the location.
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
+  - `[PlaceId <String>]`: A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

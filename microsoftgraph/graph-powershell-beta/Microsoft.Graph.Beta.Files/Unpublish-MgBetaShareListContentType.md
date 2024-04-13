@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unpublish-MgBetaShareListContentType
 
 ## SYNOPSIS
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Invoke action unpublish
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Unpublish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ResponseHea
 ```
 
 ## DESCRIPTION
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Invoke action unpublish
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]

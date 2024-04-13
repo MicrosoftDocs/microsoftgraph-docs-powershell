@@ -380,6 +380,9 @@ Locale: en-US
 ### [Get-MgBetaGroupOwnerCountAsUser](Get-MgBetaGroupOwnerCountAsUser.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupPasswordSingleSignOnCredential](Get-MgBetaGroupPasswordSingleSignOnCredential.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupPermissionGrant](Get-MgBetaGroupPermissionGrant.md)
 {{ Fill in the Description }}
 
@@ -893,6 +896,9 @@ Locale: en-US
 ### [Remove-MgBetaGroupAcceptedSenderByRef](Remove-MgBetaGroupAcceptedSenderByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupByUniqueName](Remove-MgBetaGroupByUniqueName.md)
 {{ Fill in the Description }}
 
@@ -944,13 +950,28 @@ Locale: en-US
 ### [Remove-MgBetaGroupMemberByRef](Remove-MgBetaGroupMemberByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupMemberDirectoryObjectByRef](Remove-MgBetaGroupMemberDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupOwnerByRef](Remove-MgBetaGroupOwnerByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupOwnerDirectoryObjectByRef](Remove-MgBetaGroupOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupPasswordSingleSignOnCredential](Remove-MgBetaGroupPasswordSingleSignOnCredential.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupPermissionGrant](Remove-MgBetaGroupPermissionGrant.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaGroupPhoto](Remove-MgBetaGroupPhoto.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaGroupRejectedSenderByRef](Remove-MgBetaGroupRejectedSenderByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupSetting](Remove-MgBetaGroupSetting.md)

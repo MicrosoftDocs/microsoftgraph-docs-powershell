@@ -268,10 +268,6 @@ Read-only.
   - `[Files <IMicrosoftGraphMobileAppContentFile- `[]`>]`: The list of files for this app content version.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AzureStorageUri <String>]`: The Azure Storage URI.
-    - `[AzureStorageUriExpirationDateTime <DateTime?>]`: The time the Azure storage Uri expires.
-    - `[CreatedDateTime <DateTime?>]`: The time the file was created.
-    - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
     - `[Manifest <Byte- `[]`>]`: The manifest information.
     - `[Name <String>]`: the file name.
     - `[Size <Int64?>]`: The size of the file prior to encryption.
@@ -285,10 +281,6 @@ Read-only.
 FILES <IMicrosoftGraphMobileAppContentFile- `[]`>: The list of files for this app content version.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AzureStorageUri <String>]`: The Azure Storage URI.
-  - `[AzureStorageUriExpirationDateTime <DateTime?>]`: The time the Azure storage Uri expires.
-  - `[CreatedDateTime <DateTime?>]`: The time the file was created.
-  - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
   - `[Manifest <Byte- `[]`>]`: The manifest information.
   - `[Name <String>]`: the file name.
   - `[Size <Int64?>]`: The size of the file prior to encryption.

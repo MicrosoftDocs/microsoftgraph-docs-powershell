@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ### -AssociatedHubsUrls
 List of canonical URLs for hub sites with which this content type is associated to.
 This contains all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
 
 ```yaml
 Type: String[]
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 ```
 
 ### -ColumnLinks
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 To construct, see NOTES section for COLUMNLINKS properties and create a hash table.
 
 ```yaml
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -Columns
-The collection of column definitions for this contentType.
+The collection of column definitions for this content type.
 To construct, see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
@@ -432,7 +432,7 @@ Accept wildcard characters: False
 ```
 
 ### -PropagateChanges
-If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
 
 ```yaml
 Type: SwitchParameter
@@ -561,10 +561,10 @@ BASE `<IMicrosoftGraphContentType>`: contentType
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This contains all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
-  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type
+  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
@@ -729,7 +729,7 @@ User will be prompted with this message if validation fails.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists
-  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -782,7 +782,7 @@ For OneDrive, this property is not populated.
     - `[Default <Boolean?>]`: Indicates whether this is the default content type.
     - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
-  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -792,10 +792,10 @@ BASETYPES <IMicrosoftGraphContentType- `[]`>: The collection of content types th
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This contains all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
-  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type
+  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
@@ -960,7 +960,7 @@ User will be prompted with this message if validation fails.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists
-  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1013,7 +1013,7 @@ For OneDrive, this property is not populated.
     - `[Default <Boolean?>]`: Indicates whether this is the default content type.
     - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
-  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -1024,10 +1024,10 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
 Read-only.
   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This contains all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
   - `[Base <IMicrosoftGraphContentType>]`: contentType
   - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
-  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type
+  - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
@@ -1192,7 +1192,7 @@ User will be prompted with this message if validation fails.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists
-  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1245,12 +1245,12 @@ For OneDrive, this property is not populated.
     - `[Default <Boolean?>]`: Indicates whether this is the default content type.
     - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
-  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
 
-COLUMNLINKS <IMicrosoftGraphColumnLink- `[]`>: The collection of columns that are required by this content type
+COLUMNLINKS <IMicrosoftGraphColumnLink- `[]`>: The collection of columns that are required by this content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Name <String>]`: The name of the column  in this content type.
@@ -1417,7 +1417,7 @@ User will be prompted with this message if validation fails.
     - `[Formula <String>]`: The formula to validate column value.
 For examples, see Examples of common formulas in lists
 
-COLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: The collection of column definitions for this contentType.
+COLUMNS <IMicrosoftGraphColumnDefinition- `[]`>: The collection of column definitions for this content type.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn

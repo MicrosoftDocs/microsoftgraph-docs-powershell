@@ -163,8 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsProcessing
-Indicates whether a user's risky state is being processed by the backend.
-Supports $filter (eq).
+Indicates whether the backend is processing a user's risky state.
 
 ```yaml
 Type: SwitchParameter
@@ -227,7 +226,6 @@ Accept wildcard characters: False
 The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Supports $filter (eq, gt, lt).
 
 ```yaml
 Type: DateTime
@@ -372,13 +370,11 @@ Read-only.
     - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: The activity related to user risk level change
     - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
-    - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
-Supports $filter (eq).
+    - `[IsProcessing <Boolean?>]`: Indicates whether the backend is processing a user's risky state.
     - `[RiskDetail <String>]`: riskDetail
-    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Supports $filter (eq, gt, lt).
     - `[RiskLevel <String>]`: riskLevel
     - `[RiskState <String>]`: riskState
     - `[UserDisplayName <String>]`: Risky user display name.
@@ -393,13 +389,11 @@ Read-only.
     - `[UserId <String>]`: The ID of the user.
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
-Supports $filter (eq).
+  - `[IsProcessing <Boolean?>]`: Indicates whether the backend is processing a user's risky state.
   - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Supports $filter (eq, gt, lt).
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
@@ -409,13 +403,11 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem- `[]`>: The activity related to use
   - `[History <IMicrosoftGraphRiskyUserHistoryItem- `[]`>]`: The activity related to user risk level change
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted.
 Possible values are: true, false.
-  - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
-Supports $filter (eq).
+  - `[IsProcessing <Boolean?>]`: Indicates whether the backend is processing a user's risky state.
   - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated. 
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Supports $filter (eq, gt, lt).
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.

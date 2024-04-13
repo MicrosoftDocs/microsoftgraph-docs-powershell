@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## SYNOPSIS
-Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
+Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 ```
 
 ## DESCRIPTION
-Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
+Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -308,7 +308,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

@@ -14,30 +14,15 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 
 ### Delete (Default)
 ```
-Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <String>
- -FeatureRolloutPolicyId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirectoryManagementIdentity>
- -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDirectoryManagementIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,27 +34,12 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 
 ## PARAMETERS
 
-### -DirectoryObjectId
-The unique identifier of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -FeatureRolloutPolicyId
 The unique identifier of featureRolloutPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -99,7 +69,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -130,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

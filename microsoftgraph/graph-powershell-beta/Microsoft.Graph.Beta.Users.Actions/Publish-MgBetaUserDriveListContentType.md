@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgBetaUserDriveListContentType
 
 ## SYNOPSIS
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Publish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Re
 ```
 
 ## DESCRIPTION
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCollaboration
 
 ## SYNOPSIS
-Get collaboration from security
+Enables read and other actions on collaborative entities in Microsoft Defender.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaSecurityCollaboration [-ExpandProperty <String[]>] [-Property <String[
 ```
 
 ## DESCRIPTION
-Get collaboration from security
+Enables read and other actions on collaborative entities in Microsoft Defender.
 
 ## PARAMETERS
 

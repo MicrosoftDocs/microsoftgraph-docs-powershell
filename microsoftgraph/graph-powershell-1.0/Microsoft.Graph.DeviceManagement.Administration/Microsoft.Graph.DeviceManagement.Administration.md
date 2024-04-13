@@ -122,6 +122,30 @@ Locale: en-US
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventCount](Get-MgDeviceManagementVirtualEndpointAuditEventCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpointCloudPc](Get-MgDeviceManagementVirtualEndpointCloudPc.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointCloudPcCount](Get-MgDeviceManagementVirtualEndpointCloudPcCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointDeviceImageCount](Get-MgDeviceManagementVirtualEndpointDeviceImageCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointGalleryImage](Get-MgDeviceManagementVirtualEndpointGalleryImage.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointGalleryImageCount](Get-MgDeviceManagementVirtualEndpointGalleryImageCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointOnPremiseConnection](Get-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
+{{ Fill in the Description }}
+
+### [Get-MgDeviceManagementVirtualEndpointOnPremiseConnectionCount](Get-MgDeviceManagementVirtualEndpointOnPremiseConnectionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 {{ Fill in the Description }}
 
@@ -206,6 +230,15 @@ Locale: en-US
 ### [New-MgDeviceManagementTermAndConditionAssignment](New-MgDeviceManagementTermAndConditionAssignment.md)
 {{ Fill in the Description }}
 
+### [New-MgDeviceManagementVirtualEndpointDeviceImage](New-MgDeviceManagementVirtualEndpointDeviceImage.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointGalleryImage](New-MgDeviceManagementVirtualEndpointGalleryImage.md)
+{{ Fill in the Description }}
+
+### [New-MgDeviceManagementVirtualEndpointOnPremiseConnection](New-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
+{{ Fill in the Description }}
+
 ### [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](New-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 {{ Fill in the Description }}
 
@@ -266,6 +299,15 @@ Locale: en-US
 ### [Remove-MgDeviceManagementTermAndConditionAssignment](Remove-MgDeviceManagementTermAndConditionAssignment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDeviceManagementVirtualEndpointDeviceImage](Remove-MgDeviceManagementVirtualEndpointDeviceImage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceManagementVirtualEndpointGalleryImage](Remove-MgDeviceManagementVirtualEndpointGalleryImage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection](Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 {{ Fill in the Description }}
 
@@ -324,6 +366,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementTermAndConditionAssignment](Update-MgDeviceManagementTermAndConditionAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointDeviceImage](Update-MgDeviceManagementVirtualEndpointDeviceImage.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointGalleryImage](Update-MgDeviceManagementVirtualEndpointGalleryImage.md)
+{{ Fill in the Description }}
+
+### [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](Update-MgDeviceManagementVirtualEndpointOnPremiseConnection.md)
 {{ Fill in the Description }}
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)

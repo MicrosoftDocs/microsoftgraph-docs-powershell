@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property filesFolder in teamwork
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgTeamworkDeletedTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaTeamworkDeletedTeamChannelFileFolderContent -InputObject <ITeamsIdenti
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property filesFolder in teamwork
 
 ## PARAMETERS
 

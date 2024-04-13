@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unpublish-MgBetaGroupSiteListContentType
 
 ## SYNOPSIS
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Invoke action unpublish
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Unpublish-MgGroupSiteListContentType](/powershell/module/Microsoft.Graph.Groups/Unpublish-MgGroupSiteListContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Unpublish-MgBetaGroupSiteListContentType -InputObject <IGroupsIdentity> [-Respon
 ```
 
 ## DESCRIPTION
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Invoke action unpublish
 
 ## PARAMETERS
 

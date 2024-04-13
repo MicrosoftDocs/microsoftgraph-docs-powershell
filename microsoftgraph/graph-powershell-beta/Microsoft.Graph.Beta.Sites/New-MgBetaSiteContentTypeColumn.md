@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSiteContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a content type
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentTypeColumn?view=graph-powershell-1.0)
@@ -66,7 +66,7 @@ New-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a content type
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]

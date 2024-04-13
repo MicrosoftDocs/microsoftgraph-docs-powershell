@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveRootContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property root from groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaGroupDriveRootContent -InputObject <IFilesIdentity> [-Format <String>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property root from groups
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]

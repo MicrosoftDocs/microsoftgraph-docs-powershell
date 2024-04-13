@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSearchAcronym
 
 ## SYNOPSIS
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchAcronym?view=graph-powershell-beta)
@@ -48,7 +48,10 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property acronyms in search
+Update the properties of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -99,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The search answer description that is shown on the search results page.
 
 ```yaml
 Type: String
@@ -114,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The search answer name that is displayed in search results.
 
 ```yaml
 Type: String
@@ -192,7 +195,10 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
 
 ```yaml
 Type: DateTime
@@ -237,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -StandsFor
-.
+What the acronym stands for.
 
 ```yaml
 Type: String
@@ -267,7 +273,8 @@ Accept wildcard characters: False
 ```
 
 ### -WebUrl
-.
+The URL link for the search answer.
+When users select this search answer from the search results, they are directed to the specified URL.
 
 ```yaml
 Type: String
@@ -331,8 +338,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[Description <String>]`: The search answer description that is shown on the search results page.
+  - `[DisplayName <String>]`: The search answer name that is displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -341,11 +348,15 @@ BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-only.
+  - `[WebUrl <String>]`: The URL link for the search answer.
+When users select this search answer from the search results, they are directed to the specified URL.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[StandsFor <String>]`: 
+  - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
 INPUTOBJECT `<ISearchIdentity>`: Identity Parameter

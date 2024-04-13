@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -DefaultRedirectUri
 The default redirect URI.
-If specified and there is no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
+If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
 Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on.
 The value must match one of the configured redirect URIs for the application.
 
@@ -297,7 +297,7 @@ Accept wildcard characters: False
 
 ### -Description
 Free text field to provide a description of the application object to end users.
-The maximum allowed size is 1024 characters.
+The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
@@ -446,7 +446,7 @@ Accept wildcard characters: False
 
 ### -IdentifierUris
 Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
 You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
@@ -498,8 +498,8 @@ Accept wildcard characters: False
 
 ### -IsFallbackPublicClient
 Specifies the fallback application type as public client, such as an installed application running on a mobile device.
-The default value is false which means the fallback application type is confidential client such as a web app.
-There are certain scenarios where Microsoft Entra ID cannot determine the client application type.
+The default value is false, which means the fallback application type is confidential client such as a web app.
+There are certain scenarios where Microsoft Entra ID can't determine the client application type.
 For example, the ROPC flow where the application is configured without specifying a redirect URI.
 In those cases Microsoft Entra ID interprets the application type based on the value of this property.
 
@@ -801,7 +801,7 @@ Accept wildcard characters: False
 
 ### -SignInAudience
 Specifies the Microsoft accounts that are supported for the current application.
-The possible values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount.
+The possible values are: AzureADMyOrg (default), AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, and PersonalMicrosoftAccount.
 See more in the table.
 The value of this object also limits the number of permissions an app can request.
 For more information, see Limits on requested permissions per app.
@@ -856,7 +856,7 @@ Accept wildcard characters: False
 ### -Tags
 Custom strings that can be used to categorize and identify the application.
 Not nullable.
-Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
+Strings added here also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
 
 ```yaml
 Type: String[]
@@ -921,7 +921,7 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueName
-The unique identifier that can be assigned to an application as an alternative identifier.
+The unique identifier that can be assigned to an application and used as an alternate key.
 Immutable.
 Read-only.
 
@@ -1282,13 +1282,13 @@ Read-only.
     - `[Members <IMicrosoftGraphConnector- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[ExternalIP <String>]`: The external IP address as detected by the the connector server.
+      - `[ExternalIP <String>]`: The external IP address as detected by the connector server.
 Read-only.
-      - `[MachineName <String>]`: The machine name the connector is installed and running on.
+      - `[MachineName <String>]`: The name of the computer on which the connector is installed and runs on.
       - `[MemberOf <IMicrosoftGraphConnectorGroup- `[]`>]`: The connectorGroup that the connector is a member of.
 Read-only.
       - `[Status <String>]`: connectorStatus
-      - `[Version <String>]`: 
+      - `[Version <String>]`: The version of the connector.
     - `[Name <String>]`: The name associated with the connectorGroup.
     - `[Region <String>]`: connectorGroupRegion
   - `[CreatedDateTime <DateTime?>]`: The date and time the application was registered.
@@ -1298,11 +1298,11 @@ Read-only.
 Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderby.
   - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[DefaultRedirectUri <String>]`: The default redirect URI.
-If specified and there is no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
+If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
 Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on.
 The value must match one of the configured redirect URIs for the application.
   - `[Description <String>]`: Free text field to provide a description of the application object to end users.
-The maximum allowed size is 1024 characters.
+The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
@@ -1353,8 +1353,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-    - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+    - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -1384,7 +1385,7 @@ Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
 You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
@@ -1403,8 +1404,8 @@ For example, https://www.contoso.com/app/termsofservice
   - `[IsDeviceOnlyAuthSupported <Boolean?>]`: Specifies whether this application supports device authentication without a user.
 The default is false.
   - `[IsFallbackPublicClient <Boolean?>]`: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
-The default value is false which means the fallback application type is confidential client such as a web app.
-There are certain scenarios where Microsoft Entra ID cannot determine the client application type.
+The default value is false, which means the fallback application type is confidential client such as a web app.
+There are certain scenarios where Microsoft Entra ID can't determine the client application type.
 For example, the ROPC flow where the application is configured without specifying a redirect URI.
 In those cases Microsoft Entra ID interprets the application type based on the value of this property.
   - `[KeyCredentials <IMicrosoftGraphKeyCredential- `[]`>]`: The collection of key credentials associated with the application.
@@ -1604,7 +1605,7 @@ This locks OAuth service principals.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
     - `[TokenEncryptionKeyId <Boolean?>]`: Locks the tokenEncryptionKeyId property for modification on the service principal.
   - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application.
-The possible values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount.
+The possible values are: AzureADMyOrg (default), AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, and PersonalMicrosoftAccount.
 See more in the table.
 The value of this object also limits the number of permissions an app can request.
 For more information, see Limits on requested permissions per app.
@@ -1866,7 +1867,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
       - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
   - `[Tags <String- `[]`>]`: Custom strings that can be used to categorize and identify the application.
 Not nullable.
-Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
+Strings added here also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
   - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection.
 When configured, Microsoft Entra ID encrypts all the tokens it emits by using the key this property points to.
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
@@ -1903,7 +1904,7 @@ Required.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[UniqueName <String>]`: The unique identifier that can be assigned to an application as an alternative identifier.
+  - `[UniqueName <String>]`: The unique identifier that can be assigned to an application and used as an alternate key.
 Immutable.
 Read-only.
   - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
@@ -2077,11 +2078,11 @@ Read-only.
 Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderby.
     - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[DefaultRedirectUri <String>]`: The default redirect URI.
-If specified and there is no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
+If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI.
 Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on.
 The value must match one of the configured redirect URIs for the application.
     - `[Description <String>]`: Free text field to provide a description of the application object to end users.
-The maximum allowed size is 1024 characters.
+The maximum allowed size is 1,024 characters.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
     - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
@@ -2132,8 +2133,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-      - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+      - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -2163,7 +2165,7 @@ Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
 You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
@@ -2182,8 +2184,8 @@ For example, https://www.contoso.com/app/termsofservice
     - `[IsDeviceOnlyAuthSupported <Boolean?>]`: Specifies whether this application supports device authentication without a user.
 The default is false.
     - `[IsFallbackPublicClient <Boolean?>]`: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
-The default value is false which means the fallback application type is confidential client such as a web app.
-There are certain scenarios where Microsoft Entra ID cannot determine the client application type.
+The default value is false, which means the fallback application type is confidential client such as a web app.
+There are certain scenarios where Microsoft Entra ID can't determine the client application type.
 For example, the ROPC flow where the application is configured without specifying a redirect URI.
 In those cases Microsoft Entra ID interprets the application type based on the value of this property.
     - `[KeyCredentials <IMicrosoftGraphKeyCredential- `[]`>]`: The collection of key credentials associated with the application.
@@ -2383,7 +2385,7 @@ This locks OAuth service principals.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
       - `[TokenEncryptionKeyId <Boolean?>]`: Locks the tokenEncryptionKeyId property for modification on the service principal.
     - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application.
-The possible values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount.
+The possible values are: AzureADMyOrg (default), AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, and PersonalMicrosoftAccount.
 See more in the table.
 The value of this object also limits the number of permissions an app can request.
 For more information, see Limits on requested permissions per app.
@@ -2645,7 +2647,7 @@ Unless mentioned explicitly, metadata values shouldn't be changed.
         - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[Tags <String- `[]`>]`: Custom strings that can be used to categorize and identify the application.
 Not nullable.
-Strings added here will also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
+Strings added here also appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and $search.
     - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection.
 When configured, Microsoft Entra ID encrypts all the tokens it emits by using the key this property points to.
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
@@ -2682,7 +2684,7 @@ Required.
 Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[UniqueName <String>]`: The unique identifier that can be assigned to an application as an alternative identifier.
+    - `[UniqueName <String>]`: The unique identifier that can be assigned to an application and used as an alternate key.
 Immutable.
 Read-only.
     - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
@@ -2720,13 +2722,13 @@ Read-only.
   - `[Members <IMicrosoftGraphConnector- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[ExternalIP <String>]`: The external IP address as detected by the the connector server.
+    - `[ExternalIP <String>]`: The external IP address as detected by the connector server.
 Read-only.
-    - `[MachineName <String>]`: The machine name the connector is installed and running on.
+    - `[MachineName <String>]`: The name of the computer on which the connector is installed and runs on.
     - `[MemberOf <IMicrosoftGraphConnectorGroup- `[]`>]`: The connectorGroup that the connector is a member of.
 Read-only.
     - `[Status <String>]`: connectorStatus
-    - `[Version <String>]`: 
+    - `[Version <String>]`: The version of the connector.
   - `[Name <String>]`: The name associated with the connectorGroup.
   - `[Region <String>]`: connectorGroupRegion
 
@@ -2781,8 +2783,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-  - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+  - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).

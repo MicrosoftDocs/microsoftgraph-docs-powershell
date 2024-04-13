@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteListItemActivityDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaSiteListItemActivityDriveItemContent -InputObject <ISitesIdentity> [-F
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 ## PARAMETERS
 

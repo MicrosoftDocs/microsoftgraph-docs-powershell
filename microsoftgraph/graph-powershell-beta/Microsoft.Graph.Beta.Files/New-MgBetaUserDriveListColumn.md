@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserDriveListColumn
 
 ## SYNOPSIS
-Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListColumn?view=graph-powershell-1.0)
@@ -66,7 +66,7 @@ New-MgBetaUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-post-columns-permissions.md)]

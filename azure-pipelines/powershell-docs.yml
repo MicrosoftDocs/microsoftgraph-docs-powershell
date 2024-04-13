@@ -23,11 +23,6 @@ parameters:
   default: true
 resources:
   repositories:
-  - repository: msgraph-sdk-powershell
-    type: github
-    endpoint: MicrosoftDocs
-    name: microsoftgraph/msgraph-sdk-powershell
-    ref: dev
   - repository: 1ESPipelineTemplates
     type: git
     name: 1ESPipelineTemplates/1ESPipelineTemplates
@@ -60,56 +55,80 @@ extends:
           outputs:
           - output: pipelineArtifact
             displayName: 'Publish Examples to be reviewed as artifact'
-            targetPath: 'microsoftgraph-docs-powershell\missingexternaldocsurl'
+            targetPath: missingexternaldocsurl
             artifactName: 'MissingExternalDocs'
             publishLocation: 'Container'
         steps:
         - template: azure-pipelines/update-template.yml@self
-          parameters:
-            projectFileName: $(projectFileName)
-            testType: 'Execution'
+        - task : PowerShell@2
+          name: "ComputeBranch"
+          displayName: 'Compute Branch Name'
+          inputs:
+            targetType: 'inline'
+            script: |
+              git submodule update --init --recursive
+              $branch = "{0}_{1}" -f "WeeklyReferenceDocsUpdate", (Get-Date -Format yyyyMMddHHmm)
+              Write-Host "Compute branch: $branch"
+              Write-Host "##vso[task.setvariable variable=WeeklyReferenceDocsBranch;isOutput=true]$branch"
+        - task: Bash@3
+          displayName: "Create weekly refresh branch"
+          inputs:
+            targetType: inline
+            script: |
+              git status
+              git branch $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git checkout $(ComputeBranch.WeeklyReferenceDocsBranch)
+              git status              
+        - task: PowerShell@2
+          displayName: 'Create missing external docs folder'
+          continueOnError: false
+          inputs:
+            targetType: 'filePath'
+            pwsh: true
+            filePath: scripts/CreateExternalDocsFolder.ps1
+
         - task: PowerShell@2
           displayName: 'Generate markdown files from PowerShell help files'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\GenerateMarkDown.ps1
+            filePath: scripts/GenerateMarkDown.ps1
         - task: PowerShell@2
           displayName: 'Escape disallowed html tags'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\EscapeDisallowedHtmlTags.ps1
+            filePath: scripts/EscapeDisallowedHtmlTags.ps1
         - task: PowerShell@2
           displayName: 'Update metadata header'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1
+            filePath: scripts/MsProdUpdate.ps1
         - task: PowerShell@2
           displayName: 'Update Links'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
+            filePath: scripts/UpdateLinks.ps1
         - task: PowerShell@2
           displayName: 'Repair Examples and Descriptions and Title'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+            filePath: scripts/RepairExamplesDescriptionsAndTitle.ps1
         - task: PowerShell@2
           displayName: 'Remove boiler plate code'
           continueOnError: false
           inputs:
             targetType: 'filePath'
             pwsh: true
-            filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
+            filePath: scripts/RemoveBoilerPlateCode.ps1
         - task: PowerShell@2
           displayName: Pushing to github
           env:
@@ -118,17 +137,17 @@ extends:
             targetType: inline
             pwsh: true
             script: |
-              git config --global user.email "timwamalwa@gmail.com"
-              git config --global user.name "Timothy Wamalwa"
-              cd microsoftgraph-docs-powershell
-              $date = Get-Date -Format "dd-MM-yyyy"
-              $proposedBranch = "weekly_v2_docs_update_$date"
+              git config --global user.email "GraphTooling@service.microsoft.com"
+              git config --global user.name "Microsoft Graph DevX Tooling"
+              git config --system core.longpaths true
+              git status
               git add .
-              git commit -m "Updating help files $date"
-              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
+              git commit -m "Updating reference docs"
+              git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $(ComputeBranch.WeeklyReferenceDocsBranch)
               git status
         - template: azure-pipelines/common-templates/create-pr.yml@self
           parameters:
-            BaseBranch: main
+            BaseBranch: "main"
+            TargetBranch: $(ComputeBranch.WeeklyReferenceDocsBranch)
             Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
             Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."

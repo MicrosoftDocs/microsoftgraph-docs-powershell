@@ -49,23 +49,23 @@ $params = @{
 	requests = @(
 		@{
 			entityTypes = @(
-				"externalItem"
-			)
-			contentSources = @(
-				"/external/connections/connectionfriendlyname"
-			)
-			region = "US"
-			query = @{
-				queryString = "contoso product"
-			}
-			from = 0
-			size = 25
-			fields = @(
-				"title"
-				"description"
-			)
-		}
+			"externalItem"
+		)
+		contentSources = @(
+		"/external/connections/connectionfriendlyname"
 	)
+	region = "US"
+	query = @{
+		queryString = "contoso product"
+	}
+	from = 0
+	size = 25
+	fields = @(
+	"title"
+"description"
+)
+}
+)
 }
 
 Invoke-MgBetaQuerySearch -BodyParameter $params
@@ -247,10 +247,11 @@ Required.
 This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format.
 Required.
         - `[SortBy <String>]`: bucketAggregationSortProperty
-      - `[Field <String>]`: Computes aggregation on the field while the field exists in current entity type.
+      - `[Field <String>]`: Computes aggregation on the field while the field exists in the current entity type.
 Required.
       - `[Size <Int32?>]`: The number of searchBucket resources to be returned.
 This isn't required when the range is provided manually in the search request.
+The minimum accepted size is 1, and the maximum is 65535.
 Optional.
     - `[CollapseProperties <IMicrosoftGraphCollapseProperty- `[]`>]`: Contains the ordered collection of fields and limit to collapse results.
 Optional.
@@ -350,10 +351,11 @@ Required.
 This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format.
 Required.
       - `[SortBy <String>]`: bucketAggregationSortProperty
-    - `[Field <String>]`: Computes aggregation on the field while the field exists in current entity type.
+    - `[Field <String>]`: Computes aggregation on the field while the field exists in the current entity type.
 Required.
     - `[Size <Int32?>]`: The number of searchBucket resources to be returned.
 This isn't required when the range is provided manually in the search request.
+The minimum accepted size is 1, and the maximum is 65535.
 Optional.
   - `[CollapseProperties <IMicrosoftGraphCollapseProperty- `[]`>]`: Contains the ordered collection of fields and limit to collapse results.
 Optional.

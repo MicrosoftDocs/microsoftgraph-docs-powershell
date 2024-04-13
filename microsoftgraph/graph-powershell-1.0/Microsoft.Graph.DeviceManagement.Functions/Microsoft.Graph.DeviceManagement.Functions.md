@@ -29,6 +29,9 @@ Locale: en-US
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 {{ Fill in the Description }}
 
+### [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
 {{ Fill in the Description }}
 

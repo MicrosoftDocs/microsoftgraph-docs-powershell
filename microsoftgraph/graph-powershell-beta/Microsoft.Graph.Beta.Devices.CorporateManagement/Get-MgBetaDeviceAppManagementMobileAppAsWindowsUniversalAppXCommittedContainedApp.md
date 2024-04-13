@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
+This property is read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedApp?view=graph-powershell-1.0)
@@ -41,6 +42,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXCommittedContainedAp
 
 ## DESCRIPTION
 The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
+This property is read-only.
 
 ## PARAMETERS
 
@@ -343,6 +345,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

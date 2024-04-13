@@ -18,13 +18,13 @@ Get media content for the navigation property messages from users
 ### Get (Default)
 ```
 Get-MgBetaUserMailFolderMessageContent -MailFolderId <String> -MessageId <String> -UserId <String>
- [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserMailFolderMessageContent -InputObject <IMailIdentity> [-Format <String>] -OutFile <String>
+Get-MgBetaUserMailFolderMessageContent -InputObject <IMailIdentity> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -36,21 +36,6 @@ Get media content for the navigation property messages from users
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-list-messages-permissions.md)]
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.

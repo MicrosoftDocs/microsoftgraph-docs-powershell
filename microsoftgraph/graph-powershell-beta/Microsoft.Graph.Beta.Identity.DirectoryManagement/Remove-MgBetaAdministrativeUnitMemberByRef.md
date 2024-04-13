@@ -14,28 +14,14 @@ Delete ref of navigation property members for administrativeUnits
 
 ### Delete (Default)
 ```
-Remove-MgBetaAdministrativeUnitMemberByRef -AdministrativeUnitId <String> -DirectoryObjectId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaAdministrativeUnitMemberByRef -AdministrativeUnitId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
-```
-Remove-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### DeleteViaIdentity
 ```
-Remove-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
+Remove-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -47,21 +33,6 @@ Delete ref of navigation property members for administrativeUnits
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -95,7 +66,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -126,7 +97,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

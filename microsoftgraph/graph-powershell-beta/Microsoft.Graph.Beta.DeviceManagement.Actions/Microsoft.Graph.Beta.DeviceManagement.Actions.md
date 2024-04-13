@@ -119,6 +119,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementConfigurationPolicyJust](Get-MgBetaDeviceManagementConfigurationPolicyJust.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire](Get-MgBetaDeviceManagementDeviceCompliancePolicyNoncompliantDeviceToRetire.md)
 {{ Fill in the Description }}
 
@@ -342,6 +345,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport](Get-MgBetaDeviceManagementReportZebraFotaDeploymentReport.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust](Get-MgBetaDeviceManagementReusablePolicySettingReferencingConfigurationPolicyJust.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById.md)
@@ -834,6 +840,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceManagementConfigurationPolicy](Set-MgBetaDeviceManagementConfigurationPolicy.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDeviceManagementConfigurationPolicyJust](Set-MgBetaDeviceManagementConfigurationPolicyJust.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile.md)

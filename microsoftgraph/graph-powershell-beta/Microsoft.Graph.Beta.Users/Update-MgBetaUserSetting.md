@@ -22,8 +22,9 @@ Update-MgBetaUserSetting -UserId <String> [-ResponseHeadersVariable <String>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Windows <IMicrosoftGraphWindowsSetting[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -40,8 +41,9 @@ Update-MgBetaUserSetting -InputObject <IUsersIdentity> [-ResponseHeadersVariable
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Windows <IMicrosoftGraphWindowsSetting[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-Storage <IMicrosoftGraphUserStorage>]
+ [-Windows <IMicrosoftGraphWindowsSetting[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -261,6 +263,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Storage
+userStorage
+To construct, see NOTES section for STORAGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserStorage
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 The unique identifier of user
 
@@ -450,6 +468,28 @@ Required.
         - `[EndTime <String>]`: End time for the time range.
         - `[StartTime <String>]`: Start time for the time range.
       - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+  - `[Storage <IMicrosoftGraphUserStorage>]`: userStorage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[Deleted <Int64?>]`: 
+      - `[ManageWebUrl <String>]`: A URL that can be used in a browser to manage the breakdown.
+Read-only.
+      - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit in bytes.
+      - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: The breakdown of services contributing to the user's quota usage.
+        - `[DisplayName <String>]`: 
+        - `[ManageWebUrl <String>]`: 
+        - `[Used <Int64?>]`: 
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[State <String>]`: Indicates the state of the storage space.
+The possible values are: normal, nearing, critical, full, and overLimit.
+      - `[Total <Int64?>]`: Total allowed storage space in bytes.
+      - `[Used <Int64?>]`: Total space used in bytes.
   - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: The Windows settings of the user stored in the cloud.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -492,6 +532,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[ServiceStorageQuotaBreakdownId <String>]`: The unique identifier of serviceStorageQuotaBreakdown
   - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
@@ -598,6 +639,29 @@ Required.
       - `[EndTime <String>]`: End time for the time range.
       - `[StartTime <String>]`: Start time for the time range.
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
+
+STORAGE `<IMicrosoftGraphUserStorage>`: userStorage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[Quota <IMicrosoftGraphUnifiedStorageQuota>]`: unifiedStorageQuota
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[Deleted <Int64?>]`: 
+    - `[ManageWebUrl <String>]`: A URL that can be used in a browser to manage the breakdown.
+Read-only.
+    - `[Remaining <Int64?>]`: Total space remaining before reaching the quota limit in bytes.
+    - `[Services <IMicrosoftGraphServiceStorageQuotaBreakdown- `[]`>]`: The breakdown of services contributing to the user's quota usage.
+      - `[DisplayName <String>]`: 
+      - `[ManageWebUrl <String>]`: 
+      - `[Used <Int64?>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[State <String>]`: Indicates the state of the storage space.
+The possible values are: normal, nearing, critical, full, and overLimit.
+    - `[Total <Int64?>]`: Total allowed storage space in bytes.
+    - `[Used <Int64?>]`: Total space used in bytes.
 
 WINDOWS <IMicrosoftGraphWindowsSetting- `[]`>: The Windows settings of the user stored in the cloud.
   - `[Id <String>]`: The unique identifier for an entity.

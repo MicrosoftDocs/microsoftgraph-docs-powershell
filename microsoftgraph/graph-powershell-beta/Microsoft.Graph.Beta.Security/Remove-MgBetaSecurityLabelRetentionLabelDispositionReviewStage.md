@@ -10,11 +10,14 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property dispositionReviewStages for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageId <String>
+Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -DispositionReviewStageNumber <String>
  -RetentionLabelId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,7 +34,7 @@ Delete navigation property dispositionReviewStages for security
 
 ## PARAMETERS
 
-### -DispositionReviewStageId
+### -DispositionReviewStageNumber
 The unique identifier of dispositionReviewStage
 
 ```yaml
@@ -216,7 +219,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -235,6 +238,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -265,7 +269,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
@@ -283,6 +287,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabeldispositionreviewstage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabeldispositionreviewstage)
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgBetaGroupSiteContentType
 
 ## SYNOPSIS
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Publish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Publish-MgBetaGroupSiteContentType -InputObject <IGroupsIdentity> [-ResponseHead
 ```
 
 ## DESCRIPTION
-Publishes a \[contentType\]\[\] present in a content type hub site.
+Invoke action publish
 
 ## PARAMETERS
 

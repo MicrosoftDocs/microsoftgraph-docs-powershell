@@ -24,8 +24,9 @@ Update-MgPolicyCrossTenantAccessPolicyDefault [-ResponseHeadersVariable <String>
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>] [-Id <String>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceDefault]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]
+ [-InvitationRedemptionIdentityProviderConfiguration <Hashtable>] [-IsServiceDefault] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -238,9 +239,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InvitationRedemptionIdentityProviderConfiguration
+defaultInvitationRedemptionIdentityProviderConfiguration
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsServiceDefault
 If true, the default configuration is set to the system default configuration.
-If false, the default settings have been customized.
+If false, the default settings are customized.
 
 ```yaml
 Type: SwitchParameter
@@ -401,8 +417,13 @@ Read-only.
     - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
     - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
     - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+  - `[InvitationRedemptionIdentityProviderConfiguration <IMicrosoftGraphDefaultInvitationRedemptionIdentityProviderConfiguration>]`: defaultInvitationRedemptionIdentityProviderConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[FallbackIdentityProvider <String>]`: b2bIdentityProvidersType
+    - `[PrimaryIdentityProviderPrecedenceOrder <String- `[]`>]`: Collection of identity providers in priority order of preference to be used for guest invitation redemption.
+Possible values are: azureActiveDirectory, externalFederation, or socialIdentityProviders.
   - `[IsServiceDefault <Boolean?>]`: If true, the default configuration is set to the system default configuration.
-If false, the default settings have been customized.
+If false, the default settings are customized.
 
 INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

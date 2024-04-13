@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Get a list of the federatedTokenValidationPolicy objects and their properties.
+Read the properties and relationships of a federatedTokenValidationPolicy object.
 
 ## SYNTAX
 
@@ -19,10 +19,10 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get a list of the federatedTokenValidationPolicy objects and their properties.
+Read the properties and relationships of a federatedTokenValidationPolicy object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/policyroot-list-federatedtokenvalidationpolicy-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-get-permissions.md)]
 
 ## PARAMETERS
 

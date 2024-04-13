@@ -35,8 +35,9 @@ Update-MgBetaOrganization -OrganizationId <String> [-ResponseHeadersVariable <St
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>] [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <String>] [-Street <String>]
- [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
+ [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -65,8 +66,9 @@ Update-MgBetaOrganization -InputObject <IIdentityDirectoryManagementIdentity>
  [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>] [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]
  [-SecurityComplianceNotificationMails <String[]>] [-SecurityComplianceNotificationPhones <String[]>]
  [-Settings <IMicrosoftGraphOrganizationSettings>] [-State <String>] [-Street <String>]
- [-TechnicalNotificationMails <String[]>] [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TechnicalNotificationMails <String[]>] [-TenantType <String>]
+ [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -184,7 +186,7 @@ Accept wildcard characters: False
 
 ### -BusinessPhones
 Telephone number for the organization.
-Although this is a string collection, only one number can be set for this property.
+Although this property is a string collection, only one number can be set.
 
 ```yaml
 Type: String[]
@@ -278,7 +280,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 Timestamp of when the organization was created.
-The value cannot be modified and is automatically populated when the organization is created.
+The value can't be modified and is automatically populated when the organization is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -422,7 +424,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMultipleDataLocationsForServicesEnabled
-true if organization is Multi-Geo enabled; false if organization is not Multi-Geo enabled; null (default).
+true if organization is Multi-Geo enabled; false if organization isn't Multi-Geo enabled; null (default).
 Read-only.
 For more information, see OneDrive Online Multi-Geo.
 
@@ -502,7 +504,7 @@ Accept wildcard characters: False
 
 ### -OnPremisesSyncEnabled
 true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; Nullable.
-null if this object has never been synced from an on-premises directory (default).
+null, if this object isn't synced from on-premises active directory (default).
 
 ```yaml
 Type: SwitchParameter
@@ -579,7 +581,7 @@ Accept wildcard characters: False
 
 ### -PreferredLanguage
 The preferred language for the organization.
-Should follow ISO 639-1 Code; for example en.
+Should follow ISO 639-1 code; for example, en.
 
 ```yaml
 Type: String
@@ -736,6 +738,24 @@ Not nullable.
 
 ```yaml
 Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantType
+Not nullable.
+Can be one of the following types: AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios.
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.
+CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -998,7 +1018,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BusinessPhones <String- `[]`>]`: Telephone number for the organization.
-Although this is a string collection, only one number can be set for this property.
+Although this property is a string collection, only one number can be set.
   - `[CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>]`: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1026,7 +1046,7 @@ Read-only.
   - `[Country <String>]`: Country/region name of the address for the organization.
   - `[CountryLetterCode <String>]`: Country or region abbreviation for the organization in ISO 3166-2 format.
   - `[CreatedDateTime <DateTime?>]`: Timestamp of when the organization was created.
-The value cannot be modified and is automatically populated when the organization is created.
+The value can't be modified and is automatically populated when the organization is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -1040,7 +1060,7 @@ Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsMultipleDataLocationsForServicesEnabled <Boolean?>]`: true if organization is Multi-Geo enabled; false if organization is not Multi-Geo enabled; null (default).
+  - `[IsMultipleDataLocationsForServicesEnabled <Boolean?>]`: true if organization is Multi-Geo enabled; false if organization isn't Multi-Geo enabled; null (default).
 Read-only.
 For more information, see OneDrive Online Multi-Geo.
   - `[MarketingNotificationEmails <String- `[]`>]`: Not nullable.
@@ -1050,7 +1070,7 @@ For more information, see OneDrive Online Multi-Geo.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; Nullable.
-null if this object has never been synced from an on-premises directory (default).
+null, if this object isn't synced from on-premises active directory (default).
   - `[PartnerInformation <IMicrosoftGraphPartnerInformation>]`: partnerInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CommerceUrl <String>]`: 
@@ -1064,7 +1084,7 @@ null if this object has never been synced from an on-premises directory (default
   - `[PartnerTenantType <String>]`: partnerTenantType
   - `[PostalCode <String>]`: Postal code of the address for the organization.
   - `[PreferredLanguage <String>]`: The preferred language for the organization.
-Should follow ISO 639-1 Code; for example en.
+Should follow ISO 639-1 code; for example, en.
   - `[PrivacyProfile <IMicrosoftGraphPrivacyProfile>]`: privacyProfile
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContactEmail <String>]`: A valid smtp email address for the privacy statement contact.
@@ -1090,7 +1110,7 @@ Read-only.
       - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-      - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+      - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
     - `[ItemInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
@@ -1109,6 +1129,10 @@ When set to false, all users can access authorized Microsoft 365 data only in a 
   - `[State <String>]`: State name of the address for the organization.
   - `[Street <String>]`: Street name of the address for organization.
   - `[TechnicalNotificationMails <String- `[]`>]`: Not nullable.
+  - `[TenantType <String>]`: Not nullable.
+Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. 
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios. 
+CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
   - `[VerifiedDomains <IMicrosoftGraphVerifiedDomain- `[]`>]`: The collection of domains associated with this tenant.
 Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
@@ -1397,7 +1421,7 @@ Read-only.
     - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-    - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+    - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
   - `[ItemInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings

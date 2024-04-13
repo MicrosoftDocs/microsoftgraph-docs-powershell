@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Deletes a deviceAndAppManagementRoleDefinition.
+Deletes a roleDefinition.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Deletes a deviceAndAppManagementRoleDefinition.
+Deletes a roleDefinition.
 
 ## PARAMETERS
 
@@ -190,6 +190,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

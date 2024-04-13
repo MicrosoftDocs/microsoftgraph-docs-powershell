@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
+Remove a group from the list of groups marked as incompatible on an accessPackage.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-1.0)
@@ -17,19 +17,12 @@ Remove a group from the list of groups that have been marked as incompatible on 
 
 ### Delete (Default)
 ```
-Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String>
- -GroupId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
  -InputObject <IIdentityGovernanceIdentity> -Id <String> [-IfMatch <String>]
@@ -37,16 +30,8 @@ Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
-```
-Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
- -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
+Remove a group from the list of groups marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -65,21 +50,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ### -AccessPackageId
 The unique identifier of accessPackage
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -GroupId
-The unique identifier of group
 
 ```yaml
 Type: String
@@ -113,7 +83,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -144,7 +114,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -295,7 +265,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

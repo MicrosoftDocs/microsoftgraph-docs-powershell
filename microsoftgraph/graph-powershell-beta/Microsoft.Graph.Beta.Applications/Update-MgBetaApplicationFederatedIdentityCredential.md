@@ -242,8 +242,9 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -376,8 +377,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-  - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+  - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).

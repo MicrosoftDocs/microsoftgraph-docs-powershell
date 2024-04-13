@@ -283,20 +283,6 @@ Read-only.
   - `[Files <IMicrosoftGraphMobileAppContentFile- `[]`>]`: The list of files for this app content version.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AzureStorageUri <String>]`: Indicates the Azure Storage URI that the file is uploaded to.
-Created by the service upon receiving a valid mobileAppContentFile.
-Read-only.
-    - `[AzureStorageUriExpirationDateTime <DateTime?>]`: Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Indicates created date and time associated with app content file, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-    - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
-A committed app content file has been fully uploaded and validated by the Intune service.
-TRUE means that app content file is committed, FALSE means that app content file is not committed.
-Defaults to FALSE.
-Read-only.
     - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
 TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
 Defaults to FALSE.
@@ -309,7 +295,9 @@ To be deprecated, please use sizeInBytes property instead.
     - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
 To be deprecated, please use sizeEncryptedInBytes property instead.
     - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
+Valid values 0 to 9.22337203685478E+18
     - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
+Valid values 0 to 9.22337203685478E+18
     - `[UploadState <String>]`: Contains properties for upload request states.
 
 CONTAINEDAPPS <IMicrosoftGraphMobileContainedApp- `[]`>: The collection of contained apps in a MobileLobApp acting as a package.
@@ -318,20 +306,6 @@ Read-only.
 
 FILES <IMicrosoftGraphMobileAppContentFile- `[]`>: The list of files for this app content version.
   - `[Id <String>]`: The unique identifier for an entity.
-Read-only.
-  - `[AzureStorageUri <String>]`: Indicates the Azure Storage URI that the file is uploaded to.
-Created by the service upon receiving a valid mobileAppContentFile.
-Read-only.
-  - `[AzureStorageUriExpirationDateTime <DateTime?>]`: Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Indicates created date and time associated with app content file, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-  - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
-A committed app content file has been fully uploaded and validated by the Intune service.
-TRUE means that app content file is committed, FALSE means that app content file is not committed.
-Defaults to FALSE.
 Read-only.
   - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
 TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
@@ -345,7 +319,9 @@ To be deprecated, please use sizeInBytes property instead.
   - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
 To be deprecated, please use sizeEncryptedInBytes property instead.
   - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
+Valid values 0 to 9.22337203685478E+18
   - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
+Valid values 0 to 9.22337203685478E+18
   - `[UploadState <String>]`: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
@@ -388,6 +364,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

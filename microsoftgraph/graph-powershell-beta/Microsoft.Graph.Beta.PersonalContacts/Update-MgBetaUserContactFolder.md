@@ -441,23 +441,23 @@ See below for possible values.
     - `[Gender <String>]`: The contact's gender.
     - `[Generation <String>]`: The contact's generation.
     - `[GivenName <String>]`: The contact's given name.
-    - `[ImAddresses <String- `[]`>]`: 
-    - `[Initials <String>]`: 
+    - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+    - `[Initials <String>]`: The contact's initials.
     - `[IsFavorite <Boolean?>]`: 
-    - `[JobTitle <String>]`: 
-    - `[Manager <String>]`: 
-    - `[MiddleName <String>]`: 
+    - `[JobTitle <String>]`: The contact's job title.
+    - `[Manager <String>]`: The name of the contact's manager.
+    - `[MiddleName <String>]`: The contact's middle name.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String- `[]`>]`: A collection of property values.
-    - `[NickName <String>]`: 
-    - `[OfficeLocation <String>]`: 
-    - `[ParentFolderId <String>]`: 
-    - `[PersonalNotes <String>]`: 
-    - `[Phones <IMicrosoftGraphPhone- `[]`>]`: 
+    - `[NickName <String>]`: The contact's nickname.
+    - `[OfficeLocation <String>]`: The location of the contact's office.
+    - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+    - `[PersonalNotes <String>]`: The user's notes about the contact.
+    - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
       - `[Number <String>]`: The phone number.
       - `[Type <String>]`: phoneType
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -468,7 +468,7 @@ Read-only.
 Read-only.
       - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: 
+    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: Addresses associated with the contact, for example, home address and business address.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -477,24 +477,24 @@ It's a free-format string value, for example, 'United States'.
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Profession <String>]`: 
+    - `[Profession <String>]`: The contact's profession.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: 
-    - `[Surname <String>]`: 
-    - `[Title <String>]`: 
-    - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: 
+    - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+    - `[Surname <String>]`: The contact's surname.
+    - `[Title <String>]`: The contact's title.
+    - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: Web sites associated with the contact.
       - `[Address <String>]`: The URL of the website.
       - `[DisplayName <String>]`: The display name of the web site.
       - `[Type <String>]`: websiteType
-    - `[WeddingAnniversary <DateTime?>]`: 
-    - `[YomiCompanyName <String>]`: 
-    - `[YomiGivenName <String>]`: 
-    - `[YomiSurname <String>]`: 
+    - `[WeddingAnniversary <DateTime?>]`: The contact's wedding anniversary.
+    - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+    - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+    - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
   - `[DisplayName <String>]`: The folder's display name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -565,23 +565,23 @@ See below for possible values.
     - `[Gender <String>]`: The contact's gender.
     - `[Generation <String>]`: The contact's generation.
     - `[GivenName <String>]`: The contact's given name.
-    - `[ImAddresses <String- `[]`>]`: 
-    - `[Initials <String>]`: 
+    - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+    - `[Initials <String>]`: The contact's initials.
     - `[IsFavorite <Boolean?>]`: 
-    - `[JobTitle <String>]`: 
-    - `[Manager <String>]`: 
-    - `[MiddleName <String>]`: 
+    - `[JobTitle <String>]`: The contact's job title.
+    - `[Manager <String>]`: The name of the contact's manager.
+    - `[MiddleName <String>]`: The contact's middle name.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String- `[]`>]`: A collection of property values.
-    - `[NickName <String>]`: 
-    - `[OfficeLocation <String>]`: 
-    - `[ParentFolderId <String>]`: 
-    - `[PersonalNotes <String>]`: 
-    - `[Phones <IMicrosoftGraphPhone- `[]`>]`: 
+    - `[NickName <String>]`: The contact's nickname.
+    - `[OfficeLocation <String>]`: The location of the contact's office.
+    - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+    - `[PersonalNotes <String>]`: The user's notes about the contact.
+    - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
       - `[Number <String>]`: The phone number.
       - `[Type <String>]`: phoneType
     - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -592,7 +592,7 @@ Read-only.
 Read-only.
       - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: 
+    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: Addresses associated with the contact, for example, home address and business address.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -601,24 +601,24 @@ It's a free-format string value, for example, 'United States'.
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Profession <String>]`: 
+    - `[Profession <String>]`: The contact's profession.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: 
-    - `[Surname <String>]`: 
-    - `[Title <String>]`: 
-    - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: 
+    - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+    - `[Surname <String>]`: The contact's surname.
+    - `[Title <String>]`: The contact's title.
+    - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: Web sites associated with the contact.
       - `[Address <String>]`: The URL of the website.
       - `[DisplayName <String>]`: The display name of the web site.
       - `[Type <String>]`: websiteType
-    - `[WeddingAnniversary <DateTime?>]`: 
-    - `[YomiCompanyName <String>]`: 
-    - `[YomiGivenName <String>]`: 
-    - `[YomiSurname <String>]`: 
+    - `[WeddingAnniversary <DateTime?>]`: The contact's wedding anniversary.
+    - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+    - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+    - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
   - `[DisplayName <String>]`: The folder's display name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -679,23 +679,23 @@ See below for possible values.
   - `[Gender <String>]`: The contact's gender.
   - `[Generation <String>]`: The contact's generation.
   - `[GivenName <String>]`: The contact's given name.
-  - `[ImAddresses <String- `[]`>]`: 
-  - `[Initials <String>]`: 
+  - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+  - `[Initials <String>]`: The contact's initials.
   - `[IsFavorite <Boolean?>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
+  - `[JobTitle <String>]`: The contact's job title.
+  - `[Manager <String>]`: The name of the contact's manager.
+  - `[MiddleName <String>]`: The contact's middle name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String- `[]`>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
-  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: 
+  - `[NickName <String>]`: The contact's nickname.
+  - `[OfficeLocation <String>]`: The location of the contact's office.
+  - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+  - `[PersonalNotes <String>]`: The user's notes about the contact.
+  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -706,7 +706,7 @@ Read-only.
 Read-only.
     - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: 
+  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: Addresses associated with the contact, for example, home address and business address.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -715,24 +715,24 @@ It's a free-format string value, for example, 'United States'.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
     - `[Type <String>]`: physicalAddressType
-  - `[Profession <String>]`: 
+  - `[Profession <String>]`: The contact's profession.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: 
+  - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+  - `[Surname <String>]`: The contact's surname.
+  - `[Title <String>]`: The contact's title.
+  - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: Web sites associated with the contact.
     - `[Address <String>]`: The URL of the website.
     - `[DisplayName <String>]`: The display name of the web site.
     - `[Type <String>]`: websiteType
-  - `[WeddingAnniversary <DateTime?>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+  - `[WeddingAnniversary <DateTime?>]`: The contact's wedding anniversary.
+  - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+  - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+  - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
 INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder

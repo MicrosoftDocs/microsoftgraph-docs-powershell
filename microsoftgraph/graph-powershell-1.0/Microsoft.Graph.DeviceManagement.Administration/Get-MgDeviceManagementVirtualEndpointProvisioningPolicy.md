@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
-Get provisioningPolicies from deviceManagement
+Read the properties and relationships of a cloudPcProvisioningPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
@@ -38,7 +38,10 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Get provisioningPolicies from deviceManagement
+Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -288,6 +291,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

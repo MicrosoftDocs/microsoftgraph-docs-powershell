@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaGroupSiteListContentTypeColumn
 
 ## SYNOPSIS
-Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+Update columnDefinition
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
@@ -68,7 +68,7 @@ Update-MgBetaGroupSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Update a \[site\]\[\], \[list\]\[\] or \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+Update columnDefinition
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]

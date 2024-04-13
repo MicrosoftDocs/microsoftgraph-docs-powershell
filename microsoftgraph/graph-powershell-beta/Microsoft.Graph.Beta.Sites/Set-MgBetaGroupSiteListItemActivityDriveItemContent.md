@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaGroupSiteListItemActivityDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in groups
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Set-MgBetaGroupSiteListItemActivityDriveItemContent -InputObject <ISitesIdentity
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in groups
 
 ## PARAMETERS
 

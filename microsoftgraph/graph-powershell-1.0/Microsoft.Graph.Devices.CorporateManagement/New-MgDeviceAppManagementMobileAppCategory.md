@@ -18,8 +18,8 @@ Create a new mobileAppCategory object.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementMobileAppCategory [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -101,21 +101,6 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastModifiedDateTime
-The date and time the mobileAppCategory was last modified.
-
-```yaml
-Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +193,6 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppCategory>`: Contains properties for a si
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)

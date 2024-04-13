@@ -894,7 +894,6 @@ For example, en-US for English (United States) is a specific culture.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
   - `[MobileAppConfigurations <IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>]`: The Managed Device Mobile Application Configurations.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -959,14 +958,12 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[Categories <IMicrosoftGraphMobileAppCategory- `[]`>]`: The list of categories for this app.
-    - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
     - `[Description <String>]`: The description of the app.
     - `[Developer <String>]`: The developer of the app.
     - `[DisplayName <String>]`: The admin provided or imported title of the app.
     - `[InformationUrl <String>]`: The more information Url.
     - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
     - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
     - `[Notes <String>]`: Notes for the app.
     - `[Owner <String>]`: The owner of the app.
     - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -1403,7 +1400,6 @@ MOBILEAPPCATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The mobile app cat
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 MOBILEAPPCONFIGURATIONS <IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>: The Managed Device Mobile Application Configurations.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -1475,8 +1471,6 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
@@ -1486,7 +1480,6 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: Indicates the content mime type.
     - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
   - `[Notes <String>]`: Notes for the app.
   - `[Owner <String>]`: The owner of the app.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.

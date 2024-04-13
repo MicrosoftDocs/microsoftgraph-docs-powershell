@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteListItemDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Format <S
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from sites
 
 ## PARAMETERS
 

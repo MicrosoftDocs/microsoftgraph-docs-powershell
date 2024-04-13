@@ -68,6 +68,9 @@ Locale: en-US
 ### [Confirm-MgBetaUserMemberObject](Confirm-MgBetaUserMemberObject.md)
 {{ Fill in the Description }}
 
+### [Convert-MgBetaUserExternalToInternalMemberUser](Convert-MgBetaUserExternalToInternalMemberUser.md)
+{{ Fill in the Description }}
+
 ### [Copy-MgBetaUserDriveItem](Copy-MgBetaUserDriveItem.md)
 {{ Fill in the Description }}
 

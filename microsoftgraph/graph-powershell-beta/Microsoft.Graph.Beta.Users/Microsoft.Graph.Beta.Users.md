@@ -95,6 +95,9 @@ Locale: en-US
 ### [Get-MgBetaUserInsightUsedResource](Get-MgBetaUserInsightUsedResource.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserInvitedBy](Get-MgBetaUserInvitedBy.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserLicenseDetail](Get-MgBetaUserLicenseDetail.md)
 {{ Fill in the Description }}
 
@@ -287,6 +290,18 @@ Locale: en-US
 ### [Get-MgBetaUserSettingShiftPreference](Get-MgBetaUserSettingShiftPreference.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaUserSettingStorage](Get-MgBetaUserSettingStorage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingStorageQuota](Get-MgBetaUserSettingStorageQuota.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingStorageQuotaService](Get-MgBetaUserSettingStorageQuotaService.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaUserSettingStorageQuotaServiceCount](Get-MgBetaUserSettingStorageQuotaServiceCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaUserSettingWindows](Get-MgBetaUserSettingWindows.md)
 {{ Fill in the Description }}
 
@@ -437,6 +452,9 @@ Locale: en-US
 ### [New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment](New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaUserSettingStorageQuotaService](New-MgBetaUserSettingStorageQuotaService.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaUserSettingWindows](New-MgBetaUserSettingWindows.md)
 {{ Fill in the Description }}
 
@@ -537,6 +555,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserSettingShiftPreference](Remove-MgBetaUserSettingShiftPreference.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserSettingStorage](Remove-MgBetaUserSettingStorage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserSettingStorageQuota](Remove-MgBetaUserSettingStorageQuota.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaUserSettingStorageQuotaService](Remove-MgBetaUserSettingStorageQuotaService.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaUserSettingWindows](Remove-MgBetaUserSettingWindows.md)
@@ -642,6 +669,15 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserSettingShiftPreference](Update-MgBetaUserSettingShiftPreference.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserSettingStorage](Update-MgBetaUserSettingStorage.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserSettingStorageQuota](Update-MgBetaUserSettingStorageQuota.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaUserSettingStorageQuotaService](Update-MgBetaUserSettingStorageQuotaService.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserSettingWindows](Update-MgBetaUserSettingWindows.md)

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgBetaShareListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a \[content type\]\[contentType\] with a list of hub sites.
+Invoke action associateWithHubSites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Join-MgShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgShareListContentTypeWithHubSite?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a \[content type\]\[contentType\] with a list of hub sites.
+Invoke action associateWithHubSites
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]

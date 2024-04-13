@@ -17,37 +17,20 @@ Get media content for the navigation property photo from teams
 
 ### Get (Default)
 ```
-Get-MgBetaTeamPhotoContent -TeamId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaTeamPhotoContent -TeamId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get media content for the navigation property photo from teams
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.

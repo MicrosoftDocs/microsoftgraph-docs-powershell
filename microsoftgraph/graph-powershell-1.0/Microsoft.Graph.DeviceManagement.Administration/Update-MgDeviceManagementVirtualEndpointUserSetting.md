@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Update the navigation property userSettings in deviceManagement
+Update the properties of a cloudPcUserSetting object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
@@ -50,7 +50,10 @@ Update-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Update the navigation property userSettings in deviceManagement
+Update the properties of a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcusersetting-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -70,7 +73,9 @@ Accept wildcard characters: False
 ```
 
 ### -Assignments
-.
+Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSetting.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
@@ -117,7 +122,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time when the setting was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -132,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The setting name displayed in the user interface.
 
 ```yaml
 Type: String
@@ -194,7 +201,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+The date and time when the setting was last modified.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -209,7 +218,10 @@ Accept wildcard characters: False
 ```
 
 ### -LocalAdminEnabled
-.
+Indicates whether the local admin option is enabled.
+The default value is false.
+To enable the local admin option, change the setting to true.
+If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +251,10 @@ Accept wildcard characters: False
 ```
 
 ### -ResetEnabled
-.
+Indicates whether an end user is allowed to reset their Cloud PC.
+When true, the user is allowed to reset their Cloud PC.
+When false, end-user initiated reset is not allowed.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -332,10 +347,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: .
+ASSIGNMENTS <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSetting.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when this assignment was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
@@ -343,25 +362,44 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcUserSetting>`: cloudPcUserSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>]`: 
+  - `[Assignments <IMicrosoftGraphCloudPcUserSettingAssignment- `[]`>]`: Represents the set of Microsoft 365 groups and security groups in Microsoft Entra ID that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSetting.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[CreatedDateTime <DateTime?>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date and time when this assignment was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[LocalAdminEnabled <Boolean?>]`: 
-  - `[ResetEnabled <Boolean?>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the setting was created.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DisplayName <String>]`: The setting name displayed in the user interface.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the setting was last modified.
+The timestamp type represents the date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[LocalAdminEnabled <Boolean?>]`: Indicates whether the local admin option is enabled.
+The default value is false.
+To enable the local admin option, change the setting to true.
+If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
+  - `[ResetEnabled <Boolean?>]`: Indicates whether an end user is allowed to reset their Cloud PC.
+When true, the user is allowed to reset their Cloud PC.
+When false, end-user initiated reset is not allowed.
+The default value is false.
   - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
-    - `[UserRestoreEnabled <Boolean?>]`: 
+    - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
+If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
@@ -385,7 +423,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestorePointSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[FrequencyType <String>]`: cloudPcRestorePointFrequencyType
-  - `[UserRestoreEnabled <Boolean?>]`:
+  - `[UserRestoreEnabled <Boolean?>]`: If true, the user has the ability to use snapshots to restore Cloud PCs.
+If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)

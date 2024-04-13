@@ -72,10 +72,10 @@ New-MgUser [-ResponseHeadersVariable <String>] [-AboutMe <String>] [-AccountEnab
  [-ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError[]>]
  [-Settings <IMicrosoftGraphUserSettings>] [-ShowInAddressList]
  [-SignInActivity <IMicrosoftGraphSignInActivity>] [-SignInSessionsValidFromDateTime <DateTime>]
- [-Skills <String[]>] [-State <String>] [-StreetAddress <String>] [-Surname <String>]
- [-Teamwork <IMicrosoftGraphUserTeamwork>] [-Todo <IMicrosoftGraphTodo>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-UsageLocation <String>]
- [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
+ [-Skills <String[]>] [-Sponsors <IMicrosoftGraphDirectoryObject[]>] [-State <String>]
+ [-StreetAddress <String>] [-Surname <String>] [-Teamwork <IMicrosoftGraphUserTeamwork>]
+ [-Todo <IMicrosoftGraphTodo>] [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
+ [-UsageLocation <String>] [-UserPrincipalName <String>] [-UserType <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -2283,6 +2283,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Sponsors
+The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
+To construct, see NOTES section for SPONSORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -State
 The state or province in the user's address.
 Maximum length is 128 characters.
@@ -2433,7 +2451,8 @@ Accept wildcard characters: False
 ```
 
 ### -UserType
-A string value that can be used to classify user types in your directory, such as Member and Guest.
+A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID
@@ -2752,7 +2771,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-      - `[OnPremisesSecurityIdentifier <String>]`: 
+      - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
       - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -3122,7 +3144,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesSecurityIdentifier <String>]`: 
+        - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -4146,8 +4171,8 @@ Read-only.
             - `[ItemId <String>]`: The unique identifier for the item.
             - `[Title <String>]`: The title of the item.
             - `[VersionId <String>]`: The version ID of the item.
-          - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+          - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
         - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
         - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -4942,7 +4967,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
         - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
         - `[Base <IMicrosoftGraphContentType>]`: contentType
         - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -4950,7 +4975,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
         - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
         - `[Description <String>]`: The descriptive text for the item.
         - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4976,7 +5001,7 @@ Helps organize related content types.
           - `[Default <Boolean?>]`: Indicates whether this is the default content type
           - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
-        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -7408,6 +7433,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
   - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+  - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
   - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -7535,7 +7563,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-  - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+  - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -9320,7 +9349,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-          - `[OnPremisesSecurityIdentifier <String>]`: 
+          - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -10386,8 +10418,8 @@ Read-only.
                     - `[ItemId <String>]`: The unique identifier for the item.
                     - `[Title <String>]`: The title of the item.
                     - `[VersionId <String>]`: The version ID of the item.
-                  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                 - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                 - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                 - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -11166,7 +11198,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
         - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
         - `[Base <IMicrosoftGraphContentType>]`: contentType
         - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -11174,7 +11206,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
         - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
         - `[Description <String>]`: The descriptive text for the item.
         - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11200,7 +11232,7 @@ Helps organize related content types.
           - `[Default <Boolean?>]`: Indicates whether this is the default content type
           - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
-        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -13541,6 +13573,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
     - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -13668,7 +13703,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+    - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -14005,7 +14041,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-          - `[OnPremisesSecurityIdentifier <String>]`: 
+          - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -15071,8 +15110,8 @@ Read-only.
                     - `[ItemId <String>]`: The unique identifier for the item.
                     - `[Title <String>]`: The title of the item.
                     - `[VersionId <String>]`: The version ID of the item.
-                  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                 - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                 - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                 - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -15851,7 +15890,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
         - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
         - `[Base <IMicrosoftGraphContentType>]`: contentType
         - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -15859,7 +15898,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
         - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
         - `[Description <String>]`: The descriptive text for the item.
         - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15885,7 +15924,7 @@ Helps organize related content types.
           - `[Default <Boolean?>]`: Indicates whether this is the default content type
           - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
-        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -18226,6 +18265,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
     - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -18353,7 +18395,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+    - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -18979,7 +19022,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-          - `[OnPremisesSecurityIdentifier <String>]`: 
+          - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -19994,8 +20040,8 @@ Read-only.
               - `[ItemId <String>]`: The unique identifier for the item.
               - `[Title <String>]`: The title of the item.
               - `[VersionId <String>]`: The version ID of the item.
-            - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+            - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
           - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
           - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
           - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -20790,7 +20836,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
           - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
           - `[Base <IMicrosoftGraphContentType>]`: contentType
           - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
           - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -20798,7 +20844,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
             - `[Name <String>]`: The name of the column  in this content type.
           - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
           - `[Description <String>]`: The descriptive text for the item.
           - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20824,7 +20870,7 @@ Helps organize related content types.
             - `[Default <Boolean?>]`: Indicates whether this is the default content type
             - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
           - `[ParentId <String>]`: The unique identifier of the content type.
-          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
           - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
           - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -23156,6 +23202,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
     - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -23283,7 +23332,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+    - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -23795,7 +23845,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-              - `[OnPremisesSecurityIdentifier <String>]`: 
+              - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
               - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -24824,7 +24877,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
               - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
               - `[Base <IMicrosoftGraphContentType>]`: contentType
               - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
               - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -24832,7 +24885,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
                 - `[Name <String>]`: The name of the column  in this content type.
               - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
               - `[Description <String>]`: The descriptive text for the item.
               - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24858,7 +24911,7 @@ Helps organize related content types.
                 - `[Default <Boolean?>]`: Indicates whether this is the default content type
                 - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
-              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
               - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -24948,8 +25001,8 @@ Read-only.
                   - `[ItemId <String>]`: The unique identifier for the item.
                   - `[Title <String>]`: The title of the item.
                   - `[VersionId <String>]`: The version ID of the item.
-                - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
               - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
               - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
               - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -27228,6 +27281,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
         - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+        - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
         - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -27355,7 +27411,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-        - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+        - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -28856,7 +28913,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-          - `[OnPremisesSecurityIdentifier <String>]`: 
+          - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -29880,8 +29940,8 @@ Read-only.
               - `[ItemId <String>]`: The unique identifier for the item.
               - `[Title <String>]`: The title of the item.
               - `[VersionId <String>]`: The version ID of the item.
-            - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+            - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
           - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
           - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
           - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -30676,7 +30736,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
           - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
           - `[Base <IMicrosoftGraphContentType>]`: contentType
           - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
           - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -30684,7 +30744,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
             - `[Name <String>]`: The name of the column  in this content type.
           - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
           - `[Description <String>]`: The descriptive text for the item.
           - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -30710,7 +30770,7 @@ Helps organize related content types.
             - `[Default <Boolean?>]`: Indicates whether this is the default content type
             - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
           - `[ParentId <String>]`: The unique identifier of the content type.
-          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
           - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
           - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -32969,6 +33029,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
     - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+    - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
     - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -33096,7 +33159,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+    - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -34812,7 +34876,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-                - `[OnPremisesSecurityIdentifier <String>]`: 
+                - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
                 - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -35632,8 +35699,8 @@ Read-only.
                           - `[ItemId <String>]`: The unique identifier for the item.
                           - `[Title <String>]`: The title of the item.
                           - `[VersionId <String>]`: The version ID of the item.
-                        - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                        - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                       - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                       - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -36412,7 +36479,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
               - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
               - `[Base <IMicrosoftGraphContentType>]`: contentType
               - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
               - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -36420,7 +36487,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
                 - `[Name <String>]`: The name of the column  in this content type.
               - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
               - `[Description <String>]`: The descriptive text for the item.
               - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -36446,7 +36513,7 @@ Helps organize related content types.
                 - `[Default <Boolean?>]`: Indicates whether this is the default content type
                 - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
-              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
               - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -38218,6 +38285,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
           - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -38345,7 +38415,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-          - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+          - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -38786,6 +38857,14 @@ Microsoft Entra ID maintains interactive sign-ins going back to April 2020.
 For more information about using the value of this property, see Manage inactive user accounts in Microsoft Entra ID.
   - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
 
+SPONSORS <IMicrosoftGraphDirectoryObject- `[]`>: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
+
 TEAMWORK `<IMicrosoftGraphUserTeamwork>`: userTeamwork
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -39085,7 +39164,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-                  - `[OnPremisesSecurityIdentifier <String>]`: 
+                  - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
                   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -40114,7 +40196,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
                   - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
                   - `[Base <IMicrosoftGraphContentType>]`: contentType
                   - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
                   - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -40122,7 +40204,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
                     - `[Name <String>]`: The name of the column  in this content type.
                   - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-                  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+                  - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
                   - `[Description <String>]`: The descriptive text for the item.
                   - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -40148,7 +40230,7 @@ Helps organize related content types.
                     - `[Default <Boolean?>]`: Indicates whether this is the default content type
                     - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
                   - `[ParentId <String>]`: The unique identifier of the content type.
-                  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+                  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
                   - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
                   - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -40238,8 +40320,8 @@ Read-only.
                       - `[ItemId <String>]`: The unique identifier for the item.
                       - `[Title <String>]`: The title of the item.
                       - `[VersionId <String>]`: The version ID of the item.
-                    - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                    - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                   - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -42518,6 +42600,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
             - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+            - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
             - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -42629,7 +42714,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-            - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+            - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?

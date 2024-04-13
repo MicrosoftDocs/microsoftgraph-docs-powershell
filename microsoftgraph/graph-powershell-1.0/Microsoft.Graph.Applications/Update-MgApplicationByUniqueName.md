@@ -102,8 +102,8 @@ Update the properties of an application object.
 
 ### -AddIns
 Defines custom behavior that a consuming service can use to call an app in specific contexts.
-For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Office 365 call the application in the context of a document the user is working on.
+For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
 To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
@@ -171,6 +171,8 @@ Accept wildcard characters: False
 ### -ApplicationTemplateId
 Unique identifier of the applicationTemplate.
 Supports $filter (eq, not, ne).
+Read-only.
+null if the app wasn't created from an application template.
 
 ```yaml
 Type: String
@@ -318,7 +320,7 @@ Accept wildcard characters: False
 
 ### -Description
 Free text field to provide a description of the application object to end users.
-The maximum allowed size is 1024 characters.
+The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
@@ -335,7 +337,7 @@ Accept wildcard characters: False
 
 ### -DisabledByMicrosoftStatus
 Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
 Supports $filter (eq, ne, not).
 
 ```yaml
@@ -466,7 +468,7 @@ Accept wildcard characters: False
 
 ### -IdentifierUris
 Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
 You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
@@ -534,10 +536,10 @@ Accept wildcard characters: False
 
 ### -IsFallbackPublicClient
 Specifies the fallback application type as public client, such as an installed application running on a mobile device.
-The default value is false which means the fallback application type is confidential client such as a web app.
-There are certain scenarios where Microsoft Entra ID cannot determine the client application type.
-For example, the ROPC flow where it is configured without specifying a redirect URI.
-In those cases Microsoft Entra ID interprets the application type based on the value of this property.
+The default value is false, which means the fallback application type is confidential client such as a web app.
+There are certain scenarios where Microsoft Entra ID can't determine the client application type.
+For example, the ROPC flow where it's configured without specifying a redirect URI.
+In those cases, Microsoft Entra ID interprets the application type based on the value of this property.
 
 ```yaml
 Type: SwitchParameter
@@ -837,12 +839,12 @@ Accept wildcard characters: False
 
 ### -SignInAudience
 Specifies the Microsoft accounts that are supported for the current application.
-The possible values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount.
+The possible values are: AzureADMyOrg (default), AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, and PersonalMicrosoftAccount.
 See more in the table.
 The value of this object also limits the number of permissions an app can request.
 For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
-As a result, if you change this property, you may need to change other properties first.
+As a result, if you change this property, you might need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
 
 ```yaml
@@ -1078,8 +1080,8 @@ To create the parameters described below, construct a hash table containing the 
 For information on hash tables, run Get-Help about_Hash_Tables.
 
 ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
-For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Office 365 call the application in the context of a document the user is working on.
+For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
   - `[Id <String>]`: 
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
     - `[Key <String>]`: Key for the key-value pair.
@@ -1197,8 +1199,8 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AddIns <IMicrosoftGraphAddIn- `[]`>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
-For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Office 365 call the application in the context of a document the user is working on.
+For example, applications that can render file streams can set the addIns property for its 'FileHandler' functionality.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
     - `[Id <String>]`: 
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
       - `[Key <String>]`: Key for the key-value pair.
@@ -1312,6 +1314,8 @@ Any other character, including the space character, aren't allowed.
 May not begin with ..
   - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate.
 Supports $filter (eq, not, ne).
+Read-only.
+null if the app wasn't created from an application template.
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CertificationExpirationDateTime <DateTime?>]`: The timestamp when the current certification for the application expires.
@@ -1325,10 +1329,10 @@ Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderby.
   - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[DefaultRedirectUri <String>]`: 
   - `[Description <String>]`: Free text field to provide a description of the application object to end users.
-The maximum allowed size is 1024 characters.
+The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
-Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
+Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
 Supports $filter (eq, ne, not).
   - `[DisplayName <String>]`: The display name for the application.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
@@ -1406,7 +1410,7 @@ Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
-The identifierUris acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique.
+The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
 You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
@@ -1425,10 +1429,10 @@ For example, https://www.contoso.com/app/termsofservice
   - `[IsDeviceOnlyAuthSupported <Boolean?>]`: Specifies whether this application supports device authentication without a user.
 The default is false.
   - `[IsFallbackPublicClient <Boolean?>]`: Specifies the fallback application type as public client, such as an installed application running on a mobile device.
-The default value is false which means the fallback application type is confidential client such as a web app.
-There are certain scenarios where Microsoft Entra ID cannot determine the client application type.
-For example, the ROPC flow where it is configured without specifying a redirect URI.
-In those cases Microsoft Entra ID interprets the application type based on the value of this property.
+The default value is false, which means the fallback application type is confidential client such as a web app.
+There are certain scenarios where Microsoft Entra ID can't determine the client application type.
+For example, the ROPC flow where it's configured without specifying a redirect URI.
+In those cases, Microsoft Entra ID interprets the application type based on the value of this property.
   - `[KeyCredentials <IMicrosoftGraphKeyCredential- `[]`>]`: The collection of key credentials associated with the application.
 Not nullable.
 Supports $filter (eq, not, ge, le).
@@ -1541,12 +1545,12 @@ This locks OAuth service principals.
 To allow the sensitive properties to be updated, update this property to false to disable the lock on the service principal.
     - `[TokenEncryptionKeyId <Boolean?>]`: Locks the tokenEncryptionKeyId property for modification on the service principal.
   - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application.
-The possible values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount.
+The possible values are: AzureADMyOrg (default), AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, and PersonalMicrosoftAccount.
 See more in the table.
 The value of this object also limits the number of permissions an app can request.
 For more information, see Limits on requested permissions per app.
 The value for this property has implications on other app object properties.
-As a result, if you change this property, you may need to change other properties first.
+As a result, if you change this property, you might need to change other properties first.
 For more information, see Validation differences for signInAudience.Supports $filter (eq, ne, not).
   - `[Spa <IMicrosoftGraphSpaApplication>]`: spaApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

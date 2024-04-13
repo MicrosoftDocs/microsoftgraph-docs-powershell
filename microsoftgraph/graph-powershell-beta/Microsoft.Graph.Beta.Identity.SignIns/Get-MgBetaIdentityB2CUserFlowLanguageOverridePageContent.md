@@ -15,15 +15,15 @@ Get media content for the navigation property overridesPages from identity
 ### Get (Default)
 ```
 Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -B2CIdentityUserFlowId <String>
- -UserFlowLanguageConfigurationId <String> -UserFlowLanguagePageId <String> [-Format <String>]
- -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -UserFlowLanguageConfigurationId <String> -UserFlowLanguagePageId <String> -OutFile <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -InputObject <IIdentitySignInsIdentity>
- [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
@@ -44,21 +44,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

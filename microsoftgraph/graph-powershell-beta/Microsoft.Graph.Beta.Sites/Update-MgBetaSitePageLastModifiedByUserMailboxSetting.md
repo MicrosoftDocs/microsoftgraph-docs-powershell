@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property mailboxSettings value.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,40 +26,11 @@ Update-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded1
-```
-Update-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -SiteId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ### Update
 ```
 Update-MgBetaSitePageLastModifiedByUserMailboxSetting -BaseSitePageId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgBetaSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdentity>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
- [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
- [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
- [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
- [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -68,13 +42,6 @@ Update-MgBetaSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdenti
  [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>] [-UserPurposeV2 <String>]
  [-WorkingHours <IMicrosoftGraphWorkingHours>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBetaSitePageLastModifiedByUserMailboxSetting -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphMailboxSettings> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -94,7 +61,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,7 +77,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,7 +93,7 @@ To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and creat
 
 ```yaml
 Type: IMicrosoftGraphAutomaticRepliesSetting
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -141,7 +108,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -157,7 +124,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphMailboxSettings
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -172,7 +139,7 @@ The date format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -187,7 +154,7 @@ delegateMeetingMessageDeliveryOptions
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -218,7 +185,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -234,7 +201,7 @@ To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -279,7 +246,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -294,7 +261,7 @@ The time format for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -309,7 +276,7 @@ The default time zone for the user's mailbox.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -324,7 +291,7 @@ userPurpose
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -339,7 +306,7 @@ mailboxRecipientType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -355,7 +322,7 @@ To construct, see NOTES section for WORKINGHOURS properties and create a hash ta
 
 ```yaml
 Type: IMicrosoftGraphWorkingHours
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -538,6 +505,7 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
+[Update-MgSitePageLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepagelastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepagelastmodifiedbyusermailboxsetting)
 

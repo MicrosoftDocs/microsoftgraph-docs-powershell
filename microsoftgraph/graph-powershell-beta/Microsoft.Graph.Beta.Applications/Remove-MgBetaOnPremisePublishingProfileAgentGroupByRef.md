@@ -12,31 +12,7 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
 ## SYNTAX
 
-### Delete2 (Default)
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String>
- -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String>
- -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> -Id <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String>
- -OnPremisesAgentGroupId1 <String> -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete3
+### Delete1 (Default)
 ```
 Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <String>
  -OnPremisesPublishingProfileId <String> -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
@@ -44,16 +20,10 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentId <Strin
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### Delete
 ```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity2
-```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
+Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -OnPremisesAgentGroupId <String>
+ -OnPremisesAgentId <String> -OnPremisesPublishingProfileId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -67,9 +37,9 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicatio
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicationsIdentity> -Id <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -97,7 +67,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete3, DeleteViaIdentity3, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -128,7 +98,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -139,21 +109,6 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesAgentGroupId
-The unique identifier of onPremisesAgentGroup
-
-```yaml
-Type: String
-Parameter Sets: Delete2, Delete1, Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OnPremisesAgentGroupId1
 The unique identifier of onPremisesAgentGroup
 
 ```yaml
@@ -173,7 +128,7 @@ The unique identifier of onPremisesAgent
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete1, Delete, Delete3
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True
@@ -188,7 +143,7 @@ The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete1, Delete, Delete3
+Parameter Sets: Delete1, Delete
 Aliases:
 
 Required: True

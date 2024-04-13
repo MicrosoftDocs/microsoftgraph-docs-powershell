@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-Add a group to the list of groups that have been marked as incompatible on an accessPackage.
+Add a group to the list of groups marked as incompatible on an accessPackage.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject 
 ```
 
 ## DESCRIPTION
-Add a group to the list of groups that have been marked as incompatible on an accessPackage.
+Add a group to the list of groups marked as incompatible on an accessPackage.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -307,7 +307,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

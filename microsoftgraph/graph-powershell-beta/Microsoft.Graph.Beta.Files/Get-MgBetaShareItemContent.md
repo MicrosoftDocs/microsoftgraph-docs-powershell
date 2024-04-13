@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaShareItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property items from shares
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgShareItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaShareItemContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property items from shares
 
 ## PARAMETERS
 

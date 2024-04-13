@@ -436,7 +436,8 @@ Read-only.
       - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
     - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RequiredForms <String- `[]`>]`: 
+      - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
   - `[Description <String>]`: Description of the task.
   - `[Forms <IMicrosoftGraphPlannerFormsDictionary>]`: plannerFormsDictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -458,7 +459,8 @@ COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>
     - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
   - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RequiredForms <String- `[]`>]`: 
+    - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
 
 INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group

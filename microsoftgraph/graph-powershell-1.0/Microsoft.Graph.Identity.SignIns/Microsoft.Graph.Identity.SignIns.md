@@ -170,6 +170,12 @@ Locale: en-US
 ### [Get-MgInvitationInvitedUserServiceProvisioningErrorCount](Get-MgInvitationInvitedUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgInvitationInvitedUserSponsor](Get-MgInvitationInvitedUserSponsor.md)
+{{ Fill in the Description }}
+
+### [Get-MgInvitationInvitedUserSponsorCount](Get-MgInvitationInvitedUserSponsorCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
 {{ Fill in the Description }}
 
@@ -659,6 +665,9 @@ Locale: en-US
 ### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
+### [Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef](Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
@@ -765,6 +774,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)

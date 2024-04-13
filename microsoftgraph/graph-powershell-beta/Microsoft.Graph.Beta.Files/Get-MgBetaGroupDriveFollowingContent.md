@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveFollowingContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property following from groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveFollowingContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaGroupDriveFollowingContent -InputObject <IFilesIdentity> [-Format <Str
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property following from groups
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
