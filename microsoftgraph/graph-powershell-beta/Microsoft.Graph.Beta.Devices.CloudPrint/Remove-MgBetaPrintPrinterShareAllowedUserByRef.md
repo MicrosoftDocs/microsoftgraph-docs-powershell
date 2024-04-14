@@ -14,30 +14,30 @@ Revoke the specified user's access to submit print jobs to the associated printe
 
 ### Delete (Default)
 ```
-Remove-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> -UserId <String> [-IfMatch <String>]
+Remove-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
+Remove-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId <String> -UserId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -77,7 +77,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -183,7 +183,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

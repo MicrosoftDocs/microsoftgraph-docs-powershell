@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -17,20 +20,6 @@ Get the number of the resource
 Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount -BaseSitePageId <String>
  -GroupId <String> -SiteId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount -BaseSitePageId <String>
- -GroupId <String> -SiteId <String> [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaGroupSitePageLastModifiedByUserServiceProvisioningErrorCount -InputObject <ISitesIdentity>
- [-Filter <String>] [-Search <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,7 +39,7 @@ The unique identifier of baseSitePage
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -80,7 +69,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -111,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -171,7 +160,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -252,6 +241,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagelastmodifiedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagelastmodifiedbyuserserviceprovisioningerrorcount)
 

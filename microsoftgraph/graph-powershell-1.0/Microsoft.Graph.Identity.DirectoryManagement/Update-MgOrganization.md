@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of a organization object.
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
@@ -66,7 +68,12 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a organization object.
+Update the properties of the currently authenticated organization.
+In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
+The ID is also known as the tenantId of the organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -154,7 +161,7 @@ Accept wildcard characters: False
 
 ### -BusinessPhones
 Telephone number for the organization.
-Although this is a string collection, only one number can be set for this property.
+Although this property is a string collection, only one number can be set.
 
 ```yaml
 Type: String[]
@@ -201,7 +208,7 @@ Accept wildcard characters: False
 ```
 
 ### -Country
-Country/region name of the address for the organization.
+Country or region name of the address for the organization.
 
 ```yaml
 Type: String
@@ -232,7 +239,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 Timestamp of when the organization was created.
-The value cannot be modified and is automatically populated when the organization is created.
+The value can't be modified and is automatically populated when the organization is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -411,7 +418,7 @@ Accept wildcard characters: False
 ### -OnPremisesSyncEnabled
 true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced.
 Nullable.
-null if this object has never been synced from an on-premises directory (default).
+null if this object isn't synced from on-premises active directory (default).
 
 ```yaml
 Type: SwitchParameter
@@ -625,9 +632,9 @@ Accept wildcard characters: False
 
 ### -TenantType
 Not nullable.
-The tenant type option that was selected when the tenant was created.
-The possible values are: AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios.
-AAD B2C A customer identity access management (CIAM) service that serves business-to-consumer (B2C) scenarios.
+Can be one of the following types: AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios.
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios.
+CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
 
 ```yaml
 Type: String
@@ -888,7 +895,7 @@ This text must be a Unicode, without links or code, and can't exceed 64 characte
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BusinessPhones <String- `[]`>]`: Telephone number for the organization.
-Although this is a string collection, only one number can be set for this property.
+Although this property is a string collection, only one number can be set.
   - `[CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration- `[]`>]`: Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -905,10 +912,10 @@ Read-only.
       - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value.
 Read-only.
   - `[City <String>]`: City name of the address for the organization.
-  - `[Country <String>]`: Country/region name of the address for the organization.
+  - `[Country <String>]`: Country or region name of the address for the organization.
   - `[CountryLetterCode <String>]`: Country or region abbreviation for the organization in ISO 3166-2 format.
   - `[CreatedDateTime <DateTime?>]`: Timestamp of when the organization was created.
-The value cannot be modified and is automatically populated when the organization is created.
+The value can't be modified and is automatically populated when the organization is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
@@ -927,7 +934,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced.
 Nullable.
-null if this object has never been synced from an on-premises directory (default).
+null if this object isn't synced from on-premises active directory (default).
   - `[PartnerTenantType <String>]`: partnerTenantType
   - `[PostalCode <String>]`: Postal code of the address for the organization.
   - `[PreferredLanguage <String>]`: The preferred language for the organization.
@@ -950,9 +957,9 @@ Not required.
   - `[Street <String>]`: Street name of the address for organization.
   - `[TechnicalNotificationMails <String- `[]`>]`: Not nullable.
   - `[TenantType <String>]`: Not nullable.
-The tenant type option that was selected when the tenant was created.
-The possible values are:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. 
-AAD B2C A customer identity access management (CIAM) service that serves business-to-consumer (B2C) scenarios.
+Can be one of the following types:  AAD - An enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B) scenarios. 
+AAD B2C An identity access management (IAM) service that serves business-to-consumer (B2C) scenarios. 
+CIAM - A customer identity & access management (CIAM) solution that provides an integrated platform to serve consumers, partners, and citizen scenarios.
   - `[VerifiedDomains <IMicrosoftGraphVerifiedDomain- `[]`>]`: The collection of domains associated with this tenant.
 Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.

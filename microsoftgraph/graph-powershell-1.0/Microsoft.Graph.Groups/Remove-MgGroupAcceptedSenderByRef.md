@@ -17,28 +17,14 @@ Remove acceptedSender
 
 ### Delete (Default)
 ```
-Remove-MgGroupAcceptedSenderByRef -DirectoryObjectId <String> -GroupId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgGroupAcceptedSenderByRef -GroupId <String> -Id <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> [-IfMatch <String>]
+Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -48,27 +34,12 @@ Remove acceptedSender
 
 ## PARAMETERS
 
-### -DirectoryObjectId
-The unique identifier of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -GroupId
 The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -98,7 +69,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -129,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -233,6 +204,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -248,6 +220,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
@@ -269,6 +243,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UniqueName <String>]`: Alternate key of group
   - `[User <String>]`: Usage: User='{User}'
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 [Remove-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)

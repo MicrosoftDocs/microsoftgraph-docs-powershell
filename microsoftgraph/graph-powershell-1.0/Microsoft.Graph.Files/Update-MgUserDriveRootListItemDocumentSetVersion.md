@@ -320,8 +320,8 @@ Accept wildcard characters: False
 ```
 
 ### -ShouldCaptureMinorVersion
-If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -433,8 +433,8 @@ Read-only.
     - `[ItemId <String>]`: The unique identifier for the item.
     - `[Title <String>]`: The title of the item.
     - `[VersionId <String>]`: The version ID of the item.
-  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+  - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
 
 CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

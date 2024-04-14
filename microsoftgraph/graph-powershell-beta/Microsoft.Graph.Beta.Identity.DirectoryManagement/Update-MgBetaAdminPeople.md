@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -ProfileCardProperties
-Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
 To construct, see NOTES section for PROFILECARDPROPERTIES properties and create a hash table.
 
 ```yaml
@@ -230,10 +230,10 @@ Read-only.
     - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-    - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+    - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
-  - `[ProfileCardProperties <IMicrosoftGraphProfileCardProperty- `[]`>]`: Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+  - `[ProfileCardProperties <IMicrosoftGraphProfileCardProperty- `[]`>]`: Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Annotations <IMicrosoftGraphProfileCardAnnotation- `[]`>]`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.
@@ -260,11 +260,11 @@ Read-only.
   - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-  - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+  - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 
-PROFILECARDPROPERTIES <IMicrosoftGraphProfileCardProperty- `[]`>: Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+PROFILECARDPROPERTIES <IMicrosoftGraphProfileCardProperty- `[]`>: Contains a collection of the properties an administrator defined as visible on the Microsoft 365 profile card.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Annotations <IMicrosoftGraphProfileCardAnnotation- `[]`>]`: Allows an administrator to set a custom display label for the directory property and localize it for the users in their tenant.

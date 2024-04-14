@@ -18,8 +18,20 @@ New-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> [-ResponseHeadersVariable <
  [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>]
  [-Capacity <Int32>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
  [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
- [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-Phone <String>] [-PlaceId1 <String>]
+ [-Tags <String[]>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaPlaceAsRoomListWorkspace [-PlaceId <String>] -InputObject <ICalendarIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>] [-Capacity <Int32>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -27,16 +39,6 @@ New-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> [-ResponseHeadersVariable <
 New-MgBetaPlaceAsRoomListWorkspace -PlaceId <String> -BodyParameter <IMicrosoftGraphWorkspace>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaPlaceAsRoomListWorkspace -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-Building <String>]
- [-Capacity <Int32>] [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>]
- [-FloorNumber <Int32>] [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>]
- [-IsWheelChairAccessible] [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -326,6 +328,35 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+```yaml
+Type: String
+Parameter Sets: CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlaceId1
+A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -452,6 +483,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[Latitude <Double?>]`: The latitude of the location.
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
+  - `[PlaceId <String>]`: A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Building <String>]`: Specifies the building name or building number that the workspace is in.

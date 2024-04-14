@@ -297,6 +297,10 @@ AZUREADJOIN `<IMicrosoftGraphAzureAdJoinPolicy>`: azureADJoinPolicy
   - `[AllowedToJoin <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
+  - `[LocalAdmins <IMicrosoftGraphLocalAdminSettings>]`: localAdminSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EnableGlobalAdmins <Boolean?>]`: 
+    - `[RegisteringUsers <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
 
 AZUREADREGISTRATION `<IMicrosoftGraphAzureAdRegistrationPolicy>`: azureADRegistrationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -313,6 +317,10 @@ Read-only.
     - `[AllowedToJoin <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
+    - `[LocalAdmins <IMicrosoftGraphLocalAdminSettings>]`: localAdminSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnableGlobalAdmins <Boolean?>]`: 
+      - `[RegisteringUsers <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
   - `[AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>]`: azureADRegistrationPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToRegister <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership

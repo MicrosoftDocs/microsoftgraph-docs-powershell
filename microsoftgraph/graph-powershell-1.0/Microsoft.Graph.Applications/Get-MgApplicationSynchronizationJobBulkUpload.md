@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJobBulkUpload
 
 ## SYNOPSIS
-Get bulkUpload from applications
+The bulk upload operation for the job.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUpload?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgApplicationSynchronizationJobBulkUpload -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Get bulkUpload from applications
+The bulk upload operation for the job.
 
 ## PARAMETERS
 

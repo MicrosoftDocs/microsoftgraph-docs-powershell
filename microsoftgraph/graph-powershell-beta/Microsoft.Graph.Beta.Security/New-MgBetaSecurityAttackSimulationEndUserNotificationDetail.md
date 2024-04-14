@@ -325,10 +325,9 @@ Read-only.
   - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Email <String>]`: Email address of the user.
   - `[Subject <String>]`: Mail subject.
 
@@ -349,7 +348,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -368,6 +367,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -398,7 +398,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
@@ -418,10 +418,9 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 SENTFROM `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS

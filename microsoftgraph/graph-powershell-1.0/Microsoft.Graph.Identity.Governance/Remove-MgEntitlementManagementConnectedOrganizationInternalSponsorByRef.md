@@ -19,31 +19,16 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 ### Delete (Default)
 ```
 Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId <String>
- -DirectoryObjectId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId <String>
  -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
- -InputObject <IIdentityGovernanceIdentity> -Id <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef
- -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -Id <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,21 +55,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ### -ConnectedOrganizationId
 The unique identifier of connectedOrganization
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -118,7 +88,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -149,7 +119,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -288,7 +258,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule

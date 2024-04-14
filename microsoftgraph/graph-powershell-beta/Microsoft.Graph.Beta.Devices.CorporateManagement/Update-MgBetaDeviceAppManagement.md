@@ -34,6 +34,7 @@ Update-MgBetaDeviceAppManagement [-ResponseHeadersVariable <String>] [-Additiona
  [-MicrosoftStoreForBusinessLastCompletedApplicationSyncTime <DateTime>]
  [-MicrosoftStoreForBusinessLastSuccessfulSyncDateTime <DateTime>]
  [-MicrosoftStoreForBusinessPortalSelection <MicrosoftStoreForBusinessPortalSelectionOptions>]
+ [-MobileAppCatalogPackages <IMicrosoftGraphMobileAppCatalogPackage[]>]
  [-MobileAppCategories <IMicrosoftGraphMobileAppCategory[]>]
  [-MobileAppConfigurations <IMicrosoftGraphManagedDeviceMobileAppConfiguration[]>]
  [-MobileApps <IMicrosoftGraphMobileApp[]>] [-PolicySets <IMicrosoftGraphPolicySet[]>]
@@ -385,6 +386,22 @@ This is available in the Intune Admin Console.
 
 ```yaml
 Type: MicrosoftStoreForBusinessPortalSelectionOptions
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MobileAppCatalogPackages
+MobileAppCatalogPackage entities.
+To construct, see NOTES section for MOBILEAPPCATALOGPACKAGES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMobileAppCatalogPackage[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1152,7 +1169,7 @@ $Search is not supported.
   - `[IosLobAppProvisioningConfigurations <IMicrosoftGraphIosLobAppProvisioningConfiguration- `[]`>]`: The IOS Lob App Provisioning Configurations.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
+    - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -1171,6 +1188,9 @@ Read-only.
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[DisplayName <String>]`: Admin provided name of the device configuration.
     - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
     - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1257,6 +1277,7 @@ Read-only.
     - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
     - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -1463,11 +1484,13 @@ For example, en-US for English (United States) is a specific culture.
   - `[MicrosoftStoreForBusinessLastSuccessfulSyncDateTime <DateTime?>]`: The last time the apps from the Microsoft Store for Business were synced successfully for the account.
   - `[MicrosoftStoreForBusinessPortalSelection <MicrosoftStoreForBusinessPortalSelectionOptions?>]`: Portal to which admin syncs available Microsoft Store for Business apps.
 This is available in the Intune Admin Console.
+  - `[MobileAppCatalogPackages <IMicrosoftGraphMobileAppCatalogPackage- `[]`>]`: MobileAppCatalogPackage entities.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
   - `[MobileAppCategories <IMicrosoftGraphMobileAppCategory- `[]`>]`: The mobile app categories.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
   - `[MobileAppConfigurations <IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>]`: The Managed Device Mobile Application Configurations.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1519,19 +1542,14 @@ Read-only.
       - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-      - `[SourceId <String>]`: The identifier of the source of the assignment.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[Categories <IMicrosoftGraphMobileAppCategory- `[]`>]`: The list of categories for this app.
-    - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-    - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
     - `[Description <String>]`: The description of the app.
     - `[Developer <String>]`: The developer of the app.
     - `[DisplayName <String>]`: The admin provided or imported title of the app.
     - `[InformationUrl <String>]`: The more information Url.
-    - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
     - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
     - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
     - `[Notes <String>]`: Notes for the app.
     - `[Owner <String>]`: The owner of the app.
     - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -1540,15 +1558,9 @@ Read-only.
     - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[TargetDisplayName <String>]`: The target mobile app's display name.
-      - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
       - `[TargetId <String>]`: The target mobile app's app id.
-      - `[TargetPublisher <String>]`: The target mobile app's publisher.
       - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
     - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
-    - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-    - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-    - `[UploadState <Int32?>]`: The upload state.
   - `[PolicySets <IMicrosoftGraphPolicySet- `[]`>]`: The PolicySet of Policies and Applications
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -1621,7 +1633,7 @@ A MinDeviceOccurrence of 0 means setting is optional
         - `[OffsetUri <String>]`: Offset CSP Path from Base
         - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
           - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
         - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
         - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
         - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -2085,7 +2097,7 @@ $Search is not supported.
 IOSLOBAPPPROVISIONINGCONFIGURATIONS <IMicrosoftGraphIosLobAppProvisioningConfiguration- `[]`>: The IOS Lob App Provisioning Configurations.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration.
+  - `[Assignments <IMicrosoftGraphIosLobAppProvisioningConfigurationAssignment- `[]`>]`: The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -2107,6 +2119,9 @@ Read-only.
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[ExpirationDateTime <DateTime?>]`: Optional profile expiration date and time.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
   - `[GroupAssignments <IMicrosoftGraphMobileAppProvisioningConfigGroupAssignment- `[]`>]`: The associated group assignments.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -2207,6 +2222,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
+When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -2446,11 +2462,14 @@ The RMS template allows the IT admin to configure the details about who has acce
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
+MOBILEAPPCATALOGPACKAGES <IMicrosoftGraphMobileAppCatalogPackage- `[]`>: MobileAppCatalogPackage entities.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+
 MOBILEAPPCATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The mobile app categories.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 MOBILEAPPCONFIGURATIONS <IMicrosoftGraphManagedDeviceMobileAppConfiguration- `[]`>: The Managed Device Mobile Application Configurations.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2524,7 +2543,6 @@ Read-only.
     - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: The identifier of the source of the assignment.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -2533,20 +2551,15 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-  - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[InformationUrl <String>]`: The more information Url.
-  - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
   - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
   - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: Indicates the content mime type.
     - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
   - `[Notes <String>]`: Notes for the app.
   - `[Owner <String>]`: The owner of the app.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -2555,15 +2568,9 @@ Read-only.
   - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: List of relationships for this mobile app.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[TargetDisplayName <String>]`: The target mobile app's display name.
-    - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
     - `[TargetId <String>]`: The target mobile app's app id.
-    - `[TargetPublisher <String>]`: The target mobile app's publisher.
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
   - `[RoleScopeTagIds <String- `[]`>]`: List of scope tag ids for this mobile app.
-  - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-  - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-  - `[UploadState <Int32?>]`: The upload state.
 
 POLICYSETS <IMicrosoftGraphPolicySet- `[]`>: The PolicySet of Policies and Applications
   - `[Id <String>]`: The unique identifier for an entity.
@@ -2644,7 +2651,7 @@ A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
         - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting
+Applicable for reusable setting.
       - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Retrieve the properties and relationships of an agreement object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
@@ -39,8 +38,7 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Retrieve the properties and relationships of an agreement object.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/agreement-list-files-permissions.md)]
@@ -339,7 +337,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

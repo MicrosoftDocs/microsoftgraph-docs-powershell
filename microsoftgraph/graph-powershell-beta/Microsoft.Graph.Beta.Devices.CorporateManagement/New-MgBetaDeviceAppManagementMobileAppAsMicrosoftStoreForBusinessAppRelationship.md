@@ -15,10 +15,9 @@ Create new navigation property to relationships for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship -MobileAppId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TargetDisplayName <String>] [-TargetDisplayVersion <String>] [-TargetId <String>]
- [-TargetPublisher <String>] [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
+ [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -32,8 +31,7 @@ New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship
 ```
 New-MgBetaDeviceAppManagementMobileAppAsMicrosoftStoreForBusinessAppRelationship
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetDisplayName <String>]
- [-TargetDisplayVersion <String>] [-TargetId <String>] [-TargetPublisher <String>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetId <String>]
  [-TargetType <MobileAppRelationshipType>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -174,53 +172,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TargetDisplayName
-The target mobile app's display name.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TargetDisplayVersion
-The target mobile app's display version.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TargetId
 The target mobile app's app id.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TargetPublisher
-The target mobile app's publisher.
 
 ```yaml
 Type: String
@@ -301,10 +254,7 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppRelationship>`: Describes a relationship
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetDisplayName <String>]`: The target mobile app's display name.
-  - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
   - `[TargetId <String>]`: The target mobile app's app id.
-  - `[TargetPublisher <String>]`: The target mobile app's publisher.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
@@ -347,6 +297,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

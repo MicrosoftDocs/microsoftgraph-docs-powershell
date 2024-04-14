@@ -15,9 +15,9 @@ Create new navigation property to frontLineServicePlans for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementVirtualEndpointFrontLineServicePlan [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-TotalCount <Int32>]
- [-UsedCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AllotmentLicensesCount <Int32>] [-DisplayName <String>] [-Id <String>]
+ [-TotalCount <Int32>] [-UsedCount <Int32>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -43,6 +43,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllotmentLicensesCount
+.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -221,6 +236,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcFrontLineServicePlan>`: cloudPcFrontLineSe
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[AllotmentLicensesCount <Int32?>]`: 
   - `[DisplayName <String>]`: The display name of the front-line service plan.
 For example, 2vCPU/8GB/128GB Front-line or 4vCPU/16GB/256GB Front-line.
   - `[TotalCount <Int32?>]`: The total number of front-line service plans purchased by the customer.

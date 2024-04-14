@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
-Delete navigation property provisioningPolicies for deviceManagement
+Delete a cloudPcProvisioningPolicy object.
+You can't delete a policy that's in use.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
@@ -31,7 +32,11 @@ Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy
 ```
 
 ## DESCRIPTION
-Delete navigation property provisioningPolicies for deviceManagement
+Delete a cloudPcProvisioningPolicy object.
+You can't delete a policy that's in use.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -191,6 +196,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

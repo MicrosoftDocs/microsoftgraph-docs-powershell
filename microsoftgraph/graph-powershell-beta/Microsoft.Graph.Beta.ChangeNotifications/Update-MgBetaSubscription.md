@@ -132,12 +132,12 @@ Accept wildcard characters: False
 
 ### -ChangeType
 Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note: Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted.
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
 
 ```yaml
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
 
 ```yaml
 Type: DateTime
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 Optional.
 OData query options for specifying the value for the targeting resource.
 Clients receive notifications when the resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 Required.
 The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
 
 ```yaml
 Type: String
@@ -402,7 +402,7 @@ Accept wildcard characters: False
 ### -NotificationUrlAppId
 Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
 
 ```yaml
 Type: String
@@ -433,8 +433,8 @@ Accept wildcard characters: False
 
 ### -Resource
 Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/beta/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ```yaml
@@ -535,12 +535,12 @@ Read-only.
 Identifier of the application used to create the subscription.
 Read-only.
   - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
   - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
@@ -560,7 +560,7 @@ Required when includeResourceData is true.
   - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
   - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
   - `[LatestSupportedTlsVersion <String>]`: Optional.
@@ -577,23 +577,23 @@ For more information, see Reduce missing subscriptions and change notifications.
   - `[NotificationContentType <String>]`: Optional.
 Desired content-type for Microsoft Graph change notifications for supported resource types.
 The default content-type is application/json.
-  - `[NotificationQueryOptions <String>]`: Optional. 
+  - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying the value for the targeting resource.
 Clients receive notifications when the resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
   - `[NotificationUrl <String>]`: Required.
 The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
   - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
   - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/beta/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter

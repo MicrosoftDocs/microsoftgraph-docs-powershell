@@ -26,9 +26,9 @@ Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageId <Strin
 ### Get1
 ```
 Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedContentId <String>
- -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> [-Format <String>]
- [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ -ChatMessageId <String> -ChatMessageId1 <String> -GroupId <String> [-ResponseHeadersVariable <String>]
+ -OutFile <String> [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -41,7 +41,7 @@ Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -ChatMessageHostedCon
 
 ### GetViaIdentity1
 ```
-Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Format <String>]
+Get-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdentity>
  [-ResponseHeadersVariable <String>] -OutFile <String> [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
@@ -157,21 +157,6 @@ Filter items by property values
 ```yaml
 Type: String
 Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: False

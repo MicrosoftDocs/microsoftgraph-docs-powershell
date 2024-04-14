@@ -215,6 +215,9 @@ Locale: en-US
 ### [Get-MgGroupSiteGetByPathOperation](Get-MgGroupSiteGetByPathOperation.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupSiteGetByPathPage](Get-MgGroupSiteGetByPathPage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupSiteGetByPathPermission](Get-MgGroupSiteGetByPathPermission.md)
 {{ Fill in the Description }}
 
@@ -549,6 +552,102 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteOperationCount](Get-MgGroupSiteOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePage](Get-MgGroupSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePage](Get-MgGroupSitePageAsSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayout](Get-MgGroupSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCreatedByUser](Get-MgGroupSitePageAsSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting](Get-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningError](Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgGroupSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageLastModifiedByUser](Get-MgGroupSitePageAsSitePageLastModifiedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageLastModifiedByUserMailboxSetting](Get-MgGroupSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageWebPart](Get-MgGroupSitePageAsSitePageWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageAsSitePageWebPartCount](Get-MgGroupSitePageAsSitePageWebPartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCount](Get-MgGroupSitePageCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCountAsSitePage](Get-MgGroupSitePageCountAsSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCreatedByUser](Get-MgGroupSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCreatedByUserMailboxSetting](Get-MgGroupSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCreatedByUserServiceProvisioningError](Get-MgGroupSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgGroupSitePageCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageLastModifiedByUser](Get-MgGroupSitePageLastModifiedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageLastModifiedByUserMailboxSetting](Get-MgGroupSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageLastModifiedByUserServiceProvisioningError](Get-MgGroupSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgGroupSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSitePermission](Get-MgGroupSitePermission.md)
@@ -992,6 +1091,9 @@ Locale: en-US
 ### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)
 {{ Fill in the Description }}
 
+### [Get-MgSiteGetByPathPage](Get-MgSiteGetByPathPage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSiteGetByPathPermission](Get-MgSiteGetByPathPermission.md)
 {{ Fill in the Description }}
 
@@ -1158,6 +1260,111 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgSiteOperationCount](Get-MgSiteOperationCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePage](Get-MgSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePage](Get-MgSitePageAsSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayout](Get-MgSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionCount](Get-MgSitePageAsSitePageCanvaLayoutHorizontalSectionCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSection](Get-MgSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount](Get-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCreatedByUser](Get-MgSitePageAsSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCreatedByUserMailboxSetting](Get-MgSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCreatedByUserServiceProvisioningError](Get-MgSitePageAsSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgSitePageAsSitePageCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageLastModifiedByUser](Get-MgSitePageAsSitePageLastModifiedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageLastModifiedByUserMailboxSetting](Get-MgSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningError](Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgSitePageAsSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageWebPart](Get-MgSitePageAsSitePageWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageAsSitePageWebPartCount](Get-MgSitePageAsSitePageWebPartCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCount](Get-MgSitePageCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCountAsSitePage](Get-MgSitePageCountAsSitePage.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCreatedByUser](Get-MgSitePageCreatedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCreatedByUserMailboxSetting](Get-MgSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCreatedByUserServiceProvisioningError](Get-MgSitePageCreatedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageCreatedByUserServiceProvisioningErrorCount](Get-MgSitePageCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageLastModifiedByUser](Get-MgSitePageLastModifiedByUser.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageLastModifiedByUserMailboxSetting](Get-MgSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageLastModifiedByUserServiceProvisioningError](Get-MgSitePageLastModifiedByUserServiceProvisioningError.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageLastModifiedByUserServiceProvisioningErrorCount](Get-MgSitePageLastModifiedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](Get-MgSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart.md)
+{{ Fill in the Description }}
+
+### [Get-MgSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](Get-MgSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart.md)
 {{ Fill in the Description }}
 
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
@@ -1535,6 +1742,9 @@ Locale: en-US
 ### [New-MgGroupSiteGetByPathOperation](New-MgGroupSiteGetByPathOperation.md)
 {{ Fill in the Description }}
 
+### [New-MgGroupSiteGetByPathPage](New-MgGroupSiteGetByPathPage.md)
+{{ Fill in the Description }}
+
 ### [New-MgGroupSiteGetByPathPermission](New-MgGroupSiteGetByPathPermission.md)
 {{ Fill in the Description }}
 
@@ -1614,6 +1824,24 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgGroupSiteOperation](New-MgGroupSiteOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePage](New-MgGroupSitePage.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](New-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](New-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [New-MgGroupSitePageAsSitePageWebPart](New-MgGroupSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
 ### [New-MgGroupSitePermission](New-MgGroupSitePermission.md)
@@ -1727,6 +1955,9 @@ Locale: en-US
 ### [New-MgSiteGetByPathOperation](New-MgSiteGetByPathOperation.md)
 {{ Fill in the Description }}
 
+### [New-MgSiteGetByPathPage](New-MgSiteGetByPathPage.md)
+{{ Fill in the Description }}
+
 ### [New-MgSiteGetByPathPermission](New-MgSiteGetByPathPermission.md)
 {{ Fill in the Description }}
 
@@ -1767,6 +1998,24 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgSiteOperation](New-MgSiteOperation.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePage](New-MgSitePage.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePageAsSitePageCanvaLayoutHorizontalSection](New-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](New-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](New-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [New-MgSitePageAsSitePageWebPart](New-MgSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
 ### [New-MgSitePermission](New-MgSitePermission.md)
@@ -1979,6 +2228,30 @@ Locale: en-US
 ### [Remove-MgGroupSiteOperation](Remove-MgGroupSiteOperation.md)
 {{ Fill in the Description }}
 
+### [Remove-MgGroupSitePage](Remove-MgGroupSitePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayout](Remove-MgGroupSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Remove-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Remove-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Remove-MgGroupSitePageAsSitePageWebPart](Remove-MgGroupSitePageAsSitePageWebPart.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgGroupSitePermission](Remove-MgGroupSitePermission.md)
 {{ Fill in the Description }}
 
@@ -2133,6 +2406,30 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgSiteOperation](Remove-MgSiteOperation.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePage](Remove-MgSitePage.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayout](Remove-MgSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSection](Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Remove-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayoutVerticalSection](Remove-MgSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Remove-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Remove-MgSitePageAsSitePageWebPart](Remove-MgSitePageAsSitePageWebPart.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgSitePermission](Remove-MgSitePermission.md)
@@ -2414,6 +2711,42 @@ Locale: en-US
 ### [Update-MgGroupSiteOperation](Update-MgGroupSiteOperation.md)
 {{ Fill in the Description }}
 
+### [Update-MgGroupSitePage](Update-MgGroupSitePage.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayout](Update-MgGroupSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection](Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Update-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting](Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageLastModifiedByUserMailboxSetting](Update-MgGroupSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageAsSitePageWebPart](Update-MgGroupSitePageAsSitePageWebPart.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageCreatedByUserMailboxSetting](Update-MgGroupSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgGroupSitePageLastModifiedByUserMailboxSetting](Update-MgGroupSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
 ### [Update-MgGroupSitePermission](Update-MgGroupSitePermission.md)
 {{ Fill in the Description }}
 
@@ -2598,6 +2931,42 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgSiteOperation](Update-MgSiteOperation.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePage](Update-MgSitePage.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayout](Update-MgSitePageAsSitePageCanvaLayout.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection](Update-MgSitePageAsSitePageCanvaLayoutHorizontalSection.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumn.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayoutVerticalSection](Update-MgSitePageAsSitePageCanvaLayoutVerticalSection.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](Update-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageCreatedByUserMailboxSetting](Update-MgSitePageAsSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageLastModifiedByUserMailboxSetting](Update-MgSitePageAsSitePageLastModifiedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageAsSitePageWebPart](Update-MgSitePageAsSitePageWebPart.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageCreatedByUserMailboxSetting](Update-MgSitePageCreatedByUserMailboxSetting.md)
+{{ Fill in the Description }}
+
+### [Update-MgSitePageLastModifiedByUserMailboxSetting](Update-MgSitePageLastModifiedByUserMailboxSetting.md)
 {{ Fill in the Description }}
 
 ### [Update-MgSitePermission](Update-MgSitePermission.md)

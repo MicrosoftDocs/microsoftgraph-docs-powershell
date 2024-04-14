@@ -567,10 +567,9 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[DisplayName <String>]`: Name of the assignment.
@@ -589,12 +588,13 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[DisplayName <String>]`: 
-    - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
-      - `[DefaultPercentage <Single?>]`: 
-      - `[DisplayName <String>]`: 
-      - `[MinPercentage <Single?>]`: 
-    - `[HidePointsDuringGrading <Boolean?>]`: 
+    - `[DisplayName <String>]`: The name of the grading scheme.
+    - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: The grades that make up the scheme.
+      - `[DefaultPercentage <Single?>]`: The midpoint of the grade range.
+      - `[DisplayName <String>]`: The name of the grading scheme.
+      - `[MinPercentage <Single?>]`: The minimum percentage of the total points needed to achieve this grade.
+    - `[HidePointsDuringGrading <Boolean?>]`: The display setting for the UI.
+Indicates whether teachers can grade with points in addition to letter grades.
   - `[Instructions <IMicrosoftGraphEducationItemBody>]`: educationItemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: 
@@ -682,10 +682,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -700,12 +699,13 @@ GRADINGSCHEME `<IMicrosoftGraphEducationGradingScheme>`: educationGradingScheme
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[DisplayName <String>]`: 
-  - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: 
-    - `[DefaultPercentage <Single?>]`: 
-    - `[DisplayName <String>]`: 
-    - `[MinPercentage <Single?>]`: 
-  - `[HidePointsDuringGrading <Boolean?>]`: 
+  - `[DisplayName <String>]`: The name of the grading scheme.
+  - `[Grades <IMicrosoftGraphEducationGradingSchemeGrade- `[]`>]`: The grades that make up the scheme.
+    - `[DefaultPercentage <Single?>]`: The midpoint of the grade range.
+    - `[DisplayName <String>]`: The name of the grading scheme.
+    - `[MinPercentage <Single?>]`: The minimum percentage of the total points needed to achieve this grade.
+  - `[HidePointsDuringGrading <Boolean?>]`: The display setting for the UI.
+Indicates whether teachers can grade with points in addition to letter grades.
 
 INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -717,10 +717,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -739,10 +738,9 @@ Required
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DisplayName <String>]`: Display name of resource.
@@ -757,10 +755,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <IMicrosoftGraphEducationItemBody>]`: educationItemBody
@@ -795,10 +792,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Outcomes <IMicrosoftGraphEducationOutcome- `[]`>]`: 

@@ -18,30 +18,16 @@ When you remove the appManagementPolicy, the application or service principal ad
 
 ### Delete (Default)
 ```
-Remove-MgApplicationAppManagementPolicyByRef -AppManagementPolicyId <String> -ApplicationId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgApplicationAppManagementPolicyByRef -ApplicationId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,21 +38,6 @@ When you remove the appManagementPolicy, the application or service principal ad
 
 ### -ApplicationId
 The unique identifier of application
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AppManagementPolicyId
-The unique identifier of appManagementPolicy
 
 ```yaml
 Type: String
@@ -100,7 +71,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -131,7 +102,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamChannelFileFolderContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property filesFolder from teams
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelFileFolderContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-Format <S
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property filesFolder from teams
 
 ## EXAMPLES
 

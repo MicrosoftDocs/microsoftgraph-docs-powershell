@@ -62,16 +62,16 @@ Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	staffIds = @(
-		"311a5454-08b2-4560-ba1c-f715e938cb79"
-	)
-	startDateTime = @{
-		dateTime = "2022-01-25T00:00:00"
-		timeZone = "India Standard Time"
-	}
-	endDateTime = @{
-		dateTime = "2022-01-26T17:00:00"
-		timeZone = "Pacific Standard Time"
-	}
+	"311a5454-08b2-4560-ba1c-f715e938cb79"
+)
+startDateTime = @{
+	dateTime = "2022-01-25T00:00:00"
+	timeZone = "India Standard Time"
+}
+endDateTime = @{
+	dateTime = "2022-01-26T17:00:00"
+	timeZone = "Pacific Standard Time"
+}
 }
 
 Get-MgBetaBookingBusinessStaffAvailability -BookingBusinessId $bookingBusinessId -BodyParameter $params
@@ -313,12 +313,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[Role <String>]`: Usage: role='{role}'
   - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration

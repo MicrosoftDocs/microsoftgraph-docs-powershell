@@ -22,6 +22,19 @@ Update-MgBetaPlaceAsRoomListRoom -PlaceId <String> -RoomId <String> [-ResponseHe
  [-BookingType <String>] [-Building <String>] [-Capacity <Int32>] [-DisplayDeviceName <String>]
  [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
  [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
+ [-Label <String>] [-Nickname <String>] [-Phone <String>] [-PlaceId1 <String>] [-Tags <String[]>]
+ [-VideoDeviceName <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlaceAsRoomListRoom [-PlaceId <String>] -InputObject <ICalendarIdentity>
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <String>] [-BookingType <String>]
+ [-Building <String>] [-Capacity <Int32>] [-DisplayDeviceName <String>] [-DisplayName <String>]
+ [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
  [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-VideoDeviceName <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -31,17 +44,6 @@ Update-MgBetaPlaceAsRoomListRoom -PlaceId <String> -RoomId <String> [-ResponseHe
 Update-MgBetaPlaceAsRoomListRoom -PlaceId <String> -RoomId <String> -BodyParameter <IMicrosoftGraphRoom>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>] [-AudioDeviceName <String>]
- [-BookingType <String>] [-Building <String>] [-Capacity <Int32>] [-DisplayDeviceName <String>]
- [-DisplayName <String>] [-EmailAddress <String>] [-FloorLabel <String>] [-FloorNumber <Int32>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-IsWheelChairAccessible]
- [-Label <String>] [-Nickname <String>] [-Phone <String>] [-Tags <String[]>] [-VideoDeviceName <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -376,6 +378,35 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+```yaml
+Type: String
+Parameter Sets: UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlaceId1
+A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -532,6 +563,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
     - `[Latitude <Double?>]`: The latitude of the location.
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
+  - `[PlaceId <String>]`: A unique, immutable identifier for the place.
+Read-only.
+The value of this identifier is equal to the ExternalDirectoryObjectId returned from the Get-Mailbox cmdlet.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AudioDeviceName <String>]`: Specifies the name of the audio device in the room.

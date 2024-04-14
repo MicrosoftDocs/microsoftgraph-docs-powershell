@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDriveRootContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property root from drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property root from drives
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]

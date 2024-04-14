@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBetaOrganizationSettingItemInsight
 
 ## SYNOPSIS
-Update privacy settings to display or return the specified type of insights in an organization.
-The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
+Update the navigation property itemInsights in organization
 
 ## SYNTAX
 
@@ -44,12 +42,7 @@ Update-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-Update privacy settings to display or return the specified type of insights in an organization.
-The type of settings can be contact insights, item insights, or people insights.
-To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/insightssettings-update-permissions.md)]
+Update the navigation property itemInsights in organization
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOrganizationSettingItemInsight Cmdlet
@@ -161,7 +154,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabledInOrganization
-true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 
@@ -277,7 +270,7 @@ Read-only.
   - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-  - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+  - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 

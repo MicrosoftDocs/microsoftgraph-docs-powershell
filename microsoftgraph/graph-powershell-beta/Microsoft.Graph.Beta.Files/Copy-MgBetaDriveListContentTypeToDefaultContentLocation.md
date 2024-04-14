@@ -8,8 +8,7 @@ schema: 2.0.0
 # Copy-MgBetaDriveListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-Copy a file to a default content location in a \[content type\]\[contentType\].
-The file can then be added as a default file or template via a POST operation.
+Invoke action copyToDefaultContentLocation
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
@@ -49,8 +48,7 @@ Copy-MgBetaDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIden
 ```
 
 ## DESCRIPTION
-Copy a file to a default content location in a \[content type\]\[contentType\].
-The file can then be added as a default file or template via a POST operation.
+Invoke action copyToDefaultContentLocation
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]

@@ -312,6 +312,7 @@ BODYPARAMETER `<IPaths154X2NnGroupsGroupIdCalendarEventsEventIdMicrosoftGraphFor
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -327,6 +328,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
@@ -348,6 +351,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UniqueName <String>]`: Alternate key of group
   - `[User <String>]`: Usage: User='{User}'
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress

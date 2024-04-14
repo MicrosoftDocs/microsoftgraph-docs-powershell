@@ -105,8 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-An optional description for the administrative unit.
-Supports $filter (eq, ne, in, startsWith), $search.
+.
 
 ```yaml
 Type: String
@@ -121,8 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name for the administrative unit.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
+.
 
 ```yaml
 Type: String
@@ -185,11 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsMemberManagementRestricted
-true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
-Default value is false.
-Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
-Immutable, so can't be changed later.
-For more information about working with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
+.
 
 ```yaml
 Type: SwitchParameter
@@ -221,8 +215,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRule
-Dynamic membership rule for the administrative unit.
-For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
+.
 
 ```yaml
 Type: String
@@ -237,9 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipRuleProcessingState
-Used to control whether the dynamic membership rule is actively processed.
-Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
-If not set, the default behavior is Paused.
+.
 
 ```yaml
 Type: String
@@ -254,9 +245,7 @@ Accept wildcard characters: False
 ```
 
 ### -MembershipType
-Membership type for the administrative unit.
-Can be dynamic or assigned.
-If not set, the default behavior is assigned.
+.
 
 ```yaml
 Type: String
@@ -317,10 +306,7 @@ Accept wildcard characters: False
 ```
 
 ### -Visibility
-Controls whether the administrative unit and its members are hidden or public.
-Can be set to HiddenMembership or Public.
-If not set, the default behavior is Public.
-When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+.
 
 ```yaml
 Type: String
@@ -387,33 +373,22 @@ BODYPARAMETER `<IMicrosoftGraphAdministrativeUnit>`: administrativeUnit
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: An optional description for the administrative unit.
-Supports $filter (eq, ne, in, startsWith), $search.
-  - `[DisplayName <String>]`: Display name for the administrative unit.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderby.
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for this administrative unit.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage.
-Default value is false.
-Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit.
-Immutable, so can't be changed later. 
-For more information about working with restricted management administrative units, see Restricted management administrative units in Microsoft Entra ID.
+  - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject- `[]`>]`: Users and groups that are members of this administrative unit.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[MembershipRule <String>]`: Dynamic membership rule for the administrative unit.
-For more about the rules that you can use for dynamic administrative units and dynamic groups, see Using attributes to create advanced rules.
-  - `[MembershipRuleProcessingState <String>]`: Used to control whether the dynamic membership rule is actively processed.
-Set to On when you want the dynamic membership rule to be active and Paused if you want to stop updating membership dynamically.
-If not set, the default behavior is Paused.
-  - `[MembershipType <String>]`: Membership type for the administrative unit.
-Can be dynamic or assigned.
-If not set, the default behavior is assigned.
+  - `[MembershipRule <String>]`: 
+  - `[MembershipRuleProcessingState <String>]`: 
+  - `[MembershipType <String>]`: 
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership- `[]`>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -422,14 +397,10 @@ Read-only.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public.
-Can be set to HiddenMembership or Public.
-If not set, the default behavior is Public.
-When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[Visibility <String>]`: 
 
 EXTENSIONS <IMicrosoftGraphExtension- `[]`>: The collection of open extensions defined for this administrative unit.
 Nullable.
@@ -451,10 +422,9 @@ Read-only.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 ## RELATED LINKS
 [New-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnit?view=graph-powershell-1.0)

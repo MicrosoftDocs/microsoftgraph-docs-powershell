@@ -18,31 +18,16 @@ Remove an access package from the list of access packages that have been marked 
 ### Delete (Default)
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId <String>
- -AccessPackageId1 <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
- [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
-Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId <String>
  -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
- -InputObject <IIdentityGovernanceIdentity> -Id <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
- -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> -Id <String> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,21 +52,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ## PARAMETERS
 
 ### -AccessPackageId
-The unique identifier of accessPackage
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AccessPackageId1
 The unique identifier of accessPackage
 
 ```yaml
@@ -116,7 +86,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -147,7 +117,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -286,7 +256,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule

@@ -17,28 +17,14 @@ Remove a teacher from an educationClass.
 
 ### Delete (Default)
 ```
-Remove-MgEducationClassTeacherByRef -EducationClassId <String> -EducationUserId <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgEducationClassTeacherByRef -EducationClassId <String> -Id <String> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> [-IfMatch <String>]
+Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -53,21 +39,6 @@ Remove a teacher from an educationClass.
 
 ### -EducationClassId
 The unique identifier of educationClass
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EducationUserId
-The unique identifier of educationUser
 
 ```yaml
 Type: String
@@ -101,7 +72,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -132,7 +103,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

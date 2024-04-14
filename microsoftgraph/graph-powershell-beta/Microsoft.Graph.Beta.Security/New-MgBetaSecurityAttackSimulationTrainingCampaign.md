@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgBetaSecurityAttackSimulationTrainingCampaign
 
 ## SYNOPSIS
-Create new navigation property to trainingCampaigns for security
+Create a new trainingCampaign object.
 
 ## SYNTAX
 
@@ -33,7 +34,10 @@ New-MgBetaSecurityAttackSimulationTrainingCampaign -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to trainingCampaigns for security
+Create a new trainingCampaign object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-trainingcampaigns-permissions.md)]
 
 ## PARAMETERS
 
@@ -101,7 +105,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Date and time of creation of the training campaign.
 
 ```yaml
 Type: DateTime
@@ -116,7 +120,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the training campaign.
 
 ```yaml
 Type: String
@@ -131,7 +135,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the training campaign.
+Supports $filter and $orderby.
 
 ```yaml
 Type: String
@@ -241,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Date and time of the most recent modification of the training campaign.
 
 ```yaml
 Type: DateTime
@@ -370,20 +375,20 @@ BODYPARAMETER `<IMicrosoftGraphTrainingCampaign>`: trainingCampaign
 Read-only.
   - `[CampaignSchedule <IMicrosoftGraphCampaignSchedule>]`: campaignSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompletionDateTime <DateTime?>]`: 
-    - `[LaunchDateTime <DateTime?>]`: 
+    - `[CompletionDateTime <DateTime?>]`: The date and time at which the campaign completed.
+    - `[LaunchDateTime <DateTime?>]`: The date and time at which the campaign was launched.
     - `[Status <String>]`: campaignStatus
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Email <String>]`: Email address of the user.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Date and time of creation of the training campaign.
+  - `[Description <String>]`: Description of the training campaign.
+  - `[DisplayName <String>]`: Display name of the training campaign.
+Supports $filter and $orderby.
   - `[EndUserNotificationSetting <IMicrosoftGraphEndUserNotificationSetting>]`: endUserNotificationSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[NotificationPreference <String>]`: endUserNotificationPreference
@@ -424,10 +429,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Type <String>]`: accountTargetContentType
   - `[IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time of the most recent modification of the training campaign.
   - `[Report <IMicrosoftGraphTrainingCampaignReport>]`: trainingCampaignReport
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CampaignUsers <IMicrosoftGraphUserSimulationDetails- `[]`>]`: 
+    - `[CampaignUsers <IMicrosoftGraphUserSimulationDetails- `[]`>]`: The overview of the attack simulation and training campaign.
       - `[AssignedTrainingsCount <Int32?>]`: Number of trainings assigned to a user in an attack simulation and training campaign.
       - `[CompletedTrainingsCount <Int32?>]`: Number of trainings completed by a user in an attack simulation and training campaign.
       - `[CompromisedDateTime <DateTime?>]`: Date and time of the compromising online action by a user in an attack simulation and training campaign.
@@ -470,33 +475,32 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[TrainingsAssignedUserCount <Int32?>]`: Number of users who were assigned trainings in an attack simulation and training campaign.
       - `[TrainingNotificationDeliveryStatus <IMicrosoftGraphTrainingNotificationDelivery>]`: trainingNotificationDelivery
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[FailedMessageDeliveryCount <Int32?>]`: 
-        - `[ResolvedTargetsCount <Int32?>]`: 
-        - `[SuccessfulMessageDeliveryCount <Int32?>]`: 
+        - `[FailedMessageDeliveryCount <Int32?>]`: The number of users to whom mails couldn't be delivered.
+        - `[ResolvedTargetsCount <Int32?>]`: The number of users whose email address was successfully resolved from target users.
+        - `[SuccessfulMessageDeliveryCount <Int32?>]`: The number of users who received a mail while the training campaign was in the 'in progress' state.
       - `[UserCompletionStatus <IMicrosoftGraphUserTrainingCompletionSummary>]`: userTrainingCompletionSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CompletedUsersCount <Int32?>]`: 
-        - `[InProgressUsersCount <Int32?>]`: 
-        - `[NotCompletedUsersCount <Int32?>]`: 
-        - `[NotStartedUsersCount <Int32?>]`: 
-        - `[PreviouslyAssignedUsersCount <Int32?>]`: 
+        - `[CompletedUsersCount <Int32?>]`: The number of users who completed all the trainings before the due date.
+        - `[InProgressUsersCount <Int32?>]`: The number of users who started at least one training.
+        - `[NotCompletedUsersCount <Int32?>]`: The number of users who didn't complete all the trainings before the due date.
+        - `[NotStartedUsersCount <Int32?>]`: The number of users who didn't start any training.
+        - `[PreviouslyAssignedUsersCount <Int32?>]`: The number of users who are already assigned the same training.
   - `[TrainingSetting <IMicrosoftGraphTrainingSetting>]`: trainingSetting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SettingType <String>]`: trainingSettingType
 
 CAMPAIGNSCHEDULE `<IMicrosoftGraphCampaignSchedule>`: campaignSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CompletionDateTime <DateTime?>]`: 
-  - `[LaunchDateTime <DateTime?>]`: 
+  - `[CompletionDateTime <DateTime?>]`: The date and time at which the campaign completed.
+  - `[LaunchDateTime <DateTime?>]`: The date and time at which the campaign was launched.
   - `[Status <String>]`: campaignStatus
 
 CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Email <String>]`: Email address of the user.
 
 ENDUSERNOTIFICATIONSETTING `<IMicrosoftGraphEndUserNotificationSetting>`: endUserNotificationSetting
@@ -512,10 +516,9 @@ Read-only.
       - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Email <String>]`: Email address of the user.
       - `[CreatedDateTime <DateTime?>]`: Date and time when the notification was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
@@ -553,15 +556,14 @@ INCLUDEDACCOUNTTARGET `<IMicrosoftGraphAccountTargetContent>`: accountTargetCont
 LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Email <String>]`: Email address of the user.
 
 REPORT `<IMicrosoftGraphTrainingCampaignReport>`: trainingCampaignReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CampaignUsers <IMicrosoftGraphUserSimulationDetails- `[]`>]`: 
+  - `[CampaignUsers <IMicrosoftGraphUserSimulationDetails- `[]`>]`: The overview of the attack simulation and training campaign.
     - `[AssignedTrainingsCount <Int32?>]`: Number of trainings assigned to a user in an attack simulation and training campaign.
     - `[CompletedTrainingsCount <Int32?>]`: Number of trainings completed by a user in an attack simulation and training campaign.
     - `[CompromisedDateTime <DateTime?>]`: Date and time of the compromising online action by a user in an attack simulation and training campaign.
@@ -604,16 +606,16 @@ REPORT `<IMicrosoftGraphTrainingCampaignReport>`: trainingCampaignReport
       - `[TrainingsAssignedUserCount <Int32?>]`: Number of users who were assigned trainings in an attack simulation and training campaign.
     - `[TrainingNotificationDeliveryStatus <IMicrosoftGraphTrainingNotificationDelivery>]`: trainingNotificationDelivery
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[FailedMessageDeliveryCount <Int32?>]`: 
-      - `[ResolvedTargetsCount <Int32?>]`: 
-      - `[SuccessfulMessageDeliveryCount <Int32?>]`: 
+      - `[FailedMessageDeliveryCount <Int32?>]`: The number of users to whom mails couldn't be delivered.
+      - `[ResolvedTargetsCount <Int32?>]`: The number of users whose email address was successfully resolved from target users.
+      - `[SuccessfulMessageDeliveryCount <Int32?>]`: The number of users who received a mail while the training campaign was in the 'in progress' state.
     - `[UserCompletionStatus <IMicrosoftGraphUserTrainingCompletionSummary>]`: userTrainingCompletionSummary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CompletedUsersCount <Int32?>]`: 
-      - `[InProgressUsersCount <Int32?>]`: 
-      - `[NotCompletedUsersCount <Int32?>]`: 
-      - `[NotStartedUsersCount <Int32?>]`: 
-      - `[PreviouslyAssignedUsersCount <Int32?>]`: 
+      - `[CompletedUsersCount <Int32?>]`: The number of users who completed all the trainings before the due date.
+      - `[InProgressUsersCount <Int32?>]`: The number of users who started at least one training.
+      - `[NotCompletedUsersCount <Int32?>]`: The number of users who didn't complete all the trainings before the due date.
+      - `[NotStartedUsersCount <Int32?>]`: The number of users who didn't start any training.
+      - `[PreviouslyAssignedUsersCount <Int32?>]`: The number of users who are already assigned the same training.
 
 TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

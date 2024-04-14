@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to horizontalSections for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/New-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -362,6 +365,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/New-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepageassitepagecanvalayouthorizontalsection)
 

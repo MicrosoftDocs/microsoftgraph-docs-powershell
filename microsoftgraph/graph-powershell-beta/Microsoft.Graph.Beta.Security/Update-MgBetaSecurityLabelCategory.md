@@ -10,13 +10,16 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property categories in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityLabelCategory -CategoryTemplateId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate[]>]
+ [-DisplayName <String>] [-Id <String>] [-Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +34,7 @@ Update-MgBetaSecurityLabelCategory -CategoryTemplateId <String>
 ```
 Update-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate[]>]
+ [-DisplayName <String>] [-Id <String>] [-Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate[]>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -111,6 +114,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
 
 ```yaml
 Type: DateTime
@@ -216,12 +220,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SubCategories
-Represents all subcategories under a particular category.
+### -Subcategories
+.
 To construct, see NOTES section for SUBCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubCategoryTemplate[]
+Type: IMicrosoftGraphSecuritySubcategoryTemplate[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -287,19 +291,20 @@ BODYPARAMETER `<IMicrosoftGraphSecurityCategoryTemplate>`: categoryTemplate
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
+  - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -309,10 +314,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -333,7 +337,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -352,6 +356,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -382,7 +387,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
@@ -399,24 +404,25 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisHistoryRecordId <String>]`: The unique identifier of whoisHistoryRecord
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
-SUBCATEGORIES <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>: Represents all subcategories under a particular category.
+SUBCATEGORIES <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategory)
 

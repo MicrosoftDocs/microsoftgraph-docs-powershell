@@ -14,30 +14,16 @@ Remove a user as a registered user of the device.
 
 ### Delete (Default)
 ```
-Remove-MgBetaUserDeviceRegisteredUserByRef -DeviceId <String> -DirectoryObjectId <String> -UserId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaUserDeviceRegisteredUserByRef -DeviceId <String> -UserId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,21 +36,6 @@ Remove a user as a registered user of the device.
 
 ### -DeviceId
 The unique identifier of device
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -98,7 +69,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -129,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -189,7 +160,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True

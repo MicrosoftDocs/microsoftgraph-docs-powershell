@@ -17,30 +17,16 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 
 ### Delete (Default)
 ```
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -DirectoryObjectId <String> -FeatureRolloutPolicyId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId <String> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,27 +50,12 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ## PARAMETERS
 
-### -DirectoryObjectId
-The unique identifier of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -FeatureRolloutPolicyId
 The unique identifier of featureRolloutPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -114,7 +85,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -145,7 +116,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

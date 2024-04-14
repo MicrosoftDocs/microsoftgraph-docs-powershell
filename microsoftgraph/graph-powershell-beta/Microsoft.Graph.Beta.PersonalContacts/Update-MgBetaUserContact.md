@@ -433,7 +433,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImAddresses
-.
+The contact's instant messaging (IM) addresses.
 
 ```yaml
 Type: String[]
@@ -448,7 +448,7 @@ Accept wildcard characters: False
 ```
 
 ### -Initials
-.
+The contact's initials.
 
 ```yaml
 Type: String
@@ -494,7 +494,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-.
+The contact's job title.
 
 ```yaml
 Type: String
@@ -525,7 +525,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manager
-.
+The name of the contact's manager.
 
 ```yaml
 Type: String
@@ -540,7 +540,7 @@ Accept wildcard characters: False
 ```
 
 ### -MiddleName
-.
+The contact's middle name.
 
 ```yaml
 Type: String
@@ -573,7 +573,7 @@ Accept wildcard characters: False
 ```
 
 ### -NickName
-.
+The contact's nickname.
 
 ```yaml
 Type: String
@@ -588,7 +588,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfficeLocation
-.
+The location of the contact's office.
 
 ```yaml
 Type: String
@@ -603,7 +603,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentFolderId
-.
+The ID of the contact's parent folder.
 
 ```yaml
 Type: String
@@ -618,7 +618,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalNotes
-.
+The user's notes about the contact.
 
 ```yaml
 Type: String
@@ -633,7 +633,7 @@ Accept wildcard characters: False
 ```
 
 ### -Phones
-.
+Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
 To construct, see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
@@ -665,7 +665,7 @@ Accept wildcard characters: False
 ```
 
 ### -PostalAddresses
-.
+Addresses associated with the contact, for example, home address and business address.
 To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
@@ -681,7 +681,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profession
-.
+The contact's profession.
 
 ```yaml
 Type: String
@@ -744,7 +744,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpouseName
-.
+The name of the contact's spouse/partner.
 
 ```yaml
 Type: String
@@ -759,7 +759,7 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-.
+The contact's surname.
 
 ```yaml
 Type: String
@@ -774,7 +774,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+The contact's title.
 
 ```yaml
 Type: String
@@ -804,7 +804,7 @@ Accept wildcard characters: False
 ```
 
 ### -Websites
-.
+Web sites associated with the contact.
 To construct, see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
@@ -820,7 +820,7 @@ Accept wildcard characters: False
 ```
 
 ### -WeddingAnniversary
-.
+The contact's wedding anniversary.
 
 ```yaml
 Type: DateTime
@@ -835,7 +835,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiCompanyName
-.
+The phonetic Japanese company name of the contact.
 
 ```yaml
 Type: String
@@ -850,7 +850,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiGivenName
-.
+The phonetic Japanese given name (first name) of the contact.
 
 ```yaml
 Type: String
@@ -865,7 +865,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiSurname
-.
+The phonetic Japanese surname (last name) of the contact.
 
 ```yaml
 Type: String
@@ -974,23 +974,23 @@ See below for possible values.
   - `[Gender <String>]`: The contact's gender.
   - `[Generation <String>]`: The contact's generation.
   - `[GivenName <String>]`: The contact's given name.
-  - `[ImAddresses <String- `[]`>]`: 
-  - `[Initials <String>]`: 
+  - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+  - `[Initials <String>]`: The contact's initials.
   - `[IsFavorite <Boolean?>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
+  - `[JobTitle <String>]`: The contact's job title.
+  - `[Manager <String>]`: The name of the contact's manager.
+  - `[MiddleName <String>]`: The contact's middle name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String- `[]`>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
-  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: 
+  - `[NickName <String>]`: The contact's nickname.
+  - `[OfficeLocation <String>]`: The location of the contact's office.
+  - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+  - `[PersonalNotes <String>]`: The user's notes about the contact.
+  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
@@ -1001,7 +1001,7 @@ Read-only.
 Read-only.
     - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: 
+  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress- `[]`>]`: Addresses associated with the contact, for example, home address and business address.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -1010,24 +1010,24 @@ It's a free-format string value, for example, 'United States'.
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
     - `[Type <String>]`: physicalAddressType
-  - `[Profession <String>]`: 
+  - `[Profession <String>]`: The contact's profession.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: 
+  - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+  - `[Surname <String>]`: The contact's surname.
+  - `[Title <String>]`: The contact's title.
+  - `[Websites <IMicrosoftGraphWebsite- `[]`>]`: Web sites associated with the contact.
     - `[Address <String>]`: The URL of the website.
     - `[DisplayName <String>]`: The display name of the web site.
     - `[Type <String>]`: websiteType
-  - `[WeddingAnniversary <DateTime?>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+  - `[WeddingAnniversary <DateTime?>]`: The contact's wedding anniversary.
+  - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+  - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+  - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
 EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress- `[]`>: The contact's email addresses.
   - `[Address <String>]`: The email address of an entity instance.
@@ -1068,7 +1068,7 @@ Nullable.
 Read-only.
   - `[Value <String- `[]`>]`: A collection of property values.
 
-PHONES <IMicrosoftGraphPhone- `[]`>: .
+PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone.
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
@@ -1081,7 +1081,7 @@ Read-only.
   - `[Width <Int32?>]`: The width of the photo.
 Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress- `[]`>: .
+POSTALADDRESSES <IMicrosoftGraphPhysicalAddress- `[]`>: Addresses associated with the contact, for example, home address and business address.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region.
 It's a free-format string value, for example, 'United States'.
@@ -1098,7 +1098,7 @@ Nullable.
 Read-only.
   - `[Value <String>]`: A property value.
 
-WEBSITES <IMicrosoftGraphWebsite- `[]`>: .
+WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType

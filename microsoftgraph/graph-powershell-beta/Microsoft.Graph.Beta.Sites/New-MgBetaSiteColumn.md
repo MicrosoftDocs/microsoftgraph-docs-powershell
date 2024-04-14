@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSiteColumn
 
 ## SYNOPSIS
-Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a site
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-1.0)
@@ -65,7 +65,7 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a column for a \[site\]\[site\] by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a site
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]

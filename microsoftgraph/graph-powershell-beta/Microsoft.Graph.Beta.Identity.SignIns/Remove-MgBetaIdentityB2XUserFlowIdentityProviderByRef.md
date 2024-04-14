@@ -17,29 +17,14 @@ Delete ref of navigation property userFlowIdentityProviders for identity
 
 ### Delete (Default)
 ```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String>
- -IdentityProviderBaseId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2XIdentityUserFlowId <String> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity>
+Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -InputObject <IIdentitySignInsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -70,7 +55,7 @@ The unique identifier of b2xIdentityUserFlow
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -100,22 +85,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IdentityProviderBaseId
-The unique identifier of identityProviderBase
-
-```yaml
-Type: String
-Parameter Sets: Delete
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -146,7 +116,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

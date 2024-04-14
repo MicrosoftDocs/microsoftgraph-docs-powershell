@@ -1,0 +1,4 @@
+[submodule "msgraph-sdk-powershell"]
+	path = msgraph-sdk-powershell
+	url = https://github.com/microsoftgraph/msgraph-sdk-powershell
+	branch = dev

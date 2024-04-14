@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaUserDriveListItemDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgUserDriveListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaUserDriveListItemDriveItemContent -InputObject <IFilesIdentity> [-Data
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property driveItem in users
 
 ## PARAMETERS
 

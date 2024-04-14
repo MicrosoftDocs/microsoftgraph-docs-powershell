@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgBetaSiteContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Invoke action addCopy
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteContentTypeCopy?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Add-MgBetaSiteContentTypeCopy -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Invoke action addCopy
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-addcopy-permissions.md)]

@@ -350,6 +350,15 @@ Locale: en-US
 ### [Get-MgBetaSecurityHostSecurityProfileCount](Get-MgBetaSecurityHostSecurityProfileCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaSecurityIdentity](Get-MgBetaSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentityHealthIssue](Get-MgBetaSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSecurityIdentityHealthIssueCount](Get-MgBetaSecurityIdentityHealthIssueCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaSecurityIncident](Get-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -401,10 +410,10 @@ Locale: en-US
 ### [Get-MgBetaSecurityLabelCategoryCount](Get-MgBetaSecurityLabelCategoryCount.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaSecurityLabelCategorySubCategory](Get-MgBetaSecurityLabelCategorySubCategory.md)
+### [Get-MgBetaSecurityLabelCategorySubcategory](Get-MgBetaSecurityLabelCategorySubcategory.md)
 {{ Fill in the Description }}
 
-### [Get-MgBetaSecurityLabelCategorySubCategoryCount](Get-MgBetaSecurityLabelCategorySubCategoryCount.md)
+### [Get-MgBetaSecurityLabelCategorySubcategoryCount](Get-MgBetaSecurityLabelCategorySubcategoryCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSecurityLabelCitation](Get-MgBetaSecurityLabelCitation.md)
@@ -968,6 +977,9 @@ Locale: en-US
 ### [New-MgBetaSecurityHostSecurityProfile](New-MgBetaSecurityHostSecurityProfile.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaSecurityIdentityHealthIssue](New-MgBetaSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaSecurityIncident](New-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -983,7 +995,7 @@ Locale: en-US
 ### [New-MgBetaSecurityLabelCategory](New-MgBetaSecurityLabelCategory.md)
 {{ Fill in the Description }}
 
-### [New-MgBetaSecurityLabelCategorySubCategory](New-MgBetaSecurityLabelCategorySubCategory.md)
+### [New-MgBetaSecurityLabelCategorySubcategory](New-MgBetaSecurityLabelCategorySubcategory.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaSecurityLabelCitation](New-MgBetaSecurityLabelCitation.md)
@@ -1238,6 +1250,12 @@ Locale: en-US
 ### [Remove-MgBetaSecurityHostSecurityProfile](Remove-MgBetaSecurityHostSecurityProfile.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaSecurityIdentity](Remove-MgBetaSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaSecurityIdentityHealthIssue](Remove-MgBetaSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaSecurityIncident](Remove-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -1265,7 +1283,7 @@ Locale: en-US
 ### [Remove-MgBetaSecurityLabelCategory](Remove-MgBetaSecurityLabelCategory.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaSecurityLabelCategorySubCategory](Remove-MgBetaSecurityLabelCategorySubCategory.md)
+### [Remove-MgBetaSecurityLabelCategorySubcategory](Remove-MgBetaSecurityLabelCategorySubcategory.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaSecurityLabelCitation](Remove-MgBetaSecurityLabelCitation.md)
@@ -1592,6 +1610,12 @@ Locale: en-US
 ### [Update-MgBetaSecurityHostSecurityProfile](Update-MgBetaSecurityHostSecurityProfile.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaSecurityIdentity](Update-MgBetaSecurityIdentity.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaSecurityIdentityHealthIssue](Update-MgBetaSecurityIdentityHealthIssue.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaSecurityIncident](Update-MgBetaSecurityIncident.md)
 {{ Fill in the Description }}
 
@@ -1619,7 +1643,7 @@ Locale: en-US
 ### [Update-MgBetaSecurityLabelCategory](Update-MgBetaSecurityLabelCategory.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaSecurityLabelCategorySubCategory](Update-MgBetaSecurityLabelCategorySubCategory.md)
+### [Update-MgBetaSecurityLabelCategorySubcategory](Update-MgBetaSecurityLabelCategorySubcategory.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaSecurityLabelCitation](Update-MgBetaSecurityLabelCitation.md)

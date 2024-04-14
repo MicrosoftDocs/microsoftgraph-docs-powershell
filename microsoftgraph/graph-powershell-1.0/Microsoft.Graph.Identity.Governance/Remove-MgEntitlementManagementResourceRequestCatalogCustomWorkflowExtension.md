@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Delete an accessPackageAssignmentRequestWorkflowExtension object.
+Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
@@ -31,12 +31,12 @@ Remove-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ```
 
 ## DESCRIPTION
-Delete an accessPackageAssignmentRequestWorkflowExtension object.
+Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequestworkflowextension-delete-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-delete-permissions.md)]
 
 ## PARAMETERS
 
@@ -245,7 +245,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
-Create a new androidCustomConfiguration object.
+Create a new windowsUpdateForBusinessConfiguration object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ```
 
 ## DESCRIPTION
-Create a new androidCustomConfiguration object.
+Create a new windowsUpdateForBusinessConfiguration object.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaDriveRootContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property root in drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgDriveRootContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaDriveRootContent -InputObject <IFilesIdentity> [-Data <Stream>] [-Resp
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property root in drives
 
 ## PARAMETERS
 

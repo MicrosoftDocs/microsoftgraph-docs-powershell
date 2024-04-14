@@ -1193,10 +1193,16 @@ Locale: en-US
 ### [Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowAsExternalUserSelfServiceSignUpEventFlowIncludeApplication.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderBaseByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef](Remove-MgBetaIdentityAuthenticationEventFlowAsOnGraphAPretributeCollectionExternalUserSelfServiceSignUpAttributeIdentityUserFlowAttributeByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication](Remove-MgBetaIdentityAuthenticationEventFlowIncludeApplication.md)
@@ -1224,6 +1230,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlow](Remove-MgBetaIdentityB2XUserFlow.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
@@ -1392,6 +1401,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyFederatedTokenValidationPolicy](Remove-MgBetaPolicyFederatedTokenValidationPolicy.md)
@@ -1572,6 +1584,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTrustFrameworkPolicyContent](Set-MgBetaTrustFrameworkPolicyContent.md)
+{{ Fill in the Description }}
+
+### [Test-MgBetaIdentityConditionalAccess](Test-MgBetaIdentityConditionalAccess.md)
 {{ Fill in the Description }}
 
 ### [Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration](Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration.md)

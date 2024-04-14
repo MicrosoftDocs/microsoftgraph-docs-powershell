@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteList
 
 ## SYNOPSIS
-Returns the metadata for a \[list\]\[\].
+Get a list of rich long-running operations associated with a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
@@ -38,10 +38,10 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Returns the metadata for a \[list\]\[\].
+Get a list of rich long-running operations associated with a list.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-operations-permissions.md)]
 
 ## EXAMPLES
 
@@ -322,6 +322,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -331,6 +332,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupId1 <String>]`: The unique identifier of group
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ItemActivityId <String>]`: The unique identifier of itemActivity
@@ -360,6 +363,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
   - `[UserId <String>]`: The unique identifier of user
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)

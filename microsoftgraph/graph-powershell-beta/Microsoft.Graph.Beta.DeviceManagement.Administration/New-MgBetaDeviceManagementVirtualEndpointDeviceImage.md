@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -421,6 +424,7 @@ For example, 0.0.1 and 1.5.13.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
 

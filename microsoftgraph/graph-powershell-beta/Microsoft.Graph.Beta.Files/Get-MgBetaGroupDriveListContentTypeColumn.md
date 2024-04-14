@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveListContentTypeColumn
 
 ## SYNOPSIS
-Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
+Retrieve the metadata for a \[site\]\[\], \[list\]\[\], or \[contentType\]\[\] \[column\]\[columnDefinition\].
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[site\]\[\], \[list\]\[\] or \[contentType\]\[\] \[column\]\[columnDefinition\].
+Retrieve the metadata for a \[site\]\[\], \[list\]\[\], or \[contentType\]\[\] \[column\]\[columnDefinition\].
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-get-permissions.md)]

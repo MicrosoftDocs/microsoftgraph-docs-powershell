@@ -422,7 +422,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tags
-Specifies additional features of the room, for example, details like the type of view or furniture type.
+Specifies other features of the room, for example, details like the type of view or furniture type.
 
 ```yaml
 Type: String[]
@@ -541,7 +541,7 @@ Read-only.
   - `[IsWheelChairAccessible <Boolean?>]`: Specifies whether the room is wheelchair accessible.
   - `[Label <String>]`: Specifies a descriptive label for the room, for example, a number or name.
   - `[Nickname <String>]`: Specifies a nickname for the room, for example, 'conf room'.
-  - `[Tags <String- `[]`>]`: Specifies additional features of the room, for example, details like the type of view or furniture type.
+  - `[Tags <String- `[]`>]`: Specifies other features of the room, for example, details like the type of view or furniture type.
   - `[VideoDeviceName <String>]`: Specifies the name of the video device in the room.
 
 GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates

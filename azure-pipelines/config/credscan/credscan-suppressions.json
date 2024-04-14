@@ -1,0 +1,77 @@
+﻿{
+  "tool": "Credential Scanner",
+  "suppressions": [
+    {
+      "placeholder": "pa$$w0rd",
+      "_justification": "[Applications] hard code password in application password HTTP example"
+    },
+    {
+      "file": [
+        "graph-powershell-1.0\\Microsoft.Graph.Applications\\New-MgBetaServicePrincipalPasswordSingleSignOnCredentials.md",
+        "graph-powershell-beta\\Microsoft.Graph.Beta.Applications\\Remove-MgBetaApplicationPassword.md",
+        "graph-powershell-beta\\Microsoft.Graph.Beta.Applications\\Update-MgBetaServicePrincipalPasswordSingleSignOnCredentials.md",
+        "graph-powershell-1.0\\Microsoft.Graph.Applications\\Add-MgServicePrincipalPassword.md",
+        "graph-powershell-1.0\\Microsoft.Graph.Applications\\Remove-MgApplicationPassword.md",
+        "graph-powershell-1.0\\Microsoft.Graph.Applications\\Remove-MgServicePrincipalPassword.md"
+      ],
+      "_justification": "[Applications] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "graph-powershell-beta\\Microsoft.Graph.Beta.Users.Actions\\Test-MgBetaUserPassword.md",
+        "graph-powershell-beta\\Microsoft.Graph.Beta.Users.Actions\\Update-MgBetaUserPassword.md",
+        "graph-powershell-1.0\\Microsoft.Graph.Users.Actions\\Update-MgUserPassword.md"
+      ],
+      "_justification": "[Users.Actions] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "graph-powershell-beta\\Microsoft.Graph.Beta.DeviceManagement.Actions\\Update-MgBetaDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md"
+      ],
+      "_justification": "[DeviceManagement.Actions] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\src\\Authentication\\Authentication\\test\\Get-MgContext.Tests.ps1"
+      ],
+      "_justification": "[Authentication] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\autorest.powershell\\docs\\samples\\timeswire\\readme.md"
+      ],
+      "_justification": "[AutoRest] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\src\\Applications\\beta\\examples\\New-MgBetaServicePrincipalPasswordSingleSignOnCredentials.md",
+        "msgraph-sdk-powershell\\src\\Applications\\beta\\examples\\Remove-MgBetaApplicationPassword.md",
+        "msgraph-sdk-powershell\\src\\Applications\\beta\\examples\\Update-MgBetaServicePrincipalPasswordSingleSignOnCredentials.md",
+        "msgraph-sdk-powershell\\src\\Applications\\v1.0\\examples\\Add-MgServicePrincipalPassword.md",
+        "msgraph-sdk-powershell\\src\\Applications\\v1.0\\examples\\Remove-MgApplicationPassword.md",
+        "msgraph-sdk-powershell\\src\\Applications\\v1.0\\examples\\Remove-MgServicePrincipalPassword.md"
+      ],
+      "_justification": "[Applications] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\src\\Users.Actions\\beta\\examples\\Test-MgBetaUserPassword.md",
+        "msgraph-sdk-powershell\\src\\Users.Actions\\beta\\examples\\Update-MgBetaUserPassword.md",
+        "msgraph-sdk-powershell\\src\\Users.Actions\\v1.0\\examples\\Update-MgUserPassword.md"
+      ],
+      "_justification": "[Users.Actions] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\src\\DeviceManagement.Actions\\beta\\examples\\Update-MgBetaDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md"
+      ],
+      "_justification": "[DeviceManagement.Actions] Examples contain random values recognized as secret"
+    },
+    {
+      "file": [
+        "msgraph-sdk-powershell\\tools\\Tests\\loadEnv.md"
+      ],
+      "_justification": "[ToolsTest] Examples contain random values recognized as secret"
+    }
+  ]
+}

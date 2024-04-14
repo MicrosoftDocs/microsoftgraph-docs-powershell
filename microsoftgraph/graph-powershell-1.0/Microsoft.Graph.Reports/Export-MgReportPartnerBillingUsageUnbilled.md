@@ -8,7 +8,7 @@ schema: 2.0.0
 # Export-MgReportPartnerBillingUsageUnbilled
 
 ## SYNOPSIS
-Export the unbilled Azure usage data for a specific billing period and a given currency.
+Export unbilled Azure usage data for a specific billing period and currency.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Export-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Export-MgReportPartnerBillingUsageUnbilled
 ```
 
 ## DESCRIPTION
-Export the unbilled Azure usage data for a specific billing period and a given currency.
+Export unbilled Azure usage data for a specific billing period and currency.
 
 ## PARAMETERS
 

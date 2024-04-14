@@ -5,16 +5,19 @@ online version: https://learn.microsoft.com/powershell/module/microsoft.graph.be
 schema: 2.0.0
 ---
 
-# Update-MgBetaSecurityLabelCategorySubCategory
+# Update-MgBetaSecurityLabelCategorySubcategory
 
 ## SYNOPSIS
-Update the navigation property subCategories in security
+Update the navigation property subcategories in security
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> -SubCategoryTemplateId <String>
+Update-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -22,14 +25,14 @@ Update-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> -SubC
 
 ### Update
 ```
-Update-MgBetaSecurityLabelCategorySubCategory -CategoryTemplateId <String> -SubCategoryTemplateId <String>
+Update-MgBetaSecurityLabelCategorySubcategory -CategoryTemplateId <String> -SubcategoryTemplateId <String>
  -BodyParameter <Hashtable> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -37,13 +40,13 @@ Update-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity>
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> -BodyParameter <Hashtable>
+Update-MgBetaSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyParameter <Hashtable>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property subCategories in security
+Update the navigation property subcategories in security
 
 ## PARAMETERS
 
@@ -63,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-subCategoryTemplate
+subcategoryTemplate
 
 ```yaml
 Type: Hashtable
@@ -110,6 +113,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
 
 ```yaml
 Type: DateTime
@@ -215,8 +219,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SubCategoryTemplateId
-The unique identifier of subCategoryTemplate
+### -SubcategoryTemplateId
+The unique identifier of subcategoryTemplate
 
 ```yaml
 Type: String
@@ -271,7 +275,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.IDictionary
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubCategoryTemplate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubcategoryTemplate
 ## NOTES
 COMPLEX PARAMETER PROPERTIES
 
@@ -283,10 +287,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -307,7 +310,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -326,6 +329,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -356,7 +360,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
@@ -374,6 +378,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Update-MgSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategorySubcategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategorysubcategory)
 

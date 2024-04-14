@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of vertical columns in this section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -399,6 +402,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumn)
 

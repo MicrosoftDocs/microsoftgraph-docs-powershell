@@ -19,8 +19,7 @@ Update the navigation property mobileAppCategories in deviceAppManagement
 ```
 Update-MgBetaDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,8 +33,7 @@ Update-MgBetaDeviceAppManagementMobileAppCategory -MobileAppCategoryId <String>
 ```
 Update-MgBetaDeviceAppManagementMobileAppCategory -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -143,21 +141,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-The date and time the mobileAppCategory was last modified.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -MobileAppCategoryId
 The unique identifier of mobileAppCategory
 
@@ -256,7 +239,6 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppCategory>`: Contains properties for a si
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
@@ -298,6 +280,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

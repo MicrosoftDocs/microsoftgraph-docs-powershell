@@ -20,8 +20,8 @@ Update the navigation property assignments in deviceAppManagement
 Update-MgBetaDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <String> -MobileAppId <String>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Source <DeviceAndAppManagementAssignmentSource>]
- [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -36,8 +36,8 @@ Update-MgBetaDeviceAppManagementMobileAppAssignment -MobileAppAssignmentId <Stri
 Update-MgBetaDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Intent <InstallIntent>] [-Settings <Hashtable>] [-Source <DeviceAndAppManagementAssignmentSource>]
- [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -235,21 +235,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SourceId
-The identifier of the source of the assignment.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Target
 Base type for assignment targets.
 To construct, see NOTES section for TARGET properties and create a hash table.
@@ -322,7 +307,6 @@ Read-only.
   - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[SourceId <String>]`: The identifier of the source of the assignment.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -368,6 +352,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

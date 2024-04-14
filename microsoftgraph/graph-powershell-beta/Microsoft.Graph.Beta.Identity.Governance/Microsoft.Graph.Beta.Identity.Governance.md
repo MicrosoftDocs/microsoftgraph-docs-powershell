@@ -2762,7 +2762,13 @@ Locale: en-US
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEntitlementManagementSubject](Remove-MgBetaEntitlementManagementSubject.md)

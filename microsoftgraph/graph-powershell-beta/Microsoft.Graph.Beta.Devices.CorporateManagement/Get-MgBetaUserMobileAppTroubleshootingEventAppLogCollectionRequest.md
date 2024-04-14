@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 
 ## PARAMETERS
 
@@ -354,6 +354,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

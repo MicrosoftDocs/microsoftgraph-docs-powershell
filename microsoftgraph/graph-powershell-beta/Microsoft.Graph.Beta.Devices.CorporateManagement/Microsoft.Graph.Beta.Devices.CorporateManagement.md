@@ -14,6 +14,9 @@ Locale: en-US
 ### [Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration](Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration.md)
 {{ Fill in the Description }}
 
+### [Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage](Convert-MgBetaDeviceAppManagementMobileAppFromMobileAppCatalogPackage.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagement](Get-MgBetaDeviceAppManagement.md)
 {{ Fill in the Description }}
 
@@ -896,6 +899,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationshipCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementMobileAppCatalogPackage](Get-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementMobileAppCatalogPackageCount](Get-MgBetaDeviceAppManagementMobileAppCatalogPackageCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementMobileAppCategory](Get-MgBetaDeviceAppManagementMobileAppCategory.md)
 {{ Fill in the Description }}
 
@@ -1715,6 +1724,9 @@ Locale: en-US
 ### [New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](New-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaDeviceAppManagementMobileAppCatalogPackage](New-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDeviceAppManagementMobileAppCategory](New-MgBetaDeviceAppManagementMobileAppCategory.md)
 {{ Fill in the Description }}
 
@@ -2193,6 +2205,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDeviceAppManagementMobileAppCatalogPackage](Remove-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceAppManagementMobileAppCategory](Remove-MgBetaDeviceAppManagementMobileAppCategory.md)
@@ -2736,6 +2751,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship](Update-MgBetaDeviceAppManagementMobileAppAsWinGetAppRelationship.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDeviceAppManagementMobileAppCatalogPackage](Update-MgBetaDeviceAppManagementMobileAppCatalogPackage.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementMobileAppCategory](Update-MgBetaDeviceAppManagementMobileAppCategory.md)

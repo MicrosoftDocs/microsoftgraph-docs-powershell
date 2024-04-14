@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSearchQna
 
 ## SYNOPSIS
-Delete navigation property qnas for search
+Delete a qna object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchQna?view=graph-powershell-beta)
@@ -30,7 +30,10 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 ```
 
 ## DESCRIPTION
-Delete navigation property qnas for search
+Delete a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-delete-permissions.md)]
 
 ## PARAMETERS
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaAdminPeopleItemInsight
 
 ## SYNOPSIS
-Get itemInsights from admin
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgBetaAdminPeopleItemInsight [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Get itemInsights from admin
+Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
+To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
 ## PARAMETERS
 

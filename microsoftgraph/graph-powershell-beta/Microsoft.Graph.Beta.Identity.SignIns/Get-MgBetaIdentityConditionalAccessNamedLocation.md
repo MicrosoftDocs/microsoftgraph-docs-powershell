@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a countryNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -38,10 +38,10 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a countryNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/countrynamedlocation-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/namedlocation-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a list of all named locations

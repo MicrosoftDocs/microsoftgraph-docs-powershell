@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaGroupDriveBundleContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property bundles in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveBundleContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaGroupDriveBundleContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property bundles in groups
 
 ## PARAMETERS
 

@@ -17,29 +17,15 @@ Delete ref of navigation property members for directory
 
 ### Delete (Default)
 ```
-Remove-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> -DirectoryObjectId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId <String> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
- -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,21 +49,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
-
-```yaml
-Type: String
-Parameter Sets: Delete, Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -111,7 +82,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -142,7 +113,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

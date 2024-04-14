@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAccessReviewInstance
 
 ## SYNOPSIS
-The collection of access reviews instances past, present and future, if this object is a recurring access review.
+The collection of access reviews instances past, present, and future, if this object is a recurring access review.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaAccessReviewInstance -InputObject <IIdentityGovernanceIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-The collection of access reviews instances past, present and future, if this object is a recurring access review.
+The collection of access reviews instances past, present, and future, if this object is a recurring access review.
 
 ## PARAMETERS
 
@@ -346,7 +346,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: The unique identifier of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: The unique identifier of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: The unique identifier of governanceRoleSetting
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[ObjectId <String>]`: Alternate key of accessPackageSubject

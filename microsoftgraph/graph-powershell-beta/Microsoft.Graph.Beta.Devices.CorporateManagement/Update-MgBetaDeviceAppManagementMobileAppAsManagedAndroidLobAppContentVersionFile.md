@@ -19,11 +19,10 @@ Update the navigation property files in deviceAppManagement
 ```
 Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
  -MobileAppContentFileId <String> -MobileAppContentId <String> -MobileAppId <String>
- [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
- [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDependency]
+ [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
+ [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -38,11 +37,10 @@ Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFil
 ```
 Update-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppContentVersionFile
  -InputObject <IDevicesCorporateManagementIdentity> [-ResponseHeadersVariable <String>]
- [-AdditionalProperties <Hashtable>] [-AzureStorageUri <String>]
- [-AzureStorageUriExpirationDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsCommitted]
- [-IsDependency] [-IsFrameworkFile] [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>]
- [-SizeEncrypted <Int64>] [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsDependency] [-IsFrameworkFile]
+ [-ManifestInputFile <String>] [-Name <String>] [-Size <Int64>] [-SizeEncrypted <Int64>]
+ [-SizeEncryptedInBytes <Int64>] [-SizeInBytes <Int64>] [-UploadState <String>] [-Headers <IDictionary>]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -73,40 +71,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AzureStorageUri
-Indicates the Azure Storage URI that the file is uploaded to.
-Created by the service upon receiving a valid mobileAppContentFile.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AzureStorageUriExpirationDateTime
-Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
 Contains properties for a single installer file that is associated with a given mobileAppContent version.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -120,23 +84,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-Indicates created date and time associated with app content file, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -184,25 +131,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -IsCommitted
-A value indicating whether the file is committed.
-A committed app content file has been fully uploaded and validated by the Intune service.
-TRUE means that app content file is committed, FALSE means that app content file is not committed.
-Defaults to FALSE.
-Read-only.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -378,6 +306,7 @@ Accept wildcard characters: False
 
 ### -SizeEncryptedInBytes
 Indicates the size of the file after encryption, in bytes.
+Valid values 0 to 9.22337203685478E+18
 
 ```yaml
 Type: Int64
@@ -393,6 +322,7 @@ Accept wildcard characters: False
 
 ### -SizeInBytes
 Indicates the original size of the file, in bytes.
+Valid values 0 to 9.22337203685478E+18
 
 ```yaml
 Type: Int64
@@ -473,20 +403,6 @@ BODYPARAMETER `<IMicrosoftGraphMobileAppContentFile>`: Contains properties for a
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AzureStorageUri <String>]`: Indicates the Azure Storage URI that the file is uploaded to.
-Created by the service upon receiving a valid mobileAppContentFile.
-Read-only.
-  - `[AzureStorageUriExpirationDateTime <DateTime?>]`: Indicates the date and time when the Azure storage URI expires, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Indicates created date and time associated with app content file, in ISO 8601 format.
-For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
-Read-only.
-  - `[IsCommitted <Boolean?>]`: A value indicating whether the file is committed.
-A committed app content file has been fully uploaded and validated by the Intune service.
-TRUE means that app content file is committed, FALSE means that app content file is not committed.
-Defaults to FALSE.
-Read-only.
   - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
 TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
 Defaults to FALSE.
@@ -499,7 +415,9 @@ To be deprecated, please use sizeInBytes property instead.
   - `[SizeEncrypted <Int64?>]`: The size of the file after encryption.
 To be deprecated, please use sizeEncryptedInBytes property instead.
   - `[SizeEncryptedInBytes <Int64?>]`: Indicates the size of the file after encryption, in bytes.
+Valid values 0 to 9.22337203685478E+18
   - `[SizeInBytes <Int64?>]`: Indicates the original size of the file, in bytes.
+Valid values 0 to 9.22337203685478E+18
   - `[UploadState <String>]`: Contains properties for upload request states.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
@@ -542,6 +460,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

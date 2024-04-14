@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSiteListContentTypeColumnLink
 
 ## SYNOPSIS
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListContentTypeColumnLink?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSiteListContentTypeColumnLink -InputObject <ISitesIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ## PARAMETERS
 

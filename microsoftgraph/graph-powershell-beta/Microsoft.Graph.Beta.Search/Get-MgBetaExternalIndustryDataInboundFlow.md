@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 ## SYNTAX
 
@@ -35,10 +35,10 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-get-permissions.md)]
 
 ## PARAMETERS
 

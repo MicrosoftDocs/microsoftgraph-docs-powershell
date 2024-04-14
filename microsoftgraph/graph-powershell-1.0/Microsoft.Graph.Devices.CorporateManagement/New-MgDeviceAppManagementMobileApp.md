@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Create a new managedIOSStoreApp object.
+Create a new iosLobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -19,11 +19,11 @@ Create a new managedIOSStoreApp object.
 ```
 New-MgDeviceAppManagementMobileApp [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-Developer <String>] [-DisplayName <String>]
- [-Id <String>] [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
- [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>]
+ [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
+ [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -34,7 +34,7 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ```
 
 ## DESCRIPTION
-Create a new managedIOSStoreApp object.
+Create a new iosLobApp object.
 
 ## PARAMETERS
 
@@ -94,21 +94,6 @@ To construct, see NOTES section for CATEGORIES properties and create a hash tabl
 
 ```yaml
 Type: IMicrosoftGraphMobileAppCategory[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time the app was created.
-
-```yaml
-Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,21 +216,6 @@ To construct, see NOTES section for LARGEICON properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastModifiedDateTime
-The date and time the app was last modified.
-
-```yaml
-Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -436,8 +406,6 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
@@ -447,7 +415,6 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: Indicates the content mime type.
     - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
   - `[Notes <String>]`: Notes for the app.
   - `[Owner <String>]`: The owner of the app.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -458,7 +425,6 @@ CATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The list of categories for 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

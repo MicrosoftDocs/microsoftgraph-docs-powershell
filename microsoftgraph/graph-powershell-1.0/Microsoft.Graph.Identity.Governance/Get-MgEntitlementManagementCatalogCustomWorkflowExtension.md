@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## SYNTAX
 
@@ -36,10 +36,10 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentworkflowextension-get-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignmentrequestworkflowextension-get-permissions.md)]
 
 ## PARAMETERS
 
@@ -338,7 +338,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: The unique identifier of governanceInsight
-  - `[GroupId <String>]`: The unique identifier of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
   - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: The unique identifier of privilegedAccessGroupAssignmentSchedule

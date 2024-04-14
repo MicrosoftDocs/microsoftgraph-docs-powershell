@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDriveRootListItemDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDriveRootListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItemDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaDriveRootListItemDriveItemContent -InputObject <IFilesIdentity> [-Form
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from drives
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceAndAppManagementRoleDefinition object.
+Update the properties of a roleDefinition object.
 
 ## PARAMETERS
 
@@ -345,6 +345,10 @@ These must match the actionName that is defined as part of the rolePermission.
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

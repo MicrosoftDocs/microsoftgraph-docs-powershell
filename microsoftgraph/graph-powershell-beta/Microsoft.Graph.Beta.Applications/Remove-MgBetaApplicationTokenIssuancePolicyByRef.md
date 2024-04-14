@@ -17,30 +17,16 @@ Remove a tokenIssuancePolicy from an application.
 
 ### Delete (Default)
 ```
-Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String> -TokenIssuancePolicyId <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete1
-```
 Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity> -Id <String>
  [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,7 +52,7 @@ The unique identifier of application
 
 ```yaml
 Type: String
-Parameter Sets: Delete, Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -96,7 +82,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -127,7 +113,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -176,21 +162,6 @@ Parameter Sets: (All)
 Aliases: RHV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TokenIssuancePolicyId
-The unique identifier of tokenIssuancePolicy
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

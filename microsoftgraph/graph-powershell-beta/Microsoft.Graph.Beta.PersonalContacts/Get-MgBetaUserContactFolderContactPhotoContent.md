@@ -18,15 +18,15 @@ Get media content for the navigation property photo from users
 ### Get (Default)
 ```
 Get-MgBetaUserContactFolderContactPhotoContent -ContactFolderId <String> -ContactId <String> -UserId <String>
- [-Format <String>] -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Format <String>]
- -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,21 +58,6 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

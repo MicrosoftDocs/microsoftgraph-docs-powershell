@@ -242,10 +242,7 @@ BODYPARAMETER `<IPaths1Kxp2ItDeviceappmanagementMobileappsMobileappIdMicrosoftGr
   - `[Relationships <IMicrosoftGraphMobileAppRelationship- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[TargetDisplayName <String>]`: The target mobile app's display name.
-    - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
     - `[TargetId <String>]`: The target mobile app's app id.
-    - `[TargetPublisher <String>]`: The target mobile app's publisher.
     - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
@@ -288,6 +285,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent
@@ -321,10 +319,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 RELATIONSHIPS <IMicrosoftGraphMobileAppRelationship- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[TargetDisplayName <String>]`: The target mobile app's display name.
-  - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
   - `[TargetId <String>]`: The target mobile app's app id.
-  - `[TargetPublisher <String>]`: The target mobile app's publisher.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS

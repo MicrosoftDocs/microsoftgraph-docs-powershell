@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipal
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Update-MgBetaServicePrincipal
 
 ## SYNOPSIS
-Update the properties of servicePrincipal object.
+Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-1.0)
@@ -105,10 +104,10 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of servicePrincipal object.
+Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-update-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-upsert-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update the properties of a service principal
@@ -128,7 +127,7 @@ This is example, the first command defines the properties and their values in a 
 
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
-If set to false, then no users will be able to sign in to this app, even if they are assigned to it.
+If set to false, then no users are able to sign in to this app, even if they're assigned to it.
 Supports $filter (eq, ne, not, in).
 
 ```yaml
@@ -146,7 +145,7 @@ Accept wildcard characters: False
 ### -AddIns
 Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Microsoft 365 call the application in the context of a document the user is working on.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
 To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
@@ -177,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlternativeNames
-Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
+Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
@@ -240,9 +239,10 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationTemplateId
-Unique identifier of the applicationTemplate that the servicePrincipal was created from.
+Unique identifier of the applicationTemplate.
+Supports $filter (eq, not, ne).
 Read-only.
-Supports $filter (eq, ne, NOT, startsWith).
+null if the app wasn't created from an application template.
 
 ```yaml
 Type: String
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppOwnerOrganizationId
-Contains the tenant id where the application is registered.
+Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
 
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 
 ### -AppRoles
 The roles exposed by the application, which this service principal represents.
-For more information see the appRoles property definition on the application entity.
+For more information, see the appRoles property definition on the application entity.
 Not nullable.
 To construct, see NOTES section for APPROLES properties and create a hash table.
 
@@ -459,8 +459,8 @@ Accept wildcard characters: False
 
 ### -Description
 Free text field to provide an internal end-user facing description of the service principal.
-End-user portals such MyApps will display the application description in this field.
-The maximum allowed size is 1024 characters.
+End-user portals such MyApps displays the application description in this field.
+The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
@@ -705,7 +705,7 @@ Accept wildcard characters: False
 ```
 
 ### -LogoutUrl
-Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
+Specifies the URL that the Microsoft's authorization service uses to sign out a user using OpenId Connect front-channel, back-channel, or SAML sign out protocols.
 
 ```yaml
 Type: String
@@ -740,7 +740,7 @@ Accept wildcard characters: False
 
 ### -Notes
 Free text field to capture information about the service principal, typically used for operational purposes.
-Maximum allowed size is 1024 characters.
+Maximum allowed size is 1,024 characters.
 
 ```yaml
 Type: String
@@ -809,7 +809,7 @@ Accept wildcard characters: False
 
 ### -Owners
 Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -879,7 +879,7 @@ Accept wildcard characters: False
 
 ### -PreferredTokenSigningKeyEndDateTime
 Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
-Updating this attribute is not currentlysupported.
+Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
 
 ```yaml
@@ -896,7 +896,7 @@ Accept wildcard characters: False
 
 ### -PreferredTokenSigningKeyThumbprint
 This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which certificate is used to sign the SAML responses.
-For applications that are not SAML, do not write or otherwise rely on this property.
+For applications that aren't SAML, don't write or otherwise rely on this property.
 
 ```yaml
 Type: String
@@ -927,7 +927,7 @@ Accept wildcard characters: False
 
 ### -PublishedPermissionScopes
 The delegated permissions exposed by the application.
-For more information see the oauth2PermissionScopes property on the application entity's api property.
+For more information, see the oauth2PermissionScopes property on the application entity's api property.
 Not nullable.
 Note: This property is named oauth2PermissionScopes in v1.0.
 To construct, see NOTES section for PUBLISHEDPERMISSIONSCOPES properties and create a hash table.
@@ -1054,9 +1054,9 @@ Accept wildcard characters: False
 
 ### -ServicePrincipalNames
 Contains the list of identifiersUris, copied over from the associated application.
-Additional values can be added to hybrid applications.
+More values can be added to hybrid applications.
 These values can be used to identify the permissions exposed by this app within Microsoft Entra ID.
-For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
+For example,Client apps can specify a resource URI that is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
 Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
@@ -1076,7 +1076,7 @@ Accept wildcard characters: False
 Identifies if the service principal represents an application or a managed identity.
 This is set by Microsoft Entra ID internally.
 For a service principal that represents an application this is set as Application.
-For a service principal that represent a managed identity this is set as ManagedIdentity.
+For a service principal that represents a managed identity this is set as ManagedIdentity.
 The SocialIdp type is for internal use.
 
 ```yaml
@@ -1094,7 +1094,7 @@ Accept wildcard characters: False
 ### -SignInAudience
 Specifies the Microsoft accounts that are supported for the current application.
 Read-only.
-Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Microsoft Entra tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Microsoft Entra tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Microsoft Entra tenant (multitenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Microsoft Entra tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
 
 ```yaml
 Type: String
@@ -1274,7 +1274,7 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 ADDINS <IMicrosoftGraphAddIn- `[]`>: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Microsoft 365 call the application in the context of a document the user is working on.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
   - `[Id <String>]`: 
   - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
     - `[Key <String>]`: Contains the name of the field that a value is associated with.
@@ -1365,7 +1365,7 @@ Required on create.
 Supports $filter (eq only).
 
 APPROLES <IMicrosoftGraphAppRole- `[]`>: The roles exposed by the application, which this service principal represents.
-For more information see the appRoles property definition on the application entity.
+For more information, see the appRoles property definition on the application entity.
 Not nullable.
   - `[AllowedMemberTypes <String- `[]`>]`: Specifies whether this app role can be assigned to users and groups (by setting to - `['User']`), to other application's (by setting to - `['Application']`, or both (by setting to - `['User', 'Application']`).
 App roles supporting assignment to other applications' service principals are also known as application permissions.
@@ -1397,17 +1397,17 @@ Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
-If set to false, then no users will be able to sign in to this app, even if they are assigned to it.
+If set to false, then no users are able to sign in to this app, even if they're assigned to it.
 Supports $filter (eq, ne, not, in).
   - `[AddIns <IMicrosoftGraphAddIn- `[]`>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
-This will let services like Microsoft 365 call the application in the context of a document the user is working on.
+This lets services like Microsoft 365 call the application in the context of a document the user is working on.
     - `[Id <String>]`: 
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
       - `[Key <String>]`: Contains the name of the field that a value is associated with.
       - `[Value <String>]`: Contains the corresponding value for the specified key.
     - `[Type <String>]`: 
-  - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
+  - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
   - `[AppDescription <String>]`: The description exposed by the associated application.
   - `[AppDisplayName <String>]`: The display name exposed by the associated application.
@@ -1445,7 +1445,7 @@ Nullable.
 For existing applications, the enforcement date would be backdated.
 To apply to all applications, this date would be null.
         - `[RestrictionType <String>]`: appCredentialRestrictionType
-  - `[AppOwnerOrganizationId <String>]`: Contains the tenant id where the application is registered.
+  - `[AppOwnerOrganizationId <String>]`: Contains the tenant ID where the application is registered.
 This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
   - `[AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment- `[]`>]`: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
@@ -1479,7 +1479,7 @@ Supports $filter (eq, ne, NOT).
   - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment- `[]`>]`: App role assignment for another app or service, granted to this service principal.
 Supports $expand.
   - `[AppRoles <IMicrosoftGraphAppRole- `[]`>]`: The roles exposed by the application, which this service principal represents.
-For more information see the appRoles property definition on the application entity.
+For more information, see the appRoles property definition on the application entity.
 Not nullable.
     - `[AllowedMemberTypes <String- `[]`>]`: Specifies whether this app role can be assigned to users and groups (by setting to - `['User']`), to other application's (by setting to - `['Application']`, or both (by setting to - `['User', 'Application']`).
 App roles supporting assignment to other applications' service principals are also known as application permissions.
@@ -1503,9 +1503,10 @@ Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ \[ \] ^ + _  { 
 @ - `[ ]` ^ + _  {  } ~, and characters in the ranges 0-9, A-Z and a-z.
 Any other character, including the space character, aren't allowed.
 May not begin with ..
-  - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate that the servicePrincipal was created from.
+  - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate.
+Supports $filter (eq, not, ne).
 Read-only.
-Supports $filter (eq, ne, NOT, startsWith).
+null if the app wasn't created from an application template.
   - `[ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy- `[]`>]`: The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: 
@@ -1539,8 +1540,8 @@ Doesn't support $filter.
     - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal.
 Doesn't support $filter.
   - `[Description <String>]`: Free text field to provide an internal end-user facing description of the service principal.
-End-user portals such MyApps will display the application description in this field.
-The maximum allowed size is 1024 characters.
+End-user portals such MyApps displays the application description in this field.
+The maximum allowed size is 1,024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
   - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). 
@@ -1585,8 +1586,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-    - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+    - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -1670,13 +1672,13 @@ Read-only.
 Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with SAML-based single sign-on.
 The user launches the application from Microsoft 365, the Microsoft Entra My Apps, or the Microsoft Entra SSO URL.
-  - `[LogoutUrl <String>]`: Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
+  - `[LogoutUrl <String>]`: Specifies the URL that the Microsoft's authorization service uses to sign out a user using OpenId Connect front-channel, back-channel, or SAML sign out protocols.
   - `[MemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
   - `[Notes <String>]`: Free text field to capture information about the service principal, typically used for operational purposes.
-Maximum allowed size is 1024 characters.
+Maximum allowed size is 1,024 characters.
   - `[NotificationEmailAddresses <String- `[]`>]`: Specifies the list of email addresses where Microsoft Entra ID sends a notification when the active certificate is near the expiration date.
 This is only for the certificates used to sign the SAML token issued for Microsoft Entra Gallery applications.
   - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant- `[]`>]`: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
@@ -1714,7 +1716,7 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
   - `[Owners <IMicrosoftGraphDirectoryObject- `[]`>]`: Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable. 
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -1750,12 +1752,12 @@ The values can be text, password.
 Microsoft Entra ID uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Microsoft Entra My Apps.
 The supported values are password, saml, notSupported, and oidc.
   - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
-Updating this attribute is not currentlysupported.
+Updating this attribute isn't currently supported.
 For details, see ServicePrincipal property differences.
   - `[PreferredTokenSigningKeyThumbprint <String>]`: This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which certificate is used to sign the SAML responses.
-For applications that are not SAML, do not write or otherwise rely on this property.
+For applications that aren't SAML, don't write or otherwise rely on this property.
   - `[PublishedPermissionScopes <IMicrosoftGraphPermissionScope- `[]`>]`: The delegated permissions exposed by the application.
-For more information see the oauth2PermissionScopes property on the application entity's api property.
+For more information, see the oauth2PermissionScopes property on the application entity's api property.
 Not nullable.
 Note: This property is named oauth2PermissionScopes in v1.0.
     - `[AdminConsentDescription <String>]`: A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf of all users.
@@ -1799,19 +1801,19 @@ Not nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RelayState <String>]`: The relative URI the service provider would redirect to after completion of the single sign-on flow.
   - `[ServicePrincipalNames <String- `[]`>]`: Contains the list of identifiersUris, copied over from the associated application.
-Additional values can be added to hybrid applications.
+More values can be added to hybrid applications.
 These values can be used to identify the permissions exposed by this app within Microsoft Entra ID.
-For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
+For example,Client apps can specify a resource URI that is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
 Not nullable. 
 Supports $filter (eq, not, ge, le, startsWith).
   - `[ServicePrincipalType <String>]`: Identifies if the service principal represents an application or a managed identity.
 This is set by Microsoft Entra ID internally.
 For a service principal that represents an application this is set as Application.
-For a service principal that represent a managed identity this is set as ManagedIdentity.
+For a service principal that represents a managed identity this is set as ManagedIdentity.
 The SocialIdp type is for internal use.
   - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application.
 Read-only.
-Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Microsoft Entra tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Microsoft Entra tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Microsoft Entra tenant (multitenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Microsoft Entra tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
   - `[Synchronization <IMicrosoftGraphSynchronization>]`: synchronization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -2187,8 +2189,9 @@ Optional.
 The combination of the values of issuer and subject must be unique on the app.
 It has a limit of 600 characters.
 Required.
-  - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
+  - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 It is immutable once created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -2360,7 +2363,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 OWNERS <IMicrosoftGraphDirectoryObject- `[]`>: Directory objects that are owners of this servicePrincipal.
-The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+The owners are a set of nonadmin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
@@ -2400,7 +2403,7 @@ This is an internal ID and possible values are param1, param2, paramuserName, pa
 The values can be text, password.
 
 PUBLISHEDPERMISSIONSCOPES <IMicrosoftGraphPermissionScope- `[]`>: The delegated permissions exposed by the application.
-For more information see the oauth2PermissionScopes property on the application entity's api property.
+For more information, see the oauth2PermissionScopes property on the application entity's api property.
 Not nullable.
 Note: This property is named oauth2PermissionScopes in v1.0.
   - `[AdminConsentDescription <String>]`: A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf of all users.

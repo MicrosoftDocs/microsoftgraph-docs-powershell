@@ -239,7 +239,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastUpdatedDateTime
-Date and time at which the chat was renamed or list of members were last changed.
+Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
 
 ```yaml
@@ -566,7 +566,7 @@ Read-only.
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
     - `[MessageType <String>]`: chatMessageType
-  - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed.
+  - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
   - `[Members <IMicrosoftGraphConversationMember- `[]`>]`: A collection of all the members in the chat.
 Nullable.

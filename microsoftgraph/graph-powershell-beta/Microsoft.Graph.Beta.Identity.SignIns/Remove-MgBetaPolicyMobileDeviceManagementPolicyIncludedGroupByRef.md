@@ -14,30 +14,29 @@ Delete a group from the list of groups included in a mobile app management polic
 
 ### Delete (Default)
 ```
-Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -GroupId <String>
- -MobilityManagementPolicyId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>]
- [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <String>
+ -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId <String>
- -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -GroupId <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -InputObject <IIdentitySignInsIdentity>
- -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -InputObject <IIdentitySignInsIdentity>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ -Id <String> [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,7 +62,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -93,7 +92,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: True

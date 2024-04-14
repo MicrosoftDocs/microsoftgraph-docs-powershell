@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedChat
 
 ## SYNOPSIS
-Get deletedChats from teamwork
+Read the properties and relationships of a deletedChat object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
@@ -38,7 +38,10 @@ Get-MgTeamworkDeletedChat -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get deletedChats from teamwork
+Read the properties and relationships of a deletedChat object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-get-permissions.md)]
 
 ## PARAMETERS
 

@@ -248,7 +248,7 @@ Accept wildcard characters: False
 ```
 
 ### -Instances
-The collection of access reviews instances past, present and future, if this object is a recurring access review.
+The collection of access reviews instances past, present, and future, if this object is a recurring access review.
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
@@ -342,7 +342,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReviewerType
-The relationship type of reviewer to the target object, one of self, delegated or entityOwners.
+The relationship type of reviewer to the target object, one of: self, delegated, entityOwners.
 Required on create.
 
 ```yaml
@@ -374,8 +374,8 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-The DateTime when the review is scheduled to be start.
-This could be a date in the future.
+The date and time when the review is scheduled to be start.
+This date can be in the future.
 Required on create.
 
 ```yaml
@@ -458,25 +458,24 @@ BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier.
-Required on create. 
+Required on create.
 This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
+    - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
     - `[AccessReviewId <String>]`: The feature-generated ID of the access review.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
-    - `[ApplyResult <String>]`: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
+    - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
     - `[Justification <String>]`: The reviewer's business justification, if supplied.
     - `[ReviewResult <String>]`: The result of the review, one of NotReviewed, Deny, DontKnow or Approve.
     - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -485,18 +484,17 @@ Read-only.
   - `[DisplayName <String>]`: The access review name.
 Required on create.
   - `[EndDateTime <DateTime?>]`: The DateTime when the review is scheduled to end.
-This must be at least one day later than the start date. 
+This must be at least one day later than the start date.
 Required on create.
-  - `[Instances <IMicrosoftGraphAccessReview- `[]`>]`: The collection of access reviews instances past, present and future, if this object is a recurring access review.
+  - `[Instances <IMicrosoftGraphAccessReview- `[]`>]`: The collection of access reviews instances past, present, and future, if this object is a recurring access review.
   - `[MyDecisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for the caller, if the caller is a reviewer.
   - `[ReviewedEntity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of: self, delegated, entityOwners.
 Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer- `[]`>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -533,8 +531,8 @@ If it's occurrences, then the series ends after recurrenceCount instances of the
       - `[RecurrenceType <String>]`: The recurrence interval.
 Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
     - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
-  - `[StartDateTime <DateTime?>]`: The DateTime when the review is scheduled to be start. 
-This could be a date in the future. 
+  - `[StartDateTime <DateTime?>]`: The date and time when the review is scheduled to be start.
+This date can be in the future. 
 Required on create.
   - `[Status <String>]`: This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
@@ -542,57 +540,54 @@ The typical states include Initializing, NotStarted, Starting,InProgress, Comple
 CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 DECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for this access review.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
+  - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
   - `[AccessReviewId <String>]`: The feature-generated ID of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
-  - `[ApplyResult <String>]`: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
+  - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
   - `[Justification <String>]`: The reviewer's business justification, if supplied.
   - `[ReviewResult <String>]`: The result of the review, one of NotReviewed, Deny, DontKnow or Approve.
   - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
   - `[ReviewedDateTime <DateTime?>]`: 
 
-INSTANCES <IMicrosoftGraphAccessReview- `[]`>: The collection of access reviews instances past, present and future, if this object is a recurring access review.
+INSTANCES <IMicrosoftGraphAccessReview- `[]`>: The collection of access reviews instances past, present, and future, if this object is a recurring access review.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier.
-Required on create. 
+Required on create.
 This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for this access review.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
+    - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
     - `[AccessReviewId <String>]`: The feature-generated ID of the access review.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
-    - `[ApplyResult <String>]`: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
+    - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
     - `[Justification <String>]`: The reviewer's business justification, if supplied.
     - `[ReviewResult <String>]`: The result of the review, one of NotReviewed, Deny, DontKnow or Approve.
     - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -601,18 +596,17 @@ Read-only.
   - `[DisplayName <String>]`: The access review name.
 Required on create.
   - `[EndDateTime <DateTime?>]`: The DateTime when the review is scheduled to end.
-This must be at least one day later than the start date. 
+This must be at least one day later than the start date.
 Required on create.
-  - `[Instances <IMicrosoftGraphAccessReview- `[]`>]`: The collection of access reviews instances past, present and future, if this object is a recurring access review.
+  - `[Instances <IMicrosoftGraphAccessReview- `[]`>]`: The collection of access reviews instances past, present, and future, if this object is a recurring access review.
   - `[MyDecisions <IMicrosoftGraphAccessReviewDecision- `[]`>]`: The collection of decisions for the caller, if the caller is a reviewer.
   - `[ReviewedEntity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-  - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
+  - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of: self, delegated, entityOwners.
 Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer- `[]`>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -649,8 +643,8 @@ If it's occurrences, then the series ends after recurrenceCount instances of the
       - `[RecurrenceType <String>]`: The recurrence interval.
 Possible values: onetime, weekly, monthly, quarterly, halfyearly or annual.
     - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
-  - `[StartDateTime <DateTime?>]`: The DateTime when the review is scheduled to be start. 
-This could be a date in the future. 
+  - `[StartDateTime <DateTime?>]`: The date and time when the review is scheduled to be start.
+This date can be in the future. 
 Required on create.
   - `[Status <String>]`: This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
@@ -658,19 +652,18 @@ The typical states include Initializing, NotStarted, Starting,InProgress, Comple
 MYDECISIONS <IMicrosoftGraphAccessReviewDecision- `[]`>: The collection of decisions for the caller, if the caller is a reviewer.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
+  - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of: Approve, Deny, NotAvailable.
   - `[AccessReviewId <String>]`: The feature-generated ID of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
-  - `[ApplyResult <String>]`: The outcome of applying the decision, one of NotApplied, Success, Failed, NotFound or NotSupported.
+  - `[ApplyResult <String>]`: The outcome of applying the decision, one of: NotApplied, Success, Failed, NotFound, NotSupported.
   - `[Justification <String>]`: The reviewer's business justification, if supplied.
   - `[ReviewResult <String>]`: The result of the review, one of NotReviewed, Deny, DontKnow or Approve.
   - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -679,10 +672,9 @@ When the unique identifier is unavailable, the displayName property is provided 
 REVIEWEDENTITY `<IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 REVIEWERS <IMicrosoftGraphAccessReviewReviewer- `[]`>: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
   - `[Id <String>]`: The unique identifier for an entity.

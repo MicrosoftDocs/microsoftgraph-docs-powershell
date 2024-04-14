@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Used to address any item contained in this site.
-This collection cannot be enumerated.
+This collection can't be enumerated.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaGroupSiteItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Used to address any item contained in this site.
-This collection cannot be enumerated.
+This collection can't be enumerated.
 
 ## PARAMETERS
 

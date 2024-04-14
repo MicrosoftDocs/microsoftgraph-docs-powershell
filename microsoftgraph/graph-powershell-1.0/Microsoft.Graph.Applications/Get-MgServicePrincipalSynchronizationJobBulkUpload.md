@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalSynchronizationJobBulkUpload
 
 ## SYNOPSIS
-Get bulkUpload from servicePrincipals
+The bulk upload operation for the job.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJobBulkUpload?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgServicePrincipalSynchronizationJobBulkUpload -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Get bulkUpload from servicePrincipals
+The bulk upload operation for the job.
 
 ## PARAMETERS
 

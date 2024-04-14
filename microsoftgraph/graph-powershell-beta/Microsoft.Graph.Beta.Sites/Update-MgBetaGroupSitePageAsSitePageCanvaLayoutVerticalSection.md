@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property verticalSection in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -347,6 +350,7 @@ WEBPARTS <IMicrosoftGraphWebPart- `[]`>: The set of web parts in this section.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayoutverticalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecanvalayoutverticalsection)
 

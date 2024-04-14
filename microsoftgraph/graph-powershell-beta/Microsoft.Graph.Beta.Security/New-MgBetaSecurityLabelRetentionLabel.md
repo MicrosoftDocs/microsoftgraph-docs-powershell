@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -42,31 +45,43 @@ To create a disposition review stage, include the actionAfterRetentionPeriod pro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-retentionlabel-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityLabelRetentionLabel Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
-	DisplayName = "String"
-	BehaviorDuringRetentionPeriod = "String"
-	ActionAfterRetentionPeriod = "String"
-	RetentionTrigger = "String"
-	RetentionDuration = @{
+	displayName = "String"
+	behaviorDuringRetentionPeriod = "String"
+	actionAfterRetentionPeriod = "String"
+	retentionTrigger = "String"
+	retentionDuration = @{
 		"@odata.type" = "microsoft.graph.security.retentionDuration"
 	}
-	IsInUse = "Boolean"
-	DescriptionForAdmins = "String"
-	DescriptionForUsers = "String"
-	CreatedBy = @{
+	isInUse = "Boolean"
+	descriptionForAdmins = "String"
+	descriptionForUsers = "String"
+	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
-	LabelToBeApplied = "String"
-	DefaultRecordBehavior = "String"
+	labelToBeApplied = "String"
+	defaultRecordBehavior = "String"
+	descriptors = @{
+		"authorityTemplate@odata.bind" = "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')"
+		"categoryTemplate@odata.bind" = "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')"
+		"citationTemplate@odata.bind" = "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')"
+		"departmentTemplate@odata.bind" = "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')"
+		"filePlanReferenceTemplate@odata.bind" = "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
+	}
 }
+
 New-MgBetaSecurityLabelRetentionLabel -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaSecurityLabelRetentionLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -482,10 +497,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the retentionLabel is created.
@@ -498,66 +512,72 @@ Optional.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Authority <IMicrosoftGraphSecurityAuthority>]`: authority
+    - `[Authority <IMicrosoftGraphSecurityFilePlanAuthority>]`: filePlanAuthority
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
     - `[AuthorityTemplate <IMicrosoftGraphSecurityAuthorityTemplate>]`: authorityTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Category <IMicrosoftGraphSecurityAppliedCategory>]`: appliedCategory
+    - `[Category <IMicrosoftGraphSecurityFilePlanAppliedCategory>]`: filePlanAppliedCategory
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-      - `[SubCategory <IMicrosoftGraphSecuritySubCategory>]`: subCategory
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+      - `[Subcategory <IMicrosoftGraphSecurityFilePlanSubcategory>]`: filePlanSubcategory
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+        - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
     - `[CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>]`: categoryTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
+      - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
         - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Citation <IMicrosoftGraphSecurityCitation>]`: citation
+    - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-      - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-      - `[CitationUrl <String>]`: Represents the URL to the published citation.
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+      - `[CitationJurisdiction <String>]`: 
+      - `[CitationUrl <String>]`: 
     - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
       - `[CitationUrl <String>]`: Represents the URL to the published citation.
-    - `[Department <IMicrosoftGraphSecurityDepartment>]`: department
+    - `[Department <IMicrosoftGraphSecurityFilePlanDepartment>]`: filePlanDepartment
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
     - `[DepartmentTemplate <IMicrosoftGraphSecurityDepartmentTemplate>]`: departmentTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[FilePlanReference <IMicrosoftGraphSecurityFilePlanReference>]`: filePlanReference
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
     - `[FilePlanReferenceTemplate <IMicrosoftGraphSecurityFilePlanReferenceTemplate>]`: filePlanReferenceTemplate
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -567,7 +587,7 @@ Read-only.
 Read-only.
     - `[Name <String>]`: Name representing each stage within a collection.
     - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-    - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
+    - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
   - `[IsInUse <Boolean?>]`: Specifies whether the label is currently being used.
   - `[LabelToBeApplied <String>]`: Specifies the replacement label to be applied automatically after the retention period of the current label ends.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -591,10 +611,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -602,9 +621,9 @@ DESCRIPTORS `<IMicrosoftGraphSecurityFilePlanDescriptor>`: filePlanDescriptor
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Authority <IMicrosoftGraphSecurityAuthority>]`: authority
+  - `[Authority <IMicrosoftGraphSecurityFilePlanAuthority>]`: filePlanAuthority
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+    - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   - `[AuthorityTemplate <IMicrosoftGraphSecurityAuthorityTemplate>]`: authorityTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -612,66 +631,71 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Category <IMicrosoftGraphSecurityAppliedCategory>]`: appliedCategory
+  - `[Category <IMicrosoftGraphSecurityFilePlanAppliedCategory>]`: filePlanAppliedCategory
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-    - `[SubCategory <IMicrosoftGraphSecuritySubCategory>]`: subCategory
+    - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+    - `[Subcategory <IMicrosoftGraphSecurityFilePlanSubcategory>]`: filePlanSubcategory
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+      - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   - `[CategoryTemplate <IMicrosoftGraphSecurityCategoryTemplate>]`: categoryTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[SubCategories <IMicrosoftGraphSecuritySubCategoryTemplate- `[]`>]`: Represents all subcategories under a particular category.
+    - `[Subcategories <IMicrosoftGraphSecuritySubcategoryTemplate- `[]`>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
       - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Citation <IMicrosoftGraphSecurityCitation>]`: citation
+  - `[Citation <IMicrosoftGraphSecurityFilePlanCitation>]`: filePlanCitation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
-    - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
-    - `[CitationUrl <String>]`: Represents the URL to the published citation.
+    - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
+    - `[CitationJurisdiction <String>]`: 
+    - `[CitationUrl <String>]`: 
   - `[CitationTemplate <IMicrosoftGraphSecurityCitationTemplate>]`: citationTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CitationJurisdiction <String>]`: Represents the jurisdiction or agency that published the citation.
     - `[CitationUrl <String>]`: Represents the URL to the published citation.
-  - `[Department <IMicrosoftGraphSecurityDepartment>]`: department
+  - `[Department <IMicrosoftGraphSecurityFilePlanDepartment>]`: filePlanDepartment
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+    - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   - `[DepartmentTemplate <IMicrosoftGraphSecurityDepartmentTemplate>]`: departmentTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[FilePlanReference <IMicrosoftGraphSecurityFilePlanReference>]`: filePlanReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: Unique string that defines the name for each file plan descriptor associated with a particular retention label.
+    - `[DisplayName <String>]`: Unique string that defines the name for the file plan descriptor associated with a particular retention label.
   - `[FilePlanReferenceTemplate <IMicrosoftGraphSecurityFilePlanReferenceTemplate>]`: filePlanReferenceTemplate
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
+Read-only.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -681,17 +705,16 @@ DISPOSITIONREVIEWSTAGES <IMicrosoftGraphSecurityDispositionReviewStage- `[]`>: W
 Read-only.
   - `[Name <String>]`: Name representing each stage within a collection.
   - `[ReviewersEmailAddresses <String- `[]`>]`: A collection of reviewers at each stage.
-  - `[StageNumber <Int32?>]`: The sequence number for each stage of the disposition review.
+  - `[StageNumber <String>]`: The sequence number for each stage of the disposition review.
 
 LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -704,10 +727,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
@@ -717,6 +739,7 @@ When the unique identifier is unavailable, the displayName property is provided 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel)
 

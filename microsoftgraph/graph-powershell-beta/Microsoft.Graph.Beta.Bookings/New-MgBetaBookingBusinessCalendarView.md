@@ -170,7 +170,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppointmentLabel
-Custom label that can be stamped on this appointment by the user.
+The user can stamp a custom label on the appointment.
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-The date, time and timezone when the appointment was created.
+The date, time, and timezone when the appointment was created.
 
 ```yaml
 Type: DateTime
@@ -499,7 +499,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsCustomerAllowedToManageBooking
-.
+Indicates that the customer can manage bookings created by the staff.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -514,8 +515,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsLocationOnline
-True indicates that the appointment will be held online.
-Default value is false.
+Indicates that the appointment is held online.
+The default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -716,7 +717,7 @@ Accept wildcard characters: False
 ```
 
 ### -SelfServiceAppointmentId
-An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
+Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of customer.
 
 ```yaml
 Type: String
@@ -894,8 +895,8 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment>`: Represents a booked appoint
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
-  - `[AppointmentLabel <String>]`: Custom label that can be stamped on this appointment by the user.
-  - `[CreatedDateTime <DateTime?>]`: The date, time and timezone when the appointment was created.
+  - `[AppointmentLabel <String>]`: The user can stamp a custom label on the appointment.
+  - `[CreatedDateTime <DateTime?>]`: The date, time, and timezone when the appointment was created.
   - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who is booking the appointment.
   - `[CustomerId <String>]`: The ID of the bookingCustomer for this appointment.
 If no ID is specified when an appointment is created, then a new bookingCustomer object is created.
@@ -948,9 +949,10 @@ See below for possible values.
   - `[InvoiceId <String>]`: The ID of the invoice.
   - `[InvoiceStatus <String>]`: bookingInvoiceStatus
   - `[InvoiceUrl <String>]`: The URL of the invoice in Microsoft Bookings.
-  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: 
-  - `[IsLocationOnline <Boolean?>]`: True indicates that the appointment will be held online.
-Default value is false.
+  - `[IsCustomerAllowedToManageBooking <Boolean?>]`: Indicates that the customer can manage bookings created by the staff.
+The default value is false.
+  - `[IsLocationOnline <Boolean?>]`: Indicates that the appointment is held online.
+The default value is false.
   - `[JoinWebUrl <String>]`: The URL of the online meeting for the appointment.
   - `[LastUpdatedDateTime <DateTime?>]`: The date, time and timezone when the booking business was last updated.
   - `[MaximumAttendeesCount <Int32?>]`: The maximum number of customers allowed in an appointment.
@@ -970,7 +972,7 @@ The value of this property is available only when reading this bookingAppointmen
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent.
 It's denoted in ISO 8601 format.
     - `[Recipients <String>]`: bookingReminderRecipients
-  - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
+  - `[SelfServiceAppointmentId <String>]`: Another tracking ID for the appointment, if the appointment was created directly by the customer on the scheduling page, as opposed to by a staff member on behalf of customer.
   - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
   - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
   - `[ServiceName <String>]`: The name of the bookingService associated with this appointment.This property is optional when creating a new appointment.
@@ -1027,12 +1029,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[Role <String>]`: Usage: role='{role}'
   - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration

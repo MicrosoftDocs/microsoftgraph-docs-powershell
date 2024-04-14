@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaShareDriveItemContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from shares
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItemContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Format <String>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property driveItem from shares
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shares-get-permissions.md)]

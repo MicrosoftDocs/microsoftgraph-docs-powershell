@@ -776,7 +776,13 @@ Locale: en-US
 ### [Remove-MgDeviceRegisteredOwnerByRef](Remove-MgDeviceRegisteredOwnerByRef.md)
 {{ Fill in the Description }}
 
+### [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgDeviceRegisteredUserByRef](Remove-MgDeviceRegisteredUserByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](Remove-MgDeviceRegisteredUserDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnit](Remove-MgDirectoryAdministrativeUnit.md)
@@ -786,6 +792,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitMemberByRef](Remove-MgDirectoryAdministrativeUnitMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef](Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](Remove-MgDirectoryAdministrativeUnitScopedRoleMember.md)
@@ -819,6 +828,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryRoleMemberByRef](Remove-MgDirectoryRoleMemberByRef.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectoryRoleMemberDirectoryObjectByRef](Remove-MgDirectoryRoleMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryRoleScopedMember](Remove-MgDirectoryRoleScopedMember.md)

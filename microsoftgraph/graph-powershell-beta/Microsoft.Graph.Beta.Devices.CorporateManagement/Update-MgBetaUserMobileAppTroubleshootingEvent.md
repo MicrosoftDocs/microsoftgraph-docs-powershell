@@ -104,7 +104,7 @@ Accept wildcard characters: False
 ```
 
 ### -AppLogCollectionRequests
-The collection property of AppLogUploadRequest.
+Indicates collection of App Log Upload Request.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
@@ -429,7 +429,7 @@ ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair- `[]`>: A set of string key a
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: The collection property of AppLogUploadRequest.
+APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest- `[]`>: Indicates collection of App Log Upload Request.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -458,7 +458,7 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
       - `[Text <String>]`: 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
+  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -526,6 +526,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

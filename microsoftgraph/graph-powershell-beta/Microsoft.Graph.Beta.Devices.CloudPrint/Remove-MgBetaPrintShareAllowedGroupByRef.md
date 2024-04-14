@@ -17,30 +17,30 @@ Revoke the specified group's access to submit print jobs to the associated print
 
 ### Delete (Default)
 ```
-Remove-MgBetaPrintShareAllowedGroupByRef -GroupId <String> -PrinterShareId <String> [-IfMatch <String>]
+Remove-MgBetaPrintShareAllowedGroupByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgBetaPrintShareAllowedGroupByRef -PrinterShareId <String> -Id <String> [-IfMatch <String>]
+Remove-MgBetaPrintShareAllowedGroupByRef -PrinterShareId <String> -GroupId <String> [-IfMatch <String>]
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String>
- [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Id <String>
+ [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
+ [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ The delete Uri
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, DeleteViaIdentity1
+Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
 Required: True

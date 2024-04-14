@@ -582,12 +582,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-      - `[IsAllDay <Boolean?>]`: 
-      - `[IsCancelled <Boolean?>]`: 
-      - `[IsDraft <Boolean?>]`: 
-      - `[IsOnlineMeeting <Boolean?>]`: 
-      - `[IsOrganizer <Boolean?>]`: 
-      - `[IsReminderOn <Boolean?>]`: 
+      - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+      - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+      - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+      - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
       - `[Location <IMicrosoftGraphLocation>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -612,7 +619,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
         - `[LocationUri <String>]`: Optional URI representing the location.
         - `[UniqueId <String>]`: For internal use only.
         - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+      - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -633,13 +642,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
         - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
         - `[TollNumber <String>]`: The toll number that can be used to join the conference.
       - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-      - `[OnlineMeetingUrl <String>]`: 
+      - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
       - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[OriginalEndTimeZone <String>]`: 
-      - `[OriginalStart <DateTime?>]`: 
-      - `[OriginalStartTimeZone <String>]`: 
+      - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property is not returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -672,11 +689,11 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
           - `[Type <String>]`: recurrenceRangeType
-      - `[ReminderMinutesBeforeStart <Int32?>]`: 
-      - `[ResponseRequested <Boolean?>]`: 
+      - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+      - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
       - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[Sensitivity <String>]`: sensitivity
-      - `[SeriesMasterId <String>]`: 
+      - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
       - `[ShowAs <String>]`: freeBusyStatus
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
@@ -685,10 +702,15 @@ Nullable.
 Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Subject <String>]`: 
-      - `[TransactionId <String>]`: 
+      - `[Subject <String>]`: The text of the event's subject line.
+      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
       - `[Type <String>]`: eventType
-      - `[WebLink <String>]`: 
+      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access.
@@ -1059,7 +1081,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-            - `[OnPremisesSecurityIdentifier <String>]`: 
+            - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
             - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -1248,7 +1273,7 @@ Read-only.
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
           - `[MessageType <String>]`: chatMessageType
-        - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed.
+        - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
         - `[Members <IMicrosoftGraphConversationMember- `[]`>]`: A collection of all the members in the chat.
 Nullable.
@@ -1436,15 +1461,21 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+        - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: Represents a collection of Cloud Clipboard items.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[LastModifiedDateTime <DateTime?>]`: 
-          - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
-            - `[Content <String>]`: 
-            - `[FormatName <String>]`: 
+          - `[CreatedDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object was created on the server.
+          - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object expires and after that the object is no longer available.
+The default and also maximum TTL is 12 hours after the creation, but it might change for performance optimization.
+          - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the client's request.
+DateTime in UTC when the object was modified by the client.
+          - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: A cloudClipboardItem can have multiple cloudClipboardItemPayload objects in the payloads.
+A window can place more than one clipboard object on the clipboard.
+Each one represents the same information in a different clipboard format.
+            - `[Content <String>]`: The formatName version of the value of a cloud clipboard encoded in base64.
+            - `[FormatName <String>]`: For a list of possible values see formatName values.
       - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -1501,20 +1532,20 @@ Nullable.
           - `[GivenName <String>]`: The contact's given name.
           - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
           - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
-          - `[ImAddresses <String- `[]`>]`: 
-          - `[Initials <String>]`: 
-          - `[JobTitle <String>]`: 
-          - `[Manager <String>]`: 
-          - `[MiddleName <String>]`: 
-          - `[MobilePhone <String>]`: 
+          - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+          - `[Initials <String>]`: The contact's initials.
+          - `[JobTitle <String>]`: The contact's job title.
+          - `[Manager <String>]`: The name of the contact's manager.
+          - `[MiddleName <String>]`: The contact's middle name.
+          - `[MobilePhone <String>]`: The contact's mobile phone number.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-          - `[NickName <String>]`: 
-          - `[OfficeLocation <String>]`: 
+          - `[NickName <String>]`: The contact's nickname.
+          - `[OfficeLocation <String>]`: The location of the contact's office.
           - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-          - `[ParentFolderId <String>]`: 
-          - `[PersonalNotes <String>]`: 
+          - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+          - `[PersonalNotes <String>]`: The user's notes about the contact.
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -1523,16 +1554,16 @@ Read-only.
 Read-only.
             - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-          - `[Profession <String>]`: 
+          - `[Profession <String>]`: The contact's profession.
           - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-          - `[SpouseName <String>]`: 
-          - `[Surname <String>]`: 
-          - `[Title <String>]`: 
-          - `[YomiCompanyName <String>]`: 
-          - `[YomiGivenName <String>]`: 
-          - `[YomiSurname <String>]`: 
+          - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+          - `[Surname <String>]`: The contact's surname.
+          - `[Title <String>]`: The contact's title.
+          - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+          - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+          - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
         - `[DisplayName <String>]`: The folder's display name.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -1873,8 +1904,8 @@ Read-only.
                       - `[ItemId <String>]`: The unique identifier for the item.
                       - `[Title <String>]`: The title of the item.
                       - `[VersionId <String>]`: The version ID of the item.
-                    - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                    - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                   - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -2079,12 +2110,12 @@ Read-only.
 Identifier of the application used to create the subscription.
 Read-only.
                   - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
                   - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
@@ -2092,8 +2123,8 @@ The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
                   - `[CreatorId <String>]`: Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
                   - `[EncryptionCertificate <String>]`: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
@@ -2103,7 +2134,7 @@ A custom app-provided identifier to help identify the certificate needed to decr
                   - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
                   - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
                   - `[LatestSupportedTlsVersion <String>]`: Optional.
@@ -2120,20 +2151,20 @@ For more information, see Reduce missing subscriptions and change notifications.
                   - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                   - `[NotificationUrl <String>]`: Required.
-The URL of the endpoint that will receive the change notifications.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
                   - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
                   - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
                 - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
 For more information, see - `[getting thumbnails]`- `[]`.
@@ -2653,7 +2684,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
           - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
           - `[Base <IMicrosoftGraphContentType>]`: contentType
           - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
           - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -2661,7 +2692,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
             - `[Name <String>]`: The name of the column  in this content type.
           - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+          - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
           - `[Description <String>]`: The descriptive text for the item.
           - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2687,7 +2718,7 @@ Helps organize related content types.
             - `[Default <Boolean?>]`: Indicates whether this is the default content type
             - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
           - `[ParentId <String>]`: The unique identifier of the content type.
-          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
           - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
           - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -3548,27 +3579,39 @@ This property doesn't include inline attachments, so if a message contains only 
 To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
           - `[Importance <String>]`: importance
           - `[InferenceClassification <String>]`: inferenceClassificationType
-          - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: 
+          - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
+The set includes message headers indicating the network path taken by a message from the sender to the recipient.
+It can also contain custom message headers that hold app data for the message. 
+Returned only on applying a $select query option.
+Read-only.
             - `[Name <String>]`: Represents the key in a key-value pair.
             - `[Value <String>]`: The value in a key-value pair.
-          - `[InternetMessageId <String>]`: 
-          - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-          - `[IsDraft <Boolean?>]`: 
-          - `[IsRead <Boolean?>]`: 
-          - `[IsReadReceiptRequested <Boolean?>]`: 
+          - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
+          - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+          - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft.
+A message is a draft if it hasn't been sent yet.
+          - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
+          - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the message.
 Nullable.
-          - `[ParentFolderId <String>]`: 
-          - `[ReceivedDateTime <DateTime?>]`: 
-          - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: 
+          - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
+          - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
           - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-          - `[SentDateTime <DateTime?>]`: 
+          - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.
 Nullable.
-          - `[Subject <String>]`: 
-          - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+          - `[Subject <String>]`: The subject of the message.
+          - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: The To: recipients for the message.
           - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-          - `[WebLink <String>]`: 
+          - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
+If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
+If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -4647,16 +4690,19 @@ Read-only.
         - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+          - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
-            - `[Payload <String>]`: 
-          - `[PayloadType <String>]`: 
+            - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+            - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+            - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+            - `[Payload <String>]`: Base64-encoded JSON setting value.
+          - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
           - `[SettingType <String>]`: windowsSettingType
-          - `[WindowsDeviceId <String>]`: 
+          - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
       - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -4686,6 +4732,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
       - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+      - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
       - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -4761,8 +4810,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
               - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
               - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-              - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-              - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+              - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+              - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
             - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created.
 By default, it is in UTC.
@@ -4813,7 +4862,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-      - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+      - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -5342,7 +5392,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-        - `[OnPremisesSecurityIdentifier <String>]`: 
+        - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -5540,12 +5593,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-      - `[IsAllDay <Boolean?>]`: 
-      - `[IsCancelled <Boolean?>]`: 
-      - `[IsDraft <Boolean?>]`: 
-      - `[IsOnlineMeeting <Boolean?>]`: 
-      - `[IsOrganizer <Boolean?>]`: 
-      - `[IsReminderOn <Boolean?>]`: 
+      - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+      - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+      - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+      - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
       - `[Location <IMicrosoftGraphLocation>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -5570,7 +5630,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
         - `[LocationUri <String>]`: Optional URI representing the location.
         - `[UniqueId <String>]`: For internal use only.
         - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+      - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -5591,13 +5653,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
         - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
         - `[TollNumber <String>]`: The toll number that can be used to join the conference.
       - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-      - `[OnlineMeetingUrl <String>]`: 
+      - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
       - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[OriginalEndTimeZone <String>]`: 
-      - `[OriginalStart <DateTime?>]`: 
-      - `[OriginalStartTimeZone <String>]`: 
+      - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+      - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property is not returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -5630,11 +5700,11 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
           - `[Type <String>]`: recurrenceRangeType
-      - `[ReminderMinutesBeforeStart <Int32?>]`: 
-      - `[ResponseRequested <Boolean?>]`: 
+      - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+      - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
       - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[Sensitivity <String>]`: sensitivity
-      - `[SeriesMasterId <String>]`: 
+      - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
       - `[ShowAs <String>]`: freeBusyStatus
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
@@ -5643,10 +5713,15 @@ Nullable.
 Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Subject <String>]`: 
-      - `[TransactionId <String>]`: 
+      - `[Subject <String>]`: The text of the event's subject line.
+      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
       - `[Type <String>]`: eventType
-      - `[WebLink <String>]`: 
+      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access.
@@ -5764,7 +5839,7 @@ Read-only.
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
       - `[MessageType <String>]`: chatMessageType
-    - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed.
+    - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
     - `[Members <IMicrosoftGraphConversationMember- `[]`>]`: A collection of all the members in the chat.
 Nullable.
@@ -5952,15 +6027,21 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+    - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: Represents a collection of Cloud Clipboard items.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[ExpirationDateTime <DateTime?>]`: 
-      - `[LastModifiedDateTime <DateTime?>]`: 
-      - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
-        - `[Content <String>]`: 
-        - `[FormatName <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object was created on the server.
+      - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object expires and after that the object is no longer available.
+The default and also maximum TTL is 12 hours after the creation, but it might change for performance optimization.
+      - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the client's request.
+DateTime in UTC when the object was modified by the client.
+      - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: A cloudClipboardItem can have multiple cloudClipboardItemPayload objects in the payloads.
+A window can place more than one clipboard object on the clipboard.
+Each one represents the same information in a different clipboard format.
+        - `[Content <String>]`: The formatName version of the value of a cloud clipboard encoded in base64.
+        - `[FormatName <String>]`: For a list of possible values see formatName values.
   - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -6017,20 +6098,20 @@ Nullable.
       - `[GivenName <String>]`: The contact's given name.
       - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
-      - `[ImAddresses <String- `[]`>]`: 
-      - `[Initials <String>]`: 
-      - `[JobTitle <String>]`: 
-      - `[Manager <String>]`: 
-      - `[MiddleName <String>]`: 
-      - `[MobilePhone <String>]`: 
+      - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+      - `[Initials <String>]`: The contact's initials.
+      - `[JobTitle <String>]`: The contact's job title.
+      - `[Manager <String>]`: The name of the contact's manager.
+      - `[MiddleName <String>]`: The contact's middle name.
+      - `[MobilePhone <String>]`: The contact's mobile phone number.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-      - `[NickName <String>]`: 
-      - `[OfficeLocation <String>]`: 
+      - `[NickName <String>]`: The contact's nickname.
+      - `[OfficeLocation <String>]`: The location of the contact's office.
       - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[ParentFolderId <String>]`: 
-      - `[PersonalNotes <String>]`: 
+      - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+      - `[PersonalNotes <String>]`: The user's notes about the contact.
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -6039,16 +6120,16 @@ Read-only.
 Read-only.
         - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-      - `[Profession <String>]`: 
+      - `[Profession <String>]`: The contact's profession.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-      - `[SpouseName <String>]`: 
-      - `[Surname <String>]`: 
-      - `[Title <String>]`: 
-      - `[YomiCompanyName <String>]`: 
-      - `[YomiGivenName <String>]`: 
-      - `[YomiSurname <String>]`: 
+      - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+      - `[Surname <String>]`: The contact's surname.
+      - `[Title <String>]`: The contact's title.
+      - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+      - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+      - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
     - `[DisplayName <String>]`: The folder's display name.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -6338,8 +6419,8 @@ Read-only.
             - `[ItemId <String>]`: The unique identifier for the item.
             - `[Title <String>]`: The title of the item.
             - `[VersionId <String>]`: The version ID of the item.
-          - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+          - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
         - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
         - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -6544,12 +6625,12 @@ Read-only.
 Identifier of the application used to create the subscription.
 Read-only.
         - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
         - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
@@ -6557,8 +6638,8 @@ The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
         - `[CreatorId <String>]`: Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
         - `[EncryptionCertificate <String>]`: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
@@ -6568,7 +6649,7 @@ A custom app-provided identifier to help identify the certificate needed to decr
         - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
         - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
         - `[LatestSupportedTlsVersion <String>]`: Optional.
@@ -6585,20 +6666,20 @@ For more information, see Reduce missing subscriptions and change notifications.
         - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
         - `[NotificationUrl <String>]`: Required.
-The URL of the endpoint that will receive the change notifications.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
         - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
         - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
       - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
 For more information, see - `[getting thumbnails]`- `[]`.
@@ -7134,7 +7215,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
         - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
         - `[Base <IMicrosoftGraphContentType>]`: contentType
         - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -7142,7 +7223,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
         - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+        - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
         - `[Description <String>]`: The descriptive text for the item.
         - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7168,7 +7249,7 @@ Helps organize related content types.
           - `[Default <Boolean?>]`: Indicates whether this is the default content type
           - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
-        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -8599,27 +8680,39 @@ This property doesn't include inline attachments, so if a message contains only 
 To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
       - `[Importance <String>]`: importance
       - `[InferenceClassification <String>]`: inferenceClassificationType
-      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: 
+      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
+The set includes message headers indicating the network path taken by a message from the sender to the recipient.
+It can also contain custom message headers that hold app data for the message. 
+Returned only on applying a $select query option.
+Read-only.
         - `[Name <String>]`: Represents the key in a key-value pair.
         - `[Value <String>]`: The value in a key-value pair.
-      - `[InternetMessageId <String>]`: 
-      - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-      - `[IsDraft <Boolean?>]`: 
-      - `[IsRead <Boolean?>]`: 
-      - `[IsReadReceiptRequested <Boolean?>]`: 
+      - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
+      - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+      - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft.
+A message is a draft if it hasn't been sent yet.
+      - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
+      - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the message.
 Nullable.
-      - `[ParentFolderId <String>]`: 
-      - `[ReceivedDateTime <DateTime?>]`: 
-      - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: 
+      - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
+      - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
       - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-      - `[SentDateTime <DateTime?>]`: 
+      - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.
 Nullable.
-      - `[Subject <String>]`: 
-      - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+      - `[Subject <String>]`: The subject of the message.
+      - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: The To: recipients for the message.
       - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-      - `[WebLink <String>]`: 
+      - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
+If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
+If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -9546,16 +9639,19 @@ Read-only.
     - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+      - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        - `[CreatedDateTime <DateTime?>]`: 
-        - `[ExpirationDateTime <DateTime?>]`: 
-        - `[LastModifiedDateTime <DateTime?>]`: 
-        - `[Payload <String>]`: 
-      - `[PayloadType <String>]`: 
+        - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+        - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+        - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+        - `[Payload <String>]`: Base64-encoded JSON setting value.
+      - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
       - `[SettingType <String>]`: windowsSettingType
-      - `[WindowsDeviceId <String>]`: 
+      - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
   - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -9585,6 +9681,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
   - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+  - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
   - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -9660,8 +9759,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
           - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
           - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-          - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-          - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+          - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+          - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
         - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created.
 By default, it is in UTC.
@@ -9712,7 +9811,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-  - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+  - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -10062,12 +10162,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-        - `[IsAllDay <Boolean?>]`: 
-        - `[IsCancelled <Boolean?>]`: 
-        - `[IsDraft <Boolean?>]`: 
-        - `[IsOnlineMeeting <Boolean?>]`: 
-        - `[IsOrganizer <Boolean?>]`: 
-        - `[IsReminderOn <Boolean?>]`: 
+        - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+        - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+        - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+        - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+        - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
         - `[Location <IMicrosoftGraphLocation>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -10092,7 +10199,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
           - `[LocationUri <String>]`: Optional URI representing the location.
           - `[UniqueId <String>]`: For internal use only.
           - `[UniqueIdType <String>]`: locationUniqueIdType
-        - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+        - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -10113,13 +10222,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
           - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
           - `[TollNumber <String>]`: The toll number that can be used to join the conference.
         - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-        - `[OnlineMeetingUrl <String>]`: 
+        - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
         - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[OriginalEndTimeZone <String>]`: 
-        - `[OriginalStart <DateTime?>]`: 
-        - `[OriginalStartTimeZone <String>]`: 
+        - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+        - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property is not returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+        - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -10152,11 +10269,11 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
             - `[Type <String>]`: recurrenceRangeType
-        - `[ReminderMinutesBeforeStart <Int32?>]`: 
-        - `[ResponseRequested <Boolean?>]`: 
+        - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+        - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
         - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[Sensitivity <String>]`: sensitivity
-        - `[SeriesMasterId <String>]`: 
+        - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
         - `[ShowAs <String>]`: freeBusyStatus
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
@@ -10165,10 +10282,15 @@ Nullable.
 Read-only.
           - `[Value <String>]`: A property value.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[Subject <String>]`: 
-        - `[TransactionId <String>]`: 
+        - `[Subject <String>]`: The text of the event's subject line.
+        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
         - `[Type <String>]`: eventType
-        - `[WebLink <String>]`: 
+        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access.
@@ -10539,7 +10661,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-              - `[OnPremisesSecurityIdentifier <String>]`: 
+              - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
               - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -10728,7 +10853,7 @@ Read-only.
               - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
             - `[MessageType <String>]`: chatMessageType
-          - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed.
+          - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
           - `[Members <IMicrosoftGraphConversationMember- `[]`>]`: A collection of all the members in the chat.
 Nullable.
@@ -10916,15 +11041,21 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+          - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: Represents a collection of Cloud Clipboard items.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
-            - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
-              - `[Content <String>]`: 
-              - `[FormatName <String>]`: 
+            - `[CreatedDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object was created on the server.
+            - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object expires and after that the object is no longer available.
+The default and also maximum TTL is 12 hours after the creation, but it might change for performance optimization.
+            - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the client's request.
+DateTime in UTC when the object was modified by the client.
+            - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: A cloudClipboardItem can have multiple cloudClipboardItemPayload objects in the payloads.
+A window can place more than one clipboard object on the clipboard.
+Each one represents the same information in a different clipboard format.
+              - `[Content <String>]`: The formatName version of the value of a cloud clipboard encoded in base64.
+              - `[FormatName <String>]`: For a list of possible values see formatName values.
         - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -10981,20 +11112,20 @@ Nullable.
             - `[GivenName <String>]`: The contact's given name.
             - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
             - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
-            - `[ImAddresses <String- `[]`>]`: 
-            - `[Initials <String>]`: 
-            - `[JobTitle <String>]`: 
-            - `[Manager <String>]`: 
-            - `[MiddleName <String>]`: 
-            - `[MobilePhone <String>]`: 
+            - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+            - `[Initials <String>]`: The contact's initials.
+            - `[JobTitle <String>]`: The contact's job title.
+            - `[Manager <String>]`: The name of the contact's manager.
+            - `[MiddleName <String>]`: The contact's middle name.
+            - `[MobilePhone <String>]`: The contact's mobile phone number.
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-            - `[NickName <String>]`: 
-            - `[OfficeLocation <String>]`: 
+            - `[NickName <String>]`: The contact's nickname.
+            - `[OfficeLocation <String>]`: The location of the contact's office.
             - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-            - `[ParentFolderId <String>]`: 
-            - `[PersonalNotes <String>]`: 
+            - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+            - `[PersonalNotes <String>]`: The user's notes about the contact.
             - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -11003,16 +11134,16 @@ Read-only.
 Read-only.
               - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-            - `[Profession <String>]`: 
+            - `[Profession <String>]`: The contact's profession.
             - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-            - `[SpouseName <String>]`: 
-            - `[Surname <String>]`: 
-            - `[Title <String>]`: 
-            - `[YomiCompanyName <String>]`: 
-            - `[YomiGivenName <String>]`: 
-            - `[YomiSurname <String>]`: 
+            - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+            - `[Surname <String>]`: The contact's surname.
+            - `[Title <String>]`: The contact's title.
+            - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+            - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+            - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
           - `[DisplayName <String>]`: The folder's display name.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -11353,8 +11484,8 @@ Read-only.
                         - `[ItemId <String>]`: The unique identifier for the item.
                         - `[Title <String>]`: The title of the item.
                         - `[VersionId <String>]`: The version ID of the item.
-                      - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                      - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                     - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                     - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -11559,12 +11690,12 @@ Read-only.
 Identifier of the application used to create the subscription.
 Read-only.
                     - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
                     - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
@@ -11572,8 +11703,8 @@ The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
                     - `[CreatorId <String>]`: Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
                     - `[EncryptionCertificate <String>]`: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
@@ -11583,7 +11714,7 @@ A custom app-provided identifier to help identify the certificate needed to decr
                     - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
                     - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
                     - `[LatestSupportedTlsVersion <String>]`: Optional.
@@ -11600,20 +11731,20 @@ For more information, see Reduce missing subscriptions and change notifications.
                     - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                     - `[NotificationUrl <String>]`: Required.
-The URL of the endpoint that will receive the change notifications.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
                     - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
                     - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
                   - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
 For more information, see - `[getting thumbnails]`- `[]`.
@@ -12133,7 +12264,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
             - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
             - `[Base <IMicrosoftGraphContentType>]`: contentType
             - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
             - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -12141,7 +12272,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
               - `[Name <String>]`: The name of the column  in this content type.
             - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-            - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+            - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
             - `[Description <String>]`: The descriptive text for the item.
             - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12167,7 +12298,7 @@ Helps organize related content types.
               - `[Default <Boolean?>]`: Indicates whether this is the default content type
               - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
             - `[ParentId <String>]`: The unique identifier of the content type.
-            - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+            - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
             - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
             - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -13028,27 +13159,39 @@ This property doesn't include inline attachments, so if a message contains only 
 To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
             - `[Importance <String>]`: importance
             - `[InferenceClassification <String>]`: inferenceClassificationType
-            - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: 
+            - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
+The set includes message headers indicating the network path taken by a message from the sender to the recipient.
+It can also contain custom message headers that hold app data for the message. 
+Returned only on applying a $select query option.
+Read-only.
               - `[Name <String>]`: Represents the key in a key-value pair.
               - `[Value <String>]`: The value in a key-value pair.
-            - `[InternetMessageId <String>]`: 
-            - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-            - `[IsDraft <Boolean?>]`: 
-            - `[IsRead <Boolean?>]`: 
-            - `[IsReadReceiptRequested <Boolean?>]`: 
+            - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
+            - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+            - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft.
+A message is a draft if it hasn't been sent yet.
+            - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
+            - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the message.
 Nullable.
-            - `[ParentFolderId <String>]`: 
-            - `[ReceivedDateTime <DateTime?>]`: 
-            - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: 
+            - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
+            - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
             - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-            - `[SentDateTime <DateTime?>]`: 
+            - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.
 Nullable.
-            - `[Subject <String>]`: 
-            - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+            - `[Subject <String>]`: The subject of the message.
+            - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: The To: recipients for the message.
             - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-            - `[WebLink <String>]`: 
+            - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
+If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
+If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -13887,16 +14030,19 @@ Read-only.
           - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+            - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: 
-              - `[ExpirationDateTime <DateTime?>]`: 
-              - `[LastModifiedDateTime <DateTime?>]`: 
-              - `[Payload <String>]`: 
-            - `[PayloadType <String>]`: 
+              - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+              - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+              - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+              - `[Payload <String>]`: Base64-encoded JSON setting value.
+            - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
             - `[SettingType <String>]`: windowsSettingType
-            - `[WindowsDeviceId <String>]`: 
+            - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
         - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -13926,6 +14072,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
         - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+        - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
         - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -14001,8 +14150,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
                 - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
                 - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-                - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-                - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+                - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+                - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
               - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
               - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created.
 By default, it is in UTC.
@@ -14053,7 +14202,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-        - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+        - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
@@ -14922,12 +15072,19 @@ This property includes occurrences that are part of the recurrence pattern, and 
 Navigation property.
 Read-only.
 Nullable.
-          - `[IsAllDay <Boolean?>]`: 
-          - `[IsCancelled <Boolean?>]`: 
-          - `[IsDraft <Boolean?>]`: 
-          - `[IsOnlineMeeting <Boolean?>]`: 
-          - `[IsOrganizer <Boolean?>]`: 
-          - `[IsReminderOn <Boolean?>]`: 
+          - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
+If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.
+          - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
+          - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees.
+Set to false if all changes have been sent, or if the event is an appointment without any attendees.
+          - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information (that is, onlineMeeting points to an onlineMeetingInfo resource), false otherwise.
+Default is false (onlineMeeting is null).
+Optional. 
+After you set isOnlineMeeting to true, Microsoft Graph initializes onlineMeeting.
+Subsequently Outlook ignores any further changes to isOnlineMeeting, and the meeting remains available online.
+          - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event).
+This also applies if a delegate organized the event on behalf of the owner.
+          - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
           - `[Location <IMicrosoftGraphLocation>]`: location
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
@@ -14952,7 +15109,9 @@ As an example, the accuracy can be measured in meters, such as the latitude and 
             - `[LocationUri <String>]`: Optional URI representing the location.
             - `[UniqueId <String>]`: For internal use only.
             - `[UniqueIdType <String>]`: locationUniqueIdType
-          - `[Locations <IMicrosoftGraphLocation- `[]`>]`: 
+          - `[Locations <IMicrosoftGraphLocation- `[]`>]`: The locations where the event is held or attended from.
+The location and locations properties always correspond with each other.
+If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
           - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the event.
 Read-only.
 Nullable.
@@ -14973,13 +15132,21 @@ This is a URL that clients launch into a browser and will redirect the user to j
             - `[TollFreeNumbers <String- `[]`>]`: The toll free numbers that can be used to join the conference.
             - `[TollNumber <String>]`: The toll number that can be used to join the conference.
           - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-          - `[OnlineMeetingUrl <String>]`: 
+          - `[OnlineMeetingUrl <String>]`: A URL for an online meeting.
+The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype.
+Read-only.To access the URL to join an online meeting, use joinUrl which is exposed via the onlineMeeting property of the event.
+The onlineMeetingUrl property will be deprecated in the future.
           - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-          - `[OriginalEndTimeZone <String>]`: 
-          - `[OriginalStart <DateTime?>]`: 
-          - `[OriginalStartTimeZone <String>]`: 
+          - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+          - `[OriginalStart <DateTime?>]`: Represents the start time of an event when it is initially created as an occurrence or exception in a recurring series.
+This property is not returned for events that are single instances.
+Its date and time information is expressed in ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created.
+A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
           - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
@@ -15012,11 +15179,11 @@ The first occurrence of the meeting may be this date or later, depending on the 
 Must be the same value as the start property of the recurring event.
 Required.
               - `[Type <String>]`: recurrenceRangeType
-          - `[ReminderMinutesBeforeStart <Int32?>]`: 
-          - `[ResponseRequested <Boolean?>]`: 
+          - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
+          - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
           - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
           - `[Sensitivity <String>]`: sensitivity
-          - `[SeriesMasterId <String>]`: 
+          - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
           - `[ShowAs <String>]`: freeBusyStatus
           - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the event.
 Read-only.
@@ -15025,10 +15192,15 @@ Nullable.
 Read-only.
             - `[Value <String>]`: A property value.
           - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-          - `[Subject <String>]`: 
-          - `[TransactionId <String>]`: 
+          - `[Subject <String>]`: The text of the event's subject line.
+          - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.
+This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request.
+After you set transactionId when creating an event, you cannot change transactionId in a subsequent update.
+This property is only returned in a response payload if an app has set it.
+Optional.
           - `[Type <String>]`: eventType
-          - `[WebLink <String>]`: 
+          - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox.
+Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
         - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise.
 This property is true for the user who created the calendar.
 This property is also true for a user who has been shared a calendar and granted write access.
@@ -15399,7 +15571,10 @@ Read-only.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
-                - `[OnPremisesSecurityIdentifier <String>]`: 
+                - `[OnPremisesSecurityIdentifier <String>]`: The on-premises security identifier (SID) for the user who was synchronized from on-premises to the cloud.
+Read-only.
+Returned only on $select.
+Supports $filter (eq).
                 - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).
 Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
@@ -15588,7 +15763,7 @@ Read-only.
                 - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
               - `[MessageType <String>]`: chatMessageType
-            - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed.
+            - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or the list of members was last changed.
 Read-only.
             - `[Members <IMicrosoftGraphConversationMember- `[]`>]`: A collection of all the members in the chat.
 Nullable.
@@ -15776,15 +15951,21 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: 
+            - `[Items <IMicrosoftGraphCloudClipboardItem- `[]`>]`: Represents a collection of Cloud Clipboard items.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[CreatedDateTime <DateTime?>]`: 
-              - `[ExpirationDateTime <DateTime?>]`: 
-              - `[LastModifiedDateTime <DateTime?>]`: 
-              - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: 
-                - `[Content <String>]`: 
-                - `[FormatName <String>]`: 
+              - `[CreatedDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object was created on the server.
+              - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+DateTime in UTC when the object expires and after that the object is no longer available.
+The default and also maximum TTL is 12 hours after the creation, but it might change for performance optimization.
+              - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the client's request.
+DateTime in UTC when the object was modified by the client.
+              - `[Payloads <IMicrosoftGraphCloudClipboardItemPayload- `[]`>]`: A cloudClipboardItem can have multiple cloudClipboardItemPayload objects in the payloads.
+A window can place more than one clipboard object on the clipboard.
+Each one represents the same information in a different clipboard format.
+                - `[Content <String>]`: The formatName version of the value of a cloud clipboard encoded in base64.
+                - `[FormatName <String>]`: For a list of possible values see formatName values.
           - `[CompanyName <String>]`: The name of the company that the user is associated with.
 This property can be useful for describing the company that an external user comes from.
 The maximum length is 64 characters.Returned only on $select.
@@ -15841,20 +16022,20 @@ Nullable.
               - `[GivenName <String>]`: The contact's given name.
               - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
               - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
-              - `[ImAddresses <String- `[]`>]`: 
-              - `[Initials <String>]`: 
-              - `[JobTitle <String>]`: 
-              - `[Manager <String>]`: 
-              - `[MiddleName <String>]`: 
-              - `[MobilePhone <String>]`: 
+              - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+              - `[Initials <String>]`: The contact's initials.
+              - `[JobTitle <String>]`: The contact's job title.
+              - `[Manager <String>]`: The name of the contact's manager.
+              - `[MiddleName <String>]`: The contact's middle name.
+              - `[MobilePhone <String>]`: The contact's mobile phone number.
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-              - `[NickName <String>]`: 
-              - `[OfficeLocation <String>]`: 
+              - `[NickName <String>]`: The contact's nickname.
+              - `[OfficeLocation <String>]`: The location of the contact's office.
               - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-              - `[ParentFolderId <String>]`: 
-              - `[PersonalNotes <String>]`: 
+              - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+              - `[PersonalNotes <String>]`: The user's notes about the contact.
               - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity.
@@ -15863,16 +16044,16 @@ Read-only.
 Read-only.
                 - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-              - `[Profession <String>]`: 
+              - `[Profession <String>]`: The contact's profession.
               - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-              - `[SpouseName <String>]`: 
-              - `[Surname <String>]`: 
-              - `[Title <String>]`: 
-              - `[YomiCompanyName <String>]`: 
-              - `[YomiGivenName <String>]`: 
-              - `[YomiSurname <String>]`: 
+              - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+              - `[Surname <String>]`: The contact's surname.
+              - `[Title <String>]`: The contact's title.
+              - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+              - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+              - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
             - `[DisplayName <String>]`: The folder's display name.
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
@@ -16213,8 +16394,8 @@ Read-only.
                           - `[ItemId <String>]`: The unique identifier for the item.
                           - `[Title <String>]`: The title of the item.
                           - `[VersionId <String>]`: The version ID of the item.
-                        - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions will be captured.
-Default value is false.
+                        - `[ShouldCaptureMinorVersion <Boolean?>]`: If true, minor versions of items are also captured; otherwise, only major versions are captured.
+The default value is false.
                       - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
                       - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
                       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
@@ -16419,12 +16600,12 @@ Read-only.
 Identifier of the application used to create the subscription.
 Read-only.
                       - `[ChangeType <String>]`: Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Indicates the type of change in the subscribed resource that raises a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
 Note:  Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
-Use updated to receive notifications when user or group is created, updated or soft deleted. 
+Use updated to receive notifications when user or group is created, updated, or soft deleted.
 Use deleted to receive notifications when user or group is permanently deleted.
                       - `[ClientState <String>]`: Optional.
 Specifies the value of the clientState property sent by the service in each change notification.
@@ -16432,8 +16613,8 @@ The maximum length is 128 characters.
 The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
                       - `[CreatorId <String>]`: Optional.
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the id of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
 Read-only.
                       - `[EncryptionCertificate <String>]`: Optional.
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
@@ -16443,7 +16624,7 @@ A custom app-provided identifier to help identify the certificate needed to decr
                       - `[ExpirationDateTime <DateTime?>]`: Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+For the maximum supported subscription length of time, see Subscription lifetime.
                       - `[IncludeResourceData <Boolean?>]`: Optional.
 When set to true, change notifications include resource data (such as content of a chat message).
                       - `[LatestSupportedTlsVersion <String>]`: Optional.
@@ -16460,20 +16641,20 @@ For more information, see Reduce missing subscriptions and change notifications.
                       - `[NotificationQueryOptions <String>]`: Optional.
 OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+With this new property in the subscription creation payload along with all existing properties, Webhooks deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
 For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc. 
 Supported only for Universal Print Service.
 For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                       - `[NotificationUrl <String>]`: Required.
-The URL of the endpoint that will receive the change notifications.
+The URL of the endpoint that receives the change notifications.
 This URL must make use of the HTTPS protocol.
-Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
+Any query string parameter included in the notificationUrl property is included in the HTTP POST request when Microsoft Graph sends the change notifications.
                       - `[NotificationUrlAppId <String>]`: Optional.
 The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+The value allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/v1.0/).
+Specifies the resource that is monitored for changes.
+Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
                     - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
 For more information, see - `[getting thumbnails]`- `[]`.
@@ -16993,7 +17174,7 @@ For examples, see Examples of common formulas in lists.
 Read-only.
               - `[AssociatedHubsUrls <String- `[]`>]`: List of canonical URLs for hub sites with which this content type is associated to.
 This will contain all hub sites where this content type is queued to be enforced or is already enforced.
-Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+Enforcing a content type means that the content type is applied to the lists in the enforced sites.
               - `[Base <IMicrosoftGraphContentType>]`: contentType
               - `[BaseTypes <IMicrosoftGraphContentType- `[]`>]`: The collection of content types that are ancestors of this content type.
               - `[ColumnLinks <IMicrosoftGraphColumnLink- `[]`>]`: The collection of columns that are required by this content type.
@@ -17001,7 +17182,7 @@ Enforcing a content type means that the content type will be applied to the list
 Read-only.
                 - `[Name <String>]`: The name of the column  in this content type.
               - `[ColumnPositions <IMicrosoftGraphColumnDefinition- `[]`>]`: Column order information in a content type.
-              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this contentType.
+              - `[Columns <IMicrosoftGraphColumnDefinition- `[]`>]`: The collection of column definitions for this content type.
               - `[Description <String>]`: The descriptive text for the item.
               - `[DocumentSet <IMicrosoftGraphDocumentSet>]`: documentSet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -17027,7 +17208,7 @@ Helps organize related content types.
                 - `[Default <Boolean?>]`: Indicates whether this is the default content type
                 - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
-              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
+              - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type are pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type can't be modified unless this value is first set to false.
               - `[Sealed <Boolean?>]`: If true, the content type can't be modified by users or through push-down operations.
 Only site collection administrators can seal or unseal content types.
@@ -17888,27 +18069,39 @@ This property doesn't include inline attachments, so if a message contains only 
 To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
               - `[Importance <String>]`: importance
               - `[InferenceClassification <String>]`: inferenceClassificationType
-              - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: 
+              - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader- `[]`>]`: A collection of message headers defined by RFC5322.
+The set includes message headers indicating the network path taken by a message from the sender to the recipient.
+It can also contain custom message headers that hold app data for the message. 
+Returned only on applying a $select query option.
+Read-only.
                 - `[Name <String>]`: Represents the key in a key-value pair.
                 - `[Value <String>]`: The value in a key-value pair.
-              - `[InternetMessageId <String>]`: 
-              - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-              - `[IsDraft <Boolean?>]`: 
-              - `[IsRead <Boolean?>]`: 
-              - `[IsReadReceiptRequested <Boolean?>]`: 
+              - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
+              - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+              - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft.
+A message is a draft if it hasn't been sent yet.
+              - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
+              - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the message.
 Nullable.
-              - `[ParentFolderId <String>]`: 
-              - `[ReceivedDateTime <DateTime?>]`: 
-              - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: 
+              - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
+              - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[ReplyTo <IMicrosoftGraphRecipient- `[]`>]`: The email addresses to use when replying.
               - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-              - `[SentDateTime <DateTime?>]`: 
+              - `[SentDateTime <DateTime?>]`: The date and time the message was sent. 
+The date and time information uses ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the message.
 Nullable.
-              - `[Subject <String>]`: 
-              - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: 
+              - `[Subject <String>]`: The subject of the message.
+              - `[ToRecipients <IMicrosoftGraphRecipient- `[]`>]`: The To: recipients for the message.
               - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-              - `[WebLink <String>]`: 
+              - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed.
+If ispopout is not present or if it is set to 1, then the message is shown in a popout window.
+If ispopout is set to 0, the browser shows the message in the Outlook on the web review pane.The message opens in the browser if you are signed in to your mailbox via Outlook on the web.
+You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
@@ -18747,16 +18940,19 @@ Read-only.
             - `[Windows <IMicrosoftGraphWindowsSetting- `[]`>]`: 
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: 
+              - `[Instances <IMicrosoftGraphWindowsSettingInstance- `[]`>]`: A collection of setting values for a given windowsSetting.
                 - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-                - `[CreatedDateTime <DateTime?>]`: 
-                - `[ExpirationDateTime <DateTime?>]`: 
-                - `[LastModifiedDateTime <DateTime?>]`: 
-                - `[Payload <String>]`: 
-              - `[PayloadType <String>]`: 
+                - `[CreatedDateTime <DateTime?>]`: Set by the server.
+Represents the dateTime in UTC when the object was created on the server.
+                - `[ExpirationDateTime <DateTime?>]`: Set by the server.
+The object expires at the specified dateTime in UTC, making it unavailable after that time.
+                - `[LastModifiedDateTime <DateTime?>]`: Set by the server if not provided in the request from the Windows client device.
+Refers to the user's Windows device that modified the object at the specified dateTime in UTC.
+                - `[Payload <String>]`: Base64-encoded JSON setting value.
+              - `[PayloadType <String>]`: The type of setting payloads contained in the instances navigation property.
               - `[SettingType <String>]`: windowsSettingType
-              - `[WindowsDeviceId <String>]`: 
+              - `[WindowsDeviceId <String>]`: A unique identifier for the device the setting might belong to if it is of the settingType backup.
           - `[ShowInAddressList <Boolean?>]`: Do not use in Microsoft Graph.
 Manage this property through the Microsoft 365 admin center instead.
 Represents whether the user should be included in the Outlook global address list.
@@ -18786,6 +18982,9 @@ Use revokeSignInSessions to reset.
 Returned only on $select.
           - `[Skills <String- `[]`>]`: A list for the user to enumerate their skills.
 Returned only on $select.
+          - `[Sponsors <IMicrosoftGraphDirectoryObject- `[]`>]`: The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated.
+(HTTP Methods: GET, POST, DELETE.).
+Supports $expand.
           - `[State <String>]`: The state or province in the user's address.
 Maximum length is 128 characters.
 Returned only on $select.
@@ -18861,8 +19060,8 @@ Each category corresponds to the displayName property of an outlookCategory that
 Read-only.
                   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
                   - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-                  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-                  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+                  - `[DisplayName <String>]`: Indicates the title of the checklistItem.
+                  - `[IsChecked <Boolean?>]`: State that indicates whether the item is checked off or not.
                 - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
                 - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created.
 By default, it is in UTC.
@@ -18913,7 +19112,8 @@ Only the following characters are allowed A - Z, a - z, 0 - 9, ', ., -, _, !, #,
 For the complete list of allowed characters, see username policies.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderby.
-          - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest.
+          - `[UserType <String>]`: A string value that can be used to classify user types in your directory.
+The possible values are Member and Guest.
 Returned only on $select.
 Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?

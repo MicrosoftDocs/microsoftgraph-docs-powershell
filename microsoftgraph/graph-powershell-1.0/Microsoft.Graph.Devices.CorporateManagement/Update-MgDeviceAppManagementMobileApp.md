@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileApp
 
 ## SYNOPSIS
-Update the properties of a managedIOSLobApp object.
+Update the properties of a win32LobApp object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
@@ -19,12 +19,11 @@ Update the properties of a managedIOSLobApp object.
 ```
 Update-MgDeviceAppManagementMobileApp -MobileAppId <String> [-ResponseHeadersVariable <String>]
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphMobileAppAssignment[]>]
- [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-Developer <String>] [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsFeatured]
- [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
- [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
- [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-Description <String>] [-Developer <String>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsFeatured]
+ [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>] [-Owner <String>]
+ [-PrivacyInformationUrl <String>] [-Publisher <String>] [-PublishingState <MobileAppPublishingState>]
+ [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -39,11 +38,11 @@ Update-MgDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <IMic
 Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
  [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-Developer <String>] [-DisplayName <String>]
- [-Id <String>] [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
- [-Publisher <String>] [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>]
- [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-Notes <String>]
+ [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
+ [-PublishingState <MobileAppPublishingState>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -54,7 +53,7 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of a managedIOSLobApp object.
+Update the properties of a win32LobApp object.
 
 ## PARAMETERS
 
@@ -114,21 +113,6 @@ To construct, see NOTES section for CATEGORIES properties and create a hash tabl
 
 ```yaml
 Type: IMicrosoftGraphMobileAppCategory[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time the app was created.
-
-```yaml
-Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,21 +251,6 @@ To construct, see NOTES section for LARGEICON properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastModifiedDateTime
-The date and time the app was last modified.
-
-```yaml
-Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -488,8 +457,6 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DisplayName <String>]`: The name of the app category.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
@@ -499,7 +466,6 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: Indicates the content mime type.
     - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
   - `[Notes <String>]`: Notes for the app.
   - `[Owner <String>]`: The owner of the app.
   - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
@@ -510,7 +476,6 @@ CATEGORIES <IMicrosoftGraphMobileAppCategory- `[]`>: The list of categories for 
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DisplayName <String>]`: The name of the app category.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection

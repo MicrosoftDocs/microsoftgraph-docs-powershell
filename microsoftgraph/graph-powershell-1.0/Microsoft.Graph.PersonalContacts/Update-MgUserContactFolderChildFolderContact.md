@@ -485,7 +485,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImAddresses
-.
+The contact's instant messaging (IM) addresses.
 
 ```yaml
 Type: String[]
@@ -500,7 +500,7 @@ Accept wildcard characters: False
 ```
 
 ### -Initials
-.
+The contact's initials.
 
 ```yaml
 Type: String
@@ -531,7 +531,7 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-.
+The contact's job title.
 
 ```yaml
 Type: String
@@ -562,7 +562,7 @@ Accept wildcard characters: False
 ```
 
 ### -Manager
-.
+The name of the contact's manager.
 
 ```yaml
 Type: String
@@ -577,7 +577,7 @@ Accept wildcard characters: False
 ```
 
 ### -MiddleName
-.
+The contact's middle name.
 
 ```yaml
 Type: String
@@ -592,7 +592,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobilePhone
-.
+The contact's mobile phone number.
 
 ```yaml
 Type: String
@@ -625,7 +625,7 @@ Accept wildcard characters: False
 ```
 
 ### -NickName
-.
+The contact's nickname.
 
 ```yaml
 Type: String
@@ -640,7 +640,7 @@ Accept wildcard characters: False
 ```
 
 ### -OfficeLocation
-.
+The location of the contact's office.
 
 ```yaml
 Type: String
@@ -671,7 +671,7 @@ Accept wildcard characters: False
 ```
 
 ### -ParentFolderId
-.
+The ID of the contact's parent folder.
 
 ```yaml
 Type: String
@@ -686,7 +686,7 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalNotes
-.
+The user's notes about the contact.
 
 ```yaml
 Type: String
@@ -717,7 +717,7 @@ Accept wildcard characters: False
 ```
 
 ### -Profession
-.
+The contact's profession.
 
 ```yaml
 Type: String
@@ -780,7 +780,7 @@ Accept wildcard characters: False
 ```
 
 ### -SpouseName
-.
+The name of the contact's spouse/partner.
 
 ```yaml
 Type: String
@@ -795,7 +795,7 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-.
+The contact's surname.
 
 ```yaml
 Type: String
@@ -810,7 +810,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-.
+The contact's title.
 
 ```yaml
 Type: String
@@ -840,7 +840,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiCompanyName
-.
+The phonetic Japanese company name of the contact.
 
 ```yaml
 Type: String
@@ -855,7 +855,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiGivenName
-.
+The phonetic Japanese given name (first name) of the contact.
 
 ```yaml
 Type: String
@@ -870,7 +870,7 @@ Accept wildcard characters: False
 ```
 
 ### -YomiSurname
-.
+The phonetic Japanese surname (last name) of the contact.
 
 ```yaml
 Type: String
@@ -979,23 +979,23 @@ Read-only.
   - `[GivenName <String>]`: The contact's given name.
   - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
   - `[HomePhones <String- `[]`>]`: The contact's home phone numbers.
-  - `[ImAddresses <String- `[]`>]`: 
-  - `[Initials <String>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
-  - `[MobilePhone <String>]`: 
+  - `[ImAddresses <String- `[]`>]`: The contact's instant messaging (IM) addresses.
+  - `[Initials <String>]`: The contact's initials.
+  - `[JobTitle <String>]`: The contact's job title.
+  - `[Manager <String>]`: The name of the contact's manager.
+  - `[MiddleName <String>]`: The contact's middle name.
+  - `[MobilePhone <String>]`: The contact's mobile phone number.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty- `[]`>]`: The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String- `[]`>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
+  - `[NickName <String>]`: The contact's nickname.
+  - `[OfficeLocation <String>]`: The location of the contact's office.
   - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
+  - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
+  - `[PersonalNotes <String>]`: The user's notes about the contact.
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -1004,19 +1004,19 @@ Read-only.
 Read-only.
     - `[Width <Int32?>]`: The width of the photo.
 Read-only.
-  - `[Profession <String>]`: 
+  - `[Profession <String>]`: The contact's profession.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty- `[]`>]`: The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+  - `[SpouseName <String>]`: The name of the contact's spouse/partner.
+  - `[Surname <String>]`: The contact's surname.
+  - `[Title <String>]`: The contact's title.
+  - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
+  - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+  - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
 BUSINESSADDRESS `<IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

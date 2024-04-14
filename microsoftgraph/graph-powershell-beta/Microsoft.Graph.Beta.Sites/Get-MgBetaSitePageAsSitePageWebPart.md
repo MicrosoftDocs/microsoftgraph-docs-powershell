@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of webparts on the SharePoint page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageWebPart?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -368,6 +371,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageWebPart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepageassitepagewebpart)
 

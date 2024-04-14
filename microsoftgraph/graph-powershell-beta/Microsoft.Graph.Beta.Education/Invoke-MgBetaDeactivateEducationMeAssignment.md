@@ -11,6 +11,9 @@ schema: 2.0.0
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeactivateEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Invoke-MgDeactivateEducationMeAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Deactivate (Default)
@@ -180,6 +183,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Invoke-MgDeactivateEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Invoke-MgDeactivateEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationmeassignment)
 

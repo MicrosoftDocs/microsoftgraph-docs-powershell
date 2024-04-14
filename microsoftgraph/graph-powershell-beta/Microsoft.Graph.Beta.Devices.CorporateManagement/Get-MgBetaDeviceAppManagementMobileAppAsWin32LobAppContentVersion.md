@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The list of content versions for this app.
+This property is read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsWin32LobAppContentVersion?view=graph-powershell-1.0)
@@ -40,6 +41,7 @@ Get-MgBetaDeviceAppManagementMobileAppAsWin32LobAppContentVersion
 
 ## DESCRIPTION
 The list of content versions for this app.
+This property is read-only.
 
 ## PARAMETERS
 
@@ -341,6 +343,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
   - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+  - `[MobileAppCatalogPackageId <String>]`: The unique identifier of mobileAppCatalogPackage
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppContentFileId <String>]`: The unique identifier of mobileAppContentFile
   - `[MobileAppContentId <String>]`: The unique identifier of mobileAppContent

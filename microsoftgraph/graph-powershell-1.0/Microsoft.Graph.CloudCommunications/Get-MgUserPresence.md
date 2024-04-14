@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserPresence
 
 ## SYNOPSIS
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+Get a user's presence information.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
@@ -31,11 +30,10 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+Get a user's presence information.
 
 **Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setstatusmessage-permissions.md)]
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get your own presence information

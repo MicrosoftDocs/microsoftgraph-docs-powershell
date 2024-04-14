@@ -22,9 +22,9 @@ New-MgSecurityIncident [-ResponseHeadersVariable <String>] [-AdditionalPropertie
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomTags <String[]>]
  [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
  [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
- [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -315,6 +315,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResolvingComment
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -558,6 +573,7 @@ Free editable text.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
+  - `[ResolvingComment <String>]`: 
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.

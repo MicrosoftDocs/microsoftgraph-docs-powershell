@@ -43,20 +43,17 @@ Read the properties and relationships of a qna object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaSearchQna Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-Get-MgBetaSearchQna -QnaId $qnaId
-```
-This example shows how to use the Get-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaSearchQna Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Search
+
 Get-MgBetaSearchQna
+
 ```
 This example shows how to use the Get-MgBetaSearchQna Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

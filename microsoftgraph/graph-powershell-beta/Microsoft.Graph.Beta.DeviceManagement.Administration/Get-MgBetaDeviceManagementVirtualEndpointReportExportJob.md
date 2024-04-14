@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a cloudPcExportJob object.
 You can download a report by first creating a new cloudPcExportJob resource to initiate downloading.
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
-When the property becomes completed, the report has finished downloading in the location specified by the exportUrl property.
+The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Get-MgBetaDeviceManagementVirtualEndpointReportExportJob -InputObject <IDeviceMa
 Read the properties and relationships of a cloudPcExportJob object.
 You can download a report by first creating a new cloudPcExportJob resource to initiate downloading.
 Use this GET operation to verify the exportJobStatus property of the cloudPcExportJob resource.
-When the property becomes completed, the report has finished downloading in the location specified by the exportUrl property.
+The property becomes completed when the report finishes downloading in the location specified by the exportUrl property.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexportjob-get-permissions.md)]

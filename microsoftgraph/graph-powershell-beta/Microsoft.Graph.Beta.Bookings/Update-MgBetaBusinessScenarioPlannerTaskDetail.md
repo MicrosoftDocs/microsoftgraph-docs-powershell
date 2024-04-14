@@ -403,7 +403,8 @@ Read-only.
       - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
     - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RequiredForms <String- `[]`>]`: 
+      - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
   - `[Description <String>]`: Description of the task.
   - `[Forms <IMicrosoftGraphPlannerFormsDictionary>]`: plannerFormsDictionary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -425,7 +426,8 @@ COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>
     - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
   - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RequiredForms <String- `[]`>]`: 
+    - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
 
 INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -438,12 +440,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[Role <String>]`: Usage: role='{role}'
   - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Read properties and relationships of the roleDefinition object.
+Read properties and relationships of the deviceAndAppManagementRoleDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementRoleDefinition -InputObject <IDeviceManagementAdministrati
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the roleDefinition object.
+Read properties and relationships of the deviceAndAppManagementRoleDefinition object.
 
 ## PARAMETERS
 
@@ -288,6 +288,10 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
   - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment

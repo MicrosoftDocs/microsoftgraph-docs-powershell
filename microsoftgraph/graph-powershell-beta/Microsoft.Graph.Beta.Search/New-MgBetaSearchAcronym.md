@@ -37,20 +37,25 @@ Create a new acronym object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSearchAcronym Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 $params = @{
-	DisplayName = "DNN"
-	StandsFor = "Deep Neural Network"
-	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
-	WebUrl = "http://microsoft.com/deep-neural-network"
-	State = "draft"
+	displayName = "DNN"
+	standsFor = "Deep Neural Network"
+	description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+	webUrl = "http://microsoft.com/deep-neural-network"
+	state = "draft"
 }
+
 New-MgBetaSearchAcronym -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -86,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Search answer description shown on search results page.
+The search answer description that is shown on the search results page.
 
 ```yaml
 Type: String
@@ -101,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Search answer name displayed in search results.
+The search answer name that is displayed in search results.
 
 ```yaml
 Type: String
@@ -163,7 +168,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-Timestamp of when the search answer is created or edited.
+Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
@@ -239,8 +246,8 @@ Accept wildcard characters: False
 ```
 
 ### -WebUrl
-Search answer URL link.
-When users click this search answer in search results, they'll go to this URL.
+The URL link for the search answer.
+When users select this search answer from the search results, they're directed to the specified URL.
 
 ```yaml
 Type: String
@@ -303,8 +310,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Search answer description shown on search results page.
-  - `[DisplayName <String>]`: Search answer name displayed in search results.
+  - `[Description <String>]`: The search answer description that is shown on the search results page.
+  - `[DisplayName <String>]`: The search answer name that is displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -313,10 +320,12 @@ BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited.
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the search answer was created or last edited.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
-  - `[WebUrl <String>]`: Search answer URL link.
-When users click this search answer in search results, they'll go to this URL.
+  - `[WebUrl <String>]`: The URL link for the search answer.
+When users select this search answer from the search results, they're directed to the specified URL.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.

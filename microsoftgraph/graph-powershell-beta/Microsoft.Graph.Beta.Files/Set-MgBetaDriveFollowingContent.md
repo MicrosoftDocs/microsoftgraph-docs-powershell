@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaDriveFollowingContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property following in drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveFollowingContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaDriveFollowingContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property following in drives
 
 ## PARAMETERS
 

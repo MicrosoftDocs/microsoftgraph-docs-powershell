@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaGroupDriveItemChildContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property children in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveItemChildContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveItemChildContent?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Set-MgBetaGroupDriveItemChildContent -InputObject <IFilesIdentity> [-Data <Strea
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property children in groups
 
 ## PARAMETERS
 

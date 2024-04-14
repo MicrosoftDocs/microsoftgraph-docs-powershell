@@ -23,9 +23,9 @@ Update-MgBetaSecurityIncident -IncidentId <String> [-ResponseHeadersVariable <St
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
  [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
- [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,9 +43,9 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> [-ResponseHeaders
  [-CustomTags <String[]>] [-Description <String>] [-Determination <String>] [-DisplayName <String>]
  [-Id <String>] [-IncidentWebUrl <String>] [-LastModifiedBy <String>] [-LastUpdateDateTime <DateTime>]
  [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
- [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
- [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RedirectIncidentId <String>] [-ResolvingComment <String>] [-Severity <String>] [-Status <String>]
+ [-SystemTags <String[]>] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -72,8 +72,8 @@ $params = @{
 	classification = "TruePositive"
 	determination = "MultiStagedAttack"
 	customTags = @(
-		"Demo"
-	)
+	"Demo"
+)
 }
 
 Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
@@ -423,6 +423,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResolvingComment
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResponseHeadersVariable
 Optional Response Headers Variable.
 
@@ -670,6 +685,7 @@ Free editable text.
     - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
+  - `[ResolvingComment <String>]`: 
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.
@@ -697,7 +713,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
   - `[DetectionRuleId <String>]`: The unique identifier of detectionRule
-  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DispositionReviewStageNumber <String>]`: The unique identifier of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
   - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
@@ -716,6 +732,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
   - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
   - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HealthIssueId <String>]`: The unique identifier of healthIssue
   - `[HostComponentId <String>]`: The unique identifier of hostComponent
   - `[HostCookieId <String>]`: The unique identifier of hostCookie
   - `[HostId <String>]`: The unique identifier of host
@@ -746,7 +763,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[SimulationId <String>]`: The unique identifier of simulation
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SslCertificateId <String>]`: The unique identifier of sslCertificate
-  - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+  - `[SubcategoryTemplateId <String>]`: The unique identifier of subcategoryTemplate
   - `[SubdomainId <String>]`: The unique identifier of subdomain
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator

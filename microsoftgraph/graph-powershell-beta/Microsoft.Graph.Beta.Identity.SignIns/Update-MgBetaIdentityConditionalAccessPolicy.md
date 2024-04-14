@@ -389,8 +389,8 @@ Read-only.
         - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
       - `[ExcludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
-      - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
+      - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
       - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`: Authentication context class references include.
 Supported values are c1 through c25.
       - `[IncludeUserActions <String- `[]`>]`: User actions to include.
@@ -424,6 +424,7 @@ Cannot be set if deviceFIlter is set.
       - `[IncludeDevices <String- `[]`>]`: States in the scope of the policy.
 All is the only allowed value.
 Cannot be set if deviceFilter is set.
+    - `[InsiderRiskLevels <String>]`: conditionalAccessInsiderRiskLevels
     - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeLocations <String- `[]`>]`: Location IDs excluded from scope of policy.
@@ -529,8 +530,8 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessCo
       - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Microsoft Entra ID.
 For details, see rules with multiple expressions
     - `[ExcludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) explicitly excluded from the policy.
-Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
-    - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite
+Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
+    - `[IncludeApplications <String- `[]`>]`: Can be one of the following:  The list of client IDs (appId) the policy applies to, unless explicitly excluded (in excludeApplications)  All  Office365 - For the list of apps included in Office365, see Apps included in Conditional Access Office 365 app suite  MicrosoftAdminPortals - For more information, see Conditional Access Target resources: Microsoft Admin Portals
     - `[IncludeAuthenticationContextClassReferences <String- `[]`>]`: Authentication context class references include.
 Supported values are c1 through c25.
     - `[IncludeUserActions <String- `[]`>]`: User actions to include.
@@ -564,6 +565,7 @@ Cannot be set if deviceFIlter is set.
     - `[IncludeDevices <String- `[]`>]`: States in the scope of the policy.
 All is the only allowed value.
 Cannot be set if deviceFilter is set.
+  - `[InsiderRiskLevels <String>]`: conditionalAccessInsiderRiskLevels
   - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeLocations <String- `[]`>]`: Location IDs excluded from scope of policy.

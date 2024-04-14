@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDriveListContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a content type
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumn?view=graph-powershell-1.0)
@@ -66,7 +66,7 @@ New-MgBetaDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Add a column to a \[content type\]\[contentType\] in a site or list by specifying a \[columnDefinition\]\[columnDefinition\].
+Create columnDefinition for a content type
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]

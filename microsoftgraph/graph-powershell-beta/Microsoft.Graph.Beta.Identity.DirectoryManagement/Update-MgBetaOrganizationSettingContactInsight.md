@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabledInOrganization
-true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 
@@ -278,7 +278,7 @@ Read-only.
   - `[DisabledForGroup <String>]`: The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
-  - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions.
+  - `[IsEnabledInOrganization <Boolean?>]`: true if insights of the specified type are enabled for the organization; false if insights of the specified type are disabled for all users without exceptions.
 Default is true.
 Optional.
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserDriveBundleContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Get content for the navigation property bundles from users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveBundleContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaUserDriveBundleContent -InputObject <IFilesIdentity> [-Format <String>
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Get content for the navigation property bundles from users
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-list-permissions.md)]

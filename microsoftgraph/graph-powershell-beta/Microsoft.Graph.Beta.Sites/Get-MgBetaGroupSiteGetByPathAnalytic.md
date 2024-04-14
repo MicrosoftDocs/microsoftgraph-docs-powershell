@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteGetByPathAnalytic
 
 ## SYNOPSIS
-Analytics about the view activities that took place in this site.
+Analytics about the view activities that took place on this site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathAnalytic?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Get-MgBetaGroupSiteGetByPathAnalytic -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Analytics about the view activities that took place in this site.
+Analytics about the view activities that took place on this site.
 
 ## PARAMETERS
 

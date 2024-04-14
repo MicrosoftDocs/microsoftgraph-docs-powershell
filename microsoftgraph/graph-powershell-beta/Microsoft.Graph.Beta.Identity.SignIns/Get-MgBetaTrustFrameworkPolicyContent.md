@@ -14,16 +14,16 @@ Get media content for the navigation property policies from trustFramework
 
 ### Get (Default)
 ```
-Get-MgBetaTrustFrameworkPolicyContent -TrustFrameworkPolicyId <String> [-Format <String>] -OutFile <String>
+Get-MgBetaTrustFrameworkPolicyContent -TrustFrameworkPolicyId <String> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> [-Format <String>]
- -OutFile <String> [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru]
- [-ProgressAction <ActionPreference>] [<CommonParameters>]
+Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> -OutFile <String>
+ [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,21 +33,6 @@ Get media content for the navigation property policies from trustFramework
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Headers
 Optional headers that will be added to the request.

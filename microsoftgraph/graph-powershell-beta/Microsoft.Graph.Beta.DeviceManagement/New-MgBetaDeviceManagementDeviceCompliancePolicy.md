@@ -276,7 +276,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledActionsForRule
-The list of scheduled action for this rule
+The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
 To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
@@ -450,7 +451,8 @@ Read-only.
   - `[DisplayName <String>]`: Admin provided name of the device configuration.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
-  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action for this rule
+  - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>]`: The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
@@ -525,7 +527,8 @@ Read-only.
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action for this rule
+SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule- `[]`>: The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.

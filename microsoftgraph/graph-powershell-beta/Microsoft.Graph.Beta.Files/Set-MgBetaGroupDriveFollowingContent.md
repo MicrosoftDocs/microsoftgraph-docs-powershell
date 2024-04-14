@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgBetaGroupDriveFollowingContent
 
 ## SYNOPSIS
-The content stream, if the item represents a file.
+Update content for the navigation property following in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Set-MgGroupDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveFollowingContent?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Set-MgBetaGroupDriveFollowingContent -InputObject <IFilesIdentity> [-Data <Strea
 ```
 
 ## DESCRIPTION
-The content stream, if the item represents a file.
+Update content for the navigation property following in groups
 
 ## PARAMETERS
 

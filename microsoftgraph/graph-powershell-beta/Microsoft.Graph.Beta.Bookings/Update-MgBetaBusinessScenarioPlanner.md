@@ -285,10 +285,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created.
@@ -380,7 +379,7 @@ The format is defined as outlined here.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BucketId <String>]`: Bucket ID to which the task belongs.
 The bucket needs to be in the plan that the task is in.
-It is 28 characters long and case-sensitive.
+It's 28 characters long and case-sensitive.
 Format validation is done on the service.
     - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -438,7 +437,8 @@ Read-only.
           - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
         - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[RequiredForms <String- `[]`>]`: 
+          - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
       - `[Description <String>]`: Description of the task.
       - `[Forms <IMicrosoftGraphPlannerFormsDictionary>]`: plannerFormsDictionary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -455,17 +455,22 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[HasDescription <Boolean?>]`: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
     - `[IsArchived <Boolean?>]`: 
-    - `[IsOnMyDay <Boolean?>]`: 
-    - `[IsOnMyDayLastModifiedDate <DateTime?>]`: 
+    - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
+true to show the task.
+Otherwise, false.
+    - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
+The date on which task is added to or removed from MyDay.
     - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
     - `[PercentComplete <Int32?>]`: Percentage of task completion.
 When set to 100, the task is considered completed.
     - `[PlanId <String>]`: Plan ID to which the task belongs.
     - `[PreviewType <String>]`: plannerPreviewType
-    - `[Priority <Int32?>]`: Priority of the task.
-Valid range of values is between 0 and 10 (inclusive), with increasing value being lower priority (0 has the highest priority and 10 has the lowest priority). 
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'. 
+    - `[Priority <Int32?>]`: The priority of the task.
+Valid values are between 0 and 10, inclusive.
+Larger values indicate lower priority.
+For example, 0 has the highest priority and 10 has the lowest priority.
+Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
 Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
     - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -554,12 +559,13 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+  - `[Email <String>]`: Alternate key of virtualEventRegistration
   - `[JoinWebUrl <String>]`: Alternate key of virtualEventSession
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
   - `[Role <String>]`: Usage: role='{role}'
   - `[UniqueName <String>]`: Alternate key of businessScenario
-  - `[UserId <String>]`: Usage: userId='{userId}'
+  - `[UserId <String>]`: Alternate key of virtualEventRegistration
   - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
   - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
   - `[VirtualEventRegistrationId <String>]`: The unique identifier of virtualEventRegistration
@@ -578,10 +584,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created.
@@ -664,10 +669,9 @@ TASKS <IMicrosoftGraphBusinessScenarioTask- `[]`>: The Planner tasks for the sce
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -685,7 +689,7 @@ The format is defined as outlined here.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BucketId <String>]`: Bucket ID to which the task belongs.
 The bucket needs to be in the plan that the task is in.
-It is 28 characters long and case-sensitive.
+It's 28 characters long and case-sensitive.
 Format validation is done on the service.
   - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -743,7 +747,8 @@ Read-only.
         - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
       - `[FormsRequirement <IMicrosoftGraphPlannerFormsRequirement>]`: plannerFormsRequirement
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[RequiredForms <String- `[]`>]`: 
+        - `[RequiredForms <String- `[]`>]`: Read-only.
+A collection of keys from the plannerFormsDictionary that identify the plannerFormReference objects that specify the requirements to complete the plannerTask.
     - `[Description <String>]`: Description of the task.
     - `[Forms <IMicrosoftGraphPlannerFormsDictionary>]`: plannerFormsDictionary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -760,17 +765,22 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[HasDescription <Boolean?>]`: Read-only.
 Value is true if the details object of the task has a nonempty description and false otherwise.
   - `[IsArchived <Boolean?>]`: 
-  - `[IsOnMyDay <Boolean?>]`: 
-  - `[IsOnMyDayLastModifiedDate <DateTime?>]`: 
+  - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
+true to show the task.
+Otherwise, false.
+  - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
+The date on which task is added to or removed from MyDay.
   - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
 The format is defined as outlined here.
   - `[PercentComplete <Int32?>]`: Percentage of task completion.
 When set to 100, the task is considered completed.
   - `[PlanId <String>]`: Plan ID to which the task belongs.
   - `[PreviewType <String>]`: plannerPreviewType
-  - `[Priority <Int32?>]`: Priority of the task.
-Valid range of values is between 0 and 10 (inclusive), with increasing value being lower priority (0 has the highest priority and 10 has the lowest priority). 
-Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'. 
+  - `[Priority <Int32?>]`: The priority of the task.
+Valid values are between 0 and 10, inclusive.
+Larger values indicate lower priority.
+For example, 0 has the highest priority and 10 has the lowest priority.
+Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.
 Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
   - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

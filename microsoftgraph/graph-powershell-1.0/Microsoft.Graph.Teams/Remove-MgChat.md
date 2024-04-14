@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgChat
 
 ## SYNOPSIS
-Delete entity from chats
+Soft-delete a chat.
+When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
@@ -29,7 +30,11 @@ Remove-MgChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Delete entity from chats
+Soft-delete a chat.
+When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet

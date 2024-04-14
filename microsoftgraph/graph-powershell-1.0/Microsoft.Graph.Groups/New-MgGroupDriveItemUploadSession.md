@@ -259,7 +259,11 @@ BODYPARAMETER `<IPathsPpp20NGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftG
     - `[Description <String>]`: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
-    - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
+    - `[DriveItemSource <IMicrosoftGraphDriveItemSource>]`: driveItemSource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <String>]`: driveItemSourceApplication
+      - `[ExternalId <String>]`: The external identifier for the drive item from the source.
+    - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check before uploading.
 Only on OneDrive Personal.
     - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -267,11 +271,15 @@ Only on OneDrive Personal.
       - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
 Available for the recent file list only.
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+    - `[MediaSource <IMicrosoftGraphMediaSource>]`: mediaSource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ContentCategory <String>]`: mediaSourceContentCategory
     - `[Name <String>]`: The name of the item (filename and extension).
 Read-write.
 
 INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
   - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
@@ -287,6 +295,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
   - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
@@ -308,13 +318,18 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UniqueName <String>]`: Alternate key of group
   - `[User <String>]`: Usage: User='{User}'
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
 ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item.
 Read-write.
 Only on OneDrive Personal.
-  - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload.
+  - `[DriveItemSource <IMicrosoftGraphDriveItemSource>]`: driveItemSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <String>]`: driveItemSourceApplication
+    - `[ExternalId <String>]`: The external identifier for the drive item from the source.
+  - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check before uploading.
 Only on OneDrive Personal.
   - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -322,6 +337,9 @@ Only on OneDrive Personal.
     - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed.
 Available for the recent file list only.
     - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+  - `[MediaSource <IMicrosoftGraphMediaSource>]`: mediaSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentCategory <String>]`: mediaSourceContentCategory
   - `[Name <String>]`: The name of the item (filename and extension).
 Read-write.
 

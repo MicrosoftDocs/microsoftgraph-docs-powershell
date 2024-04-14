@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchBookmark
 
 ## SYNOPSIS
-Get bookmarks from search
+Read the properties and relationships of a bookmark object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
@@ -37,7 +37,10 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get bookmarks from search
+Read the properties and relationships of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-get-permissions.md)]
 
 ## PARAMETERS
 

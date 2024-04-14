@@ -17,14 +17,13 @@ Get media content for the navigation property photo from groups
 
 ### Get (Default)
 ```
-Get-MgBetaGroupTeamPhotoContent -GroupId <String> [-Format <String>] -OutFile <String>
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
- [<CommonParameters>]
+Get-MgBetaGroupTeamPhotoContent -GroupId <String> -OutFile <String> [-ResponseHeadersVariable <String>]
+ [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>] -OutFile <String>
+Get-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String>
  [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PassThru] [-ProgressAction <ActionPreference>]
  [<CommonParameters>]
 ```
@@ -33,21 +32,6 @@ Get-MgBetaGroupTeamPhotoContent -InputObject <ITeamsIdentity> [-Format <String>]
 Get media content for the navigation property photo from groups
 
 ## PARAMETERS
-
-### -Format
-Format of the content
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -GroupId
 The unique identifier of group

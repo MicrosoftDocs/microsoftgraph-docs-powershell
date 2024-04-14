@@ -140,7 +140,13 @@ Locale: en-US
 ### [Get-MgBetaPlaceAsRoomListRoom](Get-MgBetaPlaceAsRoomListRoom.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaPlaceAsRoomListRoomCount](Get-MgBetaPlaceAsRoomListRoomCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaPlaceAsRoomListWorkspace](Get-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaPlaceAsRoomListWorkspaceCount](Get-MgBetaPlaceAsRoomListWorkspaceCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCount](Get-MgBetaPlaceCount.md)
@@ -150,12 +156,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaPlaceCountAsRoomList](Get-MgBetaPlaceCountAsRoomList.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaPlaceRoomCount](Get-MgBetaPlaceRoomCount.md)
-{{ Fill in the Description }}
-
-### [Get-MgBetaPlaceWorkspaceCount](Get-MgBetaPlaceWorkspaceCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaUserCalendar](Get-MgBetaUserCalendar.md)
@@ -440,6 +440,9 @@ Locale: en-US
 ### [Remove-MgBetaPlaceAsRoomListWorkspace](Remove-MgBetaPlaceAsRoomListWorkspace.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaPlaceByPlaceId](Remove-MgBetaPlaceByPlaceId.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserCalendarGroup](Remove-MgBetaUserCalendarGroup.md)
 {{ Fill in the Description }}
 
@@ -510,6 +513,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaPlaceAsRoomListWorkspace](Update-MgBetaPlaceAsRoomListWorkspace.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaPlaceByPlaceId](Update-MgBetaPlaceByPlaceId.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaUserCalendarGroup](Update-MgBetaUserCalendarGroup.md)
