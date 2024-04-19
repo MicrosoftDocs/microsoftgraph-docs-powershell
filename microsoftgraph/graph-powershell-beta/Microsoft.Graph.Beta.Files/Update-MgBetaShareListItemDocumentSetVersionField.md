@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property fields in shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemDocumentSetVersionField?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -313,6 +316,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgShareListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemdocumentsetversionfield)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignmentsettings-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -325,6 +331,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting)
 

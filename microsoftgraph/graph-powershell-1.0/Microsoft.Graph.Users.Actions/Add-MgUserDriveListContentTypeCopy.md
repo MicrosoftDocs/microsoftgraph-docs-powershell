@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserDriveListContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 
@@ -281,6 +287,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgBetaUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserDriveListContentTypeCopy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy)
 

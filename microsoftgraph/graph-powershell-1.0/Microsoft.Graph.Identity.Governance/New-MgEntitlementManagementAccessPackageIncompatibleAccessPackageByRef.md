@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -45,6 +48,9 @@ New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## DESCRIPTION
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-post-incompatibleaccesspackage-permissions.md)]
 
 ## EXAMPLES
 
@@ -322,6 +328,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref)
 

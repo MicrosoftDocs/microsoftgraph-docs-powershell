@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsId
 
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
 
 ## EXAMPLES
 
@@ -266,6 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytobyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyfeaturerolloutpolicyapplytobyref)
 

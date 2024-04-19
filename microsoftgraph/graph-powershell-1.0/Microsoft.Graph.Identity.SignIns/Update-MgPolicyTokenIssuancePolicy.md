@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a tokenIssuancePolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -Body
 
 ## DESCRIPTION
 Update the properties of a tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -398,6 +404,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy)
 

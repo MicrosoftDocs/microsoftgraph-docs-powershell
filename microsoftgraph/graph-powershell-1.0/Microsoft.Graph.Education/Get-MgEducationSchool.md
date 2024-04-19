@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -35,6 +38,9 @@ Get-MgEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of an educationSchool object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -306,6 +312,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschool)
 

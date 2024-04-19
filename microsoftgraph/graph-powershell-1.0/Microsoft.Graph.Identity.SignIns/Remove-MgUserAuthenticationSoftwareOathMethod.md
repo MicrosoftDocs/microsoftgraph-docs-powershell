@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a user's Software OATH token authentication method object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIden
 
 ## DESCRIPTION
 Delete a user's Software OATH token authentication method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/softwareoathauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -266,6 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationsoftwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationsoftwareoathmethod)
 

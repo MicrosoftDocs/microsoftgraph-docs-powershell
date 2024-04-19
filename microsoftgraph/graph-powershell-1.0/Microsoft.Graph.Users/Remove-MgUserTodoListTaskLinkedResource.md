@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a linkedResource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,9 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -258,6 +264,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource)
 

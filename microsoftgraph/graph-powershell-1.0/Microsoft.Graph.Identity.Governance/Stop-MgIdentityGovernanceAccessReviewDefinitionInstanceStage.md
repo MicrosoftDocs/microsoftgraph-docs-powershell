@@ -13,6 +13,9 @@ After the access review stage stops, the stage status will be Completed and the 
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -35,6 +38,9 @@ Stop an access review stage that is inProgress.
 After the access review stage stops, the stage status will be Completed and the reviewers can no longer give input.
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-stop-permissions.md)]
 
 ## EXAMPLES
 
@@ -284,6 +290,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewdefinitioninstancestage)
 

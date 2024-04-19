@@ -24,6 +24,9 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -Access
 Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
 To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-list-accesspackageresources-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

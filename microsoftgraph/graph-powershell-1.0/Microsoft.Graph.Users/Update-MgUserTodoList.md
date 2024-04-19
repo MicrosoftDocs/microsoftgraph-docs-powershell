@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a todoTaskList object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -44,6 +47,9 @@ Update-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotasklist-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -587,6 +593,7 @@ Required.
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
+[Update-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolist)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a deviceConfigurationDeviceStatus.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -269,6 +272,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatus)
 

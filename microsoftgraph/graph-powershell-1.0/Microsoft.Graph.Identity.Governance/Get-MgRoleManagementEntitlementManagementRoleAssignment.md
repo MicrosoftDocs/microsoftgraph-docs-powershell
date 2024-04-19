@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignment-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -364,6 +370,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignment)
 

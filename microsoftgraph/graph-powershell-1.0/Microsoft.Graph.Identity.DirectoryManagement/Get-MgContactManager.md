@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get this organizational contact's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -189,6 +192,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager)
 

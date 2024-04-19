@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new activityBasedTimeoutPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,6 +31,9 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-ResponseHead
 
 ## DESCRIPTION
 Create a new activityBasedTimeoutPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies-permissions.md)]
 
 ## EXAMPLES
 
@@ -291,6 +297,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy)
 

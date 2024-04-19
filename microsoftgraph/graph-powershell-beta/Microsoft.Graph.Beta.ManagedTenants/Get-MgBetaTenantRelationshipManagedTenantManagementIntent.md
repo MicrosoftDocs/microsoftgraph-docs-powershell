@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 ## DESCRIPTION
 Read the properties and relationships of a managementIntent object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementintent-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

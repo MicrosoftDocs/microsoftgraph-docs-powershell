@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of an application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgApplicationByUniqueName -InputObject <IApplicationsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -191,6 +197,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationbyuniquename)
 

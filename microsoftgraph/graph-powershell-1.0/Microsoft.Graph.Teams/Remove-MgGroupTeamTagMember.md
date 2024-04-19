@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a member from a standard tag in a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -266,6 +272,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember)
 

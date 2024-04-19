@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property root from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 
 ## DESCRIPTION
 Get content for the navigation property root from drives
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -211,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootcontent)
 

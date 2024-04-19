@@ -12,6 +12,9 @@ The user (or application) that created the group.
 NOTE: This is not set if the user is an administrator.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -217,6 +220,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCreatedOnBehalfOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof)
 

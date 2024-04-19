@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -65,6 +68,9 @@ Update-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -1280,6 +1286,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[Update-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumn)
 

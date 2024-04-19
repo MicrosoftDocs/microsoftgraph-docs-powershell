@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of section groups from the specified notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -21,6 +24,9 @@ Get-MgBetaSiteOnenoteNotebookSectionGroup -NotebookId <String> -SiteId <String> 
 
 ## DESCRIPTION
 Retrieve a list of section groups from the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sectiongroups-permissions.md)]
 
 ## EXAMPLES
 
@@ -274,6 +280,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroup)
 

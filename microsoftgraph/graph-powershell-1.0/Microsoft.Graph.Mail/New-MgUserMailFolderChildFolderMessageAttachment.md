@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -48,6 +51,9 @@ New-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
 ## DESCRIPTION
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/eventmessage-post-attachments-permissions.md)]
 
 ## EXAMPLES
 
@@ -381,6 +387,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageattachment)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new filePlanReferenceTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,6 +31,9 @@ New-MgBetaSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHe
 
 ## DESCRIPTION
 Create a new filePlanReferenceTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-fileplanreferences-permissions.md)]
 
 ## EXAMPLES
 
@@ -240,6 +246,7 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference)
 

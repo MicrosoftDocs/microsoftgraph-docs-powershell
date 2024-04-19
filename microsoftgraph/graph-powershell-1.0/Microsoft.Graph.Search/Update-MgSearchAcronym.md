@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an acronym object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchAcronym?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Update the properties of an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -386,6 +392,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchacronym)
 

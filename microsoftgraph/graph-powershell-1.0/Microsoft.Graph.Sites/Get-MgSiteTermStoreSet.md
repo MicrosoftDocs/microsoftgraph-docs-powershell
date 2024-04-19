@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -58,6 +61,9 @@ Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 
 ## DESCRIPTION
 Read the properties and relationships of a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -389,6 +395,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset)
 

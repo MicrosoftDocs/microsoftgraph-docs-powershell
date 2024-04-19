@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -64,6 +67,9 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-post-columns-permissions.md)]
 
 ## EXAMPLES
 
@@ -1290,6 +1296,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[New-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn)
 

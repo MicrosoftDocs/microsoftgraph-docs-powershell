@@ -14,6 +14,9 @@ If you want to remove a mobile number from a user that also has an alternateMobi
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
 Have the user change their default authentication method, and then delete the number.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -36,6 +39,9 @@ Remember that a user may not have an alternateMobile number without a mobile num
 If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
 If the phone number is the user's default Azure multifactor authentication (MFA) authentication method, it cannot be deleted.
 Have the user change their default authentication method, and then delete the number.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/phoneauthenticationmethod-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -297,6 +303,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationphonemethod)
 

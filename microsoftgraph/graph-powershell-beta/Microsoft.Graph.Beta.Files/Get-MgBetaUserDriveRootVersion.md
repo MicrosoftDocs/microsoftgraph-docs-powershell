@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a DriveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaUserDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -355,6 +361,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootversion)
 

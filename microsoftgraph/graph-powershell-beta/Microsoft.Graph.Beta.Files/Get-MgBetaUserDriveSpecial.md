@@ -14,6 +14,9 @@ If a special folder is renamed or moved to another location within the drive, th
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveSpecial?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -44,6 +47,9 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
 If a user deletes one, it is recreated when written to again.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-get-specialfolder-permissions.md)]
 
 ## EXAMPLES
 
@@ -363,6 +369,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveSpecial?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecial](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivespecial)
 

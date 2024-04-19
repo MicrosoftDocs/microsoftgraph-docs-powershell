@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgSecurityCaseEdiscoveryCaseCustodian
 
 ## SYNOPSIS
 Create a new ediscoveryCustodian object.After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -52,6 +56,9 @@ New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoveryCustodian object.After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-post-custodians-permissions.md)]
 
 ## EXAMPLES
 
@@ -14656,6 +14663,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasecustodian)
 

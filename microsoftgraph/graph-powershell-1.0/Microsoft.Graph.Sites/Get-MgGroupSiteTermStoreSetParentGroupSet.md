@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 All sets under the group in a term \[store\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -422,6 +425,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreSetParentGroupSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoresetparentgroupset)
 

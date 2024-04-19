@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Validate that the credentials are valid in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -48,6 +51,9 @@ Test-MgBetaApplicationSynchronizationJobCredential -InputObject <IApplicationsId
 
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-validatecredentials-permissions.md)]
 
 ## EXAMPLES
 
@@ -357,6 +363,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential)
 

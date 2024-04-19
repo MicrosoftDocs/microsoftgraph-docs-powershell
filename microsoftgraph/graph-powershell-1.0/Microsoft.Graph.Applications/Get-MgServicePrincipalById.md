@@ -12,6 +12,9 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -33,6 +36,9 @@ Get-MgServicePrincipalById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 
@@ -207,6 +213,7 @@ BODYPARAMETER `<IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestb
   - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
+[Get-MgBetaServicePrincipalById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalbyid)
 

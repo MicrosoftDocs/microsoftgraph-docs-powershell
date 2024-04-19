@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new androidManagedAppRegistration object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -482,6 +485,7 @@ Read-only.
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
+[New-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistration)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a list of rich long-running operations associated with a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -36,6 +39,9 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get a list of rich long-running operations associated with a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/list-list-operations-permissions.md)]
 
 ## EXAMPLES
 
@@ -370,6 +376,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelist)
 

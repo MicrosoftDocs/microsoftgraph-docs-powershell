@@ -49,6 +49,9 @@ Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 Update the properties of an authenticationEventsFlow object.
 Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

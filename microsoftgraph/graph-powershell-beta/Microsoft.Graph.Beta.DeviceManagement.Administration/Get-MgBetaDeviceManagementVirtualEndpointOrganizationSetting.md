@@ -23,6 +23,9 @@ Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <S
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
 A tenant has only one cloudPcOrganizationSettings object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcorganizationsettings-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

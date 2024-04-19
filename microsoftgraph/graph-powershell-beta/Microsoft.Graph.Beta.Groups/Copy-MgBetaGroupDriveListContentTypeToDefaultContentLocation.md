@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -47,6 +50,9 @@ Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation -InputObject <IGrou
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 
@@ -403,6 +409,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Copy-MgGroupDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/copy-mgbetagroupdrivelistcontenttypetodefaultcontentlocation)
 

@@ -47,6 +47,9 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 ## DESCRIPTION
 Update the properties of a tenantCustomizedInformation object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantcustomizedinformation-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

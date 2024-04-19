@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalGroupMember object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -42,6 +45,9 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 
 ## DESCRIPTION
 Create a new externalGroupMember object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -312,6 +318,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroupmember)
 

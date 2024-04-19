@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the specified bookingCustomQuestion object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -42,6 +45,9 @@ Remove-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-If
 
 ## DESCRIPTION
 Delete the specified bookingCustomQuestion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -247,6 +253,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomquestion)
 

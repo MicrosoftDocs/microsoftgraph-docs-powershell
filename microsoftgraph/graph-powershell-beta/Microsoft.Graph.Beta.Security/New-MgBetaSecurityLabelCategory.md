@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new categoryTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,6 +32,9 @@ New-MgBetaSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryT
 
 ## DESCRIPTION
 Create a new categoryTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-categories-permissions.md)]
 
 ## EXAMPLES
 
@@ -300,6 +306,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory)
 

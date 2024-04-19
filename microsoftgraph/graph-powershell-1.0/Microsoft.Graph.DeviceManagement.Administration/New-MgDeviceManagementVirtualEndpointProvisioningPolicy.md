@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new cloudPcProvisioningPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -34,6 +37,9 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## DESCRIPTION
 Create a new cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualendpoint-post-provisioningpolicies-permissions.md)]
 
 ## EXAMPLES
 
@@ -9934,6 +9940,7 @@ WINDOWSSETTING `<IMicrosoftGraphCloudPcWindowsSetting>`: cloudPcWindowsSetting
 The default value is en-US, which corresponds to English (United States).
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy)
 

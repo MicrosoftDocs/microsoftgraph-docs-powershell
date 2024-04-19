@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[contentType\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1894,6 +1897,7 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[New-MgBetaSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathcontenttype)
 

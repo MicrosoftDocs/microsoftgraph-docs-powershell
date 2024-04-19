@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveRoot?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -44,6 +47,9 @@ Restore-MgBetaUserDriveRoot -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -369,6 +375,7 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+[Restore-MgUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveroot)
 

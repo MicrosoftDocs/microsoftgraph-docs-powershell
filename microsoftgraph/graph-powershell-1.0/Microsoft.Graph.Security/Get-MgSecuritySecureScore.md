@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a secureScore object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a secureScore object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescore-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -354,6 +360,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore)
 

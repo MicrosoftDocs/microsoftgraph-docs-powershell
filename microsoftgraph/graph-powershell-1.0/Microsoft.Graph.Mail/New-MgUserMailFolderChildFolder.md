@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -54,6 +57,9 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Use this API to create a new child mailFolder.
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-post-childfolders-permissions.md)]
 
 ## EXAMPLES
 
@@ -960,6 +966,7 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfolder)
 

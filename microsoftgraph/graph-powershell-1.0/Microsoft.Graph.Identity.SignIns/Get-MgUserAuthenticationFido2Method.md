@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-Ex
 
 ## DESCRIPTION
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -365,6 +371,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2method)
 

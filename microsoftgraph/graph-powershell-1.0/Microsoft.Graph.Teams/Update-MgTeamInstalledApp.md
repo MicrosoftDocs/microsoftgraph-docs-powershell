@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Upgrade an app installation within a chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpgradeExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgTeamInstalledApp -InputObject <ITeamsIdentity>
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-teamsappinstallation-upgrade-permissions.md)]
 
 ## EXAMPLES
 
@@ -308,6 +314,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteaminstalledapp)
 

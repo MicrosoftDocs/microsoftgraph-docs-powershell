@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an event object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -74,6 +77,9 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update an event object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-update-event-permissions.md)]
 
 ## EXAMPLES
 
@@ -1977,6 +1983,7 @@ START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
+[Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
 

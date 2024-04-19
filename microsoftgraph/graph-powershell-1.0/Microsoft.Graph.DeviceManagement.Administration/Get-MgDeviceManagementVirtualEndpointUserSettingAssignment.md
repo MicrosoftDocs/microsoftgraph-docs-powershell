@@ -12,6 +12,9 @@ Represents the set of Microsoft 365 groups and security groups in Microsoft Entr
 Returned only on $expand.
 For an example, see Get cloudPcUserSetting.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -343,6 +346,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointusersettingassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointusersettingassignment)
 

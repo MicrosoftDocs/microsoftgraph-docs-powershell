@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an acronym object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchAcronym?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 
 ## DESCRIPTION
 Delete an acronym object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -208,6 +214,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Remove-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
 

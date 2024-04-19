@@ -12,6 +12,9 @@ Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -48,6 +51,9 @@ New-MgBetaUserTodoListTaskAttachment -InputObject <IUsersIdentity>
 Add a new taskFileAttachment object to a todoTask.
 This operation limits the size of the attachment you can add to under 3 MB.
 If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-attachments-permissions.md)]
 
 ## EXAMPLES
 
@@ -371,6 +377,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[New-MgUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskattachment)
 

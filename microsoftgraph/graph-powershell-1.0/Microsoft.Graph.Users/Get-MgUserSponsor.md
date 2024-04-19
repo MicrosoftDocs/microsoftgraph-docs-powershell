@@ -12,6 +12,9 @@ The users and groups responsible for this guest user's privileges in the tenant 
 (HTTP Methods: GET, POST, DELETE.).
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,6 +334,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgBetaUserSponsor](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSponsor?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersponsor)
 

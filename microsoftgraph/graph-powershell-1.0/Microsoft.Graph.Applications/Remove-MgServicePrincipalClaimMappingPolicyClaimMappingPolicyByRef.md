@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a claimsMappingPolicy from a servicePrincipal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -237,6 +240,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref)
 

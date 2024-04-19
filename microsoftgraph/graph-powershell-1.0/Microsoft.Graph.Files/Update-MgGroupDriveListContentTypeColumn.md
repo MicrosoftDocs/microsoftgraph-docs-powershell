@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentTypeColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -64,6 +67,9 @@ Update-MgGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -1294,6 +1300,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelistcontenttypecolumn)
 

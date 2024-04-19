@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -250,6 +253,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorcitationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptorcitationtemplate)
 

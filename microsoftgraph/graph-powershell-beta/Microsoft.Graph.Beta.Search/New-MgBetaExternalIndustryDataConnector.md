@@ -29,6 +29,9 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create a new industryDataConnector object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-post-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

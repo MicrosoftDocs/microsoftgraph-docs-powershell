@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new browserSharedCookie object in a browserSiteList.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Create a new browserSharedCookie object in a browserSiteList.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersitelist-post-sharedcookies-permissions.md)]
 
 ## EXAMPLES
 
@@ -539,6 +545,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an access package from the list of access packages that have been marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,9 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## DESCRIPTION
 Remove an access package from the list of access packages that have been marked as incompatible on an accessPackage.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackage-delete-incompatibleaccesspackage-permissions.md)]
 
 ## EXAMPLES
 
@@ -279,6 +285,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageincompatibleaccesspackagebyref)
 

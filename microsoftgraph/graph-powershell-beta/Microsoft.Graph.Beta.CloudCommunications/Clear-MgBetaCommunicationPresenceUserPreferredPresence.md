@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Clear the preferred availability and activity status for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgCommunicationPresenceUserPreferredPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Clear (Default)
@@ -28,6 +31,9 @@ Clear-MgBetaCommunicationPresenceUserPreferredPresence -InputObject <ICloudCommu
 
 ## DESCRIPTION
 Clear the preferred availability and activity status for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-clearuserpreferredpresence-permissions.md)]
 
 ## EXAMPLES
 
@@ -203,6 +209,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Clear-MgCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgCommunicationPresenceUserPreferredPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/clear-mgbetacommunicationpresenceuserpreferredpresence)
 

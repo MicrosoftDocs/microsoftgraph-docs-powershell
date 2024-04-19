@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new OneNote notebook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create a new OneNote notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenote-post-notebooks-permissions.md)]
 
 ## EXAMPLES
 
@@ -831,6 +837,7 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetasiteonenotenotebook)
 

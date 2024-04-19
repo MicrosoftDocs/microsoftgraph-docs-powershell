@@ -29,6 +29,9 @@ Get-MgBetaVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventregistration-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

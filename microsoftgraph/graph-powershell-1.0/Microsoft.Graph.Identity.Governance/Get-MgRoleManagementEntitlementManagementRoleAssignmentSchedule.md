@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the schedule for an active role assignment operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject <II
 
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleassignmentschedule-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -364,6 +370,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleassignmentschedule)
 

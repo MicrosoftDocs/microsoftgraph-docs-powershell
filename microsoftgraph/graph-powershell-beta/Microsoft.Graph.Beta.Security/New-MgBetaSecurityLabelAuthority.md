@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new authorityTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelAuthority?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,6 +30,9 @@ New-MgBetaSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVar
 
 ## DESCRIPTION
 Create a new authorityTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
 
 ## EXAMPLES
 
@@ -239,6 +245,7 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelauthority)
 

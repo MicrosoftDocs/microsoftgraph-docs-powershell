@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Creates a new groupLifecyclePolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -59,6 +62,9 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy>
 
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]
 
 ## EXAMPLES
 
@@ -351,6 +357,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy)
 

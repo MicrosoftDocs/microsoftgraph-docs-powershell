@@ -21,6 +21,9 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpccrosscloudgovernmentorganizationmapping-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

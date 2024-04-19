@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a set object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -83,6 +86,9 @@ Update-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Update the properties of a set object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -736,6 +742,7 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset)
 

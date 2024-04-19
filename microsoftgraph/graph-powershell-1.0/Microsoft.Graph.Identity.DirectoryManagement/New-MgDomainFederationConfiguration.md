@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -52,6 +55,9 @@ New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 
 ## DESCRIPTION
 Create a new internalDomainFederation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-post-federationconfiguration-permissions.md)]
 
 ## EXAMPLES
 
@@ -524,6 +530,7 @@ For a list of statuses, see certificateUpdateResult status.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration)
 

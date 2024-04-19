@@ -13,6 +13,9 @@ Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -64,6 +67,9 @@ Update an educationAssignment object.
 Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -881,6 +887,7 @@ Read-only.
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment)
 

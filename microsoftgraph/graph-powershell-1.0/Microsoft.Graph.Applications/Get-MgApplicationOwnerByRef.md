@@ -13,6 +13,9 @@ Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -27,6 +30,9 @@ Directory objects that are owners of the application.
 Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-list-owners-permissions.md)]
 
 ## EXAMPLES
 
@@ -251,6 +257,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationownerbyref)
 

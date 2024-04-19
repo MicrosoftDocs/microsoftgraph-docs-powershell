@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationClass object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -36,6 +39,9 @@ New-MgEducationClass -BodyParameter <IMicrosoftGraphEducationClass> [-ResponseHe
 
 ## DESCRIPTION
 Create a new educationClass object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -25444,6 +25450,7 @@ TERM `<IMicrosoftGraphEducationTerm>`: educationTerm
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
+[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclass)
 

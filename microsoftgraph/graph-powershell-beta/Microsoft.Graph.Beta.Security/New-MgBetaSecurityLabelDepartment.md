@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new departmentTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -27,6 +30,9 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 
 ## DESCRIPTION
 Create a new departmentTemplate object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-departments-permissions.md)]
 
 ## EXAMPLES
 
@@ -239,6 +245,7 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
 

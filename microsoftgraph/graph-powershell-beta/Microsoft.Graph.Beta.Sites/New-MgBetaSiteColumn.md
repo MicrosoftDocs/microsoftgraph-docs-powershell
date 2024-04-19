@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition for a site
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -63,6 +66,9 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 
 ## DESCRIPTION
 Create columnDefinition for a site
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-post-columns-permissions.md)]
 
 ## EXAMPLES
 
@@ -1283,6 +1289,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitecolumn)
 

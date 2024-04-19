@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Checkout (Default)
@@ -28,6 +31,9 @@ Invoke-MgCheckoutGroupDriveItem -InputObject <IGroupsIdentity> [-ResponseHeaders
 
 ## DESCRIPTION
 Check out a driveItem resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkout-permissions.md)]
 
 ## EXAMPLES
 
@@ -252,6 +258,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem)
 

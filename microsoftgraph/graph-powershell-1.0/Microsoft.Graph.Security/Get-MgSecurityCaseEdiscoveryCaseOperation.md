@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseOperation
 
 ## SYNOPSIS
 Read the properties and relationships of a caseOperation object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Read the properties and relationships of a caseOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-caseoperation-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -369,6 +376,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation)
 

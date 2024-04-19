@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assignSensitivityLabel
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -324,6 +327,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgdriveitemsensitivitylabel)
 

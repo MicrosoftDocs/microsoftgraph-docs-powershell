@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property unbilled in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -177,6 +180,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Update-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbillingusageunbilled)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new mobileAppCategory object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -204,6 +207,7 @@ Read-only.
   - `[DisplayName <String>]`: The name of the app category.
 
 ## RELATED LINKS
+[New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappcategory)
 

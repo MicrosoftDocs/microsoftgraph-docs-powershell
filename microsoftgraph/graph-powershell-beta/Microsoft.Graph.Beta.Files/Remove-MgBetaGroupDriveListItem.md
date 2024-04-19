@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Removes an item from a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>
 
 ## DESCRIPTION
 Removes an item from a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -257,6 +263,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem)
 

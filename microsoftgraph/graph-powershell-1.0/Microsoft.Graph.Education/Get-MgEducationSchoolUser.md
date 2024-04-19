@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the educationUser resources associated with an educationSchool.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -21,6 +24,9 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 
 ## DESCRIPTION
 Get the educationUser resources associated with an educationSchool.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-users-permissions.md)]
 
 ## EXAMPLES
 
@@ -256,6 +262,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluser)
 

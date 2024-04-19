@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a bookmark object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -318,6 +324,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark)
 

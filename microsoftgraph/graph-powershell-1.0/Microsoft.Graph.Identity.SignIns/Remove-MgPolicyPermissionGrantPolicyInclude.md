@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,9 @@ Remove-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdenti
 
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the includes collection of a permissionGrantPolicy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-delete-includes-permissions.md)]
 
 ## EXAMPLES
 
@@ -266,6 +272,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyinclude)
 

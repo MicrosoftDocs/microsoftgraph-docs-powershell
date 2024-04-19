@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -250,6 +253,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldescriptor)
 

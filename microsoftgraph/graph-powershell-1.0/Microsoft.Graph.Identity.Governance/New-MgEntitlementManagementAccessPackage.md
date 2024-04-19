@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -35,6 +38,9 @@ New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPa
 ## DESCRIPTION
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-accesspackages-permissions.md)]
 
 ## EXAMPLES
 
@@ -29685,6 +29691,7 @@ Read-only.
   - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
 ## RELATED LINKS
+[New-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage)
 

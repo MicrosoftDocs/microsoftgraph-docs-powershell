@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of an authenticationMethod object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> [-Exp
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an authenticationMethod object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -388,6 +394,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete columnDefinition
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -257,6 +263,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistcontenttypecolumn)
 

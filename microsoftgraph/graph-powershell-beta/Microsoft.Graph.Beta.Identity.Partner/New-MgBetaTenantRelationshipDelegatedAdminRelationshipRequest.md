@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new delegatedAdminRelationshipRequest object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -44,6 +47,9 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminrelationship-post-requests-permissions.md)]
 
 ## EXAMPLES
 
@@ -312,6 +318,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
+[New-MgTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -32,6 +35,9 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Response
 
 ## DESCRIPTION
 Create a new educationSchool object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -15547,6 +15553,7 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
+[New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
 

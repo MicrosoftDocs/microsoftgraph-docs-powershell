@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a riskyUserHistoryItem object of a riskyUser.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get a riskyUserHistoryItem object of a riskyUser.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyuserhistoryitem-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -409,6 +415,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a cloudPcUserSetting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -50,6 +53,9 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -520,6 +526,7 @@ RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestor
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
 

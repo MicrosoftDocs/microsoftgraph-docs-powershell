@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSharePointActivityUserCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,6 +196,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property filesFolder in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelFileFolderContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -271,6 +274,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgGroupTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamChannelFileFolderContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetagroupteamchannelfilefoldercontent)
 

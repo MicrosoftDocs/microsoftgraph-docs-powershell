@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete plannerBucket.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Res
 
 ## DESCRIPTION
 Delete plannerBucket.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -201,6 +207,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket)
 

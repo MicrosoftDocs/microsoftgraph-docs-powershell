@@ -29,6 +29,9 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 ## DESCRIPTION
 Update the properties of an accessReviewPolicy object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

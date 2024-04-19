@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Notes/Set-MgGroupOnenotePageContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -248,6 +251,7 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Notes/Set-MgGroupOnenotePageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenotepagecontent)
 

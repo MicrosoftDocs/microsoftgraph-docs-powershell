@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a reminder to the reviewers of an active accessReviewInstance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Send (Default)
@@ -28,6 +31,9 @@ Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -InputObject <II
 
 ## DESCRIPTION
 Send a reminder to the reviewers of an active accessReviewInstance.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-sendreminder-permissions.md)]
 
 ## EXAMPLES
 
@@ -262,6 +268,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Send-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder)
 

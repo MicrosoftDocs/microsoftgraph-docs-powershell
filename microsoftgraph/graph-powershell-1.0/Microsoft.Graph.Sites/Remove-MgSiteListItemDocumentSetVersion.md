@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a version of a document set in a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMatch 
 
 ## DESCRIPTION
 Delete a version of a document set in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -284,6 +290,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemdocumentsetversion)
 

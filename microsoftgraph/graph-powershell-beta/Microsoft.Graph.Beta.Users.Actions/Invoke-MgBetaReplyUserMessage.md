@@ -15,6 +15,9 @@ When using MIME format:- Provide the applicable Internet message headers and the
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -56,6 +59,9 @@ Specifying both will return an HTTP 400 Bad Request error.* If the original mess
 When using MIME format:- Provide the applicable Internet message headers and the MIME content, all encoded in base64 format in the request body.- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the Sent Items folder.
 Alternatively, create a draft to reply to a message, and send it later.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/message-reply-permissions.md)]
 
 ## EXAMPLES
 
@@ -606,6 +612,7 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
 ## RELATED LINKS
+[Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyusermessage)
 

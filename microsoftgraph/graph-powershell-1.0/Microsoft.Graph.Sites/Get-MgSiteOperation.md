@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the status of a rich long-running operation on a site or a list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/richlongrunningoperation-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -355,6 +361,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation)
 

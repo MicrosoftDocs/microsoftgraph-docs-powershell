@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Get-MgBetaSchemaExtension
 
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -36,6 +40,9 @@ Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandPrope
 
 ## DESCRIPTION
 Get the properties of the specified schemaExtension definition.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -295,6 +302,7 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+[Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
 

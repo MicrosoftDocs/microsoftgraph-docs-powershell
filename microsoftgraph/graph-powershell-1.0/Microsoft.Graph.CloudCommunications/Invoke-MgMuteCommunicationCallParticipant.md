@@ -12,6 +12,9 @@ Mute a specific participant in the call.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCallParticipant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MuteExpanded (Default)
@@ -48,6 +51,9 @@ Invoke-MgMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 Mute a specific participant in the call.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 For more information about how to handle mute operations, see muteParticipantOperation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-mute-permissions.md)]
 
 ## EXAMPLES
 
@@ -270,6 +276,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaMuteCommunicationCallParticipant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -361,6 +367,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttype)
 

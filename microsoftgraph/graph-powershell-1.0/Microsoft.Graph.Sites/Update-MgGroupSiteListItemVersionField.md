@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property fields in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -338,6 +341,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversionfield)
 

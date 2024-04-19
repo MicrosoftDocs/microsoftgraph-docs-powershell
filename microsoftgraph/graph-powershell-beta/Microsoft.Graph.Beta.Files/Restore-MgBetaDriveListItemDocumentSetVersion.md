@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -28,6 +31,9 @@ Restore-MgBetaDriveListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Re
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -242,6 +248,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetadrivelistitemdocumentsetversion)
 

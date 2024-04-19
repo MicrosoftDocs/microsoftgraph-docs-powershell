@@ -11,6 +11,9 @@ schema: 2.0.0
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -28,6 +31,9 @@ Invoke-MgGraphGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Calling this method prevents the current user from receiving email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-unsubscribebymail-permissions.md)]
 
 ## EXAMPLES
 
@@ -221,6 +227,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroup)
 

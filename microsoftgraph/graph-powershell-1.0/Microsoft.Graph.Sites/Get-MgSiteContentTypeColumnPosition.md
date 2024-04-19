@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Column order information in a content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumnPosition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumnPosition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumnposition)
 

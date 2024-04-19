@@ -11,6 +11,9 @@ schema: 2.0.0
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -23,6 +26,9 @@ Get-MgBetaEducationMeAssignmentCategoryByRef -EducationAssignmentId <String> [-F
 ## DESCRIPTION
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
 
 ## EXAMPLES
 
@@ -235,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategoryByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategorybyref)
 

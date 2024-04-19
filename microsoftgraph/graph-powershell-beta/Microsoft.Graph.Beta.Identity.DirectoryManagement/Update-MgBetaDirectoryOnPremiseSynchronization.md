@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an onPremisesDirectorySynchronization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -46,6 +49,9 @@ Update-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesdirectorysynchronization-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -419,6 +425,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryonpremisesynchronization)
 

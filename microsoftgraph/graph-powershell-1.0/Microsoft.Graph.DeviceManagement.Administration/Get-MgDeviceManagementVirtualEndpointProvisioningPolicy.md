@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceMan
 
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcProvisioningPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcprovisioningpolicy-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -322,6 +328,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointprovisioningpolicy)
 

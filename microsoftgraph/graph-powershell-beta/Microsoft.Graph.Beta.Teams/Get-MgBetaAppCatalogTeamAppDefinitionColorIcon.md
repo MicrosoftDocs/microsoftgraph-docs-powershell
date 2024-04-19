@@ -29,6 +29,9 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 Retrieve a Teams app icon associated with a specific definition of an app.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

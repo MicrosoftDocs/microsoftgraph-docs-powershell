@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a user as a registered owner of the device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -43,6 +46,9 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 
 ## DESCRIPTION
 Add a user as a registered owner of the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-registeredowners-permissions.md)]
 
 ## EXAMPLES
 
@@ -277,6 +283,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref)
 

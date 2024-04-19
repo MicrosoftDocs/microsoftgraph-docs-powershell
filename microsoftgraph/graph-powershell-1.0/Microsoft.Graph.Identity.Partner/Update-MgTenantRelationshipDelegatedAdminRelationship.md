@@ -12,6 +12,9 @@ Update the properties of a delegatedAdminRelationship object.
 You can only update a relationship when it's in the created status.
 However, you can update the autoExtendDuration property when the relationship is in either the created or active status.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -58,6 +61,9 @@ Update-MgTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentityPar
 Update the properties of a delegatedAdminRelationship object.
 You can only update a relationship when it's in the created status.
 However, you can update the autoExtendDuration property when the relationship is in either the created or active status.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationship-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -587,6 +593,7 @@ Read-only.
   - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
 
 ## RELATED LINKS
+[Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/update-mgtenantrelationshipdelegatedadminrelationship)
 

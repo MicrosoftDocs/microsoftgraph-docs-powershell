@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the permission object on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -52,6 +55,9 @@ Update-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Update the permission object on a site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-update-permission-permissions.md)]
 
 ## EXAMPLES
 
@@ -721,6 +727,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[Update-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepermission)
 

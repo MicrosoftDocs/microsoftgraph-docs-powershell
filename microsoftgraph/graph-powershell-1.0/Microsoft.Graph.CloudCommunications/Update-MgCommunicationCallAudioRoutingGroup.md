@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Modify sources and receivers of an audioRoutingGroup.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -44,6 +47,9 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 
 ## DESCRIPTION
 Modify sources and receivers of an audioRoutingGroup.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/audioroutinggroup-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -324,6 +330,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallaudioroutinggroup)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a linkedResource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Read the properties and relationships of a linkedResource object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -357,6 +363,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresource)
 

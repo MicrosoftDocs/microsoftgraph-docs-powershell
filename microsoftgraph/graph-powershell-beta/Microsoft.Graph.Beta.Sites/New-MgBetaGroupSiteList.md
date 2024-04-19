@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new \[list\]\[\] in a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -58,6 +61,9 @@ New-MgBetaGroupSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Create a new \[list\]\[\] in a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-create-permissions.md)]
 
 ## EXAMPLES
 
@@ -46706,6 +46712,7 @@ Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[New-MgGroupSiteList](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitelist)
 

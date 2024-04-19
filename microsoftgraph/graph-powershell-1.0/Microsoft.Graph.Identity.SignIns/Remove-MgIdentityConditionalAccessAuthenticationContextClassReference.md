@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -29,6 +32,9 @@ Remove-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 
 ## DESCRIPTION
 Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -252,6 +258,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgidentityconditionalaccessauthenticationcontextclassreference)
 

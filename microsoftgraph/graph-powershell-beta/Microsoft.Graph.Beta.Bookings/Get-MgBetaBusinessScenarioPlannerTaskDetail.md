@@ -29,6 +29,9 @@ Get-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerTaskDetails object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -12,6 +12,9 @@ Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemLink?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -52,6 +55,9 @@ New-MgBetaDriveRootListItemLink -InputObject <IFilesIdentity>
 Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-createlink-permissions.md)]
 
 ## EXAMPLES
 
@@ -395,6 +401,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[New-MgDriveRootListItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemlink)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get webparts from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -403,6 +406,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
 

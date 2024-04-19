@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the schedule for a role eligibility operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObject <I
 
 ## DESCRIPTION
 Retrieve the schedule for a role eligibility operation.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedule-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -364,6 +370,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroleeligibilityschedule)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user as a registered owner of the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManageme
 
 ## DESCRIPTION
 Remove a user as a registered owner of the device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-registeredowners-permissions.md)]
 
 ## EXAMPLES
 
@@ -258,6 +264,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadeviceregisteredownerbyref)
 

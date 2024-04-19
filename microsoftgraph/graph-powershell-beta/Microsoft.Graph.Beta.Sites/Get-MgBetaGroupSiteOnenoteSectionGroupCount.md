@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -264,6 +267,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroupcount)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property departments in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -349,6 +352,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Update-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabeldepartment)
 

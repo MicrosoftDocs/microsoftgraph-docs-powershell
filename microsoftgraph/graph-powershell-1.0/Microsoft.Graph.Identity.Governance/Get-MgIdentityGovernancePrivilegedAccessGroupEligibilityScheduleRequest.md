@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -38,6 +41,9 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupeligibilityschedulerequest-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -366,6 +372,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
 

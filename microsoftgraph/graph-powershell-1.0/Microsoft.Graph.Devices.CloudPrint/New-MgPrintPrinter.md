@@ -12,6 +12,9 @@ Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -35,6 +38,9 @@ New-MgPrintPrinter
 Create (register) a printer with the Universal Print service.
 This is a long-running operation and as such, it returns a printerCreateOperation that can be used to track and verify the registration of the printer.
 For help creating the required Certificate Signing Request (CSR) for creating printer, see the CSR generation code sample.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printer-create-permissions.md)]
 
 ## EXAMPLES
 
@@ -317,6 +323,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprinter)
 

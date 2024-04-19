@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -73,6 +76,9 @@ Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ## DESCRIPTION
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -1368,6 +1374,7 @@ Read-only.
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the existing synchronization job and its properties.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/synchronization-synchronizationjob-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -346,6 +352,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjob)
 

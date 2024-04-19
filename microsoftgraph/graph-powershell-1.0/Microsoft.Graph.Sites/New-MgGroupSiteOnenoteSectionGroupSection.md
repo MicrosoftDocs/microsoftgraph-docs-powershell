@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new onenoteSection in the specified section group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -51,6 +54,9 @@ New-MgGroupSiteOnenoteSectionGroupSection -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Create a new onenoteSection in the specified section group.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sectiongroup-post-sections-permissions.md)]
 
 ## EXAMPLES
 
@@ -1075,6 +1081,7 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectiongroupsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotesectiongroupsection)
 

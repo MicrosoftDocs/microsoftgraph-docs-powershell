@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new customTaskExtension object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -33,6 +36,9 @@ New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 
 ## DESCRIPTION
 Create a new customTaskExtension object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-lifecycleworkflowscontainer-post-customtaskextensions-permissions.md)]
 
 ## EXAMPLES
 
@@ -14455,6 +14461,7 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
 
 ## RELATED LINKS
+[New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension)
 

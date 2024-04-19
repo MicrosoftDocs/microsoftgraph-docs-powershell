@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a tag object permanently.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 
 ## DESCRIPTION
 Delete a tag object permanently.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -244,6 +250,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamtag)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new custom identityUserFlowAttribute object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -29,6 +32,9 @@ New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserF
 
 ## DESCRIPTION
 Create a new custom identityUserFlowAttribute object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -258,6 +264,7 @@ Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 ## RELATED LINKS
+[New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Delete an externalGroup object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -220,6 +226,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Remove-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectiongroup)
 

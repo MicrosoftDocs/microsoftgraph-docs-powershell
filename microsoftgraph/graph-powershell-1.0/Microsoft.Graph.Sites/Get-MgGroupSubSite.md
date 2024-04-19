@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List2 (Default)
@@ -370,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsubsite)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a section object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaGroupSiteOnenoteSection -InputObject <ISitesIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a section object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -379,6 +385,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesection)
 

@@ -12,6 +12,9 @@ Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -33,6 +36,9 @@ Get-MgOrganizationById
 Return the directory objects specified in a list of IDs.
 Only a subset of user properties are returned by default in v1.0.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 
@@ -207,6 +213,7 @@ BODYPARAMETER `<IPaths11G1VgqOrganizationMicrosoftGraphGetbyidsPostRequestbodyCo
   - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbyid)
 

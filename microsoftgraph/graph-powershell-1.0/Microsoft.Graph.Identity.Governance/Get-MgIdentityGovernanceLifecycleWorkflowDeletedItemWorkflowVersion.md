@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a workflowVersion object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -37,6 +40,9 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion -InputObject
 
 ## DESCRIPTION
 Read the properties and relationships of a workflowVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflowversion-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -380,6 +386,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowdeleteditemworkflowversion](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowdeleteditemworkflowversion)
 

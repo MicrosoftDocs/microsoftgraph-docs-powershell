@@ -11,6 +11,9 @@ schema: 2.0.0
 Rename a specific cloudPC object.
 Use this API to update the displayName of a Cloud PC entity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Rename-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Rename-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RenameExpanded (Default)
@@ -47,6 +50,9 @@ Rename-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementA
 ## DESCRIPTION
 Rename a specific cloudPC object.
 Use this API to update the displayName of a Cloud PC entity.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-rename-permissions.md)]
 
 ## EXAMPLES
 
@@ -270,6 +276,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Rename-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Rename-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpc)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactById?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -31,6 +34,9 @@ Get-MgBetaContactById
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
 
 ## EXAMPLES
 
@@ -205,6 +211,7 @@ BODYPARAMETER `<IPaths12Azg33ContactsMicrosoftGraphGetbyidsPostRequestbodyConten
   - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
+[Get-MgContactById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactbyid)
 

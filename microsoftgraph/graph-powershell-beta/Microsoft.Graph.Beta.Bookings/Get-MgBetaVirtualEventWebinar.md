@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a virtualEventWebinar object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -320,6 +326,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar)
 

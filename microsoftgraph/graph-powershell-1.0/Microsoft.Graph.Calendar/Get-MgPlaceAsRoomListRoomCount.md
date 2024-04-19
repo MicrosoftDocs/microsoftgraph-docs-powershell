@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomListRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoomCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -179,6 +182,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPlaceAsRoomListRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoomCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount)
 

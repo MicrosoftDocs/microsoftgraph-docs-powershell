@@ -13,6 +13,9 @@ If findMeetingTimes cannot return any meeting suggestions, the response would in
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### FindExpanded (Default)
@@ -56,6 +59,9 @@ Suggest meeting times and locations based on organizer and attendee availability
 If findMeetingTimes cannot return any meeting suggestions, the response would indicate a reason in the emptySuggestionsReason property.Based on this value, you can better adjust the parameters and call findMeetingTimes again.
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findmeetingtimes-permissions.md)]
 
 ## EXAMPLES
 
@@ -543,6 +549,7 @@ See below for possible values.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
+[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
 

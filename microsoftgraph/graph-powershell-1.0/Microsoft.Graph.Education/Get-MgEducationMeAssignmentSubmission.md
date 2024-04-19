@@ -18,6 +18,9 @@ The grade and feedback from a teacher are part of the educationOutcome associate
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -52,6 +55,9 @@ A teacher or application with application permissions has full access to all sub
 The grade and feedback from a teacher are part of the educationOutcome associated with this object.
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -341,6 +347,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmission)
 

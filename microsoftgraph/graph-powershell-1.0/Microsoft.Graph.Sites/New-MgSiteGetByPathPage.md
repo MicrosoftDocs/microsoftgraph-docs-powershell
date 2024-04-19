@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to pages for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -14720,6 +14723,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathpage)
 

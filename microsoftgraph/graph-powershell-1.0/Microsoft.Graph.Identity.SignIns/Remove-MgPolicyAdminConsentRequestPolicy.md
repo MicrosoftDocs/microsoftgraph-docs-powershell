@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property adminConsentRequestPolicy for policies
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -157,6 +160,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyadminconsentrequestpolicy)
 

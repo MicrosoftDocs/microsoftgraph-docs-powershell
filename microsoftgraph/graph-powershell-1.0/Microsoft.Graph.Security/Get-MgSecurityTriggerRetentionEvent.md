@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of a retentionEvent object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentionevent-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -357,6 +363,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerRetentionEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggerretentionevent)
 

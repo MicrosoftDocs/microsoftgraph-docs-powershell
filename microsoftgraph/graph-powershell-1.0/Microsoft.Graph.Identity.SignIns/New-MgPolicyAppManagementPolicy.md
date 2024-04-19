@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an appManagementPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -30,6 +33,9 @@ New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPoli
 
 ## DESCRIPTION
 Create an appManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-post-permissions.md)]
 
 ## EXAMPLES
 
@@ -334,6 +340,7 @@ To apply to all applications, enforcement datetime would be null.
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
+[New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyappmanagementpolicy)
 

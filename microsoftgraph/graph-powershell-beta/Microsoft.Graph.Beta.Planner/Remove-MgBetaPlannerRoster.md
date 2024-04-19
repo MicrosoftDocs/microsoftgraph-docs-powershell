@@ -29,6 +29,9 @@ Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a plannerRoster object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

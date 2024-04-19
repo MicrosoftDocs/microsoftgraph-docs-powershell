@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property categories in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -431,6 +434,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelcategory)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalConnection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -37,6 +40,9 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 
 ## DESCRIPTION
 Create a new externalConnection.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
 
 ## EXAMPLES
 
@@ -767,6 +773,7 @@ Required.
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
+[New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
 

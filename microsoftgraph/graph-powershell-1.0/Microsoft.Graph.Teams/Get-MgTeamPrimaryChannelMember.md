@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a conversationMember from a channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Get a conversationMember from a channel.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-members-permissions.md)]
 
 ## EXAMPLES
 
@@ -345,6 +351,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmember)
 

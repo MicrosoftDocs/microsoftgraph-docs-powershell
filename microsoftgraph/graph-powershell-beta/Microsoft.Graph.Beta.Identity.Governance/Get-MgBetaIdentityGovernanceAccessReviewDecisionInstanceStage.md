@@ -38,6 +38,9 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

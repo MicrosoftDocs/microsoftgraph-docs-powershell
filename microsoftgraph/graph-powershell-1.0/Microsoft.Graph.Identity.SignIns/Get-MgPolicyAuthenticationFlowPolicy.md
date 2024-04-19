@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -20,6 +23,9 @@ Get-MgPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property <St
 
 ## DESCRIPTION
 Read the properties and relationships of an authenticationFlowsPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationflowspolicy-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -119,6 +125,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationflowpolicy)
 

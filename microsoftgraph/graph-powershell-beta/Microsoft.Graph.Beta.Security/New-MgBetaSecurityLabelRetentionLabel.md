@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -37,6 +40,9 @@ New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRet
 ## DESCRIPTION
 Create a new retentionLabel object.
 To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-retentionlabel-permissions.md)]
 
 ## EXAMPLES
 
@@ -720,6 +726,7 @@ This property is read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel)
 

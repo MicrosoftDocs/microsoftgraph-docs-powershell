@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a specific cloudPC object to a previous state from a snapshot.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -47,6 +50,9 @@ Restore-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 ## DESCRIPTION
 Restore a specific cloudPC object to a previous state from a snapshot.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -270,6 +276,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Restore-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementvirtualendpointcloudpc)
 

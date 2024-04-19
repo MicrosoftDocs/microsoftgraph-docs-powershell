@@ -14,6 +14,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -29,6 +32,9 @@ The registered owner is set at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredowners-permissions.md)]
 
 ## EXAMPLES
 
@@ -253,6 +259,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregisteredownerbyref)
 

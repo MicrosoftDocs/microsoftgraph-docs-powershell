@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation
 schema: 2.0.0
+ms.prod: security
 ---
 
 # New-MgSecurityLabelCitation
 
 ## SYNOPSIS
 Create a new citationTemplate object.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -290,6 +294,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
 

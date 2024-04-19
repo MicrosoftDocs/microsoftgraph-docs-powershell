@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an existing user activity for your app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete an existing user activity for your app.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-delete-activity-permissions.md)]
 
 ## EXAMPLES
 
@@ -215,6 +221,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity)
 

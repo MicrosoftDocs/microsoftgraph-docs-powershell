@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a \[permission\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Grant-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Grant-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -45,6 +48,9 @@ Grant-MgUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
 
 ## EXAMPLES
 
@@ -350,6 +356,7 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Grant-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/grant-mguserdriveitempermission)
 

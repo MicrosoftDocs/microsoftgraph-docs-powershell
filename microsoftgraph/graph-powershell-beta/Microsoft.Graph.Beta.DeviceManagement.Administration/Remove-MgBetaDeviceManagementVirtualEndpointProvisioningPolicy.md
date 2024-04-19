@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -31,6 +34,9 @@ Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -255,6 +261,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getApplicableContentTypesForList
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteGetByPathApplicableContentTypeForList?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -351,6 +354,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteGetByPathApplicableContentTypeForList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist)
 

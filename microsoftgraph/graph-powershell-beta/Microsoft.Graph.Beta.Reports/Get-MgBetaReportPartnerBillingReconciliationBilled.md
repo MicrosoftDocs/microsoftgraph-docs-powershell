@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents details for billed invoice reconciliation data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -122,6 +125,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingreconciliationbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingreconciliationbilled)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to permissionGrants for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -393,6 +396,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouppermissiongrant)
 

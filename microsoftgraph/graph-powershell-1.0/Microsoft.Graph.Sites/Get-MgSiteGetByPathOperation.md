@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a list of rich long-running operations associated with a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -298,6 +301,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+[Get-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathoperation)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteContentType?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <Strin
 
 ## DESCRIPTION
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -281,6 +287,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition for a content type
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -64,6 +67,9 @@ New-MgBetaGroupDriveListContentTypeColumn -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create columnDefinition for a content type
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-post-columns-permissions.md)]
 
 ## EXAMPLES
 
@@ -1279,6 +1285,7 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[New-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveListContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivelistcontenttypecolumn)
 

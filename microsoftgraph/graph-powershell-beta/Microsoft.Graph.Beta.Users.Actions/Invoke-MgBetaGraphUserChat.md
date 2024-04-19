@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unhide a chat for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphUserChat](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgGraphUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)
@@ -46,6 +49,9 @@ Invoke-MgBetaGraphUserChat -InputObject <IUsersActionsIdentity> [-ResponseHeader
 
 ## DESCRIPTION
 Unhide a chat for a user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-unhideforuser-permissions.md)]
 
 ## EXAMPLES
 
@@ -371,6 +377,7 @@ This property is read-only.
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+[Invoke-MgGraphUserChat](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgGraphUserChat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetagraphuserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetagraphuserchat)
 

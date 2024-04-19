@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -37,6 +40,9 @@ Get-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject 
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a authenticationContextClassReference object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationcontextclassreference-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -350,6 +356,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccessauthenticationcontextclassreference)
 

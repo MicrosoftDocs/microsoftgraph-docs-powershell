@@ -49,6 +49,9 @@ Update-MgBetaBusinessScenario -InputObject <IBookingsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a businessScenario object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/businessscenario-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

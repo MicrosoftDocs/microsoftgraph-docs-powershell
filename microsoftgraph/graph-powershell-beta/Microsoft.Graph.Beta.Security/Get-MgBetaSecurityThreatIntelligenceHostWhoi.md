@@ -12,6 +12,9 @@ Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostWhoi?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,9 @@ Get-MgBetaSecurityThreatIntelligenceHostWhoi -InputObject <ISecurityIdentity> [-
 Get the specified whoisRecord resource.
 Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
 - Specify an id value to get the corresponding whoisRecord.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-whoisrecord-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -254,6 +260,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostWhoi?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostwhoi)
 

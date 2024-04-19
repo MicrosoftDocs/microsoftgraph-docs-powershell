@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a partner-specific configuration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIde
 
 ## DESCRIPTION
 Read the properties and relationships of a partner-specific configuration.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/crosstenantaccesspolicyconfigurationpartner-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -378,6 +384,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartner)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to bundles for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveBundle?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -80,6 +83,9 @@ New-MgBetaUserDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create new navigation property to bundles for users
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-post-bundles-permissions.md)]
 
 ## EXAMPLES
 
@@ -55161,6 +55167,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveBundle?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetauserdrivebundle)
 

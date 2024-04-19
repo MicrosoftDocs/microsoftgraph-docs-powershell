@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property descriptors in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -620,6 +623,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
+[Update-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabeldescriptor)
 

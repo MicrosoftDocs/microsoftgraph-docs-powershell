@@ -13,6 +13,9 @@ A class is a universal group with a special property that indicates to the syste
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -42,6 +45,9 @@ Retrieve a class from the system.
 A class is a universal group with a special property that indicates to the system that the group is a class.
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -318,6 +324,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClass?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclass)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a dataPolicyOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaDataPolicyOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Retrieve the properties of a dataPolicyOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/datapolicyoperation-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -349,6 +355,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaDataPolicyOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgdatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgdatapolicyoperation)
 

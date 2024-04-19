@@ -31,6 +31,9 @@ Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToDirectoryObjectByRef
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-delete-appliesto-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

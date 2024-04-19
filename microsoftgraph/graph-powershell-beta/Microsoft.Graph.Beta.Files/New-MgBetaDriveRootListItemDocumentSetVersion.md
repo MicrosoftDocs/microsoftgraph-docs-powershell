@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new version of a document set item in a list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 
 ## DESCRIPTION
 Create a new version of a document set item in a list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-post-documentsetversions-permissions.md)]
 
 ## EXAMPLES
 
@@ -491,6 +497,7 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
 

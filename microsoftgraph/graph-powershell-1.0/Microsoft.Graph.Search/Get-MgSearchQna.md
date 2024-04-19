@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a qna object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -35,6 +38,9 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -305,6 +311,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna)
 

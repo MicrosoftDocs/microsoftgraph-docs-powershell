@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 ## DESCRIPTION
 Read the properties and relationships of a windowsProtectionState object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-windowsprotectionstate-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

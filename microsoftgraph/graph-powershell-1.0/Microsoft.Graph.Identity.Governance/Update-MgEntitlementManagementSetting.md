@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an existing entitlementManagementSettings object to change one or more of its properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -29,6 +32,9 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 
 ## DESCRIPTION
 Update an existing entitlementManagementSettings object to change one or more of its properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagementsettings-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -222,6 +228,7 @@ Read-only.
   - `[ExternalUserLifecycleAction <String>]`: accessPackageExternalUserLifecycleAction
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting)
 

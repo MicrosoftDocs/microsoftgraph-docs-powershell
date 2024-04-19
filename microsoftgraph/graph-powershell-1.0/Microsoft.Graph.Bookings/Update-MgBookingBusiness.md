@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a bookingBusiness object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -56,6 +59,9 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -953,6 +959,7 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
 

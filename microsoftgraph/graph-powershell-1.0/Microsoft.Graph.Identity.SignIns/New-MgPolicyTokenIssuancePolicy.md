@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new tokenIssuancePolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -28,6 +31,9 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeadersVari
 
 ## DESCRIPTION
 Create a new tokenIssuancePolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-post-tokenissuancepolicy-permissions.md)]
 
 ## EXAMPLES
 
@@ -291,6 +297,7 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+[New-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy)
 

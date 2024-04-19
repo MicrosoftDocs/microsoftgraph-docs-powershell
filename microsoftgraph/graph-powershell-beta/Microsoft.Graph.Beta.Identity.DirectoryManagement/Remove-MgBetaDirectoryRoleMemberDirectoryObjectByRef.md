@@ -13,6 +13,9 @@ You can use both the object ID and template ID of the directoryRole with this AP
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryRoleMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleMemberDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -34,6 +37,9 @@ Remove a member from a directoryRole.
 You can use both the object ID and template ID of the directoryRole with this API.
 The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
 For details, see Role template IDs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-delete-member-permissions.md)]
 
 ## EXAMPLES
 
@@ -267,6 +273,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDirectoryRoleMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRoleMemberDirectoryObjectByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberdirectoryobjectbyref)
 

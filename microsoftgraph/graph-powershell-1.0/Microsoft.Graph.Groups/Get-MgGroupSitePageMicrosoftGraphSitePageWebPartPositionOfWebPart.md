@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -255,6 +258,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitepagemicrosoftgraphsitepagewebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitepagemicrosoftgraphsitepagewebpartpositionofwebpart)
 

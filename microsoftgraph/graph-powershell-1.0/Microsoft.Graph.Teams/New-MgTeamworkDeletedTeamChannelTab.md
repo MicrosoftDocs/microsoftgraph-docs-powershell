@@ -11,6 +11,9 @@ schema: 2.0.0
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -47,6 +50,9 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-tabs-permissions.md)]
 
 ## EXAMPLES
 
@@ -447,6 +453,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab)
 

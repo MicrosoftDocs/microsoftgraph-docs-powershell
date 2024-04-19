@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent \[group\] that contains the set.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -259,6 +262,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteTermStoreSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetparentgroup)
 

@@ -12,6 +12,9 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -32,6 +35,9 @@ Get-MgOrganizationBrandingLocalizationBannerLogo -InputObject <IIdentityDirector
 A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-list-localizations-permissions.md)]
 
 ## EXAMPLES
 
@@ -211,6 +217,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalizationbannerlogo)
 

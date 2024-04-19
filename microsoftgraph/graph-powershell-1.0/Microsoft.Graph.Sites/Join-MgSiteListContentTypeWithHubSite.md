@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteListContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)
@@ -46,6 +49,9 @@ Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
 
 ## EXAMPLES
 
@@ -342,6 +348,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/join-mgsitelistcontenttypewithhubsite)
 

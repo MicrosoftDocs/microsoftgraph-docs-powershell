@@ -47,6 +47,9 @@ Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 ## DESCRIPTION
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

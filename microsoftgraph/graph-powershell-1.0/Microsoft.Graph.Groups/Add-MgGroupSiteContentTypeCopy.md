@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteContentTypeCopy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -44,6 +47,9 @@ Add-MgGroupSiteContentTypeCopy -InputObject <IGroupsIdentity>
 
 ## DESCRIPTION
 Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
 
@@ -292,6 +298,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgBetaGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupSiteContentTypeCopy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggroupsitecontenttypecopy)
 

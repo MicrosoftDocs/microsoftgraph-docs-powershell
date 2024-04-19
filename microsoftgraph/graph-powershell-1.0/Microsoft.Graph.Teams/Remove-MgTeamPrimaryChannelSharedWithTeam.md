@@ -11,6 +11,9 @@ schema: 2.0.0
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -30,6 +33,9 @@ Remove-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a membershipType value of shared.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharedwithchannelteaminfo-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -249,6 +255,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelsharedwithteam)
 

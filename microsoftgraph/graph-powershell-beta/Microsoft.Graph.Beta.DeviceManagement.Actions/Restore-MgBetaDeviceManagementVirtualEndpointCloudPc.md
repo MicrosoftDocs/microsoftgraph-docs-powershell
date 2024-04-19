@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -47,6 +50,9 @@ Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManage
 ## DESCRIPTION
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -306,6 +312,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Restore-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementvirtualendpointcloudpc)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties and relationships of a shiftPreferences object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -44,6 +47,9 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
 
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shiftpreferences-put-permissions.md)]
 
 ## EXAMPLES
 
@@ -403,6 +409,7 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference)
 

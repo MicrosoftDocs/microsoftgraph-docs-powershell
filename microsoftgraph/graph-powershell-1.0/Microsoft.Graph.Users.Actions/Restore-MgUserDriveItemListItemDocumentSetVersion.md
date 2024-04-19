@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -28,6 +31,9 @@ Restore-MgUserDriveItemListItemDocumentSetVersion -InputObject <IUsersActionsIde
 
 ## DESCRIPTION
 Restore a document set version.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/documentsetversion-restore-permissions.md)]
 
 ## EXAMPLES
 
@@ -256,6 +262,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemlistitemdocumentsetversion)
 

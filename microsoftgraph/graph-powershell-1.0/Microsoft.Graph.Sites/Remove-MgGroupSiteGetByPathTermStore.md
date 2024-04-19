@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property termStore for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -301,6 +304,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteGetByPathTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitegetbypathtermstore)
 

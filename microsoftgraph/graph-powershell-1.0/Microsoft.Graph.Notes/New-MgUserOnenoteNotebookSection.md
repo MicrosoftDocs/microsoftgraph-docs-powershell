@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new onenoteSection in the specified notebook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgUserOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
 
 ## EXAMPLES
 
@@ -1029,6 +1035,7 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
+[New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mguseronenotenotebooksection)
 

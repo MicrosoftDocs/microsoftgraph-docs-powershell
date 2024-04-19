@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal.
 Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disables the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices, and removes any target device groups that you configured for SSO.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -30,6 +33,9 @@ Remove-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppli
 ## DESCRIPTION
 Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal.
 Removing remoteDesktopSecurityConfiguration object on the servicePrincipal disables the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices, and removes any target device groups that you configured for SSO.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-delete-remotedesktopsecurityconfiguration-permissions.md)]
 
 ## EXAMPLES
 
@@ -224,6 +230,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalremotedesktopsecurityconfiguration)
 

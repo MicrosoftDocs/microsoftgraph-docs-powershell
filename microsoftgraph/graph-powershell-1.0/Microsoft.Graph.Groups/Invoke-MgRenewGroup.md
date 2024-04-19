@@ -11,6 +11,9 @@ schema: 2.0.0
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Renew (Default)
@@ -28,6 +31,9 @@ Invoke-MgRenewGroup -InputObject <IGroupsIdentity> [-ResponseHeadersVariable <St
 ## DESCRIPTION
 Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-renew-permissions.md)]
 
 ## EXAMPLES
 
@@ -221,6 +227,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgBetaRenewGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRenewGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgrenewgroup)
 

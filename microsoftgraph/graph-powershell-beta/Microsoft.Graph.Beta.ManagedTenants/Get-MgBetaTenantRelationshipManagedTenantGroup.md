@@ -37,6 +37,9 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 ## DESCRIPTION
 Read the properties and relationships of a tenantGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenantgroup-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

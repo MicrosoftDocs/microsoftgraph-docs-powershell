@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property bundles in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveBundleContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -276,6 +279,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveBundleContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivebundlecontent)
 

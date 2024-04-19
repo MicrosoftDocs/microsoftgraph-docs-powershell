@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an externalConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <String
 
 ## DESCRIPTION
 Read the properties and relationships of an externalConnection object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -303,6 +309,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
+[Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnection)
 

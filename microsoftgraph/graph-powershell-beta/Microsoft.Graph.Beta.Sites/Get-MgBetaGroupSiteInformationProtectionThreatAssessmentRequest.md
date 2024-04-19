@@ -40,6 +40,9 @@ Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/threatassessmentrequest-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

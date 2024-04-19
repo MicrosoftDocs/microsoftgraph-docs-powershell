@@ -13,6 +13,9 @@ Only teachers in the class can perform this operation.
 When a module is in draft status, students won't see the module.
 When you call this API, the module appears in the student's class work list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassModule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -33,6 +36,9 @@ Change the state of an educationModule from its original draft status to the pub
 Only teachers in the class can perform this operation.
 When a module is in draft status, students won't see the module.
 When you call this API, the module appears in the student's class work list.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-publish-permissions.md)]
 
 ## EXAMPLES
 
@@ -207,6 +213,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Publish-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationclassmodule)
 

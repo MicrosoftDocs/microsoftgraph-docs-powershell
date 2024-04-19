@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the permissions assigned to an existing share recipient or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -407,6 +410,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendarpermission)
 

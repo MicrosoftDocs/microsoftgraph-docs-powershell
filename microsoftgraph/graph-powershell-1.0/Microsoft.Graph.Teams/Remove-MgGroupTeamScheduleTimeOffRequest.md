@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a timeOffRequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch
 
 ## DESCRIPTION
 Delete a timeOffRequest object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -247,6 +253,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduletimeoffrequest)
 

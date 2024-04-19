@@ -17,6 +17,9 @@ A team is archived once the async operation completes successfully, which might 
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ArchiveExpanded (Default)
@@ -58,6 +61,9 @@ Archiving is an async operation.
 A team is archived once the async operation completes successfully, which might occur subsequent to a response from this API.
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-archive-permissions.md)]
 
 ## EXAMPLES
 
@@ -295,6 +301,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaArchiveTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam)
 

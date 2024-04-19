@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property bucketTaskBoardFormat in planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -42,6 +45,9 @@ Update-MgBetaPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -I
 
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -278,6 +284,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskBucketTaskBoardFormat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskbuckettaskboardformat)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an appManagementPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [
 
 ## DESCRIPTION
 Delete an appManagementPolicy object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -273,6 +279,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy)
 

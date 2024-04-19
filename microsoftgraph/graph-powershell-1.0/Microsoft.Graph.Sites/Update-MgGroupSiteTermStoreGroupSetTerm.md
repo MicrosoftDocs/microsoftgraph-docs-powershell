@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a term object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -89,6 +92,9 @@ Update-MgGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 
 ## DESCRIPTION
 Update the properties of a term object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -743,6 +749,7 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm)
 

@@ -30,6 +30,9 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 ## DESCRIPTION
 Delete an educationGradingScheme object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -11,6 +11,9 @@ schema: 2.0.0
 The users or groups who are sponsors of the invited user.
 Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserSponsor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -369,6 +372,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaInvitationInvitedUserSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserSponsor?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinvitedusersponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationinvitedusersponsor)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -30,6 +33,9 @@ Stop-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -InputObject <IIden
 ## DESCRIPTION
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is Granted and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the status of the cancelled unifiedRoleEligibilityScheduleRequest changes to Revoked.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroleeligibilityschedulerequest-cancel-permissions.md)]
 
 ## EXAMPLES
 
@@ -253,6 +259,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgrolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgrolemanagementdirectoryroleeligibilityschedulerequest)
 

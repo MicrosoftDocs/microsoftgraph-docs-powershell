@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attachments for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -305,6 +308,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgBetaGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostinreplytoattachment)
 

@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # New-MgBetaSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
 Create a new ediscoverySearch object.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -56,6 +60,9 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new ediscoverySearch object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-post-searches-permissions.md)]
 
 ## EXAMPLES
 
@@ -23861,6 +23868,7 @@ This property is read-only.
 Read-only.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearch)
 

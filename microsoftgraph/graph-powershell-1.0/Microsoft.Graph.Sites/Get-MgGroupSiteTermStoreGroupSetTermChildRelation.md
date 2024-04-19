@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -475,6 +478,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetTermChildRelation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsettermchildrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsettermchildrelation)
 

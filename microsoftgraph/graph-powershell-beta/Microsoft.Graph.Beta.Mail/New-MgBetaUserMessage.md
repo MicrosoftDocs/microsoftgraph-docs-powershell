@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # New-MgBetaUserMessage
@@ -11,6 +12,9 @@ schema: 2.0.0
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 The table in the Permissions section lists the resources that support open extensions.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1180,6 +1184,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[New-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermessage)
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -33,6 +36,9 @@ New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotection-post-threatassessmentrequests-permissions.md)]
 
 ## EXAMPLES
 
@@ -414,6 +420,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+[New-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetainformationprotectionthreatassessmentrequest)
 

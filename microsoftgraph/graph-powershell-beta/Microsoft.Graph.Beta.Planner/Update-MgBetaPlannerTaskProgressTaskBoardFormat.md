@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property progressTaskBoardFormat in planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -42,6 +45,9 @@ Update-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> 
 
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in planner
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -278,6 +284,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskprogresstaskboardformat)
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property columns in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -367,6 +370,7 @@ WEBPARTS <IMicrosoftGraphWebPart- `[]`>: .
 Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitepageassitepagecanvalayouthorizontalsectioncolumn)
 

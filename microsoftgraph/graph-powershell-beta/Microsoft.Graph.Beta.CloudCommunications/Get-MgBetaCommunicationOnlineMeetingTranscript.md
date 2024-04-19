@@ -13,6 +13,9 @@ This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscript?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -50,6 +53,9 @@ Retrieve a callTranscript object associated with a scheduled onlineMeeting.
 This API doesn't support getting call transcripts from channel meetings.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calltranscript-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -360,6 +366,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscript?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript)
 

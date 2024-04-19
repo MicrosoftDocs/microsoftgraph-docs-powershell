@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property labels in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -624,6 +627,7 @@ Read-only.
   - `[RetentionTrigger <String>]`: retentionTrigger
 
 ## RELATED LINKS
+[Update-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel)
 

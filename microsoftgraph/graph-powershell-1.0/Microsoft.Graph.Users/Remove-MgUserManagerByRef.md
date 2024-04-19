@@ -3,12 +3,16 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref
 schema: 2.0.0
+ms.prod: users
 ---
 
 # Remove-MgUserManagerByRef
 
 ## SYNOPSIS
 Remove a user's manager.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -28,6 +32,9 @@ Remove-MgUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Remove a user's manager.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delete-manager-permissions.md)]
 
 ## EXAMPLES
 
@@ -209,6 +216,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
+[Remove-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref)
 

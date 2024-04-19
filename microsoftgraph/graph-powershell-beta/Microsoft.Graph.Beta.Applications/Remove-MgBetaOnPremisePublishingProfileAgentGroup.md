@@ -30,6 +30,9 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 ## DESCRIPTION
 Delete an onPremisesAgentGroup object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-delete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

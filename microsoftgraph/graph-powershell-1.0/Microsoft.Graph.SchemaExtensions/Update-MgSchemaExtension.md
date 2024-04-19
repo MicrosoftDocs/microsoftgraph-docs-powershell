@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Update-MgSchemaExtension
@@ -17,6 +18,9 @@ For delegated flows, the signed-in user can update a schema extension as long as
 That application can be the one that initially created the extension, or some other application owned by the signed-in user.
 This criteria for the owner property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
 When using Graph Explorer to update a schemaExtension resource, include the owner property in the PATCH request body.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -391,6 +395,7 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
 
 ## RELATED LINKS
+[Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension)
 

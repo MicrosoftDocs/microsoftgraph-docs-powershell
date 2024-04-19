@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemActivityByInterval?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -399,6 +402,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgBetaSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemactivitybyinterval)
 

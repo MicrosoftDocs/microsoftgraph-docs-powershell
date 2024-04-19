@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -39,6 +42,9 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -InputObject
 
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstancedecisionitem-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -409,6 +415,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision)
 

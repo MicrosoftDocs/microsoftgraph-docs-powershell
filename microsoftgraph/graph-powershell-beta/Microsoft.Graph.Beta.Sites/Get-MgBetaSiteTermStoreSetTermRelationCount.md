@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermRelationCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermRelationCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -250,6 +253,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreSetTermRelationCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermRelationCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermrelationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresettermrelationcount)
 

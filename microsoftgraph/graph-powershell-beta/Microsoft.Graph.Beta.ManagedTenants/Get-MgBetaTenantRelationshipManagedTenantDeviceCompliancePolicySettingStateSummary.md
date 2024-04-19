@@ -39,6 +39,9 @@ Get-MgBetaTenantRelationshipManagedTenantDeviceCompliancePolicySettingStateSumma
 ## DESCRIPTION
 Read the properties and relationships of a deviceCompliancePolicySettingStateSummary object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-devicecompliancepolicysettingstatesummary-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

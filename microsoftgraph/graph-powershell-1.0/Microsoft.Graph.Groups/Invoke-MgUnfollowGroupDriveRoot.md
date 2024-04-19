@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaUnfollowGroupDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -28,6 +31,9 @@ Invoke-MgUnfollowGroupDriveRoot -InputObject <IGroupsIdentity> [-ResponseHeaders
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
 
@@ -244,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgBetaUnfollowGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaUnfollowGroupDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveroot)
 

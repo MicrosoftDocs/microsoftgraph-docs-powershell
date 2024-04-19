@@ -29,6 +29,9 @@ Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty
 ## DESCRIPTION
 Read the properties and relationships of a unifiedStorageQuota object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedstoragequota-get-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

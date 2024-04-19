@@ -48,6 +48,9 @@ Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicat
 ## DESCRIPTION
 Update the properties of published resource  publishedResource object.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-update-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

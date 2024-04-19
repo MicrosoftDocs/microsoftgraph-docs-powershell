@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties on a \[listItem\]\[\].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -42,6 +45,9 @@ Update-MgUserDriveItemListItemField -InputObject <IFilesIdentity> -BodyParameter
 
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
 
 ## EXAMPLES
 
@@ -288,6 +294,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserDriveItemListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitemlistitemfield)
 

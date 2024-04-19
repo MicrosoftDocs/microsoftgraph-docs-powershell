@@ -11,6 +11,9 @@ schema: 2.0.0
 Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -46,6 +49,9 @@ New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef -InputObjec
 ## DESCRIPTION
 Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-post-internalsponsors-permissions.md)]
 
 ## EXAMPLES
 
@@ -323,6 +329,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganizationinternalsponsorbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganizationinternalsponsorbyref)
 

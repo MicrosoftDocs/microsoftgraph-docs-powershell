@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -38,6 +41,9 @@ Get-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreement-list-files-permissions.md)]
 
 ## EXAMPLES
 
@@ -366,6 +372,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreement)
 

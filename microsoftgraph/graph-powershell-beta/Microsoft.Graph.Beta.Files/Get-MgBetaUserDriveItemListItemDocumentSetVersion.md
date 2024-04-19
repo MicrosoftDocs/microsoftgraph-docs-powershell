@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a documentSetVersion object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -37,6 +40,9 @@ Get-MgBetaUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> 
 
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
 
 ## EXAMPLES
 
@@ -371,6 +377,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemlistitemdocumentsetversion)
 

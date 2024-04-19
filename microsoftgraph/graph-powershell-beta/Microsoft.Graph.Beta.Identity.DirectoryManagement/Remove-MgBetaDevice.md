@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a registered device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -28,6 +31,9 @@ Remove-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatc
 
 ## DESCRIPTION
 Delete a registered device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-permissions.md)]
 
 ## EXAMPLES
 
@@ -243,6 +249,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice)
 
