@@ -48,22 +48,6 @@ Confirm-MgBetaDirectoryRoleMemberObject -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,6 +277,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Confirm-MgDirectoryRoleMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryRoleMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectoryrolememberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectoryrolememberobject)
+
 
 
 

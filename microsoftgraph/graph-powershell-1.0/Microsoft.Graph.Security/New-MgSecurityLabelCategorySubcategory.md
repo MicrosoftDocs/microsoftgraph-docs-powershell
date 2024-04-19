@@ -48,18 +48,6 @@ New-MgSecurityLabelCategorySubcategory -InputObject <ISecurityIdentity> -BodyPar
 ## DESCRIPTION
 Create new navigation property to subcategories for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,6 +343,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [New-MgBetaSecurityLabelCategorySubcategory](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCategorySubcategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcategorysubcategory)
+
 
 
 

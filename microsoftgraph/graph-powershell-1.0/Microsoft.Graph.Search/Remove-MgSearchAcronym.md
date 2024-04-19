@@ -35,18 +35,6 @@ Delete an acronym object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-delete-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -217,6 +205,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [Remove-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
+
 
 
 

@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property androidForWorkEnrollmentProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AndroidForWorkEnrollmentProfileId
@@ -228,6 +216,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementandroidforworkenrollmentprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetadevicemanagementandroidforworkenrollmentprofile)
+
 
 
 

@@ -35,18 +35,6 @@ New-MgBetaSecurityAttackSimulationEndUserNotification -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create new navigation property to endUserNotifications for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,6 +418,7 @@ This property is read-only.
 [New-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationendusernotification)
+
 
 
 

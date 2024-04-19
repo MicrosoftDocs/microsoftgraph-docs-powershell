@@ -33,18 +33,6 @@ Set-MgBetaTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> [
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId
@@ -311,6 +299,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Set-MgTeamPrimaryChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPrimaryChannelMessageHostedContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamprimarychannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamprimarychannelmessagehostedcontent)
+
 
 
 

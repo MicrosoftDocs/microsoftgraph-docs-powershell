@@ -48,18 +48,6 @@ Update-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart -InputO
 ## DESCRIPTION
 Update the navigation property webparts in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +338,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumnwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayouthorizontalsectioncolumnwebpart)
+
 
 
 

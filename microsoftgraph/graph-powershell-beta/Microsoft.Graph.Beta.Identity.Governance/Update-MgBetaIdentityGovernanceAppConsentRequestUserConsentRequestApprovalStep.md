@@ -51,22 +51,6 @@ Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,6 +504,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapprovalstep)
+
 
 
 

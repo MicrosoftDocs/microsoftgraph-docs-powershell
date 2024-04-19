@@ -32,22 +32,6 @@ Remove-MgDriveListItemField -InputObject <IFilesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property fields for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -248,6 +232,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitemfield)
+
 
 
 

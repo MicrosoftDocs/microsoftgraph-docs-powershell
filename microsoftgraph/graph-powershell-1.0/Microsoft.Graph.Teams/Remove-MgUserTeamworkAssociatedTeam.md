@@ -32,22 +32,6 @@ Remove-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property associatedTeams for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AssociatedTeamInfoId
@@ -257,6 +241,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [Remove-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkassociatedteam)
+
 
 
 

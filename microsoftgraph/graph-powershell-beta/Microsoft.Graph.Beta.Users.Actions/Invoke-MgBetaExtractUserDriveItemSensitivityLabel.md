@@ -32,22 +32,6 @@ Invoke-MgBetaExtractUserDriveItemSensitivityLabel -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Invoke action extractSensitivityLabels
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -250,6 +234,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Invoke-MgExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriveitemsensitivitylabel)
+
 
 
 

@@ -49,22 +49,6 @@ New-MgBetaOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -Input
 ## DESCRIPTION
 Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -491,6 +475,7 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgrouppublishedresourceagentgroup)
+
 
 
 

@@ -32,18 +32,6 @@ New-MgSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHeader
 ## DESCRIPTION
 Create a new filePlanReferenceTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,6 +233,7 @@ For example, if a user changes their display name, the API might show the new va
 [New-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
+
 
 
 

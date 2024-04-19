@@ -32,22 +32,6 @@ Get-MgBetaReportTeamDeviceUsageDistributionUserCount -InputObject <IReportsIdent
 ## DESCRIPTION
 Invoke function getTeamsDeviceUsageDistributionUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +206,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusagedistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportteamdeviceusagedistributionusercount)
+
 
 
 

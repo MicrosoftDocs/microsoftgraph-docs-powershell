@@ -50,18 +50,6 @@ Send-MgBetaCommunicationCallDtmfTone -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Invoke action sendDtmfTones
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,6 +283,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [Send-MgCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.CloudCommunications/Send-MgCommunicationCallDtmfTone?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationcalldtmftone)
+
 
 
 

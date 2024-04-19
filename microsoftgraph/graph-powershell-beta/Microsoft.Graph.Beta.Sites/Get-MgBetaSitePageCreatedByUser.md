@@ -32,18 +32,6 @@ Get-MgBetaSitePageCreatedByUser -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get createdByUser from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -241,6 +229,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgSitePageCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCreatedByUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagecreatedbyuser)
+
 
 
 

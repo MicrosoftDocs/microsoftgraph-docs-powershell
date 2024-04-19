@@ -51,22 +51,6 @@ Get-MgUserDriveRootActivityByInterval -InputObject <IUsersFunctionsIdentity> [-C
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -373,6 +357,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [Get-MgBetaUserDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDriveRootActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootactivitybyinterval)
+
 
 
 

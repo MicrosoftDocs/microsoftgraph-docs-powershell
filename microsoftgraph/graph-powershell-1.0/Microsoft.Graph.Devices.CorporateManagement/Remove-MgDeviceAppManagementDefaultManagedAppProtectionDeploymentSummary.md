@@ -34,18 +34,6 @@ Remove-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Delete navigation property deploymentSummary for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DefaultManagedAppProtectionId
@@ -242,6 +230,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementdefaultmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementdefaultmanagedappprotectiondeploymentsummary)
+
 
 
 

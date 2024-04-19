@@ -50,22 +50,6 @@ Set-MgBetaGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,6 +340,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Set-MgGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupdriverootsensitivitylabel)
+
 
 
 

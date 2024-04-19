@@ -32,18 +32,6 @@ Remove-MgBetaGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property webParts for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -302,6 +290,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagewebpart)
+
 
 
 

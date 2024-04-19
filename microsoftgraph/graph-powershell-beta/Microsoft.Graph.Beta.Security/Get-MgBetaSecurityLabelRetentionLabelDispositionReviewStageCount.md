@@ -32,18 +32,6 @@ Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStageCount -InputObject <I
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -256,6 +244,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDispositionReviewStageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldispositionreviewstagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelretentionlabeldispositionreviewstagecount)
+
 
 
 

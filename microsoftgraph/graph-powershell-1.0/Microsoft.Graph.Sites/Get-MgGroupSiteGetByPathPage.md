@@ -34,18 +34,6 @@ Get-MgGroupSiteGetByPathPage -GroupId <String> -Path <String> -SiteId <String> -
 ## DESCRIPTION
 Get pages from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -319,6 +307,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpage)
+
 
 
 

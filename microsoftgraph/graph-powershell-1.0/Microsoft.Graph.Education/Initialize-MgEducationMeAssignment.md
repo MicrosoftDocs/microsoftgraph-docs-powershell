@@ -35,18 +35,6 @@ This action can only be performed by a teacher on currently inactive assignments
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -191,6 +179,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [Initialize-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Initialize-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment)
+
 
 
 

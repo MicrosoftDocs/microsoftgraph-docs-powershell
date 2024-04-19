@@ -43,18 +43,6 @@ Read the properties and relationships of an operation object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-operation-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,6 +316,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
+
 
 
 

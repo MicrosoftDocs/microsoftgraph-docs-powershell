@@ -40,18 +40,6 @@ Get-MgGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get webParts from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -392,6 +380,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageWebPart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepageassitepagewebpart)
+
 
 
 

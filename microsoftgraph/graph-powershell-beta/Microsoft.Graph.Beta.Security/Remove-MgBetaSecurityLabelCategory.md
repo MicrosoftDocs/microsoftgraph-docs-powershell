@@ -32,18 +32,6 @@ Remove-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property categories for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CategoryTemplateId
@@ -287,6 +275,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelcategory)
+
 
 
 

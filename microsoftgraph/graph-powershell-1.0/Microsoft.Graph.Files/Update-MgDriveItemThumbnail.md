@@ -49,22 +49,6 @@ Update-MgDriveItemThumbnail -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property thumbnails in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,6 +398,7 @@ This is only available when a folder thumbnail is requested.
 [Update-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemthumbnail)
+
 
 
 

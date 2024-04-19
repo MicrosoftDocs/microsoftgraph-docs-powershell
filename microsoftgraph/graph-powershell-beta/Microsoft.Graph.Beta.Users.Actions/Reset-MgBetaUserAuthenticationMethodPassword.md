@@ -61,22 +61,6 @@ This reset is a long-running operation and will return a Location header with a 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationmethod-resetpassword-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +299,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 [Reset-MgUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Users.Actions/Reset-MgUserAuthenticationMethodPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword)
+
 
 
 

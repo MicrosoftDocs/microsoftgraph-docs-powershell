@@ -55,22 +55,6 @@ Update-MgBetaDeviceManagementManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Update the navigation property settingStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -570,6 +554,7 @@ SOURCEPOLICIES <IMicrosoftGraphSettingSource- `[]`>: The policies that contribut
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicesecuritybaselinestatesettingstate)
+
 
 
 

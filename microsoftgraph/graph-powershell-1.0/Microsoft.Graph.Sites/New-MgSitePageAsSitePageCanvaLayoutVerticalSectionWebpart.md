@@ -46,18 +46,6 @@ New-MgSitePageAsSitePageCanvaLayoutVerticalSectionWebpart -InputObject <ISitesId
 ## DESCRIPTION
 Create new navigation property to webparts for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,6 +282,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayoutverticalsectionwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayoutverticalsectionwebpart)
+
 
 
 

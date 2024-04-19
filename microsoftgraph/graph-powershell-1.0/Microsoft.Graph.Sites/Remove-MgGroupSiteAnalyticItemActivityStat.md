@@ -32,18 +32,6 @@ Remove-MgGroupSiteAnalyticItemActivityStat -InputObject <ISitesIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -278,6 +266,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteanalyticitemactivitystat)
+
 
 
 

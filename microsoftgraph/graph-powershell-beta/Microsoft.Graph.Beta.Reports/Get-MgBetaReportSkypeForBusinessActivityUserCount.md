@@ -32,22 +32,6 @@ Get-MgBetaReportSkypeForBusinessActivityUserCount -InputObject <IReportsIdentity
 ## DESCRIPTION
 Invoke function getSkypeForBusinessActivityUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +206,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [Get-MgReportSkypeForBusinessActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessActivityUserCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportskypeforbusinessactivityusercount)
+
 
 
 

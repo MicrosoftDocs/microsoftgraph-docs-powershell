@@ -48,18 +48,6 @@ Update-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> -BodyParam
 ## DESCRIPTION
 Update the navigation property departments in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,6 +366,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Update-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelDepartment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabeldepartment)
+
 
 
 

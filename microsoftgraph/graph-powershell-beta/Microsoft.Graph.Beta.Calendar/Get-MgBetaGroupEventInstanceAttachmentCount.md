@@ -32,18 +32,6 @@ Get-MgBetaGroupEventInstanceAttachmentCount -InputObject <ICalendarIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EventId
@@ -202,6 +190,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [Get-MgGroupEventInstanceAttachmentCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceAttachmentCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachmentcount)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgBetaGroupSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-
 ## DESCRIPTION
 Delete navigation property canvasLayout for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -287,6 +275,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Remove-MgGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitepageassitepagecanvalayout)
+
 
 
 

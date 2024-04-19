@@ -46,18 +46,6 @@ New-MgBetaGroupSitePageAsSitePageWebPart -InputObject <ISitesIdentity> -BodyPara
 ## DESCRIPTION
 Create new navigation property to webParts for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +306,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [New-MgGroupSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageAsSitePageWebPart?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagewebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitepageassitepagewebpart)
+
 
 
 

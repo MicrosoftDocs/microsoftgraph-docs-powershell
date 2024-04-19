@@ -32,18 +32,6 @@ Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef -InputObject 
 ## DESCRIPTION
 Remove a claimsMappingPolicy from a servicePrincipal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ClaimsMappingPolicyId
@@ -243,6 +231,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalclaimmappingpolicyclaimmappingpolicybyref)
+
 
 
 

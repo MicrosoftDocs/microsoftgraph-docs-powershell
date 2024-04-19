@@ -41,18 +41,6 @@ Get-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a departmentTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +352,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Get-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment)
+
 
 
 

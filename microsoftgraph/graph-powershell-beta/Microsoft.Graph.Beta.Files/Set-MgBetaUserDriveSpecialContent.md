@@ -32,22 +32,6 @@ Set-MgBetaUserDriveSpecialContent -InputObject <IFilesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 Update content for the navigation property special in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -282,6 +266,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgUserDriveSpecialContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveSpecialContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivespecialcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetauserdrivespecialcontent)
+
 
 
 

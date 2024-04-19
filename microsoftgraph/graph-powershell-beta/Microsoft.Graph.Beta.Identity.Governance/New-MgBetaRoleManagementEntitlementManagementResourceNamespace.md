@@ -33,18 +33,6 @@ New-MgBetaRoleManagementEntitlementManagementResourceNamespace
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,6 +300,7 @@ Read-only.
 [New-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententitlementmanagementresourcenamespace)
+
 
 
 

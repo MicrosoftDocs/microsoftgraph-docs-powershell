@@ -40,18 +40,6 @@ Get-MgSitePageAsSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [Get-MgBetaSitePageAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepage)
+
 
 
 

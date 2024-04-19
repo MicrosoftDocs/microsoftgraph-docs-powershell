@@ -23,18 +23,6 @@ Get-MgSecurityLabelCategoryCount [-Filter <String>] [-Search <String>] [-Respons
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Get-MgBetaSecurityLabelCategoryCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCategoryCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorycount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorycount)
+
 
 
 

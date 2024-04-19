@@ -32,22 +32,6 @@ Remove-MgSharePermission -InputObject <IFilesIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property permission for shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaSharePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharepermission)
+
 
 
 

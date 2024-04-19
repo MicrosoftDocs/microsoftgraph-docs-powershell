@@ -49,18 +49,6 @@ Update-MgBetaSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property canvasLayout in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,6 +378,7 @@ Read-only.
 [Update-MgSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageAsSitePageCanvaLayout?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepageassitepagecanvalayout)
+
 
 
 

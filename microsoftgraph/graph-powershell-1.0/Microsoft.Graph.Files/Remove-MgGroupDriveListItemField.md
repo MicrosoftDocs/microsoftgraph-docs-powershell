@@ -32,22 +32,6 @@ Remove-MgGroupDriveListItemField -InputObject <IFilesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property fields for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -263,6 +247,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Remove-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdrivelistitemfield)
+
 
 
 

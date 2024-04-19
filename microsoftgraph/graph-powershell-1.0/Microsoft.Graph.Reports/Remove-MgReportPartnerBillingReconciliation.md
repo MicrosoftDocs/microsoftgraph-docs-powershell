@@ -24,18 +24,6 @@ Remove-MgReportPartnerBillingReconciliation [-IfMatch <String>] [-ResponseHeader
 ## DESCRIPTION
 Delete navigation property reconciliation for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -159,6 +147,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-MgBetaReportPartnerBillingReconciliation](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBillingReconciliation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingreconciliation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbillingreconciliation)
+
 
 
 

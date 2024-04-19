@@ -45,22 +45,6 @@ Get-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String>
 ## DESCRIPTION
 Get media content for the navigation property photo from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -252,6 +236,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [Get-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphotocontent)
+
 
 
 

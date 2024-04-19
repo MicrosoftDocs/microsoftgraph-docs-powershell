@@ -32,22 +32,6 @@ Set-MgGroupDriveRootVersionContent -InputObject <IFilesIdentity> [-Data <Stream>
 ## DESCRIPTION
 The content stream for this version of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -282,6 +266,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgBetaGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveRootVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriverootversioncontent)
+
 
 
 

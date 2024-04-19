@@ -32,22 +32,6 @@ Set-MgShareItemContent -InputObject <IFilesIdentity> [-Data <Stream>] [-Response
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -267,6 +251,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [Set-MgBetaShareItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgshareitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgshareitemcontent)
+
 
 
 

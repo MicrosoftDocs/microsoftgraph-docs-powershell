@@ -32,18 +32,6 @@ Remove-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-I
 ## DESCRIPTION
 Delete navigation property filePlanReferences for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -FilePlanReferenceTemplateId
@@ -287,6 +275,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [Remove-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelfileplanreference)
+
 
 
 

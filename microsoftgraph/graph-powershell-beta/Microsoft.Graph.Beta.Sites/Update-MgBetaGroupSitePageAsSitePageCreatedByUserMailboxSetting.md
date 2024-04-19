@@ -54,18 +54,6 @@ Update-MgBetaGroupSitePageAsSitePageCreatedByUserMailboxSetting -InputObject <IS
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -535,6 +523,7 @@ It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 
 [Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageAsSitePageCreatedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepageassitepagecreatedbyusermailboxsetting)
+
 
 
 

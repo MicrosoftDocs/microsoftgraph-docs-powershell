@@ -46,22 +46,6 @@ Update-MgBetaDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Update the navigation property extensions in devices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,6 +286,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [Update-MgDeviceExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDeviceExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadeviceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadeviceextension)
+
 
 
 

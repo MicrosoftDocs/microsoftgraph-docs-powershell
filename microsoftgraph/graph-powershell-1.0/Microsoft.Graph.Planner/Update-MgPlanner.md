@@ -32,22 +32,6 @@ Update-MgPlanner -BodyParameter <IMicrosoftGraphPlanner> [-ResponseHeadersVariab
 ## DESCRIPTION
 Update planner
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -752,6 +736,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 [Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplanner)
+
 
 
 

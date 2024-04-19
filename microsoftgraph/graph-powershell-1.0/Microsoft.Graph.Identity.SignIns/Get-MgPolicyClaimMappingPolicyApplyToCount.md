@@ -32,18 +32,6 @@ Get-MgPolicyClaimMappingPolicyApplyToCount -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ClaimsMappingPolicyId
@@ -229,6 +217,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [Get-MgBetaPolicyClaimMappingPolicyApplyToCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyClaimMappingPolicyApplyToCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicyapplytocount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyclaimmappingpolicyapplytocount)
+
 
 
 

@@ -98,18 +98,6 @@ Update-MgBetaApplicationByUniqueName -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -3510,6 +3498,7 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 [Update-MgApplicationByUniqueName](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByUniqueName?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyuniquename)
+
 
 
 
