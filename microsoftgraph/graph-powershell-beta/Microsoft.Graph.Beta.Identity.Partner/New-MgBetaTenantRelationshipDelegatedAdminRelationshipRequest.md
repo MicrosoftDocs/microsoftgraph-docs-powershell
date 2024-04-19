@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest
@@ -292,26 +292,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDelegatedAdminRelationshipRequest\>: delegatedAdminRelationshipRequest
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDelegatedAdminRelationshipRequest>`: delegatedAdminRelationshipRequest
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Action \<String\>\]: delegatedAdminRelationshipRequestAction
-  \[CreatedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and in UTC time when the relationship request was created.
+  - `[Action <String>]`: delegatedAdminRelationshipRequestAction
+  - `[CreatedDateTime <DateTime?>]`: The date and time in ISO 8601 format and in UTC time when the relationship request was created.
 Read-only.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time in ISO 8601 format and UTC time when this relationship request was last modified.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time in ISO 8601 format and UTC time when this relationship request was last modified.
 Read-only.
-  \[Status \<String\>\]: delegatedAdminRelationshipRequestStatus
+  - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
 
-INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
-  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
-  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
-  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
-  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
-  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
-  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
+  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
+  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
+  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
+  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
+  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
+  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadminrelationshiprequest)
+
+
+
 
