@@ -53,11 +53,10 @@ You can identify the room or roomList by specifying the id or emailAddress prope
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/place-update-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
@@ -69,6 +68,11 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+This example shows how to use the Update-MgPlace Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

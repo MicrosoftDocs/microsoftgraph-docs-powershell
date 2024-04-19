@@ -41,18 +41,20 @@ Read the properties and relationships of a managedDeviceCompliance object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-manageddevicecompliance-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance -ManagedDeviceComplianceId $managedDeviceComplianceId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

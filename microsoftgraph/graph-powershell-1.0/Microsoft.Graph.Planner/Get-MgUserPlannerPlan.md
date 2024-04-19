@@ -29,14 +29,18 @@ Retrieve a list of plannerplan objects shared with a user object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-plans-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerPlan -UserId $userId
+
+```
+This example shows how to use the Get-MgUserPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

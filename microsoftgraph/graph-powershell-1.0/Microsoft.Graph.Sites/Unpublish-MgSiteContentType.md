@@ -36,13 +36,17 @@ Unpublish a \[contentType\]\[\] from a content type hub site.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Unpublish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Unpublish-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

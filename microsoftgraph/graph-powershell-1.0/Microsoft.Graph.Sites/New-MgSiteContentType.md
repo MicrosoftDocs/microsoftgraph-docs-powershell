@@ -62,11 +62,11 @@ Create a new \[contentType\]\[\] in a \[site\]\[\].
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-contenttypes-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	name = "docSet"
@@ -79,6 +79,10 @@ $params = @{
 }
 
 New-MgSiteContentType -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

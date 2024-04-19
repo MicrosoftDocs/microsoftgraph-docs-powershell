@@ -41,18 +41,20 @@ Read the properties and relationships of a plannerRosterMember object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerrostermember-get-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaPlannerRosterMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaPlannerRosterMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId
 ```
+This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

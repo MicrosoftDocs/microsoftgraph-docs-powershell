@@ -48,13 +48,17 @@ The resources related to the call should be cleaned up on the application side.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-keepalive-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Invoke-MgKeepCommunicationCallAlive -CallId $callId
+
+```
+This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
+
 
 ## PARAMETERS
 

@@ -57,15 +57,16 @@ For more guidance about exporting data while complying with regulations, see Dat
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-exportpersonaldata-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Export-MgUserPersonalData Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
 	StorageLocation = "storageLocation-value"
 }
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Export-MgUserPersonalData Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

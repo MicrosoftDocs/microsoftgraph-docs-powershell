@@ -110,16 +110,18 @@ Create a new servicePrincipal object if it doesn't exist, or update the properti
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-upsert-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Update the properties of a service principal
 
-### EXAMPLE 1
-```
+```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
-```
 
 Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
+```
+
+This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
 
 ## PARAMETERS
 

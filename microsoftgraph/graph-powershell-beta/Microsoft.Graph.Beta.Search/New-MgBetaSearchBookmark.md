@@ -40,40 +40,46 @@ Create a new bookmark object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 $params = @{
-	DisplayName = "Contoso Install Site"
-	WebUrl = "http://www.contoso.com/"
-	Description = "Try or buy Contoso for Home or Business and view product information"
-	Keywords = @{
-		Keywords = @(
-			"Contoso"
-			"install"
-		)
-		ReservedKeywords = @(
-			"Contoso"
-		)
-		MatchSimilarKeywords = $true
-	}
-	AvailabilityStartDateTime = $null
-	AvailabilityEndDateTime = $null
-	Platforms = @(
-		"windows"
-	)
-	TargetedVariations = @(
-		@{
-			LanguageTag = "es-es"
-			DisplayName = "Sitio de instalación Contoso"
-			Description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
-		}
-	)
-	State = "published"
+	displayName = "Contoso Install Site"
+	webUrl = "http://www.contoso.com/"
+	description = "Try or buy Contoso for Home or Business and view product information"
+	keywords = @{
+		keywords = @(
+		"Contoso"
+	"install"
+)
+reservedKeywords = @(
+"Contoso"
+)
+matchSimilarKeywords = $true
 }
+availabilityStartDateTime = $null
+availabilityEndDateTime = $null
+platforms = @(
+"windows"
+)
+targetedVariations = @(
+@{
+languageTag = "es-es"
+displayName = "Sitio de instalación Contoso"
+description = "Pruebe o compre Contoso hogar o negocios y vea la información del producto"
+}
+)
+state = "published"
+}
+
 New-MgBetaSearchBookmark -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

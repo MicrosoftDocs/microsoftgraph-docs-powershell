@@ -56,11 +56,11 @@ Create an instance of an offerShiftRequest.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/offershiftrequest-post-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	senderShiftId = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29"
@@ -69,6 +69,10 @@ $params = @{
 }
 
 New-MgTeamScheduleOfferShiftRequest -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleOfferShiftRequest Cmdlet.
+
 
 ## PARAMETERS
 

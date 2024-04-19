@@ -56,17 +56,21 @@ For more details about how to handle mute operations, see muteParticipantOperati
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-mute-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgMuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgMuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

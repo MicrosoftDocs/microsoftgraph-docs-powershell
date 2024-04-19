@@ -29,13 +29,17 @@ Retrieve a list of plannerTask objects associated with a plannerPlan object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-tasks-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
+
+```
+This example shows how to use the Get-MgPlannerPlanTask Cmdlet.
+
 
 ## PARAMETERS
 

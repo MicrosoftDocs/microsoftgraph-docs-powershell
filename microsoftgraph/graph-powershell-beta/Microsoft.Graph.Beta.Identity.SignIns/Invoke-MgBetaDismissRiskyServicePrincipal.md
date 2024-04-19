@@ -41,9 +41,8 @@ You can dismiss up to 60 service principal accounts in one request.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyserviceprincipal-dismiss-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	ServicePrincipalIds = @(
@@ -52,6 +51,8 @@ $params = @{
 }
 Invoke-MgBetaDismissRiskyServicePrincipal -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaDismissRiskyServicePrincipal Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

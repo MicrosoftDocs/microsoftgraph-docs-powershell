@@ -37,11 +37,10 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-members-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get members of a group
 
-### EXAMPLE 1
-```
+```powershell
 Get-MgGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -49,6 +48,9 @@ Id                                   DeletedDateTime
 0107d1b2-0402-4ef9-a58c-eb0661c5d596
 f9f1bd4f-16ca-4404-925e-5b08b6a3832f
 5441e919-583c-4292-aa3f-98250d8d217b
+```
+
+This examples gets the members of the specified group.
 
 ## PARAMETERS
 

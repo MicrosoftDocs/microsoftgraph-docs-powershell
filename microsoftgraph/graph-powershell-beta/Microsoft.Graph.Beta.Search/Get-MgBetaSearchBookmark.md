@@ -44,18 +44,17 @@ Read the properties and relationships of a bookmark object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Search
-Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Search
+
 Get-MgBetaSearchBookmark
+
 ```
+This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
+
 
 ## PARAMETERS
 

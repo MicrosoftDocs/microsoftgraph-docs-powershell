@@ -76,11 +76,10 @@ Add a contact to the root Contacts folder or to the contacts endpoint of another
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-contacts-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.PersonalContacts
-```
 
 $params = @{
 	givenName = "Pavel"
@@ -98,6 +97,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserContact -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

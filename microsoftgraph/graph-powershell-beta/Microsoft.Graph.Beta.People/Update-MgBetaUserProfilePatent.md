@@ -56,9 +56,8 @@ Update the properties of an itemPatent object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempatent-update-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaUserProfilePatent Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Number = "USPTO-3954432633"
@@ -66,6 +65,8 @@ $params = @{
 }
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

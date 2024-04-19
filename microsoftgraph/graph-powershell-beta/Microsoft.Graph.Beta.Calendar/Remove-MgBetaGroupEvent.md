@@ -36,13 +36,17 @@ Delete an event object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-event-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 Remove-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
+```
+This example shows how to use the Remove-MgBetaGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
