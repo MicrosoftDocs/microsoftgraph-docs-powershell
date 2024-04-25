@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Add new entity to contacts
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,6 +37,16 @@ New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-ResponseHeadersVariab
 Add new entity to contacts
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -518,158 +525,154 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDRESSES <IMicrosoftGraphPhysicalOfficeAddress- `[]`>: Postal addresses for this organizational contact.
+ADDRESSES \<IMicrosoftGraphPhysicalOfficeAddress\[\]\>: Postal addresses for this organizational contact.
 For now a contact can only have one physical address.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region.
+  \[City \<String\>\]: The city.
+  \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-  - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+  \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
+  \[PostalCode \<String\>\]: The postal code.
+  \[State \<String\>\]: The state.
+  \[Street \<String\>\]: The street.
 
-BODYPARAMETER `<IMicrosoftGraphOrgContact>`: orgContact
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+BODYPARAMETER \<IMicrosoftGraphOrgContact\>: orgContact
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Addresses <IMicrosoftGraphPhysicalOfficeAddress- `[]`>]`: Postal addresses for this organizational contact.
+  \[Addresses \<IMicrosoftGraphPhysicalOfficeAddress\[\]\>\]: Postal addresses for this organizational contact.
 For now a contact can only have one physical address.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region.
+    \[City \<String\>\]: The city.
+    \[CountryOrRegion \<String\>\]: The country or region.
 It's a free-format string value, for example, 'United States'.
-    - `[OfficeLocation <String>]`: Office location such as building and office number for an organizational contact.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-  - `[CompanyName <String>]`: Name of the company that this organizational contact belongs to. 
+    \[OfficeLocation \<String\>\]: Office location such as building and office number for an organizational contact.
+    \[PostalCode \<String\>\]: The postal code.
+    \[State \<String\>\]: The state.
+    \[Street \<String\>\]: The street.
+  \[CompanyName \<String\>\]: Name of the company that this organizational contact belongs to. 
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[Department <String>]`: The name for the department in which the contact works. 
+  \[Department \<String\>\]: The name for the department in which the contact works. 
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[DirectReports <IMicrosoftGraphDirectoryObject- `[]`>]`: The contact's direct reports.
+  \[DirectReports \<IMicrosoftGraphDirectoryObject\[\]\>\]: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.)  Read-only.
 Nullable.
 Supports $expand.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[DisplayName <String>]`: Display name for this organizational contact.
+  \[DisplayName \<String\>\]: Display name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values), $search, and $orderby.
-  - `[GivenName <String>]`: First name for this organizational contact.
+  \[GivenName \<String\>\]: First name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[JobTitle <String>]`: Job title for this organizational contact.
+  \[JobTitle \<String\>\]: Job title for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[Mail <String>]`: The SMTP address for the contact, for example, 'jeff@contoso.com'.
+  \[Mail \<String\>\]: The SMTP address for the contact, for example, 'jeff@contoso.com'.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[MailNickname <String>]`: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
+  \[MailNickname \<String\>\]: Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
-  - `[MemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: Groups that this contact is a member of.
+  \[Manager \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
+  \[MemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Date and time when this organizational contact was last synchronized from on-premises AD.
+  \[OnPremisesLastSyncDateTime \<DateTime?\>\]: Date and time when this organizational contact was last synchronized from on-premises AD.
 This date and time information uses ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ne, not, ge, le, in).
-  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError- `[]`>]`: List of any synchronization provisioning errors for this organizational contact.
+  \[OnPremisesProvisioningErrors \<IMicrosoftGraphOnPremisesProvisioningError\[\]\>\]: List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, /$count ne 0.
-    - `[Category <String>]`: Category of the provisioning error.
+    \[Category \<String\>\]: Category of the provisioning error.
 Note: Currently, there is only one possible value.
 Possible value: PropertyConflict - indicates a property value is not unique.
 Other objects contain the same value for the property.
-    - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
-    - `[PropertyCausingError <String>]`: Name of the directory property causing the error.
+    \[OccurredDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+    \[PropertyCausingError \<String\>\]: Name of the directory property causing the error.
 Current possible values: UserPrincipalName or ProxyAddress
-    - `[Value <String>]`: Value of the property causing the error.
-  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default). 
+    \[Value \<String\>\]: Value of the property causing the error.
+  \[OnPremisesSyncEnabled \<Boolean?\>\]: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; null if this object has never been synced from an on-premises directory (default). 
 Supports $filter (eq, ne, not, in, and eq for null values).
-  - `[Phones <IMicrosoftGraphPhone- `[]`>]`: List of phones for this organizational contact.
+  \[Phones \<IMicrosoftGraphPhone\[\]\>\]: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
-    - `[Language <String>]`: 
-    - `[Number <String>]`: The phone number.
-    - `[Region <String>]`: 
-    - `[Type <String>]`: phoneType
-  - `[ProxyAddresses <String- `[]`>]`: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
+    \[Language \<String\>\]: 
+    \[Number \<String\>\]: The phone number.
+    \[Region \<String\>\]: 
+    \[Type \<String\>\]: phoneType
+  \[ProxyAddresses \<String\[\]\>\]: For example: 'SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com'.
 The any operator is required for filter expressions on multi-valued properties.
 Supports $filter (eq, not, ge, le, startsWith, /$count eq 0, /$count ne 0).
-  - `[ServiceProvisioningErrors <IMicrosoftGraphServiceProvisioningError- `[]`>]`: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object . 
+  \[ServiceProvisioningErrors \<IMicrosoftGraphServiceProvisioningError\[\]\>\]: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object . 
 Supports $filter (eq, not, for isResolved and serviceInstance).
-    - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
-    - `[IsResolved <Boolean?>]`: Indicates whether the error has been attended to.
-    - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
-  - `[Surname <String>]`: Last name for this organizational contact.
+    \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+    \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+    \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
+  \[Surname \<String\>\]: Last name for this organizational contact.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq for null values).
-  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject- `[]`>]`: Groups that this contact is a member of, including groups that the contact is nested under.
+  \[TransitiveMemberOf \<IMicrosoftGraphDirectoryObject\[\]\>\]: Groups that this contact is a member of, including groups that the contact is nested under.
 Read-only.
 Nullable.
 
-DIRECTREPORTS <IMicrosoftGraphDirectoryObject- `[]`>: The contact's direct reports.
+DIRECTREPORTS \<IMicrosoftGraphDirectoryObject\[\]\>: The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MANAGER `<IMicrosoftGraphDirectoryObject>`: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+MANAGER \<IMicrosoftGraphDirectoryObject\>: directoryObject
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups that this contact is a member of.
+MEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: Groups that this contact is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ONPREMISESPROVISIONINGERRORS <IMicrosoftGraphOnPremisesProvisioningError- `[]`>: List of any synchronization provisioning errors for this organizational contact.
+ONPREMISESPROVISIONINGERRORS \<IMicrosoftGraphOnPremisesProvisioningError\[\]\>: List of any synchronization provisioning errors for this organizational contact.
 Supports $filter (eq, not for category and propertyCausingError), /$count eq 0, /$count ne 0.
-  - `[Category <String>]`: Category of the provisioning error.
+  \[Category \<String\>\]: Category of the provisioning error.
 Note: Currently, there is only one possible value.
 Possible value: PropertyConflict - indicates a property value is not unique.
 Other objects contain the same value for the property.
-  - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
-  - `[PropertyCausingError <String>]`: Name of the directory property causing the error.
+  \[OccurredDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+  \[PropertyCausingError \<String\>\]: Name of the directory property causing the error.
 Current possible values: UserPrincipalName or ProxyAddress
-  - `[Value <String>]`: Value of the property causing the error.
+  \[Value \<String\>\]: Value of the property causing the error.
 
-PHONES <IMicrosoftGraphPhone- `[]`>: List of phones for this organizational contact.
+PHONES \<IMicrosoftGraphPhone\[\]\>: List of phones for this organizational contact.
 Phone types can be mobile, business, and businessFax.
 Only one of each type can ever be present in the collection.
-  - `[Language <String>]`: 
-  - `[Number <String>]`: The phone number.
-  - `[Region <String>]`: 
-  - `[Type <String>]`: phoneType
+  \[Language \<String\>\]: 
+  \[Number \<String\>\]: The phone number.
+  \[Region \<String\>\]: 
+  \[Type \<String\>\]: phoneType
 
-SERVICEPROVISIONINGERRORS <IMicrosoftGraphServiceProvisioningError- `[]`>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
+SERVICEPROVISIONINGERRORS \<IMicrosoftGraphServiceProvisioningError\[\]\>: Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from an organizational contact object .
 Supports $filter (eq, not, for isResolved and serviceInstance).
-  - `[CreatedDateTime <DateTime?>]`: The date and time at which the error occurred.
-  - `[IsResolved <Boolean?>]`: Indicates whether the error has been attended to.
-  - `[ServiceInstance <String>]`: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time at which the error occurred.
+  \[IsResolved \<Boolean?\>\]: Indicates whether the error has been attended to.
+  \[ServiceInstance \<String\>\]: Qualified service instance (for example, 'SharePoint/Dublin') that published the service error information.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject- `[]`>: Groups that this contact is a member of, including groups that the contact is nested under.
+TRANSITIVEMEMBEROF \<IMicrosoftGraphDirectoryObject\[\]\>: Groups that this contact is a member of, including groups that the contact is nested under.
 Read-only.
 Nullable.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontact)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a printer share.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShare?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -39,32 +36,21 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Retrieve the properties and relationships of a printer share.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-get-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Get a printerShare
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Get-MgPrintShare -PrinterShareId $printerShareId
 
+### EXAMPLE 2
 ```
-This example will get a printershare
-
-### Example 2: Get a printerShare and its capabilities
-
-```powershell
-
 Import-Module Microsoft.Graph.Devices.CloudPrint
-
-Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities" 
-
 ```
-This example will get a printershare and its capabilities
 
+Get-MgPrintShare -PrinterShareId $printerShareId -Property "id,displayName,capabilities"
 
 ## PARAMETERS
 
@@ -311,26 +297,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShare?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshare)
 
+[https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-get?view=graph-rest-1.0)
 
-
+[https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-shares?view=graph-rest-1.0)
 

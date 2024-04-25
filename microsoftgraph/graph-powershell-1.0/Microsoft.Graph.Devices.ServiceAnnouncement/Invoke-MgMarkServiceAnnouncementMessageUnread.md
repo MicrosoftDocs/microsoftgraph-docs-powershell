@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as unread for the signed in user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageUnread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,15 +30,12 @@ Invoke-MgMarkServiceAnnouncementMessageUnread
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as unread for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-markunread-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+```
 
 $params = @{
 	messageIds = @(
@@ -51,10 +45,6 @@ $params = @{
 }
 
 Invoke-MgMarkServiceAnnouncementMessageUnread -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgMarkServiceAnnouncementMessageUnread Cmdlet.
-
 
 ## PARAMETERS
 
@@ -196,15 +186,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[MessageIds \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Invoke-MgBetaMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaMarkServiceAnnouncementMessageUnread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread)
 
-
-
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDevicePerformance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -37,6 +34,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDevicePerformance
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -485,43 +498,38 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDevicePerformance>`: The user experience analytics device performance entity contains device boot performance details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDevicePerformance\>: The user experience analytics device performance entity contains device boot performance details.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AverageBlueScreens <Double?>]`: Average (mean) number of Blue Screens per device in the last 30 days.
+  \[AverageBlueScreens \<Double?\>\]: Average (mean) number of Blue Screens per device in the last 30 days.
 Valid values 0 to 9999999
-  - `[AverageRestarts <Double?>]`: Average (mean) number of Restarts per device in the last 30 days.
+  \[AverageRestarts \<Double?\>\]: Average (mean) number of Restarts per device in the last 30 days.
 Valid values 0 to 9999999
-  - `[BlueScreenCount <Int32?>]`: Number of Blue Screens in the last 30 days.
+  \[BlueScreenCount \<Int32?\>\]: Number of Blue Screens in the last 30 days.
 Valid values 0 to 9999999
-  - `[BootScore <Int32?>]`: The user experience analytics device boot score.
-  - `[CoreBootTimeInMS <Int32?>]`: The user experience analytics device core boot time in milliseconds.
-  - `[CoreLoginTimeInMS <Int32?>]`: The user experience analytics device core login time in milliseconds.
-  - `[DeviceCount <Int64?>]`: User experience analytics summarized device count.
-  - `[DeviceName <String>]`: The user experience analytics device name.
-  - `[DiskType <DiskType?>]`: diskType
-  - `[GroupPolicyBootTimeInMS <Int32?>]`: The user experience analytics device group policy boot time in milliseconds.
-  - `[GroupPolicyLoginTimeInMS <Int32?>]`: The user experience analytics device group policy login time in milliseconds.
-  - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[LoginScore <Int32?>]`: The user experience analytics device login score.
-  - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
-  - `[Model <String>]`: The user experience analytics device model.
-  - `[ModelStartupPerformanceScore <Double?>]`: The user experience analytics model level startup performance score.
+  \[BootScore \<Int32?\>\]: The user experience analytics device boot score.
+  \[CoreBootTimeInMS \<Int32?\>\]: The user experience analytics device core boot time in milliseconds.
+  \[CoreLoginTimeInMS \<Int32?\>\]: The user experience analytics device core login time in milliseconds.
+  \[DeviceCount \<Int64?\>\]: User experience analytics summarized device count.
+  \[DeviceName \<String\>\]: The user experience analytics device name.
+  \[DiskType \<DiskType?\>\]: diskType
+  \[GroupPolicyBootTimeInMS \<Int32?\>\]: The user experience analytics device group policy boot time in milliseconds.
+  \[GroupPolicyLoginTimeInMS \<Int32?\>\]: The user experience analytics device group policy login time in milliseconds.
+  \[HealthStatus \<UserExperienceAnalyticsHealthState?\>\]: userExperienceAnalyticsHealthState
+  \[LoginScore \<Int32?\>\]: The user experience analytics device login score.
+  \[Manufacturer \<String\>\]: The user experience analytics device manufacturer.
+  \[Model \<String\>\]: The user experience analytics device model.
+  \[ModelStartupPerformanceScore \<Double?\>\]: The user experience analytics model level startup performance score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[OperatingSystemVersion <String>]`: The user experience analytics device Operating System version.
-  - `[ResponsiveDesktopTimeInMS <Int32?>]`: The user experience analytics responsive desktop time in milliseconds.
-  - `[RestartCount <Int32?>]`: Number of Restarts in the last 30 days.
+  \[OperatingSystemVersion \<String\>\]: The user experience analytics device Operating System version.
+  \[ResponsiveDesktopTimeInMS \<Int32?\>\]: The user experience analytics responsive desktop time in milliseconds.
+  \[RestartCount \<Int32?\>\]: Number of Restarts in the last 30 days.
 Valid values 0 to 9999999
-  - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score.
+  \[StartupPerformanceScore \<Double?\>\]: The user experience analytics device startup performance score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDevicePerformance?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdeviceperformance)
-
-
-
-
 

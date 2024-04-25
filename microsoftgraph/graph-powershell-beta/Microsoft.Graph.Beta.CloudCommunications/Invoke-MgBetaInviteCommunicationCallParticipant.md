@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -52,15 +49,12 @@ Invoke-MgBetaInviteCommunicationCallParticipant -InputObject <ICloudCommunicatio
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-invite-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -82,14 +76,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 2
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 2: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -111,14 +101,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 3
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 3: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -138,14 +124,10 @@ $params = @{
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 
+### EXAMPLE 4
 ```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
-### Example 4: Code snippet
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	participants = @(
@@ -167,10 +149,6 @@ $params = @{
 }
 
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
-
-```
-This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
-
 
 ## PARAMETERS
 
@@ -360,79 +338,79 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ClientContext <String>]`: 
-  - `[Participants <IMicrosoftGraphInvitationParticipantInfo- `[]`>]`: 
-    - `[EndpointType <String>]`: endpointType
-    - `[Hidden <Boolean?>]`: Optional.
+BODYPARAMETER \<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ClientContext \<String\>\]: 
+  \[Participants \<IMicrosoftGraphInvitationParticipantInfo\[\]\>\]: 
+    \[EndpointType \<String\>\]: endpointType
+    \[Hidden \<Boolean?\>\]: Optional.
 Whether to hide the participant from the roster.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[ParticipantId <String>]`: Optional.
+    \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Application \<IMicrosoftGraphIdentity\>\]: identity
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+      \[Device \<IMicrosoftGraphIdentity\>\]: identity
+      \[User \<IMicrosoftGraphIdentity\>\]: identity
+    \[ParticipantId \<String\>\]: Optional.
 The ID of the target participant.
-    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
+    \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
 Whether to remove them from the main mixer.
-    - `[ReplacesCallId <String>]`: Optional.
+    \[ReplacesCallId \<String\>\]: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
-PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo- `[]`>: .
-  - `[EndpointType <String>]`: endpointType
-  - `[Hidden <Boolean?>]`: Optional.
+PARTICIPANTS \<IMicrosoftGraphInvitationParticipantInfo\[\]\>: .
+  \[EndpointType \<String\>\]: endpointType
+  \[Hidden \<Boolean?\>\]: Optional.
 Whether to hide the participant from the roster.
-  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ParticipantId <String>]`: Optional.
+  \[Identity \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      \[Id \<String\>\]: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[ParticipantId \<String\>\]: Optional.
 The ID of the target participant.
-  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional.
+  \[RemoveFromDefaultAudioRoutingGroup \<Boolean?\>\]: Optional.
 Whether to remove them from the main mixer.
-  - `[ReplacesCallId <String>]`: Optional.
+  \[ReplacesCallId \<String\>\]: Optional.
 The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
 
-
-
+[https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised
@@ -36,12 +36,10 @@ Events marked as risky by an admin are immediately flagged as high risk in Micro
 Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/signin-confirmcompromised-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
@@ -52,8 +50,6 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInCompromised -BodyParameter $params
 ```
-This example shows how to use the Confirm-MgBetaAuditLogSignInCompromised Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -210,14 +206,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RequestIds <String- `[]`>]`:
+BODYPARAMETER \<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[RequestIds \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
 
-
-
+[https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0)
 

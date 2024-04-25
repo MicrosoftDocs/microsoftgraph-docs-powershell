@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupById](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupById?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -35,10 +32,17 @@ Get-MgBetaGroupById
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryobject-getbyids-permissions.md)]
-
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -195,16 +199,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String- `[]`>]`: 
-  - `[Types <String- `[]`>]`:
+BODYPARAMETER \<IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Ids \<String\[\]\>\]: 
+  \[Types \<String\[\]\>\]:
 
 ## RELATED LINKS
-[Get-MgGroupById](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupById?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupbyid)
 
-
-
+[https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 

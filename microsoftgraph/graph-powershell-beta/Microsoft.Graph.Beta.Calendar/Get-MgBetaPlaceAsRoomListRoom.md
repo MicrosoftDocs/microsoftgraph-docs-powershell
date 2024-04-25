@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlistroom
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get rooms from places
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,6 +36,18 @@ Get-MgBetaPlaceAsRoomListRoom -InputObject <ICalendarIdentity> [-ExpandProperty 
 
 ## DESCRIPTION
 Get rooms from places
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -300,27 +309,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[EventId2 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WorkspaceId <String>]`: The unique identifier of workspace
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[EventId2 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WorkspaceId \<String\>\]: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetaplaceasroomlistroom)
-
-
-
-
 

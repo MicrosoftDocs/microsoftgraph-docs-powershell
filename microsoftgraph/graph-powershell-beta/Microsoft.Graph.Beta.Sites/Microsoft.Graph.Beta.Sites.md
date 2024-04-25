@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Sites
 Module Guid: 7587c600-0c13-4efa-bc56-869a6245ef96
 Download Help Link: {{ Update Download Link }}
@@ -216,6 +216,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteGetByPathItem](Get-MgBetaGroupSiteGetByPathItem.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaGroupSiteGetByPathList](Get-MgBetaGroupSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaGroupSiteGetByPathOnenote](Get-MgBetaGroupSiteGetByPathOnenote.md)
@@ -1233,6 +1236,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteGetByPathExternalColumn](Get-MgBetaSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteGetByPathList](Get-MgBetaSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteGetByPathOperation](Get-MgBetaSiteGetByPathOperation.md)
@@ -3406,5 +3412,4 @@ Locale: en-US
 
 ### [Update-MgBetaSiteTermStoreSetTermRelation](Update-MgBetaSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 Module Guid: ebbf4df4-1be0-458b-a73c-6204060e5c3e
 Download Help Link: {{ Update Download Link }}
@@ -2914,5 +2914,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 {{ Fill in the Description }}
-
 

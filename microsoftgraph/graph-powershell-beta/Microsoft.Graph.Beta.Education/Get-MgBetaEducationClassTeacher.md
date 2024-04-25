@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,21 +24,14 @@ Get-MgBetaEducationClassTeacher -EducationClassId <String> [-ExpandProperty <Str
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-list-teachers-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 Get-MgBetaEducationClassTeacher -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgBetaEducationClassTeacher Cmdlet.
-
 
 ## PARAMETERS
 
@@ -268,10 +258,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassteacher)
 
-
-
+[https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-teachers?view=graph-rest-1.0)
 
