@@ -69,14 +69,13 @@ Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
-	dueDateTime = \[System.DateTime\]::Parse("2022-09-16T00:00:00Z")
+	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
 	displayName = "Reading test 09.14"
 	instructions = @{
 		contentType = "text"
@@ -94,6 +93,11 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationClassAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -61,11 +61,10 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -80,11 +79,15 @@ $params = @{
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Request with Prefer header
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -99,6 +102,11 @@ $params = @{
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

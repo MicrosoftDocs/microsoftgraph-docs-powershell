@@ -43,14 +43,18 @@ Retrieve a password that's registered to a user, represented by a passwordAuthen
 For security, the password itself will never be returned in the object and the password property is always null.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserAuthenticationPasswordMethod -UserId $userId -PasswordAuthenticationMethodId $passwordAuthenticationMethodId
+```
+This example shows how to use the Get-MgUserAuthenticationPasswordMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

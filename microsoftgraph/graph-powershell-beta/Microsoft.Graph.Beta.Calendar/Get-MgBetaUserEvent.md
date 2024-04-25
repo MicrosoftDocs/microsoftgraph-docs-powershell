@@ -42,38 +42,54 @@ Get the properties and relationships of the specified event object.
 An app can get an event in another user's calendar if: Because the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
 
 ## EXAMPLES
+### Example 1: Get a specified event
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees"
+```
+This example shows how to use the Get-MgBetaUserEvent Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the body property in text format
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview"
+```
+This example shows how to use the Get-MgBetaUserEvent Cmdlet.
 
-### EXAMPLE 3
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get an event that specifies more than one location
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview,organizer,attendees,start,end,location,locations"
+```
+This example shows how to use the Get-MgBetaUserEvent Cmdlet.
 
-### EXAMPLE 4
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Expand a series master event
+
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences" -ExpandProperty "exceptionOccurrences"
+```
+This example shows how to use the Get-MgBetaUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -62,11 +62,10 @@ New-MgBetaUserCalendarGroupCalendar -InputObject <ICalendarIdentity> -BodyParame
 Use this API to create a new calendar in a calendar group for a user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
-```
 
 $params = @{
 	name = "Marketing calendar"
@@ -74,6 +73,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserCalendarGroupCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

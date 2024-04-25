@@ -40,13 +40,17 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>]
 Retrieve the properties and relationships of a shift object by ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
+
+```
+This example shows how to use the Get-MgTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

@@ -74,11 +74,11 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ## EXAMPLES
+### Example 1: Update the default branding
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Default"
@@ -86,6 +86,10 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example will update the default branding
+
 
 ## PARAMETERS
 

@@ -50,9 +50,8 @@ Hide-MgBetaChatForUser -InputObject <ITeamsIdentity>
 Hide a chat for a user.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Hide-MgBetaChatForUser Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	User = @{
@@ -62,6 +61,8 @@ $params = @{
 }
 Hide-MgBetaChatForUser -ChatId $chatId -BodyParameter $params
 ```
+This example shows how to use the Hide-MgBetaChatForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

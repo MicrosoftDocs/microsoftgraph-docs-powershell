@@ -46,11 +46,10 @@ New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-Response
 Create a new user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -104,7 +103,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.provisionedPlan"
 		}
 	)
-	refreshTokensValidFromDateTime = \[System.DateTime\]::Parse("String (timestamp)")
+	refreshTokensValidFromDateTime = [System.DateTime]::Parse("String (timestamp)")
 	showInAddressList = "Boolean"
 	surname = "String"
 	usageLocation = "String"
@@ -116,6 +115,11 @@ $params = @{
 }
 
 New-MgBetaEducationUser -BodyParameter $params
+```
+This example shows how to use the New-MgBetaEducationUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
