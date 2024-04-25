@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview
@@ -200,27 +200,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsOverview\>: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsOverview>`: The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Insights \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>\]: The user experience analytics insights.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>]`: The user experience analytics insights.
 Read-only.
-    \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-    \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-    \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-    \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
-INSIGHTS \<IMicrosoftGraphUserExperienceAnalyticsInsight\[\]\>: The user experience analytics insights.
+INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight- `[]`>: The user experience analytics insights.
 Read-only.
-  \[InsightId \<String\>\]: The unique identifier of the user experience analytics insight.
-  \[Severity \<UserExperienceAnalyticsInsightSeverity?\>\]: Indicates severity of insights.
+  - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+  - `[Severity <UserExperienceAnalyticsInsightSeverity?>]`: Indicates severity of insights.
 Possible values are: None, Informational, Warning, Error.
-  \[UserExperienceAnalyticsMetricId \<String\>\]: The unique identifier of the user experience analytics metric.
-  \[Values \<IMicrosoftGraphUserExperienceAnalyticsInsightValue\[\]\>\]: The value of the user experience analytics insight.
+  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics metric.
+  - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue- `[]`>]`: The value of the user experience analytics insight.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview)
+
+
+
 

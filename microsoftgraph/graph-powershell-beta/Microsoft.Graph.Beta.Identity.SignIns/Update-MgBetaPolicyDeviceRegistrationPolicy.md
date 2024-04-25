@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy
@@ -301,58 +301,58 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AZUREADJOIN \<IMicrosoftGraphAzureAdJoinPolicy\>: azureADJoinPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AllowedToJoin \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
-  \[LocalAdmins \<IMicrosoftGraphLocalAdminSettings\>\]: localAdminSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[EnableGlobalAdmins \<Boolean?\>\]: 
-    \[RegisteringUsers \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
+AZUREADJOIN `<IMicrosoftGraphAzureAdJoinPolicy>`: azureADJoinPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AllowedToJoin <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
+  - `[LocalAdmins <IMicrosoftGraphLocalAdminSettings>]`: localAdminSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EnableGlobalAdmins <Boolean?>]`: 
+    - `[RegisteringUsers <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
 
-AZUREADREGISTRATION \<IMicrosoftGraphAzureAdRegistrationPolicy\>: azureADRegistrationPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[AllowedToRegister \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
+AZUREADREGISTRATION `<IMicrosoftGraphAzureAdRegistrationPolicy>`: azureADRegistrationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AllowedToRegister <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceRegistrationPolicy\>: deviceRegistrationPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceRegistrationPolicy>`: deviceRegistrationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AzureAdJoin \<IMicrosoftGraphAzureAdJoinPolicy\>\]: azureADJoinPolicy
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AllowedToJoin \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
-    \[LocalAdmins \<IMicrosoftGraphLocalAdminSettings\>\]: localAdminSettings
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[EnableGlobalAdmins \<Boolean?\>\]: 
-      \[RegisteringUsers \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-  \[AzureAdRegistration \<IMicrosoftGraphAzureAdRegistrationPolicy\>\]: azureADRegistrationPolicy
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AllowedToRegister \<IMicrosoftGraphDeviceRegistrationMembership\>\]: deviceRegistrationMembership
-    \[IsAdminConfigurable \<Boolean?\>\]: Determines if administrators can modify this policy.
-  \[Description \<String\>\]: The description of the device registration policy.
+  - `[AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]`: azureADJoinPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowedToJoin <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
+    - `[LocalAdmins <IMicrosoftGraphLocalAdminSettings>]`: localAdminSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnableGlobalAdmins <Boolean?>]`: 
+      - `[RegisteringUsers <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
+  - `[AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>]`: azureADRegistrationPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowedToRegister <IMicrosoftGraphDeviceRegistrationMembership>]`: deviceRegistrationMembership
+    - `[IsAdminConfigurable <Boolean?>]`: Determines if administrators can modify this policy.
+  - `[Description <String>]`: The description of the device registration policy.
 It's always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the device registration policy.
+  - `[DisplayName <String>]`: The name of the device registration policy.
 It's always set to Device Registration Policy.
 Read-only.
-  \[LocalAdminPassword \<IMicrosoftGraphLocalAdminPasswordSettings\>\]: localAdminPasswordSettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsEnabled \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
+  - `[LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]`: localAdminPasswordSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin.
 The default value is false.
 An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
-  \[MultiFactorAuthConfiguration \<String\>\]: multiFactorAuthConfiguration
-  \[UserDeviceQuota \<Int32?\>\]: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.
+  - `[MultiFactorAuthConfiguration <String>]`: multiFactorAuthConfiguration
+  - `[UserDeviceQuota <Int32?>]`: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.
 The default value is set to 50.
 If this property isn't specified during the policy update operation, it's automatically reset to 0 to indicate that users aren't allowed to join any devices.
 
-LOCALADMINPASSWORD \<IMicrosoftGraphLocalAdminPasswordSettings\>: localAdminPasswordSettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsEnabled \<Boolean?\>\]: Specifies whether this policy scope is configurable by the admin.
+LOCALADMINPASSWORD `<IMicrosoftGraphLocalAdminPasswordSettings>`: localAdminPasswordSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin.
 The default value is false.
 An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
 
@@ -361,4 +361,7 @@ An admin can set it to true to enable Local Admin Password Solution (LAPS) withi
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy)
 
 [https://learn.microsoft.com/graph/api/deviceregistrationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-update?view=graph-rest-1.0)
+
+
+
 
