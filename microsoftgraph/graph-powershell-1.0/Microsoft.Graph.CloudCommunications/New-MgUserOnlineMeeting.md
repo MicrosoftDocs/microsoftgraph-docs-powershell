@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an online meeting on behalf of a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

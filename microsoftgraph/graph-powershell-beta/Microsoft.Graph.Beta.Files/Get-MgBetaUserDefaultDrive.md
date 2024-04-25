@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a drive resource.
 A drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDefaultDrive?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

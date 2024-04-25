@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of files for this app content version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsManagedMobileLobAppContentVersionFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

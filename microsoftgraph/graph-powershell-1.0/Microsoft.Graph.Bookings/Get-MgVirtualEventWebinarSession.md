@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sessions for the virtual event.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

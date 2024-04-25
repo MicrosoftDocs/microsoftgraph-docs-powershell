@@ -28,6 +28,9 @@ Complete-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Complete a recommendation object and update its status to completedByUser.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-complete-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

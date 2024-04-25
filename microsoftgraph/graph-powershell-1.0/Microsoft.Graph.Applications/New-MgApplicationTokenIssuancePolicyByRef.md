@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a tokenIssuancePolicy to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
