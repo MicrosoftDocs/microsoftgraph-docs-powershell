@@ -57,18 +57,6 @@ Update-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 ## DESCRIPTION
 Update the properties of a trainingCampaign object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -772,6 +760,7 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
 
 [https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0)
+
 
 
 

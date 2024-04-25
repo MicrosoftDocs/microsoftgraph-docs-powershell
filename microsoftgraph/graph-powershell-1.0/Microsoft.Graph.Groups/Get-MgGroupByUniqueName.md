@@ -41,18 +41,6 @@ The hasMembersWithLicenseErrors and isArchived properties are an exception and a
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -225,6 +213,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get?view=graph-rest-1.0)
+
 
 
 

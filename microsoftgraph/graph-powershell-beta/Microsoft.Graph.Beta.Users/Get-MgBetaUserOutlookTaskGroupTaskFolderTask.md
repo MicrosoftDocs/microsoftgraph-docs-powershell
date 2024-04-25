@@ -41,22 +41,6 @@ The tasks in this task folder.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +334,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgrouptaskfoldertask)
 
 [https://learn.microsoft.com/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-1.0)
+
 
 
 

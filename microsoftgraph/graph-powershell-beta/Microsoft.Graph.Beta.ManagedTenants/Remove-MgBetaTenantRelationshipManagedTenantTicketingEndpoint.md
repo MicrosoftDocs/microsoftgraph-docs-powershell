@@ -29,18 +29,6 @@ Remove-MgBetaTenantRelationshipManagedTenantTicketingEndpoint -InputObject <IMan
 ## DESCRIPTION
 Delete navigation property managedTenantTicketingEndpoints for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -239,6 +227,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantticketingendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenantticketingendpoint)
+
 
 
 

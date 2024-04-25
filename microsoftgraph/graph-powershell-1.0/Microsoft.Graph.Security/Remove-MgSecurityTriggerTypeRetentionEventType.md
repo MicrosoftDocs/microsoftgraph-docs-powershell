@@ -32,18 +32,6 @@ Remove-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete a retentionEventType object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -266,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritytriggertyperetentioneventtype)
 
 [https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Read the properties and relationships of a retentionEventType object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +354,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0)
+
 
 
 

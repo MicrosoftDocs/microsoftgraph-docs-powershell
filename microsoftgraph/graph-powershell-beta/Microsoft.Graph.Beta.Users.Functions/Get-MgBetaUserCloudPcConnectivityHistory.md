@@ -29,22 +29,6 @@ Get-MgBetaUserCloudPcConnectivityHistory -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Invoke function getCloudPcConnectivityHistory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -272,6 +256,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcconnectivityhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcconnectivityhistory)
+
 
 
 

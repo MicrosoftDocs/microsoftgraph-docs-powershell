@@ -48,18 +48,6 @@ New-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Create a new managedMobileApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +301,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp)
 
 [https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0)
+
 
 
 

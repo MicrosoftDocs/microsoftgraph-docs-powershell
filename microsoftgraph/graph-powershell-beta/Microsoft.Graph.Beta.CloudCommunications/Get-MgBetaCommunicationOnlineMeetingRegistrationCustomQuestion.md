@@ -38,22 +38,6 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +326,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0)
+
 
 
 

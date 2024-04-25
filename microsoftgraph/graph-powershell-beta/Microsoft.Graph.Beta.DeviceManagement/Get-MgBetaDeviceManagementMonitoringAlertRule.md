@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertRuleId
@@ -444,6 +432,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0)
+
 
 
 

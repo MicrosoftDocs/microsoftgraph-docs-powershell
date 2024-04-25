@@ -32,18 +32,6 @@ Remove-MgEducationSchoolUserEducationUserByRef -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Delete a user from a school.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -234,6 +222,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0)
+
 
 
 

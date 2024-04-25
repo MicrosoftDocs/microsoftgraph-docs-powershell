@@ -46,18 +46,6 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -413,6 +401,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpage)
 
 [https://learn.microsoft.com/graph/api/section-list-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-list-pages?view=graph-rest-1.0)
+
 
 
 

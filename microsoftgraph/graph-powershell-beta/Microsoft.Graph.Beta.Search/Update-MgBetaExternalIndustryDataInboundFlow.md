@@ -49,18 +49,6 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an inboundFlow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -498,6 +486,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
 
 [https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0)
+
 
 
 

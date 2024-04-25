@@ -31,18 +31,6 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-Respo
 ## DESCRIPTION
 Create a new attributeSet object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,6 +224,7 @@ Can be changed later.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
 
 [https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
+
 
 
 

@@ -60,22 +60,6 @@ New-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24173,6 +24157,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem)
 
 [https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0)
+
 
 
 

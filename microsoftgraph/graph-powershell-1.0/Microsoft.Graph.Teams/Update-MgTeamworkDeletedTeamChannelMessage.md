@@ -73,18 +73,6 @@ If one of the participants is using Skype, the operation fails.
 This method doesn't support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1064,6 +1052,7 @@ Link to the message in Microsoft Teams.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessage)
 
 [https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
+
 
 
 

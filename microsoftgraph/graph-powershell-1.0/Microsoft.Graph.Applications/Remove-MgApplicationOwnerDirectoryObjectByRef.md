@@ -34,18 +34,6 @@ Remove-MgApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIdentit
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationownerdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
+
 
 
 

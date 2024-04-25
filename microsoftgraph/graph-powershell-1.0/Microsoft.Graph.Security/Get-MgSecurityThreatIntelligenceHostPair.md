@@ -62,18 +62,6 @@ Get-MgSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a hostPair object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -403,6 +391,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0)
+
 
 
 

@@ -40,22 +40,6 @@ Get-MgServicePrincipalTokenIssuancePolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 The tokenIssuancePolicies assigned to this service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -344,6 +328,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicy)
+
 
 
 

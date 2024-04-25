@@ -40,18 +40,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalization -InputObject <IIdent
 ## DESCRIPTION
 The localized version of the terms of use agreement files attached to the agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -386,6 +374,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfilelocalization)
 
 [https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-1.0)
+
 
 
 

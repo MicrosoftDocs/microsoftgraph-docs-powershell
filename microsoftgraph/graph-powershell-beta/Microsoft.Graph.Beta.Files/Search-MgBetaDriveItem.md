@@ -34,22 +34,6 @@ Search-MgBetaDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -323,6 +307,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem)
+
 
 
 

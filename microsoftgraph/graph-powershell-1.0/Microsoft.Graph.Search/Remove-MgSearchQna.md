@@ -32,18 +32,6 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete a qna object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -215,6 +203,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna)
 
 [https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0)
+
 
 
 

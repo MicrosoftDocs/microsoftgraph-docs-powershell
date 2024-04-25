@@ -34,18 +34,6 @@ Get-MgBetaSiteGetByPathColumn -Path <String> -SiteId <String> -Path1 <String> [-
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,6 +293,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathcolumn)
 
 [https://learn.microsoft.com/graph/api/site-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-columns?view=graph-rest-1.0)
+
 
 
 

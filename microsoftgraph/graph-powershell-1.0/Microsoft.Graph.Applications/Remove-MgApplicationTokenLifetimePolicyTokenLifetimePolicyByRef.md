@@ -33,18 +33,6 @@ Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject <IA
 ## DESCRIPTION
 Remove a tokenLifetimePolicy from an application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -245,6 +233,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenlifetimepolicytokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenlifetimepolicytokenlifetimepolicybyref)
 
 [https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0)
+
 
 
 

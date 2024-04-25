@@ -34,18 +34,6 @@ Get-MgSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProperty <Str
 Identity of the user who last modified the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -233,6 +221,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelastmodifiedbyuser)
+
 
 
 

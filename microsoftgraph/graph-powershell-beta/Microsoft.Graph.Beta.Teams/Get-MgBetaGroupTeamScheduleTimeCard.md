@@ -37,22 +37,6 @@ Get-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the properties and relationships of a timeCard object by ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -363,6 +347,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0)
+
 
 
 

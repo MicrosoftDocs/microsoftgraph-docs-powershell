@@ -49,18 +49,6 @@ Update-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParame
 ## DESCRIPTION
 Update the properties of the specified tab.This API can be used to configure the content of the tab.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -467,6 +455,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchanneltab)
 
 [https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0)
+
 
 
 

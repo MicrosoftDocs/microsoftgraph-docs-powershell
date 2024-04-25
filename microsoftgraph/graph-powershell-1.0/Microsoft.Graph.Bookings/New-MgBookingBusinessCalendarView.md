@@ -60,22 +60,6 @@ New-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to calendarView for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -731,6 +715,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscalendarview)
+
 
 
 

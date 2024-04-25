@@ -29,22 +29,6 @@ Get-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Get the externalMeetingRegistration details associated with an onlineMeeting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -195,6 +179,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistration)
 
 [https://learn.microsoft.com/graph/api/externalmeetingregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalmeetingregistration-get?view=graph-rest-1.0)
+
 
 
 

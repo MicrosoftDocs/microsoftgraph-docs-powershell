@@ -47,22 +47,6 @@ Update-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Update the properties of a deviceCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +323,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-devices-devicecategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-devicecategory-update?view=graph-rest-1.0)
+
 
 
 

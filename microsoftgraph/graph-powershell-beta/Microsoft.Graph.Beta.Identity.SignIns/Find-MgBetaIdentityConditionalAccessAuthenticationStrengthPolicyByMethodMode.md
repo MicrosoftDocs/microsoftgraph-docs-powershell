@@ -33,22 +33,6 @@ Find-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyByMethodMode
 ## DESCRIPTION
 Invoke function findByMethodMode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModes
@@ -345,6 +329,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetaidentityconditionalaccessauthenticationstrengthpolicybymethodmode)
+
 
 
 

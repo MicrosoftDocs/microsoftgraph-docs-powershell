@@ -32,18 +32,6 @@ Get-MgSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -235,6 +223,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostreputation)
 
 [https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
+
 
 
 

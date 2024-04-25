@@ -62,22 +62,6 @@ New-MgBetaDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -46452,6 +46436,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadrivelistitem)
 
 [https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0)
+
 
 
 

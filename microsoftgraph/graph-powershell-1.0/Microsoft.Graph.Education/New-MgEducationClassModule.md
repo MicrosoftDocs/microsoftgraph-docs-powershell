@@ -54,18 +54,6 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students can't see the modules until publication.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -441,6 +429,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
+
 
 
 

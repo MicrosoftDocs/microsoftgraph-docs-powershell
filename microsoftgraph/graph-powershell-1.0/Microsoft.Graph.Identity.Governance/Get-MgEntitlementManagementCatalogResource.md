@@ -37,18 +37,6 @@ Get-MgEntitlementManagementCatalogResource -InputObject <IIdentityGovernanceIden
 ## DESCRIPTION
 Access package resources in this catalog.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -383,6 +371,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogresource)
 
 [https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-resources?view=graph-rest-1.0)
+
 
 
 

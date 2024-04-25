@@ -58,18 +58,6 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the properties of a bookmark object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -603,6 +591,7 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
 
 [https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
+
 
 
 

@@ -35,18 +35,6 @@ Get the remote action status reports, including data such as the Cloud PC ID, Cl
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getactionstatusreports-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,6 +310,7 @@ BODYPARAMETER `<IPathsXvswb4DevicemanagementVirtualendpointReportsMicrosoftGraph
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportactionstatusreport)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-getactionstatusreports?view=graph-rest-1.0)
+
 
 
 

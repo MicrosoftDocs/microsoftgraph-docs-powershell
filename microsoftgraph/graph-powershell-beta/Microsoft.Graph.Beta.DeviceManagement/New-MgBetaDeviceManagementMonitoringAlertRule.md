@@ -33,18 +33,6 @@ New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDev
 ## DESCRIPTION
 Create an alertRule object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,6 +384,7 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
 
 [https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-1.0)
+
 
 
 

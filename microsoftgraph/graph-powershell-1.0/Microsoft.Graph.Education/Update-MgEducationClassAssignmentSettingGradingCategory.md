@@ -51,18 +51,6 @@ Update-MgEducationClassAssignmentSettingGradingCategory -InputObject <IEducation
 Update a single gradingCategory on the educationAssignmentSettings.
 Only teachers can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +296,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsettinggradingcategory)
 
 [https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationgradingcategory-update?view=graph-rest-1.0)
+
 
 
 

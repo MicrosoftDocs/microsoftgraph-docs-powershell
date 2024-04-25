@@ -58,18 +58,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <II
 ## DESCRIPTION
 Update the properties of a customTaskExtension object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14584,6 +14572,7 @@ NOTE: For more information about the permissions for member and guest users, see
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowcustomtaskextension)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-update?view=graph-rest-1.0)
+
 
 
 

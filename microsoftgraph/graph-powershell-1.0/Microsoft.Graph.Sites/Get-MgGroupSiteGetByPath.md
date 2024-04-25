@@ -27,18 +27,6 @@ Get-MgGroupSiteGetByPath -GroupId <String> -Path <String> -SiteId <String> [-Exp
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
 Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,6 +286,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath)
 
 [https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
+
 
 
 

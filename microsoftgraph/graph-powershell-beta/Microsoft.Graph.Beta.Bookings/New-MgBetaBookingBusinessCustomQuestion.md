@@ -78,22 +78,6 @@ New-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -382,6 +366,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomquestion)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-customquestions?view=graph-rest-1.0)
+
 
 
 

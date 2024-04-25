@@ -50,22 +50,6 @@ New-MgExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to items for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Acl
@@ -381,6 +365,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectionitem)
+
 
 
 

@@ -45,18 +45,6 @@ Remove-MgBetaChatAccessForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Remove access to a chat for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +301,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachataccessforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachataccessforuser)
 
 [https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-removeallaccessforuser?view=graph-rest-1.0)
+
 
 
 

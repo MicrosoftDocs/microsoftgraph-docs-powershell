@@ -84,22 +84,6 @@ Update-MgBetaGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests are ignored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -55462,6 +55446,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriveitem)
 
 [https://learn.microsoft.com/graph/api/bundle-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-update?view=graph-rest-1.0)
+
 
 
 
