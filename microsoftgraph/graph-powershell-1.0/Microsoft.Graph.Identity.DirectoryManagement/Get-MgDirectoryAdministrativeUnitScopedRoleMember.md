@@ -42,13 +42,17 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 Get a Microsoft Entra role assignment with administrative unit scope.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId
+
+```
+This example shows how to use the Get-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

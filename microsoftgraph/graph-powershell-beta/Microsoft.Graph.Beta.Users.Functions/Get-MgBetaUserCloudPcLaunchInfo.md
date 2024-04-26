@@ -29,13 +29,6 @@ Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Functions
-# A UPN can also be used as -UserId.
-Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
-```
-
 ## PARAMETERS
 
 ### -CloudPcId

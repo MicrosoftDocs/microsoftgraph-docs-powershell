@@ -41,14 +41,18 @@ Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of a notebook object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebook -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserOnenoteNotebook Cmdlet.
+
 
 ## PARAMETERS
 

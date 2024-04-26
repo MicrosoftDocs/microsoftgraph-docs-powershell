@@ -38,20 +38,18 @@ Get-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of a personWebsite object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileWebsite -UserId $userId -PersonWebsiteId $personWebsiteId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileWebsite -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

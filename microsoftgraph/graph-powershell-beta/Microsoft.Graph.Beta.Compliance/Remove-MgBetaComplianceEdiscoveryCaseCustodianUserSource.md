@@ -30,12 +30,17 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplian
 Delete a userSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
+
 ```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

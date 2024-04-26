@@ -52,21 +52,27 @@ New-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Create a new personAward object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Description = "Lifetime Achievement award from the International Association of Branding Managers"
-	DisplayName = "Lifetime Achievement Award For Excellence in Branding"
-	IssuedDate = "Date"
-	IssuingAuthority = "International Association of Branding Management"
-	ThumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
-	WebUrl = "https://www.iabm.io"
+	description = "Lifetime Achievement award from the International Association of Branding Managers"
+	displayName = "Lifetime Achievement Award For Excellence in Branding"
+	issuedDate = "Date"
+	issuingAuthority = "International Association of Branding Management"
+	thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
+	webUrl = "https://www.iabm.io"
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAward -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileAward Cmdlet.
+
 
 ## PARAMETERS
 

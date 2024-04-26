@@ -38,12 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantAuditEvent -InputObject <IManagedTenant
 Read the properties and relationships of an auditEvent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantAuditEvent -AuditEventId $auditEventId
+
+Get-MgBetaTenantRelationshipManagedTenantAuditEvent
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantAuditEvent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,20 +38,18 @@ Get-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-ExpandProperty <Str
 Read the properties and relationships of an itemPatent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePatent -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

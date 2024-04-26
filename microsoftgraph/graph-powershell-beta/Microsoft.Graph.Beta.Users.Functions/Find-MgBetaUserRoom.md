@@ -45,13 +45,6 @@ Invoke function findRooms
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Functions
-# A UPN can also be used as -UserId.
-Find-MgBetaUserRoom -UserId $userId
-```
-
 ## PARAMETERS
 
 ### -Count

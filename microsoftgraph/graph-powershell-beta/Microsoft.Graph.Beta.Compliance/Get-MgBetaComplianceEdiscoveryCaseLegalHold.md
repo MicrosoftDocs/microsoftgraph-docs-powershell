@@ -42,18 +42,17 @@ Read the properties and relationships of a legalHold object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Get-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -LegalHoldId $legalHoldId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Compliance
-Get-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId
-```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
+
 
 ## PARAMETERS
 

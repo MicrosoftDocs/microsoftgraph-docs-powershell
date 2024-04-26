@@ -38,15 +38,21 @@ New-MgBetaComplianceEdiscoveryCase -BodyParameter <IMicrosoftGraphEdiscoveryCase
 Create a new case object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	DisplayName = "My Case 1"
+	displayName = "My Case 1"
 }
+
 New-MgBetaComplianceEdiscoveryCase -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

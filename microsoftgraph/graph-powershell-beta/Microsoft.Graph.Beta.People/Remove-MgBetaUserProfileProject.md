@@ -30,13 +30,18 @@ Remove-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-IfMatch <String
 Delete a projectParticipation object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId
+
 ```
+This example shows how to use the Remove-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

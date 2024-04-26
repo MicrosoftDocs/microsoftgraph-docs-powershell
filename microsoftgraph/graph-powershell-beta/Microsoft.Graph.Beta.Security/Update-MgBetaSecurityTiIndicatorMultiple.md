@@ -31,24 +31,30 @@ Update-MgBetaSecurityTiIndicatorMultiple
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	Value = @(
+	value = @(
 		@{
-			Id = "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4"
-			AdditionalInformation = "mytest"
+			id = "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4"
+			additionalInformation = "mytest"
 		}
 		@{
-			Id = "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e"
-			AdditionalInformation = "test again"
+			id = "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e"
+			additionalInformation = "test again"
 		}
 	)
 }
+
 Update-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaSecurityTiIndicatorMultiple Cmdlet.
+
 
 ## PARAMETERS
 

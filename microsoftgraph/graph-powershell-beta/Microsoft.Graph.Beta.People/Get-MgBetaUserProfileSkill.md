@@ -38,20 +38,18 @@ Get-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of a skillproficiency object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileSkill -UserId $userId -SkillProficiencyId $skillProficiencyId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileSkill -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 

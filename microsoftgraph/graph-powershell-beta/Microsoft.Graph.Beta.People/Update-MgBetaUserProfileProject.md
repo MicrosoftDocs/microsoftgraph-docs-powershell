@@ -56,20 +56,26 @@ Update-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 Update the properties of a projectParticipation object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	AllowedAudiences = "organization"
-	Client = @{
-		Department = "Corporate Marketing"
-		WebUrl = "https://www.contoso.com"
+	allowedAudiences = "organization"
+	client = @{
+		department = "Corporate Marketing"
+		webUrl = "https://www.contoso.com"
 	}
 }
+
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

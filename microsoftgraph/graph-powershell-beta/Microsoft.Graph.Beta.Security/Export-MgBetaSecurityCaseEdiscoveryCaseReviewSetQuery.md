@@ -61,18 +61,24 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewsetquery-export-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	OutputName = "Export reviewset query via API"
-	Description = "Export for the Contoso investigation 2"
-	ExportOptions = "originalFiles,fileInfo,tags"
-	ExportStructure = "directory"
+	outputName = "Export reviewset query via API"
+	description = "Export for the Contoso investigation 2"
+	exportOptions = "originalFiles,fileInfo,tags"
+	exportStructure = "directory"
 }
+
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
+
 ```
+This example shows how to use the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

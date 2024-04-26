@@ -52,16 +52,22 @@ Update-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <I
 Update the properties of personWebsite object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
+	description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 }
+
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebsite -UserId $userId -PersonWebsiteId $personWebsiteId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

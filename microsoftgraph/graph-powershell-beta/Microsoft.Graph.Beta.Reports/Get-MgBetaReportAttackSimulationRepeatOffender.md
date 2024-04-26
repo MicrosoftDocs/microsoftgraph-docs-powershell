@@ -23,12 +23,6 @@ Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Reports
-Get-MgBetaReportAttackSimulationRepeatOffender
-```
-
 ## PARAMETERS
 
 ### -Count

@@ -56,16 +56,22 @@ Create a new custodian object.
 After the custodian object is created, you will need to create the custodian's userSource to reference their mailbox and OneDrive for Business site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	Email = "AdeleV@contoso.com"
-	ApplyHoldToSources = "true"
+	email = "AdeleV@contoso.com"
+	applyHoldToSources = "true"
 }
+
 New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

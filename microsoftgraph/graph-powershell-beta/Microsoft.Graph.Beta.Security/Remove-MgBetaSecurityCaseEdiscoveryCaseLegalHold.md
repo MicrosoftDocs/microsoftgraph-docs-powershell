@@ -31,12 +31,6 @@ Delete navigation property legalHolds for security
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
-```
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId

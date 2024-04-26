@@ -38,20 +38,18 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Read the properties and relationships of an itemAddress object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAddress -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileAddress Cmdlet.
+
 
 ## PARAMETERS
 

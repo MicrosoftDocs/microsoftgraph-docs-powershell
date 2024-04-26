@@ -53,18 +53,24 @@ Update-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <
 Update the properties of a personInterest object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Categories = @(
-		"Sports"
-	)
+	categories = @(
+	"Sports"
+)
 }
+
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileInterest -UserId $userId -PersonInterestId $personInterestId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

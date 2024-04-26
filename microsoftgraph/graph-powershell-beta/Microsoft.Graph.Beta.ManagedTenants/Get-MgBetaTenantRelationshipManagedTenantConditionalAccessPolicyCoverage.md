@@ -39,18 +39,17 @@ Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -InputO
 Read the properties and relationships of a conditionalAccessPolicyCoverage object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage -ConditionalAccessPolicyCoverageId $conditionalAccessPolicyCoverageId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantConditionalAccessPolicyCoverage Cmdlet.
+
 
 ## PARAMETERS
 

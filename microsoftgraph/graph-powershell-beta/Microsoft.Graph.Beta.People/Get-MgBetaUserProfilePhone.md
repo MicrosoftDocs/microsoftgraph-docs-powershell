@@ -38,20 +38,18 @@ Get-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Retrieve the properties and relationships of an itemPhone object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePhone -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfilePhone Cmdlet.
+
 
 ## PARAMETERS
 

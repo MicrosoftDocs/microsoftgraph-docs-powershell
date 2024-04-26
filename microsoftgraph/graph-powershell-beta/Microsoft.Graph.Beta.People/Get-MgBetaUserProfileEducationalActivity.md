@@ -38,20 +38,18 @@ Get-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-Expand
 Retrieve the properties and relationships of an educationalActivity object from a users profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileEducationalActivity -UserId $userId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId
-```
+This example shows how to use the Get-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

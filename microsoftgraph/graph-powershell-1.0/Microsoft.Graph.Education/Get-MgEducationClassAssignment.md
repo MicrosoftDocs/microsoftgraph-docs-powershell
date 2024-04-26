@@ -50,20 +50,28 @@ You can use the Prefer header in your request to get the inactive status in case
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Get assignments
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Education
-```
+This example will get assignments
 
-Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources"
+### Example 2: Get assignments using $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources" 
+
+```
+This example will get assignments using $expand options
+
 
 ## PARAMETERS
 

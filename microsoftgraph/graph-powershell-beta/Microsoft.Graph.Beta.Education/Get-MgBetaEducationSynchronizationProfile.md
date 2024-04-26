@@ -38,18 +38,17 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Education
-Get-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Education
+
 Get-MgBetaEducationSynchronizationProfile
+
 ```
+This example shows how to use the Get-MgBetaEducationSynchronizationProfile Cmdlet.
+
 
 ## PARAMETERS
 

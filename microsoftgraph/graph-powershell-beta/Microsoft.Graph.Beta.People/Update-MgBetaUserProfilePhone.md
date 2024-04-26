@@ -52,15 +52,21 @@ Update-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the properties of an itemPhone object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Type = "other"
+	type = "other"
 }
+
 Update-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfilePhone Cmdlet.
+
 
 ## PARAMETERS
 

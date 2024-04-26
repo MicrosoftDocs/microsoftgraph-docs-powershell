@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantDetailedInformation -InputObject <IMana
 Read the properties and relationships of a tenantDetailedInformation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantDetailedInformation -TenantDetailedInformationId $tenantDetailedInformationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantDetailedInformation
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantDetailedInformation Cmdlet.
+
 
 ## PARAMETERS
 

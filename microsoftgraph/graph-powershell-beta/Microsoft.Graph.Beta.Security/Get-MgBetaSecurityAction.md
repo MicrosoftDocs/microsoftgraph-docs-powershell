@@ -41,18 +41,17 @@ Retrieve the properties and relationships of a securityAction object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityAction -SecurityActionId $securityActionId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 Get-MgBetaSecurityAction
+
 ```
+This example shows how to use the Get-MgBetaSecurityAction Cmdlet.
+
 
 ## PARAMETERS
 

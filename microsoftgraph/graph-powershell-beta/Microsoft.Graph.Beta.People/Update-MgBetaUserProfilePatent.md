@@ -52,16 +52,22 @@ Update-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IM
 Update the properties of an itemPatent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Number = "USPTO-3954432633"
-	WebUrl = "https://patents.gov/3954432633"
+	number = "USPTO-3954432633"
+	webUrl = "https://patents.gov/3954432633"
 }
+
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

@@ -54,26 +54,32 @@ Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 Update the properties of an educationalActivity object within a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Institution = @{
-		Location = @{
-			Type = "business"
-			PostOfficeBox = $null
-			Street = "12000 E Prospect Rd"
-			City = "Fort Collins"
-			State = "Colorado"
-			CountryOrRegion = "USA"
-			PostalCode = "80525"
+	institution = @{
+		location = @{
+			type = "business"
+			postOfficeBox = $null
+			street = "12000 E Prospect Rd"
+			city = "Fort Collins"
+			state = "Colorado"
+			countryOrRegion = "USA"
+			postalCode = "80525"
 		}
 	}
 }
+
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
+
 
 ## PARAMETERS
 

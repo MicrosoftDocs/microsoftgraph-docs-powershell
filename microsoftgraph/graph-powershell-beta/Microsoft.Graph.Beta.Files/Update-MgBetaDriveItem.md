@@ -85,11 +85,10 @@ Update-MgBetaDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests are ignored.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 $params = @{
 	parentReference = @{
@@ -99,6 +98,11 @@ $params = @{
 }
 
 Update-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

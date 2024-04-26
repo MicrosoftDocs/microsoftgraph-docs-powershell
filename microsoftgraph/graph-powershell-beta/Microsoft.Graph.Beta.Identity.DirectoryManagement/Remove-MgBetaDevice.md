@@ -33,13 +33,17 @@ Remove-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatc
 Delete a registered device.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDevice -DeviceId $deviceId
+
+```
+This example shows how to use the Remove-MgBetaDevice Cmdlet.
+
 
 ## PARAMETERS
 

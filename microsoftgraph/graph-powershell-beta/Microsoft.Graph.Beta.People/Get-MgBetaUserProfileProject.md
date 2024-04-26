@@ -38,20 +38,18 @@ Get-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of a projectParticipation object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileProject -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileProject Cmdlet.
+
 
 ## PARAMETERS
 

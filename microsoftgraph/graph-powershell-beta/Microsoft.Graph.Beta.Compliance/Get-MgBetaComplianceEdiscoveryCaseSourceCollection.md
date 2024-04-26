@@ -38,18 +38,17 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 Returns a list of sourceCollection objects associated with this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId -ExpandProperty "addToReviewSetOperation,custodianSources,lastEstimateStatisticsOperation"
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Get-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId
+
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
+
 
 ## PARAMETERS
 

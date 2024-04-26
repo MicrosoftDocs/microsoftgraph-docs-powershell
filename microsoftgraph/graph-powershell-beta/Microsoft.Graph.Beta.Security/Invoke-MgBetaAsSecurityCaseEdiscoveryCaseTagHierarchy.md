@@ -36,12 +36,6 @@ Invoke function asHierarchy
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId
-```
-
 ## PARAMETERS
 
 ### -Count

@@ -31,12 +31,6 @@ Invoke function uploadUrl
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Education
-Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
-```
-
 ## PARAMETERS
 
 ### -EducationSynchronizationProfileId

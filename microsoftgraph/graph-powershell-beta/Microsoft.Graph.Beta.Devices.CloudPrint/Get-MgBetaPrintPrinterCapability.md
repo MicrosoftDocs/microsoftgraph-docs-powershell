@@ -29,12 +29,6 @@ Invoke function getCapabilities
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-Get-MgBetaPrintPrinterCapability -PrinterId $printerId
-```
-
 ## PARAMETERS
 
 ### -Headers

@@ -25,12 +25,6 @@ Get planner
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Planner
-Get-MgPlanner
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty

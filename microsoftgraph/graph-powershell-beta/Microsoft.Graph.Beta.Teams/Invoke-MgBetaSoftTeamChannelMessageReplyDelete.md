@@ -33,13 +33,17 @@ Invoke-MgBetaSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity>
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Invoke-MgBetaSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+
+```
+This example shows how to use the Invoke-MgBetaSoftTeamChannelMessageReplyDelete Cmdlet.
+
 
 ## PARAMETERS
 
