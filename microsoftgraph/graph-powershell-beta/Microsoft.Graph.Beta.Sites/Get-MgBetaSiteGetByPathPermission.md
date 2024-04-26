@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the permission resources from the permissions navigation property on a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

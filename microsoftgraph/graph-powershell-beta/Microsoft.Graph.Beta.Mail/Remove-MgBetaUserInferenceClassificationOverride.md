@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a focused Inbox override specified by its ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

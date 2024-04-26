@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition for a site
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteGetByPathColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteGetByPathColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in servicePrincipals by appId
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

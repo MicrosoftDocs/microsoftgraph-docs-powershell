@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnfollowUserDriveItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)
@@ -28,6 +31,9 @@ Invoke-MgBetaUnfollowUserDriveItem -InputObject <IUsersActionsIdentity> [-Respon
 
 ## DESCRIPTION
 Unfollow a driveItem.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-unfollow-permissions.md)]
 
 ## EXAMPLES
 

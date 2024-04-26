@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition for a content type
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

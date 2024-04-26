@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign cloudPcProvisioningPolicy to user groups.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -46,6 +49,9 @@ Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 
 ## DESCRIPTION
 Assign cloudPcProvisioningPolicy to user groups.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-assign-permissions.md)]
 
 ## EXAMPLES
 

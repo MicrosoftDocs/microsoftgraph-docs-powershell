@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property bulkUpload from applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

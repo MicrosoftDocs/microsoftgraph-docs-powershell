@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

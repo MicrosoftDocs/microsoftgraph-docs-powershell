@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property filesFolder in teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamChannelFileFolderContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a authorityTemplate object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

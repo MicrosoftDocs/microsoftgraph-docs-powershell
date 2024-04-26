@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents details for billed invoice reconciliation data.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingReconciliation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingReconciliation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

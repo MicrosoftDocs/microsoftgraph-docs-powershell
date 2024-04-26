@@ -11,6 +11,9 @@ schema: 2.0.0
 Configuration for enabling an API connector for use as part of the self-service sign-up user flow.
 You can only obtain the value of this object using Get userFlowApiConnectorConfiguration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowApiConnectorConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

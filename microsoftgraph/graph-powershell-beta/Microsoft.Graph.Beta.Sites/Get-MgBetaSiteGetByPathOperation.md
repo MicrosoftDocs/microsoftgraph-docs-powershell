@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the list of richLongRunningOperations associated with a site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

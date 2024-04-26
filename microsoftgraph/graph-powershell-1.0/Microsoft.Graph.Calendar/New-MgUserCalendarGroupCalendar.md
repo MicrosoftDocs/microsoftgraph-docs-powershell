@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new calendar in a calendar group for a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

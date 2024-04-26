@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a single phoneAuthenticationMethod object for a user.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

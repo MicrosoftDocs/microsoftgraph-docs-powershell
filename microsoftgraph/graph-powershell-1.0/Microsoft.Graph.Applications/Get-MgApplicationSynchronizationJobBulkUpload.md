@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The bulk upload operation for the job.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJobBulkUpload](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobBulkUpload?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

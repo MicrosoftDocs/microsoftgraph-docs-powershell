@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Change writable properties on a messageRule object and save the changes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptor?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

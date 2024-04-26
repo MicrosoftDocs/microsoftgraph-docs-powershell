@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a call object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -28,6 +31,9 @@ Get-MgBetaCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a call object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-get-permissions.md)]
 
 ## EXAMPLES
 

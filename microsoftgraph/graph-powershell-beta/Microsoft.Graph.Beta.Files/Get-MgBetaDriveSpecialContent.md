@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property special from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecialContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecialContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
