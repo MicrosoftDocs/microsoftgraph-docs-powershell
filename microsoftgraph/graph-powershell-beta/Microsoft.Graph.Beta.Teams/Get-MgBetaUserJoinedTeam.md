@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserjoinedteam
@@ -261,4 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserjoinedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserjoinedteam)
 
 [https://learn.microsoft.com/graph/api/user-list-joinedteams?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-joinedteams?view=graph-rest-1.0)
+
+
+
 

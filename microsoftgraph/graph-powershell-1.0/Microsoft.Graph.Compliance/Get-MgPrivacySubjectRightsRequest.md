@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequest
@@ -294,10 +294,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
-  \[AuthoredNoteId \<String\>\]: The unique identifier of authoredNote
-  \[SubjectRightsRequestId \<String\>\]: The unique identifier of subjectRightsRequest
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -306,4 +306,7 @@ INPUTOBJECT \<IComplianceIdentity\>: Identity Parameter
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list?view=graph-rest-1.0)
+
+
+
 
