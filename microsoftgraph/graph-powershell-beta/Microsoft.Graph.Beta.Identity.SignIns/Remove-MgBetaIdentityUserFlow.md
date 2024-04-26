@@ -29,9 +29,6 @@ Remove-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete an existing userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityUserFlow Cmdlet
 ```powershell
@@ -278,6 +275,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityuserflow)
+
+[https://learn.microsoft.com/graph/api/identityuserflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflow-delete?view=graph-rest-1.0)
 
 
 

@@ -39,9 +39,6 @@ Get-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeOff object by ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -325,9 +322,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoff)
+
+[https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-timesoff?view=graph-rest-1.0)
 
 
 

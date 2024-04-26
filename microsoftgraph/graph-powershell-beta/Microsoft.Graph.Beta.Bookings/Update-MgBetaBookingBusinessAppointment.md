@@ -122,9 +122,6 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessAppointment Cmdlet
 ```powershell
@@ -1137,9 +1134,10 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment)
+
+[https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-update?view=graph-rest-1.0)
 
 
 

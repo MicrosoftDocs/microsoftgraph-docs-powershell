@@ -584,9 +584,10 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgChatActivityNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification)
+
+[https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-sendactivitynotification?view=graph-rest-1.0)
 
 
 

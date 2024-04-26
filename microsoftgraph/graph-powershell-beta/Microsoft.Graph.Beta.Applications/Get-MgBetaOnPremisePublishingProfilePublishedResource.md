@@ -38,9 +38,6 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ## DESCRIPTION
 Retrieve the properties and relationships of publishedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
 ```powershell
@@ -354,6 +351,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource)
+
+[https://learn.microsoft.com/graph/api/publishedresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-1.0)
 
 
 

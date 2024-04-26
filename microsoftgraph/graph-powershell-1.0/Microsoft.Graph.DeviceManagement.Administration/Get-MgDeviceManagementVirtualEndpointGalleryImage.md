@@ -316,9 +316,12 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointgalleryimage)
+
+[https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcgalleryimage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-galleryimages?view=graph-rest-1.0)
 
 
 

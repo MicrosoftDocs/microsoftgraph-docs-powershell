@@ -232,7 +232,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSiteListItemVersionCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversioncount)
 

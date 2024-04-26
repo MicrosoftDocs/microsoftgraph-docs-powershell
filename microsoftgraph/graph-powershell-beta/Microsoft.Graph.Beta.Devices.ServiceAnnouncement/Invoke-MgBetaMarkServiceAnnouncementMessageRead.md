@@ -33,9 +33,6 @@ Invoke-MgBetaMarkServiceAnnouncementMessageRead
 ## DESCRIPTION
 Mark a list of serviceUpdateMessages as read for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-markread-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -201,9 +198,10 @@ BODYPARAMETER `<IPaths9Q4ErzAdminServiceannouncementMessagesMicrosoftGraphMarkre
   - `[MessageIds <String- `[]`>]`:
 
 ## RELATED LINKS
-[Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageread)
+
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-markread?view=graph-rest-1.0)
 
 
 

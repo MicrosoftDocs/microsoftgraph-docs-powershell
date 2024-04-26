@@ -349,7 +349,6 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
-[Update-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupsetting)
 

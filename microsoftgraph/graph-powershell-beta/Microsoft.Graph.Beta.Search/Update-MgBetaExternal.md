@@ -780,7 +780,6 @@ Maximum supported length is 100 characters.
   - `[Years <IMicrosoftGraphIndustryDataYearTimePeriodDefinition- `[]`>]`: Set of years represented in the system.
 
 ## RELATED LINKS
-[Update-MgExternal](/powershell/module/Microsoft.Graph.Search/Update-MgExternal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternal)
 

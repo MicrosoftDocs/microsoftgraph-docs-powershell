@@ -32,9 +32,6 @@ Remove-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [
 ## DESCRIPTION
 Delete a printer's task trigger to prevent related print events from triggering tasks on the specified printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-delete-tasktrigger-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -234,9 +231,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterTaskTrigger?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprintertasktrigger)
+
+[https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0)
 
 
 

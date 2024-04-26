@@ -47,9 +47,6 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -456,6 +453,8 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage)
+
+[https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0)
 
 
 

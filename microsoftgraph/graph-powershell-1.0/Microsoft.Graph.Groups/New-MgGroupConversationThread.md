@@ -58,9 +58,6 @@ Use reply thread to further post to that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversation-post-threads-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -627,9 +624,10 @@ Returned only on $select.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthread)
+
+[https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
 
 
 

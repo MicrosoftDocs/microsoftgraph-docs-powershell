@@ -335,9 +335,12 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
+
+[https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0)
 
 
 

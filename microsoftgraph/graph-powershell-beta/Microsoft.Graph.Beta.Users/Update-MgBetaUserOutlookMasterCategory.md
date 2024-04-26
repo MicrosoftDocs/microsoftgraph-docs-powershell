@@ -49,9 +49,6 @@ Update-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity>
 Update the writable property, color, of the specified outlookCategory object.
 You can't modify the displayName property once you have created the category.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -328,9 +325,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Update-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlookmastercategory)
+
+[https://learn.microsoft.com/graph/api/outlookcategory-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-update?view=graph-rest-1.0)
 
 
 

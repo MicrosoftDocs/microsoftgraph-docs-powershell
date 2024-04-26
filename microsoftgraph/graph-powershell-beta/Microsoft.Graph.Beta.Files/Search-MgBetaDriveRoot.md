@@ -290,7 +290,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Search-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Search-MgDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveroot)
 

@@ -37,9 +37,6 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ## DESCRIPTION
 Create a new accessReviewHistoryDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-historydefinitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -535,9 +532,10 @@ Note: Only years, months, and days ISO 8601 properties are supported.
 Required.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
 
 
 

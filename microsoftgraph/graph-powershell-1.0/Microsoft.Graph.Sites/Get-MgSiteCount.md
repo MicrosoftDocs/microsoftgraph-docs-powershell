@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecount)
 

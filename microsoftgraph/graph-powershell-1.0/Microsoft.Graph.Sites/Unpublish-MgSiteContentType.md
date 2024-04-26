@@ -32,9 +32,6 @@ Unpublish-MgSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersVaria
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -249,9 +246,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Unpublish-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Unpublish-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/unpublish-mgsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

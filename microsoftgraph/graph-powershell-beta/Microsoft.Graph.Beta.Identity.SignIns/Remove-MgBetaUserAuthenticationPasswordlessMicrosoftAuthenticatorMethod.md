@@ -30,9 +30,6 @@ Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod -InputOb
 ## DESCRIPTION
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/passwordlessmicrosoftauthenticatorauthenticationmethod-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod Cmdlet
 ```powershell
@@ -294,6 +291,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationpasswordlessmicrosoftauthenticatormethod)
+
+[https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

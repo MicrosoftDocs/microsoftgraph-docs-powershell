@@ -192,7 +192,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamScheduleShiftCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleShiftCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshiftcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshiftcount)
 

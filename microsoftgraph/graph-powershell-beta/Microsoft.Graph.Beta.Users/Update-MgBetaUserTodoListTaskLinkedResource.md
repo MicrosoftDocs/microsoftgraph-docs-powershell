@@ -50,9 +50,6 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a linkedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/linkedresource-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -390,9 +387,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource)
+
+[https://learn.microsoft.com/graph/api/linkedresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/linkedresource-update?view=graph-rest-1.0)
 
 
 

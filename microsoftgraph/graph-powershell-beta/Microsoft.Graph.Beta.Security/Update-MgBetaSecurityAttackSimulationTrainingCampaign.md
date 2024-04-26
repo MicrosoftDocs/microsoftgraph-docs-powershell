@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Update-MgBetaSecurityAttackSimulationTrainingCampaign
@@ -57,9 +56,6 @@ Update-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Update the properties of a trainingCampaign object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trainingcampaign-update-permissions.md)]
 
 ## PARAMETERS
 
@@ -762,6 +758,8 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
+
+[https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0)
 
 
 

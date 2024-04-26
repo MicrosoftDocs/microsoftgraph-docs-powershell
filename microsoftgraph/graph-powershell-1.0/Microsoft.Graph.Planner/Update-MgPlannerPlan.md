@@ -52,9 +52,6 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the properties of a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -779,9 +776,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan)
+
+[https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0)
 
 
 

@@ -51,9 +51,6 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create an Outlook task folder under a specified outlookTaskGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskgroup-post-taskfolders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
 ```powershell
@@ -610,6 +607,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder)
+
+[https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0)
 
 
 

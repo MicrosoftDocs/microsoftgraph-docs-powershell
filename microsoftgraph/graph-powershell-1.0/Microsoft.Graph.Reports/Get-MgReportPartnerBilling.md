@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbilling)
 

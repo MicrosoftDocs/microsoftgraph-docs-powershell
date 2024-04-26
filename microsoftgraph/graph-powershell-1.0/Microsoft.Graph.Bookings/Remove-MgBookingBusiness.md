@@ -32,9 +32,6 @@ Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a bookingBusiness object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -208,9 +205,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-delete?view=graph-rest-1.0)
 
 
 

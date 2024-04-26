@@ -48,9 +48,6 @@ Invoke-MgCheckinDriveItem -InputObject <IFilesIdentity> [-ResponseHeadersVariabl
 ## DESCRIPTION
 Check in a checked out driveItem resource, which makes the version of the document available to others.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-checkin-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgCheckinDriveItem Cmdlet
 ```powershell
@@ -333,9 +330,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaCheckinDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaCheckinDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgcheckindriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)
 
 
 

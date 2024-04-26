@@ -363,9 +363,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalert)
+
+[https://learn.microsoft.com/graph/api/alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/alert-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-list?view=graph-rest-1.0)
 
 
 

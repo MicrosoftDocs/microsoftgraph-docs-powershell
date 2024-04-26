@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgUserPhotoContent
@@ -215,9 +214,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhotoContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphotocontent)
+
+[https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilephoto-get?view=graph-rest-1.0)
 
 
 

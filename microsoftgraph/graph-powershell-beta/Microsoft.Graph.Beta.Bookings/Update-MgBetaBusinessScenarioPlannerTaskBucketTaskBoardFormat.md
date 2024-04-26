@@ -47,9 +47,6 @@ Update-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBoo
 ## DESCRIPTION
 Update the navigation property bucketTaskBoardFormat in solutions
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,6 +301,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskbuckettaskboardformat)
+
+[https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-update?view=graph-rest-1.0)
 
 
 

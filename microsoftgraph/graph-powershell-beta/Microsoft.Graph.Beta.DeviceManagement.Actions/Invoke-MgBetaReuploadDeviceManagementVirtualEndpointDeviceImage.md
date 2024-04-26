@@ -240,6 +240,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetareuploaddevicemanagementvirtualendpointdeviceimage)
 
+[https://learn.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-1.0)
+
 
 
 

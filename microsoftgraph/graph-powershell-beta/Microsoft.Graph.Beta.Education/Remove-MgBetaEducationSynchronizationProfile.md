@@ -29,9 +29,6 @@ Remove-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Delete a school data synchronization profile in the tenant based on the identifier.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
@@ -219,6 +216,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofile)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-delete?view=graph-rest-1.0)
 
 
 

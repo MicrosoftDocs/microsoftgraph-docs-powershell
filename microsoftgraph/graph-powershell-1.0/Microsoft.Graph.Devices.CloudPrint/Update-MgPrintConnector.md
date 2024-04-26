@@ -50,9 +50,6 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the properties of a printConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,9 +387,10 @@ The elements should be in hierarchical order.
   - `[Subunit <String- `[]`>]`:
 
 ## RELATED LINKS
-[Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
+
+[https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
 
 
 

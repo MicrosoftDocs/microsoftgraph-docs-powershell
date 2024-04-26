@@ -40,9 +40,6 @@ Get-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of the school object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -322,9 +319,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationroot-list-schools?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationroot-list-schools?view=graph-rest-1.0)
 
 
 

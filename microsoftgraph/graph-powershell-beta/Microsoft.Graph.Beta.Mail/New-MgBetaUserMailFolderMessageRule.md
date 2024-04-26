@@ -54,9 +54,6 @@ New-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter 
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-post-messagerules-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -580,9 +577,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfoldermessagerule)
+
+[https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0)
 
 
 

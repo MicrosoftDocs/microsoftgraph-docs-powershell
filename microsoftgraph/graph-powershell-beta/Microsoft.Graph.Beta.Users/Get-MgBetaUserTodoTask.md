@@ -40,9 +40,6 @@ Get-MgBetaUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a todoTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -347,9 +344,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserTodoTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotask)
+
+[https://learn.microsoft.com/graph/api/todotask-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/todotasklist-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-list-tasks?view=graph-rest-1.0)
 
 
 

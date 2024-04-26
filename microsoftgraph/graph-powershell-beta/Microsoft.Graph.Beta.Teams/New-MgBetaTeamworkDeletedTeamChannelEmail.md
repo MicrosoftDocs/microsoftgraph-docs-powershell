@@ -223,9 +223,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelEmail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail)
+
+[https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgBetaDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a bundle and its children in a single call
 
@@ -343,9 +340,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitem)
+
+[https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0)
 
 
 

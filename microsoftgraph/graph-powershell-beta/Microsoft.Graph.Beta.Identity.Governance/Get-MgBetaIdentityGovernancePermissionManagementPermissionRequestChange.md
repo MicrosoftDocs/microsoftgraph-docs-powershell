@@ -38,9 +38,6 @@ Get-MgBetaIdentityGovernancePermissionManagementPermissionRequestChange
 ## DESCRIPTION
 Read the properties and relationships of a permissionsRequestChange object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissionsrequestchange-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -390,6 +387,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancepermissionmanagementpermissionrequestchange)
+
+[https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissionsrequestchange-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissionsmanagement-list-permissionsrequestchanges?view=graph-rest-1.0)
 
 
 

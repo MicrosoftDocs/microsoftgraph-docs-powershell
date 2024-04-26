@@ -36,9 +36,6 @@ New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Resp
 ## DESCRIPTION
 Create a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-schools-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -24243,9 +24240,10 @@ See standard - `[user]` resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationroot-post-schools?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationroot-post-schools?view=graph-rest-1.0)
 
 
 

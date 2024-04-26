@@ -248,9 +248,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Remove-MgGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventInstanceAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceattachment)
+
+[https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0)
 
 
 

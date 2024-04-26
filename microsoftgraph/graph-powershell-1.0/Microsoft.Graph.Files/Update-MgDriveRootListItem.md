@@ -24138,7 +24138,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitem)
 

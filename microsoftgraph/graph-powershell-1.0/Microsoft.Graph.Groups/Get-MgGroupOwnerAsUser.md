@@ -360,7 +360,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupOwnerAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerAsUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupownerasuser)
 

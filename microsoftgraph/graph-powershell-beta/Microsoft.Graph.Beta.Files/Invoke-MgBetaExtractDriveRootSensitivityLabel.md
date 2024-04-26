@@ -182,7 +182,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Invoke-MgExtractDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaextractdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetaextractdriverootsensitivitylabel)
 

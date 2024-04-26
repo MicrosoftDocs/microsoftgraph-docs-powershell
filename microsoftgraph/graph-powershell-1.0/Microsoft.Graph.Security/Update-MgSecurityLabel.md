@@ -592,7 +592,6 @@ Read-only.
   - `[RetentionTrigger <String>]`: retentionTrigger
 
 ## RELATED LINKS
-[Update-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabel)
 

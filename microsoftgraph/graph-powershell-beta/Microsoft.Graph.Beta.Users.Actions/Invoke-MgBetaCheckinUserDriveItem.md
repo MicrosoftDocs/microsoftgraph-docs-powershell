@@ -371,9 +371,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgCheckinUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCheckinUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckinuserdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-checkin?view=graph-rest-1.0)
 
 
 

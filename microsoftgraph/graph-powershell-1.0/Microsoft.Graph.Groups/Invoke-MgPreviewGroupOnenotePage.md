@@ -183,7 +183,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupOnenotePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage)
 

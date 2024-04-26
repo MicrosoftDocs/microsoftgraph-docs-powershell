@@ -492,7 +492,6 @@ Required
 Required
 
 ## RELATED LINKS
-[Update-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescore)
 

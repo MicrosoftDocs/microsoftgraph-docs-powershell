@@ -323,9 +323,12 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementvpptoken)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-list?view=graph-rest-1.0)
 
 
 

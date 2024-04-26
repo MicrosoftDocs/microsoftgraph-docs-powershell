@@ -51,9 +51,6 @@ Invoke-MgReplyGroupConversationThread -InputObject <IGroupsIdentity>
 Reply to a post and add a new post to the specified thread in a group conversation.
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/post-reply-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Include a file attachment
 
@@ -537,9 +534,10 @@ Read-only.
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReplyGroupConversationThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreplygroupconversationthread)
+
+[https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-reply?view=graph-rest-1.0)
 
 
 

@@ -369,9 +369,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgUserFollowedSite](/powershell/module/Microsoft.Graph.Sites/Get-MgUserFollowedSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetauserfollowedsite)
+
+[https://learn.microsoft.com/graph/api/sites-list-followed?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sites-list-followed?view=graph-rest-1.0)
 
 
 

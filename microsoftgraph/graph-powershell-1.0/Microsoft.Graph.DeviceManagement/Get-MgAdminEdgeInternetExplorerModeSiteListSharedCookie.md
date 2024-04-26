@@ -361,9 +361,12 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgadminedgeinternetexplorermodesitelistsharedcookie)
+
+[https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-list-sharedcookies?view=graph-rest-1.0)
 
 
 

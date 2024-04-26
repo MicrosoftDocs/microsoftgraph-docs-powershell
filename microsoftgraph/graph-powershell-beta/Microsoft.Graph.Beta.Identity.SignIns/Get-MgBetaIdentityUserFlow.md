@@ -37,9 +37,6 @@ Get-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and associations for an userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityUserFlow Cmdlet
 ```powershell
@@ -383,6 +380,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflow)
+
+[https://learn.microsoft.com/graph/api/identityuserflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflow-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identityuserflow-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflow-list?view=graph-rest-1.0)
 
 
 

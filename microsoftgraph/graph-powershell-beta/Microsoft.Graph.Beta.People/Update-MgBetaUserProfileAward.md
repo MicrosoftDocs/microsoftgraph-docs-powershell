@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaward
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileAward
@@ -51,9 +50,6 @@ Update-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Update the properties of a personAward object from a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personaward-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserProfileAward Cmdlet
@@ -561,6 +557,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileaward)
+
+[https://learn.microsoft.com/graph/api/personaward-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personaward-update?view=graph-rest-1.0)
 
 
 

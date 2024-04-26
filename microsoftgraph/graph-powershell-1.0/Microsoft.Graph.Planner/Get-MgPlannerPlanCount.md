@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlannerPlanCount](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplancount](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplancount)
 

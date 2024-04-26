@@ -32,9 +32,6 @@ Get-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 Get content for the navigation property versions from drives
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-versions-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -218,9 +215,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersionContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemversioncontent)
+
+[https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0)
 
 
 

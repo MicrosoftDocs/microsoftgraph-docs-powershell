@@ -48,9 +48,6 @@ Stop-MgBetaCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Reincorporate a participant previously put on hold to the call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/participant-stopholdmusic-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
@@ -276,9 +273,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallparticipantholdmusic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallparticipantholdmusic)
+
+[https://learn.microsoft.com/graph/api/participant-stopholdmusic?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-stopholdmusic?view=graph-rest-1.0)
 
 
 

@@ -56,9 +56,6 @@ Update-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Update the properties of an internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/internaldomainfederation-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update the federation settings for a federated domain
 
@@ -554,9 +551,10 @@ For a list of statuses, see certificateUpdateResult status.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-update?view=graph-rest-1.0)
 
 
 

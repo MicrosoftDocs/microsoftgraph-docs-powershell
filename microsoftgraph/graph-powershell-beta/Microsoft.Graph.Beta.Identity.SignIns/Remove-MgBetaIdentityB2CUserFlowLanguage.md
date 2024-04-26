@@ -32,9 +32,6 @@ Remove-MgBetaIdentityB2CUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 Deletes a userFlowLanguageConfiguration object from a Azure AD B2C user flow.
 Note: You cannot delete languages from an Microsoft Entra user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowLanguage Cmdlet
 ```powershell
@@ -296,6 +293,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowlanguage)
+
+[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-delete?view=graph-rest-1.0)
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Close-MgBetaComplianceEdiscoveryCase
@@ -30,6 +31,9 @@ Close-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-Respon
 ## DESCRIPTION
 Close an eDiscovery case.
 For details, see Close a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-close-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Close-MgBetaComplianceEdiscoveryCase Cmdlet
@@ -202,6 +206,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase)
+
+[https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-1.0)
 
 
 

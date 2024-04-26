@@ -30,9 +30,6 @@ Submit-MgBetaSecurityTiIndicator
 ## DESCRIPTION
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-submittiindicators-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Submit-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
@@ -410,6 +407,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/submit-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-submittiindicators?view=graph-rest-1.0)
 
 
 

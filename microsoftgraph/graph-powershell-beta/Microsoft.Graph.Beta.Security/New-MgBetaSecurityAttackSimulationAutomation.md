@@ -384,7 +384,6 @@ Read-only.
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationautomation)
 

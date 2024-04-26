@@ -32,9 +32,6 @@ New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Res
 Create a new customAuthenticationExtension object.
 The following derived types are currently supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitycontainer-post-customauthenticationextensions-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -263,6 +260,8 @@ If null, the default for the service applies.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
 
 
 

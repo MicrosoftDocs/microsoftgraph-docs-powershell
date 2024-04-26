@@ -473,9 +473,10 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
   - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
+
+[https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
 
 
 

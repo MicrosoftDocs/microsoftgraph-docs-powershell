@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # New-MgBetaSubscription
@@ -549,9 +548,10 @@ Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/new-mgbetasubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
 
 

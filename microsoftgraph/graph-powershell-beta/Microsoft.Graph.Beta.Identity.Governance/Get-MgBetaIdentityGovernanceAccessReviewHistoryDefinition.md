@@ -44,9 +44,6 @@ Retrieve an accessReviewHistoryDefinition object by its identifier.
 All of the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a 404 Not Found error is returned.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewhistorydefinition-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -407,9 +404,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewhistorydefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewhistorydefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewhistorydefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-list-historydefinitions?view=graph-rest-1.0)
 
 
 

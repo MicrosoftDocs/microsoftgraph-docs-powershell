@@ -210,7 +210,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteGetGraphBPrePathByPath](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetGraphBPrePathByPath?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetgraphbprepathbypath)
 

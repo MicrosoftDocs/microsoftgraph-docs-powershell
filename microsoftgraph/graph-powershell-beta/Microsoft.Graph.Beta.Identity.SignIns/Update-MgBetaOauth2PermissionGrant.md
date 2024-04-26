@@ -50,9 +50,6 @@ Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
 An oAuth2PermissionGrant can be updated to change which delegated permissions are granted, by adding or removing items from the list in scopes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/oauth2permissiongrant-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -476,9 +473,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgOauth2PermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant)
+
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-update?view=graph-rest-1.0)
 
 
 

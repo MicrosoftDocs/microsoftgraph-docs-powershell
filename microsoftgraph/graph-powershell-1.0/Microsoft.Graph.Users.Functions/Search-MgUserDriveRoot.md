@@ -307,7 +307,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Search-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Search-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/search-mguserdriveroot)
 

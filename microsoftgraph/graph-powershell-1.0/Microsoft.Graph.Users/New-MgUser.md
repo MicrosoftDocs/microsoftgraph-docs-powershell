@@ -43684,9 +43684,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguser)
+
+[https://learn.microsoft.com/graph/api/intune-mam-user-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-user-create?view=graph-rest-1.0)
 
 
 

@@ -1951,7 +1951,6 @@ EXEMPTEDAPPPACKAGES <IMicrosoftGraphKeyValuePair- `[]`>: App packages in this li
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection)
 

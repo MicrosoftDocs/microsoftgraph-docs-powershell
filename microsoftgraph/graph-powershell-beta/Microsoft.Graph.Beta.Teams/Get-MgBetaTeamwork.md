@@ -112,9 +112,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamwork?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork)
+
+[https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamwork-get?view=graph-rest-1.0)
 
 
 

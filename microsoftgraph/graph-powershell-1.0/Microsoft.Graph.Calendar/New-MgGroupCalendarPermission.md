@@ -335,9 +335,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0)
 
 
 

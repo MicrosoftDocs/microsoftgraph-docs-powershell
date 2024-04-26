@@ -24153,7 +24153,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveRootListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitem)
 

@@ -48,9 +48,6 @@ New-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create a new timeOffReason.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timeoffreasons-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -373,9 +370,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoffreason)
+
+[https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timeoffreasons?view=graph-rest-1.0)
 
 
 

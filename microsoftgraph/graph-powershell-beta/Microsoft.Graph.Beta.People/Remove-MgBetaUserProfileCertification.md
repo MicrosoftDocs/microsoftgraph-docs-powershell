@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileCertification
@@ -29,9 +28,6 @@ Remove-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Deletes a personCertification object from a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personcertification-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileCertification Cmdlet
@@ -239,6 +235,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilecertification)
+
+[https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personcertification-delete?view=graph-rest-1.0)
 
 
 

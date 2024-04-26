@@ -213,7 +213,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemListItemVersionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemlistitemversioncount)
 

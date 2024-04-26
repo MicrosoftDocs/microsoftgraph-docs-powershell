@@ -44,9 +44,6 @@ Retrieve the properties and relationships of a channel.
 This method supports federation.
 Only a user who is a member of the shared channel can retrieve channel information.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -345,9 +342,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list?view=graph-rest-1.0)
 
 
 

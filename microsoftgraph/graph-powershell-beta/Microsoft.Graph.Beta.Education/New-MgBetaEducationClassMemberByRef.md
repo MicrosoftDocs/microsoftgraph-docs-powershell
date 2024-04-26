@@ -46,9 +46,6 @@ New-MgBetaEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParam
 ## DESCRIPTION
 Add an educationUser member to an educationClass.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -280,9 +277,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmemberbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0)
 
 
 

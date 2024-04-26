@@ -69,9 +69,6 @@ In Microsoft Entra entitlement management, callers can automatically reevaluate 
 The state of the access package assignment must be Delivered for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Microsoft Entra entitlement management can perform this action.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackageassignment-reprocess-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessPackage
@@ -15323,6 +15320,8 @@ null if the subject isn't yet a user in the tenant.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-reprocess?view=graph-rest-1.0)
 
 
 

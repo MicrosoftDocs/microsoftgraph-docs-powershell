@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileAward
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Read the properties and relationships of a personAward object from a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personaward-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAward Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaward)
+
+[https://learn.microsoft.com/graph/api/personaward-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personaward-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-awards?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-awards?view=graph-rest-1.0)
 
 
 

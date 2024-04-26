@@ -261,7 +261,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatPermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatpermissiongrant)
 

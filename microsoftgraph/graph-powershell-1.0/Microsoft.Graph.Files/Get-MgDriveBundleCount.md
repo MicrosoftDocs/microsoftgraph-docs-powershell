@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveBundleCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveBundleCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundlecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivebundlecount)
 

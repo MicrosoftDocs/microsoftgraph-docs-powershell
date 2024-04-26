@@ -50,9 +50,6 @@ New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Install an app in the personal scope of the specified user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-post-installedapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -928,9 +925,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp)
+
+[https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0)
 
 
 

@@ -58,9 +58,6 @@ Update-MgEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of an educationSchool object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -15608,9 +15605,10 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
-[Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0)
 
 
 

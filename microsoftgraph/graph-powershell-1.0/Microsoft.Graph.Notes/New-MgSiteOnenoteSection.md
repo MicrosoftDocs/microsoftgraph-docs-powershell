@@ -1005,7 +1005,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesection)
 

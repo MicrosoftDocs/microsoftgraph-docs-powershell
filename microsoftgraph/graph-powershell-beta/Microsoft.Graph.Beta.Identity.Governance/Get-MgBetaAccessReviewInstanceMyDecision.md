@@ -418,6 +418,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancemydecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaaccessreviewinstancemydecision)
 
+[https://learn.microsoft.com/graph/api/accessreview-listmydecisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-listmydecisions?view=graph-rest-1.0)
+
 
 
 

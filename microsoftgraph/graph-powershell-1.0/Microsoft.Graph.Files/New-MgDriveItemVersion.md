@@ -399,7 +399,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitemversion)
 

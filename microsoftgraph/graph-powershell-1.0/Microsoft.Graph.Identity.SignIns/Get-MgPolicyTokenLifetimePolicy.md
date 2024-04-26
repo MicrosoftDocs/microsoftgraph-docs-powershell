@@ -40,9 +40,6 @@ Get-MgPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenlifetimepolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -359,9 +356,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list?view=graph-rest-1.0)
 
 
 

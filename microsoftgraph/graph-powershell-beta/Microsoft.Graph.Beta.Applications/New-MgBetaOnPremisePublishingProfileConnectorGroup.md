@@ -47,9 +47,6 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ## DESCRIPTION
 Create a connectorGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
@@ -2746,6 +2743,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)
+
+[https://learn.microsoft.com/graph/api/connectorgroup-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectorgroup-post?view=graph-rest-1.0)
 
 
 

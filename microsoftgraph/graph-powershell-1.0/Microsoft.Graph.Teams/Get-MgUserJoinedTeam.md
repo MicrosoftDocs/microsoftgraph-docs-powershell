@@ -264,9 +264,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)
+
+[https://learn.microsoft.com/graph/api/user-list-joinedteams?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-joinedteams?view=graph-rest-1.0)
 
 
 

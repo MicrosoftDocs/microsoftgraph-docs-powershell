@@ -37,9 +37,6 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a roleGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-rolegroup-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -309,6 +306,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup)
+
+[https://learn.microsoft.com/graph/api/industrydata-rolegroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-rolegroup-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/industrydata-rolegroup-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-rolegroup-list?view=graph-rest-1.0)
 
 
 

@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSearchBookmarkCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmarkCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmarkcount](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmarkcount)
 

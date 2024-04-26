@@ -34,9 +34,6 @@ Remove-MgEducationClassAssignment -InputObject <IEducationIdentity> [-IfMatch <S
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -236,9 +233,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-delete?view=graph-rest-1.0)
 
 
 

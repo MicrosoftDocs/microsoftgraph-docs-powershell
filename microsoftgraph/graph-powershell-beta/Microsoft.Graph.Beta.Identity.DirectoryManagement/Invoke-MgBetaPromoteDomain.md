@@ -33,9 +33,6 @@ Invoke-MgBetaPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity>
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-promote-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -224,9 +221,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPromoteDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgPromoteDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetapromotedomain)
+
+[https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0)
 
 
 

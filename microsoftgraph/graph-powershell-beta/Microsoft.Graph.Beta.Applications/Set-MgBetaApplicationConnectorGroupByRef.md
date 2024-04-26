@@ -44,9 +44,6 @@ Set-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> -B
 ## DESCRIPTION
 Assign a connectorGroup to an application.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-post-applications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -310,6 +307,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/set-mgbetaapplicationconnectorgroupbyref)
+
+[https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-1.0)
 
 
 

@@ -52,9 +52,6 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-shifts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -503,9 +500,10 @@ Required.
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift)
+
+[https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-1.0)
 
 
 

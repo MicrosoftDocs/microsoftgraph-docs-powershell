@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserSetting
@@ -32,9 +31,6 @@ Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 
 ## DESCRIPTION
 Read the user and organization userSettings object.To learn how to update the properties of the userSettings object, see update user settings.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/usersettings-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,9 +188,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting)
+
+[https://learn.microsoft.com/graph/api/usersettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-get?view=graph-rest-1.0)
 
 
 

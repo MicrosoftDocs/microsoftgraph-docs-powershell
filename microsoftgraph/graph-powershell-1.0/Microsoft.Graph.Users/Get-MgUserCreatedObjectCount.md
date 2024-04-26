@@ -174,7 +174,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserCreatedObjectCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectcount)
 

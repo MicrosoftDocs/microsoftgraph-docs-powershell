@@ -74,9 +74,6 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the relatedContact collection of an educationUser object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/relatedcontact-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -40340,9 +40337,10 @@ Read-only.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
-[Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuser)
+
+[https://learn.microsoft.com/graph/api/relatedcontact-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/relatedcontact-update?view=graph-rest-1.0)
 
 
 

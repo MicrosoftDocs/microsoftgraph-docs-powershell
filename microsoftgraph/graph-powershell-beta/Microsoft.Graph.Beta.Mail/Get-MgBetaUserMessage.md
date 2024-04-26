@@ -44,9 +44,6 @@ The messages in a mailbox or folder.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a specific message
 
@@ -397,9 +394,12 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessage)
+
+[https://learn.microsoft.com/graph/api/eventmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

@@ -25235,7 +25235,6 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
-[Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot)
 

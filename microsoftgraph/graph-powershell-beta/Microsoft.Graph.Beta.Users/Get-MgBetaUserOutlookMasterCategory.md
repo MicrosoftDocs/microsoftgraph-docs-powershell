@@ -39,9 +39,6 @@ Get-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <St
 ## DESCRIPTION
 Get the properties and relationships of the specified outlookCategory object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -315,9 +312,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlookmastercategory)
+
+[https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0)
 
 
 

@@ -229,7 +229,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootthumbnail)
 

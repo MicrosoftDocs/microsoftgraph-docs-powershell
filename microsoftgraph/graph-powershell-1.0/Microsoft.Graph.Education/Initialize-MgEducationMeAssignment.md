@@ -32,9 +32,6 @@ Initialize-MgEducationMeAssignment -InputObject <IEducationIdentity> [-ResponseH
 Activate an inactive educationAssignment to signal that the assignment has further action items for teachers or students.
 This action can only be performed by a teacher on currently inactive assignments.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-activate-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -176,9 +173,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Initialize-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Initialize-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/initialize-mgeducationmeassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-activate?view=graph-rest-1.0)
 
 
 

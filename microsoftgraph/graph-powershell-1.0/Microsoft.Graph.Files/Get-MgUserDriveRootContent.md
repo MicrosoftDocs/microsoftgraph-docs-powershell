@@ -32,9 +32,6 @@ Get-MgUserDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,9 +213,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootcontent)
+
+[https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
 
 
 

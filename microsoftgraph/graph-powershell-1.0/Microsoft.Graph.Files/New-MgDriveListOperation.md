@@ -438,7 +438,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaDriveListOperation](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdrivelistoperation)
 

@@ -44,9 +44,6 @@ New-MgBetaSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Resp
 ## DESCRIPTION
 Create a new tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicators-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
@@ -1208,6 +1205,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicators-post?view=graph-rest-1.0)
 
 
 

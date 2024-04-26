@@ -46,9 +46,6 @@ New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParamete
 ## DESCRIPTION
 Add a teacher to a class.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-teachers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -275,9 +272,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassteacherbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-post-teachers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-teachers?view=graph-rest-1.0)
 
 
 

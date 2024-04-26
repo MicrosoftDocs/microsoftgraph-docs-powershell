@@ -9794,9 +9794,10 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdetectedapp)
+
+[https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-update?view=graph-rest-1.0)
 
 
 

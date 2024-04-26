@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Update-MgUser
@@ -167,9 +166,6 @@ Not all properties can be updated by Member or Guest users with their default pe
 Compare member and guest default permissions to see properties they can manage.
 Customers through Microsoft Entra ID for customers can also use this API operation to update their details.
 See Default user permissions in customer tenants for the list of properties they can update.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update a user's display name
@@ -43808,9 +43804,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser)
+
+[https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-update?view=graph-rest-1.0)
 
 
 

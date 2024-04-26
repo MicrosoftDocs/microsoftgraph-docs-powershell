@@ -19097,7 +19097,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteanalytic)
 

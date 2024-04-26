@@ -52,9 +52,6 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update the properties of a identityUserFlowAttributeAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -454,9 +451,10 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-update?view=graph-rest-1.0)
 
 
 

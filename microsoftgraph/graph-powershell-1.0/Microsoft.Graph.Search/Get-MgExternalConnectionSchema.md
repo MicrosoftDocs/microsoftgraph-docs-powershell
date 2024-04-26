@@ -32,9 +32,6 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Read the properties and relationships of a schema object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-schema-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -184,9 +181,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-schema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-schema-get?view=graph-rest-1.0)
 
 
 

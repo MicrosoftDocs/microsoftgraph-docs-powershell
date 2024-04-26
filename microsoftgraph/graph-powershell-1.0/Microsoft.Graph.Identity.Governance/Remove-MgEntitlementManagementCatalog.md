@@ -29,9 +29,6 @@ Remove-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Delete an accessPackageCatalog.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -272,6 +269,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementcatalog)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0)
 
 
 

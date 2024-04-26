@@ -32,9 +32,6 @@ Get-MgBetaUserDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] 
 ## DESCRIPTION
 Get content for the navigation property root from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -216,9 +213,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootcontent)
+
+[https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
 
 
 

@@ -277,7 +277,6 @@ The copy is made when the partnership with the customer is established.
 It isn't automatically updated if the customer tenant's display name changes.
 
 ## RELATED LINKS
-[New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetacontract)
 

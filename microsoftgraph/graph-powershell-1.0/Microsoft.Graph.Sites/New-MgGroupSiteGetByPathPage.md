@@ -14726,7 +14726,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpage)
 

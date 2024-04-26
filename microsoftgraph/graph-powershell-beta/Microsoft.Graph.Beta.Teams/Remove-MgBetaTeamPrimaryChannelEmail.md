@@ -220,9 +220,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelEmail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychannelemail)
+
+[https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-removeemail?view=graph-rest-1.0)
 
 
 

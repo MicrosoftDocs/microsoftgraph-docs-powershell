@@ -305,9 +305,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Hide-MgBetaUserChatForUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Hide-MgBetaUserChatForUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/hide-mguserchatforuser)
+
+[https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-hideforuser?view=graph-rest-1.0)
 
 
 

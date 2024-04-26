@@ -347,7 +347,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriveitemsensitivitylabel)
 

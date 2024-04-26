@@ -1023,9 +1023,10 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection)
+
+[https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0)
 
 
 

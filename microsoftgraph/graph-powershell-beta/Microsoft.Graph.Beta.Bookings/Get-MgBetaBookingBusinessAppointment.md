@@ -64,9 +64,6 @@ Get-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-ExpandPr
 Get the properties and relationships of a bookingAppointment object in the specified bookingBusiness.
 The start and end properties are always returned in UTC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessAppointment Cmdlet
 ```powershell
@@ -369,9 +366,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessappointment)
+
+[https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-appointments?view=graph-rest-1.0)
 
 
 

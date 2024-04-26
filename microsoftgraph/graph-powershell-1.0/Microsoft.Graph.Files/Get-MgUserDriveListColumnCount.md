@@ -198,7 +198,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveListColumnCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistcolumncount)
 

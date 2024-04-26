@@ -396,7 +396,6 @@ For example, if a user changes their display name, the API might show the new va
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritylabelcategory)
 

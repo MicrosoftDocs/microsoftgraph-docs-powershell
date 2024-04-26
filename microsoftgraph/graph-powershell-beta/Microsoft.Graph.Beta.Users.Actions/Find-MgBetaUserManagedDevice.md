@@ -231,7 +231,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Find-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserManagedDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermanageddevice)
 

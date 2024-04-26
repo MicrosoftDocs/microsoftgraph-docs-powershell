@@ -251,6 +251,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/start-mgbetadevicemanagementvirtualendpointcloudpc)
 
+[https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-1.0)
+
 
 
 

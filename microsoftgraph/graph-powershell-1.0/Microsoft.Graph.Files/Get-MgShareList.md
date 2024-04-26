@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelist)
 

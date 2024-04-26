@@ -41,9 +41,6 @@ If the Prefer: include-unknown-enum-members request header is provided, the excu
 Otherwise, the submission status changes to returned.
 For more information about how to use this header, see the Examples section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-excuse-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -222,6 +219,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaexcuseeducationuserassignmentsubmission)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-excuse?view=graph-rest-1.0)
 
 
 

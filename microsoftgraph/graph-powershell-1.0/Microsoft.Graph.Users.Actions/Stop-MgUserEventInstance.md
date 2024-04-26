@@ -332,9 +332,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgBetaUserEventInstance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Stop-MgBetaUserEventInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusereventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/stop-mgusereventinstance)
+
+[https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-cancel?view=graph-rest-1.0)
 
 
 

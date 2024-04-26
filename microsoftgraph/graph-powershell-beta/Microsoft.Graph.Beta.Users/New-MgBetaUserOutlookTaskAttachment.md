@@ -47,9 +47,6 @@ New-MgBetaUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-post-attachments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskAttachment Cmdlet
 ```powershell
@@ -389,6 +386,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskattachment)
+
+[https://learn.microsoft.com/graph/api/outlooktask-post-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-post-attachments?view=graph-rest-1.0)
 
 
 

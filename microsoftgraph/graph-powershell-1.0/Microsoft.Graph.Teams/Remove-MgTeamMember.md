@@ -32,9 +32,6 @@ Remove-MgTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Remove a conversationMember from a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-delete-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -254,9 +251,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteammember)
+
+[https://learn.microsoft.com/graph/api/team-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-delete-members?view=graph-rest-1.0)
 
 
 

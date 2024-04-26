@@ -56,9 +56,6 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 Get details about a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printtaskdefinition-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -348,9 +345,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition)
+
+[https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties of an appManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/appmanagementpolicy-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -346,9 +343,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicy)
+
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0)
 
 
 

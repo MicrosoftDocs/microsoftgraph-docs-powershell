@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgSchemaExtension
@@ -209,9 +208,10 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
-[Remove-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Remove-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/remove-mgschemaextension)
+
+[https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-delete?view=graph-rest-1.0)
 
 
 

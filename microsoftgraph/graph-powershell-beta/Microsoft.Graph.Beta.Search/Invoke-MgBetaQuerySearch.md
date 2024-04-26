@@ -35,9 +35,6 @@ Invoke-MgBetaQuerySearch
 Run a specified search query.
 Search results are provided in the response.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-query-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -426,9 +423,10 @@ Default value is false.
 Optional.
 
 ## RELATED LINKS
-[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
+
+[https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
 
 
 

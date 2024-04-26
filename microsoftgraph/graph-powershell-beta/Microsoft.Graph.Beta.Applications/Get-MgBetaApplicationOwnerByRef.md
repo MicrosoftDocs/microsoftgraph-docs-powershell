@@ -31,9 +31,6 @@ Read-only.
 Nullable.
 Supports $expand, $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1), and $select nested in $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-list-owners-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -247,9 +244,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationownerbyref)
+
+[https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-owners?view=graph-rest-1.0)
 
 
 

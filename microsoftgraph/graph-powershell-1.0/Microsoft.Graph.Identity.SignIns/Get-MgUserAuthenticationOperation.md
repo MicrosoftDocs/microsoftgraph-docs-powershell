@@ -46,9 +46,6 @@ A long-running operation is initiated when you reset a user's password.
 This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a site or a list.
 The possible states of the long-running operation are notStarted, running, succeeded, failed, unknownFutureValue where succeeded and failed are terminal states.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/longrunningoperation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -380,9 +377,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationoperation)
+
+[https://learn.microsoft.com/graph/api/longrunningoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/longrunningoperation-get?view=graph-rest-1.0)
 
 
 

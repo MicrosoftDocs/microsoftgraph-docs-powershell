@@ -48,9 +48,6 @@ New-MgBetaUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new lists object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todo-post-lists-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -595,9 +592,10 @@ Required.
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
-[New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolist)
+
+[https://learn.microsoft.com/graph/api/todo-post-lists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todo-post-lists?view=graph-rest-1.0)
 
 
 

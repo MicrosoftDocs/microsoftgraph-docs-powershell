@@ -37,9 +37,6 @@ Get-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIdentit
 ## DESCRIPTION
 Get a tenant and its properties in the multi-tenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganizationmember-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -367,6 +364,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganizationtenant)
+
+[https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationmember-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-list-tenants?view=graph-rest-1.0)
 
 
 

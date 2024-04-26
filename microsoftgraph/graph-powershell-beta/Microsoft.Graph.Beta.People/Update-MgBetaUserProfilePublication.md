@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePublication
@@ -51,9 +50,6 @@ Update-MgBetaUserProfilePublication -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Update the properties of an itemPublication object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempublication-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserProfilePublication Cmdlet
@@ -561,6 +557,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepublication)
+
+[https://learn.microsoft.com/graph/api/itempublication-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempublication-update?view=graph-rest-1.0)
 
 
 

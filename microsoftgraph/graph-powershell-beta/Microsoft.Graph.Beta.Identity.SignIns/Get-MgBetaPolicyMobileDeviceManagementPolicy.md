@@ -37,9 +37,6 @@ Get-MgBetaPolicyMobileDeviceManagementPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Read the properties and relationships of a mobilityManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobiledevicemanagementpolicies-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet
 ```powershell
@@ -397,6 +394,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobiledevicemanagementpolicy)
+
+[https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobiledevicemanagementpolicies-list?view=graph-rest-1.0)
 
 
 

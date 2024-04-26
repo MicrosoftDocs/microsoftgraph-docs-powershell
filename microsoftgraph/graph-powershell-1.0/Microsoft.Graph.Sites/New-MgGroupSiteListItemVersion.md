@@ -435,7 +435,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemversion)
 

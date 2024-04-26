@@ -40,9 +40,6 @@ Get-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of an attributeSet object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attributeset-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -315,9 +312,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryattributeset)
+
+[https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0)
 
 
 

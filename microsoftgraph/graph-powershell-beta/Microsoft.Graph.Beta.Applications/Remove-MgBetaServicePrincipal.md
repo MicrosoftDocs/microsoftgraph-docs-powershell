@@ -32,9 +32,6 @@ Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -238,9 +235,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipal)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete?view=graph-rest-1.0)
 
 
 

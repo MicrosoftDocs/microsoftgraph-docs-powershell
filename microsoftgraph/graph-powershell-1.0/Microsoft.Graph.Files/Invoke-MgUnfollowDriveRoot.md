@@ -31,9 +31,6 @@ Invoke-MgUnfollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVariab
 ## DESCRIPTION
 Unfollow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -201,9 +198,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaUnfollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaUnfollowDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgunfollowdriveroot)
+
+[https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
 
 
 

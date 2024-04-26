@@ -37,9 +37,6 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a specific endpoint object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/endpoint-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet
 ```powershell
@@ -367,6 +364,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint)
+
+[https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0)
 
 
 

@@ -50,9 +50,6 @@ New-MgGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new timeOff instance in a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-timesoff-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -380,9 +377,10 @@ SHAREDTIMEOFF `<IMicrosoftGraphTimeOffItem>`: timeOffItem
 Required.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoff)
+
+[https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-timesoff?view=graph-rest-1.0)
 
 
 

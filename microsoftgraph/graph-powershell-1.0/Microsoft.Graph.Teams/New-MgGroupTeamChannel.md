@@ -14772,9 +14772,10 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post?view=graph-rest-1.0)
 
 
 

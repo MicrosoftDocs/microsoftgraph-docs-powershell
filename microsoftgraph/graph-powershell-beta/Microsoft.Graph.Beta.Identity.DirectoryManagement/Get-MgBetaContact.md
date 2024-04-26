@@ -40,9 +40,6 @@ Get-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of an organizational contact object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve contact objects in the directory 
 
@@ -368,9 +365,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontact)
+
+[https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0)
 
 
 

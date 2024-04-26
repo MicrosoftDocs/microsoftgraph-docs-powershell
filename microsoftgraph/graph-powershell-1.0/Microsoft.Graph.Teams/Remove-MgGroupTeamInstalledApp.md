@@ -240,9 +240,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteaminstalledapp)
+
+[https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-delete-installedapps?view=graph-rest-1.0)
 
 
 

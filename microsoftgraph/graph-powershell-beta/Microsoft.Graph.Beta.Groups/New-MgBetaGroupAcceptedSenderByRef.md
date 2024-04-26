@@ -52,9 +52,6 @@ Specify the user or group in @odata.id in the request body.
 Users in the accepted senders list can post to conversations of the group.
 Make sure you don't specify the same user or group in the accepted senders and rejected senders lists, otherwise you'll get an error.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-post-acceptedsenders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -314,9 +311,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupacceptedsenderbyref)
+
+[https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-acceptedsenders?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get an app installed in a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-installedapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all the apps installed in the specified chat
 
@@ -393,9 +390,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
 
 
 

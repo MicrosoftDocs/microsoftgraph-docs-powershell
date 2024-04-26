@@ -45,9 +45,6 @@ The state of the assignment goes back to draft if there is any backend failure d
 To update the properties of a published assignment, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-publish-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -211,9 +208,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Publish-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationUserAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationuserassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/publish-mgbetaeducationuserassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-publish?view=graph-rest-1.0)
 
 
 

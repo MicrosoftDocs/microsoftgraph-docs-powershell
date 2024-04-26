@@ -54,9 +54,6 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students can't see the modules until publication.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-module-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -428,9 +425,10 @@ For example, if a user changes their display name, the API might show the new va
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
 
 
 

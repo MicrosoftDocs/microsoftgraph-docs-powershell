@@ -40,9 +40,6 @@ Get-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of a claimsMappingPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -381,9 +378,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy)
+
+[https://learn.microsoft.com/graph/api/claimsmappingpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/claimsmappingpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list?view=graph-rest-1.0)
 
 
 

@@ -49,9 +49,6 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the properties of a healthIssue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-healthissue-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -537,6 +534,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue)
+
+[https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
 
 
 

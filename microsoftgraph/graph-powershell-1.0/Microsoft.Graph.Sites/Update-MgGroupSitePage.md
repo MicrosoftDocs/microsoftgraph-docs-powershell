@@ -14673,7 +14673,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepage)
 

@@ -520,7 +520,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathoperation)
 

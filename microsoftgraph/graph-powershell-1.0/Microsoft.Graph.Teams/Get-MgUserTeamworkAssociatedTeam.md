@@ -365,9 +365,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkassociatedteam)
+
+[https://learn.microsoft.com/graph/api/associatedteaminfo-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/associatedteaminfo-list?view=graph-rest-1.0)
 
 
 

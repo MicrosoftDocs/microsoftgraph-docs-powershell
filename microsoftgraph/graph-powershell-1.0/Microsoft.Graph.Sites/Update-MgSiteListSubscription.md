@@ -625,7 +625,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistsubscription)
 

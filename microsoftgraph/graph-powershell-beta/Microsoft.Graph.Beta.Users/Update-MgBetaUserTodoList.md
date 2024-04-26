@@ -48,9 +48,6 @@ Update-MgBetaUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a todoTaskList object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -610,9 +607,10 @@ Required.
   - `[Title <String>]`: A brief description of the task.
 
 ## RELATED LINKS
-[Update-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolist)
+
+[https://learn.microsoft.com/graph/api/todotasklist-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-update?view=graph-rest-1.0)
 
 
 

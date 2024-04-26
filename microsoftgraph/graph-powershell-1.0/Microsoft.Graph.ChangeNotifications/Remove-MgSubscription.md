@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Remove-MgSubscription
@@ -207,9 +206,10 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
-[Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgBetaSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-delete?view=graph-rest-1.0)
 
 
 

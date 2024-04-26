@@ -42,9 +42,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGovernanc
 Retrieve the details of an agreement file, including the language and version information.
 The default file can have multiple versions, each with its own language, that can be retrieved by specifying the Accept-Language header.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/agreementfile-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -AgreementId
@@ -361,9 +358,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementfile)
+
+[https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreementfile-get?view=graph-rest-1.0)
 
 
 

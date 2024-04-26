@@ -198,7 +198,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveFollowingCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveFollowingCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowingcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivefollowingcount)
 

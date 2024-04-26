@@ -349,9 +349,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingCurrency](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrency?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency)
+
+[https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0)
 
 
 

@@ -44,9 +44,6 @@ Retrieve the properties and relationships of an incident object.
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple alert objects.
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an incident.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all incidents
 
@@ -401,9 +398,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityincident)
+
+[https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-incidents?view=graph-rest-1.0)
 
 
 

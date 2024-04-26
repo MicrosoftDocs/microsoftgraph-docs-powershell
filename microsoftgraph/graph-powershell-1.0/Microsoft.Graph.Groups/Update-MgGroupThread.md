@@ -612,9 +612,10 @@ Returned only on $select.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupthread)
+
+[https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
 
 
 

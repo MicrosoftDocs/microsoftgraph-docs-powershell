@@ -503,7 +503,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteListOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelistoperation)
 

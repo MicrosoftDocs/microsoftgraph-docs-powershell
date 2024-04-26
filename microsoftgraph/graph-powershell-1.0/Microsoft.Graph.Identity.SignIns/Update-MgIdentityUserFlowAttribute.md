@@ -48,9 +48,6 @@ Update-MgIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of a custom identityUserFlowAttribute object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattribute-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -370,9 +367,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityuserflowattribute)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-1.0)
 
 
 

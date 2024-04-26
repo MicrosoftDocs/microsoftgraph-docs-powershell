@@ -50,9 +50,6 @@ Update-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <St
 ## DESCRIPTION
 Update the navigation property details in groups
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplandetails-update-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -379,9 +376,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgGroupPlannerPlanDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplannerplandetail)
+
+[https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplandetails-update?view=graph-rest-1.0)
 
 
 

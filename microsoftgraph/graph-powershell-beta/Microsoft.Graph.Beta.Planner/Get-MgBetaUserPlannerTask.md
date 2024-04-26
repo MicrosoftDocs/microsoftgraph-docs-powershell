@@ -25,9 +25,6 @@ Get-MgBetaUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter
 ## DESCRIPTION
 Retrieve a list of plannertask objects assigned to a User.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-tasks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -267,9 +264,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannertask)
+
+[https://learn.microsoft.com/graph/api/planneruser-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-tasks?view=graph-rest-1.0)
 
 
 

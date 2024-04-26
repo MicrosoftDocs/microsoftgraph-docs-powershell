@@ -143,7 +143,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgBetaReportPartnerBilling](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportPartnerBilling?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/remove-mgreportpartnerbilling)
 

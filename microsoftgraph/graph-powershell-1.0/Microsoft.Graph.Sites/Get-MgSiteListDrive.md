@@ -219,7 +219,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistdrive)
 

@@ -70,9 +70,6 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create an online meeting on behalf of a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-onlinemeetings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an online meeting with user token
 
@@ -1087,9 +1084,10 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
   - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
+
+[https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)
 
 
 

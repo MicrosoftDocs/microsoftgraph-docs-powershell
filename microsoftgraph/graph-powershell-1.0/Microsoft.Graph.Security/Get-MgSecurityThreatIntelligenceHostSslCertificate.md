@@ -76,9 +76,6 @@ Get-MgSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the properties and relationships of a hostSslCertificate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostsslcertificate-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -403,9 +400,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsslcertificate)
+
+[https://learn.microsoft.com/graph/api/security-hostsslcertificate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostsslcertificate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-host-list-sslcertificates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-sslcertificates?view=graph-rest-1.0)
 
 
 

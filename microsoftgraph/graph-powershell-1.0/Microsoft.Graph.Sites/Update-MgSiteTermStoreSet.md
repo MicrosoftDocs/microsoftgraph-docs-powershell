@@ -87,9 +87,6 @@ Update-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a set object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-set-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -746,9 +743,10 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[Update-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoreset)
+
+[https://learn.microsoft.com/graph/api/termstore-set-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-update?view=graph-rest-1.0)
 
 
 

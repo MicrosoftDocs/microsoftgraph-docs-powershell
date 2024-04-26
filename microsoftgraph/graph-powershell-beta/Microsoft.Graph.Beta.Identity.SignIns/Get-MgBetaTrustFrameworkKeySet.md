@@ -37,9 +37,6 @@ Get-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the properties and associations for a Trustframeworkkeyset.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
@@ -383,6 +380,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeyset)
+
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/trustframework-list-keysets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframework-list-keysets?view=graph-rest-1.0)
 
 
 

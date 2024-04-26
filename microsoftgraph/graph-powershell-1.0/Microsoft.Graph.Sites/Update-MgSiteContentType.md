@@ -58,9 +58,6 @@ Update-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update a \[content type\]\[contentType\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1888,9 +1885,10 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-update?view=graph-rest-1.0)
 
 
 

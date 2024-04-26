@@ -417,7 +417,6 @@ For example, if a user changes their display name, the API might show the new va
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationschooladministrativeunit)
 

@@ -1251,7 +1251,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistcolumn)
 

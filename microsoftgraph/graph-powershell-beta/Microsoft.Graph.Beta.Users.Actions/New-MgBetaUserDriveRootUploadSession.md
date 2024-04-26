@@ -328,7 +328,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgUserDriveRootUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDriveRootUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriverootuploadsession)
 

@@ -56,9 +56,6 @@ New-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity>
 Create a new contactFolder under the user's default contacts folder.
 You can also create a new contactfolder as a child of any specified contact folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-contactfolders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -743,9 +740,10 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[New-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontactfolder)
+
+[https://learn.microsoft.com/graph/api/user-post-contactfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-contactfolders?view=graph-rest-1.0)
 
 
 

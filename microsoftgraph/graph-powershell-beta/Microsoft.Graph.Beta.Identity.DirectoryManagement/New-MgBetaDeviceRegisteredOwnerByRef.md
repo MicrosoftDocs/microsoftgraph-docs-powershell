@@ -47,9 +47,6 @@ New-MgBetaDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Add a user as a registered owner of the device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-post-registeredowners-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -310,9 +307,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredOwnerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregisteredownerbyref)
+
+[https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0)
 
 
 

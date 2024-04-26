@@ -734,7 +734,6 @@ Values are free-form.
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
-[New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
 

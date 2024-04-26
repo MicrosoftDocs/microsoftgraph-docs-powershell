@@ -77,9 +77,6 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Use this API to create a new event.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-events-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1996,9 +1993,10 @@ START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent)
+
+[https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0)
 
 
 

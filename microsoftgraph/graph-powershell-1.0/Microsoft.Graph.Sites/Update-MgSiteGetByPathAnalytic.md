@@ -19143,7 +19143,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSiteGetByPathAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathanalytic)
 

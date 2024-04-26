@@ -338,7 +338,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitedelta)
 

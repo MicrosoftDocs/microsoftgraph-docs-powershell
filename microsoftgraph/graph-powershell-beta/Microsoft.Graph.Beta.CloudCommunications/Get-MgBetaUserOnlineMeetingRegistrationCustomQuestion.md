@@ -38,9 +38,6 @@ Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 ## DESCRIPTION
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
 ```powershell
@@ -350,6 +347,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistrationcustomquestion)
+
+[https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0)
 
 
 

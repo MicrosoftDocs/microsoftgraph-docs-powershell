@@ -244,7 +244,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootversion)
 

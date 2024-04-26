@@ -265,7 +265,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCalendarGroupCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar)
 

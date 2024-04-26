@@ -55,9 +55,6 @@ New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-post-applications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new application
 
@@ -2317,9 +2314,10 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
-[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplication)
+
+[https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0)
 
 
 

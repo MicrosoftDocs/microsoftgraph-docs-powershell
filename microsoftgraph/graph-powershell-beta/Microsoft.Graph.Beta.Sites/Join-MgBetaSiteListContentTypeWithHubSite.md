@@ -50,9 +50,6 @@ Join-MgBetaSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -347,9 +344,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Join-MgSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitelistcontenttypewithhubsite)
+
+[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
 
 
 

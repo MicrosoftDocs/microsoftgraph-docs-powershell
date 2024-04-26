@@ -32,9 +32,6 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ## DESCRIPTION
 Get the contact's manager
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/orgcontact-get-manager-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -222,9 +219,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager)
+
+[https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0)
 
 
 

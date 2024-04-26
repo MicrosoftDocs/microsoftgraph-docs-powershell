@@ -560,7 +560,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile)
 

@@ -40,9 +40,6 @@ Get-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Retrieve a single permissionGrantPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1:  List all permission grant policies
 
@@ -417,9 +414,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicy)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0)
 
 
 

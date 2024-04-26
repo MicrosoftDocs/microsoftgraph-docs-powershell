@@ -348,6 +348,8 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdevicetransitivememberof)
 
+[https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-transitivememberof?view=graph-rest-1.0)
+
 
 
 

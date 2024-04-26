@@ -172,7 +172,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgUserEventExtensionCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExtensionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventextensioncount)
 

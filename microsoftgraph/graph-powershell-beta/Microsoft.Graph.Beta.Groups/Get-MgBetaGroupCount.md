@@ -129,7 +129,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupcount)
 

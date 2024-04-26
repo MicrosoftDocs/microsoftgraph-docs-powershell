@@ -30064,7 +30064,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitem)
 

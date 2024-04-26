@@ -341,9 +341,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserOnenotePageToSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mguseronenotepagetosection)
+
+[https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0)
 
 
 

@@ -221,7 +221,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupMemberWithLicenseErrorCountAsOrgContact](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberWithLicenseErrorCountAsOrgContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberwithlicenseerrorcountasorgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmemberwithlicenseerrorcountasorgcontact)
 

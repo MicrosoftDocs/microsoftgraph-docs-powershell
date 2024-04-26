@@ -27,6 +27,9 @@ Confirm-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHeade
 ## DESCRIPTION
 Confirm a specific timeCard.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-confirm-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Confirm-MgBetaTeamScheduleTimeCard Cmdlet
 ```powershell
@@ -222,6 +225,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateamscheduletimecard)
+
+[https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-confirm?view=graph-rest-1.0)
 
 
 

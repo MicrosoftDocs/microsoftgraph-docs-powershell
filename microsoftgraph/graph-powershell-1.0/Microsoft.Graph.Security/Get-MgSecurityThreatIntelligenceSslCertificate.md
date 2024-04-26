@@ -40,9 +40,6 @@ Get-MgSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-sslcertificate-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesslcertificate)
+
+[https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0)
 
 
 

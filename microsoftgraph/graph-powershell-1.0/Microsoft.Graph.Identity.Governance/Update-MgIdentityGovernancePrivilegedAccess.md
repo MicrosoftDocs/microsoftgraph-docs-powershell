@@ -9960,7 +9960,6 @@ Optional.
   - `[EligibilitySchedules <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule- `[]`>]`: The eligibility schedules to activate a just-in-time access.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccess?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccess)
 

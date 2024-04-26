@@ -37,9 +37,6 @@ Get-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Retrieve the properties of a specific pendingExternalUserProfile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/pendingexternaluserprofile-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +334,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorypendingexternaluserprofile)
+
+[https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-pendingexternaluserprofile?view=graph-rest-1.0)
 
 
 

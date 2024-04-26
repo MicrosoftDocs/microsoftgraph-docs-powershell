@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaInvitationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitationcount)
 

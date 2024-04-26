@@ -41,9 +41,6 @@ Get-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Read the properties and relationships of an identityUserFlowAttributeAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the details of an identityUserFlowAttributeAssignment
 
@@ -386,9 +383,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignment)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-userattributeassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-userattributeassignments?view=graph-rest-1.0)
 
 
 

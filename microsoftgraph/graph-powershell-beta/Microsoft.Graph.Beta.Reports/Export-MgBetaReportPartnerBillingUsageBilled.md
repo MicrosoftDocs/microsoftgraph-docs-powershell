@@ -33,6 +33,9 @@ Export-MgBetaReportPartnerBillingUsageBilled
 ## DESCRIPTION
 Export the billed Azure usage data.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedusage-export-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -194,9 +197,10 @@ BODYPARAMETER `<IPaths1Ij96IaReportsPartnersBillingUsageBilledMicrosoftGraphPart
   - `[InvoiceId <String>]`:
 
 ## RELATED LINKS
-[Export-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusagebilled)
+
+[https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-billedusage-export?view=graph-rest-1.0)
 
 
 

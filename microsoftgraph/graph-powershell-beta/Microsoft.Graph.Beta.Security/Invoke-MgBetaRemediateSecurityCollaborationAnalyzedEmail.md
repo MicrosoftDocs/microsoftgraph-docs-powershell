@@ -456,6 +456,8 @@ This is full URL string, including query parameters.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaremediatesecuritycollaborationanalyzedemail)
 
+[https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-analyzedemail-remediate?view=graph-rest-1.0)
+
 
 
 

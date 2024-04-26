@@ -62,9 +62,6 @@ Get-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get the properties and relationships of a bookingCustomer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
@@ -367,9 +364,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer)
+
+[https://learn.microsoft.com/graph/api/bookingcustomer-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-customers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-customers?view=graph-rest-1.0)
 
 
 

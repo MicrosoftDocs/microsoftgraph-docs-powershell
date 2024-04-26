@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileAnniversary
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a personAnniversary object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personanniversary-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAnniversary Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary)
+
+[https://learn.microsoft.com/graph/api/personanniversary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personanniversary-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-anniversaries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-anniversaries?view=graph-rest-1.0)
 
 
 

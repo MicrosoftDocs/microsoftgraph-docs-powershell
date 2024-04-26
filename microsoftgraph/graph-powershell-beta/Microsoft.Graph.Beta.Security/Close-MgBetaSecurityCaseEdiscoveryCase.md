@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Close-MgBetaSecurityCaseEdiscoveryCase
@@ -33,6 +34,9 @@ Close-MgBetaSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Respon
 ## DESCRIPTION
 Close an eDiscovery case.
 For details, see Close a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-close-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Close-MgBetaSecurityCaseEdiscoveryCase Cmdlet
@@ -268,9 +272,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0)
 
 
 

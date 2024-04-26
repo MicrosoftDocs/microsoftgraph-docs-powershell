@@ -235,7 +235,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgBetaGroupOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenotepagecontent)
 

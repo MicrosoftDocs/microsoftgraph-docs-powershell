@@ -14461,7 +14461,6 @@ Read-only.
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint)
 

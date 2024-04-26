@@ -360,6 +360,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimecard)
 
+[https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0)
+
 
 
 

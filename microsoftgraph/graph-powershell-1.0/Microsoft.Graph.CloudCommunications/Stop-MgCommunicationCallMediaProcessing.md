@@ -56,9 +56,6 @@ The cancelMediaProcessing method cancels any operation that is in-process as wel
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-cancelmediaprocessing-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -269,9 +266,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgBetaCommunicationCallMediaProcessing?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/stop-mgcommunicationcallmediaprocessing)
+
+[https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)
 
 
 

@@ -29,9 +29,6 @@ Remove-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a plannerRoster object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPlannerRoster Cmdlet
 ```powershell
@@ -209,6 +206,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerroster)
+
+[https://learn.microsoft.com/graph/api/plannerroster-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerroster-delete?view=graph-rest-1.0)
 
 
 

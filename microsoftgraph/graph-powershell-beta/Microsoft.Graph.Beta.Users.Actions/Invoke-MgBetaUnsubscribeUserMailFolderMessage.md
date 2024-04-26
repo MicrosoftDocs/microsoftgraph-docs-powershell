@@ -265,6 +265,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaunsubscribeusermailfoldermessage)
 
+[https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-unsubscribe?view=graph-rest-1.0)
+
 
 
 

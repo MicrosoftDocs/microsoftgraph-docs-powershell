@@ -233,9 +233,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgSoftTeamPrimaryChannelMessageDelete](/powershell/module/Microsoft.Graph.Teams/Invoke-MgSoftTeamPrimaryChannelMessageDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamprimarychannelmessagedelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamprimarychannelmessagedelete)
+
+[https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-softdelete?view=graph-rest-1.0)
 
 
 

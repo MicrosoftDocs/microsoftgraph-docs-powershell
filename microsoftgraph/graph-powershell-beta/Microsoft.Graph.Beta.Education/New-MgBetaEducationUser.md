@@ -45,9 +45,6 @@ New-MgBetaEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-Response
 ## DESCRIPTION
 Create a new user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationroot-post-users-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -40315,9 +40312,10 @@ Read-only.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
-[New-MgEducationUser](/powershell/module/Microsoft.Graph.Education/New-MgEducationUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuser)
+
+[https://learn.microsoft.com/graph/api/educationroot-post-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationroot-post-users?view=graph-rest-1.0)
 
 
 

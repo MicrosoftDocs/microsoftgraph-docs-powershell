@@ -37,9 +37,6 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Read the properties and relationships of a referenceDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-referencedefinition-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -309,6 +306,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatareferencedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatareferencedefinition)
+
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-1.0)
 
 
 

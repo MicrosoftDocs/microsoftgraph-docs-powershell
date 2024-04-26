@@ -32,9 +32,6 @@ Remove-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete (unregister) a printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -219,9 +216,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinter?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintprinter)
+
+[https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-delete?view=graph-rest-1.0)
 
 
 

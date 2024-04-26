@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgBetaApplicationExtensionProperty
@@ -352,9 +351,12 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty)
+
+[https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
 
 
 

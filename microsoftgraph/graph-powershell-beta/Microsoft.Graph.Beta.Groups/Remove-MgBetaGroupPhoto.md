@@ -236,7 +236,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupphoto)
 

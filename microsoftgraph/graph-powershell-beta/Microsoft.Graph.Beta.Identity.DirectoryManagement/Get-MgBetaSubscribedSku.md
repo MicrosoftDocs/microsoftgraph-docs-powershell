@@ -38,9 +38,6 @@ Get-MgBetaSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Pr
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/subscribedsku-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get subscribed SKUs
 
@@ -297,9 +294,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSubscribedSku?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasubscribedsku](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasubscribedsku)
+
+[https://learn.microsoft.com/graph/api/subscribedsku-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscribedsku-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/subscribedsku-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscribedsku-list?view=graph-rest-1.0)
 
 
 

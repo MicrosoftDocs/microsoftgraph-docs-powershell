@@ -41,9 +41,6 @@ Get-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ## DESCRIPTION
 Get the properties of a certificateBasedAuthConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedauthconfiguration-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -397,9 +394,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration)
+
+[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0)
 
 
 

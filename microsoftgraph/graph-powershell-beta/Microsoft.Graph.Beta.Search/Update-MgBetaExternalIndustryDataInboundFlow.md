@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundFileFlow object.
+Update the properties of an inboundFlow object.
 
 ## SYNTAX
 
@@ -47,10 +47,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundFileFlow object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-update-permissions.md)]
+Update the properties of an inboundFlow object.
 
 ## PARAMETERS
 
@@ -487,6 +484,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0)
 
 
 

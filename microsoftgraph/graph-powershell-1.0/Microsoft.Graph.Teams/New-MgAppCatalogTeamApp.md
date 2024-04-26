@@ -337,9 +337,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp)
+
+[https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-1.0)
 
 
 

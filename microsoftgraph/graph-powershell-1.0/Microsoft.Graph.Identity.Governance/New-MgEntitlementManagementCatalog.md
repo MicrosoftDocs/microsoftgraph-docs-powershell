@@ -34,9 +34,6 @@ New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageC
 ## DESCRIPTION
 Create a new accessPackageCatalog object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-catalogs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -10431,6 +10428,8 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-post-catalogs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-catalogs?view=graph-rest-1.0)
 
 
 

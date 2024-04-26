@@ -372,7 +372,6 @@ RULES <IMicrosoftGraphSecurityHostReputationRule- `[]`>: A collection of rules t
   - `[Severity <String>]`: hostReputationRuleSeverity
 
 ## RELATED LINKS
-[Update-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencehostreputation)
 

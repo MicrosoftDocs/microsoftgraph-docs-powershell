@@ -41,9 +41,6 @@ Get-MgBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the id property, which is the currency code, to specify the currency.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingcurrency-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -320,9 +317,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrency)
+
+[https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0)
 
 
 

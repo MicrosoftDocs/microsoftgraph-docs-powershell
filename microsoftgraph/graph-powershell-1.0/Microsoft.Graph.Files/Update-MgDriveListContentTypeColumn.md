@@ -68,9 +68,6 @@ Update-MgDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1269,9 +1266,10 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0)
 
 
 

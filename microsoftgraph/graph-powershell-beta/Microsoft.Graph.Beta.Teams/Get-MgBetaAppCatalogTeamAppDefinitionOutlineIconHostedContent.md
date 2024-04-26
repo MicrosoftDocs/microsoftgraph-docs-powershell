@@ -43,9 +43,6 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkhostedcontent-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -262,6 +259,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent)
+
+[https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkhostedcontent-get?view=graph-rest-1.0)
 
 
 

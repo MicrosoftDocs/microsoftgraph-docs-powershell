@@ -37,9 +37,6 @@ Get-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Read the properties and relationships of an analyzedEmail object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-analyzedemail-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +369,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
+
+[https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-analyzedemail-get?view=graph-rest-1.0)
 
 
 
