@@ -39,9 +39,6 @@ Get-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 ## DESCRIPTION
 Retrieve the properties and relationships of domain object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a list of domain objects
 
@@ -365,9 +362,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadomain)
+
+[https://learn.microsoft.com/graph/api/domain-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/domain-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list?view=graph-rest-1.0)
 
 
 

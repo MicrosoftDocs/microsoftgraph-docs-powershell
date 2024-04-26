@@ -44,9 +44,6 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityproviderbase-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
 
@@ -385,9 +382,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityprovider)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0)
 
 
 

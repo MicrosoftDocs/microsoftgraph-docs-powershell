@@ -59,9 +59,6 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-answer-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Answer a Peer-to-Peer VoIP call with service hosted media
 
@@ -412,9 +409,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall)
+
+[https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-answer?view=graph-rest-1.0)
 
 
 

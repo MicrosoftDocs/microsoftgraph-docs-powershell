@@ -265,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriverootitemlastmodifiedbyuserserviceprovisioningerror)
 

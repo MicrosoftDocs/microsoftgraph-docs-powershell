@@ -200,7 +200,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatMessageCount](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessagecount)
 

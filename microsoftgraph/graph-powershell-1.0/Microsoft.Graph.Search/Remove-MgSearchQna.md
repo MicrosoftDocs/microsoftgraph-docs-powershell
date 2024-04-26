@@ -32,9 +32,6 @@ Remove-MgSearchQna -InputObject <ISearchIdentity> [-IfMatch <String>] [-Response
 ## DESCRIPTION
 Delete a qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -202,9 +199,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Remove-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchqna)
+
+[https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-delete?view=graph-rest-1.0)
 
 
 

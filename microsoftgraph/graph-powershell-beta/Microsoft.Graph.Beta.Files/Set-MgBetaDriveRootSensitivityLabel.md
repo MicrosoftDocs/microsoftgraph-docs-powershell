@@ -300,7 +300,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriverootsensitivitylabel)
 

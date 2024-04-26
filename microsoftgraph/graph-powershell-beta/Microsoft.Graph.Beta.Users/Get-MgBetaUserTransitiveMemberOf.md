@@ -356,9 +356,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberof)
+
+[https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-transitivememberof?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -381,9 +378,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
+
+[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0)
 
 
 

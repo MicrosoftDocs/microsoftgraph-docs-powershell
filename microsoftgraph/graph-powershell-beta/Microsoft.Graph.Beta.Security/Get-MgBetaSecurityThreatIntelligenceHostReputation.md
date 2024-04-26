@@ -32,9 +32,6 @@ Get-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-host-get-reputation-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -244,9 +241,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostreputation)
+
+[https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
 
 
 

@@ -282,7 +282,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Set-MgBetaGroupSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenoteResourceContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteonenoteresourcecontent)
 

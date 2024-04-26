@@ -32,9 +32,6 @@ Remove-MgEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -219,9 +216,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuser)
+
+[https://learn.microsoft.com/graph/api/educationuser-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-delete?view=graph-rest-1.0)
 
 
 

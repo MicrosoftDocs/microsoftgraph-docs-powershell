@@ -236,7 +236,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupDriveRootPermanent](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupDriveRootPermanent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupdriverootpermanent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupdriverootpermanent)
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgBetaInvalidateAllUserRefreshToken
@@ -213,6 +212,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidatealluserrefreshtoken)
+
+[https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-invalidateallrefreshtokens?view=graph-rest-1.0)
 
 
 

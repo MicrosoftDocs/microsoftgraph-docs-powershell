@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseReviewSet
@@ -37,9 +36,6 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a reviewSet object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
@@ -339,6 +335,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset)
+
+[https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0)
 
 
 

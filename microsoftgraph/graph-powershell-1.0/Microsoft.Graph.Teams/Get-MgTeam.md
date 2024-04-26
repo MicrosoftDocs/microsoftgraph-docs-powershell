@@ -39,9 +39,6 @@ Get-MgTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a list of teams
 
@@ -358,9 +355,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteam)
+
+[https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teams-list?view=graph-rest-1.0)
 
 
 

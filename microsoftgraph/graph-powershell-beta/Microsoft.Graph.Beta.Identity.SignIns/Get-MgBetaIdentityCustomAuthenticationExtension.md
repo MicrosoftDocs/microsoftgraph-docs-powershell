@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Read the properties and relationships of a customAuthenticationExtension object.
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
 ## SYNTAX
 
@@ -35,10 +36,8 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a customAuthenticationExtension object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customauthenticationextension-get-permissions.md)]
+Read the properties and relationships of an authenticationEventListener object.
+The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
 ## PARAMETERS
 
@@ -367,6 +366,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycustomauthenticationextension)
+
+[https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0)
 
 
 

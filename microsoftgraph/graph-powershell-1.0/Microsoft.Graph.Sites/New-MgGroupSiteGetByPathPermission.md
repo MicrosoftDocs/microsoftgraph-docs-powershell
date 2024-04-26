@@ -754,9 +754,10 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathpermission)
+
+[https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-permissions?view=graph-rest-1.0)
 
 
 

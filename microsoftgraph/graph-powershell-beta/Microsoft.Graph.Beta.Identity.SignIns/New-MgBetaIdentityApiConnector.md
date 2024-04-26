@@ -32,9 +32,6 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 ## DESCRIPTION
 Create a new identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-create-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
 
@@ -275,9 +272,10 @@ Read-only.
   - `[TargetUrl <String>]`: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-[New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
+
+[https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
 
 
 

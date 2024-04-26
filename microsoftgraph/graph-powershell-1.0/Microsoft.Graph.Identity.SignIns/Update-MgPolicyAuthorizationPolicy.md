@@ -35,9 +35,6 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 ## DESCRIPTION
 Update the properties of an authorizationPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authorizationpolicy-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -412,9 +409,10 @@ Value should be in the format managePermissionGrantsForSelf.{id}, where {id} is 
 An empty list indicates user consent to apps is disabled.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
+
+[https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
 
 
 

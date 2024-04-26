@@ -29,9 +29,6 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 ## DESCRIPTION
 Update the properties of an accessReviewPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet
 ```powershell
@@ -245,6 +242,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
+
+[https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-1.0)
 
 
 

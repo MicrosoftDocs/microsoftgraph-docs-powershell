@@ -52,9 +52,6 @@ Create an override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
 Note
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/inferenceclassification-post-overrides-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -307,9 +304,10 @@ SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
   - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
+
+[https://learn.microsoft.com/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0)
 
 
 

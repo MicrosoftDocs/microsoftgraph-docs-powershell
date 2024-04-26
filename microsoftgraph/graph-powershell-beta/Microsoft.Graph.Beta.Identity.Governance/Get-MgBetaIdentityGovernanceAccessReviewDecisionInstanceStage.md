@@ -38,9 +38,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewstage-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -405,6 +402,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)
+
+[https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0)
 
 
 

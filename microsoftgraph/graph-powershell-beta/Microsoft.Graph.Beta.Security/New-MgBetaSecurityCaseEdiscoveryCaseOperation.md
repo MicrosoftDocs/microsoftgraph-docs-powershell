@@ -457,7 +457,6 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
-[New-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaseoperation)
 

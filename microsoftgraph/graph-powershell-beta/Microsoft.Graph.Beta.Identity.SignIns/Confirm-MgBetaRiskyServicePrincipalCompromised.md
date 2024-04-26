@@ -217,9 +217,10 @@ BODYPARAMETER `<IPaths1858Gl0IdentityprotectionRiskyserviceprincipalsMicrosoftGr
   - `[ServicePrincipalIds <String- `[]`>]`:
 
 ## RELATED LINKS
-[Confirm-MgRiskyServicePrincipalCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyServicePrincipalCompromised?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyserviceprincipalcompromised)
+
+[https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-confirmcompromised?view=graph-rest-1.0)
 
 
 

@@ -229,7 +229,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaShareListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgsharelistsubscription)
 

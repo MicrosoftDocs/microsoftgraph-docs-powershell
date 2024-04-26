@@ -54,9 +54,6 @@ New-MgGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new OneNote notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -954,9 +951,10 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebook)
+
+[https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0)
 
 
 

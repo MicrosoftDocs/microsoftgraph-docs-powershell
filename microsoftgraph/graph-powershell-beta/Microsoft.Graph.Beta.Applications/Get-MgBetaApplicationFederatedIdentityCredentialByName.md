@@ -209,6 +209,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname)
 
+[https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
+
 
 
 

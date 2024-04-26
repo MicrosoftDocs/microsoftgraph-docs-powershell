@@ -42,9 +42,6 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-ResponseHeadersVariable <S
 ## DESCRIPTION
 Create and register a new device in the organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-post-devices-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -980,9 +977,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdevice)
+
+[https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0)
 
 
 

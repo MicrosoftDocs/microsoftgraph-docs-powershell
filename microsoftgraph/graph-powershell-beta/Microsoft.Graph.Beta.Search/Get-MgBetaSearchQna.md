@@ -39,9 +39,6 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-qna-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -322,9 +319,12 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQna?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna)
+
+[https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0)
 
 
 

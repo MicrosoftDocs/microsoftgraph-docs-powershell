@@ -278,7 +278,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaSiteListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitelistitemversionfield)
 

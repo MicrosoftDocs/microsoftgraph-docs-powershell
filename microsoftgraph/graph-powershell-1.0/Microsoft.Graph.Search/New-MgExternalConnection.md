@@ -38,9 +38,6 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 ## DESCRIPTION
 Create a new externalConnection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-external-post-connections-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -652,9 +649,10 @@ Required.
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
-[New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnection)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
 
 
 

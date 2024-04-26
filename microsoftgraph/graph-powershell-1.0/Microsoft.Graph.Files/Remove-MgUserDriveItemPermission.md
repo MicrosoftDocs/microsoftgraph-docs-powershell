@@ -34,9 +34,6 @@ Remove-MgUserDriveItemPermission -InputObject <IFilesIdentity> [-IfMatch <String
 Remove access to a DriveItem.
 Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -264,9 +261,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveitempermission)
+
+[https://learn.microsoft.com/graph/api/permission-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-delete?view=graph-rest-1.0)
 
 
 

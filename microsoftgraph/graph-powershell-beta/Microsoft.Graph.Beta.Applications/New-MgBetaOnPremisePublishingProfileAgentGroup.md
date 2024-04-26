@@ -47,9 +47,6 @@ New-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Create a new onPremisesAgentGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
@@ -455,6 +452,8 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroup)
+
+[https://learn.microsoft.com/graph/api/onpremisesagentgroup-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagentgroup-post?view=graph-rest-1.0)
 
 
 

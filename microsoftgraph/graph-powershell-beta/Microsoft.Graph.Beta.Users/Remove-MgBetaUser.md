@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Remove-MgBetaUser
@@ -38,9 +37,6 @@ Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Remove a user
@@ -243,9 +239,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauser)
+
+[https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
 
 
 

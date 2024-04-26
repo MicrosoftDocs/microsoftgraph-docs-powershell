@@ -8,8 +8,8 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Create a new inboundFlow object.
-The following prerequisite resources are required when you create an inboundFlow:
+Create a new inboundFileFlow object.
+The following prerequisite resources are required when you create an inboundFileFlow:
 
 ## SYNTAX
 
@@ -31,11 +31,8 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ```
 
 ## DESCRIPTION
-Create a new inboundFlow object.
-The following prerequisite resources are required when you create an inboundFlow:
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-post-permissions.md)]
+Create a new inboundFileFlow object.
+The following prerequisite resources are required when you create an inboundFileFlow:
 
 ## PARAMETERS
 
@@ -419,6 +416,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0)
 
 
 

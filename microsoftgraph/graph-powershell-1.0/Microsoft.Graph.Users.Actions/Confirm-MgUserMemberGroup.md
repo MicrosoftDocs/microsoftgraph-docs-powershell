@@ -281,9 +281,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaUserMemberGroup](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Confirm-MgBetaUserMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/confirm-mgusermembergroup)
+
+[https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
 
 
 

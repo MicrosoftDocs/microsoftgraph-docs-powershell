@@ -202,7 +202,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSitePageCountAsSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageCountAsSitePage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagecountassitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepagecountassitepage)
 

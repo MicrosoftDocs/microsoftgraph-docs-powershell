@@ -42,9 +42,6 @@ Get-MgUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [
 Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
 For security, the password itself will never be returned in the object and the password property is always null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/passwordauthenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -377,9 +374,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationPasswordMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPasswordMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationpasswordmethod)
+
+[https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/passwordauthenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-passwordmethods?view=graph-rest-1.0)
 
 
 

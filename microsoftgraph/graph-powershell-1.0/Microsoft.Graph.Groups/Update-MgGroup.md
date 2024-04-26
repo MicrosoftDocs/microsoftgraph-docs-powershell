@@ -26466,9 +26466,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroup)
+
+[https://learn.microsoft.com/graph/api/group-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update?view=graph-rest-1.0)
 
 
 

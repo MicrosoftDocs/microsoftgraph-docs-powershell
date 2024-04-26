@@ -289,9 +289,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgBetaUserManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgusermanageddeviceuserfromsharedappledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/remove-mgusermanageddeviceuserfromsharedappledevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0)
 
 
 

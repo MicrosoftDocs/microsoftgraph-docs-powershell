@@ -40,9 +40,6 @@ Get-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of an openshift object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -341,9 +338,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/openshift-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-list?view=graph-rest-1.0)
 
 
 

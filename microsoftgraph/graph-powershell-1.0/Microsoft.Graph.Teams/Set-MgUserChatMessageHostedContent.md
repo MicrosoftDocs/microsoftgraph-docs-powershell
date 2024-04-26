@@ -303,7 +303,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mguserchatmessagehostedcontent)
 

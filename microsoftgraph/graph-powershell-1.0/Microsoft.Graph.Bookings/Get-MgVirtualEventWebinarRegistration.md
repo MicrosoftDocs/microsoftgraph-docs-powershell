@@ -40,9 +40,6 @@ Get-MgVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the properties and relationships of a virtualEventRegistration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/virtualeventregistration-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -321,9 +318,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarregistration)
+
+[https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualeventwebinar-list-registrations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-list-registrations?view=graph-rest-1.0)
 
 
 

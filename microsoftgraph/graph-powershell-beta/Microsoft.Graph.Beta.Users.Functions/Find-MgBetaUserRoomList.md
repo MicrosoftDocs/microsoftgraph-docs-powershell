@@ -33,6 +33,9 @@ Get the room lists defined in a tenant, as represented by their emailAddress obj
 Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findroomlists-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Find-MgBetaUserRoomList Cmdlet
 ```powershell
@@ -255,6 +258,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
+
+[https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-1.0)
 
 
 

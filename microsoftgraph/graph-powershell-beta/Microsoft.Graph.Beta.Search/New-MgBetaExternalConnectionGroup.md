@@ -48,9 +48,6 @@ New-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new externalGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-post-groups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -334,9 +331,10 @@ Read-only.
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-[New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-1.0)
 
 
 

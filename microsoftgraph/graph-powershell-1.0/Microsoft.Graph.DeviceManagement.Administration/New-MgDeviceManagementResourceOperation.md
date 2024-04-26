@@ -231,9 +231,10 @@ The description is used in mouse-over text for the operation when shown in the A
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation)
+
+[https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-create?view=graph-rest-1.0)
 
 
 

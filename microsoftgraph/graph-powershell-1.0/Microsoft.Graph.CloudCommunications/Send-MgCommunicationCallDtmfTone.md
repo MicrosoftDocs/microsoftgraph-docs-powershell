@@ -275,7 +275,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Send-MgBetaCommunicationCallDtmfTone](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Send-MgBetaCommunicationCallDtmfTone?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationcalldtmftone](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/send-mgcommunicationcalldtmftone)
 

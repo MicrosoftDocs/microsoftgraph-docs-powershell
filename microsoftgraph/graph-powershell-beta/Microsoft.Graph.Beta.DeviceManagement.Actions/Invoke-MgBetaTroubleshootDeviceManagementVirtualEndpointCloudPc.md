@@ -242,9 +242,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetatroubleshootdevicemanagementvirtualendpointcloudpc)
+
+[https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-troubleshoot?view=graph-rest-1.0)
 
 
 

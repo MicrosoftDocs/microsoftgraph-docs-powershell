@@ -303,7 +303,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgBetaUserChatMessageReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserChatMessageReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserchatmessagereaction](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mguserchatmessagereaction)
 

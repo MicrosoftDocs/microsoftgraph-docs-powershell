@@ -57,9 +57,6 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of domain object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -755,9 +752,10 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
 Not nullable.
 
 ## RELATED LINKS
-[Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain)
+
+[https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-update?view=graph-rest-1.0)
 
 
 

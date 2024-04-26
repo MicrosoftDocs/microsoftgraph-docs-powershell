@@ -34,9 +34,6 @@ New-MgBetaPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagement
 ## DESCRIPTION
 Create an appManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appmanagementpolicy-post-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,9 +327,10 @@ To apply to all applications, this date would be null.
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-[New-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyappmanagementpolicy)
+
+[https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-post?view=graph-rest-1.0)
 
 
 

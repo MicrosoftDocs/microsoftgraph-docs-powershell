@@ -48,9 +48,6 @@ Invoke-MgBetaAcceptGroupCalendarEvent -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Accept the specified event in a user calendar.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-accept-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -341,9 +338,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgAcceptGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupcalendarevent)
+
+[https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-accept?view=graph-rest-1.0)
 
 
 

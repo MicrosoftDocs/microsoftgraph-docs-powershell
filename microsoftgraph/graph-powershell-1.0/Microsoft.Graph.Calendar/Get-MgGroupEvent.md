@@ -37,9 +37,6 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [-Respo
 ## DESCRIPTION
 Get an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-event-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -297,9 +294,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent)
+
+[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
 
 
 

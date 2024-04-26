@@ -319,7 +319,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserChatMessageReplyReaction?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserchatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/set-mguserchatmessagereplyreaction)
 

@@ -56,9 +56,6 @@ Update the properties of a unifiedRoleDefinition object.
 You cannot update built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -547,9 +544,10 @@ Not supported for custom roles.
 Not yet supported.
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagemententitlementmanagementroledefinition)
+
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
 
 
 

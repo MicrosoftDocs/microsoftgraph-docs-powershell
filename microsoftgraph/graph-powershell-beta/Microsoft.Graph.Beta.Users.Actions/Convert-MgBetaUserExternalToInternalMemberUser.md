@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Convert-MgBetaUserExternalToInternalMemberUser
@@ -370,6 +369,8 @@ By default, a strong password is required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/convert-mgbetauserexternaltointernalmemberuser)
+
+[https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-convertexternaltointernalmemberuser?view=graph-rest-1.0)
 
 
 

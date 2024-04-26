@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveListOperationCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListOperationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistoperationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistoperationcount)
 

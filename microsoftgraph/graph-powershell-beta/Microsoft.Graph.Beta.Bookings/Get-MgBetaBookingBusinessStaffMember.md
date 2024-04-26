@@ -62,9 +62,6 @@ Get-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingstaffmember-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
@@ -367,9 +364,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffmember)
+
+[https://learn.microsoft.com/graph/api/bookingstaffmember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-1.0)
 
 
 

@@ -288,9 +288,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder)
+
+[https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-move?view=graph-rest-1.0)
 
 
 

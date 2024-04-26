@@ -57,9 +57,6 @@ New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-ResponseHead
 ## DESCRIPTION
 Create a new application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-post-applications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create a new application
 
@@ -3395,9 +3392,10 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
-[New-MgApplication](/powershell/module/Microsoft.Graph.Applications/New-MgApplication?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication)
+
+[https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0)
 
 
 

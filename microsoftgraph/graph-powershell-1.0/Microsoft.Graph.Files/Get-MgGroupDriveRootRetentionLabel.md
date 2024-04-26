@@ -200,7 +200,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootretentionlabel)
 

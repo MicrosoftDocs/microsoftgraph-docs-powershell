@@ -30,9 +30,6 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ## DESCRIPTION
 Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcorganizationsettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
 ```powershell
@@ -299,6 +296,8 @@ The default value is en-US, which corresponds to English (United States).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
+
+[https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-1.0)
 
 
 

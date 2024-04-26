@@ -32,9 +32,6 @@ Restore-MgBetaPrintPrinterFactoryDefault -InputObject <IDevicesCloudPrintIdentit
 ## DESCRIPTION
 Restore a printer's default settings to the values specified by the manufacturer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-restorefactorydefaults-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -204,9 +201,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgPrintPrinterFactoryDefault](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Restore-MgPrintPrinterFactoryDefault?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/restore-mgbetaprintprinterfactorydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/restore-mgbetaprintprinterfactorydefault)
+
+[https://learn.microsoft.com/graph/api/printer-restorefactorydefaults?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-restorefactorydefaults?view=graph-rest-1.0)
 
 
 

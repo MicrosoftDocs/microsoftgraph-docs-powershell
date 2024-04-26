@@ -40,9 +40,6 @@ Get-MgUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a linkedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/linkedresource-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskLinkedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotasklinkedresource)
+
+[https://learn.microsoft.com/graph/api/linkedresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/linkedresource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/todotask-list-linkedresources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-linkedresources?view=graph-rest-1.0)
 
 
 

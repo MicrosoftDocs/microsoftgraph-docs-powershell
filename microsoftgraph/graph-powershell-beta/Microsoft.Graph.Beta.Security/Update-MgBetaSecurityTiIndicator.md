@@ -75,9 +75,6 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of a tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
@@ -1349,6 +1346,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-1.0)
 
 
 

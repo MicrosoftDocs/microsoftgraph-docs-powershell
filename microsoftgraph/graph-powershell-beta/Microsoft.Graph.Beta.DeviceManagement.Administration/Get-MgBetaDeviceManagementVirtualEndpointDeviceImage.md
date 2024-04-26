@@ -40,9 +40,6 @@ Get-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManage
 ## DESCRIPTION
 Read the properties and relationships of a specific cloudPcDeviceImage object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcdeviceimage-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
@@ -364,9 +361,12 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointdeviceimage)
+
+[https://learn.microsoft.com/graph/api/cloudpcdeviceimage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-deviceimages?view=graph-rest-1.0)
 
 
 

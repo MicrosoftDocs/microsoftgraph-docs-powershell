@@ -469,9 +469,10 @@ If the value is text, this must be a plain text value.
 Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserTeamworkActivityNotification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguserteamworkactivitynotification](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguserteamworkactivitynotification)
+
+[https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0)
 
 
 

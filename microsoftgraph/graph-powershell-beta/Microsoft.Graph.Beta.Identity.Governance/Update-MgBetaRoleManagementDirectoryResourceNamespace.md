@@ -445,7 +445,6 @@ Read-only.
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
-[Update-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryresourcenamespace)
 

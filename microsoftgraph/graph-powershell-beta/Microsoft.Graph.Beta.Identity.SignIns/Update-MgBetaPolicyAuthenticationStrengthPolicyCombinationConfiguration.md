@@ -52,9 +52,6 @@ Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 Update the properties of an authenticationCombinationConfiguration object.
 The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcombinationconfiguration-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -348,9 +345,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
+
+[https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowRun -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Read the properties and relationships of a run object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-run-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowRun](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowRun?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrun](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrun)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-1.0)
 
 
 

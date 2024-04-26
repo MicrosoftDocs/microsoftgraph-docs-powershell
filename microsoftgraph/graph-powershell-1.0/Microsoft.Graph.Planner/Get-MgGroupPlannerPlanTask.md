@@ -25,9 +25,6 @@ Get-MgGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-ExpandPro
 ## DESCRIPTION
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-tasks-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -270,9 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplantask)
+
+[https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-list-tasks?view=graph-rest-1.0)
 
 
 

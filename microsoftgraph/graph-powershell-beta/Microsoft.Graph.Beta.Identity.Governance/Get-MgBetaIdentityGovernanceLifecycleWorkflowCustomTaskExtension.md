@@ -40,9 +40,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <I
 ## DESCRIPTION
 Read the properties and relationships of a customTaskExtension object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-customtaskextension-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -403,9 +400,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowcustomtaskextension)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-customtaskextension-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-customtaskextensions?view=graph-rest-1.0)
 
 
 

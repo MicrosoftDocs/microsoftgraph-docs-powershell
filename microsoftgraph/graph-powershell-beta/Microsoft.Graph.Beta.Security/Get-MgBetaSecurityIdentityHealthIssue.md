@@ -37,9 +37,6 @@ Get-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a healthIssue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-healthissue-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -372,6 +369,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityhealthissue)
+
+[https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0)
 
 
 

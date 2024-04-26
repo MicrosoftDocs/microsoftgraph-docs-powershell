@@ -37,9 +37,6 @@ Get-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Read the properties and relationships of an urlThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-urlthreatsubmission-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
@@ -388,6 +385,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionurlthreat)
+
+[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-list?view=graph-rest-1.0)
 
 
 

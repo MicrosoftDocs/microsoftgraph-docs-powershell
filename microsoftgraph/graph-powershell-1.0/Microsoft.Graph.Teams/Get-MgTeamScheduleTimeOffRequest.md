@@ -39,9 +39,6 @@ Get-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoffrequest-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -336,9 +333,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffrequest)
+
+[https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0)
 
 
 

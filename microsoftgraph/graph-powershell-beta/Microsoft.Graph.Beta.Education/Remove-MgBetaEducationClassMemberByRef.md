@@ -32,9 +32,6 @@ Remove-MgBetaEducationClassMemberByRef -InputObject <IEducationIdentity> -Id <St
 ## DESCRIPTION
 Remove an educationUser from an educationClass.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-delete-members-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -226,9 +223,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmemberbyref)
+
+[https://learn.microsoft.com/graph/api/educationclass-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-delete-members?view=graph-rest-1.0)
 
 
 

@@ -33,9 +33,6 @@ Invoke-MgBetaFavoriteServiceAnnouncementMessage
 ## DESCRIPTION
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceupdatemessage-favorite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -201,9 +198,10 @@ BODY `<IPaths1Hqlbr0AdminServiceannouncementMessagesMicrosoftGraphFavoritePostRe
   - `[MessageIds <String- `[]`>]`:
 
 ## RELATED LINKS
-[Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetafavoriteserviceannouncementmessage)
+
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-favorite?view=graph-rest-1.0)
 
 
 

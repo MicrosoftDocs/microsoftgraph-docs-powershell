@@ -329,9 +329,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/list-list-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-contenttypes?view=graph-rest-1.0)
 
 
 

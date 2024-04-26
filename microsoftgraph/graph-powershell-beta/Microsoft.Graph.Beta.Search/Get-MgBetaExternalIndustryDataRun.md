@@ -37,9 +37,6 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of an industryDataRun object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydatarun-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -309,6 +306,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-1.0)
 
 
 

@@ -54,9 +54,6 @@ New-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new version of a document set item in a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-post-documentsetversions-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -547,9 +544,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitelistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
 ## DESCRIPTION
 Retrieve the properties of an approvalStep object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approvalstep-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -422,6 +419,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequestapprovalstep)
+
+[https://learn.microsoft.com/graph/api/approvalstep-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstep-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/approval-list-steps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-list-steps?view=graph-rest-1.0)
 
 
 

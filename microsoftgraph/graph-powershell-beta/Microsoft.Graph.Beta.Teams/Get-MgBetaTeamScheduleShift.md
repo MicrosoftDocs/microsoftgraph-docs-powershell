@@ -341,9 +341,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleshift)
+
+[https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0)
 
 
 

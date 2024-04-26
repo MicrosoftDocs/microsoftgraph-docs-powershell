@@ -36,9 +36,6 @@ Deletes an application.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -AppId
@@ -229,9 +226,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationbyappid)
+
+[https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete?view=graph-rest-1.0)
 
 
 

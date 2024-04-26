@@ -454,7 +454,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDriveListOperation](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetadrivelistoperation)
 

@@ -245,7 +245,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteGetByPathOnenote](/powershell/module/Microsoft.Graph.Beta.Notes/Remove-MgBetaSiteGetByPathOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/remove-mgsitegetbypathonenote)
 

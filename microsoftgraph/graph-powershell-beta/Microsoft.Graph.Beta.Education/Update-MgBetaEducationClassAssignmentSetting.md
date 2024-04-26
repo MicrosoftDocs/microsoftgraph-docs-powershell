@@ -53,9 +53,6 @@ Update-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 Update the properties of an educationAssignmentSettings object.
 Only teachers can update these settings.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentsettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -447,9 +444,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Update-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentsetting)
+
+[https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0)
 
 
 

@@ -367,9 +367,10 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Get-MgUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule)
+
+[https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgGroupDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -345,9 +342,12 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveRootListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemversion)
+
+[https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0)
 
 
 

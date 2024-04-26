@@ -229,9 +229,10 @@ Read-only.
   - `[ExternalUserLifecycleAction <String>]`: One of None, BlockSignIn, or BlockSignInAndDelete.
 
 ## RELATED LINKS
-[Update-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementsetting)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-update?view=graph-rest-1.0)
 
 
 

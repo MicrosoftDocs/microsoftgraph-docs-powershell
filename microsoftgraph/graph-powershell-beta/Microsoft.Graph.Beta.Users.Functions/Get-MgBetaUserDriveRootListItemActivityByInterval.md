@@ -350,7 +350,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveRootListItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveRootListItemActivityByInterval?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriverootlistitemactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdriverootlistitemactivitybyinterval)
 

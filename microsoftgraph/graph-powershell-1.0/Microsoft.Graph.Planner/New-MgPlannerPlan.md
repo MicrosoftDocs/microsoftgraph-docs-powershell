@@ -34,9 +34,6 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersV
 ## DESCRIPTION
 Use this API to create a new plannerPlan.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planner-post-plans-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -725,9 +722,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
+
+[https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0)
 
 
 

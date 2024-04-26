@@ -279,7 +279,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Set-MgUserPhotoContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserPhotoContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetauserphotocontent)
 

@@ -40,9 +40,6 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Read the properties and relationships of an internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/internaldomainfederation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the federation settings for a federated domain
 
@@ -355,9 +352,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0)
 
 
 

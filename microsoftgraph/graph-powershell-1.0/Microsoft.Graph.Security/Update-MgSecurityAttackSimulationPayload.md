@@ -718,7 +718,6 @@ For example, if a user changes their display name, the API might show the new va
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAttackSimulationPayload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationpayload)
 

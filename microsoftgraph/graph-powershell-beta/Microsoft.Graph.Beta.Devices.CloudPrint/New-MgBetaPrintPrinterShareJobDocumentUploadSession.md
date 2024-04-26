@@ -54,9 +54,6 @@ As part of the response, this action returns an upload URL that can be used in s
 Request headers for each PUT operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printdocument-createuploadsession-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,6 +289,8 @@ PROPERTIES `<IMicrosoftGraphPrintDocumentUploadProperties>`: printDocumentUpload
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharejobdocumentuploadsession)
+
+[https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printdocument-createuploadsession?view=graph-rest-1.0)
 
 
 

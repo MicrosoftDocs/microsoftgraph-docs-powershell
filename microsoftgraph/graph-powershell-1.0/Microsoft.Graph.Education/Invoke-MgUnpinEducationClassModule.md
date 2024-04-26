@@ -35,9 +35,6 @@ Unpin an educationModule in the classwork list.
 This action sets the isPinned property to false for an educationModule.
 Only teachers in the class can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-unpin-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -194,9 +191,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaUnpinEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaUnpinEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/invoke-mgunpineducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-unpin?view=graph-rest-1.0)
 
 
 

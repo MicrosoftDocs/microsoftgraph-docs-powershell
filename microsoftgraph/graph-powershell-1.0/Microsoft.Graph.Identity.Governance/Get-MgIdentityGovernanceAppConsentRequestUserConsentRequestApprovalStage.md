@@ -42,9 +42,6 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/approvalstage-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -394,6 +391,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage)
+
+[https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0)
 
 
 

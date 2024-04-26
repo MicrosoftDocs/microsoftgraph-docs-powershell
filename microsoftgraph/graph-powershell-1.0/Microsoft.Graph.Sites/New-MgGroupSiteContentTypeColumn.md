@@ -68,9 +68,6 @@ New-MgGroupSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Add a column to a \[content type\]\[contentType\] in a site, or a list with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-post-columns-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -1290,9 +1287,10 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-post-columns?view=graph-rest-1.0)
 
 
 

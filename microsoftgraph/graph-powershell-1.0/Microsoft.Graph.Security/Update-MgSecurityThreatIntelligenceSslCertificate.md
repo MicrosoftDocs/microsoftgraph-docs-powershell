@@ -1040,7 +1040,6 @@ It's a free-format string value, for example, 'United States'.
   - `[Surname <String>]`: If the entity is a person, this is the person's surname (last name).
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceSslCertificate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesslcertificate)
 

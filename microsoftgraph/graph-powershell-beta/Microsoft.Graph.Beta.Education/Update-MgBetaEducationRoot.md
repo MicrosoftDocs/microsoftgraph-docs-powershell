@@ -39799,7 +39799,6 @@ See standard - `[user]` resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[Update-MgEducationRoot](/powershell/module/Microsoft.Graph.Education/Update-MgEducationRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationroot)
 

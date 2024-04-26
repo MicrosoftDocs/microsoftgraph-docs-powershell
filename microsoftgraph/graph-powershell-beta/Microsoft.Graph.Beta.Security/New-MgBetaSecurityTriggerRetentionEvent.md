@@ -37,9 +37,6 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 ## DESCRIPTION
 Create a new retentionEvent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionevent-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -536,9 +533,10 @@ This property is read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
+
+[https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
 
 
 

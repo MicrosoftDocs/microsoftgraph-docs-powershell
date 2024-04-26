@@ -30,9 +30,6 @@ Update-MgBetaSecurityTiIndicatorMultiple
 ## DESCRIPTION
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-updatetiindicators-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSecurityTiIndicatorMultiple Cmdlet
 ```powershell
@@ -378,6 +375,8 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple)
+
+[https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-1.0)
 
 
 

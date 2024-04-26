@@ -32,9 +32,6 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 ## DESCRIPTION
 Get the bot associated with a specific definition of the  TeamsApp.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamworkbot-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -231,9 +228,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionbot)
+
+[https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkbot-get?view=graph-rest-1.0)
 
 
 

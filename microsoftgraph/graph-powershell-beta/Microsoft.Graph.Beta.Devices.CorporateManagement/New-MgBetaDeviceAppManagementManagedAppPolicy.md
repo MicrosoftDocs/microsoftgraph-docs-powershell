@@ -277,7 +277,6 @@ Read-only.
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementManagedAppPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedapppolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedapppolicy)
 

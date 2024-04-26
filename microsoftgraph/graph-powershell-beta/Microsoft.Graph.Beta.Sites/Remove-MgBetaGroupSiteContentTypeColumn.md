@@ -32,9 +32,6 @@ Remove-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete columnDefinition
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/columndefinition-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -292,9 +289,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
 
 
 

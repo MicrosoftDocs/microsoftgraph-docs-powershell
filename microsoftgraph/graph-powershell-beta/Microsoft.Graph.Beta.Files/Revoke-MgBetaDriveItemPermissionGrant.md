@@ -46,9 +46,6 @@ Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Revoke access to a \[listItem\]\[\] or \[driveItem\]\[\] granted via a sharing link by removing the specified \[recipient\]\[\] from the link.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-revokegrants-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,6 +292,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant)
+
+[https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-1.0)
 
 
 

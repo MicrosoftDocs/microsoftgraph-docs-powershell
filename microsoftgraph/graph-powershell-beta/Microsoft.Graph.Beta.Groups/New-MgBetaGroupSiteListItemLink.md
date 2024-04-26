@@ -449,9 +449,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgGroupSiteListItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSiteListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsitelistitemlink)
+
+[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0)
 
 
 

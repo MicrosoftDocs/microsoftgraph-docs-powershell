@@ -338,7 +338,6 @@ BODYPARAMETER `<IPaths6K2Wa1DevicemanagementReportsMicrosoftGraphGetcompliancepo
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcompliancepolicynoncompliancesummaryreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportcompliancepolicynoncompliancesummaryreport)
 

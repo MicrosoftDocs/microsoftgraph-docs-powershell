@@ -333,7 +333,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Groups/New-MgGroupDriveRootUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupdriverootuploadsession)
 

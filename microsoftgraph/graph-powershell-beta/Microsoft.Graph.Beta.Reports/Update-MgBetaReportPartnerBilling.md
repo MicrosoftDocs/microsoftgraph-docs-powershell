@@ -358,7 +358,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgReportPartnerBilling](/powershell/module/Microsoft.Graph.Reports/Update-MgReportPartnerBilling?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbilling](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportpartnerbilling)
 

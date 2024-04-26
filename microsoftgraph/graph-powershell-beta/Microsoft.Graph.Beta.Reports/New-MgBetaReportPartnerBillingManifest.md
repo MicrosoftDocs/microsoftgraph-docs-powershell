@@ -366,7 +366,6 @@ By default, the data in the file is partitioned by the number of line items.
   - `[SchemaVersion <String>]`: The version of the manifest schema.
 
 ## RELATED LINKS
-[New-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/New-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportpartnerbillingmanifest)
 

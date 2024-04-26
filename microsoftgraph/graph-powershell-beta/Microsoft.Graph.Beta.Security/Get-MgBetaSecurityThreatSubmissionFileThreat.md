@@ -37,9 +37,6 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Read the properties and relationships of a fileThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-filethreatsubmission-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityThreatSubmissionFileThreat Cmdlet
 ```powershell
@@ -388,6 +385,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat)
+
+[https://learn.microsoft.com/graph/api/security-filethreatsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-filethreatsubmission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-filethreatsubmission-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-filethreatsubmission-list?view=graph-rest-1.0)
 
 
 

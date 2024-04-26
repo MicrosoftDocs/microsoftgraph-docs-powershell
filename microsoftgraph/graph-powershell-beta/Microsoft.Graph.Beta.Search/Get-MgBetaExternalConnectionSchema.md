@@ -32,9 +32,6 @@ Get-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties of a schema for an externalConnection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-schema-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -194,9 +191,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionSchema?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionschema)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-schema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-schema-get?view=graph-rest-1.0)
 
 
 

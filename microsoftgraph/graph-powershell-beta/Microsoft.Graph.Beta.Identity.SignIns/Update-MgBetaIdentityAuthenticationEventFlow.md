@@ -49,9 +49,6 @@ Update-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 Update the properties of an authenticationEventsFlow object.
 Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -399,6 +396,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventflow)
+
+[https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-update?view=graph-rest-1.0)
 
 
 

@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet
@@ -53,6 +54,9 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-export-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet
@@ -440,9 +444,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0)
 
 
 

@@ -44,9 +44,6 @@ Read the properties and relationships of a userFlowLanguageConfiguration object.
 These objects represent a language available in a user flow.
 Note: Language customization is enabled by default in Microsoft Entra user flows.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -378,9 +375,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguage)
+
+[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-list-languages?view=graph-rest-1.0)
 
 
 

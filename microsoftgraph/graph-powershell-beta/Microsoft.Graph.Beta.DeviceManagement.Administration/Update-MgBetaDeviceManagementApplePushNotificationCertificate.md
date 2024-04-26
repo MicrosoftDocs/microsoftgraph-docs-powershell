@@ -293,7 +293,6 @@ Read-only.
   - `[TopicIdentifier <String>]`: Topic Id.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementapplepushnotificationcertificate)
 

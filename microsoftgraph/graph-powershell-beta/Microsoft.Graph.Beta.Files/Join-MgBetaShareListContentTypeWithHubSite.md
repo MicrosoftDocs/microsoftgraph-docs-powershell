@@ -50,9 +50,6 @@ Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,9 +299,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Join-MgShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgShareListContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetasharelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetasharelistcontenttypewithhubsite)
+
+[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
 
 
 

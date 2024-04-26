@@ -370,6 +370,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogquery)
 
+[https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0)
+
 
 
 

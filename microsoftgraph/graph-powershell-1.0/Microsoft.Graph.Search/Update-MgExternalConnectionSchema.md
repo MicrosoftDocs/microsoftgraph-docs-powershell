@@ -48,9 +48,6 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create a new schema object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalconnection-patch-schema-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -354,9 +351,10 @@ Required.
   - `[Type <String>]`: propertyType
 
 ## RELATED LINKS
-[Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0)
 
 
 

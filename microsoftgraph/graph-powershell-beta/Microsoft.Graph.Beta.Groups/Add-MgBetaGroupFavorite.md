@@ -238,9 +238,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Add-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupFavorite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupfavorite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/add-mgbetagroupfavorite)
+
+[https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-addfavorite?view=graph-rest-1.0)
 
 
 

@@ -37,9 +37,6 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of an inboundFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundflow-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -309,6 +306,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatainboundflow)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundflow-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-list?view=graph-rest-1.0)
 
 
 

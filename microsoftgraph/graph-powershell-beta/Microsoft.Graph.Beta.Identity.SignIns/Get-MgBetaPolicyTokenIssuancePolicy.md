@@ -40,9 +40,6 @@ Get-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a tokenIssuancePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -381,9 +378,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenissuancepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenissuancepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/tokenissuancepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-list?view=graph-rest-1.0)
 
 
 

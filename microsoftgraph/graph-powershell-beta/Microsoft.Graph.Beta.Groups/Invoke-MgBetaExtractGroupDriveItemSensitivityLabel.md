@@ -236,7 +236,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgExtractGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriveitemsensitivitylabel)
 

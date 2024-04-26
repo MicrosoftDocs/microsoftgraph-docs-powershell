@@ -40,9 +40,6 @@ Get-MgBetaGroupSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get the metadata for a \[baseSitePage\]\[\] in the site pages \[list\]\[\] in a \[site\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/basesitepage-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepage)
+
+[https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0)
 
 
 

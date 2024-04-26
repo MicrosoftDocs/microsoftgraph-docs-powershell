@@ -200,7 +200,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamGroupServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamGroupServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamgroupserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamgroupserviceprovisioningerrorcount)
 

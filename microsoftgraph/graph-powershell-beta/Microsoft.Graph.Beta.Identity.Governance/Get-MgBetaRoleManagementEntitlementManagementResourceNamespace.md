@@ -40,9 +40,6 @@ Get-MgBetaRoleManagementEntitlementManagementResourceNamespace -InputObject <IId
 ## DESCRIPTION
 Read the properties and relationships of an unifiedRbacResourceNamespace object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacresourcenamespace-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -390,9 +387,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementresourcenamespace)
+
+[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-list-resourcenamespaces?view=graph-rest-1.0)
 
 
 

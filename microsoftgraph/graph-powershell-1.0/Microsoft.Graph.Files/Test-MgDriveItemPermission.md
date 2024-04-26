@@ -297,7 +297,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Test-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdriveitempermission)
 

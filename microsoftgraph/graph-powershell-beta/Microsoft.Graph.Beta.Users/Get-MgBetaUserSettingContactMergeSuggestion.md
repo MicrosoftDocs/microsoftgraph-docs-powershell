@@ -29,9 +29,6 @@ Get-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a contactMergeSuggestions object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet
 ```powershell
@@ -197,6 +194,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingcontactmergesuggestion)
+
+[https://learn.microsoft.com/graph/api/contactmergesuggestions-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactmergesuggestions-get?view=graph-rest-1.0)
 
 
 

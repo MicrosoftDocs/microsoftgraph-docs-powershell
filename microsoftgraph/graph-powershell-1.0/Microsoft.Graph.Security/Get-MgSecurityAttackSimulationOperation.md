@@ -40,9 +40,6 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/attacksimulationoperation-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation)
+
+[https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0)
 
 
 

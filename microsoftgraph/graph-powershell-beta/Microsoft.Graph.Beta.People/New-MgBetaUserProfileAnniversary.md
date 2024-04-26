@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileAnniversary
@@ -49,9 +48,6 @@ New-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 
 ## DESCRIPTION
 Use this API to create a new personAnniversary object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-anniversaries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfileAnniversary Cmdlet
@@ -497,6 +493,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary)
+
+[https://learn.microsoft.com/graph/api/profile-post-anniversaries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-anniversaries?view=graph-rest-1.0)
 
 
 

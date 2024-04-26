@@ -341,9 +341,10 @@ STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule)
+
+[https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
 
 
 

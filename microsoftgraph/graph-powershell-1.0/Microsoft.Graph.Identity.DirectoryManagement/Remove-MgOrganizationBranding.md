@@ -34,9 +34,6 @@ Remove-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 Delete the default organizational branding object.
 To delete the organizationalBranding object, all images (Stream types) must first be removed from the object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -219,9 +216,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbranding)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-delete?view=graph-rest-1.0)
 
 
 

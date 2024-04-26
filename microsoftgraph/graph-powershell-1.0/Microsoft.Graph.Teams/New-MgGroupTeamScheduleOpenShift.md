@@ -50,9 +50,6 @@ New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create an instance of an openShift object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-post-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -435,9 +432,10 @@ Required.
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-post?view=graph-rest-1.0)
 
 
 

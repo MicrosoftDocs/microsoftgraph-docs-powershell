@@ -77,9 +77,6 @@ Update-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 Update the properties of a device.
 Only certain properties of a device can be updated through approved Mobile Device Management (MDM) apps.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update the accountEnabled property of a device
 
@@ -576,8 +573,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRooted
-true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
 
 ```yaml
 Type: SwitchParameter
@@ -1167,8 +1164,8 @@ The default value is false.
 Read-only. 
 To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
 For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
-  - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+  - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
   - `[Kind <String>]`: Form factor of the device.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
   - `[ManagementType <String>]`: Management channel of the device. 
@@ -1382,9 +1379,10 @@ Read-only.
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
-[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadevice)
+
+[https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-update?view=graph-rest-1.0)
 
 
 

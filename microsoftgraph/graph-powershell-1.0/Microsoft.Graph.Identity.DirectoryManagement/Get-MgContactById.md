@@ -203,9 +203,10 @@ BODYPARAMETER `<IPaths12Azg33ContactsMicrosoftGraphGetbyidsPostRequestbodyConten
   - `[Types <String- `[]`>]`:
 
 ## RELATED LINKS
-[Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactById?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactbyid)
+
+[https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
 
 
 

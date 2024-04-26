@@ -42954,7 +42954,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrive)
 

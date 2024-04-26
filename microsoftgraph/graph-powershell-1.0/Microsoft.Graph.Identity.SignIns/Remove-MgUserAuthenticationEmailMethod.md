@@ -32,9 +32,6 @@ Remove-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Deletes a user's emailAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -276,9 +273,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationemailmethod)
+
+[https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

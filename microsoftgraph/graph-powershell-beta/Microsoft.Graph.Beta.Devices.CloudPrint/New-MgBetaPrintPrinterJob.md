@@ -714,7 +714,6 @@ Read-only.
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[New-MgPrintPrinterJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjob)
 

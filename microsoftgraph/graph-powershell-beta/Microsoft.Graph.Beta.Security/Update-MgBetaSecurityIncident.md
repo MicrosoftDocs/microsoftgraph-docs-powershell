@@ -58,9 +58,6 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of an incident object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-incident-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -784,9 +781,10 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
   - `[KqlText <String>]`: The query string.
 
 ## RELATED LINKS
-[Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
+
+[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
 
 
 

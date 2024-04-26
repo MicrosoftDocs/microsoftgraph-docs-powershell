@@ -60,9 +60,6 @@ New-MgGroupDriveListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24156,9 +24153,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0)
 
 
 

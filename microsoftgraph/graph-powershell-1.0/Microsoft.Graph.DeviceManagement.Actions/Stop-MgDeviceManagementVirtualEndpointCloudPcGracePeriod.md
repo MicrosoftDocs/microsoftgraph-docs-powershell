@@ -200,9 +200,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod)
+
+[https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
 
 
 

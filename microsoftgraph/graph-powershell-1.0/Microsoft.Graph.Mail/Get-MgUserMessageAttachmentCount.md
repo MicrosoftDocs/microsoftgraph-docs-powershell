@@ -167,7 +167,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMessageAttachmentCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachmentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachmentcount)
 

@@ -52,9 +52,6 @@ Update-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationId
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationoutcome-update-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -358,9 +355,10 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionoutcome)
+
+[https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationoutcome-update?view=graph-rest-1.0)
 
 
 

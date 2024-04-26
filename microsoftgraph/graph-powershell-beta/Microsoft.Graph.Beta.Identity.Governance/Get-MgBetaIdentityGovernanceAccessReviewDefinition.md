@@ -48,9 +48,6 @@ Each accessReviewScheduleDefinition has at least one instance.
 An instance represents a review for a specific resource (such as a particular group's members), during one occurrence (for example, March 2021) of a recurring review.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List the first one hundred access review definitions
 
@@ -422,9 +419,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)
 
 
 

@@ -37,9 +37,6 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 ## DESCRIPTION
 Read the properties and relationships of a managementIntent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementintent-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet
 ```powershell
@@ -344,6 +341,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-1.0)
 
 
 

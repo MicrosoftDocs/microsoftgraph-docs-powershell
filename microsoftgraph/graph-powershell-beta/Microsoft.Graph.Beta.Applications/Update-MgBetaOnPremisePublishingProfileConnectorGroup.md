@@ -49,9 +49,6 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 ## DESCRIPTION
 Update the properties of a connectorGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectorgroup-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
@@ -2753,6 +2750,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileconnectorgroup)
+
+[https://learn.microsoft.com/graph/api/connectorgroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectorgroup-update?view=graph-rest-1.0)
 
 
 

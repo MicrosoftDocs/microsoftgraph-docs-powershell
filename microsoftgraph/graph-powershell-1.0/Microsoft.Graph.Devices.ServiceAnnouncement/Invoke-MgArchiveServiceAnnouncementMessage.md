@@ -33,9 +33,6 @@ Invoke-MgArchiveServiceAnnouncementMessage
 ## DESCRIPTION
 Archive a list of serviceUpdateMessages for the signed in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceupdatemessage-archive-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -201,9 +198,10 @@ BODYPARAMETER `<IPaths19OsejwAdminServiceannouncementMessagesMicrosoftGraphArchi
   - `[MessageIds <String- `[]`>]`:
 
 ## RELATED LINKS
-[Invoke-MgBetaArchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaArchiveServiceAnnouncementMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgarchiveserviceannouncementmessage)
+
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-archive?view=graph-rest-1.0)
 
 
 

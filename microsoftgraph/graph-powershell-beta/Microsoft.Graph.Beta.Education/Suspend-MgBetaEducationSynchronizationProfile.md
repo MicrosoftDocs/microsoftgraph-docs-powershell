@@ -29,9 +29,6 @@ Suspend-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Pause the sync of a specific school data synchronization profile in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-pause-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Suspend-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
@@ -204,6 +201,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/suspend-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/suspend-mgbetaeducationsynchronizationprofile)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-pause?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-pause?view=graph-rest-1.0)
 
 
 

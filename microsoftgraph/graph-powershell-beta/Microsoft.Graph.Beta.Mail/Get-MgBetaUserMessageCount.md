@@ -169,7 +169,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMessageCount](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecount)
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileAddress
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Read the properties and relationships of an itemAddress object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemaddress-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAddress Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress)
+
+[https://learn.microsoft.com/graph/api/itemaddress-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemaddress-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-addresses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-addresses?view=graph-rest-1.0)
 
 
 

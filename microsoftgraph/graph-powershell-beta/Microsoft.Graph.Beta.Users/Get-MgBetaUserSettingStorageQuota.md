@@ -29,9 +29,6 @@ Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty
 ## DESCRIPTION
 Read the properties and relationships of a unifiedStorageQuota object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedstoragequota-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -187,6 +184,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
+
+[https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-1.0)
 
 
 

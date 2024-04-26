@@ -38,9 +38,6 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ## DESCRIPTION
 Read the properties and relationships of an identityUserFlowAttributeAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
@@ -413,6 +410,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-1.0)
 
 
 

@@ -56,9 +56,6 @@ Update-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of the specified channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -14784,9 +14781,10 @@ For example, if a user changes their display name, the API might show the new va
 Read only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch?view=graph-rest-1.0)
 
 
 

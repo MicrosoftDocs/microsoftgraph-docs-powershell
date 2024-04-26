@@ -213,7 +213,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemThumbnailCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemThumbnailCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnailcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemthumbnailcount)
 

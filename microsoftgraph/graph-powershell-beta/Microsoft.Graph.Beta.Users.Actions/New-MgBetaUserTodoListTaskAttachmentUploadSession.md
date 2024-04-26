@@ -350,9 +350,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserTodoListTaskAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserTodoListTaskAttachmentUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausertodolisttaskattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausertodolisttaskattachmentuploadsession)
+
+[https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-createuploadsession?view=graph-rest-1.0)
 
 
 

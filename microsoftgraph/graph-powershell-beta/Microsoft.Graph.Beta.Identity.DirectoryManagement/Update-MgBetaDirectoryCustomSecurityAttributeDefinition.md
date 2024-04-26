@@ -52,9 +52,6 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityD
 ## DESCRIPTION
 Update the properties of a customSecurityAttributeDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customsecurityattributedefinition-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update a custom security attribute
 
@@ -528,9 +525,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorycustomsecurityattributedefinition)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-update?view=graph-rest-1.0)
 
 
 

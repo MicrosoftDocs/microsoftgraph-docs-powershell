@@ -353,9 +353,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOf?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberof)
+
+[https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-memberof?view=graph-rest-1.0)
 
 
 

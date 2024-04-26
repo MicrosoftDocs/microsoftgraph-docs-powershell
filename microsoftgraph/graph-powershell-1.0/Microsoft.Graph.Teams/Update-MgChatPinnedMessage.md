@@ -535,7 +535,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatpinnedmessage)
 

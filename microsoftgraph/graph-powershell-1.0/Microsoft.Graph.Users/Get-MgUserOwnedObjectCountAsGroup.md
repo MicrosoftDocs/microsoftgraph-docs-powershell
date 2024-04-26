@@ -190,7 +190,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserOwnedObjectCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectCountAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasgroup)
 

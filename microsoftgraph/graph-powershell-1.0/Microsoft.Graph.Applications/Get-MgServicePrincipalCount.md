@@ -129,7 +129,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcount)
 

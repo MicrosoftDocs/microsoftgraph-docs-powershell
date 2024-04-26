@@ -28,9 +28,6 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Re
 ## DESCRIPTION
 Create a new userFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflow-post-userflows-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
 ```powershell
@@ -226,6 +223,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflow)
+
+[https://learn.microsoft.com/graph/api/identityuserflow-post-userflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflow-post-userflows?view=graph-rest-1.0)
 
 
 

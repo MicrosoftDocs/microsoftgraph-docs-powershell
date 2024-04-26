@@ -231,7 +231,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Lock-MgUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Users.Actions/Lock-MgUserManagedDeviceRemote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/lock-mgbetausermanageddeviceremote)
 

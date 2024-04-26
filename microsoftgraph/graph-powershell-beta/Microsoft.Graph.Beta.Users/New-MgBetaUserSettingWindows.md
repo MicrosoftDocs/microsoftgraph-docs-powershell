@@ -340,7 +340,6 @@ Refers to the user's Windows device that modified the object at the specified da
   - `[Payload <String>]`: Base64-encoded JSON setting value.
 
 ## RELATED LINKS
-[New-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/New-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausersettingwindows)
 

@@ -29,9 +29,6 @@ Remove-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
@@ -283,6 +280,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-1.0)
 
 
 

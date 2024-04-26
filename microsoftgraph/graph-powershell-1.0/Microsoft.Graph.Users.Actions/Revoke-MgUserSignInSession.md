@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Revoke-MgUserSignInSession
@@ -196,9 +195,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)
+
+[https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-revokesigninsessions?view=graph-rest-1.0)
 
 
 

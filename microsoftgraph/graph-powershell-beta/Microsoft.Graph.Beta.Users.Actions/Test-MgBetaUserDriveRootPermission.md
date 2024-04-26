@@ -314,7 +314,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserdriverootpermission)
 

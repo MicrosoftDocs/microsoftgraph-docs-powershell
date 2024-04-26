@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfile
@@ -29,9 +28,6 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Re
 
 ## DESCRIPTION
 Deletes a profile object from a user's account.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfile Cmdlet
@@ -225,6 +221,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile)
+
+[https://learn.microsoft.com/graph/api/profile-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-delete?view=graph-rest-1.0)
 
 
 

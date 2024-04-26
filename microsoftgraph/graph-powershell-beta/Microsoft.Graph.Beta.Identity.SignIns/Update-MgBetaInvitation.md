@@ -570,9 +570,10 @@ Supports $filter (eq).
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -621,8 +622,8 @@ For example, applications that can render file streams may set the addIns proper
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
         - `[Id <String>]`: 
         - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
-          - `[Key <String>]`: Contains the name of the field that a value is associated with.
-          - `[Value <String>]`: Contains the corresponding value for the specified key.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
         - `[Type <String>]`: 
       - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -1471,8 +1472,8 @@ The default value is false.
 Read-only. 
 To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
 For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
-          - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+          - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
           - `[Kind <String>]`: Form factor of the device.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
           - `[ManagementType <String>]`: Management channel of the device. 
@@ -2094,16 +2095,18 @@ For example, a user's display name, a team name.
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
             - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -2150,9 +2153,10 @@ Link to the message in Microsoft Teams.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -2853,9 +2857,10 @@ Read-only.
               - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-                - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+                - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
                 - `[LoginName <String>]`: The sign in name of the SharePoint identity.
               - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -4700,7 +4705,7 @@ Nullable.
 The collection of tasks in the bucket.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-              - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
+              - `[ActiveChecklistItemCount <Int32?>]`: The number of checklist items with value set to false, representing incomplete items.
               - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -4712,13 +4717,13 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
-              - `[AssigneePriority <String>]`: Hint used to order items of this type in a list view.
-The format is defined as outlined here.
+              - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
+For more information, see Using order hints in Planner.
               - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[BucketId <String>]`: Bucket ID to which the task belongs.
-The bucket needs to be in the plan that the task is in.
-It's 28 characters long and case-sensitive.
+The bucket needs to be in the same plan as the task.
+The value of the bucketId property is 28 characters long and case-sensitive.
 Format validation is done on the service.
               - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4726,17 +4731,17 @@ Format validation is done on the service.
 Read-only.
                 - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board.
 For details about the supported format, see Using order hints in Planner.
-              - `[ChecklistItemCount <Int32?>]`: Number of checklist items that are present on the task.
+              - `[ChecklistItemCount <Int32?>]`: The number of checklist items that are present on the task.
               - `[CompletedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[CompletedDateTime <DateTime?>]`: Read-only.
-Date and time at which the 'percentComplete' of the task is set to '100'.
+The date and time at which the 'percentComplete' of the task is set to '100'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-              - `[ConversationThreadId <String>]`: Thread ID of the conversation on the task.
+              - `[ConversationThreadId <String>]`: The thread ID of the conversation on the task.
 This is the ID of the conversation thread object created in the group.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[CreatedDateTime <DateTime?>]`: Read-only.
-Date and time at which the task is created.
+The date and time at which the task is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[CreationSource <IMicrosoftGraphPlannerTaskCreation>]`: plannerTaskCreation
@@ -4770,7 +4775,8 @@ Read-only.
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                    - `[IsApprovalRequired <Boolean?>]`: 
+                    - `[IsApprovalRequired <Boolean?>]`: Specifies whether approval is required to complete the plannerTask.
+When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.
                   - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
@@ -4785,21 +4791,22 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
                 - `[PreviewType <String>]`: plannerPreviewType
                 - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DueDateTime <DateTime?>]`: Date and time at which the task is due.
+              - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[HasDescription <Boolean?>]`: Read-only.
-Value is true if the details object of the task has a nonempty description and false otherwise.
+This value is true if the details object of the task has a nonempty description.
+Otherwise,false.
               - `[IsArchived <Boolean?>]`: 
               - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
 true to show the task.
 Otherwise, false.
               - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
-              - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
-The format is defined as outlined here.
-              - `[PercentComplete <Int32?>]`: Percentage of task completion.
-When set to 100, the task is considered completed.
+              - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
+For more information, see Using order hints in Plannern.
+              - `[PercentComplete <Int32?>]`: The percentage of task completion.
+When set to 100, the task is completed.
               - `[PlanId <String>]`: Plan ID to which the task belongs.
               - `[PreviewType <String>]`: plannerPreviewType
               - `[Priority <Int32?>]`: The priority of the task.
@@ -5619,6 +5626,34 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Name <String>]`: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
+    - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the user.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+      - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+      - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+      - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+      - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+      - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+        - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+        - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+        - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+      - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+      - `[Version <String>]`: Version of the entity.
     - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -5648,6 +5683,7 @@ E.g.
 app running on rooted device
       - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy- `[]`>]`: Zero or more policies admin intended for the app as of now.
       - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+      - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the app.
       - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
       - `[ManagementSdkVersion <String>]`: App management SDK version
@@ -6104,7 +6140,7 @@ It is an Optional field
       - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+      - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -6508,9 +6544,10 @@ Read-only.
         - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -7968,9 +8005,10 @@ Read-only.
         - `[Audience <String>]`: meetingAudience
         - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
           - `[TenantId <String>]`: The user's tenant ID.
         - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8256,9 +8294,10 @@ Supports $filter (eq).
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -8307,8 +8346,8 @@ For example, applications that can render file streams may set the addIns proper
 This lets services like Microsoft 365 call the application in the context of a document the user is working on.
       - `[Id <String>]`: 
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: 
-        - `[Key <String>]`: Contains the name of the field that a value is associated with.
-        - `[Value <String>]`: Contains the corresponding value for the specified key.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
       - `[Type <String>]`: 
     - `[AlternativeNames <String- `[]`>]`: Used to retrieve service principals by subscription, identify resource group and full resource IDs for managed identities.
 Supports $filter (eq, not, ge, le, startsWith).
@@ -9157,8 +9196,8 @@ The default value is false.
 Read-only. 
 To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
 For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
-        - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+        - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
         - `[Kind <String>]`: Form factor of the device.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
         - `[ManagementType <String>]`: Management channel of the device. 
@@ -9780,16 +9819,18 @@ For example, a user's display name, a team name.
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
           - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-            - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -9836,9 +9877,10 @@ Link to the message in Microsoft Teams.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -10539,9 +10581,10 @@ Read-only.
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-              - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+              - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -12386,7 +12429,7 @@ Nullable.
 The collection of tasks in the bucket.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
+            - `[ActiveChecklistItemCount <Int32?>]`: The number of checklist items with value set to false, representing incomplete items.
             - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -12398,13 +12441,13 @@ Read-only.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task isn't assigned to anyone, or if the orderHintsByAssignee dictionary doesn't provide an order hint for the user the task is assigned to.
 The format is defined as outlined here.
-            - `[AssigneePriority <String>]`: Hint used to order items of this type in a list view.
-The format is defined as outlined here.
+            - `[AssigneePriority <String>]`: A hint that is used to order items of this type in a list view.
+For more information, see Using order hints in Planner.
             - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[BucketId <String>]`: Bucket ID to which the task belongs.
-The bucket needs to be in the plan that the task is in.
-It's 28 characters long and case-sensitive.
+The bucket needs to be in the same plan as the task.
+The value of the bucketId property is 28 characters long and case-sensitive.
 Format validation is done on the service.
             - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12412,17 +12455,17 @@ Format validation is done on the service.
 Read-only.
               - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board.
 For details about the supported format, see Using order hints in Planner.
-            - `[ChecklistItemCount <Int32?>]`: Number of checklist items that are present on the task.
+            - `[ChecklistItemCount <Int32?>]`: The number of checklist items that are present on the task.
             - `[CompletedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[CompletedDateTime <DateTime?>]`: Read-only.
-Date and time at which the 'percentComplete' of the task is set to '100'.
+The date and time at which the 'percentComplete' of the task is set to '100'.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[ConversationThreadId <String>]`: Thread ID of the conversation on the task.
+            - `[ConversationThreadId <String>]`: The thread ID of the conversation on the task.
 This is the ID of the conversation thread object created in the group.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[CreatedDateTime <DateTime?>]`: Read-only.
-Date and time at which the task is created.
+The date and time at which the task is created.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[CreationSource <IMicrosoftGraphPlannerTaskCreation>]`: plannerTaskCreation
@@ -12456,7 +12499,8 @@ Read-only.
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[IsApprovalRequired <Boolean?>]`: 
+                  - `[IsApprovalRequired <Boolean?>]`: Specifies whether approval is required to complete the plannerTask.
+When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.
                 - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
@@ -12471,21 +12515,22 @@ A collection of keys from the plannerFormsDictionary that identify the plannerFo
               - `[PreviewType <String>]`: plannerPreviewType
               - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DueDateTime <DateTime?>]`: Date and time at which the task is due.
+            - `[DueDateTime <DateTime?>]`: The date and time at which the task is due.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[HasDescription <Boolean?>]`: Read-only.
-Value is true if the details object of the task has a nonempty description and false otherwise.
+This value is true if the details object of the task has a nonempty description.
+Otherwise,false.
             - `[IsArchived <Boolean?>]`: 
             - `[IsOnMyDay <Boolean?>]`: A Boolean value that indicates whether to show this task in the MyDay view.
 true to show the task.
 Otherwise, false.
             - `[IsOnMyDayLastModifiedDate <DateTime?>]`: Read-only.
 The date on which task is added to or removed from MyDay.
-            - `[OrderHint <String>]`: Hint used to order items of this type in a list view.
-The format is defined as outlined here.
-            - `[PercentComplete <Int32?>]`: Percentage of task completion.
-When set to 100, the task is considered completed.
+            - `[OrderHint <String>]`: The hint used to order items of this type in a list view.
+For more information, see Using order hints in Plannern.
+            - `[PercentComplete <Int32?>]`: The percentage of task completion.
+When set to 100, the task is completed.
             - `[PlanId <String>]`: Plan ID to which the task belongs.
             - `[PreviewType <String>]`: plannerPreviewType
             - `[Priority <Int32?>]`: The priority of the task.
@@ -13305,6 +13350,34 @@ The language component follows 2-letter codes as defined in ISO 639-1, and the c
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Name <String>]`: The name of a time zone.
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
+  - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the user.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+    - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+    - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+    - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+    - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+      - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+      - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+      - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+    - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+    - `[Version <String>]`: Version of the entity.
   - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -13334,6 +13407,7 @@ E.g.
 app running on rooted device
     - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy- `[]`>]`: Zero or more policies admin intended for the app as of now.
     - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+    - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the app.
     - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
     - `[ManagementSdkVersion <String>]`: App management SDK version
@@ -13790,7 +13864,7 @@ It is an Optional field
     - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: Indicates collection of App Log Upload Request.
+    - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest- `[]`>]`: The collection property of AppLogUploadRequest.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
@@ -14194,9 +14268,10 @@ Read-only.
       - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
         - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -15654,9 +15729,10 @@ Read-only.
       - `[Audience <String>]`: meetingAudience
       - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[TenantId <String>]`: The user's tenant ID.
       - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15704,7 +15780,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainvitation)
 

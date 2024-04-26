@@ -418,7 +418,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitemversion)
 

@@ -9856,7 +9856,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsiteanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsiteanalyticitemactivitystat)
 

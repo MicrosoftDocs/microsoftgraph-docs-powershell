@@ -216,9 +216,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher)
+
+[https://learn.microsoft.com/graph/api/application-unsetverifiedpublisher?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-unsetverifiedpublisher?view=graph-rest-1.0)
 
 
 

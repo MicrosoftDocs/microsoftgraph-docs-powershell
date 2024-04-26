@@ -39,9 +39,6 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ## DESCRIPTION
 Create a new accessReviewScheduleDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewset-post-definitions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an access review on a group
 
@@ -1259,9 +1256,10 @@ The stageId is used by the dependsOn property to indicate the order of the stage
 Required.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
 
 
 

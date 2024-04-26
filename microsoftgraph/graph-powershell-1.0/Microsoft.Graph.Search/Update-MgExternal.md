@@ -450,7 +450,6 @@ Required.
   - `[State <String>]`: connectionState
 
 ## RELATED LINKS
-[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternal)
 

@@ -33,9 +33,6 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ## DESCRIPTION
 Create a new authenticationContextClassReference.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conditionalaccessroot-post-authenticationcontextclassreferences-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -256,9 +253,10 @@ It will still be shown in the Conditional Access policy authoring experience.
 Supports $filter (eq).
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
+
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-1.0)
 
 
 

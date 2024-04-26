@@ -507,8 +507,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRooted
-true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
 
 ```yaml
 Type: SwitchParameter
@@ -1113,8 +1113,8 @@ The default value is false.
 Read-only. 
 To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
 For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
-  - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken.
-This can only be updated by Intune.
+  - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
   - `[Kind <String>]`: Form factor of the device.
 Only returned if the user signs in with a Microsoft account as part of Project Rome.
   - `[ManagementType <String>]`: Management channel of the device. 

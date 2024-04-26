@@ -60,9 +60,6 @@ Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the properties and relationships of a connectedOrganization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/connectedorganization-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -453,9 +450,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganization)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0)
 
 
 

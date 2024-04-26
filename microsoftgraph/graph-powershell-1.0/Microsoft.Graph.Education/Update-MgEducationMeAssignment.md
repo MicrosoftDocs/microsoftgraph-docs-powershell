@@ -844,7 +844,6 @@ Read-only.
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignment)
 

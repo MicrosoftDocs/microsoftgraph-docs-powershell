@@ -24660,7 +24660,6 @@ Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitelist)
 

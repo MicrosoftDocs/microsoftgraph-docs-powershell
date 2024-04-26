@@ -40,9 +40,6 @@ Get-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Get an attack simulation automation for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/simulationautomation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -386,9 +383,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomation)
+
+[https://learn.microsoft.com/graph/api/simulationautomation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/simulationautomation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-1.0)
 
 
 

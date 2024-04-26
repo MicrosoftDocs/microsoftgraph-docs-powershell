@@ -39,9 +39,6 @@ Get-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the properties and relationships of contract object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contract-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -327,9 +324,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContract?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract)
+
+[https://learn.microsoft.com/graph/api/contract-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contract-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/contract-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contract-list?view=graph-rest-1.0)
 
 
 

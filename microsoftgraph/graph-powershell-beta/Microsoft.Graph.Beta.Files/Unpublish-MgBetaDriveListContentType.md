@@ -32,9 +32,6 @@ Unpublish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ResponseHea
 ## DESCRIPTION
 Invoke action unpublish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -217,9 +214,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/unpublish-mgbetadrivelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

@@ -198,7 +198,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootSubscriptionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootsubscriptioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootsubscriptioncount)
 

@@ -332,7 +332,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Set-MgBetaGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupDriveRootSensitivityLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupdriverootsensitivitylabel)
 

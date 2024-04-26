@@ -270,9 +270,10 @@ True indicates that Teams apps that are allowed in the tenant and require resour
 False blocks the installation of any Teams app that requires resource-specific permissions in the personal scope.
 
 ## RELATED LINKS
-[Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting)
+
+[https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-update?view=graph-rest-1.0)
 
 
 

@@ -46,9 +46,6 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParame
 ## DESCRIPTION
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingstaffmember-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -254,9 +251,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember)
+
+[https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0)
 
 
 

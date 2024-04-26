@@ -39,9 +39,6 @@ Use this API to create a new invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation, you have several options available:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/invitation-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Invite a user and send default invitation email
 ```powershell
@@ -9834,9 +9831,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInvitation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mginvitation)
+
+[https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/invitation-post?view=graph-rest-1.0)
 
 
 

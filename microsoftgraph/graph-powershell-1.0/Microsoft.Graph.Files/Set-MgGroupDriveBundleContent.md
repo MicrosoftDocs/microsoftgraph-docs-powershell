@@ -263,7 +263,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaGroupDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveBundleContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdrivebundlecontent)
 

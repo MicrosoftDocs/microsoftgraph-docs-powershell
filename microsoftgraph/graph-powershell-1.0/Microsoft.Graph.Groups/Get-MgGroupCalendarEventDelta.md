@@ -40,6 +40,9 @@ Typically, synchronizing events in a calendarView in a local store entails a rou
 The initial call is a full synchronization, and every subsequent delta call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified calendarView, without having to fetch all the events of that calendar from the server every time.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-delta-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -376,9 +379,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarEventDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupCalendarEventDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta)
+
+[https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
 
 
 

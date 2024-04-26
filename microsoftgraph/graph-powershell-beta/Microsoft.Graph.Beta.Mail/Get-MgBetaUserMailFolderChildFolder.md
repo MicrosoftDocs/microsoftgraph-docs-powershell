@@ -367,9 +367,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder)
+
+[https://learn.microsoft.com/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)
 
 
 

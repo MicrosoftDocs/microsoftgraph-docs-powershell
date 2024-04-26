@@ -72,9 +72,6 @@ Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1080,9 +1077,10 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
   - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[Update-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0)
 
 
 

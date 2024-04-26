@@ -10021,9 +10021,10 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-create?view=graph-rest-1.0)
 
 
 

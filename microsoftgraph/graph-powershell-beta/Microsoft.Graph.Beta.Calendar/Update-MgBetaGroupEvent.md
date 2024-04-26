@@ -78,9 +78,6 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-update-event-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -2360,9 +2357,10 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent)
+
+[https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
 
 
 

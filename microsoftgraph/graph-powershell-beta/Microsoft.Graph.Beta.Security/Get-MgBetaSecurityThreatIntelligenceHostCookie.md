@@ -62,9 +62,6 @@ Get-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a hostCookie object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-hostcookie-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -410,9 +407,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookie)
+
+[https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0)
 
 
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewsetfile
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile
@@ -38,9 +37,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryFile object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryfile-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile Cmdlet
@@ -420,6 +416,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewsetfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewsetfile)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryfile-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-files?view=graph-rest-1.0)
 
 
 

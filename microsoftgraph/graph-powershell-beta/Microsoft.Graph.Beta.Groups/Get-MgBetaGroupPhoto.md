@@ -342,9 +342,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhoto?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupphoto)
+
+[https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
 
 
 

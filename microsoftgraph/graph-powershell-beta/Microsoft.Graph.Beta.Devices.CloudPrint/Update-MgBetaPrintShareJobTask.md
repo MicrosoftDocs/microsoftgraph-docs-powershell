@@ -432,7 +432,6 @@ Read-only.
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShareJobTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobtask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintsharejobtask)
 

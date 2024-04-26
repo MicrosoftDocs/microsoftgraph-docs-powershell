@@ -40,9 +40,6 @@ Get-MgUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <String[]>
 ## DESCRIPTION
 Read the properties and relationships of a taskFileAttachment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -321,9 +318,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskattachment)
+
+[https://learn.microsoft.com/graph/api/taskfileattachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0)
 
 
 

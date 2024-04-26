@@ -68,9 +68,6 @@ Update-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\] \[column\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1307,9 +1304,10 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitecontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-update?view=graph-rest-1.0)
 
 
 

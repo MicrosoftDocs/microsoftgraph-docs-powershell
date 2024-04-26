@@ -40,9 +40,6 @@ Get-MgBetaDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitemversion-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -330,9 +327,12 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootversion)
+
+[https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0)
 
 
 

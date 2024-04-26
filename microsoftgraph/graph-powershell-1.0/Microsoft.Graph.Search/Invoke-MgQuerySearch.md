@@ -34,9 +34,6 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-query-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Basic call to perform a search request
 
@@ -443,9 +440,10 @@ Optional.
 Required.
 
 ## RELATED LINKS
-[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgBetaQuerySearch?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.search/invoke-mgquerysearch)
+
+[https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
 
 
 

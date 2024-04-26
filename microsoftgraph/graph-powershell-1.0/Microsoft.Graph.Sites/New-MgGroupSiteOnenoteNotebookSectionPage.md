@@ -54,9 +54,6 @@ New-MgGroupSiteOnenoteNotebookSectionPage -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new page in the specified section.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-post-pages-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -938,9 +935,10 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteNotebookSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectionpage)
+
+[https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0)
 
 
 

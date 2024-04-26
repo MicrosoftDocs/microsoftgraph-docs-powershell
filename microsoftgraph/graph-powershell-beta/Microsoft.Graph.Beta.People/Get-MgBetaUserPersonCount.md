@@ -181,7 +181,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Get-MgUserPersonCount](/powershell/module/Microsoft.Graph.People/Get-MgUserPersonCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserpersoncount)
 

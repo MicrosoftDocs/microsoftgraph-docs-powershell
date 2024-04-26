@@ -32,9 +32,6 @@ Remove-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete a retentionLabel object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentionlabel-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -288,9 +285,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabel)
+
+[https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-1.0)
 
 
 

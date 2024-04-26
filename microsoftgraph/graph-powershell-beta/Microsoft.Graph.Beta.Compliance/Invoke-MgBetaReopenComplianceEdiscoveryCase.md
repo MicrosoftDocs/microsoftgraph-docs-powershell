@@ -203,6 +203,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/invoke-mgbetareopencomplianceediscoverycase)
 
+[https://learn.microsoft.com/graph/api/ediscovery-case-reopen?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-reopen?view=graph-rest-1.0)
+
 
 
 

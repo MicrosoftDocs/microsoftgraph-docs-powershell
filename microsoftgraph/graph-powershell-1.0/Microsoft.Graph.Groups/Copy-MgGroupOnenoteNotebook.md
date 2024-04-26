@@ -366,9 +366,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Copy-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/copy-mggrouponenotenotebook)
+
+[https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-copynotebook?view=graph-rest-1.0)
 
 
 

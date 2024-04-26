@@ -55,9 +55,6 @@ New-MgGroupSiteOnenoteNotebookSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1069,9 +1066,10 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksection)
+
+[https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0)
 
 
 

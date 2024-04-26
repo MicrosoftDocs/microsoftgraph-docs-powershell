@@ -49,9 +49,6 @@ New-MgChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeams
 Add (pin) a tab to the specified chat.
 The corresponding app must already be installed in the chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-tabs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -448,9 +445,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchattab)
+
+[https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0)
 
 
 

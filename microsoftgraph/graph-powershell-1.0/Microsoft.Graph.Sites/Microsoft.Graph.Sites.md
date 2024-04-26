@@ -209,6 +209,9 @@ Locale: en-US
 ### [Get-MgGroupSiteGetByPathItem](Get-MgGroupSiteGetByPathItem.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupSiteGetByPathList](Get-MgGroupSiteGetByPathList.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupSiteGetByPathOnenote](Get-MgGroupSiteGetByPathOnenote.md)
 {{ Fill in the Description }}
 
@@ -1086,6 +1089,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgSiteGetByPathExternalColumn](Get-MgSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathList](Get-MgSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)

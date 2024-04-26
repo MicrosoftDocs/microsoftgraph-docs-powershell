@@ -42,9 +42,6 @@ New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation>
 ## DESCRIPTION
 Create an attack simulation campaign for a tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-post-simulation-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1071,9 +1068,10 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
   - `[SettingType <String>]`: trainingSettingType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation)
+
+[https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0)
 
 
 

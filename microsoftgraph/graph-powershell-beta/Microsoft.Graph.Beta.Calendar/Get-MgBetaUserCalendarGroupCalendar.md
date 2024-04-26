@@ -25,9 +25,6 @@ Get-MgBetaUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [
 ## DESCRIPTION
 Retrieve a list of calendars belonging to a calendar group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-list-calendars-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserCalendarGroupCalendar Cmdlet
 ```powershell
@@ -248,9 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)
+
+[https://learn.microsoft.com/graph/api/calendargroup-list-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-list-calendars?view=graph-rest-1.0)
 
 
 

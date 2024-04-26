@@ -172,7 +172,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassMemberCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMemberCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmembercount)
 

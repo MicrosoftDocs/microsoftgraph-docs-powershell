@@ -33,9 +33,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-list-registeredusers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -290,9 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduser)
+
+[https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0)
 
 
 

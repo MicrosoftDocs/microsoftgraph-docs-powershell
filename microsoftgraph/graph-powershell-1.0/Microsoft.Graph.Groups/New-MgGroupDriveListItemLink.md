@@ -425,7 +425,6 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveListItemLink](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveListItemLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdrivelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdrivelistitemlink)
 

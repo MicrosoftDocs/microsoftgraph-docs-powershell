@@ -48,9 +48,6 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new teamworkTagMember object in a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktagmember-post-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -330,9 +327,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember)
+
+[https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)
 
 
 

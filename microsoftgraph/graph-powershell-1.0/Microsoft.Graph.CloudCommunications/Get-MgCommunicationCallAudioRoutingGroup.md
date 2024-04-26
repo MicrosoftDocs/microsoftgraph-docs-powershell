@@ -333,9 +333,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallaudioroutinggroup)
+
+[https://learn.microsoft.com/graph/api/audioroutinggroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/audioroutinggroup-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/call-list-audioroutinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-list-audioroutinggroups?view=graph-rest-1.0)
 
 
 

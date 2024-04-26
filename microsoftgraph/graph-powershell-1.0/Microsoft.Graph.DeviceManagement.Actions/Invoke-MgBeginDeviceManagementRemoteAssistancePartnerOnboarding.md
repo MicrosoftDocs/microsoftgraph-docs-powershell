@@ -193,9 +193,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding)
+
+[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-beginonboarding?view=graph-rest-1.0)
 
 
 

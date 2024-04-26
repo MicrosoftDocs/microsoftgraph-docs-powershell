@@ -37,9 +37,6 @@ Get-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentitySign
 ## DESCRIPTION
 Read the properties and relationships of a platformCredentialAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -382,6 +379,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationplatformcredentialmethod)
+
+[https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-list?view=graph-rest-1.0)
 
 
 

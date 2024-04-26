@@ -386,6 +386,12 @@ Locale: en-US
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceManagementDeviceConfigurationProfile](Get-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementDeviceConfigurationProfileCount](Get-MgBetaDeviceManagementDeviceConfigurationProfileCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
 {{ Fill in the Description }}
 
@@ -1349,6 +1355,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaDeviceManagementDeviceConfigurationProfile](New-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDeviceManagementDeviceConfigurationUserStatus](New-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
 {{ Fill in the Description }}
 
@@ -1896,6 +1905,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDeviceManagementDeviceConfigurationProfile](Remove-MgBetaDeviceManagementDeviceConfigurationProfile.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
@@ -2490,6 +2502,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDeviceManagementDeviceConfigurationProfile](Update-MgBetaDeviceManagementDeviceConfigurationProfile.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)

@@ -48,9 +48,6 @@ Update-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplicat
 ## DESCRIPTION
 Update the properties of published resource  publishedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -408,6 +405,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofilepublishedresource)
+
+[https://learn.microsoft.com/graph/api/publishedresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-update?view=graph-rest-1.0)
 
 
 

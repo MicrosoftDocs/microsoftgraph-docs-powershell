@@ -172,7 +172,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgUserEventAttachmentCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachmentCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachmentcount)
 

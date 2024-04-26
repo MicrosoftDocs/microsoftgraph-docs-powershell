@@ -48,9 +48,6 @@ New-MgBetaUserTodoListTaskChecklistItem -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Create a new checklistItem object as a subtask in a bigger todoTask.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-post-checklistitems-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -370,9 +367,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[New-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttaskchecklistitem)
+
+[https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0)
 
 
 

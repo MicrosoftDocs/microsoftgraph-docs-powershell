@@ -29,9 +29,6 @@ Remove-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Delete a directory setting.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaDirectorySetting Cmdlet
 ```powershell
@@ -248,6 +245,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorysetting)
+
+[https://learn.microsoft.com/graph/api/directorysetting-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directorysetting-delete?view=graph-rest-1.0)
 
 
 

@@ -667,7 +667,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriveitempermission)
 

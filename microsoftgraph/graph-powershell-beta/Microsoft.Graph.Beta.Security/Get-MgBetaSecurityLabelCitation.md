@@ -40,9 +40,6 @@ Get-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandPropert
 ## DESCRIPTION
 Read the properties and relationships of a citationTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-citationtemplate-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCitation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation)
+
+[https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0)
 
 
 

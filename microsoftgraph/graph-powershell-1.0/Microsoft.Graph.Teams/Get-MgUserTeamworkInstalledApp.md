@@ -40,9 +40,6 @@ Get-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the app installed in the personal scope of the specified user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-get-installedapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List apps installed for the specified user
 
@@ -374,9 +371,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserteamworkinstalledapp)
+
+[https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-get-installedapps?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-list-installedapps?view=graph-rest-1.0)
 
 
 

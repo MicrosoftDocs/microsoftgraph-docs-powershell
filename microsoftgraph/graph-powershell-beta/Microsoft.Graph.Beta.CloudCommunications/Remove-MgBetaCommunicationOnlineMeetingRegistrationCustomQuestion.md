@@ -29,9 +29,6 @@ Remove-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <
 ## DESCRIPTION
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistrationquestion-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -226,6 +223,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistrationcustomquestion)
+
+[https://learn.microsoft.com/graph/api/meetingregistrationquestion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-delete?view=graph-rest-1.0)
 
 
 

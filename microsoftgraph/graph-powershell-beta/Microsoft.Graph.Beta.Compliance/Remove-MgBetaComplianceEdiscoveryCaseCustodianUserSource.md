@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource
@@ -29,9 +28,6 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplian
 
 ## DESCRIPTION
 Delete a userSource object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-usersource-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet
@@ -249,6 +245,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianusersource)
+
+[https://learn.microsoft.com/graph/api/ediscovery-usersource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-usersource-delete?view=graph-rest-1.0)
 
 
 

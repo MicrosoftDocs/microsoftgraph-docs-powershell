@@ -220,9 +220,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgBetaUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/request-mgusermanageddeviceremoteassistance)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0)
 
 
 

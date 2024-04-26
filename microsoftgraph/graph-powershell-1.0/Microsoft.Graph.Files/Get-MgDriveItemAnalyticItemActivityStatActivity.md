@@ -281,7 +281,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystatactivity)
 

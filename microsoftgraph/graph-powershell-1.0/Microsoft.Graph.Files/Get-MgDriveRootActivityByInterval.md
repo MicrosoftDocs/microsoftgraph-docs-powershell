@@ -336,7 +336,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootactivitybyinterval)
 

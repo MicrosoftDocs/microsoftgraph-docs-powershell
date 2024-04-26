@@ -62,9 +62,6 @@ Update the properties of a printer share.
 This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printershare-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -31107,9 +31104,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintshare)
+
+[https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-update?view=graph-rest-1.0)
 
 
 

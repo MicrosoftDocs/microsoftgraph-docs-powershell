@@ -32,9 +32,6 @@ Remove-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Deletes a user's FIDO2 Security Key Authentication Method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/fido2authenticationmethod-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -298,9 +295,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method)
+
+[https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0)
 
 
 

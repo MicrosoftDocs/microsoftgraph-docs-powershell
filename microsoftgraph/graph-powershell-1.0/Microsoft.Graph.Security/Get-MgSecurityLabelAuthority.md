@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Get-MgSecurityLabelAuthority
@@ -349,9 +348,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority)
+
+[https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
 
 
 

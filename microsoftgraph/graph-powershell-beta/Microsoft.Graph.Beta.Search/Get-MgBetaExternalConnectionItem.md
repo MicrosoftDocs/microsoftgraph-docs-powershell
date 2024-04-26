@@ -46,9 +46,6 @@ This API is provided for diagnostic purposes only.
 It isn't intended to be used for any other purpose.
 Repeated requests to this API might result in 429 HTTP errors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -344,9 +341,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0)
 
 
 

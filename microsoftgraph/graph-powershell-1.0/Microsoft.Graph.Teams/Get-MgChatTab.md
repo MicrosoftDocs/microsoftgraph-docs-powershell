@@ -40,9 +40,6 @@ Get-MgChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prope
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-tabs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all the tabs in the chat along with associated Teams app
 
@@ -363,9 +360,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchattab)
+
+[https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0)
 
 
 

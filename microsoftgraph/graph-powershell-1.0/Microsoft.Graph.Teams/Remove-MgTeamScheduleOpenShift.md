@@ -32,9 +32,6 @@ Remove-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete an openShift object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -254,9 +251,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0)
 
 
 

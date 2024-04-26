@@ -220,7 +220,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserlicensedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguserlicensedetail)
 

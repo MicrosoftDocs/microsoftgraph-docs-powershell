@@ -250,7 +250,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgBetaUserTodoListTaskExtension](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskextension)
 

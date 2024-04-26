@@ -231,7 +231,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Disable-MgUserManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Users.Actions/Disable-MgUserManagedDeviceLostMode?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/disable-mgbetausermanageddevicelostmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/disable-mgbetausermanageddevicelostmode)
 

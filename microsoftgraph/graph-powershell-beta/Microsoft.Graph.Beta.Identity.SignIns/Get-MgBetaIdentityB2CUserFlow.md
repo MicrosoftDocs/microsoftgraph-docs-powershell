@@ -37,9 +37,6 @@ Get-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2cUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
@@ -390,6 +387,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-1.0)
 
 
 

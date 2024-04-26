@@ -46,9 +46,6 @@ Restore-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Re
 ## DESCRIPTION
 Restore a document set version.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-restore-permissions.md)]
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -246,9 +243,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/restore-mgbetasharelistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
 
 
 

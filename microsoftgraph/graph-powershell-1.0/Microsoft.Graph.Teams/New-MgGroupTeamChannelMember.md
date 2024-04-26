@@ -50,9 +50,6 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a membershipType value of private or shared.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-post-members-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -342,9 +339,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamchannelmember)
+
+[https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0)
 
 
 

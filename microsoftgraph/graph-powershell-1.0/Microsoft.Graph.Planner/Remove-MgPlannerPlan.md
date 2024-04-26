@@ -32,9 +32,6 @@ Remove-MgPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -212,9 +209,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerplan)
+
+[https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0)
 
 
 

@@ -330,7 +330,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Test-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdriveitempermission)
 

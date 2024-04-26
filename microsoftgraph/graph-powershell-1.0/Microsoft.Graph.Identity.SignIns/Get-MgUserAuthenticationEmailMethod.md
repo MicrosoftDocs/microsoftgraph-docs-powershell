@@ -40,9 +40,6 @@ Get-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve a user's single email authentication method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -375,9 +372,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationemailmethod)
+
+[https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-1.0)
 
 
 

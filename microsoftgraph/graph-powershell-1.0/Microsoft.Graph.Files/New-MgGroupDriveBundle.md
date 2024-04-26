@@ -82,9 +82,6 @@ New-MgGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to bundles for groups
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-post-bundles-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30084,9 +30081,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveBundle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle)
+
+[https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0)
 
 
 

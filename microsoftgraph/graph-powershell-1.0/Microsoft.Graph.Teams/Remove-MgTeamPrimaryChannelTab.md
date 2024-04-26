@@ -32,9 +32,6 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-delete-tabs-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -243,9 +240,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychanneltab)
+
+[https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0)
 
 
 

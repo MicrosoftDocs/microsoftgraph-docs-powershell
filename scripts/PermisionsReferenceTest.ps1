@@ -48,13 +48,8 @@ function Get-FilesByProfile {
             $ModuleName = $_
             $FullModuleName = "$ModulePrefix.$ModuleName"
             $ModulePath = Join-Path $WorkLoadDocsPath $GraphProfilePath $FullModuleName
-            $OpenApiFile = Join-Path $SDKOpenApiPath "openApiDocs" $GraphProfile "$ModuleName.yml"
-            #test this path first before proceeding
-            if (Test-Path $OpenApiFile) {
-                $YamlContent = Get-Content -Path $OpenApiFile
-                $OpenApiContent = ($YamlContent | ConvertFrom-Yaml)
-                Get-Files -GraphProfile $GraphProfile -GraphProfilePath $ModulePath -Module $ModuleName -OpenApiContent $OpenApiContent -ModulePrefix $ModulePrefix
-            }
+            Get-Files -GraphProfile $GraphProfile -GraphProfilePath $ModulePath -Module $ModuleName -ModulePrefix $ModulePrefix
+            
         }
     }
     catch {
@@ -75,8 +70,7 @@ function Get-Files {
         [ValidateNotNullOrEmpty()]
         [string] $Module = "Users",
         [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph",
-        [Hashtable] $OpenApiContent 
+        [string] $ModulePrefix = "Microsoft.Graph"
     )
 
 
@@ -87,93 +81,16 @@ function Get-Files {
                
                 #Extract command over here
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
+                $ExternalDocUrl = ""
                 if ($Command -ne $ModuleMetaData) {
                     #Extract URI path
-                    $CommandDetails = Find-MgGraphCommand -Command $Command
-                    if ($CommandDetails) {
-                        $ApiPath = $CommandDetail[0].URI
-                        $Method = $CommandDetails[0].Method
-                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module -File $File
-                    
-                    }
-                }
-
-            }
-        }
-    }
-    catch {
-
-        Write-Host "`nError Message: " $_.Exception.Message
-        Write-Host "`nError in Line: " $_.InvocationInfo.Line
-        Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
-        Write-Host "`nError Item Name: "$_.Exception.ItemName
-    }
-    
-}
-function Get-ExternalDocsUrl {
-
-    param(
-        [ValidateSet("beta", "v1.0")]
-        [string] $GraphProfile = "v1.0",
-        [string] $UriPath,
-        [ValidateNotNullOrEmpty()]
-        [string] $Command = "Get-MgUser",
-        [Hashtable] $OpenApiContent,
-        [System.Object] $Method = "GET",
-        [string] $File = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md"),
-        [string] $Module = "Users"
-    )
-    try {
-        if ($UriPath) {
-    
-            if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
-                foreach ($Path in $OpenApiContent.paths) {
-                    $ExternalDocUrl = $null
-                    switch ($Method) {
-                        "GET" {
-                            $ExternalDocUrl = $path[$UriPath].get.externalDocs.url
-                            if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                                #Try with microsoft.graph prefix on the last path segment
-                                $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
-                                $ExternalDocUrl = $path[$UriPathWithGraphPrefix].get.externalDocs.url
-                            }
+                    $ApiRefLinks = (Find-MgGraphCommand -Command $Command).ApiReferenceLink
+                    if ($ApiRefLinks) {
+                        if($ApiRefLinks.Count -gt 1) {
+                            $ExternalDocUrl = $ApiRefLinks[0] + "&tabs=powershell"
+                        }else{
+                            $ExternalDocUrl = $ApiRefLinks + "&tabs=powershell"
                         }
-                        "POST" {
-                            $ExternalDocUrl = $Path[$UriPath].post.externalDocs.url 
-                            if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                                #Try with microsoft.graph prefix on the last path segment
-                                $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
-                                $ExternalDocUrl = $path[$UriPathWithGraphPrefix].post.externalDocs.url
-                            }
-                        }
-                        "PATCH" {
-                            $ExternalDocUrl = $Path[$UriPath].patch.externalDocs.url
-                            if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                                #Try with microsoft.graph prefix on the last path segment
-                                $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
-                                $ExternalDocUrl = $path[$UriPathWithGraphPrefix].patch.externalDocs.url
-                            } 
-                        }
-                        "DELETE" {
-                            $ExternalDocUrl = $Path[$UriPath].delete.externalDocs.url
-                            if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                                #Try with microsoft.graph prefix on the last path segment
-                                $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
-                                $ExternalDocUrl = $path[$UriPathWithGraphPrefix].delete.externalDocs.url
-                            }
-                        }
-                        "PUT" {
-                            $ExternalDocUrl = $Path[$UriPath].put.externalDocs.url
-                            if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                                #Try with microsoft.graph prefix on the last path segment
-                                $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
-                                $ExternalDocUrl = $path[$UriPathWithGraphPrefix].put.externalDocs.url
-                            }
-                        }
-
-                    }
-
-                    if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                         WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                     }
                 }
@@ -188,6 +105,7 @@ function Get-ExternalDocsUrl {
         Write-Host "`nError in Line Number: "$_.InvocationInfo.ScriptLineNumber
         Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
+    
 }
 
 function Append-GraphPrefix {

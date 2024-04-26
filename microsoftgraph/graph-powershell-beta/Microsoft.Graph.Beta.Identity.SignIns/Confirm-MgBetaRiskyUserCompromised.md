@@ -210,9 +210,10 @@ BODYPARAMETER `<IPaths1CcwvbvIdentityprotectionRiskyusersMicrosoftGraphConfirmco
   - `[UserIds <String- `[]`>]`:
 
 ## RELATED LINKS
-[Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/confirm-mgbetariskyusercompromised)
+
+[https://learn.microsoft.com/graph/api/riskyusers-confirmcompromised?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyusers-confirmcompromised?view=graph-rest-1.0)
 
 
 

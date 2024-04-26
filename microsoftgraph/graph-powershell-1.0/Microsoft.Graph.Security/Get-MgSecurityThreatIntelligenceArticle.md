@@ -40,9 +40,6 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of an article object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-article-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle)
+
+[https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0)
 
 
 

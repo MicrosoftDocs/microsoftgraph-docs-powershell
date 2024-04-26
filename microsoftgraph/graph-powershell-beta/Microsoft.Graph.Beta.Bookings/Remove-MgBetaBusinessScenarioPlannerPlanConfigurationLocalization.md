@@ -30,9 +30,6 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ## DESCRIPTION
 Delete a plannerPlanConfigurationLocalization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-delete-localizations-permissions.md)]
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -231,6 +228,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannerplanconfigurationlocalization)
+
+[https://learn.microsoft.com/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-1.0)
 
 
 

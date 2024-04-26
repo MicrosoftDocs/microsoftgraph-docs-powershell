@@ -344,6 +344,8 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagchildtag)
 
+[https://learn.microsoft.com/graph/api/ediscovery-tag-childtags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-tag-childtags?view=graph-rest-1.0)
+
 
 
 

@@ -32,9 +32,6 @@ Remove-MgEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -219,9 +216,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete?view=graph-rest-1.0)
 
 
 

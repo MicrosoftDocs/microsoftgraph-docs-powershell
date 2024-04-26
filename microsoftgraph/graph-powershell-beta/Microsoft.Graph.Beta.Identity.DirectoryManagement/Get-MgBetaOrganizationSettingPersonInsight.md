@@ -31,9 +31,6 @@ Get-MgBetaOrganizationSettingPersonInsight -InputObject <IIdentityDirectoryManag
 Get the properties of an insightsSettings object for displaying or returning people insights in an organization.
 To learn how to customize privacy for people insights in an organization, see Customize people insights privacy in Microsoft Graph.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-peopleinsights-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingPersonInsight Cmdlet
 ```powershell
@@ -219,6 +216,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingpersoninsight)
+
+[https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationsettings-list-peopleinsights?view=graph-rest-1.0)
 
 
 

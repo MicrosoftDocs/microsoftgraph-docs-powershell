@@ -218,6 +218,9 @@ Locale: en-US
 ### [Get-MgBetaGroupSiteGetByPathItem](Get-MgBetaGroupSiteGetByPathItem.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaGroupSiteGetByPathList](Get-MgBetaGroupSiteGetByPathList.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaGroupSiteGetByPathOnenote](Get-MgBetaGroupSiteGetByPathOnenote.md)
 {{ Fill in the Description }}
 
@@ -1233,6 +1236,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteGetByPathExternalColumn](Get-MgBetaSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaSiteGetByPathList](Get-MgBetaSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaSiteGetByPathOperation](Get-MgBetaSiteGetByPathOperation.md)

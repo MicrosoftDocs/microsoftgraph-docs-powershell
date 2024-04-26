@@ -357,9 +357,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant)
+
+[https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0)
 
 
 

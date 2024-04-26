@@ -275,7 +275,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaDriveListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListItemVersionField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemversionfield)
 

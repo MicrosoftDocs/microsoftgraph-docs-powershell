@@ -60,9 +60,6 @@ New-MgShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create a new \[listItem\]\[\] in a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-create-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24141,9 +24138,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgsharelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-create?view=graph-rest-1.0)
 
 
 

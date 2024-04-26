@@ -40,9 +40,6 @@ Get-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-Expan
 ## DESCRIPTION
 Retrieve the properties and relationships of a print service endpoint.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printserviceendpoint-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -332,9 +329,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintserviceendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintserviceendpoint)
+
+[https://learn.microsoft.com/graph/api/printserviceendpoint-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printserviceendpoint-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/printservice-list-endpoints?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printservice-list-endpoints?view=graph-rest-1.0)
 
 
 

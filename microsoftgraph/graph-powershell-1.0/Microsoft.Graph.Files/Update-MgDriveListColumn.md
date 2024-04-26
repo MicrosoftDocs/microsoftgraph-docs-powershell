@@ -1251,7 +1251,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveListColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistcolumn)
 

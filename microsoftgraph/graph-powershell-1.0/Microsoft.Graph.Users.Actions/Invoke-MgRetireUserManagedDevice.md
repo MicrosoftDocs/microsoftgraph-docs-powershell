@@ -220,9 +220,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaRetireUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgretireusermanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-retire?view=graph-rest-1.0)
 
 
 

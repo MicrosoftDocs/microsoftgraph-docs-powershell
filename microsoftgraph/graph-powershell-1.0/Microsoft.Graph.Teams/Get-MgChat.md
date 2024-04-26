@@ -43,9 +43,6 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a group chat
 
@@ -373,9 +370,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchat)
+
+[https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
 
 
 

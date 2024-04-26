@@ -63,9 +63,6 @@ Only the reviewers and fallbackReviewers properties can be updated but the scope
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewInstance, it's status must be InProgress.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -846,9 +843,10 @@ Supports $orderby, and $filter (eq only).
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstance)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-update?view=graph-rest-1.0)
 
 
 

@@ -30081,7 +30081,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveRoot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveroot)
 

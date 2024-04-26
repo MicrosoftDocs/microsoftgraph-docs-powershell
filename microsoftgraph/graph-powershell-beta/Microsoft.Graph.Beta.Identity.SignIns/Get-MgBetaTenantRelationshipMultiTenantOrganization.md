@@ -21,9 +21,6 @@ Get-MgBetaTenantRelationshipMultiTenantOrganization [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get properties of the multitenant organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/multitenantorganization-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -115,6 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatenantrelationshipmultitenantorganization)
+
+[https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-get?view=graph-rest-1.0)
 
 
 

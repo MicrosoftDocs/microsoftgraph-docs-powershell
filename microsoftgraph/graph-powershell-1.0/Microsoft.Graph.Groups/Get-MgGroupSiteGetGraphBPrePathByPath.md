@@ -214,7 +214,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteGetGraphBPrePathByPath](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteGetGraphBPrePathByPath?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathbypath)
 

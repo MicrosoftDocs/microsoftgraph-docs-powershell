@@ -257,7 +257,6 @@ VALUE <IMicrosoftGraphSynchronizationSecretKeyStringValuePair- `[]`>: .
   - `[Value <String>]`: The value of the secret.
 
 ## RELATED LINKS
-[Set-MgBetaApplicationSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationSecret?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationsecret)
 

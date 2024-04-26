@@ -1085,7 +1085,6 @@ Not nullable.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
-[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization)
 

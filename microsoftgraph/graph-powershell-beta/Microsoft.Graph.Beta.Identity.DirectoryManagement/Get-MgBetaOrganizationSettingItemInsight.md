@@ -31,9 +31,6 @@ Get-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagem
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
 To learn how to customize the privacy of item insights in an organization, see Customize item insights privacy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/organizationsettings-list-iteminsights-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingItemInsight Cmdlet
 ```powershell
@@ -219,6 +216,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingiteminsight)
+
+[https://learn.microsoft.com/graph/api/organizationsettings-list-iteminsights?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationsettings-list-iteminsights?view=graph-rest-1.0)
 
 
 

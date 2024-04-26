@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileAddress
@@ -51,9 +50,6 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Create a new itemAddress object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-addresses-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfileAddress Cmdlet
@@ -551,6 +547,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress)
+
+[https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0)
 
 
 

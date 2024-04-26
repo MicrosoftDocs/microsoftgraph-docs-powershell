@@ -32,9 +32,6 @@ Remove-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a checklistItem object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/checklistitem-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -267,9 +264,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem)
+
+[https://learn.microsoft.com/graph/api/checklistitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-delete?view=graph-rest-1.0)
 
 
 

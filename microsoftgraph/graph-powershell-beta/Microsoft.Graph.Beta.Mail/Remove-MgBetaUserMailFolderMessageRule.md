@@ -32,9 +32,6 @@ Remove-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete the specified messageRule object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -247,9 +244,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfoldermessagerule)
+
+[https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-delete?view=graph-rest-1.0)
 
 
 

@@ -37,9 +37,6 @@ Get-MgBetaPlannerRoster -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a plannerRoster object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPlannerRoster Cmdlet
 ```powershell
@@ -307,6 +304,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerroster)
+
+[https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerroster-get?view=graph-rest-1.0)
 
 
 

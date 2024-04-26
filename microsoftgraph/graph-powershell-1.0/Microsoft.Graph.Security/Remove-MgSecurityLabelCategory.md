@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Remove-MgSecurityLabelCategory
@@ -251,9 +250,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0)
 
 
 

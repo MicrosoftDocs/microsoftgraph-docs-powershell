@@ -40,9 +40,6 @@ Get-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a identityUserFlowAttribute object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattribute-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -381,9 +378,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflowattribute)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0)
 
 
 

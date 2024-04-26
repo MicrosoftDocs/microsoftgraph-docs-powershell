@@ -24626,7 +24626,6 @@ Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdrivelist)
 

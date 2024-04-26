@@ -384,7 +384,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteGetGraphBPrePathActivityByInterval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitegetgraphbprepathactivitybyinterval)
 

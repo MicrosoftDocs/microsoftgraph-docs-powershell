@@ -752,7 +752,6 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
   - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
-[New-MgBetaVirtualEventSession](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaVirtualEventSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsession](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgvirtualeventsession)
 

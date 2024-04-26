@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileskill
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileSkill
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a skillproficiency object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/skillproficiency-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileSkill Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileskill](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileskill)
+
+[https://learn.microsoft.com/graph/api/skillproficiency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/skillproficiency-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-skills?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-skills?view=graph-rest-1.0)
 
 
 

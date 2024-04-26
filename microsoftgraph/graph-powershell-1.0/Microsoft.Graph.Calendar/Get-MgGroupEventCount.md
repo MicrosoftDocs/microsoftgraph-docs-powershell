@@ -153,7 +153,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupEventCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventcount)
 

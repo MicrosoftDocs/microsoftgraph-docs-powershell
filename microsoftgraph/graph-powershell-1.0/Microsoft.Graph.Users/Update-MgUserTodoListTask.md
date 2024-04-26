@@ -62,9 +62,6 @@ Update-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a todoTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -838,9 +835,10 @@ STARTDATETIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaUserTodoListTask](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserTodoListTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusertodolisttask)
+
+[https://learn.microsoft.com/graph/api/todotask-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-update?view=graph-rest-1.0)
 
 
 

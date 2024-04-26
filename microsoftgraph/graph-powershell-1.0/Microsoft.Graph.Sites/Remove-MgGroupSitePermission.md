@@ -32,9 +32,6 @@ Remove-MgGroupSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a permission object on a site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-delete-permission-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -268,9 +265,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitepermission)
+
+[https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-delete-permission?view=graph-rest-1.0)
 
 
 

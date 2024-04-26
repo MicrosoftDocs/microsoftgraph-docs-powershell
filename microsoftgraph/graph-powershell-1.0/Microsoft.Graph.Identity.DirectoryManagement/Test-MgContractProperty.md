@@ -52,9 +52,6 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-validateproperties-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -265,9 +262,10 @@ BODYPARAMETER `<IPathsZahmwmContractsMicrosoftGraphValidatepropertiesPostRequest
   - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
-[Test-MgBetaContractProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgBetaContractProperty?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/test-mgcontractproperty)
+
+[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

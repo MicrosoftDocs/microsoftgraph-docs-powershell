@@ -51,9 +51,6 @@ Update-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> 
 ## DESCRIPTION
 Update the navigation property details in solutions
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertaskdetails-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -462,6 +459,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail)
+
+[https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0)
 
 
 

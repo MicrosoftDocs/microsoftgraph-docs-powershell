@@ -338,7 +338,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserTodoTaskDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusertodotaskdelta)
 

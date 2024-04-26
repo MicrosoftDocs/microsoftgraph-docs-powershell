@@ -40,9 +40,6 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -323,9 +320,12 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
 
 
 

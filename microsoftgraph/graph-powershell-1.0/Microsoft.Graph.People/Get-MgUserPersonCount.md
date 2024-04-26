@@ -164,7 +164,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPersonCount](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPersonCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserpersoncount)
 

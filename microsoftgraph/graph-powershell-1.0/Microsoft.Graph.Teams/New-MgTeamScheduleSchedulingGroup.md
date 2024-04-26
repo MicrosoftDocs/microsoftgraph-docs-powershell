@@ -48,9 +48,6 @@ New-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Create a new schedulingGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedule-post-schedulinggroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -360,9 +357,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup)
+
+[https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-schedulinggroups?view=graph-rest-1.0)
 
 
 

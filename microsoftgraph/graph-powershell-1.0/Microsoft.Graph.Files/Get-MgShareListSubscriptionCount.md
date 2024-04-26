@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareListSubscriptionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListSubscriptionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistsubscriptioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistsubscriptioncount)
 

@@ -327,7 +327,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgShareListOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistoperation)
 

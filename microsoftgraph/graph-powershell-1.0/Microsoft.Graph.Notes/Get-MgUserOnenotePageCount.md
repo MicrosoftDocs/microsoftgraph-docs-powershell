@@ -170,7 +170,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenotePageCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenotePageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotepagecount)
 

@@ -33,9 +33,6 @@ New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowA
 ## DESCRIPTION
 Create a new custom identityUserFlowAttribute object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identityuserflowattribute-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -268,9 +265,10 @@ Supports $filter (eq, ne).
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 ## RELATED LINKS
-[New-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflowattribute)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0)
 
 
 

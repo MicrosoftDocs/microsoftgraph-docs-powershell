@@ -59,9 +59,6 @@ Update-MgChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat>
 ## DESCRIPTION
 Update the properties of a chat object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-patch-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1200,9 +1197,10 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchat)
+
+[https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-patch?view=graph-rest-1.0)
 
 
 

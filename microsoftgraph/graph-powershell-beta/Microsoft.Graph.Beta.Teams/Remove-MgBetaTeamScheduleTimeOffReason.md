@@ -265,9 +265,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffReason?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimeoffreason)
+
+[https://learn.microsoft.com/graph/api/timeoffreason-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffreason-delete?view=graph-rest-1.0)
 
 
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfileNote
@@ -49,9 +48,6 @@ Update-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMic
 
 ## DESCRIPTION
 Update the properties of a personAnnotation object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personannotation-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserProfileNote Cmdlet
@@ -519,6 +515,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote)
+
+[https://learn.microsoft.com/graph/api/personannotation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personannotation-update?view=graph-rest-1.0)
 
 
 

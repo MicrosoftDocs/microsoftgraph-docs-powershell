@@ -37,9 +37,6 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Retrieve the properties and relationships of an onPremisesAgent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagent-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet
 ```powershell
@@ -353,6 +350,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent)
+
+[https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0)
 
 
 

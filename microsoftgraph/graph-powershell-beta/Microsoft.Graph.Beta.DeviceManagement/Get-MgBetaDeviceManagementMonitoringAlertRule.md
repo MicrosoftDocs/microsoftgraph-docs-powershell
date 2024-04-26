@@ -37,9 +37,6 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 ## DESCRIPTION
 Read the properties and relationships of an alertRule object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrule-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -AlertRuleId
@@ -314,6 +311,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
   - `[DeviceConfigurationGroupAssignmentId <String>]`: The unique identifier of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceConfigurationProfileId <String>]`: The unique identifier of deviceConfigurationProfile
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
   - `[DeviceHealthScriptAssignmentId <String>]`: The unique identifier of deviceHealthScriptAssignment
@@ -430,6 +428,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule)
+
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0)
 
 
 

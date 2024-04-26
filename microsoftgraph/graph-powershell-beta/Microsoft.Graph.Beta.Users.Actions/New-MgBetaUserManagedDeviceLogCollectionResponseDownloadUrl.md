@@ -231,7 +231,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserManagedDeviceLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionResponseDownloadUrl?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionresponsedownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionresponsedownloadurl)
 

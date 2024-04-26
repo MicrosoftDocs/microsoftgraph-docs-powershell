@@ -355,9 +355,12 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecategory)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-list?view=graph-rest-1.0)
 
 
 

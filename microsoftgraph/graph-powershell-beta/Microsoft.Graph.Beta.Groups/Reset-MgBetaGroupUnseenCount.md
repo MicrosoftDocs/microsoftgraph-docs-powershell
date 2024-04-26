@@ -231,9 +231,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Reset-MgGroupUnseenCount](/powershell/module/Microsoft.Graph.Groups/Reset-MgGroupUnseenCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/reset-mgbetagroupunseencount)
+
+[https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-resetunseencount?view=graph-rest-1.0)
 
 
 

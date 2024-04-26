@@ -323,7 +323,6 @@ UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER `<IMicrosoftGraphUpdateWindowsDeviceAc
   - `[SessionInitiationProtocalAddress <String>]`:
 
 ## RELATED LINKS
-[Update-MgUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Users.Actions/Update-MgUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetausermanageddevicewindowsdeviceaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/update-mgbetausermanageddevicewindowsdeviceaccount)
 

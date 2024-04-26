@@ -144,7 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingreconciliationbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportpartnerbillingreconciliationbilled)
 

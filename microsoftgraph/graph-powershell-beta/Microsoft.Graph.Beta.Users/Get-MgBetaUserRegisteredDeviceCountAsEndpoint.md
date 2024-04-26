@@ -201,7 +201,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserRegisteredDeviceCountAsEndpoint](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDeviceCountAsEndpoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevicecountasendpoint)
 

@@ -29,9 +29,6 @@ Get-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Read the properties and relationships of a plannerPlanConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfiguration-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -184,6 +181,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfiguration)
+
+[https://learn.microsoft.com/graph/api/plannerplanconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-get?view=graph-rest-1.0)
 
 
 

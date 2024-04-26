@@ -204,7 +204,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveItemItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemItemLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemitemlastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemitemlastmodifiedbyusermailboxsetting)
 

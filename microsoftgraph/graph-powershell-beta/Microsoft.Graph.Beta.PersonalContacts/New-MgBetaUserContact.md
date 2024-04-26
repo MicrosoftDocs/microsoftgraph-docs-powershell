@@ -70,9 +70,6 @@ New-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <I
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-contacts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1097,9 +1094,10 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
-[New-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontact)
+
+[https://learn.microsoft.com/graph/api/user-post-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-contacts?view=graph-rest-1.0)
 
 
 

@@ -37,9 +37,6 @@ Get-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Get the details of an outboundSharedUserProfile.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outboundshareduserprofile-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +334,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryoutboundshareduserprofile)
+
+[https://learn.microsoft.com/graph/api/outboundshareduserprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outboundshareduserprofile-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-outboundshareduserprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-outboundshareduserprofiles?view=graph-rest-1.0)
 
 
 

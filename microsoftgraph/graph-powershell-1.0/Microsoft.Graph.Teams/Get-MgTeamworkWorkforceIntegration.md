@@ -40,9 +40,6 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a workforceIntegration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/workforceintegration-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -337,9 +334,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
+
+[https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
 
 
 

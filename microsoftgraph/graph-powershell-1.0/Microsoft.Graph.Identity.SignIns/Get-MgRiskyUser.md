@@ -39,9 +39,6 @@ Get-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a riskyUser object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/riskyuser-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -358,9 +355,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuser)
+
+[https://learn.microsoft.com/graph/api/riskyuser-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/riskyuser-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-list?view=graph-rest-1.0)
 
 
 

@@ -32,9 +32,6 @@ Get-MgBetaDriveFollowingContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property following from drives
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-list-following-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -218,9 +215,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivefollowingcontent)
+
+[https://learn.microsoft.com/graph/api/drive-list-following?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-list-following?view=graph-rest-1.0)
 
 
 

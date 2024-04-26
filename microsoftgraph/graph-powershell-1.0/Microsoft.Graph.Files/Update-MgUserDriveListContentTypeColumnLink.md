@@ -313,7 +313,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListContentTypeColumnLink?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistcontenttypecolumnlink)
 

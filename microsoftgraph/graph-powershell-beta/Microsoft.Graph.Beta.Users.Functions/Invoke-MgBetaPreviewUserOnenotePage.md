@@ -181,7 +181,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPreviewUserOnenotePage](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgPreviewUserOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapreviewuseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetapreviewuseronenotepage)
 

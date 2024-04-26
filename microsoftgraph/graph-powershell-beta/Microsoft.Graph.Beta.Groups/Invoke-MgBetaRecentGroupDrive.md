@@ -312,7 +312,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgRecentGroupDrive](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRecentGroupDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive)
 

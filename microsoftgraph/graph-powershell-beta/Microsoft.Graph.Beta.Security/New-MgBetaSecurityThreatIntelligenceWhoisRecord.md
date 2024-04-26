@@ -1761,7 +1761,6 @@ No format is guaranteed.
 No format is guaranteed.
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencewhoisrecord)
 

@@ -42987,7 +42987,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrive)
 

@@ -55,9 +55,6 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of a b2cIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2cidentityuserflow-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
@@ -629,6 +626,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-1.0)
 
 
 

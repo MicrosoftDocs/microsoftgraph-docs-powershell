@@ -61,9 +61,6 @@ The current timeout value is 15 seconds.
 This API doesn't end existing calls that have already been answered.
 Use delete call to end a call.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/call-reject-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Reject an incoming call with 'Busy' reason
 
@@ -325,9 +322,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRejectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRejectCommunicationCall?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetarejectcommunicationcall)
+
+[https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-reject?view=graph-rest-1.0)
 
 
 

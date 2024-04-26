@@ -33,9 +33,6 @@ Remove-MgChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHeader
 Soft-delete a chat.
 When invoked with delegated permissions, this operation only works for tenant admins and Teams service admins.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -244,9 +241,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchat)
+
+[https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete?view=graph-rest-1.0)
 
 
 

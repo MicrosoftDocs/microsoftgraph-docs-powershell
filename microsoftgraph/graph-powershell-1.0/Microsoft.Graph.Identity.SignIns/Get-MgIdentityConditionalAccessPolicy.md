@@ -40,9 +40,6 @@ Get-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conditionalaccesspolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a list of all conditional access policies in Azure AD.
 
@@ -400,9 +397,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0)
 
 
 

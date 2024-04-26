@@ -52,9 +52,6 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 ## DESCRIPTION
 Update a connectedOrganization object to change one or more of its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/connectedorganization-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -480,9 +477,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization)
+
+[https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0)
 
 
 

@@ -40236,7 +40236,6 @@ Read-only.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
-[Update-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMe?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
 

@@ -329,7 +329,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootsubscription)
 

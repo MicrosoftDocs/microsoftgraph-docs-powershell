@@ -300,7 +300,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgCleanUserManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgCleanUserManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacleanusermanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacleanusermanageddevicewindowsdevice)
 

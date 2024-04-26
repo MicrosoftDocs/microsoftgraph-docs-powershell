@@ -1034,9 +1034,10 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage)
+
+[https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
 
 
 

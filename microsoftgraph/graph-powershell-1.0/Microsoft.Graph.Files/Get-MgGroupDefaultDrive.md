@@ -194,7 +194,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDefaultDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdefaultdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdefaultdrive)
 

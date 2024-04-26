@@ -45,9 +45,6 @@ Invoke-MgBetaDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/impactedresource-dismiss-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,6 +273,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryimpactedresource)
+
+[https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-1.0)
 
 
 

@@ -46,9 +46,6 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
 ## DESCRIPTION
 Create a new bookingStaffMember in the specified bookingBusiness.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-post-staffmembers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -331,9 +328,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0)
 
 
 

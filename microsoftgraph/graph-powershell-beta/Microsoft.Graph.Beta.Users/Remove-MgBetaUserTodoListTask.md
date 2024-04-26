@@ -32,9 +32,6 @@ Remove-MgBetaUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Deletes a todoTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotask-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -263,9 +260,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetausertodolisttask)
+
+[https://learn.microsoft.com/graph/api/todotask-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-delete?view=graph-rest-1.0)
 
 
 

@@ -178,7 +178,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationCallAudioRoutingGroupCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallaudioroutinggroupcount)
 

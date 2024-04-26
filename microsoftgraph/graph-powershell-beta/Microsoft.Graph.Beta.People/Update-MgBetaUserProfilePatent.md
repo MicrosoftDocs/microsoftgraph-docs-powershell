@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Update-MgBetaUserProfilePatent
@@ -51,9 +50,6 @@ Update-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IM
 
 ## DESCRIPTION
 Update the properties of an itemPatent object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itempatent-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserProfilePatent Cmdlet
@@ -577,6 +573,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent)
+
+[https://learn.microsoft.com/graph/api/itempatent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempatent-update?view=graph-rest-1.0)
 
 
 

@@ -48,9 +48,6 @@ Update-MgBetaPlaceByPlaceId -InputObject <ICalendarIdentity> -BodyParameter <IMi
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the room, workspace, or roomList by specifying the id or emailAddress property.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/place-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -381,6 +378,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplacebyplaceid)
+
+[https://learn.microsoft.com/graph/api/place-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/place-update?view=graph-rest-1.0)
 
 
 

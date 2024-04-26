@@ -332,9 +332,10 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontact)
+
+[https://learn.microsoft.com/graph/api/contactfolder-list-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-list-contacts?view=graph-rest-1.0)
 
 
 

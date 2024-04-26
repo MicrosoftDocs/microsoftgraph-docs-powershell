@@ -83,9 +83,6 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicroso
 Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions.
 This method updates any solution that has a record of the referenced alert ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/alert-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Request without Prefer header
 
@@ -1392,9 +1389,10 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: Threat intelligen
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalert)
+
+[https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-update?view=graph-rest-1.0)
 
 
 

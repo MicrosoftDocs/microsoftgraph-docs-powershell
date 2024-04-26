@@ -34,9 +34,6 @@ Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-ResponseHeadersVa
 Make the scheduling page of this business not available to external customers.
 Set the isPublished property to false, and the publicUrl property to null.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-unpublish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -208,9 +205,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Unpublish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Unpublish-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-unpublish?view=graph-rest-1.0)
 
 
 

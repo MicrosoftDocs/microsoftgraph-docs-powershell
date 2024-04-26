@@ -19094,7 +19094,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemanalytic)
 

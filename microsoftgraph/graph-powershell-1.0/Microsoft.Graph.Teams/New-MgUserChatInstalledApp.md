@@ -48,9 +48,6 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-installedapps-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -448,9 +445,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-installedapps?view=graph-rest-1.0)
 
 
 

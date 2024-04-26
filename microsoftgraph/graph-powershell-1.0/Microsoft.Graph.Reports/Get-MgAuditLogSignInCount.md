@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaAuditLogSignInCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignInCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignincount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignincount)
 

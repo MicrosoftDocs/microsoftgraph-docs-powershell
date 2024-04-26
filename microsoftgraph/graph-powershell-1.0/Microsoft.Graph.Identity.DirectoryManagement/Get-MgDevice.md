@@ -40,9 +40,6 @@ Get-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/device-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a device
 
@@ -344,9 +341,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice)
+
+[https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list?view=graph-rest-1.0)
 
 
 

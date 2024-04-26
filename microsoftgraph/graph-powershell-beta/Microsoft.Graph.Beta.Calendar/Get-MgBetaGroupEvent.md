@@ -39,9 +39,6 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>]
 ## DESCRIPTION
 Get an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-get-event-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -301,9 +298,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupevent)
+
+[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
 
 
 

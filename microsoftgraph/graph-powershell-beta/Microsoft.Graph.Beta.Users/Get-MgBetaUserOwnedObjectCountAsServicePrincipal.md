@@ -201,7 +201,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserOwnedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObjectCountAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserownedobjectcountasserviceprincipal)
 

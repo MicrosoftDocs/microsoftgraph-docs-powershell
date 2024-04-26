@@ -192,7 +192,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaChatPinnedMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatPinnedMessageCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpinnedmessagecount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatpinnedmessagecount)
 

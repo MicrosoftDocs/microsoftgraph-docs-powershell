@@ -574,9 +574,10 @@ Read-only.
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook)
+
+[https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0)
 
 
 

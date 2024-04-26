@@ -72,9 +72,6 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update the default branding
 
@@ -1048,9 +1045,10 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
   - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
-[Update-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0)
 
 
 

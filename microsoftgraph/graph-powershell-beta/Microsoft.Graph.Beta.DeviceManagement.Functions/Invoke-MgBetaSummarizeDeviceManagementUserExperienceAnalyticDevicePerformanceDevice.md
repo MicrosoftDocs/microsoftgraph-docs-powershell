@@ -284,7 +284,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetasummarizedevicemanagementuserexperienceanalyticdeviceperformancedevice)
 

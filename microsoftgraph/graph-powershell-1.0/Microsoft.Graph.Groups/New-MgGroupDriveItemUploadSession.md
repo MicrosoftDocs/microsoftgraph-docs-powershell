@@ -344,7 +344,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveItemUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriveitemuploadsession)
 

@@ -327,6 +327,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin)
 
+[https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockin?view=graph-rest-1.0)
+
 
 
 

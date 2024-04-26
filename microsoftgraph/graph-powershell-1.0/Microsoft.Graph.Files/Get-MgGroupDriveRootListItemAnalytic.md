@@ -198,7 +198,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveRootListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriverootlistitemanalytic)
 

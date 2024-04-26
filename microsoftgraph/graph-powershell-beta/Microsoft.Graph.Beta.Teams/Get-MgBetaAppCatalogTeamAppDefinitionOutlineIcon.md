@@ -29,9 +29,6 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 ## DESCRIPTION
 Retrieve a Teams app icon associated with a specific definition of an app.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/teamsappicon-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
@@ -240,6 +237,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon)
+
+[https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0)
 
 
 

@@ -42,9 +42,6 @@ During the submit process, all the resources are copied to the submittedResource
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-submit-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -234,9 +231,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Submit-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Submit-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/submit-mgbetaeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/submit-mgbetaeducationclassassignmentsubmission)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-submit?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-submit?view=graph-rest-1.0)
 
 
 

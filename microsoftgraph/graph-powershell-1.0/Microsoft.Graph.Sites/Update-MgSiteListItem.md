@@ -24188,7 +24188,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitem)
 

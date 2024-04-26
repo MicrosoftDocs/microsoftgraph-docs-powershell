@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaccount
 schema: 2.0.0
-ms.prod: Profile
 ---
 
 # Get-MgBetaUserProfileAccount
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ExpandProperty <St
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an userAccountInformation object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/useraccountinformation-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileAccount Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaccount)
+
+[https://learn.microsoft.com/graph/api/useraccountinformation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/useraccountinformation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-accounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-accounts?view=graph-rest-1.0)
 
 
 

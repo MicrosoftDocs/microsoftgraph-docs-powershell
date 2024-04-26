@@ -68,9 +68,6 @@ Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-workflow-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43273,9 +43270,10 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
   - `[VersionNumber <Int32?>]`: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0)
 
 
 

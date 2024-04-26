@@ -52,9 +52,6 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create a new or replace an existing history item for an existing user activity.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-put-historyitem-permissions.md)]
-
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -564,9 +561,10 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Update-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem)
+
+[https://learn.microsoft.com/graph/api/projectrome-put-historyitem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-put-historyitem?view=graph-rest-1.0)
 
 
 

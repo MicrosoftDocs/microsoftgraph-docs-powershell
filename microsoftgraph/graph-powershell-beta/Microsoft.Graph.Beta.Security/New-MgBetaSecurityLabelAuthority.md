@@ -31,9 +31,6 @@ New-MgBetaSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVar
 ## DESCRIPTION
 Create a new authorityTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-labelsroot-post-authorities-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -233,9 +230,10 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelauthority)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
 
 
 

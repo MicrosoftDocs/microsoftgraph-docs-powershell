@@ -40,9 +40,6 @@ Get-MgSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [-Exp
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-subdomain-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencesubdomain)
+
+[https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0)
 
 
 

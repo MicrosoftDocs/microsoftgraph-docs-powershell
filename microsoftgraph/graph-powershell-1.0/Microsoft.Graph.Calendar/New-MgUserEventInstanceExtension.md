@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgUserEventInstanceExtension
@@ -267,9 +266,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserEventInstanceExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventinstanceextension)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
 
 
 

@@ -325,9 +325,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplan)
+
+[https://learn.microsoft.com/graph/api/plannergroup-list-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannergroup-list-plans?view=graph-rest-1.0)
 
 
 

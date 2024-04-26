@@ -289,7 +289,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathpage)
 

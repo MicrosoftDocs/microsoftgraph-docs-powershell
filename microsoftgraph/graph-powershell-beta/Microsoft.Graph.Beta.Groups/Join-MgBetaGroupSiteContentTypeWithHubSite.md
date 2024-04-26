@@ -50,9 +50,6 @@ Join-MgBetaGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,9 +336,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Join-MgGroupSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupSiteContentTypeWithHubSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupsitecontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupsitecontenttypewithhubsite)
+
+[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
 
 
 

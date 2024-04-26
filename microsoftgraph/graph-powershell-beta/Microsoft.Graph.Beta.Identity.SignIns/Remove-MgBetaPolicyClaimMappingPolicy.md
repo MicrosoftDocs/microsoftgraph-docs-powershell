@@ -32,9 +32,6 @@ Remove-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-
 ## DESCRIPTION
 Delete a claimsMappingPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,9 +280,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyclaimmappingpolicy)
+
+[https://learn.microsoft.com/graph/api/claimsmappingpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-delete?view=graph-rest-1.0)
 
 
 

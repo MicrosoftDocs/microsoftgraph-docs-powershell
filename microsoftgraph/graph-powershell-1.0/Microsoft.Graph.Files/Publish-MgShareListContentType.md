@@ -32,9 +32,6 @@ Publish-MgShareListContentType -InputObject <IFilesIdentity> [-ResponseHeadersVa
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in the content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -217,9 +214,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

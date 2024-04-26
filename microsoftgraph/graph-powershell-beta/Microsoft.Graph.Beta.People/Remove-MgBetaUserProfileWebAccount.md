@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileWebAccount
@@ -29,9 +28,6 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 
 ## DESCRIPTION
 Delete a webAccount object from a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/webaccount-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileWebAccount Cmdlet
@@ -240,6 +236,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount)
+
+[https://learn.microsoft.com/graph/api/webaccount-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/webaccount-delete?view=graph-rest-1.0)
 
 
 

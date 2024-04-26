@@ -40,9 +40,6 @@ Get-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property 
 ## DESCRIPTION
 Retrieve the properties and relationships of a schedulingGroup by ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/schedulinggroup-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -326,9 +323,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup)
+
+[https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0)
 
 
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileWebsite
@@ -29,9 +28,6 @@ Remove-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> [-IfMatch <String
 
 ## DESCRIPTION
 Deletes a personWebsite object from a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personwebsite-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileWebsite Cmdlet
@@ -240,6 +236,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebsite)
+
+[https://learn.microsoft.com/graph/api/personwebsite-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personwebsite-delete?view=graph-rest-1.0)
 
 
 

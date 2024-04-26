@@ -40,9 +40,6 @@ Get-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-manifest-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -335,9 +332,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingManifest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest)
+
+[https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
 
 
 

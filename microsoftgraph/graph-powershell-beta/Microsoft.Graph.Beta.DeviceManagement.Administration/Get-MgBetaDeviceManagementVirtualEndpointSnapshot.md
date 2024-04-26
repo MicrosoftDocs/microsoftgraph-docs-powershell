@@ -37,9 +37,6 @@ Get-MgBetaDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcSnapshot object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshot Cmdlet
 ```powershell
@@ -370,6 +367,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointsnapshot)
+
+[https://learn.microsoft.com/graph/api/cloudpcsnapshot-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcsnapshot-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-list-snapshots?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-snapshots?view=graph-rest-1.0)
 
 
 

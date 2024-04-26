@@ -216,9 +216,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Undo-MgTeamworkDeletedChatDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamworkDeletedChatDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamworkdeletedchatdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamworkdeletedchatdelete)
+
+[https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-1.0)
 
 
 

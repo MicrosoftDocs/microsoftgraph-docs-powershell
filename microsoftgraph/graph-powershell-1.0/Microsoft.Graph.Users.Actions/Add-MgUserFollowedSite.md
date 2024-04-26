@@ -9643,9 +9643,10 @@ This relationship can only be used to load a specific term set.
   - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
-[Add-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserFollowedSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserfollowedsite](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserfollowedsite)
+
+[https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-follow?view=graph-rest-1.0)
 
 
 

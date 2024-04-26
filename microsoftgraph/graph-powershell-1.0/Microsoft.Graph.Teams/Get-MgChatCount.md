@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaChatCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatcount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatcount)
 

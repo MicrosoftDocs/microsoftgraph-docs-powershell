@@ -342,9 +342,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant)
+
+[https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0)
 
 
 

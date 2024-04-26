@@ -49,9 +49,6 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 ## DESCRIPTION
 Update the properties of an onPremisesAgentGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
@@ -475,6 +472,8 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofileagentgroup)
+
+[https://learn.microsoft.com/graph/api/onpremisesagentgroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagentgroup-update?view=graph-rest-1.0)
 
 
 

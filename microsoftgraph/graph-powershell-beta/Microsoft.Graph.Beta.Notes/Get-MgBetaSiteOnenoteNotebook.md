@@ -40,9 +40,6 @@ Get-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -319,9 +316,12 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebook)
+
+[https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0)
 
 
 

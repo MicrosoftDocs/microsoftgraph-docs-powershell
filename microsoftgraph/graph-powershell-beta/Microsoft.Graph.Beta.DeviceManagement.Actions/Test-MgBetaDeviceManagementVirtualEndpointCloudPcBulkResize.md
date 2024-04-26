@@ -197,6 +197,8 @@ BODYPARAMETER `<IPathsLvwgawDevicemanagementVirtualendpointCloudpcsMicrosoftGrap
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementvirtualendpointcloudpcbulkresize)
 
+[https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-validatebulkresize?view=graph-rest-1.0)
+
 
 
 

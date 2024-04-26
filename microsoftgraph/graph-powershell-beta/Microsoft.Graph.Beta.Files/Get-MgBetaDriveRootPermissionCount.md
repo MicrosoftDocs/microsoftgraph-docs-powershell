@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootPermissionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootpermissioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootpermissioncount)
 

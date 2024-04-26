@@ -46,9 +46,6 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 ## DESCRIPTION
 Grant the specified group access to submit print jobs to the associated printerShare.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printershare-post-allowedgroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -275,9 +272,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref)
+
+[https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0)
 
 
 

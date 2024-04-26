@@ -285,9 +285,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Reset-MgBetaUserAuthenticationMethodPassword](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Reset-MgBetaUserAuthenticationMethodPassword?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword)
+
+[https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
 
 
 

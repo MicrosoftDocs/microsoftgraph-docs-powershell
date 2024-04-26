@@ -378,9 +378,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatpinnedmessage)
+
+[https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-pinnedmessages?view=graph-rest-1.0)
 
 
 

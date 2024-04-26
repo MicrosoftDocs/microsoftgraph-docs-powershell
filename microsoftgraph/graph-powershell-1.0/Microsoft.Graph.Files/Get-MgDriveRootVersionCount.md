@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveRootVersionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootVersionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncount)
 

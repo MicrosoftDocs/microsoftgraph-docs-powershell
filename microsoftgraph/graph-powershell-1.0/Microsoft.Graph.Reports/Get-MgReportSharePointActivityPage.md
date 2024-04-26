@@ -180,7 +180,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivitypage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivitypage)
 

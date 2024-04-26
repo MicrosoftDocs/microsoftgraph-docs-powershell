@@ -95,9 +95,6 @@ Update-MgApplicationByUniqueName -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the properties of an application object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AddIns
@@ -2410,9 +2407,10 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
   - `[RedirectUris <String- `[]`>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
-[Update-MgBetaApplicationByUniqueName](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByUniqueName?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyuniquename)
+
+[https://learn.microsoft.com/graph/api/application-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-update?view=graph-rest-1.0)
 
 
 

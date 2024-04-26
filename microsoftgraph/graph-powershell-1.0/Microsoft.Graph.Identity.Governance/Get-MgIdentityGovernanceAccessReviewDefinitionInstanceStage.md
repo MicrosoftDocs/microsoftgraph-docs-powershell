@@ -42,9 +42,6 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdent
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessReviewStage object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -403,9 +400,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestage)
+
+[https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0)
 
 
 

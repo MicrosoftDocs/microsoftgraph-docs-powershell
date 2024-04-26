@@ -36,9 +36,6 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-searchentity-post-qnas-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -534,9 +531,10 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
-[New-MgSearchQna](/powershell/module/Microsoft.Graph.Search/New-MgSearchQna?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
 
 
 

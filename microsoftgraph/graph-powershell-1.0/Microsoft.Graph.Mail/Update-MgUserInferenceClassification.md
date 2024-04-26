@@ -276,7 +276,6 @@ Read-only.
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification)
 

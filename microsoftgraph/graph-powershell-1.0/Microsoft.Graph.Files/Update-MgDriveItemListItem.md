@@ -24153,7 +24153,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitem)
 
