@@ -29,18 +29,6 @@ Get-MgBetaGroupDriveBundleContentStream -InputObject <IFilesIdentity> -OutFile <
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -226,6 +214,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivebundlecontentstream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivebundlecontentstream)
 
 [https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0)
+
 
 
 

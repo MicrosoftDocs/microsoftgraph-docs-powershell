@@ -29,18 +29,6 @@ Get-MgBetaShareDriveItemContentStream -InputObject <IFilesIdentity> -OutFile <St
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -196,6 +184,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontentstream](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontentstream)
 
 [https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
+
 
 
 

@@ -38,18 +38,6 @@ Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ## DESCRIPTION
 Read the properties and relationships of a plannerPlanConfigurationLocalization object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -342,6 +330,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0)
+
 
 
 

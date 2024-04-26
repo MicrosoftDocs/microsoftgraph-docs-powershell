@@ -52,22 +52,6 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 ## DESCRIPTION
 Delete an existing history item for an existing user activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -553,6 +537,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem)
 
 [https://learn.microsoft.com/graph/api/projectrome-delete-historyitem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-delete-historyitem?view=graph-rest-1.0)
+
 
 
 

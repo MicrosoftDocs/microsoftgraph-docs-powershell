@@ -37,18 +37,6 @@ New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBoo
 ## DESCRIPTION
 Create a new iosVppEBook object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -501,6 +489,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook)
 
 [https://learn.microsoft.com/graph/api/intune-books-iosvppebook-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-create?view=graph-rest-1.0)
+
 
 
 

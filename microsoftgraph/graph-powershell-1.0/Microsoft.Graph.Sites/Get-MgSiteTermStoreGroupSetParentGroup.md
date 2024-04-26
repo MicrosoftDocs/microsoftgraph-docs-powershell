@@ -46,22 +46,6 @@ Get-MgSiteTermStoreGroupSetParentGroup -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 The parent \[group\] that contains the set.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -279,6 +263,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetparentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoregroupsetparentgroup)
+
 
 
 

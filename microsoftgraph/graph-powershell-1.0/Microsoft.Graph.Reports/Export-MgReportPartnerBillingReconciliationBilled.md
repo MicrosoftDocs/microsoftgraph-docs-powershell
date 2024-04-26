@@ -36,18 +36,6 @@ Export the billed invoice reconciliation data.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -213,6 +201,7 @@ BODYPARAMETER `<IPathsYgrmj4ReportsPartnersBillingReconciliationBilledMicrosoftG
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingreconciliationbilled)
 
 [https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-billedreconciliation-export?view=graph-rest-1.0)
+
 
 
 

@@ -37,18 +37,6 @@ Get-MgBetaAuditLogCustomSecurityAttributeAudit -InputObject <IReportsIdentity> [
 ## DESCRIPTION
 Represents a custom security attribute audit log.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -345,6 +333,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogcustomsecurityattributeaudit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogcustomsecurityattributeaudit)
 
 [https://learn.microsoft.com/graph/api/auditlogroot-list-customsecurityattributeaudits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/auditlogroot-list-customsecurityattributeaudits?view=graph-rest-1.0)
+
 
 
 

@@ -50,22 +50,6 @@ New-MgBetaSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new group object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +474,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitetermstoregroup)
 
 [https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
+
 
 
 

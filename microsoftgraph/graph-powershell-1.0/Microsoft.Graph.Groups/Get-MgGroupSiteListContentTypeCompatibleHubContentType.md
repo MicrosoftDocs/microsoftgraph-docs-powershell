@@ -34,22 +34,6 @@ Get-MgGroupSiteListContentTypeCompatibleHubContentType -InputObject <IGroupsIden
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -340,6 +324,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitelistcontenttypecompatiblehubcontenttype)
+
 
 
 

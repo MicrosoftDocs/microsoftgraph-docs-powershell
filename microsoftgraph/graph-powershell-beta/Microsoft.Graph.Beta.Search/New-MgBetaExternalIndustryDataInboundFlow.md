@@ -34,18 +34,6 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 Create a new inboundFileFlow object.
 The following prerequisite resources are required when you create an inboundFileFlow:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,6 +418,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatainboundflow)
 
 [https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-post?view=graph-rest-1.0)
+
 
 
 

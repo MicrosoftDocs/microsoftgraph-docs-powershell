@@ -56,18 +56,6 @@ New-MgBetaGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -15737,6 +15725,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdriveitemanalyticitemactivitystat)
+
 
 
 

@@ -41,22 +41,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -440,6 +424,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-1.0)
+
 
 
 

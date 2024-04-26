@@ -40,18 +40,6 @@ Get-MgServicePrincipalOwnedObjectAsServicePrincipal -InputObject <IApplicationsI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -340,6 +328,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectasserviceprincipal)
+
 
 
 

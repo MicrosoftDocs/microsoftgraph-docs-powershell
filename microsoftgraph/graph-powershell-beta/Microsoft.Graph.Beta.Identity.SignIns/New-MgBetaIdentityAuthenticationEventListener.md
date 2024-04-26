@@ -32,22 +32,6 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from authenticationEventListener.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,6 +250,7 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
+
 
 
 

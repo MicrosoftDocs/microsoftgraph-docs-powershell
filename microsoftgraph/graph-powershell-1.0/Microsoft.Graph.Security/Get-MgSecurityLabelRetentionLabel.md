@@ -40,18 +40,6 @@ Get-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-ExpandPrope
 ## DESCRIPTION
 Represents how customers can manage their data, whether and for how long to retain or delete it.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +352,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabel)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-1.0)
+
 
 
 

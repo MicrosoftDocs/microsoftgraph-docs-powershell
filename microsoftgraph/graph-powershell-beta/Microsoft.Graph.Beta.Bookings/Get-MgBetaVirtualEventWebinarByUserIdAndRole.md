@@ -34,18 +34,6 @@ Get-MgBetaVirtualEventWebinarByUserIdAndRole -InputObject <IBookingsIdentity> [-
 ## DESCRIPTION
 Invoke function getByUserIdAndRole
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -303,6 +291,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarbyuseridandrole)
+
 
 
 

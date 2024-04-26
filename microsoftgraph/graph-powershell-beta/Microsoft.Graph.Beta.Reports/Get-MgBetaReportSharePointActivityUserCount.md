@@ -32,22 +32,6 @@ Get-MgBetaReportSharePointActivityUserCount -InputObject <IReportsIdentity> -Out
 ## DESCRIPTION
 Invoke function getSharePointActivityUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -221,6 +205,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsharepointactivityusercount)
+
 
 
 

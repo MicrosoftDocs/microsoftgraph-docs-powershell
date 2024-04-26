@@ -32,22 +32,6 @@ Invoke-MgHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -225,6 +209,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel)
+
 
 
 

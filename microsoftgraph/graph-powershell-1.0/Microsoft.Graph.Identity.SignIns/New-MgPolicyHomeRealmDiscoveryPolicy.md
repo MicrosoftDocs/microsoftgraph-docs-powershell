@@ -32,22 +32,6 @@ New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHeader
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -297,6 +281,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyhomerealmdiscoverypolicy)
 
 [https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
+
 
 
 

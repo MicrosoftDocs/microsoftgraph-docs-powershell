@@ -45,18 +45,6 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 You can find the log in Microsoft Entra audit logs under the KeyManagement category.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -393,6 +381,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
+
 
 
 

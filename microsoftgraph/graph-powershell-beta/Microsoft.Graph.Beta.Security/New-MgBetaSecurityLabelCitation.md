@@ -33,18 +33,6 @@ New-MgBetaSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationT
 ## DESCRIPTION
 Create a new citationTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -299,6 +287,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcitation)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
+
 
 
 

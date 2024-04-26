@@ -56,18 +56,6 @@ You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9714,6 +9702,7 @@ NOTE: For more information about the permissions for member and guest users, see
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflowdeleteditemworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/initialize-mgidentitygovernancelifecycleworkflowdeleteditemworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-activate?view=graph-rest-1.0)
+
 
 
 

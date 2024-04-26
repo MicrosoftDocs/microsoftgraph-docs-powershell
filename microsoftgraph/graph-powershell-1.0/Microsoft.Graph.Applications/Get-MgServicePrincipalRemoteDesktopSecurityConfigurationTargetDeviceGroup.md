@@ -41,18 +41,6 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup -Input
 ## DESCRIPTION
 Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -345,6 +333,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/targetdevicegroup-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-list-targetdevicegroups?view=graph-rest-1.0)
+
 
 
 

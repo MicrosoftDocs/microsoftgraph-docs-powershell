@@ -35,18 +35,6 @@ New-MgPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuthenti
 ## DESCRIPTION
 Create a new custom authenticationStrengthPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,6 +329,7 @@ The only possible value for fido2combinationConfigurations is 'fido2'.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy)
 
 [https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)
+
 
 
 

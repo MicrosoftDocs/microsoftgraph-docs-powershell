@@ -40,18 +40,6 @@ Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp -InputObject <IDevicesCo
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +325,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedmobilelobapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappasmanagedmobilelobapp)
+
 
 
 

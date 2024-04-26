@@ -32,22 +32,6 @@ Get-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property driveItem from shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Format
@@ -218,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontent)
 
 [https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
+
 
 
 

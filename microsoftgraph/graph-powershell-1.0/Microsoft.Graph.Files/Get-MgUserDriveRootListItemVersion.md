@@ -40,22 +40,6 @@ Get-MgUserDriveRootListItemVersion -InputObject <IFilesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +348,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0)
+
 
 
 

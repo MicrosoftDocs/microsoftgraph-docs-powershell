@@ -32,22 +32,6 @@ Remove-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -Id <String> [-
 ## DESCRIPTION
 Remove acceptedSender
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -266,6 +250,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupacceptedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-acceptedsenders?view=graph-rest-1.0)
+
 
 
 

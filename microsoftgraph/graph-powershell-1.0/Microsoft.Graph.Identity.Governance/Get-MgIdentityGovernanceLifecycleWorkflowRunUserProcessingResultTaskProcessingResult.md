@@ -43,18 +43,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingRe
 ## DESCRIPTION
 The associated individual task execution.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -419,6 +407,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresulttaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowrunuserprocessingresulttaskprocessingresult)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-list-taskprocessingresults?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-userprocessingresult-list-taskprocessingresults?view=graph-rest-1.0)
+
 
 
 

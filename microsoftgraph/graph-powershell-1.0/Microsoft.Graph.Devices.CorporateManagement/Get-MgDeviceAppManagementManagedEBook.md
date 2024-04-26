@@ -40,18 +40,6 @@ Get-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 Read properties and relationships of the managedEBook object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,6 +329,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-books-managedebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-list?view=graph-rest-1.0)
+
 
 
 

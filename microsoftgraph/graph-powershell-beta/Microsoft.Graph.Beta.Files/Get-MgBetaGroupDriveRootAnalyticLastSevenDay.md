@@ -32,18 +32,6 @@ Get-MgBetaGroupDriveRootAnalyticLastSevenDay -InputObject <IFilesIdentity> [-Exp
 ## DESCRIPTION
 Get lastSevenDays from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -212,6 +200,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalyticlastsevenday](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootanalyticlastsevenday)
+
 
 
 

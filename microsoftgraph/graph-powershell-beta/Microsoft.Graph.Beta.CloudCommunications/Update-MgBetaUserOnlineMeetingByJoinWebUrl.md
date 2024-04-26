@@ -79,18 +79,6 @@ Update-MgBetaUserOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunicationsIde
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1417,6 +1405,7 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingbyjoinweburl)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0)
+
 
 
 

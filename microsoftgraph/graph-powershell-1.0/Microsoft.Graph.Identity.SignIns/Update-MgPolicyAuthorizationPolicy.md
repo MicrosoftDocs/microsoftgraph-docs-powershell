@@ -35,22 +35,6 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 ## DESCRIPTION
 Update the properties of an authorizationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -429,6 +413,7 @@ An empty list indicates user consent to apps is disabled.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy)
 
 [https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authorizationpolicy-update?view=graph-rest-1.0)
+
 
 
 

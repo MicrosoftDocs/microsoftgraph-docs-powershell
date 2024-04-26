@@ -33,18 +33,6 @@ Remove-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 ## DESCRIPTION
 Delete navigation property templates for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -243,6 +231,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationtemplate)
+
 
 
 

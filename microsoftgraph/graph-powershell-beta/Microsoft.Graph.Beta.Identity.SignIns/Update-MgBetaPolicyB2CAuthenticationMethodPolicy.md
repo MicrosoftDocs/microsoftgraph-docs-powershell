@@ -30,22 +30,6 @@ Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the properties of a b2cAuthenticationMethodsPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,6 +229,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy)
 
 [https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-1.0)
+
 
 
 

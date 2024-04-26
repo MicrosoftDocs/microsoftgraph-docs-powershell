@@ -50,22 +50,6 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties of an openShift object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,6 +449,7 @@ Required.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
 
 [https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0)
+
 
 
 

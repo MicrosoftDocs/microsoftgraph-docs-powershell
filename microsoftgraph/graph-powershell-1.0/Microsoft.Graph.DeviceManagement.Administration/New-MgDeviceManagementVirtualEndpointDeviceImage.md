@@ -36,18 +36,6 @@ New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftGraph
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -387,6 +375,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage)
 
 [https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0)
+
 
 
 

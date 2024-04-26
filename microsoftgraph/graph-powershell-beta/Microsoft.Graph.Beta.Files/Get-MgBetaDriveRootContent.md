@@ -32,22 +32,6 @@ Get-MgBetaDriveRootContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ## DESCRIPTION
 Get content for the navigation property root from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootcontent)
 
 [https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
+
 
 
 

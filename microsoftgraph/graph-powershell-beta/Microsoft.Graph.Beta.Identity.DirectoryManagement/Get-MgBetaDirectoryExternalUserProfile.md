@@ -37,18 +37,6 @@ Get-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Retrieve the properties of a specific externalUserProfile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,6 +338,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externaluserprofile-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-externaluserprofiles?view=graph-rest-1.0)
+
 
 
 

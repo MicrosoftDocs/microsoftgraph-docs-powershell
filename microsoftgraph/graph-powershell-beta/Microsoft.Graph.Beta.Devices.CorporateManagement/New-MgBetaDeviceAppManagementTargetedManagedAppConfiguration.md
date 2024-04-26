@@ -39,18 +39,6 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfiguration
 ## DESCRIPTION
 Create new navigation property to targetedManagedAppConfigurations for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -588,6 +576,7 @@ Applicable for reusable setting.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfiguration)
+
 
 
 

@@ -77,22 +77,6 @@ New-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyPar
 ## DESCRIPTION
 Use this API to create a new Message in a mailfolder.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1180,6 +1164,7 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage)
 
 [https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0)
+
 
 
 

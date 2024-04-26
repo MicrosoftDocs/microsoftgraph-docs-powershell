@@ -29,18 +29,6 @@ Get-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a plannerTaskDetails object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -210,6 +198,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskdetail)
 
 [https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-1.0)
+
 
 
 

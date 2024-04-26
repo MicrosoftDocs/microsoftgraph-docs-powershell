@@ -53,22 +53,6 @@ New-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMan
 ## DESCRIPTION
 Create new navigation property to deviceConfigurationStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -511,6 +495,7 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddeviceconfigurationstate)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 ## DESCRIPTION
 Read the properties and relationships of a customSecurityAttributeDefinition object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -330,6 +318,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0)
+
 
 
 

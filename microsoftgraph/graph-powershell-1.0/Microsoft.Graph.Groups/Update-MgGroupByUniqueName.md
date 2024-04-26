@@ -100,18 +100,6 @@ Update-MgGroupByUniqueName -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of a group object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedSenders
@@ -26480,6 +26468,7 @@ Always null when the object hasn't been deleted.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupbyuniquename)
 
 [https://learn.microsoft.com/graph/api/group-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update?view=graph-rest-1.0)
+
 
 
 

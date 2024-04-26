@@ -40,22 +40,6 @@ Get-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-Proper
 ## DESCRIPTION
 Get the properties and relationships of a messageRule object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -333,6 +317,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0)
+
 
 
 

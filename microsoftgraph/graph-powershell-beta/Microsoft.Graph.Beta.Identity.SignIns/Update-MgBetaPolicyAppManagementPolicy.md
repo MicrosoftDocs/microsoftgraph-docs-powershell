@@ -51,22 +51,6 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update an appManagementPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -475,6 +459,7 @@ To apply to all applications, this date would be null.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
+
 
 
 

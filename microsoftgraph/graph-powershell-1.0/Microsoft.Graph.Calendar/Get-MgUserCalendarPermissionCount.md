@@ -45,18 +45,6 @@ Get-MgUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CalendarId
@@ -197,6 +185,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermissioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendarpermissioncount)
+
 
 
 

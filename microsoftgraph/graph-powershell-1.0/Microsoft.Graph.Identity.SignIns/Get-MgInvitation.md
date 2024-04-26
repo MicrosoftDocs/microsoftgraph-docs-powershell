@@ -39,18 +39,6 @@ Get-MgInvitation -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Get entity from invitations by key
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -356,6 +344,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginvitation)
+
 
 
 

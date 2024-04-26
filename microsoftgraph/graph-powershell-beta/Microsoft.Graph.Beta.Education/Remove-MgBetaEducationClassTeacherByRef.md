@@ -32,22 +32,6 @@ Remove-MgBetaEducationClassTeacherByRef -InputObject <IEducationIdentity> -Id <S
 ## DESCRIPTION
 Remove a teacher from an educationClass.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -243,6 +227,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassteacherbyref)
 
 [https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-delete-teachers?view=graph-rest-1.0)
+
 
 
 

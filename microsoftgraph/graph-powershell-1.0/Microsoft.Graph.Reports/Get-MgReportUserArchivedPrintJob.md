@@ -32,22 +32,6 @@ Get-MgReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filt
 ## DESCRIPTION
 Invoke function getUserArchivedPrintJobs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -274,6 +258,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
+
 
 
 

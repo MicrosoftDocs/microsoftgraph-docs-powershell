@@ -40,18 +40,6 @@ Get-MgBetaSecurityThreatIntelligenceSslCertificate -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the properties and relationships of an sslCertificate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +376,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sslcertificate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-sslcertificates?view=graph-rest-1.0)
+
 
 
 

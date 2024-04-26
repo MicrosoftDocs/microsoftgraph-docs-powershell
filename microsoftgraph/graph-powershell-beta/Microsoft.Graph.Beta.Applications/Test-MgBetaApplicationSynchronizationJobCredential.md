@@ -52,18 +52,6 @@ Test-MgBetaApplicationSynchronizationJobCredential -InputObject <IApplicationsId
 ## DESCRIPTION
 Validate that the credentials are valid in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -364,6 +352,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/test-mgbetaapplicationsynchronizationjobcredential)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-validatecredentials?view=graph-rest-1.0)
+
 
 
 

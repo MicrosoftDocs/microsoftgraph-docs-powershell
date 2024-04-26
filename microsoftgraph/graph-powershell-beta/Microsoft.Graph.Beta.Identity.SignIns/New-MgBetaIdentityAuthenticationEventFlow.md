@@ -32,18 +32,6 @@ New-MgBetaIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthent
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,6 +270,7 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventsflows?view=graph-rest-1.0)
+
 
 
 

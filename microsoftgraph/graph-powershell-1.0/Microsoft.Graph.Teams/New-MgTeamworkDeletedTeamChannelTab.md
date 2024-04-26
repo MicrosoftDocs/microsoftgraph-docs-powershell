@@ -51,18 +51,6 @@ New-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter
 Add (pin) a tab to the specified channel within a team.
 The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -454,6 +442,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchanneltab)
 
 [https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0)
+
 
 
 

@@ -41,22 +41,6 @@ This allows you to maintain and synchronize a local store of a user's contact fo
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -377,6 +361,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderchildfolderdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfolderchildfolderdelta)
 
 [https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-delta?view=graph-rest-1.0)
+
 
 
 

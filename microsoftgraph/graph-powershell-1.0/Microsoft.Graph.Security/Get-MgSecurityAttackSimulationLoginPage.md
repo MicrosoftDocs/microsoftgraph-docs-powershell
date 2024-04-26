@@ -54,18 +54,6 @@ Get-MgSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-Expan
 ## DESCRIPTION
 Represents an attack simulation training login page.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -393,6 +381,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationloginpage)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-loginpage?view=graph-rest-1.0)
+
 
 
 

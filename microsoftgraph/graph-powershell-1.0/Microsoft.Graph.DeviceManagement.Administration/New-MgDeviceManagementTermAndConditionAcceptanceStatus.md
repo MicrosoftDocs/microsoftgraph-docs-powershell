@@ -50,18 +50,6 @@ New-MgDeviceManagementTermAndConditionAcceptanceStatus -InputObject <IDeviceMana
 ## DESCRIPTION
 Create a new termsAndConditionsAcceptanceStatus object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedDateTime
@@ -414,6 +402,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatus)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-create?view=graph-rest-1.0)
+
 
 
 

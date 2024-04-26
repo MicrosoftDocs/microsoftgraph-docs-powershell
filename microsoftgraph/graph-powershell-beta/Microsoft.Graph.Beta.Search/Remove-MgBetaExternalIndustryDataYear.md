@@ -29,18 +29,6 @@ Remove-MgBetaExternalIndustryDataYear -InputObject <ISearchIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a yearTimePeriodDefinition object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -222,6 +210,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatayear)
 
 [https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-delete?view=graph-rest-1.0)
+
 
 
 

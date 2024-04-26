@@ -31,18 +31,6 @@ New-MgBetaSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVa
 ## DESCRIPTION
 Create a new departmentTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,6 +234,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabeldepartment)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0)
+
 
 
 

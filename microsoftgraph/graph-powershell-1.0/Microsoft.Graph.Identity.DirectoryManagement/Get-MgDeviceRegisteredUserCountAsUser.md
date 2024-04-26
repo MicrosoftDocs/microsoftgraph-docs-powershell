@@ -32,18 +32,6 @@ Get-MgDeviceRegisteredUserCountAsUser -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -213,6 +201,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredusercountasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredusercountasuser)
+
 
 
 

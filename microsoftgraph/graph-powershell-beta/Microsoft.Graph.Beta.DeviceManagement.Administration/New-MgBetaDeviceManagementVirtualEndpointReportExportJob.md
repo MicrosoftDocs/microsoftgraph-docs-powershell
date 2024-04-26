@@ -35,22 +35,6 @@ Create a new cloudPcExportJob resource to initiate downloading the entire or spe
 Use the GET cloudPcExportJob operation to verify the exportJobStatus property of the cloudPcExportJob resource.
 When the property result is completed, the report has finished downloading to the location specified by the exportUrl property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,6 +316,7 @@ It can be used to download the file.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob)
 
 [https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-post-exportjobs?view=graph-rest-1.0)
+
 
 
 

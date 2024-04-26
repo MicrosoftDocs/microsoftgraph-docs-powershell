@@ -60,18 +60,6 @@ To create a page in a different section in the default notebook, you can use the
 Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -927,6 +915,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage)
 
 [https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0)
+
 
 
 

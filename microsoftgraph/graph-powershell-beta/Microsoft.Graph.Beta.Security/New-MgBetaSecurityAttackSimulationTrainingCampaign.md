@@ -35,18 +35,6 @@ New-MgBetaSecurityAttackSimulationTrainingCampaign -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create a new trainingCampaign object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -634,6 +622,7 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-post-trainingcampaigns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-post-trainingcampaigns?view=graph-rest-1.0)
+
 
 
 

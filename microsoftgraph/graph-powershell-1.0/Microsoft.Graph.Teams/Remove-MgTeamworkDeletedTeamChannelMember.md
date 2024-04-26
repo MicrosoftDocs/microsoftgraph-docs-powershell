@@ -32,18 +32,6 @@ Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatc
 ## DESCRIPTION
 Delete a conversationMember from a channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -269,6 +257,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmember)
 
 [https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0)
+
 
 
 

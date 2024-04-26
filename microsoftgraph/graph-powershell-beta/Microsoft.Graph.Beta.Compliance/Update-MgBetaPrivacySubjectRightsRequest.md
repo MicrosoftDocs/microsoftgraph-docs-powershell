@@ -68,18 +68,6 @@ Update-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity>
 ## DESCRIPTION
 Update the properties of a subjectRightsRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -31259,6 +31247,7 @@ This URL should be treated as an opaque blob, and not parsed.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetaprivacysubjectrightsrequest)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-update?view=graph-rest-1.0)
+
 
 
 

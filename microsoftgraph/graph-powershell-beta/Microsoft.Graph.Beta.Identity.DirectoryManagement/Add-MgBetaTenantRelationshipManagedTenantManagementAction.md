@@ -56,18 +56,6 @@ As example when applying the require multifactor authentication for admins manag
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-managementaction-apply-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,6 +366,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetatenantrelationshipmanagedtenantmanagementaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/add-mgbetatenantrelationshipmanagedtenantmanagementaction)
 
 [https://learn.microsoft.com/graph/api/managedtenants-managementaction-apply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementaction-apply?view=graph-rest-1.0)
+
 
 
 

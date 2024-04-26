@@ -48,18 +48,6 @@ Update-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the role of a conversationMember in a team or channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,6 +354,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmember)
 
 [https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-update?view=graph-rest-1.0)
+
 
 
 

@@ -34,22 +34,6 @@ Invoke-MgBetaRecentGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandPr
 ## DESCRIPTION
 Invoke function recent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -330,6 +314,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarecentgroupdrive)
+
 
 
 

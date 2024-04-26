@@ -32,22 +32,6 @@ Remove-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a member from a standard tag in a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -273,6 +257,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember)
 
 [https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-1.0)
+
 
 
 

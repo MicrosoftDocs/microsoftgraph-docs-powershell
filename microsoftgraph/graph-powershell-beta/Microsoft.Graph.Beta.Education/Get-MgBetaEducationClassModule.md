@@ -44,18 +44,6 @@ Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -343,6 +331,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0)
+
 
 
 

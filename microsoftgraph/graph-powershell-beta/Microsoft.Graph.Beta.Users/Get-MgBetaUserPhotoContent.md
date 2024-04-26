@@ -43,22 +43,6 @@ Get-MgBetaUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-Res
 ## DESCRIPTION
 Get media content for the navigation property photo from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -229,6 +213,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserphotocontent)
+
 
 
 

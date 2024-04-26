@@ -33,22 +33,6 @@ Remove-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete navigation property logCollectionRequests for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -308,6 +292,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevicelogcollectionresponse](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetausermanageddevicelogcollectionresponse)
+
 
 
 

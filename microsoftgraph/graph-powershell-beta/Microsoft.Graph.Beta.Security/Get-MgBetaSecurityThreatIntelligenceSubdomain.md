@@ -40,18 +40,6 @@ Get-MgBetaSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of a subdomain object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -386,6 +374,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain)
 
 [https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0)
+
 
 
 

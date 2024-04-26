@@ -32,18 +32,6 @@ Remove-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <
 ## DESCRIPTION
 Removes (unpins) a tab from the specified channel within a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -269,6 +257,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchanneltab)
 
 [https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0)
+
 
 
 

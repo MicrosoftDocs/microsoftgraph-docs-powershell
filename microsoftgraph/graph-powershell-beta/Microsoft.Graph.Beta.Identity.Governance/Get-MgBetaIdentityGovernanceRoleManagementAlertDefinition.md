@@ -51,18 +51,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 ## DESCRIPTION
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -429,6 +417,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertdefinition)
 
 [https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertdefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertdefinitions?view=graph-rest-1.0)
+
 
 
 

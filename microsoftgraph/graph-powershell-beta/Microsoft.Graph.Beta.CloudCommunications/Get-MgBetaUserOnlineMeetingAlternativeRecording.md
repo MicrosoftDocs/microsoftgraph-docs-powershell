@@ -29,22 +29,6 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Get alternativeRecording for the navigation property onlineMeetings from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -210,6 +194,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingalternativerecording)
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
+
 
 
 

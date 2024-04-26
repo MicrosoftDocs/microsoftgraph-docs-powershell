@@ -51,18 +51,6 @@ New-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIde
 ## DESCRIPTION
 Create new navigation property to transcripts for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -391,6 +379,7 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingtranscript)
+
 
 
 

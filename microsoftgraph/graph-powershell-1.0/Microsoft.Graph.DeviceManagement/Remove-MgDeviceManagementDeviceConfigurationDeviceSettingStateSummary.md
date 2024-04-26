@@ -33,22 +33,6 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObje
 ## DESCRIPTION
 Deletes a settingStateDeviceSummary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -280,6 +264,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicesettingstatesummary)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-settingstatedevicesummary-delete?view=graph-rest-1.0)
+
 
 
 

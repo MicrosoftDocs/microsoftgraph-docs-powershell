@@ -32,18 +32,6 @@ Get-MgGroupSiteOnenotePageContent -InputObject <ISitesIdentity> -OutFile <String
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -248,6 +236,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepagecontent)
 
 [https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0)
+
 
 
 

@@ -41,18 +41,6 @@ Get-MgUserTransitiveMemberOfAsDirectoryRole -InputObject <IUsersIdentity> [-Expa
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -349,6 +337,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofasdirectoryrole)
+
 
 
 

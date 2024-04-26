@@ -82,18 +82,6 @@ New-MgGroupDriveBundle -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create new navigation property to bundles for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30097,6 +30085,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivebundle)
 
 [https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0)
+
 
 
 

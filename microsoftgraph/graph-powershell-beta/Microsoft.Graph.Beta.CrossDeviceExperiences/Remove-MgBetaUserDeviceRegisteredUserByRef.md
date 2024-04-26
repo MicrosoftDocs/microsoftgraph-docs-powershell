@@ -29,18 +29,6 @@ Remove-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiences
 ## DESCRIPTION
 Remove a user as a registered user of the device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -241,6 +229,7 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregistereduserbyref)
 
 [https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
+
 
 
 

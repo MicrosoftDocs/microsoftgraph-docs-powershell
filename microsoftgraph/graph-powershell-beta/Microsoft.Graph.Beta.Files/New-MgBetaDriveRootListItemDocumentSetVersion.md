@@ -54,22 +54,6 @@ New-MgBetaDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create a new version of a document set item in a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,6 +486,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriverootlistitemdocumentsetversion)
 
 [https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0)
+
 
 
 

@@ -30,18 +30,6 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Respon
 ## DESCRIPTION
 Invoke function getTeamsTeamCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -193,6 +181,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
+
 
 
 

@@ -40,22 +40,6 @@ Get-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 The collection of columns that are required by this content type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -394,6 +378,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumnlink)
+
 
 
 

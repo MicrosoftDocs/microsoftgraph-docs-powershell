@@ -118,18 +118,6 @@ New-MgBetaSiteGetByPathColumn -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create columnDefinition for a site
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1360,6 +1348,7 @@ For examples, see Examples of common formulas in lists
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathcolumn)
 
 [https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
+
 
 
 

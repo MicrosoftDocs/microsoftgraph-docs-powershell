@@ -40,18 +40,6 @@ Get-MgBetaUserTodoTaskAttachment -InputObject <IUsersIdentity> [-Property <Strin
 ## DESCRIPTION
 Read the properties and relationships of a taskFileAttachment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +335,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/taskfileattachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0)
+
 
 
 

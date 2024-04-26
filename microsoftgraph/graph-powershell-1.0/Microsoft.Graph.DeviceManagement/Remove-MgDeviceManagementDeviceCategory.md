@@ -32,22 +32,6 @@ Remove-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 ## DESCRIPTION
 Deletes a deviceCategory.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceCategoryId
@@ -264,6 +248,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-delete?view=graph-rest-1.0)
+
 
 
 

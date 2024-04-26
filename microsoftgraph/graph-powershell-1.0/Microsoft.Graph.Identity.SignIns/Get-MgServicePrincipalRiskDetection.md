@@ -40,18 +40,6 @@ Get-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)
+
 
 
 
