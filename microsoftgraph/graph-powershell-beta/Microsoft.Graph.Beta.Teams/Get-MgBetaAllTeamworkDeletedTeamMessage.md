@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamworkdeletedteammessage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getAllMessages
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,6 +21,18 @@ Get-MgBetaAllTeamworkDeletedTeamMessage [-Count] [-ExpandProperty <String[]>] [-
 
 ## DESCRIPTION
 Invoke function getAllMessages
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -219,11 +228,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgAllTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgAllTeamworkDeletedTeamMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamworkdeletedteammessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaallteamworkdeletedteammessage)
-
-
-
-
 

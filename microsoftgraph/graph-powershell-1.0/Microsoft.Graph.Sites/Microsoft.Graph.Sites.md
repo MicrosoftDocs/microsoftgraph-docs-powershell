@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: 7ae8c25b-f1dd-466d-a022-b5489f919c70
 Download Help Link: {{ Update Download Link }}
@@ -207,6 +207,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteGetByPathItem](Get-MgGroupSiteGetByPathItem.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteGetByPathList](Get-MgGroupSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteGetByPathOnenote](Get-MgGroupSiteGetByPathOnenote.md)
@@ -1086,6 +1089,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgSiteGetByPathExternalColumn](Get-MgSiteGetByPathExternalColumn.md)
+{{ Fill in the Description }}
+
+### [Get-MgSiteGetByPathList](Get-MgSiteGetByPathList.md)
 {{ Fill in the Description }}
 
 ### [Get-MgSiteGetByPathOperation](Get-MgSiteGetByPathOperation.md)
@@ -3055,5 +3061,4 @@ Locale: en-US
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
 {{ Fill in the Description }}
-
 

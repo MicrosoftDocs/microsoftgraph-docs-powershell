@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to deviceLocalCredentials for directory
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -32,6 +29,18 @@ New-MgDirectoryDeviceLocalCredential -BodyParameter <IMicrosoftGraphDeviceLocalC
 
 ## DESCRIPTION
 Create new navigation property to deviceLocalCredentials for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -235,35 +244,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceLocalCredentialInfo>`: deviceLocalCredentialInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphDeviceLocalCredentialInfo\>: deviceLocalCredentialInfo
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Credentials <IMicrosoftGraphDeviceLocalCredential- `[]`>]`: The credentials of the device's local administrator account backed up to Azure Active Directory.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Credentials \<IMicrosoftGraphDeviceLocalCredential\[\]\>\]: The credentials of the device's local administrator account backed up to Azure Active Directory.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
-    - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
-    - `[BackupDateTime <DateTime?>]`: When the local administrator account credential for the device object was backed up to Azure Active Directory.
-    - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
-  - `[DeviceName <String>]`: Display name of the device that the local credentials are associated with.
-  - `[LastBackupDateTime <DateTime?>]`: When the local administrator account credential was backed up to Azure Active Directory.
-  - `[RefreshDateTime <DateTime?>]`: When the local administrator account credential will be refreshed and backed up to Azure Active Directory.
+    \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
+    \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
+    \[BackupDateTime \<DateTime?\>\]: When the local administrator account credential for the device object was backed up to Azure Active Directory.
+    \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
+  \[DeviceName \<String\>\]: Display name of the device that the local credentials are associated with.
+  \[LastBackupDateTime \<DateTime?\>\]: When the local administrator account credential was backed up to Azure Active Directory.
+  \[RefreshDateTime \<DateTime?\>\]: When the local administrator account credential will be refreshed and backed up to Azure Active Directory.
 
-CREDENTIALS <IMicrosoftGraphDeviceLocalCredential- `[]`>: The credentials of the device's local administrator account backed up to Azure Active Directory.
-  - `[Id <String>]`: The unique identifier for an entity.
+CREDENTIALS \<IMicrosoftGraphDeviceLocalCredential\[\]\>: The credentials of the device's local administrator account backed up to Azure Active Directory.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AccountName <String>]`: The name of the local admin account for which LAPS is enabled.
-  - `[AccountSid <String>]`: The SID of the local admin account for which LAPS is enabled.
-  - `[BackupDateTime <DateTime?>]`: When the local administrator account credential for the device object was backed up to Azure Active Directory.
-  - `[PasswordBase64 <String>]`: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
+  \[AccountName \<String\>\]: The name of the local admin account for which LAPS is enabled.
+  \[AccountSid \<String\>\]: The SID of the local admin account for which LAPS is enabled.
+  \[BackupDateTime \<DateTime?\>\]: When the local administrator account credential for the device object was backed up to Azure Active Directory.
+  \[PasswordBase64 \<String\>\]: The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.
 
 ## RELATED LINKS
-[New-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorydevicelocalcredential)
-
-
-
-
 

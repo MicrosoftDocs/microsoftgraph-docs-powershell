@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview
@@ -11,9 +11,6 @@ schema: 2.0.0
 The calendar view for the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -29,22 +26,15 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-list-calendarview-permissions.md)]
-
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
-```
-This example shows how to use the Get-MgGroupCalendarView Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -273,10 +263,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarView](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarView?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarview)
 
-
-
+[https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-calendarview?view=graph-rest-1.0)
 
