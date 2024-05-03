@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -20,6 +23,9 @@ Get-MgGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 
 ## DESCRIPTION
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-list-acceptedsenders-permissions.md)]
 
 ## EXAMPLES
 

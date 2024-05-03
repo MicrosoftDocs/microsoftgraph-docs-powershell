@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of a windowsSettingInstance object by passing the Windows setting ID and Windows setting instance ID in the URL.
 This method gets a windowsSettingInstance for the signed-in user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingWindowsInstance](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindowsInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

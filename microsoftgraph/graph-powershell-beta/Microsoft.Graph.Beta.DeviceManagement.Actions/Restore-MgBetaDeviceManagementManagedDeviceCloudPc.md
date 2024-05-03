@@ -47,6 +47,9 @@ Restore-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManageme
 ## DESCRIPTION
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-restorecloudpc-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the specified outlookCategory object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

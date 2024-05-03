@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a group object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupByUniqueName](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupByUniqueName?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of an application object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <String[
 
 ## DESCRIPTION
 Get the properties and relationships of an application object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-get-permissions.md)]
 
 ## EXAMPLES
 

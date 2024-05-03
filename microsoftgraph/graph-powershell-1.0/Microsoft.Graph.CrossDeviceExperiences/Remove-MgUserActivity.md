@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an existing user activity for your app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Remove-MgBetaUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

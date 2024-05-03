@@ -11,6 +11,9 @@ schema: 2.0.0
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### InviteExpanded (Default)

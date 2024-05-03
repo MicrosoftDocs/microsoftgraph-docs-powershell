@@ -14,6 +14,9 @@ In delegated scenarios, the owner of the owner app can delete the schema extensi
 Deleting a schema extension definition before deleting the data associated with the extension in the target resources makes the data inaccessible.
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Remove-MgSchemaExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -36,6 +39,9 @@ In app-only scenarios, only the app that created the schema extension (owner app
 In delegated scenarios, the owner of the owner app can delete the schema extension definition, and only when the extension is in the InDevelopment state.
 Deleting a schema extension definition before deleting the data associated with the extension in the target resources makes the data inaccessible.
 To recover the data, you can recreate the schema extension definition with the same configuration, but only if you used the verified domain for the schema extension id.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/schemaextension-delete-permissions.md)]
 
 ## EXAMPLES
 

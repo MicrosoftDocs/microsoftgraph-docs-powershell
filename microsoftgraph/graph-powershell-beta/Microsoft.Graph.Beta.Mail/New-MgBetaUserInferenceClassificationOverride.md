@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a focused Inbox override for a sender identified by an SMTP address.
 Future messages from that SMTP address will be consistently classifiedas specified in the override.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/New-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

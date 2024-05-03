@@ -27,6 +27,9 @@ Confirm-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ResponseHeade
 ## DESCRIPTION
 Confirm a specific timeCard.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/timecard-confirm-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1
