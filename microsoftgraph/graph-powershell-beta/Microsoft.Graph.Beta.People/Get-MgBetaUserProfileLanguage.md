@@ -38,20 +38,18 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileLanguage -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileLanguage Cmdlet.
+
 
 ## PARAMETERS
 

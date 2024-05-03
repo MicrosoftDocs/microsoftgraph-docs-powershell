@@ -39,18 +39,17 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 Retrieve the properties of a connectorGroup.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Applications
+
 Get-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
+
 ```
+This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
+
 
 ## PARAMETERS
 

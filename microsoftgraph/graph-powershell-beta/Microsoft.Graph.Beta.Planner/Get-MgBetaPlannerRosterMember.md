@@ -38,18 +38,17 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 Read the properties and relationships of a plannerRosterMember object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Planner
-Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Planner
+
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId
+
 ```
+This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
+
 
 ## PARAMETERS
 

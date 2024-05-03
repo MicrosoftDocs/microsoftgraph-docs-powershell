@@ -34,13 +34,6 @@ Delete ref of navigation property categories for education
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Education
-```
-
-Remove-MgBetaEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationCategoryId $educationCategoryId
-
 ## PARAMETERS
 
 ### -EducationAssignmentId

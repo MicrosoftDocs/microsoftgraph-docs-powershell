@@ -59,11 +59,11 @@ New-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 Create a new \[contentType\]\[\] for a \[site\]\[\].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	name = "docSet"
@@ -76,6 +76,10 @@ $params = @{
 }
 
 New-MgBetaSiteContentType -SiteId $siteId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

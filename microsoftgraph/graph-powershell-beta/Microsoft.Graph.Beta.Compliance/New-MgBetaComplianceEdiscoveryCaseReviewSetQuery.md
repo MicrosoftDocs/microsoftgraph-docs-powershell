@@ -48,16 +48,22 @@ New-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdenti
 Create a new reviewSetQuery object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	DisplayName = "My Query 1"
-	Query = "(subject:"Quarterly Financials")"
+	displayName = "My Query 1"
+	query = "(subject:"Quarterly Financials")"
 }
+
 New-MgBetaComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

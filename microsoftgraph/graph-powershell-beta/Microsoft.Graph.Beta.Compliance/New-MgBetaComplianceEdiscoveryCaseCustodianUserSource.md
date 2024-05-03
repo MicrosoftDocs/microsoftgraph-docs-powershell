@@ -48,16 +48,22 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 Create a new custodian userSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	Email = "megan@contoso.com"
-	IncludedSources = "mailbox, site"
+	email = "megan@contoso.com"
+	includedSources = "mailbox, site"
 }
+
 New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

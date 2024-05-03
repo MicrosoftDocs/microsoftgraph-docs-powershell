@@ -50,17 +50,23 @@ New-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 Use this API to create a new personAnniversary object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Type = "birthday"
-	Date = "1980-01-08"
+	type = "birthday"
+	date = "1980-01-08"
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAnniversary -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileAnniversary Cmdlet.
+
 
 ## PARAMETERS
 

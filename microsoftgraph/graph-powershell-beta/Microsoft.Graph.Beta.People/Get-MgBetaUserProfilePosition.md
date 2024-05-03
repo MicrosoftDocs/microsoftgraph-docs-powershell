@@ -38,20 +38,18 @@ Get-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> [-ExpandProperty <S
 Retrieve the properties and relationships of a workPosition object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePosition -UserId $userId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId
-```
+This example shows how to use the Get-MgBetaUserProfilePosition Cmdlet.
+
 
 ## PARAMETERS
 

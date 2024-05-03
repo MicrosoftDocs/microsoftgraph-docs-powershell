@@ -54,21 +54,27 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 Create a new webAccount object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Description = "My Github contributions!"
-	UserId = "innocenty.popov"
-	Service = @{
-		Name = "GitHub"
-		WebUrl = "https://github.com"
+	description = "My Github contributions!"
+	userId = "innocenty.popov"
+	service = @{
+		name = "GitHub"
+		webUrl = "https://github.com"
 	}
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebAccount -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 

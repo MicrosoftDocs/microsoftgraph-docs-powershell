@@ -31,12 +31,6 @@ Invoke function getOrder
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -B2cIdentityUserFlowId $b2cIdentityUserFlowId
-```
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

@@ -42,20 +42,18 @@ This allows you to maintain and synchronize a local store of a user's contacts w
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-delta-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Users.Functions
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+# A UPN can also be used as -UserId.
+Get-MgUserContactFolderContactDelta -UserId $userId -ContactFolderId $contactFolderId -Property "displayName" 
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgUserContactFolderContactDelta Cmdlet.
+
 
 ## PARAMETERS
 

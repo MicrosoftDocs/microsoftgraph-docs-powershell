@@ -38,18 +38,17 @@ Get-MgBetaIdentityUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 Retrieve the properties and associations for an userFlow object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaIdentityUserFlow -IdentityUserFlowId $identityUserFlowId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaIdentityUserFlow
+
 ```
+This example shows how to use the Get-MgBetaIdentityUserFlow Cmdlet.
+
 
 ## PARAMETERS
 

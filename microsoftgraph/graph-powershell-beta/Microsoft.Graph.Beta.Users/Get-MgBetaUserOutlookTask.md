@@ -41,27 +41,30 @@ By default, this operation (and the POST, PATCH, and complete task operations) r
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## EXAMPLES
+### Example 1: Get an Outlook task
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
-```
 
-### EXAMPLE 2
 ```
+This example will get an outlook task
+
+### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
+
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
-```
 
-### EXAMPLE 3
 ```
-Import-Module Microsoft.Graph.Beta.Users
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOutlookTask -UserId $userId
-```
+This example will get outlook task with date-time properties in pacific standard time
+
 
 ## PARAMETERS
 

@@ -49,54 +49,36 @@ Update-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
 Update the properties of a an eDiscovery caseSettings object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	RedundancyDetection = @{
-		IsEnabled = $false
-		SimilarityThreshold = 70
-		MinWords = 12
-		MaxWords = 400000
+	redundancyDetection = @{
+		isEnabled = $false
+		similarityThreshold = 70
+		minWords = 12
+		maxWords = 400000
 	}
-	TopicModeling = @{
-		IsEnabled = $false
-		IgnoreNumbers = $false
-		TopicCount = 50
-		DynamicallyAdjustTopicCount = $false
+	topicModeling = @{
+		isEnabled = $false
+		ignoreNumbers = $false
+		topicCount = 50
+		dynamicallyAdjustTopicCount = $false
 	}
-	Ocr = @{
-		IsEnabled = $true
-		MaxImageSize = 12000
+	ocr = @{
+		isEnabled = $true
+		maxImageSize = 12000
 	}
 }
-Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
-```
 
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-$params = @{
-	RedundancyDetection = @{
-		IsEnabled = $false
-		SimilarityThreshold = 70
-		MinWords = 12
-		MaxWords = 400000
-	}
-	TopicModeling = @{
-		IsEnabled = $false
-		IgnoreNumbers = $false
-		TopicCount = 50
-		DynamicallyAdjustTopicCount = $false
-	}
-	Ocr = @{
-		IsEnabled = $true
-		MaxImageSize = 12000
-	}
-}
 Update-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
+
 
 ## PARAMETERS
 

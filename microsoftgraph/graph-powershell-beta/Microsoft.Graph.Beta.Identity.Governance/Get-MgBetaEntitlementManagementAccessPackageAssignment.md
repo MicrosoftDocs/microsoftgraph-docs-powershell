@@ -51,24 +51,17 @@ Get-MgBetaEntitlementManagementAccessPackageAssignment [-ExpandProperty <String[
 The assignment of an access package to a subject for a period of time.
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId $accessPackageAssignmentId -ExpandProperty "target"
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
-```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignment
+
 ```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 

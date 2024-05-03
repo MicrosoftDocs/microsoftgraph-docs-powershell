@@ -52,17 +52,21 @@ Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[l
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	contentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
+
 
 ## PARAMETERS
 

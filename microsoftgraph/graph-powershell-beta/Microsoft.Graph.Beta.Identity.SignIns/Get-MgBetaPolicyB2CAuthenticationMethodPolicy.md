@@ -22,12 +22,17 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyB2CAuthenticationMethodPolicy
+
 ```
+This example shows how to use the Get-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 

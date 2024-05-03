@@ -40,20 +40,17 @@ Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
+```powershell
 
-{{ Add output here }}
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
+Get-MgBetaIdentityCustomAuthenticationExtension
 
-{{ Add output here }}
+```
+This example shows how to use the Get-MgBetaIdentityCustomAuthenticationExtension Cmdlet.
+
 
 ## PARAMETERS
 

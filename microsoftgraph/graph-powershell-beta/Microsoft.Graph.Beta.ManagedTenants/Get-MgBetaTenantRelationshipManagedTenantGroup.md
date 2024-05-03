@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 Read the properties and relationships of a tenantGroup object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantGroup -TenantGroupId $tenantGroupId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantGroup
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantGroup Cmdlet.
+
 
 ## PARAMETERS
 

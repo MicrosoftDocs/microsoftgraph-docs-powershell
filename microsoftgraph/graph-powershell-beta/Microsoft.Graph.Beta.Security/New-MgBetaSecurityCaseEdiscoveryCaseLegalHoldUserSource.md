@@ -49,26 +49,22 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 Create a new userSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-$params = @{
-	Email = "admin@M365x809305.onmicrosoft.com"
-	IncludedSources = "mailbox, site"
-}
-New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	Email = "admin@M365x809305.onmicrosoft.com"
-	IncludedSources = "mailbox, site"
+	email = "admin@contoso.com"
+	includedSources = "mailbox, site"
 }
+
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
+
 
 ## PARAMETERS
 

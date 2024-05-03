@@ -56,16 +56,22 @@ Update-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 Update the properties of a personCertification object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	IssuingAuthority = "International Academy of Marketing Excellence"
-	IssuingCompany = "International Academy of Marketing Excellence"
+	issuingAuthority = "International Academy of Marketing Excellence"
+	issuingCompany = "International Academy of Marketing Excellence"
 }
+
 Update-MgBetaUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileCertification Cmdlet.
+
 
 ## PARAMETERS
 

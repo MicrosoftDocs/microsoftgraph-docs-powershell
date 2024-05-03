@@ -30,13 +30,18 @@ Remove-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-IfMatch <Strin
 Deletes a personInterest object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileInterest -UserId $userId -PersonInterestId $personInterestId
+
 ```
+This example shows how to use the Remove-MgBetaUserProfileInterest Cmdlet.
+
 
 ## PARAMETERS
 

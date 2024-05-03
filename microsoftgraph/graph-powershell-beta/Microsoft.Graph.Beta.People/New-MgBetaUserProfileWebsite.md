@@ -52,20 +52,26 @@ New-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Create a new personWebsite object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Categories = @(
-		"football"
-	)
-	DisplayName = "Lyn Damer"
-	WebUrl = "www.lyndamer.no"
+	categories = @(
+	"football"
+)
+displayName = "Lyn Damer"
+webUrl = "www.lyndamer.no"
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebsite -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileWebsite Cmdlet.
+
 
 ## PARAMETERS
 

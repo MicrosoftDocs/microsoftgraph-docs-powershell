@@ -67,12 +67,17 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIde
 Trigger an indexOperation
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
 ```
+This example shows how to use the Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
+
 
 ## PARAMETERS
 

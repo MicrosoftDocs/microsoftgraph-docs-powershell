@@ -51,11 +51,10 @@ Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 Update the properties of a linkedResource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.linkedResource"
@@ -66,6 +65,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserTodoListTaskLinkedResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

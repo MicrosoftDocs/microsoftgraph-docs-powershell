@@ -38,12 +38,17 @@ Get-MgBetaComplianceEdiscoveryCaseTagChildTag -InputObject <IComplianceIdentity>
 Returns the tags that are a child of a tag.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Get-MgBetaComplianceEdiscoveryCaseTagChildTag -CaseId $caseId -TagId $tagId
+
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseTagChildTag Cmdlet.
+
 
 ## PARAMETERS
 

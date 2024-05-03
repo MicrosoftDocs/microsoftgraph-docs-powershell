@@ -61,18 +61,24 @@ The location provides a URL that will return a Add to review set operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoveryreviewset-addtoreviewset-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	Search = @{
-		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+	search = @{
+		id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
 	}
-	AdditionalDataOptions = "linkedFiles"
+	additionalDataOptions = "linkedFiles"
 }
+
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
 ```
+This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
+
 
 ## PARAMETERS
 

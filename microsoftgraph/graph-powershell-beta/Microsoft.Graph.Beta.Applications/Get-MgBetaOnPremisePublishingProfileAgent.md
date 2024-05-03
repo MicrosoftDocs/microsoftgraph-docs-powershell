@@ -38,18 +38,17 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 Retrieve the properties and relationships of an onPremisesAgent object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentId $onPremisesAgentId -ExpandProperty "agentGroups"
+
+Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups" 
+
 ```
+This example shows how to use the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet.
+
 
 ## PARAMETERS
 

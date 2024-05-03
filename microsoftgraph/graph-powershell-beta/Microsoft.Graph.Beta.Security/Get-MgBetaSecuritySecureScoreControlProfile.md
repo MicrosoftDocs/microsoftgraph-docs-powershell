@@ -41,13 +41,17 @@ Get-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-E
 Get secureScoreControlProfiles from security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
-Get-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId
+Get-MgBetaSecuritySecureScoreControlProfile
+
+```
+This example shows how to use the Get-MgBetaSecuritySecureScoreControlProfile Cmdlet.
+
 
 ## PARAMETERS
 

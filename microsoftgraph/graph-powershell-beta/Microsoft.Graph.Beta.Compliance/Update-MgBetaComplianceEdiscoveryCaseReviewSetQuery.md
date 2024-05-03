@@ -49,15 +49,21 @@ Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIde
 Update the properties of an eDiscovery reviewSetQuery.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	DisplayName = "My Query 1 - Renamed"
+	displayName = "My Query 1 - Renamed"
 }
+
 Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet.
+
 
 ## PARAMETERS
 

@@ -61,44 +61,21 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
-	assignedTo = ""
-	comment = "control is reviewed"
-	state = "Reviewed"
-	vendorInformation = @{
-		provider = "SecureScore"
-		providerVersion = $null
-		subProvider = $null
-		vendor = "Microsoft"
-	}
+	controlStateUpdates = "controlStateUpdates-value"
 }
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Security
-```
+This example shows how to use the Update-MgBetaSecuritySecureScoreControlProfile Cmdlet.
 
-$params = @{
-	assignedTo = ""
-	comment = "control is reviewed"
-	state = "Reviewed"
-	vendorInformation = @{
-		provider = "SecureScore"
-		providerVersion = $null
-		subProvider = $null
-		vendor = "Microsoft"
-	}
-}
-
-Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ## PARAMETERS
 

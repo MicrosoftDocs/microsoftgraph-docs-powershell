@@ -37,13 +37,18 @@ In this API, each meeting room and room list is represented by an emailAddress i
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-findroomlists-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Functions
+
 # A UPN can also be used as -UserId.
 Find-MgBetaUserRoomList -UserId $userId
+
 ```
+This example shows how to use the Find-MgBetaUserRoomList Cmdlet.
+
 
 ## PARAMETERS
 

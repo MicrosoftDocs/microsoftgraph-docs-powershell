@@ -27,12 +27,6 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-Get-MgBetaOauth2PermissionGrantDelta
-```
-
 ## PARAMETERS
 
 ### -All

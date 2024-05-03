@@ -41,13 +41,18 @@ You can use the Prefer: outlook.timezone header to have all the date-related pro
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-complete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 # A UPN can also be used as -UserId.
 Complete-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
+
 ```
+This example shows how to use the Complete-MgBetaUserOutlookTask Cmdlet.
+
 
 ## PARAMETERS
 

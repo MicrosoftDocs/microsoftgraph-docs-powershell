@@ -55,15 +55,6 @@ Update the navigation property emailThreatSubmissionPolicies in security
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-$params = @{
-	IsReportToMicrosoftEnabled = $false
-}
-Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId -BodyParameter $params
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

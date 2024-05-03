@@ -50,17 +50,6 @@ Invoke action getMemberObjects
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
 ## PARAMETERS
 
 ### -AdditionalProperties

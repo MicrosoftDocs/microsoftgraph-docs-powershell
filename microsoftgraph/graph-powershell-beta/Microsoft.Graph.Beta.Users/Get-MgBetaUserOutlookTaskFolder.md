@@ -37,20 +37,18 @@ Get-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-Property <String
 Get the properties and relationships of the specified Outlook task folder.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users
-# A UPN can also be used as -UserId.
-Get-MgBetaUserOutlookTaskFolder -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Users
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskFolder -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserOutlookTaskFolder Cmdlet.
+
 
 ## PARAMETERS
 

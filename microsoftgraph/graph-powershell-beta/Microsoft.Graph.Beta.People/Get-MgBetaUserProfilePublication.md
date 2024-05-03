@@ -38,20 +38,18 @@ Get-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-ExpandProperty
 Read the properties and relationships of an itemPublication object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePublication -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfilePublication Cmdlet.
+
 
 ## PARAMETERS
 

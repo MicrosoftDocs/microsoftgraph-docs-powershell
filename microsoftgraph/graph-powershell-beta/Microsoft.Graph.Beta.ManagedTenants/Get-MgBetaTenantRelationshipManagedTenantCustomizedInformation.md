@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <IMa
 Read the properties and relationships of a tenantCustomizedInformation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet.
+
 
 ## PARAMETERS
 

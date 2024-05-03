@@ -33,12 +33,17 @@ Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdenti
 Reset a caseSettings object to the default values.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
+
 Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
+
 ```
+This example shows how to use the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
+
 
 ## PARAMETERS
 

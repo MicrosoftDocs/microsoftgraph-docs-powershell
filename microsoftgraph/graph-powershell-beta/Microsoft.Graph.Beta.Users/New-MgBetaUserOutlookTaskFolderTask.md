@@ -64,9 +64,8 @@ Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaUserOutlookTaskFolderTask Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	Subject = "Shop for dinner"
@@ -82,6 +81,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskFolderTask -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOutlookTaskFolderTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

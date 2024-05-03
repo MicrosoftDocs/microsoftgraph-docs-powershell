@@ -50,34 +50,6 @@ Create new navigation property to additionalSources for compliance
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-$params = @{
-	"@odata.type" = "microsoft.graph.ediscovery.siteSource"
-}
-New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
-```
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-$params = @{
-	"@odata.type" = "microsoft.graph.ediscovery.userSource"
-	Email = "badguy@contoso.com"
-}
-New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
-```
-
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-$params = @{
-	"@odata.type" = "microsoft.graph.ediscovery.siteSource"
-}
-New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
