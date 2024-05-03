@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathpage
@@ -12,9 +12,6 @@ Get the collection of \[baseSitePage\]\[\] objects from the site pages \[list\]\
 All pages in the site are returned (with pagination).
 Sort alphabetically by name in ascending order.
 The following table lists the available subtypes.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -39,6 +36,18 @@ Get the collection of \[baseSitePage\]\[\] objects from the site pages \[list\]\
 All pages in the site are returned (with pagination).
 Sort alphabetically by name in ascending order.
 The following table lists the available subtypes.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -295,11 +304,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteGetByPathPage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitegetbypathpage)
 
-
-
-
+[https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/basesitepage-list?view=graph-rest-1.0)
 

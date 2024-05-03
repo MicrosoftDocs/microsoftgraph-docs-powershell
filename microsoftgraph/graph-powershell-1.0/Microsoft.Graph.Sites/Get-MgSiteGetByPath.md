@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypath
@@ -9,14 +9,10 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPath?view=graph-powershell-beta)
+Lists with the \[system\]\[\] facet are hidden by default.\nTo list them, include system in your $select statement.
 
 ## SYNTAX
 
-### List (Default)
 ```
 Get-MgSiteGetByPath -Path <String> -SiteId <String> [-ExpandProperty <String[]>] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -24,17 +20,21 @@ Get-MgSiteGetByPath -Path <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
-### List1
-```
-Get-MgSiteGetByPath -Path <String> -SiteId <String> -Path1 <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ResponseHeadersVariable <String>] [-Headers <IDictionary>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-ProgressAction <ActionPreference>] [<CommonParameters>]
-```
-
 ## DESCRIPTION
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
+Lists with the \[system\]\[\] facet are hidden by default.\nTo list them, include system in your $select statement.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -135,21 +135,6 @@ Usage: path='{path}'
 ```yaml
 Type: String
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Path1
-Usage: path='{path1}'
-
-```yaml
-Type: String
-Parameter Sets: List1
 Aliases:
 
 Required: True
@@ -291,11 +276,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPath?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypath)
 
-
-
-
+[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 

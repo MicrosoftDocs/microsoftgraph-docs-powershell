@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 Module Guid: e28788e6-ed86-49a3-9355-6f0045bd3647
 Download Help Link: {{ Update Download Link }}
@@ -384,6 +384,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgBetaDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementDeviceConfigurationProfile](Get-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceManagementDeviceConfigurationProfileCount](Get-MgBetaDeviceManagementDeviceConfigurationProfileCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Get-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
@@ -1349,6 +1355,9 @@ Locale: en-US
 ### [New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](New-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 {{ Fill in the Description }}
 
+### [New-MgBetaDeviceManagementDeviceConfigurationProfile](New-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+{{ Fill in the Description }}
+
 ### [New-MgBetaDeviceManagementDeviceConfigurationUserStatus](New-MgBetaDeviceManagementDeviceConfigurationUserStatus.md)
 {{ Fill in the Description }}
 
@@ -1896,6 +1905,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
+{{ Fill in the Description }}
+
+### [Remove-MgBetaDeviceManagementDeviceConfigurationProfile](Remove-MgBetaDeviceManagementDeviceConfigurationProfile.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
@@ -2492,6 +2504,9 @@ Locale: en-US
 ### [Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment](Update-MgBetaDeviceManagementDeviceConfigurationGroupAssignment.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaDeviceManagementDeviceConfigurationProfile](Update-MgBetaDeviceManagementDeviceConfigurationProfile.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary](Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary.md)
 {{ Fill in the Description }}
 
@@ -2896,5 +2911,4 @@ Locale: en-US
 
 ### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
 {{ Fill in the Description }}
-
 
