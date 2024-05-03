@@ -33,13 +33,17 @@ Remove-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 Uninstalls an app from the specified team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
+
+```
+This example shows how to use the Remove-MgTeamInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

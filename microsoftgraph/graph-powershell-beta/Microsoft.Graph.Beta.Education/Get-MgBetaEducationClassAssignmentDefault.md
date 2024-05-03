@@ -42,13 +42,17 @@ Only teachers can perform this operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentdefaults-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentDefault Cmdlet.
+
 
 ## PARAMETERS
 

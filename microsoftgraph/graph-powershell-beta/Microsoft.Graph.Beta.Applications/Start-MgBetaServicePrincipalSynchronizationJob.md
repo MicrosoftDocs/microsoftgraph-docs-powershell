@@ -41,12 +41,13 @@ Don't create scripts to call the start job continuously while it's running becau
 Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Start-MgBetaServicePrincipalSynchronizationJob Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
+This example shows how to use the Start-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

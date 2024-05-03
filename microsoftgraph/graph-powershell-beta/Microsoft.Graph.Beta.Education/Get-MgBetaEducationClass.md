@@ -50,13 +50,17 @@ If you're using the delegated token, the user will only see classes in which the
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationclass-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClass -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgBetaEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

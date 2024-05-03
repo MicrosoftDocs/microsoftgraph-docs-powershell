@@ -48,9 +48,8 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 Update the properties of a tenantCustomizedInformation object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.ManagedTenants
 $params = @{
 	"@odata.type" = "#microsoft.graph.managedTenants.tenantCustomizedInformation"
@@ -69,6 +68,8 @@ $params = @{
 }
 Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -TenantCustomizedInformationId $tenantCustomizedInformationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

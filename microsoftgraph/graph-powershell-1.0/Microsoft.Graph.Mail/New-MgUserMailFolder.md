@@ -59,11 +59,10 @@ Use this API to create a new mail folder in the root folder of the user's mailbo
 If you intend a new folder to be hidden, you must set the isHidden property to true on creation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Mail
-```
 
 $params = @{
 	displayName = "Clutter"
@@ -72,6 +71,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgUserMailFolder -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserMailFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

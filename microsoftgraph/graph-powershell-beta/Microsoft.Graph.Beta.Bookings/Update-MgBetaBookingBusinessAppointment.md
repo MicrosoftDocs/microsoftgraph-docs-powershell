@@ -123,9 +123,8 @@ Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Update-MgBetaBookingBusinessAppointment Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
@@ -147,6 +146,8 @@ $params = @{
 }
 Update-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

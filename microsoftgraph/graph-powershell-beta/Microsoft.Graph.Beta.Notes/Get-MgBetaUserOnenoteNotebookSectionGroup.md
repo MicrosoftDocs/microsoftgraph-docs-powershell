@@ -26,14 +26,18 @@ Get-MgBetaUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String> 
 Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
+
+```
+This example shows how to use the Get-MgBetaUserOnenoteNotebookSectionGroup Cmdlet.
+
 
 ## PARAMETERS
 

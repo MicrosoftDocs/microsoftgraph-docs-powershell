@@ -41,14 +41,18 @@ If the status is completed, the resourceLocation property contains the resource 
 If the status is failed, the error and @api.diagnostics properties provide error information.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Notes
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
+
+```
+This example shows how to use the Get-MgBetaUserOnenoteOperation Cmdlet.
+
 
 ## PARAMETERS
 
