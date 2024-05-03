@@ -56,18 +56,6 @@ Update-MgTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> -BodyParameter
 ## DESCRIPTION
 Update the navigation property channels in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14793,6 +14781,7 @@ Read only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannel)
+
 
 
 

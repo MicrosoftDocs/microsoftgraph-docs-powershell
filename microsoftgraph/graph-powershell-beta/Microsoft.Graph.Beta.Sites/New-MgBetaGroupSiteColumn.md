@@ -68,22 +68,6 @@ New-MgBetaGroupSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create columnDefinition for a site
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1299,6 +1283,7 @@ For examples, see Examples of common formulas in lists
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitecolumn)
 
 [https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
+
 
 
 

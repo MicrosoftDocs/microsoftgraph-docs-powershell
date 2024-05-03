@@ -29,22 +29,6 @@ Send-MgBetaIdentityGovernanceAccessReviewDecisionInstanceReminder -InputObject <
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -291,6 +275,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0)
+
 
 
 

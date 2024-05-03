@@ -32,22 +32,6 @@ Get-MgBetaUserDriveItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemanalytic)
 
 [https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
+
 
 
 

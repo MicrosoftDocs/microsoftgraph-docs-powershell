@@ -32,18 +32,6 @@ Get-MgDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [-Exp
 ## DESCRIPTION
 Get the properties and relationships of a device object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -199,6 +187,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebydeviceid)
 
 [https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+
 
 
 

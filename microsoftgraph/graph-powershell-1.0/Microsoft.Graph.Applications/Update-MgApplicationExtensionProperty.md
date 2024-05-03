@@ -50,22 +50,6 @@ Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property extensionProperties in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -427,6 +411,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationextensionproperty)
+
 
 
 

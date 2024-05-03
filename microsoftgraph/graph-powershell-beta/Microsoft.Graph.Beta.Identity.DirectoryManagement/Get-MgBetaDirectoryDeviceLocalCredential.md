@@ -39,18 +39,6 @@ Get-MgBetaDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,6 +310,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0)
+
 
 
 

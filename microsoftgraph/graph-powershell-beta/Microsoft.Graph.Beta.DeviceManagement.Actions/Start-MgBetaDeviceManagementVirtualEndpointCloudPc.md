@@ -52,18 +52,6 @@ Only IT admin users can perform this action.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-poweron-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -266,6 +254,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-poweron?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-start?view=graph-rest-1.0)
+
 
 
 

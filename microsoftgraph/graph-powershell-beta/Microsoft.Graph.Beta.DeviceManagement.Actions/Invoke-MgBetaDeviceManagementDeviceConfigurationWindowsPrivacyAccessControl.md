@@ -51,22 +51,6 @@ Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
 ## DESCRIPTION
 Invoke action windowsPrivacyAccessControls
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,6 +319,7 @@ When set, the access level applies to the specified application.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol)
+
 
 
 

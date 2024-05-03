@@ -29,18 +29,6 @@ Get-MgBetaUserInvitedBy -InputObject <IUsersIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get invitedBy from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -196,6 +184,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinvitedby)
+
 
 
 

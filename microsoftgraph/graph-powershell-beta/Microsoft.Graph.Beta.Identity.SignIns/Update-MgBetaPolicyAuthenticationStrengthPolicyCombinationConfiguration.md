@@ -52,22 +52,6 @@ Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 Update the properties of an authenticationCombinationConfiguration object.
 The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
 
 [https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0)
+
 
 
 

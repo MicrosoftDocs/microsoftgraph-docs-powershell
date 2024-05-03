@@ -40,18 +40,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 Retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +376,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0)
+
 
 
 

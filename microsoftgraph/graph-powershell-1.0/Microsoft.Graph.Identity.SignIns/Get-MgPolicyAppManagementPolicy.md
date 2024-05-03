@@ -40,18 +40,6 @@ Get-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties of an appManagementPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0)
+
 
 
 

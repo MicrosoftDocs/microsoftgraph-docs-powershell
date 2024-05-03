@@ -54,18 +54,6 @@ Create a new module in a class.
 Only teachers in a class can create a module.
 Modules start in the draft state, which means that students won't see the modules until publication.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -446,6 +434,7 @@ This property is read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
+
 
 
 

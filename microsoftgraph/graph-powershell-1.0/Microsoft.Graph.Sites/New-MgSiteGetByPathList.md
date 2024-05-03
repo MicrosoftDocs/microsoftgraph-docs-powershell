@@ -106,18 +106,6 @@ New-MgSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new \[list\]\[\] in a \[site\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24720,6 +24708,7 @@ See the possible resource path values for each supported resource.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitegetbypathlist)
 
 [https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0)
+
 
 
 

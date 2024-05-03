@@ -32,22 +32,6 @@ Get-MgGroupDriveItemListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -231,6 +215,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemlistitemdriveitem)
+
 
 
 

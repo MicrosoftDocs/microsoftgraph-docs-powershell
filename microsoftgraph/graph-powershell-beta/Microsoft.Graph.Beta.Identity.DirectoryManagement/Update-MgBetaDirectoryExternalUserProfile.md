@@ -50,18 +50,6 @@ Update-MgBetaDirectoryExternalUserProfile -InputObject <IIdentityDirectoryManage
 ## DESCRIPTION
 Update the properties of a externalUserProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -489,6 +477,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryexternaluserprofile)
 
 [https://learn.microsoft.com/graph/api/externaluserprofile-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externaluserprofile-update?view=graph-rest-1.0)
+
 
 
 

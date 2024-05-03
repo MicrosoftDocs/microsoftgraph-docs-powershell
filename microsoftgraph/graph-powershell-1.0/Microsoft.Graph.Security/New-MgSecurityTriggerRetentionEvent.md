@@ -37,18 +37,6 @@ New-MgSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityReten
 ## DESCRIPTION
 Create a new retentionEvent object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -512,6 +500,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggerretentionevent)
 
 [https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
+
 
 
 

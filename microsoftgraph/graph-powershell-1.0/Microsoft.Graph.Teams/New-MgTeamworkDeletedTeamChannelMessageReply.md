@@ -63,18 +63,6 @@ New-MgTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create a new reply to a chatMessage in a specified channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1054,6 +1042,7 @@ Link to the message in Microsoft Teams.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagereply)
 
 [https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
+
 
 
 

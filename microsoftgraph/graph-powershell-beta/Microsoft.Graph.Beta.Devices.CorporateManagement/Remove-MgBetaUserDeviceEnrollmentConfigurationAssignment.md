@@ -30,22 +30,6 @@ Remove-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesC
 ## DESCRIPTION
 Delete navigation property assignments for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceEnrollmentConfigurationId
@@ -305,6 +289,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/remove-mgbetauserdeviceenrollmentconfigurationassignment)
+
 
 
 

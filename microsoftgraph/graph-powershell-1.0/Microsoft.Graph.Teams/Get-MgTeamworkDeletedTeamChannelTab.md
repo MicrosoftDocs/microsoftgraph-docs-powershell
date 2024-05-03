@@ -40,18 +40,6 @@ Get-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -369,6 +357,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0)
+
 
 
 

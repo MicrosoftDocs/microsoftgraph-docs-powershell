@@ -24,18 +24,6 @@ Get-MgReportPartnerBillingUsage [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Represents details for billed and unbilled Azure usage data.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingusage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingusage)
+
 
 
 

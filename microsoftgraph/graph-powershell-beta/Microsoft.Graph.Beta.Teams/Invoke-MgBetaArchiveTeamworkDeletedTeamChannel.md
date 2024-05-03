@@ -61,18 +61,6 @@ A channel without an owner, or that belongs to a group that has no owner, can't 
 To restore a channel from its archived state, use the unarchive method.
 A channel can't be archived or unarchived if its team is archived.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,6 +315,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamworkdeletedteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaarchiveteamworkdeletedteamchannel)
 
 [https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-archive?view=graph-rest-1.0)
+
 
 
 

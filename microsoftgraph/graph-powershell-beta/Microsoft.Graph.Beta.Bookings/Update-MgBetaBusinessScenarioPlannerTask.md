@@ -73,18 +73,6 @@ Update-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a businessScenarioTask object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -1231,6 +1219,7 @@ TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTa
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertask)
 
 [https://learn.microsoft.com/graph/api/businessscenariotask-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/businessscenariotask-update?view=graph-rest-1.0)
+
 
 
 

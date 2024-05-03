@@ -39,18 +39,6 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Read the properties and relationships of an acronym object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -314,6 +302,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
+
 
 
 

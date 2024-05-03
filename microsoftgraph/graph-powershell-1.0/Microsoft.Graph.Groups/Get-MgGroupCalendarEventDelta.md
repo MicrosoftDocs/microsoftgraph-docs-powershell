@@ -43,22 +43,6 @@ This allows you to maintain and synchronize a local store of events in the speci
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -399,6 +383,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcalendareventdelta)
 
 [https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-delta?view=graph-rest-1.0)
+
 
 
 

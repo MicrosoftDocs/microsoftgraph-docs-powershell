@@ -118,18 +118,6 @@ New-MgGroupSiteGetByPathColumn -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1366,6 +1354,7 @@ For examples, see Examples of common formulas in lists.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcolumn)
 
 [https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
+
 
 
 

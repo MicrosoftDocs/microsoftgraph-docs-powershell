@@ -43,18 +43,6 @@ Get the properties and relationships of an alert object.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-alert-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -391,6 +379,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0)
+
 
 
 

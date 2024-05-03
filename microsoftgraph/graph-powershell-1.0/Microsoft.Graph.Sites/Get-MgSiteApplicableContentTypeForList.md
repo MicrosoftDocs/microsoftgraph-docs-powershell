@@ -34,22 +34,6 @@ Get-MgSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Count] [-
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -327,6 +311,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteapplicablecontenttypeforlist)
+
 
 
 

@@ -41,18 +41,6 @@ New-MgBetaSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurity
 ## DESCRIPTION
 Create new navigation property to hosts for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -4066,6 +4054,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehost)
+
 
 
 

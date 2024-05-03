@@ -46,22 +46,6 @@ Update-MgDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -280,6 +264,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdrivelistitemfield)
 
 [https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0)
+
 
 
 

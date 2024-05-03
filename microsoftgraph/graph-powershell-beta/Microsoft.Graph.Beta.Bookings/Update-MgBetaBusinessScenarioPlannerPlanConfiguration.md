@@ -51,18 +51,6 @@ Update-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIde
 ## DESCRIPTION
 Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -449,6 +437,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfiguration)
 
 [https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-update?view=graph-rest-1.0)
+
 
 
 

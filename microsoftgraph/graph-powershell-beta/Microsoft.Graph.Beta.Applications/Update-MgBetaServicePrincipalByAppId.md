@@ -107,18 +107,6 @@ Update-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -2765,6 +2753,7 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalbyappid)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
+
 
 
 

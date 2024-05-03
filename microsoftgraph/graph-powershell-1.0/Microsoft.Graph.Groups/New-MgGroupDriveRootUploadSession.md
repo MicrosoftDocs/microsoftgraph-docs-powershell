@@ -48,22 +48,6 @@ New-MgGroupDriveRootUploadSession -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action createUploadSession
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -346,6 +330,7 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupdriverootuploadsession)
+
 
 
 

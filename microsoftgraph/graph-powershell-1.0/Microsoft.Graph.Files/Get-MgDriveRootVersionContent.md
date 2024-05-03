@@ -32,22 +32,6 @@ Get-MgDriveRootVersionContent -InputObject <IFilesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream for this version of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootversioncontent)
 
 [https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0)
+
 
 
 

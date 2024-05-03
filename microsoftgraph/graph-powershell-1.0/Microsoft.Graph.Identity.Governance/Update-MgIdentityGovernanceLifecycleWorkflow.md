@@ -68,18 +68,6 @@ Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43286,6 +43274,7 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
 
 [https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-update?view=graph-rest-1.0)
+
 
 
 
