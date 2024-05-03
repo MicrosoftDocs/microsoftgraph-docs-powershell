@@ -34,22 +34,6 @@ Get-MgUserDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
 It may also be the unique ID of a SharePoint list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -220,6 +204,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveroot)
 
 [https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
+
 
 
 

@@ -32,22 +32,6 @@ Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filt
 ## DESCRIPTION
 Invoke function reminderView
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -278,6 +262,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
+
 
 
 

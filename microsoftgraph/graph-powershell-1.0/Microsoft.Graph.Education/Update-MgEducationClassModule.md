@@ -57,18 +57,6 @@ Only teachers in the class can perform this operation.
 You can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -459,6 +447,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule)
 
 [https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0)
+
 
 
 

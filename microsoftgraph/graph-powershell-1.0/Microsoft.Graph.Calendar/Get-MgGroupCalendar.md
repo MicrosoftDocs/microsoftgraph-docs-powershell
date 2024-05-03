@@ -32,22 +32,6 @@ Get-MgGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [-Re
 The group's calendar.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -173,6 +157,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendar)
+
 
 
 

@@ -38,18 +38,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule -InputObject <IIdent
 ## DESCRIPTION
 Retrieve the schedule for an active role assignment operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -418,6 +406,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-1.0)
+
 
 
 

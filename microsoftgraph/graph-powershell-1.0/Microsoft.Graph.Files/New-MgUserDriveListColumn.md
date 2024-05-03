@@ -68,22 +68,6 @@ New-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1271,6 +1255,7 @@ For examples, see Examples of common formulas in lists.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdrivelistcolumn)
 
 [https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0)
+
 
 
 

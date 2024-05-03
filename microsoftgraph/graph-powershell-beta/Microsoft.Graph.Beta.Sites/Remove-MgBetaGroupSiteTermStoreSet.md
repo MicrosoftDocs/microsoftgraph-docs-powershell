@@ -32,22 +32,6 @@ Remove-MgBetaGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a set object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -292,6 +276,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoreset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoreset)
 
 [https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-set-delete?view=graph-rest-1.0)
+
 
 
 

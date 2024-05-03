@@ -50,22 +50,6 @@ Join-MgBetaGroupDriveListContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action associateWithHubSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,6 +340,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/join-mgbetagroupdrivelistcontenttypewithhubsite)
 
 [https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+
 
 
 

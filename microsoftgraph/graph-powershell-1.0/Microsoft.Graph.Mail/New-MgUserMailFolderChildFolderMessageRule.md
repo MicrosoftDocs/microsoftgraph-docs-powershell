@@ -54,22 +54,6 @@ New-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Actions
@@ -574,6 +558,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessagerule)
 
 [https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a conditionalAccessTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -361,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0)
+
 
 
 

@@ -64,18 +64,6 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of an alert object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -890,6 +878,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
 
 [https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0)
+
 
 
 

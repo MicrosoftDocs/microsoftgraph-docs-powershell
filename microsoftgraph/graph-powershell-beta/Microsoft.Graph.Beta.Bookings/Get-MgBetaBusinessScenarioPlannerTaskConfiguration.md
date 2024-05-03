@@ -29,18 +29,6 @@ Get-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdenti
 ## DESCRIPTION
 Read the properties and relationships of a plannerTaskConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -195,6 +183,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskconfiguration)
 
 [https://learn.microsoft.com/graph/api/plannertaskconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskconfiguration-get?view=graph-rest-1.0)
+
 
 
 

@@ -32,22 +32,6 @@ Remove-MgBetaGroupRejectedSenderByRef -InputObject <IGroupsIdentity> -Id <String
 ## DESCRIPTION
 Remove a user or group from the rejected-senders list of the specified group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -271,6 +255,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagrouprejectedsenderbyref)
 
 [https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-rejectedsenders?view=graph-rest-1.0)
+
 
 
 

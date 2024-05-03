@@ -32,18 +32,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowLastModifiedBy -InputObject <IIdentityG
 ## DESCRIPTION
 The unique identifier of the Microsoft Entra identity that last modified the workflow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -240,6 +228,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowlastmodifiedby](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowlastmodifiedby)
+
 
 
 

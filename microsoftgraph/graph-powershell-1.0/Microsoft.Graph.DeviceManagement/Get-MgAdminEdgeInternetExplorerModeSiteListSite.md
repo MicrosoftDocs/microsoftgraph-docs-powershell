@@ -43,18 +43,6 @@ Get a browserSite that resides on a browserSiteList.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/browsersite-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -378,6 +366,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/browsersite-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersite-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-list-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-list-sites?view=graph-rest-1.0)
+
 
 
 

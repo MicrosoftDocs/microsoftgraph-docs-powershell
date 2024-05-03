@@ -38,18 +38,6 @@ The administrator of an owner tenant has the permissions to add tenants to the m
 The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
 A tenant can be part of only one multitenant organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AddedByTenantId
@@ -372,6 +360,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
 
 [https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0)
+
 
 
 

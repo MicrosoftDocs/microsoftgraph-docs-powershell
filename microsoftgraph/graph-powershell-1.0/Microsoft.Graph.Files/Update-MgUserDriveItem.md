@@ -82,22 +82,6 @@ Update-MgUserDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the metadata for a \[bundle\]\[\] of \[driveItems\]\[driveItem\] by ID.You can only update the following metadata: Any other change requests will be ignored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30116,6 +30100,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriveitem)
 
 [https://learn.microsoft.com/graph/api/bundle-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-update?view=graph-rest-1.0)
+
 
 
 

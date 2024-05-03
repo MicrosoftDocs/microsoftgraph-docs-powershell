@@ -40,18 +40,6 @@ Get-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -386,6 +374,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationoperation)
 
 [https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0)
+
 
 
 

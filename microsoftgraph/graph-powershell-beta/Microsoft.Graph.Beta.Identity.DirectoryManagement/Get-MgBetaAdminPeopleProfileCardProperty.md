@@ -42,18 +42,6 @@ Get-MgBetaAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagem
 Retrieve the properties of a profileCardProperty entity.
 The profileCardProperty is identified by its directoryPropertyName property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -355,6 +343,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0)
+
 
 
 

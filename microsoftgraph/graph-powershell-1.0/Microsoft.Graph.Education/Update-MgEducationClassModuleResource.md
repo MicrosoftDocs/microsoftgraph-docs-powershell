@@ -52,18 +52,6 @@ Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,6 +325,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmoduleresource)
 
 [https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0)
+
 
 
 

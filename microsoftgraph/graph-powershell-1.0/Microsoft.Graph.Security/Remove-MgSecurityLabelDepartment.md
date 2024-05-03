@@ -32,18 +32,6 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a departmentTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepartmentTemplateId
@@ -266,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0)
+
 
 
 

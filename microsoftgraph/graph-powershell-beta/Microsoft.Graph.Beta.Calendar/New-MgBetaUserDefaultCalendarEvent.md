@@ -80,18 +80,6 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParamet
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2347,6 +2335,7 @@ See below for possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent)
 
 [https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0)
+
 
 
 

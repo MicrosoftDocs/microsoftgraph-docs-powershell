@@ -52,18 +52,6 @@ Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they're the only type of authenticationCombinationConfiguration that may be created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -339,6 +327,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicycombinationconfiguration)
 
 [https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0)
+
 
 
 

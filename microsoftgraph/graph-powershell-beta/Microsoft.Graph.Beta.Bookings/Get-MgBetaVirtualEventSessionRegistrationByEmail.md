@@ -30,18 +30,6 @@ Get-MgBetaVirtualEventSessionRegistrationByEmail -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Get registrations from solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Email
@@ -224,6 +212,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionregistrationbyemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventsessionregistrationbyemail)
+
 
 
 

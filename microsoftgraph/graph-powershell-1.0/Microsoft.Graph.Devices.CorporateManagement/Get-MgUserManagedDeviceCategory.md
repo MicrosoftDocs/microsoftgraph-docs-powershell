@@ -32,22 +32,6 @@ Get-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIdentit
 ## DESCRIPTION
 Read properties and relationships of the deviceCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -229,6 +213,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-devices-devicecategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-devicecategory-get?view=graph-rest-1.0)
+
 
 
 

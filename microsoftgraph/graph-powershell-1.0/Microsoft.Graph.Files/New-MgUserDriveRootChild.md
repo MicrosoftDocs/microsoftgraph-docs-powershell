@@ -82,18 +82,6 @@ New-MgUserDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30097,6 +30085,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriverootchild)
 
 [https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0)
+
 
 
 

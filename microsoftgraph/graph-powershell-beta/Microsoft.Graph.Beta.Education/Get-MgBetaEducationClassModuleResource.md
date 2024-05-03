@@ -43,18 +43,6 @@ Get-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity> [-Expan
 Get the properties of a resource associated with a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -357,6 +345,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-list-resources?view=graph-rest-1.0)
+
 
 
 

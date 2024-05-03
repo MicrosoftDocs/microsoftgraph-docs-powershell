@@ -92,22 +92,6 @@ New-MgBetaGroupSiteTermStoreSetChild -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new term object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -732,6 +716,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoresetchild)
 
 [https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
+
 
 
 

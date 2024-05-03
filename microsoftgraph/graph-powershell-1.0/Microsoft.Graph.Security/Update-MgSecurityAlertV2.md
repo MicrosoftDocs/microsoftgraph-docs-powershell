@@ -64,18 +64,6 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert id property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -868,6 +856,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
 
 [https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0)
+
 
 
 

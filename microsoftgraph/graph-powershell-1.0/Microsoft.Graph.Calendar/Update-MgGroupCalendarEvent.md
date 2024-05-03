@@ -78,18 +78,6 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update an event object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1984,6 +1972,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
 
 [https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
+
 
 
 

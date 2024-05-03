@@ -79,18 +79,6 @@ Update-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the properties of a store object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -564,6 +552,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathtermstore)
 
 [https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0)
+
 
 
 

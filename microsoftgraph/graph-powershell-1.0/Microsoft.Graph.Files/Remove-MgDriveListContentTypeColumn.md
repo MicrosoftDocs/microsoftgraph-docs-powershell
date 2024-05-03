@@ -32,22 +32,6 @@ Remove-MgDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -264,6 +248,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistcontenttypecolumn)
 
 [https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
+
 
 
 

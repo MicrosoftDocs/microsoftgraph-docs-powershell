@@ -33,18 +33,6 @@ Delete a pendingExternalUserProfile object.
 Note: To permanently delete the pendingExternalUserProfile, follow permanently delete an item.
 To restore a pendingExternalUserProfile, follow restore a deleted item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -254,6 +242,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorypendingexternaluserprofile)
 
 [https://learn.microsoft.com/graph/api/directory-delete-pendingexternaluserprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-delete-pendingexternaluserprofiles?view=graph-rest-1.0)
+
 
 
 

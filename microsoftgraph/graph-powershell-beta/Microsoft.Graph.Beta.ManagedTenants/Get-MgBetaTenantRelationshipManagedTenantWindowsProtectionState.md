@@ -37,18 +37,6 @@ Get-MgBetaTenantRelationshipManagedTenantWindowsProtectionState -InputObject <IM
 ## DESCRIPTION
 Read the properties and relationships of a windowsProtectionState object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -341,6 +329,7 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/managedtenants-windowsprotectionstate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-windowsprotectionstate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-windowsprotectionstates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-windowsprotectionstates?view=graph-rest-1.0)
+
 
 
 

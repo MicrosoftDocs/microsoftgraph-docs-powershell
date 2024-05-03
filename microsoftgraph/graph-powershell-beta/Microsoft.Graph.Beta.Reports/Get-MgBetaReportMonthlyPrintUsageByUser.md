@@ -40,22 +40,6 @@ Get-MgBetaReportMonthlyPrintUsageByUser -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Retrieve a list of monthly print usage summaries, grouped by user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -352,6 +336,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagebyuser)
 
 [https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0)
+
 
 
 

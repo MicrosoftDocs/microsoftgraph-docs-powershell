@@ -56,18 +56,6 @@ New-MgGroupSiteOnenoteNotebookSectionGroup -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new section group in the specified notebook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1213,6 +1201,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroup)
 
 [https://learn.microsoft.com/graph/api/notebook-post-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-post-sectiongroups?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-ExpandP
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -207,6 +195,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalbyappid)
 
 [https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0)
+
 
 
 

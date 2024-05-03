@@ -40,22 +40,6 @@ Get-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> [-E
 ## DESCRIPTION
 Read properties and relationships of the managedDevice object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -364,6 +348,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-list?view=graph-rest-1.0)
+
 
 
 

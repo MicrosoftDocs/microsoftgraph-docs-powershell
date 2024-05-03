@@ -55,22 +55,6 @@ Update-MgBetaSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the properties of a term object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -695,6 +679,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitetermstoregroupsetterm)
 
 [https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
+
 
 
 

@@ -48,18 +48,6 @@ New-MgDeviceAppManagementMobileAppAsWin32LobAppAssignment -InputObject <IDevices
 ## DESCRIPTION
 Create a new mobileAppAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -330,6 +318,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswin32lobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswin32lobappassignment)
 
 [https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0)
+
 
 
 

@@ -34,18 +34,6 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecordParentHost -InputObject <ISecuri
 The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -235,6 +223,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordparenthost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencepassivednsrecordparenthost)
+
 
 
 

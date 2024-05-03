@@ -32,22 +32,6 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a bookingStaffMember in the specified bookingBusiness.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -240,6 +224,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember)
 
 [https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0)
+
 
 
 

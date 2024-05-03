@@ -34,22 +34,6 @@ Get-MgUserDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[
 Allows access to the list as a drive resource with driveItems.
 Only present on document libraries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -218,6 +202,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivelistdrive)
+
 
 
 

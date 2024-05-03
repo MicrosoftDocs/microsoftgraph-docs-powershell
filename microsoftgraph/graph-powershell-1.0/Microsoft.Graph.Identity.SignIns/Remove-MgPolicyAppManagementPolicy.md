@@ -32,18 +32,6 @@ Remove-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 ## DESCRIPTION
 Delete an appManagementPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -261,6 +249,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyappmanagementpolicy)
 
 [https://learn.microsoft.com/graph/api/appmanagementpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete?view=graph-rest-1.0)
+
 
 
 

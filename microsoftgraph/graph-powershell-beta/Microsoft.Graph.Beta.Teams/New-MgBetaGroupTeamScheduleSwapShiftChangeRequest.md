@@ -52,22 +52,6 @@ New-MgBetaGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create an instance of a swapShiftsChangeRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +474,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleswapshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleswapshiftchangerequest)
 
 [https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/swapshiftschangerequest-post?view=graph-rest-1.0)
+
 
 
 

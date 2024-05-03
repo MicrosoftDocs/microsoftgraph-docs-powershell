@@ -39,22 +39,6 @@ Remove-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property attackSimulation for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -277,6 +261,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulation)
 
 [https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/simulation-delete?view=graph-rest-1.0)
+
 
 
 

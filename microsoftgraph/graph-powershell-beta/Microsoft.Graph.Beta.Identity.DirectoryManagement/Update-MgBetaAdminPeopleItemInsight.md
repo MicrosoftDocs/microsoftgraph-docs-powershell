@@ -33,18 +33,6 @@ Update privacy settings to display or return the specified type of insights in a
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:-  Customize item insights privacy -  Customize people insights privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,6 +224,7 @@ Optional.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeopleiteminsight)
 
 [https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/insightssettings-update?view=graph-rest-1.0)
+
 
 
 

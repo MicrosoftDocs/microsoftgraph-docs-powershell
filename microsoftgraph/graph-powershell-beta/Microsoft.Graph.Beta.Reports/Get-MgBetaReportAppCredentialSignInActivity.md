@@ -37,18 +37,6 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity> [-Ex
 ## DESCRIPTION
 Get an appCredentialSignInActivity object that contains recent activity of an application credential.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +335,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <String
 ## DESCRIPTION
 Invoke function getRecentNotebooks
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -280,6 +264,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook)
+
 
 
 

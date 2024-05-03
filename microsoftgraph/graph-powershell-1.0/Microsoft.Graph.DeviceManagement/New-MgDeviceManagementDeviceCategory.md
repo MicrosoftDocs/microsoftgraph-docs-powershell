@@ -32,22 +32,6 @@ New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCatego
 ## DESCRIPTION
 Create a new deviceCategory object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -236,6 +220,7 @@ Read-only.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory)
 
 [https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgBetaSiteTermStoreSetParentGroupSetRelation -InputObject <ISitesIdentity> [
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -401,6 +389,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelation)
 
 [https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0)
+
 
 
 

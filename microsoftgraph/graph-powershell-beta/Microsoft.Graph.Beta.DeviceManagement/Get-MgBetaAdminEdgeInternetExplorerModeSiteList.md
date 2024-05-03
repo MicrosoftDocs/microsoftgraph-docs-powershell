@@ -43,18 +43,6 @@ Get a browserSiteList that contains browserSite and browserSharedCookie resource
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -450,6 +438,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0)
+
 
 
 

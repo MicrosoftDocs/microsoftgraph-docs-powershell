@@ -40,18 +40,6 @@ Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -366,6 +354,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0)
+
 
 
 

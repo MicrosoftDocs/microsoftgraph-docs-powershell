@@ -40,22 +40,6 @@ Get-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +365,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/chat-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-members?view=graph-rest-1.0)
+
 
 
 

@@ -31,22 +31,6 @@ New-MgBetaSecurityInformationProtectionSensitivityLabel
 ## DESCRIPTION
 Create new navigation property to sensitivityLabels for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -378,6 +362,7 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityinformationprotectionsensitivitylabel)
+
 
 
 

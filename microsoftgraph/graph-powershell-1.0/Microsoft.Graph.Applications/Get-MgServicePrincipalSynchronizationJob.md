@@ -40,18 +40,6 @@ Get-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity> [-
 ## DESCRIPTION
 Retrieve the existing synchronization job and its properties.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -344,6 +332,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
+
 
 
 

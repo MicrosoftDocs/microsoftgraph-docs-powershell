@@ -31,22 +31,6 @@ Test-MgDriveListContentTypePublished -InputObject <IFilesIdentity> [-ResponseHea
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -185,6 +169,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished)
+
 
 
 

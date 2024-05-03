@@ -34,22 +34,6 @@ Remove-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> 
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -259,6 +243,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-delete?view=graph-rest-1.0)
+
 
 
 

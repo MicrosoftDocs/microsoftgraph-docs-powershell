@@ -52,18 +52,6 @@ Update-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 Update the properties of a targetDeviceGroup object for remoteDesktopSecurityConfiguration object on the servicePrincipal.
 You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,6 +300,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
 
 [https://learn.microsoft.com/graph/api/targetdevicegroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/targetdevicegroup-update?view=graph-rest-1.0)
+
 
 
 

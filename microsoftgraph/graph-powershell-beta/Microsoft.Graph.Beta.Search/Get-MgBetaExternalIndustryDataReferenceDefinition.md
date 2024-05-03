@@ -37,18 +37,6 @@ Get-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Read the properties and relationships of a referenceDefinition object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,6 +310,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-referencedefinition-list?view=graph-rest-1.0)
+
 
 
 

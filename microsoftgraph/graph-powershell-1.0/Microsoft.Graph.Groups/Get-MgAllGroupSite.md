@@ -34,18 +34,6 @@ Get-MgAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty <Str
 ## DESCRIPTION
 Invoke function getAllSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -306,6 +294,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
+
 
 
 

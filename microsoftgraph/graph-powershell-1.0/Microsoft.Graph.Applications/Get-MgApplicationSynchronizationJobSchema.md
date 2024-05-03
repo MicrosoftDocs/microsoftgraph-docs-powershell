@@ -32,18 +32,6 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -213,6 +201,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0)
+
 
 
 

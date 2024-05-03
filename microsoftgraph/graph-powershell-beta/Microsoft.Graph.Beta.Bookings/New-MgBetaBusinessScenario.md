@@ -30,18 +30,6 @@ New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Re
 ## DESCRIPTION
 Create a new businessScenario object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -916,6 +904,7 @@ Optional.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario)
 
 [https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/solutionsroot-post-businessscenarios?view=graph-rest-1.0)
+
 
 
 

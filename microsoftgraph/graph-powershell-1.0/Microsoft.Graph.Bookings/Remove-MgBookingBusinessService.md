@@ -32,22 +32,6 @@ Remove-MgBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete a bookingService object in the specified bookingBusiness.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -240,6 +224,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessservice)
 
 [https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-delete?view=graph-rest-1.0)
+
 
 
 

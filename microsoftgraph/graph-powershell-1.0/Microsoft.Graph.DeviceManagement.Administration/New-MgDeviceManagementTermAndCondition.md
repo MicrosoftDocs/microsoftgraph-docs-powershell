@@ -35,22 +35,6 @@ New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndCo
 ## DESCRIPTION
 Create a new termsAndConditions object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AcceptanceStatement
@@ -427,6 +411,7 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition)
 
 [https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0)
+
 
 
 

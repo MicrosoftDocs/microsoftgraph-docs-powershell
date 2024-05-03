@@ -40,18 +40,6 @@ Get-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a filePlanReferenceTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -388,6 +376,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0)
+
 
 
 
