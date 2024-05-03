@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage
@@ -341,48 +341,51 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphLoginPage\>: loginPage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphLoginPage>`: loginPage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Content \<String\>\]: The HTML content of the login page.
-  \[CreatedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Content <String>]`: The HTML content of the login page.
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-    \[Id \<String\>\]: The identifier of the identity.
+    - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-    \[Email \<String\>\]: Email address of the user.
-  \[CreatedDateTime \<DateTime?\>\]: Date and time when the login page was created.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the login page was created.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Description \<String\>\]: Description about the login page.
-  \[DisplayName \<String\>\]: Display name of the login page.
-  \[Language \<String\>\]: The content language of the login page.
-  \[LastModifiedBy \<IMicrosoftGraphEmailIdentity\>\]: emailIdentity
-  \[LastModifiedDateTime \<DateTime?\>\]: Date and time when the login page was last modified.
+  - `[Description <String>]`: Description about the login page.
+  - `[DisplayName <String>]`: Display name of the login page.
+  - `[Language <String>]`: The content language of the login page.
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the login page was last modified.
 The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[Source \<String\>\]: simulationContentSource
-  \[Status \<String\>\]: simulationContentStatus
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
 
-CREATEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
+  - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
-LASTMODIFIEDBY \<IMicrosoftGraphEmailIdentity\>: emailIdentity
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[DisplayName \<String\>\]: The display name of the identity.
+LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: The display name of the identity.
 This property is read-only.
-  \[Id \<String\>\]: The identifier of the identity.
+  - `[Id <String>]`: The identifier of the identity.
 This property is read-only.
-  \[Email \<String\>\]: Email address of the user.
+  - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationloginpage)
+
+
+
 

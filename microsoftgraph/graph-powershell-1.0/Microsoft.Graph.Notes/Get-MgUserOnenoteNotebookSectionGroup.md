@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksectiongroup
@@ -276,4 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebooksectiongroup)
 
 [https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0)
+
+
+
 

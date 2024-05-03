@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile
@@ -388,63 +388,66 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphIPSecurityProfile\>: ipSecurityProfile
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphIPSecurityProfile>`: ipSecurityProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActivityGroupNames \<String\[\]\>\]: 
-  \[Address \<String\>\]: 
-  \[AzureSubscriptionId \<String\>\]: 
-  \[AzureTenantId \<String\>\]: 
-  \[CountHits \<Int32?\>\]: 
-  \[CountHosts \<Int32?\>\]: 
-  \[FirstSeenDateTime \<DateTime?\>\]: 
-  \[IPCategories \<IMicrosoftGraphIPCategory\[\]\>\]: 
-    \[Description \<String\>\]: 
-    \[Name \<String\>\]: 
-    \[Vendor \<String\>\]: 
-  \[IPReferenceData \<IMicrosoftGraphIPReferenceData\[\]\>\]: 
-    \[Asn \<Int64?\>\]: 
-    \[City \<String\>\]: 
-    \[CountryOrRegionCode \<String\>\]: 
-    \[Organization \<String\>\]: 
-    \[State \<String\>\]: 
-    \[Vendor \<String\>\]: 
-  \[LastSeenDateTime \<DateTime?\>\]: 
-  \[RiskScore \<String\>\]: 
-  \[Tags \<String\[\]\>\]: 
-  \[VendorInformation \<IMicrosoftGraphSecurityVendorInformation\>\]: securityVendorInformation
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-    \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+  - `[ActivityGroupNames <String- `[]`>]`: 
+  - `[Address <String>]`: 
+  - `[AzureSubscriptionId <String>]`: 
+  - `[AzureTenantId <String>]`: 
+  - `[CountHits <Int32?>]`: 
+  - `[CountHosts <Int32?>]`: 
+  - `[FirstSeenDateTime <DateTime?>]`: 
+  - `[IPCategories <IMicrosoftGraphIPCategory- `[]`>]`: 
+    - `[Description <String>]`: 
+    - `[Name <String>]`: 
+    - `[Vendor <String>]`: 
+  - `[IPReferenceData <IMicrosoftGraphIPReferenceData- `[]`>]`: 
+    - `[Asn <Int64?>]`: 
+    - `[City <String>]`: 
+    - `[CountryOrRegionCode <String>]`: 
+    - `[Organization <String>]`: 
+    - `[State <String>]`: 
+    - `[Vendor <String>]`: 
+  - `[LastSeenDateTime <DateTime?>]`: 
+  - `[RiskScore <String>]`: 
+  - `[Tags <String- `[]`>]`: 
+  - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-    \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-    \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
-IPCATEGORIES \<IMicrosoftGraphIPCategory\[\]\>: .
-  \[Description \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Vendor \<String\>\]: 
+IPCATEGORIES <IMicrosoftGraphIPCategory- `[]`>: .
+  - `[Description <String>]`: 
+  - `[Name <String>]`: 
+  - `[Vendor <String>]`: 
 
-IPREFERENCEDATA \<IMicrosoftGraphIPReferenceData\[\]\>: .
-  \[Asn \<Int64?\>\]: 
-  \[City \<String\>\]: 
-  \[CountryOrRegionCode \<String\>\]: 
-  \[Organization \<String\>\]: 
-  \[State \<String\>\]: 
-  \[Vendor \<String\>\]: 
+IPREFERENCEDATA <IMicrosoftGraphIPReferenceData- `[]`>: .
+  - `[Asn <Int64?>]`: 
+  - `[City <String>]`: 
+  - `[CountryOrRegionCode <String>]`: 
+  - `[Organization <String>]`: 
+  - `[State <String>]`: 
+  - `[Vendor <String>]`: 
 
-VENDORINFORMATION \<IMicrosoftGraphSecurityVendorInformation\>: securityVendorInformation
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Provider \<String\>\]: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
-  \[ProviderVersion \<String\>\]: Version of the provider or subprovider, if it exists, that generated the alert.
+VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+  - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert.
 Required
-  \[SubProvider \<String\>\]: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
-  \[Vendor \<String\>\]: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
+  - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+  - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye).
 Required
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
+
+
+
 

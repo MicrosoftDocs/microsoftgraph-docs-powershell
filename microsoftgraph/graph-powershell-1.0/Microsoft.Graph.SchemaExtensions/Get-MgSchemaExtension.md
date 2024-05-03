@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
@@ -290,8 +290,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
-  \[SchemaExtensionId \<String\>\]: The unique identifier of schemaExtension
+INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
 
@@ -300,4 +300,7 @@ INPUTOBJECT \<ISchemaExtensionsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-1.0)
+
+
+
 
