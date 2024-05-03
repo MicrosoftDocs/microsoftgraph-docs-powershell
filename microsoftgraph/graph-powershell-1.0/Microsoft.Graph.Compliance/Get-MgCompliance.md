@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get compliance
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaCompliance?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,22 @@ Get-MgCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseH
 
 ## DESCRIPTION
 Get compliance
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -114,8 +127,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgcompliance)
-
-
-
-
 

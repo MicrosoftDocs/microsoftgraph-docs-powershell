@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieves the educationUser members of an educationClass.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassMember](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,17 +23,13 @@ Get-MgEducationClassMember -EducationClassId <String> [-ExpandProperty <String[]
 Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Education
+```
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
-
-```
-This example shows how to use the Get-MgEducationClassMember Cmdlet.
-
 
 ## PARAMETERS
 
@@ -267,7 +260,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmember)
 
 [https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
-
-
-
 

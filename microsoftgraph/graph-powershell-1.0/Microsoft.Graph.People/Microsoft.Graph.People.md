@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.People
 Module Guid: c084d1b1-7ed4-45c3-a9b8-9b531f789082
 Download Help Link: {{ Update Download Link }}
@@ -46,5 +46,4 @@ Locale: en-US
 
 ### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
 {{ Fill in the Description }}
-
 

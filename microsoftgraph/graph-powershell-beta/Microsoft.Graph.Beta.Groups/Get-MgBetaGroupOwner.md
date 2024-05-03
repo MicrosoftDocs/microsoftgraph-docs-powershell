@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner
@@ -13,9 +13,6 @@ Nullable.
 If this property isn't specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
 Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,17 +31,15 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Suppo
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
-### Example 1: Get an owner of a group
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgBetaGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
+```
 
 Id                                   DeletedDateTime
 --                                   ---------------
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
-```
-
-This example gets the owner of the specified group.
 
 ## PARAMETERS
 
@@ -291,7 +286,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner)
 
 [https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-owners?view=graph-rest-1.0)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple
@@ -31,8 +31,9 @@ Remove-MgBetaSecurityTiIndicatorMultiple
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
@@ -42,8 +43,6 @@ $params = @{
 }
 Remove-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
 ```
-This example shows how to use the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -185,16 +184,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Value <String- `[]`>]`:
+BODYPARAMETER \<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Value \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple)
 
 [https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0)
-
-
-
 
