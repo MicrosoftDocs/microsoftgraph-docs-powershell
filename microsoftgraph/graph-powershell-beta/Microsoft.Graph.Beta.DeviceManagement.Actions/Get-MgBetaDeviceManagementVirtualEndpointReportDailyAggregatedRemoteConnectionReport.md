@@ -32,6 +32,9 @@ Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionRe
 ## DESCRIPTION
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getdailyaggregatedremoteconnectionreports-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

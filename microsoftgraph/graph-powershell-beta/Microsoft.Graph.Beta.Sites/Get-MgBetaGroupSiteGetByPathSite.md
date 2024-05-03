@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a collection of subsites defined for a \[site\]\[\].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

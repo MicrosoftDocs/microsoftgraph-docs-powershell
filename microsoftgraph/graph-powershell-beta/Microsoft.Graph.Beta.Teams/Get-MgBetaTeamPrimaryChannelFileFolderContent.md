@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property filesFolder from teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelFileFolderContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

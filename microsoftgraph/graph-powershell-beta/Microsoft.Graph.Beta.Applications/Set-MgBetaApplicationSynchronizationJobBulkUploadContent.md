@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property bulkUpload in applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

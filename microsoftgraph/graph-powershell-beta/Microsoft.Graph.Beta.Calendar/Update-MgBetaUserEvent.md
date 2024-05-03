@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of the event object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

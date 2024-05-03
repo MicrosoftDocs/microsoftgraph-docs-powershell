@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an override specified by its ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

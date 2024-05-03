@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get webinars from solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinar](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

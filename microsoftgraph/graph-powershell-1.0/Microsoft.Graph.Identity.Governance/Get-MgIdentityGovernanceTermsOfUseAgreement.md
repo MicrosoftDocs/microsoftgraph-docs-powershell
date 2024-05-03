@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve all files related to an agreement.
 This includes the default file and all localized files.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

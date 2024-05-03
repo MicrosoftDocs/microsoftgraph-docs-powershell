@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

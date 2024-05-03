@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition for a content type
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentTypeColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

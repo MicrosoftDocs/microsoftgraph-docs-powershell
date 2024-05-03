@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the status of an operation that adds the large gallery view to a call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgBetaCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 
 ## DESCRIPTION
 Get the status of an operation that adds the large gallery view to a call.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/addlargegalleryviewoperation-get-permissions.md)]
 
 ## EXAMPLES
 

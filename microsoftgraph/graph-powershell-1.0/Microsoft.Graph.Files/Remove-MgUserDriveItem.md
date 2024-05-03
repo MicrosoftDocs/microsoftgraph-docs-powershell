@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items that were referenced by the bundle.They remain in their parent folders.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

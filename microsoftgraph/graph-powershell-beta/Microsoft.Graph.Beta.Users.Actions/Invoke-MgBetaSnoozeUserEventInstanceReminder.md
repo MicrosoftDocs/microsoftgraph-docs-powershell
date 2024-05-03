@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Postpone a reminder for an event in a user calendar until a new time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SnoozeExpanded (Default)
@@ -46,6 +49,9 @@ Invoke-MgBetaSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity
 
 ## DESCRIPTION
 Postpone a reminder for an event in a user calendar until a new time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-snoozereminder-permissions.md)]
 
 ## EXAMPLES
 

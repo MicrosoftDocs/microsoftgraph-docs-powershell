@@ -13,6 +13,9 @@ You cannot use PATCH to change any other fields in an inferenceClassificationOve
 If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
 If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

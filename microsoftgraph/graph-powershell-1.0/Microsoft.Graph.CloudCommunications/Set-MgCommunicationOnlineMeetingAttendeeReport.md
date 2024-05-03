@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update attendeeReport for the navigation property onlineMeetings in communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationOnlineMeetingAttendeeReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

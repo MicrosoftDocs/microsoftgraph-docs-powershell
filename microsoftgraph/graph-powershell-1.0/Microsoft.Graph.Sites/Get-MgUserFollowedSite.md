@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get followedSites from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserFollowedSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaUserFollowedSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action copyToDefaultContentLocation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -47,6 +50,9 @@ Copy-MgBetaUserDriveListContentTypeToDefaultContentLocation -InputObject <IUsers
 
 ## DESCRIPTION
 Invoke action copyToDefaultContentLocation
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-copytodefaultcontentlocation-permissions.md)]
 
 ## EXAMPLES
 

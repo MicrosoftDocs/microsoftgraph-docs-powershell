@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get webParts from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSitePageAsSitePageWebPart](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

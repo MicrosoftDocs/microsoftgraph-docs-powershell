@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Export the billed Azure usage data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingUsageBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingUsageBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -29,6 +32,9 @@ Export-MgBetaReportPartnerBillingUsageBilled
 
 ## DESCRIPTION
 Export the billed Azure usage data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedusage-export-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new termsAndConditions object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve a list of teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
