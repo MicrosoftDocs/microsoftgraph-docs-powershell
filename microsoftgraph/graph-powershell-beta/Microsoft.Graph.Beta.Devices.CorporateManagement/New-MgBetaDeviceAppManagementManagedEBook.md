@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebook
@@ -404,128 +404,131 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ASSIGNMENTS \<IMicrosoftGraphManagedEBookAssignment\[\]\>: The list of assignments for this eBook.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ASSIGNMENTS <IMicrosoftGraphManagedEBookAssignment- `[]`>: The list of assignments for this eBook.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[InstallIntent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
-  \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-    \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER \<IMicrosoftGraphManagedEBook\>: An abstract class containing the base properties for Managed eBook.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphManagedEBook>`: An abstract class containing the base properties for Managed eBook.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Assignments \<IMicrosoftGraphManagedEBookAssignment\[\]\>\]: The list of assignments for this eBook.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Assignments <IMicrosoftGraphManagedEBookAssignment- `[]`>]`: The list of assignments for this eBook.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[InstallIntent \<InstallIntent?\>\]: Possible values for the install intent chosen by the admin.
-    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
-      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
-  \[Categories \<IMicrosoftGraphManagedEBookCategory\[\]\>\]: The list of categories for this eBook.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[InstallIntent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+  - `[Categories <IMicrosoftGraphManagedEBookCategory- `[]`>]`: The list of categories for this eBook.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: The name of the eBook category.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the ManagedEBookCategory was last modified.
-  \[CreatedDateTime \<DateTime?\>\]: The date and time when the eBook file was created.
-  \[Description \<String\>\]: Description.
-  \[DeviceStates \<IMicrosoftGraphDeviceInstallState\[\]\>\]: The list of installation states for this eBook.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DisplayName <String>]`: The name of the eBook category.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the ManagedEBookCategory was last modified.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the eBook file was created.
+  - `[Description <String>]`: Description.
+  - `[DeviceStates <IMicrosoftGraphDeviceInstallState- `[]`>]`: The list of installation states for this eBook.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeviceId \<String\>\]: Device Id.
-    \[DeviceName \<String\>\]: Device name.
-    \[ErrorCode \<String\>\]: The error code for install failures.
-    \[InstallState \<InstallState?\>\]: Possible values for install state.
-    \[LastSyncDateTime \<DateTime?\>\]: Last sync date and time.
-    \[OSDescription \<String\>\]: OS Description.
-    \[OSVersion \<String\>\]: OS Version.
-    \[UserName \<String\>\]: Device User Name.
-  \[DisplayName \<String\>\]: Name of the eBook.
-  \[InformationUrl \<String\>\]: The more information Url.
-  \[InstallSummary \<IMicrosoftGraphEBookInstallSummary\>\]: Contains properties for the installation summary of a book for a device.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[DeviceId <String>]`: Device Id.
+    - `[DeviceName <String>]`: Device name.
+    - `[ErrorCode <String>]`: The error code for install failures.
+    - `[InstallState <InstallState?>]`: Possible values for install state.
+    - `[LastSyncDateTime <DateTime?>]`: Last sync date and time.
+    - `[OSDescription <String>]`: OS Description.
+    - `[OSVersion <String>]`: OS Version.
+    - `[UserName <String>]`: Device User Name.
+  - `[DisplayName <String>]`: Name of the eBook.
+  - `[InformationUrl <String>]`: The more information Url.
+  - `[InstallSummary <IMicrosoftGraphEBookInstallSummary>]`: Contains properties for the installation summary of a book for a device.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[FailedDeviceCount \<Int32?\>\]: Number of Devices that have failed to install this book.
-    \[FailedUserCount \<Int32?\>\]: Number of Users that have 1 or more device that failed to install this book.
-    \[InstalledDeviceCount \<Int32?\>\]: Number of Devices that have successfully installed this book.
-    \[InstalledUserCount \<Int32?\>\]: Number of Users whose devices have all succeeded to install this book.
-    \[NotInstalledDeviceCount \<Int32?\>\]: Number of Devices that does not have this book installed.
-    \[NotInstalledUserCount \<Int32?\>\]: Number of Users that did not install this book.
-  \[LargeCover \<IMicrosoftGraphMimeContent\>\]: Contains properties for a generic mime content.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Type \<String\>\]: Indicates the content mime type.
-    \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time when the eBook was last modified.
-  \[PrivacyInformationUrl \<String\>\]: The privacy statement Url.
-  \[PublishedDateTime \<DateTime?\>\]: The date and time when the eBook was published.
-  \[Publisher \<String\>\]: Publisher.
-  \[UserStateSummary \<IMicrosoftGraphUserInstallStateSummary\[\]\>\]: The list of installation states for this eBook.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this book.
+    - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this book.
+    - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this book.
+    - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this book.
+    - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this book installed.
+    - `[NotInstalledUserCount <Int32?>]`: Number of Users that did not install this book.
+  - `[LargeCover <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: Indicates the content mime type.
+    - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the eBook was last modified.
+  - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
+  - `[PublishedDateTime <DateTime?>]`: The date and time when the eBook was published.
+  - `[Publisher <String>]`: Publisher.
+  - `[UserStateSummary <IMicrosoftGraphUserInstallStateSummary- `[]`>]`: The list of installation states for this eBook.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeviceStates \<IMicrosoftGraphDeviceInstallState\[\]\>\]: The install state of the eBook.
-    \[FailedDeviceCount \<Int32?\>\]: Failed Device Count.
-    \[InstalledDeviceCount \<Int32?\>\]: Installed Device Count.
-    \[NotInstalledDeviceCount \<Int32?\>\]: Not installed device count.
-    \[UserName \<String\>\]: User name.
+    - `[DeviceStates <IMicrosoftGraphDeviceInstallState- `[]`>]`: The install state of the eBook.
+    - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
+    - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
+    - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
+    - `[UserName <String>]`: User name.
 
-CATEGORIES \<IMicrosoftGraphManagedEBookCategory\[\]\>: The list of categories for this eBook.
-  \[Id \<String\>\]: The unique identifier for an entity.
+CATEGORIES <IMicrosoftGraphManagedEBookCategory- `[]`>: The list of categories for this eBook.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The name of the eBook category.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the ManagedEBookCategory was last modified.
+  - `[DisplayName <String>]`: The name of the eBook category.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the ManagedEBookCategory was last modified.
 
-DEVICESTATES \<IMicrosoftGraphDeviceInstallState\[\]\>: The list of installation states for this eBook.
-  \[Id \<String\>\]: The unique identifier for an entity.
+DEVICESTATES <IMicrosoftGraphDeviceInstallState- `[]`>: The list of installation states for this eBook.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeviceId \<String\>\]: Device Id.
-  \[DeviceName \<String\>\]: Device name.
-  \[ErrorCode \<String\>\]: The error code for install failures.
-  \[InstallState \<InstallState?\>\]: Possible values for install state.
-  \[LastSyncDateTime \<DateTime?\>\]: Last sync date and time.
-  \[OSDescription \<String\>\]: OS Description.
-  \[OSVersion \<String\>\]: OS Version.
-  \[UserName \<String\>\]: Device User Name.
+  - `[DeviceId <String>]`: Device Id.
+  - `[DeviceName <String>]`: Device name.
+  - `[ErrorCode <String>]`: The error code for install failures.
+  - `[InstallState <InstallState?>]`: Possible values for install state.
+  - `[LastSyncDateTime <DateTime?>]`: Last sync date and time.
+  - `[OSDescription <String>]`: OS Description.
+  - `[OSVersion <String>]`: OS Version.
+  - `[UserName <String>]`: Device User Name.
 
-INSTALLSUMMARY \<IMicrosoftGraphEBookInstallSummary\>: Contains properties for the installation summary of a book for a device.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+INSTALLSUMMARY `<IMicrosoftGraphEBookInstallSummary>`: Contains properties for the installation summary of a book for a device.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[FailedDeviceCount \<Int32?\>\]: Number of Devices that have failed to install this book.
-  \[FailedUserCount \<Int32?\>\]: Number of Users that have 1 or more device that failed to install this book.
-  \[InstalledDeviceCount \<Int32?\>\]: Number of Devices that have successfully installed this book.
-  \[InstalledUserCount \<Int32?\>\]: Number of Users whose devices have all succeeded to install this book.
-  \[NotInstalledDeviceCount \<Int32?\>\]: Number of Devices that does not have this book installed.
-  \[NotInstalledUserCount \<Int32?\>\]: Number of Users that did not install this book.
+  - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this book.
+  - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this book.
+  - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this book.
+  - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this book.
+  - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this book installed.
+  - `[NotInstalledUserCount <Int32?>]`: Number of Users that did not install this book.
 
-LARGECOVER \<IMicrosoftGraphMimeContent\>: Contains properties for a generic mime content.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Type \<String\>\]: Indicates the content mime type.
-  \[Value \<Byte\[\]\>\]: The byte array that contains the actual content.
+LARGECOVER `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: Indicates the content mime type.
+  - `[Value <Byte- `[]`>]`: The byte array that contains the actual content.
 
-USERSTATESUMMARY \<IMicrosoftGraphUserInstallStateSummary\[\]\>: The list of installation states for this eBook.
-  \[Id \<String\>\]: The unique identifier for an entity.
+USERSTATESUMMARY <IMicrosoftGraphUserInstallStateSummary- `[]`>: The list of installation states for this eBook.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeviceStates \<IMicrosoftGraphDeviceInstallState\[\]\>\]: The install state of the eBook.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[DeviceStates <IMicrosoftGraphDeviceInstallState- `[]`>]`: The install state of the eBook.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeviceId \<String\>\]: Device Id.
-    \[DeviceName \<String\>\]: Device name.
-    \[ErrorCode \<String\>\]: The error code for install failures.
-    \[InstallState \<InstallState?\>\]: Possible values for install state.
-    \[LastSyncDateTime \<DateTime?\>\]: Last sync date and time.
-    \[OSDescription \<String\>\]: OS Description.
-    \[OSVersion \<String\>\]: OS Version.
-    \[UserName \<String\>\]: Device User Name.
-  \[FailedDeviceCount \<Int32?\>\]: Failed Device Count.
-  \[InstalledDeviceCount \<Int32?\>\]: Installed Device Count.
-  \[NotInstalledDeviceCount \<Int32?\>\]: Not installed device count.
-  \[UserName \<String\>\]: User name.
+    - `[DeviceId <String>]`: Device Id.
+    - `[DeviceName <String>]`: Device name.
+    - `[ErrorCode <String>]`: The error code for install failures.
+    - `[InstallState <InstallState?>]`: Possible values for install state.
+    - `[LastSyncDateTime <DateTime?>]`: Last sync date and time.
+    - `[OSDescription <String>]`: OS Description.
+    - `[OSVersion <String>]`: OS Version.
+    - `[UserName <String>]`: Device User Name.
+  - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
+  - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
+  - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
+  - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementmanagedebook)
+
+
+
 

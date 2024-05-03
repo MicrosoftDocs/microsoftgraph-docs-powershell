@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact
@@ -309,12 +309,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
-  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
-  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
-  \[ContactId \<String\>\]: The unique identifier of contact
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+  - `[ContactId <String>]`: The unique identifier of contact
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -323,4 +323,7 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0)
+
+
+
 
