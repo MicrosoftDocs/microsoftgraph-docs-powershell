@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a calendar group other than the default calendar group.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,18 +30,14 @@ Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>]
 Delete a calendar group other than the default calendar group.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Calendar
+```
 
 # A UPN can also be used as -UserId.
 Remove-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
-```
-This example shows how to use the Remove-MgUserCalendarGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -216,25 +209,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
-  - `[EventId <String>]`: The unique identifier of event
-  - `[EventId1 <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlaceId <String>]`: The unique identifier of place
-  - `[RoomId <String>]`: The unique identifier of room
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
+  \[EventId \<String\>\]: The unique identifier of event
+  \[EventId1 \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlaceId \<String\>\]: The unique identifier of place
+  \[RoomId \<String\>\]: The unique identifier of room
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)
 
 [https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0)
-
-
-
 

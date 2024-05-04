@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref
@@ -13,9 +13,6 @@ For cloud joined devices and registered personal devices, registered users are s
 Read-only.
 Nullable.
 Supports $expand.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUserByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,6 +29,18 @@ For cloud joined devices and registered personal devices, registered users are s
 Read-only.
 Nullable.
 Supports $expand.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -248,8 +257,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadeviceregistereduserbyref)
 
 [https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-registeredusers?view=graph-rest-1.0)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder
@@ -11,9 +11,6 @@ schema: 2.0.0
 The user's mail folders.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -45,30 +42,22 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Get a mail folder
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
 
+### EXAMPLE 2
 ```
-This example will get a mail folder
-
-### Example 2: Get a mail sent items folder
-
-```powershell
-
 Import-Module Microsoft.Graph.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId
-
-```
-This example will get a mail sent items folder
-
 
 ## PARAMETERS
 
@@ -330,15 +319,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -347,7 +336,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0)
-
-
-
 

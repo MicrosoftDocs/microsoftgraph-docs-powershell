@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Mail-help.xml
 Module Name: Microsoft.Graph.Beta.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagerule
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the properties and relationships of a messageRule object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,18 +38,14 @@ Get-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <Str
 Get the properties and relationships of a messageRule object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
-```
-This example shows how to use the Get-MgBetaUserMailFolderMessageRule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -299,17 +292,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MentionId <String>]`: The unique identifier of mention
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MentionId \<String\>\]: The unique identifier of mention
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserConfigurationId \<String\>\]: The unique identifier of userConfiguration
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -318,7 +311,4 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0)
-
-
-
 

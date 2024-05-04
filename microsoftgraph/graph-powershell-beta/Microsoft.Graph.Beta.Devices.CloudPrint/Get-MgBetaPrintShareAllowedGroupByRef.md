@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedGroupByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,6 +22,16 @@ Get-MgBetaPrintShareAllowedGroupByRef -PrinterShareId <String> [-Filter <String>
 Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -225,7 +232,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupbyref)
 
 [https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-list-allowedgroups?view=graph-rest-1.0)
-
-
-
 

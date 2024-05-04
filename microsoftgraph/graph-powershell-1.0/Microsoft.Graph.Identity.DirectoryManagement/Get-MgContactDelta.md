@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,13 +22,12 @@ Get-MgContactDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <S
 Invoke function delta
 
 ## EXAMPLES
-### Example 1: Using the Get-MgContactDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgContactDelta
 ```
-This example shows how to use the Get-MgContactDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,7 +241,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
-
-
-
 

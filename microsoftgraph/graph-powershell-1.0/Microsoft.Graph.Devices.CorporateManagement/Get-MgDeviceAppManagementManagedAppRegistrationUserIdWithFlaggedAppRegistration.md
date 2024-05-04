@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getUserIdsWithFlaggedAppRegistration
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration 
 
 ## DESCRIPTION
 Invoke function getUserIdsWithFlaggedAppRegistration
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -160,8 +169,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration)
-
-
-
-
 

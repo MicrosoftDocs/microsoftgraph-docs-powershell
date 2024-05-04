@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveactivity
@@ -21,6 +21,22 @@ Get-MgBetaGroupDriveActivity -DriveId <String> -GroupId <String> [-ExpandPropert
 
 ## DESCRIPTION
 List the recent activities that took place on an item or under a hierarchy.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -266,8 +282,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveactivity)
 
 [https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0)
-
-
-
-
 

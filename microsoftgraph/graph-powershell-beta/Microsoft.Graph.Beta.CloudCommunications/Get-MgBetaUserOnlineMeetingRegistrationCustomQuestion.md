@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingregistrationcustomquestion
@@ -39,14 +39,13 @@ Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId
 ```
-This example shows how to use the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -323,26 +322,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
@@ -351,7 +350,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-list-customquestions?view=graph-rest-1.0)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,13 +22,12 @@ Get-MgGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 Invoke function delta
 
 ## EXAMPLES
-### Example 1: Using the Get-MgGroupDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupDelta
 ```
-This example shows how to use the Get-MgGroupDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -245,7 +241,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta)
-
-
-
 

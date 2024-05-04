@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceuser
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List properties and relationships of the user objects.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,6 +21,22 @@ Get-MgUserManagedDeviceUser -ManagedDeviceId <String> -UserId <String> [-ExpandP
 
 ## DESCRIPTION
 List properties and relationships of the user objects.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -269,8 +282,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceuser](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceuser)
 
 [https://learn.microsoft.com/graph/api/intune-devices-user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-user-list?view=graph-rest-1.0)
-
-
-
-
 

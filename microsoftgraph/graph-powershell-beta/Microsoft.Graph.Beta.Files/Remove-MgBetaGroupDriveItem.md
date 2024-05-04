@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitem
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupDriveItem
 
 ## SYNOPSIS
-Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items referenced by the bundle.They remain in their parent folders.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItem?view=graph-powershell-1.0)
+Delete a \[bundle\]\[\] of driveItems by using its id.\nDeleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.\nIt doesn't, however, remove the items referenced by the bundle.\nThey remain in their parent folders.
 
 ## SYNTAX
 
@@ -30,7 +27,23 @@ Remove-MgBetaGroupDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items referenced by the bundle.They remain in their parent folders.
+Delete a \[bundle\]\[\] of driveItems by using its id.\nDeleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.\nIt doesn't, however, remove the items referenced by the bundle.\nThey remain in their parent folders.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -217,39 +230,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
-  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemId1 <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: The unique identifier of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[ThumbnailSetId <String>]`: The unique identifier of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IFilesIdentity\>: Identity Parameter
+  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
+  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemId1 \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
+  \[SharedDriveItemId \<String\>\]: The unique identifier of sharedDriveItem
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[ThumbnailSetId \<String\>\]: The unique identifier of thumbnailSet
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitem)
 
 [https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0)
-
-
-
-
 
