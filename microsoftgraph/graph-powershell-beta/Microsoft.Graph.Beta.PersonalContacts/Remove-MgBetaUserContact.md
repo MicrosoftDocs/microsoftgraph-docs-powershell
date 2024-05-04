@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete contact.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a browserSiteList object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

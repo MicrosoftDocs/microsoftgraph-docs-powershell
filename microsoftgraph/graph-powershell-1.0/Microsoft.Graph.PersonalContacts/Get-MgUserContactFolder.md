@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a contact folder by using the contact folder ID.
 There are two scenarios where an app can get another user's contact folder:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

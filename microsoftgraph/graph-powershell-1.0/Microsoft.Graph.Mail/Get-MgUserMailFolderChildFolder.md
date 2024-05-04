@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of child folders in the mailFolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

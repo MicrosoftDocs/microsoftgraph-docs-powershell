@@ -49,6 +49,9 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 Apply the current provisioning policy configuration to all Cloud PC devices under a specified policy.
 Currently, the region is the only policy setting that you can apply.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcprovisioningpolicy-apply-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

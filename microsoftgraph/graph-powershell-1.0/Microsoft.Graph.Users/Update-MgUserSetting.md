@@ -12,6 +12,9 @@ Update the properties of the userSettings object.
 Users in the same organization can have different settings based on their preference or on the organization policies.
 To get the user current settings, see current user settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

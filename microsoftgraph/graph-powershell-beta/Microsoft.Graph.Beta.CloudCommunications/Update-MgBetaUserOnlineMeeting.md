@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of the specified onlineMeeting object.
 Please see Request body section for the list of properties that support updating.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeeting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

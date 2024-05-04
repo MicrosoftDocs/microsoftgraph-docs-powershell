@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new or replace an existing history item for an existing user activity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Update-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

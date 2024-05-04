@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read a directory extension definition represented by an extensionProperty object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -36,6 +39,9 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 
 ## DESCRIPTION
 Read a directory extension definition represented by an extensionProperty object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/extensionproperty-get-permissions.md)]
 
 ## EXAMPLES
 

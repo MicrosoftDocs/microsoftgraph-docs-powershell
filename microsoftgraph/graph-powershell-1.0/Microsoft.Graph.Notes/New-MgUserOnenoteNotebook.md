@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new OneNote notebook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -50,6 +53,9 @@ New-MgUserOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create a new OneNote notebook.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
 
 ## EXAMPLES
 

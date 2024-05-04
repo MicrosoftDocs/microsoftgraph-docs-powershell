@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property root from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

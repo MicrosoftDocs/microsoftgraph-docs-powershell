@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the collection of \[lists\]\[\] for a \[site\]\[\].
 Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

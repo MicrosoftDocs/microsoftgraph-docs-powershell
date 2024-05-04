@@ -13,6 +13,9 @@ All pages in the site are returned (with pagination).
 Sort alphabetically by name in ascending order.
 The following table lists the available subtypes.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathPage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

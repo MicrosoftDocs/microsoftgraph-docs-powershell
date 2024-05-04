@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterOperators
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

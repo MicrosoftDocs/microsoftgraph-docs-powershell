@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create columnDefinition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListColumn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
