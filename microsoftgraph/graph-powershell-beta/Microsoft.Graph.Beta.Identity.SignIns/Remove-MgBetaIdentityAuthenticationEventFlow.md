@@ -31,18 +31,6 @@ Remove-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdent
 Delete a specific authenticationEventsFlow resource by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationEventsFlowId
@@ -282,6 +270,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventflow)
 
 [https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-delete?view=graph-rest-1.0)
+
 
 
 

@@ -56,18 +56,6 @@ New-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 ## DESCRIPTION
 Create a new browserSite object in a browserSiteList.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -640,6 +628,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetaadminedgeinternetexplorermodesitelistsite)
 
 [https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
+
 
 
 

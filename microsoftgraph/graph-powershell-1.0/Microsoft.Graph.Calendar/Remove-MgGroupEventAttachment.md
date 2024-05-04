@@ -32,22 +32,6 @@ Remove-MgGroupEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete an attachment from a user calendar event, mail message, or group post.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -251,6 +235,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventattachment)
 
 [https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0)
+
 
 
 

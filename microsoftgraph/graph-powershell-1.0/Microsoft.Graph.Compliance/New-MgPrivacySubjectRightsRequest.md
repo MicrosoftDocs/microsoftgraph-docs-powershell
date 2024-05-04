@@ -42,18 +42,6 @@ New-MgPrivacySubjectRightsRequest -BodyParameter <IMicrosoftGraphSubjectRightsRe
 ## DESCRIPTION
 Create a new subjectRightsRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -19598,6 +19586,7 @@ This URL should be treated as an opaque blob, and not parsed.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequest)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post?view=graph-rest-1.0)
+
 
 
 

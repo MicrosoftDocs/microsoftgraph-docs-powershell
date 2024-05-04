@@ -48,18 +48,6 @@ Update-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Update the properties of a managedEBookAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,6 +316,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment)
 
 [https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0)
+
 
 
 

@@ -56,18 +56,6 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the properties of an incident object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -715,6 +703,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
 
 [https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
+
 
 
 

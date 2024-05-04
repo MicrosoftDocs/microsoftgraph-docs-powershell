@@ -40,18 +40,6 @@ Get-MgBetaReportPartnerBillingOperation -InputObject <IReportsIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +336,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingoperation)
 
 [https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
+
 
 
 

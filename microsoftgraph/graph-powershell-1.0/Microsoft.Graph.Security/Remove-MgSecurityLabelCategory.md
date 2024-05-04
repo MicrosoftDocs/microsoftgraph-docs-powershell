@@ -32,18 +32,6 @@ Remove-MgSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a categoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CategoryTemplateId
@@ -266,6 +254,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0)
+
 
 
 

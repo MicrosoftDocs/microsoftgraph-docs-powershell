@@ -51,18 +51,6 @@ Update-MgBetaDirectoryPendingExternalUserProfile -InputObject <IIdentityDirector
 ## DESCRIPTION
 Update the properties of a pendingExternalUserProfile object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +478,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorypendingexternaluserprofile)
 
 [https://learn.microsoft.com/graph/api/pendingexternaluserprofile-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/pendingexternaluserprofile-update?view=graph-rest-1.0)
+
 
 
 

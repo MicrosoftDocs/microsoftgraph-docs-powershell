@@ -40,22 +40,6 @@ Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Get scopedRoleMemberOf from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -345,6 +329,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof)
+
 
 
 

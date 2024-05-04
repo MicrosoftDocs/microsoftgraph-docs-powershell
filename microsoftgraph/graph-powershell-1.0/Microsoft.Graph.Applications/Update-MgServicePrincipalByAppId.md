@@ -103,18 +103,6 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update entity in servicePrincipals by appId
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -2588,6 +2576,7 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
+
 
 
 

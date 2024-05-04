@@ -32,22 +32,6 @@ Remove-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> 
 ## DESCRIPTION
 Deletes a managedDevice.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -264,6 +248,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmanageddevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-delete?view=graph-rest-1.0)
+
 
 
 

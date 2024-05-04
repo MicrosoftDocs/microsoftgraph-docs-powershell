@@ -51,22 +51,6 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ## DESCRIPTION
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -470,6 +454,7 @@ SPEAKERS <IMicrosoftGraphMeetingSpeaker- `[]`>: The meeting speaker's informatio
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration)
 
 [https://learn.microsoft.com/graph/api/meetingregistration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-update?view=graph-rest-1.0)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgSecurityThreatIntelligenceHostChildHostPair -InputObject <ISecurityIdentit
 ## DESCRIPTION
 The hostPairs that are resources associated with a host, where that host is the parentHost and has an outgoing pairing to a childHost.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,6 +367,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostchildhostpair](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostchildhostpair)
 
 [https://learn.microsoft.com/graph/api/security-host-list-childhostpairs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-childhostpairs?view=graph-rest-1.0)
+
 
 
 

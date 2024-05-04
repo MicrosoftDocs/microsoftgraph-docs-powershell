@@ -32,18 +32,6 @@ New-MgUserManagedDeviceLogCollectionResponseDownloadUrl -InputObject <IUsersActi
 ## DESCRIPTION
 Invoke action createDownloadUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -234,6 +222,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermanageddevicelogcollectionresponsedownloadurl)
+
 
 
 

@@ -29,18 +29,6 @@ Get-MgBetaSiteListItemActivityDriveItemContent -InputObject <ISitesIdentity> [-F
 ## DESCRIPTION
 Get content for the navigation property driveItem from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Format
@@ -282,6 +270,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemactivitydriveitemcontent)
+
 
 
 

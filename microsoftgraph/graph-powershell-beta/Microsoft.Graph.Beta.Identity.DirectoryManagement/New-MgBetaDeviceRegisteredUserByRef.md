@@ -47,18 +47,6 @@ New-MgBetaDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementId
 ## DESCRIPTION
 Add a registered user for the device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -306,6 +294,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceregistereduserbyref)
 
 [https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0)
+
 
 
 

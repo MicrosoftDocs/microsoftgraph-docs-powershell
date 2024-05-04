@@ -41,18 +41,6 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment
 ## DESCRIPTION
 The associated group assignments for the Windows Defender Application Control Supplemental Policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -387,6 +375,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementwdacsupplementalpolicyassignment)
+
 
 
 

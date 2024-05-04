@@ -24,18 +24,6 @@ Get-MgTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Get the tenant-wide teamsAppSettings for all Teams apps in the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -129,6 +117,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkteamappsetting)
 
 [https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappsettings-get?view=graph-rest-1.0)
+
 
 
 

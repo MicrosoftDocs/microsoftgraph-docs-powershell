@@ -39,22 +39,6 @@ Get-MgBetaUserInformationProtectionThreatAssessmentRequest -InputObject <IIdenti
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -401,6 +385,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0)
+
 
 
 

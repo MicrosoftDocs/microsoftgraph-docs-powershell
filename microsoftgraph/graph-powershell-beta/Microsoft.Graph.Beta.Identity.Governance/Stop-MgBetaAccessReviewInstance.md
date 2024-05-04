@@ -35,22 +35,6 @@ The target object can be either a one-time access review, or an instance of a re
 (To prevent a recurring access review from starting future instances, update it to change its scheduled end date).
 After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -312,6 +296,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance)
 
 [https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-1.0)
+
 
 
 

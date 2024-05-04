@@ -63,22 +63,6 @@ Get-MgBetaGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 Children terms of set in term \[store\].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -458,6 +442,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsetchild)
 
 [https://learn.microsoft.com/graph/api/termstore-term-list-children?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-list-children?view=graph-rest-1.0)
+
 
 
 

@@ -36,18 +36,6 @@ New-MgDeviceAppManagementMobileApp -BodyParameter <IMicrosoftGraphMobileApp>
 ## DESCRIPTION
 Create a new iosLobApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,6 +436,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileapp)
 
 [https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-ioslobapp-create?view=graph-rest-1.0)
+
 
 
 

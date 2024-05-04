@@ -37,22 +37,6 @@ Get-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Read the properties and relationships of a recommendation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -354,6 +338,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/recommendation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/recommendation-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/directory-list-recommendation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-recommendation?view=graph-rest-1.0)
+
 
 
 

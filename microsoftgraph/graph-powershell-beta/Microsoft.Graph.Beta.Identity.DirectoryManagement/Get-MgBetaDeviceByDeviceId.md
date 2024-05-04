@@ -34,18 +34,6 @@ Get-MgBetaDeviceByDeviceId -InputObject <IIdentityDirectoryManagementIdentity> [
 Get the properties and relationships of a device object.
 Since the device resource supports extensions, you can also use the GET operation to get custom properties and extension data in a device instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -224,6 +212,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebydeviceid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicebydeviceid)
 
 [https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-get?view=graph-rest-1.0)
+
 
 
 

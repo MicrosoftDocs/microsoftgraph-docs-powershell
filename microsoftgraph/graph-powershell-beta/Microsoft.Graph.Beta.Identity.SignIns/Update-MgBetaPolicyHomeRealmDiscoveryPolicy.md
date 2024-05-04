@@ -50,22 +50,6 @@ Update-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Update the properties of a homeRealmDiscoveryPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,6 +410,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy)
 
 [https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0)
+
 
 
 

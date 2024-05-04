@@ -50,18 +50,6 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Update the properties of an allowedValue object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,6 +292,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectorycustomsecurityattributedefinitionallowedvalue)
 
 [https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/allowedvalue-update?view=graph-rest-1.0)
+
 
 
 

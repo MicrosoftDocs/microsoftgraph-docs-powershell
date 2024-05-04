@@ -29,18 +29,6 @@ Remove-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property roleGroups for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -220,6 +208,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatarolegroup)
+
 
 
 

@@ -43,18 +43,6 @@ Update-MgBetaAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSet
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -691,6 +679,7 @@ IDLESESSIONSIGNOUT `<IMicrosoftGraphIdleSessionSignOut>`: idleSessionSignOut
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepointsetting)
 
 [https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0)
+
 
 
 

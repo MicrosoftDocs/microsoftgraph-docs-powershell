@@ -31,22 +31,6 @@ Test-MgBetaSiteListContentTypePublished -InputObject <ISitesIdentity> [-Response
 ## DESCRIPTION
 Invoke function isPublished
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -228,6 +212,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished)
+
 
 
 

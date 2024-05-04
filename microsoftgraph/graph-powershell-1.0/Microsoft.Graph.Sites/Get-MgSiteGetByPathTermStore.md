@@ -62,18 +62,6 @@ Get-MgSiteGetByPathTermStore -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Read the properties and relationships of a store object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -399,6 +387,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathtermstore)
 
 [https://learn.microsoft.com/graph/api/termstore-store-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-store-get?view=graph-rest-1.0)
+
 
 
 

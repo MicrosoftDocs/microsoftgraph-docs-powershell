@@ -70,18 +70,6 @@ Set-MgBetaTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property schedule in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivitiesIncludedWhenCopyingShiftsEnabled
@@ -1334,6 +1322,7 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamschedule)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity> [-Expand
 ## DESCRIPTION
 List of notes associated with the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,6 +367,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestnote)
 
 [https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0)
+
 
 
 

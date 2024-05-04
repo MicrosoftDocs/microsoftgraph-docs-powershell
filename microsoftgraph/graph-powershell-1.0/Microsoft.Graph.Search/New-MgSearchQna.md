@@ -36,18 +36,6 @@ New-MgSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersVaria
 ## DESCRIPTION
 Create a new qna object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -502,6 +490,7 @@ When users select this answer variation from the search results, they're directe
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
+
 
 
 

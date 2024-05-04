@@ -32,18 +32,6 @@ Invoke-MgPromoteDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Res
 Promote a verified subdomain to the root domain.
 A verified domain has its isVerified property set to true.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DomainId
@@ -200,6 +188,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpromotedomain)
 
 [https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-promote?view=graph-rest-1.0)
+
 
 
 

@@ -51,22 +51,6 @@ Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 ## DESCRIPTION
 Approve or deny an approvalStage object in an approval.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -490,6 +474,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceappconsentrequestuserconsentrequestapprovalstage)
 
 [https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0)
+
 
 
 

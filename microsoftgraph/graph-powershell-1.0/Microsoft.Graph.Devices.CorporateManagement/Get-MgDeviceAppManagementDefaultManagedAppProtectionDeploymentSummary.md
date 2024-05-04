@@ -33,18 +33,6 @@ Get-MgDeviceAppManagementDefaultManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DefaultManagedAppProtectionId
@@ -209,6 +197,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotectiondeploymentsummary)
+
 
 
 

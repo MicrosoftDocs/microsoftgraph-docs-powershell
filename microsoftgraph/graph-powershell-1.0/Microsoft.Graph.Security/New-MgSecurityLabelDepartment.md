@@ -31,18 +31,6 @@ New-MgSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVariab
 ## DESCRIPTION
 Create a new departmentTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,6 +233,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment)
 
 [https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0)
+
 
 
 

@@ -40,22 +40,6 @@ Get-MgDriveRootVersion -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a DriveItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -349,6 +333,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0)
+
 
 
 

@@ -60,22 +60,6 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingAppointment for the specified bookingBusiness.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -733,6 +717,7 @@ See below for more possible values.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
 
 [https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
+
 
 
 

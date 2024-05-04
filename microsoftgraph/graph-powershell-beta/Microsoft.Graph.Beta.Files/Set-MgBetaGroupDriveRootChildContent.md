@@ -32,22 +32,6 @@ Set-MgBetaGroupDriveRootChildContent -InputObject <IFilesIdentity> [-Data <Strea
 ## DESCRIPTION
 Update content for the navigation property children in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -281,6 +265,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdriverootchildcontent)
+
 
 
 

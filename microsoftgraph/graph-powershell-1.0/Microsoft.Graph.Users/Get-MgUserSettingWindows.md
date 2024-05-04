@@ -42,18 +42,6 @@ Get-MgUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <String[
 Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL.
 This method gets the setting for the signed-in user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,6 +326,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0)
+
 
 
 

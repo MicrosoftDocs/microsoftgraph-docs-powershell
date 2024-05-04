@@ -40,18 +40,6 @@ Get-MgBetaReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a manifest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -348,6 +336,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingmanifest)
 
 [https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
+
 
 
 

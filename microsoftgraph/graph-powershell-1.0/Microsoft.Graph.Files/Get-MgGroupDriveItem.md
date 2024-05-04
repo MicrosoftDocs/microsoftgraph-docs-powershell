@@ -40,22 +40,6 @@ Get-MgGroupDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +346,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitem)
 
 [https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0)
+
 
 
 

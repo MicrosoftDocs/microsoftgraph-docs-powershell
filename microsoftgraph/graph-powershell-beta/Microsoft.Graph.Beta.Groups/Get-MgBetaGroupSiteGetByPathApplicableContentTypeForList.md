@@ -34,18 +34,6 @@ Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsId
 ## DESCRIPTION
 Invoke function getApplicableContentTypesForList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -356,6 +344,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist)
+
 
 
 

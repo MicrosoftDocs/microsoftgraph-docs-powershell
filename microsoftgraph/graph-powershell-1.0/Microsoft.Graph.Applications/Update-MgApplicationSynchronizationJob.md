@@ -52,18 +52,6 @@ Update-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property jobs in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -823,6 +811,7 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationjob)
+
 
 
 

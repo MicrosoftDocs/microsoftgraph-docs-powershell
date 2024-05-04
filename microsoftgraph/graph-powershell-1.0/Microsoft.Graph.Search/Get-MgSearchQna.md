@@ -39,18 +39,6 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -314,6 +302,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0)
+
 
 
 

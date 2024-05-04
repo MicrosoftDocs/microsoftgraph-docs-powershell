@@ -54,18 +54,6 @@ Get-MgSecurityAttackSimulationPayload -InputObject <ISecurityIdentity> [-ExpandP
 ## DESCRIPTION
 Represents an attack simulation training campaign payload in a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -393,6 +381,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationpayload](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationpayload)
 
 [https://learn.microsoft.com/graph/api/attacksimulationroot-list-payloads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-payloads?view=graph-rest-1.0)
+
 
 
 

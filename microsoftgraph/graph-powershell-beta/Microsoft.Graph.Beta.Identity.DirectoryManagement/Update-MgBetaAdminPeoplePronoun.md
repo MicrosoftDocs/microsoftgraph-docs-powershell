@@ -34,18 +34,6 @@ Update-MgBetaAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings>
 Update the properties of a pronounsSettings object in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -215,6 +203,7 @@ The default value is false, and pronouns are disabled.
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaadminpeoplepronoun)
 
 [https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/pronounssettings-update?view=graph-rest-1.0)
+
 
 
 

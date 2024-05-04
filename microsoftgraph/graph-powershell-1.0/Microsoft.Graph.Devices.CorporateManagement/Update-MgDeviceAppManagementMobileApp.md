@@ -55,18 +55,6 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 Update the properties of a win32LobApp object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -536,6 +524,7 @@ LARGEICON `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileapp)
 
 [https://learn.microsoft.com/graph/api/intune-apps-win32lobapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-win32lobapp-update?view=graph-rest-1.0)
+
 
 
 

@@ -46,22 +46,6 @@ New-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagem
 ## DESCRIPTION
 Create a new deviceConfigurationAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,6 +302,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment)
 
 [https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-create?view=graph-rest-1.0)
+
 
 
 

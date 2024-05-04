@@ -33,18 +33,6 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 ## DESCRIPTION
 Use this API to remove a member (user, group, or device) from an administrative unit.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -246,6 +234,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0)
+
 
 
 

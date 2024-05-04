@@ -49,18 +49,6 @@ Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep
 ## DESCRIPTION
 Apply approve or deny decision on an approvalStep object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -503,6 +491,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep)
 
 [https://learn.microsoft.com/graph/api/approvalstep-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstep-update?view=graph-rest-1.0)
+
 
 
 

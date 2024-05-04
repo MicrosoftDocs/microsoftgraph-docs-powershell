@@ -32,22 +32,6 @@ Remove-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -Id <String
 ## DESCRIPTION
 Delete a class from a school.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -238,6 +222,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclassbyref)
 
 [https://learn.microsoft.com/graph/api/educationschool-delete-classes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-classes?view=graph-rest-1.0)
+
 
 
 

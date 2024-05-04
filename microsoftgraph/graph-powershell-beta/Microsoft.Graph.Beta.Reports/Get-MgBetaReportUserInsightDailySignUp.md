@@ -37,18 +37,6 @@ Get-MgBetaReportUserInsightDailySignUp -InputObject <IReportsIdentity> [-ExpandP
 ## DESCRIPTION
 Total sign-ups on apps registered in the tenant for a specified period.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -345,6 +333,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailysignup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserinsightdailysignup)
 
 [https://learn.microsoft.com/graph/api/dailyuserinsightmetricsroot-list-signups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/dailyuserinsightmetricsroot-list-signups?view=graph-rest-1.0)
+
 
 
 

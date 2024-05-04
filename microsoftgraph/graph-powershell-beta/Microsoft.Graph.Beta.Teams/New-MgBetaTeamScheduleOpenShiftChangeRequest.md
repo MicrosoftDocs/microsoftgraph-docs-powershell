@@ -50,22 +50,6 @@ New-MgBetaTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create instance of an openShiftChangeRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -440,6 +424,7 @@ When the unique identifier is unavailable, the displayName property is provided 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamscheduleopenshiftchangerequest)
 
 [https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property riskyServicePrincipals for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -259,6 +247,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyserviceprincipal)
+
 
 
 
