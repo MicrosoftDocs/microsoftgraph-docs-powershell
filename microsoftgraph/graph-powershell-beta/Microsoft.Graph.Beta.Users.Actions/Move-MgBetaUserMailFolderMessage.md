@@ -321,9 +321,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfoldermessage)
+
+[https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-move?view=graph-rest-1.0)
 
 
 

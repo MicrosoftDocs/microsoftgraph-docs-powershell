@@ -193,7 +193,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/remove-mgprivacysubjectrightsrequest)
 

@@ -388,9 +388,10 @@ These must match the actionName that is defined as part of the rolePermission.
       - `[NotAllowedResourceActions <String- `[]`>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment)
+
+[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-create?view=graph-rest-1.0)
 
 
 

@@ -550,9 +550,10 @@ See below for possible values.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/find-mgbetausermeetingtime)
+
+[https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-findmeetingtimes?view=graph-rest-1.0)
 
 
 

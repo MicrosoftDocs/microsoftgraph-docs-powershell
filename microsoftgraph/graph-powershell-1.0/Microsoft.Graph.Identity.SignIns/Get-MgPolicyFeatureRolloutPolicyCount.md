@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPolicyFeatureRolloutPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyFeatureRolloutPolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicycount)
 

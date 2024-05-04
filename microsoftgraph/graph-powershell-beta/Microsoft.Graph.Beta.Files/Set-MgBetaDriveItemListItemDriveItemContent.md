@@ -248,7 +248,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgDriveItemListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveItemListItemDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriveitemlistitemdriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetadriveitemlistitemdriveitemcontent)
 

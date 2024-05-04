@@ -353,7 +353,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddeviceconfigurationstate)
 

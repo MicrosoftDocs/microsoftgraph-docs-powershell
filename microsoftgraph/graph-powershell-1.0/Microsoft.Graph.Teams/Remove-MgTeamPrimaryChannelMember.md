@@ -32,9 +32,6 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a conversationMember from a channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/conversationmember-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -243,9 +240,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamprimarychannelmember)
+
+[https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0)
 
 
 

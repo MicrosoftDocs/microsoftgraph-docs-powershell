@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaApplicationTemplateCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplateCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplatecount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtemplatecount)
 

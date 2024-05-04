@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileanniversary
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Remove-MgBetaUserProfileAnniversary
@@ -29,9 +28,6 @@ Remove-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <St
 
 ## DESCRIPTION
 Delete a personAnniversary object from the user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/personanniversary-delete-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserProfileAnniversary Cmdlet
@@ -240,6 +236,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileanniversary)
+
+[https://learn.microsoft.com/graph/api/personanniversary-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personanniversary-delete?view=graph-rest-1.0)
 
 
 

@@ -677,7 +677,6 @@ This identifier is typically used if one needs an identifier to be the same acro
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentscheduleinstance)
 

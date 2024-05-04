@@ -39,9 +39,6 @@ Get-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[
 ## DESCRIPTION
 Retrieve the properties and relationships of a calendar group object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -302,9 +299,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup)
+
+[https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0)
 
 
 

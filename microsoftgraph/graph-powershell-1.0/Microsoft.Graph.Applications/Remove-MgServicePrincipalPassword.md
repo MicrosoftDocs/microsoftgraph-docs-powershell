@@ -45,9 +45,6 @@ Remove-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Remove a password from a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/serviceprincipal-removepassword-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgServicePrincipalPassword Cmdlet
 ```powershell
@@ -279,6 +276,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalpassword)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-removepassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-removepassword?view=graph-rest-1.0)
 
 
 

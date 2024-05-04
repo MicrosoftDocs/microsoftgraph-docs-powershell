@@ -241,9 +241,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mguserdefaultcalendarevent)
+
+[https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0)
 
 
 

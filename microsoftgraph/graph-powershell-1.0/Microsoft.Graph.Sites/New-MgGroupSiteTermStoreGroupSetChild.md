@@ -167,9 +167,6 @@ New-MgGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-post-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -813,9 +810,10 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoregroupsetchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitetermstoregroupsetchild)
+
+[https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-post?view=graph-rest-1.0)
 
 
 

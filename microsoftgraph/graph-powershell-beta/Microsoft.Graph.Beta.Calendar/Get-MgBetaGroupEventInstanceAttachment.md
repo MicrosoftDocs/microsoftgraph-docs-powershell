@@ -333,9 +333,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceattachment)
+
+[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
 
 
 

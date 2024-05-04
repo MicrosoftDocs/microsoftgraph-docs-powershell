@@ -529,7 +529,6 @@ WORKINGHOURS `<IMicrosoftGraphWorkingHours>`: workingHours
 It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointprovisioningpolicyassignmentassignedusermailboxsetting)
 

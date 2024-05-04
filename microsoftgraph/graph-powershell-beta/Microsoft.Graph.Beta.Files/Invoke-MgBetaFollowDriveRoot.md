@@ -30,9 +30,6 @@ Invoke-MgBetaFollowDriveRoot -InputObject <IFilesIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Follow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-follow-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -185,9 +182,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgFollowDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetafollowdriveroot)
+
+[https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
 
 
 

@@ -42,9 +42,6 @@ Get-MgInformationProtectionThreatAssessmentRequest -InputObject <IIdentitySignIn
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/threatassessmentrequest-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the properties of a mail assessment request
 
@@ -405,9 +402,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequest)
+
+[https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0)
 
 
 

@@ -354,7 +354,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgroupdriveroot)
 

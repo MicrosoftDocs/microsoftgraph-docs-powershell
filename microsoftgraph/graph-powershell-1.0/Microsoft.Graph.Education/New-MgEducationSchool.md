@@ -36,9 +36,6 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Response
 ## DESCRIPTION
 Create a new educationSchool object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -15557,9 +15554,10 @@ Supports $filter and $orderby.
 Supports $filter.
 
 ## RELATED LINKS
-[New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchool?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-post?view=graph-rest-1.0)
 
 
 

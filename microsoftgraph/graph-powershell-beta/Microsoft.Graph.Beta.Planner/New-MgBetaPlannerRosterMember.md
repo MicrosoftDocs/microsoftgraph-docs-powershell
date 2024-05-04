@@ -43,9 +43,6 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 ## DESCRIPTION
 Add a member to the plannerRoster object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerroster-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaPlannerRosterMember Cmdlet
 ```powershell
@@ -302,6 +299,8 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember)
+
+[https://learn.microsoft.com/graph/api/plannerroster-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerroster-post-members?view=graph-rest-1.0)
 
 
 

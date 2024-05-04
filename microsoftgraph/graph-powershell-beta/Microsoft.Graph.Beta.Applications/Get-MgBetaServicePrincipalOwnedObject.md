@@ -350,9 +350,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownedobject)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-ownedobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-ownedobjects?view=graph-rest-1.0)
 
 
 

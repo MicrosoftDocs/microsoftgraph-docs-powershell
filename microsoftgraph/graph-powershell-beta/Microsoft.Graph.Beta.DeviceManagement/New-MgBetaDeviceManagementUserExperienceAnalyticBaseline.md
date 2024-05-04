@@ -514,7 +514,6 @@ Examples: none, percentage, count, seconds, score.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticBaseline](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBaseline?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbaseline](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbaseline)
 

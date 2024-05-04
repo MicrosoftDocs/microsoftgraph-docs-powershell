@@ -9885,7 +9885,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mggroupdriveitemanalyticitemactivitystat)
 

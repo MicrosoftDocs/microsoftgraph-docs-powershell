@@ -54,9 +54,6 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ## DESCRIPTION
 Update the properties of a delegatedAdminAccessAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/delegatedadminaccessassignment-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AccessContainer
@@ -365,9 +362,10 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+
+[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0)
 
 
 

@@ -298,7 +298,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlaceAsRoom](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroom)
 

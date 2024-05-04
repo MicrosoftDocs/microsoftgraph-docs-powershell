@@ -57,9 +57,6 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-forcedelete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -318,9 +315,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaforcedomaindelete)
+
+[https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-forcedelete?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-tabs-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all the tabs in the channel along with associated Teams app
 
@@ -378,9 +375,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchanneltab)
+
+[https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0)
 
 
 

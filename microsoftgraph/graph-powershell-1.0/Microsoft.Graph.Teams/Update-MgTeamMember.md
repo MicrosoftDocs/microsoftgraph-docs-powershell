@@ -48,9 +48,6 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the role of a conversationMember in a team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -358,9 +355,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteammember)
+
+[https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0)
 
 
 

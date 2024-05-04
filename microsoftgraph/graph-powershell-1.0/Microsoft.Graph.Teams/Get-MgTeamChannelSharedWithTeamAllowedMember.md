@@ -380,9 +380,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteamallowedmember)
+
+[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list-allowedmembers?view=graph-rest-1.0)
 
 
 

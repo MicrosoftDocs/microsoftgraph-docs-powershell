@@ -278,9 +278,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Restore-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsitelistitemversion)
+
+[https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
 
 
 

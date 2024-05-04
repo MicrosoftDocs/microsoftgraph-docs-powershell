@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceTermsOfUseAgreementCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermsofuseagreementcount)
 

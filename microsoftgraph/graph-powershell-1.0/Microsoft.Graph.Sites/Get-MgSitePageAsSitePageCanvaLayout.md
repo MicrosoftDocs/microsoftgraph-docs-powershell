@@ -217,7 +217,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayout)
 

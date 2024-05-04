@@ -354,9 +354,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0)
 
 
 

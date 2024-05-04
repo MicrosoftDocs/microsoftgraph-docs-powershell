@@ -1526,7 +1526,6 @@ EXEMPTEDAPPPROTOCOLS <IMicrosoftGraphKeyValuePair- `[]`>: Apps in this list will
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementiosmanagedappprotection)
 

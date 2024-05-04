@@ -50,9 +50,6 @@ Set a user's emailAuthenticationMethod object.
 Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authentication-post-emailmethods-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -322,9 +319,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationemailmethod)
+
+[https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-post-emailmethods?view=graph-rest-1.0)
 
 
 

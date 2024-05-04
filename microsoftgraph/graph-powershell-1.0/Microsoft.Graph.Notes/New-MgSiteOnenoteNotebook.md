@@ -909,9 +909,10 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebook)
+
+[https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0)
 
 
 

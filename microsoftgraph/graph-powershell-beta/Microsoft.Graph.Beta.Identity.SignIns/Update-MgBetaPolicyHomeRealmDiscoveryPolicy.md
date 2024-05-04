@@ -50,9 +50,6 @@ Update-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Update the properties of a homeRealmDiscoveryPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/homerealmdiscoverypolicy-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -409,9 +406,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyhomerealmdiscoverypolicy)
+
+[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-update?view=graph-rest-1.0)
 
 
 

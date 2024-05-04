@@ -248,7 +248,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSiteOnenote](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteOnenote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsiteonenote)
 

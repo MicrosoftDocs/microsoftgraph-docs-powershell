@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaReportMonthlyPrintUsageByPrinterCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinterCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyprintercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyprintercount)
 

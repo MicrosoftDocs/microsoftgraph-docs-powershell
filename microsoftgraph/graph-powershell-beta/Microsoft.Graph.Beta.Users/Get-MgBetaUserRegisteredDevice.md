@@ -361,9 +361,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserRegisteredDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserRegisteredDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserregistereddevice)
+
+[https://learn.microsoft.com/graph/api/user-list-registereddevices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-registereddevices?view=graph-rest-1.0)
 
 
 

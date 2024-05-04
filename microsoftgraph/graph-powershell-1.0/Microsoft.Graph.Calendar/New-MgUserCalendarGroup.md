@@ -48,9 +48,6 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Use this API to create a new CalendarGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendargroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -839,9 +836,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
+
+[https://learn.microsoft.com/graph/api/user-post-calendargroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-calendargroups?view=graph-rest-1.0)
 
 
 

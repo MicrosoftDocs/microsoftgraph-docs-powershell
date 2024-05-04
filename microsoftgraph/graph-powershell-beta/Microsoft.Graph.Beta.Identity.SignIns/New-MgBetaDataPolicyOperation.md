@@ -282,7 +282,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
-[New-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgDataPolicyOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetadatapolicyoperation)
 

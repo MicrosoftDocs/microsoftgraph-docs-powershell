@@ -1101,7 +1101,6 @@ Note: This is not the signature.
   - `[Subject <IMicrosoftGraphSecuritySslCertificateEntity>]`: sslCertificateEntity
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehostsslcertificate)
 

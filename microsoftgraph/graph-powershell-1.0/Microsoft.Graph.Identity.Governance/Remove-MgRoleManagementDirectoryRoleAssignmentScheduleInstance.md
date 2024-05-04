@@ -258,7 +258,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleassignmentscheduleinstance)
 

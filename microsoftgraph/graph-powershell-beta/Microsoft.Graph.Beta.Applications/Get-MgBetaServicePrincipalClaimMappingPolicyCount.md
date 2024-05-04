@@ -191,7 +191,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalClaimMappingPolicyCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicycount)
 

@@ -72,9 +72,6 @@ Update the properties of the currently authenticated organization.
 In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
 The ID is also known as the tenantId of the organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organization-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1192,9 +1189,10 @@ Not nullable.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
-[Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
+
+[https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
 
 
 

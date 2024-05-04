@@ -209,7 +209,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeeting)
 

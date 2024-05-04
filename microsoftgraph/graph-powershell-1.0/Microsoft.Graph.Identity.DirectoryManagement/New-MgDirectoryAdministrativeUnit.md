@@ -34,9 +34,6 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ## DESCRIPTION
 Use this API to create a new administrativeUnit.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directory-post-administrativeunits-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -374,9 +371,10 @@ For example, if a user changes their display name, the API might show the new va
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
+
+[https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
 
 
 

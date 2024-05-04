@@ -318,9 +318,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackagebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackagebyref)
+
+[https://learn.microsoft.com/graph/api/accesspackage-delete-incompatibleaccesspackage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-delete-incompatibleaccesspackage?view=graph-rest-1.0)
 
 
 

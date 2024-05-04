@@ -346,9 +346,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Test-MgGroupProperty](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupproperty)
+
+[https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-validateproperties?view=graph-rest-1.0)
 
 
 

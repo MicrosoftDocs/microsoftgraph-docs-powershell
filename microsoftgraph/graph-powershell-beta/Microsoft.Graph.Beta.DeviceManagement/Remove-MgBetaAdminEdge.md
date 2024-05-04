@@ -143,7 +143,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedge](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedge)
 

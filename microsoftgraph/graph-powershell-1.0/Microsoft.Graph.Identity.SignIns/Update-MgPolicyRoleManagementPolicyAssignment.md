@@ -473,7 +473,6 @@ One of Directory, DirectoryRole, Group.
 Required.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment)
 

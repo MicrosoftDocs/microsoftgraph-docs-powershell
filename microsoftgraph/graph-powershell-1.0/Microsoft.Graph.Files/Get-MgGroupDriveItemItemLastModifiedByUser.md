@@ -215,7 +215,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemItemLastModifiedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemitemlastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdriveitemitemlastmodifiedbyuser)
 

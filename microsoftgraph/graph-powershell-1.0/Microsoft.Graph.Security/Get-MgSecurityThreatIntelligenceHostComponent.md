@@ -62,9 +62,6 @@ Get-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of a hostComponent object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-hostcomponent-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -388,9 +385,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent)
+
+[https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0)
 
 
 

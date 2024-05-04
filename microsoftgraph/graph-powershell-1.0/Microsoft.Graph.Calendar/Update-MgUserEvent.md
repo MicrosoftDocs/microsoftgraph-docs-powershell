@@ -78,9 +78,6 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the properties of the event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/event-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -2003,9 +2000,10 @@ START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mguserevent)
+
+[https://learn.microsoft.com/graph/api/event-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-update?view=graph-rest-1.0)
 
 
 

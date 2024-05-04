@@ -276,7 +276,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgOrganizationBrandingSquareLogoDark](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingSquareLogoDark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandingsquarelogodark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandingsquarelogodark)
 

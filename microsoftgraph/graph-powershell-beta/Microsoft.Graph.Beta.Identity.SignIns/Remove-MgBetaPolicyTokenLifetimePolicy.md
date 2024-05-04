@@ -32,9 +32,6 @@ Remove-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete a tokenLifetimePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,9 +280,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-delete?view=graph-rest-1.0)
 
 
 

@@ -3495,9 +3495,10 @@ Read-only.
 Only available for applications that support the PersonalMicrosoftAccount signInAudience.
 
 ## RELATED LINKS
-[Update-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByAppId?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationbyappid)
+
+[https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
 
 
 

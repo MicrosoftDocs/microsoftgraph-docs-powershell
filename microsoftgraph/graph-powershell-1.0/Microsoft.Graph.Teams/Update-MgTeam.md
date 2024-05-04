@@ -67,9 +67,6 @@ Update-MgTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam>
 ## DESCRIPTION
 Update the properties of the specified team.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/team-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -29202,9 +29199,10 @@ Read-only.
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteam)
+
+[https://learn.microsoft.com/graph/api/team-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-update?view=graph-rest-1.0)
 
 
 

@@ -42,9 +42,6 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of id in the URL.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -345,9 +342,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0)
 
 
 

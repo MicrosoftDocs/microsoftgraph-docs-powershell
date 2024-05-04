@@ -261,9 +261,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgorganizationmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgorganizationmembergroup)
+
+[https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0)
 
 
 

@@ -52,9 +52,6 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new educationRubric object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationuser-post-rubrics-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -441,9 +438,10 @@ QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserrubric)
+
+[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0)
 
 
 

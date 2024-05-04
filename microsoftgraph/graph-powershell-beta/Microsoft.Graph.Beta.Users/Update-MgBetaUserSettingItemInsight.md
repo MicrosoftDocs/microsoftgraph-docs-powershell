@@ -43,9 +43,6 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the privacy settings for itemInsights and meeting hours insights of a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userinsightssettings-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingItemInsight Cmdlet
 ```powershell
@@ -287,6 +284,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingiteminsight)
+
+[https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userinsightssettings-update?view=graph-rest-1.0)
 
 
 

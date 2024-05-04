@@ -41,9 +41,6 @@ Get a servicePrincipalSignInActivity object that contains sign-in activity infor
 You can use a service principal as a client or resource.
 A service principal supports delegated or app-only authentication context.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalsigninactivity-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -338,6 +335,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceprincipalsigninactivity)
+
+[https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipalsigninactivity-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-serviceprincipalsigninactivities?view=graph-rest-1.0)
 
 
 

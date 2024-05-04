@@ -32,9 +32,6 @@ Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceMana
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-delete-sites-permissions.md)]
-
 ## PARAMETERS
 
 ### -BrowserSiteId
@@ -234,6 +231,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
   - `[DeviceConfigurationGroupAssignmentId <String>]`: The unique identifier of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceConfigurationProfileId <String>]`: The unique identifier of deviceConfigurationProfile
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
   - `[DeviceHealthScriptAssignmentId <String>]`: The unique identifier of deviceHealthScriptAssignment
@@ -348,9 +346,10 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Remove-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetaadminedgeinternetexplorermodesitelistsite)
+
+[https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-delete-sites?view=graph-rest-1.0)
 
 
 

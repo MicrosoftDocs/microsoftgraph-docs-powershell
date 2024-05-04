@@ -32,9 +32,6 @@ Get-MgBetaShareDriveItemContent -InputObject <IFilesIdentity> [-Format <String>]
 ## DESCRIPTION
 Get content for the navigation property driveItem from shares
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/shares-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -Format
@@ -201,9 +198,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItemContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharedriveitemcontent)
+
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
 
 
 

@@ -397,7 +397,6 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationuserassignmentsubmissionresource)
 

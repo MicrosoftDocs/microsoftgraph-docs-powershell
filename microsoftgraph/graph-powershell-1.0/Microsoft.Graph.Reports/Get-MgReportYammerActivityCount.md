@@ -180,7 +180,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportYammerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
 

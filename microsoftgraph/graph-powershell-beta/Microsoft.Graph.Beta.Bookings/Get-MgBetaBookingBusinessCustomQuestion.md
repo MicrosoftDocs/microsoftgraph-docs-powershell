@@ -62,9 +62,6 @@ Get-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-Expan
 ## DESCRIPTION
 Read the properties and relationships of a bookingCustomQuestion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessCustomQuestion Cmdlet
 ```powershell
@@ -367,9 +364,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomquestion)
+
+[https://learn.microsoft.com/graph/api/bookingcustomquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomquestion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-customquestions?view=graph-rest-1.0)
 
 
 

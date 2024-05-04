@@ -60,9 +60,6 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bookingbusiness-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -963,9 +960,10 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusiness)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-update?view=graph-rest-1.0)
 
 
 

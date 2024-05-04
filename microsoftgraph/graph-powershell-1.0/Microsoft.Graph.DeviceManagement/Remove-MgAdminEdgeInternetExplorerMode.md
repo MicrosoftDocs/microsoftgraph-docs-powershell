@@ -144,7 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermode)
 

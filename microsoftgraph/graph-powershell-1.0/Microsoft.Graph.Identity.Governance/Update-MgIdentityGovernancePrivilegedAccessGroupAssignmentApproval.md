@@ -359,7 +359,6 @@ Possible values: InProgress, Initializing, Completed, Expired.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapproval](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupassignmentapproval)
 

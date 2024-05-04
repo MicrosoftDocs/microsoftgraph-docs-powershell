@@ -239,9 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupAcceptedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsender)
+
+[https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
 
 
 

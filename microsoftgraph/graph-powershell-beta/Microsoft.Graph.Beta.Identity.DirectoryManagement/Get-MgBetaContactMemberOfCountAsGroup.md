@@ -222,7 +222,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgContactMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberOfCountAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberofcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmemberofcountasgroup)
 

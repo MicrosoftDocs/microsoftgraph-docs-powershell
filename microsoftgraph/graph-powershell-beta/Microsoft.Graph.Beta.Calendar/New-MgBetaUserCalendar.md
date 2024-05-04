@@ -60,9 +60,6 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new calendar for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-calendars-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1461,9 +1458,10 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar)
+
+[https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0)
 
 
 

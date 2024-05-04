@@ -265,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupDriveRootCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootcreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootcreatedbyuserserviceprovisioningerror)
 

@@ -557,7 +557,6 @@ Read-only.
   - `[Type <String>]`:
 
 ## RELATED LINKS
-[Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententitlementmanagementresourcenamespaceresourceaction)
 

@@ -275,9 +275,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserOnenoteNotebookFromWebUrl?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguseronenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mguseronenotenotebookfromweburl)
+
+[https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)
 
 
 

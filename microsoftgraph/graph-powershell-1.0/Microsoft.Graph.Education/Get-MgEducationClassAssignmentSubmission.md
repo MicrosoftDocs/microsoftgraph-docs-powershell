@@ -57,9 +57,6 @@ The grade and feedback from a teacher are part of the educationOutcome associate
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the assignment has been released.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get submissions
 
@@ -375,9 +372,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentsubmission)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0)
 
 
 

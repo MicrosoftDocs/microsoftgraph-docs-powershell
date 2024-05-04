@@ -36,9 +36,6 @@ Get-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Retrieve the properties of a specific directory setting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directorysetting-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDirectorySetting Cmdlet
 ```powershell
@@ -337,6 +334,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysetting)
+
+[https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directorysetting-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
 
 
 

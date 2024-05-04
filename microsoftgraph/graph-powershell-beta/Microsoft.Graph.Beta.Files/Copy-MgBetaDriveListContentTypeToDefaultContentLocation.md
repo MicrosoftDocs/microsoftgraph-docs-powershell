@@ -361,9 +361,10 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveListContentTypeToDefaultContentLocation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadrivelistcontenttypetodefaultcontentlocation)
+
+[https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-copytodefaultcontentlocation?view=graph-rest-1.0)
 
 
 

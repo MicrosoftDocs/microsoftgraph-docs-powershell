@@ -47,9 +47,6 @@ Update-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 Update the properties of an authenticationEventListener object.
 You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventlistener-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -377,6 +374,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener)
+
+[https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
 
 
 

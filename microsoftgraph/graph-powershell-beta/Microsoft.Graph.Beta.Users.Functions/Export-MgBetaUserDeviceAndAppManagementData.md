@@ -241,7 +241,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Export-MgUserDeviceAndAppManagementData](/powershell/module/Microsoft.Graph.Users.Functions/Export-MgUserDeviceAndAppManagementData?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/export-mgbetauserdeviceandappmanagementdata)
 

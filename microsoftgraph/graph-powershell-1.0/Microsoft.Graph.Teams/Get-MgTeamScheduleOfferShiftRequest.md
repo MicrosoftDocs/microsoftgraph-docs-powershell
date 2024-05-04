@@ -40,9 +40,6 @@ Get-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties and relationships of an offerShiftRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/offershiftrequest-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -352,9 +349,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleoffershiftrequest)
+
+[https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0)
 
 
 

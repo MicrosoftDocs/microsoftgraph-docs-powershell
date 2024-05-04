@@ -34,9 +34,6 @@ Remove-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> 
 Delete an existing category.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -241,9 +238,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentcategory)
+
+[https://learn.microsoft.com/graph/api/educationcategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-delete?view=graph-rest-1.0)
 
 
 

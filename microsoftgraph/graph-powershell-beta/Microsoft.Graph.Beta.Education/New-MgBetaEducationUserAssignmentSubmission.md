@@ -582,7 +582,6 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmission)
 

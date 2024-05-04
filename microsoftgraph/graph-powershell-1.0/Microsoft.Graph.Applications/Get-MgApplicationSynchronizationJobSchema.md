@@ -32,9 +32,6 @@ Get-MgApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationschema-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -200,9 +197,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJobSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjobschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0)
 
 
 

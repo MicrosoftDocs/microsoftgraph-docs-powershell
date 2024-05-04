@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.Beta.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Get-MgBetaSubscription
@@ -228,9 +227,12 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
-[Get-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Get-MgSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications/get-mgbetasubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-list?view=graph-rest-1.0)
 
 
 

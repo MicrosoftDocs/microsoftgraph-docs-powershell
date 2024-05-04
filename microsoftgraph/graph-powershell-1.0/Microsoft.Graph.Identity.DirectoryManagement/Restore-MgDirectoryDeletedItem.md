@@ -208,9 +208,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem)
+
+[https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
 
 
 

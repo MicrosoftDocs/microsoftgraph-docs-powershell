@@ -135,7 +135,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowsenrollmentautodiscovery)
 

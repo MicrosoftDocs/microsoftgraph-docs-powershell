@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a federatedTokenValidationPolicy object.
+Get a list of the federatedTokenValidationPolicy objects and their properties.
 
 ## SYNTAX
 
@@ -19,10 +19,7 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a federatedTokenValidationPolicy object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedtokenvalidationpolicy-get-permissions.md)]
+Get a list of the federatedTokenValidationPolicy objects and their properties.
 
 ## PARAMETERS
 
@@ -115,6 +112,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfederatedtokenvalidationpolicy)
+
+[https://learn.microsoft.com/graph/api/policyroot-list-federatedtokenvalidationpolicy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/policyroot-list-federatedtokenvalidationpolicy?view=graph-rest-1.0)
 
 
 

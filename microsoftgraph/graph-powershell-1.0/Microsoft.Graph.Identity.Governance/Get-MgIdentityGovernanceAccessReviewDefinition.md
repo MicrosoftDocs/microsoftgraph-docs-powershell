@@ -42,9 +42,6 @@ Get-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 Read the properties and relationships of an accessReviewScheduleDefinition object.
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -373,9 +370,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)
 
 
 

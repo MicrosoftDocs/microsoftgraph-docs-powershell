@@ -260,7 +260,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Set-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfoldercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfoldercontactphotocontent)
 

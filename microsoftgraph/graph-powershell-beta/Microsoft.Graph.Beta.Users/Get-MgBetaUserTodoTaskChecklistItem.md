@@ -40,9 +40,6 @@ Get-MgBetaUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/checklistitem-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -362,9 +359,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskChecklistItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskchecklistitem)
+
+[https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0)
 
 
 

@@ -242,7 +242,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationInvitedUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainvitationinvitedusermailboxsetting)
 

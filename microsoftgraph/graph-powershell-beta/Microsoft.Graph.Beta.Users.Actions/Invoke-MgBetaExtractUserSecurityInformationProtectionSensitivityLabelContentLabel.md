@@ -50,6 +50,9 @@ Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabe
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-sensitivitylabel-extractcontentlabel-permissions.md)]
+
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaExtractUserSecurityInformationProtectionSensitivityLabelContentLabel Cmdlet
 ```powershell
@@ -337,6 +340,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractusersecurityinformationprotectionsensitivitylabelcontentlabel)
+
+[https://learn.microsoft.com/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sensitivitylabel-extractcontentlabel?view=graph-rest-1.0)
 
 
 

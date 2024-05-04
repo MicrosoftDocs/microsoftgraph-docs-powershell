@@ -244,7 +244,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListContentTypeColumnLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistcontenttypecolumnlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrivelistcontenttypecolumnlink)
 

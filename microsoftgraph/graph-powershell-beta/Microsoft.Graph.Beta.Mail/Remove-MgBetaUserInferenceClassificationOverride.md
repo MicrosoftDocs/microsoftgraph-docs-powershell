@@ -32,9 +32,6 @@ Remove-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-
 ## DESCRIPTION
 Delete a focused Inbox override specified by its ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/inferenceclassificationoverride-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -232,9 +229,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetauserinferenceclassificationoverride)
+
+[https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0)
 
 
 

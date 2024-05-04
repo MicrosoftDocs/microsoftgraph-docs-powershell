@@ -241,7 +241,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationAutomationRunCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRunCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationruncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationautomationruncount)
 

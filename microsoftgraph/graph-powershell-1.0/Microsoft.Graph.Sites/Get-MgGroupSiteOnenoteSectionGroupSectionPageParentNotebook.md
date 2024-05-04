@@ -265,7 +265,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroupSectionPageParentNotebook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroupsectionpageparentnotebook)
 

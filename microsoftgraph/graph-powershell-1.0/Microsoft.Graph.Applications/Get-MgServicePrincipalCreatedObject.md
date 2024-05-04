@@ -339,7 +339,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalCreatedObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCreatedObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcreatedobject)
 

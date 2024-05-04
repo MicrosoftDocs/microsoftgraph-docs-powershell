@@ -43,9 +43,6 @@ Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the properties of a contactMergeSuggestions object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactmergesuggestions-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
 ```powershell
@@ -286,6 +283,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion)
+
+[https://learn.microsoft.com/graph/api/contactmergesuggestions-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactmergesuggestions-update?view=graph-rest-1.0)
 
 
 

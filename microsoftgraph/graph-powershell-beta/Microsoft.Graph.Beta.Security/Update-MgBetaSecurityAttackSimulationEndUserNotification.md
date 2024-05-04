@@ -550,7 +550,6 @@ This property is read-only.
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationendusernotification)
 

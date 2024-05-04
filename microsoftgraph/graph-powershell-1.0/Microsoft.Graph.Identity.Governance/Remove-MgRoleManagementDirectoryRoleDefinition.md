@@ -36,9 +36,6 @@ Delete a unifiedRoleDefinition object.
 You can't delete built-in roles.
 This feature requires a Microsoft Entra ID P1 or P2 license.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/unifiedroledefinition-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -264,9 +261,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroledefinition)
+
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-delete?view=graph-rest-1.0)
 
 
 

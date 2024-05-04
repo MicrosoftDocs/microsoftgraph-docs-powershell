@@ -33,9 +33,6 @@ New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create a new urlThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-urlthreatsubmission-post-urlthreats-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
@@ -428,6 +425,8 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat)
+
+[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0)
 
 
 

@@ -64,9 +64,6 @@ Update-MgEducationClass -InputObject <IEducationIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of an educationClass object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -25511,9 +25508,10 @@ TERM `<IMicrosoftGraphEducationTerm>`: educationTerm
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
-[Update-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclass)
+
+[https://learn.microsoft.com/graph/api/educationclass-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-update?view=graph-rest-1.0)
 
 
 

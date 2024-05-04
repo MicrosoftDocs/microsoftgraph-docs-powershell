@@ -48,9 +48,6 @@ New-MgBetaDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirector
 ## DESCRIPTION
 Create new navigation property ref to members for directory
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -311,9 +308,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryadministrativeunitmemberbyref)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-post-members?view=graph-rest-1.0)
 
 
 

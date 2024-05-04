@@ -180,7 +180,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportMailboxUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageStorage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage)
 

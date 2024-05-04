@@ -32,9 +32,6 @@ Get-MgUserOnlineMeetingAttendeeReport -InputObject <ICloudCommunicationsIdentity
 ## DESCRIPTION
 Get attendeeReport for the navigation property onlineMeetings from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Fetch attendee report of a Teams live event
 
@@ -205,9 +202,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendeereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeetingattendeereport)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
 
 
 

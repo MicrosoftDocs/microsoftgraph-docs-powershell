@@ -32,9 +32,6 @@ Remove-MgBetaDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Delete a \[bundle\]\[\] of driveItems by using its id.Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.It doesn't, however, remove the items referenced by the bundle.They remain in their parent folders.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bundle-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -245,9 +242,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriveitem)
+
+[https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-delete?view=graph-rest-1.0)
 
 
 

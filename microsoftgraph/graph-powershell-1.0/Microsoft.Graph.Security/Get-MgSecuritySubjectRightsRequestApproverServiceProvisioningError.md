@@ -267,7 +267,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerror)
 

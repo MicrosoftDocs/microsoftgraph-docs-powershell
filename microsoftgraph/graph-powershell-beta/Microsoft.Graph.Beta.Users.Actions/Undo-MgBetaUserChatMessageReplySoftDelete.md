@@ -264,9 +264,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Undo-MgUserChatMessageReplySoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageReplySoftDelete?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/undo-mgbetauserchatmessagereplysoftdelete)
+
+[https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-undosoftdelete?view=graph-rest-1.0)
 
 
 

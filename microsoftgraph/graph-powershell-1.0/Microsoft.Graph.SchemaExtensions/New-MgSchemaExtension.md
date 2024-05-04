@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgSchemaExtension
@@ -407,9 +406,10 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table in the Supported property data types section for more details.
 
 ## RELATED LINKS
-[New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/New-MgBetaSchemaExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/new-mgschemaextension)
+
+[https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
 
 
 

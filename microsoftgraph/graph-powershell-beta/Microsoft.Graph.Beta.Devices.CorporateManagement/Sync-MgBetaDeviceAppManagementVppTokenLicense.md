@@ -228,7 +228,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicense](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicense)
 

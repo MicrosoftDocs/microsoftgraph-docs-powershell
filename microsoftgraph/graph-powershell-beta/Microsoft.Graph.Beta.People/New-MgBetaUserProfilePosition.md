@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfilePosition
@@ -53,9 +52,6 @@ New-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMi
 
 ## DESCRIPTION
 Use this API to create a new workPosition in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-positions-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfilePosition Cmdlet
@@ -623,6 +619,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition)
+
+[https://learn.microsoft.com/graph/api/profile-post-positions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-positions?view=graph-rest-1.0)
 
 
 

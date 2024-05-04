@@ -190,7 +190,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserOwnedObjectCountAsApplication](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOwnedObjectCountAsApplication?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserownedobjectcountasapplication)
 

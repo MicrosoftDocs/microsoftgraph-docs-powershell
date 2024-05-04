@@ -297,7 +297,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetacleandevicemanagementmanageddevicewindowsdevice)
 

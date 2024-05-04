@@ -50,9 +50,6 @@ Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,9 +299,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Join-MgBetaDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaDriveListContentTypeWithHubSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgdrivelistcontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.files/join-mgdrivelistcontenttypewithhubsite)
+
+[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
 
 
 

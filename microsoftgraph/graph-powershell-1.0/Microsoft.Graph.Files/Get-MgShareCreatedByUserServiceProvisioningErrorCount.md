@@ -199,7 +199,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecreatedbyuserserviceprovisioningerrorcount)
 

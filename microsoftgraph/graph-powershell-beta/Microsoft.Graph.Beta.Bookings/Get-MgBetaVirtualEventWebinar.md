@@ -40,9 +40,6 @@ Get-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualeventwebinar-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -314,9 +311,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinar)
+
+[https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventsroot-list-webinars?view=graph-rest-1.0)
 
 
 

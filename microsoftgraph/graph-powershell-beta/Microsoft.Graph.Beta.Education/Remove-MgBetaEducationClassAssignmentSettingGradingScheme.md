@@ -30,9 +30,6 @@ Remove-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducati
 ## DESCRIPTION
 Delete an educationGradingScheme object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -226,6 +223,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassassignmentsettinggradingscheme)
+
+[https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationgradingscheme-delete?view=graph-rest-1.0)
 
 
 

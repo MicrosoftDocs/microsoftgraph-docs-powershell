@@ -361,7 +361,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupMemberWithLicenseErrorAsGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberWithLicenseErrorAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmemberwithlicenseerrorasgroup)
 

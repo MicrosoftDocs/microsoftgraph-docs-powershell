@@ -39,9 +39,6 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Read the properties and relationships of a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -299,9 +296,12 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
 
 
 

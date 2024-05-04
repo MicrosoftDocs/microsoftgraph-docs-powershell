@@ -58,9 +58,6 @@ Update-MgDriveItemPermission -InputObject <IFilesIdentity> -BodyParameter <IMicr
 Update the properties of a sharing permission by patching the permission resource.
 Only the roles property can be modified this way.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -706,9 +703,10 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitempermission)
+
+[https://learn.microsoft.com/graph/api/permission-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-update?view=graph-rest-1.0)
 
 
 

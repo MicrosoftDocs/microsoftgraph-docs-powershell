@@ -327,9 +327,12 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)
+
+[https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0)
 
 
 

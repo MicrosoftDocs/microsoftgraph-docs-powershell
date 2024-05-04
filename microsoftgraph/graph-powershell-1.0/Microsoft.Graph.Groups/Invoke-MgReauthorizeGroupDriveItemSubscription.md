@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdriveitemsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeGroupDriveItemSubscription
@@ -262,9 +261,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeGroupDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupDriveItemSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdriveitemsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgreauthorizegroupdriveitemsubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
 
 
 

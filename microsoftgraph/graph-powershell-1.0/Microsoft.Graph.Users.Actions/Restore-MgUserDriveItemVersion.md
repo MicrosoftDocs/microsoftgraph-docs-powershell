@@ -268,9 +268,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaUserDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitemversion)
+
+[https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
 
 
 

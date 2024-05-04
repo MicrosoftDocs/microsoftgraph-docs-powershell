@@ -366,9 +366,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostInReplyToAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostinreplytoattachment)
+
+[https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0)
 
 
 

@@ -601,7 +601,6 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[New-MgBetaSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreSetRelation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoresetrelation)
 

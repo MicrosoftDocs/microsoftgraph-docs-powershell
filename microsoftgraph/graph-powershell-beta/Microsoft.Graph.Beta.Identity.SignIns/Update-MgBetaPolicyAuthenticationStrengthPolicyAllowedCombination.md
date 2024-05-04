@@ -50,9 +50,6 @@ Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <
 Update the allowedCombinations property of an authenticationStrengthPolicy object.
 To update other properties of an authenticationStrengthPolicy object, use the Update authenticationStrengthPolicy method.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-updateallowedcombinations-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,9 +306,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicyallowedcombination](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicyallowedcombination)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-updateallowedcombinations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-updateallowedcombinations?view=graph-rest-1.0)
 
 
 

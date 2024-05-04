@@ -249,7 +249,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemCreatedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemcreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemcreatedbyuser)
 

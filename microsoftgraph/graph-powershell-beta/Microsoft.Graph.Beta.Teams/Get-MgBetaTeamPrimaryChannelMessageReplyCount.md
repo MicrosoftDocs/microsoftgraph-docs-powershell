@@ -215,7 +215,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamPrimaryChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReplyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagereplycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannelmessagereplycount)
 

@@ -183,7 +183,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserMailboxSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationusermailboxsetting)
 

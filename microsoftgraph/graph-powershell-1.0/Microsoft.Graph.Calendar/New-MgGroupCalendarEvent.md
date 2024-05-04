@@ -1955,9 +1955,10 @@ START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
 See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarevent)
+
+[https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0)
 
 
 

@@ -63,9 +63,6 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy>
 ## DESCRIPTION
 Creates a new groupLifecyclePolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/grouplifecyclepolicy-post-grouplifecyclepolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -361,9 +358,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy)
+
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0)
 
 
 

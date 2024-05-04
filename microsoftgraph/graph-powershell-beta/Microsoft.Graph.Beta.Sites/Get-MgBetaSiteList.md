@@ -40,9 +40,6 @@ Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Get the list of richLongRunningOperations associated with a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/list-list-operations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -371,9 +368,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelist)
+
+[https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-operations?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 
 

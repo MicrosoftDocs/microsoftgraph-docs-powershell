@@ -718,7 +718,6 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgBetaSiteTermStoreGroupSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroupSetTermChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsettermchild](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsettermchild)
 

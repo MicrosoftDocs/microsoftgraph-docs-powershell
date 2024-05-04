@@ -403,7 +403,6 @@ Read-only.
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[New-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprinttaskdefinitiontask)
 

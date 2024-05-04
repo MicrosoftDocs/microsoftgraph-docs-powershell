@@ -607,7 +607,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplaceasroomlistroom)
 

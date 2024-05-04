@@ -34,9 +34,6 @@ Remove-MgEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity>
 Remove an educationCategory from an educationAssignment.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-remove-category-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -251,9 +248,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentcategorybyref)
+
+[https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-remove-category?view=graph-rest-1.0)
 
 
 

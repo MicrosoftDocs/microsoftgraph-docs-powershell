@@ -250,7 +250,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationClassGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroupServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroupserviceprovisioningerror)
 

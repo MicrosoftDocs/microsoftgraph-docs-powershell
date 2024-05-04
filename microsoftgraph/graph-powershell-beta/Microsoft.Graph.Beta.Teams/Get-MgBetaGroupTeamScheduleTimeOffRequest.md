@@ -331,9 +331,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimeoffrequest)
+
+[https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0)
 
 
 

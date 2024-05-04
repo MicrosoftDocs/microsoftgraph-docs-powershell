@@ -40,9 +40,6 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all b2xIdentityUserFlow objects
 
@@ -392,9 +389,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow)
+
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-1.0)
 
 
 

@@ -516,7 +516,6 @@ This identifier is typically used if one needs an identifier to be the same acro
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleeligibilityscheduleinstance)
 

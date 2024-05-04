@@ -265,7 +265,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSiteTermStoreSetRelationFromTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetRelationFromTerm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetrelationfromterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetrelationfromterm)
 

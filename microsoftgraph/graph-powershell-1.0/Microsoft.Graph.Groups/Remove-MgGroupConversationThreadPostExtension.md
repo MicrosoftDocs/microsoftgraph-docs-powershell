@@ -292,7 +292,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroupConversationThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversationThreadPostExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostextension)
 

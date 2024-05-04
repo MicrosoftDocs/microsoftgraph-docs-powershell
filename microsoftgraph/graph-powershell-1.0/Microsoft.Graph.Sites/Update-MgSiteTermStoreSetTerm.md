@@ -92,9 +92,6 @@ Update-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -729,9 +726,10 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetterm)
+
+[https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
 
 
 

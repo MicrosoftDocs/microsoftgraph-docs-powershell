@@ -170,7 +170,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenoteOperationCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteOperationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteoperationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteoperationcount)
 

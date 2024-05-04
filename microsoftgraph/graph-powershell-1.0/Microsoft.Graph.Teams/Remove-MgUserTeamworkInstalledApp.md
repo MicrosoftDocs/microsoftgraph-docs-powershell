@@ -32,9 +32,6 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Uninstall an app from the personal scope of the specified user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/userteamwork-delete-installedapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -254,9 +251,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp)
+
+[https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0)
 
 
 

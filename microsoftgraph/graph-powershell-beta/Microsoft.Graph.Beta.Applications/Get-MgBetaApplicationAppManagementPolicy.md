@@ -250,7 +250,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgApplicationAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationappmanagementpolicy)
 

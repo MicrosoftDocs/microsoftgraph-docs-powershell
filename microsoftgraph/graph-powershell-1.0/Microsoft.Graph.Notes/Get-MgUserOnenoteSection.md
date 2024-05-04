@@ -331,9 +331,12 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotesection)
+
+[https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0)
 
 
 

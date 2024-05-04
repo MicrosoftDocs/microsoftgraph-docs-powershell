@@ -45,9 +45,6 @@ New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create an Outlook task group in the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-taskgroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell
@@ -563,6 +560,8 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgroup)
+
+[https://learn.microsoft.com/graph/api/outlookuser-post-taskgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-post-taskgroups?view=graph-rest-1.0)
 
 
 

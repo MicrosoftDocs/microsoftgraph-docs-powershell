@@ -40,9 +40,6 @@ Get-MgTeamworkDeletedChat -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Read the properties and relationships of a deletedChat object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/deletedchat-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -325,9 +322,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedchat)
+
+[https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deletedchat-get?view=graph-rest-1.0)
 
 
 

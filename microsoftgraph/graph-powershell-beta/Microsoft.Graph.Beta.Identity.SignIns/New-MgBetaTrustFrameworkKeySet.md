@@ -33,9 +33,6 @@ Create a new trustFrameworkKeySet.
 The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-post-keysets-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
@@ -298,6 +295,8 @@ Possible values are: sig (signature), enc (encryption)
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
+
+[https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-1.0)
 
 
 

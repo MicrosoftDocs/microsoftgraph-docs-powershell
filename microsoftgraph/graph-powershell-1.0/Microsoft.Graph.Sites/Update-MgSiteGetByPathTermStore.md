@@ -548,9 +548,10 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgBetaSiteGetByPathTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteGetByPathTermStore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathtermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitegetbypathtermstore)
+
+[https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0)
 
 
 

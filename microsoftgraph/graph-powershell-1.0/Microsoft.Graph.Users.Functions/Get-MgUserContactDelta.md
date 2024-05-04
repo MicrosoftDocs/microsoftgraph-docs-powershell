@@ -38,6 +38,9 @@ Get a set of contacts that have been added, deleted, or updated in a specified f
 A delta function call for contacts in a folder is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contacts in that folder.
 This allows you to maintain and synchronize a local store of a user's contacts without having to fetch the entire set of contacts from the server every time.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-delta-permissions.md)]
+
 ## PARAMETERS
 
 ### -All
@@ -327,9 +330,10 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserContactDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserContactDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgusercontactdelta)
+
+[https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-delta?view=graph-rest-1.0)
 
 
 

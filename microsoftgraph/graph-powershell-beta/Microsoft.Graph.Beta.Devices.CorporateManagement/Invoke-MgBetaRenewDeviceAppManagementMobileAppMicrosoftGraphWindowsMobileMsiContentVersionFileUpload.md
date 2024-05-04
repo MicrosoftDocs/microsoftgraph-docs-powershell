@@ -276,7 +276,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsMobileMsiContentVersionFileUpload?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarenewdeviceappmanagementmobileappmicrosoftgraphwindowsmobilemsicontentversionfileupload](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/invoke-mgbetarenewdeviceappmanagementmobileappmicrosoftgraphwindowsmobilemsicontentversionfileupload)
 

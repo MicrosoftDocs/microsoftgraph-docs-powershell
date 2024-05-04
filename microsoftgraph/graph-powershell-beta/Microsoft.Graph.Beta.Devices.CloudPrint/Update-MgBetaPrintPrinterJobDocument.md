@@ -439,7 +439,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinterjobdocument)
 

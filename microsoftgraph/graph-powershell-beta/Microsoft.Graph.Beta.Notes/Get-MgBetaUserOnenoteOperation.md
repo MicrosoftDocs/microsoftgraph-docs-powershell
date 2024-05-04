@@ -40,9 +40,6 @@ The status applies to operations that return the Operation-Location header in th
 If the status is completed, the resourceLocation property contains the resource endpoint URI.
 If the status is failed, the error and @api.diagnostics properties provide error information.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onenoteoperation-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -210,9 +207,10 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation)
+
+[https://learn.microsoft.com/graph/api/onenoteoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenoteoperation-get?view=graph-rest-1.0)
 
 
 

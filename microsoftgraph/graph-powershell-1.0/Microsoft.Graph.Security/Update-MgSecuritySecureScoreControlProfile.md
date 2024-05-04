@@ -59,9 +59,6 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/securescorecontrolprofile-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Request without Prefer header
 
@@ -698,9 +695,10 @@ Required
 Required
 
 ## RELATED LINKS
-[Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile)
+
+[https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescorecontrolprofile-update?view=graph-rest-1.0)
 
 
 

@@ -225,7 +225,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/remove-mgbetausercontactfoldercontact)
 

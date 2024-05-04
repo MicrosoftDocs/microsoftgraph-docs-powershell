@@ -321,9 +321,12 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview)
+
+[https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0)
 
 
 

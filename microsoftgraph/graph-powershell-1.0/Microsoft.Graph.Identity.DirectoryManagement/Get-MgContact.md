@@ -345,9 +345,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact)
+
+[https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-list?view=graph-rest-1.0)
 
 
 

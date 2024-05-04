@@ -143,7 +143,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase)
 

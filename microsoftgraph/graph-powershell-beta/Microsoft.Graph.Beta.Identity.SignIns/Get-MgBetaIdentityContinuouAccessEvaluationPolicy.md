@@ -21,9 +21,6 @@ Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/continuousaccessevaluationpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
 ```powershell
@@ -124,6 +121,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy)
+
+[https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-1.0)
 
 
 

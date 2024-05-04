@@ -200,7 +200,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserTodoListExtensionCount](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoListExtensionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodolistextensioncount)
 

@@ -251,9 +251,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Publish-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/publish-mgbetagroupsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

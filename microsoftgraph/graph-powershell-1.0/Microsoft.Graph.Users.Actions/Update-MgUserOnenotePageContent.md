@@ -304,7 +304,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserOnenotePageContent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserOnenotePageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguseronenotepagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/update-mguseronenotepagecontent)
 

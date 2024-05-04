@@ -44,9 +44,6 @@ Retrieve the properties and relationships of an onlineMeeting object.
 For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
 For details, see Online meeting artifacts and permissions.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onlinemeeting-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve an online meeting by meeting ID
 
@@ -362,9 +359,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
 
 
 

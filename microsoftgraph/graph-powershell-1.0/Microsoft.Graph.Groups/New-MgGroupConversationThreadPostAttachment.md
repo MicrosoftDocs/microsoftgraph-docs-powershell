@@ -412,7 +412,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThreadPostAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachment)
 

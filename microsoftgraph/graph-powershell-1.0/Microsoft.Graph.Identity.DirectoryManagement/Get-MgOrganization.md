@@ -324,9 +324,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-list?view=graph-rest-1.0)
 
 
 

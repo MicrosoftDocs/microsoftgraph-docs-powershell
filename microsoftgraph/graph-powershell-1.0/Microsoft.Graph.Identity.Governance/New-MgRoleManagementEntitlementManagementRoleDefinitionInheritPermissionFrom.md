@@ -542,7 +542,6 @@ Not supported for custom roles.
 Not yet supported.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinitioninheritpermissionfrom)
 

@@ -1101,7 +1101,6 @@ SMBAUTOENCRYPTEDFILEEXTENSIONS <IMicrosoftGraphWindowsInformationProtectionResou
   - `[Resources <String- `[]`>]`: Collection of resources
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionpolicy)
 

@@ -228,9 +228,10 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
+
+[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0)
 
 
 

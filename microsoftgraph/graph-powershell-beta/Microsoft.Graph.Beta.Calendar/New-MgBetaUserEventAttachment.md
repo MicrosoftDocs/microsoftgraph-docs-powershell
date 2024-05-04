@@ -50,9 +50,6 @@ New-MgBetaUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <I
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/eventmessage-post-attachments-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -408,9 +405,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[New-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventattachment)
+
+[https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0)
 
 
 

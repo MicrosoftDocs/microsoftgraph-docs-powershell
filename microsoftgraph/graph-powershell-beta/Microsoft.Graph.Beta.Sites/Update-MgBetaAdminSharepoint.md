@@ -279,7 +279,6 @@ Measured in megabytes (MB).
 For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
-[Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint)
 

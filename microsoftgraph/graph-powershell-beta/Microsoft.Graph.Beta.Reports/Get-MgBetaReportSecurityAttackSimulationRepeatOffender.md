@@ -167,7 +167,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationrepeatoffender)
 

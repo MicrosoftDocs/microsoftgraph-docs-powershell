@@ -34,6 +34,9 @@ Export-MgReportPartnerBillingUsageUnbilled
 ## DESCRIPTION
 Export unbilled Azure usage data for a specific billing period and currency.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-unbilledusage-export-permissions.md)]
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -211,9 +214,10 @@ BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPa
   - `[CurrencyCode <String>]`:
 
 ## RELATED LINKS
-[Export-MgBetaReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Beta.Reports/Export-MgBetaReportPartnerBillingUsageUnbilled?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/export-mgreportpartnerbillingusageunbilled)
+
+[https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
 
 
 

@@ -270,9 +270,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection)
+
+[https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0)
 
 
 

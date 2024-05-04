@@ -32,9 +32,6 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Unpublish a \[contentType\]\[\] from a content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -217,9 +214,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgBetaShareListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Unpublish-MgBetaShareListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/unpublish-mgsharelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

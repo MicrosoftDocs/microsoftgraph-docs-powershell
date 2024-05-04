@@ -1167,7 +1167,6 @@ No format is guaranteed.
 No format is guaranteed.
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencewhoishistoryrecord)
 

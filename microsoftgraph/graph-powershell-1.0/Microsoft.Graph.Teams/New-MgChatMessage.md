@@ -64,9 +64,6 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 Send a new chatMessage in the specified chat.
 This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-messages-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1044,9 +1041,10 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessage)
+
+[https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-messages?view=graph-rest-1.0)
 
 
 

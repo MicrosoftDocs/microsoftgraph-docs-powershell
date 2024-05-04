@@ -375,9 +375,10 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
 
 
 

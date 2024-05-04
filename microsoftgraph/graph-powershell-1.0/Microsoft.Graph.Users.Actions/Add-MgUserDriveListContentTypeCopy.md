@@ -277,9 +277,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserDriveListContentTypeCopy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy)
+
+[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

@@ -48,9 +48,6 @@ Grant-MgBetaSharePermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Grant-MgBetaSharePermission Cmdlet
 ```powershell
@@ -303,9 +300,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Grant-MgSharePermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/grant-mgbetasharepermission)
+
+[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
 
 
 

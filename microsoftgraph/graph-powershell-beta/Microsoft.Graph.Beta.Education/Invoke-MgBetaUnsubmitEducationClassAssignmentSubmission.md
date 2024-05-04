@@ -42,9 +42,6 @@ During the submit process, all the resources are copied from submittedResources 
 The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-unsubmit-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -234,9 +231,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetaunsubmiteducationclassassignmentsubmission)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0)
 
 
 

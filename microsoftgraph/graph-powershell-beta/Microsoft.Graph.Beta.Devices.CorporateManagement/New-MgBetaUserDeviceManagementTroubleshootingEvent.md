@@ -411,7 +411,6 @@ Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID
     - `[Text <String>]`:
 
 ## RELATED LINKS
-[New-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetauserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetauserdevicemanagementtroubleshootingevent)
 

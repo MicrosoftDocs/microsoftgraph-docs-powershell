@@ -1160,7 +1160,6 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
-[Update-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessage)
 

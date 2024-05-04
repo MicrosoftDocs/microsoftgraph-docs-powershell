@@ -42,9 +42,6 @@ Get-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Ex
 Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printtasktrigger-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -334,9 +331,12 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTrigger?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintertasktrigger)
+
+[https://learn.microsoft.com/graph/api/printtasktrigger-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printtasktrigger-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/printer-list-tasktriggers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-list-tasktriggers?view=graph-rest-1.0)
 
 
 

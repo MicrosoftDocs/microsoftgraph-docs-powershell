@@ -52,9 +52,6 @@ Return all IDs for the groups, administrative units, and directory roles that a 
 This function is transitive.
 Note: Only users and role-enabled groups can be members of directory roles.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/directoryobject-getmemberobjects-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -259,9 +256,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberObject?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberobject)
+
+[https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmemberobjects?view=graph-rest-1.0)
 
 
 

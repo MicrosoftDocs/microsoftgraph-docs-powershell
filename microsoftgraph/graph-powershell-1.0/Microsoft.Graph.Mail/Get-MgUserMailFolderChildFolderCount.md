@@ -167,7 +167,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailFolderChildFolderCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldercount](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldercount)
 

@@ -234,7 +234,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySubjectRightsRequestApproverServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestapproverserviceprovisioningerrorcount)
 

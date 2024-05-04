@@ -272,7 +272,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Remove-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescorecontrolprofile)
 

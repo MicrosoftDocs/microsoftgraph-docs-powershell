@@ -42,9 +42,6 @@ Get-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-Expand
 Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL.
 To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shares-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -330,9 +327,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgshareshareddriveitemshareddriveitem)
+
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
 
 
 

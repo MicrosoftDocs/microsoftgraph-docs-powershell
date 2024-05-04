@@ -417,9 +417,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Invoke-MgBetaInviteUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaInviteUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mginviteuserdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
 
 
 

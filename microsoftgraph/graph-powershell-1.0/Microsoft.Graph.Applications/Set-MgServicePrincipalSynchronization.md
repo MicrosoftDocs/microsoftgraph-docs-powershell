@@ -925,7 +925,6 @@ Must match one of the directory definitions in synchronizationSchema.
     - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgserviceprincipalsynchronization)
 

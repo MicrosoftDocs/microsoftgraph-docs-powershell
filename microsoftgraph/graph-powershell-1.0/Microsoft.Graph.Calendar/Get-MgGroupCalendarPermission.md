@@ -285,9 +285,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupcalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-calendarpermissions?view=graph-rest-1.0)
 
 
 

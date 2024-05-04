@@ -60,9 +60,6 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accesspackagecatalog-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a list of all access package catalogs
 
@@ -491,9 +488,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalog)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackagecatalogs?view=graph-rest-1.0)
 
 
 

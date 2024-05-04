@@ -31,9 +31,6 @@ Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Delete the properties and relationships of a certificateBasedApplicationConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/certificatebasedapplicationconfiguration-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -CertificateBasedApplicationConfigurationId
@@ -241,6 +238,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
+
+[https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-delete?view=graph-rest-1.0)
 
 
 

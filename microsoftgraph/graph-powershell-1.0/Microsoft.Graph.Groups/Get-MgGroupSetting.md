@@ -63,9 +63,6 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 Retrieve the properties of a specific group setting object.
 The setting can be a tenant-level or group-specific setting.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/groupsetting-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -370,9 +367,12 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsetting)
+
+[https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
 
 
 

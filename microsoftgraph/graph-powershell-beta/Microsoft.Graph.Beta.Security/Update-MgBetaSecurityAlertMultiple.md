@@ -30,9 +30,6 @@ Update-MgBetaSecurityAlertMultiple
 ## DESCRIPTION
 Update multiple alerts in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/alert-updatealerts-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSecurityAlertMultiple Cmdlet
 ```powershell
@@ -631,6 +628,8 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
+
+[https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-1.0)
 
 
 

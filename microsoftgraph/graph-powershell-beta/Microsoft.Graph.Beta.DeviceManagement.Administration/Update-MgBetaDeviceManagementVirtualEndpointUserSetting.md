@@ -54,9 +54,6 @@ Update-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the properties of a cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcusersetting-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
@@ -527,9 +524,10 @@ RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestor
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointusersetting)
+
+[https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcusersetting-update?view=graph-rest-1.0)
 
 
 

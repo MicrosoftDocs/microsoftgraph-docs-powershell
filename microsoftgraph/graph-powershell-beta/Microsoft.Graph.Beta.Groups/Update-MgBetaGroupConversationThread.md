@@ -656,7 +656,6 @@ Returned only on $select.
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[Update-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupconversationthread)
 

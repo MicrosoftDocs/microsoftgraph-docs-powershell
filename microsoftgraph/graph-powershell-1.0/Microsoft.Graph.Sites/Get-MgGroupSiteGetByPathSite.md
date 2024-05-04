@@ -304,9 +304,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteGetByPathSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathsite)
+
+[https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0)
 
 
 

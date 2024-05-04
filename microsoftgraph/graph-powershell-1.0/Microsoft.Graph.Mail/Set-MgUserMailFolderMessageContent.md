@@ -262,7 +262,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgBetaUserMailFolderMessageContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfoldermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/set-mgusermailfoldermessagecontent)
 

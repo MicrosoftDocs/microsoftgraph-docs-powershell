@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Invoke-MgBetaRetryUserServiceProvisioning
@@ -220,9 +219,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRetryUserServiceProvisioning](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserServiceProvisioning?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaretryuserserviceprovisioning)
+
+[https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-retryserviceprovisioning?view=graph-rest-1.0)
 
 
 

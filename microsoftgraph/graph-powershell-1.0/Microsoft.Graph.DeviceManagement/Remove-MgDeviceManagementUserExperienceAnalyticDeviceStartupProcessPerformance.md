@@ -246,7 +246,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance)
 

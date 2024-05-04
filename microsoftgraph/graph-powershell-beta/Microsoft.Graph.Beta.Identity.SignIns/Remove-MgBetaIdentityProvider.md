@@ -36,9 +36,6 @@ Delete an identity provider resource that is of the type specified by the id in 
 Among the types of providers derived from identityProviderBase, you can currently delete a socialIdentityProvider resource in Microsoft Entra ID.
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityproviderbase-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -287,9 +284,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityProvider?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityprovider)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-delete?view=graph-rest-1.0)
 
 
 

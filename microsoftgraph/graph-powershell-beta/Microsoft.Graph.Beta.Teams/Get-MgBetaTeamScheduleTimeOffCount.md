@@ -200,7 +200,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamScheduleTimeOffCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOffCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimeoffcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduletimeoffcount)
 

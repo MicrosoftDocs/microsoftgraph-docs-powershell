@@ -385,9 +385,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetrelation)
+
+[https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0)
 
 
 

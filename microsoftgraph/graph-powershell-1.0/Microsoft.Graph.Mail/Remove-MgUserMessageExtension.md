@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Remove-MgUserMessageExtension
@@ -245,9 +244,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-delete?view=graph-rest-1.0)
 
 
 

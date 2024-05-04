@@ -416,9 +416,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-update?view=graph-rest-1.0)
 
 
 

@@ -344,9 +344,10 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent)
+
+[https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-forward?view=graph-rest-1.0)
 
 
 

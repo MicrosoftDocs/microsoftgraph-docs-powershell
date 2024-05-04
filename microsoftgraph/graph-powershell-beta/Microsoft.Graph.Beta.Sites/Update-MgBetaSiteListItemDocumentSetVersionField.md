@@ -319,7 +319,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemDocumentSetVersionField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitelistitemdocumentsetversionfield)
 

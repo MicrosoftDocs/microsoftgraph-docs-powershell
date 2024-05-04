@@ -345,7 +345,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofasgroup)
 

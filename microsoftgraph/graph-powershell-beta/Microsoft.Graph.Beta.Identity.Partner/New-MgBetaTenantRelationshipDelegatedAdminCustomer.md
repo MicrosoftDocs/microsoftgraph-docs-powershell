@@ -249,7 +249,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/new-mgbetatenantrelationshipdelegatedadmincustomer)
 

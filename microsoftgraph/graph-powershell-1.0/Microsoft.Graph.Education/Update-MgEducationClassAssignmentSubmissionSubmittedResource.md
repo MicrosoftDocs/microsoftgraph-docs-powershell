@@ -350,7 +350,6 @@ For example, if a user changes their display name, the API might show the new va
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionsubmittedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmissionsubmittedresource)
 

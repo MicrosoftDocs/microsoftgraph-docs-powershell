@@ -324,7 +324,6 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
-[Update-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcalloperation)
 

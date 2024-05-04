@@ -1196,7 +1196,6 @@ VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[Update-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchat)
 

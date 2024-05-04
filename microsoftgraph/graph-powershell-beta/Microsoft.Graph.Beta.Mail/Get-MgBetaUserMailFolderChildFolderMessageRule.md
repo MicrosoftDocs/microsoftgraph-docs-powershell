@@ -40,9 +40,6 @@ Get-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-Pr
 ## DESCRIPTION
 Get the properties and relationships of a messageRule object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -316,9 +313,12 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfoldermessagerule)
+
+[https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0)
 
 
 

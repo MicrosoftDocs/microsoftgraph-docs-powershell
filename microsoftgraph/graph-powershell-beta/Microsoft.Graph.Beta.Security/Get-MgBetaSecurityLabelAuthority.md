@@ -40,9 +40,6 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-authoritytemplate-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelAuthority?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority)
+
+[https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
 
 
 

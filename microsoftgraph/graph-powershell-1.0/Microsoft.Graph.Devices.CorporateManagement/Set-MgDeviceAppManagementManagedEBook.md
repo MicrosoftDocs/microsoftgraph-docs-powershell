@@ -292,9 +292,10 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmanagementmanagedebook)
+
+[https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebook-assign?view=graph-rest-1.0)
 
 
 

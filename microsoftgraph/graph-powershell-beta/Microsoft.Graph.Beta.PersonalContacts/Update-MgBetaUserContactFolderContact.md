@@ -1088,7 +1088,6 @@ WEBSITES <IMicrosoftGraphWebsite- `[]`>: Web sites associated with the contact.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
-[Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact)
 

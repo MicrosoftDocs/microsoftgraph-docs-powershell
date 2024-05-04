@@ -126,9 +126,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationMeUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeuser)
+
+[https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-get-user?view=graph-rest-1.0)
 
 
 

@@ -47,9 +47,6 @@ New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ## DESCRIPTION
 Create a new publishedResource object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/publishedresource-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
 ```powershell
@@ -405,6 +402,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
+
+[https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0)
 
 
 

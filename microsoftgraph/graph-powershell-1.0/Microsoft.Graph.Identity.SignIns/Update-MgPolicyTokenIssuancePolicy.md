@@ -50,9 +50,6 @@ Update-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -Body
 ## DESCRIPTION
 Update the properties of a tokenIssuancePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/tokenissuancepolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -408,9 +405,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicytokenissuancepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0)
 
 
 

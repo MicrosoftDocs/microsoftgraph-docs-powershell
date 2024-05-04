@@ -207,7 +207,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalTransitiveMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOfCountAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberofcountasgroup)
 

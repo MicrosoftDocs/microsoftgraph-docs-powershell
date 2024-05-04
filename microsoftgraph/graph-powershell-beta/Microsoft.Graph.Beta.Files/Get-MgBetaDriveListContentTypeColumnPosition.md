@@ -342,7 +342,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeColumnPosition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcontenttypecolumnposition)
 

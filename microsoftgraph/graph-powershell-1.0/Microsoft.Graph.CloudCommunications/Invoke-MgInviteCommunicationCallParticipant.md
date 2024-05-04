@@ -52,9 +52,6 @@ Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsId
 Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/participant-invite-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Invite one participant to an existing call
 
@@ -463,9 +460,10 @@ The call which the target identity is currently a part of.
 For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgBetaInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaInviteCommunicationCallParticipant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant)
+
+[https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0)
 
 
 

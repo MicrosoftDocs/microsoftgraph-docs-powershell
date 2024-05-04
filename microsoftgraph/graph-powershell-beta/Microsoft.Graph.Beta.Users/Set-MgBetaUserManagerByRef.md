@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Set-MgBetaUserManagerByRef
@@ -46,9 +45,6 @@ Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IRefere
 
 ## DESCRIPTION
 Assign a user's manager.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-post-manager-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Update a user's manager
@@ -303,9 +299,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Set-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Set-MgUserManagerByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/set-mgbetausermanagerbyref)
+
+[https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-manager?view=graph-rest-1.0)
 
 
 

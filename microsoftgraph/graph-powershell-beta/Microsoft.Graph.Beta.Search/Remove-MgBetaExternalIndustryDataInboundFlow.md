@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Delete an inboundFlow object.
+Delete an inboundFileFlow object.
 
 ## SYNTAX
 
@@ -27,10 +27,7 @@ Remove-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete an inboundFlow object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-inboundfileflow-delete-permissions.md)]
+Delete an inboundFileFlow object.
 
 ## PARAMETERS
 
@@ -211,6 +208,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydatainboundflow)
+
+[https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundfileflow-delete?view=graph-rest-1.0)
 
 
 

@@ -678,9 +678,10 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0)
 
 
 

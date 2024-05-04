@@ -417,9 +417,10 @@ This is shown to the user on prompts to accept the T&C policy.
 Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatus)
+
+[https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditionsacceptancestatus-update?view=graph-rest-1.0)
 
 
 

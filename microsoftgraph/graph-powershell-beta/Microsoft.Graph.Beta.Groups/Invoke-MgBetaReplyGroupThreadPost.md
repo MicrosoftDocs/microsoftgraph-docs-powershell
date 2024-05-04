@@ -579,7 +579,6 @@ Read-only.
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupThreadPost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupthreadpost)
 

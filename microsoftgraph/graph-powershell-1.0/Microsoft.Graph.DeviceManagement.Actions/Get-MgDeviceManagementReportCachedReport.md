@@ -334,9 +334,10 @@ BODYPARAMETER `<IPaths1C8L63KDevicemanagementReportsMicrosoftGraphGetcachedrepor
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementReportCachedReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportCachedReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcachedreport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcachedreport)
+
+[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getcachedreport?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getcachedreport?view=graph-rest-1.0)
 
 
 

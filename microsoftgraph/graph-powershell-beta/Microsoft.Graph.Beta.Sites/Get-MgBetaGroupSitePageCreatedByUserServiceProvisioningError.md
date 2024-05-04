@@ -280,7 +280,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupSitePageCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagecreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagecreatedbyuserserviceprovisioningerror)
 

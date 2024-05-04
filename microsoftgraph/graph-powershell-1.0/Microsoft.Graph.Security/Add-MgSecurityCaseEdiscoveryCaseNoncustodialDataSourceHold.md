@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
@@ -69,6 +70,9 @@ Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecuri
 Start the process of applying hold on eDiscovery non-custodial data sources.
 After the operation is created, you can get the status by retrieving the Location parameter from the response headers.
 The location provides a URL that returns an eDiscoveryHoldOperation object.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverynoncustodialdatasource-applyhold-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
@@ -355,9 +359,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold](https://learn.microsoft.com/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-applyhold?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-applyhold?view=graph-rest-1.0)
 
 
 

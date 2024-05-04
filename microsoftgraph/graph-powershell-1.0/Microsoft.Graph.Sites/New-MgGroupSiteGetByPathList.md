@@ -24719,9 +24719,10 @@ Don't include the base URL (https://graph.microsoft.com/v1.0/).
 See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathList?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathlist)
+
+[https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-create?view=graph-rest-1.0)
 
 
 

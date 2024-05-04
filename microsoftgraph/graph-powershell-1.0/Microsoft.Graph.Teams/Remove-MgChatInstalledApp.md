@@ -32,9 +32,6 @@ Remove-MgChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Uninstall an app installed within a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-delete-installedapps-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -254,9 +251,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatInstalledApp?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgchatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0)
 
 
 

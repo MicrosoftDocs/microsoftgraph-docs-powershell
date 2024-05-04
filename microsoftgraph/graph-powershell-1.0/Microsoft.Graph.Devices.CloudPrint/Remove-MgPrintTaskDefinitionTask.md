@@ -218,7 +218,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontask)
 

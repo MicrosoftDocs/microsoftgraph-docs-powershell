@@ -415,9 +415,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
 ## RELATED LINKS
-[Invoke-MgBetaCreateOrGetUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCreateOrGetUserOnlineMeeting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
 
 
 

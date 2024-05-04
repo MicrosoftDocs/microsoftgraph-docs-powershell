@@ -62,9 +62,6 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ## DESCRIPTION
 Update the properties of a cloudPcOnPremisesConnection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpconpremisesconnection-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -732,9 +729,10 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection)
+
+[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0)
 
 
 

@@ -29172,7 +29172,6 @@ Read-only.
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteam)
 

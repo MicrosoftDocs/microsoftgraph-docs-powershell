@@ -32,9 +32,6 @@ Remove-MgBetaUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete the specified outlookCategory object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookcategory-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -248,9 +245,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlookmastercategory)
+
+[https://learn.microsoft.com/graph/api/outlookcategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-delete?view=graph-rest-1.0)
 
 
 

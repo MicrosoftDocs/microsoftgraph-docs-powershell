@@ -215,7 +215,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriveitemretentionlabel)
 

@@ -190,7 +190,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofcountasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertransitivememberofcountasadministrativeunit)
 

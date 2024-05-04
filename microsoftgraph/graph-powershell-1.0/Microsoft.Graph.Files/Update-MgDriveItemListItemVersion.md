@@ -401,7 +401,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveItemListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemlistitemversion)
 

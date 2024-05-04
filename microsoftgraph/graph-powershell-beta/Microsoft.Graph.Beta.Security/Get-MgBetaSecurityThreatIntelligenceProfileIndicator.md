@@ -40,9 +40,6 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIden
 ## DESCRIPTION
 Read the properties and relationships of a intelligenceProfileIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-intelligenceprofileindicator-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceprofileindicator)
+
+[https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0)
 
 
 

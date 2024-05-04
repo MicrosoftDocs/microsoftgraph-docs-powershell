@@ -550,7 +550,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpinnedmessage)
 

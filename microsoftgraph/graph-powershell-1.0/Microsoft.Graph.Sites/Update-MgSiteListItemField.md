@@ -46,9 +46,6 @@ Update-MgSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Hashtab
 ## DESCRIPTION
 Update the properties on a \[listItem\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -315,9 +312,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitelistitemfield)
+
+[https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0)
 
 
 

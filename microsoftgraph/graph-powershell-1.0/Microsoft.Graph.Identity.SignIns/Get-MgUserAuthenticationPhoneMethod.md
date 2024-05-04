@@ -42,9 +42,6 @@ Get-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [-Ex
 Retrieve a single phoneAuthenticationMethod object for a user.
 This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -377,9 +374,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationphonemethod)
+
+[https://learn.microsoft.com/graph/api/phoneauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authentication-list-phonemethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-phonemethods?view=graph-rest-1.0)
 
 
 

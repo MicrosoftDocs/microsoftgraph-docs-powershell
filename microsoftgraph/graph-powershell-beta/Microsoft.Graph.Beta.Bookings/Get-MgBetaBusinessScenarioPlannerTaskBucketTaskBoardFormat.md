@@ -30,9 +30,6 @@ Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBookin
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbuckettaskboardtaskformat-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -200,6 +197,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskbuckettaskboardformat)
+
+[https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

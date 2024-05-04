@@ -269,7 +269,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannelmessagehostedcontent)
 

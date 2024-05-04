@@ -1126,7 +1126,6 @@ The stageId is used by the dependsOn property to indicate the order of the stage
 Required.
 
 ## RELATED LINKS
-[Set-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/set-mgidentitygovernanceaccessreviewdefinition)
 

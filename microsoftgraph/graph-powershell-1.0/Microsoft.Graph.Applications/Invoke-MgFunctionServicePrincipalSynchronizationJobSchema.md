@@ -289,7 +289,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/invoke-mgfunctionserviceprincipalsynchronizationjobschema)
 

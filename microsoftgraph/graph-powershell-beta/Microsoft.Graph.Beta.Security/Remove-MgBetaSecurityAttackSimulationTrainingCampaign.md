@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign
 schema: 2.0.0
-ms.prod: security
 ---
 
 # Remove-MgBetaSecurityAttackSimulationTrainingCampaign
@@ -29,9 +28,6 @@ Remove-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 
 ## DESCRIPTION
 Delete a trainingCampaign object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attacksimulationroot-delete-trainingcampaigns-permissions.md)]
 
 ## PARAMETERS
 
@@ -275,6 +271,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign)
+
+[https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-1.0)
 
 
 

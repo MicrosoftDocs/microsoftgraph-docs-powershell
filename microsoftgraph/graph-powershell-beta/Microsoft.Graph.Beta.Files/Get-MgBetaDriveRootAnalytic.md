@@ -32,9 +32,6 @@ Get-MgBetaDriveRootAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemanalytics-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -186,9 +183,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootAnalytic?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootanalytic)
+
+[https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
 
 
 

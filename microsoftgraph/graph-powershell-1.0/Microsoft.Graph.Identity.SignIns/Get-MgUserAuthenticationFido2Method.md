@@ -40,9 +40,6 @@ Get-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/fido2authenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -375,9 +372,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationfido2method)
+
+[https://learn.microsoft.com/graph/api/fido2authenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/fido2authenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-list?view=graph-rest-1.0)
 
 
 

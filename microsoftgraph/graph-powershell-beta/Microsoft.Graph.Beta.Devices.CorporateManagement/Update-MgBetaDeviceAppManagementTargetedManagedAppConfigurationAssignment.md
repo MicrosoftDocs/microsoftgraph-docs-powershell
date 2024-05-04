@@ -375,7 +375,6 @@ TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementtargetedmanagedappconfigurationassignment)
 

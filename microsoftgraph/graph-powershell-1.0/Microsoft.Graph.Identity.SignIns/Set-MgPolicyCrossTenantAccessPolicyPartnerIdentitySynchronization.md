@@ -333,7 +333,6 @@ false causes any current user synchronization from the source tenant to the targ
 This property has no impact on existing users who have already been synchronized.
 
 ## RELATED LINKS
-[Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/set-mgpolicycrosstenantaccesspolicypartneridentitysynchronization)
 

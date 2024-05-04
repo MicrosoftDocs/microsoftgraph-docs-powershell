@@ -267,7 +267,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveCreatedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivecreatedbyuserserviceprovisioningerror)
 

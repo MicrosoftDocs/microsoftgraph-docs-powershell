@@ -10117,7 +10117,6 @@ Defaults to setting on client device.
 Defaults to setting on client device.
 
 ## RELATED LINKS
-[New-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevice)
 

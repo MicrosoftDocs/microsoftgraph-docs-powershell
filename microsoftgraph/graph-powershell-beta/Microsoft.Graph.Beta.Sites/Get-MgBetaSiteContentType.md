@@ -40,9 +40,6 @@ Get-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -371,9 +368,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0)
 
 
 

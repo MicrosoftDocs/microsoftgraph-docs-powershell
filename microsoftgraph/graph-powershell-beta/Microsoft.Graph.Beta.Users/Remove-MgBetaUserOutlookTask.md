@@ -29,9 +29,6 @@ Remove-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete the specified Outlook task in the user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktask-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOutlookTask Cmdlet
 ```powershell
@@ -243,6 +240,8 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask)
+
+[https://learn.microsoft.com/graph/api/outlooktask-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-delete?view=graph-rest-1.0)
 
 
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
 ---
 
 # New-MgSecuritySubjectRightsRequestNote
@@ -48,9 +47,6 @@ New-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Create a new authoredNote object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
 
 ## PARAMETERS
 
@@ -367,9 +363,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[New-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote)
+
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
 
 
 

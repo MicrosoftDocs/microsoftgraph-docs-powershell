@@ -158,7 +158,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserOutlookMasterCategoryCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategoryCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategorycount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategorycount)
 

@@ -310,7 +310,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationUserAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentdelta)
 

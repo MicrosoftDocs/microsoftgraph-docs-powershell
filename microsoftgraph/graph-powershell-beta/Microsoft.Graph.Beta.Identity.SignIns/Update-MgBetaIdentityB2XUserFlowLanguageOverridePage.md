@@ -330,7 +330,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowlanguageoverridepage)
 

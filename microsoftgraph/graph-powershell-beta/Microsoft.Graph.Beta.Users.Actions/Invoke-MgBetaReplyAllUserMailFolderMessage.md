@@ -617,9 +617,10 @@ If ispopout is set to 0, the browser shows the message in the Outlook on the web
 You are prompted to sign in if you are not already signed in with the browser.This URL cannot be accessed from within an iFrame.
 
 ## RELATED LINKS
-[Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetareplyallusermailfoldermessage)
+
+[https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-replyall?view=graph-rest-1.0)
 
 
 

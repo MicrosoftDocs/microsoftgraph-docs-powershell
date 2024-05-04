@@ -640,7 +640,6 @@ Read-only.
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedEBook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmanagedebook)
 

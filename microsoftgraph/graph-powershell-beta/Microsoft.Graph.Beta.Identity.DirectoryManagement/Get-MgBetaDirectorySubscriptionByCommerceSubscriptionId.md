@@ -29,9 +29,6 @@ Get-MgBetaDirectorySubscriptionByCommerceSubscriptionId -InputObject <IIdentityD
 ## DESCRIPTION
 Get a specific commercial subscription that an organization has acquired.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/companysubscription-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -CommerceSubscriptionId
@@ -208,6 +205,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorysubscriptionbycommercesubscriptionid)
+
+[https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/companysubscription-get?view=graph-rest-1.0)
 
 
 

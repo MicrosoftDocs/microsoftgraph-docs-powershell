@@ -39,9 +39,6 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Read the properties and relationships of an acronym object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-acronym-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -299,9 +296,12 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Get-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
 
 
 

@@ -219,7 +219,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityLabelCategorySubcategoryCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelCategorySubcategoryCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategorycount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelcategorysubcategorycount)
 

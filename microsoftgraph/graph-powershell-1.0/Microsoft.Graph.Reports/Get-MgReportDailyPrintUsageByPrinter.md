@@ -42,9 +42,6 @@ Get-MgReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandPro
 Retrieve a usage summary for a printer for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printusagebyprinter-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -328,9 +325,12 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByPrinter?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyprinter)
+
+[https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0)
 
 
 

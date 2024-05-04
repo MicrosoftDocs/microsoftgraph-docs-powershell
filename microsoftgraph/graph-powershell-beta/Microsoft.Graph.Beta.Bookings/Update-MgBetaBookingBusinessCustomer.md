@@ -82,9 +82,6 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingCustomer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
@@ -439,9 +436,10 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
   - `[Type <String>]`: phoneType
 
 ## RELATED LINKS
-[Update-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
+
+[https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0)
 
 
 

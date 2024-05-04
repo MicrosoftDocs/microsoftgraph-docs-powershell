@@ -32,9 +32,6 @@ Remove-MgBetaGroupSiteOnenotePage -InputObject <ISitesIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a OneNote page.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/page-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -GroupId
@@ -275,9 +272,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOnenotePage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteonenotepage)
+
+[https://learn.microsoft.com/graph/api/page-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-delete?view=graph-rest-1.0)
 
 
 

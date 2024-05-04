@@ -53,9 +53,6 @@ Update-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity>
 Update the writable properties of an Outlook task folder.
 You cannot change the name property value of the default task folder, 'Tasks'.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlooktaskfolder-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
@@ -612,6 +609,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktaskfolder)
+
+[https://learn.microsoft.com/graph/api/outlooktaskfolder-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-update?view=graph-rest-1.0)
 
 
 

@@ -323,9 +323,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmonthlyprintusagebyuser)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-monthlyprintusagebyuser?view=graph-rest-1.0)
 
 
 

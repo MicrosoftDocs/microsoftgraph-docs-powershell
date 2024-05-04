@@ -371,7 +371,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategoryDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta)
 

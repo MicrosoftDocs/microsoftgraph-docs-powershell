@@ -307,7 +307,6 @@ Supports: $filter, $select, $OrderBy.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance)
 

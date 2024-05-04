@@ -52,9 +52,6 @@ Set-MgBetaCommunicationPresenceStatusMessage -InputObject <ICloudCommunicationsI
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/presence-setstatusmessage-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,9 +292,10 @@ See below for possible values.
   - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime isn't available when you request the presence of another user.
 
 ## RELATED LINKS
-[Set-MgCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceStatusMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresencestatusmessage)
+
+[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
 
 
 

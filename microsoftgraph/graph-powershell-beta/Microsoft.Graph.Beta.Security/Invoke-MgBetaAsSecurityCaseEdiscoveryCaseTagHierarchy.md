@@ -342,7 +342,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy)
 

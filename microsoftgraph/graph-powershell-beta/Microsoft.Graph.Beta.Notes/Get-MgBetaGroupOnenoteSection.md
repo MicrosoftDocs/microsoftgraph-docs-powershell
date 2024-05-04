@@ -40,9 +40,6 @@ Get-MgBetaGroupOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Retrieve the properties and relationships of a section object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -319,9 +316,12 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesection)
+
+[https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0)
 
 
 

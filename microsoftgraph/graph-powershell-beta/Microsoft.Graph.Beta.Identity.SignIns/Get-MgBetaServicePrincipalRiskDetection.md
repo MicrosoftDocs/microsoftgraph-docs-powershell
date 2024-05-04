@@ -40,9 +40,6 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 ## DESCRIPTION
 Read the properties and relationships of a servicePrincipalRiskDetection object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipalriskdetection-get-permissions.md)]
-
 ## EXAMPLES
 ### Example: Get a specific risk detection object
 
@@ -381,9 +378,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection)
+
+[https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)
 
 
 

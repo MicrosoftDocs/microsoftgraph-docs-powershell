@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSecurityTriggerRetentionEventCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEventCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytriggerretentioneventcount)
 

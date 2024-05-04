@@ -279,7 +279,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaGroupDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaGroupDriveItemVersionContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriveitemversioncontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mggroupdriveitemversioncontent)
 

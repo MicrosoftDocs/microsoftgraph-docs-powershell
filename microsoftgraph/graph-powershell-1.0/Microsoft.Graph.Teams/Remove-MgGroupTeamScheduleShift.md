@@ -32,9 +32,6 @@ Remove-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete a shift from the schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -243,9 +240,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamscheduleshift)
+
+[https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-delete?view=graph-rest-1.0)
 
 
 

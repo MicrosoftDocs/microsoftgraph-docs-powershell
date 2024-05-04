@@ -207,7 +207,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalMemberOfCountAsDirectoryRole](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOfCountAsDirectoryRole?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofcountasdirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalmemberofcountasdirectoryrole)
 

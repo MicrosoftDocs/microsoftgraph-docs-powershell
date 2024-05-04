@@ -37,9 +37,6 @@ Get-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of a tiIndicator object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
@@ -388,6 +385,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator)
+
+[https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-1.0)
 
 
 

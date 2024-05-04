@@ -375,7 +375,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSitePageAsSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSitePageAsSitePageCanvaLayout?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitepageassitepagecanvalayout)
 

@@ -43,9 +43,6 @@ Get-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 Retrieve a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrolemanagementpolicyrule-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve a rule defined for a policy in PIM for Azure AD roles
 
@@ -410,9 +407,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyrolemanagementpolicyrule)
+
+[https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicyrule-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicy-list-rules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrolemanagementpolicy-list-rules?view=graph-rest-1.0)
 
 
 

@@ -9651,9 +9651,10 @@ This relationship can only be used to load a specific term set.
   - `[TermStores <IMicrosoftGraphTermStore- `[]`>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupsite)
+
+[https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-unfollow?view=graph-rest-1.0)
 
 
 

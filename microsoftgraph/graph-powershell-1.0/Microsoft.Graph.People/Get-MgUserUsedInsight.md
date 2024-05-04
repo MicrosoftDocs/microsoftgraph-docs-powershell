@@ -334,6 +334,8 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedinsight)
 
+[https://learn.microsoft.com/graph/api/insights-list-used?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/insights-list-used?view=graph-rest-1.0)
+
 
 
 

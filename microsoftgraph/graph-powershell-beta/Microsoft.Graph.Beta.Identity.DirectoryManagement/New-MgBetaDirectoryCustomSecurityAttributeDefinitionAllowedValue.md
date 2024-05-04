@@ -48,9 +48,6 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Create a new allowedValue object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/customsecurityattributedefinition-post-allowedvalues-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -315,9 +312,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinitionallowedvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorycustomsecurityattributedefinitionallowedvalue)
+
+[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-post-allowedvalues?view=graph-rest-1.0)
 
 
 

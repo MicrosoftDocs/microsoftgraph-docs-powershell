@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Update-MgBetaSchemaExtension
@@ -399,9 +398,10 @@ Allowed values are Binary, Boolean, DateTime, Integer or String.
 See the table below for more details.
 
 ## RELATED LINKS
-[Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension)
+
+[https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-update?view=graph-rest-1.0)
 
 
 

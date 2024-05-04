@@ -76,9 +76,6 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 Create a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-category-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -321,9 +318,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory)
+
+[https://learn.microsoft.com/graph/api/educationclass-post-category?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-category?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)
 
 
 

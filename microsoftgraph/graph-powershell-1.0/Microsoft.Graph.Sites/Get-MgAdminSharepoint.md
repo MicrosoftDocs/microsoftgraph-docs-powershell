@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint)
 

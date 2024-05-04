@@ -229,7 +229,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroupDriveList](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveList?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelist)
 

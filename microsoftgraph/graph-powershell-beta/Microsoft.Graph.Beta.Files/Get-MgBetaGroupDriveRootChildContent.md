@@ -32,9 +32,6 @@ Get-MgBetaGroupDriveRootChildContent -InputObject <IFilesIdentity> [-Format <Str
 ## DESCRIPTION
 Get content for the navigation property children from groups
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-list-children-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -231,9 +228,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveRootChildContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootChildContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootchildcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriverootchildcontent)
+
+[https://learn.microsoft.com/graph/api/driveitem-list-children?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-children?view=graph-rest-1.0)
 
 
 

@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaBookingCurrencyCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingCurrencyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrencycount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingcurrencycount)
 

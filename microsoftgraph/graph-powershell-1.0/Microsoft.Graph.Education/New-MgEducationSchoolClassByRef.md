@@ -46,9 +46,6 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 ## DESCRIPTION
 Add a class to a school.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-post-classes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -275,9 +272,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationschoolclassbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-post-classes?view=graph-rest-1.0)
 
 
 

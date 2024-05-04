@@ -82,9 +82,6 @@ New-MgUserDriveItemChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create new navigation property to children for users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30099,9 +30096,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemchild)
+
+[https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0)
 
 
 

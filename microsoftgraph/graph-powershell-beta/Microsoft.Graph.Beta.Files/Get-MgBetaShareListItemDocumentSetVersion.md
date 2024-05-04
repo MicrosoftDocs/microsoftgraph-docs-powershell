@@ -63,9 +63,6 @@ Get-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Expand
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -368,9 +365,12 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

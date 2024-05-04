@@ -1086,7 +1086,6 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfoldercontact)
 

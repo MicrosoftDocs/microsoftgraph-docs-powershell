@@ -419,9 +419,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowtaskprocessingresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/resume-mgbetaidentitygovernancelifecycleworkflowtaskprocessingresult)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-taskprocessingresult-resume?view=graph-rest-1.0)
 
 
 

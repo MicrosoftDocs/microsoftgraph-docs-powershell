@@ -232,7 +232,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail)
 

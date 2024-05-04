@@ -452,7 +452,6 @@ Not nullable.
   - `[SupportedApis <String- `[]`>]`: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
-[New-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobschemadirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjobschemadirectory)
 

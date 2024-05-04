@@ -32,9 +32,6 @@ Get-MgShareDriveItemContent -InputObject <IFilesIdentity> [-Format <String>] -Ou
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shares-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -Format
@@ -201,9 +198,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareDriveItemContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareDriveItemContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharedriveitemcontent)
+
+[https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shares-get?view=graph-rest-1.0)
 
 
 

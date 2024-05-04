@@ -219,7 +219,6 @@ Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
-[New-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryFederationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfederationconfiguration)
 

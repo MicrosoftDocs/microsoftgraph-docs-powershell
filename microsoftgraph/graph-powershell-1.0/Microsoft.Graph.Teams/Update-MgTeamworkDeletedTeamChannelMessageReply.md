@@ -1055,7 +1055,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchannelmessagereply)
 

@@ -262,7 +262,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecuritySubjectRightsRequestApproverMailboxSetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApproverMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprovermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestapprovermailboxsetting)
 

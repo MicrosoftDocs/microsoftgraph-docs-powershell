@@ -51,9 +51,6 @@ Send an SMS notification to external attendees when a Teams Virtual Appointment 
 This feature requires Teams Premium.
 Attendees must have a valid United States phone number to receive these SMS notifications.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualappointment-sendvirtualappointmentsms-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -298,6 +295,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentsm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/send-mgbetacommunicationonlinemeetingjoinweburlvirtualappointmentsm)
+
+[https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentsms?view=graph-rest-1.0)
 
 
 

@@ -182,7 +182,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronization)
 

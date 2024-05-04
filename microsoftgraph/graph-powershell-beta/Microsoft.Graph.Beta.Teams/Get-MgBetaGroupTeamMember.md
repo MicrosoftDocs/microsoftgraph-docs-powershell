@@ -346,9 +346,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteammember)
+
+[https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get-members?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-members?view=graph-rest-1.0)
 
 
 

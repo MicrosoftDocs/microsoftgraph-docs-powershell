@@ -256,7 +256,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserContactFolderChildFolderContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContactExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolderchildfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolderchildfoldercontactextension)
 

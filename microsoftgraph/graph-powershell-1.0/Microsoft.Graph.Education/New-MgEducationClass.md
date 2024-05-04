@@ -40,9 +40,6 @@ New-MgEducationClass -BodyParameter <IMicrosoftGraphEducationClass> [-ResponseHe
 ## DESCRIPTION
 Create a new educationClass object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationclass-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -25454,9 +25451,10 @@ TERM `<IMicrosoftGraphEducationTerm>`: educationTerm
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
-[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClass?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclass](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclass)
+
+[https://learn.microsoft.com/graph/api/educationclass-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post?view=graph-rest-1.0)
 
 
 

@@ -203,7 +203,6 @@ For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00
 Returned by default.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticscorehistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticscorehistory)
 

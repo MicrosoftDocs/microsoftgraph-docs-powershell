@@ -281,9 +281,10 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
   - `[OnBehalfOfUserId <String>]`:
 
 ## RELATED LINKS
-[Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
+
+[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
 
 
 

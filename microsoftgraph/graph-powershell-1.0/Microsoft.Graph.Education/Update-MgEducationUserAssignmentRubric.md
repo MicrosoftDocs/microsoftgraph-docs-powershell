@@ -54,9 +54,6 @@ Update-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity>
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-put-rubric-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -458,9 +455,10 @@ QUALITIES <IMicrosoftGraphRubricQuality- `[]`>: The collection of qualities maki
 Weights must add up to 100.
 
 ## RELATED LINKS
-[Update-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationuserassignmentrubric)
+
+[https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
 
 
 

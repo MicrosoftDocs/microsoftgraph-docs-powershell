@@ -67,9 +67,6 @@ New-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphCo
 ## DESCRIPTION
 Create a column for a \[site\]\[site\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-columns-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1284,9 +1281,10 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[New-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitecolumn)
+
+[https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-columns?view=graph-rest-1.0)
 
 
 

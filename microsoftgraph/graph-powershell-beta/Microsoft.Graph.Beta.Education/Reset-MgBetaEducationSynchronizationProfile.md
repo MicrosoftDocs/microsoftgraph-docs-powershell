@@ -29,9 +29,6 @@ Reset-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Reset the sync of a specific school data synchronization profile in the tenant.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-reset-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Reset-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
@@ -204,6 +201,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/reset-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/reset-mgbetaeducationsynchronizationprofile)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-reset?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-reset?view=graph-rest-1.0)
 
 
 

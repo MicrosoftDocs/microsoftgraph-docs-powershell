@@ -292,7 +292,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaAllUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaAllUserChatMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage)
 

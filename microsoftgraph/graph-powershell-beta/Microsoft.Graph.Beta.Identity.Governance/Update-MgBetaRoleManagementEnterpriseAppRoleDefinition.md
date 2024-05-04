@@ -635,6 +635,8 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagemententerpriseapproledefinition)
 
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
+
 
 
 

@@ -437,9 +437,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0)
 
 
 

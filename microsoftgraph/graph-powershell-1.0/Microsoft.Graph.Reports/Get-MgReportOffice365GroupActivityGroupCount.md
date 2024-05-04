@@ -181,7 +181,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportOffice365GroupActivityGroupCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityGroupCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitygroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitygroupcount)
 

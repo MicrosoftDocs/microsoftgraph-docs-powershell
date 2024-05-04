@@ -44,9 +44,6 @@ Make sure that these requests are successful to prevent the call from timing out
 Attempting to send a request to a call that has already ended will result in a 404 Not-Found error.
 The resources related to the call should be cleaned up on the application side.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/call-keepalive-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -217,9 +214,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive)
+
+[https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-keepalive?view=graph-rest-1.0)
 
 
 

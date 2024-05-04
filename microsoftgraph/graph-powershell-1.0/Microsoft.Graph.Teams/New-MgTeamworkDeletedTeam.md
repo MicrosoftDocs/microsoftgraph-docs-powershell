@@ -9577,7 +9577,6 @@ This URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteam)
 

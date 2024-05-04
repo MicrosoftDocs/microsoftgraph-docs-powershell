@@ -229,7 +229,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalsynchronizationtemplate)
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfilePhone
@@ -51,9 +50,6 @@ New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 
 ## DESCRIPTION
 Use this API to create a new itemPhone object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-phones-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfilePhone Cmdlet
@@ -499,6 +495,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilephone)
+
+[https://learn.microsoft.com/graph/api/profile-post-phones?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-phones?view=graph-rest-1.0)
 
 
 

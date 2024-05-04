@@ -236,7 +236,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsessionattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgvirtualeventwebinarsessionattendancereport)
 

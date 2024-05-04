@@ -59,9 +59,6 @@ New-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Create a new calendar for a user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-post-calendars-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1349,9 +1346,10 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[New-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendar)
+
+[https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0)
 
 
 

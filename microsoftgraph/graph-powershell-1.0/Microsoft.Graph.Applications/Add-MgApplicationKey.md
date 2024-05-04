@@ -417,9 +417,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaApplicationKey?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/add-mgapplicationkey)
+
+[https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-addkey?view=graph-rest-1.0)
 
 
 

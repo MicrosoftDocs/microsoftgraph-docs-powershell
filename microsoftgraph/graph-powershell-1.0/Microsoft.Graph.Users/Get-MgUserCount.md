@@ -129,7 +129,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercount)
 

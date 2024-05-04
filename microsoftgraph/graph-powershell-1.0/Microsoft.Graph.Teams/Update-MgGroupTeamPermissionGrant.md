@@ -388,7 +388,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteampermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteampermissiongrant)
 

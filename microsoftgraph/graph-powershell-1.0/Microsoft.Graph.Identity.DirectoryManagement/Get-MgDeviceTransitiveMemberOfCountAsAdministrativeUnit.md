@@ -199,7 +199,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofcountasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberofcountasadministrativeunit)
 

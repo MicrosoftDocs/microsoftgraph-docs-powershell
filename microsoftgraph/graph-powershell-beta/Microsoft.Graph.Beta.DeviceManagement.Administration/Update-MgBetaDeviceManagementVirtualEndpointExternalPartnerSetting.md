@@ -47,9 +47,6 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ## DESCRIPTION
 Update the properties of a cloudPcExternalPartnerSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcexternalpartnersetting-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
@@ -393,6 +390,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
+
+[https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0)
 
 
 

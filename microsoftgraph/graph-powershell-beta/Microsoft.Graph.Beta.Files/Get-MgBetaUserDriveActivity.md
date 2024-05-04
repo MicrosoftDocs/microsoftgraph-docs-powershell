@@ -22,9 +22,6 @@ Get-MgBetaUserDriveActivity -DriveId <String> -UserId <String> [-ExpandProperty 
 ## DESCRIPTION
 List the recent activities that took place on an item or under a hierarchy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/activities-list-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -267,6 +264,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity)
+
+[https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0)
 
 
 

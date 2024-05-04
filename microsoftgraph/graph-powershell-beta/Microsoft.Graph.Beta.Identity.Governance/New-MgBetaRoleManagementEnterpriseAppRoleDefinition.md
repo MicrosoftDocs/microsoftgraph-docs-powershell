@@ -617,6 +617,8 @@ Not supported for custom roles.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagemententerpriseapproledefinition)
 
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
+
 
 
 

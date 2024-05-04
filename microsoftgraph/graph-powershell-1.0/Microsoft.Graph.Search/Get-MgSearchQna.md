@@ -39,9 +39,6 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of a qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -299,9 +296,12 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna)
+
+[https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0)
 
 
 

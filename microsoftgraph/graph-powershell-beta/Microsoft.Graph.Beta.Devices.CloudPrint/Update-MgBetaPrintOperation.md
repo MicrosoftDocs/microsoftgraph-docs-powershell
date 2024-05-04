@@ -287,7 +287,6 @@ Read-only.
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
-[Update-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintoperation)
 

@@ -47,9 +47,6 @@ Update-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the properties of an attributeSet object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/attributeset-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -338,9 +335,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAttributeSet?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryattributeset)
+
+[https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-update?view=graph-rest-1.0)
 
 
 

@@ -35,9 +35,6 @@ New-MgBetaRoleManagementCloudPcRoleAssignment -BodyParameter <IMicrosoftGraphUni
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
 The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/rbacapplicationmultiple-post-roleassignments-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -525,6 +522,8 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroleassignment)
+
+[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-1.0)
 
 
 

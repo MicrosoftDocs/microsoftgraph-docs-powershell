@@ -487,7 +487,6 @@ These must match the actionName that is defined as part of the rolePermission.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementroledefinitionroleassignment)
 

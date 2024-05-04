@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPolicyActivityBasedTimeoutPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyActivityBasedTimeoutPolicyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicycount)
 

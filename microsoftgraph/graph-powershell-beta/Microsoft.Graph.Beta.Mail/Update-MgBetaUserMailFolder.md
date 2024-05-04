@@ -58,9 +58,6 @@ Update-MgBetaUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the properties of mailFolder object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1122,9 +1119,10 @@ Read-only.
   - `[BinaryData <Byte- `[]`>]`:
 
 ## RELATED LINKS
-[Update-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolder)
+
+[https://learn.microsoft.com/graph/api/mailfolder-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-update?view=graph-rest-1.0)
 
 
 

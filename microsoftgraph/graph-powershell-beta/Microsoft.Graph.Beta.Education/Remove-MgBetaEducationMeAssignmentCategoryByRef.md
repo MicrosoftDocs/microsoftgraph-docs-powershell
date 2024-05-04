@@ -223,7 +223,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationMeAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentCategoryByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationmeassignmentcategorybyref)
 

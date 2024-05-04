@@ -326,7 +326,6 @@ Read-only.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary)
 

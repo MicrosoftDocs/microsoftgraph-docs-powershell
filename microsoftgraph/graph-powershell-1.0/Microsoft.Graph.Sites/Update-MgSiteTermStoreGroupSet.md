@@ -742,7 +742,6 @@ Read-only.
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[Update-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupset](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroupset)
 

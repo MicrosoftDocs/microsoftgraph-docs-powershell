@@ -45,9 +45,6 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of a sourceSystemDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-sourcesystemdefinition-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -353,6 +350,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
+
+[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0)
 
 
 

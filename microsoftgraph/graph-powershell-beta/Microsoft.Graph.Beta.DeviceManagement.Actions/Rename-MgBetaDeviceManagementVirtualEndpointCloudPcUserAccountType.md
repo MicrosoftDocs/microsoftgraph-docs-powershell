@@ -313,6 +313,8 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpcuseraccounttype)
 
+[https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-changeuseraccounttype?view=graph-rest-1.0)
+
 
 
 

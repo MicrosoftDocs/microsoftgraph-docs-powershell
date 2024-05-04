@@ -44,9 +44,6 @@ The user's mail folders.
 Read-only.
 Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailfolder-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a mail folder
 
@@ -346,9 +343,12 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolder)
+
+[https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0)
 
 
 

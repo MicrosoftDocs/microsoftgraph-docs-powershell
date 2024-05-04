@@ -259,9 +259,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatPinnedMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetachatpinnedmessage)
+
+[https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0)
 
 
 

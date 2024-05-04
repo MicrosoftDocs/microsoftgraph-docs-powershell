@@ -304,7 +304,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteGetByPathExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathExternalColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathexternalcolumn)
 

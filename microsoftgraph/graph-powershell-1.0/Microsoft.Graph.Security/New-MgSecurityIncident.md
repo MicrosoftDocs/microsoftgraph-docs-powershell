@@ -585,7 +585,6 @@ COMMENTS <IMicrosoftGraphSecurityAlertComment- `[]`>: Array of comments created 
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
 ## RELATED LINKS
-[New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityincident)
 

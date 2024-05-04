@@ -32,9 +32,6 @@ Unpublish-MgBetaSiteContentType -InputObject <ISitesIdentity> [-ResponseHeadersV
 ## DESCRIPTION
 Invoke action unpublish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-unpublish-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -258,9 +255,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/unpublish-mgbetasitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-1.0)
 
 
 

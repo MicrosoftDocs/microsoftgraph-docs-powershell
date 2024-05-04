@@ -460,7 +460,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
-[Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionthreatassessmentrequest)
 

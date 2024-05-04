@@ -425,9 +425,10 @@ Read-only.
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
-[Update-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTag?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamtag)
+
+[https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0)
 
 
 

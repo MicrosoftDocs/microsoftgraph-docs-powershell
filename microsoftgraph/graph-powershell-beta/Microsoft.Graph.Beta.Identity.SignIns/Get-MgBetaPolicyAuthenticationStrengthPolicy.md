@@ -40,9 +40,6 @@ Get-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdent
 ## DESCRIPTION
 Read the properties and relationships of an authenticationStrengthPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all authentication strength policies
 
@@ -392,9 +389,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0)
 
 
 

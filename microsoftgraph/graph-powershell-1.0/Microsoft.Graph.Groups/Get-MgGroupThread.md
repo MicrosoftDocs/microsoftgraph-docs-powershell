@@ -40,9 +40,6 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Respon
 Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-thread-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -330,9 +327,12 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
+
+[https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0)
 
 
 

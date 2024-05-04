@@ -32,9 +32,6 @@ Remove-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGoverna
 ## DESCRIPTION
 Deletes an accessReviewScheduleDefinition object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewscheduledefinition-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -273,9 +270,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceaccessreviewdefinition)
+
+[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0)
 
 
 

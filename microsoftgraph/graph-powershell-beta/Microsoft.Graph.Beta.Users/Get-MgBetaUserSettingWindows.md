@@ -42,9 +42,6 @@ Get-MgBetaUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <Str
 Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL.
 This method gets the setting for the signed-in user.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/windowssetting-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -334,9 +331,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUserSettingWindows](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingWindows?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingwindows)
+
+[https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0)
 
 
 

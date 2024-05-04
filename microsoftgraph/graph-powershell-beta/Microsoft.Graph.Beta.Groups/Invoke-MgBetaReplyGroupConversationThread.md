@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Invoke-MgBetaReplyGroupConversationThread
@@ -585,9 +584,10 @@ Read-only.
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Invoke-MgReplyGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThread?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareplygroupconversationthread)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
 
 
 

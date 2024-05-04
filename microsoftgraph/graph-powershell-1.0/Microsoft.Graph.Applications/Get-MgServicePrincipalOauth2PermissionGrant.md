@@ -343,9 +343,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaloauth2permissiongrant)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list-oauth2permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-oauth2permissiongrants?view=graph-rest-1.0)
 
 
 

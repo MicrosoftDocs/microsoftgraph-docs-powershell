@@ -343,7 +343,6 @@ Read-only.
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-[Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionitemactivity)
 

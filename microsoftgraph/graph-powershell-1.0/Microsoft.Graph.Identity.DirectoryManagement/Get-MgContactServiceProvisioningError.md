@@ -252,7 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaContactServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactserviceprovisioningerror)
 

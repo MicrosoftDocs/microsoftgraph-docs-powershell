@@ -403,7 +403,6 @@ For example, if a user changes their display name, the API might show the new va
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
-[New-MgBetaSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulationLandingPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationlandingpage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationlandingpage)
 

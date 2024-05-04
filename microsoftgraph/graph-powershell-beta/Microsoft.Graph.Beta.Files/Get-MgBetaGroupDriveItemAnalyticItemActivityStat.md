@@ -358,7 +358,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemanalyticitemactivitystat)
 

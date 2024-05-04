@@ -248,7 +248,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListItemCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemcreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistitemcreatedbyuserserviceprovisioningerrorcount)
 

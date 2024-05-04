@@ -355,6 +355,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource)
 
+[https://learn.microsoft.com/graph/api/ediscovery-usersource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-usersource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-usersources?view=graph-rest-1.0)
+
 
 
 

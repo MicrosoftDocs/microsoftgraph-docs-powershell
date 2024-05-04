@@ -29,9 +29,6 @@ Remove-MgBetaRoleManagementExchangeRoleAssignment -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -219,6 +216,8 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangeroleassignment)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0)
 
 
 

@@ -50,9 +50,6 @@ Update-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Update the properties of an activityBasedTimeoutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/activitybasedtimeoutpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -408,9 +405,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyActivityBasedTimeoutPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyactivitybasedtimeoutpolicy)
+
+[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0)
 
 
 

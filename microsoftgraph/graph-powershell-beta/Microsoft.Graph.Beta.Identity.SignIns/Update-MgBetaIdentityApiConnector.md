@@ -48,9 +48,6 @@ Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the properties of an identityApiConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 
@@ -400,9 +397,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityApiConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector)
+
+[https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
 
 
 

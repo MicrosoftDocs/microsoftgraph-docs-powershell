@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgReauthorizeSubscription
@@ -190,9 +189,10 @@ INPUTOBJECT `<IChangeNotificationsIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Invoke-MgBetaReauthorizeSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
 
 
 

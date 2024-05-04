@@ -30081,7 +30081,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitem)
 

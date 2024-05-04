@@ -251,9 +251,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaCheckoutUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaCheckoutUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcheckoutuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgcheckoutuserdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-checkout?view=graph-rest-1.0)
 
 
 

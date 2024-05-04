@@ -330,6 +330,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdriveitempermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/revoke-mgbetauserdriveitempermissiongrant)
 
+[https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-revokegrants?view=graph-rest-1.0)
+
 
 
 

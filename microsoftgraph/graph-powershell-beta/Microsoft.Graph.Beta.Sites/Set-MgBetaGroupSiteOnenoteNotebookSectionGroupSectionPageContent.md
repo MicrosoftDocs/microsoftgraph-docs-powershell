@@ -337,7 +337,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotenotebooksectiongroupsectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteonenotenotebooksectiongroupsectionpagecontent)
 

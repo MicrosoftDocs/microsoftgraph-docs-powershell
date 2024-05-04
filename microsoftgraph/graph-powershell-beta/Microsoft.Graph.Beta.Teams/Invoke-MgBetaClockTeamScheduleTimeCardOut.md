@@ -325,6 +325,8 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardout)
 
+[https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-clockout?view=graph-rest-1.0)
+
 
 
 

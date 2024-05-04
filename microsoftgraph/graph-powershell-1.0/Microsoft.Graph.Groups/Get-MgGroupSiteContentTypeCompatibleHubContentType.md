@@ -307,7 +307,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSiteContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitecontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitecontenttypecompatiblehubcontenttype)
 

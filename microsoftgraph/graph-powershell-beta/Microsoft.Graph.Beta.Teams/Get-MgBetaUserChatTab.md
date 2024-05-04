@@ -361,9 +361,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab)
+
+[https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0)
 
 
 

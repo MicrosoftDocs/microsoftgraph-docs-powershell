@@ -338,9 +338,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessage)
+
+[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0)
 
 
 

@@ -40,9 +40,6 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Retrieve the properties and relationships of an administrativeUnit object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/administrativeunit-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -328,9 +325,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)
 
 
 

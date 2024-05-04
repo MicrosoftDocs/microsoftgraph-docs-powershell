@@ -402,9 +402,10 @@ Content type, such as image/png, image/jpg.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-          - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -535,9 +536,10 @@ Content type, such as image/png, image/jpg.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-This property is read-only.
-        - `[Id <String>]`: The identifier of the identity.
-This property is read-only.
+The display name might not always be available or up to date.
+For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -577,9 +579,10 @@ Required.
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab)
+
+[https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0)
 
 
 

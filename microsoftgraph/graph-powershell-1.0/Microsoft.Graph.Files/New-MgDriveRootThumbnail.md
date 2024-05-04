@@ -364,7 +364,6 @@ This is only available when a folder thumbnail is requested.
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootThumbnail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootthumbnail)
 

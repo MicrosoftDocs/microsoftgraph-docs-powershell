@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSecurityAlertV2Count](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2Count?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2count](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityalertv2count)
 

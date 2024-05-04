@@ -1071,7 +1071,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroleeligibilityschedulerequest)
 

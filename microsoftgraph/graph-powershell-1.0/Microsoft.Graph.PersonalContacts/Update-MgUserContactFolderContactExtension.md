@@ -271,7 +271,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderContactExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontactextension](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfoldercontactextension)
 

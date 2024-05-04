@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgUserManager
@@ -34,9 +33,6 @@ Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-list-manager-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Get a user's manager
@@ -193,9 +189,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
+
+[https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0)
 
 
 

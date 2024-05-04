@@ -50,9 +50,6 @@ Update-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the properties of an openShift object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/openshift-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -483,9 +480,10 @@ Required.
   - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
 
 ## RELATED LINKS
-[Update-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleOpenShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0)
 
 
 

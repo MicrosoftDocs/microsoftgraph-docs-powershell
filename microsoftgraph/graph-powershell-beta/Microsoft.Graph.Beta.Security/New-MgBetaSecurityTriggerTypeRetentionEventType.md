@@ -34,9 +34,6 @@ New-MgBetaSecurityTriggerTypeRetentionEventType -BodyParameter <IMicrosoftGraphS
 ## DESCRIPTION
 Create a new retentionEventType object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -335,9 +332,10 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggertyperetentioneventtype)
+
+[https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)
 
 
 

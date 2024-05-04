@@ -80,9 +80,6 @@ Update-MgBetaBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a bookingCustomQuestion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomquestion-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessCustomQuestion Cmdlet
 ```powershell
@@ -398,9 +395,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Update-MgBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomQuestion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomquestion)
+
+[https://learn.microsoft.com/graph/api/bookingcustomquestion-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomquestion-update?view=graph-rest-1.0)
 
 
 

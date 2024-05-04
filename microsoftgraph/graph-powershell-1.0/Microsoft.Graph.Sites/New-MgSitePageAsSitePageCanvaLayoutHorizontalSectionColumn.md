@@ -342,7 +342,6 @@ WEBPARTS <IMicrosoftGraphWebPart- `[]`>: .
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsectioncolumn)
 

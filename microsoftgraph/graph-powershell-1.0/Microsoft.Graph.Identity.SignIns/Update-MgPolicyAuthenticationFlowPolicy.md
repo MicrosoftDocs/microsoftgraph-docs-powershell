@@ -35,9 +35,6 @@ Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthentic
 Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
 The properties id, type, and description cannot be modified.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationflowspolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -277,9 +274,10 @@ This property isn't a key.
 Required.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0)
 
 
 

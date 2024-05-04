@@ -32,9 +32,6 @@ Invoke-MgBetaRetryGroupServiceProvisioning -InputObject <IGroupsIdentity> [-Resp
 ## DESCRIPTION
 Retry the group service provisioning.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-retryserviceprovisioning-permissions.md)]
-
 ## PARAMETERS
 
 ### -GroupId
@@ -224,9 +221,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgRetryGroupServiceProvisioning](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRetryGroupServiceProvisioning?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaretrygroupserviceprovisioning)
+
+[https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-retryserviceprovisioning?view=graph-rest-1.0)
 
 
 

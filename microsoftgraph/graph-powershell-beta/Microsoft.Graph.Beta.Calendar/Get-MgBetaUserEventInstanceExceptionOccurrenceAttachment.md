@@ -349,6 +349,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventinstanceexceptionoccurrenceattachment)
 
+[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
+
 
 
 

@@ -56,9 +56,6 @@ Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Update the properties of a qna object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-qna-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -552,9 +549,10 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
-[Update-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchQna?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna)
+
+[https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0)
 
 
 

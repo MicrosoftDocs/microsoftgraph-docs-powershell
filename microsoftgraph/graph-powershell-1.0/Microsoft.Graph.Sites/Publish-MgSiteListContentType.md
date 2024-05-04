@@ -32,9 +32,6 @@ Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-ResponseHeadersVar
 ## DESCRIPTION
 Publishes a \[contentType\]\[\] present in the content type hub site.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-publish-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -253,9 +250,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Publish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/publish-mgsitelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

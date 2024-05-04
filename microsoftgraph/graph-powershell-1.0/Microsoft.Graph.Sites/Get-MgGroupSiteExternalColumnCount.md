@@ -217,7 +217,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteExternalColumnCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteExternalColumnCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumncount](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteexternalcolumncount)
 

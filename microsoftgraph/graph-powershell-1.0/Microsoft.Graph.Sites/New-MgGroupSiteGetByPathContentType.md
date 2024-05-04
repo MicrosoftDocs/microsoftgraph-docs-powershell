@@ -1901,9 +1901,10 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteGetByPathContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteGetByPathContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathcontenttype)
+
+[https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0)
 
 
 

@@ -182,7 +182,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalOwnedObjectCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnedObjectCountAsGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectcountasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectcountasgroup)
 

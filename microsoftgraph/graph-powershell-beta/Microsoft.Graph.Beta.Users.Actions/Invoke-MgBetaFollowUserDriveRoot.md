@@ -217,9 +217,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetafollowuserdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetafollowuserdriveroot)
+
+[https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-follow?view=graph-rest-1.0)
 
 
 

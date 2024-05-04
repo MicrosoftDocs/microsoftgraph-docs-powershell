@@ -368,7 +368,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleMemberAsGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMemberAsGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberasgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolememberasgroup)
 

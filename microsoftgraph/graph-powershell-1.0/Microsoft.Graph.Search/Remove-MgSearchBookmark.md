@@ -32,9 +32,6 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-bookmark-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -BookmarkId
@@ -202,9 +199,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Remove-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
 
 
 

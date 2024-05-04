@@ -31,9 +31,6 @@ Get-MgBetaUserMessageContent -InputObject <IMailIdentity> -OutFile <String> [-Re
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-list-messages-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -186,9 +183,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMessageContent](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

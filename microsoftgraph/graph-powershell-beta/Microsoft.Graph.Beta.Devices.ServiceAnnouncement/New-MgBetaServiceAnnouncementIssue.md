@@ -433,7 +433,6 @@ POSTS <IMicrosoftGraphServiceHealthIssuePost- `[]`>: Collection of historical po
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
-[New-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/New-MgServiceAnnouncementIssue?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/new-mgbetaserviceannouncementissue)
 

@@ -216,7 +216,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupMemberCountAsUser](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMemberCountAsUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercountasuser](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupmembercountasuser)
 

@@ -232,7 +232,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteLastModifiedByUserMailboxSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyusermailboxsetting)
 

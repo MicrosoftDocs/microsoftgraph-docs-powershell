@@ -363,9 +363,10 @@ Read-only.
   - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementvpptoken)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-vpptoken-create?view=graph-rest-1.0)
 
 
 

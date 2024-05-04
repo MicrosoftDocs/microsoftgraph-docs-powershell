@@ -196,7 +196,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/New-MgDirectoryObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/new-mgbetadirectoryobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/new-mgbetadirectoryobject)
 

@@ -272,7 +272,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumnWebpartCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpartcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepageassitepagecanvalayouthorizontalsectioncolumnwebpartcount)
 

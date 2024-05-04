@@ -337,7 +337,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageHostedContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatmessagehostedcontent)
 

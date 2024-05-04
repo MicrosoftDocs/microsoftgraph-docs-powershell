@@ -326,7 +326,6 @@ Read-only.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 ## RELATED LINKS
-[New-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementExchangeConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementexchangeconnector)
 

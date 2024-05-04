@@ -236,7 +236,6 @@ Returned by default.
   - `[MetricType <String>]`: The user experience analytics metric type.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticmetrichistory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticmetrichistory)
 

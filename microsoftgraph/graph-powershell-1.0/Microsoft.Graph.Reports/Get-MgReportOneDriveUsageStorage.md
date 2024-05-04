@@ -180,7 +180,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage)
 

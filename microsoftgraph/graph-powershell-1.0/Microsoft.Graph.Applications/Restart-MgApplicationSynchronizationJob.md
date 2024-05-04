@@ -52,9 +52,6 @@ Restart-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/synchronization-synchronizationjob-restart-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,9 +291,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restart-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgapplicationsynchronizationjob)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-1.0)
 
 
 

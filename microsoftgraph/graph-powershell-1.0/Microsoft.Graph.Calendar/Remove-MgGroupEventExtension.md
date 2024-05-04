@@ -231,7 +231,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupEventExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupeventextension)
 

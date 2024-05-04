@@ -46,9 +46,6 @@ Remove-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete a group object in a term \[store\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -297,9 +294,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitetermstoregroup)
+
+[https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0)
 
 
 

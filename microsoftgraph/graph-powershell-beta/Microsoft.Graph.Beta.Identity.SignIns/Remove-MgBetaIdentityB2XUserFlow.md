@@ -32,9 +32,6 @@ Remove-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMat
 ## DESCRIPTION
 Delete a b2xIdentityUserFlow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/b2xidentityuserflow-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,9 +280,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2xuserflow)
+
+[https://learn.microsoft.com/graph/api/b2xidentityuserflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-delete?view=graph-rest-1.0)
 
 
 

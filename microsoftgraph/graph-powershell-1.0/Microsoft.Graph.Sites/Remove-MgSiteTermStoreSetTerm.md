@@ -46,9 +46,6 @@ Remove-MgSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-term-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -308,9 +305,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreSetTerm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetterm)
+
+[https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0)
 
 
 

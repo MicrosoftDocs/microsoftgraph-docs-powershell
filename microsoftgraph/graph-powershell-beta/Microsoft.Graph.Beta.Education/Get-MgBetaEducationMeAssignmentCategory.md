@@ -27,9 +27,6 @@ Get-MgBetaEducationMeAssignmentCategory -EducationAssignmentId <String> [-Expand
 List all categories for an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -255,9 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentcategory)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 
 
 

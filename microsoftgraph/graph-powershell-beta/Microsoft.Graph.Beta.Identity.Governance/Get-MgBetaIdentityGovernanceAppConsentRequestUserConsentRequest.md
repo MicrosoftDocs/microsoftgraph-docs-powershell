@@ -41,9 +41,6 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <II
 ## DESCRIPTION
 Read the properties and relationships of a userConsentRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userconsentrequest-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -419,9 +416,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
+
+[https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)
 
 
 

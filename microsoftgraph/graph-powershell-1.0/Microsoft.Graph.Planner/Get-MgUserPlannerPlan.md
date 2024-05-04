@@ -25,9 +25,6 @@ Get-MgUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ## DESCRIPTION
 Retrieve a list of plannerplan objects shared with a user object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/planneruser-list-plans-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -267,9 +264,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerPlan?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannerplan)
+
+[https://learn.microsoft.com/graph/api/planneruser-list-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-plans?view=graph-rest-1.0)
 
 
 

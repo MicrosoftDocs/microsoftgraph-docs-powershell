@@ -296,7 +296,6 @@ Available for the recent file list only.
 Read-write.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootUploadSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootuploadsession)
 

@@ -326,7 +326,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365groupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportoffice365groupactivitydetail)
 

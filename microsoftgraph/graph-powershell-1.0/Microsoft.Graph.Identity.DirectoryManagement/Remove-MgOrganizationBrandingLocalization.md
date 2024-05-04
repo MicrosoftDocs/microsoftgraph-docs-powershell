@@ -35,9 +35,6 @@ Remove-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 Delete a localized branding object.
 To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbrandinglocalization-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -248,9 +245,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-delete?view=graph-rest-1.0)
 
 
 

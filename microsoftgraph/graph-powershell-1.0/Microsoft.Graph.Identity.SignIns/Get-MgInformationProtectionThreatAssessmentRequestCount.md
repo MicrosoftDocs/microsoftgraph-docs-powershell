@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaInformationProtectionThreatAssessmentRequestCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequestCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequestcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionthreatassessmentrequestcount)
 

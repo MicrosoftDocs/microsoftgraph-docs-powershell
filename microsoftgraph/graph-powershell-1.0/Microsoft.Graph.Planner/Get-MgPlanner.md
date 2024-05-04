@@ -121,7 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner)
 

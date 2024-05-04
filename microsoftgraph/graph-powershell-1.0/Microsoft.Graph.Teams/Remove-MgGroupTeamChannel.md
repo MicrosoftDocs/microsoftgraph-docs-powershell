@@ -32,9 +32,6 @@ Remove-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 ## DESCRIPTION
 Delete the channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -243,9 +240,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchannel)
+
+[https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0)
 
 
 

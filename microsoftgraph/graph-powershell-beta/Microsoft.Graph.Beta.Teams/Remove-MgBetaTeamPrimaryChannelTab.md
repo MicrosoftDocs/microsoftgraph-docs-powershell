@@ -246,7 +246,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamprimarychanneltab)
 

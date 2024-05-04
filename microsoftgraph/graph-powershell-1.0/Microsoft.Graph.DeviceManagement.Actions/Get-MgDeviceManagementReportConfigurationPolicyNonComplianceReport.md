@@ -369,9 +369,10 @@ BODYPARAMETER `<IPaths1Hds8UqDevicemanagementReportsMicrosoftGraphGetconfigurati
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementReportConfigurationPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportConfigurationPolicyNonComplianceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportconfigurationpolicynoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportconfigurationpolicynoncompliancereport)
+
+[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport?view=graph-rest-1.0)
 
 
 

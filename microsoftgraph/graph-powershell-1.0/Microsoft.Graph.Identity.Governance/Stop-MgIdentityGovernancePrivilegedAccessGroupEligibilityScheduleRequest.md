@@ -33,9 +33,6 @@ Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/privilegedaccessgroupeligibilityschedulerequest-cancel-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -246,9 +243,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-cancel?view=graph-rest-1.0)
 
 
 

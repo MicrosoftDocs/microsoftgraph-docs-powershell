@@ -255,7 +255,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaUserOnlineMeetingTranscriptContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingtranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/set-mguseronlinemeetingtranscriptcontent)
 

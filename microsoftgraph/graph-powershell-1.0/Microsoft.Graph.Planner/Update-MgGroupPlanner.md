@@ -572,7 +572,6 @@ Collection of tasks in the plan.
 Title of the plan.
 
 ## RELATED LINKS
-[Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mggroupplanner)
 

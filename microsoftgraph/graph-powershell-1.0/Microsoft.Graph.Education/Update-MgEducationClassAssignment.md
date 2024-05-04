@@ -68,9 +68,6 @@ Only teachers can perform this action.
 Alternatively, request to change the status of an assignment with publish action.
 Don't use a PATCH operation for this purpose.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -891,9 +888,10 @@ Read-only.
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0)
 
 
 

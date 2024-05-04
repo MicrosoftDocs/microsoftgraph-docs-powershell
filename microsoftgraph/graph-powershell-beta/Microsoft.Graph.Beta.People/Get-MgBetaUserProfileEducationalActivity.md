@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileEducationalActivity
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-Expand
 
 ## DESCRIPTION
 Retrieve the properties and relationships of an educationalActivity object from a users profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationalactivity-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileEducationalActivity Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileeducationalactivity)
+
+[https://learn.microsoft.com/graph/api/educationalactivity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationalactivity-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-educationalactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-educationalactivities?view=graph-rest-1.0)
 
 
 

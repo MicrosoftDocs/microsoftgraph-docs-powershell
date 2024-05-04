@@ -48,9 +48,6 @@ Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an externalGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -338,9 +335,10 @@ Read-only.
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-[Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectiongroup)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-update?view=graph-rest-1.0)
 
 
 

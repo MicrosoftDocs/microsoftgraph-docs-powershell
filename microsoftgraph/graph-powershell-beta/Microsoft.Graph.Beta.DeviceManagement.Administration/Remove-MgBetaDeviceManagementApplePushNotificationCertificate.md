@@ -144,7 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementapplepushnotificationcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementapplepushnotificationcertificate)
 

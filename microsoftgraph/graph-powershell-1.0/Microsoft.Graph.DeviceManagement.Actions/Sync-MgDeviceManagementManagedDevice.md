@@ -191,9 +191,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Sync-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Sync-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/sync-mgdevicemanagementmanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0)
 
 
 

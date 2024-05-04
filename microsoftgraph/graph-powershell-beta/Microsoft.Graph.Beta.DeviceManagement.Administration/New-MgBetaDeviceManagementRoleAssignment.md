@@ -438,7 +438,6 @@ Read-only.
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
-[New-MgDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroleassignment)
 

@@ -259,7 +259,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceprivilegedaccessgroupeligibilityscheduleinstance)
 

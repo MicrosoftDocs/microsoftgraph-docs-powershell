@@ -40,9 +40,6 @@ Get-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Retrieve the properties and relationships of a servicePrincipal object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get all service principals from the directory
 
@@ -446,9 +443,12 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipal)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list?view=graph-rest-1.0)
 
 
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Update-MgSecurityCaseEdiscoveryCase
@@ -64,9 +63,6 @@ Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity>
 
 ## DESCRIPTION
 Update the properties of an ediscoveryCase object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycase-update-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -10473,9 +10469,10 @@ Read-only.
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycase)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-update?view=graph-rest-1.0)
 
 
 

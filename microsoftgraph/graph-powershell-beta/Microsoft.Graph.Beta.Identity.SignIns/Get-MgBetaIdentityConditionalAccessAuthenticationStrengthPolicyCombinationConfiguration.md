@@ -40,9 +40,6 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 ## DESCRIPTION
 Read the properties and relationships of an authenticationCombinationConfiguration object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationcombinationconfiguration-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -385,6 +382,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration)
+
+[https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0)
 
 
 

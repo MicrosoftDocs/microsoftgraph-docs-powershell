@@ -32,9 +32,6 @@ Remove-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a calendar group other than the default calendar group.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/calendargroup-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -235,9 +232,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Remove-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserCalendarGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausercalendargroup)
+
+[https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0)
 
 
 

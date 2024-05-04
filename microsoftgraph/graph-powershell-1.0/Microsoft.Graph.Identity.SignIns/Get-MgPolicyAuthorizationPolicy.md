@@ -24,9 +24,6 @@ Get-MgPolicyAuthorizationPolicy [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Retrieve the properties of an authorizationPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authorizationpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -129,9 +126,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthorizationpolicy)
+
+[https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authorizationpolicy-get?view=graph-rest-1.0)
 
 
 

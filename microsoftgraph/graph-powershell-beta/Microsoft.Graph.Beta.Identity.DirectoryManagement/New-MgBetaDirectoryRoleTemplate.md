@@ -235,7 +235,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryroletemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryroletemplate)
 

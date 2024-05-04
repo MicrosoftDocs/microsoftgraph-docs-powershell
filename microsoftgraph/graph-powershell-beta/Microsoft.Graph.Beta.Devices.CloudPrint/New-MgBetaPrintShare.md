@@ -36,9 +36,6 @@ New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-ResponseHead
 ## DESCRIPTION
 Create a new printerShare for the specified printer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/print-post-shares-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -31033,9 +31030,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintshare)
+
+[https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-post-shares?view=graph-rest-1.0)
 
 
 

@@ -9911,7 +9911,6 @@ Required.Supports $filter(eq, ne).
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult- `[]`>]`: The result of processing the task.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowtask](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowtask)
 

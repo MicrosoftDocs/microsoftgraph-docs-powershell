@@ -346,7 +346,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaCommitDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfile](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgcommitdeviceappmanagementmobileappmicrosoftgraphmacosdmgappcontentversionfile)
 

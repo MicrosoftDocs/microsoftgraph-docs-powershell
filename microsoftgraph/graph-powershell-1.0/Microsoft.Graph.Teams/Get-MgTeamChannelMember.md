@@ -40,9 +40,6 @@ Get-MgTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-get-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -367,9 +364,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmember)
+
+[https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0)
 
 
 

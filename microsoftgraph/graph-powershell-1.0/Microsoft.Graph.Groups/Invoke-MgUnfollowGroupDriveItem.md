@@ -32,9 +32,6 @@ Invoke-MgUnfollowGroupDriveItem -InputObject <IGroupsIdentity> [-ResponseHeaders
 ## DESCRIPTION
 Unfollow a driveItem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-unfollow-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -249,9 +246,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgBetaUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaUnfollowGroupDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgunfollowgroupdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-unfollow?view=graph-rest-1.0)
 
 
 

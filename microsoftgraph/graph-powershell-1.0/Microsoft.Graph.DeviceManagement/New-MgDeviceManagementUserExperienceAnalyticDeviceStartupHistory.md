@@ -515,7 +515,6 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartuphistory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartuphistory)
 

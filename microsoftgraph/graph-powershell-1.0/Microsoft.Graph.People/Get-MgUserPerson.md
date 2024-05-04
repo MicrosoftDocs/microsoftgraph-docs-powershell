@@ -308,9 +308,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPerson](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserPerson?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserperson)
+
+[https://learn.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)
 
 
 

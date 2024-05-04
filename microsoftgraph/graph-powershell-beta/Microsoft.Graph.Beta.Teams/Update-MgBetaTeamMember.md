@@ -363,9 +363,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateammember)
+
+[https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0)
 
 
 

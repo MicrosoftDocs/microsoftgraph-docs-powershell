@@ -45,9 +45,6 @@ New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 ## DESCRIPTION
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/meetingregistration-post-customquestions-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -331,6 +328,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationcustomquestion)
+
+[https://learn.microsoft.com/graph/api/meetingregistration-post-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-post-customquestions?view=graph-rest-1.0)
 
 
 

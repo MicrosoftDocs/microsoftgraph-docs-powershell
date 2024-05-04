@@ -376,7 +376,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListSubscription?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitelistsubscription)
 

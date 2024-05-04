@@ -493,7 +493,6 @@ SETTINGSTATES <IMicrosoftGraphDeviceCompliancePolicySettingState- `[]`>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[New-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddevicecompliancepolicystate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddevicecompliancepolicystate)
 

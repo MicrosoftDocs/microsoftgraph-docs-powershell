@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetag
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseTag
@@ -40,9 +39,6 @@ Get-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-ExpandPro
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryReviewTag object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewtag-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,9 +376,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasetag)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-tags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-tags?view=graph-rest-1.0)
 
 
 

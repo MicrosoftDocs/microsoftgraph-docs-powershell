@@ -242,7 +242,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Invoke-MgBetaRenewDeviceAppManagementMobileAppMicrosoftGraphWindowsUniversalAppXContentVersionFileUpload?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphwindowsuniversalappxcontentversionfileupload](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgrenewdeviceappmanagementmobileappmicrosoftgraphwindowsuniversalappxcontentversionfileupload)
 

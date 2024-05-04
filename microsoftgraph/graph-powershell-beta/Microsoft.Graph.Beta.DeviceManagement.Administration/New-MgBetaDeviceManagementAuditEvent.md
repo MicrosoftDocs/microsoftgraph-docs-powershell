@@ -410,7 +410,6 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
   - `[Type <String>]`: Audit resource's type.
 
 ## RELATED LINKS
-[New-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementAuditEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementauditevent)
 

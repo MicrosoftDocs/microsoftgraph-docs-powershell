@@ -302,9 +302,12 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessageattachment)
+
+[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/eventmessage-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-list-attachments?view=graph-rest-1.0)
 
 
 

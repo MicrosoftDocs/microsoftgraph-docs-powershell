@@ -214,7 +214,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicyapplytocount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyactivitybasedtimeoutpolicyapplytocount)
 

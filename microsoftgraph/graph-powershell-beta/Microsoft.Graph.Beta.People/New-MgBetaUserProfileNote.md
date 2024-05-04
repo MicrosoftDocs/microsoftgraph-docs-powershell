@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote
 schema: 2.0.0
-ms.prod: people
 ---
 
 # New-MgBetaUserProfileNote
@@ -49,9 +48,6 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 
 ## DESCRIPTION
 Create a new personAnnotation object in a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/profile-post-notes-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserProfileNote Cmdlet
@@ -509,6 +505,8 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote)
+
+[https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0)
 
 
 

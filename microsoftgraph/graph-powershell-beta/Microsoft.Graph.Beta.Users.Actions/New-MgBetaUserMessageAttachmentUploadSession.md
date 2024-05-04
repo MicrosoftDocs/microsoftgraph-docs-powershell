@@ -365,9 +365,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageAttachmentUploadSession?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageattachmentuploadsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessageattachmentuploadsession)
+
+[https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-createuploadsession?view=graph-rest-1.0)
 
 
 

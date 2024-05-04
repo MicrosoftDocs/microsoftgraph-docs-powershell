@@ -40,9 +40,6 @@ Get-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/columndefinition-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -381,9 +378,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListContentTypeColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumn)
+
+[https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0)
 
 
 

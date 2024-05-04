@@ -235,7 +235,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Status <String>]`: longRunningOperationStatus
 
 ## RELATED LINKS
-[New-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/new-mgreportpartnerbillingoperation)
 

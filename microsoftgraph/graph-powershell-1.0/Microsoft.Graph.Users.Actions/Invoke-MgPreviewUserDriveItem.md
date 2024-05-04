@@ -303,7 +303,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaPreviewUserDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgpreviewuserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgpreviewuserdriveitem)
 

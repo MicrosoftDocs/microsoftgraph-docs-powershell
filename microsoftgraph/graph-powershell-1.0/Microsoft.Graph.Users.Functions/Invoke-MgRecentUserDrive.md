@@ -292,7 +292,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRecentUserDrive](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserDrive?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive)
 

@@ -40,9 +40,6 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Get a riskyUserHistoryItem object of a riskyUser.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/riskyuserhistoryitem-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List history of a specific user
 ```powershell
@@ -418,9 +415,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
+
+[https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-1.0)
 
 
 

@@ -355,7 +355,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteExternalColumn?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteexternalcolumn)
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser
 schema: 2.0.0
-ms.prod: users
 ---
 
 # Get-MgBetaUser
@@ -454,9 +453,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauser)
+
+[https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list?view=graph-rest-1.0)
 
 
 

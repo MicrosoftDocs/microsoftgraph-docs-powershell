@@ -263,7 +263,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgGroupDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Set-MgGroupDriveFollowingContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdrivefollowingcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetagroupdrivefollowingcontent)
 

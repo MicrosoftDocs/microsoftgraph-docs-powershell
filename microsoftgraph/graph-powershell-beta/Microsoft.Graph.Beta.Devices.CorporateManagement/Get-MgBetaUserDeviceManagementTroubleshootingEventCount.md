@@ -228,7 +228,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserDeviceManagementTroubleshootingEventCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserDeviceManagementTroubleshootingEventCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdevicemanagementtroubleshootingeventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetauserdevicemanagementtroubleshootingeventcount)
 

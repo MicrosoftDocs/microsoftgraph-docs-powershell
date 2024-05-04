@@ -29,9 +29,6 @@ Get-MgBetaTrustFrameworkPolicyContent -InputObject <IIdentitySignInsIdentity> -O
 ## DESCRIPTION
 Get media content for the navigation property policies from trustFramework
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframework-list-trustframeworkpolicies-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -238,6 +235,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkpolicycontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkpolicycontent)
+
+[https://learn.microsoft.com/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-1.0)
 
 
 

@@ -34,9 +34,6 @@ Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDevic
 Update the properties of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/deviceregistrationpolicy-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +347,8 @@ An admin can set it to true to enable Local Admin Password Solution (LAPS) withi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy)
+
+[https://learn.microsoft.com/graph/api/deviceregistrationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-update?view=graph-rest-1.0)
 
 
 

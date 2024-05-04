@@ -275,7 +275,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRecentDrive](/powershell/module/Microsoft.Graph.Files/Invoke-MgRecentDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetarecentdrive)
 

@@ -211,9 +211,10 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementdeviceenrollmentconfigurationassignment)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-delete?view=graph-rest-1.0)
 
 
 

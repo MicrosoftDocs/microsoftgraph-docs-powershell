@@ -55,9 +55,6 @@ New-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
 Create a new contactFolder as a child of a specified folder.
 You can also create a new contactFolder under the user's default contact folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-post-childfolders-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -688,9 +685,10 @@ Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[New-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder)
+
+[https://learn.microsoft.com/graph/api/contactfolder-post-childfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-post-childfolders?view=graph-rest-1.0)
 
 
 

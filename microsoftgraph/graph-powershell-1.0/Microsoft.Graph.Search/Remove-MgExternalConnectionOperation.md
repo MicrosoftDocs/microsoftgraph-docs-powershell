@@ -214,7 +214,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Remove-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnectionoperation)
 

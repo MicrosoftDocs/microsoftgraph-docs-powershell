@@ -352,9 +352,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarsessionattendancereportattendancerecord)
+
+[https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attendancerecord-list?view=graph-rest-1.0)
 
 
 

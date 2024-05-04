@@ -32,9 +32,6 @@ New-MgBetaRoleManagementExchangeCustomAppScope -BodyParameter <IMicrosoftGraphCu
 Create a new customAppScope object for an RBAC provider.
 Currently only the Exchange Online RBAC provider is supported.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedrbacapplication-post-customappscope-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,6 +236,8 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangecustomappscope)
+
+[https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacapplication-post-customappscope?view=graph-rest-1.0)
 
 
 

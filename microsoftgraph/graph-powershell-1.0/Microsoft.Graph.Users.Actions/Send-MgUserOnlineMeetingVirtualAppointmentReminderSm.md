@@ -325,9 +325,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgBetaUserOnlineMeetingVirtualAppointmentReminderSm?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentremindersm](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/send-mguseronlinemeetingvirtualappointmentremindersm)
+
+[https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-sendvirtualappointmentremindersms?view=graph-rest-1.0)
 
 
 

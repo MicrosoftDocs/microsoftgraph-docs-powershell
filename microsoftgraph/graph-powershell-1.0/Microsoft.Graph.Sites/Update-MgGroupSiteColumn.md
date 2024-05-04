@@ -1285,7 +1285,6 @@ User will be prompted with this message if validation fails.
 For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteColumn?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitecolumn)
 

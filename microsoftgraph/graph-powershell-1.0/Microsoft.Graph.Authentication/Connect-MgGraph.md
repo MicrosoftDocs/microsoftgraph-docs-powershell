@@ -23,8 +23,9 @@ Connect-MgGraph [[-Scopes] <String[]>] [[-ClientId] <String>] [-TenantId <String
 ### AppCertificateParameterSet
 ```
 Connect-MgGraph [-ClientId] <String> [[-CertificateSubjectName] <String>] [[-CertificateThumbprint] <String>]
- [-Certificate <X509Certificate2>] [-TenantId <String>] [-ContextScope <ContextScope>] [-Environment <String>]
- [-ClientTimeout <Double>] [-NoWelcome] [-ProgressAction <ActionPreference>] [<CommonParameters>]
+ [-SendCertificateChain <Boolean>] [-Certificate <X509Certificate2>] [-TenantId <String>]
+ [-ContextScope <ContextScope>] [-Environment <String>] [-ClientTimeout <Double>] [-NoWelcome]
+ [-ProgressAction <ActionPreference>] [<CommonParameters>]
 ```
 
 ### IdentityParameterSet
@@ -382,6 +383,21 @@ Aliases:
 
 Required: False
 Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SendCertificateChain
+Include x5c header in client claims when acquiring a token to enable subject name / issuer based authentication using given certificate.
+
+```yaml
+Type: Boolean
+Parameter Sets: AppCertificateParameterSet
+Aliases:
+
+Required: False
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

@@ -37,9 +37,6 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 ## DESCRIPTION
 Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/applicationsignindetailedsummary-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
 ```powershell
@@ -350,6 +347,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary)
+
+[https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-1.0)
 
 
 

@@ -231,7 +231,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupConversationThreadPostInReplyToExtensionCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupConversationThreadPostInReplyToExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoextensioncount)
 

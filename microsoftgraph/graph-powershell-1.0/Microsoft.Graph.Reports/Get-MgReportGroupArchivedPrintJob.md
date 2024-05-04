@@ -256,7 +256,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportGroupArchivedPrintJob?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportgrouparchivedprintjob)
 

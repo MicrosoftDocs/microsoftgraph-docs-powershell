@@ -249,7 +249,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgshareshareddriveitemshareddriveitem)
 

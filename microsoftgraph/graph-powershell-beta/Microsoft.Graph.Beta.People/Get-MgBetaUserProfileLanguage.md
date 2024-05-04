@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgBetaUserProfileLanguage
@@ -37,9 +36,6 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 
 ## DESCRIPTION
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/languageproficiency-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserProfileLanguage Cmdlet
@@ -346,6 +342,10 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage)
+
+[https://learn.microsoft.com/graph/api/languageproficiency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/languageproficiency-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/profile-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-languages?view=graph-rest-1.0)
 
 
 

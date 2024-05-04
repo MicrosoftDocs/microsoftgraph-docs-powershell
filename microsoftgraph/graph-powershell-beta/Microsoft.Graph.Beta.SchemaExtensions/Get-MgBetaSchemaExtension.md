@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgBetaSchemaExtension
@@ -306,9 +305,12 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
   - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
-[Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension)
+
+[https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-list?view=graph-rest-1.0)
 
 
 

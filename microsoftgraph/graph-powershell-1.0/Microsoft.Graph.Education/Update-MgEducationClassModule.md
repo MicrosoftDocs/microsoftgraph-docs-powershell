@@ -57,9 +57,6 @@ Only teachers in the class can perform this operation.
 You can't use a PATCH request to change the status of a module.
 Use the publish action to change the module status.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -446,9 +443,10 @@ For example, if a user changes their display name, the API might show the new va
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0)
 
 
 

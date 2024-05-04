@@ -222,7 +222,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplytobyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplytobyref)
 

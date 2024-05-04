@@ -300,7 +300,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermanageddeviceuserfromsharedappledevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/remove-mgbetausermanageddeviceuserfromsharedappledevice)
 

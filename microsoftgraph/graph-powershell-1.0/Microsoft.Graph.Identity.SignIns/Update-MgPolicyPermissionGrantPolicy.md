@@ -50,9 +50,6 @@ Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update properties of a  permissionGrantPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permissiongrantpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Update a permission grant policy
 
@@ -461,9 +458,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0)
 
 
 

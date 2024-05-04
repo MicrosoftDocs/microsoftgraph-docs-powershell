@@ -263,9 +263,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatInstalledApp?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatinstalledapp)
+
+[https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-installedapps?view=graph-rest-1.0)
 
 
 

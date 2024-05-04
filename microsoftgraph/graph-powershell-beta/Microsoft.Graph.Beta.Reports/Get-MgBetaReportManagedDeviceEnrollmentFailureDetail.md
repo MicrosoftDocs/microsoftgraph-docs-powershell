@@ -254,7 +254,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentfailuredetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmanageddeviceenrollmentfailuredetail)
 

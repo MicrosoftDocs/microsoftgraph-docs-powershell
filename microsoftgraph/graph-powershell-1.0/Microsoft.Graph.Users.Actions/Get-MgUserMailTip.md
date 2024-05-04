@@ -297,9 +297,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/get-mgusermailtip)
+
+[https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
 
 
 

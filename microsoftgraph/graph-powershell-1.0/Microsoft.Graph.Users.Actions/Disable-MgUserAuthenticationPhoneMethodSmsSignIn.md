@@ -225,6 +225,8 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mguserauthenticationphonemethodsmssignin](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/disable-mguserauthenticationphonemethodsmssignin)
 
+[https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-disablesmssignin?view=graph-rest-1.0)
+
 
 
 

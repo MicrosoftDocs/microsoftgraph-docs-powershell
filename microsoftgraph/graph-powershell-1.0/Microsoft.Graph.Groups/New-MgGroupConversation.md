@@ -50,9 +50,6 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Use reply thread or reply post to further post to that conversation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-post-conversations-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -553,9 +550,10 @@ Returned by default.
 Returned by default.
 
 ## RELATED LINKS
-[New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupconversation)
+
+[https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-conversations?view=graph-rest-1.0)
 
 
 

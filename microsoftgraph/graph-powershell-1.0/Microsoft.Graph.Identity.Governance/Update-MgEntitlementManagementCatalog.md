@@ -54,9 +54,6 @@ Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accesspackagecatalog-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -10549,6 +10546,8 @@ Supports $expand.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalog)
+
+[https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-update?view=graph-rest-1.0)
 
 
 

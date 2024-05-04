@@ -182,7 +182,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserActivityHistoryItemCount](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivityHistoryItemCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitemcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauseractivityhistoryitemcount)
 

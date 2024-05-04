@@ -385,9 +385,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDeviceMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceMemberOf?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadevicememberof)
+
+[https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-memberof?view=graph-rest-1.0)
 
 
 

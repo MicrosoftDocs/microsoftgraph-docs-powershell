@@ -116,9 +116,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepointSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaadminsharepointsetting)
+
+[https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-get?view=graph-rest-1.0)
 
 
 

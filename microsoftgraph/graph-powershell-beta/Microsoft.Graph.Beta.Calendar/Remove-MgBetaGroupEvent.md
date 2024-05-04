@@ -32,9 +32,6 @@ Remove-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete an event object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-delete-event-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -234,9 +231,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Remove-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupevent)
+
+[https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-event?view=graph-rest-1.0)
 
 
 

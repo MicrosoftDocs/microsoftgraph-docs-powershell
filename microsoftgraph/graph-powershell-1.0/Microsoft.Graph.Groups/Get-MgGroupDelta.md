@@ -243,7 +243,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta)
 

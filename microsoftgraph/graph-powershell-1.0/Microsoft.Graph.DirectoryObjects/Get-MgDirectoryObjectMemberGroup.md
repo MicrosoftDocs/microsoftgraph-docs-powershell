@@ -253,9 +253,10 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryObjectMemberGroup](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectmembergroup)
+
+[https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
 
 
 

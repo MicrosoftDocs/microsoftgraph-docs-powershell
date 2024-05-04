@@ -32,9 +32,6 @@ Remove-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete an onlineMeeting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -241,9 +238,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeeting)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0)
 
 
 

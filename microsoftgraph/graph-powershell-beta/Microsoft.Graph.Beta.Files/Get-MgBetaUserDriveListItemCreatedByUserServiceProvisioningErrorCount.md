@@ -213,7 +213,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserDriveListItemCreatedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemCreatedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemcreatedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdrivelistitemcreatedbyuserserviceprovisioningerrorcount)
 

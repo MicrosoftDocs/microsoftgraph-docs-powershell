@@ -236,7 +236,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Get-MgDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAuditEventAuditActivityType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementauditeventauditactivitytype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementauditeventauditactivitytype)
 

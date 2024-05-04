@@ -25,9 +25,6 @@ Get-MgBetaUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String> 
 ## DESCRIPTION
 Retrieve a list of section groups from the specified notebook.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-list-sectiongroups-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -282,9 +279,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebooksectiongroup)
+
+[https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0)
 
 
 

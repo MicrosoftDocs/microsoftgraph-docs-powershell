@@ -78,9 +78,6 @@ The default branding is created only once.
 It's loaded when a localized branding isn't configured for the user's browser language.
 To retrieve the default branding, see Get branding.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/organizationalbranding-post-localizations-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -803,9 +800,10 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
   - `[HideTermsOfUse <Boolean?>]`: Option to hide the 'Terms of Use' hyperlink in the footer.
 
 ## RELATED LINKS
-[New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization)
+
+[https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-1.0)
 
 
 

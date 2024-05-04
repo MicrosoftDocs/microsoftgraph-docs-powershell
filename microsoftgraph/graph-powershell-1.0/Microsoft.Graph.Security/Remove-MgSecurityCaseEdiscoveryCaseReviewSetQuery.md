@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -33,9 +32,6 @@ Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 
 ## DESCRIPTION
 Delete an ediscoveryReviewSetQuery object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -298,9 +294,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-1.0)
 
 
 

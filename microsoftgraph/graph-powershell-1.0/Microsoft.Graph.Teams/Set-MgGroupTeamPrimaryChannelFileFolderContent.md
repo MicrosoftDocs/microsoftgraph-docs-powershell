@@ -255,7 +255,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamprimarychannelfilefoldercontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamprimarychannelfilefoldercontent)
 

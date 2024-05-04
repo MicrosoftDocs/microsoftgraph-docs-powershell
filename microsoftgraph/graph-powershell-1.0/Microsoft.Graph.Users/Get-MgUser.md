@@ -429,9 +429,12 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguser)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-list?view=graph-rest-1.0)
 
 
 

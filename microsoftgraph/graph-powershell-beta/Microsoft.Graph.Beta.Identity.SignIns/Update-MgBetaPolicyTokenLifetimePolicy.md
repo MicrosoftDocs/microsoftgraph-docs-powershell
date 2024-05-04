@@ -50,9 +50,6 @@ Update-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> -
 ## DESCRIPTION
 Update the properties of a tokenLifetimePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenlifetimepolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -430,9 +427,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-1.0)
 
 
 

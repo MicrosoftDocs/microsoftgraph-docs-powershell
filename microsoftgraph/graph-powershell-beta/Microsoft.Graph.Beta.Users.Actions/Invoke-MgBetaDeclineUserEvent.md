@@ -382,9 +382,10 @@ See below for possible values.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Invoke-MgDeclineUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDeclineUserEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineuserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetadeclineuserevent)
+
+[https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-decline?view=graph-rest-1.0)
 
 
 

@@ -228,7 +228,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgTerminateDeviceManagementPartner?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaterminatedevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaterminatedevicemanagementpartner)
 

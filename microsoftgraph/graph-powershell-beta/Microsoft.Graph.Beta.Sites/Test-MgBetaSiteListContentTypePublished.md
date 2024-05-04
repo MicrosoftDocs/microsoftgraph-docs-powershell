@@ -210,7 +210,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Test-MgSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteListContentTypePublished?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitelistcontenttypepublished)
 

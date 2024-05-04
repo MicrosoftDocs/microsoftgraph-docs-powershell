@@ -32,9 +32,6 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete contactFolder other than the default contactFolder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contactfolder-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -227,9 +224,10 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfolder)
+
+[https://learn.microsoft.com/graph/api/contactfolder-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-delete?view=graph-rest-1.0)
 
 
 

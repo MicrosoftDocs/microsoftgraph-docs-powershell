@@ -81,9 +81,6 @@ New-MgDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to children for drives
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-additem-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30068,9 +30065,10 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootChild?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootchild)
+
+[https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-additem?view=graph-rest-1.0)
 
 
 

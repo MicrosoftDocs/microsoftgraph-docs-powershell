@@ -29,9 +29,6 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create a new industryDataConnector object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-post-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,6 +279,8 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-post?view=graph-rest-1.0)
 
 
 

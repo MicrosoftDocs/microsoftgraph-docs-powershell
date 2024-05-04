@@ -219,7 +219,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelRetentionLabelDescriptorAuthorityTemplate?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorauthoritytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelretentionlabeldescriptorauthoritytemplate)
 

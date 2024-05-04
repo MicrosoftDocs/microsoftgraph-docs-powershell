@@ -357,7 +357,6 @@ Read-only.
   - `[Status <String>]`: cloudPcGalleryImageStatus
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementVirtualEndpointGalleryImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointGalleryImage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointgalleryimage)
 

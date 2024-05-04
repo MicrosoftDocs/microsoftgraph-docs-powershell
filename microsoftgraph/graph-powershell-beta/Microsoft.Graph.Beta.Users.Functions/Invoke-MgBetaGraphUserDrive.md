@@ -304,7 +304,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgGraphUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgGraphUserDrive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetagraphuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetagraphuserdrive)
 

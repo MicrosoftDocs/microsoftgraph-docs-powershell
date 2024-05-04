@@ -46,9 +46,6 @@ New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create an identity resource for a new member in an externalGroup.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-post-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Add an Azure Active Directory user as a member
 
@@ -320,9 +317,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-post-members?view=graph-rest-1.0)
 
 
 

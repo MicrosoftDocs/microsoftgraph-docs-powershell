@@ -199,7 +199,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteSectionGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotesectiongroupcount)
 

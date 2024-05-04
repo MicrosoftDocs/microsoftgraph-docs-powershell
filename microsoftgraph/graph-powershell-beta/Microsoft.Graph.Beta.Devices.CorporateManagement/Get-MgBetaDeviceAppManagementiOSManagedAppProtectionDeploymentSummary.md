@@ -229,7 +229,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementiosmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementiosmanagedappprotectiondeploymentsummary)
 

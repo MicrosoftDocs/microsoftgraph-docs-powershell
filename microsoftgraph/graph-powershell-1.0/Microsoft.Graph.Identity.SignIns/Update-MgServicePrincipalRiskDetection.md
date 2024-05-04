@@ -673,7 +673,6 @@ Read-only.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection)
 

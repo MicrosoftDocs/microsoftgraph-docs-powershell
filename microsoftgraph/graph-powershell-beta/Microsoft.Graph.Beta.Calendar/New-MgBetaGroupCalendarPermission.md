@@ -337,9 +337,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[New-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupCalendarPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupcalendarpermission)
+
+[https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0)
 
 
 

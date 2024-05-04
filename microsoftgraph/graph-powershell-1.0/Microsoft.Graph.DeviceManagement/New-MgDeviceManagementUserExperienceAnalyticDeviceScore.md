@@ -390,7 +390,6 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScore?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescore](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescore)
 

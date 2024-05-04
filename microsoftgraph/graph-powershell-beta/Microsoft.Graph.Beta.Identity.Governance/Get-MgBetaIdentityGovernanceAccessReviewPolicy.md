@@ -21,9 +21,6 @@ Get-MgBetaIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet
 ```powershell
@@ -124,6 +121,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy)
+
+[https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-1.0)
 
 
 

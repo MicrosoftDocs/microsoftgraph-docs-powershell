@@ -51,9 +51,6 @@ Create a resource in a module.
 Only teachers can perform this operation.
 You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-post-resources-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,9 +305,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
+
+[https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0)
 
 
 

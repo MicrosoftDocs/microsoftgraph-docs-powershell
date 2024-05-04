@@ -243,7 +243,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListItemField?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitemfield)
 

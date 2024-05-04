@@ -40,9 +40,6 @@ Get-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-ExpandProp
 ## DESCRIPTION
 Read the properties and relationships of an operation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/partners-billing-operation-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -313,9 +310,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
+
+[https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
 
 
 

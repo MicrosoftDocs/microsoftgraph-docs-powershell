@@ -264,7 +264,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Update-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEventExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausereventextension)
 

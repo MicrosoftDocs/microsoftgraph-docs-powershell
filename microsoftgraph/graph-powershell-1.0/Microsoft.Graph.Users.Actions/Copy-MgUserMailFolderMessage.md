@@ -308,9 +308,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/copy-mgusermailfoldermessage)
+
+[https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
 
 
 

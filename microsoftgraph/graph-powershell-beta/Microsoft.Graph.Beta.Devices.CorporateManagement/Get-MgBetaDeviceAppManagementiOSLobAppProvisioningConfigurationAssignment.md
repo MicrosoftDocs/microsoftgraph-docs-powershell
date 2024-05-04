@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 
 ## SYNOPSIS
-The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
+The associated group assignments for IosLobAppProvisioningConfiguration.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 ```
 
 ## DESCRIPTION
-The associated group assignments for IosLobAppProvisioningConfiguration, this determines which devices/users the IOS LOB app provisioning conifguration will be targeted to.
+The associated group assignments for IosLobAppProvisioningConfiguration.
 
 ## PARAMETERS
 

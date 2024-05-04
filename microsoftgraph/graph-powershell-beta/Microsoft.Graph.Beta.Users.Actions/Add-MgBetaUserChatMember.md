@@ -313,9 +313,10 @@ An Out-of-tenant external member is assigned the owner role.
 This property is settable only for members of a chat.
 
 ## RELATED LINKS
-[Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserchatmember)
+
+[https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
 
 
 

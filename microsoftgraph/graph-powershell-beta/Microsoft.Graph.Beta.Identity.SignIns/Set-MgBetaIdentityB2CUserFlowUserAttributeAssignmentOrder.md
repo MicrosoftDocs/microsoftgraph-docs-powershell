@@ -47,9 +47,6 @@ Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 ## DESCRIPTION
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityuserflowattributeassignment-setorder-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet
 ```powershell
@@ -347,6 +344,8 @@ NEWASSIGNMENTORDER `<IMicrosoftGraphAssignmentOrder>`: assignmentOrder
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2cuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2cuserflowuserattributeassignmentorder)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0)
 
 
 

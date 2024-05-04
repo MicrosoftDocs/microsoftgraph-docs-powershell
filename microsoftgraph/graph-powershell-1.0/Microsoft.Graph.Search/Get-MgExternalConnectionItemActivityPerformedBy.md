@@ -199,7 +199,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[QnaId <String>]`: The unique identifier of qna
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionItemActivityPerformedBy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivityperformedby)
 

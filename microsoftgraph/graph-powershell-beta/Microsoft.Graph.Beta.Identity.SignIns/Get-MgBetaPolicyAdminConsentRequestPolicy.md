@@ -24,9 +24,6 @@ Get-MgBetaPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminconsentrequestpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -129,9 +126,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyadminconsentrequestpolicy)
+
+[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-get?view=graph-rest-1.0)
 
 
 

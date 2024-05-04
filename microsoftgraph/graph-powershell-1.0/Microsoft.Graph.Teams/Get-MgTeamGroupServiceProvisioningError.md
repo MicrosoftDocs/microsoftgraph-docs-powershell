@@ -252,7 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaTeamGroupServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamGroupServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamgroupserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamgroupserviceprovisioningerror)
 

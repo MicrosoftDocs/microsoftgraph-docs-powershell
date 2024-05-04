@@ -37,9 +37,6 @@ Get-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdenti
 ## DESCRIPTION
 Read the properties and relationships of a tenantTag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenanttag-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantTag Cmdlet
 ```powershell
@@ -344,6 +341,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenanttag)
+
+[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenanttags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenanttags?view=graph-rest-1.0)
 
 
 

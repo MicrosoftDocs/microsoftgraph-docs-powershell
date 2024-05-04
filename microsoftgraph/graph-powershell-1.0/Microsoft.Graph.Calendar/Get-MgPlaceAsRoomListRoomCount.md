@@ -170,7 +170,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlaceAsRoomListRoomCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaPlaceAsRoomListRoomCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgplaceasroomlistroomcount)
 

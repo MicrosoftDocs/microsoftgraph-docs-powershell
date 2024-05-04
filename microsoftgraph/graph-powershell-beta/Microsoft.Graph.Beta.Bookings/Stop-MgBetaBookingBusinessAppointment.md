@@ -49,9 +49,6 @@ Stop-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingappointment-cancel-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -301,9 +298,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Stop-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessAppointment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment)
+
+[https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-1.0)
 
 
 

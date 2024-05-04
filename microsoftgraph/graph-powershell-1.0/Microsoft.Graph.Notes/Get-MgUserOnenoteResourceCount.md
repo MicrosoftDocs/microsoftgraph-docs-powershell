@@ -170,7 +170,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteResourceCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteResourceCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteresourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenoteresourcecount)
 

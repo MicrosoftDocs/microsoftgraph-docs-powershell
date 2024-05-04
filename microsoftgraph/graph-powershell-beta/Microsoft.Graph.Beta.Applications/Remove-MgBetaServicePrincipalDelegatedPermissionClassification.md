@@ -32,9 +32,6 @@ Remove-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAp
 ## DESCRIPTION
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceprincipal-delete-delegatedpermissionclassifications-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -253,9 +250,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaserviceprincipaldelegatedpermissionclassification)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 

@@ -48,9 +48,6 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 ## DESCRIPTION
 Create a new checklistItem object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/todotask-post-checklistitems-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -359,9 +356,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[New-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem)
+
+[https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0)
 
 
 

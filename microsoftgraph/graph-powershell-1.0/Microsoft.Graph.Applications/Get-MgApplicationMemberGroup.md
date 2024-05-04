@@ -260,9 +260,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationmembergroup](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationmembergroup)
+
+[https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getmembergroups?view=graph-rest-1.0)
 
 
 

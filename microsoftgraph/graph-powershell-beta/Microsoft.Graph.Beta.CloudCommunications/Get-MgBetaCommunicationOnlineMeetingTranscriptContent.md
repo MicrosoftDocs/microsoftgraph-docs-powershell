@@ -34,9 +34,6 @@ Get-MgBetaCommunicationOnlineMeetingTranscriptContent -InputObject <ICloudCommun
 The content of the transcript.
 Read-only.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-list-transcripts-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -200,9 +197,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscriptcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscriptcontent)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0)
 
 
 

@@ -59,9 +59,6 @@ Only the reviewers and fallbackReviewers properties can be updated.
 You can only add reviewers to the fallbackReviewers property but can't remove existing fallbackReviewers.
 To update an accessReviewStage, its status must be NotStarted, Initializing, or InProgress.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewstage-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -639,9 +636,10 @@ Possible value: decisions.
 Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestage)
+
+[https://learn.microsoft.com/graph/api/accessreviewstage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-update?view=graph-rest-1.0)
 
 
 

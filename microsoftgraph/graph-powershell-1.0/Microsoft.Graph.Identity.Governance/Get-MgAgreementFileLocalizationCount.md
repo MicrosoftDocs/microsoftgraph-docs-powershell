@@ -226,7 +226,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementFileLocalizationCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementFileLocalizationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalizationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalizationcount)
 

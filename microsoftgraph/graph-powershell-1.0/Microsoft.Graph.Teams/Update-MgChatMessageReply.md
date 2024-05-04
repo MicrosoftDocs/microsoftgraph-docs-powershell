@@ -1050,7 +1050,6 @@ Only applies to channel chat messages, not chat messages in a chat.
 Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMessageReply?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgchatmessagereply)
 

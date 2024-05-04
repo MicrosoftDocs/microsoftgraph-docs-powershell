@@ -32,9 +32,6 @@ Remove-MgBetaDevice -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatc
 ## DESCRIPTION
 Delete a registered device.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -253,9 +250,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadevice)
+
+[https://learn.microsoft.com/graph/api/device-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete?view=graph-rest-1.0)
 
 
 

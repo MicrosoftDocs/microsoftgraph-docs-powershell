@@ -378,7 +378,6 @@ Required
 Required
 
 ## RELATED LINKS
-[New-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScore?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescore)
 

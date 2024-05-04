@@ -9946,7 +9946,6 @@ Required.
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroupeligibilityschedule)
 

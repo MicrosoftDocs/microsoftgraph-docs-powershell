@@ -48,9 +48,6 @@ Update-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update the properties of a federatedIdentityCredential object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/federatedidentitycredential-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -413,9 +410,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential)
+
+[https://learn.microsoft.com/graph/api/federatedidentitycredential-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-update?view=graph-rest-1.0)
 
 
 

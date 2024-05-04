@@ -870,7 +870,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencesubdomain)
 

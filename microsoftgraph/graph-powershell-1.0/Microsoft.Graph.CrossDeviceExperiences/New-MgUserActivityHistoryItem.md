@@ -545,7 +545,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem)
 

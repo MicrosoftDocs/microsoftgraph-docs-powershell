@@ -39,9 +39,6 @@ Get-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>
 ## DESCRIPTION
 Retrieve the properties and relationships of a shift object by ID.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/shift-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -325,9 +322,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleshift)
+
+[https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0)
 
 
 

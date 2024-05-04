@@ -64,9 +64,6 @@ Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Update the properties of an externalConnection.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalconnection-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -852,9 +849,10 @@ Required.
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
-[Update-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnection)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
 
 
 

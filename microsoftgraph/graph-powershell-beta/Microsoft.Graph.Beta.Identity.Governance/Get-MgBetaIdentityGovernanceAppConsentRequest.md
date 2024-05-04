@@ -40,9 +40,6 @@ Get-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Read the properties and relationships of an appConsentRequest object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appconsentrequest-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List all appConsentRequests
 
@@ -414,9 +411,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequest)
+
+[https://learn.microsoft.com/graph/api/appconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0)
 
 
 

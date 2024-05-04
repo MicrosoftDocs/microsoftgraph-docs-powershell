@@ -43,9 +43,6 @@ Update-MgAdminSharepointSetting -BodyParameter <IMicrosoftGraphSharepointSetting
 ## DESCRIPTION
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/sharepointsettings-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -678,9 +675,10 @@ IDLESESSIONSIGNOUT `<IMicrosoftGraphIdleSessionSignOut>`: idleSessionSignOut
   - `[WarnAfterInSeconds <Int64?>]`: Number of seconds of inactivity after which a user is notified that they'll be signed out.
 
 ## RELATED LINKS
-[Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgadminsharepointsetting)
+
+[https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharepointsettings-update?view=graph-rest-1.0)
 
 
 

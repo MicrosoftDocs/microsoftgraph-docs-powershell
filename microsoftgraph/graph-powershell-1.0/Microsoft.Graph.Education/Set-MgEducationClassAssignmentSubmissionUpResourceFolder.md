@@ -38,9 +38,6 @@ Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationsubmission-setupresourcesfolder-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -256,9 +253,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-1.0)
 
 
 

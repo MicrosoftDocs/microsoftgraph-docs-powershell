@@ -245,9 +245,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Complete-MgBetaTeamChannelMigration](/powershell/module/Microsoft.Graph.Beta.Teams/Complete-MgBetaTeamChannelMigration?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/complete-mgteamchannelmigration)
+
+[https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-completemigration?view=graph-rest-1.0)
 
 
 

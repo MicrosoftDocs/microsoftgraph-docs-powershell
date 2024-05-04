@@ -52,9 +52,6 @@ Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Change writable properties on a messageRule object and save the changes.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/messagerule-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -578,9 +575,10 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule)
+
+[https://learn.microsoft.com/graph/api/messagerule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-update?view=graph-rest-1.0)
 
 
 

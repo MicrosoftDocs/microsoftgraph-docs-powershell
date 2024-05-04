@@ -32,9 +32,6 @@ Publish-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ResponseHeade
 ## DESCRIPTION
 Invoke action publish
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -217,9 +214,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Publish-MgDriveListContentType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/publish-mgbetadrivelistcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-publish?view=graph-rest-1.0)
 
 
 

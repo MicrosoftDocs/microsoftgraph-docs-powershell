@@ -342,7 +342,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemanalyticitemactivitystat)
 

@@ -283,7 +283,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactPhoto?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactphoto)
 

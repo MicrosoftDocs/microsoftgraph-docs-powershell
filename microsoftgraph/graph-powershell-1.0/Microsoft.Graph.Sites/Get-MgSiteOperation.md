@@ -40,9 +40,6 @@ Get-MgSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/richlongrunningoperation-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -349,9 +346,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteoperation)
+
+[https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/richlongrunningoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0)
 
 
 

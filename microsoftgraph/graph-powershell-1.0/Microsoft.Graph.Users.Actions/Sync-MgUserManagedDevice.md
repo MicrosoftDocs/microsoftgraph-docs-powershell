@@ -220,9 +220,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Sync-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/sync-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/sync-mgusermanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0)
 
 
 

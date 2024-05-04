@@ -46,9 +46,6 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create an outlookCategory object in the user's master list of categories.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/outlookuser-post-mastercategories-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -300,9 +297,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
+
+[https://learn.microsoft.com/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)
 
 
 

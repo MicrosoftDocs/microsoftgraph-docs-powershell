@@ -40,9 +40,6 @@ Get-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Read the properties and relationships of a term store group object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-group-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -375,9 +372,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroup)
+
+[https://learn.microsoft.com/graph/api/termstore-group-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/termstore-list-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-list-groups?view=graph-rest-1.0)
 
 
 

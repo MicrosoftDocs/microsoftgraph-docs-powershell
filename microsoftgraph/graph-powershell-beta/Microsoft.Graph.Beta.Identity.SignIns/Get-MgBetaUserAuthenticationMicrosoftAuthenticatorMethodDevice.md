@@ -254,7 +254,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethoddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethoddevice)
 

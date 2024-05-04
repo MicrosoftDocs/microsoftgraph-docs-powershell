@@ -34,9 +34,6 @@ Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTen
 ## DESCRIPTION
 Update the properties of a tenantAppManagementPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tenantappmanagementpolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -392,9 +389,10 @@ To apply to all applications, this date would be null.
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-[Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)
+
+[https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-1.0)
 
 
 

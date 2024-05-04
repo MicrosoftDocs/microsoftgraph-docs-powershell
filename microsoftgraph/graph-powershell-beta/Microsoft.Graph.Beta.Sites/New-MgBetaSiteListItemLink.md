@@ -56,9 +56,6 @@ Create a sharing link for a listItem.
 The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, this action returns the existing sharing link.
 listItem resources inherit sharing permissions from the list the item resides in.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/listitem-createlink-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaSiteListItemLink Cmdlet
 ```powershell
@@ -476,9 +473,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgSiteListItemLink](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitelistitemlink)
+
+[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0)
 
 
 

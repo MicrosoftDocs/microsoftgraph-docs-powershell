@@ -52,9 +52,6 @@ New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create an instance of an offerShiftRequest.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/offershiftrequest-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -437,9 +434,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest)
+
+[https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-post?view=graph-rest-1.0)
 
 
 

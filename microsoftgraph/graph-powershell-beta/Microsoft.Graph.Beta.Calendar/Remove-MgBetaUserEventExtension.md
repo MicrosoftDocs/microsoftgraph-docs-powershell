@@ -233,7 +233,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Remove-MgUserEventExtension](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetausereventextension)
 

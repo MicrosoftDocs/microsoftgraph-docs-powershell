@@ -29,9 +29,6 @@ Stop-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ResponseHeadersVari
 ## DESCRIPTION
 Cancel a security operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-cancelsecurityaction-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Stop-MgBetaSecurityAction Cmdlet
 ```powershell
@@ -268,6 +265,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
+
+[https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-1.0)
 
 
 

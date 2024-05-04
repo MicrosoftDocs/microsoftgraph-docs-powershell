@@ -221,7 +221,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupOwnerCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerCountAsServicePrincipal?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupownercountasserviceprincipal)
 

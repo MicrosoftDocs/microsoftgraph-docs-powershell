@@ -231,9 +231,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveRootRetentionLabel?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriverootretentionlabel)
+
+[https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-1.0)
 
 
 

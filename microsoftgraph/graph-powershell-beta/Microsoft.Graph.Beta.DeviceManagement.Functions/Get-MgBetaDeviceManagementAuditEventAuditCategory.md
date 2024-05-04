@@ -158,7 +158,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAuditEventAuditCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementauditeventauditcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementauditeventauditcategory)
 

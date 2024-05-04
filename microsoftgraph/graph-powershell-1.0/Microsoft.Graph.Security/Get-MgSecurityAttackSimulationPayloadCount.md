@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityAttackSimulationPayloadCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationPayloadCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationpayloadcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationpayloadcount)
 

@@ -40,9 +40,6 @@ Get-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ## DESCRIPTION
 Retrieve the properties and relationships of a featureRolloutPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/featurerolloutpolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a feature rollout policy
 
@@ -392,9 +389,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicy)
+
+[https://learn.microsoft.com/graph/api/featurerolloutpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/list-featurerolloutpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-featurerolloutpolicies?view=graph-rest-1.0)
 
 
 

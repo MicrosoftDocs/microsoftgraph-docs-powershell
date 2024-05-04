@@ -385,7 +385,6 @@ This collection only allows you to modify the content of the page, any other mod
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage)
 

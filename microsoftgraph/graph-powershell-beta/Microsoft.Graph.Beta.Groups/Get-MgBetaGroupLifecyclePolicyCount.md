@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgGroupLifecyclePolicyCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicycount)
 

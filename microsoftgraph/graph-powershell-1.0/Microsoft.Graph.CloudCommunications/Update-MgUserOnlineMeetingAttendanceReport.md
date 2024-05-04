@@ -383,7 +383,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeetingAttendanceReport?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport)
 

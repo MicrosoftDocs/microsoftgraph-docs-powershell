@@ -32,9 +32,6 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get a user's presence information.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get your own presence information
 
@@ -201,9 +198,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
+
+[https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
 
 
 

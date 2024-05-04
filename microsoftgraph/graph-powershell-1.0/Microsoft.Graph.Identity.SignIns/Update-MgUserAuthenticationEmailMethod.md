@@ -48,9 +48,6 @@ Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update a user's email address represented by an emailAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/emailauthenticationmethod-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -335,9 +332,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationemailmethod)
+
+[https://learn.microsoft.com/graph/api/emailauthenticationmethod-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/emailauthenticationmethod-update?view=graph-rest-1.0)
 
 
 

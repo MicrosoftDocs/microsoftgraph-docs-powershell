@@ -30,9 +30,6 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 ## DESCRIPTION
 Delete an onPremisesAgentGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onpremisesagentgroup-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
@@ -249,6 +246,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaonpremisepublishingprofileagentgroup)
+
+[https://learn.microsoft.com/graph/api/onpremisesagentgroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagentgroup-delete?view=graph-rest-1.0)
 
 
 

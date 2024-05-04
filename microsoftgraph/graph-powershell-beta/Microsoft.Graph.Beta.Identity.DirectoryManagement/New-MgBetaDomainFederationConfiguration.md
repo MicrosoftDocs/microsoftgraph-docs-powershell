@@ -56,9 +56,6 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Create a new internalDomainFederation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-post-federationconfiguration-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
 
@@ -555,9 +552,10 @@ For a list of statuses, see certificateUpdateResult status.
 Read-only.
 
 ## RELATED LINKS
-[New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
+
+[https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0)
 
 
 

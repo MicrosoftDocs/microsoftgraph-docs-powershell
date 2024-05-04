@@ -33,9 +33,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryrole-list-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get member from directory roles
 
@@ -294,9 +291,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolemember)
+
+[https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0)
 
 
 

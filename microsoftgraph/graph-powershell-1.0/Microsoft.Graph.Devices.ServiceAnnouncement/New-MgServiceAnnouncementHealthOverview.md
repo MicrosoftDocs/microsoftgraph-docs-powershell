@@ -284,7 +284,6 @@ Read-only.
   - `[Status <String>]`: serviceHealthStatus
 
 ## RELATED LINKS
-[New-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview)
 

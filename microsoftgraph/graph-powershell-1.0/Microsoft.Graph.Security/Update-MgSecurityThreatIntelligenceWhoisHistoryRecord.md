@@ -1285,7 +1285,6 @@ No format is guaranteed.
 No format is guaranteed.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceWhoisHistoryRecord?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencewhoishistoryrecord)
 

@@ -185,7 +185,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserEventInstanceExtensionCount](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventInstanceExtensionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceextensioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusereventinstanceextensioncount)
 

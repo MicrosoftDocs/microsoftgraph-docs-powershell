@@ -374,7 +374,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyeffectiverule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyrolemanagementpolicyeffectiverule)
 

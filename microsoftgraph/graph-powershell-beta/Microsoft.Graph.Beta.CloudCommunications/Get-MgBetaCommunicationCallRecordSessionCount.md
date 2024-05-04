@@ -178,7 +178,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationCallRecordSessionCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSessionCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsessioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallrecordsessioncount)
 

@@ -34,9 +34,6 @@ Remove-MgBetaApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIde
 Remove an owner from an application.
 As a recommended best practice, apps should have at least two owners.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-delete-owners-permissions.md)]
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -242,9 +239,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref)
+
+[https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
 
 
 

@@ -14500,7 +14500,6 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
 

@@ -221,9 +221,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadomain)
+
+[https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-verify?view=graph-rest-1.0)
 
 
 

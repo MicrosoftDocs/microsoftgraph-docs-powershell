@@ -361,9 +361,10 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveRoot?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveroot)
+
+[https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
 
 
 

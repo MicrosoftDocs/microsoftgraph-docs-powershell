@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Delete an azureDataLakeConnector object.
+Delete an industryDataConnector object.
 
 ## SYNTAX
 
@@ -27,10 +27,7 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete an azureDataLakeConnector object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-industrydataconnector-delete-permissions.md)]
+Delete an industryDataConnector object.
 
 ## PARAMETERS
 
@@ -211,6 +208,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalindustrydataconnector)
+
+[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-delete?view=graph-rest-1.0)
 
 
 

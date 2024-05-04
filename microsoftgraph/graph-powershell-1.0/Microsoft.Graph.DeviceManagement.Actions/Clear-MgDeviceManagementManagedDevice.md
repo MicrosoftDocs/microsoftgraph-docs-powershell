@@ -328,9 +328,10 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Clear-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Clear-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementmanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0)
 
 
 

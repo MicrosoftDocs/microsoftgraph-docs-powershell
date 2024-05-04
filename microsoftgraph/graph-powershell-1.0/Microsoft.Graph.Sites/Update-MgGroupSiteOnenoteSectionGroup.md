@@ -1197,7 +1197,6 @@ Read-only.
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteSectionGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesectiongroup)
 

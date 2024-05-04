@@ -67,9 +67,6 @@ The POST method always ignores the time portion of startDateTime and dueDateTime
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/outlookuser-post-tasks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTask Cmdlet
 ```powershell
@@ -826,6 +823,8 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask)
+
+[https://learn.microsoft.com/graph/api/outlookuser-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-post-tasks?view=graph-rest-1.0)
 
 
 

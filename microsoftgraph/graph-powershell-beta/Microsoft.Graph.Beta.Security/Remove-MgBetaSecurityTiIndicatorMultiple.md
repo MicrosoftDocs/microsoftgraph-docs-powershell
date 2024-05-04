@@ -30,9 +30,6 @@ Remove-MgBetaSecurityTiIndicatorMultiple
 ## DESCRIPTION
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tiindicator-deletetiindicators-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet
 ```powershell
@@ -195,6 +192,8 @@ BODYPARAMETER `<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicators
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple)
+
+[https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0)
 
 
 

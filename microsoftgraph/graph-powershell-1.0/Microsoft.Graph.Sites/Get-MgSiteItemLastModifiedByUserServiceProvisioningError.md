@@ -282,7 +282,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteItemLastModifiedByUserServiceProvisioningError?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteitemlastmodifiedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteitemlastmodifiedbyuserserviceprovisioningerror)
 

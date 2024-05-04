@@ -371,9 +371,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory)
+
+[https://learn.microsoft.com/graph/api/riskyuser-get-riskyuserhistoryitem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-get-riskyuserhistoryitem?view=graph-rest-1.0)
 
 
 

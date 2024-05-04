@@ -210,7 +210,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Remove-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/remove-mgbetaserviceannouncementmessageattachment)
 

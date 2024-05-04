@@ -214,7 +214,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyTokenLifetimePolicyApplyToCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyTokenLifetimePolicyApplyToCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicyapplytocount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicytokenlifetimepolicyapplytocount)
 

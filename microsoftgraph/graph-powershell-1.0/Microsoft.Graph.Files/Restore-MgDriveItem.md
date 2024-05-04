@@ -50,9 +50,6 @@ Restore-MgDriveItem -InputObject <IFilesIdentity>
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 NOTE: This functionality is currently only available for OneDrive Personal.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-restore-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,9 +341,10 @@ It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgBetaDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/restore-mgdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-restore?view=graph-rest-1.0)
 
 
 

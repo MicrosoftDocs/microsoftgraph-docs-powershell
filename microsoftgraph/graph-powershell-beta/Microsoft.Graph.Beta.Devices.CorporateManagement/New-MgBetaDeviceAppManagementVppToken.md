@@ -473,7 +473,6 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection o
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
 

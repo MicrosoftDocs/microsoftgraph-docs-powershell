@@ -47,9 +47,6 @@ Update-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IB
 ## DESCRIPTION
 Update the navigation property progressTaskBoardFormat in solutions
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerprogresstaskboardtaskformat-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,6 +301,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskprogresstaskboardformat)
+
+[https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-update?view=graph-rest-1.0)
 
 
 

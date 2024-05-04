@@ -40,9 +40,6 @@ Get-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -401,9 +398,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

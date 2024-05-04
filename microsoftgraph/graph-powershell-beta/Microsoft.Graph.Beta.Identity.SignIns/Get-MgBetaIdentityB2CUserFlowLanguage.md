@@ -45,9 +45,6 @@ Note: To retrieve a language supported for customization, you must first enable 
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Microsoft Entra user flows.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowLanguage Cmdlet
 ```powershell
@@ -413,6 +410,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
+
+[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-1.0)
 
 
 

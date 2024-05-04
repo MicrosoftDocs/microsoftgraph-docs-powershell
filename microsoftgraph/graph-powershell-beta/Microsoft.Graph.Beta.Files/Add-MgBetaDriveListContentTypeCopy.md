@@ -256,9 +256,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Files/Add-MgDriveListContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy)
+
+[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

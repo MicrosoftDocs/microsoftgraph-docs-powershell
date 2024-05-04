@@ -241,7 +241,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHostSslCertificateHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostSslCertificateHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostsslcertificatehost)
 

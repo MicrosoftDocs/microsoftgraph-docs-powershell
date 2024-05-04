@@ -49,9 +49,6 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/domain-post-domains-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -685,9 +682,10 @@ Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayO
 Not nullable.
 
 ## RELATED LINKS
-[New-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain)
+
+[https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-post-domains?view=graph-rest-1.0)
 
 
 

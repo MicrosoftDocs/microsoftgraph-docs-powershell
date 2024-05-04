@@ -59,9 +59,6 @@ The operation will not succeed if the allowStudentsToAddResources flag is not se
 To create a new file-based resource, upload the file to the resources folder associated with the submission.
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsubmission-post-resources-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Create an educationWordResource
 
@@ -508,9 +505,10 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsubmissionresource)
+
+[https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0)
 
 
 

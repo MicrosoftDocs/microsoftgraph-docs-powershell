@@ -307,9 +307,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaidentitygovernanceaccessreviewdefinitioninstancedecision)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-applydecisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-applydecisions?view=graph-rest-1.0)
 
 
 

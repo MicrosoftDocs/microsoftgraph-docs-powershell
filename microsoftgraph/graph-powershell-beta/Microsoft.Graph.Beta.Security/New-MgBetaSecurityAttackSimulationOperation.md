@@ -317,7 +317,6 @@ Read-only.
   - `[Type <String>]`: attackSimulationOperationType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationoperation)
 

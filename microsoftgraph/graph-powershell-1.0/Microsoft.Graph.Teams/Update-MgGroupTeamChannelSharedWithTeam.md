@@ -9763,7 +9763,6 @@ This is the URL that you get when you right-click a team in the Microsoft Teams 
 This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelSharedWithTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchannelsharedwithteam)
 

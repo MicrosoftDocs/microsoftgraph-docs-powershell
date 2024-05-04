@@ -52,9 +52,6 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-post-resource-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -329,9 +326,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource)
+
+[https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0)
 
 
 

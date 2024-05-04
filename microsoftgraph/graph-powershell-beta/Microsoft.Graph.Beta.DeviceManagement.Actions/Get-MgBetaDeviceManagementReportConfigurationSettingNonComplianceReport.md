@@ -338,7 +338,6 @@ BODYPARAMETER `<IPaths19DnnqbDevicemanagementReportsMicrosoftGraphGetconfigurati
   - `[Top <Int32?>]`:
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingnoncompliancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportconfigurationsettingnoncompliancereport)
 

@@ -183,7 +183,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootItemLastModifiedByUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootItemLastModifiedByUserServiceProvisioningErrorCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootitemlastmodifiedbyuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriverootitemlastmodifiedbyuserserviceprovisioningerrorcount)
 

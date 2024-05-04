@@ -46,9 +46,6 @@ Remove-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete the specified bookingCustomer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingcustomer-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
@@ -254,9 +251,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer)
+
+[https://learn.microsoft.com/graph/api/bookingcustomer-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-delete?view=graph-rest-1.0)
 
 
 

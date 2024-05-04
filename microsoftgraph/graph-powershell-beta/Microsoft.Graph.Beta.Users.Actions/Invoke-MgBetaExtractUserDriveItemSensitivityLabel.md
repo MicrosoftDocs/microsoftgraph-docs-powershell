@@ -231,7 +231,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgExtractUserDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveItemSensitivityLabel?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriveitemsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaextractuserdriveitemsensitivitylabel)
 

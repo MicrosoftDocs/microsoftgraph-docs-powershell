@@ -425,7 +425,6 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState- `[]`>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[Update-MgBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate)
 

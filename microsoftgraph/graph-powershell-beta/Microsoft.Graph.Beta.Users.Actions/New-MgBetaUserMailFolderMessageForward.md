@@ -623,9 +623,10 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageForward?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessageforward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermailfoldermessageforward)
+
+[https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createforward?view=graph-rest-1.0)
 
 
 

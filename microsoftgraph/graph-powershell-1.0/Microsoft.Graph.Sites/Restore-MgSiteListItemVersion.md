@@ -34,9 +34,6 @@ Restore-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ResponseHeadersVar
 Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitemversion-restore-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -281,9 +278,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Restore-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Restore-MgBetaSiteListItemVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/restore-mgsitelistitemversion)
+
+[https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-restore?view=graph-rest-1.0)
 
 
 

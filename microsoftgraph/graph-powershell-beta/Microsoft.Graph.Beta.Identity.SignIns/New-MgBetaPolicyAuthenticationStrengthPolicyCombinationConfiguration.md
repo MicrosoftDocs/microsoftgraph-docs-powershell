@@ -48,9 +48,6 @@ New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObjec
 ## DESCRIPTION
 Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-post-combinationconfigurations-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,9 +326,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-post-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-post-combinationconfigurations?view=graph-rest-1.0)
 
 
 

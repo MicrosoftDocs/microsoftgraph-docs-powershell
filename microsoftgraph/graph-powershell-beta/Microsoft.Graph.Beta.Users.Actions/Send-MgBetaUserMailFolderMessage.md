@@ -269,9 +269,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Send-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderMessage?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetausermailfoldermessage)
+
+[https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-send?view=graph-rest-1.0)
 
 
 

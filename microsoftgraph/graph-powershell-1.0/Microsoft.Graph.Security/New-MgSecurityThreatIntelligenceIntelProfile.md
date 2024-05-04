@@ -397,7 +397,6 @@ TRADECRAFT `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceIntelProfile?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligenceintelprofile)
 

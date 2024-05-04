@@ -402,9 +402,10 @@ See below for possible values.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Invoke-MgAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstanceTentatively?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventinstancetentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptusereventinstancetentatively)
+
+[https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
 
 
 

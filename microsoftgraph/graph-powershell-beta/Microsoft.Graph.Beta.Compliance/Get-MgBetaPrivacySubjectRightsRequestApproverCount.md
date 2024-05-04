@@ -176,7 +176,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgPrivacySubjectRightsRequestApproverCount](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApproverCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprovercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestapprovercount)
 

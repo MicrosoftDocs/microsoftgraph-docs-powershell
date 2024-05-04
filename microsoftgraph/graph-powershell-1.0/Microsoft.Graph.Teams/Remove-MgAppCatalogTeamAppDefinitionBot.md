@@ -251,7 +251,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinitionbot](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamappdefinitionbot)
 

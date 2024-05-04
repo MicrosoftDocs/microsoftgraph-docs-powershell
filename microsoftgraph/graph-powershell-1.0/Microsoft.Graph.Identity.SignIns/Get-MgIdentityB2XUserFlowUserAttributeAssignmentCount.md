@@ -214,7 +214,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentcount](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentcount)
 

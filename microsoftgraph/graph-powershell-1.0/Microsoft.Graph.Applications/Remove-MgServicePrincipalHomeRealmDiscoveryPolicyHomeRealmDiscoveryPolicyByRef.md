@@ -230,9 +230,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicyhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalhomerealmdiscoverypolicyhomerealmdiscoverypolicybyref)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 

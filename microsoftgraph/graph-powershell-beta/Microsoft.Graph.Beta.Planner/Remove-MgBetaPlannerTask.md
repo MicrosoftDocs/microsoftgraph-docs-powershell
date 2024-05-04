@@ -32,9 +32,6 @@ Remove-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a plannerTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -215,9 +212,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertask)
+
+[https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0)
 
 
 

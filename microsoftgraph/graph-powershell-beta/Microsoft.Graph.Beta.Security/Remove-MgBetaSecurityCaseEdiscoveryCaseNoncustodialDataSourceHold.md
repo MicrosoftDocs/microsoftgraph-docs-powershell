@@ -377,9 +377,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasenoncustodialdatasourcehold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasenoncustodialdatasourcehold)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-removehold?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverynoncustodialdatasource-removehold?view=graph-rest-1.0)
 
 
 

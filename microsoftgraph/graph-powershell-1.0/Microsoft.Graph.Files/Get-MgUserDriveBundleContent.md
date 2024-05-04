@@ -32,9 +32,6 @@ Get-MgUserDriveBundleContent -InputObject <IFilesIdentity> [-Format <String>] -O
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bundle-list-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -231,9 +228,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveBundleContent](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveBundleContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivebundlecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivebundlecontent)
+
+[https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-list?view=graph-rest-1.0)
 
 
 

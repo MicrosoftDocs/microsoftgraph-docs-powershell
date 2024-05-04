@@ -363,9 +363,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSubdomain?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain)
+
+[https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0)
 
 
 

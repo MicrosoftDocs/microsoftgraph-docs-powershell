@@ -40,9 +40,6 @@ Get-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Retrieve the properties and relationships of a directoryroletemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/directoryroletemplate-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -336,9 +333,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplate)
+
+[https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryroletemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryroletemplate-list?view=graph-rest-1.0)
 
 
 

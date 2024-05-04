@@ -37,9 +37,6 @@ Only teachers in the class can perform this operation.
 When a module is in draft status, students can't see the module.
 When you call this API, the module appears in the student's class work list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationmodule-publish-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -196,9 +193,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Publish-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassModule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-publish?view=graph-rest-1.0)
 
 
 

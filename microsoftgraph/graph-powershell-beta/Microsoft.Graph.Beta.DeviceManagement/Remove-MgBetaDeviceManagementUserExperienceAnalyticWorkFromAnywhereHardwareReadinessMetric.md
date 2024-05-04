@@ -144,7 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/remove-mgbetadevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric)
 

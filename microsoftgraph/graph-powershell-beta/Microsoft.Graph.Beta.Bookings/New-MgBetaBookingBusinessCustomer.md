@@ -82,9 +82,6 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/bookingbusiness-post-customers-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
@@ -454,9 +451,10 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
   - `[Type <String>]`: phoneType
 
 ## RELATED LINKS
-[New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
+
+[https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0)
 
 
 

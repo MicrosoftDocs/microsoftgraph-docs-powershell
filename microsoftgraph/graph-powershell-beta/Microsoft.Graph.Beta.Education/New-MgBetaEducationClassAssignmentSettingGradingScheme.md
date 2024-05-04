@@ -45,9 +45,6 @@ New-MgBetaEducationClassAssignmentSettingGradingScheme -InputObject <IEducationI
 ## DESCRIPTION
 Create a new educationGradingScheme object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationgradingscheme-post-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +305,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassassignmentsettinggradingscheme)
+
+[https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationgradingscheme-post?view=graph-rest-1.0)
 
 
 

@@ -82,9 +82,6 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a new group object in a term store.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/termstore-group-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -528,9 +525,10 @@ Read-only.
   - `[Terms <IMicrosoftGraphTermStoreTerm- `[]`>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroup)
+
+[https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
 
 
 

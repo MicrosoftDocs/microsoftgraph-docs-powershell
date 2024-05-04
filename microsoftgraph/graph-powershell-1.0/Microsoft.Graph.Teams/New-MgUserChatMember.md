@@ -48,9 +48,6 @@ New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/chat-post-members-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -340,9 +337,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMember?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmember)
+
+[https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-members?view=graph-rest-1.0)
 
 
 

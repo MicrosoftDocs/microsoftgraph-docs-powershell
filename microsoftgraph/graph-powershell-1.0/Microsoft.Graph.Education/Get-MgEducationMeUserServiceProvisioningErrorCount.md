@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeUserServiceProvisioningErrorCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUserServiceProvisioningErrorCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuserserviceprovisioningerrorcount](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeuserserviceprovisioningerrorcount)
 

@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationUserActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdeviceconfigurationuseractivity)
 

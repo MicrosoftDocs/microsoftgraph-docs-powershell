@@ -47,9 +47,6 @@ Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -379,6 +376,8 @@ Possible values are: sig (signature), enc (encryption)
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
+
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-1.0)
 
 
 

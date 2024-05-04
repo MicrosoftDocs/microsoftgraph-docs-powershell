@@ -52,9 +52,6 @@ Update a resource in a module.
 Only teachers can perform this operation.
 The only one property that can be updated is displayName, for all resource types.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmoduleresource-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,9 +326,10 @@ This property is read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassModuleResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource)
+
+[https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0)
 
 
 

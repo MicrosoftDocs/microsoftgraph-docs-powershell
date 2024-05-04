@@ -278,9 +278,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy)
+
+[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-1.0)
 
 
 

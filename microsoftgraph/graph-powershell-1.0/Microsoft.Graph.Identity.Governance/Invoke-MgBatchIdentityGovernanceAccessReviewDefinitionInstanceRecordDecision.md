@@ -54,9 +54,6 @@ Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using principalId, resourceId, or neither.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/accessreviewinstance-batchrecorddecisions-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision Cmdlet
 ```powershell
@@ -395,9 +392,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgbatchidentitygovernanceaccessreviewdefinitioninstancerecorddecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgbatchidentitygovernanceaccessreviewdefinitioninstancerecorddecision)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-batchrecorddecisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-batchrecorddecisions?view=graph-rest-1.0)
 
 
 

@@ -216,7 +216,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroleassignmentroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementroleassignmentroledefinition)
 

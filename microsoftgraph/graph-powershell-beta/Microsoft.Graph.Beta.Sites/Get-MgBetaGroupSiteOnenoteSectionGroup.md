@@ -63,9 +63,6 @@ Get-MgBetaGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/sectiongroup-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -411,9 +408,14 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionGroup?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotesectiongroup)
+
+[https://learn.microsoft.com/graph/api/sectiongroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sectiongroup-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/onenote-list-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-sectiongroups?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/sectiongroup-list-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sectiongroup-list-sectiongroups?view=graph-rest-1.0)
 
 
 

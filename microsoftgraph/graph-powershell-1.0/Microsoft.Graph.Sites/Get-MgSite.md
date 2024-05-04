@@ -39,9 +39,6 @@ Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property
 ## DESCRIPTION
 Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: List sites using query parameters
 
@@ -357,9 +354,12 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsite)
+
+[https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0)
 
 
 

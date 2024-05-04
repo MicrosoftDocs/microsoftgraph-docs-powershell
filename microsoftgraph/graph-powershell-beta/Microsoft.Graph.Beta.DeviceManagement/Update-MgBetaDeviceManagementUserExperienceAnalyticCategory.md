@@ -305,6 +305,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
   - `[DeviceConfigurationGroupAssignmentId <String>]`: The unique identifier of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceConfigurationProfileId <String>]`: The unique identifier of deviceConfigurationProfile
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
   - `[DeviceHealthScriptAssignmentId <String>]`: The unique identifier of deviceHealthScriptAssignment
@@ -435,7 +436,6 @@ Examples: none, percentage, count, seconds, score.
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticcategory)
 

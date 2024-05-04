@@ -256,7 +256,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSourceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodiansitesourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodiansitesourcecount)
 

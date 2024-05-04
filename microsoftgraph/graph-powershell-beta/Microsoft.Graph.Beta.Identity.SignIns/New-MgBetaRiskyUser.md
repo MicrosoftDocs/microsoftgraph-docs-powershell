@@ -388,7 +388,6 @@ Read-only.
   - `[UserId <String>]`: The ID of the user.
 
 ## RELATED LINKS
-[New-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskyuser)
 

@@ -4052,7 +4052,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ## RELATED LINKS
-[New-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencehost)
 

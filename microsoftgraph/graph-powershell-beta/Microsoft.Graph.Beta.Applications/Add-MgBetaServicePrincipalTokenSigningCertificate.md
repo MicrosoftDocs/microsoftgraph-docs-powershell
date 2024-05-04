@@ -312,9 +312,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaserviceprincipaltokensigningcertificate)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-1.0)
 
 
 

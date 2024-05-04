@@ -33,9 +33,6 @@ Remove-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete a term object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/termstore-term-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -GroupId
@@ -306,9 +303,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoresetparentgroupsetterm)
+
+[https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-delete?view=graph-rest-1.0)
 
 
 

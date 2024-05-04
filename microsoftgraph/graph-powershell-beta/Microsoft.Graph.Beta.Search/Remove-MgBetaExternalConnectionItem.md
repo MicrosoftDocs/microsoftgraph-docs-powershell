@@ -32,9 +32,6 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete an externalitem.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/externalconnectors-externalitem-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -240,9 +237,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem)
+
+[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0)
 
 
 

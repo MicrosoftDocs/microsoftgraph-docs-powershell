@@ -310,9 +310,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaTranslateUserExchangeId](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaTranslateUserExchangeId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid)
+
+[https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-translateexchangeids?view=graph-rest-1.0)
 
 
 

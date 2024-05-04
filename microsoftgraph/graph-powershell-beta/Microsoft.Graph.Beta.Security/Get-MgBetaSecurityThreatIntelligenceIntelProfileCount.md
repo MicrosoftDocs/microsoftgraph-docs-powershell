@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceIntelProfileCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfileCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligenceintelprofilecount)
 

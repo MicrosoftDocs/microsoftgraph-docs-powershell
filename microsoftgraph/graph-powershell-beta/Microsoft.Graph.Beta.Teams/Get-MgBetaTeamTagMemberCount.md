@@ -215,7 +215,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamTagMemberCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTagMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtagmembercount)
 

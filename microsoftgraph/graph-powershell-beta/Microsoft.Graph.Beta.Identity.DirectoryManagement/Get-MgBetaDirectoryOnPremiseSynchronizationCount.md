@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgDirectoryOnPremiseSynchronizationCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOnPremiseSynchronizationCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronizationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryonpremisesynchronizationcount)
 

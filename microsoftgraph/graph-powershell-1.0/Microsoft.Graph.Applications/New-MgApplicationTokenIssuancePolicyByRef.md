@@ -283,9 +283,10 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationtokenissuancepolicybyref)
+
+[https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

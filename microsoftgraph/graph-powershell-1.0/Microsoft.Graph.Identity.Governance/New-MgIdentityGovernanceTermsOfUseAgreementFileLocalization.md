@@ -506,7 +506,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalization?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreementfilelocalization)
 

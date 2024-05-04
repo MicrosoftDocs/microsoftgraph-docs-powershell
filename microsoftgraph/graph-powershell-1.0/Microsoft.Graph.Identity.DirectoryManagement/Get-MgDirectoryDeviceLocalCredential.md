@@ -39,9 +39,6 @@ Get-MgDirectoryDeviceLocalCredential -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Retrieve the properties of a deviceLocalCredentialInfo for a specified device object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/devicelocalcredentialinfo-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -284,9 +281,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydevicelocalcredential](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydevicelocalcredential)
+
+[https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicelocalcredentialinfo-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-devicelocalcredentials?view=graph-rest-1.0)
 
 
 

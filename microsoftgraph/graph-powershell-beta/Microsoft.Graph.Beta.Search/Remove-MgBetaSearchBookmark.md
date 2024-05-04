@@ -32,9 +32,6 @@ Remove-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/search-bookmark-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSearchBookmark Cmdlet
 ```powershell
@@ -221,9 +218,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Remove-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchBookmark?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
 
 
 

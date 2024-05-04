@@ -40,9 +40,6 @@ Get-MgBetaChatMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Retrieve a conversationMember from a chat.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-get-members-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -360,9 +357,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMember?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmember)
+
+[https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-members?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/chat-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-members?view=graph-rest-1.0)
 
 
 

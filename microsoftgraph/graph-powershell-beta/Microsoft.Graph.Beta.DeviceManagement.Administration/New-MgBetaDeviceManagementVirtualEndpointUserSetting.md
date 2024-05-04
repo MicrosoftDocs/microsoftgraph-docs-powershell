@@ -36,9 +36,6 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a new cloudPcUserSetting object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-post-usersettings-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
@@ -418,9 +415,10 @@ RESTOREPOINTSETTING `<IMicrosoftGraphCloudPcRestorePointSetting>`: cloudPcRestor
 If false, non-admin users can't use snapshots to restore the Cloud PC.
 
 ## RELATED LINKS
-[New-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0)
 
 
 

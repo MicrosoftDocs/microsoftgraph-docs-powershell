@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscount](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscount)
 

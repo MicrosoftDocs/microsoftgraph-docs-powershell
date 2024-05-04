@@ -235,7 +235,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgSiteOnenoteResourceContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetasiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetasiteonenoteresourcecontent)
 

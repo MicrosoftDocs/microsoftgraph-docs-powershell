@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligence](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligence)
 

@@ -257,7 +257,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserOnenoteRecentNotebook?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook)
 

@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaShareCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharecount)
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgBetaUserEventExceptionOccurrenceExtension
@@ -336,6 +335,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceextension)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

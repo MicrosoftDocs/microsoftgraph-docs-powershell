@@ -366,7 +366,6 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticle)
 

@@ -234,7 +234,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSitePageLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageLastModifiedByUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepagelastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitepagelastmodifiedbyuser)
 

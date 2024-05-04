@@ -32,9 +32,6 @@ Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete a taskFileAttachment object from a todoTask resource.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/taskfileattachment-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -267,9 +264,10 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment)
+
+[https://learn.microsoft.com/graph/api/taskfileattachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-delete?view=graph-rest-1.0)
 
 
 

@@ -233,7 +233,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaShareRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaShareRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharerootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mgsharerootcontent)
 

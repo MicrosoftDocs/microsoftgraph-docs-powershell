@@ -593,7 +593,6 @@ Writable on OneDrive Personal.
 This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetariskdetection)
 

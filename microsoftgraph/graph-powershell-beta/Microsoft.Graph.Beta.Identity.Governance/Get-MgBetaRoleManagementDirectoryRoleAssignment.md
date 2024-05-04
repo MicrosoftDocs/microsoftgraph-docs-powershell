@@ -40,9 +40,6 @@ Get-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/unifiedroleassignment-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -390,9 +387,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
 
 
 

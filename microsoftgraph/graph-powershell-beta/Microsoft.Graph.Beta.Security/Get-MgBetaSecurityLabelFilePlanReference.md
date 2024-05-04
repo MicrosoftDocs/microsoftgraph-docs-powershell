@@ -40,9 +40,6 @@ Get-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-Expa
 ## DESCRIPTION
 Read the properties and relationships of a filePlanReferenceTemplate object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-fileplanreferencetemplate-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -373,9 +370,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelFilePlanReference?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelfileplanreference)
+
+[https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0)
 
 
 

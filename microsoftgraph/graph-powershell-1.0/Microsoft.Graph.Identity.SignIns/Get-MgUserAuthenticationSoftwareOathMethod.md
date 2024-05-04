@@ -40,9 +40,6 @@ Get-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Retrieve a user's single Software OATH token authentication method object and its properties.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/softwareoathauthenticationmethod-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -375,9 +372,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationsoftwareoathmethod)
+
+[https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0)
 
 
 

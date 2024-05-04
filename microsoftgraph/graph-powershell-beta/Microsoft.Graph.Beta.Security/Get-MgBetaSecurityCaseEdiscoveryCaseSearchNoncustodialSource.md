@@ -402,7 +402,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchnoncustodialsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchnoncustodialsource)
 

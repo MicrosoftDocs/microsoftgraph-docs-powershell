@@ -33,9 +33,6 @@ Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 ## DESCRIPTION
 Get media content for the navigation property defaultPages from identity
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/userflowlanguageconfiguration-list-defaultpages-permissions.md)]
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -270,9 +267,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpagecontent)
+
+[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-list-defaultpages?view=graph-rest-1.0)
 
 
 

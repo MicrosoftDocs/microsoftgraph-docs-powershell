@@ -408,9 +408,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiongroupsectionpagetosection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebooksectiongroupsectionpagetosection)
+
+[https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-copytosection?view=graph-rest-1.0)
 
 
 

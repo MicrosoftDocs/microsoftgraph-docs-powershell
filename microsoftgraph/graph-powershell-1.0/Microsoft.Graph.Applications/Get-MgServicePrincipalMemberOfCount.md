@@ -198,7 +198,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalMemberOfCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOfCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberofcount)
 

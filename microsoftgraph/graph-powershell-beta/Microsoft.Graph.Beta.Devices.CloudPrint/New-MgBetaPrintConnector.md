@@ -368,7 +368,6 @@ The elements should be in hierarchical order.
   - `[Subunit <String- `[]`>]`:
 
 ## RELATED LINKS
-[New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintconnector)
 

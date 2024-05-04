@@ -245,7 +245,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaRiskyUser?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgriskyuser)
 

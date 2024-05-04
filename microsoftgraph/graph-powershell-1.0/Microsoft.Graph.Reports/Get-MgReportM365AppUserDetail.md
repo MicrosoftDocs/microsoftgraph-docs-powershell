@@ -208,7 +208,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserDetail?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
 

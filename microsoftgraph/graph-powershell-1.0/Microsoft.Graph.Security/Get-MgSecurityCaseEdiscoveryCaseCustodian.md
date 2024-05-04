@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgSecurityCaseEdiscoveryCaseCustodian
@@ -40,9 +39,6 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 
 ## DESCRIPTION
 Read the properties and relationships of an ediscoveryCustodian object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoverycustodian-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,9 +376,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasecustodian)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-custodians?view=graph-rest-1.0)
 
 
 

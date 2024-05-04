@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote
 schema: 2.0.0
-ms.prod: compliance
 ---
 
 # New-MgPrivacySubjectRightsRequestNote
@@ -48,9 +47,6 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 
 ## DESCRIPTION
 Create a new authoredNote object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/subjectrightsrequest-post-notes-permissions.md)]
 
 ## PARAMETERS
 
@@ -310,9 +306,10 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote)
+
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
 
 
 

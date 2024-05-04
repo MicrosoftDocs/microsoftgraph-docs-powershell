@@ -60,9 +60,6 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 ## DESCRIPTION
 Update the properties of a printer object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-update-permissions.md)]
-
 ## PARAMETERS
 
 ### -AcceptingJobs
@@ -23621,9 +23618,10 @@ Read-only.
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
+
+[https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-update?view=graph-rest-1.0)
 
 
 

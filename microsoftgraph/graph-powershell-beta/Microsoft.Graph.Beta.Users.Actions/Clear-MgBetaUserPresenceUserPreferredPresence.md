@@ -232,9 +232,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresenceUserPreferredPresence?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresenceuserpreferredpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserpresenceuserpreferredpresence)
+
+[https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-clearuserpreferredpresence?view=graph-rest-1.0)
 
 
 

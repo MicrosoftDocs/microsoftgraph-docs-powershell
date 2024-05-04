@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisHistoryRecordCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoishistoryrecordcount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoishistoryrecordcount)
 

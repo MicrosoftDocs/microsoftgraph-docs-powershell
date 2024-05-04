@@ -48,9 +48,6 @@ Grant-MgDriveRootPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a \[permission\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/permission-grant-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,9 +293,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriverootpermission)
+
+[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
 
 
 

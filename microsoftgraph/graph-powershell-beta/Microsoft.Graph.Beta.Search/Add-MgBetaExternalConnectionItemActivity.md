@@ -287,7 +287,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Add-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Add-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/add-mgbetaexternalconnectionitemactivity)
 

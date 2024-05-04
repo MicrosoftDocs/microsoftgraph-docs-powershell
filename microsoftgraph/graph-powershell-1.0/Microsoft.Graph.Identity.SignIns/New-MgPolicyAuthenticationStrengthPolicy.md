@@ -35,9 +35,6 @@ New-MgPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuthenti
 ## DESCRIPTION
 Create a new custom authenticationStrengthPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationstrengthroot-post-policies-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -328,9 +325,10 @@ Must be an allowedCombinations object that's defined for the authenticationStren
 The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ## RELATED LINKS
-[New-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)
 
 
 

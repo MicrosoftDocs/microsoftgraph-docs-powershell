@@ -32,9 +32,6 @@ Remove-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete a timeOff instance from a schedule.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/timeoff-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -254,9 +251,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoff)
+
+[https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-1.0)
 
 
 

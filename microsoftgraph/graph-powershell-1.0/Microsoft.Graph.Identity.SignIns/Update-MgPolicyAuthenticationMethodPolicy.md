@@ -36,9 +36,6 @@ Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthent
 ## DESCRIPTION
 Update the properties of an authenticationMethodsPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/authenticationmethodspolicy-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -404,9 +401,10 @@ If the value is '0', the user is prompted during every MFA attempt.
     - `[State <String>]`: advancedConfigState
 
 ## RELATED LINKS
-[Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
 
 
 

@@ -248,7 +248,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserDriveRootContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgBetaUserDriveRootContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/set-mguserdriverootcontent)
 

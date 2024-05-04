@@ -339,9 +339,12 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationoperation)
+
+[https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0)
 
 
 

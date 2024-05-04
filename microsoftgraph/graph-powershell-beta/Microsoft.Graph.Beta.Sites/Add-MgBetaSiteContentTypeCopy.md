@@ -284,9 +284,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Add-MgSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteContentTypeCopy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/add-mgbetasitecontenttypecopy)
+
+[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
 
 
 

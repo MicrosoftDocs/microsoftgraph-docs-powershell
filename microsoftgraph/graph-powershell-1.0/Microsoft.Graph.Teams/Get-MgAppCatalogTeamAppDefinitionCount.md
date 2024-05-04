@@ -192,7 +192,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaAppCatalogTeamAppDefinitionCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitioncount](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitioncount)
 

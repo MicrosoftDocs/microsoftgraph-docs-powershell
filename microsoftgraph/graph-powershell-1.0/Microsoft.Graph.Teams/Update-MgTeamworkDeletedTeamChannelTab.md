@@ -49,9 +49,6 @@ Update-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> -BodyParame
 ## DESCRIPTION
 Update the properties of the specified tab.This API can be used to configure the content of the tab.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/channel-patch-tabs-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -454,9 +451,10 @@ For example, if a user changes their display name, the API might show the new va
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamworkdeletedteamchanneltab)
+
+[https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0)
 
 
 

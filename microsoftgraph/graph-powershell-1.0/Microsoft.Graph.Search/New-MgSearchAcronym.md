@@ -33,9 +33,6 @@ New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-ResponseHead
 ## DESCRIPTION
 Create a new acronym object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-acronyms-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,9 +317,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchAcronym?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchacronym)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-acronyms?view=graph-rest-1.0)
 
 
 

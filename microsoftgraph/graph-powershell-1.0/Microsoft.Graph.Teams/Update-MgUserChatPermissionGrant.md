@@ -403,7 +403,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaUserChatPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaUserChatPermissionGrant?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mguserchatpermissiongrant)
 

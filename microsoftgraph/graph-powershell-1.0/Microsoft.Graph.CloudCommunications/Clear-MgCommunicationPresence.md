@@ -265,9 +265,10 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/clear-mgcommunicationpresence)
+
+[https://learn.microsoft.com/graph/api/presence-clearpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-clearpresence?view=graph-rest-1.0)
 
 
 

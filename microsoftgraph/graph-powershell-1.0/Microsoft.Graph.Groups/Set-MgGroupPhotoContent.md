@@ -294,7 +294,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Set-MgBetaGroupPhotoContent](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupPhotoContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/set-mggroupphotocontent)
 

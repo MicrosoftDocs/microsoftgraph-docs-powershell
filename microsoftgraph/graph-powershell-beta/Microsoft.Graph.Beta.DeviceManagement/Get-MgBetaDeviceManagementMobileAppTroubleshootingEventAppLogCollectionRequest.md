@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
@@ -41,7 +41,7 @@ Get-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Indicates collection of App Log Upload Request.
+The collection property of AppLogUploadRequest.
 
 ## PARAMETERS
 
@@ -332,6 +332,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
   - `[DeviceConfigurationGroupAssignmentId <String>]`: The unique identifier of deviceConfigurationGroupAssignment
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceConfigurationProfileId <String>]`: The unique identifier of deviceConfigurationProfile
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
   - `[DeviceHealthScriptAssignmentId <String>]`: The unique identifier of deviceHealthScriptAssignment
@@ -446,7 +447,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
 

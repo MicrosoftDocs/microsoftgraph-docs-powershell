@@ -33,9 +33,6 @@ Remove-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permissiongrantpolicy-delete-excludes-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy exclude
 
@@ -297,9 +294,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude)
+
+[https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0)
 
 
 

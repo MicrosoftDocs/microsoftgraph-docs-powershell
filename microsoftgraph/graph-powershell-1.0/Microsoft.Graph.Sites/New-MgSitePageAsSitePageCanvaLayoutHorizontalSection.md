@@ -350,7 +350,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitepageassitepagecanvalayouthorizontalsection)
 

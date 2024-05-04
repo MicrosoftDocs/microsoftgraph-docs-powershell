@@ -394,7 +394,6 @@ Read-only.
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
 ## RELATED LINKS
-[New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal)
 

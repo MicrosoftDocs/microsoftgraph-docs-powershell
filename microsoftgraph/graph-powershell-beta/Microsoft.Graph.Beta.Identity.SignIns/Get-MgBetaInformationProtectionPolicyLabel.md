@@ -37,9 +37,6 @@ Get-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/informationprotectionlabel-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -367,6 +364,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicylabel)
+
+[https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0)
 
 
 

@@ -261,7 +261,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageAttachment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessageattachment)
 

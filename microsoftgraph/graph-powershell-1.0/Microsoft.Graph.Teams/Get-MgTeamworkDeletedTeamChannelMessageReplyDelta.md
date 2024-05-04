@@ -361,7 +361,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta)
 

@@ -48789,7 +48789,6 @@ Read-only.
 This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSite?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsite)
 

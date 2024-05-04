@@ -345,7 +345,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceRegisteredUserAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredUserAsServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserasserviceprincipal)
 

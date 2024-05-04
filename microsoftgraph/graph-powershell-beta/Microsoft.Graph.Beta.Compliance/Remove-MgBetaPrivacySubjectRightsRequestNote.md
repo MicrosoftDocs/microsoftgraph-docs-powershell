@@ -222,7 +222,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetaprivacysubjectrightsrequestnote)
 

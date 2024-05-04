@@ -321,7 +321,6 @@ To unset, set this property to true on another Localized Notification Message.
   - `[Subject <String>]`: The Message Template Subject.
 
 ## RELATED LINKS
-[New-MgDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementNotificationMessageTemplate?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementnotificationmessagetemplate)
 

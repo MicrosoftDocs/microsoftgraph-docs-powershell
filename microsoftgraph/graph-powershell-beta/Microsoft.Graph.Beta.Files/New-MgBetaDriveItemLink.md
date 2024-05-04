@@ -54,9 +54,6 @@ New-MgBetaDriveItemLink -InputObject <IFilesIdentity>
 Create a link to share a driveItem driveItem.The createLink action creates a new sharing link if the specified link type doesn't already exist for the calling application.If a sharing link of the specified type already exists for the app, the existing sharing link is returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-createlink-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -398,9 +395,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[New-MgDriveItemLink](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemLink?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemlink)
+
+[https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
 
 
 

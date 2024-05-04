@@ -290,9 +290,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Add-MgBetaGroupToLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupToLifecyclePolicy?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy)
+
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0)
 
 
 

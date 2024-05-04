@@ -37,9 +37,6 @@ Get-MgBetaExternalIndustryDataOperation -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a fileValidateOperation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/industrydata-filevalidateoperation-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -309,6 +306,10 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoperation)
+
+[https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-filevalidateoperation-list?view=graph-rest-1.0)
 
 
 

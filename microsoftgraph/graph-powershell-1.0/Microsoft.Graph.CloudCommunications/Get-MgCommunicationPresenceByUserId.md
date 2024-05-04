@@ -33,9 +33,6 @@ Get-MgCommunicationPresenceByUserId
 ## DESCRIPTION
 Get the presence information for multiple users.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudcommunications-getpresencesbyuserid-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -201,9 +198,10 @@ BODYPARAMETER `<IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPos
   - `[Ids <String- `[]`>]`:
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationPresenceByUserId?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid)
+
+[https://learn.microsoft.com/graph/api/cloudcommunications-getpresencesbyuserid?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudcommunications-getpresencesbyuserid?view=graph-rest-1.0)
 
 
 

@@ -247,7 +247,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementIoUpdateStatus?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementioupdatestatus)
 

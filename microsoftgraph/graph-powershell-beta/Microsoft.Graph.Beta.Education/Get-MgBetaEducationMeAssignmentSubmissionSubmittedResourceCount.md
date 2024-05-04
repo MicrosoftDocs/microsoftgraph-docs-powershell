@@ -192,7 +192,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignmentSubmissionSubmittedResourceCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionSubmittedResourceCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmissionsubmittedresourcecount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmissionsubmittedresourcecount)
 

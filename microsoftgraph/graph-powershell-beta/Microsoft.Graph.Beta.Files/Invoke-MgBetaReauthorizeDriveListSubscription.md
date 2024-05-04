@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedrivelistsubscription
 schema: 2.0.0
-ms.prod: change-notifications
 ---
 
 # Invoke-MgBetaReauthorizeDriveListSubscription
@@ -215,9 +214,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgReauthorizeDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeDriveListSubscription?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedrivelistsubscription](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/invoke-mgbetareauthorizedrivelistsubscription)
+
+[https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subscription-reauthorize?view=graph-rest-1.0)
 
 
 

@@ -334,9 +334,12 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession)
+
+[https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0)
 
 
 

@@ -37,9 +37,6 @@ Otherwise, the response contains errors and warnings.
 If the response contains errors, the synchronization won't start.
 If the response contains only warnings, synchronization starts.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationsynchronizationprofile-start-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Start-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
@@ -197,6 +194,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-start?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-start?view=graph-rest-1.0)
 
 
 

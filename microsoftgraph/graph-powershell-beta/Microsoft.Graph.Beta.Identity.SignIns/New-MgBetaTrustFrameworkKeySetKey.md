@@ -47,9 +47,6 @@ New-MgBetaTrustFrameworkKeySetKey -InputObject <IIdentitySignInsIdentity>
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/trustframeworkkeyset-generatekey-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaTrustFrameworkKeySetKey Cmdlet
 ```powershell
@@ -371,6 +368,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeysetkey)
+
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-generatekey?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-generatekey?view=graph-rest-1.0)
 
 
 

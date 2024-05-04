@@ -112,7 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaSecuritySecureScoreCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescorecount](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescorecount)
 

@@ -38,9 +38,6 @@ Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ## DESCRIPTION
 Read the properties and relationships of a plannerPlanConfigurationLocalization object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerplanconfigurationlocalization-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -329,6 +326,10 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfigurationlocalization)
+
+[https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0)
 
 
 

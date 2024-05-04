@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Adds a strong password to an application.
+You can also add passwords while creating the application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)
@@ -47,6 +48,7 @@ Add-MgBetaApplicationPassword -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Adds a strong password to an application.
+You can also add passwords while creating the application.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/application-addpassword-permissions.md)]
@@ -364,9 +366,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Optional.
 
 ## RELATED LINKS
-[Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
+
+[https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)
 
 
 

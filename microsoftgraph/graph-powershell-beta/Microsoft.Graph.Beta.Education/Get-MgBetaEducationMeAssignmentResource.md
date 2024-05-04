@@ -42,9 +42,6 @@ Get-MgBetaEducationMeAssignmentResource -InputObject <IEducationIdentity> [-Expa
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignmentresource-get-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -328,9 +325,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentResource?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentresource)
+
+[https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-1.0)
 
 
 

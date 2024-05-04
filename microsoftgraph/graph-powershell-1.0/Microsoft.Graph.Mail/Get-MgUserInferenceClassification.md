@@ -151,7 +151,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserInferenceClassification](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserInferenceClassification?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification)
 

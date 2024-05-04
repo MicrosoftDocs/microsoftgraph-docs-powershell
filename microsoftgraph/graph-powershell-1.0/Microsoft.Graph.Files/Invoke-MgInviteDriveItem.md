@@ -52,9 +52,6 @@ Invoke-MgInviteDriveItem -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/driveitem-invite-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,9 +393,10 @@ security groups).
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mginvitedriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-invite?view=graph-rest-1.0)
 
 
 

@@ -297,7 +297,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgAllGroupSite](/powershell/module/Microsoft.Graph.Groups/Get-MgAllGroupSite?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite)
 

@@ -19063,7 +19063,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootAnalytic?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootanalytic)
 

@@ -524,7 +524,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveListItemDocumentSetVersion?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdrivelistitemdocumentsetversion)
 

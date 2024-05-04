@@ -34,9 +34,6 @@ Remove-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <S
 Delete an existing module in a class.
 Only teachers within a class can delete modules.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -228,9 +225,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationmodule-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-delete?view=graph-rest-1.0)
 
 
 

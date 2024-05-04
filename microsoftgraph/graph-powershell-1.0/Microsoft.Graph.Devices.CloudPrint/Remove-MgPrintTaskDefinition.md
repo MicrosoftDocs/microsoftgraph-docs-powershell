@@ -34,9 +34,6 @@ Remove-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-IfMatch
 Delete a taskDefinition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/print-delete-taskdefinition-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -221,9 +218,10 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinition)
+
+[https://learn.microsoft.com/graph/api/print-delete-taskdefinition?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-delete-taskdefinition?view=graph-rest-1.0)
 
 
 

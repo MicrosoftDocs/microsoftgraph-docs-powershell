@@ -48,9 +48,6 @@ Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of calendargroup object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendargroup-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -854,9 +851,10 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgBetaUserCalendarGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mgusercalendargroup)
+
+[https://learn.microsoft.com/graph/api/calendargroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-update?view=graph-rest-1.0)
 
 
 

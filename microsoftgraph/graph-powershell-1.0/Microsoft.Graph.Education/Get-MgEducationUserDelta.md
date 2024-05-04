@@ -244,7 +244,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationUserDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserDelta?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserdelta)
 

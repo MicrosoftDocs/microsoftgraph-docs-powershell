@@ -32,9 +32,6 @@ Remove-MgGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-delete-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -268,9 +265,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0)
 
 
 

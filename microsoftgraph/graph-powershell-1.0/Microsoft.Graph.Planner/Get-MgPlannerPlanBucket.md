@@ -25,9 +25,6 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 ## DESCRIPTION
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerplan-list-buckets-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -266,9 +263,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket)
+
+[https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
 
 
 

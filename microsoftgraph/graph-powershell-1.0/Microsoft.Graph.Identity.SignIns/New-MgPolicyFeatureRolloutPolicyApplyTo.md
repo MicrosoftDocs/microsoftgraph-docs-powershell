@@ -47,9 +47,6 @@ New-MgPolicyFeatureRolloutPolicyApplyTo -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/featurerolloutpolicy-post-appliesto-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -306,9 +303,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicyapplyto)
+
+[https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-1.0)
 
 
 

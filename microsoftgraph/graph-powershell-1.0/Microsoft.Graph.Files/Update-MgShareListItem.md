@@ -24195,7 +24195,6 @@ Read-only.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitem)
 

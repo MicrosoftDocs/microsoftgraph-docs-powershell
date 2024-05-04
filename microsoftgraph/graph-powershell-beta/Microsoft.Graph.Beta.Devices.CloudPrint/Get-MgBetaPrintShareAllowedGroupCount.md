@@ -172,7 +172,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintShareAllowedGroupCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedGroupCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintshareallowedgroupcount)
 

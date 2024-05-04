@@ -41,9 +41,6 @@ New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAcces
 In Microsoft Entra entitlement management, create a new accessPackageAssignmentPolicy object.
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/entitlementmanagement-post-assignmentpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -15591,6 +15588,8 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy)
+
+[https://learn.microsoft.com/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-assignmentpolicies?view=graph-rest-1.0)
 
 
 

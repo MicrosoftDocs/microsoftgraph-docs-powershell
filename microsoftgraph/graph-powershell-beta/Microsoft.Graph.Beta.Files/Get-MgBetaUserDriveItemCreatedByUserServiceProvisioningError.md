@@ -280,7 +280,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgUserDriveItemCreatedByUserServiceProvisioningError](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemCreatedByUserServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemcreatedbyuserserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemcreatedbyuserserviceprovisioningerror)
 

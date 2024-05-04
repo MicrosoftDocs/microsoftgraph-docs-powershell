@@ -25755,7 +25755,6 @@ Supports $filter (eq, ne, not, in, and eq on null values).
 NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Microsoft Entra ID?
 
 ## RELATED LINKS
-[Update-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMe?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationme)
 

@@ -330,7 +330,6 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
   - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
-[Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermode)
 

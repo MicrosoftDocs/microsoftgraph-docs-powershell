@@ -30,9 +30,6 @@ Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBo
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerassignedtotaskboardtaskformat-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -200,6 +197,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskassignedtotaskboardformat)
+
+[https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

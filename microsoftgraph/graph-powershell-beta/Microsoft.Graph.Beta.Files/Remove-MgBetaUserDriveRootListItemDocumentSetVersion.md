@@ -32,9 +32,6 @@ Remove-MgBetaUserDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentit
 ## DESCRIPTION
 Delete a version of a document set in a list.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/documentsetversion-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -247,9 +244,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetauserdriverootlistitemdocumentsetversion)
+
+[https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0)
 
 
 

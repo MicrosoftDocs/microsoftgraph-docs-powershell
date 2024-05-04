@@ -36,9 +36,6 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-ResponseHe
 ## DESCRIPTION
 Create a new bookmark object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/search-searchentity-post-bookmarks-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -525,9 +522,10 @@ The date and group settings apply to all variations.
 When users select this answer variation from the search results, they're directed to the specified URL.
 
 ## RELATED LINKS
-[New-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/New-MgBetaSearchBookmark?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
+
+[https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0)
 
 
 

@@ -58,9 +58,6 @@ New-MgGroupSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new \[contentType\]\[\] in a \[site\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-post-contenttypes-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -1834,9 +1831,10 @@ ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteContentType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitecontenttype)
+
+[https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-post-contenttypes?view=graph-rest-1.0)
 
 
 

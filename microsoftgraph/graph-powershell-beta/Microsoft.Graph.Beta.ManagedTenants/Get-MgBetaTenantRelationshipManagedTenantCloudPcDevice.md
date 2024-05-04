@@ -37,9 +37,6 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice -InputObject <IManagedTen
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcDevice object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-cloudpcdevice-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantCloudPcDevice Cmdlet
 ```powershell
@@ -344,6 +341,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcdevice)
+
+[https://learn.microsoft.com/graph/api/managedtenants-cloudpcdevice-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-cloudpcdevice-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcdevices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcdevices?view=graph-rest-1.0)
 
 
 

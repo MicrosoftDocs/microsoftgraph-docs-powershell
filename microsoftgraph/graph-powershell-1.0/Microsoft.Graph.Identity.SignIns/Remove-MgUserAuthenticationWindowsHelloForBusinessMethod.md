@@ -33,9 +33,6 @@ Remove-MgUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentity
 ## DESCRIPTION
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/windowshelloforbusinessauthenticationmethod-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -264,9 +261,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationwindowshelloforbusinessmethod)
+
+[https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

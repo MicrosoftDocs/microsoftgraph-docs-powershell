@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeam
@@ -29330,9 +29329,10 @@ Read-only.
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteam)
+
+[https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post?view=graph-rest-1.0)
 
 
 

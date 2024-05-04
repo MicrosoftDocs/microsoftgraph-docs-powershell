@@ -182,7 +182,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalTokenLifetimePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalTokenLifetimePolicyCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicycount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicycount)
 

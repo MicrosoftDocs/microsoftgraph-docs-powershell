@@ -826,7 +826,6 @@ Some settings are inherited from the template.
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[Update-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaapplicationsynchronizationjob)
 

@@ -279,7 +279,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Get-MgReportUserArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserArchivedPrintJob?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob)
 

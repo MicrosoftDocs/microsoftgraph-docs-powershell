@@ -54,9 +54,6 @@ Get-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/grouplifecyclepolicy-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -379,9 +376,12 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy)
+
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0)
 
 
 

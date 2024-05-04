@@ -240,9 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorybyref)
+
+[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 
 
 

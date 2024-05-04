@@ -34,9 +34,6 @@ Remove-MgEducationMeRubric -InputObject <IEducationIdentity> [-IfMatch <String>]
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationrubric-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -221,9 +218,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeRubric?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric)
+
+[https://learn.microsoft.com/graph/api/educationrubric-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationrubric-delete?view=graph-rest-1.0)
 
 
 

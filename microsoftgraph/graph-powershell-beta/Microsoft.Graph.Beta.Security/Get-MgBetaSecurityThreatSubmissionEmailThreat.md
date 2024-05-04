@@ -37,9 +37,6 @@ Get-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Read the properties and relationships of an emailThreatSubmission object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-emailthreatsubmission-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
 ```powershell
@@ -388,6 +385,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionemailthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionemailthreat)
+
+[https://learn.microsoft.com/graph/api/security-emailthreatsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-emailthreatsubmission-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-list?view=graph-rest-1.0)
 
 
 

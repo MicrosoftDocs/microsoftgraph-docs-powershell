@@ -411,7 +411,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetauserauthenticationoperation)
 

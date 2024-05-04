@@ -246,7 +246,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[New-MgUserExtension](/powershell/module/Microsoft.Graph.Users/New-MgUserExtension?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauserextension)
 

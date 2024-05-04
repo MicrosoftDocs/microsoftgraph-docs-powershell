@@ -274,6 +274,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/send-mgbetaidentitygovernanceaccessreviewdecisioninstancereminder)
 
+[https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0)
+
 
 
 

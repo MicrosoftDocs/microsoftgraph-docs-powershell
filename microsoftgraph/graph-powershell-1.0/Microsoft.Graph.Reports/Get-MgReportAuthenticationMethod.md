@@ -113,7 +113,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod)
 

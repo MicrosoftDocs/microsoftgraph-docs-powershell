@@ -39,9 +39,6 @@ Get-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Retrieve the properties and relationships of plannerTask object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -311,9 +308,12 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertask)
+
+[https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertask-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-list-tasks?view=graph-rest-1.0)
 
 
 

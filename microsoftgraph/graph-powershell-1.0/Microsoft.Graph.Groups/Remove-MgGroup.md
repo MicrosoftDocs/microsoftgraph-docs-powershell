@@ -248,9 +248,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroup)
+
+[https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0)
 
 
 

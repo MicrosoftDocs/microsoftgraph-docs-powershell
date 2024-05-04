@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery
@@ -53,6 +54,9 @@ Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 ## DESCRIPTION
 Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewsetquery-export-permissions.md)]
 
 ## PARAMETERS
 
@@ -386,9 +390,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/export-mgsecuritycaseediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-export?view=graph-rest-1.0)
 
 
 

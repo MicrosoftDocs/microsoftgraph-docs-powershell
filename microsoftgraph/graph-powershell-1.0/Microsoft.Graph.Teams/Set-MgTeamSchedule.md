@@ -935,7 +935,6 @@ Required.
 Required.
 
 ## RELATED LINKS
-[Set-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mgteamschedule)
 

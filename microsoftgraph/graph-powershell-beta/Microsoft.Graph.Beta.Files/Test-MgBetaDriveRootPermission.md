@@ -282,7 +282,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Test-MgDriveRootPermission?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriverootpermission)
 

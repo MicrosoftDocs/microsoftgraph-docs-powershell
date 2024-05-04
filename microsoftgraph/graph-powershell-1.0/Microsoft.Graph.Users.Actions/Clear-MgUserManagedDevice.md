@@ -337,9 +337,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mgusermanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/clear-mgusermanageddevice)
+
+[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0)
 
 
 

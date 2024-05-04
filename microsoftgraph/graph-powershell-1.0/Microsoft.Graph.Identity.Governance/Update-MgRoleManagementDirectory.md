@@ -1653,7 +1653,6 @@ Required.
     - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectory)
 

@@ -48,9 +48,6 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 ## DESCRIPTION
 Update the properties of a tag object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/teamworktag-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -420,9 +417,10 @@ Read-only.
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
-[Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTag?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamtag)
+
+[https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-update?view=graph-rest-1.0)
 
 
 

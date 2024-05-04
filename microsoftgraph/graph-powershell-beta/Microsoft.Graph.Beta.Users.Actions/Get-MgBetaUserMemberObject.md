@@ -281,7 +281,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberObject?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermemberobject)
 

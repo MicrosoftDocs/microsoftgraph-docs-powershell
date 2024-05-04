@@ -200,7 +200,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamIncomingChannelCount](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamIncomingChannelCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamincomingchannelcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamincomingchannelcount)
 

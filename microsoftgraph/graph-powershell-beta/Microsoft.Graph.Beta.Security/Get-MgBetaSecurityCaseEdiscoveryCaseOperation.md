@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaseoperation
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaSecurityCaseEdiscoveryCaseOperation
@@ -40,9 +39,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [
 
 ## DESCRIPTION
 Read the properties and relationships of a caseOperation object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-caseoperation-get-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -402,9 +398,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaseoperation)
+
+[https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0)
 
 
 

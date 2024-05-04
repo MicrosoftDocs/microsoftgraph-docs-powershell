@@ -231,7 +231,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMemberCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelSharedWithTeamAllowedMemberCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelsharedwithteamallowedmembercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelsharedwithteamallowedmembercount)
 

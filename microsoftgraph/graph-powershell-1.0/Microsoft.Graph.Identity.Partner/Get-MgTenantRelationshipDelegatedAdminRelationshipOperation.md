@@ -41,9 +41,6 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationshipOperation object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/delegatedadminrelationshipoperation-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -313,9 +310,12 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipoperation)
+
+[https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-1.0)
 
 
 

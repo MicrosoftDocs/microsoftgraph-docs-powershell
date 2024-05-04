@@ -265,7 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestCollaboratorServiceProvisioningError?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratorserviceprovisioningerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetaprivacysubjectrightsrequestcollaboratorserviceprovisioningerror)
 

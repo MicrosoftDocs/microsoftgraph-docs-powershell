@@ -901,9 +901,10 @@ Read-only.
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotection)
+
+[https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-create?view=graph-rest-1.0)
 
 
 

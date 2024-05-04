@@ -44,9 +44,6 @@ Get the properties and relationships of a module.
 Only teachers, students, and applications with application permissions can perform this operation.
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationmodule-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -328,9 +325,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassModule?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmodule)
+
+[https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0)
 
 
 

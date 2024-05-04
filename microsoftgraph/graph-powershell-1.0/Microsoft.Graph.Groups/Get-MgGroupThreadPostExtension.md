@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # Get-MgGroupThreadPostExtension
@@ -378,9 +377,10 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension)
+
+[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

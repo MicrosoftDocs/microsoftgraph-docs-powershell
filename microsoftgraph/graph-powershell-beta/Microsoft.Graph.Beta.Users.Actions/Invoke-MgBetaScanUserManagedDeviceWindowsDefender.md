@@ -298,7 +298,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetascanusermanageddevicewindowsdefender)
 

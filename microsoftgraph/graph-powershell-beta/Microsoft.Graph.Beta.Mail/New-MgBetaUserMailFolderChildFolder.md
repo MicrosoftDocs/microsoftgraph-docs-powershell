@@ -58,9 +58,6 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 ## DESCRIPTION
 Create a new mailSearchFolder in the specified user's mailbox.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mailsearchfolder-post-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -1123,9 +1120,10 @@ Read-only.
   - `[BinaryData <Byte- `[]`>]`:
 
 ## RELATED LINKS
-[New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder)
+
+[https://learn.microsoft.com/graph/api/mailsearchfolder-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailsearchfolder-post?view=graph-rest-1.0)
 
 
 

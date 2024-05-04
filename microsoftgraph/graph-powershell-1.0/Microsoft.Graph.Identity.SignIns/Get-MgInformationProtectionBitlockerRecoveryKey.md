@@ -48,9 +48,6 @@ To include the key property in the response, use the $select OData query paramet
 Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
 For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Microsoft Entra audit logs.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/bitlockerrecoverykey-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get the BitLocker key by specifying the key id
 
@@ -378,9 +375,12 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mginformationprotectionbitlockerrecoverykey)
+
+[https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
 
 
 

@@ -62,9 +62,6 @@ New-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new task object in a specified todoTaskList.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/todotasklist-post-tasks-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -846,9 +843,10 @@ For example, '2019-04-16T09:00:00'.
 See below for possible values.
 
 ## RELATED LINKS
-[New-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTask?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask)
+
+[https://learn.microsoft.com/graph/api/todotasklist-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-post-tasks?view=graph-rest-1.0)
 
 
 

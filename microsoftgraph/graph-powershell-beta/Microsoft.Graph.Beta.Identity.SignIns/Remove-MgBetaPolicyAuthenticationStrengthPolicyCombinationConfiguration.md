@@ -33,9 +33,6 @@ Remove-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 ## DESCRIPTION
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationstrengthpolicy-delete-combinationconfigurations-permissions.md)]
-
 ## PARAMETERS
 
 ### -AuthenticationCombinationConfigurationId
@@ -286,9 +283,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-delete-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-delete-combinationconfigurations?view=graph-rest-1.0)
 
 
 

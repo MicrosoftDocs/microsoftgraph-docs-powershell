@@ -314,7 +314,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Clear-MgChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Teams/Clear-MgChatMessageReplyReaction?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereplyreaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereplyreaction)
 

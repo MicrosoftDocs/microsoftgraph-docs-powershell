@@ -41,9 +41,6 @@ Get-MgBetaUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>
 Get the properties and relationships of the specified event object.
 An app can get an event in another user's calendar if: Because the event resource supports extensions, you can also use the GET operation to get custom properties and extension data in an event instance.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/event-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Get a specified event
 
@@ -355,9 +352,12 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[WorkspaceId <String>]`: The unique identifier of workspace
 
 ## RELATED LINKS
-[Get-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEvent?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserevent)
+
+[https://learn.microsoft.com/graph/api/event-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/user-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-events?view=graph-rest-1.0)
 
 
 

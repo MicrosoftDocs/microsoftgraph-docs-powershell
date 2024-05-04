@@ -201,7 +201,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgBetaPreviewSiteOnenoteSectionPage?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/invoke-mgpreviewsiteonenotesectionpage)
 

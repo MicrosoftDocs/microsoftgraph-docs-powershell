@@ -34,9 +34,6 @@ Invoke-MgBetaDeactivateEducationMeAssignment -InputObject <IEducationIdentity>
 Mark an assigned educationAssignment as inactive to signal that the assignment has no further action items for teachers and students.
 This action can only be performed by a teacher on assigned assignments.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-deactivate-permissions.md)]
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -183,9 +180,10 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgDeactivateEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Invoke-MgDeactivateEducationMeAssignment?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationmeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetadeactivateeducationmeassignment)
+
+[https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-deactivate?view=graph-rest-1.0)
 
 
 

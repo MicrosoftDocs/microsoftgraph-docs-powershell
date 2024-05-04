@@ -444,7 +444,6 @@ This property is read-only.
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertyperetentioneventtype)
 

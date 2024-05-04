@@ -35,9 +35,6 @@ New-MgRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifi
 ## DESCRIPTION
 Create a new unifiedRoleAssignment object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/rbacapplication-post-roleassignments-permissions.md)]
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -470,9 +467,10 @@ This identifier is typically used if one needs an identifier to be the same acro
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignment)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0)
 
 
 

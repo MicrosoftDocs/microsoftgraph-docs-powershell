@@ -32,9 +32,6 @@ Remove-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete a tokenIssuancePolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/tokenissuancepolicy-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -283,9 +280,10 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenissuancepolicy)
+
+[https://learn.microsoft.com/graph/api/tokenissuancepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-delete?view=graph-rest-1.0)
 
 
 

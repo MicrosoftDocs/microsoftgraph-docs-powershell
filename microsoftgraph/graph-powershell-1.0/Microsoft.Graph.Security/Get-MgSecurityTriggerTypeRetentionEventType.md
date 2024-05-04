@@ -40,9 +40,6 @@ Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Read the properties and relationships of a retentionEventType object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-retentioneventtype-get-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -351,9 +348,12 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Get-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype)
+
+[https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0)
 
 
 

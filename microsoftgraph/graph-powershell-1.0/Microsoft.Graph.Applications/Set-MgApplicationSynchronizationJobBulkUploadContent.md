@@ -263,7 +263,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaApplicationSynchronizationJobBulkUploadContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationSynchronizationJobBulkUploadContent?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationjobbulkuploadcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/set-mgapplicationsynchronizationjobbulkuploadcontent)
 

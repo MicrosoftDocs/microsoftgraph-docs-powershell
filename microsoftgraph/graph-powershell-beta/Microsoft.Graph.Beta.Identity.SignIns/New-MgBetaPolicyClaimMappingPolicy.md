@@ -32,9 +32,6 @@ New-MgBetaPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersV
 ## DESCRIPTION
 Create a new claimsMappingPolicy object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/claimsmappingpolicy-post-claimsmappingpolicies-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -300,9 +297,10 @@ Read-only.
 Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyclaimmappingpolicy)
+
+[https://learn.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

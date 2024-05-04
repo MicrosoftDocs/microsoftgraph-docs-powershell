@@ -24,9 +24,6 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 ## DESCRIPTION
 Get the educationUser resources associated with an educationSchool.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationschool-list-users-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -224,9 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
+
+[https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
 
 
 

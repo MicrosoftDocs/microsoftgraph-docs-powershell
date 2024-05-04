@@ -217,7 +217,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemcreatedbyusermailboxsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemcreatedbyusermailboxsetting)
 

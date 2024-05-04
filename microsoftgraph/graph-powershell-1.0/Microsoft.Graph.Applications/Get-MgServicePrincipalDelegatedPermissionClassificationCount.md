@@ -182,7 +182,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassificationCount?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassificationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassificationcount)
 

@@ -58,9 +58,6 @@ Update-MgBetaEducationSchool -InputObject <IEducationIdentity> -BodyParameter <I
 ## DESCRIPTION
 Update the properties of a school object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationschool-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -24299,9 +24296,10 @@ See standard - `[user]` resource for additional details.
 Supports /$filter.
 
 ## RELATED LINKS
-[Update-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSchool?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationschool)
+
+[https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-update?view=graph-rest-1.0)
 
 
 

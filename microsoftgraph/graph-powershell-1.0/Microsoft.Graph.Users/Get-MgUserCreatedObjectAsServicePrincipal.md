@@ -318,7 +318,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Get-MgBetaUserCreatedObjectAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserCreatedObjectAsServicePrincipal?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobjectasserviceprincipal)
 

@@ -32,9 +32,6 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <II
 ## DESCRIPTION
 Delete a workflow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/identitygovernance-deletedItemcontainer-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -Headers
@@ -260,9 +257,10 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowdeleteditemworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernancelifecycleworkflowdeleteditemworkflow)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-deletedItemcontainer-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-deletedItemcontainer-delete?view=graph-rest-1.0)
 
 
 

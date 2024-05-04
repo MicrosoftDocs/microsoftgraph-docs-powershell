@@ -1469,7 +1469,6 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHostPort?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehostport)
 

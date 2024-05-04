@@ -32,9 +32,6 @@ Get-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServ
 ## DESCRIPTION
 The zip file of all attachments for a message.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/serviceannouncement-list-messages-permissions.md)]
-
 ## EXAMPLES
 
 ## PARAMETERS
@@ -168,9 +165,10 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentarchive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementmessageattachmentarchive)
+
+[https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0)
 
 
 

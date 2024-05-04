@@ -22,9 +22,6 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementP
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/mobileappmanagementpolicies-list-includedgroups-permissions.md)]
-
 ## PARAMETERS
 
 ### -All
@@ -222,6 +219,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroupbyref)
+
+[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0)
 
 
 

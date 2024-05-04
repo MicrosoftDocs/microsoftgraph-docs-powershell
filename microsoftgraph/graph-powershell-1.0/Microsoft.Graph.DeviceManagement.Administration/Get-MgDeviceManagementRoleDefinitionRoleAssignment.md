@@ -328,9 +328,12 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroledefinitionroleassignment)
+
+[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-list?view=graph-rest-1.0)
 
 
 

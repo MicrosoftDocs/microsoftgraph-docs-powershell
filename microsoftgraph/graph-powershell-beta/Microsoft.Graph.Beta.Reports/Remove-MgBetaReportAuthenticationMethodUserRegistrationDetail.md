@@ -234,7 +234,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserSignUpMetricId <String>]`: The unique identifier of userSignUpMetric
 
 ## RELATED LINKS
-[Remove-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/remove-mgbetareportauthenticationmethoduserregistrationdetail)
 

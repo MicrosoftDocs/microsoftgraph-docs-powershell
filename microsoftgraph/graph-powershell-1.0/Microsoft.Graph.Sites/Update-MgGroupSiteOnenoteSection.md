@@ -1066,7 +1066,6 @@ Nullable.
 Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsiteonenotesection)
 

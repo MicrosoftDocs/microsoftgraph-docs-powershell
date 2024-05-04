@@ -32,9 +32,6 @@ Remove-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete a retentionEventType object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-retentioneventtype-delete-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -288,9 +285,10 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[WhoisRecordId <String>]`: The unique identifier of whoisRecord
 
 ## RELATED LINKS
-[Remove-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype)
+
+[https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0)
 
 
 

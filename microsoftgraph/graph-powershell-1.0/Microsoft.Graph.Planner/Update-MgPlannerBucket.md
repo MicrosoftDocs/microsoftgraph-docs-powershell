@@ -48,9 +48,6 @@ Update-MgPlannerBucket -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property buckets in planner
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/plannerbucket-update-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -515,9 +512,10 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerBucket?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket)
+
+[https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0)
 
 
 

@@ -205,7 +205,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
-[Remove-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserSetting?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusersetting)
 

@@ -37,9 +37,6 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend -InputObje
 ## DESCRIPTION
 Read the properties and relationships of a managedDeviceComplianceTrend object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-manageddevicecompliancetrend-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagedDeviceComplianceTrend Cmdlet
 ```powershell
@@ -337,6 +334,10 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliancetrend)
+
+[https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliancetrend-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliancetrend-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliancetrends?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliancetrends?view=graph-rest-1.0)
 
 
 

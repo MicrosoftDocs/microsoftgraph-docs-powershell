@@ -40,9 +40,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Read the properties and relationships of a workflow object.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identitygovernance-workflow-get-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Retrieve all workflows created in the tenant
 
@@ -414,9 +411,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflow)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0)
+
+[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0)
 
 
 

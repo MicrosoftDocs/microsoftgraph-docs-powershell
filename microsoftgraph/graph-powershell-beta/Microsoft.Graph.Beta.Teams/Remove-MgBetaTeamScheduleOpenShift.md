@@ -259,9 +259,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleopenshift)
+
+[https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0)
 
 
 

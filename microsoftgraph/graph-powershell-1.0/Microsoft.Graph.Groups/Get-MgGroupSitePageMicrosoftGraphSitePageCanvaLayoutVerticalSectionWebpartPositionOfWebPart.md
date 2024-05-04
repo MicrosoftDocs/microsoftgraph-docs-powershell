@@ -247,7 +247,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgBetaGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSitePageMicrosoftGraphSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitepagemicrosoftgraphsitepagecanvalayoutverticalsectionwebpartpositionofwebpart](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupsitepagemicrosoftgraphsitepagecanvalayoutverticalsectionwebpartpositionofwebpart)
 

@@ -178,7 +178,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgCommunicationOnlineMeetingTranscriptCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscriptCount?view=graph-powershell-1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscriptcount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscriptcount)
 

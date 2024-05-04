@@ -32,9 +32,6 @@ Remove-MgDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-Respo
 ## DESCRIPTION
 Removes an item from a \[list\]\[\].
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/listitem-delete-permissions.md)]
-
 ## PARAMETERS
 
 ### -DriveId
@@ -232,9 +229,10 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveListItem?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrivelistitem)
+
+[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
 
 
 
