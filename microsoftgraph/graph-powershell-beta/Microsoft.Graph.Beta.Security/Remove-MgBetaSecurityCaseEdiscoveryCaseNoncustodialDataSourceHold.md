@@ -71,18 +71,17 @@ After the operation is created, you can get the status by retrieving the Locatio
 The location provides a URL that returns an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+
 ```
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+
 
 ## PARAMETERS
 

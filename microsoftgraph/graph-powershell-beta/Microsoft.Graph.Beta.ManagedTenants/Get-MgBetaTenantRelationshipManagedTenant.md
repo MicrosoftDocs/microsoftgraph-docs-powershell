@@ -41,18 +41,17 @@ Read the properties and relationships of a tenant object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/managedtenants-tenant-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenant -TenantId $tenantId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenant
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenant Cmdlet.
+
 
 ## PARAMETERS
 

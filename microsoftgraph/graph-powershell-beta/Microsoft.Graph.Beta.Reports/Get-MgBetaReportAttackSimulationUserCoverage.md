@@ -23,12 +23,6 @@ Invoke function getAttackSimulationSimulationUserCoverage
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Reports
-Get-MgBetaReportAttackSimulationUserCoverage
-```
-
 ## PARAMETERS
 
 ### -Count

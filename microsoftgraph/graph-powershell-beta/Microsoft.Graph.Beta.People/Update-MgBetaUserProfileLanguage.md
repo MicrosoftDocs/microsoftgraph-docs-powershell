@@ -54,16 +54,22 @@ Update-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 Update the properties of a languageProficiency object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	AllowedAudiences = "organization"
+	allowedAudiences = "organization"
 }
+
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaUserProfileLanguage Cmdlet.
+
 
 ## PARAMETERS
 

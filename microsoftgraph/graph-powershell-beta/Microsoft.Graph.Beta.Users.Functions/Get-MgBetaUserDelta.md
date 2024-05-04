@@ -26,12 +26,6 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Users.Functions
-Get-MgBetaUserDelta
-```
-
 ## PARAMETERS
 
 ### -All

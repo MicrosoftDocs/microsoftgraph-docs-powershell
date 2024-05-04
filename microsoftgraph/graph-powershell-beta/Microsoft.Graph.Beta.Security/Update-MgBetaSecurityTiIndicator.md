@@ -76,26 +76,38 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter
 Update the properties of a tiIndicator object.
 
 ## EXAMPLES
+### Example 1: Request without Prefer header
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-$params = @{
-	Description = "description-updated"
-}
-Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	AdditionalInformation = "additionalInformation-after-update"
-	Confidence = 42
-	Description = "description-after-update"
+	description = "description-updated"
 }
+
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+
 ```
+This example will request without prefer header
+
+### Example 2: Request with Prefer header
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Security
+
+$params = @{
+	additionalInformation = "additionalInformation-after-update"
+	confidence = 42
+	description = "description-after-update"
+}
+
+Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
+
+```
+This example will request with prefer header
+
 
 ## PARAMETERS
 

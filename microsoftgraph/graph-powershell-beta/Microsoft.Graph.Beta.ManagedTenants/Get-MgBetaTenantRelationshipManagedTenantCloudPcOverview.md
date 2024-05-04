@@ -38,18 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedT
 Read the properties and relationships of a cloudPcOverview object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -CloudPcOverviewTenantId $cloudPcOverviewTenantId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet.
+
 
 ## PARAMETERS
 

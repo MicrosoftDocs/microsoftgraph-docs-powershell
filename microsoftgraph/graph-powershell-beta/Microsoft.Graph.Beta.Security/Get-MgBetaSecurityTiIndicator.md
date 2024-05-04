@@ -38,18 +38,17 @@ Get-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a tiIndicator object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 Get-MgBetaSecurityTiIndicator
+
 ```
+This example shows how to use the Get-MgBetaSecurityTiIndicator Cmdlet.
+
 
 ## PARAMETERS
 

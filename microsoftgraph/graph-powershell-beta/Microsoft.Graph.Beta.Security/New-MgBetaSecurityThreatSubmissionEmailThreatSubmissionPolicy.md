@@ -36,15 +36,6 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-$params = @{
-	IsReportToMicrosoftEnabled = $true
-}
-New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -BodyParameter $params
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

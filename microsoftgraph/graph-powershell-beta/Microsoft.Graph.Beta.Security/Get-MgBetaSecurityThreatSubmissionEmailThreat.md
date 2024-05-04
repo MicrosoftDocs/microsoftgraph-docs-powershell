@@ -38,18 +38,17 @@ Get-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity> [
 Read the properties and relationships of an emailThreatSubmission object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId $emailThreatSubmissionId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 Get-MgBetaSecurityThreatSubmissionEmailThreat
+
 ```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
+
 
 ## PARAMETERS
 

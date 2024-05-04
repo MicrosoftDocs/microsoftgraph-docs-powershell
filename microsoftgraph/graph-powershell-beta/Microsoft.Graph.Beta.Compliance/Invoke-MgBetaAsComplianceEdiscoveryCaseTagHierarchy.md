@@ -33,12 +33,6 @@ Invoke function asHierarchy
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Compliance
-Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -CaseId $caseId
-```
-
 ## PARAMETERS
 
 ### -CaseId

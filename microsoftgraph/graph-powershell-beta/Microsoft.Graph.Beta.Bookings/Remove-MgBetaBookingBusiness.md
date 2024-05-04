@@ -48,12 +48,6 @@ Delete entity from bookingBusinesses
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Bookings
-Remove-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId

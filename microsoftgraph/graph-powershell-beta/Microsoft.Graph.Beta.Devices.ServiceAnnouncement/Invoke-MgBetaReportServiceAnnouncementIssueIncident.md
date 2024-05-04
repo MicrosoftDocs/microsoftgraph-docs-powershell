@@ -34,12 +34,6 @@ Invoke function incidentReport
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-Invoke-MgBetaReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
-```
-
 ## PARAMETERS
 
 ### -Headers

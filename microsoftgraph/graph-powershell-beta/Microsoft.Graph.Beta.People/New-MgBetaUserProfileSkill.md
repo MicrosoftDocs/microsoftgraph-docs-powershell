@@ -52,24 +52,30 @@ New-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Use this API to create a new skillProficiency object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	Categories = @(
-		"Professional"
-	)
-	AllowedAudiences = "organization"
-	DisplayName = "API Design"
-	Proficiency = "generalProfessional"
-	CollaborationTags = @(
-		"ableToMentor"
-	)
+	categories = @(
+	"Professional"
+)
+allowedAudiences = "organization"
+displayName = "API Design"
+proficiency = "generalProfessional"
+collaborationTags = @(
+"ableToMentor"
+)
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileSkill -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileSkill Cmdlet.
+
 
 ## PARAMETERS
 

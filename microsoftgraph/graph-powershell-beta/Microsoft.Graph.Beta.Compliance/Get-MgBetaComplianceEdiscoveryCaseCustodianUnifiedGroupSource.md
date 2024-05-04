@@ -43,18 +43,17 @@ Read the properties and relationships of a unifiedGroupSource object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-unifiedgroupsource-get-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Compliance
-Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -UnifiedGroupSourceId $unifiedGroupSourceId
-```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
+
 
 ## PARAMETERS
 

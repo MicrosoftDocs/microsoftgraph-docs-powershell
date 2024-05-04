@@ -26,14 +26,18 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 Retrieve a list of plannertask objects assigned to a User.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
+
+```
+This example shows how to use the Get-MgUserPlannerTask Cmdlet.
+
 
 ## PARAMETERS
 

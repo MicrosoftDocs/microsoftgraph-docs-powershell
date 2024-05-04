@@ -38,20 +38,18 @@ Get-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a webAccount object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.People
-# A UPN can also be used as -UserId.
-Get-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileWebAccount -UserId $userId
+
 ```
+This example shows how to use the Get-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 

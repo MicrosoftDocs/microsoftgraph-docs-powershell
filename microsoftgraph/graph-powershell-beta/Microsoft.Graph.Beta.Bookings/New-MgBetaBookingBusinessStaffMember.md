@@ -87,9 +87,8 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 Create a new staff member in the specified bookingBusiness.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaBookingBusinessStaffMember Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingStaffMember"
@@ -172,6 +171,8 @@ $params = @{
 }
 New-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaBookingBusinessStaffMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

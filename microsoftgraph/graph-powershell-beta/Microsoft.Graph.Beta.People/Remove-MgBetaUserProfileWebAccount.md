@@ -30,13 +30,18 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 Delete a webAccount object from a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId
+
 ```
+This example shows how to use the Remove-MgBetaUserProfileWebAccount Cmdlet.
+
 
 ## PARAMETERS
 

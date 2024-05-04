@@ -27,12 +27,6 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Education
-Get-MgEducationUserDelta
-```
-
 ## PARAMETERS
 
 ### -All

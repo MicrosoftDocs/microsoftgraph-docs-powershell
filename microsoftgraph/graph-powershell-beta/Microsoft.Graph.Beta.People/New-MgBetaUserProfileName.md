@@ -56,21 +56,27 @@ New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 Use this API to create a new personName object in a user's profile.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	DisplayName = "Innocenty Popov"
-	First = "Innocenty"
-	Initials = "IP"
-	Last = "Popov"
-	LanguageTag = "en-US"
-	Maiden = $null
+	displayName = "Innocenty Popov"
+	first = "Innocenty"
+	initials = "IP"
+	last = "Popov"
+	languageTag = "en-US"
+	maiden = $null
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileName -UserId $userId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaUserProfileName Cmdlet.
+
 
 ## PARAMETERS
 

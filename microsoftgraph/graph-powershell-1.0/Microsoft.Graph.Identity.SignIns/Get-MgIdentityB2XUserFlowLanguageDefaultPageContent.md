@@ -35,12 +35,6 @@ Get media content for the navigation property defaultPages from identity
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgIdentityB2XUserFlowLanguageDefaultPageContent -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId -UserFlowLanguagePageId $userFlowLanguagePageId -OutFile $outFileId
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId

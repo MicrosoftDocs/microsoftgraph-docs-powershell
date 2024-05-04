@@ -38,18 +38,17 @@ Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISec
 Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.Security
+
 Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
+
 ```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
+
 
 ## PARAMETERS
 

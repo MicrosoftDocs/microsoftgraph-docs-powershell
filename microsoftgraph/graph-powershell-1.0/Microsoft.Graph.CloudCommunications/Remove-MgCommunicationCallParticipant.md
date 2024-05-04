@@ -41,20 +41,28 @@ When an active caller is removed, they are immediately dropped from the call wit
 When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 
-### EXAMPLE 2
 ```
+This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
+
+### Example 2: Code snippet
+
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+
+```
+This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
+
 
 ## PARAMETERS
 

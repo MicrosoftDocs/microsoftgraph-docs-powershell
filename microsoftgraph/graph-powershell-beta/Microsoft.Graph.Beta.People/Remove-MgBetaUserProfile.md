@@ -30,13 +30,18 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Re
 Deletes a profile object from a user's account.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfile -UserId $userId
+
 ```
+This example shows how to use the Remove-MgBetaUserProfile Cmdlet.
+
 
 ## PARAMETERS
 

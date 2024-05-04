@@ -49,28 +49,23 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -InputObject <ISecurityI
 Create a new siteSource object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	Site = @{
-		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail"
+	site = @{
+		webUrl = "https://m365x809305.sharepoint.com/sites/Retail"
 	}
 }
-New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
-```
 
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.Beta.Security
-$params = @{
-	Site = @{
-		WebUrl = "https://m365x809305.sharepoint.com/sites/Retail"
-	}
-}
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
+
 ```
+This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

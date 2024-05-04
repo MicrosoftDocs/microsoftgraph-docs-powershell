@@ -30,12 +30,17 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 Delete a sourceCollection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId
+
 ```
+This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
+
 
 ## PARAMETERS
 

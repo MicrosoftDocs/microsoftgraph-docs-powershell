@@ -22,12 +22,17 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 Get-MgBetaPolicyAccessReviewPolicy
+
 ```
+This example shows how to use the Get-MgBetaPolicyAccessReviewPolicy Cmdlet.
+
 
 ## PARAMETERS
 

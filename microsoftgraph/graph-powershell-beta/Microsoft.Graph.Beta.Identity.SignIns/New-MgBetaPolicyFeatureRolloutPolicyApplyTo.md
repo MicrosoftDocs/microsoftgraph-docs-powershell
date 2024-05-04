@@ -50,16 +50,6 @@ Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

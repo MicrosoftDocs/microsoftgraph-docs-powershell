@@ -60,17 +60,23 @@ Update-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity>
 Update the properties of a case object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	DisplayName = "My Case 1 - Renamed"
-	Description = "Updated description"
-	ExternalId = "Updated externalId"
+	displayName = "My Case 1 - Renamed"
+	description = "Updated description"
+	externalId = "Updated externalId"
 }
+
 Update-MgBetaComplianceEdiscoveryCase -CaseId $caseId -BodyParameter $params
+
 ```
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

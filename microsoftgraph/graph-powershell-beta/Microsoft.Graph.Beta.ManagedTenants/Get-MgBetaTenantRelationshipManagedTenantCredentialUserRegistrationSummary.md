@@ -40,18 +40,17 @@ Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 Read the properties and relationships of a credentialUserRegistrationsSummary object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.Beta.ManagedTenants
-Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary -CredentialUserRegistrationsSummaryId $credentialUserRegistrationsSummaryId
-```
+```powershell
 
-### EXAMPLE 2
-```
 Import-Module Microsoft.Graph.Beta.ManagedTenants
+
 Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
+
 ```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary Cmdlet.
+
 
 ## PARAMETERS
 

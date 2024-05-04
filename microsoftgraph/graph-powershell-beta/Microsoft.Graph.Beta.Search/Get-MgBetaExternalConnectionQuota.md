@@ -30,18 +30,17 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
+
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
-```
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Search
-Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
-```
+This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
+
 
 ## PARAMETERS
 
