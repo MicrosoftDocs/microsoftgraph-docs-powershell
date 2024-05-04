@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.SchemaExtensions
 Module Guid: 6625a98f-7661-41b4-83a6-94cff49180fb
 Download Help Link: {{ Update Download Link }}
@@ -25,4 +25,5 @@ Locale: en-US
 
 ### [Update-MgBetaSchemaExtension](Update-MgBetaSchemaExtension.md)
 {{ Fill in the Description }}
+
 

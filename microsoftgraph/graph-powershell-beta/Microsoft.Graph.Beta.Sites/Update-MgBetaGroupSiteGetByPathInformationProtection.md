@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathinformationprotection
@@ -421,272 +421,275 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BITLOCKER \<IMicrosoftGraphBitlocker\>: bitlocker
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[RecoveryKeys \<IMicrosoftGraphBitlockerRecoveryKey\[\]\>\]: The recovery keys associated with the bitlocker entity.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey- `[]`>]`: The recovery keys associated with the bitlocker entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time when the key was originally backed up to Microsoft Entra ID.
-    \[DeviceId \<String\>\]: ID of the device the BitLocker key is originally backed up from.
-    \[Key \<String\>\]: The BitLocker recovery key.
-    \[VolumeType \<String\>\]: volumeType
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Microsoft Entra ID.
+    - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
+    - `[Key <String>]`: The BitLocker recovery key.
+    - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER \<IMicrosoftGraphInformationProtection\>: informationProtection
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Bitlocker \<IMicrosoftGraphBitlocker\>\]: bitlocker
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[RecoveryKeys \<IMicrosoftGraphBitlockerRecoveryKey\[\]\>\]: The recovery keys associated with the bitlocker entity.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey- `[]`>]`: The recovery keys associated with the bitlocker entity.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[CreatedDateTime \<DateTime?\>\]: The date and time when the key was originally backed up to Microsoft Entra ID.
-      \[DeviceId \<String\>\]: ID of the device the BitLocker key is originally backed up from.
-      \[Key \<String\>\]: The BitLocker recovery key.
-      \[VolumeType \<String\>\]: volumeType
-  \[DataLossPreventionPolicies \<IMicrosoftGraphDataLossPreventionPolicy\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Microsoft Entra ID.
+      - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
+      - `[Key <String>]`: The BitLocker recovery key.
+      - `[VolumeType <String>]`: volumeType
+  - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Name \<String\>\]: 
-  \[Policy \<IMicrosoftGraphInformationProtectionPolicy\>\]: informationProtectionPolicy
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Name <String>]`: 
+  - `[Policy <IMicrosoftGraphInformationProtectionPolicy>]`: informationProtectionPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Labels \<IMicrosoftGraphInformationProtectionLabel\[\]\>\]: 
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Labels <IMicrosoftGraphInformationProtectionLabel- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-      \[Description \<String\>\]: The admin-defined description for the label.
-      \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+      - `[Color <String>]`: The color that the UI should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-      \[Name \<String\>\]: The plaintext name of the label.
-      \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Color \<String\>\]: The color that the user interface should display for the label, if configured.
-        \[Description \<String\>\]: The admin-defined description for the label.
-        \[Id \<String\>\]: The label ID is a globally unique identifier (GUID).
-        \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+      - `[Name <String>]`: The plaintext name of the label.
+      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+        - `[Description <String>]`: The admin-defined description for the label.
+        - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-        \[Name \<String\>\]: The plaintext name of the label.
-        \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
-        \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-        \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a user interface.
-      \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-      \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
-  \[SensitivityLabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+        - `[Name <String>]`: The plaintext name of the label.
+        - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+  - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-    \[ApplicationMode \<String\>\]: applicationMode
-    \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
-      \[Id \<String\>\]: 
-      \[Name \<String\>\]: 
-    \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Message \<String\>\]: 
-      \[SensitiveTypeIds \<String\[\]\>\]: 
-    \[Description \<String\>\]: 
-    \[DisplayName \<String\>\]: 
-    \[IsDefault \<Boolean?\>\]: 
-    \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
-    \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
-      \[Name \<String\>\]: 
-    \[Name \<String\>\]: 
-    \[Priority \<Int32?\>\]: 
-    \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
-    \[ToolTip \<String\>\]: 
-  \[SensitivityPolicySettings \<IMicrosoftGraphSensitivityPolicySettings\>\]: sensitivityPolicySettings
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ApplicableTo <String>]`: sensitivityLabelTarget
+    - `[ApplicationMode <String>]`: applicationMode
+    - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+      - `[Id <String>]`: 
+      - `[Name <String>]`: 
+    - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Message <String>]`: 
+      - `[SensitiveTypeIds <String- `[]`>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[IsDefault <Boolean?>]`: 
+    - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+    - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+      - `[Name <String>]`: 
+    - `[Name <String>]`: 
+    - `[Priority <Int32?>]`: 
+    - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+    - `[ToolTip <String>]`: 
+  - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-    \[DowngradeSensitivityRequiresJustification \<Boolean?\>\]: 
-    \[HelpWebUrl \<String\>\]: 
-    \[IsMandatory \<Boolean?\>\]: 
-  \[ThreatAssessmentRequests \<IMicrosoftGraphThreatAssessmentRequest\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ApplicableTo <String>]`: sensitivityLabelTarget
+    - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
+    - `[HelpWebUrl <String>]`: 
+    - `[IsMandatory <Boolean?>]`: 
+  - `[ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Category \<String\>\]: threatCategory
-    \[ContentType \<String\>\]: threatAssessmentContentType
-    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Application \<IMicrosoftGraphIdentity\>\]: identity
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[DisplayName \<String\>\]: The display name of the identity.
+    - `[Category <String>]`: threatCategory
+    - `[ContentType <String>]`: threatAssessmentContentType
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        \[Id \<String\>\]: Unique identifier for the identity.
+        - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-      \[Device \<IMicrosoftGraphIdentity\>\]: identity
-      \[User \<IMicrosoftGraphIdentity\>\]: identity
-    \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[ExpectedAssessment \<String\>\]: threatExpectedAssessment
-    \[RequestSource \<String\>\]: threatAssessmentRequestSource
-    \[Results \<IMicrosoftGraphThreatAssessmentResult\[\]\>\]: A collection of threat assessment results.
+    - `[ExpectedAssessment <String>]`: threatExpectedAssessment
+    - `[RequestSource <String>]`: threatAssessmentRequestSource
+    - `[Results <IMicrosoftGraphThreatAssessmentResult- `[]`>]`: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-      \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      \[Message \<String\>\]: The result message for each threat assessment.
-      \[ResultType \<String\>\]: threatAssessmentResultType
-    \[Status \<String\>\]: threatAssessmentStatus
+      - `[Message <String>]`: The result message for each threat assessment.
+      - `[ResultType <String>]`: threatAssessmentResultType
+    - `[Status <String>]`: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES \<IMicrosoftGraphDataLossPreventionPolicy\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Name \<String\>\]: 
+  - `[Name <String>]`: 
 
-INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
-  \[BaseItemId \<String\>\]: The unique identifier of baseItem
-  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
-  \[BitlockerRecoveryKeyId \<String\>\]: The unique identifier of bitlockerRecoveryKey
-  \[ColumnDefinitionId \<String\>\]: The unique identifier of columnDefinition
-  \[ColumnLinkId \<String\>\]: The unique identifier of columnLink
-  \[ContentTypeId \<String\>\]: The unique identifier of contentType
-  \[ContentTypeId1 \<String\>\]: The unique identifier of contentType
-  \[DataLossPreventionPolicyId \<String\>\]: The unique identifier of dataLossPreventionPolicy
-  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
-  \[DriveId \<String\>\]: The unique identifier of drive
-  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[GroupId1 \<String\>\]: The unique identifier of group
-  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
-  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
-  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  \[InformationProtectionLabelId \<String\>\]: The unique identifier of informationProtectionLabel
-  \[Interval \<String\>\]: Usage: interval='{interval}'
-  \[ItemActivityId \<String\>\]: The unique identifier of itemActivity
-  \[ItemActivityOldId \<String\>\]: The unique identifier of itemActivityOLD
-  \[ItemActivityStatId \<String\>\]: The unique identifier of itemActivityStat
-  \[ListId \<String\>\]: The unique identifier of list
-  \[ListItemId \<String\>\]: The unique identifier of listItem
-  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
-  \[NotebookId \<String\>\]: The unique identifier of notebook
-  \[OnenoteOperationId \<String\>\]: The unique identifier of onenoteOperation
-  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
-  \[OnenoteResourceId \<String\>\]: The unique identifier of onenoteResource
-  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
-  \[Path \<String\>\]: Usage: path='{path}'
-  \[Path1 \<String\>\]: Usage: path='{path1}'
-  \[PermissionId \<String\>\]: The unique identifier of permission
-  \[RecycleBinItemId \<String\>\]: The unique identifier of recycleBinItem
-  \[RelationId \<String\>\]: The unique identifier of relation
-  \[RichLongRunningOperationId \<String\>\]: The unique identifier of richLongRunningOperation
-  \[SectionGroupId \<String\>\]: The unique identifier of sectionGroup
-  \[SectionGroupId1 \<String\>\]: The unique identifier of sectionGroup
-  \[SensitivityLabelId \<String\>\]: The unique identifier of sensitivityLabel
-  \[SensitivityLabelId1 \<String\>\]: The unique identifier of sensitivityLabel
-  \[SetId \<String\>\]: The unique identifier of set
-  \[SetId1 \<String\>\]: The unique identifier of set
-  \[SiteId \<String\>\]: The unique identifier of site
-  \[SiteId1 \<String\>\]: The unique identifier of site
-  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
-  \[SubscriptionId \<String\>\]: The unique identifier of subscription
-  \[TermId \<String\>\]: The unique identifier of term
-  \[TermId1 \<String\>\]: The unique identifier of term
-  \[ThreatAssessmentRequestId \<String\>\]: The unique identifier of threatAssessmentRequest
-  \[ThreatAssessmentResultId \<String\>\]: The unique identifier of threatAssessmentResult
-  \[Token \<String\>\]: Usage: token='{token}'
-  \[UserId \<String\>\]: The unique identifier of user
-  \[WebPartId \<String\>\]: The unique identifier of webPart
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+  - `[BaseItemId <String>]`: The unique identifier of baseItem
+  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
+  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
+  - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+  - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+  - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
+  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+  - `[DriveId <String>]`: The unique identifier of drive
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[GroupId1 <String>]`: The unique identifier of group
+  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+  - `[ListId <String>]`: The unique identifier of list
+  - `[ListItemId <String>]`: The unique identifier of listItem
+  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[Path <String>]`: Usage: path='{path}'
+  - `[Path1 <String>]`: Usage: path='{path1}'
+  - `[PermissionId <String>]`: The unique identifier of permission
+  - `[RecycleBinItemId <String>]`: The unique identifier of recycleBinItem
+  - `[RelationId <String>]`: The unique identifier of relation
+  - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[SetId <String>]`: The unique identifier of set
+  - `[SetId1 <String>]`: The unique identifier of set
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[SiteId1 <String>]`: The unique identifier of site
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[SubscriptionId <String>]`: The unique identifier of subscription
+  - `[TermId <String>]`: The unique identifier of term
+  - `[TermId1 <String>]`: The unique identifier of term
+  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
+  - `[Token <String>]`: Usage: token='{token}'
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WebPartId <String>]`: The unique identifier of webPart
 
-POLICY \<IMicrosoftGraphInformationProtectionPolicy\>: informationProtectionPolicy
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Labels \<IMicrosoftGraphInformationProtectionLabel\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Labels <IMicrosoftGraphInformationProtectionLabel- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Color \<String\>\]: The color that the UI should display for the label, if configured.
-    \[Description \<String\>\]: The admin-defined description for the label.
-    \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+    - `[Color <String>]`: The color that the UI should display for the label, if configured.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
-    \[Name \<String\>\]: The plaintext name of the label.
-    \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Color \<String\>\]: The color that the user interface should display for the label, if configured.
-      \[Description \<String\>\]: The admin-defined description for the label.
-      \[Id \<String\>\]: The label ID is a globally unique identifier (GUID).
-      \[IsActive \<Boolean?\>\]: Indicates whether the label is active or not.
+    - `[Name <String>]`: The plaintext name of the label.
+    - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not.
 Active labels should be hidden or disabled in user interfaces.
-      \[Name \<String\>\]: The plaintext name of the label.
-      \[Parent \<IMicrosoftGraphParentLabelDetails\>\]: parentLabelDetails
-      \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-      \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a user interface.
-    \[Sensitivity \<Int32?\>\]: The sensitivity value of the label, where lower is less sensitive.
-    \[Tooltip \<String\>\]: The tooltip that should be displayed for the label in a UI.
+      - `[Name <String>]`: The plaintext name of the label.
+      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS \<IMicrosoftGraphSensitivityLabel\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-  \[ApplicationMode \<String\>\]: applicationMode
-  \[AssignedPolicies \<IMicrosoftGraphLabelPolicy\[\]\>\]: 
-    \[Id \<String\>\]: 
-    \[Name \<String\>\]: 
-  \[AutoLabeling \<IMicrosoftGraphAutoLabeling\>\]: autoLabeling
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Message \<String\>\]: 
-    \[SensitiveTypeIds \<String\[\]\>\]: 
-  \[Description \<String\>\]: 
-  \[DisplayName \<String\>\]: 
-  \[IsDefault \<Boolean?\>\]: 
-  \[IsEndpointProtectionEnabled \<Boolean?\>\]: 
-  \[LabelActions \<IMicrosoftGraphLabelActionBase\[\]\>\]: 
-    \[Name \<String\>\]: 
-  \[Name \<String\>\]: 
-  \[Priority \<Int32?\>\]: 
-  \[Sublabels \<IMicrosoftGraphSensitivityLabel\[\]\>\]: 
-  \[ToolTip \<String\>\]: 
+  - `[ApplicableTo <String>]`: sensitivityLabelTarget
+  - `[ApplicationMode <String>]`: applicationMode
+  - `[AssignedPolicies <IMicrosoftGraphLabelPolicy- `[]`>]`: 
+    - `[Id <String>]`: 
+    - `[Name <String>]`: 
+  - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Message <String>]`: 
+    - `[SensitiveTypeIds <String- `[]`>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[IsDefault <Boolean?>]`: 
+  - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+  - `[LabelActions <IMicrosoftGraphLabelActionBase- `[]`>]`: 
+    - `[Name <String>]`: 
+  - `[Name <String>]`: 
+  - `[Priority <Int32?>]`: 
+  - `[Sublabels <IMicrosoftGraphSensitivityLabel- `[]`>]`: 
+  - `[ToolTip <String>]`: 
 
-SENSITIVITYPOLICYSETTINGS \<IMicrosoftGraphSensitivityPolicySettings\>: sensitivityPolicySettings
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ApplicableTo \<String\>\]: sensitivityLabelTarget
-  \[DowngradeSensitivityRequiresJustification \<Boolean?\>\]: 
-  \[HelpWebUrl \<String\>\]: 
-  \[IsMandatory \<Boolean?\>\]: 
+  - `[ApplicableTo <String>]`: sensitivityLabelTarget
+  - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
+  - `[HelpWebUrl <String>]`: 
+  - `[IsMandatory <Boolean?>]`: 
 
-THREATASSESSMENTREQUESTS \<IMicrosoftGraphThreatAssessmentRequest\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[Category \<String\>\]: threatCategory
-  \[ContentType \<String\>\]: threatAssessmentContentType
-  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Application \<IMicrosoftGraphIdentity\>\]: identity
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[DisplayName \<String\>\]: The display name of the identity.
+  - `[Category <String>]`: threatCategory
+  - `[ContentType <String>]`: threatAssessmentContentType
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity.
 The display name might not always be available or up to date.
 For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      \[Id \<String\>\]: Unique identifier for the identity.
+      - `[Id <String>]`: Unique identifier for the identity.
 When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
-    \[Device \<IMicrosoftGraphIdentity\>\]: identity
-    \[User \<IMicrosoftGraphIdentity\>\]: identity
-  \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  \[ExpectedAssessment \<String\>\]: threatExpectedAssessment
-  \[RequestSource \<String\>\]: threatAssessmentRequestSource
-  \[Results \<IMicrosoftGraphThreatAssessmentResult\[\]\>\]: A collection of threat assessment results.
+  - `[ExpectedAssessment <String>]`: threatExpectedAssessment
+  - `[RequestSource <String>]`: threatAssessmentRequestSource
+  - `[Results <IMicrosoftGraphThreatAssessmentResult- `[]`>]`: A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-    \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    \[Message \<String\>\]: The result message for each threat assessment.
-    \[ResultType \<String\>\]: threatAssessmentResultType
-  \[Status \<String\>\]: threatAssessmentStatus
+    - `[Message <String>]`: The result message for each threat assessment.
+    - `[ResultType <String>]`: threatAssessmentResultType
+  - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathinformationprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitegetbypathinformationprotection)
+
+
+
 

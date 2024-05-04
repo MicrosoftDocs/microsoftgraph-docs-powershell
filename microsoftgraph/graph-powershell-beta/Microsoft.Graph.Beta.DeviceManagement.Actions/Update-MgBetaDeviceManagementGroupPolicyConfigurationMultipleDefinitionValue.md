@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue
@@ -286,285 +286,288 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ADDED \<IMicrosoftGraphGroupPolicyDefinitionValue\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+ADDED <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ConfigurationType \<GroupPolicyConfigurationType?\>\]: Group Policy Configuration Type
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-  \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
+  - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+  - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Category \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Children \<IMicrosoftGraphGroupPolicyCategory\[\]\>\]: The children categories
-      \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+      - `[Children <IMicrosoftGraphGroupPolicyCategory- `[]`>]`: The children categories
+      - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The group policy definitions associated with the file.
-        \[Description \<String\>\]: The localized description of the policy settings in the ADMX file.
+        - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The group policy definitions associated with the file.
+        - `[Description <String>]`: The localized description of the policy settings in the ADMX file.
 The default value is empty.
-        \[DisplayName \<String\>\]: The localized friendly name of the ADMX file.
-        \[FileName \<String\>\]: The file name of the ADMX file without the path.
+        - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
+        - `[FileName <String>]`: The file name of the ADMX file without the path.
 For example: edge.admx
-        \[LanguageCodes \<String\[\]\>\]: The supported language codes for the ADMX file.
-        \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-        \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-        \[Revision \<String\>\]: The revision version associated with the file.
-        \[TargetNamespace \<String\>\]: Specifies the URI used to identify the namespace within the ADMX file.
-        \[TargetPrefix \<String\>\]: Specifies the logical name that refers to the namespace within the ADMX file.
-      \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The immediate GroupPolicyDefinition children of the category
-      \[DisplayName \<String\>\]: The string id of the category's display name
-      \[IngestionSource \<IngestionSource?\>\]: Category Ingestion source
-      \[IsRoot \<Boolean?\>\]: Defines if the category is a root category
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-      \[Parent \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-    \[CategoryPath \<String\>\]: The localized full category path for the policy.
-    \[ClassType \<GroupPolicyDefinitionClassType?\>\]: Group Policy Definition Class Type.
-    \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+        - `[LanguageCodes <String- `[]`>]`: The supported language codes for the ADMX file.
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+        - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+        - `[Revision <String>]`: The revision version associated with the file.
+        - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
+        - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
+      - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The immediate GroupPolicyDefinition children of the category
+      - `[DisplayName <String>]`: The string id of the category's display name
+      - `[IngestionSource <IngestionSource?>]`: Category Ingestion source
+      - `[IsRoot <Boolean?>]`: Defines if the category is a root category
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+      - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+    - `[CategoryPath <String>]`: The localized full category path for the policy.
+    - `[ClassType <GroupPolicyDefinitionClassType?>]`: Group Policy Definition Class Type.
+    - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-    \[DisplayName \<String\>\]: The localized policy name.
-    \[ExplainText \<String\>\]: The localized explanation or help text associated with the policy.
+    - `[DisplayName <String>]`: The localized policy name.
+    - `[ExplainText <String>]`: The localized explanation or help text associated with the policy.
 The default value is empty.
-    \[GroupPolicyCategoryId \<String\>\]: The category id of the parent category
-    \[HasRelatedDefinitions \<Boolean?\>\]: Signifies whether or not there are related definitions to this definition
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-    \[MinDeviceCspVersion \<String\>\]: Minimum required CSP version for device configuration in this definition
-    \[MinUserCspVersion \<String\>\]: Minimum required CSP version for user configuration in this definition
-    \[NextVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-    \[Presentations \<IMicrosoftGraphGroupPolicyPresentation\[\]\>\]: The group policy presentations associated with the definition.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[GroupPolicyCategoryId <String>]`: The category id of the parent category
+    - `[HasRelatedDefinitions <Boolean?>]`: Signifies whether or not there are related definitions to this definition
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+    - `[MinDeviceCspVersion <String>]`: Minimum required CSP version for device configuration in this definition
+    - `[MinUserCspVersion <String>]`: Minimum required CSP version for user configuration in this definition
+    - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+    - `[Presentations <IMicrosoftGraphGroupPolicyPresentation- `[]`>]`: The group policy presentations associated with the definition.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-      \[Label \<String\>\]: Localized text label for any presentation entity.
+      - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+      - `[Label <String>]`: Localized text label for any presentation entity.
 The default value is empty.
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-    \[PreviousVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[SupportedOn \<String\>\]: Localized string used to specify what operating system or application version is affected by the policy.
-    \[Version \<String\>\]: Setting definition version
-  \[Enabled \<Boolean?\>\]: Enables or disables the associated group policy definition.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-  \[PresentationValues \<IMicrosoftGraphGroupPolicyPresentationValue\[\]\>\]: The associated group policy presentation values with the definition value.
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+    - `[PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
+    - `[Version <String>]`: Setting definition version
+  - `[Enabled <Boolean?>]`: Enables or disables the associated group policy definition.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+  - `[PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue- `[]`>]`: The associated group policy presentation values with the definition value.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-    \[DefinitionValue \<IMicrosoftGraphGroupPolicyDefinitionValue\>\]: The definition value entity stores the value for a single group policy definition.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the object was last modified.
-    \[Presentation \<IMicrosoftGraphGroupPolicyPresentation\>\]: The base entity for the display presentation of any of the additional options in a group policy definition.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+    - `[DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>]`: The definition value entity stores the value for a single group policy definition.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
+    - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-BODYPARAMETER \<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema\>: .
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Added \<IMicrosoftGraphGroupPolicyDefinitionValue\[\]\>\]: 
-    \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Added <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[ConfigurationType \<GroupPolicyConfigurationType?\>\]: Group Policy Configuration Type
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-    \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
+    - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+    - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Category \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+      - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Children \<IMicrosoftGraphGroupPolicyCategory\[\]\>\]: The children categories
-        \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+        - `[Children <IMicrosoftGraphGroupPolicyCategory- `[]`>]`: The children categories
+        - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-          \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-          \[Id \<String\>\]: The unique identifier for an entity.
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The group policy definitions associated with the file.
-          \[Description \<String\>\]: The localized description of the policy settings in the ADMX file.
+          - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The group policy definitions associated with the file.
+          - `[Description <String>]`: The localized description of the policy settings in the ADMX file.
 The default value is empty.
-          \[DisplayName \<String\>\]: The localized friendly name of the ADMX file.
-          \[FileName \<String\>\]: The file name of the ADMX file without the path.
+          - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
+          - `[FileName <String>]`: The file name of the ADMX file without the path.
 For example: edge.admx
-          \[LanguageCodes \<String\[\]\>\]: The supported language codes for the ADMX file.
-          \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-          \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-          \[Revision \<String\>\]: The revision version associated with the file.
-          \[TargetNamespace \<String\>\]: Specifies the URI used to identify the namespace within the ADMX file.
-          \[TargetPrefix \<String\>\]: Specifies the logical name that refers to the namespace within the ADMX file.
-        \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The immediate GroupPolicyDefinition children of the category
-        \[DisplayName \<String\>\]: The string id of the category's display name
-        \[IngestionSource \<IngestionSource?\>\]: Category Ingestion source
-        \[IsRoot \<Boolean?\>\]: Defines if the category is a root category
-        \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-        \[Parent \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-      \[CategoryPath \<String\>\]: The localized full category path for the policy.
-      \[ClassType \<GroupPolicyDefinitionClassType?\>\]: Group Policy Definition Class Type.
-      \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+          - `[LanguageCodes <String- `[]`>]`: The supported language codes for the ADMX file.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+          - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+          - `[Revision <String>]`: The revision version associated with the file.
+          - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
+          - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
+        - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The immediate GroupPolicyDefinition children of the category
+        - `[DisplayName <String>]`: The string id of the category's display name
+        - `[IngestionSource <IngestionSource?>]`: Category Ingestion source
+        - `[IsRoot <Boolean?>]`: Defines if the category is a root category
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+        - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+      - `[CategoryPath <String>]`: The localized full category path for the policy.
+      - `[ClassType <GroupPolicyDefinitionClassType?>]`: Group Policy Definition Class Type.
+      - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-      \[DisplayName \<String\>\]: The localized policy name.
-      \[ExplainText \<String\>\]: The localized explanation or help text associated with the policy.
+      - `[DisplayName <String>]`: The localized policy name.
+      - `[ExplainText <String>]`: The localized explanation or help text associated with the policy.
 The default value is empty.
-      \[GroupPolicyCategoryId \<String\>\]: The category id of the parent category
-      \[HasRelatedDefinitions \<Boolean?\>\]: Signifies whether or not there are related definitions to this definition
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-      \[MinDeviceCspVersion \<String\>\]: Minimum required CSP version for device configuration in this definition
-      \[MinUserCspVersion \<String\>\]: Minimum required CSP version for user configuration in this definition
-      \[NextVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-      \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-      \[Presentations \<IMicrosoftGraphGroupPolicyPresentation\[\]\>\]: The group policy presentations associated with the definition.
-        \[Id \<String\>\]: The unique identifier for an entity.
+      - `[GroupPolicyCategoryId <String>]`: The category id of the parent category
+      - `[HasRelatedDefinitions <Boolean?>]`: Signifies whether or not there are related definitions to this definition
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+      - `[MinDeviceCspVersion <String>]`: Minimum required CSP version for device configuration in this definition
+      - `[MinUserCspVersion <String>]`: Minimum required CSP version for user configuration in this definition
+      - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+      - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+      - `[Presentations <IMicrosoftGraphGroupPolicyPresentation- `[]`>]`: The group policy presentations associated with the definition.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-        \[Label \<String\>\]: Localized text label for any presentation entity.
+        - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+        - `[Label <String>]`: Localized text label for any presentation entity.
 The default value is empty.
-        \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-      \[PreviousVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-      \[SupportedOn \<String\>\]: Localized string used to specify what operating system or application version is affected by the policy.
-      \[Version \<String\>\]: Setting definition version
-    \[Enabled \<Boolean?\>\]: Enables or disables the associated group policy definition.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-    \[PresentationValues \<IMicrosoftGraphGroupPolicyPresentationValue\[\]\>\]: The associated group policy presentation values with the definition value.
-      \[Id \<String\>\]: The unique identifier for an entity.
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+      - `[PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+      - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
+      - `[Version <String>]`: Setting definition version
+    - `[Enabled <Boolean?>]`: Enables or disables the associated group policy definition.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+    - `[PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue- `[]`>]`: The associated group policy presentation values with the definition value.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-      \[DefinitionValue \<IMicrosoftGraphGroupPolicyDefinitionValue\>\]: The definition value entity stores the value for a single group policy definition.
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the object was last modified.
-      \[Presentation \<IMicrosoftGraphGroupPolicyPresentation\>\]: The base entity for the display presentation of any of the additional options in a group policy definition.
-  \[DeletedIds \<String\[\]\>\]: 
-  \[Updated \<IMicrosoftGraphGroupPolicyDefinitionValue\[\]\>\]: 
+      - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+      - `[DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>]`: The definition value entity stores the value for a single group policy definition.
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
+      - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
+  - `[DeletedIds <String- `[]`>]`: 
+  - `[Updated <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>]`: 
 
-INPUTOBJECT \<IDeviceManagementActionsIdentity\>: Identity Parameter
-  \[AlertRecordId \<String\>\]: The unique identifier of alertRecord
-  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
-  \[AppLogCollectionRequestId \<String\>\]: The unique identifier of appLogCollectionRequest
-  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
-  \[CertificateConnectorDetailsId \<String\>\]: The unique identifier of certificateConnectorDetails
-  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
-  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
-  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
-  \[DataSharingConsentId \<String\>\]: The unique identifier of dataSharingConsent
-  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
-  \[DeviceCompliancePolicyId \<String\>\]: The unique identifier of deviceCompliancePolicy
-  \[DeviceComplianceScriptId \<String\>\]: The unique identifier of deviceComplianceScript
-  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
-  \[DeviceCustomAttributeShellScriptId \<String\>\]: The unique identifier of deviceCustomAttributeShellScript
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
-  \[DeviceLogCollectionResponseId \<String\>\]: The unique identifier of deviceLogCollectionResponse
-  \[DeviceManagementCompliancePolicyId \<String\>\]: The unique identifier of deviceManagementCompliancePolicy
-  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[DeviceManagementResourceAccessProfileBaseId \<String\>\]: The unique identifier of deviceManagementResourceAccessProfileBase
-  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
-  \[DeviceManagementScriptId \<String\>\]: The unique identifier of deviceManagementScript
-  \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
-  \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
-  \[DeviceShellScriptId \<String\>\]: The unique identifier of deviceShellScript
-  \[EmbeddedSimActivationCodePoolId \<String\>\]: The unique identifier of embeddedSIMActivationCodePool
-  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
-  \[GroupPolicyConfigurationId \<String\>\]: The unique identifier of groupPolicyConfiguration
-  \[GroupPolicyMigrationReportId \<String\>\]: The unique identifier of groupPolicyMigrationReport
-  \[GroupPolicyUploadedDefinitionFileId \<String\>\]: The unique identifier of groupPolicyUploadedDefinitionFile
-  \[IntuneBrandingProfileId \<String\>\]: The unique identifier of intuneBrandingProfile
-  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
-  \[MicrosoftTunnelServerId \<String\>\]: The unique identifier of microsoftTunnelServer
-  \[MicrosoftTunnelServerLogCollectionResponseId \<String\>\]: The unique identifier of microsoftTunnelServerLogCollectionResponse
-  \[MicrosoftTunnelSiteId \<String\>\]: The unique identifier of microsoftTunnelSite
-  \[MobileAppTroubleshootingEventId \<String\>\]: The unique identifier of mobileAppTroubleshootingEvent
-  \[NotificationMessageTemplateId \<String\>\]: The unique identifier of notificationMessageTemplate
-  \[OperationApprovalRequestId \<String\>\]: The unique identifier of operationApprovalRequest
-  \[PrivilegeManagementElevationRequestId \<String\>\]: The unique identifier of privilegeManagementElevationRequest
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[RoleScopeTagId \<String\>\]: The unique identifier of roleScopeTag
-  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
-  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
-  \[WindowsDriverUpdateProfileId \<String\>\]: The unique identifier of windowsDriverUpdateProfile
-  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
-  \[WindowsQualityUpdateProfileId \<String\>\]: The unique identifier of windowsQualityUpdateProfile
-  \[ZebraFotaDeploymentId \<String\>\]: The unique identifier of zebraFotaDeployment
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
+  - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
+  - `[CertificateConnectorDetailsId <String>]`: The unique identifier of certificateConnectorDetails
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+  - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
+  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+  - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+  - `[DeviceComplianceScriptId <String>]`: The unique identifier of deviceComplianceScript
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceCustomAttributeShellScriptId <String>]`: The unique identifier of deviceCustomAttributeShellScript
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementCompliancePolicyId <String>]`: The unique identifier of deviceManagementCompliancePolicy
+  - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: The unique identifier of deviceManagementResourceAccessProfileBase
+  - `[DeviceManagementReusablePolicySettingId <String>]`: The unique identifier of deviceManagementReusablePolicySetting
+  - `[DeviceManagementScriptId <String>]`: The unique identifier of deviceManagementScript
+  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
+  - `[DeviceShellScriptId <String>]`: The unique identifier of deviceShellScript
+  - `[EmbeddedSimActivationCodePoolId <String>]`: The unique identifier of embeddedSIMActivationCodePool
+  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+  - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+  - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+  - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
+  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: The unique identifier of microsoftTunnelServerLogCollectionResponse
+  - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
+  - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+  - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+  - `[OperationApprovalRequestId <String>]`: The unique identifier of operationApprovalRequest
+  - `[PrivilegeManagementElevationRequestId <String>]`: The unique identifier of privilegeManagementElevationRequest
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
+  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+  - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
+  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
+  - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-UPDATED \<IMicrosoftGraphGroupPolicyDefinitionValue\[\]\>: .
-  \[Id \<String\>\]: The unique identifier for an entity.
+UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ConfigurationType \<GroupPolicyConfigurationType?\>\]: Group Policy Configuration Type
-  \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-  \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
+  - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+  - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[Category \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Children \<IMicrosoftGraphGroupPolicyCategory\[\]\>\]: The children categories
-      \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+      - `[Children <IMicrosoftGraphGroupPolicyCategory- `[]`>]`: The children categories
+      - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Id \<String\>\]: The unique identifier for an entity.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-        \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The group policy definitions associated with the file.
-        \[Description \<String\>\]: The localized description of the policy settings in the ADMX file.
+        - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The group policy definitions associated with the file.
+        - `[Description <String>]`: The localized description of the policy settings in the ADMX file.
 The default value is empty.
-        \[DisplayName \<String\>\]: The localized friendly name of the ADMX file.
-        \[FileName \<String\>\]: The file name of the ADMX file without the path.
+        - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
+        - `[FileName <String>]`: The file name of the ADMX file without the path.
 For example: edge.admx
-        \[LanguageCodes \<String\[\]\>\]: The supported language codes for the ADMX file.
-        \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-        \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-        \[Revision \<String\>\]: The revision version associated with the file.
-        \[TargetNamespace \<String\>\]: Specifies the URI used to identify the namespace within the ADMX file.
-        \[TargetPrefix \<String\>\]: Specifies the logical name that refers to the namespace within the ADMX file.
-      \[Definitions \<IMicrosoftGraphGroupPolicyDefinition\[\]\>\]: The immediate GroupPolicyDefinition children of the category
-      \[DisplayName \<String\>\]: The string id of the category's display name
-      \[IngestionSource \<IngestionSource?\>\]: Category Ingestion source
-      \[IsRoot \<Boolean?\>\]: Defines if the category is a root category
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-      \[Parent \<IMicrosoftGraphGroupPolicyCategory\>\]: The category entity stores the category of a group policy definition
-    \[CategoryPath \<String\>\]: The localized full category path for the policy.
-    \[ClassType \<GroupPolicyDefinitionClassType?\>\]: Group Policy Definition Class Type.
-    \[DefinitionFile \<IMicrosoftGraphGroupPolicyDefinitionFile\>\]: The entity represents an ADMX (Administrative Template) XML file.
+        - `[LanguageCodes <String- `[]`>]`: The supported language codes for the ADMX file.
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+        - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+        - `[Revision <String>]`: The revision version associated with the file.
+        - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
+        - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
+      - `[Definitions <IMicrosoftGraphGroupPolicyDefinition- `[]`>]`: The immediate GroupPolicyDefinition children of the category
+      - `[DisplayName <String>]`: The string id of the category's display name
+      - `[IngestionSource <IngestionSource?>]`: Category Ingestion source
+      - `[IsRoot <Boolean?>]`: Defines if the category is a root category
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+      - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
+    - `[CategoryPath <String>]`: The localized full category path for the policy.
+    - `[ClassType <GroupPolicyDefinitionClassType?>]`: Group Policy Definition Class Type.
+    - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-    \[DisplayName \<String\>\]: The localized policy name.
-    \[ExplainText \<String\>\]: The localized explanation or help text associated with the policy.
+    - `[DisplayName <String>]`: The localized policy name.
+    - `[ExplainText <String>]`: The localized explanation or help text associated with the policy.
 The default value is empty.
-    \[GroupPolicyCategoryId \<String\>\]: The category id of the parent category
-    \[HasRelatedDefinitions \<Boolean?\>\]: Signifies whether or not there are related definitions to this definition
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-    \[MinDeviceCspVersion \<String\>\]: Minimum required CSP version for device configuration in this definition
-    \[MinUserCspVersion \<String\>\]: Minimum required CSP version for user configuration in this definition
-    \[NextVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[PolicyType \<GroupPolicyType?\>\]: Type of Group Policy File or Definition.
-    \[Presentations \<IMicrosoftGraphGroupPolicyPresentation\[\]\>\]: The group policy presentations associated with the definition.
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[GroupPolicyCategoryId <String>]`: The category id of the parent category
+    - `[HasRelatedDefinitions <Boolean?>]`: Signifies whether or not there are related definitions to this definition
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+    - `[MinDeviceCspVersion <String>]`: Minimum required CSP version for device configuration in this definition
+    - `[MinUserCspVersion <String>]`: Minimum required CSP version for user configuration in this definition
+    - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
+    - `[Presentations <IMicrosoftGraphGroupPolicyPresentation- `[]`>]`: The group policy presentations associated with the definition.
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[Definition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-      \[Label \<String\>\]: Localized text label for any presentation entity.
+      - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+      - `[Label <String>]`: Localized text label for any presentation entity.
 The default value is empty.
-      \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-    \[PreviousVersionDefinition \<IMicrosoftGraphGroupPolicyDefinition\>\]: The entity describes all of the information about a single group policy.
-    \[SupportedOn \<String\>\]: Localized string used to specify what operating system or application version is affected by the policy.
-    \[Version \<String\>\]: Setting definition version
-  \[Enabled \<Boolean?\>\]: Enables or disables the associated group policy definition.
-  \[LastModifiedDateTime \<DateTime?\>\]: The date and time the entity was last modified.
-  \[PresentationValues \<IMicrosoftGraphGroupPolicyPresentationValue\[\]\>\]: The associated group policy presentation values with the definition value.
-    \[Id \<String\>\]: The unique identifier for an entity.
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+    - `[PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
+    - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
+    - `[Version <String>]`: Setting definition version
+  - `[Enabled <Boolean?>]`: Enables or disables the associated group policy definition.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
+  - `[PresentationValues <IMicrosoftGraphGroupPolicyPresentationValue- `[]`>]`: The associated group policy presentation values with the definition value.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[CreatedDateTime \<DateTime?\>\]: The date and time the object was created.
-    \[DefinitionValue \<IMicrosoftGraphGroupPolicyDefinitionValue\>\]: The definition value entity stores the value for a single group policy definition.
-    \[LastModifiedDateTime \<DateTime?\>\]: The date and time the object was last modified.
-    \[Presentation \<IMicrosoftGraphGroupPolicyPresentation\>\]: The base entity for the display presentation of any of the additional options in a group policy definition.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
+    - `[DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>]`: The definition value entity stores the value for a single group policy definition.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
+    - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/update-mgbetadevicemanagementgrouppolicyconfigurationmultipledefinitionvalue)
+
+
+
 
