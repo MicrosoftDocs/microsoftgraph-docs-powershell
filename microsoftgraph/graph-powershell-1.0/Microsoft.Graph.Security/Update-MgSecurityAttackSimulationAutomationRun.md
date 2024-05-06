@@ -50,6 +50,8 @@ Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property runs in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,7 +374,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomationrun)
-
 
 
 

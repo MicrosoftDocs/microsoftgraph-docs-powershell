@@ -31,6 +31,8 @@ Update-MgBetaCompliance -BodyParameter <IMicrosoftGraphCompliance> [-ResponseHea
 ## DESCRIPTION
 Update compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15833,7 +15835,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacompliance)
-
 
 
 

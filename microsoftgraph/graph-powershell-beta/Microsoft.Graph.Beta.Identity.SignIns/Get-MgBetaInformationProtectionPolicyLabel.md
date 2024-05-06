@@ -37,6 +37,8 @@ Get-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentit
 ## DESCRIPTION
 Retrieve the properties and relationships of an informationProtectionLabel object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -368,7 +370,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0)
-
 
 
 

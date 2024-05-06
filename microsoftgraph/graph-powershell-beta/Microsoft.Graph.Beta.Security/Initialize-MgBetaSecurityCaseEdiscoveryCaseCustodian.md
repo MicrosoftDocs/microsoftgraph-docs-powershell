@@ -35,13 +35,17 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ## EXAMPLES
-### Example 1: Using the Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
 ```
 This example shows how to use the Initialize-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

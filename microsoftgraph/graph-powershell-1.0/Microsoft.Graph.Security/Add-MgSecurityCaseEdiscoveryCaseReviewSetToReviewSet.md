@@ -59,19 +59,24 @@ The location provides a URL that will return a Add to review set operation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-ediscoveryreviewset-addtoreviewset-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Security
+
 $params = @{
-	Search = @{
-		Id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
+	search = @{
+		id = "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
 	}
-	AdditionalDataOptions = "linkedFiles"
+	additionalDataOptions = "linkedFiles"
 }
+
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
+
 ```
 This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

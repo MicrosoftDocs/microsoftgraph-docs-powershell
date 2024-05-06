@@ -32,6 +32,8 @@ Update-MgBetaSecurityThreatSubmission -BodyParameter <IMicrosoftGraphSecurityThr
 ## DESCRIPTION
 Update the navigation property threatSubmission in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -559,7 +561,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmission)
-
 
 
 

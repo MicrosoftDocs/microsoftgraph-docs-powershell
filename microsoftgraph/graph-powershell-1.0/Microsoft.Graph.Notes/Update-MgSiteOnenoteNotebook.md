@@ -54,6 +54,8 @@ Update-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property notebooks in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -921,7 +923,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mgsiteonenotenotebook)
-
 
 
 

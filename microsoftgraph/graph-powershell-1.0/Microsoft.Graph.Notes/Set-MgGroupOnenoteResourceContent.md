@@ -32,6 +32,8 @@ Set-MgGroupOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>]
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType
@@ -237,7 +239,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/set-mggrouponenoteresourcecontent)
-
 
 
 

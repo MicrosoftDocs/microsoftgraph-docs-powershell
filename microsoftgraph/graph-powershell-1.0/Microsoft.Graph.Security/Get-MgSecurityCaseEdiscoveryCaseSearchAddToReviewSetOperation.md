@@ -33,6 +33,8 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation -InputObject <ISec
 ## DESCRIPTION
 Adds the results of the eDiscovery search to the specified reviewSet.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -237,7 +239,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchaddtoreviewsetoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesearchaddtoreviewsetoperation)
-
 
 
 

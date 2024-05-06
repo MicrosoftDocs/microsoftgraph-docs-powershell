@@ -47,7 +47,7 @@ Retrieve the properties and relationships of the school object.
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationSchool -EducationSchoolId $educationSchoolId
+Get-MgBetaEducationSchool
 
 ```
 This example shows how to use the Get-MgBetaEducationSchool Cmdlet.

@@ -51,6 +51,8 @@ New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to historyItems for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -547,7 +549,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguseractivityhistoryitem)
-
 
 
 

@@ -31,6 +31,8 @@ Get-MgBetaReportAzureAdApplicationSignInSummary -InputObject <IReportsIdentity> 
 ## DESCRIPTION
 Invoke function getAzureADApplicationSignInSummary
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -294,7 +296,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)
-
 
 
 

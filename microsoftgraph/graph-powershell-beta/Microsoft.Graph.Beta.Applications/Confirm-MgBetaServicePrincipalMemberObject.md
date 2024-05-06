@@ -48,6 +48,8 @@ Confirm-MgBetaServicePrincipalMemberObject -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,7 +263,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaserviceprincipalmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/confirm-mgbetaserviceprincipalmemberobject)
-
 
 
 

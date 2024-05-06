@@ -32,6 +32,8 @@ Get-MgBetaReportEmailAppUsageVersionUserCount -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function getEmailAppUsageVersionsUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -205,7 +207,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailappusageversionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailappusageversionusercount)
-
 
 
 

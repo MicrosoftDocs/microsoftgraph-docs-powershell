@@ -29,6 +29,8 @@ Remove-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property quota for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -208,7 +210,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionquota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionquota)
-
 
 
 

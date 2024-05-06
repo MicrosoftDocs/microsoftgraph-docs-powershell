@@ -31,6 +31,8 @@ Get-MgBetaReportEmailActivityUserCount -InputObject <IReportsIdentity> -OutFile 
 ## DESCRIPTION
 Invoke function getEmailActivityUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -204,7 +206,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailactivityusercount)
-
 
 
 

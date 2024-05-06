@@ -44,6 +44,8 @@ Update-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 ## DESCRIPTION
 Update the navigation property members in planner
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,7 +304,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannerrostermember)
-
 
 
 

@@ -33,6 +33,8 @@ Remove-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityId
 ## DESCRIPTION
 Delete navigation property siteSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -283,7 +285,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasecustodiansitesource)
-
 
 
 

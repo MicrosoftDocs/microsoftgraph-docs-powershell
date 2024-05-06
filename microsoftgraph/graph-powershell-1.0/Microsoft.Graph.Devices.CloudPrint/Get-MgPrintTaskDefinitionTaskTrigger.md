@@ -34,6 +34,8 @@ Get-MgPrintTaskDefinitionTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -191,7 +193,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontasktrigger)
-
 
 
 

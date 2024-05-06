@@ -33,6 +33,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject 
 ## DESCRIPTION
 Delete navigation property unifiedGroupSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -305,7 +307,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource)
-
 
 
 

@@ -33,6 +33,8 @@ Access package containing this policy.
 Read-only.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -229,7 +231,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicyaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicyaccesspackage)
-
 
 
 

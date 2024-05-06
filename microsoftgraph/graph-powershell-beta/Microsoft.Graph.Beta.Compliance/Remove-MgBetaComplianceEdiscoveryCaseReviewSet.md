@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property reviewSets for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId
@@ -221,7 +223,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewset)
-
 
 
 

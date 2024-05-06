@@ -34,6 +34,8 @@ Update-MgBetaPrint -BodyParameter <IMicrosoftGraphPrint> [-ResponseHeadersVariab
 ## DESCRIPTION
 Update print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -30743,7 +30745,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprint)
-
 
 
 

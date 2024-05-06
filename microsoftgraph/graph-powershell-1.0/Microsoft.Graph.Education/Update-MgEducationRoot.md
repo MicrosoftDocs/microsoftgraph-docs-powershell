@@ -32,6 +32,8 @@ Update-MgEducationRoot -BodyParameter <IMicrosoftGraphEducationRoot> [-ResponseH
 ## DESCRIPTION
 Update education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -25237,7 +25239,6 @@ Supports $filter.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationroot)
-
 
 
 

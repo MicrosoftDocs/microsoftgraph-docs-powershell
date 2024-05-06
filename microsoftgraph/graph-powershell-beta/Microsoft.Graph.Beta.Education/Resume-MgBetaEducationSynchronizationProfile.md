@@ -30,13 +30,17 @@ Resume-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
 Resume the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
-### Example 1: Using the Resume-MgBetaEducationSynchronizationProfile Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
+
 Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+
 ```
 This example shows how to use the Resume-MgBetaEducationSynchronizationProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

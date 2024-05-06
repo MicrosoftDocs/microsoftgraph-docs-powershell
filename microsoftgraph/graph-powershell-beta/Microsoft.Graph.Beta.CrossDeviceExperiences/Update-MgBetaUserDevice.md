@@ -73,6 +73,8 @@ Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property devices in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -1319,7 +1321,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdevice)
-
 
 
 

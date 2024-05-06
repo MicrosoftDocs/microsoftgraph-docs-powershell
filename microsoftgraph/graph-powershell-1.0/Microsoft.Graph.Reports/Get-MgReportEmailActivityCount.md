@@ -31,6 +31,8 @@ Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Invoke function getEmailActivityCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -182,7 +184,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount)
-
 
 
 

@@ -34,6 +34,8 @@ Get-MgGroupTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty 
 The application that is linked to the tab.
 This can't be changed after tab creation.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ChannelId
@@ -226,7 +228,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchanneltabteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchanneltabteamapp)
-
 
 
 

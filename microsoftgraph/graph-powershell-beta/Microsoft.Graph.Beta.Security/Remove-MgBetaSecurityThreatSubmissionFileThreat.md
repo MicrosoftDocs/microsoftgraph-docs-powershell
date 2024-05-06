@@ -29,6 +29,8 @@ Remove-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Delete navigation property fileThreats for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FileThreatSubmissionId
@@ -271,7 +273,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionfilethreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmissionfilethreat)
-
 
 
 

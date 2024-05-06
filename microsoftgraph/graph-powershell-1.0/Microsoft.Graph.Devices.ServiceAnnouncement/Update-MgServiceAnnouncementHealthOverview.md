@@ -48,6 +48,8 @@ Update-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnounce
 ## DESCRIPTION
 Update the navigation property healthOverviews in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -338,7 +340,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/update-mgserviceannouncementhealthoverview)
-
 
 
 

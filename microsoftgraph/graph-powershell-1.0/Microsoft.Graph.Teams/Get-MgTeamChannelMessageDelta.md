@@ -34,6 +34,8 @@ Get-MgTeamChannelMessageDelta -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -347,7 +349,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagedelta)
-
 
 
 

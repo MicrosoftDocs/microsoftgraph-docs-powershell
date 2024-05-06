@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceVendor -InputObject <IFinancialsIdentit
 ## DESCRIPTION
 Get vendor from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -209,7 +211,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicevendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicevendor)
-
 
 
 

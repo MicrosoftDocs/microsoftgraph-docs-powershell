@@ -56,6 +56,8 @@ Update-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncemen
 ## DESCRIPTION
 Update the navigation property messages in admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActionRequiredByDateTime
@@ -548,7 +550,6 @@ VIEWPOINT `<IMicrosoftGraphServiceUpdateMessageViewpoint>`: serviceUpdateMessage
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementmessage)
-
 
 
 

@@ -30,6 +30,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIden
 ## DESCRIPTION
 Delete navigation property files for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -302,7 +304,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasereviewsetfile)
-
 
 
 

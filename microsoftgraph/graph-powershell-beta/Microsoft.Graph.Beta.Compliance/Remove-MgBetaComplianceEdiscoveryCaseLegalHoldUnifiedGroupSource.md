@@ -30,6 +30,8 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <I
 ## DESCRIPTION
 Delete navigation property unifiedGroupSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId
@@ -237,7 +239,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
-
 
 
 

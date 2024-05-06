@@ -30,13 +30,17 @@ Remove-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMat
 Delete a case object.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCase Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
+
 ```
 This example shows how to use the Remove-MgBetaComplianceEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

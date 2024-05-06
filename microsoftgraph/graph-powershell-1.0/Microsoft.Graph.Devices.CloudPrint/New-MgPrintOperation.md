@@ -31,6 +31,8 @@ New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to operations for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -225,7 +227,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation)
-
 
 
 

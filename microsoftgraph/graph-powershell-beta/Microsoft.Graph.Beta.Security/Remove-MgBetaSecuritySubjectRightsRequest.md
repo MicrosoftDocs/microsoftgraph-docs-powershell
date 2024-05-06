@@ -32,6 +32,8 @@ Remove-MgBetaSecuritySubjectRightsRequest -InputObject <ISecurityIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -274,7 +276,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysubjectrightsrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysubjectrightsrequest)
-
 
 
 

@@ -54,6 +54,8 @@ Update-MgBetaSiteOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Update the navigation property pages in sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -799,7 +801,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasiteonenotepage)
-
 
 
 

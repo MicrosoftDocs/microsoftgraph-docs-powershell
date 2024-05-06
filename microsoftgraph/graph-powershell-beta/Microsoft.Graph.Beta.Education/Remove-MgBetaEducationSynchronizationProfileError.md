@@ -30,6 +30,8 @@ Remove-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdenti
 ## DESCRIPTION
 Delete navigation property errors for education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EducationSynchronizationErrorId
@@ -223,7 +225,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofileerror)
-
 
 
 

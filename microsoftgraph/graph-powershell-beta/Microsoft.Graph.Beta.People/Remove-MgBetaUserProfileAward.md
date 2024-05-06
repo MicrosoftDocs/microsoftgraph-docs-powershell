@@ -30,13 +30,17 @@ Remove-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Deletes a personAward object from a user's profile.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaUserProfileAward Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 Remove-MgBetaUserProfileAward -UserId $userId -PersonAwardId $personAwardId
+
 ```
 This example shows how to use the Remove-MgBetaUserProfileAward Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

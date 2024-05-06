@@ -21,6 +21,8 @@ Remove-MgBetaSecurityThreatSubmission [-IfMatch <String>] [-ResponseHeadersVaria
 ## DESCRIPTION
 Delete navigation property threatSubmission for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -143,7 +145,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritythreatsubmission)
-
 
 
 

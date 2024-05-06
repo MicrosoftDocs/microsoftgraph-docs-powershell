@@ -48,6 +48,8 @@ Confirm-MgDirectoryDeletedItemMemberObject -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,7 +255,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectorydeleteditemmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectorydeleteditemmemberobject)
-
 
 
 

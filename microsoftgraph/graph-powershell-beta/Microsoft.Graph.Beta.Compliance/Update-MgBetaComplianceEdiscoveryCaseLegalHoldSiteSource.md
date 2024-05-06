@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplian
 ## DESCRIPTION
 Update the navigation property siteSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15548,7 +15550,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdsitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycaselegalholdsitesource)
-
 
 
 

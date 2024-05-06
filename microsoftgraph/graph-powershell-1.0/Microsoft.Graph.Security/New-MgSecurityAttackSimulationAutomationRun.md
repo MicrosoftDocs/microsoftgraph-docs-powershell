@@ -48,6 +48,8 @@ New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Create new navigation property to runs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,7 +357,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationautomationrun)
-
 
 
 

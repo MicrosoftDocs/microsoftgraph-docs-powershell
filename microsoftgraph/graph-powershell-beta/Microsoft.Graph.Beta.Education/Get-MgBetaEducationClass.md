@@ -56,7 +56,7 @@ If you're using the delegated token, the user will only see classes in which the
 
 Import-Module Microsoft.Graph.Beta.Education
 
-Get-MgBetaEducationClass -EducationClassId $educationClassId
+Get-MgBetaEducationClass
 
 ```
 This example shows how to use the Get-MgBetaEducationClass Cmdlet.

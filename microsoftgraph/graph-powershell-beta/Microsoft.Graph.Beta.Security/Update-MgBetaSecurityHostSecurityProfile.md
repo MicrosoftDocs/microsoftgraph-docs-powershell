@@ -53,6 +53,8 @@ Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property hostSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -663,7 +665,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile)
-
 
 
 

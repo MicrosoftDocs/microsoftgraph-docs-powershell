@@ -44,6 +44,8 @@ Get-MgReportM365AppUserDetail -InputObject <IReportsIdentity> -OutFile <String>
 ## DESCRIPTION
 Invoke function getM365AppUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -210,7 +212,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appuserdetail)
-
 
 
 

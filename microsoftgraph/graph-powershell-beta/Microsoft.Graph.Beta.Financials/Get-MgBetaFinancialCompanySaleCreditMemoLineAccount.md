@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleCreditMemoLineAccount -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get account from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -209,7 +211,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemolineaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemolineaccount)
-
 
 
 

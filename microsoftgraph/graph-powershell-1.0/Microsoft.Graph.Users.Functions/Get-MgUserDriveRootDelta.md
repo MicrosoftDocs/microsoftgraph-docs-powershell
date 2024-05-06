@@ -50,6 +50,8 @@ Get-MgUserDriveRootDelta -InputObject <IUsersFunctionsIdentity> [-ExpandProperty
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -371,7 +373,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdriverootdelta)
-
 
 
 

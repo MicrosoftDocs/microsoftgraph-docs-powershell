@@ -31,19 +31,24 @@ Remove-MgBetaSecurityTiIndicatorByExternalId
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
 ## EXAMPLES
-### Example 1: Using the Remove-MgBetaSecurityTiIndicatorByExternalId Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
+
 $params = @{
-	Value = @(
-		"externalId-value1"
-		"externalId-value2"
-	)
+	value = @(
+	"externalId-value1"
+"externalId-value2"
+)
 }
+
 Remove-MgBetaSecurityTiIndicatorByExternalId -BodyParameter $params
+
 ```
 This example shows how to use the Remove-MgBetaSecurityTiIndicatorByExternalId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

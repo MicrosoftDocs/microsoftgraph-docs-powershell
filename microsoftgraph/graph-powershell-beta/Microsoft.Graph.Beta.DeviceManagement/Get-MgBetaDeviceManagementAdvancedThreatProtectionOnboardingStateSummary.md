@@ -21,6 +21,8 @@ Get-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-Expan
 ## DESCRIPTION
 The summary state of ATP onboarding state for this account.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -112,7 +114,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary)
-
 
 
 

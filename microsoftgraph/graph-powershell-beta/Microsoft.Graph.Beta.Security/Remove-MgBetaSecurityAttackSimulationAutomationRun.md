@@ -33,6 +33,8 @@ Remove-MgBetaSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property runs for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -290,7 +292,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationautomationrun)
-
 
 
 

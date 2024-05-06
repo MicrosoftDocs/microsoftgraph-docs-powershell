@@ -34,6 +34,8 @@ Get-MgUserDriveListContentTypeCompatibleHubContentType -InputObject <IUsersFunct
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -294,7 +296,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistcontenttypecompatiblehubcontenttype)
-
 
 
 

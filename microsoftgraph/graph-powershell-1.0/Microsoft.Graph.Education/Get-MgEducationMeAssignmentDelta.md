@@ -25,6 +25,8 @@ Get-MgEducationMeAssignmentDelta [-ExpandProperty <String[]>] [-Filter <String>]
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -237,7 +239,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentdelta)
-
 
 
 

@@ -31,6 +31,19 @@ Complete a recommendation object and update its status to completedByUser.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-complete-permissions.md)]
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
+Complete-MgBetaDirectoryRecommendation -RecommendationId $recommendationId
+
+```
+This example shows how to use the Complete-MgBetaDirectoryRecommendation Cmdlet.
+
+
 ## PARAMETERS
 
 ### -Headers
@@ -210,7 +223,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation)
 
 [https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-1.0)
-
 
 
 

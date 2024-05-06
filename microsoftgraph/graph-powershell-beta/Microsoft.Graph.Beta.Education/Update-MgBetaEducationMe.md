@@ -45,6 +45,8 @@ Update-MgBetaEducationMe -BodyParameter <IMicrosoftGraphEducationUser> [-Respons
 ## DESCRIPTION
 Update the navigation property me in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -40238,7 +40240,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationme)
-
 
 
 

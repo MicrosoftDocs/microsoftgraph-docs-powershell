@@ -54,6 +54,8 @@ New-MgBetaUserOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to pages for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -784,7 +786,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/new-mgbetauseronenotepage)
-
 
 
 

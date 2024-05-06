@@ -33,6 +33,8 @@ Start-MgBetaSecurityHuntingQuery
 ## DESCRIPTION
 Invoke action runHuntingQuery
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -180,7 +182,6 @@ BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostReq
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery)
-
 
 
 

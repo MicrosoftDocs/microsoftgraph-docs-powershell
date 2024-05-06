@@ -36,22 +36,30 @@ To get one of these navigation properties, use the corresponding GET method on t
 See the methods exposed by profile.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserProfile Cmdlet
+### Example 1: GET a user's profile
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
+
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaUserProfile Cmdlet
+This example will get a user's profile
+
+### Example 2: Expand names and skills collection and select properties within the entities
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)" 
+
 ```
-This example shows how to use the Get-MgBetaUserProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+This example will expand names and skills collection and select properties within the entities
+
 
 ## PARAMETERS
 

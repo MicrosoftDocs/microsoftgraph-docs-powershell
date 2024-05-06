@@ -32,6 +32,8 @@ Set-MgBetaGroupOnenoteSectionPageContent -InputObject <INotesIdentity> [-Data <S
 ## DESCRIPTION
 The page's HTML content.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType
@@ -252,7 +254,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenotesectionpagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/set-mgbetagrouponenotesectionpagecontent)
-
 
 
 

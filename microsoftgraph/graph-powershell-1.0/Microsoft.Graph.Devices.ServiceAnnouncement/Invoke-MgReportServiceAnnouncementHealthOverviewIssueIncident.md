@@ -32,6 +32,8 @@ Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
 ## DESCRIPTION
 Invoke function incidentReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -180,7 +182,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementhealthoverviewissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementhealthoverviewissueincident)
-
 
 
 

@@ -22,6 +22,8 @@ Get-MgBetaPrintPrinterShareAllowedUser -PrinterShareId <String> [-ExpandProperty
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -251,7 +253,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharealloweduser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharealloweduser)
 
 [https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-list-allowedusers?view=graph-rest-1.0)
-
 
 
 

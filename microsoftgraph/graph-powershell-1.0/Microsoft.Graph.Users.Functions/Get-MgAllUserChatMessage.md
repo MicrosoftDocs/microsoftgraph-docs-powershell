@@ -34,6 +34,8 @@ Get-MgAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-Expan
 ## DESCRIPTION
 Invoke function getAllMessages
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -294,7 +296,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mgalluserchatmessage)
-
 
 
 

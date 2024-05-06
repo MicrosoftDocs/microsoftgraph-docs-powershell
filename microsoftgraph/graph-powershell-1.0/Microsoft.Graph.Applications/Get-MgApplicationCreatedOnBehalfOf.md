@@ -34,6 +34,8 @@ Get-MgApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-Expand
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ApplicationId
@@ -186,7 +188,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof)
-
 
 
 

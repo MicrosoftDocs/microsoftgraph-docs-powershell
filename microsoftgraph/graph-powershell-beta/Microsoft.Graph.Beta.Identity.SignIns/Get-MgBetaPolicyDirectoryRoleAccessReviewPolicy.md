@@ -21,6 +21,8 @@ Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Get directoryRoleAccessReviewPolicy from policies
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -112,7 +114,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydirectoryroleaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydirectoryroleaccessreviewpolicy)
-
 
 
 

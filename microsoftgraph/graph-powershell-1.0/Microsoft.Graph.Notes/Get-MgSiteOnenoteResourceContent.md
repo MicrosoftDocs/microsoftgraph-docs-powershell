@@ -32,6 +32,8 @@ Get-MgSiteOnenoteResourceContent -InputObject <INotesIdentity> -OutFile <String>
 ## DESCRIPTION
 The content stream
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -187,7 +189,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresourcecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenoteresourcecontent)
-
 
 
 

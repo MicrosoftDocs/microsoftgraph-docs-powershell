@@ -31,6 +31,8 @@ Get-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <ISec
 The parent label associated with a child label.
 Null if the label has no parent.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -242,7 +244,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionsensitivitylabelparent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionsensitivitylabelparent)
-
 
 
 

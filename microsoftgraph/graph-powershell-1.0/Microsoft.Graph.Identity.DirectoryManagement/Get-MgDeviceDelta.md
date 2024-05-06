@@ -24,6 +24,8 @@ Get-MgDeviceDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <St
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -236,7 +238,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicedelta)
-
 
 
 

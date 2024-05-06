@@ -53,7 +53,7 @@ $params = @{
 	"install"
 )
 reservedKeywords = @(
-"Contoso"
+"Unique keyword"
 )
 matchSimilarKeywords = $true
 }

@@ -30,6 +30,8 @@ Read-only.
 Nullable.
 Supports $expand.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -260,7 +262,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/get-mgbetauserdeviceregisteredownerbyref)
 
 [https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-list-registeredowners?view=graph-rest-1.0)
-
 
 
 

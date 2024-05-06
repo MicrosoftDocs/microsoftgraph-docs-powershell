@@ -39,6 +39,19 @@ Get-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignInsId
 Read the properties and relationships of an authenticationEventListener object.
 The @odata.type property in the response object indicates the type of the authenticationEventListener object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityCustomAuthenticationExtension
+
+```
+This example shows how to use the Get-MgBetaIdentityCustomAuthenticationExtension Cmdlet.
+
+
 ## PARAMETERS
 
 ### -All
@@ -370,7 +383,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-customauthenticationextensions?view=graph-rest-1.0)
-
 
 
 

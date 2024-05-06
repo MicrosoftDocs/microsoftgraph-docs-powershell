@@ -53,6 +53,8 @@ Add-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile
 ## DESCRIPTION
 Invoke action addLanguageFiles
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,7 +317,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilelanguagefile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/add-mgbetadevicemanagementgrouppolicyuploadeddefinitionfilelanguagefile)
-
 
 
 

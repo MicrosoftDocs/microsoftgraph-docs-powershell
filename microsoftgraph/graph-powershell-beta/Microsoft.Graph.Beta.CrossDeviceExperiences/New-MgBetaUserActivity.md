@@ -54,6 +54,8 @@ New-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to activities for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivationUrl
@@ -620,7 +622,6 @@ Short text description of the user's unique activity (for example, document name
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauseractivity)
-
 
 
 

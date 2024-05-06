@@ -54,6 +54,8 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 ## DESCRIPTION
 Update the navigation property participants in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -504,7 +506,6 @@ RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant)
-
 
 
 

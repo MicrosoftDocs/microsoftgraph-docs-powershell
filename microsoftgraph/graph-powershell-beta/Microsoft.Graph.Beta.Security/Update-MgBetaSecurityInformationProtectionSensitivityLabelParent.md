@@ -49,6 +49,8 @@ Update-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <I
 ## DESCRIPTION
 Update the navigation property parent in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -496,7 +498,6 @@ False if the label is a parent with child labels.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionsensitivitylabelparent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionsensitivitylabelparent)
-
 
 
 

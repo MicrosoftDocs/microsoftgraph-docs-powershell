@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleInvoiceCustomer -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Get customer from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -209,7 +211,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicecustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicecustomer)
-
 
 
 

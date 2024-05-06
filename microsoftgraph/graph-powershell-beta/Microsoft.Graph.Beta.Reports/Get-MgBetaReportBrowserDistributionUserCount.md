@@ -29,6 +29,8 @@ Get-MgBetaReportBrowserDistributionUserCount -InputObject <IReportsIdentity> -Ou
 ## DESCRIPTION
 Invoke function getBrowserDistributionUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -202,7 +204,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserdistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserdistributionusercount)
-
 
 
 

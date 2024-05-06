@@ -30,6 +30,8 @@ Set-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileContent -InputObject <ISecurity
 ## DESCRIPTION
 Update content for the navigation property files in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ContentType
@@ -321,7 +323,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfilecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/set-mgbetasecuritycaseediscoverycasereviewsetfilecontent)
-
 
 
 

@@ -39,6 +39,8 @@ Get-MgEntitlementManagementAssignmentAdditional -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Invoke function additionalAccess
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -340,7 +342,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional)
-
 
 
 

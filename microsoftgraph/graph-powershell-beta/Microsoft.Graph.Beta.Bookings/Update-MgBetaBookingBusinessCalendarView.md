@@ -122,6 +122,8 @@ Update-MgBetaBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property calendarView in bookingBusinesses
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -1109,7 +1111,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscalendarview)
-
 
 
 

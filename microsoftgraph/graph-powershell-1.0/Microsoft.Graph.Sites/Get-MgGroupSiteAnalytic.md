@@ -32,6 +32,8 @@ Get-MgGroupSiteAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Analytics about the view activities that took place on this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -219,7 +221,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteanalytic)
-
 
 
 

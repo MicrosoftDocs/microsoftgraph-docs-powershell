@@ -50,6 +50,8 @@ If you want to change a group that originates on-premises, download the results 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreview-apply-permissions.md)]
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AccessReviewId
@@ -311,7 +313,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewinstancedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewinstancedecision)
 
 [https://learn.microsoft.com/graph/api/accessreview-apply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-apply?view=graph-rest-1.0)
-
 
 
 

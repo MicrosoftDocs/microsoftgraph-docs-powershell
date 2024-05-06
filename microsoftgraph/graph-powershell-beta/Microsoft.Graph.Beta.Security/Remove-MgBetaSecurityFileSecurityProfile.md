@@ -29,6 +29,8 @@ Remove-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property fileSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -FileSecurityProfileId
@@ -271,7 +273,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityfilesecurityprofile)
-
 
 
 

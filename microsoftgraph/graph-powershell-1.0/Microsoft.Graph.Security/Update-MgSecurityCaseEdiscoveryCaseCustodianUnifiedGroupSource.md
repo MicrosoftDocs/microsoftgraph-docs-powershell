@@ -52,6 +52,8 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISe
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9816,7 +9818,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianunifiedgroupsource)
-
 
 
 

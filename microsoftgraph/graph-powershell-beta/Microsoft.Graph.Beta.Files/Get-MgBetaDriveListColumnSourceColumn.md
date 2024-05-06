@@ -32,6 +32,8 @@ Get-MgBetaDriveListColumnSourceColumn -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 The source column for content type column.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -200,7 +202,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcolumnsourcecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistcolumnsourcecolumn)
-
 
 
 

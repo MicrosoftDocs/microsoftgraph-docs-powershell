@@ -32,6 +32,8 @@ Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident
 ## DESCRIPTION
 Invoke function incidentReport
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -180,7 +182,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementhealthoverviewissueincident)
-
 
 
 

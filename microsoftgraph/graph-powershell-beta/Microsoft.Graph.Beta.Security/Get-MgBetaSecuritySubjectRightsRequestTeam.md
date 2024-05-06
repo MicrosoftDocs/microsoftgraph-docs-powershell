@@ -32,6 +32,8 @@ Get-MgBetaSecuritySubjectRightsRequestTeam -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -243,7 +245,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestteam)
-
 
 
 
