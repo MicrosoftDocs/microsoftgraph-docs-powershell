@@ -23,6 +23,8 @@ Remove-MgBetaSecurityTrigger [-IfMatch <String>] [-ResponseHeadersVariable <Stri
 ## DESCRIPTION
 Delete navigation property triggers for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -145,7 +147,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytrigger)
-
 
 
 

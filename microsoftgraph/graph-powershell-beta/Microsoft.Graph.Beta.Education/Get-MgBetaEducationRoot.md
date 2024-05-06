@@ -23,6 +23,8 @@ Get-MgBetaEducationRoot [-ExpandProperty <String[]>] [-Property <String[]>] [-Re
 ## DESCRIPTION
 Get education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -114,7 +116,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationroot)
-
 
 
 

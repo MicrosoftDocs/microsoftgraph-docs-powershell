@@ -23,6 +23,8 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-ResponseHeadersV
 ## DESCRIPTION
 Metadata for the device configuration user activity report
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -114,7 +116,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationuseractivity)
-
 
 
 

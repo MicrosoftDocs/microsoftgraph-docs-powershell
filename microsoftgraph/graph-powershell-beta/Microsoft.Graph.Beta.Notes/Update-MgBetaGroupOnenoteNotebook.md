@@ -54,6 +54,8 @@ Update-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -844,7 +846,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetagrouponenotenotebook)
-
 
 
 

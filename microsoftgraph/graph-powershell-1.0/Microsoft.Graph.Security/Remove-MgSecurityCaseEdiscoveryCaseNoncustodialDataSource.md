@@ -33,6 +33,8 @@ Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 ## DESCRIPTION
 Delete navigation property noncustodialDataSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -268,7 +270,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasenoncustodialdatasource)
-
 
 
 

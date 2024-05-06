@@ -32,6 +32,8 @@ Get-MgDriveItemListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -200,7 +202,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemlistitemanalytic)
-
 
 
 

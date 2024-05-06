@@ -32,6 +32,8 @@ Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerT
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,7 +236,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype)
-
 
 
 

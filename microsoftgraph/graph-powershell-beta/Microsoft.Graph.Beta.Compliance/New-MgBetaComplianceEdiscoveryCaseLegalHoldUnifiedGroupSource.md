@@ -47,6 +47,8 @@ New-MgBetaComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource -InputObject <ICom
 ## DESCRIPTION
 Create new navigation property to unifiedGroupSources for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15544,7 +15546,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaselegalholdunifiedgroupsource)
-
 
 
 

@@ -55,6 +55,8 @@ Update-MgBetaSecurityFileSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property fileSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -622,7 +624,6 @@ VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityfilesecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityfilesecurityprofile)
-
 
 
 

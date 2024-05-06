@@ -54,6 +54,8 @@ Update-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property simulationAutomations in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -520,7 +522,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationautomation)
-
 
 
 

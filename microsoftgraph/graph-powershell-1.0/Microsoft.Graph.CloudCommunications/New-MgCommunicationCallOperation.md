@@ -48,6 +48,8 @@ New-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -306,7 +308,6 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcalloperation)
-
 
 
 

@@ -50,6 +50,8 @@ Update-MgUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIde
 ## DESCRIPTION
 Update the navigation property attendanceReports in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -385,7 +387,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeetingattendancereport)
-
 
 
 

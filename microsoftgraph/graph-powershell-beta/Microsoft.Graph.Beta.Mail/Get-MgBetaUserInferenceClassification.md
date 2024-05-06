@@ -32,6 +32,8 @@ Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <S
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -156,7 +158,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetauserinferenceclassification)
-
 
 
 

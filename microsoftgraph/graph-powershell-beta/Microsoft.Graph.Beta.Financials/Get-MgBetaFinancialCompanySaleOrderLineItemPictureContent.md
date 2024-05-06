@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleOrderLineItemPictureContent -InputObject <IFinanci
 ## DESCRIPTION
 Get content for the navigation property picture from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -253,7 +255,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderlineitempicturecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleorderlineitempicturecontent)
-
 
 
 

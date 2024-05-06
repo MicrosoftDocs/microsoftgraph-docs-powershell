@@ -63,6 +63,8 @@ Update-MgBetaUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the navigation property profile in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Account
@@ -1705,7 +1707,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofile)
-
 
 
 

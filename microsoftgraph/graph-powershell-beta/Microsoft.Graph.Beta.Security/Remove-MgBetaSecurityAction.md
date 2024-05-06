@@ -29,6 +29,8 @@ Remove-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property securityActions for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -271,7 +273,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityaction)
-
 
 
 

@@ -34,6 +34,8 @@ Update-MgPrint -BodyParameter <IMicrosoftGraphPrint> [-ResponseHeadersVariable <
 ## DESCRIPTION
 Update print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14463,7 +14465,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint)
-
 
 
 

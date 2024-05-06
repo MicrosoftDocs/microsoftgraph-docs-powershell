@@ -32,6 +32,19 @@ Get-MgBetaEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-
 ## DESCRIPTION
 Retrieve the directory administrativeUnit that corresponds to this educationSchool.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationSchoolAdministrativeUnit -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgBetaEducationSchoolAdministrativeUnit Cmdlet.
+
+
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -181,7 +194,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooladministrativeunit)
 
 [https://learn.microsoft.com/graph/api/educationschool-get-administrativeUnit?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-get-administrativeUnit?view=graph-rest-1.0)
-
 
 
 

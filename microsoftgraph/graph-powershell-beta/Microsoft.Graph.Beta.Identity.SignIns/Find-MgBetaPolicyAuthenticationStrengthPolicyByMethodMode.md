@@ -31,6 +31,8 @@ Find-MgBetaPolicyAuthenticationStrengthPolicyByMethodMode -InputObject <IIdentit
 ## DESCRIPTION
 Invoke function findByMethodMode
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AuthenticationMethodModes
@@ -327,7 +329,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetapolicyauthenticationstrengthpolicybymethodmode](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/find-mgbetapolicyauthenticationstrengthpolicybymethodmode)
-
 
 
 

@@ -32,6 +32,8 @@ Remove-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property notebooks for sites
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -218,7 +220,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/remove-mgbetasiteonenotenotebook)
-
 
 
 

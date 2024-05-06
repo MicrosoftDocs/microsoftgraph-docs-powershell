@@ -48,6 +48,8 @@ Confirm-MgDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -230,7 +232,6 @@ INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/confirm-mgdirectoryobjectmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/confirm-mgdirectoryobjectmemberobject)
-
 
 
 

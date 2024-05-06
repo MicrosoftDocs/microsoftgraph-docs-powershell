@@ -45,6 +45,8 @@ Update-MgBetaSecurityProviderTenantSetting -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property providerTenantSettings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -390,7 +392,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityprovidertenantsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityprovidertenantsetting)
-
 
 
 

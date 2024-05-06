@@ -56,19 +56,24 @@ The location provides a URL that will return a caseExportOperation.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-addtoreviewset-permissions.md)]
 
 ## EXAMPLES
-### Example 1: Using the Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 $params = @{
-	SourceCollection = @{
-		Id = "1a9b4145d8f84e39bc45a7f68c5c5119"
+	sourceCollection = @{
+		id = "1a9b4145d8f84e39bc45a7f68c5c5119"
 	}
-	AdditionalData = "linkedFiles"
+	additionalData = "linkedFiles"
 }
+
 Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
+
 ```
 This example shows how to use the Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

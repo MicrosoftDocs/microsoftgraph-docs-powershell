@@ -33,6 +33,8 @@ Remove-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnou
 ## DESCRIPTION
 Delete navigation property attachments for admin
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -212,7 +214,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementmessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/remove-mgserviceannouncementmessageattachment)
-
 
 
 

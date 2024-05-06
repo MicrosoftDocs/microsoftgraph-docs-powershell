@@ -32,6 +32,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property settings for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -274,7 +276,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasesetting)
-
 
 
 

@@ -52,6 +52,8 @@ Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject 
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -15614,7 +15616,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianunifiedgroupsource)
-
 
 
 

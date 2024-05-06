@@ -53,6 +53,8 @@ Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property domainSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -581,7 +583,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritydomainsecurityprofile)
-
 
 
 

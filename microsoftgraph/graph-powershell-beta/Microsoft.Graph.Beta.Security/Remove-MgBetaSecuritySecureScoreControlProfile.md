@@ -32,6 +32,8 @@ Remove-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property secureScoreControlProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -274,7 +276,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritysecurescorecontrolprofile)
-
 
 
 

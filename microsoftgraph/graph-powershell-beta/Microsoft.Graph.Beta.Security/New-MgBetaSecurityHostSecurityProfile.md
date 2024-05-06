@@ -34,6 +34,8 @@ New-MgBetaSecurityHostSecurityProfile -BodyParameter <IMicrosoftGraphHostSecurit
 ## DESCRIPTION
 Create new navigation property to hostSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -528,7 +530,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityhostsecurityprofile)
-
 
 
 

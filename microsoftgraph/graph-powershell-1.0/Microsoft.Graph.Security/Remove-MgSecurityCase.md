@@ -23,6 +23,8 @@ Remove-MgSecurityCase [-IfMatch <String>] [-ResponseHeadersVariable <String>] [-
 ## DESCRIPTION
 Delete navigation property cases for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -145,7 +147,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycase)
-
 
 
 

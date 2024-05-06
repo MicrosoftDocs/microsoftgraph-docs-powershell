@@ -50,6 +50,8 @@ New-MgBetaExternalConnectionItem -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Create new navigation property to items for external
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Acl
@@ -377,7 +379,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectionitem)
-
 
 
 

@@ -47,6 +47,8 @@ Get-MgBetaUserDriveListItemDelta -InputObject <IUsersFunctionsIdentity> [-Expand
 ## DESCRIPTION
 Invoke function delta
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -380,7 +382,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdrivelistitemdelta)
-
 
 
 

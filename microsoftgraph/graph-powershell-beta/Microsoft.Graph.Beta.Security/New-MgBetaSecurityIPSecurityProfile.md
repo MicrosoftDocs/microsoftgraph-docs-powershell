@@ -33,6 +33,8 @@ New-MgBetaSecurityIPSecurityProfile -BodyParameter <IMicrosoftGraphIPSecurityPro
 ## DESCRIPTION
 Create new navigation property to ipSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -431,7 +433,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityipsecurityprofile)
-
 
 
 

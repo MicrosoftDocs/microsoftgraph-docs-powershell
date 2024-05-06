@@ -46,6 +46,8 @@ Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property services in print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -275,7 +277,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice)
-
 
 
 

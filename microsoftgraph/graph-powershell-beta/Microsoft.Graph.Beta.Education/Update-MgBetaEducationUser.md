@@ -82,10 +82,22 @@ Update the relatedContact collection of an educationUser object.
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
-	displayName = "Rogelio Cazares"
-	givenName = "Rogelio"
-	middleName = "Fernando"
-	surname = "Cazares"
+	relatedContacts = @(
+		@{
+			displayName = "Father Time"
+			emailAddress = "father@time.com"
+			mobilePhone = "4251231234"
+			relationship = "guardian"
+			accessConsent = $true
+		}
+		@{
+			displayName = "Mother Nature"
+			emailAddress = "mother@nature.co.uk"
+			mobilePhone = "3251231234"
+			relationship = "parent"
+			accessConsent = $true
+		}
+	)
 }
 
 Update-MgBetaEducationUser -EducationUserId $educationUserId -BodyParameter $params

@@ -29,6 +29,8 @@ Remove-MgBetaComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property operations for compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CaseId
@@ -221,7 +223,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaseoperation)
-
 
 
 

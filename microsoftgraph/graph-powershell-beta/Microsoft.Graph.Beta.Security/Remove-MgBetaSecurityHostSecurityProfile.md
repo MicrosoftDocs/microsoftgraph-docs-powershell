@@ -29,6 +29,8 @@ Remove-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property hostSecurityProfiles for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -271,7 +273,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityhostsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityhostsecurityprofile)
-
 
 
 

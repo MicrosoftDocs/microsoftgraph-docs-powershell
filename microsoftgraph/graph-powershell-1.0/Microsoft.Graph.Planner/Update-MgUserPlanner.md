@@ -48,6 +48,8 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -686,7 +688,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mguserplanner)
-
 
 
 

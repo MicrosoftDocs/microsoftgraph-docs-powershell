@@ -31,6 +31,8 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 ## DESCRIPTION
 Invoke function getMailboxUsageMailboxCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -182,7 +184,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount)
-
 
 
 

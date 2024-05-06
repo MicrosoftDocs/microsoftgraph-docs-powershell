@@ -54,6 +54,8 @@ Update-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Update the navigation property activities in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivationUrl
@@ -635,7 +637,6 @@ Short text description of the user's unique activity (for example, document name
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivity)
-
 
 
 

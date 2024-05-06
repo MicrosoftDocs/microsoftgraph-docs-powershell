@@ -33,6 +33,8 @@ Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudC
 ## DESCRIPTION
 Delete navigation property attendanceRecords for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AttendanceRecordId
@@ -252,7 +254,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeetingattendancereportattendancerecord](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeetingattendancereportattendancerecord)
-
 
 
 

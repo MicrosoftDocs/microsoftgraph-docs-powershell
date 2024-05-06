@@ -32,6 +32,8 @@ Remove-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> 
 ## DESCRIPTION
 Delete navigation property operations for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId
@@ -221,7 +223,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcalloperation)
-
 
 
 

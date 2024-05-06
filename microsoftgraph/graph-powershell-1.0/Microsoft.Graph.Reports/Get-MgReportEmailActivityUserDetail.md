@@ -44,6 +44,8 @@ Get-MgReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getEmailActivityUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -210,7 +212,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail)
-
 
 
 

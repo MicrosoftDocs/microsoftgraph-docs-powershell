@@ -52,6 +52,8 @@ Update-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Update the navigation property retentionEventTypes in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -446,7 +448,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertyperetentioneventtype)
-
 
 
 

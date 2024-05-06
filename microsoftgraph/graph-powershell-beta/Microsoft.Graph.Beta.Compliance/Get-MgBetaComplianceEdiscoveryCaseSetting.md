@@ -30,20 +30,17 @@ Get-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-E
 Read the properties and relationships of an eDiscovery caseSettings object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
+
 Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
+
 ```
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseSetting Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Compliance
-Get-MgBetaComplianceEdiscoveryCaseSetting -CaseId $caseId
-```
-This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

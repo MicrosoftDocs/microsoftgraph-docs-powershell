@@ -31,6 +31,8 @@ Update-MgSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot> [-Respon
 ## DESCRIPTION
 Update the navigation property cases in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9971,7 +9973,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycase)
-
 
 
 

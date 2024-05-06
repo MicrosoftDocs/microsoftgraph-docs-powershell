@@ -48,6 +48,8 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObje
 ## DESCRIPTION
 Update the navigation property additionalSources in compliance
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,7 +367,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollectionadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasesourcecollectionadditionalsource)
-
 
 
 

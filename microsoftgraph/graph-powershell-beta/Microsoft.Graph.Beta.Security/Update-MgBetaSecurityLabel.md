@@ -37,6 +37,8 @@ Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot>
 ## DESCRIPTION
 Update the navigation property labels in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -613,7 +615,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel)
-
 
 
 

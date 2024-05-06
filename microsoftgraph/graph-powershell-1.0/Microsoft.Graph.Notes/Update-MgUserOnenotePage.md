@@ -54,6 +54,8 @@ Update-MgUserOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property pages in users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -875,7 +877,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mguseronenotepage)
-
 
 
 

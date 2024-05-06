@@ -32,6 +32,8 @@ Remove-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Delete navigation property contentSharingSessions for communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CallId
@@ -221,7 +223,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession)
-
 
 
 

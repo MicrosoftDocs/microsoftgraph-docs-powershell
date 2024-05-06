@@ -29,6 +29,8 @@ Remove-MgBetaSecurityInformationProtectionSensitivityLabelParent -InputObject <I
 ## DESCRIPTION
 Delete navigation property parent for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -271,7 +273,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotectionsensitivitylabelparent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotectionsensitivitylabelparent)
-
 
 
 

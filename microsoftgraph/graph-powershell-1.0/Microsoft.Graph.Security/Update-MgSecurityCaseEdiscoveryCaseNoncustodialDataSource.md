@@ -54,6 +54,8 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 ## DESCRIPTION
 Update the navigation property noncustodialDataSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -489,7 +491,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasource)
-
 
 
 

@@ -27,6 +27,8 @@ Get-MgBetaPolicyFeatureRolloutPolicyApplyTo -FeatureRolloutPolicyId <String> [-E
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -254,7 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicyapplyto)
-
 
 
 

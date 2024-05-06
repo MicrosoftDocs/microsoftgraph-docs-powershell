@@ -46,6 +46,8 @@ Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicatio
 ## DESCRIPTION
 Update the navigation property contentSharingSessions in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,7 +254,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallcontentsharingsession)
-
 
 
 

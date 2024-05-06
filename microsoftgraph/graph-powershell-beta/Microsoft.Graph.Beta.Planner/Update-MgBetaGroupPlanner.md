@@ -46,6 +46,8 @@ Update-MgBetaGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
 ## DESCRIPTION
 Update the navigation property planner in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -817,7 +819,6 @@ Title of the plan.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetagroupplanner)
-
 
 
 

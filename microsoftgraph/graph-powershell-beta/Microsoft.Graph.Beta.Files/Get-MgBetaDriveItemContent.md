@@ -32,6 +32,8 @@ Get-MgBetaDriveItemContent -InputObject <IFilesIdentity> [-Format <String>] -Out
 ## DESCRIPTION
 Get content for the navigation property items from drives
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -215,7 +217,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveitemcontent)
-
 
 
 

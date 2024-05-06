@@ -32,6 +32,8 @@ Remove-MgBetaPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [
 ## DESCRIPTION
 Delete navigation property tasks for print
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -220,7 +222,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinitiontask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprinttaskdefinitiontask)
-
 
 
 

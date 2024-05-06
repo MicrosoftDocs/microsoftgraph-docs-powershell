@@ -63,6 +63,8 @@ Remove-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceHold -InputObject <IC
 ## DESCRIPTION
 Invoke action removeHold
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,7 +293,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasenoncustodialdatasourcehold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasenoncustodialdatasourcehold)
-
 
 
 

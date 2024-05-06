@@ -22,6 +22,8 @@ Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <Strin
 ## DESCRIPTION
 Get the identity providers in a b2cIdentityUserFlow object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -221,7 +223,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowidentityproviderbyref)
 
 [https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-identityproviders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-identityproviders?view=graph-rest-1.0)
-
 
 
 

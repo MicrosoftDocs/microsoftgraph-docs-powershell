@@ -33,6 +33,8 @@ Get-MgBetaGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
 The group's calendar.
 Read-only.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -GroupId
@@ -160,7 +162,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupcalendar)
-
 
 
 

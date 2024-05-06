@@ -28,6 +28,8 @@ Get-MgBetaReportBrowserUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getBrowserUserCounts
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -201,7 +203,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowserusercount)
-
 
 
 

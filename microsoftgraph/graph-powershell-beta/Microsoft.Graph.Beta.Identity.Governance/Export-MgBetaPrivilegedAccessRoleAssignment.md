@@ -29,6 +29,8 @@ Export-MgBetaPrivilegedAccessRoleAssignment -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Invoke function export
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -302,7 +304,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/export-mgbetaprivilegedaccessroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/export-mgbetaprivilegedaccessroleassignment)
-
 
 
 

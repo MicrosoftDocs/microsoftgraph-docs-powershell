@@ -56,6 +56,8 @@ Update-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property submissions in education
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,7 +543,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmission)
-
 
 
 

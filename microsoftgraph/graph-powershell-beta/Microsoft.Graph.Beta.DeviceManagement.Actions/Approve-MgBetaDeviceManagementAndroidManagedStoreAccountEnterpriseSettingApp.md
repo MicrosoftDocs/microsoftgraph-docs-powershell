@@ -31,6 +31,8 @@ Approve-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
 ## DESCRIPTION
 Invoke action approveApps
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -209,7 +211,6 @@ BODYPARAMETER `<IPathsQ0Me7IDevicemanagementAndroidmanagedstoreaccountenterprise
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/approve-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp)
-
 
 
 

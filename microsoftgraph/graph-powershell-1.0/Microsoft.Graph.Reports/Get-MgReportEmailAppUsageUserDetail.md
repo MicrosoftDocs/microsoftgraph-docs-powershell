@@ -44,6 +44,8 @@ Get-MgReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile <St
 ## DESCRIPTION
 Invoke function getEmailAppUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -210,7 +212,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageuserdetail)
-
 
 
 

@@ -56,6 +56,8 @@ Update-MgGroupOnenoteSectionGroup -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property sectionGroups in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1152,7 +1154,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotesectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotesectiongroup)
-
 
 
 

@@ -32,6 +32,8 @@ Get-MgGroupTeamGroup -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Get group from groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -194,7 +196,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamgroup)
-
 
 
 

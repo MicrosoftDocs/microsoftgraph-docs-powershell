@@ -51,6 +51,8 @@ Update-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property ipSecurityProfiles in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -565,7 +567,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityipsecurityprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityipsecurityprofile)
-
 
 
 

@@ -30,6 +30,8 @@ Update-MgBetaSecurityInformationProtectionLabelPolicySetting
 ## DESCRIPTION
 Update the navigation property labelPolicySettings in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -243,7 +245,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionlabelpolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionlabelpolicysetting)
-
 
 
 

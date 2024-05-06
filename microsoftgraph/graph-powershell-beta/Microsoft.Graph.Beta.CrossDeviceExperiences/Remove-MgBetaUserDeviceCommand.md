@@ -29,6 +29,8 @@ Remove-MgBetaUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-
 ## DESCRIPTION
 Delete navigation property commands for users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CommandId
@@ -227,7 +229,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdevicecommand](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdevicecommand)
-
 
 
 

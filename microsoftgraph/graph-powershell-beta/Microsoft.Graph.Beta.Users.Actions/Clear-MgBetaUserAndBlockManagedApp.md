@@ -29,6 +29,8 @@ Clear-MgBetaUserAndBlockManagedApp -InputObject <IUsersActionsIdentity> [-Respon
 ## DESCRIPTION
 Blocks the managed app user from app check-in.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -215,7 +217,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserandblockmanagedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetauserandblockmanagedapp)
-
 
 
 

@@ -28,6 +28,8 @@ Get-MgBetaReportBrowserUserDetail -InputObject <IReportsIdentity> -OutFile <Stri
 ## DESCRIPTION
 Invoke function getBrowserUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -201,7 +203,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowseruserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportbrowseruserdetail)
-
 
 
 

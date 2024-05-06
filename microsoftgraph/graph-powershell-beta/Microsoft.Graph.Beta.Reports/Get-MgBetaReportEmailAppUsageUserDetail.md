@@ -44,6 +44,8 @@ Get-MgBetaReportEmailAppUsageUserDetail -InputObject <IReportsIdentity> -OutFile
 ## DESCRIPTION
 Invoke function getEmailAppUsageUserDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Date
@@ -232,7 +234,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailappusageuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportemailappusageuserdetail)
-
 
 
 

@@ -23,6 +23,8 @@ Get-MgDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [-ResponseHe
 ## DESCRIPTION
 Get directory
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -114,7 +116,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectory](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectory)
-
 
 
 

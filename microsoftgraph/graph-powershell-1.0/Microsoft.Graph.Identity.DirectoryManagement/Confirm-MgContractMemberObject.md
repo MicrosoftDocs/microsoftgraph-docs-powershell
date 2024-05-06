@@ -48,6 +48,8 @@ Confirm-MgContractMemberObject -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -253,7 +255,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontractmemberobject](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontractmemberobject)
-
 
 
 

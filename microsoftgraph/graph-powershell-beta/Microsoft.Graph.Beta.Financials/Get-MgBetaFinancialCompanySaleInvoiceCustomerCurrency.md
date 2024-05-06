@@ -29,6 +29,8 @@ Get-MgBetaFinancialCompanySaleInvoiceCustomerCurrency -InputObject <IFinancialsI
 ## DESCRIPTION
 Get currency from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -209,7 +211,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicecustomercurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysaleinvoicecustomercurrency)
-
 
 
 

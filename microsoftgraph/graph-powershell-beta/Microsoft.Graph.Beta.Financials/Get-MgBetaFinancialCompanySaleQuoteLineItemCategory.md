@@ -43,6 +43,8 @@ Get-MgBetaFinancialCompanySaleQuoteLineItemCategory -InputObject <IFinancialsIde
 ## DESCRIPTION
 Get itemCategory from financials
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -CompanyId
@@ -238,7 +240,6 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequotelineitemcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalequotelineitemcategory)
-
 
 
 

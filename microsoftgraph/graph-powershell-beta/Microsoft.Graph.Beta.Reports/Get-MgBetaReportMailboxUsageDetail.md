@@ -31,6 +31,8 @@ Get-MgBetaReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <Str
 ## DESCRIPTION
 Invoke function getMailboxUsageDetail
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Headers
@@ -204,7 +206,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmailboxusagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmailboxusagedetail)
-
 
 
 

@@ -46,6 +46,8 @@ Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIde
 ## DESCRIPTION
 Issues a wipe operation on an app registration with specified device tag.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -283,7 +285,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag)
-
 
 
 

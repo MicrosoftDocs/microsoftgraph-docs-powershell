@@ -31,6 +31,8 @@ Get-MgBetaUserLoggedOnManagedDevice -InputObject <IUsersFunctionsIdentity> [-Cou
 ## DESCRIPTION
 Invoke function getLoggedOnManagedDevices
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -288,7 +290,6 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserloggedonmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserloggedonmanageddevice)
-
 
 
 

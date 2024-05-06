@@ -33,6 +33,8 @@ Get-MgBetaReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [
 ## DESCRIPTION
 Invoke function getGroupArchivedPrintJobs
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -Count
@@ -281,7 +283,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
-
 
 
 

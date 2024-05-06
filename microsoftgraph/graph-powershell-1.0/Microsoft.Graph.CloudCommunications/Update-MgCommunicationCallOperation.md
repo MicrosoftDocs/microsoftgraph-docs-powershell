@@ -48,6 +48,8 @@ Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property operations in communications
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -321,7 +323,6 @@ RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcalloperation](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcalloperation)
-
 
 
 

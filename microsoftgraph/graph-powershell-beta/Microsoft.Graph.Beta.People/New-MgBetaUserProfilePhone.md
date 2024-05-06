@@ -52,18 +52,23 @@ New-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Use this API to create a new itemPhone object in a user's profile.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfilePhone Cmdlet
+### Example 1: Code snippet
+
 ```powershell
+
 Import-Module Microsoft.Graph.Beta.People
+
 $params = @{
-	DisplayName = "Car Phone"
-	Number = "+7 499 342 22 13"
+	displayName = "Car Phone"
+	number = "+7 499 342 22 13"
 }
+
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePhone -UserId $userId -BodyParameter $params
+
 ```
 This example shows how to use the New-MgBetaUserProfilePhone Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

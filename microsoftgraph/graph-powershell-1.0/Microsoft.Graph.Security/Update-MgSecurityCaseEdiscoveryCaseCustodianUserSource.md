@@ -52,6 +52,8 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityId
 ## DESCRIPTION
 Update the navigation property userSources in security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -460,7 +462,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasecustodianusersource)
-
 
 
 

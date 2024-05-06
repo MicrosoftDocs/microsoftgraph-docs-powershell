@@ -54,6 +54,8 @@ Update-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property notebooks in groups
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -921,7 +923,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/update-mggrouponenotenotebook)
-
 
 
 

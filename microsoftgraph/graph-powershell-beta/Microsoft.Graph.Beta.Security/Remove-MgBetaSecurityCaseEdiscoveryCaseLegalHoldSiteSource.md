@@ -30,6 +30,8 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -InputObject <ISecuri
 ## DESCRIPTION
 Delete navigation property siteSources for security
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -302,7 +304,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdsitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycaselegalholdsitesource)
-
 
 
 

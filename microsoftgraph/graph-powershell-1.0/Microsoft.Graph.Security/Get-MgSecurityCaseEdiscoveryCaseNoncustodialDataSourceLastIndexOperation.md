@@ -33,6 +33,8 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -InputO
 ## DESCRIPTION
 Operation entity that represents the latest indexing for the noncustodial data source.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -237,7 +239,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasenoncustodialdatasourcelastindexoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasenoncustodialdatasourcelastindexoperation)
-
 
 
 
