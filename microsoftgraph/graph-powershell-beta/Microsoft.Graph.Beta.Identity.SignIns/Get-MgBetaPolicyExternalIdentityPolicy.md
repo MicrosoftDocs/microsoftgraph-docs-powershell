@@ -22,13 +22,17 @@ Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <
 Represents the tenant-wide policy that controls whether guests can leave a Microsoft Entra tenant via self-service controls.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyExternalIdentityPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyExternalIdentityPolicy Cmdlet.
+
 
 ## PARAMETERS
 

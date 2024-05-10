@@ -65,13 +65,17 @@ Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
+
+```
+This example shows how to use the Get-MgSiteTermStoreSet Cmdlet.
+
 
 ## PARAMETERS
 

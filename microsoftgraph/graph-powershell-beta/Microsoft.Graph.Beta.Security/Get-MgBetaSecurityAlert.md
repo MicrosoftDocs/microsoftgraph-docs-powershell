@@ -41,13 +41,17 @@ Get-MgBetaSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <Strin
 Notifications for suspicious or potential security issues in a customer's tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAlert
+
+```
+This example shows how to use the Get-MgBetaSecurityAlert Cmdlet.
+
 
 ## PARAMETERS
 

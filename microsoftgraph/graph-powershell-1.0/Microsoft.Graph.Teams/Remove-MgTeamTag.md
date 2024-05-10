@@ -33,13 +33,17 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-ResponseHea
 Delete navigation property tags for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
+
+```
+This example shows how to use the Remove-MgTeamTag Cmdlet.
+
 
 ## PARAMETERS
 

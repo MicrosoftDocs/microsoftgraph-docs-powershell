@@ -41,13 +41,17 @@ Get-MgBetaEducationMeRubric -InputObject <IEducationIdentity> [-ExpandProperty <
 When set, the grading rubric attached to the assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationMeRubric
+
+```
+This example shows how to use the Get-MgBetaEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

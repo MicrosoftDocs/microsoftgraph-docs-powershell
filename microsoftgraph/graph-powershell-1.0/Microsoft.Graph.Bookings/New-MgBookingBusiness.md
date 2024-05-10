@@ -39,17 +39,16 @@ New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Response
 Create new navigation property to bookingBusinesses for solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	displayName = "Fourth Coffee"
 	address = @{
-		postOfficeBox = "P.O.
-Box 123"
+		postOfficeBox = "P.O. Box 123"
 		street = "4567 Main Street"
 		city = "Buffalo"
 		state = "NY"
@@ -63,6 +62,10 @@ Box 123"
 }
 
 New-MgBookingBusiness -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusiness Cmdlet.
+
 
 ## PARAMETERS
 

@@ -59,11 +59,11 @@ Update-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> -BodyParameter
 Update the navigation property shares in print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "ShareName"
@@ -72,6 +72,10 @@ $params = @{
 }
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

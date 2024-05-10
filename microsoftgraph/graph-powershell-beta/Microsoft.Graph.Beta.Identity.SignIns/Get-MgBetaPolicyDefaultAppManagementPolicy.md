@@ -25,13 +25,17 @@ Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Proper
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyDefaultAppManagementPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

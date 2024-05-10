@@ -30,13 +30,17 @@ Remove-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete navigation property awards for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfileAward -UserId $userId -PersonAwardId $personAwardId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileAward Cmdlet.
+
 
 ## PARAMETERS
 

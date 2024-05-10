@@ -41,14 +41,18 @@ Get-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> 
 Represents the FIDO2 security keys registered to a user for authentication.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationFido2Method -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationFido2Method Cmdlet.
+
 
 ## PARAMETERS
 

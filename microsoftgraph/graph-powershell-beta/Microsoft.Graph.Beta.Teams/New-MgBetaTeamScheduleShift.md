@@ -55,11 +55,11 @@ New-MgBetaTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 Create new navigation property to shifts for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
@@ -68,14 +68,14 @@ $params = @{
 	sharedShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:15:00Z")
+				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -84,14 +84,14 @@ $params = @{
 	draftShift = @{
 		displayName = "Day shift"
 		notes = "Please do inventory as part of your shift."
-		startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
-		endDateTime = \[System.DateTime\]::Parse("2019-03-12T00:00:00Z")
+		startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+		endDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
 		theme = "blue"
 		activities = @(
 			@{
 				isPaid = $true
-				startDateTime = \[System.DateTime\]::Parse("2019-03-11T15:00:00Z")
-				endDateTime = \[System.DateTime\]::Parse("2019-03-11T15:30:00Z")
+				startDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
+				endDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
 				code = ""
 				displayName = "Lunch"
 			}
@@ -100,6 +100,10 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleShift -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaTeamScheduleShift Cmdlet.
+
 
 ## PARAMETERS
 

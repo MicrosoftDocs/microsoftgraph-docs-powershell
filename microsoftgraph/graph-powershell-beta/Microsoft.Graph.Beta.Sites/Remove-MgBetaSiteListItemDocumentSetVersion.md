@@ -34,13 +34,17 @@ Remove-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMa
 Delete navigation property documentSetVersions for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
+
+```
+This example shows how to use the Remove-MgBetaSiteListItemDocumentSetVersion Cmdlet.
+
 
 ## PARAMETERS
 

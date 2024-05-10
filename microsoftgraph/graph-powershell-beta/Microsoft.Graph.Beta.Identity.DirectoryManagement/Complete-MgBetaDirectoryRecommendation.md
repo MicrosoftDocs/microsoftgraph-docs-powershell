@@ -32,13 +32,17 @@ Complete a recommendation object and update its status to completedByUser.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/recommendation-complete-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Complete-MgBetaDirectoryRecommendation -RecommendationId $recommendationId
+
+```
+This example shows how to use the Complete-MgBetaDirectoryRecommendation Cmdlet.
+
 
 ## PARAMETERS
 

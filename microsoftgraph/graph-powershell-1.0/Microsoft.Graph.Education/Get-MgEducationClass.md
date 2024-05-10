@@ -40,13 +40,17 @@ Get-MgEducationClass -InputObject <IEducationIdentity> [-ExpandProperty <String[
 Get classes from education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClass
+
+```
+This example shows how to use the Get-MgEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

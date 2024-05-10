@@ -25,16 +25,18 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 Represents the settings that control the behavior of Microsoft Entra entitlement management.
 
 ## EXAMPLES
+### Example 1: Get the identity governance settings
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
-```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
+```
+
+This example returns the identity governance settings.
 
 ## PARAMETERS
 

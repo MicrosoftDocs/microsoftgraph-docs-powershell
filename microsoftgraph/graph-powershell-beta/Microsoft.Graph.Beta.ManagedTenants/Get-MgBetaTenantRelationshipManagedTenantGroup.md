@@ -38,13 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 The collection of a logical grouping of managed tenants used by the multi-tenant management platform.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantGroup
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantGroup Cmdlet.
+
 
 ## PARAMETERS
 

@@ -32,12 +32,13 @@ Contains the properties that are configured by an administrator for the visibili
 List itemInsights returns the settings to display or return item insights in an organization.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaOrganizationSettingItemInsight Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId
 ```
+This example shows how to use the Get-MgBetaOrganizationSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
