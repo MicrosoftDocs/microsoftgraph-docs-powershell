@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityTriggerRetentionEvent
 
 ## SYNOPSIS
-Create a new retentionEvent object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-1.0)
+Create new navigation property to retentionEvents for security
 
 ## SYNTAX
 
@@ -35,14 +32,14 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 ```
 
 ## DESCRIPTION
-Create a new retentionEvent object.
+Create new navigation property to retentionEvents for security
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionEvent"
@@ -53,7 +50,7 @@ $params = @{
 			"@odata.type" = "microsoft.graph.security.eventQuery"
 		}
 	)
-	eventTriggerDateTime = [System.DateTime]::Parse("String (timestamp)")
+	eventTriggerDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 	createdBy = @{
 		"@odata.type" = "microsoft.graph.identitySet"
 	}
@@ -65,14 +62,10 @@ $params = @{
 	eventStatus = @{
 		"@odata.type" = "microsoft.graph.security.retentionEventStatus"
 	}
-	lastStatusUpdateDateTime = [System.DateTime]::Parse("String (timestamp)")
+	lastStatusUpdateDateTime = \[System.DateTime\]::Parse("String (timestamp)")
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
-
 
 ## PARAMETERS
 
@@ -401,143 +394,138 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityRetentionEvent>`: retentionEvent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphSecurityRetentionEvent\>: retentionEvent
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEvent was created.
-  - `[Description <String>]`: Optional information about the event.
-  - `[DisplayName <String>]`: Name of the event.
-  - `[EventPropagationResults <IMicrosoftGraphSecurityEventPropagationResult- `[]`>]`: 
-    - `[Location <String>]`: The name of the specific location in the workload associated with the event.
-    - `[ServiceName <String>]`: The name of the workload associated with the event.
-    - `[Status <String>]`: eventPropagationStatus
-    - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
-  - `[EventQueries <IMicrosoftGraphSecurityEventQuery- `[]`>]`: 
-    - `[Query <String>]`: Represents unique identification for the  query.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date time when the retentionEvent was created.
+  \[Description \<String\>\]: Optional information about the event.
+  \[DisplayName \<String\>\]: Name of the event.
+  \[EventPropagationResults \<IMicrosoftGraphSecurityEventPropagationResult\[\]\>\]: 
+    \[Location \<String\>\]: The name of the specific location in the workload associated with the event.
+    \[ServiceName \<String\>\]: The name of the workload associated with the event.
+    \[Status \<String\>\]: eventPropagationStatus
+    \[StatusInformation \<String\>\]: Additional information about the status of the event creation request.
+  \[EventQueries \<IMicrosoftGraphSecurityEventQuery\[\]\>\]: 
+    \[Query \<String\>\]: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
-    - `[QueryType <String>]`: queryType
-  - `[EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>]`: retentionEventStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Error <IMicrosoftGraphPublicError>]`: publicError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: Represents the error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-        - `[Code <String>]`: The error code.
-        - `[Message <String>]`: The error message.
-        - `[Target <String>]`: The target of the error.
-      - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Code <String>]`: The error code.
-        - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-        - `[Message <String>]`: The error message.
-        - `[Target <String>]`: The target of the error.
-      - `[Message <String>]`: A non-localized message for the developer.
-      - `[Target <String>]`: The target of the error.
-    - `[Status <String>]`: eventStatusType
-  - `[EventTriggerDateTime <DateTime?>]`: Optional time when the event should be triggered.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEvent was modified.
-  - `[LastStatusUpdateDateTime <DateTime?>]`: Last time the status of the event was updated.
-  - `[RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]`: retentionEventType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[QueryType \<String\>\]: queryType
+  \[EventStatus \<IMicrosoftGraphSecurityRetentionEventStatus\>\]: retentionEventStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: Represents the error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+        \[Code \<String\>\]: The error code.
+        \[Message \<String\>\]: The error message.
+        \[Target \<String\>\]: The target of the error.
+      \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[Code \<String\>\]: The error code.
+        \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+        \[Message \<String\>\]: The error message.
+        \[Target \<String\>\]: The target of the error.
+      \[Message \<String\>\]: A non-localized message for the developer.
+      \[Target \<String\>\]: The target of the error.
+    \[Status \<String\>\]: eventStatusType
+  \[EventTriggerDateTime \<DateTime?\>\]: Optional time when the event should be triggered.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEvent was modified.
+  \[LastStatusUpdateDateTime \<DateTime?\>\]: Last time the status of the event was updated.
+  \[RetentionEventType \<IMicrosoftGraphSecurityRetentionEventType\>\]: retentionEventType
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
-    - `[Description <String>]`: Optional information about the event type.
-    - `[DisplayName <String>]`: Name of the event type.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
+    \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[CreatedDateTime \<DateTime?\>\]: The date time when the retentionEventType was created.
+    \[Description \<String\>\]: Optional information about the event type.
+    \[DisplayName \<String\>\]: Name of the event type.
+    \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-EVENTPROPAGATIONRESULTS <IMicrosoftGraphSecurityEventPropagationResult- `[]`>: .
-  - `[Location <String>]`: The name of the specific location in the workload associated with the event.
-  - `[ServiceName <String>]`: The name of the workload associated with the event.
-  - `[Status <String>]`: eventPropagationStatus
-  - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
+EVENTPROPAGATIONRESULTS \<IMicrosoftGraphSecurityEventPropagationResult\[\]\>: .
+  \[Location \<String\>\]: The name of the specific location in the workload associated with the event.
+  \[ServiceName \<String\>\]: The name of the workload associated with the event.
+  \[Status \<String\>\]: eventPropagationStatus
+  \[StatusInformation \<String\>\]: Additional information about the status of the event creation request.
 
-EVENTQUERIES <IMicrosoftGraphSecurityEventQuery- `[]`>: .
-  - `[Query <String>]`: Represents unique identification for the  query.
+EVENTQUERIES \<IMicrosoftGraphSecurityEventQuery\[\]\>: .
+  \[Query \<String\>\]: Represents unique identification for the  query.
 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
-  - `[QueryType <String>]`: queryType
+  \[QueryType \<String\>\]: queryType
 
-EVENTSTATUS `<IMicrosoftGraphSecurityRetentionEventStatus>`: retentionEventStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Error <IMicrosoftGraphPublicError>]`: publicError
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <String>]`: Represents the error code.
-    - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: Details of the error.
-      - `[Code <String>]`: The error code.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[InnerError <IMicrosoftGraphPublicInnerError>]`: publicInnerError
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <String>]`: The error code.
-      - `[Details <IMicrosoftGraphPublicErrorDetail- `[]`>]`: A collection of error details.
-      - `[Message <String>]`: The error message.
-      - `[Target <String>]`: The target of the error.
-    - `[Message <String>]`: A non-localized message for the developer.
-    - `[Target <String>]`: The target of the error.
-  - `[Status <String>]`: eventStatusType
+EVENTSTATUS \<IMicrosoftGraphSecurityRetentionEventStatus\>: retentionEventStatus
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Error \<IMicrosoftGraphPublicError\>\]: publicError
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Code \<String\>\]: Represents the error code.
+    \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: Details of the error.
+      \[Code \<String\>\]: The error code.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[InnerError \<IMicrosoftGraphPublicInnerError\>\]: publicInnerError
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Code \<String\>\]: The error code.
+      \[Details \<IMicrosoftGraphPublicErrorDetail\[\]\>\]: A collection of error details.
+      \[Message \<String\>\]: The error message.
+      \[Target \<String\>\]: The target of the error.
+    \[Message \<String\>\]: A non-localized message for the developer.
+    \[Target \<String\>\]: The target of the error.
+  \[Status \<String\>\]: eventStatusType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-RETENTIONEVENTTYPE `<IMicrosoftGraphSecurityRetentionEventType>`: retentionEventType
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+RETENTIONEVENTTYPE \<IMicrosoftGraphSecurityRetentionEventType\>: retentionEventType
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
-  - `[Description <String>]`: Optional information about the event type.
-  - `[DisplayName <String>]`: Name of the event type.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: The date time when the retentionEventType was created.
+  \[Description \<String\>\]: Optional information about the event type.
+  \[DisplayName \<String\>\]: Name of the event type.
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritytriggerretentionevent)
-
-[https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionevent-post?view=graph-rest-1.0)
-
-
-
 

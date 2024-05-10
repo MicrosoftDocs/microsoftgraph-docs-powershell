@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationDelta?view=graph-powershell-beta)
+Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.
+For details, see Using delta query.
 
 ## SYNTAX
 
@@ -23,9 +21,20 @@ Get-MgApplicationDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Propert
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.
+For details, see Using delta query.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,6 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationdelta)
 
-
-
+[https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delta?view=graph-rest-1.0)
 
