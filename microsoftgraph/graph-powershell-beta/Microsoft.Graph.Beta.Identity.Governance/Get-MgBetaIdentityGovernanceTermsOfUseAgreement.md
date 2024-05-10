@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

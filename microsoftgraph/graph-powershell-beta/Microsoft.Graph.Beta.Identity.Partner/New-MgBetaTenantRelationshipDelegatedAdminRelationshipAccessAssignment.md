@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to accessAssignments for tenantRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

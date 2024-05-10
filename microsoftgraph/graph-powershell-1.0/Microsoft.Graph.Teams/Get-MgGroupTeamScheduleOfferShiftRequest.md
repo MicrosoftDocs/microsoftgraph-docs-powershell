@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The offer requests for shifts in the schedule.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

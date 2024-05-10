@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property owners for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

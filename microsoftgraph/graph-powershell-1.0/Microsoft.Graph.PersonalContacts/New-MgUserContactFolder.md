@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to contactFolders for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

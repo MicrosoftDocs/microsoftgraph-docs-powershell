@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to onPremisesConnections for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

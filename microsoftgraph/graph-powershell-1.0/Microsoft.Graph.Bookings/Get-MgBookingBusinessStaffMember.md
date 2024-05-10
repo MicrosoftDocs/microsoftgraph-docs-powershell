@@ -12,6 +12,9 @@ All the staff members that provide services in this business.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get allTime from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveItemAnalyticTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

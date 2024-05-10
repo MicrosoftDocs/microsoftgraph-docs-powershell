@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of team activities across Microsoft Teams over a selected period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityDistributionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

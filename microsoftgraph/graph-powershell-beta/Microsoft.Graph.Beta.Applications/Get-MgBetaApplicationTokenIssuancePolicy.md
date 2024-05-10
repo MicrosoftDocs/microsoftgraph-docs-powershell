@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get tokenIssuancePolicies from applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

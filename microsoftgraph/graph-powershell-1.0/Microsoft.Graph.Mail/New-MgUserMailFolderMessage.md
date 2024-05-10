@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to messages for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

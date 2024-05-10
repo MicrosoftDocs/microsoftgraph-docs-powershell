@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userSettings for deviceManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

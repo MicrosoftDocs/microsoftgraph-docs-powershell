@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of pages in the baseSitePages list in this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

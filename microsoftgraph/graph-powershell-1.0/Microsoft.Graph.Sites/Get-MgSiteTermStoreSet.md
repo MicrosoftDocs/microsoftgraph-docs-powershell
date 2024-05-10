@@ -11,6 +11,9 @@ schema: 2.0.0
 Collection of all sets available in the term store.
 This relationship can only be used to load a specific term set.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

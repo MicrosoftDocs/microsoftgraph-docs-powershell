@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Registration records of the webinar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

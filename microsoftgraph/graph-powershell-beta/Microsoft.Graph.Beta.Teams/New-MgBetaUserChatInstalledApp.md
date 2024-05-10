@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to installedApps for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

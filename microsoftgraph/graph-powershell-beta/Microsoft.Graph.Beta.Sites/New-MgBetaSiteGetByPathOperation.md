@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteGetByPathOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property multiTenantOrganization in tenantRelationships
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgBetaTenantRelationshipMultiTenantOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the members in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

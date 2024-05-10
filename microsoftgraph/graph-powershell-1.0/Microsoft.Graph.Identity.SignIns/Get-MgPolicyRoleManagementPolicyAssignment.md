@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The assignment of a role management policy to a role definition object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

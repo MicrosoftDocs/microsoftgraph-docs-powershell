@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property items in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgUserDriveItemContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)

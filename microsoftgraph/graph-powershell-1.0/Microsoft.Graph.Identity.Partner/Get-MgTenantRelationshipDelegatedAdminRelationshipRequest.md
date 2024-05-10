@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The requests associated with the delegated admin relationship.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

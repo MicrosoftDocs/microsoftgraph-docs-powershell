@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to ediscoveryCases for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

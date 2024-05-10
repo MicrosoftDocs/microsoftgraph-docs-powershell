@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get secureScoreControlProfiles from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

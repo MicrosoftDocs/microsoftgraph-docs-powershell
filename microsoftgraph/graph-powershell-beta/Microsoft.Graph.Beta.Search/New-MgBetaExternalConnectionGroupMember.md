@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to members for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve details about the subdomain.Note: List retrieval is not yet supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceSubdomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

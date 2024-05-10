@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property ref to rejectedSenders for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

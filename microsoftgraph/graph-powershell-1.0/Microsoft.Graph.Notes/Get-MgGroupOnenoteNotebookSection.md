@@ -12,6 +12,9 @@ The sections in the notebook.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteNotebookSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

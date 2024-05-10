@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property classes for education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolClassEducationClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolClassEducationClassByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get rooms from places
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlaceAsRoomListRoom](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceAsRoomListRoom?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

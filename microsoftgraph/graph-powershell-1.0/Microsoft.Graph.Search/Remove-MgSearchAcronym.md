@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property acronyms for search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchAcronym?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

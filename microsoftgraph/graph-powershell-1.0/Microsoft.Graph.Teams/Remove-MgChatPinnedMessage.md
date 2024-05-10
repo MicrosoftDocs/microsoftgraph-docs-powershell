@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property pinnedMessages for chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

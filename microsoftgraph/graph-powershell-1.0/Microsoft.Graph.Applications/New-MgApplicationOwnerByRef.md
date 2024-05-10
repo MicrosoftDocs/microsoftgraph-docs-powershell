@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property ref to owners for applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

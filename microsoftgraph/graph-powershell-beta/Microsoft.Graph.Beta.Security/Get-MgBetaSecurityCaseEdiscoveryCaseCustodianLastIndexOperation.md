@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Operation entity that represents the latest indexing for the custodian.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

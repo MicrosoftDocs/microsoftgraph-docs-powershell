@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns a list of eDiscoveryReviewSet objects in the case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

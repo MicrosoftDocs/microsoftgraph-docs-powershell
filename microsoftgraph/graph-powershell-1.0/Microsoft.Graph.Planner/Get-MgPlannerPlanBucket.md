@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Collection of buckets in the plan.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

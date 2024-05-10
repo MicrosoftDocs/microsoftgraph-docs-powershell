@@ -12,6 +12,9 @@ A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinitionTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

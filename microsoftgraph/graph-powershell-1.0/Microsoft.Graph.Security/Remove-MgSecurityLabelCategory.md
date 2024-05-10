@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property categories for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

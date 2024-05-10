@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property rejectedSenders for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderDirectoryObjectByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

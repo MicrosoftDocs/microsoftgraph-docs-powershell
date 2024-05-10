@@ -11,6 +11,9 @@ schema: 2.0.0
 Federated identities for applications.
 Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -31,6 +31,9 @@ Invoke-MgBetaFilterUserAppConsentRequestForApprovalByCurrentUser -InputObject <I
 ## DESCRIPTION
 Retrieve a collection of appConsentRequest objects for which the current user is the reviewer and the status of the userConsentRequest for accessing the specified app is InProgress.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/appconsentrequest-filterByCurrentUser-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

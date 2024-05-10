@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to claimsMappingPolicies for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

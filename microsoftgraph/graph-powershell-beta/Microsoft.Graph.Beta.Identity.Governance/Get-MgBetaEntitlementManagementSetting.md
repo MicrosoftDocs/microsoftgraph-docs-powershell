@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the settings that control the behavior of Microsoft Entra entitlement management.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

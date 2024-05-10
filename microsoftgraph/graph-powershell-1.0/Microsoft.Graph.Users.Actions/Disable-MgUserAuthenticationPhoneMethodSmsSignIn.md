@@ -31,6 +31,9 @@ Disable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIden
 Disable SMS sign-in for an existing mobile phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/phoneauthenticationmethod-disablesmssignin-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

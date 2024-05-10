@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleEligibilitySchedules from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilitySchedule?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

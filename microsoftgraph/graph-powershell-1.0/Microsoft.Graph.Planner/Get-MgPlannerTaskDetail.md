@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 More details about the task.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

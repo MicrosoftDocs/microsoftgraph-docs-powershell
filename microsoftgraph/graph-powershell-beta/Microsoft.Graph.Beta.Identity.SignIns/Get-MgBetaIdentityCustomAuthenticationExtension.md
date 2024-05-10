@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get customAuthenticationExtensions from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

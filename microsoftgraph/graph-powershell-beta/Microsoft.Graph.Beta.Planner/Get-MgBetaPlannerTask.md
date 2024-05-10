@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns a collection of the specified tasks
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

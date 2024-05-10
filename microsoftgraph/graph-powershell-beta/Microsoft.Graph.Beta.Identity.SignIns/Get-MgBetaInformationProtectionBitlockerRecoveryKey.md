@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The recovery keys associated with the bitlocker entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

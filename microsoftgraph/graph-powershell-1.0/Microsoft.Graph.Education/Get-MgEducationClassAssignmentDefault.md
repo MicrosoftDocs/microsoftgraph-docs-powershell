@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies class-level defaults respected by new assignments created in the class.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

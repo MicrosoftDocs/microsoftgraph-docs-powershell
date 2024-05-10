@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directoryAudits from auditLogs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogDirectoryAudit](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryAudit?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

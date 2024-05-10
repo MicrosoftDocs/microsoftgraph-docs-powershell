@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tokenIssuancePolicies for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

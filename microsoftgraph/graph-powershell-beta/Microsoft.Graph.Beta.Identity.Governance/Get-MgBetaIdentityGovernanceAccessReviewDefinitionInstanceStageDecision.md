@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
