@@ -32,18 +32,6 @@ New-MgBetaSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to filePlanReferences for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,6 +233,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelfileplanreference)
+
 
 
 

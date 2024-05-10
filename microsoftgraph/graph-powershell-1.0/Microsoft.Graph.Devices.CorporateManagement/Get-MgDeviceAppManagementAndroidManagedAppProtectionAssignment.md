@@ -42,18 +42,6 @@ Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment
 ## DESCRIPTION
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -354,6 +342,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotectionassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementandroidmanagedappprotectionassignment)
+
 
 
 

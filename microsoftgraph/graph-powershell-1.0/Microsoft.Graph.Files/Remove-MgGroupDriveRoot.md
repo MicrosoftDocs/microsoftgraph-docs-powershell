@@ -32,22 +32,6 @@ Remove-MgGroupDriveRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property root for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -247,6 +231,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mggroupdriveroot)
+
 
 
 

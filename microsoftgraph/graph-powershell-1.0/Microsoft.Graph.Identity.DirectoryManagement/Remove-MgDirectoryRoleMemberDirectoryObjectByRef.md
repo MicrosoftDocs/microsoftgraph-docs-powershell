@@ -29,18 +29,6 @@ Remove-MgDirectoryRoleMemberDirectoryObjectByRef -InputObject <IIdentityDirector
 ## DESCRIPTION
 Delete ref of navigation property members for directoryRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -242,6 +230,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberdirectoryobjectbyref)
+
 
 
 

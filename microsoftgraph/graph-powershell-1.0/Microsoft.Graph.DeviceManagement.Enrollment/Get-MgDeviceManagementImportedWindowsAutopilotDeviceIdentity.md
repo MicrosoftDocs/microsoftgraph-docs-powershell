@@ -40,18 +40,6 @@ Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity -InputObject <IDevi
 ## DESCRIPTION
 Collection of imported Windows autopilot devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,6 +294,7 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementimportedwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementimportedwindowsautopilotdeviceidentity)
+
 
 
 

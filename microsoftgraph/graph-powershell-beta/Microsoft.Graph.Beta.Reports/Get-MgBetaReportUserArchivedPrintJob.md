@@ -33,22 +33,6 @@ Get-MgBetaReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-
 ## DESCRIPTION
 Get a list of archived print jobs for a particular user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -299,6 +283,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportuserarchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta)
+
 
 
 

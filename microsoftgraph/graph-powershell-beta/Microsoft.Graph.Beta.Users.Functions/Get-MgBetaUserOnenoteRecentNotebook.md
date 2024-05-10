@@ -35,22 +35,6 @@ Get a list of recentNotebook instances that have been accessed by the signed-in 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -280,6 +264,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta)
+
 
 
 

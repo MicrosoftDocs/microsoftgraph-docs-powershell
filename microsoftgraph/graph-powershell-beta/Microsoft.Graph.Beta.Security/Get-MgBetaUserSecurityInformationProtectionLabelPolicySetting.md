@@ -29,18 +29,6 @@ Get-MgBetaUserSecurityInformationProtectionLabelPolicySetting -InputObject <ISec
 ## DESCRIPTION
 Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -252,6 +240,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionlabelpolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetausersecurityinformationprotectionlabelpolicysetting)
+
 
 
 

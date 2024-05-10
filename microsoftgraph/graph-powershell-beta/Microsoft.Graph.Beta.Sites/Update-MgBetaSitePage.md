@@ -56,22 +56,6 @@ Update-MgBetaSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Update the navigation property pages in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23468,6 +23452,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepage)
+
 
 
 

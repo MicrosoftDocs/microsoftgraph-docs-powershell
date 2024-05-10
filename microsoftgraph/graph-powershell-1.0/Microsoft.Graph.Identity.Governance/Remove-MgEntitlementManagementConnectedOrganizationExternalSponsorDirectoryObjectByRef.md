@@ -34,18 +34,6 @@ Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjec
 ## DESCRIPTION
 Delete ref of navigation property externalSponsors for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConnectedOrganizationId
@@ -288,6 +276,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementconnectedorganizationexternalsponsordirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementconnectedorganizationexternalsponsordirectoryobjectbyref)
+
 
 
 

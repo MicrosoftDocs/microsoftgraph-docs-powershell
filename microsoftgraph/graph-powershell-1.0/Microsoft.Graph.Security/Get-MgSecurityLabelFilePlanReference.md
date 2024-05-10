@@ -40,18 +40,6 @@ Get-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-ExpandPr
 ## DESCRIPTION
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +350,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference)
+
 
 
 

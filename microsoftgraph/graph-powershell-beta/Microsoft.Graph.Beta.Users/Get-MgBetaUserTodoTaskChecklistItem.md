@@ -40,18 +40,6 @@ Get-MgBetaUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 A collection of smaller subtasks linked to the more complex parent task.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -373,6 +361,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskchecklistitem)
+
 
 
 

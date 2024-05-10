@@ -24,18 +24,6 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Container for navigation properties for Microsoft Entra authentication methods resources.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -127,6 +115,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportauthenticationmethod)
+
 
 
 

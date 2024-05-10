@@ -49,18 +49,6 @@ Update-MgBetaBusinessScenarioByUniqueName -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the navigation property businessScenarios in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1002,6 +990,7 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenariobyuniquename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenariobyuniquename)
+
 
 
 

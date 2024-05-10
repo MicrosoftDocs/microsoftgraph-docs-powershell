@@ -32,18 +32,6 @@ Remove-MgGroupOwnerDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete ref of navigation property owners for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -260,6 +248,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref)
+
 
 
 

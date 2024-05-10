@@ -33,22 +33,6 @@ Get-MgReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-F
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -277,6 +261,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportprinterarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportprinterarchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-1.0)
+
 
 
 

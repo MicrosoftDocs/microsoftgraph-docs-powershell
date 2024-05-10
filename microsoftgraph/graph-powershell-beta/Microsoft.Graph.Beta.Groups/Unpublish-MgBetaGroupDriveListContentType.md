@@ -32,22 +32,6 @@ Unpublish-MgBetaGroupDriveListContentType -InputObject <IGroupsIdentity> [-Respo
 ## DESCRIPTION
 Invoke action unpublish
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -271,6 +255,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupdrivelistcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/unpublish-mgbetagroupdrivelistcontenttype)
 
 [https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-unpublish?view=graph-rest-beta)
+
 
 
 

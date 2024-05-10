@@ -32,18 +32,6 @@ Get-MgIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Get postAttributeCollection from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -231,6 +219,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowpostattributecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowpostattributecollection)
+
 
 
 

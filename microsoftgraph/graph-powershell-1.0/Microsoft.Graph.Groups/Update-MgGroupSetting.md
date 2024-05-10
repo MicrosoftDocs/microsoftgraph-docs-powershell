@@ -78,18 +78,6 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property settings in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -388,6 +376,7 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting)
 
 [https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-update?view=graph-rest-1.0)
+
 
 
 
