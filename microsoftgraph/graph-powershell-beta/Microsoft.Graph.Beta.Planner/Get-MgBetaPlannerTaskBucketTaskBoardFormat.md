@@ -37,13 +37,17 @@ Nullable.
 Used to render the task correctly in the task board view when grouped by bucket.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId
+
+```
+This example shows how to use the Get-MgBetaPlannerTaskBucketTaskBoardFormat Cmdlet.
+
 
 ## PARAMETERS
 

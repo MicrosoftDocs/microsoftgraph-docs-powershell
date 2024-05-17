@@ -69,11 +69,11 @@ Update-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity>
 Update the navigation property columns in sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	required = $true
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Update-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

@@ -38,13 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview -InputObject <IManagedT
 Overview of cloud PC information across managed tenants.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantCloudPcOverview Cmdlet.
+
 
 ## PARAMETERS
 

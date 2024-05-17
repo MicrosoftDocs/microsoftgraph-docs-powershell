@@ -40,16 +40,6 @@ The collection of decisions for the caller, if the caller is a reviewer.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewDecisionId

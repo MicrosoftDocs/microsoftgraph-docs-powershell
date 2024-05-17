@@ -41,13 +41,17 @@ Get-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Exp
 The swap requests for shifts in the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleSwapShiftChangeRequest -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleSwapShiftChangeRequest Cmdlet.
+
 
 ## PARAMETERS
 

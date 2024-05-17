@@ -33,13 +33,17 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 Get shiftPreferences from users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserSettingShiftPreference -UserId $userId
+
+```
+This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
+
 
 ## PARAMETERS
 

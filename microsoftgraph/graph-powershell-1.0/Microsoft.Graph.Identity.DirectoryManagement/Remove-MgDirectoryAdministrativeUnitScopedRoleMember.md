@@ -31,13 +31,17 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 Delete navigation property scopedRoleMembers for directory
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
+
+```
+This example shows how to use the Remove-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
 
 ## PARAMETERS
 

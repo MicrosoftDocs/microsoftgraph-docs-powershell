@@ -50,11 +50,10 @@ Update-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
 Update the navigation property featureRolloutPolicies in policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "PasswordHashSync Rollout Policy"
@@ -64,6 +63,11 @@ $params = @{
 }
 
 Update-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

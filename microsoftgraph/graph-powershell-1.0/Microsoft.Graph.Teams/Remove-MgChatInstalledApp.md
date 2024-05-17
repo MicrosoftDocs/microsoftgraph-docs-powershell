@@ -33,13 +33,17 @@ Remove-MgChatInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Re
 Delete navigation property installedApps for chats
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
+
+```
+This example shows how to use the Remove-MgChatInstalledApp Cmdlet.
+
 
 ## PARAMETERS
 

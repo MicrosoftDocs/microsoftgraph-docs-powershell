@@ -53,17 +53,21 @@ Update-MgBetaEducationMeRubric -InputObject <IEducationIdentity>
 Update the navigation property rubrics in education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric after display name patch"
 }
 
 Update-MgBetaEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaEducationMeRubric Cmdlet.
+
 
 ## PARAMETERS
 

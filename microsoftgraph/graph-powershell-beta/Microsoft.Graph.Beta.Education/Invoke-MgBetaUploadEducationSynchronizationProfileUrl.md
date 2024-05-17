@@ -35,16 +35,6 @@ The upload URL is provided only for the CSV data provider.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSynchronizationProfileId

@@ -25,13 +25,17 @@ Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <S
 The policy by which consent requests are created and managed for the entire tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAdminConsentRequestPolicy
+
+```
+This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
+
 
 ## PARAMETERS
 

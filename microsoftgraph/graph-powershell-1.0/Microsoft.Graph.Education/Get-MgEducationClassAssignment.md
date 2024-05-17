@@ -43,20 +43,28 @@ All assignments associated with this class.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Get assignments
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Education
-```
+This example will get assignments
 
-Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources"
+### Example 2: Get assignments using $expand options
+
+```powershell
+
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassAssignment -EducationClassId $educationClassId -ExpandProperty "resources" 
+
+```
+This example will get assignments using $expand options
+
 
 ## PARAMETERS
 

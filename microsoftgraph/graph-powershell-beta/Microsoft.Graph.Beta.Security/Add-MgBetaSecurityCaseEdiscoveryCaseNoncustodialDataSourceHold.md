@@ -75,13 +75,17 @@ The location provides a URL that returns an eDiscoveryHoldOperation object.
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverynoncustodialdatasource-applyhold-permissions.md)]
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+
+```
+This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
+
 
 ## PARAMETERS
 

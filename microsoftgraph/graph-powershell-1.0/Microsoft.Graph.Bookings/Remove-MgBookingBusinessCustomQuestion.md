@@ -33,13 +33,17 @@ Remove-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-IfMatc
 Delete navigation property customQuestions for solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
+
+```
+This example shows how to use the Remove-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

@@ -42,9 +42,8 @@ New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 Create new navigation property to provisioningPolicies for deviceManagement
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcProvisioningPolicy"
@@ -65,6 +64,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

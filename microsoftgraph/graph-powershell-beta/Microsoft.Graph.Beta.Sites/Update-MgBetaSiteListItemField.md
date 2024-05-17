@@ -47,11 +47,11 @@ Update-MgBetaSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Has
 Update the navigation property fields in sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	Color = "Fuchsia"
@@ -59,6 +59,10 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaSiteListItemField Cmdlet.
+
 
 ## PARAMETERS
 

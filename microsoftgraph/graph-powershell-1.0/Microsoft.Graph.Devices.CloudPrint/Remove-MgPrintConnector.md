@@ -33,13 +33,17 @@ Remove-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 Delete navigation property connectors for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintConnector -PrintConnectorId $printConnectorId
+
+```
+This example shows how to use the Remove-MgPrintConnector Cmdlet.
+
 
 ## PARAMETERS
 

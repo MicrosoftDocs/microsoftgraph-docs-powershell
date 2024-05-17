@@ -26,13 +26,17 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 The access packages whose assigned users are ineligible to be assigned this access package.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

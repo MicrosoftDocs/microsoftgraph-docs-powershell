@@ -33,13 +33,17 @@ Remove-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> 
 Delete navigation property assignmentCategories for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
+
+```
+This example shows how to use the Remove-MgBetaEducationClassAssignmentCategory Cmdlet.
+
 
 ## PARAMETERS
 
