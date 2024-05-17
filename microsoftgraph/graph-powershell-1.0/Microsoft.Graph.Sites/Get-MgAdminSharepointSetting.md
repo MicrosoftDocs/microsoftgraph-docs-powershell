@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get settings from admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepointSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

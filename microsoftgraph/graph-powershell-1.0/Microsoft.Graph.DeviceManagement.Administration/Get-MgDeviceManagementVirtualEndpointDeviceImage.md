@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of device image resources on Cloud PC.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

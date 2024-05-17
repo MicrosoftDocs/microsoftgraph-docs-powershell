@@ -11,6 +11,9 @@ schema: 2.0.0
 All assignments associated with this class.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

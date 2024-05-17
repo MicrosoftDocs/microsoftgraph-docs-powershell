@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

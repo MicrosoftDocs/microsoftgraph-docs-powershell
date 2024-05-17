@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of appConsentRequest objects representing apps for which admin consent has been requested by one or more users.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the department or business unit of an organization to which a label belongs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelDepartment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

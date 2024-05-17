@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of categories for this app.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

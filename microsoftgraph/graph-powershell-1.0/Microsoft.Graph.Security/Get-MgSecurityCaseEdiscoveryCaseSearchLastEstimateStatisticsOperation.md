@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The last estimate operation associated with the eDiscovery search.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

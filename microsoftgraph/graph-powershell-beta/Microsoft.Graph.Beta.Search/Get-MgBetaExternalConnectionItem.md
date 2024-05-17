@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get items from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

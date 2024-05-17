@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents metadata for the exported data.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

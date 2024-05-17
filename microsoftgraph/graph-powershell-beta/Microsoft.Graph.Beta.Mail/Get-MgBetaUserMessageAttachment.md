@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The fileAttachment and itemAttachment attachments for the message.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageAttachment?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

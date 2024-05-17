@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of channels and messages associated with the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

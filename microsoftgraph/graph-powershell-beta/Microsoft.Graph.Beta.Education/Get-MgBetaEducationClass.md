@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get classes from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

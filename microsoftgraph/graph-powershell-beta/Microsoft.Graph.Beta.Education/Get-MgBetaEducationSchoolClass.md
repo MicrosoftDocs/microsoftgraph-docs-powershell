@@ -11,6 +11,9 @@ schema: 2.0.0
 Classes taught at the school.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClass?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

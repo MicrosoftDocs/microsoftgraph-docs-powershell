@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents references to a directory or domain of another organization whose users can request access.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)

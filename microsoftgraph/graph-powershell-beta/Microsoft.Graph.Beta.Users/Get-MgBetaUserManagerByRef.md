@@ -12,6 +12,9 @@ The user or contact that is this user's manager.
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Get-MgUserManagerByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

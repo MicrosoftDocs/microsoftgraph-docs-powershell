@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get details about mailbox usage.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

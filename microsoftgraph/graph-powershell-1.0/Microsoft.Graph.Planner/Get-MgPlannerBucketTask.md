@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 The collection of tasks in the bucket.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucketTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucketTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

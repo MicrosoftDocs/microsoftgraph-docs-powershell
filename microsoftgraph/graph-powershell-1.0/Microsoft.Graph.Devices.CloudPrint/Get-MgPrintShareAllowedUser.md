@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The users who have access to print using the printer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

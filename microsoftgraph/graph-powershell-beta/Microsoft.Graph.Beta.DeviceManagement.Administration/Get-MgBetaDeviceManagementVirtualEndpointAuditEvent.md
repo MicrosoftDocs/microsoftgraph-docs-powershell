@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Cloud PC audit event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointAuditEvent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

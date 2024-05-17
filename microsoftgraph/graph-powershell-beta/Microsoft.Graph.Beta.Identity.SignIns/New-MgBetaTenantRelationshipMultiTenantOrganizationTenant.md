@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tenants for tenantRelationships
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

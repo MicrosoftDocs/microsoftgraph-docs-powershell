@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 References to a directory or domain of another organization whose users can request access.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

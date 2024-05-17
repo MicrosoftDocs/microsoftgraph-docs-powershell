@@ -11,6 +11,9 @@ schema: 2.0.0
 Classes taught at the school.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

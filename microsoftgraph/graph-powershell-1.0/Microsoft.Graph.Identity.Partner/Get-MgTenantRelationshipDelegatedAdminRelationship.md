@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of the delegated administrative privileges that a Microsoft partner has in a customer tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
