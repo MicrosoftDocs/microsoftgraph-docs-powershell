@@ -29,18 +29,6 @@ New-MgBetaUserCloudPcSnapshot -InputObject <IUsersActionsIdentity> [-ResponseHea
 ## DESCRIPTION
 Invoke action createSnapshot
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -242,6 +230,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausercloudpcsnapshot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausercloudpcsnapshot)
+
 
 
 

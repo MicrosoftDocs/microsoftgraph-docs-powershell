@@ -53,18 +53,6 @@ Update-MgBetaGroupSiteRecycleBinItem -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property items in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -23459,6 +23447,7 @@ For OneDrive, this property is not populated.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebinitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsiterecyclebinitem)
+
 
 
 

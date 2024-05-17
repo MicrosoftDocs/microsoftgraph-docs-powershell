@@ -106,18 +106,6 @@ New-MgGroupSiteGetByPathList -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create new navigation property to lists for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -24779,6 +24767,7 @@ See the possible resource path values for each supported resource.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsitegetbypathlist)
+
 
 
 
