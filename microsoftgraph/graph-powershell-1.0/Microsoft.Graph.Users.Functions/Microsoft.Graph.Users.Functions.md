@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: f70ed487-0599-49d9-8341-505163fa40dc
 Download Help Link: {{ Update Download Link }}
@@ -59,6 +59,9 @@ Locale: en-US
 ### [Get-MgUserDriveListItemActivityByInterval](Get-MgUserDriveListItemActivityByInterval.md)
 {{ Fill in the Description }}
 
+### [Get-MgUserDriveListItemDelta](Get-MgUserDriveListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserDriveRootActivityByInterval](Get-MgUserDriveRootActivityByInterval.md)
 {{ Fill in the Description }}
 
@@ -72,6 +75,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgUserEventInstanceDelta](Get-MgUserEventInstanceDelta.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserLicenseDetailTeamLicensingDetail](Get-MgUserLicenseDetailTeamLicensingDetail.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserMailFolderChildFolderDelta](Get-MgUserMailFolderChildFolderDelta.md)
@@ -145,5 +151,4 @@ Locale: en-US
 
 ### [Test-MgUserDriveListContentTypePublished](Test-MgUserDriveListContentTypePublished.md)
 {{ Fill in the Description }}
-
 

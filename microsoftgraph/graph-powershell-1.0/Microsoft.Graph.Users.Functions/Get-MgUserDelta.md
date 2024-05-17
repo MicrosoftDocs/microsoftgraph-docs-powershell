@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgUserDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
+Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
+See change tracking for details.
 
 ## SYNTAX
 
@@ -22,9 +20,20 @@ Get-MgUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
+See change tracking for details.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -239,6 +248,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/get-mguserdelta)
 
-
-
+[https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delta?view=graph-rest-1.0)
 

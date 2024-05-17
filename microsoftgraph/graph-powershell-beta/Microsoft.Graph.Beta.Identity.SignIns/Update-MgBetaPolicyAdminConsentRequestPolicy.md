@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Update the properties of an adminConsentRequestPolicy object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-1.0)
+Update the navigation property adminConsentRequestPolicy in policies
 
 ## SYNTAX
 
@@ -31,7 +28,23 @@ Update-MgBetaPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdmi
 ```
 
 ## DESCRIPTION
-Update the properties of an adminConsentRequestPolicy object.
+Update the navigation property adminConsentRequestPolicy in policies
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -270,43 +283,37 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAdminConsentRequestPolicy>`: adminConsentRequestPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAdminConsentRequestPolicy\>: adminConsentRequestPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[IsEnabled <Boolean?>]`: Specifies whether the admin consent request feature is enabled or disabled.
+  \[IsEnabled \<Boolean?\>\]: Specifies whether the admin consent request feature is enabled or disabled.
 Required.
-  - `[NotifyReviewers <Boolean?>]`: Specifies whether reviewers will receive notifications.
+  \[NotifyReviewers \<Boolean?\>\]: Specifies whether reviewers will receive notifications.
 Required.
-  - `[RemindersEnabled <Boolean?>]`: Specifies whether reviewers will receive reminder emails.
+  \[RemindersEnabled \<Boolean?\>\]: Specifies whether reviewers will receive reminder emails.
 Required.
-  - `[RequestDurationInDays <Int32?>]`: Specifies the duration the request is active before it automatically expires if no decision is applied.
-  - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope- `[]`>]`: Required.
-    - `[Query <String>]`: The query specifying who will be the reviewer.
-    - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
+  \[RequestDurationInDays \<Int32?\>\]: Specifies the duration the request is active before it automatically expires if no decision is applied.
+  \[Reviewers \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>\]: Required.
+    \[Query \<String\>\]: The query specifying who will be the reviewer.
+    \[QueryRoot \<String\>\]: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
 This property is only required if a relative query, for example, ./manager, is specified.
 Possible value: decisions.
-    - `[QueryType <String>]`: The type of query.
+    \[QueryType \<String\>\]: The type of query.
 Examples include MicrosoftGraph and ARM.
-  - `[Version <Int32?>]`: Specifies the version of this policy.
+  \[Version \<Int32?\>\]: Specifies the version of this policy.
 When the policy is updated, this version is updated.
 Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope- `[]`>: Required.
-  - `[Query <String>]`: The query specifying who will be the reviewer.
-  - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
+REVIEWERS \<IMicrosoftGraphAccessReviewReviewerScope\[\]\>: Required.
+  \[Query \<String\>\]: The query specifying who will be the reviewer.
+  \[QueryRoot \<String\>\]: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query.
 This property is only required if a relative query, for example, ./manager, is specified.
 Possible value: decisions.
-  - `[QueryType <String>]`: The type of query.
+  \[QueryType \<String\>\]: The type of query.
 Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyadminconsentrequestpolicy)
-
-[https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminconsentrequestpolicy-update?view=graph-rest-1.0)
-
-
-
-
 

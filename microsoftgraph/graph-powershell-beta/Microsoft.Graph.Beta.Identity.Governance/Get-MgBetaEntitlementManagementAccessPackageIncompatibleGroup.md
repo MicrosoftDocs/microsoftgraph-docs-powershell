@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroup
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup
 
 ## SYNOPSIS
-Retrieve a list of the group objects marked as incompatible on an accessPackage.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleGroup?view=graph-powershell-1.0)
+The groups whose members are ineligible to be assigned this access package.
 
 ## SYNTAX
 
@@ -23,20 +20,16 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <
 ```
 
 ## DESCRIPTION
-Retrieve a list of the group objects marked as incompatible on an accessPackage.
+The groups whose members are ineligible to be assigned this access package.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
-
 
 ## PARAMETERS
 
@@ -265,9 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatiblegroup)
-
-[https://learn.microsoft.com/graph/api/accesspackage-list-incompatiblegroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-list-incompatiblegroups?view=graph-rest-1.0)
-
-
-
 

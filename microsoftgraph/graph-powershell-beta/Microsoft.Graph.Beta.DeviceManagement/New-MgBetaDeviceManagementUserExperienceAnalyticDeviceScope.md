@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescope
@@ -31,6 +31,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticDeviceScope
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsDeviceScopes for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -351,40 +367,36 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceScope>`: The user experience analytics device scope entity contains device scope configuration values use to apply filtering on the endpoint analytics reports.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsDeviceScope\>: The user experience analytics device scope entity contains device scope configuration values use to apply filtering on the endpoint analytics reports.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Indicates the creation date and time for the custom device scope.
-  - `[DeviceScopeName <String>]`: The name of the user experience analytics device Scope configuration.
-  - `[Enabled <Boolean?>]`: Indicates whether a device scope is enabled or disabled.
+  \[CreatedDateTime \<DateTime?\>\]: Indicates the creation date and time for the custom device scope.
+  \[DeviceScopeName \<String\>\]: The name of the user experience analytics device Scope configuration.
+  \[Enabled \<Boolean?\>\]: Indicates whether a device scope is enabled or disabled.
 When TRUE, the device scope is enabled.
 When FALSE, the device scope is disabled.
 Default value is FALSE.
-  - `[IsBuiltIn <Boolean?>]`: Indicates whether the device scope configuration is built-in or custom.
+  \[IsBuiltIn \<Boolean?\>\]: Indicates whether the device scope configuration is built-in or custom.
 When TRUE, the device scope configuration is built-in.
 When FALSE, the device scope configuration is custom.
 Default value is FALSE.
-  - `[LastModifiedDateTime <DateTime?>]`: Indicates the last updated date and time for the custom device scope.
-  - `[Operator <DeviceScopeOperator?>]`: Device scope configuration query operator.
+  \[LastModifiedDateTime \<DateTime?\>\]: Indicates the last updated date and time for the custom device scope.
+  \[Operator \<DeviceScopeOperator?\>\]: Device scope configuration query operator.
 Possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan.
 Default value: equals.
-  - `[OwnerId <String>]`: The unique identifier of the person (admin) who created the device scope configuration.
-  - `[Parameter <DeviceScopeParameter?>]`: Device scope configuration parameter.
+  \[OwnerId \<String\>\]: The unique identifier of the person (admin) who created the device scope configuration.
+  \[Parameter \<DeviceScopeParameter?\>\]: Device scope configuration parameter.
 It will be expend in future to add more parameter.
 Eg: device scope parameter can be OS version, Disk Type, Device manufacturer, device model or Scope tag.
 Default value: scopeTag.
-  - `[Status <DeviceScopeStatus?>]`: Indicates the device scope status after the device scope has been enabled.
+  \[Status \<DeviceScopeStatus?\>\]: Indicates the device scope status after the device scope has been enabled.
 Possible values are: none, computing, insufficientData or completed.
 Default value is none.
-  - `[Value <String>]`: The device scope configuration query clause value.
-  - `[ValueObjectId <String>]`: The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
+  \[Value \<String\>\]: The device scope configuration query clause value.
+  \[ValueObjectId \<String\>\]: The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicescope)
-
-
-
-
 

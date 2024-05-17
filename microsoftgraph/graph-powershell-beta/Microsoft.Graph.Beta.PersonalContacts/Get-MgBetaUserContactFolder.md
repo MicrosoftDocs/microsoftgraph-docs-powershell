@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.Beta.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder
@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserContactFolder
 
 ## SYNOPSIS
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder:
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolder?view=graph-powershell-1.0)
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,22 +37,19 @@ Get-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get a contact folder by using the contact folder ID.
-There are two scenarios where an app can get another user's contact folder:
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.PersonalContacts
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserContactFolder -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserContactFolder Cmdlet.
-
 
 ## PARAMETERS
 
@@ -301,21 +296,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContactId <String>]`: The unique identifier of contact
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContactId \<String\>\]: The unique identifier of contact
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolder)
-
-[https://learn.microsoft.com/graph/api/contactfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-contactfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-contactfolders?view=graph-rest-1.0)
-
-
-
 

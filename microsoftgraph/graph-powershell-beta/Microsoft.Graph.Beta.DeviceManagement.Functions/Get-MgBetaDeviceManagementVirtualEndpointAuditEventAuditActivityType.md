@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointauditeventauditactivitytype
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType
 
 ## SYNOPSIS
-Invoke function getAuditActivityTypes
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType?view=graph-powershell-1.0)
+Get audit activity types by tenant ID.
 
 ## SYNTAX
 
@@ -22,16 +19,15 @@ Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType [-Count] [-
 ```
 
 ## DESCRIPTION
-Invoke function getAuditActivityTypes
+Get audit activity types by tenant ID.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -170,6 +166,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointauditeventauditactivitytype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointauditeventauditactivitytype)
 
-
-
+[https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcauditevent-getauditactivitytypes?view=graph-rest-beta)
 

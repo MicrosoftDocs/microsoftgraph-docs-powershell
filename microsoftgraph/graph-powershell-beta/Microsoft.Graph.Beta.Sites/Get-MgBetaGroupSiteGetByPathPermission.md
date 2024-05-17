@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteGetByPathPermission
 
 ## SYNOPSIS
-Get the permission resources from the permissions navigation property on a site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathPermission?view=graph-powershell-1.0)
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +30,20 @@ Get-MgBetaGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId 
 ```
 
 ## DESCRIPTION
-Get the permission resources from the permissions navigation property on a site.
+The permissions associated with the site.
+Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -306,10 +317,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathpermission)
-
-[https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
-
-
-
-
 

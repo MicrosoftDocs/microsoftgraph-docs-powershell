@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostercount
@@ -19,6 +19,18 @@ Get-MgBetaPlannerRosterCount [-Filter <String>] [-Search <String>] [-ResponseHea
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -111,8 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostercount)
-
-
-
-
 

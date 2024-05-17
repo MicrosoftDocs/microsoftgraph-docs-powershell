@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
-Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupOwnerDirectoryObjectByRef?view=graph-powershell-beta)
+Delete ref of navigation property owners for groups
 
 ## SYNTAX
 
@@ -31,8 +27,19 @@ Remove-MgGroupOwnerDirectoryObjectByRef -InputObject <IGroupsIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Remove an owner from a Microsoft 365 group or a security group through the owners navigation property.
-Once owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
+Delete ref of navigation property owners for groups
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -204,56 +211,50 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[BaseSitePageId <String>]`: The unique identifier of baseSitePage
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[ConversationId <String>]`: The unique identifier of conversation
-  - `[ConversationThreadId <String>]`: The unique identifier of conversationThread
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[DriveItemVersionId <String>]`: The unique identifier of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
-  - `[GroupSettingTemplateId <String>]`: The unique identifier of groupSettingTemplate
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListId <String>]`: The unique identifier of list
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
-  - `[NotebookId <String>]`: The unique identifier of notebook
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
-  - `[Path <String>]`: Usage: path='{path}'
-  - `[Path1 <String>]`: Usage: path='{path1}'
-  - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PostId <String>]`: The unique identifier of post
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SiteId <String>]`: The unique identifier of site
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: The unique identifier of subscription
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UniqueName <String>]`: Alternate key of group
-  - `[User <String>]`: Usage: User='{User}'
-  - `[WebPartId <String>]`: The unique identifier of webPart
+INPUTOBJECT \<IGroupsIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[BaseSitePageId \<String\>\]: The unique identifier of baseSitePage
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[ConversationId \<String\>\]: The unique identifier of conversation
+  \[ConversationThreadId \<String\>\]: The unique identifier of conversationThread
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DocumentSetVersionId \<String\>\]: The unique identifier of documentSetVersion
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[DriveItemVersionId \<String\>\]: The unique identifier of driveItemVersion
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[GroupLifecyclePolicyId \<String\>\]: The unique identifier of groupLifecyclePolicy
+  \[GroupSettingId \<String\>\]: The unique identifier of groupSetting
+  \[GroupSettingTemplateId \<String\>\]: The unique identifier of groupSettingTemplate
+  \[HorizontalSectionColumnId \<String\>\]: The unique identifier of horizontalSectionColumn
+  \[HorizontalSectionId \<String\>\]: The unique identifier of horizontalSection
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[ListId \<String\>\]: The unique identifier of list
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[ListItemVersionId \<String\>\]: The unique identifier of listItemVersion
+  \[NotebookId \<String\>\]: The unique identifier of notebook
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnenoteSectionId \<String\>\]: The unique identifier of onenoteSection
+  \[Path \<String\>\]: Usage: path='{path}'
+  \[Path1 \<String\>\]: Usage: path='{path1}'
+  \[PermissionId \<String\>\]: The unique identifier of permission
+  \[PostId \<String\>\]: The unique identifier of post
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SiteId \<String\>\]: The unique identifier of site
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[SubscriptionId \<String\>\]: The unique identifier of subscription
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[UniqueName \<String\>\]: Alternate key of group
+  \[User \<String\>\]: Usage: User='{User}'
+  \[WebPartId \<String\>\]: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupownerdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-owners?view=graph-rest-1.0)
-
-
-
-
 

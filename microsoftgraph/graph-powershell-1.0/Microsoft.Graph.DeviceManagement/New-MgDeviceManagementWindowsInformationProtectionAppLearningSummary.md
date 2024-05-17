@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-Create a new windowsInformationProtectionAppLearningSummary object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## SYNTAX
 
@@ -32,7 +29,19 @@ New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-Create a new windowsInformationProtectionAppLearningSummary object.
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -220,21 +229,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>`: Windows Information Protection AppLearning Summary entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsInformationProtectionAppLearningSummary\>: Windows Information Protection AppLearning Summary entity.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ApplicationName <String>]`: Application Name
-  - `[ApplicationType <ApplicationType?>]`: Possible types of Application
-  - `[DeviceCount <Int32?>]`: Device Count
+  \[ApplicationName \<String\>\]: Application Name
+  \[ApplicationType \<ApplicationType?\>\]: Possible types of Application
+  \[DeviceCount \<Int32?\>\]: Device Count
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary)
-
-[https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0)
-
-
-
-
 
