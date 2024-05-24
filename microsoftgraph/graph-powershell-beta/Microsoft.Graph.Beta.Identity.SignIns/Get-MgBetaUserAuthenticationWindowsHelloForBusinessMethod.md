@@ -41,18 +41,6 @@ Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIdentit
 ## DESCRIPTION
 Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -395,6 +383,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationwindowshelloforbusinessmethod)
+
 
 
 

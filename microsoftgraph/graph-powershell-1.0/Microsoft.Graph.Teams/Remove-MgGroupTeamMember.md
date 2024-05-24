@@ -32,22 +32,6 @@ Remove-MgGroupTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property members for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationMemberId
@@ -256,6 +240,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteammember)
+
 
 
 

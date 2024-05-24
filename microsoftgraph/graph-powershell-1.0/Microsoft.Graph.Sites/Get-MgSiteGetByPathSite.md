@@ -34,18 +34,6 @@ Get-MgSiteGetByPathSite -Path <String> -SiteId <String> -Path1 <String> [-Expand
 ## DESCRIPTION
 The collection of the sub-sites under this site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -303,6 +291,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathsite)
+
 
 
 

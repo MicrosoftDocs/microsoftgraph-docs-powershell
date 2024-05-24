@@ -50,18 +50,6 @@ New-MgBetaPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Create new navigation property to documents for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -438,6 +426,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocument](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprinterjobdocument)
+
 
 
 

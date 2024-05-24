@@ -54,18 +54,6 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ## DESCRIPTION
 Update the navigation property siteLists in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -697,6 +685,7 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
+
 
 
 

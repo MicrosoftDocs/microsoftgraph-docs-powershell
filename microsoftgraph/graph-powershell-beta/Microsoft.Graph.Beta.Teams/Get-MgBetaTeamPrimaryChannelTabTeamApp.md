@@ -32,22 +32,6 @@ Get-MgBetaTeamPrimaryChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 The application that is linked to the tab.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -233,6 +217,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychanneltabteamapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychanneltabteamapp)
+
 
 
 

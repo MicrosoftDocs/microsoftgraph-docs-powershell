@@ -33,18 +33,6 @@ Remove-MgEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property resourceRoleScopes for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId
@@ -287,6 +275,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackageresourcerolescope)
+
 
 
 

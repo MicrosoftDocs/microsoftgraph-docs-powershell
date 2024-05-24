@@ -29,18 +29,6 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation -InputObject <ICom
 ## DESCRIPTION
 Get lastIndexOperation from compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CaseId
@@ -202,6 +190,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianlastindexoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianlastindexoperation)
+
 
 
 

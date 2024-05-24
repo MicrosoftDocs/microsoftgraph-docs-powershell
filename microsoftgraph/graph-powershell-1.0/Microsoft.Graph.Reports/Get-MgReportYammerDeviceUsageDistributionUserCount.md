@@ -32,22 +32,6 @@ Get-MgReportYammerDeviceUsageDistributionUserCount -InputObject <IReportsIdentit
 ## DESCRIPTION
 Get the number of users by device type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -201,6 +185,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusagedistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusagedistributionusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammerdeviceusagedistributionusercounts?view=graph-rest-1.0)
+
 
 
 

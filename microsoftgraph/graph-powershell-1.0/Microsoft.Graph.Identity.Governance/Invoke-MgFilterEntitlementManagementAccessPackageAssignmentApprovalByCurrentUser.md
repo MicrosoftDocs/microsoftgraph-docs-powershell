@@ -41,22 +41,6 @@ The objects returned are those that are in scope for approval by the calling use
 In PIM for groups, return a collection of assignment approvals.
 The objects returned are those that are in scope for approval by the calling user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -345,6 +329,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-1.0)
+
 
 
 

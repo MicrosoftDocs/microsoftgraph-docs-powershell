@@ -41,18 +41,6 @@ New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter <IMicrosoftGraphIdentit
 ## DESCRIPTION
 Create new navigation property to workflows for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43237,6 +43225,7 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflow)
+
 
 
 

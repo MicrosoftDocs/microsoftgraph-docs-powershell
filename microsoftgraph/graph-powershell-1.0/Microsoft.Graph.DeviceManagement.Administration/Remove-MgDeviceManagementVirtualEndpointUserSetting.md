@@ -32,18 +32,6 @@ Remove-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete navigation property userSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcUserSettingId
@@ -229,6 +217,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointusersetting)
+
 
 
 

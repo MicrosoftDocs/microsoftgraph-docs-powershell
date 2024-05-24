@@ -31,22 +31,6 @@ Get-MgBetaUserMessageContent -InputObject <IMailIdentity> -OutFile <String> [-Re
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -201,6 +185,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent)
+
 
 
 

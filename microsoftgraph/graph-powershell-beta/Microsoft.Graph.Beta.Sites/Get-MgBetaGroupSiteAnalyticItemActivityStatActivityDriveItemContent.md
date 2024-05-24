@@ -33,18 +33,6 @@ Get-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject
 ## DESCRIPTION
 Get content for the navigation property driveItem from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Format
@@ -286,6 +274,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent)
+
 
 
 

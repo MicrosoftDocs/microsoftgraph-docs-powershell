@@ -37,18 +37,6 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Represents the entry point for self-service sign up and sign in user flows in both Microsoft Entra workforce and customer tenants.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -376,6 +364,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow)
+
 
 
 

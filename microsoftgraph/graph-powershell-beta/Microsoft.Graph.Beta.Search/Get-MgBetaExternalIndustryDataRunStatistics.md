@@ -33,18 +33,6 @@ Get-MgBetaExternalIndustryDataRunStatistics -InputObject <ISearchIdentity> [-Res
 ## DESCRIPTION
 Get statistics for an industryDataRun.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -167,6 +155,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunstatistics](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarunstatistics)
 
 [https://learn.microsoft.com/graph/api/industrydata-industrydatarun-getstatistics?view=graph-rest-beta](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-getstatistics?view=graph-rest-beta)
+
 
 
 

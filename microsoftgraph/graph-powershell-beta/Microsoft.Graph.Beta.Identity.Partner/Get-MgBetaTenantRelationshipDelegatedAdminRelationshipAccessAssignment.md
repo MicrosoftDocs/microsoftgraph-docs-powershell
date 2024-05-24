@@ -41,18 +41,6 @@ Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObj
 ## DESCRIPTION
 The access assignments associated with the delegated admin relationship.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -324,6 +312,7 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/get-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
+
 
 
 

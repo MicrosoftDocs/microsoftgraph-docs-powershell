@@ -51,22 +51,6 @@ Update-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property timeCards in teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -572,6 +556,7 @@ ORIGINALENTRY `<IMicrosoftGraphTimeCardEntry>`: timeCardEntry
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduletimecard)
+
 
 
 

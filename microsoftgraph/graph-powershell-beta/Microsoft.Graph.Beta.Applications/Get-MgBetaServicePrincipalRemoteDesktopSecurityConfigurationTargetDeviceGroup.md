@@ -42,18 +42,6 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfigurationTargetDeviceGroup
 ## DESCRIPTION
 The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -351,6 +339,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfigurationtargetdevicegroup)
+
 
 
 

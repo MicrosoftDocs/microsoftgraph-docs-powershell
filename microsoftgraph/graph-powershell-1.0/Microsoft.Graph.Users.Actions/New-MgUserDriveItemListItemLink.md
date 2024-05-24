@@ -52,18 +52,6 @@ New-MgUserDriveItemListItemLink -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action createLink
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -428,6 +416,7 @@ security groups).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlistitemlink)
+
 
 
 

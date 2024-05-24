@@ -49,18 +49,6 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property healthIssues in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -546,6 +534,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue)
+
 
 
 

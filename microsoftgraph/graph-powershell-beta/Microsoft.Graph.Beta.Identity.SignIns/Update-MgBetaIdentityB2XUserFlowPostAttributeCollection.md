@@ -48,18 +48,6 @@ Update-MgBetaIdentityB2XUserFlowPostAttributeCollection -InputObject <IIdentityS
 ## DESCRIPTION
 Update the navigation property postAttributeCollection in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -369,6 +357,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowpostattributecollection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowpostattributecollection)
+
 
 
 

@@ -32,22 +32,6 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <IDev
 ## DESCRIPTION
 Device Configuration devices status overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -231,6 +215,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatusoverview)
+
 
 
 

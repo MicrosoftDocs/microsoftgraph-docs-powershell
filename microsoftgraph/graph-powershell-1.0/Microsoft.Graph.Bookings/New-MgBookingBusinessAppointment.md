@@ -62,22 +62,6 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create new navigation property to appointments for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -797,6 +781,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessappointment)
+
 
 
 

@@ -40,18 +40,6 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 ## DESCRIPTION
 A collection of resources linked to the task.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -373,6 +361,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource)
+
 
 
 

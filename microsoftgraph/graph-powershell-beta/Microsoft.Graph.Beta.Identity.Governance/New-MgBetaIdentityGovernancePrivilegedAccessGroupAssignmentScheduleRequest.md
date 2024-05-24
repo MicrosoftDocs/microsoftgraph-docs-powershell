@@ -41,18 +41,6 @@ New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequest
 ## DESCRIPTION
 Create new navigation property to assignmentScheduleRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessId
@@ -31190,6 +31178,7 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceprivilegedaccessgroupassignmentschedulerequest)
+
 
 
 

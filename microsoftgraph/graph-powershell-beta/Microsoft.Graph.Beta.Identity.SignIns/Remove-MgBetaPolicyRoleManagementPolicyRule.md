@@ -33,22 +33,6 @@ Remove-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Delete navigation property rules for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -301,6 +285,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyrolemanagementpolicyrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyrolemanagementpolicyrule)
+
 
 
 

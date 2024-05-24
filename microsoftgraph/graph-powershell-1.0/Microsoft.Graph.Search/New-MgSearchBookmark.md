@@ -36,18 +36,6 @@ New-MgSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-ResponseHe
 ## DESCRIPTION
 Create new navigation property to bookmarks for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -536,6 +524,7 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchbookmark)
+
 
 
 

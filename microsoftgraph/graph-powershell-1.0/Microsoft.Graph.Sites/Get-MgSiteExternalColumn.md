@@ -40,22 +40,6 @@ Get-MgSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get externalColumns from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -365,6 +349,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteexternalcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiteexternalcolumn)
+
 
 
 

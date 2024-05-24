@@ -58,18 +58,6 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 ## DESCRIPTION
 Update the navigation property delegatedAdminRelationships in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessAssignments
@@ -590,6 +578,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationship)
+
 
 
 

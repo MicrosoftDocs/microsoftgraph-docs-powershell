@@ -37,18 +37,6 @@ New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 ## DESCRIPTION
 Create new navigation property to customTaskExtensions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14487,6 +14475,7 @@ NOTE: For more information about the permissions for member and guest users, see
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowcustomtaskextension)
+
 
 
 

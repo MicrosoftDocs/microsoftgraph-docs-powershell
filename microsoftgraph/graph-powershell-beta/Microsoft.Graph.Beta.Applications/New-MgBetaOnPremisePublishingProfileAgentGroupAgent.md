@@ -49,22 +49,6 @@ New-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsI
 ## DESCRIPTION
 Create new navigation property to agents for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -439,6 +423,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroupagent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroupagent)
+
 
 
 

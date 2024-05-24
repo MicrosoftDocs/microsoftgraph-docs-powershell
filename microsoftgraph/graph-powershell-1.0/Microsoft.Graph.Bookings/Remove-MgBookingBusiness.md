@@ -32,22 +32,6 @@ Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property bookingBusinesses for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -223,6 +207,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness)
+
 
 
 

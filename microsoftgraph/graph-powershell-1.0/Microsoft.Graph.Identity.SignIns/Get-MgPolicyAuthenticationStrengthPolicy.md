@@ -40,18 +40,6 @@ Get-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationstrengthpolicy)
+
 
 
 

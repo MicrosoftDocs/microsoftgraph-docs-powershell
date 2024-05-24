@@ -32,18 +32,6 @@ Remove-MgBetaGroupDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property retentionLabel for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -258,6 +246,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdriveitemretentionlabel)
+
 
 
 

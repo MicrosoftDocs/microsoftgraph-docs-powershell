@@ -48,22 +48,6 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 ## DESCRIPTION
 Update the navigation property resourceOperations in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionName
@@ -324,6 +308,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation)
+
 
 
 

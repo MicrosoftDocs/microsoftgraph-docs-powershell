@@ -94,18 +94,6 @@ New-MgBetaSiteGetByPathPermission -InputObject <ISitesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create new navigation property to permissions for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -764,6 +752,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitegetbypathpermission)
+
 
 
 

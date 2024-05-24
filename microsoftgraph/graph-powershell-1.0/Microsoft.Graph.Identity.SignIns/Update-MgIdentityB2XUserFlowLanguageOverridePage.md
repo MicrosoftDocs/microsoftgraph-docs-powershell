@@ -48,22 +48,6 @@ Update-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Update the navigation property overridesPages in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -329,6 +313,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguageoverridepage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguageoverridepage)
+
 
 
 

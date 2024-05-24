@@ -42,18 +42,6 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 The schedule requests for operations to create, update, delete, extend, and renew an eligibility.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,6 +359,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
+
 
 
 

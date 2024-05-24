@@ -38,22 +38,6 @@ New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -475,6 +459,7 @@ Default value is FALSE.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector)
+
 
 
 

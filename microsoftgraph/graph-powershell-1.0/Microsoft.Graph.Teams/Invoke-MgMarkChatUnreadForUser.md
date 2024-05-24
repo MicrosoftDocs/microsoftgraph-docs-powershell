@@ -50,18 +50,6 @@ Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Mark a chat as unread for a user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -324,6 +312,7 @@ For example, if a user changes their display name, the API might show the new va
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatunreadforuser](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgmarkchatunreadforuser)
 
 [https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-markchatunreadforuser?view=graph-rest-1.0)
+
 
 
 

@@ -32,22 +32,6 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete navigation property staffMembers for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -238,6 +222,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember)
+
 
 
 

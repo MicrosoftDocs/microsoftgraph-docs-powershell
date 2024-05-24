@@ -40,18 +40,6 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 ## DESCRIPTION
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -369,6 +357,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagemententitlementmanagementroledefinition)
+
 
 
 

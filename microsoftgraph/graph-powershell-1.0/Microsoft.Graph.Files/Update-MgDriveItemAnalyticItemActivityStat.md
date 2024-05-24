@@ -55,18 +55,6 @@ Update-MgDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -9900,6 +9888,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalyticitemactivitystat](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriveitemanalyticitemactivitystat)
+
 
 
 

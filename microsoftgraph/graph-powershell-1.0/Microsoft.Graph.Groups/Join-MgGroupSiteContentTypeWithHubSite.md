@@ -50,22 +50,6 @@ Join-MgGroupSiteContentTypeWithHubSite -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Associate a published content type present in a content type hub with a list of hub sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +335,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupsitecontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/join-mggroupsitecontenttypewithhubsite)
 
 [https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+
 
 
 

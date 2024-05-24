@@ -40,18 +40,6 @@ Get-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorpo
 ## DESCRIPTION
 Default managed app policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +325,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementdefaultmanagedappprotection)
+
 
 
 

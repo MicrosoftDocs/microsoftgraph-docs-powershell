@@ -52,18 +52,6 @@ New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Create new navigation property to appLogCollectionRequests for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,6 +353,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
+
 
 
 

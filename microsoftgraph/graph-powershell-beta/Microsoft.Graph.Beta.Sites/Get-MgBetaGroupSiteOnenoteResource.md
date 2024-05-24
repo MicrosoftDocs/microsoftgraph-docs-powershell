@@ -46,18 +46,6 @@ Getting a resources collection isn't supported, but you can get the binary conte
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -390,6 +378,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenoteresource)
+
 
 
 

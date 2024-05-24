@@ -32,18 +32,6 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 ## DESCRIPTION
 Delete navigation property bookmarks for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookmarkId
@@ -213,6 +201,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
+
 
 
 

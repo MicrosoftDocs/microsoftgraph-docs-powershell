@@ -36,18 +36,6 @@ For details, see Use delta query to track changes in Microsoft Graph data.
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannertask-delta-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -353,6 +341,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannertaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplannertaskdelta)
 
 [https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
+
 
 
 

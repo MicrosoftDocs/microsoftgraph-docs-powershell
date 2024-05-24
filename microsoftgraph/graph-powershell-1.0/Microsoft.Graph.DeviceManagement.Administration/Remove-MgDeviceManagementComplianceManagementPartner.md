@@ -32,22 +32,6 @@ Remove-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property complianceManagementPartners for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ComplianceManagementPartnerId
@@ -233,6 +217,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementcompliancemanagementpartner)
+
 
 
 

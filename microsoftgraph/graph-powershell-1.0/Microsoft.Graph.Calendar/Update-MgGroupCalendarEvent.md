@@ -78,18 +78,6 @@ Update-MgGroupCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property events in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1982,6 +1970,7 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/update-mggroupcalendarevent)
+
 
 
 

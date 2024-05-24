@@ -40,18 +40,6 @@ Get-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdentity
 ## DESCRIPTION
 Represents listeners for custom authentication extension events in Azure AD for workforce and customers.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgidentityauthenticationeventlistener)
+
 
 
 
