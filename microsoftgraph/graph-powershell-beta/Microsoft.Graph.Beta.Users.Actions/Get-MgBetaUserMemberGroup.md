@@ -57,9 +57,8 @@ If more than 11,000 results are available, it returns a 400 Bad Request error wi
 As a workaround, use the List group transitive memberOf API.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaUserMemberGroup Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	SecurityEnabledOnly = $true
@@ -67,6 +66,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaUserMemberGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

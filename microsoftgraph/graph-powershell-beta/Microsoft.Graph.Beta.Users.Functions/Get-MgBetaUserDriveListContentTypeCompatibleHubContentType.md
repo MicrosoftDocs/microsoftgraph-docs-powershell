@@ -45,16 +45,6 @@ For more information, see addCopyFromContentTypeHub and the blog post Syntex Pro
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count

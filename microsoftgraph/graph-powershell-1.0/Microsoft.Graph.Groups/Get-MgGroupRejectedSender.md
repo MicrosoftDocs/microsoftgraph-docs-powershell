@@ -27,12 +27,13 @@ The list of users or groups not allowed to create posts or calendar events in th
 Nullable
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgGroupRejectedSender Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupRejectedSender -GroupId $groupId
 ```
+This example shows how to use the Get-MgGroupRejectedSender Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -41,13 +41,17 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 The device compliance policies.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementDeviceCompliancePolicy
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCompliancePolicy Cmdlet.
+
 
 ## PARAMETERS
 

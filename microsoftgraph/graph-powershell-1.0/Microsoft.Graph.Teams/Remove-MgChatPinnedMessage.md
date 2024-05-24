@@ -33,13 +33,17 @@ Remove-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete navigation property pinnedMessages for chats
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
+
+```
+This example shows how to use the Remove-MgChatPinnedMessage Cmdlet.
+
 
 ## PARAMETERS
 

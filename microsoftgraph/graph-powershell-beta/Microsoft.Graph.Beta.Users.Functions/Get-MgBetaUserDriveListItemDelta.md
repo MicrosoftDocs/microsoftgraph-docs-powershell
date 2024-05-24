@@ -69,16 +69,6 @@ Deleted indicates that the item is deleted and can't be restored.Items with this
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

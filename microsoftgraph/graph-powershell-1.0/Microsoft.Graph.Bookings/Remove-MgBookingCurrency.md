@@ -34,16 +34,6 @@ Delete navigation property bookingCurrencies for solutions
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingCurrencyId

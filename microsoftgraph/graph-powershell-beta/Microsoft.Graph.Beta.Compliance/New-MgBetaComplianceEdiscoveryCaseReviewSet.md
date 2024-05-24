@@ -47,17 +47,21 @@ New-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 Create new navigation property to reviewSets for compliance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	displayName = "My Reviewset 3"
 }
 
 New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
+
 
 ## PARAMETERS
 

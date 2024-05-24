@@ -43,16 +43,6 @@ The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

@@ -67,16 +67,6 @@ Update the navigation property messages in teams
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties

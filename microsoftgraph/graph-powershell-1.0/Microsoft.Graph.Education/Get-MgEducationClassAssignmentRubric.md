@@ -33,13 +33,17 @@ Get-MgEducationClassAssignmentRubric -InputObject <IEducationIdentity> [-ExpandP
 When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+
+```
+This example shows how to use the Get-MgEducationClassAssignmentRubric Cmdlet.
+
 
 ## PARAMETERS
 

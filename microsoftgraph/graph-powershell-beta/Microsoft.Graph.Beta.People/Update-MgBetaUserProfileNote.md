@@ -50,17 +50,21 @@ Update-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Update the navigation property notes in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	allowedAudiences = "organization"
 }
 
 Update-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileNote Cmdlet.
+
 
 ## PARAMETERS
 

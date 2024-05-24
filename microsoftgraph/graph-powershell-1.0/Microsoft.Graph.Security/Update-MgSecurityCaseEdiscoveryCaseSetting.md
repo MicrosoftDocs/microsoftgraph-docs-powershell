@@ -51,11 +51,11 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
 Update the navigation property settings in security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.ediscoveryCaseSettings"
@@ -71,6 +71,10 @@ $params = @{
 }
 
 Update-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
+
 
 ## PARAMETERS
 

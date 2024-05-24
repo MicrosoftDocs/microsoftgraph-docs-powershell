@@ -51,11 +51,11 @@ New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 Create new navigation property to additionalSources for security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	"@odata.type" = "microsoft.graph.security.siteSource"
@@ -65,6 +65,10 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
+
 
 ## PARAMETERS
 

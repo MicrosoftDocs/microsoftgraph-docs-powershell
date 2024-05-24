@@ -41,13 +41,17 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 Get connections from external
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnection
+
+```
+This example shows how to use the Get-MgBetaExternalConnection Cmdlet.
+
 
 ## PARAMETERS
 

@@ -51,13 +51,17 @@ A collection of all the messages in the chat.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Get a message in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
+
+```
+This example will get a message in a chat
+
 
 ## PARAMETERS
 

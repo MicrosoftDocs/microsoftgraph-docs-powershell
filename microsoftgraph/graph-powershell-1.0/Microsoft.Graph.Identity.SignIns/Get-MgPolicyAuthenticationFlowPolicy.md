@@ -25,13 +25,17 @@ Get-MgPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property <St
 The policy configuration of the self-service sign-up experience of external users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAuthenticationFlowPolicy
+
+```
+This example shows how to use the Get-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
 
 ## PARAMETERS
 

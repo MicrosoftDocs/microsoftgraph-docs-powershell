@@ -54,13 +54,17 @@ Get-MgEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <String[]
 Get users from education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUser
+
+```
+This example shows how to use the Get-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 

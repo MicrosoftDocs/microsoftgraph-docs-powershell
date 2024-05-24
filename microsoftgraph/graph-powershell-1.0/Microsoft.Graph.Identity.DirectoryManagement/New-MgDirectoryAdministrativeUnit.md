@@ -35,11 +35,11 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 Create new navigation property to administrativeUnits for directory
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Seattle District Technical Schools"
@@ -48,6 +48,10 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnit -BodyParameter $params
+
+```
+This example shows how to use the New-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

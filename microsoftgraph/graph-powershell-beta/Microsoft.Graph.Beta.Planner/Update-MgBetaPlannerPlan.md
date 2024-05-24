@@ -59,17 +59,21 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 Update the navigation property plans in planner
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	title = "title-value"
 }
 
 Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaPlannerPlan Cmdlet.
+
 
 ## PARAMETERS
 

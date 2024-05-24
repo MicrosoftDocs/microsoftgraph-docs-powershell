@@ -38,13 +38,17 @@ Get-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity> [-E
 Get urlThreats from security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityThreatSubmissionUrlThreat
+
+```
+This example shows how to use the Get-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
+
 
 ## PARAMETERS
 

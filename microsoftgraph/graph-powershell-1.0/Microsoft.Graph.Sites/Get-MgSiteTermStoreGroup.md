@@ -63,20 +63,28 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
 Collection of all groups available in the term store.
 
 ## EXAMPLES
+### Example 1: Get a termStore group
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Sites
-```
+This example will get a termstore group
 
-Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId"
+### Example 2: Get a site collection termStore group and its parent site ID
+
+```powershell
+
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId" 
+
+```
+This example will get a site collection termstore group and its parent site id
+
 
 ## PARAMETERS
 

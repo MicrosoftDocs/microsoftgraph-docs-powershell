@@ -44,13 +44,17 @@ Nullable.
 Returns a collection of the specified buckets
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerBucket
+
+```
+This example shows how to use the Get-MgPlannerBucket Cmdlet.
+
 
 ## PARAMETERS
 

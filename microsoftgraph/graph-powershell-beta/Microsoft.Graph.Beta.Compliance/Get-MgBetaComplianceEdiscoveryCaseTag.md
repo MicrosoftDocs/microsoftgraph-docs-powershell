@@ -38,13 +38,17 @@ Get-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-Expan
 Returns a list of tag objects associated to this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
+
 
 ## PARAMETERS
 
