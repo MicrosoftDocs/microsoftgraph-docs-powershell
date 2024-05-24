@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathsite
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteGetByPathSite
 
 ## SYNOPSIS
-Get a collection of subsites defined for a \[site\]\[\].
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathSite?view=graph-powershell-beta)
+The collection of the sub-sites under this site.
 
 ## SYNTAX
 
@@ -32,7 +29,19 @@ Get-MgGroupSiteGetByPathSite -GroupId <String> -Path <String> -SiteId <String> -
 ```
 
 ## DESCRIPTION
-Get a collection of subsites defined for a \[site\]\[\].
+The collection of the sub-sites under this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -306,10 +315,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathsite](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathsite)
-
-[https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-subsites?view=graph-rest-1.0)
-
-
-
-
 

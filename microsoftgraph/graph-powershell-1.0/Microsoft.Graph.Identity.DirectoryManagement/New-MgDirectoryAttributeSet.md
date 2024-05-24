@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAttributeSet
 
 ## SYNOPSIS
-Create a new attributeSet object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+Create new navigation property to attributeSets for directory
 
 ## SYNTAX
 
@@ -29,7 +26,19 @@ New-MgDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-Respo
 ```
 
 ## DESCRIPTION
-Create a new attributeSet object.
+Create new navigation property to attributeSets for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -207,14 +216,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttributeSet>`: attributeSet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAttributeSet\>: attributeSet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Description of the attribute set.
+  \[Description \<String\>\]: Description of the attribute set.
 Can be up to 128 characters long and include Unicode characters.
 Can be changed later.
-  - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set.
+  \[MaxAttributesPerSet \<Int32?\>\]: Maximum number of custom security attributes that can be defined in this attribute set.
 Default value is null.
 If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
 Can be changed later.
@@ -222,10 +231,4 @@ Can be changed later.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryattributeset)
-
-[https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
-
-
-
-
 

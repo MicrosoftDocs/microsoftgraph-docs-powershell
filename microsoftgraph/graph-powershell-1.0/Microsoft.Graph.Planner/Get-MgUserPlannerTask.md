@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask
@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerTask
 
 ## SYNOPSIS
-Retrieve a list of plannertask objects assigned to a User.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
+Read-only.
+Nullable.
+Returns the plannerPlans shared with the user.
 
 ## SYNTAX
 
@@ -23,21 +22,19 @@ Get-MgUserPlannerTask -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Retrieve a list of plannertask objects assigned to a User.
+Read-only.
+Nullable.
+Returns the plannerPlans shared with the user.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserPlannerTask -UserId $userId
-
-```
-This example shows how to use the Get-MgUserPlannerTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -266,9 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mguserplannertask)
-
-[https://learn.microsoft.com/graph/api/planneruser-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-tasks?view=graph-rest-1.0)
-
-
-
 

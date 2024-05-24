@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminPeoplePronoun
 
 ## SYNOPSIS
-Get the properties of the pronounsSettings resource for an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeoplePronoun?view=graph-powershell-1.0)
+Represents administrator settings that manage the support of pronouns in an organization.
 
 ## SYNTAX
 
@@ -23,8 +19,19 @@ Get-MgBetaAdminPeoplePronoun [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Get the properties of the pronounsSettings resource for an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Represents administrator settings that manage the support of pronouns in an organization.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -117,10 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeoplepronoun)
-
-[https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0)
-
-
-
-
 

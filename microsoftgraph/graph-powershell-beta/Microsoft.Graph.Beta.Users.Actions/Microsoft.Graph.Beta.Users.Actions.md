@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Users.Actions
 Module Guid: 1f5a9e1d-7b62-410d-8541-b56b33a7d63a
 Download Help Link: {{ Update Download Link }}
@@ -243,6 +243,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaDownUserManagedDeviceShut](Invoke-MgBetaDownUserManagedDeviceShut.md)
@@ -856,5 +859,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserPassword](Update-MgBetaUserPassword.md)
 {{ Fill in the Description }}
-
 

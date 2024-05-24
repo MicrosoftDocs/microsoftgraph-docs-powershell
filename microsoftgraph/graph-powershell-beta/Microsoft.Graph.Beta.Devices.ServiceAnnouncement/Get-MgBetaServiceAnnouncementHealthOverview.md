@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverview
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgBetaServiceAnnouncementHealthOverview
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a serviceHealth object.
-This operation provides the health information of a specified service for a tenant.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverview?view=graph-powershell-1.0)
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## SYNTAX
 
@@ -39,35 +36,24 @@ Get-MgBetaServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnounc
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a serviceHealth object.
-This operation provides the health information of a specified service for a tenant.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/servicehealth-get-permissions.md)]
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
-### Example 1: Get the properties of a serviceHealth object
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+```
 
 Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
 
+### EXAMPLE 2
 ```
-This example will get the properties of a servicehealth object
-
-### Example 2: Include navigation property issues
-
-```powershell
-
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-
-Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues" 
-
 ```
-This example will include navigation property issues
 
+Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
 
 ## PARAMETERS
 
@@ -314,20 +300,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+INPUTOBJECT \<IDevicesServiceAnnouncementIdentity\>: Identity Parameter
+  \[ServiceAnnouncementAttachmentId \<String\>\]: The unique identifier of serviceAnnouncementAttachment
+  \[ServiceHealthId \<String\>\]: The unique identifier of serviceHealth
+  \[ServiceHealthIssueId \<String\>\]: The unique identifier of serviceHealthIssue
+  \[ServiceUpdateMessageId \<String\>\]: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/get-mgbetaserviceannouncementhealthoverview)
-
-[https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0)
-
-
-
 

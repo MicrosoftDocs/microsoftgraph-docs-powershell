@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingusageunbilled
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents details for unbilled Azure usage data.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportPartnerBillingUsageUnbilled](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPartnerBillingUsageUnbilled?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgBetaReportPartnerBillingUsageUnbilled [-ExpandProperty <String[]>] [-Prope
 
 ## DESCRIPTION
 Represents details for unbilled Azure usage data.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,8 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportpartnerbillingusageunbilled)
-
-
-
-
 

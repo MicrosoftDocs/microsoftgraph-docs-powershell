@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategorybyref
@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentCategoryByRef
 
 ## SYNOPSIS
-List all categories for an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,11 +22,25 @@ Get-MgBetaEducationClassAssignmentCategoryByRef -EducationAssignmentId <String> 
 ```
 
 ## DESCRIPTION
-List all categories for an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationassignment-list-categories-permissions.md)]
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -242,10 +254,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategorybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategorybyref)
-
-[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
-
-
-
-
 

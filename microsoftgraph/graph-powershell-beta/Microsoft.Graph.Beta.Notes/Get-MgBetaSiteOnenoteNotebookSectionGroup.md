@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Notes-help.xml
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroup
@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgBetaSiteOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
-Retrieve a list of section groups from the specified notebook.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-1.0)
+The section groups in the notebook.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -23,9 +22,21 @@ Get-MgBetaSiteOnenoteNotebookSectionGroup -NotebookId <String> -SiteId <String> 
 ```
 
 ## DESCRIPTION
-Retrieve a list of section groups from the specified notebook.
+The section groups in the notebook.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -269,9 +280,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksectiongroup)
-
-[https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sectiongroups?view=graph-rest-1.0)
-
-
-
 
