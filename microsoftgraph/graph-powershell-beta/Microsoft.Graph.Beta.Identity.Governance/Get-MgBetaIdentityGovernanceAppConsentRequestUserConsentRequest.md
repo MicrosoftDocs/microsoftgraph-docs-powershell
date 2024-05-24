@@ -11,6 +11,9 @@ schema: 2.0.0
 A list of pending user consent requests.
 Supports $filter (eq).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

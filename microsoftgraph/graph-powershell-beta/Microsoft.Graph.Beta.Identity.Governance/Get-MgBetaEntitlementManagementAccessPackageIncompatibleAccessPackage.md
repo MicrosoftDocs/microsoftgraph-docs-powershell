@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The  access packages whose assigned users are ineligible to be assigned this access package.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

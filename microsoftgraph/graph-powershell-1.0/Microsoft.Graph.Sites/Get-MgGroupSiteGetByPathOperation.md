@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of long-running operations on the site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

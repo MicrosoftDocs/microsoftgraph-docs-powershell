@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to threads for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

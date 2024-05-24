@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deleted workflows that end up in the deletedItemsContainer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

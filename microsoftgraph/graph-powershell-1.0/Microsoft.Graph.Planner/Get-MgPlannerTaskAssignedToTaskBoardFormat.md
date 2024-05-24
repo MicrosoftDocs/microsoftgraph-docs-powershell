@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by assignedTo.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

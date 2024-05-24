@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -22,6 +25,9 @@ Get-MgUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Stri
 ## DESCRIPTION
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection.
 See change tracking for details.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-delta-permissions.md)]
 
 ## EXAMPLES
 

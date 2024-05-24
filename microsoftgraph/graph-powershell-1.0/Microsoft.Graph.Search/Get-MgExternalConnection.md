@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get connections from external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

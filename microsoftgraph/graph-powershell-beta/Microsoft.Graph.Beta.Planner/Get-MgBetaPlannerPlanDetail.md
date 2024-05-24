@@ -12,6 +12,9 @@ Extra details about the plan.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

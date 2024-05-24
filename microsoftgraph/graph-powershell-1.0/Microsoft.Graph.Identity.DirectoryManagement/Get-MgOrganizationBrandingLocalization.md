@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add different branding based on a locale.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

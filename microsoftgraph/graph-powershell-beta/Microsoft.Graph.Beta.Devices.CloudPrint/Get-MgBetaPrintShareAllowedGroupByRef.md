@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The groups whose users have access to print using the printer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedGroupByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

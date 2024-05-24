@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines the status of a tenant joining a multitenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

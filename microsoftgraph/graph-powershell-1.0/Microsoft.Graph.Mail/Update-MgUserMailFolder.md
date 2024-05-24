@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mailFolders in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

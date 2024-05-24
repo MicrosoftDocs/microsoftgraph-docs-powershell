@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns a collection of the specified Conditional Access policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

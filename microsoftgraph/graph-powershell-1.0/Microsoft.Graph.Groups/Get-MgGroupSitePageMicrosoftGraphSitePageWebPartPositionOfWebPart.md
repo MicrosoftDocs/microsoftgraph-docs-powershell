@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSitePageMicrosoftGraphSitePageWebPartPositionOfWebPart?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

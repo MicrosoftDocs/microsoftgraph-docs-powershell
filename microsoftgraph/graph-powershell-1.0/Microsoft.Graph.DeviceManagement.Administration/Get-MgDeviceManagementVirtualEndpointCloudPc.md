@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of cloud-managed virtual desktops.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

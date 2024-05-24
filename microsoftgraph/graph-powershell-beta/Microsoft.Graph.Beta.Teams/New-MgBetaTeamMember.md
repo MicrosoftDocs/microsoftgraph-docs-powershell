@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to members for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property allowedGroups for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

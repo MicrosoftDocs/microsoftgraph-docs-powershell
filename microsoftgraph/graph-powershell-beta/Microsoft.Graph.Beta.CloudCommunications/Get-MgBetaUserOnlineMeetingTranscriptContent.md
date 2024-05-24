@@ -11,6 +11,9 @@ schema: 2.0.0
 The content of the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

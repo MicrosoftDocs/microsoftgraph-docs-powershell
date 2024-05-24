@@ -13,6 +13,9 @@ Getting an operations collection isn't supported, but you can get the status of 
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

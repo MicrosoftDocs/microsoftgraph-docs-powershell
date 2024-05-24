@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action associateWithHubSites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgGroupDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Groups/Join-MgGroupDriveListContentTypeWithHubSite?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

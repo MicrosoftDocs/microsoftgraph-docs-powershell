@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default PDF linked to this agreement.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

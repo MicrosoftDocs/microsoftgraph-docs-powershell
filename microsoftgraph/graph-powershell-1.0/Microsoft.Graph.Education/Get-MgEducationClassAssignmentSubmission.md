@@ -12,6 +12,9 @@ Once published, there's a submission object for each student representing their 
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

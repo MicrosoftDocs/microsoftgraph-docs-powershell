@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Version information for a document set version created by a user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

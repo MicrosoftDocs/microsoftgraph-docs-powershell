@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 When set, the grading rubric attached to this assignment.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentRubricByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

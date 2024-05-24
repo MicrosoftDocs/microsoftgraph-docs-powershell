@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

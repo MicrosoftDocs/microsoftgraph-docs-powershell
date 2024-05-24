@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property driveItem from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStatActivityDriveItemContent?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

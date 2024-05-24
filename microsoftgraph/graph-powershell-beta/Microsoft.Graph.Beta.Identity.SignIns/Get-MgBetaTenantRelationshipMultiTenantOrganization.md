@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines an organization with more than one instance of Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipMultiTenantOrganization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTenantRelationshipMultiTenantOrganization?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

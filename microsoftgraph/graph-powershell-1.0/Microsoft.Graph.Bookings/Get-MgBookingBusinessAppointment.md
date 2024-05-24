@@ -12,6 +12,9 @@ All the appointments of this business.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

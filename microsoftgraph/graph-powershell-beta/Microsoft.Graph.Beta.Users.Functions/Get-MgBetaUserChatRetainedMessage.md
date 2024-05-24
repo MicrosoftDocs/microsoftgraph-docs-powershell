@@ -31,6 +31,9 @@ Get-MgBetaUserChatRetainedMessage -InputObject <IUsersFunctionsIdentity> [-Count
 ## DESCRIPTION
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-getallretainedmessages-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

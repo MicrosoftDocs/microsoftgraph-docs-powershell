@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of horizontal sections on the SharePoint page.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

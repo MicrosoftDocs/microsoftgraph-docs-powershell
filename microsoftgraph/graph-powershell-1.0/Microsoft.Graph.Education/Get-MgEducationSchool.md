@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get schools from education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

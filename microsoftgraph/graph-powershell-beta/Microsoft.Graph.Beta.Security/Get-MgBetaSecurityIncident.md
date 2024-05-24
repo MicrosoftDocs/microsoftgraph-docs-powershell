@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

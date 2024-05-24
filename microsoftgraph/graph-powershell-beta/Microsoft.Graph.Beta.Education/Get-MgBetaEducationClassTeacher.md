@@ -11,6 +11,9 @@ schema: 2.0.0
 All teachers in the class.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassTeacher](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacher?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

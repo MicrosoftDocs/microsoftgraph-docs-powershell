@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

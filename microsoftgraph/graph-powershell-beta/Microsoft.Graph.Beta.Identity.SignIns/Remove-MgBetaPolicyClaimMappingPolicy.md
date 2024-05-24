@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property claimsMappingPolicies for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

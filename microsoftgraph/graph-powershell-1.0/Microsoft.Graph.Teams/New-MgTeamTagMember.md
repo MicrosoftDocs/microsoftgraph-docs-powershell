@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to members for teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

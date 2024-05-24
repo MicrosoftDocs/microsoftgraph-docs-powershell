@@ -12,6 +12,9 @@ When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get schema from external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
