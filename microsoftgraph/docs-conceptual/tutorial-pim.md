@@ -28,7 +28,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
     - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Microsoft Graph PowerShell using a Global Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a Privileged Role Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"

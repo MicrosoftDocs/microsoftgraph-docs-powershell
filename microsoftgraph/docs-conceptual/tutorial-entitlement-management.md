@@ -25,7 +25,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 1. To use Microsoft Entra entitlement management, you must have Microsoft Entra ID Governance subscriptions for your organization's users. Some capabilities within this feature may operate with a Microsoft Entra ID P2 subscription.
 1. Entitlement management is available in the beta and v1 modules of Microsoft Graph PowerShell. This tutorial uses the beta module. Ensure that you have both Microsoft.Graph and Microsoft.Graph.Beta modules installed.
 
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. The `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a Identity Governance Administrator and the appropriate permissions. The `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.ReadWrite.All", "EntitlementManagement.ReadWrite.All"
