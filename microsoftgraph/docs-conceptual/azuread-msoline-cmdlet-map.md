@@ -382,7 +382,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Revoke-AzureADUserAllRefreshToken|[Revoke-MgUserSignInSession](/powershell/module/microsoft.graph.users.actions/revoke-mgusersigninsession)|
 |Select-AzureADGroupIdsUserIsMemberOf|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof)|
 |Set-AzureADUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
-|Set-AzureADUserExtension|[Update-MgUserExtension](/powershell/module/microsoft.graph.users/update-mguserextension)|
+|Set-AzureADUserExtension|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
 |Set-AzureADUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense)|
 |Set-AzureADUserManager|[Set-MgUserManagerByRef](/powershell/module/microsoft.graph.users/set-mgusermanagerbyref)|
 |Set-AzureADUserPassword|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)|
