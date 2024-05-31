@@ -54,22 +54,6 @@ Get-MgBetaShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Used to access the underlying listItem
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -359,6 +343,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitem)
+
 
 
 

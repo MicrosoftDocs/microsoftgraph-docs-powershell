@@ -29,18 +29,6 @@ Get-MgBetaVirtualEventWebinarRegistrationByEmail -InputObject <IBookingsIdentity
 ## DESCRIPTION
 Registration records of the webinar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Email
@@ -208,6 +196,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationbyemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistrationbyemail)
+
 
 
 

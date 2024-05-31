@@ -32,18 +32,6 @@ Get-MgBetaDeviceManagementReportEncryptionReportForDevice -OutFile <String>
 ## DESCRIPTION
 Invoke action getEncryptionReportForDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,6 +337,7 @@ BODYPARAMETER `<IPaths1Hamjq6DevicemanagementReportsMicrosoftGraphGetencryptionr
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportencryptionreportfordevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementreportencryptionreportfordevice)
+
 
 
 

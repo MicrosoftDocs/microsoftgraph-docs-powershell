@@ -60,22 +60,6 @@ Update-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParamet
 ## DESCRIPTION
 Update the navigation property printers in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AcceptingJobs
@@ -23753,6 +23737,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/update-mgbetaprintprinter)
+
 
 
 

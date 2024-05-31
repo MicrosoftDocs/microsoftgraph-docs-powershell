@@ -27,22 +27,6 @@ Get-MgBetaDirectoryAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter
 Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
 For details, see Using delta query.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -257,6 +241,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitdelta)
 
 [https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta)
+
 
 
 

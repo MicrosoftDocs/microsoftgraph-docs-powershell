@@ -40,18 +40,6 @@ Get-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-ExpandPr
 ## DESCRIPTION
 Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +350,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehost)
+
 
 
 

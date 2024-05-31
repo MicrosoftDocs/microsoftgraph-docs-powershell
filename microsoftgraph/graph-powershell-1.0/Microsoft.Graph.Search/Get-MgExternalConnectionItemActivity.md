@@ -43,18 +43,6 @@ Get-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-ExpandProp
 Returns a list of activities performed on the item.
 Write-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -344,6 +332,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitemactivity)
+
 
 
 

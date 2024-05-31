@@ -42,22 +42,6 @@ Get-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-ExpandProper
 The collection of open extensions defined for the message.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -347,6 +331,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessageextension)
+
 
 
 

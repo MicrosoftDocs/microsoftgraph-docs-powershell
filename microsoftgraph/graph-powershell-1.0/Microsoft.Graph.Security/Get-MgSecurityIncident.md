@@ -40,18 +40,6 @@ Get-MgSecurityIncident -InputObject <ISecurityIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -362,6 +350,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityincident)
+
 
 
 

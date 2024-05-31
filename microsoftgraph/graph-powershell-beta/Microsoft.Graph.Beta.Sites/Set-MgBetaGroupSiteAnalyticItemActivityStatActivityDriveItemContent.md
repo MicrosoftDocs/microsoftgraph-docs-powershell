@@ -33,18 +33,6 @@ Set-MgBetaGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject
 ## DESCRIPTION
 Update content for the navigation property driveItem in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ContentType
@@ -321,6 +309,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/set-mgbetagroupsiteanalyticitemactivitystatactivitydriveitemcontent)
+
 
 
 

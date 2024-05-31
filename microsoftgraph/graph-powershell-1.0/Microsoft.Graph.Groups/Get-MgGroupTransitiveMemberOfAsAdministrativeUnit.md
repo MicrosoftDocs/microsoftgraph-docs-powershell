@@ -41,18 +41,6 @@ Get-MgGroupTransitiveMemberOfAsAdministrativeUnit -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -375,6 +363,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivememberofasadministrativeunit)
+
 
 
 

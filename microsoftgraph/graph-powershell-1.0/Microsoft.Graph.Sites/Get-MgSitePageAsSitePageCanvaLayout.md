@@ -32,18 +32,6 @@ Get-MgSitePageAsSitePageCanvaLayout -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical sections.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BaseSitePageId
@@ -232,6 +220,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayout](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepageassitepagecanvalayout)
+
 
 
 

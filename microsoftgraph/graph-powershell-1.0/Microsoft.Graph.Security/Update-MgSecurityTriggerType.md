@@ -32,18 +32,6 @@ Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypes
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -246,6 +234,7 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype)
+
 
 
 

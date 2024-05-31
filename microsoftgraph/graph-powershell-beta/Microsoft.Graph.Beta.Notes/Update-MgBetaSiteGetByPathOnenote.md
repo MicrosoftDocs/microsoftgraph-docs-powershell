@@ -86,18 +86,6 @@ Update-MgBetaSiteGetByPathOnenote -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property onenote in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1042,6 +1030,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasitegetbypathonenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/update-mgbetasitegetbypathonenote)
+
 
 
 

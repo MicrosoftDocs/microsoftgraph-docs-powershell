@@ -47,22 +47,6 @@ Invoke-MgBetaDismissDirectoryRecommendationImpactedResource -InputObject <IIdent
 ## DESCRIPTION
 Dismiss an impactedResources object and update its status to dismissed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -308,6 +292,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendationimpactedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetadismissdirectoryrecommendationimpactedresource)
 
 [https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta](https://learn.microsoft.com/graph/api/impactedresource-dismiss?view=graph-rest-beta)
+
 
 
 

@@ -34,22 +34,6 @@ Get-MgBetaReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Co
 ## DESCRIPTION
 Get a summary of AD FS relying parties information.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -315,6 +299,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportrelyingpartydetailedsummary)
 
 [https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-beta)
+
 
 
 

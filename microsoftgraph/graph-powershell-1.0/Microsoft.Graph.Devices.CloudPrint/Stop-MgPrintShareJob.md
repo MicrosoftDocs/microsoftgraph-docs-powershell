@@ -34,18 +34,6 @@ Stop-MgPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-ResponseHeaders
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -221,6 +209,7 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintsharejob](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/stop-mgprintsharejob)
 
 [https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printjob-cancel?view=graph-rest-1.0)
+
 
 
 

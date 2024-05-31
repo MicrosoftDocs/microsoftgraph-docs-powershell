@@ -34,18 +34,6 @@ Update-MgIdentityGovernanceLifecycleWorkflowSetting
 ## DESCRIPTION
 Update the navigation property settings in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,6 +240,7 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
+
 
 
 
