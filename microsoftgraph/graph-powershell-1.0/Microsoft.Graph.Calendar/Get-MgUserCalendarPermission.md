@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The permissions of the users with whom the calendar is shared.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

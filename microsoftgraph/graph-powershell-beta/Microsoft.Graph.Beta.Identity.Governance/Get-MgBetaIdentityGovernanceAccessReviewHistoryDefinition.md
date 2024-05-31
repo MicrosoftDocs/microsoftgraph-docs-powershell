@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a collection of access review history data and the scopes used to collect that data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

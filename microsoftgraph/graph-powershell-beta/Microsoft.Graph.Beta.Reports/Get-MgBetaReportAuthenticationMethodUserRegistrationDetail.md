@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

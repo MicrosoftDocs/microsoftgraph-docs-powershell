@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Preconfigured synchronization settings for a particular application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

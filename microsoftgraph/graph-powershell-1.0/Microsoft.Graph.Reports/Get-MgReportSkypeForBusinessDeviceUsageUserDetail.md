@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get details about Skype for Business device usage by user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 List training coverage for each tenant user in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationUserCoverage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

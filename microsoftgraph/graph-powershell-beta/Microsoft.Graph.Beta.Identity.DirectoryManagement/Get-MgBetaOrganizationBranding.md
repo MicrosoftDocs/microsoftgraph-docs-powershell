@@ -11,6 +11,9 @@ schema: 2.0.0
 Resource to manage the default branding for the organization.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

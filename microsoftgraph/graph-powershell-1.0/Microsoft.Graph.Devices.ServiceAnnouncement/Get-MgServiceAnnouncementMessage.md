@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of service messages for tenant.
 This property is a contained navigation property, it is nullable and readonly.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that controls the idle time-out for web sessions for applications.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

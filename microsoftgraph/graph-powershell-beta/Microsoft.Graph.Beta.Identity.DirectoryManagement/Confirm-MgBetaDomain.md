@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Validates the ownership of the domain.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Verify (Default)
@@ -26,6 +29,9 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-Respo
 
 ## DESCRIPTION
 Validates the ownership of the domain.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/domain-verify-permissions.md)]
 
 ## EXAMPLES
 

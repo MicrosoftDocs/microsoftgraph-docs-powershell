@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The shift preferences for the user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to events for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

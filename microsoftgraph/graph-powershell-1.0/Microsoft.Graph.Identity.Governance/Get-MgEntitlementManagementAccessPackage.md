@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

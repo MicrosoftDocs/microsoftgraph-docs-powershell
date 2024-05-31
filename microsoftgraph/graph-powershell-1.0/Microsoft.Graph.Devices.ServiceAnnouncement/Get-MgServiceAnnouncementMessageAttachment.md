@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of serviceAnnouncementAttachments.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

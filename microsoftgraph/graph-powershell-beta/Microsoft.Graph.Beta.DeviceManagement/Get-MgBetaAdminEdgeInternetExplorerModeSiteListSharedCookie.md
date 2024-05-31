@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of shared cookies defined for the site list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

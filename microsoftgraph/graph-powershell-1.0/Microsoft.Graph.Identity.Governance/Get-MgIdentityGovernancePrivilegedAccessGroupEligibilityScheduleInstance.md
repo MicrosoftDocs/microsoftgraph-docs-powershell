@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The instances of eligibility schedules to activate a just-in-time access.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

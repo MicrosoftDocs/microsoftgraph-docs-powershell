@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Group of related custom security attribute definitions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -12,6 +12,9 @@ Learning objects that are associated with this module.
 Only teachers can modify this list.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

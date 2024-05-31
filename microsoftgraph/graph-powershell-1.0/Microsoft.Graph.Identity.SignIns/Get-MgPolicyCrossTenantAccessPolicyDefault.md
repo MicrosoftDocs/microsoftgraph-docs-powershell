@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

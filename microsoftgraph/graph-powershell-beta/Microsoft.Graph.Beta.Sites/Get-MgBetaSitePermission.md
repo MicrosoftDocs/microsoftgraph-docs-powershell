@@ -11,6 +11,9 @@ schema: 2.0.0
 The permissions associated with the site.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
