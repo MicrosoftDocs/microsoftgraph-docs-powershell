@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact
@@ -284,24 +284,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact\>: The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant.
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact>`: The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[ActiveDevices \<Int32?\>\]: Number of active devices for using that app over a 14-day period.
+  - `[ActiveDevices <Int32?>]`: Number of active devices for using that app over a 14-day period.
 Valid values 0 to 2147483647
-  \[AppDisplayName \<String\>\]: User friendly display name for the app.
+  - `[AppDisplayName <String>]`: User friendly display name for the app.
 Eg: Outlook
-  \[AppName \<String\>\]: App name.
+  - `[AppName <String>]`: App name.
 Eg: oltk.exe
-  \[AppPublisher \<String\>\]: App publisher.
+  - `[AppPublisher <String>]`: App publisher.
 Eg: Microsoft Corporation
-  \[BatteryUsagePercentage \<Double?\>\]: The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days computed across all devices in the tenant.
+  - `[BatteryUsagePercentage <Double?>]`: The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days computed across all devices in the tenant.
 Unit in percentage.
 Valid values 0 to 1.79769313486232E+308
-  \[IsForegroundApp \<Boolean?\>\]: true if the user had active interaction with the app.
+  - `[IsForegroundApp <Boolean?>]`: true if the user had active interaction with the app.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact)
+
+
+
 

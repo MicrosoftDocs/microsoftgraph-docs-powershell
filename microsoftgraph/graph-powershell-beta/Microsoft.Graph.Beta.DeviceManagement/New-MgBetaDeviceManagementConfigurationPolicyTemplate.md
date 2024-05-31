@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate
@@ -344,102 +344,105 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate\>: Device Management Configuration Policy Template
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowUnmanagedSettings \<Boolean?\>\]: Allow unmanaged setting templates
-  \[BaseId \<String\>\]: Template base identifier
-  \[Description \<String\>\]: Template description
-  \[DisplayName \<String\>\]: Template display name
-  \[DisplayVersion \<String\>\]: Description of template version
-  \[LifecycleState \<DeviceManagementTemplateLifecycleState?\>\]: Describes current lifecycle state of a template
-  \[Platforms \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
-  \[SettingTemplates \<IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[\]\>\]: Setting templates
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AllowUnmanagedSettings <Boolean?>]`: Allow unmanaged setting templates
+  - `[BaseId <String>]`: Template base identifier
+  - `[Description <String>]`: Template description
+  - `[DisplayName <String>]`: Template display name
+  - `[DisplayVersion <String>]`: Description of template version
+  - `[LifecycleState <DeviceManagementTemplateLifecycleState?>]`: Describes current lifecycle state of a template
+  - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
+  - `[SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate- `[]`>]`: Setting templates
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[SettingDefinitions \<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[\]\>\]: List of related Setting Definitions
-      \[Id \<String\>\]: The unique identifier for an entity.
+    - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition- `[]`>]`: List of related Setting Definitions
+      - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      \[AccessTypes \<String\>\]: deviceManagementConfigurationSettingAccessTypes
-      \[Applicability \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>\]: deviceManagementConfigurationSettingApplicability
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[Description \<String\>\]: description of the setting
-        \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
-        \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
-        \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
-      \[BaseUri \<String\>\]: Base CSP Path
-      \[CategoryId \<String\>\]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-      \[Description \<String\>\]: Description of the item
-      \[DisplayName \<String\>\]: Display name of the item
-      \[HelpText \<String\>\]: Help text of the item
-      \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at
-      \[Keywords \<String\[\]\>\]: Tokens which to search settings on
-      \[Name \<String\>\]: Name of the item
-      \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
-        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-        \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
-        \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
+      - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
+      - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Description <String>]`: description of the setting
+        - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
+        - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
+        - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
+      - `[BaseUri <String>]`: Base CSP Path
+      - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+      - `[Description <String>]`: Description of the item
+      - `[DisplayName <String>]`: Display name of the item
+      - `[HelpText <String>]`: Help text of the item
+      - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
+      - `[Keywords <String- `[]`>]`: Tokens which to search settings on
+      - `[Name <String>]`: Name of the item
+      - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
+        - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
-      \[OffsetUri \<String\>\]: Offset CSP Path from Base
-      \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
-        \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
+      - `[OffsetUri <String>]`: Offset CSP Path from Base
+      - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
+        - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
 Applicable for reusable setting
-      \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
-      \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
-      \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
-      \[Version \<String\>\]: Item Version
-      \[Visibility \<DeviceManagementConfigurationSettingVisibility?\>\]: Supported setting types
-    \[SettingInstanceTemplate \<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate\>\]: Setting Instance Template
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[IsRequired \<Boolean?\>\]: Indicates if a policy must specify this setting.
-      \[SettingDefinitionId \<String\>\]: Setting Definition Id
-      \[SettingInstanceTemplateId \<String\>\]: Setting Instance Template Id
-  \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
-  \[TemplateFamily \<DeviceManagementConfigurationTemplateFamily?\>\]: Describes the TemplateFamily for the Template entity
+      - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
+      - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
+      - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
+      - `[Version <String>]`: Item Version
+      - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
+    - `[SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>]`: Setting Instance Template
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsRequired <Boolean?>]`: Indicates if a policy must specify this setting.
+      - `[SettingDefinitionId <String>]`: Setting Definition Id
+      - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
+  - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
+  - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
 
-SETTINGTEMPLATES \<IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[\]\>: Setting templates
-  \[Id \<String\>\]: The unique identifier for an entity.
+SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate- `[]`>: Setting templates
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[SettingDefinitions \<IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[\]\>\]: List of related Setting Definitions
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition- `[]`>]`: List of related Setting Definitions
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AccessTypes \<String\>\]: deviceManagementConfigurationSettingAccessTypes
-    \[Applicability \<IMicrosoftGraphDeviceManagementConfigurationSettingApplicability\>\]: deviceManagementConfigurationSettingApplicability
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[Description \<String\>\]: description of the setting
-      \[DeviceMode \<DeviceManagementConfigurationDeviceMode?\>\]: Describes applicability for the mode the device is in
-      \[Platform \<DeviceManagementConfigurationPlatforms?\>\]: Supported platform types.
-      \[Technologies \<DeviceManagementConfigurationTechnologies?\>\]: Describes which technology this setting can be deployed with
-    \[BaseUri \<String\>\]: Base CSP Path
-    \[CategoryId \<String\>\]: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-    \[Description \<String\>\]: Description of the item
-    \[DisplayName \<String\>\]: Display name of the item
-    \[HelpText \<String\>\]: Help text of the item
-    \[InfoUrls \<String\[\]\>\]: List of links more info for the setting can be found at
-    \[Keywords \<String\[\]\>\]: Tokens which to search settings on
-    \[Name \<String\>\]: Name of the item
-    \[Occurrence \<IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence\>\]: deviceManagementConfigurationSettingOccurrence
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[MaxDeviceOccurrence \<Int32?\>\]: Maximum times setting can be set on device.
-      \[MinDeviceOccurrence \<Int32?\>\]: Minimum times setting can be set on device.
+    - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
+    - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Description <String>]`: description of the setting
+      - `[DeviceMode <DeviceManagementConfigurationDeviceMode?>]`: Describes applicability for the mode the device is in
+      - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
+      - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
+    - `[BaseUri <String>]`: Base CSP Path
+    - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+    - `[Description <String>]`: Description of the item
+    - `[DisplayName <String>]`: Display name of the item
+    - `[HelpText <String>]`: Help text of the item
+    - `[InfoUrls <String- `[]`>]`: List of links more info for the setting can be found at
+    - `[Keywords <String- `[]`>]`: Tokens which to search settings on
+    - `[Name <String>]`: Name of the item
+    - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[MaxDeviceOccurrence <Int32?>]`: Maximum times setting can be set on device.
+      - `[MinDeviceOccurrence <Int32?>]`: Minimum times setting can be set on device.
 A MinDeviceOccurrence of 0 means setting is optional
-    \[OffsetUri \<String\>\]: Offset CSP Path from Base
-    \[ReferredSettingInformationList \<IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation\[\]\>\]: List of referred setting information.
-      \[SettingDefinitionId \<String\>\]: Setting definition id that is being referred to a setting.
+    - `[OffsetUri <String>]`: Offset CSP Path from Base
+    - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
+      - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
 Applicable for reusable setting
-    \[RootDefinitionId \<String\>\]: Root setting definition if the setting is a child setting.
-    \[SettingUsage \<DeviceManagementConfigurationSettingUsage?\>\]: Supported setting types
-    \[UxBehavior \<DeviceManagementConfigurationControlType?\>\]: Setting control type representation in the UX
-    \[Version \<String\>\]: Item Version
-    \[Visibility \<DeviceManagementConfigurationSettingVisibility?\>\]: Supported setting types
-  \[SettingInstanceTemplate \<IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate\>\]: Setting Instance Template
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsRequired \<Boolean?\>\]: Indicates if a policy must specify this setting.
-    \[SettingDefinitionId \<String\>\]: Setting Definition Id
-    \[SettingInstanceTemplateId \<String\>\]: Setting Instance Template Id
+    - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
+    - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
+    - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
+    - `[Version <String>]`: Item Version
+    - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
+  - `[SettingInstanceTemplate <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplate>]`: Setting Instance Template
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsRequired <Boolean?>]`: Indicates if a policy must specify this setting.
+    - `[SettingDefinitionId <String>]`: Setting Definition Id
+    - `[SettingInstanceTemplateId <String>]`: Setting Instance Template Id
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementconfigurationpolicytemplate)
+
+
+
 
