@@ -49,11 +49,11 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Update the navigation property customQuestions in solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

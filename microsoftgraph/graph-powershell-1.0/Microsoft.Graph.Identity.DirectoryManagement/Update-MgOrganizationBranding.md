@@ -70,11 +70,11 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 Update the navigation property branding in organization
 
 ## EXAMPLES
+### Example 1: Update the default branding
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Default"
@@ -82,6 +82,10 @@ $params = @{
 }
 
 Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example will update the default branding
+
 
 ## PARAMETERS
 

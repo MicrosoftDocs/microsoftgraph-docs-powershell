@@ -41,13 +41,17 @@ Get-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministr
 The list of Exchange Connectors configured by the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementExchangeConnector
+
+```
+This example shows how to use the Get-MgDeviceManagementExchangeConnector Cmdlet.
+
 
 ## PARAMETERS
 

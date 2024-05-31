@@ -41,13 +41,17 @@ Get-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdent
 A collection of appConsentRequest objects representing apps for which admin consent has been requested by one or more users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAppConsentRequest -AppConsentRequestId $appConsentRequestId
+```
+This example shows how to use the Get-MgIdentityGovernanceAppConsentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

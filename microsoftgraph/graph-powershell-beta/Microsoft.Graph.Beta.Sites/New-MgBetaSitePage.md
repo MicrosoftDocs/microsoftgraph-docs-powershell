@@ -56,9 +56,8 @@ New-MgBetaSitePage -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraph
 Create new navigation property to pages for sites
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaSitePage Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
 	Name = "Events.aspx"
@@ -86,6 +85,8 @@ $params = @{
 }
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSitePage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

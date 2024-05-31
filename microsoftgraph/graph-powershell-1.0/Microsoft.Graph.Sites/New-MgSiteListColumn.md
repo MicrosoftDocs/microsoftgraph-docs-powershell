@@ -69,11 +69,11 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 Create new navigation property to columns for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	description = "test"
@@ -90,6 +90,10 @@ $params = @{
 }
 
 New-MgSiteListColumn -SiteId $siteId -ListId $listId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteListColumn Cmdlet.
+
 
 ## PARAMETERS
 

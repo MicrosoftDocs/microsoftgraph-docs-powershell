@@ -51,11 +51,11 @@ Join-MgSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 Associate a published content type present in a content type hub with a list of hub sites.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	hubSiteUrls = @(
@@ -65,6 +65,10 @@ $params = @{
 }
 
 Join-MgSiteContentTypeWithHubSite -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the Join-MgSiteContentTypeWithHubSite Cmdlet.
+
 
 ## PARAMETERS
 

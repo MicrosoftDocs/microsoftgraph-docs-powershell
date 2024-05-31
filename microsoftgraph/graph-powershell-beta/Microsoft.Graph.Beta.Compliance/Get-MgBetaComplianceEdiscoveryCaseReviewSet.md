@@ -42,13 +42,17 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
+
 
 ## PARAMETERS
 

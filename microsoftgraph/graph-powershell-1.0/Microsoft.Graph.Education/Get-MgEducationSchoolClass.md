@@ -28,13 +28,17 @@ Classes taught at the school.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Get-MgEducationSchoolClass Cmdlet.
+
 
 ## PARAMETERS
 

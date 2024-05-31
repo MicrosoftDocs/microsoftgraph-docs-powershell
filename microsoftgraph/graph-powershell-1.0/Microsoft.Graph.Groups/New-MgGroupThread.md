@@ -51,11 +51,10 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
 Create new navigation property to threads for groups
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	topic = "New Conversation Thread Topic"
@@ -78,6 +77,11 @@ $params = @{
 }
 
 New-MgGroupThread -GroupId $groupId -BodyParameter $params
+```
+This example shows how to use the New-MgGroupThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

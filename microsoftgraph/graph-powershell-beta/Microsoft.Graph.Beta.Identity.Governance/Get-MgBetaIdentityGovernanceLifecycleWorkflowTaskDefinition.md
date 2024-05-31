@@ -41,20 +41,28 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdent
 The definition of tasks within the lifecycle workflows instance.
 
 ## EXAMPLES
+### Example 1: Retrieve all built-in task definitions
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
+This example will retrieve all built-in task definitions
 
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'"
+### Example 2: Retrieve all built-in tasks supported for "joiner" workflows
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category has 'joiner'" 
+
+```
+This example will retrieve all built-in tasks supported for "joiner" workflows
+
 
 ## PARAMETERS
 

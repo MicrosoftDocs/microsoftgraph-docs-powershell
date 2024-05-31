@@ -41,13 +41,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [
 Returns a list of case caseOperation objects for this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseOperation Cmdlet.
+
 
 ## PARAMETERS
 

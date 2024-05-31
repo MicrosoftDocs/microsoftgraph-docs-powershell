@@ -51,11 +51,10 @@ New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 Create new navigation property to extensionProperties for applications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	name = "jobGroup"
@@ -67,6 +66,11 @@ $params = @{
 }
 
 New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaApplicationExtensionProperty Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -30,13 +30,17 @@ Remove-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-IfMatch <String>
 Delete navigation property patents for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId
+
+```
+This example shows how to use the Remove-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

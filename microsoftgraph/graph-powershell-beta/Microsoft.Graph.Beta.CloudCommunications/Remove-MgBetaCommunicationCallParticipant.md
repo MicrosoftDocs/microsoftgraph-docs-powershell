@@ -33,20 +33,28 @@ Remove-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 Delete navigation property participants for communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+This example shows how to use the Remove-MgBetaCommunicationCallParticipant Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

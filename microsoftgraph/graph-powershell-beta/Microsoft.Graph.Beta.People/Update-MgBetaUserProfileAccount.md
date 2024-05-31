@@ -53,11 +53,11 @@ Update-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 Update the navigation property account in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	countryCode = "NO"
@@ -65,6 +65,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileAccount Cmdlet.
+
 
 ## PARAMETERS
 

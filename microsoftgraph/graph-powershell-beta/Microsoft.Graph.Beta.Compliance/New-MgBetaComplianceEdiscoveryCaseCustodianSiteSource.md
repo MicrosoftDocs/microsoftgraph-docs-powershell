@@ -48,11 +48,11 @@ New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceI
 Create new navigation property to siteSources for compliance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	site = @{
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet.
+
 
 ## PARAMETERS
 

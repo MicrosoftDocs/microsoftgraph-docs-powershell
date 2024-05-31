@@ -55,13 +55,17 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintTaskDefinition
+
+```
+This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
+
 
 ## PARAMETERS
 

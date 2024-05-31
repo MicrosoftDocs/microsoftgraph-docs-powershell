@@ -44,11 +44,11 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 Create new navigation property to members for planner
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.plannerRosterMember"
@@ -56,6 +56,10 @@ $params = @{
 }
 
 New-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPlannerRosterMember Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,13 +41,17 @@ Get-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Ex
 A list of task triggers that are associated with the printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintPrinterTaskTrigger -PrinterId $printerId
+
+```
+This example shows how to use the Get-MgBetaPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 

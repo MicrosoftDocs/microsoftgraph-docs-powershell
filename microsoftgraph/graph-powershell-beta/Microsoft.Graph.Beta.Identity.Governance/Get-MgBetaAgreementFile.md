@@ -41,13 +41,17 @@ Get-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandPrope
 Default PDF linked to this agreement.
 
 ## EXAMPLES
+### Example 1: Get the agreement file for a specific language
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaAgreementFile -AgreementId $agreementId
+
+```
+This example will get the agreement file for a specific language
+
 
 ## PARAMETERS
 

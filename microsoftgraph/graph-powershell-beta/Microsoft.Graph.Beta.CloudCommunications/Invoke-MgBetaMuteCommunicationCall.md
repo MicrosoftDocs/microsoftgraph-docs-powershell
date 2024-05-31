@@ -53,17 +53,21 @@ This is a server mute, meaning that the server drops all audio packets for this 
 For more information about how to handle mute operations, see muteParticipantOperation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Invoke-MgBetaMuteCommunicationCall -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Invoke-MgBetaMuteCommunicationCall Cmdlet.
+
 
 ## PARAMETERS
 

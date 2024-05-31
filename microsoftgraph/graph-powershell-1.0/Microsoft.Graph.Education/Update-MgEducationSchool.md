@@ -59,19 +59,22 @@ Update-MgEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicr
 Update the navigation property schools in education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Fabrikam Arts High School"
-	description = "Magnate school for the arts.
-Los Angeles School District"
+	description = "Magnate school for the arts. Los Angeles School District"
 }
 
 Update-MgEducationSchool -EducationSchoolId $educationSchoolId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 
