@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage
@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgSiteOnenoteSectionPage
 
 ## SYNOPSIS
-Retrieve a list of page objects from the specified section.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaSiteOnenoteSectionPage?view=graph-powershell-beta)
+The collection of pages in the section.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -23,12 +22,21 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve a list of page objects from the specified section.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-list-pages-permissions.md)]
+The collection of pages in the section.
+Read-only.
+Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -272,9 +280,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mgsiteonenotesectionpage)
-
-[https://learn.microsoft.com/graph/api/section-list-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-list-pages?view=graph-rest-1.0)
-
-
-
 

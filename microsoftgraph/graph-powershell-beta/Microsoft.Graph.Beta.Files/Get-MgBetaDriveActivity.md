@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Files-help.xml
 Module Name: Microsoft.Graph.Beta.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDriveActivity
 
 ## SYNOPSIS
-List the recent activities that took place on an item or under a hierarchy.
+The list of recent activities that took place under this drive.
 
 ## SYNTAX
 
@@ -20,20 +20,16 @@ Get-MgBetaDriveActivity -DriveId <String> [-ExpandProperty <String[]>] [-Filter 
 ```
 
 ## DESCRIPTION
-List the recent activities that took place on an item or under a hierarchy.
+The list of recent activities that took place under this drive.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Files
+```
 
 Get-MgBetaDriveActivity -DriveId $driveId
-
-```
-This example shows how to use the Get-MgBetaDriveActivity Cmdlet.
-
 
 ## PARAMETERS
 
@@ -262,9 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadriveactivity)
-
-[https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementSetting
 
 ## SYNOPSIS
-Retrieve the properties of an entitlementManagementSettings object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-1.0)
+Represents the settings that control the behavior of Microsoft Entra entitlement management.
 
 ## SYNTAX
 
@@ -22,21 +19,19 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Retrieve the properties of an entitlementManagementSettings object.
+Represents the settings that control the behavior of Microsoft Entra entitlement management.
 
 ## EXAMPLES
-### Example 1: Get the identity governance settings
 
-```powershell
+### EXAMPLE 1
+```
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
+```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
-```
-
-This example returns the identity governance settings.
 
 ## PARAMETERS
 
@@ -129,9 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagementsettings-get?view=graph-rest-1.0)
-
-
-
 

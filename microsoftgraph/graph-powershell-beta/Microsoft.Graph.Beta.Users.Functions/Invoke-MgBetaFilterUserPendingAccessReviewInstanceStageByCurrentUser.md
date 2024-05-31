@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancestagebycurrentuser
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterUserPendingAccessReviewInstanceStageByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Return all accessReviewStage objects on a given accessReviewInstance where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 ## SYNTAX
 
@@ -29,7 +29,23 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceStageByCurrentUser -InputObjec
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Return all accessReviewStage objects on a given accessReviewInstance where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -275,51 +291,49 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
-  - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
-  - `[CalendarId <String>]`: The unique identifier of calendar
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[ContactFolderId <String>]`: The unique identifier of contactFolder
-  - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
-  - `[ContentTypeId <String>]`: The unique identifier of contentType
-  - `[DriveId <String>]`: The unique identifier of drive
-  - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[EventId <String>]`: The unique identifier of event
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[ListItemId <String>]`: The unique identifier of listItem
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[On <String>]`: Usage: on='{on}'
-  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
-  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[Upn <String>]`: Usage: upn='{upn}'
-  - `[User <String>]`: Usage: User='{User}'
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IUsersFunctionsIdentity\>: Identity Parameter
+  \[AccessReviewInstanceId \<String\>\]: The unique identifier of accessReviewInstance
+  \[AppConsentRequestId \<String\>\]: The unique identifier of appConsentRequest
+  \[CalendarId \<String\>\]: The unique identifier of calendar
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[ContactFolderId \<String\>\]: The unique identifier of contactFolder
+  \[ContactFolderId1 \<String\>\]: The unique identifier of contactFolder
+  \[ContentTypeId \<String\>\]: The unique identifier of contentType
+  \[DriveId \<String\>\]: The unique identifier of drive
+  \[DriveItemId \<String\>\]: The unique identifier of driveItem
+  \[EndDateTime \<String\>\]: Usage: endDateTime='{endDateTime}'
+  \[EventId \<String\>\]: The unique identifier of event
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[IncludePersonalNotebooks \<Boolean?\>\]: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  \[Interval \<String\>\]: Usage: interval='{interval}'
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[ListItemId \<String\>\]: The unique identifier of listItem
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[On \<String\>\]: Usage: on='{on}'
+  \[OnenotePageId \<String\>\]: The unique identifier of onenotePage
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[Q \<String\>\]: Usage: q='{q}'
+  \[RoomList \<String\>\]: Usage: RoomList='{RoomList}'
+  \[ServicePlanId \<String\>\]: Usage: servicePlanId='{servicePlanId}'
+  \[Skip \<Int32?\>\]: Usage: skip={skip}
+  \[StartDateTime \<String\>\]: Usage: startDateTime='{startDateTime}'
+  \[TimeZoneStandard \<String\>\]: Usage: TimeZoneStandard='{TimeZoneStandard}'
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[Token \<String\>\]: Usage: token='{token}'
+  \[Top \<Int32?\>\]: Usage: top={top}
+  \[Upn \<String\>\]: Usage: upn='{upn}'
+  \[User \<String\>\]: Usage: User='{User}'
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancestagebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancestagebycurrentuser)
 
-
-
-
+[https://learn.microsoft.com/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta)
 

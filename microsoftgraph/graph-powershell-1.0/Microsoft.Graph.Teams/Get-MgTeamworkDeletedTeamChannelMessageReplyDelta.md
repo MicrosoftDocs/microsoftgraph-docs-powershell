@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta
@@ -8,10 +8,16 @@ schema: 2.0.0
 # Get-MgTeamworkDeletedTeamChannelMessageReplyDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta?view=graph-powershell-beta)
+Retrieve the list of messages (without the replies) in a channel of a team.
+By using delta query, you can get new or updated messages in a channel.
+Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
+To get the replies for a message, use the list message replies or the get message reply operation.
+A GET request with the delta function returns either: State tokens are opaque to the client.
+To proceed with a round of change tracking, copy and apply the @odata.nextLink or @odata.deltaLink URL returned from the last GET request to the next delta function call for that same calendar view.
+A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
+You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
+For more information, see the delta query documentation.
 
 ## SYNTAX
 
@@ -33,7 +39,28 @@ Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Retrieve the list of messages (without the replies) in a channel of a team.
+By using delta query, you can get new or updated messages in a channel.
+Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
+To get the replies for a message, use the list message replies or the get message reply operation.
+A GET request with the delta function returns either: State tokens are opaque to the client.
+To proceed with a round of change tracking, copy and apply the @odata.nextLink or @odata.deltaLink URL returned from the last GET request to the next delta function call for that same calendar view.
+A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
+You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
+For more information, see the delta query documentation.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -325,46 +352,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta)
 
-
-
-
+[https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
 

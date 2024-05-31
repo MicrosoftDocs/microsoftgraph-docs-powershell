@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get me from education
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMe?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,6 +21,16 @@ Get-MgBetaEducationMe [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 Get me from education
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -116,7 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationme)
-
-
-
 

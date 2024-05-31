@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteGetByPath
 
 ## SYNOPSIS
-Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPath?view=graph-powershell-beta)
+The collection of lists under this site.
 
 ## SYNTAX
 
@@ -24,8 +20,19 @@ Get-MgGroupSiteGetByPath -GroupId <String> -Path <String> -SiteId <String> [-Exp
 ```
 
 ## DESCRIPTION
-Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
+The collection of lists under this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -284,10 +291,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypath)
-
-[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
-
-
-
-
 

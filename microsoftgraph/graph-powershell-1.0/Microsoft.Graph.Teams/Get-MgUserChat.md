@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat
@@ -8,12 +8,7 @@ schema: 2.0.0
 # Get-MgUserChat
 
 ## SYNOPSIS
-Retrieve a single chat (without its messages).
-This method supports federation.
-To access a chat, at least one chat member must belong to the tenant the request initiated from.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChat?view=graph-powershell-beta)
+Get chats from users
 
 ## SYNTAX
 
@@ -40,22 +35,16 @@ Get-MgUserChat -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve a single chat (without its messages).
-This method supports federation.
-To access a chat, at least one chat member must belong to the tenant the request initiated from.
+Get chats from users
 
 ## EXAMPLES
-### Example 1: Get a user's one on one chat
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 Get-MgUserChat -UserId $userId -ChatId $chatId
-
-```
-This example will get a user's one on one chat
-
 
 ## PARAMETERS
 
@@ -317,49 +306,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
-  - `[ChannelId <String>]`: The unique identifier of channel
-  - `[ChatId <String>]`: The unique identifier of chat
-  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
-  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
-  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
-  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
-  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: The unique identifier of openShift
-  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: The unique identifier of shift
-  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
-  - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
-  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
-  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeOffId <String>]`: The unique identifier of timeOff
-  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
-  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
-  - `[UserId <String>]`: The unique identifier of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+INPUTOBJECT \<ITeamsIdentity\>: Identity Parameter
+  \[AssociatedTeamInfoId \<String\>\]: The unique identifier of associatedTeamInfo
+  \[ChannelId \<String\>\]: The unique identifier of channel
+  \[ChatId \<String\>\]: The unique identifier of chat
+  \[ChatMessageHostedContentId \<String\>\]: The unique identifier of chatMessageHostedContent
+  \[ChatMessageId \<String\>\]: The unique identifier of chatMessage
+  \[ChatMessageId1 \<String\>\]: The unique identifier of chatMessage
+  \[ConversationMemberId \<String\>\]: The unique identifier of conversationMember
+  \[DeletedChatId \<String\>\]: The unique identifier of deletedChat
+  \[DeletedTeamId \<String\>\]: The unique identifier of deletedTeam
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[OfferShiftRequestId \<String\>\]: The unique identifier of offerShiftRequest
+  \[OpenShiftChangeRequestId \<String\>\]: The unique identifier of openShiftChangeRequest
+  \[OpenShiftId \<String\>\]: The unique identifier of openShift
+  \[PinnedChatMessageInfoId \<String\>\]: The unique identifier of pinnedChatMessageInfo
+  \[ResourceSpecificPermissionGrantId \<String\>\]: The unique identifier of resourceSpecificPermissionGrant
+  \[SchedulingGroupId \<String\>\]: The unique identifier of schedulingGroup
+  \[SharedWithChannelTeamInfoId \<String\>\]: The unique identifier of sharedWithChannelTeamInfo
+  \[ShiftId \<String\>\]: The unique identifier of shift
+  \[SwapShiftsChangeRequestId \<String\>\]: The unique identifier of swapShiftsChangeRequest
+  \[TeamId \<String\>\]: The unique identifier of team
+  \[TeamsAppDefinitionId \<String\>\]: The unique identifier of teamsAppDefinition
+  \[TeamsAppId \<String\>\]: The unique identifier of teamsApp
+  \[TeamsAppInstallationId \<String\>\]: The unique identifier of teamsAppInstallation
+  \[TeamsAsyncOperationId \<String\>\]: The unique identifier of teamsAsyncOperation
+  \[TeamsTabId \<String\>\]: The unique identifier of teamsTab
+  \[TeamworkTagId \<String\>\]: The unique identifier of teamworkTag
+  \[TeamworkTagMemberId \<String\>\]: The unique identifier of teamworkTagMember
+  \[TimeOffId \<String\>\]: The unique identifier of timeOff
+  \[TimeOffReasonId \<String\>\]: The unique identifier of timeOffReason
+  \[TimeOffRequestId \<String\>\]: The unique identifier of timeOffRequest
+  \[UserId \<String\>\]: The unique identifier of user
+  \[UserScopeTeamsAppInstallationId \<String\>\]: The unique identifier of userScopeTeamsAppInstallation
+  \[WorkforceIntegrationId \<String\>\]: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchat)
-
-[https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list?view=graph-rest-1.0)
-
-
-
 

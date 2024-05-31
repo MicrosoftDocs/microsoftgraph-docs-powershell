@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroledelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDirectoryRoleDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleDelta?view=graph-powershell-1.0)
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
+See Using Delta Query for details.
 
 ## SYNTAX
 
@@ -23,16 +21,16 @@ Get-MgBetaDirectoryRoleDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
+See Using Delta Query for details.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDirectoryRoleDelta Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryRoleDelta
 ```
-This example shows how to use the Get-MgBetaDirectoryRoleDelta Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -247,6 +245,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroledelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroledelta)
 
-
-
+[https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-beta)
 
