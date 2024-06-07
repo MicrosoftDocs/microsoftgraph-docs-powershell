@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of task triggers that are associated with the printer.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

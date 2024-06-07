@@ -11,6 +11,9 @@ schema: 2.0.0
 In Microsoft Entra entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
 It is performed on an accessPackageAssignmentRequest object whose requestStatus is in a WaitingForCallback state.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Resume-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ResumeExpanded (Default)

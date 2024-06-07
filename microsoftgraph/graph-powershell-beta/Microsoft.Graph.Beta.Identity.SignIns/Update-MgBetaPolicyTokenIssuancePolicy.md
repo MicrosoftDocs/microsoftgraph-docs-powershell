@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property tokenIssuancePolicies in policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

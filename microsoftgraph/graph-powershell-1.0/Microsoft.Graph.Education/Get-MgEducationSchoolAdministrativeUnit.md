@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The underlying administrativeUnit for this school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

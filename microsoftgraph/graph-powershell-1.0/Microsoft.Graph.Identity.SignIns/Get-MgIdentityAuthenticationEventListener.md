@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents listeners for custom authentication extension events in Azure AD for workforce and customers.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

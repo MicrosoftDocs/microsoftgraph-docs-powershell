@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Administrative answer in Microsoft Search results to define common acronyms in an organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchAcronym](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchAcronym?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

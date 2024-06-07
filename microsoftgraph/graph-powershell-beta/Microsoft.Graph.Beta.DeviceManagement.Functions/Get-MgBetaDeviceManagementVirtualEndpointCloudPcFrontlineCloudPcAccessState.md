@@ -41,6 +41,9 @@ Callers can get the latest frontline Cloud PC accessState and determine whether 
 If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
 If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getfrontlinecloudpcaccessstate-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

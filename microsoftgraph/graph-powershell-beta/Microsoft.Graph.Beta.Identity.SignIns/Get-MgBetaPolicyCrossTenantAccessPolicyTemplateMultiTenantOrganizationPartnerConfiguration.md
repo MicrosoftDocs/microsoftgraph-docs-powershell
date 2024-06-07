@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

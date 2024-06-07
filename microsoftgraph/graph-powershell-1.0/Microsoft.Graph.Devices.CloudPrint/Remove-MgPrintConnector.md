@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property connectors for print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

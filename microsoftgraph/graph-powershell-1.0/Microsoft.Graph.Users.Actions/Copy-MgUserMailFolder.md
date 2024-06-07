@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a mailfolder and its contents to another mailfolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -44,6 +47,9 @@ Copy-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Copy a mailfolder and its contents to another mailfolder.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/mailfolder-copy-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.androidLobApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppAsAndroidLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsAndroidLobApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

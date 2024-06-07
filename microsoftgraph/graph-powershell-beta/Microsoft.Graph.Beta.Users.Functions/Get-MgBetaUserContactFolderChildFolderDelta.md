@@ -12,6 +12,9 @@ Get a set of contact folders that have been added, deleted, or removed from the 
 A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
 This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderChildFolderDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -34,6 +37,9 @@ Get-MgBetaUserContactFolderChildFolderDelta -InputObject <IUsersFunctionsIdentit
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 A delta function call for contact folders in a mailbox is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the contact folders.
 This allows you to maintain and synchronize a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contactfolder-delta-permissions.md)]
 
 ## EXAMPLES
 

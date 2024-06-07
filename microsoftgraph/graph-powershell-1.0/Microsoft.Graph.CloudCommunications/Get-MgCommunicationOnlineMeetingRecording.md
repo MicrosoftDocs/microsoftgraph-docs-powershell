@@ -11,6 +11,9 @@ schema: 2.0.0
 The recordings of an online meeting.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingRecording?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default PDF linked to this agreement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

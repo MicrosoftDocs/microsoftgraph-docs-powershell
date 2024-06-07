@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get connections from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

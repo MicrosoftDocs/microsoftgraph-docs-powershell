@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of users or groups allowed to create posts or calendar events in this group.
 If this list is non-empty, then only users or groups listed here can post.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

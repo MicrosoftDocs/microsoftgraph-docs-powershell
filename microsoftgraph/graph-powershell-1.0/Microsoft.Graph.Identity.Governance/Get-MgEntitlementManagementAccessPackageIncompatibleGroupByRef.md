@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The groups whose members are ineligible to be assigned this access package.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

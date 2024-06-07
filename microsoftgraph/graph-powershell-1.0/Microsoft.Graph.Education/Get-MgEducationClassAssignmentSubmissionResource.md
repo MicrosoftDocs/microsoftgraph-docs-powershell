@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get resources from education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

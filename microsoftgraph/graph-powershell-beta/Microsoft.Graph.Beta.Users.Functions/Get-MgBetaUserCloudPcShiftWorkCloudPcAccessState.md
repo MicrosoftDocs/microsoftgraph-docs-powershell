@@ -41,6 +41,9 @@ Callers can get the latest shift work Cloud PC accessState and determine whether
 If a web client needs to connect to a shift work Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
 If sharedCloudPcAccessState is not active/activating/standbyMode, the web client shows a 'bad bookmark'.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getshiftworkcloudpcaccessstate-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

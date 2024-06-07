@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The groups whose members are ineligible to be assigned this access package.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
