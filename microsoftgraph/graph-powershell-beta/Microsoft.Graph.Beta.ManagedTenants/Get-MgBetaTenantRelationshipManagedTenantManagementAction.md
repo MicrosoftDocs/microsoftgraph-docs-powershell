@@ -38,13 +38,17 @@ Get-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IManaged
 The collection of baseline management actions across managed tenants.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.ManagedTenants
-```
 
 Get-MgBetaTenantRelationshipManagedTenantManagementAction
+
+```
+This example shows how to use the Get-MgBetaTenantRelationshipManagedTenantManagementAction Cmdlet.
+
 
 ## PARAMETERS
 

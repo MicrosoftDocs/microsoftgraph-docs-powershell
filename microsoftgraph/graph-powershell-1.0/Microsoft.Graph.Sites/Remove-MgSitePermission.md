@@ -33,13 +33,17 @@ Remove-MgSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [-Resp
 Delete navigation property permissions for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSitePermission -SiteId $siteId -PermissionId $permissionId
+
+```
+This example shows how to use the Remove-MgSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

@@ -27,16 +27,6 @@ The  access packages whose assigned users are ineligible to be assigned this acc
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageId

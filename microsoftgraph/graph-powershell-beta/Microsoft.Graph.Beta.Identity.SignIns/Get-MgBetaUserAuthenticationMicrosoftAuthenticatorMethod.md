@@ -41,13 +41,17 @@ Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentity
 The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId
+
+```
+This example shows how to use the Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod Cmdlet.
+
 
 ## PARAMETERS
 

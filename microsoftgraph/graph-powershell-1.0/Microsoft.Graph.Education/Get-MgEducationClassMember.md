@@ -28,13 +28,17 @@ All users in the class.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
+
+```
+This example shows how to use the Get-MgEducationClassMember Cmdlet.
+
 
 ## PARAMETERS
 

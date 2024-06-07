@@ -49,17 +49,21 @@ Set-MgBetaEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity>
 Update the ref of navigation property rubric in education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
 }
 
 Set-MgBetaEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
+
+```
+This example shows how to use the Set-MgBetaEducationClassAssignmentRubricByRef Cmdlet.
+
 
 ## PARAMETERS
 

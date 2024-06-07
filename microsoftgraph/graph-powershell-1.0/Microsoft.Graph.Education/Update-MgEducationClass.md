@@ -65,11 +65,11 @@ Update-MgEducationClass -InputObject <IEducationIdentity> -BodyParameter <IMicro
 Update the navigation property classes in education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	description = "History - World History 1"
@@ -77,6 +77,10 @@ $params = @{
 }
 
 Update-MgEducationClass -EducationClassId $educationClassId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

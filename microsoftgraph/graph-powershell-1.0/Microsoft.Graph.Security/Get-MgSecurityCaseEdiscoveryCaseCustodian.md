@@ -41,13 +41,17 @@ Get-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-Exp
 Returns a list of case ediscoveryCustodian objects for this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

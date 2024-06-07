@@ -40,13 +40,17 @@ Get-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 The list of available Universal Print service endpoints.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintService
+
+```
+This example shows how to use the Get-MgPrintService Cmdlet.
+
 
 ## PARAMETERS
 

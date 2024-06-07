@@ -33,13 +33,17 @@ Remove-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch 
 Delete navigation property timeOffRequests for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleTimeOffRequest -TeamId $teamId -TimeOffRequestId $timeOffRequestId
+
+```
+This example shows how to use the Remove-MgBetaTeamScheduleTimeOffRequest Cmdlet.
+
 
 ## PARAMETERS
 

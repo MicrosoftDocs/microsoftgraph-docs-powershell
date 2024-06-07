@@ -36,16 +36,6 @@ Get a list of the authenticationStrengthPolicy objects and their properties filt
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModes

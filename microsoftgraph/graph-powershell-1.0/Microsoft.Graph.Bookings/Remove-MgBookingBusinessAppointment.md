@@ -33,13 +33,17 @@ Remove-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMatch <
 Delete navigation property appointments for solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
+
+```
+This example shows how to use the Remove-MgBookingBusinessAppointment Cmdlet.
+
 
 ## PARAMETERS
 

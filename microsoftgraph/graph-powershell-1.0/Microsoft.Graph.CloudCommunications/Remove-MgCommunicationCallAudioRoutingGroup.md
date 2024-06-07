@@ -33,13 +33,17 @@ Remove-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 Delete navigation property audioRoutingGroups for communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Remove-MgCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId
+
+```
+This example shows how to use the Remove-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

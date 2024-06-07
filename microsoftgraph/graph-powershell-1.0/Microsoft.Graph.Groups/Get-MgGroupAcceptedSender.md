@@ -27,13 +27,17 @@ The list of users or groups allowed to create posts or calendar events in this g
 If this list is non-empty, then only users or groups listed here are allowed to post.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupAcceptedSender -GroupId $groupId
+
+```
+This example shows how to use the Get-MgGroupAcceptedSender Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,11 +49,11 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Create new navigation property to customQuestions for solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBookingBusinessCustomQuestion Cmdlet.
+
 
 ## PARAMETERS
 

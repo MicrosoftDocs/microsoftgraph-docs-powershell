@@ -52,11 +52,11 @@ Update-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IM
 Update the navigation property patents in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	number = "USPTO-3954432633"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
+
 
 ## PARAMETERS
 

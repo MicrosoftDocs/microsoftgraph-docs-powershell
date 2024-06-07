@@ -33,13 +33,17 @@ Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete navigation property members for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId
+
+```
+This example shows how to use the Remove-MgBetaTeamChannelMember Cmdlet.
+
 
 ## PARAMETERS
 

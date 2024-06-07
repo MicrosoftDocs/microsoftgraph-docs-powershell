@@ -51,11 +51,11 @@ Update-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 Update the navigation property outcomes in education
 
 ## EXAMPLES
+### Example 1: Update a feedback outcome
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackOutcome"
@@ -63,10 +63,14 @@ $params = @{
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 2
 ```
+This example will update a feedback outcome
+
+### Example 2: Update a points outcome
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationPointsOutcome"
@@ -78,10 +82,14 @@ $params = @{
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 3
 ```
+This example will update a points outcome
+
+### Example 3: Update a rubric outcome
+
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationRubricOutcome"
@@ -92,6 +100,10 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
+
+```
+This example will update a rubric outcome
+
 
 ## PARAMETERS
 

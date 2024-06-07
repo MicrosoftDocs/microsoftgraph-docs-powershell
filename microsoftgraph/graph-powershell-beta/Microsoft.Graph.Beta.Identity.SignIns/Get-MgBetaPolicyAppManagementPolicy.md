@@ -41,13 +41,17 @@ Get-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAppManagementPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyAppManagementPolicy Cmdlet.
+
 
 ## PARAMETERS
 

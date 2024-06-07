@@ -41,13 +41,17 @@ Get-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 The collection of column definitions for this content type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Get-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

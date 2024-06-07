@@ -56,13 +56,17 @@ Get-MgBetaChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandPropert
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
+### Example 1: List hosted content for message in a chat
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+
+```
+This example will list hosted content for message in a chat
+
 
 ## PARAMETERS
 

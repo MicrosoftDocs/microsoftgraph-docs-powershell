@@ -63,11 +63,10 @@ New-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicros
 Create new navigation property to tasks for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 $params = @{
 	title = "A new task"
@@ -85,6 +84,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserTodoListTask -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserTodoListTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

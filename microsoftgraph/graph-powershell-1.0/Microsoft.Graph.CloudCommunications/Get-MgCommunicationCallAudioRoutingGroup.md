@@ -41,13 +41,17 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 Get audioRoutingGroups from communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallAudioRoutingGroup -CallId $callId
+
+```
+This example shows how to use the Get-MgCommunicationCallAudioRoutingGroup Cmdlet.
+
 
 ## PARAMETERS
 

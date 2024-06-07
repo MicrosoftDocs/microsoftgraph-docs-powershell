@@ -57,13 +57,17 @@ Get-MgTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandProp
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
+### Example 1: List hosted content for a channel message
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+
+```
+This example will list hosted content for a channel message
+
 
 ## PARAMETERS
 

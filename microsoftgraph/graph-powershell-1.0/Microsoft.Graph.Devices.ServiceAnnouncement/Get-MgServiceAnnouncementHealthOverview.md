@@ -43,20 +43,28 @@ A collection of service health information for tenant.
 This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
+### Example 1: Get serviceHealth resources
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementHealthOverview
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
+This example will get servicehealth resources
 
-Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues"
+### Example 2: Include navigation property issues
+
+```powershell
+
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues" 
+
+```
+This example will include navigation property issues
+
 
 ## PARAMETERS
 
