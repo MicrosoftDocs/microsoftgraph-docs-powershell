@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate
@@ -8,7 +8,13 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState
 
 ## SYNOPSIS
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
 
 ## SYNTAX
 
@@ -27,7 +33,25 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcFrontlineCloudPcAccessState
 ```
 
 ## DESCRIPTION
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -123,44 +147,42 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
-  - `[Category <String>]`: Usage: category='{category}'
-  - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
-  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
-  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
-  - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
-  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
-  - `[DeviceManagementReusablePolicySettingId <String>]`: The unique identifier of deviceManagementReusablePolicySetting
-  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
-  - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
-  - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
-  - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[Id <String>]`: Usage: id='{id}'
-  - `[Ids <String- `[]`>]`: Usage: ids={ids}
-  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
-  - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
-  - `[PolicyId <String>]`: Usage: policyId='{policyId}'
-  - `[Resource <String>]`: Usage: resource='{resource}'
-  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
-  - `[Scope <String>]`: Usage: scope='{scope}'
-  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
-  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
-  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
-  - `[TemplateId <String>]`: Usage: templateId='{templateId}'
-  - `[Upn <String>]`: Usage: upn='{upn}'
-  - `[Userid <String>]`: Usage: userid='{userid}'
+INPUTOBJECT \<IDeviceManagementFunctionsIdentity\>: Identity Parameter
+  \[Category \<String\>\]: Usage: category='{category}'
+  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
+  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
+  \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The unique identifier of deviceAndAppManagementAssignmentFilter
+  \[DeviceConfigurationId \<String\>\]: The unique identifier of deviceConfiguration
+  \[DeviceHealthScriptId \<String\>\]: The unique identifier of deviceHealthScript
+  \[DeviceManagementConfigurationPolicyId \<String\>\]: The unique identifier of deviceManagementConfigurationPolicy
+  \[DeviceManagementIntentId \<String\>\]: The unique identifier of deviceManagementIntent
+  \[DeviceManagementReusablePolicySettingId \<String\>\]: The unique identifier of deviceManagementReusablePolicySetting
+  \[DeviceManagementTemplateId \<String\>\]: The unique identifier of deviceManagementTemplate
+  \[DeviceManagementTemplateId1 \<String\>\]: The unique identifier of deviceManagementTemplate
+  \[DomainName \<String\>\]: Usage: domainName='{domainName}'
+  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
+  \[EnrollmentType \<String\>\]: Usage: enrollmentType='{enrollmentType}'
+  \[ExpiringBeforeDateTime \<String\>\]: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+  \[GroupId \<String\>\]: Usage: groupId='{groupId}'
+  \[Id \<String\>\]: Usage: id='{id}'
+  \[Ids \<String\[\]\>\]: Usage: ids={ids}
+  \[ManagedDeviceId \<String\>\]: The unique identifier of managedDevice
+  \[Platform \<DevicePlatformType?\>\]: Usage: platform='{platform}'
+  \[PolicyId \<String\>\]: Usage: policyId='{policyId}'
+  \[Resource \<String\>\]: Usage: resource='{resource}'
+  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
+  \[Scope \<String\>\]: Usage: scope='{scope}'
+  \[SecretReferenceValueId \<String\>\]: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  \[ServicePlanId \<String\>\]: Usage: servicePlanId='{servicePlanId}'
+  \[SubscriptionId \<String\>\]: Usage: subscriptionId='{subscriptionId}'
+  \[SummarizeBy \<UserExperienceAnalyticsSummarizedBy?\>\]: Usage: summarizeBy='{summarizeBy}'
+  \[TemplateId \<String\>\]: Usage: templateId='{templateId}'
+  \[Upn \<String\>\]: Usage: upn='{upn}'
+  \[Userid \<String\>\]: Usage: userid='{userid}'
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcfrontlinecloudpcaccessstate)
 
-
-
-
+[https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta)
 

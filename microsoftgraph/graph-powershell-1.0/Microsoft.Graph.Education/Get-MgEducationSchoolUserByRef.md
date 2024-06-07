@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgEducationSchoolUserByRef
 
 ## SYNOPSIS
-Get the educationUser resources associated with an educationSchool.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+Users in the school.
+Nullable.
 
 ## SYNTAX
 
@@ -22,9 +20,20 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-Get the educationUser resources associated with an educationSchool.
+Users in the school.
+Nullable.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -223,9 +232,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref)
-
-[https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-list-users?view=graph-rest-1.0)
-
-
-
 

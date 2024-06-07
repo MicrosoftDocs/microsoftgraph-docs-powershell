@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabel
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property labels for security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabel](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabel?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,6 +19,18 @@ Remove-MgSecurityLabel [-IfMatch <String>] [-ResponseHeadersVariable <String>] [
 
 ## DESCRIPTION
 Delete navigation property labels for security
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -145,8 +154,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabel)
-
-
-
-
 

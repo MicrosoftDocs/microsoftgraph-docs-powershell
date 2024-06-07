@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Education-help.xml
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooldelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationSchoolDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSchoolDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolDelta?view=graph-powershell-1.0)
+Get newly created or updated schools without having to perform a full read of the entire school collection.
+See Use delta query for details.
 
 ## SYNTAX
 
@@ -23,9 +21,20 @@ Get-MgBetaEducationSchoolDelta [-ExpandProperty <String[]>] [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created or updated schools without having to perform a full read of the entire school collection.
+See Use delta query for details.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -240,6 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschooldelta)
 
-
-
+[https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationschool-delta?view=graph-rest-beta)
 

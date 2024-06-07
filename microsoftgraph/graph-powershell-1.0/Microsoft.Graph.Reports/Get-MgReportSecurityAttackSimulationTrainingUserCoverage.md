@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationtrainingusercoverage
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgReportSecurityAttackSimulationTrainingUserCoverage
 
 ## SYNOPSIS
-Invoke function getAttackSimulationTrainingUserCoverage
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
+List training coverage for tenant users in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 ## SYNTAX
 
@@ -22,7 +20,24 @@ Get-MgReportSecurityAttackSimulationTrainingUserCoverage [-Count] [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Invoke function getAttackSimulationTrainingUserCoverage
+List training coverage for tenant users in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -161,7 +176,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationtrainingusercoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationtrainingusercoverage)
 
-
-
-
+[https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-1.0)
 

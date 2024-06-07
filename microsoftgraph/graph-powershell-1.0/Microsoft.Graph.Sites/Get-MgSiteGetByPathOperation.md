@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathoperation
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgSiteGetByPathOperation
 
 ## SYNOPSIS
-Get a list of rich long-running operations associated with a site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathOperation?view=graph-powershell-beta)
+The collection of long-running operations on the site.
 
 ## SYNTAX
 
@@ -32,7 +29,19 @@ Get-MgSiteGetByPathOperation -Path <String> -SiteId <String> -Path1 <String> [-E
 ```
 
 ## DESCRIPTION
-Get a list of rich long-running operations associated with a site.
+The collection of long-running operations on the site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -291,10 +300,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathoperation)
-
-[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0)
-
-
-
-
 
