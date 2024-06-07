@@ -60,22 +60,6 @@ Update-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter 
 ## DESCRIPTION
 Update the navigation property services in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -710,6 +694,7 @@ Use the email address specified in the email property of the bookingBusiness ent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessservice)
+
 
 
 

@@ -34,18 +34,6 @@ Get-MgBetaApplicationFederatedIdentityCredentialByName -InputObject <IApplicatio
 Federated identities for applications.
 Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -222,6 +210,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredentialbyname)
+
 
 
 

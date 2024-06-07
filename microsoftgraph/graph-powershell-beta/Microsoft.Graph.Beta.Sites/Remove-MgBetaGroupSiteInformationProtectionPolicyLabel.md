@@ -29,18 +29,6 @@ Remove-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdent
 ## DESCRIPTION
 Delete navigation property labels for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -283,6 +271,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsiteinformationprotectionpolicylabel)
+
 
 
 

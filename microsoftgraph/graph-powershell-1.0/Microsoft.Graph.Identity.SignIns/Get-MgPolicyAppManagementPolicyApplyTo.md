@@ -40,18 +40,6 @@ Get-MgPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Collection of applications and service principals to which the policy is applied.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -375,6 +363,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto)
+
 
 
 

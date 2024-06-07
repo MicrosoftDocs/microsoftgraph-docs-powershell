@@ -41,18 +41,6 @@ Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit -InputObject <IUsersIdentit
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -360,6 +348,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberofasadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertransitivememberofasadministrativeunit)
+
 
 
 

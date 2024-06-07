@@ -32,18 +32,6 @@ Undo-MgBetaTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-ResponseHea
 ## DESCRIPTION
 Restore a deletedChat to an active chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeletedChatId
@@ -232,6 +220,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamworkdeletedchatdelete](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/undo-mgbetateamworkdeletedchatdelete)
 
 [https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/deletedchat-undodelete?view=graph-rest-beta)
+
 
 
 

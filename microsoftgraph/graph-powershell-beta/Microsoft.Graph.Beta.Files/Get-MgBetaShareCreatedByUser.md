@@ -32,18 +32,6 @@ Get-MgBetaShareCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get createdByUser from shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecreatedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharecreatedbyuser)
+
 
 
 

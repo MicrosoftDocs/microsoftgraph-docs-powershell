@@ -34,22 +34,6 @@ Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser -InputObject 
 ## DESCRIPTION
 In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -370,6 +354,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterentitlementmanagementaccesspackagebycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-beta)
+
 
 
 

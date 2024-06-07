@@ -29,18 +29,6 @@ Update-MgAdminPeoplePronoun -BodyParameter <IMicrosoftGraphPronounsSettings>
 ## DESCRIPTION
 Update the navigation property pronouns in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -208,6 +196,7 @@ The default value is false, and pronouns are disabled.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeoplepronoun](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeoplepronoun)
+
 
 
 

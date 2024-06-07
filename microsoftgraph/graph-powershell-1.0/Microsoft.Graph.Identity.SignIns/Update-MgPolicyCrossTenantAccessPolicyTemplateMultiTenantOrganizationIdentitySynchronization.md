@@ -34,18 +34,6 @@ Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySyn
 ## DESCRIPTION
 Update the navigation property multiTenantOrganizationIdentitySynchronization in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -238,6 +226,7 @@ This property has no impact on existing users who have already been synchronized
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicytemplatemultitenantorganizationidentitysynchronization)
+
 
 
 

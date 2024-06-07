@@ -32,22 +32,6 @@ Remove-MgUserEventInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property attachments for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentId
@@ -264,6 +248,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusereventinstanceattachment)
+
 
 
 

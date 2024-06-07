@@ -33,22 +33,6 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 ## DESCRIPTION
 Create new navigation property to authenticationEventListeners for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -265,6 +249,7 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
+
 
 
 

@@ -21,18 +21,6 @@ Get-MgBetaTeamShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ## DESCRIPTION
 Get all shift objects across all teams to which a user is a direct member.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -216,6 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
 
 [https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
+
 
 
 

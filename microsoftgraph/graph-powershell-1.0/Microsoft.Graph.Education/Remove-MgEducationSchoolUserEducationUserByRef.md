@@ -32,18 +32,6 @@ Remove-MgEducationSchoolUserEducationUserByRef -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Delete ref of navigation property users for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationSchoolId
@@ -232,6 +220,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref)
+
 
 
 

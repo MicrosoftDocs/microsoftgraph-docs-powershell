@@ -48,22 +48,6 @@ Grant-MgDriveRootPermission -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Grant users access to a link represented by a permission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +297,7 @@ security groups).
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/grant-mgdriverootpermission)
 
 [https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+
 
 
 

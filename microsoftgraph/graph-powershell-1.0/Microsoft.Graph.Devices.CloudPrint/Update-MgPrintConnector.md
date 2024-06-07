@@ -50,22 +50,6 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update the navigation property connectors in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -405,6 +389,7 @@ The elements should be in hierarchical order.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
+
 
 
 

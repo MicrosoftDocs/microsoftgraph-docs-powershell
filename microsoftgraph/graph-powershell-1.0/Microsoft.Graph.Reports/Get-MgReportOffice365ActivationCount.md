@@ -23,22 +23,6 @@ Get-MgReportOffice365ActivationCount -OutFile <String> [-ResponseHeadersVariable
 ## DESCRIPTION
 Get the count of Microsoft 365 activations on desktops and devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -132,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationcount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-1.0)
+
 
 
 

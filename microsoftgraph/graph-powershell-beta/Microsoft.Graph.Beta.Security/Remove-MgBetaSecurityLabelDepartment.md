@@ -32,18 +32,6 @@ Remove-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property departments for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepartmentTemplateId
@@ -286,6 +274,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabeldepartment)
+
 
 
 

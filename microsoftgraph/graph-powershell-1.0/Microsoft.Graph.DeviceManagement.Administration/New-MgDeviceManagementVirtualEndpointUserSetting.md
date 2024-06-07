@@ -34,18 +34,6 @@ New-MgDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Create new navigation property to userSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -361,6 +349,7 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting)
+
 
 
 

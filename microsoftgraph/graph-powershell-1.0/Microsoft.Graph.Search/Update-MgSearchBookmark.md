@@ -58,18 +58,6 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property bookmarks in search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -601,6 +589,7 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchbookmark)
+
 
 
 

@@ -37,18 +37,6 @@ New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken>
 ## DESCRIPTION
 Create new navigation property to vppTokens for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -487,6 +475,7 @@ TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult- `[]`>: The collection o
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken)
+
 
 
 

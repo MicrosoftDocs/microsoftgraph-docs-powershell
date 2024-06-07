@@ -37,22 +37,6 @@ List a set of items recently used by the signed-in user.This collection includes
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/drive-recent-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -327,6 +311,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetarecentuserdrive)
 
 [https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-beta)
+
 
 
 

@@ -42,18 +42,6 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy
 ## DESCRIPTION
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -389,6 +377,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmanagedappregistrationappliedpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmanagedappregistrationappliedpolicy)
+
 
 
 

@@ -39,18 +39,6 @@ You must call this API to explicitly restore the deleted service principal.
 A recently deleted item remains available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupSettingTemplateId
@@ -224,6 +212,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/restore-mggroupsettingtemplate)
 
 [https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0)
+
 
 
 

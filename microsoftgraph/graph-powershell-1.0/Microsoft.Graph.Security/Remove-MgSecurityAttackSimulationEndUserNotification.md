@@ -32,18 +32,6 @@ Remove-MgSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIden
 ## DESCRIPTION
 Delete navigation property endUserNotifications for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EndUserNotificationId
@@ -264,6 +252,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationendusernotification)
+
 
 
 

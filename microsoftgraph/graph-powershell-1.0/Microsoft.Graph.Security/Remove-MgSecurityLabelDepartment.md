@@ -32,18 +32,6 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property departments for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepartmentTemplateId
@@ -264,6 +252,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment)
+
 
 
 

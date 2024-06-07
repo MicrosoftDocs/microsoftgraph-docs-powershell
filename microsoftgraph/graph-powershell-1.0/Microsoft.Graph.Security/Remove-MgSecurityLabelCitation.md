@@ -32,18 +32,6 @@ Remove-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property citations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CitationTemplateId
@@ -264,6 +252,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation)
+
 
 
 

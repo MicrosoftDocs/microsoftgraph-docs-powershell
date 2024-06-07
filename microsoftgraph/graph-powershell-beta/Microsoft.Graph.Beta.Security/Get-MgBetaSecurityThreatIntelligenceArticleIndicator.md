@@ -62,18 +62,6 @@ Get-MgBetaSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIden
 ## DESCRIPTION
 Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -421,6 +409,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencearticleindicator)
+
 
 
 
