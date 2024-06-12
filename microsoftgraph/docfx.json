@@ -96,17 +96,14 @@
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
 	    "ms.prod": "non-product-specific",
-      "ms.technology": "microsoft-graph-powershell",
+      "ms.service": "microsoft-graph-powershell",
       "ms.topic": "reference",
       "ms.author": "twamalwa",
       "author": "finsharp"
     },
     "fileMetadata": {
 	"feedback_system": {
-          "docs-conceptual/**/*.md": "GitHub"
-      },
-	"feedback_github_repo": {
-          "docs-conceptual/**/*.md": "MicrosoftDocs/microsoftgraph-docs-powershell"
+          "docs-conceptual/**/*.md": "Standard"
       },
 	"feedback_product_url": {
           "docs-conceptual/**/*.md": "https://github.com/microsoftgraph/msgraph-sdk-powershell"
