@@ -101,17 +101,7 @@
       "ms.author": "twamalwa",
       "author": "finsharp"
     },
-    "fileMetadata": {
-	"feedback_system": {
-          "docs-conceptual/**/*.md": "GitHub"
-      },
-	"feedback_github_repo": {
-          "docs-conceptual/**/*.md": "MicrosoftDocs/microsoftgraph-docs-powershell"
-      },
-	"feedback_product_url": {
-          "docs-conceptual/**/*.md": "https://github.com/microsoftgraph/msgraph-sdk-powershell"
-      },
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
 	"monikerRange": {
