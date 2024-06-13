@@ -14,8 +14,6 @@ ms.reviewer: mandardalvi
 
 # Tutorial: Assign Microsoft Entra roles in Privileged Identity Management using Microsoft Graph PowerShell
 
-In Microsoft Entra ID, a Global Administrator can make permanent Microsoft Entra admin role assignments.
-
 The Microsoft Entra Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, privileged role administrators can make users eligible for Microsoft Entra admin roles. An eligible administrator can activate the role when they need the role, and the permissions expire once the eligible administrator is done.
 
 In this tutorial, you'll create, extend, activate, deactivate, and remove eligible role assignments.
@@ -28,7 +26,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 1. To use the Microsoft Entra Privileged Identity Management, you must have one of the following licenses:
     - Microsoft Entra ID P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Microsoft Graph PowerShell using a Global Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a Privileged Role Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
