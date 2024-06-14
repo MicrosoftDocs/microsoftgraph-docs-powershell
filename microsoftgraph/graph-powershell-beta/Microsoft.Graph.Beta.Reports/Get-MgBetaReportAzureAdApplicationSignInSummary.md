@@ -33,16 +33,6 @@ Retrieve applicationSigninSummary objects within either the last seven or 30 day
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count

@@ -69,17 +69,21 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Create new navigation property to columns for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	"sourceColumn@odata.bind" = "https://graph.microsoft.com/v1.0/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 
 New-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
+
+```
+This example shows how to use the New-MgSiteContentTypeColumn Cmdlet.
+
 
 ## PARAMETERS
 

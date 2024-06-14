@@ -33,13 +33,17 @@ Remove-MgEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String>]
 Delete navigation property schools for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationSchool -EducationSchoolId $educationSchoolId
+
+```
+This example shows how to use the Remove-MgEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

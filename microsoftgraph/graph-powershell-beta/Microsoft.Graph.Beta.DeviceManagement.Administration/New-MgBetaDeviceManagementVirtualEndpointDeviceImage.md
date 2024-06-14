@@ -36,9 +36,8 @@ New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftG
 Create new navigation property to deviceImages for deviceManagement
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
 	"@odata.type" = "#microsoft.graph.cloudPcDeviceImage"
@@ -50,6 +49,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

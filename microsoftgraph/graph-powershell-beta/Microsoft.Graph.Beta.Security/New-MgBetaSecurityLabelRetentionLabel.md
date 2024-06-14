@@ -40,11 +40,11 @@ New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRet
 Create new navigation property to retentionLabels for security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
@@ -73,6 +73,10 @@ $params = @{
 }
 
 New-MgBetaSecurityLabelRetentionLabel -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaSecurityLabelRetentionLabel Cmdlet.
+
 
 ## PARAMETERS
 

@@ -49,11 +49,10 @@ Update-MgIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 Update the navigation property apiConnectors in identity
 
 ## EXAMPLES
+### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "New Test API"
@@ -66,11 +65,15 @@ $params = @{
 }
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
 
-### EXAMPLE 2
-```
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Changing API connector to use client certificate authentication
+
+```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	authenticationConfiguration = @{
@@ -81,6 +84,11 @@ $params = @{
 }
 
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

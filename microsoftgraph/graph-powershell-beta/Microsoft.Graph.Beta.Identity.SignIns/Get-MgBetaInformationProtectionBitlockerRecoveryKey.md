@@ -41,20 +41,28 @@ Get-MgBetaInformationProtectionBitlockerRecoveryKey -InputObject <IIdentitySignI
 The recovery keys associated with the bitlocker entity.
 
 ## EXAMPLES
+### Example 1: Get the BitLocker key by specifying the key **id**
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will get the bitlocker key by specifying the key **id**
 
-Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key"
+### Example 2: Get the BitLocker key with the **key** property by specifying the key **id**
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaInformationProtectionBitlockerRecoveryKey -BitlockerRecoveryKeyId $bitlockerRecoveryKeyId -Property "key" 
+
+```
+This example will get the bitlocker key with the **key** property by specifying the key **id**
+
 
 ## PARAMETERS
 

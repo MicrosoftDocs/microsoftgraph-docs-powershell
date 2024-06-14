@@ -57,17 +57,21 @@ For example, this method can be used to clean up the IVR operation queue for a n
 However, it will not cancel a subscribeToTone operation because it operates independent of any operation queue.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 $params = @{
 	clientContext = "clientContext-value"
 }
 
 Stop-MgCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
+
+```
+This example shows how to use the Stop-MgCommunicationCallMediaProcessing Cmdlet.
+
 
 ## PARAMETERS
 

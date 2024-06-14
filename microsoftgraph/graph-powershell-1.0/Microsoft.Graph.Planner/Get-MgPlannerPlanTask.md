@@ -30,13 +30,17 @@ Nullable.
 Collection of tasks in the plan.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
+
+```
+This example shows how to use the Get-MgPlannerPlanTask Cmdlet.
+
 
 ## PARAMETERS
 

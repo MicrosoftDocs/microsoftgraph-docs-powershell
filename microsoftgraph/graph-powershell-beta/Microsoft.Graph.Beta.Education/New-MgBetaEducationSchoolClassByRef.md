@@ -47,17 +47,21 @@ New-MgBetaEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParam
 Create new navigation property ref to classes for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/education/classes/11006"
 }
 
 New-MgBetaEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationSchoolClassByRef Cmdlet.
+
 
 ## PARAMETERS
 

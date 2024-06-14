@@ -34,13 +34,17 @@ Remove-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-If
 Delete navigation property resources for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentResource Cmdlet.
+
 
 ## PARAMETERS
 

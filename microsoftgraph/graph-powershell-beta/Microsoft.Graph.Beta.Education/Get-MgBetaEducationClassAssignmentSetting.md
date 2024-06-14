@@ -33,20 +33,28 @@ Get-MgBetaEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Ex
 Specifies class-level assignments settings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Education
-```
+This example shows how to use the Get-MgBetaEducationClassAssignmentSetting Cmdlet.
 
-Get-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -ExpandProperty "defaultGradingScheme"
+### Example 2: Code snippet
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Education
+
+Get-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -ExpandProperty "defaultGradingScheme" 
+
+```
+This example shows how to use the Get-MgBetaEducationClassAssignmentSetting Cmdlet.
+
 
 ## PARAMETERS
 

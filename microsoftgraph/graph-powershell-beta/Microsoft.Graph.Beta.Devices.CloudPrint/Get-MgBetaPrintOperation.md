@@ -41,13 +41,17 @@ Get-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 Get operations from print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintOperation -PrintOperationId $printOperationId
+
+```
+This example shows how to use the Get-MgBetaPrintOperation Cmdlet.
+
 
 ## PARAMETERS
 

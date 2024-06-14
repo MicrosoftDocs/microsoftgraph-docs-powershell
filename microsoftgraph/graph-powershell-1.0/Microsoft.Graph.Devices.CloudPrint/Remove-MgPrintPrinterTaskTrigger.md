@@ -33,13 +33,17 @@ Remove-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-IfM
 Delete navigation property taskTriggers for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
+
+```
+This example shows how to use the Remove-MgPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 

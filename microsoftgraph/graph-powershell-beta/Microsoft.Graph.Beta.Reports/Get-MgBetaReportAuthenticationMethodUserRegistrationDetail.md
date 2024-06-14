@@ -41,13 +41,17 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportAuthenticationMethodUserRegistrationDetail
+
+```
+This example shows how to use the Get-MgBetaReportAuthenticationMethodUserRegistrationDetail Cmdlet.
+
 
 ## PARAMETERS
 

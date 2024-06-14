@@ -30,14 +30,18 @@ Remove-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <St
 Delete navigation property anniversaries for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileAnniversary -UserId $userId -PersonAnnualEventId $personAnnualEventId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileAnniversary Cmdlet.
+
 
 ## PARAMETERS
 
