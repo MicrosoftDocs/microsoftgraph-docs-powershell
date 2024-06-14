@@ -11,6 +11,9 @@ schema: 2.0.0
 Set of access reviews instances for this access review series.
 Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

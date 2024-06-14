@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get internalSponsors from identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsor?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

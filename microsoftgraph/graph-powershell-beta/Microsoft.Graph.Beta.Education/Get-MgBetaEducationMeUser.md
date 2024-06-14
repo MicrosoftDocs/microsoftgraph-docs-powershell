@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get user from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUser?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

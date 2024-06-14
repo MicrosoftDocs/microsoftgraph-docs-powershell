@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns a list of ediscoveryReviewTag objects associated to this case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

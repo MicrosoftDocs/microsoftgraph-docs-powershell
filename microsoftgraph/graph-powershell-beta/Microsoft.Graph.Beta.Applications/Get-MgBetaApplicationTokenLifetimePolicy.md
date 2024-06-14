@@ -11,6 +11,9 @@ schema: 2.0.0
 The tokenLifetimePolicies assigned to this application.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

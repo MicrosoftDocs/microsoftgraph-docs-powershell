@@ -11,6 +11,9 @@ schema: 2.0.0
 Replies for a specified message.
 Supports $expand for channel messages.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

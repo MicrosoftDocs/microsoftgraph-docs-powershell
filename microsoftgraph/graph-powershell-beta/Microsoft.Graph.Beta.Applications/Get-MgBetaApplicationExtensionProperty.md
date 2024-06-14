@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

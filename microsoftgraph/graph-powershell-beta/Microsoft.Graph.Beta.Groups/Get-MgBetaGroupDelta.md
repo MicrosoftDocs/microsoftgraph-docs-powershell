@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
 See Using Delta Query for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

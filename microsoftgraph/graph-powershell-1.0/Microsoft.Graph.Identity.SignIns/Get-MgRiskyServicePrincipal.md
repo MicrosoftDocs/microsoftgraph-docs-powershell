@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Microsoft Entra service principals that are at risk.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Renews the SAS URI for an application file upload.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgRenewDeviceAppManagementMobileAppMicrosoftGraphMacOSDmgAppContentVersionFileUpload?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Renew (Default)

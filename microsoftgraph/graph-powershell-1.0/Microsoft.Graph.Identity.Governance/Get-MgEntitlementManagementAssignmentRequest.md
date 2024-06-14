@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Access package assignment requests created by or on behalf of a subject.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ListAll (Default)

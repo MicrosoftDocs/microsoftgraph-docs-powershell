@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The workflow templates in the lifecycle workflow instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

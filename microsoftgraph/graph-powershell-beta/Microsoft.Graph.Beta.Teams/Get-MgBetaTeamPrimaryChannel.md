@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The general channel for the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

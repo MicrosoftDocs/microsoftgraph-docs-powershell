@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the message.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessageExtension](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageExtension?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

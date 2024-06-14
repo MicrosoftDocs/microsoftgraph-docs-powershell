@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The open shift requests in the schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

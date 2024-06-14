@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Sync-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Sync (Default)

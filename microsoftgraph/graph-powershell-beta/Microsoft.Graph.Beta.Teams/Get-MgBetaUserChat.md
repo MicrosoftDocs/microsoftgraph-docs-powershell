@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get chats from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of all groups available in the term store.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

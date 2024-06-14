@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function reminderView
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaViewUserReminder](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaViewUserReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### View (Default)
@@ -28,6 +31,9 @@ Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filt
 
 ## DESCRIPTION
 Invoke function reminderView
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reminderview-permissions.md)]
 
 ## EXAMPLES
 

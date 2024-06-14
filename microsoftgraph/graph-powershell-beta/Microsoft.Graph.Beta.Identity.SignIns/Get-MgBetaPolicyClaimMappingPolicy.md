@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

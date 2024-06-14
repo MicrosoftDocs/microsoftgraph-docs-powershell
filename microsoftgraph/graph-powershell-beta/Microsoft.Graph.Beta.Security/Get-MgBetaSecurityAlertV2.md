@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of alerts in Microsoft 365 Defender.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlertV2?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

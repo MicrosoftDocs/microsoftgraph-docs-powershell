@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of users or groups not allowed to create posts or calendar events in this group.
 Nullable
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupRejectedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSender?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of service issues for tenant.
 This property is a contained navigation property, it is nullable and readonly.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

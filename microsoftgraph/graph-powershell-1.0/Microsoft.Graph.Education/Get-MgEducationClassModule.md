@@ -11,6 +11,9 @@ schema: 2.0.0
 All modules in the class.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

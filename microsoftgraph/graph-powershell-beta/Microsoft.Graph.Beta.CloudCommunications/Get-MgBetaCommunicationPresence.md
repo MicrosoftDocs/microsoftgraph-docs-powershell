@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get presences from communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set the state of a user's presence session as an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -46,6 +49,9 @@ Set-MgUserPresence -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Set the state of a user's presence session as an application.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/presence-setpresence-permissions.md)]
 
 ## EXAMPLES
 
