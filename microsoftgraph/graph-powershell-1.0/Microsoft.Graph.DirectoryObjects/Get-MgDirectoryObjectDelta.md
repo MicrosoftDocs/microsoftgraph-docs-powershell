@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryObjectDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectDelta](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectDelta?view=graph-powershell-beta)
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -23,7 +21,20 @@ Get-MgDirectoryObjectDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -238,7 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectdelta)
 
-
-
-
+[https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
 

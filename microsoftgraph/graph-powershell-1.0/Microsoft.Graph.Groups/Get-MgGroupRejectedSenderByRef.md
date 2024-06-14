@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
-Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
-Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+The list of users or groups not allowed to create posts or calendar events in this group.
+Nullable
 
 ## SYNTAX
 
@@ -23,21 +20,17 @@ Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 ```
 
 ## DESCRIPTION
-Users in the rejected senders list can't post to conversations of the group (identified in the GET request URL).
-Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you get an error.
+The list of users or groups not allowed to create posts or calendar events in this group.
+Nullable
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
+```
 
 Get-MgGroupRejectedSender -GroupId $groupId
-```
-This example shows how to use the Get-MgGroupRejectedSenderByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -221,9 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref)
-
-[https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-rejectedsenders?view=graph-rest-1.0)
-
-
-
 

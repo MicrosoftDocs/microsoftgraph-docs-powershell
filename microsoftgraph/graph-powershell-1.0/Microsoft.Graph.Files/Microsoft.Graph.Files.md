@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
 Module Guid: 45ddab16-496a-4ef0-ac17-dbf0f93494d3
 Download Help Link: {{ Update Download Link }}
@@ -324,6 +324,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgDriveListItemDelta](Get-MgDriveListItemDelta.md)
 {{ Fill in the Description }}
 
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
@@ -1137,6 +1140,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount](Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgShareListItemDelta](Get-MgShareListItemDelta.md)
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
@@ -3232,5 +3238,4 @@ Locale: en-US
 
 ### [Update-MgUserDriveRootVersion](Update-MgUserDriveRootVersion.md)
 {{ Fill in the Description }}
-
 

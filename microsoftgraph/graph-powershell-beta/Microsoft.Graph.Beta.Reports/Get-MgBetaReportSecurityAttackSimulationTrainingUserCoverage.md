@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationtrainingusercoverage
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage
 
 ## SYNOPSIS
-Invoke function getAttackSimulationTrainingUserCoverage
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-1.0)
+List training coverage for tenant users in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 ## SYNTAX
 
@@ -22,16 +20,16 @@ Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage [-Count] [-Filter <
 ```
 
 ## DESCRIPTION
-Invoke function getAttackSimulationTrainingUserCoverage
+List training coverage for tenant users in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage
 ```
-This example shows how to use the Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -170,6 +168,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationtrainingusercoverage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurityattacksimulationtrainingusercoverage)
 
-
-
+[https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationtrainingusercoverage?view=graph-rest-beta)
 

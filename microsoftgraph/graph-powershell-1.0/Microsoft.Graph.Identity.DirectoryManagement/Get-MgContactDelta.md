@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgContactDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactDelta?view=graph-powershell-beta)
+Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
+See change tracking for details.
 
 ## SYNTAX
 
@@ -22,9 +20,20 @@ Get-MgContactDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <S
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
+See change tracking for details.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -239,6 +248,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactdelta)
 
-
-
+[https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-delta?view=graph-rest-1.0)
 
