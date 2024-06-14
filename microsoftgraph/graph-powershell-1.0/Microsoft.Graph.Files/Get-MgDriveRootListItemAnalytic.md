@@ -32,22 +32,6 @@ Get-MgDriveRootListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Analytics about the view activities that took place on this item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -201,6 +185,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitemanalytic](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootlistitemanalytic)
+
 
 
 

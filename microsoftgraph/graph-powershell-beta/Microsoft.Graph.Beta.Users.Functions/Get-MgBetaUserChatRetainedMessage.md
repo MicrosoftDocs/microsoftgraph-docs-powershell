@@ -34,18 +34,6 @@ Get all retained messages from all chats that a user is a participant in, includ
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/chat-getallretainedmessages-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -305,6 +293,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserchatretainedmessage)
 
 [https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
+
 
 
 

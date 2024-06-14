@@ -62,18 +62,6 @@ Get-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity> [
 ## DESCRIPTION
 Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -399,6 +387,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent)
+
 
 
 

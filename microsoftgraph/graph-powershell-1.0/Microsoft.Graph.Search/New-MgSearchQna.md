@@ -36,18 +36,6 @@ New-MgSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersVaria
 ## DESCRIPTION
 Create new navigation property to qnas for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -500,6 +488,7 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/new-mgsearchqna)
+
 
 
 

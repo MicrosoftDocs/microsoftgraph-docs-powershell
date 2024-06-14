@@ -40,18 +40,6 @@ Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -InputObject <IDeviceMa
 ## DESCRIPTION
 A defined collection of Azure resource information that can be used to establish Azure network connections for Cloud PCs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -327,6 +315,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointonpremiseconnection)
+
 
 
 

@@ -50,22 +50,6 @@ Set-MgBetaUserDriveRootSensitivityLabel -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action assignSensitivityLabel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,6 +334,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriverootsensitivitylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserdriverootsensitivitylabel)
+
 
 
 

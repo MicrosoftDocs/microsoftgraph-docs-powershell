@@ -49,18 +49,6 @@ Restart-MgServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -305,6 +293,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-restart?view=graph-rest-1.0)
+
 
 
 

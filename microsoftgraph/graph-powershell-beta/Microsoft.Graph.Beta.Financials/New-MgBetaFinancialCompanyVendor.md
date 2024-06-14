@@ -53,22 +53,6 @@ New-MgBetaFinancialCompanyVendor -InputObject <IFinancialsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to vendors for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -671,6 +655,7 @@ PICTURE <IMicrosoftGraphPicture- `[]`>: .
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanyvendor)
+
 
 
 

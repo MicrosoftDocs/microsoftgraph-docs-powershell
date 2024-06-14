@@ -34,22 +34,6 @@ Search-MgBetaDriveItem -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <
 ## DESCRIPTION
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -325,6 +309,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/search-mgbetadriveitem)
 
 [https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
+
 
 
 

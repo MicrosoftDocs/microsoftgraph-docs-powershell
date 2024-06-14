@@ -34,18 +34,6 @@ New-MgDirectoryCustomSecurityAttributeDefinition
 ## DESCRIPTION
 Create new navigation property to customSecurityAttributeDefinitions for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,6 +380,7 @@ If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition)
+
 
 
 

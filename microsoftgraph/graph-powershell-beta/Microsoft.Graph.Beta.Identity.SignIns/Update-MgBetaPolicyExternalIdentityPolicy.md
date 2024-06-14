@@ -30,22 +30,6 @@ Update-MgBetaPolicyExternalIdentityPolicy -BodyParameter <IMicrosoftGraphExterna
 ## DESCRIPTION
 Update the navigation property externalIdentitiesPolicy in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,6 +269,7 @@ When the external user leaves the tenant, their data in the guest tenant is firs
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyexternalidentitypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyexternalidentitypolicy)
+
 
 
 

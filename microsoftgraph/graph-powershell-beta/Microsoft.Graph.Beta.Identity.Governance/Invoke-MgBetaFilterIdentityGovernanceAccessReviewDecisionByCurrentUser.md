@@ -34,22 +34,6 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDecisionByCurrentUser
 Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
 A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -370,6 +354,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdecisionbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdecisionbycurrentuser)
 
 [https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta)
+
 
 
 

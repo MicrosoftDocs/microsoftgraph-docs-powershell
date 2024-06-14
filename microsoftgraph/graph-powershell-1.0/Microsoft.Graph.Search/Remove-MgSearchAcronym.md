@@ -32,18 +32,6 @@ Remove-MgSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>] [-Resp
 ## DESCRIPTION
 Delete navigation property acronyms for search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -213,6 +201,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchacronym)
+
 
 
 

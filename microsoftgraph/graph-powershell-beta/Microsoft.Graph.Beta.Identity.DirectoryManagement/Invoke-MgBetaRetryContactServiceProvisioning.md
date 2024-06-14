@@ -32,18 +32,6 @@ Invoke-MgBetaRetryContactServiceProvisioning -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Retry the orgContact service provisioning.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -238,6 +226,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaretrycontactserviceprovisioning)
 
 [https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta](https://learn.microsoft.com/graph/api/orgcontact-retryserviceprovisioning?view=graph-rest-beta)
+
 
 
 

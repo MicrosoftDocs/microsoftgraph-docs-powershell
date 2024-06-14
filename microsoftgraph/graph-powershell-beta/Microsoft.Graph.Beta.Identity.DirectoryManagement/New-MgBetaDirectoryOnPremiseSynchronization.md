@@ -34,18 +34,6 @@ New-MgBetaDirectoryOnPremiseSynchronization -BodyParameter <IMicrosoftGraphOnPre
 ## DESCRIPTION
 Create new navigation property to onPremisesSynchronization for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -327,6 +315,7 @@ This flag should be enabled again after any soft matching has been completed and
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryonpremisesynchronization)
+
 
 
 

@@ -35,18 +35,6 @@ New-MgBetaSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create new navigation property to articles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -380,6 +368,7 @@ SUMMARY `<IMicrosoftGraphSecurityFormattedContent>`: formattedContent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticle)
+
 
 
 

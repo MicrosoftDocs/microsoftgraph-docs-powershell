@@ -40,18 +40,6 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 ## DESCRIPTION
 Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -384,6 +372,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelauthority)
+
 
 
 

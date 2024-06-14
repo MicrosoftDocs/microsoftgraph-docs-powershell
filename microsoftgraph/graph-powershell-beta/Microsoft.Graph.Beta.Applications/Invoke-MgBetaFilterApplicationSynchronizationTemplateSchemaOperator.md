@@ -35,22 +35,6 @@ Invoke-MgBetaFilterApplicationSynchronizationTemplateSchemaOperator -InputObject
 ## DESCRIPTION
 List all operators supported in the scoping filters.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -319,6 +303,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationtemplateschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterapplicationsynchronizationtemplateschemaoperator)
 
 [https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta)
+
 
 
 

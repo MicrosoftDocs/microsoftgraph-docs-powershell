@@ -45,18 +45,6 @@ Update-MgBetaIdentityB2XUserFlowPreTokenIssuance -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Update the navigation property preTokenIssuance in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,6 +354,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowpretokenissuance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowpretokenissuance)
+
 
 
 
