@@ -33,22 +33,6 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ## DESCRIPTION
 Get a list of archived print jobs that were queued for particular printer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -299,6 +283,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob)
 
 [https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta)
+
 
 
 

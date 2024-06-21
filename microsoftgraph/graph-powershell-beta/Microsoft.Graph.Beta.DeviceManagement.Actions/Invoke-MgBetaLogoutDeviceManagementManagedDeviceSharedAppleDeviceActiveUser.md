@@ -32,22 +32,6 @@ Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
 ## DESCRIPTION
 Logout shared Apple device active user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -247,6 +231,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetalogoutdevicemanagementmanageddevicesharedappledeviceactiveuser)
+
 
 
 

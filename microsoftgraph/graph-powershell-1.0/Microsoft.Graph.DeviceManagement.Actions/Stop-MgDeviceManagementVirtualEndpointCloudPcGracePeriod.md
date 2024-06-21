@@ -41,18 +41,6 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpc-endgraceperiod-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -216,6 +204,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod)
 
 [https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
+
 
 
 

@@ -33,18 +33,6 @@ New-MgIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthent
 ## DESCRIPTION
 Create new navigation property to authenticationEventListeners for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,6 +227,7 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener)
+
 
 
 

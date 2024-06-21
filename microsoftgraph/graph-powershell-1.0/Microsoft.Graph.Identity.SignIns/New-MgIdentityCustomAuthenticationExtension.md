@@ -33,18 +33,6 @@ New-MgIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Respons
 ## DESCRIPTION
 Create new navigation property to customAuthenticationExtensions for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,6 +261,7 @@ Default duration is 1000.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentitycustomauthenticationextension)
+
 
 
 

@@ -33,22 +33,6 @@ Set-MgUserContactFolderChildFolderContactPhotoContent -InputObject <IPersonalCon
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactFolderId
@@ -293,6 +277,7 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfolderchildfoldercontactphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/set-mgusercontactfolderchildfoldercontactphotocontent)
+
 
 
 

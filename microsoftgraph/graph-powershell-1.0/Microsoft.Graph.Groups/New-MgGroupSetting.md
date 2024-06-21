@@ -60,18 +60,6 @@ New-MgGroupSetting -BodyParameter <IMicrosoftGraphGroupSetting> [-ResponseHeader
 ## DESCRIPTION
 Create new navigation property to settings for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -355,6 +343,7 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupsetting)
 
 [https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)
+
 
 
 

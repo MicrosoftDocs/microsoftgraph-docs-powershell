@@ -39,18 +39,6 @@ Get-MgSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ## DESCRIPTION
 Administrative answer in Microsoft Search results to define common acronyms in an organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcronymId
@@ -310,6 +298,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchacronym)
+
 
 
 

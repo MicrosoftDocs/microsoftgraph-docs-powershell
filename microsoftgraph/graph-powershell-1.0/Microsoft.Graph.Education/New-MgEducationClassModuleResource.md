@@ -47,18 +47,6 @@ New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Create new navigation property to resources for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -315,6 +303,7 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
+
 
 
 

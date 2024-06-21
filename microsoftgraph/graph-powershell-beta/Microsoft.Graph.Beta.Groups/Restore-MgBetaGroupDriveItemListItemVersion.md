@@ -32,22 +32,6 @@ Restore-MgBetaGroupDriveItemListItemVersion -InputObject <IGroupsIdentity> [-Res
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -284,6 +268,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveitemlistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveitemlistitemversion)
+
 
 
 

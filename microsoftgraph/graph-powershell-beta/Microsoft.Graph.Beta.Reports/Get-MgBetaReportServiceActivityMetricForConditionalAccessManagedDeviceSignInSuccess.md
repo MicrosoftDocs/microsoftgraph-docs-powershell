@@ -34,18 +34,6 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSucc
 Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
 Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AggregationIntervalInMinutes
@@ -296,6 +284,7 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess)
 
 [https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta)
+
 
 
 

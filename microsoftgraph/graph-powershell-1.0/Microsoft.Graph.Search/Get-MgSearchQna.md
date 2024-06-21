@@ -39,18 +39,6 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -310,6 +298,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna)
+
 
 
 

@@ -50,18 +50,6 @@ Update-MgUserDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -424,6 +412,7 @@ Read-write.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mguserdriverootretentionlabel)
+
 
 
 

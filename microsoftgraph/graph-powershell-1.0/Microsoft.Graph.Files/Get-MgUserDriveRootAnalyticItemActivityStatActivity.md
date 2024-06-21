@@ -25,18 +25,6 @@ Get-MgUserDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActiv
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -294,6 +282,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticitemactivitystatactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticitemactivitystatactivity)
+
 
 
 

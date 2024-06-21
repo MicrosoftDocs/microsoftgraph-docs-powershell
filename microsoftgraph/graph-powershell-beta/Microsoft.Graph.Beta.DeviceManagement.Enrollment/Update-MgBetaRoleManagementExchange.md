@@ -33,18 +33,6 @@ Update-MgBetaRoleManagementExchange -BodyParameter <IMicrosoftGraphUnifiedRbacAp
 ## DESCRIPTION
 Update the navigation property exchange in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -683,6 +671,7 @@ Supports $filter (eq, in).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchange](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchange)
+
 
 
 

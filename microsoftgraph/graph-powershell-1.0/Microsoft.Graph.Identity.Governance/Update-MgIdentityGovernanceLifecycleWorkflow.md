@@ -64,18 +64,6 @@ Update-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Update the navigation property workflows in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -43361,6 +43349,7 @@ Value is null if task execution has not yet started.Supports $filter(lt, le, gt,
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflow)
+
 
 
 

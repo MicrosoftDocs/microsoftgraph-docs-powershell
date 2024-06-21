@@ -32,18 +32,6 @@ Remove-MgEducationSchoolClassEducationClassByRef -InputObject <IEducationIdentit
 ## DESCRIPTION
 Delete ref of navigation property classes for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -232,6 +220,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclasseducationclassbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolclasseducationclassbyref)
+
 
 
 

@@ -63,18 +63,6 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 Settings that can govern this group's behavior, like whether members can invite guest users to the group.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -385,6 +373,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsetting-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-settings?view=graph-rest-1.0)
+
 
 
 

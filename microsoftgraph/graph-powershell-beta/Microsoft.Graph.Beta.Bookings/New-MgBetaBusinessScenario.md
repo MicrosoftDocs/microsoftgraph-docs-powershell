@@ -30,18 +30,6 @@ New-MgBetaBusinessScenario -BodyParameter <IMicrosoftGraphBusinessScenario> [-Re
 ## DESCRIPTION
 Create new navigation property to businessScenarios for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -914,6 +902,7 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenario)
+
 
 
 

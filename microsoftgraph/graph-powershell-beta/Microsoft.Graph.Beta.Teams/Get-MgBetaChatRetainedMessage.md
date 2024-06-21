@@ -21,18 +21,6 @@ Get-MgBetaChatRetainedMessage [-Count] [-ExpandProperty <String[]>] [-Filter <St
 ## DESCRIPTION
 Get all retained messages from all chats that a user is a participant in, including one-on-one chats, group chats, and meeting chats.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -216,6 +204,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatretainedmessage)
 
 [https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/chat-getallretainedmessages?view=graph-rest-beta)
+
 
 
 
