@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.Partner
 Module Guid: 05459198-f597-434f-a0df-684aa9e24f69
 Download Help Link: {{ Update Download Link }}
@@ -100,4 +100,5 @@ Locale: en-US
 
 ### [Update-MgTenantRelationshipDelegatedAdminRelationshipRequest](Update-MgTenantRelationshipDelegatedAdminRelationshipRequest.md)
 {{ Fill in the Description }}
+
 

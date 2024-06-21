@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangeroleassignment
@@ -420,188 +420,191 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPSCOPE \<IMicrosoftGraphAppScope\>: appScope
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
+  - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-  \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+  - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
 
-BODYPARAMETER \<IMicrosoftGraphUnifiedRoleAssignment\>: unifiedRoleAssignment
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignment>`: unifiedRoleAssignment
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AppScope \<IMicrosoftGraphAppScope\>\]: appScope
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DisplayName \<String\>\]: Provides the display name of the app-specific resource represented by the app scope.
+    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope.
 Provided for display purposes since appScopeId is often an immutable, non-human-readable id.
 This property is read only.
-    \[Type \<String\>\]: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
+    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope and is provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope.
 This property is read only.
-  \[AppScopeId \<String\>\]: Identifier of the app specific scope when the assignment scope is app specific.
+  - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 App scopes are scopes that are defined and understood by a resource application only.
 For the entitlement management provider, use this property to specify a catalog, for example /AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997.
 Supports $filter (eq, in).
 For example /roleManagement/entitlementManagement/roleAssignments?$filter=appScopeId eq '/AccessPackageCatalog/{catalog id}'.
-  \[Condition \<String\>\]: 
-  \[DirectoryScope \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[Condition <String>]`: 
+  - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  \[DirectoryScopeId \<String\>\]: Identifier of the directory object representing the scope of the assignment.
+  - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.
 The scope of an assignment determines the set of resources for which the principal has been granted access.
 Directory scopes are shared scopes stored in the directory that are understood by multiple applications, unlike app scopes that are defined and understood by a resource application only.
 Supports $filter (eq, in).
-  \[Principal \<IMicrosoftGraphDirectoryObject\>\]: directoryObject
-  \[PrincipalId \<String\>\]: Identifier of the principal to which the assignment is granted.
+  - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+  - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted.
 Supported principals are users, role-assignable groups, and service principals.
 Supports $filter (eq, in).
-  \[PrincipalOrganizationId \<String\>\]: Identifier of the home tenant for the principal to which the assignment is granted.
-  \[ResourceScope \<String\>\]: The scope at which the unifiedRoleAssignment applies.
+  - `[PrincipalOrganizationId <String>]`: Identifier of the home tenant for the principal to which the assignment is granted.
+  - `[ResourceScope <String>]`: The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.
 DO NOT USE.
 This property will be deprecated soon.
-  \[RoleDefinition \<IMicrosoftGraphUnifiedRoleDefinition\>\]: unifiedRoleDefinition
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Id \<String\>\]: The unique identifier for an entity.
+  - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
-    \[Description \<String\>\]: The description for the unifiedRoleDefinition.
+    - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
+    - `[Description <String>]`: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-    \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
+    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
-    \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
+    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-    \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
-    \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
+    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-    \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
+    - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-    \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
+    - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-    \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
+    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-      \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
-      \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
+      - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
+      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-      \[ExcludedResourceActions \<String\[\]\>\]: 
-    \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
+      - `[ExcludedResourceActions <String- `[]`>]`: 
+    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-    \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
+    - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
-  \[RoleDefinitionId \<String\>\]: Identifier of the unifiedRoleDefinition the assignment is for.
+  - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
 Read-only.
 Supports $filter (eq, in).
 
-DIRECTORYSCOPE \<IMicrosoftGraphDirectoryObject\>: directoryObject
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-INPUTOBJECT \<IDeviceManagementEnrollmentIdentity\>: Identity Parameter
-  \[AndroidDeviceOwnerEnrollmentProfileId \<String\>\]: The unique identifier of androidDeviceOwnerEnrollmentProfile
-  \[AndroidForWorkEnrollmentProfileId \<String\>\]: The unique identifier of androidForWorkEnrollmentProfile
-  \[AppScopeId \<String\>\]: The unique identifier of appScope
-  \[AppleEnrollmentProfileAssignmentId \<String\>\]: The unique identifier of appleEnrollmentProfileAssignment
-  \[AppleUserInitiatedEnrollmentProfileId \<String\>\]: The unique identifier of appleUserInitiatedEnrollmentProfile
-  \[CustomAppScopeId \<String\>\]: The unique identifier of customAppScope
-  \[DepOnboardingSettingId \<String\>\]: The unique identifier of depOnboardingSetting
-  \[DeviceEnrollmentConfigurationId \<String\>\]: The unique identifier of deviceEnrollmentConfiguration
-  \[DeviceManagementAutopilotEventId \<String\>\]: The unique identifier of deviceManagementAutopilotEvent
-  \[DeviceManagementAutopilotPolicyStatusDetailId \<String\>\]: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
-  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
-  \[EnrollmentConfigurationAssignmentId \<String\>\]: The unique identifier of enrollmentConfigurationAssignment
-  \[EnrollmentProfileId \<String\>\]: The unique identifier of enrollmentProfile
-  \[ImportedAppleDeviceIdentityId \<String\>\]: The unique identifier of importedAppleDeviceIdentity
-  \[ImportedDeviceIdentityId \<String\>\]: The unique identifier of importedDeviceIdentity
-  \[ImportedWindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of importedWindowsAutopilotDeviceIdentity
-  \[UnifiedRbacResourceActionId \<String\>\]: The unique identifier of unifiedRbacResourceAction
-  \[UnifiedRbacResourceNamespaceId \<String\>\]: The unique identifier of unifiedRbacResourceNamespace
-  \[UnifiedRoleAssignmentId \<String\>\]: The unique identifier of unifiedRoleAssignment
-  \[UnifiedRoleAssignmentMultipleId \<String\>\]: The unique identifier of unifiedRoleAssignmentMultiple
-  \[UnifiedRoleDefinitionId \<String\>\]: The unique identifier of unifiedRoleDefinition
-  \[UnifiedRoleDefinitionId1 \<String\>\]: The unique identifier of unifiedRoleDefinition
-  \[WindowsAutopilotDeploymentProfileAssignmentId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfileAssignment
-  \[WindowsAutopilotDeploymentProfileId \<String\>\]: The unique identifier of windowsAutopilotDeploymentProfile
-  \[WindowsAutopilotDeviceIdentityId \<String\>\]: The unique identifier of windowsAutopilotDeviceIdentity
-  \[WindowsFeatureUpdateProfileAssignmentId \<String\>\]: The unique identifier of windowsFeatureUpdateProfileAssignment
-  \[WindowsFeatureUpdateProfileId \<String\>\]: The unique identifier of windowsFeatureUpdateProfile
+INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
+  - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
+  - `[AppScopeId <String>]`: The unique identifier of appScope
+  - `[AppleEnrollmentProfileAssignmentId <String>]`: The unique identifier of appleEnrollmentProfileAssignment
+  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
+  - `[CustomAppScopeId <String>]`: The unique identifier of customAppScope
+  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+  - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+  - `[DeviceManagementAutopilotEventId <String>]`: The unique identifier of deviceManagementAutopilotEvent
+  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
+  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+  - `[ImportedAppleDeviceIdentityId <String>]`: The unique identifier of importedAppleDeviceIdentity
+  - `[ImportedDeviceIdentityId <String>]`: The unique identifier of importedDeviceIdentity
+  - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of importedWindowsAutopilotDeviceIdentity
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentMultipleId <String>]`: The unique identifier of unifiedRoleAssignmentMultiple
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: The unique identifier of windowsAutopilotDeploymentProfileAssignment
+  - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
+  - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+  - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
+  - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-PRINCIPAL \<IMicrosoftGraphDirectoryObject\>: directoryObject
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-ROLEDEFINITION \<IMicrosoftGraphUnifiedRoleDefinition\>: unifiedRoleDefinition
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AllowedPrincipalTypes \<String\>\]: allowedRolePrincipalTypes
-  \[Description \<String\>\]: The description for the unifiedRoleDefinition.
+  - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
+  - `[Description <String>]`: The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
-  \[DisplayName \<String\>\]: The display name for the unifiedRoleDefinition.
+  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 Required. 
 Supports $filter (eq and startsWith).
-  \[InheritsPermissionsFrom \<IMicrosoftGraphUnifiedRoleDefinition\[\]\>\]: Read-only collection of role definitions that the given role definition inherits from.
+  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition- `[]`>]`: Read-only collection of role definitions that the given role definition inherits from.
 Only Microsoft Entra built-in roles support this attribute.
-  \[IsBuiltIn \<Boolean?\>\]: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
 Read-only. 
 Supports $filter (eq).
-  \[IsEnabled \<Boolean?\>\]: Flag indicating if the role is enabled for assignment.
+  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
-  \[IsPrivileged \<Boolean?\>\]: Flag indicating if the role is privileged.
+  - `[IsPrivileged <Boolean?>]`: Flag indicating if the role is privileged.
 Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the rolePermissions and allowedResourceActions objects.
 Applies only for actions in the microsoft.directory resource namespace.
 Read-only.
 Supports $filter (eq).
-  \[ResourceScopes \<String\[\]\>\]: List of scopes permissions granted by the role definition apply to.
+  - `[ResourceScopes <String- `[]`>]`: List of scopes permissions granted by the role definition apply to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
 This will be deprecated soon.
 Attach scope to role assignment.
-  \[RolePermissions \<IMicrosoftGraphUnifiedRolePermission\[\]\>\]: List of permissions included in the role.
+  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission- `[]`>]`: List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-    \[AllowedResourceActions \<String\[\]\>\]: Set of tasks that can be performed on a resource.
-    \[Condition \<String\>\]: Optional constraints that must be met for the permission to be effective.
+    - `[AllowedResourceActions <String- `[]`>]`: Set of tasks that can be performed on a resource.
+    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
 Not supported for custom roles.
-    \[ExcludedResourceActions \<String\[\]\>\]: 
-  \[TemplateId \<String\>\]: Custom template identifier that can be set when isBuiltIn is false.
+    - `[ExcludedResourceActions <String- `[]`>]`: 
+  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false.
 This identifier is typically used if one needs an identifier to be the same across different directories.
 Read-only when isBuiltIn is true.
-  \[Version \<String\>\]: Indicates the version of the unifiedRoleDefinition object.
+  - `[Version <String>]`: Indicates the version of the unifiedRoleDefinition object.
 Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementexchangeroleassignment)
+
+
+
 
