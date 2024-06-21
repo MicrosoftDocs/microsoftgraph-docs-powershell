@@ -43,13 +43,17 @@ The permissions associated with the site.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSitePermission -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSitePermission Cmdlet.
+
 
 ## PARAMETERS
 

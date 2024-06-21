@@ -34,13 +34,17 @@ Remove-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIden
 Delete navigation property resources for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentSubmissionResource Cmdlet.
+
 
 ## PARAMETERS
 

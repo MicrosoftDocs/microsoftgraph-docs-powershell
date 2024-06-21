@@ -41,13 +41,17 @@ Get-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Expand
 Microsoft Entra service principals that are at risk.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaRiskyServicePrincipal
+
+```
+This example shows how to use the Get-MgBetaRiskyServicePrincipal Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,17 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 Delete navigation property items for external
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Remove-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
+
+```
+This example shows how to use the Remove-MgBetaExternalConnectionItem Cmdlet.
+
 
 ## PARAMETERS
 

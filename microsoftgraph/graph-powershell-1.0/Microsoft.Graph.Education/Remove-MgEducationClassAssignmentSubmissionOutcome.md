@@ -34,13 +34,17 @@ Remove-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdent
 Delete navigation property outcomes for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId
+
+```
+This example shows how to use the Remove-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
+
 
 ## PARAMETERS
 

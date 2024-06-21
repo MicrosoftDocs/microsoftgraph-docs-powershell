@@ -40,13 +40,17 @@ Get-MgBookingCurrency -InputObject <IBookingsIdentity> [-ExpandProperty <String[
 Get bookingCurrencies from solutions
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingCurrency
+
+```
+This example shows how to use the Get-MgBookingCurrency Cmdlet.
+
 
 ## PARAMETERS
 

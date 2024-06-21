@@ -25,12 +25,13 @@ List all subscriptions cloudPcSubscription that can be used to store a snapshot 
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcsnapshot-getsubscriptions-permissions.md)]
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

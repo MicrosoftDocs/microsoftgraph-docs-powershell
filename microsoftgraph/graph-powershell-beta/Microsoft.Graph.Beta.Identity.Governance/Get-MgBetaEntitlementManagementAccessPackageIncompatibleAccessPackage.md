@@ -26,13 +26,17 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPac
 The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

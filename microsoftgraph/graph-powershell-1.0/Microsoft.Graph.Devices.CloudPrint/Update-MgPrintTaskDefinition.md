@@ -49,11 +49,11 @@ Update-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity>
 Update the navigation property taskDefinitions in print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "Test TaskDefinitionName"
@@ -63,6 +63,10 @@ $params = @{
 }
 
 Update-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgPrintTaskDefinition Cmdlet.
+
 
 ## PARAMETERS
 

@@ -63,13 +63,17 @@ Get-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <
 All the terms under the set.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreGroupSetTerm -SiteId $siteId -GroupId $groupId -SetId $setId -TermId $termId
+
+```
+This example shows how to use the Get-MgSiteTermStoreGroupSetTerm Cmdlet.
+
 
 ## PARAMETERS
 

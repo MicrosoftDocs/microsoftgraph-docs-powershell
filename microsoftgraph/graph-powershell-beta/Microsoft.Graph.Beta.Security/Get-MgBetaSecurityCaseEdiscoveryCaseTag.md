@@ -41,13 +41,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-Expan
 Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseTag Cmdlet.
+
 
 ## PARAMETERS
 

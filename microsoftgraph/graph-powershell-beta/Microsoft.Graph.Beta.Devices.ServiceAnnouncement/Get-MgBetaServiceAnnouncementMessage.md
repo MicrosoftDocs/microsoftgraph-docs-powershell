@@ -43,13 +43,17 @@ A collection of service messages for tenant.
 This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
-```
 
 Get-MgBetaServiceAnnouncementMessage
+
+```
+This example shows how to use the Get-MgBetaServiceAnnouncementMessage Cmdlet.
+
 
 ## PARAMETERS
 

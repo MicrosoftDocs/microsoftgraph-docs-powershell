@@ -34,13 +34,17 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <IS
 Operation entity that represents the latest indexing for the custodian.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
+
+```
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
+
 
 ## PARAMETERS
 

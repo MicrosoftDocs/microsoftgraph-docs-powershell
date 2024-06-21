@@ -33,13 +33,17 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Res
 Delete navigation property contentTypes for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
+
+```
+This example shows how to use the Remove-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

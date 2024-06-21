@@ -54,11 +54,11 @@ Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <
 Update the navigation property positions in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	isCurrent = $true
@@ -66,6 +66,10 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfilePosition Cmdlet.
+
 
 ## PARAMETERS
 

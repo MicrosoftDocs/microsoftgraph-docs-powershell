@@ -41,13 +41,17 @@ Get-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity> [-
 The list of device categories with the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement
-```
 
 Get-MgDeviceManagementDeviceCategory
+
+```
+This example shows how to use the Get-MgDeviceManagementDeviceCategory Cmdlet.
+
 
 ## PARAMETERS
 

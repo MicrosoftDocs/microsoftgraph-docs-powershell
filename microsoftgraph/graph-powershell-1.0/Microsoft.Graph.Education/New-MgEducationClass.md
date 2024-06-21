@@ -41,11 +41,11 @@ New-MgEducationClass -BodyParameter <IMicrosoftGraphEducationClass> [-ResponseHe
 Create new navigation property to classes for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationClass"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgEducationClass -BodyParameter $params
+
+```
+This example shows how to use the New-MgEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

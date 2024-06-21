@@ -48,11 +48,10 @@ Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
 Update the navigation property masterCategories in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 $params = @{
 	color = "preset15"
@@ -60,6 +59,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Update-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

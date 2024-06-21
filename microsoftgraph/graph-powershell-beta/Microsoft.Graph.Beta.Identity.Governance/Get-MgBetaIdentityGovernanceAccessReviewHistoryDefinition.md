@@ -41,13 +41,17 @@ Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition -InputObject <IIdentit
 Represents a collection of access review history data and the scopes used to collect that data.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
+
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,17 @@ Remove-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-IfMatch <
 Delete navigation property ediscoveryCases for security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Remove-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
+
+```
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

@@ -65,11 +65,10 @@ Update-MgBetaExternalConnection -InputObject <ISearchIdentity>
 Update the navigation property connections in external
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 $params = @{
 	name = "Contoso HR Service Tickets"
@@ -77,6 +76,11 @@ $params = @{
 }
 
 Update-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaExternalConnection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

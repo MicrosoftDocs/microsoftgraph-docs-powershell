@@ -41,13 +41,17 @@ Get-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandP
 Represents entry point for API connectors.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityApiConnector
+
+```
+This example shows how to use the Get-MgBetaIdentityApiConnector Cmdlet.
+
 
 ## PARAMETERS
 

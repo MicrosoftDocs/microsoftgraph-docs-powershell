@@ -33,13 +33,17 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 Get schema from external
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+
+```
+This example shows how to use the Get-MgExternalConnectionSchema Cmdlet.
+
 
 ## PARAMETERS
 

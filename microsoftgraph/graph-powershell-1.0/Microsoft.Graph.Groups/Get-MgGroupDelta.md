@@ -27,12 +27,13 @@ Get newly created, updated, or deleted groups, including group membership change
 See Using Delta Query for details.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgGroupDelta Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupDelta
 ```
+This example shows how to use the Get-MgGroupDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

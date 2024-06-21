@@ -25,13 +25,17 @@ Get-MgBetaPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Proper
 The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication (MFA) in Microsoft Entra ID.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAuthenticationMethodPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 

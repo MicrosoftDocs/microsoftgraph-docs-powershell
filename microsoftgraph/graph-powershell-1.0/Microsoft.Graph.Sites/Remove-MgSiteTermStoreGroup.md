@@ -47,13 +47,17 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>]
 Delete navigation property groups for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
+
+```
+This example shows how to use the Remove-MgSiteTermStoreGroup Cmdlet.
+
 
 ## PARAMETERS
 

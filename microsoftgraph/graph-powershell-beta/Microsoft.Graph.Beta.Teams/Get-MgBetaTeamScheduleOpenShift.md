@@ -41,13 +41,17 @@ Get-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty <
 The set of open shifts in a scheduling group in the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleOpenShift -TeamId $teamId
+
+```
+This example shows how to use the Get-MgBetaTeamScheduleOpenShift Cmdlet.
+
 
 ## PARAMETERS
 

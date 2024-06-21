@@ -31,13 +31,17 @@ Remove-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 Delete navigation property localizations for organization
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+
+```
+This example shows how to use the Remove-MgOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 
