@@ -37,6 +37,9 @@ This method allows your application to track changes to objects that the user ca
 The return value of this method might contain heterogeneous types of objects from Planner.
 For more information about tracking changes in Microsoft Graph data, see Use delta query to track changes in Microsoft Graph data.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-delta-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

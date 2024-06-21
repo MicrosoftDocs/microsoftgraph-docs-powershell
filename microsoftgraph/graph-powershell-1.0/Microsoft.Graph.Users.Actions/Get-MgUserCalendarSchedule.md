@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserCalendarSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded1 (Default)
@@ -46,6 +49,9 @@ Get-MgUserCalendarSchedule -InputObject <IUsersActionsIdentity>
 
 ## DESCRIPTION
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/calendar-getschedule-permissions.md)]
 
 ## EXAMPLES
 

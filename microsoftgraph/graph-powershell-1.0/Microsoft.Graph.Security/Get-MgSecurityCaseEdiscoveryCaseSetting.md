@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns a list of eDIscoverySettings objects in the case.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

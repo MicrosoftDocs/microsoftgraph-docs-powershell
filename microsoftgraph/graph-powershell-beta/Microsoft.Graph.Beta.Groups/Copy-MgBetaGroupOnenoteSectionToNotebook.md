@@ -11,6 +11,9 @@ schema: 2.0.0
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgGroupOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenoteSectionToNotebook?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -48,6 +51,9 @@ Copy-MgBetaGroupOnenoteSectionToNotebook -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/section-copytonotebook-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property policies for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

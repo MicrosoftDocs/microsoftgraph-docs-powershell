@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created or updated schools without having to perform a full read of the entire school collection.
 See Use delta query for details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to members for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMember?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

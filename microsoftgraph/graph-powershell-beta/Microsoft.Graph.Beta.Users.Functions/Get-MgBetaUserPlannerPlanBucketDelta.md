@@ -33,6 +33,9 @@ Get-MgBetaUserPlannerPlanBucketDelta -InputObject <IUsersFunctionsIdentity> [-Ex
 Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
 For details, see Use delta query to track changes in Microsoft Graph data.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/plannerbucket-delta-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

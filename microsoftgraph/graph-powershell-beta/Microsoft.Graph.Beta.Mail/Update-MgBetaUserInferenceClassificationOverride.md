@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property overrides in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

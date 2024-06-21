@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Used to render the task correctly in the task board view when grouped by bucket.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

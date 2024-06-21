@@ -11,6 +11,9 @@ schema: 2.0.0
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemActivityByInterval](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveItemActivityByInterval?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -33,6 +36,9 @@ Get-MgBetaUserDriveItemActivityByInterval -InputObject <IUsersFunctionsIdentity>
 ## DESCRIPTION
 Get itemActivityStats for the activities that took place under this resource within the specified time interval.
 Analytics aggregates might not be available for all action types.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/itemactivity-getbyinterval-permissions.md)]
 
 ## EXAMPLES
 

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of site lists to support Internet Explorer mode.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

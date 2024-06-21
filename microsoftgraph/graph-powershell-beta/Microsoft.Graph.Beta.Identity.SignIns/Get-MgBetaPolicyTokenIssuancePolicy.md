@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy that specifies the characteristics of SAML tokens issued by Microsoft Entra ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

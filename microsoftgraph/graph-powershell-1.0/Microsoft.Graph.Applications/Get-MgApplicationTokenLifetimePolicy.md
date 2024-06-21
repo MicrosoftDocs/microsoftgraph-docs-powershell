@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get tokenLifetimePolicies from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fido2Methods for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

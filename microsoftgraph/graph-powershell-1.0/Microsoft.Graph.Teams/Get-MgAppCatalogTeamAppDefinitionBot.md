@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of the bot specified in the Teams app manifest.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

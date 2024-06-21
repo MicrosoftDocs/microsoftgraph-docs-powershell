@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get ref of externalSponsors from identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

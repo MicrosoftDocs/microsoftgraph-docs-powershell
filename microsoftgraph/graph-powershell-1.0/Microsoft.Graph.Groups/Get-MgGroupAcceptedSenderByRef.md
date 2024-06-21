@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of users or groups allowed to create posts or calendar events in this group.
 If this list is non-empty, then only users or groups listed here are allowed to post.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

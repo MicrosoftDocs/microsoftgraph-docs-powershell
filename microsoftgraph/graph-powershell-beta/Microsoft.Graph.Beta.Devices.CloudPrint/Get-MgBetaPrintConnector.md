@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of available print connectors.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintConnector?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

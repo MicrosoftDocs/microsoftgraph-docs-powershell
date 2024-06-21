@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The definition of tasks within the lifecycle workflows instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

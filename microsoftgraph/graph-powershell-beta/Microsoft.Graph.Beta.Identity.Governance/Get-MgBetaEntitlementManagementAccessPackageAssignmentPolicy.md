@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)

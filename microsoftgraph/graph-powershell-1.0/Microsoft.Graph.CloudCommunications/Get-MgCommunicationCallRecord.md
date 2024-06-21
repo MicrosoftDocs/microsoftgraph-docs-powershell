@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get callRecords from communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

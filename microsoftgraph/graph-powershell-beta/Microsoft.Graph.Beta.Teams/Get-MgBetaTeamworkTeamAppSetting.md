@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents tenant-wide settings for all Teams apps in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamAppSetting?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

@@ -12,6 +12,9 @@ Endpoints that can be used to access the service.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

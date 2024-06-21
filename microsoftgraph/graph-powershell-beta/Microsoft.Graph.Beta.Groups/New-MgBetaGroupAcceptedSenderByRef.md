@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property ref to acceptedSenders for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

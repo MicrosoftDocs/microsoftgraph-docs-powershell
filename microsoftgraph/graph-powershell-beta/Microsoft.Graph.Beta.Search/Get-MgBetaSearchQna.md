@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQna?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 This function supports @odata.nextLink for pagination.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

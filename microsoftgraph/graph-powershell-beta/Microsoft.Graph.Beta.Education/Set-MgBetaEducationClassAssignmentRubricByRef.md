@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the ref of navigation property rubric in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationClassAssignmentRubricByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

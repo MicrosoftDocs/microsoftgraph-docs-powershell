@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

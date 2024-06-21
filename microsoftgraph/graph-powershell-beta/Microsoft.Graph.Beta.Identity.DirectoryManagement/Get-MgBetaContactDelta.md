@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted organizational contacts without having to perform a full read of the entire collection.
 See change tracking for details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactDelta?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

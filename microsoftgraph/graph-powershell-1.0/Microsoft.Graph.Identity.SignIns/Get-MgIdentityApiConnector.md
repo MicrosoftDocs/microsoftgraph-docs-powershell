@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents entry point for API connectors.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

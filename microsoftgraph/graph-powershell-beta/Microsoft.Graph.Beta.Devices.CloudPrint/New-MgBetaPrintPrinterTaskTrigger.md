@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to taskTriggers for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterTaskTrigger?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

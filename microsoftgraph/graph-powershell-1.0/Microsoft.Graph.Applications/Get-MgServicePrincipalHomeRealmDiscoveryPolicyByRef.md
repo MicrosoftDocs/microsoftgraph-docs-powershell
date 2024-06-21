@@ -11,6 +11,9 @@ schema: 2.0.0
 The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

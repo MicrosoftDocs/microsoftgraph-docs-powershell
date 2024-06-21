@@ -11,6 +11,9 @@ schema: 2.0.0
 References the group that is the scope of the membership or ownership assignment request through PIM for groups.
 Supports $expand and $select nested in $expand for select properties like id, displayName, and mail.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleRequestGroup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property departments for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

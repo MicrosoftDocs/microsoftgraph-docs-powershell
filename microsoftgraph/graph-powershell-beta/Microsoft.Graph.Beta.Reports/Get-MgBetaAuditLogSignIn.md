@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get signIns from auditLogs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

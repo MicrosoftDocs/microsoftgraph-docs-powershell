@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get postFederationSignup from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowPostFederationSignup](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowPostFederationSignup?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
