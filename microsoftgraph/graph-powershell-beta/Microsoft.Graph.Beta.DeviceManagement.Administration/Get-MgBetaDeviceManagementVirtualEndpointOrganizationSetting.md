@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
-A tenant has only one cloudPcOrganizationSettings object.
+The Cloud PC organization settings for a tenant.
 
 ## SYNTAX
 
@@ -20,17 +19,15 @@ Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
-A tenant has only one cloudPcOrganizationSettings object.
+The Cloud PC organization settings for a tenant.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ```
-This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -123,9 +120,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-1.0)
-
-
-
 

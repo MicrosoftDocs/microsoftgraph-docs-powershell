@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 Module Guid: ebbf4df4-1be0-458b-a73c-6204060e5c3e
 Download Help Link: {{ Update Download Link }}
@@ -135,6 +135,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicyCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
+{{ Fill in the Description }}
+
+### [Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequestCount](Get-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequestCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
@@ -1154,6 +1160,9 @@ Locale: en-US
 ### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
+{{ Fill in the Description }}
+
 ### [Get-MgBetaDeviceAppManagementWindowsManagementApp](Get-MgBetaDeviceAppManagementWindowsManagementApp.md)
 {{ Fill in the Description }}
 
@@ -1437,6 +1446,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](New-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](New-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
 {{ Fill in the Description }}
 
 ### [New-MgBetaDeviceAppManagementManagedAppRegistrationOperation](New-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
@@ -1919,6 +1931,9 @@ Locale: en-US
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Remove-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Remove-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Remove-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
 {{ Fill in the Description }}
 
@@ -2306,6 +2321,9 @@ Locale: en-US
 ### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
 {{ Fill in the Description }}
 
+### [Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgBetaUserDeviceEnrollmentConfiguration](Remove-MgBetaUserDeviceEnrollmentConfiguration.md)
 {{ Fill in the Description }}
 
@@ -2463,6 +2481,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy](Update-MgBetaDeviceAppManagementManagedAppRegistrationIntendedPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest](Update-MgBetaDeviceAppManagementManagedAppRegistrationManagedAppLogCollectionRequest.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation](Update-MgBetaDeviceAppManagementManagedAppRegistrationOperation.md)
@@ -2861,6 +2882,9 @@ Locale: en-US
 ### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionAssignment.md)
 {{ Fill in the Description }}
 
+### [Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementWindowsManagedAppProtectionDeploymentSummary.md)
+{{ Fill in the Description }}
+
 ### [Update-MgBetaUserDeviceEnrollmentConfiguration](Update-MgBetaUserDeviceEnrollmentConfiguration.md)
 {{ Fill in the Description }}
 
@@ -2914,5 +2938,4 @@ Locale: en-US
 
 ### [Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 {{ Fill in the Description }}
-
 

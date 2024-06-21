@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.People-help.xml
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## SYNTAX
 
@@ -51,14 +51,14 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.People
+```
 
 $params = @{
 	description = "My Github contributions!"
@@ -71,10 +71,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebAccount -UserId $userId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaUserProfileWebAccount Cmdlet.
-
 
 ## PARAMETERS
 
@@ -476,108 +472,103 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWebAccount>`: webAccount
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AllowedAudiences <String>]`: allowedAudiences
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity.
+BODYPARAMETER \<IMicrosoftGraphWebAccount\>: webAccount
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AllowedAudiences \<String\>\]: allowedAudiences
+  \[CreatedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Application \<IMicrosoftGraphIdentity\>\]: identity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-      - `[Id <String>]`: The identifier of the identity.
+      \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Inference <IMicrosoftGraphInferenceData>]`: inferenceData
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-    - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
-  - `[IsSearchable <Boolean?>]`: 
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Provides the dateTimeOffset for when the entity was created.
-  - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Type <String- `[]`>]`: 
-  - `[Id <String>]`: The unique identifier for an entity.
+    \[Device \<IMicrosoftGraphIdentity\>\]: identity
+    \[User \<IMicrosoftGraphIdentity\>\]: identity
+  \[CreatedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Inference \<IMicrosoftGraphInferenceData\>\]: inferenceData
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+    \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
+  \[IsSearchable \<Boolean?\>\]: 
+  \[LastModifiedBy \<IMicrosoftGraphIdentitySet\>\]: identitySet
+  \[LastModifiedDateTime \<DateTime?\>\]: Provides the dateTimeOffset for when the entity was created.
+  \[Source \<IMicrosoftGraphPersonDataSources\>\]: personDataSources
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Type \<String\[\]\>\]: 
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Contains the description the user has provided for the account on the service being referenced.
-  - `[Service <IMicrosoftGraphServiceInformation>]`: serviceInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Name <String>]`: The name of the cloud service (for example, Twitter, Instagram).
-    - `[WebUrl <String>]`: Contains the URL for the service being referenced.
-  - `[StatusMessage <String>]`: Contains a status message from the cloud service if provided or synchronized.
-  - `[ThumbnailUrl <String>]`: 
-  - `[UserId <String>]`: The user name  displayed for the webaccount.
-  - `[WebUrl <String>]`: Contains a link to the user's profile on the cloud service if one exists.
+  \[Description \<String\>\]: Contains the description the user has provided for the account on the service being referenced.
+  \[Service \<IMicrosoftGraphServiceInformation\>\]: serviceInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Name \<String\>\]: The name of the cloud service (for example, Twitter, Instagram).
+    \[WebUrl \<String\>\]: Contains the URL for the service being referenced.
+  \[StatusMessage \<String\>\]: Contains a status message from the cloud service if provided or synchronized.
+  \[ThumbnailUrl \<String\>\]: 
+  \[UserId \<String\>\]: The user name  displayed for the webaccount.
+  \[WebUrl \<String\>\]: Contains a link to the user's profile on the cloud service if one exists.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+CREATEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
-  - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
+INFERENCE \<IMicrosoftGraphInferenceData\>: inferenceData
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ConfidenceScore \<Double?\>\]: Confidence score reflecting the accuracy of the data inferred about the user.
+  \[UserHasVerifiedAccuracy \<Boolean?\>\]: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
-  - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
-  - `[ItemAddressId <String>]`: The unique identifier of itemAddress
-  - `[ItemEmailId <String>]`: The unique identifier of itemEmail
-  - `[ItemPatentId <String>]`: The unique identifier of itemPatent
-  - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
-  - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
-  - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
-  - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
-  - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
-  - `[PersonAwardId <String>]`: The unique identifier of personAward
-  - `[PersonCertificationId <String>]`: The unique identifier of personCertification
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[PersonInterestId <String>]`: The unique identifier of personInterest
-  - `[PersonNameId <String>]`: The unique identifier of personName
-  - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
-  - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WebAccountId <String>]`: The unique identifier of webAccount
-  - `[WorkPositionId <String>]`: The unique identifier of workPosition
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[ActivityStatisticsId \<String\>\]: The unique identifier of activityStatistics
+  \[EducationalActivityId \<String\>\]: The unique identifier of educationalActivity
+  \[ItemAddressId \<String\>\]: The unique identifier of itemAddress
+  \[ItemEmailId \<String\>\]: The unique identifier of itemEmail
+  \[ItemPatentId \<String\>\]: The unique identifier of itemPatent
+  \[ItemPhoneId \<String\>\]: The unique identifier of itemPhone
+  \[ItemPublicationId \<String\>\]: The unique identifier of itemPublication
+  \[LanguageProficiencyId \<String\>\]: The unique identifier of languageProficiency
+  \[PersonAnnotationId \<String\>\]: The unique identifier of personAnnotation
+  \[PersonAnnualEventId \<String\>\]: The unique identifier of personAnnualEvent
+  \[PersonAwardId \<String\>\]: The unique identifier of personAward
+  \[PersonCertificationId \<String\>\]: The unique identifier of personCertification
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[PersonInterestId \<String\>\]: The unique identifier of personInterest
+  \[PersonNameId \<String\>\]: The unique identifier of personName
+  \[PersonWebsiteId \<String\>\]: The unique identifier of personWebsite
+  \[ProjectParticipationId \<String\>\]: The unique identifier of projectParticipation
+  \[SkillProficiencyId \<String\>\]: The unique identifier of skillProficiency
+  \[UserAccountInformationId \<String\>\]: The unique identifier of userAccountInformation
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WebAccountId \<String\>\]: The unique identifier of webAccount
+  \[WorkPositionId \<String\>\]: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity.
+LASTMODIFIEDBY \<IMicrosoftGraphIdentitySet\>: identitySet
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Application \<IMicrosoftGraphIdentity\>\]: identity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DisplayName \<String\>\]: The display name of the identity.
 This property is read-only.
-    - `[Id <String>]`: The identifier of the identity.
+    \[Id \<String\>\]: The identifier of the identity.
 This property is read-only.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
+  \[Device \<IMicrosoftGraphIdentity\>\]: identity
+  \[User \<IMicrosoftGraphIdentity\>\]: identity
 
-SERVICE `<IMicrosoftGraphServiceInformation>`: serviceInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Name <String>]`: The name of the cloud service (for example, Twitter, Instagram).
-  - `[WebUrl <String>]`: Contains the URL for the service being referenced.
+SERVICE \<IMicrosoftGraphServiceInformation\>: serviceInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Name \<String\>\]: The name of the cloud service (for example, Twitter, Instagram).
+  \[WebUrl \<String\>\]: Contains the URL for the service being referenced.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Type <String- `[]`>]`:
+SOURCE \<IMicrosoftGraphPersonDataSources\>: personDataSources
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Type \<String\[\]\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount)
-
-[https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0)
-
-
-
 
