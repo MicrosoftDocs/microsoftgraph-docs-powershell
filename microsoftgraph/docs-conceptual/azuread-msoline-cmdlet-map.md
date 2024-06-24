@@ -249,7 +249,7 @@ The following is the categorization of the Microsoft Entra cmdlets. Select a cat
 |Azure AD cmdlet | Microsoft Graph PowerShell cmdlet|
 |------------|--------------|
 |Add-AzureADDirectoryRoleMember|[New-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref)|
-|Enable-AzureADDirectoryRole|[New-MgDirectoryRoleTemplate](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryroletemplate)|
+|Enable-AzureADDirectoryRole|[New-MgDirectoryRole](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole)|
 |Get-AzureADDirectoryRole|[Get-MgDirectoryRole](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrole)|
 |Get-AzureADDirectoryRoleMember|[Get-MgDirectoryRoleMember](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolemember)|
 |Get-AzureADDirectoryRoleTemplate|[Get-MgDirectoryRoleTemplate](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplate)|
