@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenario
 
 ## SYNOPSIS
-Read the properties and relationships of a businessScenario object.
+Get businessScenarios from solutions
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a businessScenario object.
+Get businessScenarios from solutions
 
 ## PARAMETERS
 
@@ -310,10 +310,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenario)
-
-[https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/businessscenario-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/solutionsroot-list-businessscenarios?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/solutionsroot-list-businessscenarios?view=graph-rest-1.0)
 
 
 

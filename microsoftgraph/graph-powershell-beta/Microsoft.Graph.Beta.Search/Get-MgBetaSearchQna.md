@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSearchQna
 
 ## SYNOPSIS
-Read the properties and relationships of a qna object.
+Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQna?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a qna object.
+Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -312,6 +312,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -321,10 +323,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchqna)
-
-[https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0)
 
 
 

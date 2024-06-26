@@ -363,8 +363,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouppermissiongrant)
 
-[https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-permissiongrants?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileInterest
 
 ## SYNOPSIS
-Create a new personInterest.
+Create new navigation property to interests for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create a new personInterest.
+Create new navigation property to interests for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -554,8 +554,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileinterest)
-
-[https://learn.microsoft.com/graph/api/profile-post-interests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-interests?view=graph-rest-1.0)
 
 
 

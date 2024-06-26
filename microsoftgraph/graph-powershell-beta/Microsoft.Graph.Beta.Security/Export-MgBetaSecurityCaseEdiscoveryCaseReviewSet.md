@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet
@@ -452,7 +451,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset)
 
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-export?view=graph-rest-beta)
 
 
 

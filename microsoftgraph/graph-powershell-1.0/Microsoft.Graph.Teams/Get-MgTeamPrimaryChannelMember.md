@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Get a conversationMember from a channel.
+A collection of membership records associated with the channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get a conversationMember from a channel.
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
@@ -340,10 +340,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmember)
-
-[https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-members?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-members?view=graph-rest-1.0)
 
 
 

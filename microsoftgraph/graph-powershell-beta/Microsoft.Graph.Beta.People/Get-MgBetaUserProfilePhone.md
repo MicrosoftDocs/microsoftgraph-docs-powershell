@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfilePhone
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an itemPhone object in a user's profile.
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an itemPhone object in a user's profile.
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilephone)
-
-[https://learn.microsoft.com/graph/api/itemphone-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemphone-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-phones?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-phones?view=graph-rest-1.0)
 
 
 

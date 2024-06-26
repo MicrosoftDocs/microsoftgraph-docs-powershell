@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfilePublication
 
 ## SYNOPSIS
-Deletes an itemPublication object.
+Delete navigation property publications for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Deletes an itemPublication object.
+Delete navigation property publications for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepublication)
-
-[https://learn.microsoft.com/graph/api/itempublication-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempublication-delete?view=graph-rest-1.0)
 
 
 

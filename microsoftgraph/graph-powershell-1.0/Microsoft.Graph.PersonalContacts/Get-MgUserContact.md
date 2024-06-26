@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgUserContact
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a contact object.
-There are two scenarios where an app can get a contact in another user's contact folder:
+The user's contacts.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContact?view=graph-powershell-beta)
@@ -39,11 +40,9 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a contact object.
-There are two scenarios where an app can get a contact in another user's contact folder:
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contact-get-permissions.md)]
+The user's contacts.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -329,10 +328,6 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontact)
-
-[https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## SYNOPSIS
-Delete the user synchronization policy for a partner-specific configuration.
+Delete navigation property identitySynchronization for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 ```
 
 ## DESCRIPTION
-Delete the user synchronization policy for a partner-specific configuration.
+Delete navigation property identitySynchronization for policies
 
 ## PARAMETERS
 
@@ -271,8 +271,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization)
-
-[https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-delete?view=graph-rest-1.0)
 
 
 

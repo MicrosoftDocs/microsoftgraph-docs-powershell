@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSharePointActivityUserCount
 
 ## SYNOPSIS
-Invoke function getSharePointActivityUserCounts
+Get the trend in the number of active users.
+A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityUserCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportSharePointActivityUserCount -InputObject <IReportsIdentity> -OutFile
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointActivityUserCounts
+Get the trend in the number of active users.
+A user is considered active if they have executed a file activity (save, sync, modify, or share) or visited a page within the specified time period.
 
 ## PARAMETERS
 
@@ -182,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-1.0)
 
 
 

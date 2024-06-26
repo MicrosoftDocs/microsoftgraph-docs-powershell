@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
-Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
+The device configuration device state summary for this account.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceConfigurationDeviceStateSummary object.
+The device configuration device state summary for this account.
 
 ## PARAMETERS
 
@@ -115,8 +115,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatesummary-get?view=graph-rest-1.0)
 
 
 

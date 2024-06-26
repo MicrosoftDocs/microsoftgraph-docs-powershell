@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamTimeOff
 
 ## SYNOPSIS
-Invoke function getTimesOff
+Get all time off objects across all teams to which a user is a direct member.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaTeamTimeOff [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Invoke function getTimesOff
+Get all time off objects across all teams to which a user is a direct member.
 
 ## PARAMETERS
 
@@ -202,6 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtimeoff)
+
+[https://learn.microsoft.com/graph/api/team-gettimesoff?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-gettimesoff?view=graph-rest-beta)
 
 
 

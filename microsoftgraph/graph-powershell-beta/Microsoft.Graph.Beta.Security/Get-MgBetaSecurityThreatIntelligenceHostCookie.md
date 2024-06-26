@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHostCookie
 
 ## SYNOPSIS
-Read the properties and relationships of a hostCookie object.
+Retrieve details about hostCookie objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ Get-MgBetaSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a hostCookie object.
+Retrieve details about hostCookie objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -409,10 +409,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostcookie)
-
-[https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostcookie-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-cookies?view=graph-rest-1.0)
 
 
 

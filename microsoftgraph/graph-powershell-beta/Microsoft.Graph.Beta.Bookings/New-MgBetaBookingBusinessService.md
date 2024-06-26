@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBookingBusinessService
 
 ## SYNOPSIS
-Create a new bookingService for the specified bookingBusiness.
+Create new navigation property to services for bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessService?view=graph-powershell-1.0)
@@ -104,7 +104,7 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new bookingService for the specified bookingBusiness.
+Create new navigation property to services for bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessService Cmdlet
@@ -899,8 +899,6 @@ Use the email address specified in the email property of the bookingBusiness ent
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessservice)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-services?view=graph-rest-1.0)
 
 
 

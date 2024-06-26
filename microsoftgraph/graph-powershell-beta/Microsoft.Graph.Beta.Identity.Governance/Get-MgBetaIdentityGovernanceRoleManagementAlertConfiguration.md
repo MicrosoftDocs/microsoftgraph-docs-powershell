@@ -419,8 +419,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancerolemanagementalertconfiguration)
 
-[https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rolemanagementalert-list-alertconfigurations?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportM365AppUserCount
 
 ## SYNOPSIS
-Invoke function getM365AppUserCounts
+Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportM365AppUserCount -InputObject <IReportsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke function getM365AppUserCounts
+Get a report that provides the trend in the number of active users for each app (Outlook, Word, Excel, PowerPoint, OneNote, and Teams) in your organization.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportm365appusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getm365appusercounts?view=graph-rest-1.0)
 
 
 

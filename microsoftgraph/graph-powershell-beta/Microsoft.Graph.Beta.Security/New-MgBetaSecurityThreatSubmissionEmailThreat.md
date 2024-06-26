@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityThreatSubmissionEmailThreat
 
 ## SYNOPSIS
-Create a new emailThreatSubmission object.
+Create new navigation property to emailThreats for security
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSec
 ```
 
 ## DESCRIPTION
-Create a new emailThreatSubmission object.
+Create new navigation property to emailThreats for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -600,8 +600,6 @@ TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionemailthreat)
-
-[https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-emailthreatsubmission-post-emailthreats?view=graph-rest-1.0)
 
 
 

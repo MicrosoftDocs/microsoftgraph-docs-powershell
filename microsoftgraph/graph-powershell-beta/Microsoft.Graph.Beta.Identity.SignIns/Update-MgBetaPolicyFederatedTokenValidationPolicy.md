@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyFederatedTokenValidationPolicy
 
 ## SYNOPSIS
-Update the properties of a federatedTokenValidationPolicy object.
+Update the navigation property federatedTokenValidationPolicy in policies
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgBetaPolicyFederatedTokenValidationPolicy
 ```
 
 ## DESCRIPTION
-Update the properties of a federatedTokenValidationPolicy object.
+Update the navigation property federatedTokenValidationPolicy in policies
 
 ## PARAMETERS
 
@@ -220,8 +220,6 @@ VALIDATINGDOMAINS `<IMicrosoftGraphValidatingDomains>`: validatingDomains
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyfederatedtokenvalidationpolicy)
-
-[https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEducationMeAssignmentDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a list of newly-created or updated assignments without reading the entire collection.
+A teacher or an application running with application permissions can see all assignment objects for the class.
+Students can only see assignments that are assigned to them.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentDelta?view=graph-powershell-1.0)
@@ -23,7 +25,9 @@ Get-MgBetaEducationMeAssignmentDelta [-ExpandProperty <String[]>] [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a list of newly-created or updated assignments without reading the entire collection.
+A teacher or an application running with application permissions can see all assignment objects for the class.
+Students can only see assignments that are assigned to them.
 
 ## EXAMPLES
 
@@ -239,6 +243,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentdelta)
+
+[https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationassignment-delta?view=graph-rest-beta)
 
 
 

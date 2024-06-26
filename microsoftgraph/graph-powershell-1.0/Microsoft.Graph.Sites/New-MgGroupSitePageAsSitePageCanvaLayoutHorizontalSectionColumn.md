@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -Webparts
-.
+The collection of WebParts in this column.
 To construct, see NOTES section for WEBPARTS properties and create a hash table.
 
 ```yaml
@@ -236,7 +236,10 @@ Accept wildcard characters: False
 ```
 
 ### -Width
-.
+Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
 
 ```yaml
 Type: Int32
@@ -302,10 +305,13 @@ BODYPARAMETER `<IMicrosoftGraphHorizontalSectionColumn>`: horizontalSectionColum
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Width <Int32?>]`: 
+  - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
@@ -349,10 +355,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-WEBPARTS <IMicrosoftGraphWebPart- `[]`>: .
+WEBPARTS <IMicrosoftGraphWebPart- `[]`>: The collection of WebParts in this column.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 

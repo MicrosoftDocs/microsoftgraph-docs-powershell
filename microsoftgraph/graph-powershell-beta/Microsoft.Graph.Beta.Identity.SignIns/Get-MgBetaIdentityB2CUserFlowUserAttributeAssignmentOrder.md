@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder
 
 ## SYNOPSIS
-Invoke function getOrder
+Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 ```
 
 ## DESCRIPTION
-Invoke function getOrder
+Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ## EXAMPLES
 
@@ -207,6 +207,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignmentorder)
+
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-getorder?view=graph-rest-beta)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
-Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
+Create new navigation property to excludes for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
@@ -53,8 +52,7 @@ New-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Add conditions under which a permission grant event is *excluded* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the excludes collection of a  permissionGrantPolicy.
+Create new navigation property to excludes for policies
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy exclude
@@ -510,8 +508,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyexclude)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-excludes?view=graph-rest-1.0)
 
 
 

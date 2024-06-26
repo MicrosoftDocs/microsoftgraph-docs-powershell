@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerGroupActivityCount
 
 ## SYNOPSIS
-Invoke function getYammerGroupsActivityCounts
+Get the number of Yammer messages posted, read, and liked in groups.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportYammerGroupActivityCount -InputObject <IReportsIdentity> -OutFile <S
 ```
 
 ## DESCRIPTION
-Invoke function getYammerGroupsActivityCounts
+Get the number of Yammer messages posted, read, and liked in groups.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitycount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitycounts?view=graph-rest-1.0)
 
 
 

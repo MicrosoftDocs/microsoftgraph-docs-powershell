@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 
 ## SYNOPSIS
-Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
+Delete navigation property deviceStatuses for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceAppManagementMobileAppConfigurationDeviceStatus
 ```
 
 ## DESCRIPTION
-Deletes a managedDeviceMobileAppConfigurationDeviceStatus.
+Delete navigation property deviceStatuses for deviceAppManagement
 
 ## PARAMETERS
 
@@ -244,8 +244,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfigurationdevicestatus)
-
-[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicestatus-delete?view=graph-rest-1.0)
 
 
 

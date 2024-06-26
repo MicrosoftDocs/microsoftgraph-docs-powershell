@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Read the properties and relationships of a partner-specific configuration.
+Defines partner-specific configurations for external Microsoft Entra organizations.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIde
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a partner-specific configuration.
+Defines partner-specific configurations for external Microsoft Entra organizations.
 
 ## EXAMPLES
 ### Example 1: List all partner configurations within a cross-tenant access policy
@@ -391,10 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartner)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-list-partners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-list-partners?view=graph-rest-1.0)
 
 
 

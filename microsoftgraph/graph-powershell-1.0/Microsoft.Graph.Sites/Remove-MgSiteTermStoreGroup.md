@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteTermStoreGroup
 
 ## SYNOPSIS
-Delete a group object in a term \[store\].
+Delete navigation property groups for sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a group object in a term \[store\].
+Delete navigation property groups for sites
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -286,14 +286,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroup)
-
-[https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementMonitoringAlertRule
 
 ## SYNOPSIS
-Create an alertRule object.
+Create new navigation property to alertRules for deviceManagement
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgBetaDeviceManagementMonitoringAlertRule -BodyParameter <IMicrosoftGraphDev
 ```
 
 ## DESCRIPTION
-Create an alertRule object.
+Create new navigation property to alertRules for deviceManagement
 
 ## PARAMETERS
 
@@ -382,8 +382,6 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmonitoringalertrule)
-
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-post?view=graph-rest-1.0)
 
 
 

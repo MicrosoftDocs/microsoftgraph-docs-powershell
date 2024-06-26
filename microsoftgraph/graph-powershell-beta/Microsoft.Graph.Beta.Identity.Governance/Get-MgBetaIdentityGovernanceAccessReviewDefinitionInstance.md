@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance
 
 ## SYNOPSIS
-Retrieve an accessReviewInstance object using the identifier of an accessReviewInstance and its parent accessReviewScheduleDefinition.
-This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
-To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
+Set of access reviews instances for this access review series.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-1.0)
@@ -41,9 +40,8 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdenti
 ```
 
 ## DESCRIPTION
-Retrieve an accessReviewInstance object using the identifier of an accessReviewInstance and its parent accessReviewScheduleDefinition.
-This returns all properties of the instance except for the associated accessReviewInstanceDecisionItems.
-To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
+Set of access reviews instances for this access review series.
+Access reviews that don't recur will only have one instance; otherwise, there's an instance for each recurrence.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -422,10 +420,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdefinitioninstance)
-
-[https://learn.microsoft.com/graph/api/accessreviewinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-list-instances?view=graph-rest-1.0)
 
 
 

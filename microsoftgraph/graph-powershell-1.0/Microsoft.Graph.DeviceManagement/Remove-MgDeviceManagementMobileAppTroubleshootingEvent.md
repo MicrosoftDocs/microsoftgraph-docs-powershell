@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Deletes a mobileAppTroubleshootingEvent.
+Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Deletes a mobileAppTroubleshootingEvent.
+Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
 
 ## PARAMETERS
 
@@ -246,8 +246,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingevent)
-
-[https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-delete?view=graph-rest-1.0)
 
 
 

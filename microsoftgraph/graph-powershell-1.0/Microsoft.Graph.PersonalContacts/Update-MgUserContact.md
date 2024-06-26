@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserContact
 
 ## SYNOPSIS
-Update the properties of a contact object.
+Update the navigation property contacts in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContact?view=graph-powershell-beta)
@@ -72,7 +72,7 @@ Update-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the properties of a contact object.
+Update the navigation property contacts in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1081,8 +1081,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontact)
-
-[https://learn.microsoft.com/graph/api/contact-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contact-update?view=graph-rest-1.0)
 
 
 

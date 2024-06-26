@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryOnPremiseSynchronization
 
 ## SYNOPSIS
-Update the properties of an onPremisesDirectorySynchronization object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
+Update the navigation property onPremisesSynchronization in directory
 
 ## SYNTAX
 
@@ -48,7 +45,7 @@ Update-MgDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Update the properties of an onPremisesDirectorySynchronization object.
+Update the navigation property onPremisesSynchronization in directory
 
 ## PARAMETERS
 
@@ -326,6 +323,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -351,8 +350,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryonpremisesynchronization)
-
-[https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesdirectorysynchronization-update?view=graph-rest-1.0)
 
 
 

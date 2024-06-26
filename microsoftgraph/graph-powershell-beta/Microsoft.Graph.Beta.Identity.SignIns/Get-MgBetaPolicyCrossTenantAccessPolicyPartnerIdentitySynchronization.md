@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization
 
 ## SYNOPSIS
-Get the user synchronization policy of a partner-specific configuration.
+Defines the cross-tenant policy for the synchronization of users from a partner tenant.
+Use this user synchronization policy to streamline collaboration between users in a multitenant organization by automating the creation, update, and deletion of users from one tenant to another.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-1.0)
@@ -31,7 +32,8 @@ Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObje
 ```
 
 ## DESCRIPTION
-Get the user synchronization policy of a partner-specific configuration.
+Defines the cross-tenant policy for the synchronization of users from a partner tenant.
+Use this user synchronization policy to streamline collaboration between users in a multitenant organization by automating the creation, update, and deletion of users from one tenant to another.
 
 ## PARAMETERS
 
@@ -239,8 +241,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicypartneridentitysynchronization)
-
-[https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantidentitysyncpolicypartner-get?view=graph-rest-1.0)
 
 
 

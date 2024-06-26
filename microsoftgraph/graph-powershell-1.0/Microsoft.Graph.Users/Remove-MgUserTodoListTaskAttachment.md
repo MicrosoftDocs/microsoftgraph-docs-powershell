@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoListTaskAttachment
 
 ## SYNOPSIS
-Delete a taskFileAttachment object from a todoTask resource.
+Delete navigation property attachments for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskAttachment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserTodoListTaskAttachment -InputObject <IUsersIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete a taskFileAttachment object from a todoTask resource.
+Delete navigation property attachments for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -266,8 +266,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskattachment)
-
-[https://learn.microsoft.com/graph/api/taskfileattachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/taskfileattachment-delete?view=graph-rest-1.0)
 
 
 

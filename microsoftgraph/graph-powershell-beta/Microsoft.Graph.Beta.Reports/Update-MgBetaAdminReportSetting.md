@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAdminReportSetting
 
 ## SYNOPSIS
-Update tenant-level settings for Microsoft 365 reports.
+Update the navigation property reportSettings in admin
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ```
 
 ## DESCRIPTION
-Update tenant-level settings for Microsoft 365 reports.
+Update the navigation property reportSettings in admin
 
 ## PARAMETERS
 
@@ -200,8 +200,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetaadminreportsetting)
-
-[https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-update?view=graph-rest-1.0)
 
 
 

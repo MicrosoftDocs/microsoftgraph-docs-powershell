@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfilePublication
 
 ## SYNOPSIS
-Create a new itemPublication object in a user's profile.
+Create new navigation property to publications for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new itemPublication object in a user's profile.
+Create new navigation property to publications for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -552,8 +552,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepublication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepublication)
-
-[https://learn.microsoft.com/graph/api/profile-post-publications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-publications?view=graph-rest-1.0)
 
 
 

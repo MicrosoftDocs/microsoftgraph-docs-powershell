@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Create a new userSource object associated with an eDiscovery custodian.
+Create new navigation property to userSources for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-1.0)
@@ -49,7 +49,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityI
 ```
 
 ## DESCRIPTION
-Create a new userSource object associated with an eDiscovery custodian.
+Create new navigation property to userSources for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -484,8 +484,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasecustodianusersource)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-post-usersources?view=graph-rest-1.0)
 
 
 

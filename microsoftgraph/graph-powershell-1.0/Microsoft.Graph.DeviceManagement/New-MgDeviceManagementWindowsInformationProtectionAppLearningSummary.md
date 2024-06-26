@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-Create a new windowsInformationProtectionAppLearningSummary object.
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-Create a new windowsInformationProtectionAppLearningSummary object.
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## PARAMETERS
 
@@ -231,8 +231,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowsinformationprotectionapplearningsummary)
-
-[https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-create?view=graph-rest-1.0)
 
 
 

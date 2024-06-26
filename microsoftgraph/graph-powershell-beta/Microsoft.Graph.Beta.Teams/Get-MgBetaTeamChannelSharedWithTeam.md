@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamChannelSharedWithTeam
 
 ## SYNOPSIS
-Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a membershipType value of shared.
+A collection of teams with which a channel is shared.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeam?view=graph-powershell-1.0)
@@ -53,8 +52,7 @@ Get-MgBetaTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a membershipType value of shared.
+A collection of teams with which a channel is shared.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -391,10 +389,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam)
-
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0)
 
 
 

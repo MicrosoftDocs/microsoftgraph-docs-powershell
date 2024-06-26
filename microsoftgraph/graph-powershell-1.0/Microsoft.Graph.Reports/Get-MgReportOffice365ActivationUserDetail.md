@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365ActivationUserDetail
 
 ## SYNOPSIS
-Invoke function getOffice365ActivationsUserDetail
+Get details about users who have activated Microsoft 365.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActivationUserDetail?view=graph-powershell-beta)
@@ -21,7 +21,7 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-ResponseHeadersVar
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365ActivationsUserDetail
+Get details about users who have activated Microsoft 365.
 
 ## PARAMETERS
 
@@ -114,6 +114,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationuserdetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-1.0)
 
 
 

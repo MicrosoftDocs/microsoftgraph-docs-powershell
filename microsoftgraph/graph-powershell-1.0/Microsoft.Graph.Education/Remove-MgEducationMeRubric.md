@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationMeRubric
 
 ## SYNOPSIS
-Delete an educationRubric object.
-Only teachers can perform this operation.
+Delete navigation property rubrics for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationMeRubric?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgEducationMeRubric -InputObject <IEducationIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete an educationRubric object.
-Only teachers can perform this operation.
+Delete navigation property rubrics for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -220,8 +218,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationmerubric)
-
-[https://learn.microsoft.com/graph/api/educationrubric-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationrubric-delete?view=graph-rest-1.0)
 
 
 

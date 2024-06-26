@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 
 ## SYNOPSIS
-Read properties and relationships of the managedAppPolicyDeploymentSummary object.
+Navigation property to deployment summary of the configuration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedAppPolicyDeploymentSummary object.
+Navigation property to deployment summary of the configuration.
 
 ## PARAMETERS
 
@@ -197,8 +197,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotectiondeploymentsummary)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedapppolicydeploymentsummary-get?view=graph-rest-1.0)
 
 
 

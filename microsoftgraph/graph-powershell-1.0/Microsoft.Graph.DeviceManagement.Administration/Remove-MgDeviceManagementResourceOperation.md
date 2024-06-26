@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Deletes a resourceOperation.
+Delete navigation property resourceOperations for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 ```
 
 ## DESCRIPTION
-Deletes a resourceOperation.
+Delete navigation property resourceOperations for deviceManagement
 
 ## PARAMETERS
 
@@ -217,8 +217,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementresourceoperation)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-delete?view=graph-rest-1.0)
 
 
 

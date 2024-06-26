@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
-Remove an ediscoveryReviewTag object.
+Delete navigation property tags for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Remove an ediscoveryReviewTag object.
+Delete navigation property tags for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -280,8 +280,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasetag)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-tags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-tags?view=graph-rest-1.0)
 
 
 

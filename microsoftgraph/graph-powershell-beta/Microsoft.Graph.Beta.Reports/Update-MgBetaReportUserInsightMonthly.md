@@ -334,12 +334,11 @@ Read-only.
 ACTIVEUSERSBREAKDOWN <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>: .
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[AppId <String>]`: The ID of the Microsoft Entra application.
-  - `[AppName <String>]`: Name of the application users authenticated to.
-  - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
-  - `[FactDate <DateTime?>]`: The date of the insight.
-  - `[OS <String>]`: The platform for the device that the customers used.
-Supports $filter (eq).
+  - `[AppId <String>]`: 
+  - `[AppName <String>]`: 
+  - `[Count <Int64?>]`: 
+  - `[FactDate <DateTime?>]`: 
+  - `[OS <String>]`: 
 
 AUTHENTICATIONS <IMicrosoftGraphAuthenticationsMetric- `[]`>: Insights for authentications on apps registered in the tenant for a specified period.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -375,12 +374,11 @@ Read-only.
   - `[ActiveUsersBreakdown <IMicrosoftGraphActiveUsersBreakdownMetric- `[]`>]`: 
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[AppId <String>]`: The ID of the Microsoft Entra application.
-    - `[AppName <String>]`: Name of the application users authenticated to.
-    - `[Count <Int64?>]`: The total number of users who made at least one authentication request within the specified time period.
-    - `[FactDate <DateTime?>]`: The date of the insight.
-    - `[OS <String>]`: The platform for the device that the customers used.
-Supports $filter (eq).
+    - `[AppId <String>]`: 
+    - `[AppName <String>]`: 
+    - `[Count <Int64?>]`: 
+    - `[FactDate <DateTime?>]`: 
+    - `[OS <String>]`: 
   - `[Authentications <IMicrosoftGraphAuthenticationsMetric- `[]`>]`: Insights for authentications on apps registered in the tenant for a specified period.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.

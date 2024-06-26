@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Update the properties of a cloudPcExternalPartnerSetting object.
+Update the navigation property externalPartnerSettings in deviceManagement
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Update the properties of a cloudPcExternalPartnerSetting object.
+Update the navigation property externalPartnerSettings in deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
@@ -390,8 +390,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelCitation
 
 ## SYNOPSIS
-Create a new citationTemplate object.
+Create new navigation property to citations for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ New-MgSecurityLabelCitation -BodyParameter <IMicrosoftGraphSecurityCitationTempl
 ```
 
 ## DESCRIPTION
-Create a new citationTemplate object.
+Create new navigation property to citations for security
 
 ## PARAMETERS
 
@@ -283,8 +283,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelcitation)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-citations?view=graph-rest-1.0)
 
 
 

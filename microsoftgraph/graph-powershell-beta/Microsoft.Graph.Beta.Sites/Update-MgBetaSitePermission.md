@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSitePermission
 
 ## SYNOPSIS
-Update the permission object on a site.
+Update the navigation property permissions in sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePermission?view=graph-powershell-1.0)
@@ -54,7 +54,7 @@ Update-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the permission object on a site.
+Update the navigation property permissions in sites
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareId
-A unique token that can be used to access this shared item via the \[shares API\]\[\].
+A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
 ```yaml
@@ -457,10 +457,9 @@ Optional.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[GrantedToIdentities <IMicrosoftGraphIdentitySet- `[]`>]`: 
@@ -473,10 +472,9 @@ Read-only.
     - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[LoginName <String>]`: The sign in name of the SharePoint identity.
     - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
   - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -488,18 +486,18 @@ For OneDrive Personal only.
   - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -510,7 +508,7 @@ Read-only.
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
   - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
@@ -535,7 +533,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
 GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
@@ -543,10 +541,9 @@ GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -554,10 +551,9 @@ GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet- `[]`>: .
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -566,20 +562,18 @@ Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Group <IMicrosoftGraphIdentity>]`: identity
   - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
@@ -588,38 +582,36 @@ GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Group <IMicrosoftGraphIdentity>]`: identity
   - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
 INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
   - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -630,7 +622,7 @@ Read-only.
     - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
@@ -697,10 +689,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[RedeemedBy <String>]`: 
@@ -712,10 +703,9 @@ LINK `<IMicrosoftGraphSharingLink>`: sharingLink
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[ConfiguratorUrl <String>]`: 
   - `[PreventsDownload <Boolean?>]`: If true then the user can only use this link to view the item on the web, and cannot use it to download the contents of the item.
 Only for OneDrive for Business and SharePoint.
@@ -728,8 +718,6 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepermission)
-
-[https://learn.microsoft.com/graph/api/site-update-permission?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-update-permission?view=graph-rest-1.0)
 
 
 

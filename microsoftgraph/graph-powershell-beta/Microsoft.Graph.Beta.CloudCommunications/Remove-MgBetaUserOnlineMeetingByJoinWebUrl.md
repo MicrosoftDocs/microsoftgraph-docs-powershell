@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOnlineMeetingByJoinWebUrl
 
 ## SYNOPSIS
-Delete an onlineMeeting object.
+Delete navigation property onlineMeetings for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunicationsIde
 ```
 
 ## DESCRIPTION
-Delete an onlineMeeting object.
+Delete navigation property onlineMeetings for users
 
 ## PARAMETERS
 
@@ -223,8 +223,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingbyjoinweburl)
-
-[https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0)
 
 
 

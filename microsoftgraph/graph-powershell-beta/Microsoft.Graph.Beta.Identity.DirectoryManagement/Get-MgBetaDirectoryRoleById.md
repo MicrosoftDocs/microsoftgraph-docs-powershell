@@ -201,7 +201,7 @@ BODYPARAMETER `<IPaths1Ig9RahDirectoryrolesMicrosoftGraphGetbyidsPostRequestbody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrolebyid)
 
-[https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 
 

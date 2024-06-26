@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailAppUsageUserCount
 
 ## SYNOPSIS
-Invoke function getEmailAppUsageUserCounts
+Get the count of unique users that connected to Exchange Online using any email app.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportEmailAppUsageUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ```
 
 ## DESCRIPTION
-Invoke function getEmailAppUsageUserCounts
+Get the count of unique users that connected to Exchange Online using any email app.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-1.0)
 
 
 

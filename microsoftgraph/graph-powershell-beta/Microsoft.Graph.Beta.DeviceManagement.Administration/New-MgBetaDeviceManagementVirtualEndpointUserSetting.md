@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Create a new cloudPcUserSetting object.
+Create new navigation property to userSettings for deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ New-MgBetaDeviceManagementVirtualEndpointUserSetting -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create a new cloudPcUserSetting object.
+Create new navigation property to userSettings for deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
@@ -417,8 +417,6 @@ If false, non-admin users can't use snapshots to restore the Cloud PC.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointusersetting)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-usersettings?view=graph-rest-1.0)
 
 
 

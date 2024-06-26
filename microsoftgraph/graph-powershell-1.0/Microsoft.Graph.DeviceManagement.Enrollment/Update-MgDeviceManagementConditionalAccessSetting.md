@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
-Update the properties of a onPremisesConditionalAccessSettings object.
+Update the navigation property conditionalAccessSettings in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Update-MgDeviceManagementConditionalAccessSetting
 ```
 
 ## DESCRIPTION
-Update the properties of a onPremisesConditionalAccessSettings object.
+Update the navigation property conditionalAccessSettings in deviceManagement
 
 ## PARAMETERS
 
@@ -250,8 +250,6 @@ All users in these groups will be required to have mobile device managed and com
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementconditionalaccesssetting](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgdevicemanagementconditionalaccesssetting)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-onpremisesconditionalaccesssettings-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelRetentionLabel
 
 ## SYNOPSIS
-Delete a retentionLabel object.
+Delete navigation property retentionLabels for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete a retentionLabel object.
+Delete navigation property retentionLabels for security
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelretentionlabel)
-
-[https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-delete?view=graph-rest-1.0)
 
 
 

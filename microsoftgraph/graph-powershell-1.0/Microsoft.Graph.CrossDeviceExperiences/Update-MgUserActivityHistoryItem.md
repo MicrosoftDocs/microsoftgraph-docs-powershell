@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserActivityHistoryItem
 
 ## SYNOPSIS
-Create a new or replace an existing history item for an existing user activity.
+Update the navigation property historyItems in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Update-MgBetaUserActivityHistoryItem?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ```
 
 ## DESCRIPTION
-Create a new or replace an existing history item for an existing user activity.
+Update the navigation property historyItems in users
 
 ## PARAMETERS
 
@@ -563,8 +563,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguseractivityhistoryitem)
-
-[https://learn.microsoft.com/graph/api/projectrome-put-historyitem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-put-historyitem?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportTeamDeviceUsageDistributionUserCount
 
 ## SYNOPSIS
-Invoke function getTeamsDeviceUsageDistributionUserCounts
+Get the number of Microsoft Teams unique users by device type over the selected time period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportTeamDeviceUsageDistributionUserCount -InputObject <IReportsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsDeviceUsageDistributionUserCounts
+Get the number of Microsoft Teams unique users by device type over the selected time period.
 
 ## PARAMETERS
 
@@ -183,6 +183,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusagedistributionusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusagedistributionusercounts?view=graph-rest-1.0)
 
 
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceWhoisRecord
 
 ## SYNOPSIS
-Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+A list of whoisRecord objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceWhoisRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceWhoisRecord?view=graph-powershell-beta)
@@ -40,9 +38,7 @@ Get-MgSecurityThreatIntelligenceWhoisRecord -InputObject <ISecurityIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get the specified whoisRecord resource.
-Specify the desired whoisRecord in one of the following two ways:- Identify a host and get its current whoisRecord.
-- Specify an id value to get the corresponding whoisRecord.
+A list of whoisRecord objects.
 
 ## PARAMETERS
 
@@ -354,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencewhoisrecord)
-
-[https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-whoisrecord-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-whoisrecords?view=graph-rest-1.0)
 
 
 

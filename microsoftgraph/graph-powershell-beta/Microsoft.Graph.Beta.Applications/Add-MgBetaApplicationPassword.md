@@ -369,7 +369,7 @@ Optional.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/add-mgbetaapplicationpassword)
 
-[https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-addpassword?view=graph-rest-beta)
 
 
 

@@ -328,8 +328,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfoldertask)
 
-[https://learn.microsoft.com/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-1.0)
-
 
 
 

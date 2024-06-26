@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Update the properties of a auditEvent object.
+Update the navigation property auditEvents in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
@@ -51,7 +51,7 @@ Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 ```
 
 ## DESCRIPTION
-Update the properties of a auditEvent object.
+Update the navigation property auditEvents in deviceManagement
 
 ## PARAMETERS
 
@@ -475,8 +475,6 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
-
-[https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-update?view=graph-rest-1.0)
 
 
 

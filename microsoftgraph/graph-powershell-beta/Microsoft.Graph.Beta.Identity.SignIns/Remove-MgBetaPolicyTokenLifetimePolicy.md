@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Delete a tokenLifetimePolicy object.
+Delete navigation property tokenLifetimePolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Delete a tokenLifetimePolicy object.
+Delete navigation property tokenLifetimePolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -282,8 +282,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicytokenlifetimepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-delete?view=graph-rest-1.0)
 
 
 

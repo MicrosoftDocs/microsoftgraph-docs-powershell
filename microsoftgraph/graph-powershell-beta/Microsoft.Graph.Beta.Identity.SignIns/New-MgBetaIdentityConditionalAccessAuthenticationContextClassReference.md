@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Create a new authenticationContextClassReference.
+Create new navigation property to authenticationContextClassReferences for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ```
 
 ## DESCRIPTION
-Create a new authenticationContextClassReference.
+Create new navigation property to authenticationContextClassReferences for identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -255,8 +255,6 @@ Supports $filter (eq).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-authenticationcontextclassreferences?view=graph-rest-1.0)
 
 
 

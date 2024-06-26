@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAppManagementPolicy
 
 ## SYNOPSIS
-Update an appManagementPolicy object.
+Update the navigation property appManagementPolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
@@ -49,7 +49,7 @@ Update-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update an appManagementPolicy object.
+Update the navigation property appManagementPolicies in policies
 
 ## PARAMETERS
 
@@ -457,8 +457,6 @@ To apply to all applications, this date would be null.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-update?view=graph-rest-1.0)
 
 
 

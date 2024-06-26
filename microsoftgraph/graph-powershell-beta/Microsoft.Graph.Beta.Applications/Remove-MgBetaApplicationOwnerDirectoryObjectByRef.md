@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaApplicationOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
+Delete ref of navigation property owners for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationOwnerDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaApplicationOwnerDirectoryObjectByRef -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Remove an owner from an application.
-As a recommended best practice, apps should have at least two owners.
+Delete ref of navigation property owners for applications
 
 ## PARAMETERS
 
@@ -241,8 +239,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationownerdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-owners?view=graph-rest-1.0)
 
 
 

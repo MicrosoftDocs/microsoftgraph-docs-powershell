@@ -8,8 +8,11 @@ schema: 2.0.0
 # Invoke-MgBetaInviteCommunicationCallParticipant
 
 ## SYNOPSIS
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-1.0)
@@ -49,8 +52,11 @@ Invoke-MgBetaInviteCommunicationCallParticipant -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -369,10 +375,9 @@ Whether to hide the participant from the roster.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[ParticipantId <String>]`: Optional.
@@ -413,10 +418,9 @@ Whether to hide the participant from the roster.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ParticipantId <String>]`: Optional.
@@ -431,7 +435,7 @@ For peer-to-peer case, the call will be dropped once the participant is added su
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetainvitecommunicationcallparticipant)
 
-[https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/participant-invite?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/participant-delete?view=graph-rest-beta)
 
 
 

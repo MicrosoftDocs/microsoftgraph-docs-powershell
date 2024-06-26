@@ -245,7 +245,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetareassigneducationclassassignmentsubmission)
 
-[https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsubmission-reassign?view=graph-rest-beta)
 
 
 

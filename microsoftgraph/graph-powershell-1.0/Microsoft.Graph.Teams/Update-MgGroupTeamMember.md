@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamMember
 
 ## SYNOPSIS
-Update the role of a conversationMember in a team.
+Update the navigation property members in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamMember?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the role of a conversationMember in a team.
+Update the navigation property members in groups
 
 ## EXAMPLES
 
@@ -339,8 +339,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteammember)
-
-[https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-update-members?view=graph-rest-1.0)
 
 
 

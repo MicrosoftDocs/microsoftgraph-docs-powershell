@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileWebsite
 
 ## SYNOPSIS
-Update the properties of personWebsite object in a user's profile.
+Update the navigation property websites in users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Update the properties of personWebsite object in a user's profile.
+Update the navigation property websites in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -546,8 +546,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilewebsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilewebsite)
-
-[https://learn.microsoft.com/graph/api/personwebsite-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personwebsite-update?view=graph-rest-1.0)
 
 
 

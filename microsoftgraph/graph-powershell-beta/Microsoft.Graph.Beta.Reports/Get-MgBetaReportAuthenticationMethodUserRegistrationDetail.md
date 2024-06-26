@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
-Read the properties and relationships of a userRegistrationDetails object.
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -InputObject <IReport
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a userRegistrationDetails object.
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multifactor authentication, self-service password reset, and passwordless authentication).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,10 +347,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportauthenticationmethoduserregistrationdetail)
-
-[https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userregistrationdetails-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodsroot-list-userregistrationdetails?view=graph-rest-1.0)
 
 
 

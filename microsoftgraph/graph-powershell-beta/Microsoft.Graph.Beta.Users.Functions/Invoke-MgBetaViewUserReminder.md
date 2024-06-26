@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaViewUserReminder
 
 ## SYNOPSIS
-Invoke function reminderView
+Return a list of event reminders in a user calendar within the specified start and end times.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgViewUserReminder](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgViewUserReminder?view=graph-powershell-1.0)
@@ -30,7 +30,10 @@ Invoke-MgBetaViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-
 ```
 
 ## DESCRIPTION
-Invoke function reminderView
+Return a list of event reminders in a user calendar within the specified start and end times.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-reminderview-permissions.md)]
 
 ## PARAMETERS
 
@@ -274,6 +277,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetaviewuserreminder)
+
+[https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-beta)
 
 
 

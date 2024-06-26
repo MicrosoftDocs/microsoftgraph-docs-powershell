@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerPlan
 
 ## SYNOPSIS
-Update the properties of a plannerPlan object.
+Update the navigation property plans in planner
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the properties of a plannerPlan object.
+Update the navigation property plans in planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -778,8 +778,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerplan)
-
-[https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-update?view=graph-rest-1.0)
 
 
 

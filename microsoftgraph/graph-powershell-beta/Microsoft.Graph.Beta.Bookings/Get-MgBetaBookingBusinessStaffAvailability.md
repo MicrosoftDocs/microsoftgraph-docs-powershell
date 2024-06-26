@@ -335,7 +335,7 @@ See below for possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinessstaffavailability)
 
-[https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bookingbusiness-getstaffavailability?view=graph-rest-beta)
 
 
 

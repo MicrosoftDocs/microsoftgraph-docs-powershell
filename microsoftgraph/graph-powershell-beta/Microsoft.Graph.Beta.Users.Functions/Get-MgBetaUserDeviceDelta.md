@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserDeviceDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
+For more information, see Using delta query.
 
 ## SYNTAX
 
@@ -29,7 +30,11 @@ Get-MgBetaUserDeviceDelta -InputObject <IUsersFunctionsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted devices without performing a full read of the entire resource collection.
+For more information, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/device-delta-permissions.md)]
 
 ## EXAMPLES
 
@@ -336,6 +341,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdevicedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserdevicedelta)
+
+[https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-delta?view=graph-rest-beta)
 
 
 

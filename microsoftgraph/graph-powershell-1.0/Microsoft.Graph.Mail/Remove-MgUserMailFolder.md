@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMailFolder
 
 ## SYNOPSIS
-Delete the specified mailFolder.
-The folder can be a mailSearchFolder.
-You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
+Delete navigation property mailFolders for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
@@ -32,9 +30,7 @@ Remove-MgUserMailFolder -InputObject <IMailIdentity> [-IfMatch <String>] [-Respo
 ```
 
 ## DESCRIPTION
-Delete the specified mailFolder.
-The folder can be a mailSearchFolder.
-You can specify a mail folder by its folder ID, or by its well-known folder name, if one exists.
+Delete navigation property mailFolders for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -233,8 +229,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfolder)
-
-[https://learn.microsoft.com/graph/api/mailfolder-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-delete?view=graph-rest-1.0)
 
 
 
