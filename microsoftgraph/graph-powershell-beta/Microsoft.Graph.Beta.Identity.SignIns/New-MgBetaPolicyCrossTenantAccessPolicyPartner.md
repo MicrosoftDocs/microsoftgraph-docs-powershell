@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ New-MgBetaPolicyCrossTenantAccessPolicyPartner
 ```
 
 ## DESCRIPTION
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -519,8 +519,6 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicycrosstenantaccesspolicypartner)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0)
 
 
 

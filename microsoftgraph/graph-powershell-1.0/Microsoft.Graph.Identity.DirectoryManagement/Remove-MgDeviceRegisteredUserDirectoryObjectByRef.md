@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceRegisteredUserDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove a user as a registered user of the device.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDeviceRegisteredUserDirectoryObjectByRef?view=graph-powershell-beta)
+Delete ref of navigation property registeredUsers for devices
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgDeviceRegisteredUserDirectoryObjectByRef -InputObject <IIdentityDirecto
 ```
 
 ## DESCRIPTION
-Remove a user as a registered user of the device.
+Delete ref of navigation property registeredUsers for devices
 
 ## PARAMETERS
 
@@ -206,6 +203,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -231,8 +230,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdeviceregistereduserdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete-registeredusers?view=graph-rest-1.0)
 
 
 

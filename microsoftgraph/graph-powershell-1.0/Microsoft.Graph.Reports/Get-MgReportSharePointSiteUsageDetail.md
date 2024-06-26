@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSharePointSiteUsageDetail
 
 ## SYNOPSIS
-Invoke function getSharePointSiteUsageDetail
+Get details about SharePoint site usage.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointSiteUsageDetail
+Get details about SharePoint site usage.
 
 ## PARAMETERS
 
@@ -210,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
-Read the properties of an identityApiConnector object.
+Represents entry point for API connectors.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityApiConnector?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties of an identityApiConnector object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/identityapiconnector-get-permissions.md)]
+Represents entry point for API connectors.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -383,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityapiconnector)
-
-[https://learn.microsoft.com/graph/api/identityapiconnector-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identityapiconnector-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-list?view=graph-rest-1.0)
 
 
 

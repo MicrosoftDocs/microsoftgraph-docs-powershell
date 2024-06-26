@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser -InputObject <IId
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra Entitlement Management, retrieve a list of accessPackage objects filtered on the signed-in user.
 
 ## PARAMETERS
 
@@ -320,6 +320,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackagebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

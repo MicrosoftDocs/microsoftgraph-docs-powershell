@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamTag
 
 ## SYNOPSIS
-Read the properties and relationships of a tag object.
+The tags associated with the team.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTag?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a tag object.
+The tags associated with the team.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,10 +359,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamtag)
-
-[https://learn.microsoft.com/graph/api/teamworktag-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/teamworktag-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-list?view=graph-rest-1.0)
 
 
 

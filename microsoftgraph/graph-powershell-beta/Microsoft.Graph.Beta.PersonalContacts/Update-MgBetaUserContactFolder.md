@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserContactFolder
 
 ## SYNOPSIS
-Update the properties of contactfolder object.
+Update the navigation property contactFolders in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolder?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Update-MgBetaUserContactFolder -InputObject <IPersonalContactsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of contactfolder object.
+Update the navigation property contactFolders in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -755,8 +755,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfolder)
-
-[https://learn.microsoft.com/graph/api/contactfolder-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contactfolder-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserTeamworkInstalledAppChat
 
 ## SYNOPSIS
-Retrieve the chat of the specified user and Teams app.
+The chat between the user and Teams app.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Retrieve the chat of the specified user and Teams app.
+The chat between the user and Teams app.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -230,8 +230,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkinstalledappchat)
-
-[https://learn.microsoft.com/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userscopeteamsappinstallation-get-chat?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDirectoryAttributeSet
 
 ## SYNOPSIS
-Create a new attributeSet object.
+Create new navigation property to attributeSets for directory
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet>
 ```
 
 ## DESCRIPTION
-Create a new attributeSet object.
+Create new navigation property to attributeSets for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -242,8 +242,6 @@ Can be changed later.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset)
-
-[https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-attributesets?view=graph-rest-1.0)
 
 
 

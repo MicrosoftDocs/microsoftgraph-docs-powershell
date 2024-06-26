@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupSetting
 
 ## SYNOPSIS
-Create a new setting based on the templates available in directorySettingTemplates.
-These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+Create new navigation property to settings for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-1.0)
@@ -49,10 +46,7 @@ New-MgBetaGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create a new setting based on the templates available in directorySettingTemplates.
-These settings can be at the tenant-level or at the group level.
-Group settings apply to only Microsoft 365 groups.
-The template named Group.Unified can be used to configure tenant-wide Microsoft 365 group settings, while the template named Group.Unified.Guest can be used to configure group-specific settings.
+Create new navigation property to settings for groups
 
 ## EXAMPLES
 ### Example 1: Create a setting to block guests for a specific Microsoft 365 group
@@ -365,8 +359,6 @@ VALUES <IMicrosoftGraphSettingValue- `[]`>: Collection of name-value pairs corre
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupsetting)
-
-[https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-settings?view=graph-rest-1.0)
 
 
 

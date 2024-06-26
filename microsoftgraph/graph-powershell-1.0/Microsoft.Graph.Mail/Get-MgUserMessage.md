@@ -383,10 +383,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessage)
 
-[https://learn.microsoft.com/graph/api/eventmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-messages?view=graph-rest-1.0)
-
 
 
 

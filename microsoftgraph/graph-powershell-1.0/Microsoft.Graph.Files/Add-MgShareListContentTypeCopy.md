@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgShareListContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type from a site to a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaShareListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaShareListContentTypeCopy?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Add-MgShareListContentTypeCopy -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type from a site to a list.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]

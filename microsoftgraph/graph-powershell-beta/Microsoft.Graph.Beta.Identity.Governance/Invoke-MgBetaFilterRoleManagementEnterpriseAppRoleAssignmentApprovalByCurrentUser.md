@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentApprovalByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 ## SYNTAX
 
@@ -30,7 +33,10 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentApprovalByCurrentUse
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 ## PARAMETERS
 
@@ -365,6 +371,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentapprovalbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
 
 
 

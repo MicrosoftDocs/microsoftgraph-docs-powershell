@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
-Update the properties of a userInstallStateSummary object.
+Update the navigation property userStateSummary in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Update-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Update the properties of a userInstallStateSummary object.
+Update the navigation property userStateSummary in deviceAppManagement
 
 ## PARAMETERS
 
@@ -387,8 +387,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookuserstatesummary)
-
-[https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-update?view=graph-rest-1.0)
 
 
 

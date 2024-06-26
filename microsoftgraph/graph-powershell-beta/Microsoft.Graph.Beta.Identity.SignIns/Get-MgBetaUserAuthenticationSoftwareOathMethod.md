@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationSoftwareOathMethod
 
 ## SYNOPSIS
-Retrieve a user's single Software OATH token authentication method object and its properties.
+Get softwareOathMethods from users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationSoftwareOathMethod?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIde
 ```
 
 ## DESCRIPTION
-Retrieve a user's single Software OATH token authentication method object and its properties.
+Get softwareOathMethods from users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -396,10 +396,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsoftwareoathmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationsoftwareoathmethod)
-
-[https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/softwareoathauthenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-softwareoathmethods?view=graph-rest-1.0)
 
 
 

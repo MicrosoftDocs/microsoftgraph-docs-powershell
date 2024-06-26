@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteOnenotePage
 
 ## SYNOPSIS
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+Create new navigation property to pages for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
@@ -55,10 +52,7 @@ New-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+Create new navigation property to pages for groups
 
 ## PARAMETERS
 
@@ -633,6 +627,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -913,8 +908,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotepage)
-
-[https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0)
 
 
 

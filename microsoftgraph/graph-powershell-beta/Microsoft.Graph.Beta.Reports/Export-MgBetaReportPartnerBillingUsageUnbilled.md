@@ -217,7 +217,7 @@ BODYPARAMETER `<IPaths1Ajo9DhReportsPartnersBillingUsageUnbilledMicrosoftGraphPa
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/export-mgbetareportpartnerbillingusageunbilled)
 
-[https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta](https://learn.microsoft.com/graph/api/partners-billing-unbilledusage-export?view=graph-rest-beta)
 
 
 

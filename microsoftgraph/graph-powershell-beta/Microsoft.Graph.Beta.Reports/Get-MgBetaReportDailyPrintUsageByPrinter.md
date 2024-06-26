@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportDailyPrintUsageByPrinter
 
 ## SYNOPSIS
-Retrieve a printer's usage summary for a particular time period.
-For descriptions of each of the endpoints, see printUsageByPrinter.
+Retrieve a list of daily print usage summaries, grouped by printer.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByPrinter?view=graph-powershell-1.0)
@@ -39,8 +38,7 @@ Get-MgBetaReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve a printer's usage summary for a particular time period.
-For descriptions of each of the endpoints, see printUsageByPrinter.
+Retrieve a list of daily print usage summaries, grouped by printer.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -349,10 +347,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportdailyprintusagebyprinter)
-
-[https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printusagebyprinter-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyprinter?view=graph-rest-1.0)
 
 
 

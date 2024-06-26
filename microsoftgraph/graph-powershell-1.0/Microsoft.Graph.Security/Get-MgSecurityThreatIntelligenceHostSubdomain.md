@@ -366,8 +366,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsubdomain)
 
-[https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-subdomains?view=graph-rest-1.0)
-
 
 
 

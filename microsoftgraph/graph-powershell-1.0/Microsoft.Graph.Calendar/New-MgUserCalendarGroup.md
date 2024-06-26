@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserCalendarGroup
 
 ## SYNOPSIS
-Use this API to create a new CalendarGroup.
+Create new navigation property to calendarGroups for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaUserCalendarGroup?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Use this API to create a new CalendarGroup.
+Create new navigation property to calendarGroups for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -838,8 +838,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup)
-
-[https://learn.microsoft.com/graph/api/user-post-calendargroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-calendargroups?view=graph-rest-1.0)
 
 
 

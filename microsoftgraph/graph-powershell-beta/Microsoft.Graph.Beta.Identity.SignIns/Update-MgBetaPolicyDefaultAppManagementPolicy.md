@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
-Update the properties of a tenantAppManagementPolicy object.
+Update the navigation property defaultAppManagementPolicy in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTen
 ```
 
 ## DESCRIPTION
-Update the properties of a tenantAppManagementPolicy object.
+Update the navigation property defaultAppManagementPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -391,8 +391,6 @@ To apply to all applications, this date would be null.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantappmanagementpolicy-update?view=graph-rest-1.0)
 
 
 

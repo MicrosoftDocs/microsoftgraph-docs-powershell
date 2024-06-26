@@ -352,10 +352,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingcurrency)
 
-[https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcurrency-list?view=graph-rest-1.0)
-
 
 
 

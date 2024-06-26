@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
-Create a new ediscoveryReviewTag object.
+Create new navigation property to tags for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create a new ediscoveryReviewTag object.
+Create new navigation property to tags for security
 
 ## EXAMPLES
 ### Example 1: Create a tag
@@ -530,8 +530,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasetag)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-tags?view=graph-rest-1.0)
 
 
 

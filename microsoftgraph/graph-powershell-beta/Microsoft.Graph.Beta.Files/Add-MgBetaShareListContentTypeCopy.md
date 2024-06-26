@@ -259,7 +259,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopy)
 
-[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-addcopy?view=graph-rest-beta)
 
 
 

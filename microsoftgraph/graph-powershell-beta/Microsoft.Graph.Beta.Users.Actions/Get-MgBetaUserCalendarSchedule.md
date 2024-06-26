@@ -390,7 +390,7 @@ See below for possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausercalendarschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausercalendarschedule)
 
-[https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta](https://learn.microsoft.com/graph/api/calendar-getschedule?view=graph-rest-beta)
 
 
 

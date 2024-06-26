@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Update the properties of an ediscoverySearch object.
+Update the navigation property searches in security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ Update-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an ediscoverySearch object.
+Update the navigation property searches in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -937,8 +937,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesearch)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverysearch-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Read properties and relationships of the remoteAssistancePartner object.
+The remote assist partners.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagementAdm
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the remoteAssistancePartner object.
+The remote assist partners.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -328,10 +328,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementremoteassistancepartner)
-
-[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-list?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerActivityCount
 
 ## SYNOPSIS
-Invoke function getYammerActivityCounts
+Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportYammerActivityCount -InputObject <IReportsIdentity> -OutFile <String
 ```
 
 ## DESCRIPTION
-Invoke function getYammerActivityCounts
+Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivitycount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammeractivitycounts?view=graph-rest-1.0)
 
 
 

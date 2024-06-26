@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage
 
 ## SYNOPSIS
-Approve or deny an approvalStage object in an approval.
+Update the navigation property stages in identityGovernance
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject 
 ```
 
 ## DESCRIPTION
-Approve or deny an approvalStage object in an approval.
+Update the navigation property stages in identityGovernance
 
 ## PARAMETERS
 
@@ -453,8 +453,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapprovalstage)
-
-[https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-update?view=graph-rest-1.0)
 
 
 

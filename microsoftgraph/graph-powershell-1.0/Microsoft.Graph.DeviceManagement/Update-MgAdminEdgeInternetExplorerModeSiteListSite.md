@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Update the properties of a browserSite object.
+Update the navigation property sites in admin
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Update the properties of a browserSite object.
+Update the navigation property sites in admin
 
 ## PARAMETERS
 
@@ -551,8 +551,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsite)
-
-[https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersite-update?view=graph-rest-1.0)
 
 
 

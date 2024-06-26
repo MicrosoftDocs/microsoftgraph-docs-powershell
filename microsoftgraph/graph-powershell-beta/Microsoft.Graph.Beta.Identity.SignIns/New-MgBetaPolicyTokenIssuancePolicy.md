@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
-Create a new tokenIssuancePolicy object.
+Create new navigation property to tokenIssuancePolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ New-MgBetaPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 ```
 
 ## DESCRIPTION
-Create a new tokenIssuancePolicy object.
+Create new navigation property to tokenIssuancePolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -300,8 +300,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenissuancepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenissuancepolicy-post-tokenissuancepolicy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-post-tokenissuancepolicy?view=graph-rest-1.0)
 
 
 

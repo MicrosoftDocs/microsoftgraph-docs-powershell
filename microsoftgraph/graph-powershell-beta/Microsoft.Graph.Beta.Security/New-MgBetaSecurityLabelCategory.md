@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityLabelCategory
 
 ## SYNOPSIS
-Create a new categoryTemplate object.
+Create new navigation property to categories for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategory?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ New-MgBetaSecurityLabelCategory -BodyParameter <IMicrosoftGraphSecurityCategoryT
 ```
 
 ## DESCRIPTION
-Create a new categoryTemplate object.
+Create new navigation property to categories for security
 
 ## PARAMETERS
 
@@ -293,8 +293,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelcategory)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-categories?view=graph-rest-1.0)
 
 
 

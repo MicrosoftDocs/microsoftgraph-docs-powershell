@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCase
 
 ## SYNOPSIS
-Delete a case object.
+Delete navigation property cases for compliance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete a case object.
+Delete navigation property cases for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -219,8 +219,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase)
-
-[https://learn.microsoft.com/graph/api/ediscovery-case-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-delete?view=graph-rest-1.0)
 
 
 

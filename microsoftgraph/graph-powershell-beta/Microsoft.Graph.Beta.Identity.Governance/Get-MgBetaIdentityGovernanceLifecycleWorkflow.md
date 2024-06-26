@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceLifecycleWorkflow
 
 ## SYNOPSIS
-Read the properties and relationships of a workflow object.
+The workflows in the lifecycle workflows instance.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceI
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a workflow object.
+The workflows in the lifecycle workflows instance.
 
 ## EXAMPLES
 ### Example 1: Retrieve all workflows created in the tenant
@@ -413,10 +413,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflow)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflows?view=graph-rest-1.0)
 
 
 

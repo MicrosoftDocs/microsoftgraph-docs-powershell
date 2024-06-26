@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -68,7 +68,7 @@ New-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 ## EXAMPLES
 ### Example 1: Create an online meeting with user token
@@ -1086,8 +1086,6 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)
 
 
 

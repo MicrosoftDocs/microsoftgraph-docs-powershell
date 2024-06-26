@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgExternalConnection
 
 ## SYNOPSIS
-Deletes an externalConnection object.
+Delete navigation property connections for external
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Deletes an externalConnection object.
+Delete navigation property connections for external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -214,8 +214,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnection)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaDriveRootRetentionLabel
 
 ## SYNOPSIS
-Remove a retention label from a driveItem.
-For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+Delete navigation property retentionLabel for drives
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootRetentionLabel?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaDriveRootRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Remove a retention label from a driveItem.
-For information about retention labels from an administrator's perspective, see Use retention labels to manage the lifecycle of documents stored in SharePoint.
+Delete navigation property retentionLabel for drives
 
 ## PARAMETERS
 
@@ -218,8 +216,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadriverootretentionlabel)
-
-[https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-removeretentionlabel?view=graph-rest-1.0)
 
 
 

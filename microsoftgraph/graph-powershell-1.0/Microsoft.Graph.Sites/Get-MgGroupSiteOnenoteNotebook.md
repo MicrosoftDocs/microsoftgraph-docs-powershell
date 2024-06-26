@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupSiteOnenoteNotebook
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a notebook object.
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteNotebook?view=graph-powershell-beta)
@@ -38,7 +40,9 @@ Get-MgGroupSiteOnenoteNotebook -InputObject <ISitesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a notebook object.
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -357,16 +361,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotenotebook)
-
-[https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0)
 
 
 

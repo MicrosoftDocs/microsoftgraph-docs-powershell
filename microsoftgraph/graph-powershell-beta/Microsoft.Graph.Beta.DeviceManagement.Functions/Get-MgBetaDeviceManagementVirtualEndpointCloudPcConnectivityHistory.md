@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
 
 ## SYNOPSIS
-Invoke function getCloudPcConnectivityHistory
+Get the connectivity history of a specific Cloud PC.
 
 ## SYNTAX
 
@@ -28,7 +28,10 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
 ```
 
 ## DESCRIPTION
-Invoke function getCloudPcConnectivityHistory
+Get the connectivity history of a specific Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory Cmdlet
@@ -244,6 +247,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointcloudpcconnectivityhistory)
+
+[https://learn.microsoft.com/graph/api/cloudpc-getcloudpcconnectivityhistory?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getcloudpcconnectivityhistory?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource
 
 ## SYNOPSIS
-Create a new additional source associated with an eDiscovery search.
+Create new navigation property to additionalSources for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-1.0)
@@ -49,7 +49,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 ```
 
 ## DESCRIPTION
-Create a new additional source associated with an eDiscovery search.
+Create new navigation property to additionalSources for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -436,8 +436,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasesearchadditionalsource)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverysearch-post-additionalsources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-post-additionalsources?view=graph-rest-1.0)
 
 
 

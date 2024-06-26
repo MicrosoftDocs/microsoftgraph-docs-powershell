@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportApplicationSignInDetailedSummary
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
+Represents a detailed summary of an application sign-in.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an applicationSignInDetailedSummary object.
+Represents a detailed summary of an application sign-in.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -344,10 +344,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportapplicationsignindetailedsummary)
-
-[https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/applicationsignindetailedsummary-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-applicationsignindetailedsummary?view=graph-rest-1.0)
 
 
 

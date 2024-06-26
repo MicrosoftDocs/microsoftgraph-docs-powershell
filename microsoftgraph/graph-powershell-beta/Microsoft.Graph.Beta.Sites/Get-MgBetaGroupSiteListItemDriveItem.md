@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteListItemDriveItem
 
 ## SYNOPSIS
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemDriveItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaGroupSiteListItemDriveItem -InputObject <ISitesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 ## PARAMETERS
 

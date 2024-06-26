@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-Retrieve the properties of a user's regionalAndLanguageSettings.
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a user's regionalAndLanguageSettings.
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
@@ -194,8 +194,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting)
-
-[https://learn.microsoft.com/graph/api/regionalandlanguagesettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/regionalandlanguagesettings-get?view=graph-rest-1.0)
 
 
 

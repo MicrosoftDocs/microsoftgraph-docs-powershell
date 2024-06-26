@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveListItem
 
 ## SYNOPSIS
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+All items contained in the list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItem?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+All items contained in the list.
 
 ## PARAMETERS
 
@@ -344,10 +344,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdrivelistitem)
-
-[https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
 
 
 

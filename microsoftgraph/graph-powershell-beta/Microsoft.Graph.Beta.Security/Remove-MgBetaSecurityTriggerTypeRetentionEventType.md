@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSecurityTriggerTypeRetentionEventType
 
 ## SYNOPSIS
-Delete a retentionEventType object.
+Delete navigation property retentionEventTypes for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdenti
 ```
 
 ## DESCRIPTION
-Delete a retentionEventType object.
+Delete navigation property retentionEventTypes for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -287,8 +287,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytriggertyperetentioneventtype)
-
-[https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-delete?view=graph-rest-1.0)
 
 
 

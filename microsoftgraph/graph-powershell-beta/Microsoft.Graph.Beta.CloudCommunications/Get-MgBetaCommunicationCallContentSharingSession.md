@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationCallContentSharingSession
 
 ## SYNOPSIS
-Retrieve the properties of a contentSharingSession object.
+Get contentSharingSessions from communications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a contentSharingSession object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contentsharingsession-get-permissions.md)]
+Get contentSharingSessions from communications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -341,10 +338,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationcallcontentsharingsession)
-
-[https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contentsharingsession-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-list-contentsharingsessions?view=graph-rest-1.0)
 
 
 

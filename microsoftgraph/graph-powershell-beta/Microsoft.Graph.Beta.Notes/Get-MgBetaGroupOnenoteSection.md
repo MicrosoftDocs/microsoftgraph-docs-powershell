@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupOnenoteSection
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a section object.
+The sections in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteSection](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSection?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaGroupOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a section object.
+The sections in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -318,10 +322,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenotesection)
-
-[https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-sections?view=graph-rest-1.0)
 
 
 

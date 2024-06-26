@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Update the properties of the specified identity provider configured in the tenant.
-Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently update a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
+Update the navigation property identityProviders in identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityProvider?view=graph-powershell-1.0)
@@ -46,9 +44,7 @@ Update-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the specified identity provider configured in the tenant.
-Among the types of providers derived from identityProviderBase, you can currently update a socialIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently update a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
+Update the navigation property identityProviders in identity
 
 ## EXAMPLES
 ### Example 1: Update a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)
@@ -376,8 +372,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityprovider)
-
-[https://learn.microsoft.com/graph/api/identityproviderbase-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-update?view=graph-rest-1.0)
 
 
 

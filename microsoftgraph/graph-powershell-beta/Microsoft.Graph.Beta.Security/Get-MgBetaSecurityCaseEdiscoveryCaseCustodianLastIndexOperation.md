@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation
 
 ## SYNOPSIS
-Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodian.
+Operation entity that represents the latest indexing for the custodian.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <IS
 ```
 
 ## DESCRIPTION
-Get a list of the ediscoveryIndexOperation associated with an ediscoveryCustodian.
+Operation entity that represents the latest indexing for the custodian.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,8 +272,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianlastindexoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasecustodianlastindexoperation)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-lastindexoperation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-list-lastindexoperation?view=graph-rest-1.0)
 
 
 

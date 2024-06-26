@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation
 
 ## SYNOPSIS
-Update the properties of a tenantCustomizedInformation object.
+Update the navigation property tenantsCustomizedInformation in tenantRelationships
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation -InputObject <
 ```
 
 ## DESCRIPTION
-Update the properties of a tenantCustomizedInformation object.
+Update the navigation property tenantsCustomizedInformation in tenantRelationships
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantCustomizedInformation Cmdlet
@@ -392,8 +392,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantcustomizedinformation)
-
-[https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenantcustomizedinformation-update?view=graph-rest-1.0)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Delete an administrativeUnit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+Delete navigation property administrativeUnits for directory
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Delete an administrativeUnit.
+Delete navigation property administrativeUnits for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -204,6 +201,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -229,8 +228,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete?view=graph-rest-1.0)
 
 
 

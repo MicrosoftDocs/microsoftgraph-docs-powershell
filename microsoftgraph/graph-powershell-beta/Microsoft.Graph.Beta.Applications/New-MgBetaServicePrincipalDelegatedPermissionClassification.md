@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAppli
 ```
 
 ## DESCRIPTION
-Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,8 +336,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipaldelegatedpermissionclassification)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementConnectedOrganizationExternalSponsor
 
 ## SYNOPSIS
-Retrieve a list of a connectedOrganization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get externalSponsors from identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsor?view=graph-powershell-beta)
@@ -24,8 +23,7 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsor -ConnectedOrgani
 ```
 
 ## DESCRIPTION
-Retrieve a list of a connectedOrganization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get externalSponsors from identityGovernance
 
 ## PARAMETERS
 
@@ -254,8 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsor)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-list-externalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-list-externalsponsors?view=graph-rest-1.0)
 
 
 

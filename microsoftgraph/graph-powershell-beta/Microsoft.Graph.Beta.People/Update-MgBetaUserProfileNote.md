@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileNote
 
 ## SYNOPSIS
-Update the properties of a personAnnotation object in a user's profile.
+Update the navigation property notes in users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the properties of a personAnnotation object in a user's profile.
+Update the navigation property notes in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -520,8 +520,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilenote)
-
-[https://learn.microsoft.com/graph/api/personannotation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personannotation-update?view=graph-rest-1.0)
 
 
 

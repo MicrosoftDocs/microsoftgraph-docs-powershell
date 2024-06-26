@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTrustFrameworkKeySet
 
 ## SYNOPSIS
-Delete a trustFrameworkKeySet.
+Delete navigation property keySets for trustFramework
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete a trustFrameworkKeySet.
+Delete navigation property keySets for trustFramework
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTrustFrameworkKeySet Cmdlet
@@ -275,8 +275,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkkeyset)
-
-[https://learn.microsoft.com/graph/api/trustframeworkkeyset-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDetectedApp
 
 ## SYNOPSIS
-Deletes a detectedApp.
+Delete navigation property detectedApps for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementDetectedApp -InputObject <IDeviceManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Deletes a detectedApp.
+Delete navigation property detectedApps for deviceManagement
 
 ## PARAMETERS
 
@@ -246,8 +246,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdetectedapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdetectedapp)
-
-[https://learn.microsoft.com/graph/api/intune-devices-detectedapp-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-detectedapp-delete?view=graph-rest-1.0)
 
 
 

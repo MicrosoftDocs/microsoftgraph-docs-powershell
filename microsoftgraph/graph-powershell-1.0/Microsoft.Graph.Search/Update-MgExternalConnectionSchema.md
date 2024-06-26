@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgExternalConnectionSchema
 
 ## SYNOPSIS
-Create a new schema object.
+Update the navigation property schema in external
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new schema object.
+Update the navigation property schema in external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -353,8 +353,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-patch-schema?view=graph-rest-1.0)
 
 
 

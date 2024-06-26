@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Read the properties and relationships of an acronym object.
+Administrative answer in Microsoft Search results to define common acronyms in an organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an acronym object.
+Administrative answer in Microsoft Search results to define common acronyms in an organization.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -313,6 +313,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -322,10 +324,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchacronym)
-
-[https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-acronyms?view=graph-rest-1.0)
 
 
 

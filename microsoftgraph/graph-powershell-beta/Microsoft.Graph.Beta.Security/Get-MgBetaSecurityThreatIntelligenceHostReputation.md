@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHostReputation
 
 ## SYNOPSIS
-Get the properties and relationships of a hostReputation object.
+Represents a calculated reputation of this host.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdenti
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a hostReputation object.
+Represents a calculated reputation of this host.
 
 ## PARAMETERS
 
@@ -243,8 +243,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostreputation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostreputation)
-
-[https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-get-reputation?view=graph-rest-1.0)
 
 
 

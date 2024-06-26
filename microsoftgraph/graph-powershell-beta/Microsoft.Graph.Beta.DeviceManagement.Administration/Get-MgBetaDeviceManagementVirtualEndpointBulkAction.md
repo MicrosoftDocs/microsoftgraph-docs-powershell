@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointBulkAction
 
 ## SYNOPSIS
-Get bulkActions from deviceManagement
+Bulk actions applied to a Cloud PC.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get bulkActions from deviceManagement
+Bulk actions applied to a Cloud PC.
 
 ## PARAMETERS
 

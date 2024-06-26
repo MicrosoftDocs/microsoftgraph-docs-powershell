@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Read the properties and relationships of an ediscoverySearch object.
+Returns a list of eDiscoverySearch objects associated with this case.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an ediscoverySearch object.
+Returns a list of eDiscoverySearch objects associated with this case.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -400,10 +400,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearch)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverysearch-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-searches?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-searches?view=graph-rest-1.0)
 
 
 

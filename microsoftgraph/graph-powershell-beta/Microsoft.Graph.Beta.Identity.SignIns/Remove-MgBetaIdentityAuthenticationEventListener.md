@@ -8,7 +8,10 @@ schema: 2.0.0
 # Remove-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
-Deletes an authenticationEventListener object.
+Delete navigation property authenticationEventListeners for identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Deletes an authenticationEventListener object.
+Delete navigation property authenticationEventListeners for identity
 
 ## PARAMETERS
 
@@ -266,8 +269,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityauthenticationeventlistener)
-
-[https://learn.microsoft.com/graph/api/authenticationeventlistener-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-delete?view=graph-rest-1.0)
 
 
 

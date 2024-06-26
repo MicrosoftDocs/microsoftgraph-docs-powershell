@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupEvent
 
 ## SYNOPSIS
-Use this API to create a new event.
+Create new navigation property to events for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupEvent?view=graph-powershell-beta)
@@ -75,7 +75,7 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Use this API to create a new event.
+Create new navigation property to events for groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1995,8 +1995,6 @@ See below for more possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupevent)
-
-[https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-events?view=graph-rest-1.0)
 
 
 

@@ -290,7 +290,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecuritycaseediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/initialize-mgbetasecuritycaseediscoverycasecustodian)
 
-[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-activate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-activate?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-activate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-activate?view=graph-rest-beta)
 
 
 

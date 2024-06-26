@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteOnenoteNotebook
 
 ## SYNOPSIS
-Create a new OneNote notebook.
+Create new navigation property to notebooks for sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
@@ -52,10 +52,7 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new OneNote notebook.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-notebooks-permissions.md)]
+Create new navigation property to notebooks for sites
 
 ## EXAMPLES
 
@@ -911,8 +908,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebook)
-
-[https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-notebooks?view=graph-rest-1.0)
 
 
 

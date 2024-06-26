@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessService
 
 ## SYNOPSIS
-Get the properties and relationships of a bookingService object in the specified bookingBusiness.
+All the services offered by this business.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessService?view=graph-powershell-beta)
@@ -38,7 +40,9 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a bookingService object in the specified bookingBusiness.
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -333,10 +337,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservice)
-
-[https://learn.microsoft.com/graph/api/bookingservice-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingservice-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-list-services?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-services?view=graph-rest-1.0)
 
 
 

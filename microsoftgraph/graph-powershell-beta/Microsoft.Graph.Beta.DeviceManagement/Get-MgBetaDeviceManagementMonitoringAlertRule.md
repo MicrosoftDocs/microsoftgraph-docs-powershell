@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementMonitoringAlertRule
 
 ## SYNOPSIS
-Read the properties and relationships of an alertRule object.
+The collection of alert rules.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagementIde
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an alertRule object.
+The collection of alert rules.
 
 ## PARAMETERS
 
@@ -428,10 +428,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoringalertrule)
-
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-list?view=graph-rest-1.0)
 
 
 

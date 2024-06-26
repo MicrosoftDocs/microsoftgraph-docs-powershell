@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule
 
 ## SYNOPSIS
-Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
+The eligibility schedules to activate a just-in-time access.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilitySchedule?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilitySchedule -InputObjec
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a privilegedAccessGroupEligibilitySchedule object.
+The eligibility schedules to activate a just-in-time access.
 
 ## PARAMETERS
 
@@ -390,10 +390,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupeligibilityschedule)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedules?view=graph-rest-1.0)
 
 
 

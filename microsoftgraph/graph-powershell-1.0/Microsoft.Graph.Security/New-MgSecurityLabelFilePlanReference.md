@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelFilePlanReference
 
 ## SYNOPSIS
-Create a new filePlanReferenceTemplate object.
+Create new navigation property to filePlanReferences for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgSecurityLabelFilePlanReference -BodyParameter <Hashtable> [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Create a new filePlanReferenceTemplate object.
+Create new navigation property to filePlanReferences for security
 
 ## PARAMETERS
 
@@ -231,8 +231,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelfileplanreference)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-fileplanreferences?view=graph-rest-1.0)
 
 
 

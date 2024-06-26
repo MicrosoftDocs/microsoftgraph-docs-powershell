@@ -1251,7 +1251,7 @@ Read-only.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadevice)
 
-[https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-beta](https://learn.microsoft.com/graph/api/device-post-devices?view=graph-rest-beta)
 
 
 

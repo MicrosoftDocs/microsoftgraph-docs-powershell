@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Modify sources and receivers of an audioRoutingGroup.
+Update the navigation property audioRoutingGroups in communications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-Modify sources and receivers of an audioRoutingGroup.
+Update the navigation property audioRoutingGroups in communications
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
@@ -333,8 +333,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallaudioroutinggroup)
-
-[https://learn.microsoft.com/graph/api/audioroutinggroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/audioroutinggroup-update?view=graph-rest-1.0)
 
 
 

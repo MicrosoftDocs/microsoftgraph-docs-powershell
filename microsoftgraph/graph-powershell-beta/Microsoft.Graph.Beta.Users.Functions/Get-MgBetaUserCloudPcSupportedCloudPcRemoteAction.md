@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction
 
 ## SYNOPSIS
-Invoke function getSupportedCloudPcRemoteActions
+Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
 
 ## SYNTAX
 
@@ -27,7 +27,10 @@ Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsI
 ```
 
 ## DESCRIPTION
-Invoke function getSupportedCloudPcRemoteActions
+Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getsupportedcloudpcremoteactions-permissions.md)]
 
 ## PARAMETERS
 
@@ -256,6 +259,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcsupportedcloudpcremoteaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcsupportedcloudpcremoteaction)
+
+[https://learn.microsoft.com/graph/api/cloudpc-getsupportedcloudpcremoteactions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getsupportedcloudpcremoteactions?view=graph-rest-beta)
 
 
 

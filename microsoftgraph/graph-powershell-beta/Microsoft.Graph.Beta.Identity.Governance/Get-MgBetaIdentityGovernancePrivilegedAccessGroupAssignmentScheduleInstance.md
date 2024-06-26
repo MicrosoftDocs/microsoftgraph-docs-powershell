@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 
 ## SYNOPSIS
-Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
+The instances of assignment schedules to activate a just-in-time access.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance?view=graph-powershell-1.0)
@@ -40,7 +40,7 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentScheduleInstance
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a privilegedAccessGroupAssignmentScheduleInstance object.
+The instances of assignment schedules to activate a just-in-time access.
 
 ## PARAMETERS
 
@@ -391,10 +391,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentscheduleinstance)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentscheduleinstance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentscheduleinstance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentscheduleinstances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-assignmentscheduleinstances?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOutlookTaskGroup
 
 ## SYNOPSIS
-Get the properties and relationships of the specified Outlook task group.
+Get taskGroups from users
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-Property <String[
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified Outlook task group.
+Get taskGroups from users
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOutlookTaskGroup Cmdlet
@@ -315,10 +315,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskgroup)
-
-[https://learn.microsoft.com/graph/api/outlooktaskgroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskgroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-taskgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-taskgroups?view=graph-rest-1.0)
 
 
 

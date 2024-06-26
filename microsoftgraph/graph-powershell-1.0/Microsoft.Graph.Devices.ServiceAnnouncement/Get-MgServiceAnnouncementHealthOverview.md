@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementHealthOverview
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a serviceHealth object.
-This operation provides the health information of a specified service for a tenant.
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
@@ -39,11 +39,8 @@ Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncemen
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a serviceHealth object.
-This operation provides the health information of a specified service for a tenant.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/servicehealth-get-permissions.md)]
+A collection of service health information for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
 ### Example 1: Get serviceHealth resources
@@ -323,10 +320,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview)
-
-[https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/servicehealth-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0)
 
 
 

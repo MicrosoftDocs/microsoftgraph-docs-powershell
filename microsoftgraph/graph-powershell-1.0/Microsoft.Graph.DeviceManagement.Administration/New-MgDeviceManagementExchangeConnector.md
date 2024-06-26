@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-Create a new deviceManagementExchangeConnector object.
+Create new navigation property to exchangeConnectors for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ New-MgDeviceManagementExchangeConnector -BodyParameter <IMicrosoftGraphDeviceMan
 ```
 
 ## DESCRIPTION
-Create a new deviceManagementExchangeConnector object.
+Create new navigation property to exchangeConnectors for deviceManagement
 
 ## PARAMETERS
 
@@ -328,8 +328,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementexchangeconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementexchangeconnector)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementexchangeconnector-create?view=graph-rest-1.0)
 
 
 

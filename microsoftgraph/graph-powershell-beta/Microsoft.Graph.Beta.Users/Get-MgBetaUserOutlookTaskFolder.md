@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOutlookTaskFolder
 
 ## SYNOPSIS
-Get the properties and relationships of the specified Outlook task folder.
+Get taskFolders from users
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified Outlook task folder.
+Get taskFolders from users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -311,10 +311,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroutlooktaskfolder)
-
-[https://learn.microsoft.com/graph/api/outlooktaskfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-taskfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-taskfolders?view=graph-rest-1.0)
 
 
 

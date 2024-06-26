@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
-Create a new deviceInstallState object.
+Create new navigation property to deviceStates for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporate
 ```
 
 ## DESCRIPTION
-Create a new deviceInstallState object.
+Create new navigation property to deviceStates for deviceAppManagement
 
 ## PARAMETERS
 
@@ -396,8 +396,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebookdevicestate)
-
-[https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-create?view=graph-rest-1.0)
 
 
 

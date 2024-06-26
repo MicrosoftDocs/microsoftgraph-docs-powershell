@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Update an app previously published to the Microsoft Teams app catalog.
-To update an app, the distributionMethod property for the app must be set to organization.
-This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+Create new navigation property to appDefinitions for appCatalogs
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
@@ -53,9 +51,7 @@ New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update an app previously published to the Microsoft Teams app catalog.
-To update an app, the distributionMethod property for the app must be set to organization.
-This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+Create new navigation property to appDefinitions for appCatalogs
 
 ## EXAMPLES
 ### Example 1: Update an application previously published to the Microsoft Teams app catalog
@@ -514,8 +510,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition)
-
-[https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsapp-update?view=graph-rest-1.0)
 
 
 

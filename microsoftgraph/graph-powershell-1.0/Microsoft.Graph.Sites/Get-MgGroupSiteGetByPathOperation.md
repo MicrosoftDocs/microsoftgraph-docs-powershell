@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteGetByPathOperation
 
 ## SYNOPSIS
-Get a list of rich long-running operations associated with a site.
+The collection of long-running operations on the site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathOperation?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Get-MgGroupSiteGetByPathOperation -GroupId <String> -Path <String> -SiteId <Stri
 ```
 
 ## DESCRIPTION
-Get a list of rich long-running operations associated with a site.
+The collection of long-running operations on the site.
 
 ## PARAMETERS
 
@@ -306,8 +306,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathoperation)
-
-[https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-operations?view=graph-rest-1.0)
 
 
 

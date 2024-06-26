@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgIdentityProvider
 
 ## SYNOPSIS
-Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+Create new navigation property to identityProviders for identity
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityProvider?view=graph-powershell-beta)
@@ -31,9 +29,7 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Re
 ```
 
 ## DESCRIPTION
-Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+Create new navigation property to identityProviders for identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -221,8 +217,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-identityproviders?view=graph-rest-1.0)
 
 
 

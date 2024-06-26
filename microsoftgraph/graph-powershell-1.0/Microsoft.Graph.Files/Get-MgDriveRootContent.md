@@ -201,8 +201,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootcontent)
 
-[https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
-
 
 
 

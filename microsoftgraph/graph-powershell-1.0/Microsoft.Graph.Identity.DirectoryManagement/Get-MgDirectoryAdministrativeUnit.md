@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an administrativeUnit object.
+Conceptual container for user and group directory objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an administrativeUnit object.
+Conceptual container for user and group directory objects.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -302,6 +302,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -327,10 +329,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)
 
 
 

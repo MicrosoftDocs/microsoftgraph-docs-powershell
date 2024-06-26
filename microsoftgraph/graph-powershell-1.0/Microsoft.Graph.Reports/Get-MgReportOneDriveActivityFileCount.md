@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOneDriveActivityFileCount
 
 ## SYNOPSIS
-Invoke function getOneDriveActivityFileCounts
+Get the number of unique, licensed users that performed file interactions against any OneDrive account.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveActivityFileCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportOneDriveActivityFileCount -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveActivityFileCounts
+Get the number of unique, licensed users that performed file interactions against any OneDrive account.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveactivityfilecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-1.0)
 
 
 

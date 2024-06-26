@@ -8,11 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupConversationThread
 
 ## SYNOPSIS
-Create a new thread in the specified conversation.
-A thread and post are created as specified.
-Use reply thread to further postto that thread.
-Or, if you get the post ID, you can also reply to that post in that thread.
-Note: You can also start a new conversation by first creating a thread.
+Create new navigation property to threads for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-1.0)
@@ -53,11 +49,7 @@ New-MgBetaGroupConversationThread -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new thread in the specified conversation.
-A thread and post are created as specified.
-Use reply thread to further postto that thread.
-Or, if you get the post ID, you can also reply to that post in that thread.
-Note: You can also start a new conversation by first creating a thread.
+Create new navigation property to threads for groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -676,8 +668,6 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversationthread)
-
-[https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-post-threads?view=graph-rest-1.0)
 
 
 

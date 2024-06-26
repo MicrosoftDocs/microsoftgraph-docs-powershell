@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Read properties and relationships of the mobileAppTroubleshootingEvent object.
+The collection property of MobileAppTroubleshootingEvent.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the mobileAppTroubleshootingEvent object.
+The collection property of MobileAppTroubleshootingEvent.
 
 ## PARAMETERS
 
@@ -344,10 +344,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmobileapptroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmobileapptroubleshootingevent)
-
-[https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-mobileapptroubleshootingevent-list?view=graph-rest-1.0)
 
 
 

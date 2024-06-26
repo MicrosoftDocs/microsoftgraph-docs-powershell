@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Delete a focused Inbox override specified by its ID.
+Delete navigation property overrides for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity> [-
 ```
 
 ## DESCRIPTION
-Delete a focused Inbox override specified by its ID.
+Delete navigation property overrides for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -231,8 +231,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetauserinferenceclassificationoverride)
-
-[https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0)
 
 
 

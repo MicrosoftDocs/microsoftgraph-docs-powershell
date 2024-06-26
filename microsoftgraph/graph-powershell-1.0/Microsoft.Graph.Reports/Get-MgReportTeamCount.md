@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportTeamCount
 
 ## SYNOPSIS
-Invoke function getTeamsTeamCounts
+Get the number of teams of a particular type in an instance of Microsoft Teams.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamCount?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-Respon
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsTeamCounts
+Get the number of teams of a particular type in an instance of Microsoft Teams.
 
 ## PARAMETERS
 
@@ -181,6 +181,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsteamcounts?view=graph-rest-1.0)
 
 
 

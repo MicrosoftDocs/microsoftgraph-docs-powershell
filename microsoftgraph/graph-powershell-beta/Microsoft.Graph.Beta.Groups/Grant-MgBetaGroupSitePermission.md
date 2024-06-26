@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgBetaGroupSitePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupSitePermission?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Grant-MgBetaGroupSitePermission -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -361,7 +361,7 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/grant-mgbetagroupsitepermission)
 
-[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
 
 
 

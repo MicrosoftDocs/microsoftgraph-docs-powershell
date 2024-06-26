@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType
 
 ## SYNOPSIS
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType [-Count] [-Fi
 ```
 
 ## DESCRIPTION
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 ## PARAMETERS
 
@@ -160,6 +160,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetaavailabledirectoryfederationconfigurationprovidertype)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)
 
 
 

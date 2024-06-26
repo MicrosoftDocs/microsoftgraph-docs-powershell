@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
-Update the properties of an accessReviewPolicy object.
+Update the navigation property policy in identityGovernance
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the properties of an accessReviewPolicy object.
+Update the navigation property policy in identityGovernance
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet
@@ -243,8 +243,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaidentitygovernanceaccessreviewpolicy)
-
-[https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewpolicy-update?view=graph-rest-1.0)
 
 
 

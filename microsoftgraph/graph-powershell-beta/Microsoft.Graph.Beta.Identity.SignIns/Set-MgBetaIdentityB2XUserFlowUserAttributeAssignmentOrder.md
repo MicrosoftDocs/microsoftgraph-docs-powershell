@@ -353,7 +353,7 @@ NEWASSIGNMENTORDER `<IMicrosoftGraphAssignmentOrder>`: assignmentOrder
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder)
 
-[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-setorder?view=graph-rest-beta)
 
 
 

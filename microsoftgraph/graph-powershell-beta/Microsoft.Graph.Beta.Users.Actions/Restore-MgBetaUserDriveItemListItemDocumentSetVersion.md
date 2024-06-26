@@ -280,7 +280,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserdriveitemlistitemdocumentsetversion)
 
-[https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/documentsetversion-restore?view=graph-rest-beta)
 
 
 

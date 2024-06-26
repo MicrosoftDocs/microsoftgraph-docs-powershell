@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Invoke function run
+Run reviewset query to get the list of files.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIden
 ```
 
 ## DESCRIPTION
-Invoke function run
+Run reviewset query to get the list of files.
 
 ## EXAMPLES
 
@@ -365,6 +365,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecuritycaseediscoverycasereviewsetquery)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-run?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-run?view=graph-rest-beta)
 
 
 

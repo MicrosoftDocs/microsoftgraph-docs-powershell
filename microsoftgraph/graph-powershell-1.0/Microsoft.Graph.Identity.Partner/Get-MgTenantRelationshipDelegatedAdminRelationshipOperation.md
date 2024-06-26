@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTenantRelationshipDelegatedAdminRelationshipOperation
 
 ## SYNOPSIS
-Read the properties of a delegatedAdminRelationshipOperation object.
+The long running operations associated with the delegated admin relationship.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Read the properties of a delegatedAdminRelationshipOperation object.
+The long running operations associated with the delegated admin relationship.
 
 ## PARAMETERS
 
@@ -312,10 +312,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipoperation)
-
-[https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationshipoperation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-list-operations?view=graph-rest-1.0)
 
 
 

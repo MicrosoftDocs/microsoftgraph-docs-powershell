@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-Deletes a complianceManagementPartner.
+Delete navigation property complianceManagementPartners for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Deletes a complianceManagementPartner.
+Delete navigation property complianceManagementPartners for deviceManagement
 
 ## PARAMETERS
 
@@ -217,8 +217,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementcompliancemanagementpartner)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-delete?view=graph-rest-1.0)
 
 
 

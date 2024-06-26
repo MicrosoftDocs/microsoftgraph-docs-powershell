@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCase
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a case object.
+Get cases from compliance
 
 ## SYNTAX
 
@@ -36,10 +35,7 @@ Get-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a case object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-case-get-permissions.md)]
+Get cases from compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,10 +317,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycase)
-
-[https://learn.microsoft.com/graph/api/ediscovery-case-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/ediscovery-case-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-list?view=graph-rest-1.0)
 
 
 

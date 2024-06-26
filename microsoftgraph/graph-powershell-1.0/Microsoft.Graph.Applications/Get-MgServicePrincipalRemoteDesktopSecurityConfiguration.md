@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
-Additionally you can view any targetDeviceGroups that have been configured for SSO.
+The remoteDesktopSecurityConfiguration object applied to this service principal.
+Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-beta)
@@ -32,9 +31,8 @@ Get-MgServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IApplicat
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
-Additionally you can view any targetDeviceGroups that have been configured for SSO.
+The remoteDesktopSecurityConfiguration object applied to this service principal.
+Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
 ## PARAMETERS
 
@@ -175,6 +173,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -188,8 +187,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalremotedesktopsecurityconfiguration)
-
-[https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-1.0)
 
 
 

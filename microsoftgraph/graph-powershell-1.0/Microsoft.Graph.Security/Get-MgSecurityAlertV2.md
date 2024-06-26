@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAlertV2
 
 ## SYNOPSIS
-Get the properties and relationships of an alert object.
+A collection of alerts in Microsoft 365 Defender.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAlertV2?view=graph-powershell-beta)
@@ -37,10 +37,7 @@ Get-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of an alert object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/security-alert-get-permissions.md)]
+A collection of alerts in Microsoft 365 Defender.
 
 ## PARAMETERS
 
@@ -352,10 +349,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityalertv2)
-
-[https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0)
 
 
 

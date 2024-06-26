@@ -254,9 +254,9 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-poweroff?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-stop?view=graph-rest-beta)
 
 
 

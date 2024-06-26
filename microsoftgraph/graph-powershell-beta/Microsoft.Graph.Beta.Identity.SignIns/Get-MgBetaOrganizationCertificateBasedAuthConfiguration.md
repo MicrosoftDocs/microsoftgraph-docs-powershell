@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Get the properties of a certificateBasedAuthConfiguration object.
+Navigation property to manage certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
@@ -39,7 +40,8 @@ Get-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Get the properties of a certificateBasedAuthConfiguration object.
+Navigation property to manage certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -396,10 +398,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaorganizationcertificatebasedauthconfiguration)
-
-[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-list?view=graph-rest-1.0)
 
 
 
