@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationDeviceStatus
 
 ## SYNOPSIS
-Create a new deviceConfigurationDeviceStatus object.
+Create new navigation property to deviceStatuses for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ New-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Create a new deviceConfigurationDeviceStatus object.
+Create new navigation property to deviceStatuses for deviceManagement
 
 ## PARAMETERS
 
@@ -401,8 +401,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationdevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationdevicestatus)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-create?view=graph-rest-1.0)
 
 
 

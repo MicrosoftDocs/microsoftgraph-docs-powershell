@@ -1220,6 +1220,9 @@ Locale: en-US
 ### [Get-MgSiteListItemCreatedByUserServiceProvisioningErrorCount](Get-MgSiteListItemCreatedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgSiteListItemDelta](Get-MgSiteListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 

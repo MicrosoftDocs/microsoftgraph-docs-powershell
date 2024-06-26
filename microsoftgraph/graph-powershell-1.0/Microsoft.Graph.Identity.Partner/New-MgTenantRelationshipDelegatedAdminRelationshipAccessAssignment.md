@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
-Create a new delegatedAdminAccessAssignment object.
+Create new navigation property to accessAssignments for tenantRelationships
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 ```
 
 ## DESCRIPTION
-Create a new delegatedAdminAccessAssignment object.
+Create new navigation property to accessAssignments for tenantRelationships
 
 ## PARAMETERS
 
@@ -345,8 +345,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
-
-[https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-accessassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminrelationship-post-accessassignments?view=graph-rest-1.0)
 
 
 

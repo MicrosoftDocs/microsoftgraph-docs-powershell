@@ -8,11 +8,7 @@ schema: 2.0.0
 # New-MgBetaOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Create a new organizationalBrandingLocalization object.
-This creates a localized branding and at the same time, the default branding if it doesn't exist.
-The default branding is created only once.
-It's loaded when a localized branding isn't configured for the user's browser language.
-To retrieve the default branding, see Get branding.
+Create new navigation property to localizations for organization
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationBrandingLocalization?view=graph-powershell-1.0)
@@ -73,11 +69,7 @@ New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Create a new organizationalBrandingLocalization object.
-This creates a localized branding and at the same time, the default branding if it doesn't exist.
-The default branding is created only once.
-It's loaded when a localized branding isn't configured for the user's browser language.
-To retrieve the default branding, see Get branding.
+Create new navigation property to localizations for organization
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -778,8 +770,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 CONTENTCUSTOMIZATION `<IMicrosoftGraphContentCustomization>`: contentCustomization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttributeCollection <IMicrosoftGraphKeyValue- `[]`>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
@@ -849,8 +841,6 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetaorganizationbrandinglocalization)
-
-[https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-post-localizations?view=graph-rest-1.0)
 
 
 

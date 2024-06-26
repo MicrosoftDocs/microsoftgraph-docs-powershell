@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Delete a version of a document set in a list.
+Delete navigation property documentSetVersions for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgGroupSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete a version of a document set in a list.
+Delete navigation property documentSetVersions for groups
 
 ## EXAMPLES
 
@@ -292,14 +292,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/remove-mggroupsitelistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0)
 
 
 

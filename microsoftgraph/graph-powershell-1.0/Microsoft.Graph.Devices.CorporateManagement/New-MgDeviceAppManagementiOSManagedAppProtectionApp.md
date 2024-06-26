@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementiOSManagedAppProtectionApp
 
 ## SYNOPSIS
-Create a new managedMobileApp object.
+Create new navigation property to apps for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceAppManagementiOSManagedAppProtectionApp -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-Create a new managedMobileApp object.
+Create new navigation property to apps for deviceAppManagement
 
 ## PARAMETERS
 
@@ -299,8 +299,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementiosmanagedappprotectionapp)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedmobileapp-create?view=graph-rest-1.0)
 
 
 

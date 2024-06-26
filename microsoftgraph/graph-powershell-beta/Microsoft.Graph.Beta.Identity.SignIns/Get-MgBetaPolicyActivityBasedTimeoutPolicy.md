@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Get the properties of an activityBasedTimeoutPolicy object.
+The policy that controls the idle time-out for web sessions for applications.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentit
 ```
 
 ## DESCRIPTION
-Get the properties of an activityBasedTimeoutPolicy object.
+The policy that controls the idle time-out for web sessions for applications.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyactivitybasedtimeoutpolicy)
-
-[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-list?view=graph-rest-1.0)
 
 
 

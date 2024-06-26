@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Use this API to create a new plannerPlan.
+Create new navigation property to plans for planner
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Use this API to create a new plannerPlan.
+Create new navigation property to plans for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -724,8 +724,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannerplan)
-
-[https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-plans?view=graph-rest-1.0)
 
 
 

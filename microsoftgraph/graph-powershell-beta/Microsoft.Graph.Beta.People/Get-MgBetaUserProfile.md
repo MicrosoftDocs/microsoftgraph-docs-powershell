@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfile
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a profile object for a given user.
-The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
-To get one of these navigation properties, use the corresponding GET method on that property.
-See the methods exposed by profile.
+Represents properties that are descriptive of a user in a tenant.
 
 ## SYNTAX
 
@@ -30,10 +27,7 @@ Get-MgBetaUserProfile -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a profile object for a given user.
-The profile resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
-To get one of these navigation properties, use the corresponding GET method on that property.
-See the methods exposed by profile.
+Represents properties that are descriptive of a user in a tenant.
 
 ## EXAMPLES
 ### Example 1: GET a user's profile
@@ -212,8 +206,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile)
-
-[https://learn.microsoft.com/graph/api/profile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-get?view=graph-rest-1.0)
 
 
 

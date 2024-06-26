@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Get the instances of active role assignments for the calling principal.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCu
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Get the instances of active role assignments for the calling principal.
 
 ## PARAMETERS
 
@@ -365,6 +365,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentscheduleinstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleassignmentscheduleinstancebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentscheduleinstance-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentscheduleinstance-filterbycurrentuser?view=graph-rest-beta)
 
 
 

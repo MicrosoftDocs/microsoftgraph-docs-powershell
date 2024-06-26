@@ -249,8 +249,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryrolememberbyref)
 
-[https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-list-members?view=graph-rest-1.0)
-
 
 
 

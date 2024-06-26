@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementConnectedOrganizationInternalSponsor
 
 ## SYNOPSIS
-Retrieve a list of a connectedOrganization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get internalSponsors from identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor?view=graph-powershell-beta)
@@ -24,8 +23,7 @@ Get-MgEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrgani
 ```
 
 ## DESCRIPTION
-Retrieve a list of a connectedOrganization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get internalSponsors from identityGovernance
 
 ## PARAMETERS
 
@@ -254,8 +252,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationinternalsponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationinternalsponsor)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-list-internalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-list-internalsponsors?view=graph-rest-1.0)
 
 
 

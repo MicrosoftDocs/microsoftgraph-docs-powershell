@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementiOSManagedAppProtection
 
 ## SYNOPSIS
-Deletes a iosManagedAppProtection.
+Delete navigation property iosManagedAppProtections for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-Deletes a iosManagedAppProtection.
+Delete navigation property iosManagedAppProtections for deviceAppManagement
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementiosmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-delete?view=graph-rest-1.0)
 
 
 

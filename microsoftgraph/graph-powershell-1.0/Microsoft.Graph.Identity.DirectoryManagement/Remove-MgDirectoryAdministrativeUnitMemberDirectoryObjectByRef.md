@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 
 ## SYNOPSIS
-Use this API to remove a member (user, group, or device) from an administrative unit.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitMemberDirectoryObjectByRef?view=graph-powershell-beta)
+Delete ref of navigation property members for directory
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef
 ```
 
 ## DESCRIPTION
-Use this API to remove a member (user, group, or device) from an administrative unit.
+Delete ref of navigation property members for directory
 
 ## PARAMETERS
 
@@ -207,6 +204,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -232,8 +231,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitmemberdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete-members?view=graph-rest-1.0)
 
 
 

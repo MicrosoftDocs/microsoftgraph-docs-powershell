@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 ## SYNOPSIS
-Update the properties of a deviceCompliancePolicyAssignment object.
+Update the navigation property assignments in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceCompliancePolicyAssignment object.
+Update the navigation property assignments in deviceManagement
 
 ## PARAMETERS
 
@@ -317,8 +317,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyassignment)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-update?view=graph-rest-1.0)
 
 
 

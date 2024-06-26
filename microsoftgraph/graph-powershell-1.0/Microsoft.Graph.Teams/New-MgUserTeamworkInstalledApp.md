@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-Install an app in the personal scope of the specified user.
+Create new navigation property to installedApps for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Install an app in the personal scope of the specified user.
+Create new navigation property to installedApps for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -927,8 +927,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp)
-
-[https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-post-installedapps?view=graph-rest-1.0)
 
 
 

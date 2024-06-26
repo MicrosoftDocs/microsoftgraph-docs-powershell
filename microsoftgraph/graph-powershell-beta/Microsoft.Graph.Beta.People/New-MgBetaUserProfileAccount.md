@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileAccount
 
 ## SYNOPSIS
-Create a new userAccountInformation object in a user's profile.
+Create new navigation property to account for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Create a new userAccountInformation object in a user's profile.
+Create new navigation property to account for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -531,8 +531,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaccount)
-
-[https://learn.microsoft.com/graph/api/profile-post-accounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-accounts?view=graph-rest-1.0)
 
 
 

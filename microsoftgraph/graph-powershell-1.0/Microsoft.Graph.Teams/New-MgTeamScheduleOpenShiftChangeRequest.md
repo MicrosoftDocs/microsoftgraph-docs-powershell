@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleOpenShiftChangeRequest
 
 ## SYNOPSIS
-Create instance of an openShiftChangeRequest object.
+Create new navigation property to openShiftChangeRequests for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create instance of an openShiftChangeRequest object.
+Create new navigation property to openShiftChangeRequests for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -401,8 +401,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshiftchangerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshiftchangerequest)
-
-[https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshiftchangerequest-post?view=graph-rest-1.0)
 
 
 

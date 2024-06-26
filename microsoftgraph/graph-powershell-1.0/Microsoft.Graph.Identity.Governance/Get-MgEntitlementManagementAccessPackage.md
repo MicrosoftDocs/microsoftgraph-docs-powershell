@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an accessPackage object.
+Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdenti
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an accessPackage object.
+Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -370,10 +370,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackage)
-
-[https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackages?view=graph-rest-1.0)
 
 
 

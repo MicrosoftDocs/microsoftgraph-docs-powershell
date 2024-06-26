@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a workforceintegration object.
+A workforce integration with shifts.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a workforceintegration object.
+A workforce integration with shifts.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -344,10 +344,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkworkforceintegration)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
 
 
 

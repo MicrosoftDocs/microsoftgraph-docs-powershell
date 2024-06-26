@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Update the properties of an agreement object.
+Update the navigation property agreements in identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Update-MgIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Update the properties of an agreement object.
+Update the navigation property agreements in identityGovernance
 
 ## PARAMETERS
 
@@ -705,8 +705,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermsofuseagreement)
-
-[https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-update?view=graph-rest-1.0)
 
 
 

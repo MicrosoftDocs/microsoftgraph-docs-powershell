@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserCalendarPermission
 
 ## SYNOPSIS
-Get the specified permissions object of a user or group calendar that has been shared.
+The permissions of the users with whom the calendar is shared.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarPermission?view=graph-powershell-1.0)
@@ -59,7 +59,7 @@ Get-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-Property <St
 ```
 
 ## DESCRIPTION
-Get the specified permissions object of a user or group calendar that has been shared.
+The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -337,8 +337,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermission)
-
-[https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-get?view=graph-rest-1.0)
 
 
 

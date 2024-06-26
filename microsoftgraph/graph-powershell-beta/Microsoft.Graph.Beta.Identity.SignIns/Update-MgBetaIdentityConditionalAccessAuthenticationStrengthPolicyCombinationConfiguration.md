@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
-Update the properties of an authenticationCombinationConfiguration object.
-The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
+Update the navigation property combinationConfigurations in identity
 
 ## SYNTAX
 
@@ -47,8 +46,7 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationCon
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationCombinationConfiguration object.
-The properties can be for one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
+Update the navigation property combinationConfigurations in identity
 
 ## PARAMETERS
 
@@ -345,8 +343,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrengthpolicycombinationconfiguration)
-
-[https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-update?view=graph-rest-1.0)
 
 
 

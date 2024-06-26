@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a webAccount object from a user's profile.
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a webAccount object from a user's profile.
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilewebaccount)
-
-[https://learn.microsoft.com/graph/api/webaccount-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/webaccount-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-webaccounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-webaccounts?view=graph-rest-1.0)
 
 
 

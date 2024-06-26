@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaChatMessage
 
 ## SYNOPSIS
-Retrieve a single message or a message reply in a channel or a chat.
+A collection of all the messages in the chat.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatMessage?view=graph-powershell-1.0)
@@ -46,7 +47,8 @@ Get-MgBetaChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve a single message or a message reply in a channel or a chat.
+A collection of all the messages in the chat.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Get a message in a chat
@@ -397,10 +399,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachatmessage)
-
-[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-messages?view=graph-rest-1.0)
 
 
 

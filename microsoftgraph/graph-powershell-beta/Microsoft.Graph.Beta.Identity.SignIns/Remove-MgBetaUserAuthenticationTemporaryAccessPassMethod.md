@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
-Delete a users's temporaryAccessPassAuthenticationMethod object.
+Delete navigation property temporaryAccessPassMethods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Delete a users's temporaryAccessPassAuthenticationMethod object.
+Delete navigation property temporaryAccessPassMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -297,8 +297,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationtemporaryaccesspassmethod)
-
-[https://learn.microsoft.com/graph/api/temporaryaccesspassauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/temporaryaccesspassauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

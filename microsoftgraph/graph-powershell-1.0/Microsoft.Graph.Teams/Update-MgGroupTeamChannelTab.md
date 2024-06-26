@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamChannelTab
 
 ## SYNOPSIS
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
+Update the navigation property tabs in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
@@ -47,7 +47,7 @@ Update-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the properties of the specified tab.This API can be used to configure the content of the tab.
+Update the navigation property tabs in groups
 
 ## EXAMPLES
 
@@ -455,8 +455,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamchanneltab)
-
-[https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-patch-tabs?view=graph-rest-1.0)
 
 
 

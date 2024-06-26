@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTrustFrameworkPolicy
 
 ## SYNOPSIS
-Delete an existing trustFrameworkPolicy.
+Delete navigation property policies for trustFramework
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaTrustFrameworkPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete an existing trustFrameworkPolicy.
+Delete navigation property policies for trustFramework
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTrustFrameworkPolicy Cmdlet
@@ -275,8 +275,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatrustframeworkpolicy)
-
-[https://learn.microsoft.com/graph/api/trustframeworkpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkpolicy-delete?view=graph-rest-1.0)
 
 
 

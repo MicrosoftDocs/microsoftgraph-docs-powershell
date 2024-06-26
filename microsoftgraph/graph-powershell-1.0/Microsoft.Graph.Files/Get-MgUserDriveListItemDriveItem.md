@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDriveListItemDriveItem
 
 ## SYNOPSIS
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItemDriveItem?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgUserDriveListItemDriveItem -InputObject <IFilesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
+For document libraries, the driveItem relationship exposes the listItem as a driveItem
 
 ## PARAMETERS
 

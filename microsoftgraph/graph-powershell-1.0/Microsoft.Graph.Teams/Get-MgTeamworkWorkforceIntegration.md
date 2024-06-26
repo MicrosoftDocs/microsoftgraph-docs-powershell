@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a workforceIntegration object.
+Get workforceIntegrations from teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a workforceIntegration object.
+Get workforceIntegrations from teamwork
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,10 +336,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-list?view=graph-rest-1.0)
 
 
 

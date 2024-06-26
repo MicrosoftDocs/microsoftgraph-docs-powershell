@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusiness
 
 ## SYNOPSIS
-Create a new Microsoft Bookings business in a tenant.
-This is the first step in setting up a Bookings business where you must specify the business display name.
-You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
+Create new navigation property to bookingBusinesses for solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusiness?view=graph-powershell-beta)
@@ -38,9 +36,7 @@ New-MgBookingBusiness -BodyParameter <IMicrosoftGraphBookingBusiness> [-Response
 ```
 
 ## DESCRIPTION
-Create a new Microsoft Bookings business in a tenant.
-This is the first step in setting up a Bookings business where you must specify the business display name.
-You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the bookingBusiness.
+Create new navigation property to bookingBusinesses for solutions
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -492,6 +488,10 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[CustomerEmailAddress <String>]`: 
+  - `[CustomerName <String>]`: 
+  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+  - `[CustomerPhone <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -576,6 +576,10 @@ Nullable.
 Read-only.
     - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
     - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+    - `[CustomerEmailAddress <String>]`: 
+    - `[CustomerName <String>]`: 
+    - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+    - `[CustomerPhone <String>]`: 
     - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
     - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -730,6 +734,10 @@ Nullable.
 Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
+  - `[CustomerEmailAddress <String>]`: 
+  - `[CustomerName <String>]`: 
+  - `[CustomerNotes <String>]`: Notes from the customer associated with this appointment.
+  - `[CustomerPhone <String>]`: 
   - `[CustomerTimeZone <String>]`: The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase- `[]`>]`: A collection of customer properties for an appointment.
@@ -900,8 +908,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusiness)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
-Delete a group from the list of groups included in a mobile app management policy.
+Delete ref of navigation property includedGroups for policies
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -InputObject <
 ```
 
 ## DESCRIPTION
-Delete a group from the list of groups included in a mobile app management policy.
+Delete ref of navigation property includedGroups for policies
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
@@ -319,8 +319,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-delete-includedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-delete-includedgroups?view=graph-rest-1.0)
 
 
 

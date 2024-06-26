@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupTeamTagMember
 
 ## SYNOPSIS
-Create a new teamworkTagMember object in a team.
+Create new navigation property to members for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamTagMember?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new teamworkTagMember object in a team.
+Create new navigation property to members for groups
 
 ## EXAMPLES
 
@@ -337,8 +337,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamtagmember)
-
-[https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-post?view=graph-rest-1.0)
 
 
 

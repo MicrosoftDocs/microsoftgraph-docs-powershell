@@ -8,11 +8,9 @@ schema: 2.0.0
 # Get-MgUserDriveSpecial
 
 ## SYNOPSIS
-Use the special collection to access a special folder by name.
-Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
-If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
-Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
-If a user deletes one, it is recreated when written to again.
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveSpecial?view=graph-powershell-beta)
@@ -42,11 +40,9 @@ Get-MgUserDriveSpecial -InputObject <IFilesIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Use the special collection to access a special folder by name.
-Special folders provide simple aliases to access well-known folders in OneDrive without the need to look up the folder by path (which would require localization), or reference the folder with an ID.
-If a special folder is renamed or moved to another location within the drive, this syntax will continue to find that folder.
-Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist.
-If a user deletes one, it is recreated when written to again.
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -352,8 +348,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdrivespecial)
-
-[https://learn.microsoft.com/graph/api/drive-get-specialfolder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-get-specialfolder?view=graph-rest-1.0)
 
 
 

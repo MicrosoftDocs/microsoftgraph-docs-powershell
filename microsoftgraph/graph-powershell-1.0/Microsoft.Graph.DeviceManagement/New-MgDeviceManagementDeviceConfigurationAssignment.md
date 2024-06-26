@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationAssignment
 
 ## SYNOPSIS
-Create a new deviceConfigurationAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Create a new deviceConfigurationAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 ## PARAMETERS
 
@@ -300,8 +300,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationassignment)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-create?view=graph-rest-1.0)
 
 
 

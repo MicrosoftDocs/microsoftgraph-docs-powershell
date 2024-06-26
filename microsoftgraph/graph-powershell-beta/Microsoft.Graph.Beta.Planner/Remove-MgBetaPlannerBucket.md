@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPlannerBucket
 
 ## SYNOPSIS
-Delete plannerBucket.
+Delete navigation property buckets for planner
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerBucket?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete plannerBucket.
+Delete navigation property buckets for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -214,8 +214,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerbucket)
-
-[https://learn.microsoft.com/graph/api/plannerbucket-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-delete?view=graph-rest-1.0)
 
 
 

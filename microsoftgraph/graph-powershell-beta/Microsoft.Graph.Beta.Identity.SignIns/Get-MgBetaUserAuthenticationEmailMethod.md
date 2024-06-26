@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationEmailMethod
 
 ## SYNOPSIS
-Retrieve a user's single email Authentication Method object.
+Represents the email addresses registered to a user for authentication.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity> 
 ```
 
 ## DESCRIPTION
-Retrieve a user's single email Authentication Method object.
+Represents the email addresses registered to a user for authentication.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -396,10 +396,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationemailmethod)
-
-[https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/emailauthenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-emailmethods?view=graph-rest-1.0)
 
 
 

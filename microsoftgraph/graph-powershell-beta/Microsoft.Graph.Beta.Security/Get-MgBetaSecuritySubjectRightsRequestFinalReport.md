@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaSecuritySubjectRightsRequestFinalReport
 
 ## SYNOPSIS
-Invoke function getFinalReport
+Get the final report for a subject rights request.
+The report is a text file that contains information about the files that were included by the privacy administrator.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestFinalReport](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalReport?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaSecuritySubjectRightsRequestFinalReport -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Invoke function getFinalReport
+Get the final report for a subject rights request.
+The report is a text file that contains information about the files that were included by the privacy administrator.
 
 ## EXAMPLES
 
@@ -245,6 +247,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalreport)
+
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-beta)
 
 
 

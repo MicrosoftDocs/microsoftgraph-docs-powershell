@@ -686,9 +686,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationClassAssignmentCategory](Remove-MgBetaEducationClassAssignmentCategory.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEducationClassAssignmentCategoryByRef](Remove-MgBetaEducationClassAssignmentCategoryByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEducationClassAssignmentCategoryEducationCategoryByRef](Remove-MgBetaEducationClassAssignmentCategoryEducationCategoryByRef.md)
 {{ Fill in the Description }}
 
@@ -734,9 +731,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource](Remove-MgBetaEducationClassAssignmentSubmissionSubmittedResourceDependentResource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEducationClassMemberByRef](Remove-MgBetaEducationClassMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEducationClassMemberEducationUserByRef](Remove-MgBetaEducationClassMemberEducationUserByRef.md)
 {{ Fill in the Description }}
 
@@ -746,9 +740,6 @@ Locale: en-US
 ### [Remove-MgBetaEducationClassModuleResource](Remove-MgBetaEducationClassModuleResource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEducationClassTeacherByRef](Remove-MgBetaEducationClassTeacherByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEducationClassTeacherEducationUserByRef](Remove-MgBetaEducationClassTeacherEducationUserByRef.md)
 {{ Fill in the Description }}
 
@@ -756,9 +747,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignment](Remove-MgBetaEducationMeAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEducationMeAssignmentCategoryByRef](Remove-MgBetaEducationMeAssignmentCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationMeAssignmentCategoryEducationCategoryByRef](Remove-MgBetaEducationMeAssignmentCategoryEducationCategoryByRef.md)
@@ -800,13 +788,7 @@ Locale: en-US
 ### [Remove-MgBetaEducationSchool](Remove-MgBetaEducationSchool.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEducationSchoolClassByRef](Remove-MgBetaEducationSchoolClassByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEducationSchoolClassEducationClassByRef](Remove-MgBetaEducationSchoolClassEducationClassByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEducationSchoolUserByRef](Remove-MgBetaEducationSchoolUserByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationSchoolUserEducationUserByRef](Remove-MgBetaEducationSchoolUserEducationUserByRef.md)
@@ -825,9 +807,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignment](Remove-MgBetaEducationUserAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEducationUserAssignmentCategoryByRef](Remove-MgBetaEducationUserAssignmentCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEducationUserAssignmentCategoryEducationCategoryByRef](Remove-MgBetaEducationUserAssignmentCategoryEducationCategoryByRef.md)

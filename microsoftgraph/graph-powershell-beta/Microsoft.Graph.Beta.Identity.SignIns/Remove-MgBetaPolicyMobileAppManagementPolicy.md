@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyMobileAppManagementPolicy
 
 ## SYNOPSIS
-Delete a mobilityManagementPolicy object.
+Delete navigation property mobileAppManagementPolicies for policies
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Delete a mobilityManagementPolicy object.
+Delete navigation property mobileAppManagementPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaPolicyMobileAppManagementPolicy Cmdlet
@@ -275,8 +275,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobileappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicymobileappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile
 
 ## SYNOPSIS
-Read the properties and relationships of an ediscoveryFile object.
+Represents files within the review set.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an ediscoveryFile object.
+Represents files within the review set.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -413,10 +413,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewsetfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasereviewsetfile)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryfile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryfile-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-files?view=graph-rest-1.0)
 
 
 

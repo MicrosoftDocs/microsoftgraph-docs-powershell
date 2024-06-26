@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgApplicationByAppId
 
 ## SYNOPSIS
-Update the properties of an application object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationByAppId?view=graph-powershell-beta)
+Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 ## SYNTAX
 
@@ -92,7 +89,7 @@ Update-MgApplicationByAppId -InputObject <IApplicationsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the properties of an application object.
+Create a new application object if it doesn't exist, or update the properties of an existing application object.
 
 ## PARAMETERS
 
@@ -492,7 +489,7 @@ Accept wildcard characters: False
 ### -IdentifierUris
 Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -981,7 +978,9 @@ Accept wildcard characters: False
 ```
 
 ### -UniqueName
-.
+The unique identifier that can be assigned to an application and used as an alternate key.
+Immutable.
+Read-only.
 
 ```yaml
 Type: String
@@ -1377,6 +1376,7 @@ It has a limit of 600 characters.
 Required.
     - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -1407,7 +1407,7 @@ Always null when the object hasn't been deleted.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -1835,7 +1835,9 @@ Required.
 Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[UniqueName <String>]`: 
+  - `[UniqueName <String>]`: The unique identifier that can be assigned to an application and used as an alternate key.
+Immutable.
+Read-only.
   - `[VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>]`: verifiedPublisher
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AddedDateTime <DateTime?>]`: The timestamp when the verified publisher was first added or most recently updated.
@@ -1913,6 +1915,7 @@ It has a limit of 600 characters.
 Required.
   - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -1972,6 +1975,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -2409,7 +2413,7 @@ WEB `<IMicrosoftGraphWebApplication>`: webApplication
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationbyappid)
 
-[https://learn.microsoft.com/graph/api/application-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-upsert?view=graph-rest-1.0)
 
 
 

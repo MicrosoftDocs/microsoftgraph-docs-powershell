@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Delete a certificateBasedAuthConfiguration object.
+Delete navigation property certificateBasedAuthConfiguration for organization
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdenti
 ```
 
 ## DESCRIPTION
-Delete a certificateBasedAuthConfiguration object.
+Delete navigation property certificateBasedAuthConfiguration for organization
 
 ## PARAMETERS
 
@@ -284,8 +284,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaorganizationcertificatebasedauthconfiguration)
-
-[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-delete?view=graph-rest-1.0)
 
 
 

@@ -404,8 +404,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsetrelation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsetrelation)
 
-[https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-list-relations?view=graph-rest-1.0)
-
 
 
 

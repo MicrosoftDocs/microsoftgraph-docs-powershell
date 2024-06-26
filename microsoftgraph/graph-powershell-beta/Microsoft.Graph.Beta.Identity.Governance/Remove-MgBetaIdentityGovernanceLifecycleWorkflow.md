@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityGovernanceLifecycleWorkflow
 
 ## SYNOPSIS
-Delete a workflow object and its associated tasks, taskProcessingResults and versions.
-You can restore a deleted workflow and its associated objects within 30 days of deletion.
+Delete navigation property workflows for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernan
 ```
 
 ## DESCRIPTION
-Delete a workflow object and its associated tasks, taskProcessingResults and versions.
-You can restore a deleted workflow and its associated objects within 30 days of deletion.
+Delete navigation property workflows for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -306,8 +304,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernancelifecycleworkflow)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-workflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-delete?view=graph-rest-1.0)
 
 
 

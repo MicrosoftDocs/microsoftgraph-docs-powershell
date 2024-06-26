@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgBetaSiteDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a set of newly created, updated, or deleted sites without having to perform a full read of the entire sites collection.
+A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the sites.
+It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.The application calls the API without specifying any parameters.The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.Your application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
+After you receive all the changes, you can apply them to your local state.To monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
+Any resources marked as deleted should be removed from your local state.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteDelta](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDelta?view=graph-powershell-1.0)
@@ -22,7 +26,11 @@ Get-MgBetaSiteDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a set of newly created, updated, or deleted sites without having to perform a full read of the entire sites collection.
+A delta function call for sites is similar to a GET request, except that by appropriately applying state tokens in one or more of these calls, you can query for incremental changes in the sites.
+It allows you to maintain and synchronize a local store of a user's sites without having to fetch all the sites from the server every time.The application calls the API without specifying any parameters.The service begins enumerating sites and returns pages of changes to these sites, accompanied by either an @odata.nextLink or an @odata.deltaLink.Your application should continue making calls using the @odata.nextLink until there's an @odata.deltaLink  in the response.
+After you receive all the changes, you can apply them to your local state.To monitor future changes, call the delta API by using the @odata.deltaLink in the previous response.
+Any resources marked as deleted should be removed from your local state.
 
 ## PARAMETERS
 
@@ -236,6 +244,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitedelta)
+
+[https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-delta?view=graph-rest-beta)
 
 
 

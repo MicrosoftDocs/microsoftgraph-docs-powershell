@@ -226,7 +226,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/publish-mgbetabookingbusiness)
 
-[https://learn.microsoft.com/graph/api/bookingbusiness-publish?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-publish?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/bookingbusiness-publish?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bookingbusiness-publish?view=graph-rest-beta)
 
 
 

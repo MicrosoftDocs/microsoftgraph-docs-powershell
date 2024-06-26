@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Read the properties and relationships of an identityUserFlowAttributeAssignment object.
+The user attribute assignments included in the user flow.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an identityUserFlowAttributeAssignment object.
+The user attribute assignments included in the user flow.
 
 ## EXAMPLES
 ### Example 1: Get the details of an identityUserFlowAttributeAssignment
@@ -404,10 +404,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowuserattributeassignment)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-userattributeassignments?view=graph-rest-1.0)
 
 
 

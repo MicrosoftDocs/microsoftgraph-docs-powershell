@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPlannerRosterMember
 
 ## SYNOPSIS
-Read the properties and relationships of a plannerRosterMember object.
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a plannerRosterMember object.
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -323,10 +323,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrostermember)
-
-[https://learn.microsoft.com/graph/api/plannerrostermember-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerrostermember-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/plannerroster-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerroster-list-members?view=graph-rest-1.0)
 
 
 

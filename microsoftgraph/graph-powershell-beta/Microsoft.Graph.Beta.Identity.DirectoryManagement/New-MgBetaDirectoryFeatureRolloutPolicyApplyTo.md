@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
+Create new navigation property to appliesTo for directory
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgBetaDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryM
 ```
 
 ## DESCRIPTION
-Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
+Create new navigation property to appliesTo for directory
 
 ## PARAMETERS
 
@@ -293,8 +293,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicyapplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicyapplyto)
-
-[https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-post-appliesto?view=graph-rest-1.0)
 
 
 

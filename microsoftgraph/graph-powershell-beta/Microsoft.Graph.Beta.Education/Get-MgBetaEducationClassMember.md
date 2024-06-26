@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationClassMember
 
 ## SYNOPSIS
-Retrieve the teachers and students for a class.
-Note that if the delegated token is used, members can only be seen by other members of the class.
+All users in the class.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassMember](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMember?view=graph-powershell-1.0)
@@ -24,8 +24,8 @@ Get-MgBetaEducationClassMember -EducationClassId <String> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the teachers and students for a class.
-Note that if the delegated token is used, members can only be seen by other members of the class.
+All users in the class.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -267,8 +267,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassmember)
-
-[https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-members?view=graph-rest-1.0)
 
 
 

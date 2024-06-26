@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Update the properties of an authenticationContextClassReference object.
+Update the navigation property authenticationContextClassReferences in identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationContextClassReference object.
+Update the navigation property authenticationContextClassReferences in identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -392,8 +392,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
-
-[https://learn.microsoft.com/graph/api/authenticationcontextclassreference-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-update?view=graph-rest-1.0)
 
 
 

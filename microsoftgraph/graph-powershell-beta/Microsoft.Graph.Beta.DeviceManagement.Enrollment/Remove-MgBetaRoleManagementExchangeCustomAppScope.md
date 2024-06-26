@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementExchangeCustomAppScope
 
 ## SYNOPSIS
-Delete a customAppScope object of an RBAC provider.
-Currently only the Exchange Online RBAC provider is supported.
+Delete navigation property customAppScopes for roleManagement
 
 ## SYNTAX
 
@@ -28,8 +27,7 @@ Remove-MgBetaRoleManagementExchangeCustomAppScope -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Delete a customAppScope object of an RBAC provider.
-Currently only the Exchange Online RBAC provider is supported.
+Delete navigation property customAppScopes for roleManagement
 
 ## PARAMETERS
 
@@ -218,8 +216,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementexchangecustomappscope)
-
-[https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customappscope-delete?view=graph-rest-1.0)
 
 
 

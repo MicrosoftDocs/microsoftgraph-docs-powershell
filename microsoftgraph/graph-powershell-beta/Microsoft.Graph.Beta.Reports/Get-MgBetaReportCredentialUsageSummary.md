@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportCredentialUsageSummary
 
 ## SYNOPSIS
-Invoke function getCredentialUsageSummary
+Report the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaReportCredentialUsageSummary -InputObject <IReportsIdentity> [-Count] 
 ```
 
 ## DESCRIPTION
-Invoke function getCredentialUsageSummary
+Report the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## EXAMPLES
 
@@ -296,6 +296,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialusagesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportcredentialusagesummary)
+
+[https://learn.microsoft.com/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta)
 
 
 

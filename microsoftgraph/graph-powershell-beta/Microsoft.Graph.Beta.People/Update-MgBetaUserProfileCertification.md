@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileCertification
 
 ## SYNOPSIS
-Update the properties of a personCertification object from a user's profile.
+Update the navigation property certifications in users
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a personCertification object from a user's profile.
+Update the navigation property certifications in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -630,8 +630,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilecertification)
-
-[https://learn.microsoft.com/graph/api/personcertification-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personcertification-update?view=graph-rest-1.0)
 
 
 

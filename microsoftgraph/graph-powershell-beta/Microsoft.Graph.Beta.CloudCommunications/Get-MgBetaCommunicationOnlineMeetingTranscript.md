@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaCommunicationOnlineMeetingTranscript
 
 ## SYNOPSIS
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
+The transcripts of an online meeting.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingTranscript?view=graph-powershell-1.0)
@@ -49,10 +47,8 @@ Get-MgBetaCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunication
 ```
 
 ## DESCRIPTION
-Retrieve a callTranscript object associated with a scheduled onlineMeeting.
-This API doesn't support getting call transcripts from channel meetings.
-Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
-Retrieving the content of the transcript returns the stream of text associated with the transcript.
+The transcripts of an online meeting.
+Read-only.
 
 ## EXAMPLES
 
@@ -356,9 +352,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingtranscript)
 
-[https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calltranscript-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-list-transcripts?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAttackSimulationAutomation
 
 ## SYNOPSIS
-Get an attack simulation automation for a tenant.
+Represents simulation automation created to run on a tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get an attack simulation automation for a tenant.
+Represents simulation automation created to run on a tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -363,10 +363,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation)
-
-[https://learn.microsoft.com/graph/api/simulationautomation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/simulationautomation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-simulationautomations?view=graph-rest-1.0)
 
 
 

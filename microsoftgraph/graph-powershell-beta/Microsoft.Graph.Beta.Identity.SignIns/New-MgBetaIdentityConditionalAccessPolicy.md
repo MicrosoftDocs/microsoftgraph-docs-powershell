@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Create a new conditionalAccessPolicy.
+Create new navigation property to policies for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 ```
 
 ## DESCRIPTION
-Create a new conditionalAccessPolicy.
+Create new navigation property to policies for identity
 
 ## EXAMPLES
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
@@ -836,8 +836,6 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-policies?view=graph-rest-1.0)
 
 
 

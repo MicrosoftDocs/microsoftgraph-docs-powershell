@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSkypeForBusinessParticipantActivityMinuteCount
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessParticipantActivityMinuteCounts
+Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.
+Types of conference sessions include audio/video.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessParticipantActivityMinuteCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessParticipantActivityMinuteCount?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgReportSkypeForBusinessParticipantActivityMinuteCount -InputObject <IReport
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessParticipantActivityMinuteCounts
+Get usage trends on the length in minutes and type of conference sessions that users from your organization participated in.
+Types of conference sessions include audio/video.
 
 ## PARAMETERS
 
@@ -183,6 +185,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessparticipantactivityminutecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessparticipantactivityminutecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementTermAndCondition
 
 ## SYNOPSIS
-Deletes a termsAndConditions.
+Delete navigation property termsAndConditions for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementTermAndCondition -InputObject <IDeviceManagementAdminis
 ```
 
 ## DESCRIPTION
-Deletes a termsAndConditions.
+Delete navigation property termsAndConditions for deviceManagement
 
 ## PARAMETERS
 
@@ -217,8 +217,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandcondition)
-
-[https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-delete?view=graph-rest-1.0)
 
 
 

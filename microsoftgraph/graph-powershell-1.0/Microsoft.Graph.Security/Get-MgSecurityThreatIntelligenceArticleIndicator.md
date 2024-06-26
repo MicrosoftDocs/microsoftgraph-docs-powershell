@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
-Read the properties and relationships of an articleIndicator object.
+Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgSecurityThreatIntelligenceArticleIndicator -InputObject <ISecurityIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an articleIndicator object.
+Refers to indicators of threat or compromise highlighted in an article.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -387,10 +387,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticleindicator)
-
-[https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-articleindicator-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-list-indicators?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementManagedEBookDeviceState
 
 ## SYNOPSIS
-Deletes a deviceInstallState.
+Delete navigation property deviceStates for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-Deletes a deviceInstallState.
+Delete navigation property deviceStates for deviceAppManagement
 
 ## PARAMETERS
 
@@ -242,8 +242,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookdevicestate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookdevicestate)
-
-[https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-deviceinstallstate-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTenantRelationshipManagedTenantTag
 
 ## SYNOPSIS
-Delete a tenantTag object.
+Delete navigation property tenantTags for tenantRelationships
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 ```
 
 ## DESCRIPTION
-Delete a tenantTag object.
+Delete navigation property tenantTags for tenantRelationships
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTenantRelationshipManagedTenantTag Cmdlet
@@ -236,8 +236,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/remove-mgbetatenantrelationshipmanagedtenanttag)
-
-[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-delete?view=graph-rest-1.0)
 
 
 

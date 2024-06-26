@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportGroupArchivedPrintJob
 
 ## SYNOPSIS
-Invoke function getGroupArchivedPrintJobs
+Get a list of archived print jobs for a particular group.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportGroupArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportGroupArchivedPrintJob?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaReportGroupArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [
 ```
 
 ## DESCRIPTION
-Invoke function getGroupArchivedPrintJobs
+Get a list of archived print jobs for a particular group.
 
 ## EXAMPLES
 
@@ -283,6 +283,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportgrouparchivedprintjob)
+
+[https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta)
 
 
 

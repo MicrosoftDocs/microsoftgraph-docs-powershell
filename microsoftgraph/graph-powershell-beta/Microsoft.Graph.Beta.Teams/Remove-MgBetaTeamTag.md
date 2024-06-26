@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTeamTag
 
 ## SYNOPSIS
-Delete a tag object permanently.
+Delete navigation property tags for teams
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamTag?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Respons
 ```
 
 ## DESCRIPTION
-Delete a tag object permanently.
+Delete navigation property tags for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,8 +261,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamtag)
-
-[https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktag-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOnPremisePublishingProfileConnectorGroup
 
 ## SYNOPSIS
-Create a connectorGroup object.
+Create new navigation property to connectorGroups for onPremisesPublishingProfiles
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Create a connectorGroup object.
+Create new navigation property to connectorGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
@@ -577,7 +577,7 @@ Always null when the object hasn't been deleted.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -1351,7 +1351,7 @@ Always null when the object hasn't been deleted.
 Read-only.
     - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -2181,7 +2181,7 @@ Always null when the object hasn't been deleted.
 Read-only.
       - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -2743,8 +2743,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileconnectorgroup)
-
-[https://learn.microsoft.com/graph/api/connectorgroup-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectorgroup-post?view=graph-rest-1.0)
 
 
 

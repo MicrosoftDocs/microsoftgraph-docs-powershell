@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupTeamTagMember
 
 ## SYNOPSIS
-Delete a member from a standard tag in a team.
+Delete navigation property members for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamTagMember?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgGroupTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a member from a standard tag in a team.
+Delete navigation property members for groups
 
 ## PARAMETERS
 
@@ -255,8 +255,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamtagmember)
-
-[https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworktagmember-delete?view=graph-rest-1.0)
 
 
 

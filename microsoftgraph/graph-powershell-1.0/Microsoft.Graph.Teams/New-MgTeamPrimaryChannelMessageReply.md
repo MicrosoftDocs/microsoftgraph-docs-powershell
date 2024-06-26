@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamPrimaryChannelMessageReply?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ New-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for teams
 
 ## EXAMPLES
 
@@ -1027,8 +1027,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessagereply)
-
-[https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
 
 
 

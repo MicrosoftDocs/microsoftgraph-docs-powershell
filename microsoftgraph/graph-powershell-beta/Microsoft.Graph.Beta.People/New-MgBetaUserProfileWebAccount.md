@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new webAccount object in a user's profile.
+Create new navigation property to webAccounts for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -575,8 +575,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilewebaccount)
-
-[https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-webaccounts?view=graph-rest-1.0)
 
 
 

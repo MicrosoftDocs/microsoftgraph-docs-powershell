@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRiskyServicePrincipal
 
 ## SYNOPSIS
-Read the properties and relationships of a riskyServicePrincipal object.
+Microsoft Entra service principals that are at risk.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipal?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a riskyServicePrincipal object.
+Microsoft Entra service principals that are at risk.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipal)
-
-[https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-riskyserviceprincipals?view=graph-rest-1.0)
 
 
 

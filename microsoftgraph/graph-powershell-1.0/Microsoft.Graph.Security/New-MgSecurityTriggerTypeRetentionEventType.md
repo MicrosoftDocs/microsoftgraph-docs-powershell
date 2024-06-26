@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityTriggerTypeRetentionEventType
 
 ## SYNOPSIS
-Create a new retentionEventType object.
+Create new navigation property to retentionEventTypes for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgSecurityTriggerTypeRetentionEventType -BodyParameter <IMicrosoftGraphSecur
 ```
 
 ## DESCRIPTION
-Create a new retentionEventType object.
+Create new navigation property to retentionEventTypes for security
 
 ## PARAMETERS
 
@@ -312,8 +312,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritytriggertyperetentioneventtype)
-
-[https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-post?view=graph-rest-1.0)
 
 
 

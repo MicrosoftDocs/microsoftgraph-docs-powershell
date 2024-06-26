@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileAnniversary
 
 ## SYNOPSIS
-Delete a personAnniversary object from the user's profile.
+Delete navigation property anniversaries for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete a personAnniversary object from the user's profile.
+Delete navigation property anniversaries for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileanniversary)
-
-[https://learn.microsoft.com/graph/api/personanniversary-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personanniversary-delete?view=graph-rest-1.0)
 
 
 
