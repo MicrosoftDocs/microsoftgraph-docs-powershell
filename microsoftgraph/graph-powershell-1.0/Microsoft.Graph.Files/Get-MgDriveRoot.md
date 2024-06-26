@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
-It may also be the unique ID of a SharePoint list item.
+The root folder of the drive.
+Read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRoot?view=graph-powershell-beta)
@@ -31,8 +31,8 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.item-id is the ID of a driveItem.
-It may also be the unique ID of a SharePoint list item.
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -200,8 +200,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveroot)
-
-[https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-get?view=graph-rest-1.0)
 
 
 

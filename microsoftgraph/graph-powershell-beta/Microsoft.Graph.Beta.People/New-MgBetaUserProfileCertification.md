@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileCertification
 
 ## SYNOPSIS
-Create a new personCertification object in a user's profile.
+Create new navigation property to certifications for users
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Create a new personCertification object in a user's profile.
+Create new navigation property to certifications for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -619,8 +619,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilecertification](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilecertification)
-
-[https://learn.microsoft.com/graph/api/profile-post-certifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-certifications?view=graph-rest-1.0)
 
 
 

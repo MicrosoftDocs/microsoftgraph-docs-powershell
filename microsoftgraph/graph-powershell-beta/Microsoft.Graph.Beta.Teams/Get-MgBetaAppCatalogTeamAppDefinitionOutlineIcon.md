@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
-Retrieve a Teams app icon associated with a specific definition of an app.
+The outline version of the Teams app's icon.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve a Teams app icon associated with a specific definition of an app.
+The outline version of the Teams app's icon.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
@@ -237,8 +237,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitionoutlineicon)
-
-[https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyClaimMappingPolicy
 
 ## SYNOPSIS
-Create a new claimsMappingPolicy object.
+Create new navigation property to claimsMappingPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ New-MgBetaPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Create a new claimsMappingPolicy object.
+Create new navigation property to claimsMappingPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,8 +299,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyclaimmappingpolicy)
-
-[https://learn.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

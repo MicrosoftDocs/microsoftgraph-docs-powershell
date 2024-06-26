@@ -8,11 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove an owner from a servicePrincipal object.
-As a recommended best practice, service principals should have at least two owners.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerDirectoryObjectByRef?view=graph-powershell-beta)
+Delete ref of navigation property owners for servicePrincipals
 
 ## SYNTAX
 
@@ -31,8 +27,7 @@ Remove-MgServicePrincipalOwnerDirectoryObjectByRef -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Remove an owner from a servicePrincipal object.
-As a recommended best practice, service principals should have at least two owners.
+Delete ref of navigation property owners for servicePrincipals
 
 ## PARAMETERS
 
@@ -219,6 +214,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -232,8 +228,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalownerdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-delete-owners?view=graph-rest-1.0)
 
 
 

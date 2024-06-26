@@ -8,7 +8,16 @@ schema: 2.0.0
 # Get-MgTeamChannelMessageReplyDelta
 
 ## SYNOPSIS
-Invoke function delta
+Retrieve the list of messages (without the replies) in a channel of a team.
+By using delta query, you can get new or updated messages in a channel.
+Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
+To get the replies for a message, use the list message replies or the get message reply operation.
+A GET request with the delta function returns either: State tokens are opaque to the client.
+To proceed with a round of change tracking, copy and apply the @odata.nextLink or @odata.deltaLink URL returned from the last GET request to the next delta function call for that same calendar view.
+A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
+You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
+For more information, see the delta query documentation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReplyDelta](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessageReplyDelta?view=graph-powershell-beta)
@@ -32,7 +41,16 @@ Get-MgTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Retrieve the list of messages (without the replies) in a channel of a team.
+By using delta query, you can get new or updated messages in a channel.
+Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that messages view periodically.
+To get the replies for a message, use the list message replies or the get message reply operation.
+A GET request with the delta function returns either: State tokens are opaque to the client.
+To proceed with a round of change tracking, copy and apply the @odata.nextLink or @odata.deltaLink URL returned from the last GET request to the next delta function call for that same calendar view.
+A @odata.deltaLink returned in a response signifies that the current round of change tracking is complete.
+You can save and use the @odata.deltaLink URL when you begin to retrieve more changes (messages changed or posted after acquiring @odata.deltaLink).
+For more information, see the delta query documentation.
 
 ## EXAMPLES
 
@@ -364,6 +382,8 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereplydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamchannelmessagereplydelta)
+
+[https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-delta?view=graph-rest-1.0)
 
 
 

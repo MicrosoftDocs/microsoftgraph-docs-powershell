@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a timeoffrequest object.
+The time off requests in the schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleTimeOffRequest?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a timeoffrequest object.
+The time off requests in the schedule.
 
 ## EXAMPLES
 
@@ -325,10 +325,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest)
-
-[https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-list?view=graph-rest-1.0)
 
 
 

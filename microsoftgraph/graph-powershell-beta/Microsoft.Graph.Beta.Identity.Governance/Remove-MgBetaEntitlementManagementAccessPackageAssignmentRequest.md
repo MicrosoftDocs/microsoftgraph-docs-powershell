@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-Delete an accessPackageAssignmentRequest object.
-This request can be made to remove a denied or completed request.
-You can't delete an access package assignment request if it has any accessPackageAssignment objects.
+Delete navigation property accessPackageAssignmentRequests for identityGovernance
 
 ## SYNTAX
 
@@ -29,9 +27,7 @@ Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest -InputObject <I
 ```
 
 ## DESCRIPTION
-Delete an accessPackageAssignmentRequest object.
-This request can be made to remove a denied or completed request.
-You can't delete an access package assignment request if it has any accessPackageAssignment objects.
+Delete navigation property accessPackageAssignmentRequests for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaEntitlementManagementAccessPackageAssignmentRequest Cmdlet
@@ -301,8 +297,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageassignmentrequest)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequest-delete?view=graph-rest-1.0)
 
 
 

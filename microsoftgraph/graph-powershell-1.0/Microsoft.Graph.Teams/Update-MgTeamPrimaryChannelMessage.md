@@ -8,12 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelMessage
 
 ## SYNOPSIS
-Update a chatMessage object.
-Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
-The update only works for chats where members are Microsoft Teams users.
-If one of the participants is using Skype, the operation fails.
-This method doesn't support federation.
-Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+Update the navigation property messages in teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamPrimaryChannelMessage?view=graph-powershell-beta)
@@ -65,12 +60,7 @@ Update-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update a chatMessage object.
-Except for the policyViolation property, all properties of a chatMessage can be updated in delegated permissions scenarios.Only the policyViolation property of a chatMessage can be updated in application permissions scenarios.
-The update only works for chats where members are Microsoft Teams users.
-If one of the participants is using Skype, the operation fails.
-This method doesn't support federation.
-Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
+Update the navigation property messages in teams
 
 ## EXAMPLES
 
@@ -1036,8 +1026,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamprimarychannelmessage)
-
-[https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-update?view=graph-rest-1.0)
 
 
 

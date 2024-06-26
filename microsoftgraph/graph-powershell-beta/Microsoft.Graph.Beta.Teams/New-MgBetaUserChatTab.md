@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserChatTab
 
 ## SYNOPSIS
-Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatTab?view=graph-powershell-1.0)
@@ -49,8 +48,7 @@ New-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 ## EXAMPLES
 
@@ -402,10 +400,9 @@ Content type, such as image/png, image/jpg.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -536,10 +533,9 @@ Content type, such as image/png, image/jpg.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[DashboardCards <IMicrosoftGraphTeamsAppDashboardCardDefinition- `[]`>]`: Dashboard cards specified in the Teams app manifest.
@@ -581,8 +577,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchattab)
-
-[https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0)
 
 
 

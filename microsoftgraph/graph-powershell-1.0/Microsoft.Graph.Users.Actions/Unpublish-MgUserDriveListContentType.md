@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unpublish-MgUserDriveListContentType
 
 ## SYNOPSIS
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Unpublish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Unpublish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Unpublish-MgUserDriveListContentType -InputObject <IUsersActionsIdentity> [-Resp
 ```
 
 ## DESCRIPTION
-Unpublish a \[contentType\]\[\] from a content type hub site.
+Unpublish a contentType from a content type hub site.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-unpublish-permissions.md)]

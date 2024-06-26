@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelDepartment
 
 ## SYNOPSIS
-Create a new departmentTemplate object.
+Create new navigation property to departments for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgSecurityLabelDepartment -BodyParameter <Hashtable> [-ResponseHeadersVariab
 ```
 
 ## DESCRIPTION
-Create a new departmentTemplate object.
+Create new navigation property to departments for security
 
 ## PARAMETERS
 
@@ -231,8 +231,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabeldepartment)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-departments?view=graph-rest-1.0)
 
 
 

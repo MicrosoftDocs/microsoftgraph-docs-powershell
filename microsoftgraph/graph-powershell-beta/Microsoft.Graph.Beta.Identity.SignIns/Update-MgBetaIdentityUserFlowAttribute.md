@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Update the properties of a custom identityUserFlowAttribute object.
+Update the navigation property userFlowAttributes in identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a custom identityUserFlowAttribute object.
+Update the navigation property userFlowAttributes in identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -391,8 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityuserflowattribute)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-update?view=graph-rest-1.0)
 
 
 

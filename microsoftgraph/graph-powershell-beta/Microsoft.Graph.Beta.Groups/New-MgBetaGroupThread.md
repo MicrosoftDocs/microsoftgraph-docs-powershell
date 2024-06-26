@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupThread
 
 ## SYNOPSIS
-Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.
-Use reply thread or reply post to further post to that thread.
-Note: You can also start a new thread in an existing conversation.
+Create new navigation property to threads for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-1.0)
@@ -51,10 +48,7 @@ New-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Start a new group conversation by first creating a thread.
-A new conversation, conversation thread, and post are created in the group.
-Use reply thread or reply post to further post to that thread.
-Note: You can also start a new thread in an existing conversation.
+Create new navigation property to threads for groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -666,8 +660,6 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthread)
-
-[https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-threads?view=graph-rest-1.0)
 
 
 

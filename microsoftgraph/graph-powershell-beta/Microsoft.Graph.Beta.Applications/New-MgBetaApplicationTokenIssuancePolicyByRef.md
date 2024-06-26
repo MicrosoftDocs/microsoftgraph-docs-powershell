@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Assign a tokenIssuancePolicy to an application.
+Create new navigation property ref to tokenIssuancePolicies for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-1.0)
@@ -45,7 +45,7 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Assign a tokenIssuancePolicy to an application.
+Create new navigation property ref to tokenIssuancePolicies for applications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -294,8 +294,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenissuancepolicybyref)
-
-[https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

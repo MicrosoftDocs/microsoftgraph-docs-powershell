@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityCaseEdiscoveryCaseSetting
 
 ## SYNOPSIS
-Update the properties of an ediscoveryCaseSettings object.
+Update the navigation property settings in security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an ediscoveryCaseSettings object.
+Update the navigation property settings in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -418,8 +418,6 @@ To learn more, see Maximum number of themes.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasesetting)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycasesettings-update?view=graph-rest-1.0)
 
 
 

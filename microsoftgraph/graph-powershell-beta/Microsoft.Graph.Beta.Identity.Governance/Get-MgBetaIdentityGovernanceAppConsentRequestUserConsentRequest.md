@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest
 
 ## SYNOPSIS
-Read the properties and relationships of a userConsentRequest object.
+A list of pending user consent requests.
+Supports $filter (eq).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-1.0)
@@ -39,7 +40,8 @@ Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <II
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a userConsentRequest object.
+A list of pending user consent requests.
+Supports $filter (eq).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -418,10 +420,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceappconsentrequestuserconsentrequest)
-
-[https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userconsentrequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-list-userconsentrequests?view=graph-rest-1.0)
 
 
 

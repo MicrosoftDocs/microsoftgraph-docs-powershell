@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryAttributeSet
 
 ## SYNOPSIS
-Read the properties and relationships of an attributeSet object.
+Group of related custom security attribute definitions.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAttributeSet?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an attributeSet object.
+Group of related custom security attribute definitions.
 
 ## EXAMPLES
 ### Example 1: Get all attribute sets
@@ -372,10 +372,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryattributeset)
-
-[https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attributeset-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-attributesets?view=graph-rest-1.0)
 
 
 

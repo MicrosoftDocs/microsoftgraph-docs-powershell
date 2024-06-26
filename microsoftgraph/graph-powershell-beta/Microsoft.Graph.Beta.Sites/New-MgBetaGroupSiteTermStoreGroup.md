@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupSiteTermStoreGroup
 
 ## SYNOPSIS
-Create a new group object.
+Create new navigation property to groups for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ New-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new group object.
+Create new navigation property to groups for groups
 
 ## PARAMETERS
 
@@ -359,8 +359,8 @@ Read-only.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
       - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-        - `[Key <String>]`: Key.
-        - `[Value <String>]`: Value.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -453,8 +453,8 @@ Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification.
 Read-only.
     - `[Properties <IMicrosoftGraphKeyValue- `[]`>]`: Collection of properties on the term.
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with.
+      - `[Value <String>]`: Contains the corresponding value for the specified key.
     - `[Relations <IMicrosoftGraphTermStoreRelation- `[]`>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -487,8 +487,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsitetermstoregroup)
-
-[https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-post?view=graph-rest-1.0)
 
 
 

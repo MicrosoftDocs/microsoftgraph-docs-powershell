@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportAppCredentialSignInActivity
 
 ## SYNOPSIS
-Get an appCredentialSignInActivity object that contains recent activity of an application credential.
+Represents a collection of sign-in activities of application credentials.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaReportAppCredentialSignInActivity -InputObject <IReportsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get an appCredentialSignInActivity object that contains recent activity of an application credential.
+Represents a collection of sign-in activities of application credentials.
 
 ## PARAMETERS
 
@@ -331,10 +331,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportappcredentialsigninactivity)
-
-[https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appcredentialsigninactivity-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-appcredentialsigninactivities?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfile
 
 ## SYNOPSIS
-Deletes a profile object from a user's account.
+Delete navigation property profile for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Deletes a profile object from a user's account.
+Delete navigation property profile for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -225,8 +225,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofile)
-
-[https://learn.microsoft.com/graph/api/profile-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole
 
 ## SYNOPSIS
-Invoke function roleSchedules
+Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## SYNTAX
 
@@ -21,7 +21,7 @@ Invoke-MgBetaScheduleRoleManagementEntitlementManagementRole [-AppScopeId <Strin
 ```
 
 ## DESCRIPTION
-Invoke function roleSchedules
+Retrieve both roleAssignmentSchedules and roleEligibilitySchedules.
 
 ## PARAMETERS
 
@@ -264,6 +264,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententitlementmanagementrole)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-roleschedules?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Invoke-MgBetaFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUs
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 ## PARAMETERS
 
@@ -320,6 +320,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserappconsentrequestforapprovaluserconsentrequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserappconsentrequestforapprovaluserconsentrequestbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/userconsentrequest-filterByCurrentUser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/userconsentrequest-filterByCurrentUser?view=graph-rest-beta)
 
 
 

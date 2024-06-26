@@ -539,6 +539,15 @@ Locale: en-US
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 {{ Fill in the Description }}
 
+### [Get-MgDirectorySubscription](Get-MgDirectorySubscription.md)
+{{ Fill in the Description }}
+
+### [Get-MgDirectorySubscriptionByCommerceSubscriptionId](Get-MgDirectorySubscriptionByCommerceSubscriptionId.md)
+{{ Fill in the Description }}
+
+### [Get-MgDirectorySubscriptionCount](Get-MgDirectorySubscriptionCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDomain](Get-MgDomain.md)
 {{ Fill in the Description }}
 
@@ -728,6 +737,9 @@ Locale: en-US
 ### [New-MgDirectoryRoleTemplate](New-MgDirectoryRoleTemplate.md)
 {{ Fill in the Description }}
 
+### [New-MgDirectorySubscription](New-MgDirectorySubscription.md)
+{{ Fill in the Description }}
+
 ### [New-MgDomain](New-MgDomain.md)
 {{ Fill in the Description }}
 
@@ -773,13 +785,7 @@ Locale: en-US
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 {{ Fill in the Description }}
 
-### [Remove-MgDeviceRegisteredOwnerByRef](Remove-MgDeviceRegisteredOwnerByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef](Remove-MgDeviceRegisteredOwnerDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgDeviceRegisteredUserByRef](Remove-MgDeviceRegisteredUserByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDeviceRegisteredUserDirectoryObjectByRef](Remove-MgDeviceRegisteredUserDirectoryObjectByRef.md)
@@ -789,9 +795,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitExtension](Remove-MgDirectoryAdministrativeUnitExtension.md)
-{{ Fill in the Description }}
-
-### [Remove-MgDirectoryAdministrativeUnitMemberByRef](Remove-MgDirectoryAdministrativeUnitMemberByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef](Remove-MgDirectoryAdministrativeUnitMemberDirectoryObjectByRef.md)
@@ -827,9 +830,6 @@ Locale: en-US
 ### [Remove-MgDirectoryRoleByRoleTemplateId](Remove-MgDirectoryRoleByRoleTemplateId.md)
 {{ Fill in the Description }}
 
-### [Remove-MgDirectoryRoleMemberByRef](Remove-MgDirectoryRoleMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgDirectoryRoleMemberDirectoryObjectByRef](Remove-MgDirectoryRoleMemberDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -837,6 +837,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgDirectoryRoleTemplate](Remove-MgDirectoryRoleTemplate.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectorySubscription](Remove-MgDirectorySubscription.md)
+{{ Fill in the Description }}
+
+### [Remove-MgDirectorySubscriptionByCommerceSubscriptionId](Remove-MgDirectorySubscriptionByCommerceSubscriptionId.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgDomain](Remove-MgDomain.md)
@@ -999,6 +1005,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgDirectoryRoleTemplate](Update-MgDirectoryRoleTemplate.md)
+{{ Fill in the Description }}
+
+### [Update-MgDirectorySubscription](Update-MgDirectorySubscription.md)
+{{ Fill in the Description }}
+
+### [Update-MgDirectorySubscriptionByCommerceSubscriptionId](Update-MgDirectorySubscriptionByCommerceSubscriptionId.md)
 {{ Fill in the Description }}
 
 ### [Update-MgDomain](Update-MgDomain.md)

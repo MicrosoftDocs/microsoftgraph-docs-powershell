@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfilePhone
 
 ## SYNOPSIS
-Delete an itemPhone object from the user's profile.
+Delete navigation property phones for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete an itemPhone object from the user's profile.
+Delete navigation property phones for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,8 +239,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilephone)
-
-[https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemphone-delete?view=graph-rest-1.0)
 
 
 

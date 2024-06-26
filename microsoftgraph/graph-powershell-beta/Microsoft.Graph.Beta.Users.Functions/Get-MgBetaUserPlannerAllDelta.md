@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserPlannerAllDelta
 
 ## SYNOPSIS
-Invoke function delta
+Retrieves changes to objects that the user is subscribed to.
+This method allows your application to track changes to objects that the user can access from within Planner over time.
+The return value of this method might contain heterogeneous types of objects from Planner.
+For more information about tracking changes in Microsoft Graph data, see Use delta query to track changes in Microsoft Graph data.
 
 ## SYNTAX
 
@@ -29,7 +32,13 @@ Get-MgBetaUserPlannerAllDelta -InputObject <IUsersFunctionsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Retrieves changes to objects that the user is subscribed to.
+This method allows your application to track changes to objects that the user can access from within Planner over time.
+The return value of this method might contain heterogeneous types of objects from Planner.
+For more information about tracking changes in Microsoft Graph data, see Use delta query to track changes in Microsoft Graph data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/planneruser-list-delta-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserPlannerAllDelta Cmdlet
@@ -344,6 +353,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplanneralldelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauserplanneralldelta)
+
+[https://learn.microsoft.com/graph/api/planneruser-list-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/planneruser-list-delta?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaOnPremisePublishingProfilePublishedResource
 
 ## SYNOPSIS
-Retrieve the properties and relationships of publishedResource object.
+List of existing publishedResource objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +38,9 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of publishedResource object.
+List of existing publishedResource objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -348,10 +352,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresource)
-
-[https://learn.microsoft.com/graph/api/publishedresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-list?view=graph-rest-1.0)
 
 
 

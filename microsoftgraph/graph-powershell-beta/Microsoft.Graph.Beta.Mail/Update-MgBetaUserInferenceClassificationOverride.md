@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Change the classifyAs field of a focused Inbox override as specified.
-You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
-If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
+Update the navigation property overrides in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-1.0)
@@ -49,10 +46,7 @@ Update-MgBetaUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Change the classifyAs field of a focused Inbox override as specified.
-You cannot use PATCH to change any other fields in an inferenceClassificationOverride instance.
-If an override exists for a sender and the sender changes his/her display name, you can use POST to force an update to the name field in the existing override.
-If an override exists for a sender and the sender changes his/her SMTP address, deleting the existing override and creating a new one withthe new SMTP address is the only way to 'update' the override for this sender.
+Update the navigation property overrides in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,8 +315,6 @@ SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetauserinferenceclassificationoverride)
-
-[https://learn.microsoft.com/graph/api/inferenceclassificationoverride-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassificationoverride-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelAuthority
 
 ## SYNOPSIS
-Delete a authorityTemplate object.
+Delete navigation property authorities for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete a authorityTemplate object.
+Delete navigation property authorities for security
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelauthority)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-delete-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-authorities?view=graph-rest-1.0)
 
 
 

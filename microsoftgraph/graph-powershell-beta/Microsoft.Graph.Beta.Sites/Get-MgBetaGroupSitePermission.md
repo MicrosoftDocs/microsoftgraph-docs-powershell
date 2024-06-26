@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupSitePermission
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a permission object on a site.
+The permissions associated with the site.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePermission?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaGroupSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a permission object on a site.
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 
@@ -374,10 +376,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepermission)
-
-[https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
 
 
 

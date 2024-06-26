@@ -335,8 +335,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofileerror)
 
-[https://learn.microsoft.com/graph/api/educationsynchronizationerrors-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationerrors-get?view=graph-rest-1.0)
-
 
 
 

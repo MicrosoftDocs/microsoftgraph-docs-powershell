@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgUser
 
 ## SYNOPSIS
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
@@ -32,10 +29,7 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 ## EXAMPLES
 ### Example 1: Remove a user
@@ -230,7 +224,7 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mguser)
 
-[https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-user-delete?view=graph-rest-1.0)
 
 
 

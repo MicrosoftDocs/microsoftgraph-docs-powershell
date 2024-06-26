@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserDriveItemVersion
 
 ## SYNOPSIS
-Retrieve the metadata for a specific version of a DriveItem.
+The list of previous versions of the item.
+For more info, see getting previous versions.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemVersion?view=graph-powershell-1.0)
@@ -38,7 +41,10 @@ Get-MgBetaUserDriveItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a specific version of a DriveItem.
+The list of previous versions of the item.
+For more info, see getting previous versions.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -359,10 +365,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveitemversion)
-
-[https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-versions?view=graph-rest-1.0)
 
 
 

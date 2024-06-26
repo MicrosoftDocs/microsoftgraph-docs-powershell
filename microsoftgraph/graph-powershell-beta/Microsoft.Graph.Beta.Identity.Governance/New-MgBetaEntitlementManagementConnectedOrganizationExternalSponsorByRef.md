@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
 
 ## SYNOPSIS
-Add a user or a group to the connected organization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Create new navigation property ref to externalSponsors for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-1.0)
@@ -48,8 +47,7 @@ New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef
 ```
 
 ## DESCRIPTION
-Add a user or a group to the connected organization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Create new navigation property ref to externalSponsors for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -365,8 +363,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementconnectedorganizationexternalsponsorbyref)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-post-externalsponsors?view=graph-rest-1.0)
 
 
 

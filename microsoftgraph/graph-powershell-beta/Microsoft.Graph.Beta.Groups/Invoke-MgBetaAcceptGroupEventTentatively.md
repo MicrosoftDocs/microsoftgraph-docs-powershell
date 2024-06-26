@@ -392,7 +392,7 @@ See below for possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupeventtentatively](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaacceptgroupeventtentatively)
 
-[https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta](https://learn.microsoft.com/graph/api/event-tentativelyaccept?view=graph-rest-beta)
 
 
 

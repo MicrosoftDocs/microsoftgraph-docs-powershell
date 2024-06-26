@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserDriveItemListItemDocumentSetVersion
 
 ## SYNOPSIS
-Create a new version of a document set item in a list.
+Create new navigation property to documentSetVersions for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ New-MgUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Create a new version of a document set item in a list.
+Create new navigation property to documentSetVersions for users
 
 ## PARAMETERS
 
@@ -510,8 +510,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mguserdriveitemlistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0)
 
 
 

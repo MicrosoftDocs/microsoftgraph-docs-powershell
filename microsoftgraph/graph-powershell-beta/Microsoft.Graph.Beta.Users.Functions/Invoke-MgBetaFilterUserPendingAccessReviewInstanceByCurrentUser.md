@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterUserPendingAccessReviewInstanceByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 ## SYNTAX
 
@@ -29,7 +29,10 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceByCurrentUser -InputObject <IU
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Returns all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-filterbycurrentuser-permissions.md)]
 
 ## PARAMETERS
 
@@ -303,6 +306,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)
 
 
 

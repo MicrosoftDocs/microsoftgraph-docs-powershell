@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-Deletes a deviceCategory.
+Delete navigation property deviceCategories for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementDeviceCategory -InputObject <IDeviceManagementIdentity>
 ```
 
 ## DESCRIPTION
-Deletes a deviceCategory.
+Delete navigation property deviceCategories for deviceManagement
 
 ## PARAMETERS
 
@@ -246,8 +246,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecategory)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-delete?view=graph-rest-1.0)
 
 
 

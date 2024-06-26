@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamChannelSharedWithTeam
 
 ## SYNOPSIS
-Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
-This operation is allowed only for channels with a membershipType value of shared.
+Delete navigation property sharedWithTeams for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannelSharedWithTeam?view=graph-powershell-1.0)
@@ -32,8 +31,7 @@ Remove-MgBetaGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
-This operation is allowed only for channels with a membershipType value of shared.
+Delete navigation property sharedWithTeams for groups
 
 ## EXAMPLES
 
@@ -268,8 +266,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelsharedwithteam)
-
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-delete?view=graph-rest-1.0)
 
 
 

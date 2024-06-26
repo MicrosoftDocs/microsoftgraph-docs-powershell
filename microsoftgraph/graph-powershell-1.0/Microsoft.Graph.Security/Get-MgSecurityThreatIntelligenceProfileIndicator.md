@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceProfileIndicator
 
 ## SYNOPSIS
-Read the properties and relationships of a intelligenceProfileIndicator object.
+Get intelligenceProfileIndicators from security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a intelligenceProfileIndicator object.
+Get intelligenceProfileIndicators from security
 
 ## PARAMETERS
 
@@ -350,8 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceprofileindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligenceprofileindicator)
-
-[https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-intelligenceprofileindicator-get?view=graph-rest-1.0)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Update the properties of an administrativeUnit object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+Update the navigation property administrativeUnits in directory
 
 ## SYNTAX
 
@@ -50,7 +47,7 @@ Update-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Update the properties of an administrativeUnit object.
+Update the navigation property administrativeUnits in directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -403,6 +400,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -447,8 +446,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-update?view=graph-rest-1.0)
 
 
 

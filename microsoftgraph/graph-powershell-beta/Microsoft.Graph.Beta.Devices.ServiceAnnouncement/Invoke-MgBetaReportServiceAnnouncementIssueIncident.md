@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaReportServiceAnnouncementIssueIncident
 
 ## SYNOPSIS
-Invoke function incidentReport
+Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
+An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementIssueIncident?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ Invoke-MgBetaReportServiceAnnouncementIssueIncident -InputObject <IDevicesServic
 ```
 
 ## DESCRIPTION
-Invoke function incidentReport
+Provide the Post-Incident Review (PIR) document of a specified service issue for tenant.
+An issue only with status of PostIncidentReviewPublished indicates that the PIR document exists for the issue.
+The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
 ## EXAMPLES
 
@@ -167,6 +171,8 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetareportserviceannouncementissueincident)
+
+[https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta](https://learn.microsoft.com/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta)
 
 
 

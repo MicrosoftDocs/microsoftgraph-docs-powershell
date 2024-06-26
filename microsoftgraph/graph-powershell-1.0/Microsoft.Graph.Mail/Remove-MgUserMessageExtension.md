@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMessageExtension
 
 ## SYNOPSIS
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-For the list of resources that support open extensions, see the table in the Permissions section.
+Delete navigation property extensions for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessageExtension?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgUserMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-For the list of resources that support open extensions, see the table in the Permissions section.
+Delete navigation property extensions for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,8 +244,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-delete?view=graph-rest-1.0)
 
 
 

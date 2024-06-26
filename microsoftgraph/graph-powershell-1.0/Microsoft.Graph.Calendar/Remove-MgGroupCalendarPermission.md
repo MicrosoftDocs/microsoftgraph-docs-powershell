@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupCalendarPermission
 
 ## SYNOPSIS
-Delete calendarPermission.
+Delete navigation property calendarPermissions for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete calendarPermission.
+Delete navigation property calendarPermissions for groups
 
 ## PARAMETERS
 
@@ -218,8 +218,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermission)
-
-[https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendarpermission-delete?view=graph-rest-1.0)
 
 
 

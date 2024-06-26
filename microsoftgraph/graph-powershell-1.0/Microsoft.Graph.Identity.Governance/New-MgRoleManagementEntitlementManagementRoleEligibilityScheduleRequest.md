@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 
 ## SYNOPSIS
-In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
-This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ```
 
 ## DESCRIPTION
-In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
-This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
 ## PARAMETERS
 
@@ -950,8 +948,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleeligibilityschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleeligibilityschedulerequests?view=graph-rest-1.0)
 
 
 

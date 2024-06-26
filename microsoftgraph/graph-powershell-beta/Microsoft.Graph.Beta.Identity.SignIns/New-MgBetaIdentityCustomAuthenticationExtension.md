@@ -8,8 +8,10 @@ schema: 2.0.0
 # New-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Create a new customAuthenticationExtension object.
-The following derived types are currently supported.
+Create new navigation property to customAuthenticationExtensions for identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,8 +31,7 @@ New-MgBetaIdentityCustomAuthenticationExtension -BodyParameter <Hashtable> [-Res
 ```
 
 ## DESCRIPTION
-Create a new customAuthenticationExtension object.
-The following derived types are currently supported.
+Create new navigation property to customAuthenticationExtensions for identity
 
 ## PARAMETERS
 
@@ -260,8 +261,6 @@ If null, the default for the service applies.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentitycustomauthenticationextension)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-customauthenticationextensions?view=graph-rest-1.0)
 
 
 

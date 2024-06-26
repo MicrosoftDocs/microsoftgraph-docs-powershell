@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementDefaultManagedAppProtection
 
 ## SYNOPSIS
-Deletes a defaultManagedAppProtection.
+Delete navigation property defaultManagedAppProtections for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Deletes a defaultManagedAppProtection.
+Delete navigation property defaultManagedAppProtections for deviceAppManagement
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementdefaultmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-delete?view=graph-rest-1.0)
 
 
 

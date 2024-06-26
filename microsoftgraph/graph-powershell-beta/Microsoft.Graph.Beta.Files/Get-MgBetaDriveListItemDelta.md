@@ -8,7 +8,17 @@ schema: 2.0.0
 # Get-MgBetaDriveListItemDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
+Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+The delta feed shows the latest state for each item, not each change.
+If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+You should use the last occurrence you see.
+Deleted items are returned with the deleted facet.
+Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDelta?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -45,7 +55,14 @@ Get-MgBetaDriveListItemDelta -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection.
+Your app begins by calling delta without any parameters.The service starts enumerating the hierarchy of the list, returning pages of items, and either an @odata.nextLink or an @odata.deltaLink.Your app should continue calling with the @odata.nextLink until you see an @odata.deltaLink returned.
+After you received all the changes, you can apply them to your local state.To check for changes in the future, call delta again with the @odata.deltaLink from the previous response.
+The delta feed shows the latest state for each item, not each change.
+If an item was renamed twice, it only shows up once, with its latest name.The same item might appear more than once in a delta feed, for various reasons.
+You should use the last occurrence you see.
+Deleted items are returned with the deleted facet.
+Deleted indicates that the item is deleted and can't be restored.Items with this property should be removed from your local state.
 
 ## PARAMETERS
 
@@ -351,6 +368,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetadrivelistitemdelta)
+
+[https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-delta?view=graph-rest-beta)
 
 
 

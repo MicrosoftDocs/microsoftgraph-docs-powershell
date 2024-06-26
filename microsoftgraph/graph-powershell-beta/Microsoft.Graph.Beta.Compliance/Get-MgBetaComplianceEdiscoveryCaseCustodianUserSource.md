@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Read the properties and relationships of a userSource object.
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -36,10 +36,8 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a userSource object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-usersource-get-permissions.md)]
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,10 +349,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-usersource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-usersource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-usersources?view=graph-rest-1.0)
 
 
 

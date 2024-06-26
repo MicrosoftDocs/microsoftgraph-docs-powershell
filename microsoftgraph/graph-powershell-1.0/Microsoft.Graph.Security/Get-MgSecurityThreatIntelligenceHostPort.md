@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceHostPort
 
 ## SYNOPSIS
-Read the properties and relationships of a hostPort object.
+Retrieve details about hostPort objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPort](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPort?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgSecurityThreatIntelligenceHostPort -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a hostPort object.
+Retrieve details about hostPort objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -387,10 +387,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostport)
-
-[https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostport-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-ports?view=graph-rest-1.0)
 
 
 

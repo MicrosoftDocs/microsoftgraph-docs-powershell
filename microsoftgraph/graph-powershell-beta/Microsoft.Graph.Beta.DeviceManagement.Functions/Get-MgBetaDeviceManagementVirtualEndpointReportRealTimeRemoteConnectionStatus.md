@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 
 ## SYNOPSIS
-Invoke function getRealTimeRemoteConnectionStatus
+Get the real-time connection status information, such as signInStatus or daysSinceLastUse, for a Cloud PC.
 
 ## SYNTAX
 
@@ -27,7 +27,10 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 ```
 
 ## DESCRIPTION
-Invoke function getRealTimeRemoteConnectionStatus
+Get the real-time connection status information, such as signInStatus or daysSinceLastUse, for a Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionstatus-permissions.md)]
 
 ## PARAMETERS
 
@@ -189,6 +192,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionstatus)
+
+[https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionstatus?view=graph-rest-beta)
 
 
 

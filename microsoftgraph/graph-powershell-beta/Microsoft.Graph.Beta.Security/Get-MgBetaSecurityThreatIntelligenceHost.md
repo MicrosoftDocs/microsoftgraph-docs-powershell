@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHost
 
 ## SYNOPSIS
-Read the properties and relationships of a host object.
-The host resource is the abstract base type that returns an implementation.
-A host can be of one of the following types:
+Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
@@ -40,9 +38,7 @@ Get-MgBetaSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a host object.
-The host resource is the abstract base type that returns an implementation.
-A host can be of one of the following types:
+Refers to host objects that Microsoft Threat Intelligence has observed.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -376,8 +372,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehost)
-
-[https://learn.microsoft.com/graph/api/security-host-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-get?view=graph-rest-1.0)
 
 
 

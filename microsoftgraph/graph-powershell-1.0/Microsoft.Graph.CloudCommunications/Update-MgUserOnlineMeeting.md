@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Update the properties of the specified onlineMeeting object.
-Please see Request body section for the list of properties that support updating.
+Update the navigation property onlineMeetings in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -69,8 +68,7 @@ Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the specified onlineMeeting object.
-Please see Request body section for the list of properties that support updating.
+Update the navigation property onlineMeetings in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1079,8 +1077,6 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mguseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Update the properties of a workPosition object in a user's profile.
+Update the navigation property positions in users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the properties of a workPosition object in a user's profile.
+Update the navigation property positions in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -622,8 +622,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileposition)
-
-[https://learn.microsoft.com/graph/api/workposition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workposition-update?view=graph-rest-1.0)
 
 
 

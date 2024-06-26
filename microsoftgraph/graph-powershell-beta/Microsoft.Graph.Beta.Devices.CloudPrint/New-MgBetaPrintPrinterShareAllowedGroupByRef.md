@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPrintPrinterShareAllowedGroupByRef
 
 ## SYNOPSIS
-Grant the specified group access to submit print jobs to the associated printerShare.
+Create new navigation property ref to allowedGroups for print
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgBetaPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIde
 ```
 
 ## DESCRIPTION
-Grant the specified group access to submit print jobs to the associated printerShare.
+Create new navigation property ref to allowedGroups for print
 
 ## EXAMPLES
 
@@ -257,8 +257,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintershareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintershareallowedgroupbyref)
-
-[https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-allowedgroups?view=graph-rest-1.0)
 
 
 

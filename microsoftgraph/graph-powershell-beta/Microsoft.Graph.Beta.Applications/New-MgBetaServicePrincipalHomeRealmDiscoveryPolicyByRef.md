@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef
 
 ## SYNOPSIS
-Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
+Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
+Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -295,8 +295,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalhomerealmdiscoverypolicybyref)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-post-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 

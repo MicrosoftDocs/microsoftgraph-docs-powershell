@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource
 
 ## SYNOPSIS
-Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
-To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+Get accessPackageResources from identityGovernance
 
 ## SYNTAX
 
@@ -21,8 +20,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -Access
 ```
 
 ## DESCRIPTION
-Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
-To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+Get accessPackageResources from identityGovernance
 
 ## EXAMPLES
 ### Example 1: Get catalog resources by catalog id
@@ -318,8 +316,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresource)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackageresources?view=graph-rest-1.0)
 
 
 

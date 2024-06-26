@@ -356,9 +356,9 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunit)
 
-[https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-list-administrativeunits?view=graph-rest-beta)
 
 
 

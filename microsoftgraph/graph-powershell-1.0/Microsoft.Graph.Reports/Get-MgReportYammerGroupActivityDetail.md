@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerGroupActivityDetail
 
 ## SYNOPSIS
-Invoke function getYammerGroupsActivityDetail
+Get details about Yammer groups activity by group.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerGroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerGroupActivityDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportYammerGroupActivityDetail -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getYammerGroupsActivityDetail
+Get details about Yammer groups activity by group.
 
 ## PARAMETERS
 
@@ -210,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammergroupactivitydetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammergroupsactivitydetail?view=graph-rest-1.0)
 
 
 

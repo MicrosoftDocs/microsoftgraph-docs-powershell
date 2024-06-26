@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupThread
 
 ## SYNOPSIS
-Delete conversationThread.
+Delete navigation property threads for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupThread?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Respon
 ```
 
 ## DESCRIPTION
-Delete conversationThread.
+Delete navigation property threads for groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,8 +261,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/remove-mggroupthread)
-
-[https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-thread?view=graph-rest-1.0)
 
 
 

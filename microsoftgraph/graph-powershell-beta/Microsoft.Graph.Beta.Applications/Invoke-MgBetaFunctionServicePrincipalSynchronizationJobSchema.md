@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema -InputObject <IApp
 ```
 
 ## DESCRIPTION
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaFunctionServicePrincipalSynchronizationJobSchema Cmdlet
@@ -309,6 +309,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionserviceprincipalsynchronizationjobschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarRegistration
 
 ## SYNOPSIS
-Get the properties and relationships of a virtualEventRegistration object.
+Registration records of the webinar.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistration?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaVirtualEventWebinarRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a virtualEventRegistration object.
+Registration records of the webinar.
 
 ## PARAMETERS
 
@@ -328,10 +328,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarregistration)
-
-[https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventregistration-list?view=graph-rest-1.0)
 
 
 

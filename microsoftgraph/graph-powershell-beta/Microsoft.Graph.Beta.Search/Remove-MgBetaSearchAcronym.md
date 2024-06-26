@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Delete an acronym object.
+Delete navigation property acronyms for search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchAcronym?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete an acronym object.
+Delete navigation property acronyms for search
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSearchAcronym Cmdlet
@@ -211,6 +211,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -220,8 +222,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchacronym)
-
-[https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityB2CUserFlow
 
 ## SYNOPSIS
-Create a new b2cIdentityUserFlow object.
+Create new navigation property to b2cUserFlows for identity
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ New-MgBetaIdentityB2CUserFlow -BodyParameter <IMicrosoftGraphB2CIdentityUserFlow
 ```
 
 ## DESCRIPTION
-Create a new b2cIdentityUserFlow object.
+Create new navigation property to b2cUserFlows for identity
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityB2CUserFlow Cmdlet
@@ -532,8 +532,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflow)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-1.0)
 
 
 
