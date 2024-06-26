@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantGroup
 
 ## SYNOPSIS
-Read the properties and relationships of a tenantGroup object.
+The collection of a logical grouping of managed tenants used by the multi-tenant management platform.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantGroup -InputObject <IManagedTenantsIden
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a tenantGroup object.
+The collection of a logical grouping of managed tenants used by the multi-tenant management platform.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantgroup)
-
-[https://learn.microsoft.com/graph/api/managedtenants-tenantgroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenantgroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenantgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenantgroups?view=graph-rest-1.0)
 
 
 

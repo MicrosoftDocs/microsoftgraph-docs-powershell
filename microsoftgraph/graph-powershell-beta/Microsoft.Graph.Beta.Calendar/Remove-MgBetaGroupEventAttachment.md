@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupEventAttachment
 
 ## SYNOPSIS
-Delete an attachment from a user calendar event, message, Outlook task, or post.
+Delete navigation property attachments for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEventAttachment?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupEventAttachment -InputObject <ICalendarIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete an attachment from a user calendar event, message, Outlook task, or post.
+Delete navigation property attachments for groups
 
 ## PARAMETERS
 
@@ -235,8 +235,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventattachment)
-
-[https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0)
 
 
 

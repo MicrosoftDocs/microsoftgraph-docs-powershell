@@ -8,8 +8,10 @@ schema: 2.0.0
 # Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 
 ## SYNOPSIS
-Remove a tenant from a multitenant organization.
-A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
+Delete navigation property tenants for tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -28,8 +30,7 @@ Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Remove a tenant from a multitenant organization.
-A tenant can be removed in the following scenarios: To allow for asynchronous processing, you must wait for up to 2 hours before removal of a tenant is completed.
+Delete navigation property tenants for tenantRelationships
 
 ## PARAMETERS
 
@@ -268,8 +269,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant)
-
-[https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-delete-tenants?view=graph-rest-1.0)
 
 
 

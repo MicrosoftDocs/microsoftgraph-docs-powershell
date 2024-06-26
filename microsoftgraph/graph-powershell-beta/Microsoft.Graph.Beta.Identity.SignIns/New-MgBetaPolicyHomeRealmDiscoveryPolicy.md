@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Create a new homeRealmDiscoveryPolicy object.
+Create new navigation property to homeRealmDiscoveryPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ New-MgBetaPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-ResponseHe
 ```
 
 ## DESCRIPTION
-Create a new homeRealmDiscoveryPolicy object.
+Create new navigation property to homeRealmDiscoveryPolicies for policies
 
 ## PARAMETERS
 
@@ -280,8 +280,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyhomerealmdiscoverypolicy)
-
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies?view=graph-rest-1.0)
 
 
 

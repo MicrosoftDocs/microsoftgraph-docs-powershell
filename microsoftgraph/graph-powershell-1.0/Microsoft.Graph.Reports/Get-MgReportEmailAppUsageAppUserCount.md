@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailAppUsageAppUserCount
 
 ## SYNOPSIS
-Invoke function getEmailAppUsageAppsUserCounts
+Get the count of unique users per email app.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailAppUsageAppUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailAppUsageAppUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportEmailAppUsageAppUserCount -InputObject <IReportsIdentity> -OutFile <
 ```
 
 ## DESCRIPTION
-Invoke function getEmailAppUsageAppsUserCounts
+Get the count of unique users per email app.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailappusageappusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-1.0)
 
 
 

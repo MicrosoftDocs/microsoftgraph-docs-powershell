@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a authenticationContextClassReference object.
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
@@ -39,7 +41,9 @@ Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -InputObj
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a authenticationContextClassReference object.
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -381,10 +385,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationcontextclassreference](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationcontextclassreference)
-
-[https://learn.microsoft.com/graph/api/authenticationcontextclassreference-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcontextclassreference-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-list-authenticationcontextclassreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-authenticationcontextclassreferences?view=graph-rest-1.0)
 
 
 

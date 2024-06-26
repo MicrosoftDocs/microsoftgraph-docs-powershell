@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityGovernanceLifecycleWorkflowSetting
 
 ## SYNOPSIS
-Update the properties of a lifecycleManagementSettings object.
+Update the navigation property settings in identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Update-MgIdentityGovernanceLifecycleWorkflowSetting
 ```
 
 ## DESCRIPTION
-Update the properties of a lifecycleManagementSettings object.
+Update the navigation property settings in identityGovernance
 
 ## PARAMETERS
 
@@ -240,8 +240,6 @@ This value can only be set to true if the organizationalBranding bannerLogo prop
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancelifecycleworkflowsetting)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-update?view=graph-rest-1.0)
 
 
 

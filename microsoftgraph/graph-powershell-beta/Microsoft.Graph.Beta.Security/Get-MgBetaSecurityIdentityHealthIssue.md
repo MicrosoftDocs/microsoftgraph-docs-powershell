@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityIdentityHealthIssue
 
 ## SYNOPSIS
-Read the properties and relationships of a healthIssue object.
+Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a healthIssue object.
+Represents potential issues within a customer's Microsoft Defender for Identity configuration that Microsoft Defender for Identity identified.
 
 ## PARAMETERS
 
@@ -369,10 +369,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityidentityhealthissue)
-
-[https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-identitycontainer-list-healthissues?view=graph-rest-1.0)
 
 
 

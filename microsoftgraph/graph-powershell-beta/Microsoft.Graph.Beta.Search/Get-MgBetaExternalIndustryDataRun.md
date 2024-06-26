@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataRun
 
 ## SYNOPSIS
-Read the properties and relationships of an industryDataRun object.
+Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.
+Read-only.
 
 ## SYNTAX
 
@@ -35,7 +36,8 @@ Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an industryDataRun object.
+Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.
+Read-only.
 
 ## PARAMETERS
 
@@ -297,6 +299,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -306,10 +310,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun)
-
-[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydatarun-list?view=graph-rest-1.0)
 
 
 

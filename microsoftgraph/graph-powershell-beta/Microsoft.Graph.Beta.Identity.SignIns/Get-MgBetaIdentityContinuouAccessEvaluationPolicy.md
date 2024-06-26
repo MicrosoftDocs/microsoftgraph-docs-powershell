@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a continuousAccessEvaluationPolicy object.
+Represents entry point for continuous access evaluation policy.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaIdentityContinuouAccessEvaluationPolicy [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a continuousAccessEvaluationPolicy object.
+Represents entry point for continuous access evaluation policy.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -125,8 +125,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentitycontinuouaccessevaluationpolicy)
-
-[https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-1.0)
 
 
 

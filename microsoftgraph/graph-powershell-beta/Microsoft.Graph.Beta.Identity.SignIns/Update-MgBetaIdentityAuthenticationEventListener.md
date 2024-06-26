@@ -8,8 +8,10 @@ schema: 2.0.0
 # Update-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
-Update the properties of an authenticationEventListener object.
-You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+Update the navigation property authenticationEventListeners in identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,8 +46,7 @@ Update-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationEventListener object.
-You must specify the @odata.type property and the value of the authenticationEventListener object type to update.
+Update the navigation property authenticationEventListeners in identity
 
 ## PARAMETERS
 
@@ -374,8 +375,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityauthenticationeventlistener)
-
-[https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventlistener-update?view=graph-rest-1.0)
 
 
 

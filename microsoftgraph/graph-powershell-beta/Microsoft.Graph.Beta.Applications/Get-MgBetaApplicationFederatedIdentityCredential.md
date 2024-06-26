@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Read the properties and relationships of a federatedIdentityCredential object.
+Federated identities for applications.
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
@@ -39,10 +40,8 @@ Get-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a federatedIdentityCredential object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/federatedidentitycredential-get-permissions.md)]
+Federated identities for applications.
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -354,10 +353,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationfederatedidentitycredential)
-
-[https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/federatedidentitycredential-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-federatedidentitycredentials?view=graph-rest-1.0)
 
 
 

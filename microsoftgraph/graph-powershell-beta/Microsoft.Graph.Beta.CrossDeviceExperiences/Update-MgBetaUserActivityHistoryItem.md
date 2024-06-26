@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserActivityHistoryItem
 
 ## SYNOPSIS
-Delete an existing history item for an existing user activity.
+Update the navigation property historyItems in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ Update-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 ```
 
 ## DESCRIPTION
-Delete an existing history item for an existing user activity.
+Update the navigation property historyItems in users
 
 ## PARAMETERS
 
@@ -535,8 +535,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauseractivityhistoryitem)
-
-[https://learn.microsoft.com/graph/api/projectrome-delete-historyitem?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-delete-historyitem?view=graph-rest-1.0)
 
 
 

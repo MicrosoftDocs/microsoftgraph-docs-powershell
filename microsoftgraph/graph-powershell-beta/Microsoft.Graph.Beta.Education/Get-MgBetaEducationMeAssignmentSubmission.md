@@ -8,17 +8,9 @@ schema: 2.0.0
 # Get-MgBetaEducationMeAssignmentSubmission
 
 ## SYNOPSIS
-Retrieve a particular submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-A submission object represents a student's work for an assignment.
-Resources associated with the submission represent this work.
-Only the assignedTo student can see and modify the submission.
-A teacher or application with application permissions has full access to all submissions.
-The grade and feedback from a teacher are part of the educationOutcome associated with this object.
-Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the assignment has been released.
-Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
-For details, see the examples section.
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
@@ -48,17 +40,9 @@ Get-MgBetaEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Retrieve a particular submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-A submission object represents a student's work for an assignment.
-Resources associated with the submission represent this work.
-Only the assignedTo student can see and modify the submission.
-A teacher or application with application permissions has full access to all submissions.
-The grade and feedback from a teacher are part of the educationOutcome associated with this object.
-Only teachers or applications with application permissions can add or change grades and feedback.
-Students will not see the grade or feedback until the assignment has been released.
-Provide the header Prefer: include-unknown-enum-members to properly list submissions with the reassigned status.
-For details, see the examples section.
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -345,10 +329,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeassignmentsubmission)
-
-[https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-submissions?view=graph-rest-1.0)
 
 
 

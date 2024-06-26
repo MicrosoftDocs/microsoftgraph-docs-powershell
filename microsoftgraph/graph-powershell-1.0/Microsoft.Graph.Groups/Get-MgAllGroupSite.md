@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgAllGroupSite
 
 ## SYNOPSIS
-Invoke function getAllSites
+List sites across geographies in an organization.
+This API can also be used to enumerate all sites in a non-multi-geo tenant.
+For more information, see Best practices for discovering files and detecting changes at scale.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAllGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaAllGroupSite?view=graph-powershell-beta)
@@ -32,7 +34,12 @@ Get-MgAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Invoke function getAllSites
+List sites across geographies in an organization.
+This API can also be used to enumerate all sites in a non-multi-geo tenant.
+For more information, see Best practices for discovering files and detecting changes at scale.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/site-getallsites-permissions.md)]
 
 ## PARAMETERS
 
@@ -294,6 +301,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mgallgroupsite)
+
+[https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDirectoryDeletedItem
 
 ## SYNOPSIS
-Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
+Recently deleted items.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
+Recently deleted items.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Retrieve a list of recently deleted items
@@ -173,6 +177,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -198,8 +204,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditem)
-
-[https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-get?view=graph-rest-1.0)
 
 
 

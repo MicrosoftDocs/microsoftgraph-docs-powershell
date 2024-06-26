@@ -439,9 +439,9 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplication)
 
-[https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/application-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-list?view=graph-rest-beta)
 
 
 

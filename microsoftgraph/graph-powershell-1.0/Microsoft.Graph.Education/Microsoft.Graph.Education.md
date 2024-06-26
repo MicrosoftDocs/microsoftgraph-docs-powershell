@@ -551,9 +551,6 @@ Locale: en-US
 ### [Remove-MgEducationClassAssignmentCategory](Remove-MgEducationClassAssignmentCategory.md)
 {{ Fill in the Description }}
 
-### [Remove-MgEducationClassAssignmentCategoryByRef](Remove-MgEducationClassAssignmentCategoryByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef](Remove-MgEducationClassAssignmentCategoryEducationCategoryByRef.md)
 {{ Fill in the Description }}
 
@@ -587,9 +584,6 @@ Locale: en-US
 ### [Remove-MgEducationClassAssignmentSubmissionSubmittedResource](Remove-MgEducationClassAssignmentSubmissionSubmittedResource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgEducationClassMemberByRef](Remove-MgEducationClassMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgEducationClassMemberEducationUserByRef](Remove-MgEducationClassMemberEducationUserByRef.md)
 {{ Fill in the Description }}
 
@@ -599,9 +593,6 @@ Locale: en-US
 ### [Remove-MgEducationClassModuleResource](Remove-MgEducationClassModuleResource.md)
 {{ Fill in the Description }}
 
-### [Remove-MgEducationClassTeacherByRef](Remove-MgEducationClassTeacherByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgEducationClassTeacherEducationUserByRef](Remove-MgEducationClassTeacherEducationUserByRef.md)
 {{ Fill in the Description }}
 
@@ -609,9 +600,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationMeAssignment](Remove-MgEducationMeAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-MgEducationMeAssignmentCategoryByRef](Remove-MgEducationMeAssignmentCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationMeAssignmentCategoryEducationCategoryByRef](Remove-MgEducationMeAssignmentCategoryEducationCategoryByRef.md)
@@ -644,13 +632,7 @@ Locale: en-US
 ### [Remove-MgEducationSchool](Remove-MgEducationSchool.md)
 {{ Fill in the Description }}
 
-### [Remove-MgEducationSchoolClassByRef](Remove-MgEducationSchoolClassByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgEducationSchoolClassEducationClassByRef](Remove-MgEducationSchoolClassEducationClassByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgEducationSchoolUserByRef](Remove-MgEducationSchoolUserByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationSchoolUserEducationUserByRef](Remove-MgEducationSchoolUserEducationUserByRef.md)
@@ -660,9 +642,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationUserAssignment](Remove-MgEducationUserAssignment.md)
-{{ Fill in the Description }}
-
-### [Remove-MgEducationUserAssignmentCategoryByRef](Remove-MgEducationUserAssignmentCategoryByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef](Remove-MgEducationUserAssignmentCategoryEducationCategoryByRef.md)

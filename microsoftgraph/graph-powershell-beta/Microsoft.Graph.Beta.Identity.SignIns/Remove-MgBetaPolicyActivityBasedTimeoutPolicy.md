@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Delete an activityBasedTimeoutPolicy object.
+Delete navigation property activityBasedTimeoutPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIden
 ```
 
 ## DESCRIPTION
-Delete an activityBasedTimeoutPolicy object.
+Delete navigation property activityBasedTimeoutPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -282,8 +282,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyactivitybasedtimeoutpolicy)
-
-[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-delete?view=graph-rest-1.0)
 
 
 

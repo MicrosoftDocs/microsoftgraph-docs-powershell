@@ -299,7 +299,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/reset-mgbetauserauthenticationmethodpassword)
 
-[https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethod-resetpassword?view=graph-rest-beta)
 
 
 

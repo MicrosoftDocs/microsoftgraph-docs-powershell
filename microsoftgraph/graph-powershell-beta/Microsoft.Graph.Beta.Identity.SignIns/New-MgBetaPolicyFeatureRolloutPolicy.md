@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
-Create a new featureRolloutPolicy object.
+Create new navigation property to featureRolloutPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ New-MgBetaPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRollo
 ```
 
 ## DESCRIPTION
-Create a new featureRolloutPolicy object.
+Create new navigation property to featureRolloutPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -313,8 +313,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyfeaturerolloutpolicy)
-
-[https://learn.microsoft.com/graph/api/post-featurerolloutpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-featurerolloutpolicies?view=graph-rest-1.0)
 
 
 

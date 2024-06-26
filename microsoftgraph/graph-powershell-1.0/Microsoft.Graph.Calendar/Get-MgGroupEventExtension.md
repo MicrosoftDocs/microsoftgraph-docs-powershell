@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgGroupEventExtension
 
 ## SYNOPSIS
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the event.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventExtension?view=graph-powershell-beta)
@@ -40,9 +39,8 @@ Get-MgGroupEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the event.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,8 +332,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

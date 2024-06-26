@@ -226,7 +226,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelemail)
 
-[https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-provisionemail?view=graph-rest-beta)
 
 
 

@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
-Additionally you can view any targetDeviceGroups that have been configured for SSO.
+The remoteDesktopSecurityConfiguration object applied to this service principal.
+Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRemoteDesktopSecurityConfiguration](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalRemoteDesktopSecurityConfiguration?view=graph-powershell-1.0)
@@ -32,9 +31,8 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppl
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal.
-Use this configuration to view the Microsoft Entra ID Remote Desktop Services (RDS) authentication protocol to authenticate a user to Microsoft Entra joined or Microsoft Entra hybrid joined devices.
-Additionally you can view any targetDeviceGroups that have been configured for SSO.
+The remoteDesktopSecurityConfiguration object applied to this service principal.
+Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
 ## PARAMETERS
 
@@ -197,8 +195,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
-
-[https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/remotedesktopsecurityconfiguration-get?view=graph-rest-1.0)
 
 
 

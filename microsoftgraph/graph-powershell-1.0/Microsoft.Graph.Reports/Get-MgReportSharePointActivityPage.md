@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSharePointActivityPage
 
 ## SYNOPSIS
-Invoke function getSharePointActivityPages
+Get the number of unique pages visited by users.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityPage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointActivityPage?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportSharePointActivityPage -InputObject <IReportsIdentity> -OutFile <Str
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointActivityPages
+Get the number of unique pages visited by users.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivitypage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivitypage)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-1.0)
 
 
 

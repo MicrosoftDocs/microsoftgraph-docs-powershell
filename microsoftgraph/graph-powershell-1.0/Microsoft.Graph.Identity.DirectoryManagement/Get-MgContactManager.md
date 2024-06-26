@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgContactManager
 
 ## SYNOPSIS
-Get this organizational contact's manager.
+The user or contact that is this contact's manager.
+Read-only.
+Supports $expand and $filter (eq) by id.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get this organizational contact's manager.
+The user or contact that is this contact's manager.
+Read-only.
+Supports $expand and $filter (eq) by id.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -173,6 +177,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -198,8 +204,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager)
-
-[https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0)
 
 
 

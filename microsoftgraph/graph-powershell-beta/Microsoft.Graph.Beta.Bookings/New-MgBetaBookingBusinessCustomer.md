@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Create a new bookingCustomer object.
+Create new navigation property to customers for bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessCustomer?view=graph-powershell-1.0)
@@ -80,7 +80,7 @@ New-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new bookingCustomer object.
+Create new navigation property to customers for bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessCustomer Cmdlet
@@ -453,8 +453,6 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinesscustomer)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-customers?view=graph-rest-1.0)
 
 
 

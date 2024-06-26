@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupEndpoint
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a specific endpoint object.
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a specific endpoint object.
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaGroupEndpoint Cmdlet
@@ -364,10 +368,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupendpoint)
-
-[https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/endpoint-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-endpoints?view=graph-rest-1.0)
 
 
 

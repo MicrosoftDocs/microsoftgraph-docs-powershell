@@ -199,7 +199,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetapineducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetapineducationclassmodule)
 
-[https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationmodule-pin?view=graph-rest-beta)
 
 
 

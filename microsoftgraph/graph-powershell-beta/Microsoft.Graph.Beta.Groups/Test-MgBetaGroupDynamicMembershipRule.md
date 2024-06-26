@@ -207,7 +207,7 @@ BODYPARAMETER `<IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRe
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule)
 
-[https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Use this API to create a new administrativeUnit.
+Create new navigation property to administrativeUnits for directory
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ```
 
 ## DESCRIPTION
-Use this API to create a new administrativeUnit.
+Create new navigation property to administrativeUnits for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -373,8 +373,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit)
-
-[https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-administrativeunits?view=graph-rest-1.0)
 
 
 

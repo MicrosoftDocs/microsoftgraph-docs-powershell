@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
+The collection of column definitions for this content type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgShareListContentTypeColumn -InputObject <IFilesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
+The collection of column definitions for this content type.
 
 ## PARAMETERS
 
@@ -345,10 +345,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumn)
-
-[https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0)
 
 
 

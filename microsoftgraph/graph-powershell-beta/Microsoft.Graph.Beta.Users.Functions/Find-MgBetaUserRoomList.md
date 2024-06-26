@@ -263,7 +263,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/find-mgbetauserroomlist)
 
-[https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta)
 
 
 

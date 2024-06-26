@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveItem
 
 ## SYNOPSIS
-Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+All items contained in the drive.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItem?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaGroupDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[bundle\]\[\] based on the unique ID of the bundle.
+All items contained in the drive.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -344,8 +348,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitem)
-
-[https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bundle-get?view=graph-rest-1.0)
 
 
 

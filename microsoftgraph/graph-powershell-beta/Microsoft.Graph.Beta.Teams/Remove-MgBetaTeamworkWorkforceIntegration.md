@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Delete an instance of a workforceIntegration.
+Delete navigation property workforceIntegrations for teamwork
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkWorkforceIntegration?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete an instance of a workforceIntegration.
+Delete navigation property workforceIntegrations for teamwork
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -246,8 +246,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkworkforceintegration)
-
-[https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/workforceintegration-delete?view=graph-rest-1.0)
 
 
 

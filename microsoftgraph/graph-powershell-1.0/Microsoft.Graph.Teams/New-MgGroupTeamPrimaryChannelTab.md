@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Add (pin) a tab to the specified channel within a team.
-The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
+Create new navigation property to tabs for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ New-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Add (pin) a tab to the specified channel within a team.
-The app must be preinstalled in the team and have the configurableTabs property defined in the app manifest.
+Create new navigation property to tabs for groups
 
 ## EXAMPLES
 
@@ -426,8 +424,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychanneltab)
-
-[https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-tabs?view=graph-rest-1.0)
 
 
 

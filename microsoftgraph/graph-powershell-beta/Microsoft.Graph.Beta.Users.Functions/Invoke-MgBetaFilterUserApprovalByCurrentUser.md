@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgBetaFilterUserApprovalByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 ## SYNTAX
 
@@ -29,7 +32,13 @@ Invoke-MgBetaFilterUserApprovalByCurrentUser -InputObject <IUsersFunctionsIdenti
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
 ## PARAMETERS
 
@@ -303,6 +312,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserapprovalbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecuritySecureScore
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a secureScore object.
+Get secureScores from security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a secureScore object.
+Get secureScores from security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -363,10 +363,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescore)
-
-[https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescore-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-securescores?view=graph-rest-1.0)
 
 
 

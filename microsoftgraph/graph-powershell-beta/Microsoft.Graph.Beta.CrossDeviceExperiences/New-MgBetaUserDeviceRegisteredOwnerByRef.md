@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Add a user as a registered owner of the device.
+Create new navigation property ref to registeredOwners for users
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgBetaUserDeviceRegisteredOwnerByRef -InputObject <ICrossDeviceExperiencesId
 ```
 
 ## DESCRIPTION
-Add a user as a registered owner of the device.
+Create new navigation property ref to registeredOwners for users
 
 ## EXAMPLES
 
@@ -268,8 +268,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregisteredownerbyref)
-
-[https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0)
 
 
 

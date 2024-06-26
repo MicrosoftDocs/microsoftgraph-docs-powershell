@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgBetaOrganizationBranding
 
 ## SYNOPSIS
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Resource to manage the default branding for the organization.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-1.0)
@@ -34,11 +31,8 @@ Get-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Resource to manage the default branding for the organization.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -251,8 +245,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbranding)
-
-[https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
 
 
 

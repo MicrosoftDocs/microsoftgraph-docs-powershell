@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamChannel
 
 ## SYNOPSIS
-Delete the channel.
+Delete navigation property channels for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannel?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete the channel.
+Delete navigation property channels for groups
 
 ## EXAMPLES
 
@@ -250,8 +250,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannel)
-
-[https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete?view=graph-rest-1.0)
 
 
 

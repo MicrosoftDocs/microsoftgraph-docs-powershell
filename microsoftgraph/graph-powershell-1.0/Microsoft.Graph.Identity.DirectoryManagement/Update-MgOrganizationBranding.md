@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgOrganizationBranding
 
 ## SYNOPSIS
-Update the properties of the default branding object specified by the organizationalBranding resource.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBranding?view=graph-powershell-beta)
+Update the navigation property branding in organization
 
 ## SYNTAX
 
@@ -70,7 +67,7 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Update the properties of the default branding object specified by the organizationalBranding resource.
+Update the navigation property branding in organization
 
 ## EXAMPLES
 ### Example 1: Update the default branding
@@ -925,6 +922,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -1047,8 +1046,6 @@ LOGINPAGETEXTVISIBILITYSETTINGS `<IMicrosoftGraphLoginPageTextVisibilitySettings
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding)
-
-[https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-update?view=graph-rest-1.0)
 
 
 

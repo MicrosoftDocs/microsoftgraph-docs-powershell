@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfilePosition
 
 ## SYNOPSIS
-Use this API to create a new workPosition in a user's profile.
+Create new navigation property to positions for users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Use this API to create a new workPosition in a user's profile.
+Create new navigation property to positions for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -624,8 +624,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileposition)
-
-[https://learn.microsoft.com/graph/api/profile-post-positions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-positions?view=graph-rest-1.0)
 
 
 

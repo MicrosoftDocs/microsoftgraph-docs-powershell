@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementIoUpdateStatus
 
 ## SYNOPSIS
-Deletes a iosUpdateDeviceStatus.
+Delete navigation property iosUpdateStatuses for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministr
 ```
 
 ## DESCRIPTION
-Deletes a iosUpdateDeviceStatus.
+Delete navigation property iosUpdateStatuses for deviceManagement
 
 ## PARAMETERS
 
@@ -217,8 +217,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementioupdatestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementioupdatestatus)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-iosupdatedevicestatus-delete?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
-The properties id, type, and description cannot be modified.
+Update the navigation property authenticationFlowsPolicy in policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
@@ -32,8 +31,7 @@ Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthentic
 ```
 
 ## DESCRIPTION
-Update the selfServiceSignUp property of an authenticationFlowsPolicy object.
-The properties id, type, and description cannot be modified.
+Update the navigation property authenticationFlowsPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -276,8 +274,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationflowspolicy-update?view=graph-rest-1.0)
 
 
 

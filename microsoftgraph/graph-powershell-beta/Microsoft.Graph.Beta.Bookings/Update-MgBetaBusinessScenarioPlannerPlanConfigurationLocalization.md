@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-Update the properties of a plannerPlanConfigurationLocalization object.
+Update the navigation property localizations in solutions
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ```
 
 ## DESCRIPTION
-Update the properties of a plannerPlanConfigurationLocalization object.
+Update the navigation property localizations in solutions
 
 ## PARAMETERS
 
@@ -324,8 +324,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
+Delete navigation property registration for communications
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ```
 
 ## DESCRIPTION
-Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
+Delete navigation property registration for communications
 
 ## PARAMETERS
 
@@ -208,8 +208,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationonlinemeetingregistration)
-
-[https://learn.microsoft.com/graph/api/meetingregistration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-delete?view=graph-rest-1.0)
 
 
 

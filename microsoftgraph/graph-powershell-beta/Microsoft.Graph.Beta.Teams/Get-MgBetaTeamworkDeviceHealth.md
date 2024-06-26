@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeviceHealth
 
 ## SYNOPSIS
-Get the health details of a Microsoft Teams-enabled device.
-Device health is calculated based on the device configuration and other device parameters.
+The health properties of the device.
 
 ## SYNTAX
 
@@ -28,8 +27,7 @@ Get-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get the health details of a Microsoft Teams-enabled device.
-Device health is calculated based on the device configuration and other device parameters.
+The health properties of the device.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamworkDeviceHealth Cmdlet
@@ -210,8 +208,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdevicehealth)
-
-[https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkdevicehealth-get?view=graph-rest-1.0)
 
 
 

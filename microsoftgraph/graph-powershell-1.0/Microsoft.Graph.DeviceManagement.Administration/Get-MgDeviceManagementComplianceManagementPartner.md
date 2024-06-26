@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-Read properties and relationships of the complianceManagementPartner object.
+The list of Compliance Management Partners configured by the tenant.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagemen
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the complianceManagementPartner object.
+The list of Compliance Management Partners configured by the tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -328,10 +328,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementcompliancemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementcompliancemanagementpartner)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-compliancemanagementpartner-list?view=graph-rest-1.0)
 
 
 

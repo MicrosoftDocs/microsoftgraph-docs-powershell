@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityProvider
 
 ## SYNOPSIS
-Get the properties and relationships of the specified identity provider configured in the tenant.
-Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
+Represents entry point for identity provider base.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
@@ -40,9 +38,7 @@ Get-MgBetaIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified identity provider configured in the tenant.
-Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Microsoft Entra ID.
-In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
+Represents entry point for identity provider base.
 
 ## EXAMPLES
 ### Example 1: List all identity provider resources configured in an Azure AD tenant
@@ -395,10 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityprovider)
-
-[https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityproviderbase-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-identityproviders?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Delete an externalitem.
+Delete navigation property items for external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete an externalitem.
+Delete navigation property items for external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -230,6 +230,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -239,8 +241,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetaexternalconnectionitem)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamOpenShift
 
 ## SYNOPSIS
-Invoke function getOpenShifts
+Get all openShift objects across all teams a user is a direct member of.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaTeamOpenShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>]
 ```
 
 ## DESCRIPTION
-Invoke function getOpenShifts
+Get all openShift objects across all teams a user is a direct member of.
 
 ## PARAMETERS
 
@@ -202,6 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamopenshift)
+
+[https://learn.microsoft.com/graph/api/team-getopenshifts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-getopenshifts?view=graph-rest-beta)
 
 
 

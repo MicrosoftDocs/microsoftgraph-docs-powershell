@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserChatMessageReply
 
 ## SYNOPSIS
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for users
 
 ## EXAMPLES
 
@@ -1054,8 +1054,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchatmessagereply)
-
-[https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseLegalHold
 
 ## SYNOPSIS
-Delete a legalHold object.
+Delete navigation property legalHolds for compliance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 ```
 
 ## DESCRIPTION
-Delete a legalHold object.
+Delete navigation property legalHolds for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -234,8 +234,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalhold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycaselegalhold)
-
-[https://learn.microsoft.com/graph/api/ediscovery-legalhold-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-legalhold-delete?view=graph-rest-1.0)
 
 
 

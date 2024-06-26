@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Create a new tokenLifetimePolicy object.
+Create new navigation property to tokenLifetimePolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ New-MgBetaPolicyTokenLifetimePolicy -BodyParameter <Hashtable> [-ResponseHeaders
 ```
 
 ## DESCRIPTION
-Create a new tokenLifetimePolicy object.
+Create new navigation property to tokenLifetimePolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -300,8 +300,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicytokenlifetimepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-post-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

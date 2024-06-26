@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Update the properties of the cloudPcOrganizationSettings object in a tenant.
+Update the navigation property organizationSettings in deviceManagement
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 ```
 
 ## DESCRIPTION
-Update the properties of the cloudPcOrganizationSettings object in a tenant.
+Update the navigation property organizationSettings in deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
@@ -296,8 +296,6 @@ The default value is en-US, which corresponds to English (United States).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointorganizationsetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-update?view=graph-rest-1.0)
 
 
 

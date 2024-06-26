@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationBranding
 
 ## SYNOPSIS
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Branding for the organization.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBranding?view=graph-powershell-beta)
@@ -34,11 +31,8 @@ Get-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the default organizational branding object, if the Accept-Language header is set to 0 or default.
-If no default organizational branding object exists, this method returns a 404 Not Found error.
-If the Accept-Language header is set to an existing locale identified by the value of its id, this method retrieves the branding for the specified locale.
-This method retrieves only non-Stream properties, for example, usernameHintText and signInPageText.
-To retrieve Stream types of the default branding, for example, bannerLogo and backgroundImage, use the GET organizationalBrandingLocalization method.
+Branding for the organization.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -203,6 +197,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -228,8 +224,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbranding](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbranding)
-
-[https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-get?view=graph-rest-1.0)
 
 
 

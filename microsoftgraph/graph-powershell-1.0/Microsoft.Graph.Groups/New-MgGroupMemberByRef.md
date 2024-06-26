@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgGroupMemberByRef
 
 ## SYNOPSIS
-Add a member to a security or Microsoft 365 group through the members navigation property.
-The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
+Create new navigation property ref to members for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMemberByRef?view=graph-powershell-beta)
@@ -45,8 +44,7 @@ New-MgGroupMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <IReference
 ```
 
 ## DESCRIPTION
-Add a member to a security or Microsoft 365 group through the members navigation property.
-The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
+Create new navigation property ref to members for groups
 
 ## EXAMPLES
 ### Example 1: Add a member to a group
@@ -304,8 +302,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmemberbyref)
-
-[https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-post-members?view=graph-rest-1.0)
 
 
 

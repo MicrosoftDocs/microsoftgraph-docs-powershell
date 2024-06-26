@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminPeople
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a peopleAdminSettings object.
+Represents a setting to control people-related admin settings in the tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminPeople](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdminPeople?view=graph-powershell-1.0)
@@ -21,7 +21,7 @@ Get-MgBetaAdminPeople [-ExpandProperty <String[]>] [-Property <String[]>] [-Resp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a peopleAdminSettings object.
+Represents a setting to control people-related admin settings in the tenant.
 
 ## PARAMETERS
 
@@ -114,8 +114,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadminpeople)
-
-[https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-get?view=graph-rest-1.0)
 
 
 

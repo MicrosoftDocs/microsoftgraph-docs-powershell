@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMessage
 
 ## SYNOPSIS
-Delete eventMessage.
+Delete navigation property messages for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserMessage -InputObject <IMailIdentity> [-IfMatch <String>] [-Response
 ```
 
 ## DESCRIPTION
-Delete eventMessage.
+Delete navigation property messages for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -229,8 +229,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessage)
-
-[https://learn.microsoft.com/graph/api/eventmessage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-delete?view=graph-rest-1.0)
 
 
 

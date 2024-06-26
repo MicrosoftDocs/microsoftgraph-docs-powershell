@@ -8,9 +8,9 @@ schema: 2.0.0
 # Get-MgDriveRootPermission
 
 ## SYNOPSIS
-Return the effective sharing permission for a particular permission resource.
-Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+The set of permissions for the item.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootPermission?view=graph-powershell-beta)
@@ -40,9 +40,9 @@ Get-MgDriveRootPermission -InputObject <IFilesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Return the effective sharing permission for a particular permission resource.
-Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
-Callers can differentiate if the permission is inherited or not by checking the inheritedFrom property.This property is an ItemReference resource referencing the ancestor that the permission is inherited from.
+The set of permissions for the item.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -333,10 +333,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriverootpermission)
-
-[https://learn.microsoft.com/graph/api/permission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/driveitem-list-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-permissions?view=graph-rest-1.0)
 
 
 

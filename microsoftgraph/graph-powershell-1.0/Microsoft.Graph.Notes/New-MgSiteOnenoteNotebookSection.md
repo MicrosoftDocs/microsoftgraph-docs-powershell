@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteOnenoteNotebookSection
 
 ## SYNOPSIS
-Create a new onenoteSection in the specified notebook.
+Create new navigation property to sections for sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebookSection?view=graph-powershell-beta)
@@ -52,10 +52,7 @@ New-MgSiteOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new onenoteSection in the specified notebook.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/notebook-post-sections-permissions.md)]
+Create new navigation property to sections for sites
 
 ## EXAMPLES
 
@@ -1025,8 +1022,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebooksection)
-
-[https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-post-sections?view=graph-rest-1.0)
 
 
 
