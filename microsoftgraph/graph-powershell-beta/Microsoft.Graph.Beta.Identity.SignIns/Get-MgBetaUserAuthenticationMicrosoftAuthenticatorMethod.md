@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod
 
 ## SYNOPSIS
-Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -395,10 +395,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmicrosoftauthenticatormethod)
-
-[https://learn.microsoft.com/graph/api/microsoftauthenticatorauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/microsoftauthenticatorauthenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/microsoftauthenticatorauthenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/microsoftauthenticatorauthenticationmethod-list?view=graph-rest-1.0)
 
 
 

@@ -8,11 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserOnenoteOperation
 
 ## SYNOPSIS
-Get the status of a long-running OneNote operation.
-The status applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
-  You can poll the Operation-Location endpoint until the status property returns completed or failed.
-If the status is completed, the resourceLocation property contains the resource endpoint URI.
-If the status is failed, the error and @api.diagnostics properties provide error information.
+The status of OneNote operations.
+Getting an operations collection isn't supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteOperation?view=graph-powershell-1.0)
@@ -34,11 +33,10 @@ Get-MgBetaUserOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get the status of a long-running OneNote operation.
-The status applies to operations that return the Operation-Location header in the response, such as CopyNotebook, CopyToNotebook, CopyToSectionGroup, and CopyToSection.
-  You can poll the Operation-Location endpoint until the status property returns completed or failed.
-If the status is completed, the resourceLocation property contains the resource endpoint URI.
-If the status is failed, the error and @api.diagnostics properties provide error information.
+The status of OneNote operations.
+Getting an operations collection isn't supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -209,8 +207,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenoteoperation)
-
-[https://learn.microsoft.com/graph/api/onenoteoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenoteoperation-get?view=graph-rest-1.0)
 
 
 

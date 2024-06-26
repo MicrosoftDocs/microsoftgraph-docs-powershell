@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOnPremisePublishingProfileAgentGroup
 
 ## SYNOPSIS
-Create a new onPremisesAgentGroup object.
+Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Create a new onPremisesAgentGroup object.
+Create new navigation property to agentGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
@@ -452,8 +452,6 @@ Nullable.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofileagentgroup)
-
-[https://learn.microsoft.com/graph/api/onpremisesagentgroup-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagentgroup-post?view=graph-rest-1.0)
 
 
 

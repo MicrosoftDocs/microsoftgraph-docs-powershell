@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassAssignment
 
 ## SYNOPSIS
-Get the properties and relationships of an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
-You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
+All assignments associated with this class.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -41,13 +39,8 @@ Get-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
-You can use the Prefer header in your request to get the inactive status in case the assignment is deactivated; otherwise, the response value for the status property is unknownFutureValue.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/educationassignment-get-permissions.md)]
+All assignments associated with this class.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Get assignments
@@ -351,10 +344,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignment)
-
-[https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-assignments?view=graph-rest-1.0)
 
 
 

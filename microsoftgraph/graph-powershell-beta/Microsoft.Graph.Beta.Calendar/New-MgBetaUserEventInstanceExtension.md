@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserEventInstanceExtension
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to extensions for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgUserEventInstanceExtension?view=graph-powershell-1.0)
@@ -46,9 +44,7 @@ New-MgBetaUserEventInstanceExtension -InputObject <ICalendarIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to extensions for users
 
 ## PARAMETERS
 
@@ -270,8 +266,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventinstanceextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
 
 
 

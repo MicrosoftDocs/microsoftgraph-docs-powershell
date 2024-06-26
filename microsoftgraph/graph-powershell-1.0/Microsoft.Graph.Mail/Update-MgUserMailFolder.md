@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMailFolder
 
 ## SYNOPSIS
-Update the properties of mailfolder object.
+Update the navigation property mailFolders in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolder?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the properties of mailfolder object.
+Update the navigation property mailFolders in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -966,8 +966,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/update-mgusermailfolder)
-
-[https://learn.microsoft.com/graph/api/mailfolder-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-update?view=graph-rest-1.0)
 
 
 

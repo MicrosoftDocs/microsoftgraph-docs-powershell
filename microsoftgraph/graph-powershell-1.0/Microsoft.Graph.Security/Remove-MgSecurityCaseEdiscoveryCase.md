@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityCaseEdiscoveryCase
 
 ## SYNOPSIS
-Delete an ediscoveryCase object.
+Delete navigation property ediscoveryCases for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete an ediscoveryCase object.
+Delete navigation property ediscoveryCases for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -265,8 +265,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycase)
-
-[https://learn.microsoft.com/graph/api/security-casesroot-delete-ediscoverycases?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-casesroot-delete-ediscoverycases?view=graph-rest-1.0)
 
 
 

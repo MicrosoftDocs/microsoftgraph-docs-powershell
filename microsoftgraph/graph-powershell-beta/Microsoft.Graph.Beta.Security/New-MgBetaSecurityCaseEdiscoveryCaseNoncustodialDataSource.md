@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Create a new ediscoveryNoncustodialDataSource object.
+Create new navigation property to noncustodialDataSources for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 ```
 
 ## DESCRIPTION
-Create a new ediscoveryNoncustodialDataSource object.
+Create new navigation property to noncustodialDataSources for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -516,8 +516,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasenoncustodialdatasource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycasenoncustodialdatasource)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-post-noncustodialdatasources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-noncustodialdatasources?view=graph-rest-1.0)
 
 
 

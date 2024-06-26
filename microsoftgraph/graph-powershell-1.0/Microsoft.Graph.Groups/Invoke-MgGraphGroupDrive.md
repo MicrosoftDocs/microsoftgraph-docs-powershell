@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgGraphGroupDrive
 
 ## SYNOPSIS
-Invoke function sharedWithMe
+Get a list of driveItem objects shared with the owner of a drive.
+The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroupDrive?view=graph-powershell-beta)
@@ -32,7 +33,8 @@ Invoke-MgGraphGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Invoke function sharedWithMe
+Get a list of driveItem objects shared with the owner of a drive.
+The driveItems returned from the sharedWithMe method always include the remoteItem facet that indicates they are items from a different drive.
 
 ## PARAMETERS
 
@@ -309,6 +311,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mggraphgroupdrive)
+
+[https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-sharedwithme?view=graph-rest-1.0)
 
 
 

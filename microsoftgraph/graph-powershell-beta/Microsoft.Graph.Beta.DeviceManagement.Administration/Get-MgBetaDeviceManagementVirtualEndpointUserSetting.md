@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointUserSetting
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcUserSetting object.
+Cloud PC user settings.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcUserSetting object.
+Cloud PC user settings.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
@@ -370,10 +370,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointusersetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcusersetting-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-usersettings?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAppCatalogTeamAppDefinitionColorIcon
 
 ## SYNOPSIS
-Retrieve a Teams app icon associated with a specific definition of an app.
+The color version of the Teams app's icon.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -InputObject <ITeamsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve a Teams app icon associated with a specific definition of an app.
+The color version of the Teams app's icon.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
@@ -230,8 +230,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetaappcatalogteamappdefinitioncoloricon)
-
-[https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsappicon-get?view=graph-rest-1.0)
 
 
 

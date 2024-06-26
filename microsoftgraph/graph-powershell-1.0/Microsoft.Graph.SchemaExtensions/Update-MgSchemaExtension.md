@@ -378,8 +378,8 @@ Supports $filter (eq).
   - `[Properties <IMicrosoftGraphExtensionSchemaProperty- `[]`>]`: The collection of property names and types that make up the schema extension definition.
     - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
     - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
-Allowed values are Binary, Boolean, DateTime, Integer or String.
-See the table in the Supported property data types section for more details.
+Allowed values are Binary, Boolean, DateTime, Integer, or String.
+For more information, see Supported property data types.
   - `[Status <String>]`: The lifecycle state of the schema extension.
 Possible states are InDevelopment, Available, and Deprecated.
 Automatically set to InDevelopment on creation.
@@ -394,8 +394,8 @@ INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
 PROPERTIES <IMicrosoftGraphExtensionSchemaProperty- `[]`>: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
   - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
-Allowed values are Binary, Boolean, DateTime, Integer or String.
-See the table in the Supported property data types section for more details.
+Allowed values are Binary, Boolean, DateTime, Integer, or String.
+For more information, see Supported property data types.
 
 ## RELATED LINKS
 

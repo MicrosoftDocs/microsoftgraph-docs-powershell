@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365GroupActivityFileCount
 
 ## SYNOPSIS
-Invoke function getOffice365GroupsActivityFileCounts
+Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityFileCount?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportOffice365GroupActivityFileCount -InputObject <IReportsIdentity> -Out
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365GroupsActivityFileCounts
+Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group.
 
 ## PARAMETERS
 
@@ -183,6 +183,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivityfilecount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-1.0)
 
 
 

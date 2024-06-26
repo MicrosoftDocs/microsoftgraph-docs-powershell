@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportTeamDeviceUsageUserCount
 
 ## SYNOPSIS
-Invoke function getTeamsDeviceUsageUserCounts
+Get the number of Microsoft Teams daily unique users by device type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamDeviceUsageUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportTeamDeviceUsageUserCount -InputObject <IReportsIdentity> -OutFile <S
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsDeviceUsageUserCounts
+Get the number of Microsoft Teams daily unique users by device type.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamdeviceusageusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsdeviceusageusercounts?view=graph-rest-1.0)
 
 
 

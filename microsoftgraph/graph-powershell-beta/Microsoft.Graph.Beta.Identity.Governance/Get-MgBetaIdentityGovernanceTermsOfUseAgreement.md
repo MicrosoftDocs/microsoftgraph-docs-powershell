@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-1.0)
@@ -39,8 +38,7 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreement -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Retrieve all files related to an agreement.
-This includes the default file and all localized files.
+Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID.
 
 ## PARAMETERS
 
@@ -391,10 +389,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancetermsofuseagreement)
-
-[https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-list-files?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-list-agreements?view=graph-rest-1.0)
 
 
 

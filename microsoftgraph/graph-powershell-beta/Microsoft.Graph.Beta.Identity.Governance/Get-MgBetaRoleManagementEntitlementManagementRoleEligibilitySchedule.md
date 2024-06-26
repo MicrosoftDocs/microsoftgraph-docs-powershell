@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule
 
 ## SYNOPSIS
-Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
+Get roleEligibilitySchedules from roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule -InputObjec
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
+Get roleEligibilitySchedules from roleManagement
 
 ## PARAMETERS
 
@@ -389,10 +389,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleeligibilityschedule)
-
-[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleeligibilityschedules?view=graph-rest-1.0)
 
 
 

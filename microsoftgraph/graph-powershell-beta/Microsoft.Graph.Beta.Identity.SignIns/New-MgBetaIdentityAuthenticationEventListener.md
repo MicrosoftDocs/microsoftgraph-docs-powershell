@@ -8,8 +8,10 @@ schema: 2.0.0
 # New-MgBetaIdentityAuthenticationEventListener
 
 ## SYNOPSIS
-Create a new authenticationEventListener object.
-You can create one of the following subtypes that are derived from authenticationEventListener.
+Create new navigation property to authenticationEventListeners for identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -29,8 +31,7 @@ New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAut
 ```
 
 ## DESCRIPTION
-Create a new authenticationEventListener object.
-You can create one of the following subtypes that are derived from authenticationEventListener.
+Create new navigation property to authenticationEventListeners for identity
 
 ## PARAMETERS
 
@@ -248,8 +249,6 @@ This property must be set to false for listener of type onTokenIssuanceStartList
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-post-authenticationeventlisteners?view=graph-rest-1.0)
 
 
 

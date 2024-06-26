@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Create new navigation property to roleDefinitions for roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
@@ -35,9 +33,7 @@ New-MgBetaRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphU
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Create new navigation property to roleDefinitions for roleManagement
 
 ## PARAMETERS
 
@@ -467,8 +463,6 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroledefinition)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
 
 
 

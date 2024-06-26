@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgEducationMeAssignmentRubric
 
 ## SYNOPSIS
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
+Update the navigation property rubric in education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationMeAssignmentRubric?view=graph-powershell-beta)
@@ -51,8 +50,7 @@ Update-MgEducationMeAssignmentRubric -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Attach an existing educationRubric object to an educationAssignment.
-Only teachers can perform this operation.
+Update the navigation property rubric in education
 
 ## EXAMPLES
 
@@ -442,8 +440,6 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentrubric)
-
-[https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-put-rubric?view=graph-rest-1.0)
 
 
 

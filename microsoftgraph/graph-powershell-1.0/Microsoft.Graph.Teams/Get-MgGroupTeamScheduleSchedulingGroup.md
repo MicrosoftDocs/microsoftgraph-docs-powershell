@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a schedulingGroup by ID.
+The logical grouping of users in the schedule (usually by role).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a schedulingGroup by ID.
+The logical grouping of users in the schedule (usually by role).
 
 ## EXAMPLES
 
@@ -325,10 +325,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleschedulinggroup)
-
-[https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedulinggroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-schedulinggroups?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityB2CUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
+Create new navigation property to userAttributeAssignments for identity
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow.
+Create new navigation property to userAttributeAssignments for identity
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
@@ -460,8 +460,6 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityb2cuserflowuserattributeassignment)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-post-userattributeassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-post-userattributeassignments?view=graph-rest-1.0)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Create a new directory role member.
-You can use both the object ID and template ID of the directoryRole with this API.
-The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
-For details, see Role template IDs.
+Create new navigation property ref to members for directoryRoles
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleMemberByRef?view=graph-powershell-1.0)
@@ -48,10 +45,7 @@ New-MgBetaDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIde
 ```
 
 ## DESCRIPTION
-Create a new directory role member.
-You can use both the object ID and template ID of the directoryRole with this API.
-The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
-For details, see Role template IDs.
+Create new navigation property ref to members for directoryRoles
 
 ## EXAMPLES
 ### Example 1: Add a member to a directory role
@@ -311,8 +305,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref)
-
-[https://learn.microsoft.com/graph/api/directoryrole-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-post-members?view=graph-rest-1.0)
 
 
 

@@ -379,9 +379,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouplifecyclepolicy)
 
-[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/grouplifecyclepolicy-list?view=graph-rest-beta)
 
 
 

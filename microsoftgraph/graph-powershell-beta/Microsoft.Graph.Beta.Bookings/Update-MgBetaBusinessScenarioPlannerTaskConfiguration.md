@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBusinessScenarioPlannerTaskConfiguration
 
 ## SYNOPSIS
-Update the properties of a plannerTaskConfiguration object.
+Update the navigation property taskConfiguration in solutions
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgBetaBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIde
 ```
 
 ## DESCRIPTION
-Update the properties of a plannerTaskConfiguration object.
+Update the navigation property taskConfiguration in solutions
 
 ## PARAMETERS
 
@@ -360,8 +360,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskconfiguration)
-
-[https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskconfiguration-update?view=graph-rest-1.0)
 
 
 

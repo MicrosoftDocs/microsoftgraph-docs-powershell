@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserOnenoteNotebook
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a notebook object.
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebook?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a notebook object.
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,10 +334,6 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetauseronenotenotebook)
-
-[https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-notebooks?view=graph-rest-1.0)
 
 
 

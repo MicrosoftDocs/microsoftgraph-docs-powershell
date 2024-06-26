@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagementTemplate
 
 ## SYNOPSIS
-Read the properties and relationships of a managementTemplate object.
+The collection of baseline management templates across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagementTemplate -InputObject <IManag
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a managementTemplate object.
+The collection of baseline management templates across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementTemplate Cmdlet
@@ -341,10 +341,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementtemplate)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementtemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementtemplates?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
-Delete a school data synchronization profile in the tenant based on the identifier.
+Delete navigation property synchronizationProfiles for education
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [
 ```
 
 ## DESCRIPTION
-Delete a school data synchronization profile in the tenant based on the identifier.
+Delete navigation property synchronizationProfiles for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -220,8 +220,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationsynchronizationprofile)
-
-[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-delete?view=graph-rest-1.0)
 
 
 

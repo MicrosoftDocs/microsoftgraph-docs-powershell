@@ -173,6 +173,9 @@ Locale: en-US
 ### [Get-MgGroupDriveListItemActivityByInterval](Get-MgGroupDriveListItemActivityByInterval.md)
 {{ Fill in the Description }}
 
+### [Get-MgGroupDriveListItemDelta](Get-MgGroupDriveListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgGroupDriveRootActivityByInterval](Get-MgGroupDriveRootActivityByInterval.md)
 {{ Fill in the Description }}
 
@@ -435,6 +438,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSiteListItemActivityByInterval](Get-MgGroupSiteListItemActivityByInterval.md)
+{{ Fill in the Description }}
+
+### [Get-MgGroupSiteListItemDelta](Get-MgGroupSiteListItemDelta.md)
 {{ Fill in the Description }}
 
 ### [Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgGroupSitePageMicrosoftGraphSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
@@ -821,9 +827,6 @@ Locale: en-US
 ### [Remove-MgGroup](Remove-MgGroup.md)
 {{ Fill in the Description }}
 
-### [Remove-MgGroupAcceptedSenderByRef](Remove-MgGroupAcceptedSenderByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgGroupAcceptedSenderDirectoryObjectByRef](Remove-MgGroupAcceptedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -866,13 +869,7 @@ Locale: en-US
 ### [Remove-MgGroupLifecyclePolicy](Remove-MgGroupLifecyclePolicy.md)
 {{ Fill in the Description }}
 
-### [Remove-MgGroupMemberByRef](Remove-MgGroupMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgGroupMemberDirectoryObjectByRef](Remove-MgGroupMemberDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgGroupOwnerByRef](Remove-MgGroupOwnerByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupOwnerDirectoryObjectByRef](Remove-MgGroupOwnerDirectoryObjectByRef.md)
@@ -882,9 +879,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
-{{ Fill in the Description }}
-
-### [Remove-MgGroupRejectedSenderByRef](Remove-MgGroupRejectedSenderByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgGroupRejectedSenderDirectoryObjectByRef](Remove-MgGroupRejectedSenderDirectoryObjectByRef.md)

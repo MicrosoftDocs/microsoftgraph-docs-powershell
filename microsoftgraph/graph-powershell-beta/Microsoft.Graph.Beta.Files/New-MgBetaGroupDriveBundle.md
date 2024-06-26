@@ -901,8 +901,8 @@ Accept wildcard characters: False
 ```
 
 ### -Thumbnails
-Collection of \[thumbnailSet\]\[\] objects associated with the item.
-For more information, see \[getting thumbnails\]\[\].
+Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
 To construct, see NOTES section for THUMBNAILS properties and create a hash table.
@@ -921,7 +921,7 @@ Accept wildcard characters: False
 
 ### -Versions
 The list of previous versions of the item.
-For more info, see \[getting previous versions\]\[\].
+For more info, see getting previous versions.
 Read-only.
 Nullable.
 To construct, see NOTES section for VERSIONS properties and create a hash table.
@@ -1062,10 +1062,9 @@ Read-only.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Participants <IMicrosoftGraphIdentitySet- `[]`>]`: The identities of the users participating in this comment thread.
@@ -2770,18 +2769,16 @@ For example, a user's display name, a team name.
               - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                 - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
               - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
             - `[Actions <String>]`: chatMessageActions
             - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -2828,10 +2825,9 @@ Link to the message in Microsoft Teams.
           - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[UserIdentityType <String>]`: teamworkUserIdentityType
         - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -2925,6 +2921,9 @@ Each one represents the same information in a different clipboard format.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+        - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
         - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EnableSingleSignOn <Boolean?>]`: 
@@ -3217,18 +3216,18 @@ Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
           - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
           - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
           - `[Name <String>]`: The name of the item being referenced.
 Read-only.
           - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-          - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+          - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
           - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -3239,7 +3238,7 @@ Read-only.
             - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
             - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
           - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
         - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -3247,7 +3246,7 @@ Read-only.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
         - `[Activities <IMicrosoftGraphItemActivityOld- `[]`>]`: The list of recent activities that took place under this drive.
-        - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+        - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
         - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -3339,7 +3338,7 @@ Read-only.
               - `[ListId <String>]`: The unique identifier of the lookup source list.
               - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-            - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+            - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
             - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4093,10 +4092,9 @@ Read-only.
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -4128,7 +4126,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
           - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
         - `[RecycleBin <IMicrosoftGraphRecycleBin>]`: recycleBin
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5616,8 +5614,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-        - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+        - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
         - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
         - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
         - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -5629,11 +5629,15 @@ Read-only.
 Default is pending.
         - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
           - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
           - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
           - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
         - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
         - `[Version <String>]`: Version of the entity.
       - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -6526,10 +6530,9 @@ Read-only.
           - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
             - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
           - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -6819,13 +6822,15 @@ Read-only.
         - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-        - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+        - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
         - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
         - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
         - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -7987,10 +7992,9 @@ Read-only.
           - `[Audience <String>]`: meetingAudience
           - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[TenantId <String>]`: The user's tenant ID.
           - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8055,7 +8059,7 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Album <IMicrosoftGraphAlbum>]`: album
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+        - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
       - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
     - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -8243,8 +8247,8 @@ Read-only.
     - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
     - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-    - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+    - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
       - `[Id <String>]`: The unique identifier for an entity.
@@ -8261,7 +8265,7 @@ This is only available when a folder thumbnail is requested.
       - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
       - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
     - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -8692,10 +8696,9 @@ Read-only.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[DriveItem <IMicrosoftGraphDriveItem>]`: driveItem
@@ -10371,18 +10374,16 @@ For example, a user's display name, a team name.
                   - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                     - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
                   - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
                     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
                 - `[Actions <String>]`: chatMessageActions
                 - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -10429,10 +10430,9 @@ Link to the message in Microsoft Teams.
               - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                 - `[UserIdentityType <String>]`: teamworkUserIdentityType
             - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -10526,6 +10526,9 @@ Each one represents the same information in a different clipboard format.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+            - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
             - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[EnableSingleSignOn <Boolean?>]`: 
@@ -10818,18 +10821,18 @@ Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
               - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
               - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
               - `[Name <String>]`: The name of the item being referenced.
 Read-only.
               - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-              - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+              - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
               - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -10840,7 +10843,7 @@ Read-only.
                 - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
                 - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
               - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
             - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -10958,7 +10961,7 @@ Read-only.
                 - `[LastRecordedDateTime <DateTime?>]`: 
                 - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
                 - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-            - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+            - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
             - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -11050,7 +11053,7 @@ Read-only.
                   - `[ListId <String>]`: The unique identifier of the lookup source list.
                   - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-                - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+                - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
                 - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11703,10 +11706,9 @@ Read-only.
                 - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                   - `[LoginName <String>]`: The sign in name of the SharePoint identity.
                 - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -11738,7 +11740,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
               - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-              - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+              - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
             - `[RecycleBin <IMicrosoftGraphRecycleBin>]`: recycleBin
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13226,8 +13228,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-            - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+            - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
             - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
             - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
             - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -13239,11 +13243,15 @@ Read-only.
 Default is pending.
             - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
               - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
               - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
               - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
             - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
             - `[Version <String>]`: Version of the entity.
           - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -14136,10 +14144,9 @@ Read-only.
               - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                 - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
                 - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
               - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -14429,13 +14436,15 @@ Read-only.
             - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-            - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+            - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
             - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
             - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
             - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -15597,10 +15606,9 @@ Read-only.
               - `[Audience <String>]`: meetingAudience
               - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                 - `[TenantId <String>]`: The user's tenant ID.
               - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15665,7 +15673,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Album <IMicrosoftGraphAlbum>]`: album
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+            - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
           - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -15853,8 +15861,8 @@ Read-only.
         - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
         - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -15871,7 +15879,7 @@ This is only available when a folder thumbnail is requested.
           - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
           - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
         - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -16312,10 +16320,9 @@ BODYPARAMETER `<IMicrosoftGraphDriveItem>`: driveItem
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -17988,18 +17995,16 @@ For example, a user's display name, a team name.
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
             - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -18046,10 +18051,9 @@ Link to the message in Microsoft Teams.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -18143,6 +18147,9 @@ Each one represents the same information in a different clipboard format.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+      - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
       - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EnableSingleSignOn <Boolean?>]`: 
@@ -18435,18 +18442,18 @@ Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
         - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
         - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
         - `[Name <String>]`: The name of the item being referenced.
 Read-only.
         - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -18457,7 +18464,7 @@ Read-only.
           - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
           - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
         - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -18611,7 +18618,7 @@ Read-only.
           - `[LastRecordedDateTime <DateTime?>]`: 
           - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
           - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
       - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -18703,7 +18710,7 @@ Read-only.
             - `[ListId <String>]`: The unique identifier of the lookup source list.
             - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-          - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+          - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
           - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19356,10 +19363,9 @@ Read-only.
           - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[LoginName <String>]`: The sign in name of the SharePoint identity.
           - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
         - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -19391,7 +19397,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
         - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-        - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+        - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
       - `[RecycleBin <IMicrosoftGraphRecycleBin>]`: recycleBin
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -20879,8 +20885,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
       - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
       - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
       - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -20892,11 +20900,15 @@ Read-only.
 Default is pending.
       - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
         - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
         - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
       - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
       - `[Version <String>]`: Version of the entity.
     - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -21789,10 +21801,9 @@ Read-only.
         - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -22082,13 +22093,15 @@ Read-only.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
       - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
       - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -23250,10 +23263,9 @@ Read-only.
         - `[Audience <String>]`: meetingAudience
         - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[TenantId <String>]`: The user's tenant ID.
         - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23318,7 +23330,7 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Album <IMicrosoftGraphAlbum>]`: album
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+      - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
     - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
   - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -23506,8 +23518,8 @@ Read-only.
   - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
   - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-  - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+  - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -23524,7 +23536,7 @@ This is only available when a folder thumbnail is requested.
     - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
     - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -23928,7 +23940,7 @@ BUNDLE `<IMicrosoftGraphBundle>`: bundle
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Album <IMicrosoftGraphAlbum>]`: album
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+    - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
   - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
 
 CHILDREN <IMicrosoftGraphDriveItem- `[]`>: Collection containing Item objects for the immediate children of Item.
@@ -23940,10 +23952,9 @@ Nullable.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -25616,18 +25627,16 @@ For example, a user's display name, a team name.
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
             - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -25674,10 +25683,9 @@ Link to the message in Microsoft Teams.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -25771,6 +25779,9 @@ Each one represents the same information in a different clipboard format.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+      - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
       - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EnableSingleSignOn <Boolean?>]`: 
@@ -26063,18 +26074,18 @@ Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
         - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
         - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
         - `[Name <String>]`: The name of the item being referenced.
 Read-only.
         - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -26085,7 +26096,7 @@ Read-only.
           - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
           - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
         - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -26239,7 +26250,7 @@ Read-only.
           - `[LastRecordedDateTime <DateTime?>]`: 
           - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
           - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
       - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -26331,7 +26342,7 @@ Read-only.
             - `[ListId <String>]`: The unique identifier of the lookup source list.
             - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-          - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+          - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
           - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -26984,10 +26995,9 @@ Read-only.
           - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[LoginName <String>]`: The sign in name of the SharePoint identity.
           - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
         - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -27019,7 +27029,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
         - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-        - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+        - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
       - `[RecycleBin <IMicrosoftGraphRecycleBin>]`: recycleBin
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28507,8 +28517,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
       - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
       - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
       - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -28520,11 +28532,15 @@ Read-only.
 Default is pending.
       - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
         - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
         - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
       - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
       - `[Version <String>]`: Version of the entity.
     - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -29417,10 +29433,9 @@ Read-only.
         - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -29710,13 +29725,15 @@ Read-only.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
       - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
       - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -30878,10 +30895,9 @@ Read-only.
         - `[Audience <String>]`: meetingAudience
         - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[TenantId <String>]`: The user's tenant ID.
         - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -30946,7 +30962,7 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Album <IMicrosoftGraphAlbum>]`: album
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+      - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
     - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
   - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -31134,8 +31150,8 @@ Read-only.
   - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
   - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-  - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+  - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -31152,7 +31168,7 @@ This is only available when a folder thumbnail is requested.
     - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
     - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
   - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -31557,10 +31573,9 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -31719,10 +31734,9 @@ Supports $filter (eq).
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -33244,18 +33258,16 @@ For example, a user's display name, a team name.
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
           - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -33302,10 +33314,9 @@ Link to the message in Microsoft Teams.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -33399,6 +33410,9 @@ Each one represents the same information in a different clipboard format.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+    - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
     - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EnableSingleSignOn <Boolean?>]`: 
@@ -33691,18 +33705,18 @@ Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
       - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
       - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
       - `[Name <String>]`: The name of the item being referenced.
 Read-only.
       - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-      - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+      - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -33713,7 +33727,7 @@ Read-only.
         - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
         - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
       - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
     - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -33838,7 +33852,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Album <IMicrosoftGraphAlbum>]`: album
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+            - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
           - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -34006,10 +34020,9 @@ Read-only.
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -34041,7 +34054,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
           - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
         - `[Photo <IMicrosoftGraphPhoto>]`: photo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -34222,8 +34235,8 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
-        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -34240,7 +34253,7 @@ This is only available when a folder thumbnail is requested.
           - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
           - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
         - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -34645,7 +34658,7 @@ Read-only.
         - `[LastRecordedDateTime <DateTime?>]`: 
         - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
         - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-    - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+    - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
     - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -34737,7 +34750,7 @@ Read-only.
           - `[ListId <String>]`: The unique identifier of the lookup source list.
           - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-        - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+        - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
         - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -36783,8 +36796,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
     - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
     - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
     - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -36796,11 +36811,15 @@ Read-only.
 Default is pending.
     - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
       - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
       - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
       - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
     - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
     - `[Version <String>]`: Version of the entity.
   - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -37693,10 +37712,9 @@ Read-only.
       - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
         - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -37986,13 +38004,15 @@ Read-only.
     - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-    - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+    - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
     - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
     - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
     - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -39154,10 +39174,9 @@ Read-only.
       - `[Audience <String>]`: meetingAudience
       - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[TenantId <String>]`: The user's tenant ID.
       - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -39261,10 +39280,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -39423,10 +39441,9 @@ Supports $filter (eq).
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -40948,18 +40965,16 @@ For example, a user's display name, a team name.
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
           - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+            - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
         - `[Actions <String>]`: chatMessageActions
         - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -41006,10 +41021,9 @@ Link to the message in Microsoft Teams.
       - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[UserIdentityType <String>]`: teamworkUserIdentityType
     - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -41103,6 +41117,9 @@ Each one represents the same information in a different clipboard format.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+    - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
     - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EnableSingleSignOn <Boolean?>]`: 
@@ -41395,18 +41412,18 @@ Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
       - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
       - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
       - `[Name <String>]`: The name of the item being referenced.
 Read-only.
       - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-      - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+      - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
       - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -41417,7 +41434,7 @@ Read-only.
         - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
         - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
       - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
     - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -41542,7 +41559,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Album <IMicrosoftGraphAlbum>]`: album
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+            - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
           - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -41710,10 +41727,9 @@ Read-only.
             - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[LoginName <String>]`: The sign in name of the SharePoint identity.
             - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
           - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -41745,7 +41761,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
           - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+          - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
         - `[Photo <IMicrosoftGraphPhoto>]`: photo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -41926,8 +41942,8 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
-        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -41944,7 +41960,7 @@ This is only available when a folder thumbnail is requested.
           - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
           - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
         - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -42349,7 +42365,7 @@ Read-only.
         - `[LastRecordedDateTime <DateTime?>]`: 
         - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
         - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-    - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+    - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
     - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -42441,7 +42457,7 @@ Read-only.
           - `[ListId <String>]`: The unique identifier of the lookup source list.
           - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-        - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+        - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
         - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -44487,8 +44503,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
     - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
     - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
     - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -44500,11 +44518,15 @@ Read-only.
 Default is pending.
     - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
       - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
       - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
       - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
     - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
     - `[Version <String>]`: Version of the entity.
   - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -45397,10 +45419,9 @@ Read-only.
       - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
         - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -45690,13 +45711,15 @@ Read-only.
     - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-    - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+    - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
     - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
     - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
     - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -46858,10 +46881,9 @@ Read-only.
       - `[Audience <String>]`: meetingAudience
       - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[TenantId <String>]`: The user's tenant ID.
       - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -46894,10 +46916,9 @@ LISTITEM `<IMicrosoftGraphListItem>`: listItem
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedByUser <IMicrosoftGraphUser>]`: user
@@ -48570,18 +48591,16 @@ For example, a user's display name, a team name.
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
             - `[Tag <IMicrosoftGraphTeamworkTagIdentity>]`: teamworkTagIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+              - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem- `[]`>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
           - `[Actions <String>]`: chatMessageActions
           - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
@@ -48628,10 +48647,9 @@ Link to the message in Microsoft Teams.
         - `[Organizer <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[UserIdentityType <String>]`: teamworkUserIdentityType
       - `[Operations <IMicrosoftGraphTeamsAsyncOperation- `[]`>]`: A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -48725,6 +48743,9 @@ Each one represents the same information in a different clipboard format.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
       - `[AadDeviceId <String>]`: The Microsoft Entra device ID of the Cloud PC.
+      - `[AllotmentDisplayName <String>]`: The allotment name divides tenant licenses into smaller batches or groups that helps restrict the number of licenses available for use in a specific assignment.
+When the provisioningType is dedicated, the allotment name is null.
+Read-only.
       - `[ConnectionSettings <IMicrosoftGraphCloudPcConnectionSettings>]`: cloudPcConnectionSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EnableSingleSignOn <Boolean?>]`: 
@@ -49017,18 +49038,18 @@ Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
         - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
         - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
         - `[Name <String>]`: The name of the item being referenced.
 Read-only.
         - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+        - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
         - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -49039,7 +49060,7 @@ Read-only.
           - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
           - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
         - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
@@ -49164,7 +49185,7 @@ Read-only.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Album <IMicrosoftGraphAlbum>]`: album
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+              - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
             - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
           - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -49268,10 +49289,9 @@ Read-only.
               - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-                - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+                - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
                 - `[LoginName <String>]`: The sign in name of the SharePoint identity.
               - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
             - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -49303,7 +49323,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
             - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-            - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+            - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
           - `[Photo <IMicrosoftGraphPhoto>]`: photo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -49491,8 +49511,8 @@ The value allows the client to validate the authenticity of the notification rec
 Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
-          - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+          - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -49509,7 +49529,7 @@ This is only available when a folder thumbnail is requested.
             - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
             - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
           - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
             - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -49914,7 +49934,7 @@ Read-only.
           - `[LastRecordedDateTime <DateTime?>]`: 
           - `[ObservedDateTime <DateTime?>]`: When the activity was observed to take place.
           - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
-      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+      - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
       - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives return personal.
@@ -50006,7 +50026,7 @@ Read-only.
             - `[ListId <String>]`: The unique identifier of the lookup source list.
             - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-          - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+          - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
           - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -52055,8 +52075,10 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
 Returned by default.
 Read-only.
-      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic was collected.
+      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
       - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
       - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
 Read-only.
       - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
@@ -52068,11 +52090,15 @@ Read-only.
 Default is pending.
       - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
 Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
         - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
         - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
 Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
 Read-only.
         - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
       - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
       - `[Version <String>]`: Version of the entity.
     - `[ManagedAppRegistrations <IMicrosoftGraphManagedAppRegistration- `[]`>]`: Zero or more managed app registrations that belong to the user.
@@ -52965,10 +52991,9 @@ Read-only.
         - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
           - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
         - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.
@@ -53258,13 +53283,15 @@ Read-only.
       - `[FavoritePlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
-      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+      - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
       - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
       - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
       - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -54426,10 +54453,9 @@ Read-only.
         - `[Audience <String>]`: meetingAudience
         - `[CoOrganizers <IMicrosoftGraphCommunicationsUserIdentity- `[]`>]`: Identity information of coorganizers of the webinar.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
           - `[TenantId <String>]`: The user's tenant ID.
         - `[RegistrationConfiguration <IMicrosoftGraphVirtualEventWebinarRegistrationConfiguration>]`: virtualEventWebinarRegistrationConfiguration
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -54537,18 +54563,18 @@ PACKAGE `<IMicrosoftGraphPackage>`: package
 PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
   - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -54559,7 +54585,7 @@ Read-only.
     - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
@@ -54583,10 +54609,9 @@ Optional.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[GrantedToIdentities <IMicrosoftGraphIdentitySet- `[]`>]`: 
@@ -54599,10 +54624,9 @@ Read-only.
     - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[LoginName <String>]`: The sign in name of the SharePoint identity.
     - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
   - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
@@ -54614,18 +54638,18 @@ For OneDrive Personal only.
   - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -54636,7 +54660,7 @@ Read-only.
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
   - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
@@ -54661,7 +54685,7 @@ Value anonymous indicates the link is usable by anyone, organization indicates t
   - `[Roles <String- `[]`>]`: The type of permission, for example, read.
 See the Roles property values section for the full list of roles.
 Read-only.
-  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the - `[shares API]`- `[]`.
+  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the shares API.
 Read-only.
 
 PHOTO `<IMicrosoftGraphPhoto>`: photo
@@ -54692,10 +54716,9 @@ PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Level <String>]`: The state of publication for this document.
@@ -54711,10 +54734,9 @@ REMOTEITEM `<IMicrosoftGraphRemoteItem>`: remoteItem
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
@@ -54772,18 +54794,18 @@ Read-only.
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -54794,7 +54816,7 @@ Read-only.
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
   - `[Shared <IMicrosoftGraphShared>]`: shared
@@ -54839,10 +54861,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LabelAppliedDateTime <DateTime?>]`: The date and time when the label was applied on the item.
@@ -54877,10 +54898,9 @@ SHARED `<IMicrosoftGraphShared>`: shared
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Scope <String>]`: Indicates the scope of how the item is shared: anonymous, organization, or users.
@@ -54977,8 +54997,8 @@ Specifies the resource that is monitored for changes.
 Don't include the base URL (https://graph.microsoft.com/beta/).
 See the possible resource path values for each supported resource.
 
-THUMBNAILS <IMicrosoftGraphThumbnailSet- `[]`>: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+THUMBNAILS <IMicrosoftGraphThumbnailSet- `[]`>: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
   - `[Id <String>]`: The unique identifier for an entity.
@@ -54996,7 +55016,7 @@ This is only available when a folder thumbnail is requested.
   - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
 
 VERSIONS <IMicrosoftGraphDriveItemVersion- `[]`>: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -55004,10 +55024,9 @@ Nullable.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time when the version was last modified.
@@ -55429,8 +55448,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivebundle](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetagroupdrivebundle)
-
-[https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-post-bundles?view=graph-rest-1.0)
 
 
 

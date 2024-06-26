@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaChatTab
 
 ## SYNOPSIS
-Retrieve the properties and relationships of the specified tab in a chat.
+A collection of all the tabs in the chat.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgChatTab?view=graph-powershell-1.0)
@@ -38,7 +39,8 @@ Get-MgBetaChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of the specified tab in a chat.
+A collection of all the tabs in the chat.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: List all the tabs in the chat along with associated Teams app
@@ -370,10 +372,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattab](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetachattab)
-
-[https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-tabs?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-tabs?view=graph-rest-1.0)
 
 
 

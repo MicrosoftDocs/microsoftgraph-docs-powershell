@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
-Note
+Create new navigation property to overrides for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
@@ -48,9 +46,7 @@ New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Create an override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classifiedas specified in the override.
-Note
+Create new navigation property to overrides for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -306,8 +302,6 @@ SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride)
-
-[https://learn.microsoft.com/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassification-post-overrides?view=graph-rest-1.0)
 
 
 

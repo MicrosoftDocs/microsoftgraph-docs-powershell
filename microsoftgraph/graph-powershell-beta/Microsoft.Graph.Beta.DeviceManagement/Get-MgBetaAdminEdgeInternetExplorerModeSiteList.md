@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteList
 
 ## SYNOPSIS
-Get a browserSiteList that contains browserSite and browserSharedCookie resources.
+A collection of site lists to support Internet Explorer mode.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Get a browserSiteList that contains browserSite and browserSharedCookie resources.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersitelist-get-permissions.md)]
+A collection of site lists to support Internet Explorer mode.
 
 ## PARAMETERS
 
@@ -434,10 +431,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelist)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internetexplorermode-list-sitelists?view=graph-rest-1.0)
 
 
 

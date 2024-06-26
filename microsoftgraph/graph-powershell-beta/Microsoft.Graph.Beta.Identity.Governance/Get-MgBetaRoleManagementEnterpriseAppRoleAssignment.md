@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEnterpriseAppRoleAssignment
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
 
 ## PARAMETERS
 
@@ -402,10 +402,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententerpriseapproleassignment)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
 
 
 

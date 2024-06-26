@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationOwnerByRef
 
 ## SYNOPSIS
-Use this API to add an owner to an application by posting to the owners collection.
+Create new navigation property ref to owners for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ New-MgBetaApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Use this API to add an owner to an application by posting to the owners collection.
+Create new navigation property ref to owners for applications
 
 ## EXAMPLES
 ### Example 1: Add an owner to an application
@@ -289,8 +289,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationownerbyref)
-
-[https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-owners?view=graph-rest-1.0)
 
 
 

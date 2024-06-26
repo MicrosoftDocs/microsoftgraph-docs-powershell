@@ -599,7 +599,7 @@ You are prompted to sign in if you are not already signed in with the browser.Th
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermessagereply)
 
-[https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-createreply?view=graph-rest-beta)
 
 
 

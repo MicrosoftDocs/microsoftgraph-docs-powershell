@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation
 
 ## SYNOPSIS
-Get the last ediscoveryEstimateOperation objects and their properties.
+The last estimate operation associated with the eDiscovery search.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -Input
 ```
 
 ## DESCRIPTION
-Get the last ediscoveryEstimateOperation objects and their properties.
+The last estimate operation associated with the eDiscovery search.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -272,8 +272,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchlastestimatestatisticsoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesearchlastestimatestatisticsoperation)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-lastestimatestatisticsoperation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverysearch-list-lastestimatestatisticsoperation?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaPrivilegedAccessRoleAssignmentRequest
 
 ## SYNOPSIS
-Create a role assignment request to represent the operation you want on a role assignment.
-The following table lists the operations.
+Create new navigation property to roleAssignmentRequests for privilegedAccess
 
 ## SYNTAX
 
@@ -54,8 +53,7 @@ New-MgBetaPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Create a role assignment request to represent the operation you want on a role assignment.
-The following table lists the operations.
+Create new navigation property to roleAssignmentRequests for privilegedAccess
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaPrivilegedAccessRoleAssignmentRequest Cmdlet
@@ -1121,8 +1119,6 @@ The value can be User, Group, and ServicePrincipal.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedaccessroleassignmentrequest)
-
-[https://learn.microsoft.com/graph/api/governanceroleassignmentrequest-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/governanceroleassignmentrequest-post?view=graph-rest-1.0)
 
 
 

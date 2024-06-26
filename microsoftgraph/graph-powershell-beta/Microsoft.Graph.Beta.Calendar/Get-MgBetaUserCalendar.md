@@ -317,8 +317,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendar)
 
-[https://learn.microsoft.com/graph/api/user-list-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-calendars?view=graph-rest-1.0)
-
 
 
 

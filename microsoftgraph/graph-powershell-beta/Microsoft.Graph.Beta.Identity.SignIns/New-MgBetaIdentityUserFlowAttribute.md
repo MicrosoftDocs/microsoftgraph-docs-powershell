@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Create a new custom identityUserFlowAttribute object.
+Create new navigation property to userFlowAttributes for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserF
 ```
 
 ## DESCRIPTION
-Create a new custom identityUserFlowAttribute object.
+Create new navigation property to userFlowAttributes for identity
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -267,8 +267,6 @@ Supports $filter (eq, ne).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-post?view=graph-rest-1.0)
 
 
 

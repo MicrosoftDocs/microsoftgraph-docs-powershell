@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
+A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecisionByCurrentUser?view=graph-powershell-1.0)
@@ -34,7 +35,8 @@ Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
+A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
 ## PARAMETERS
 
@@ -399,6 +401,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdefinitioninstancestagedecisionbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilteridentitygovernanceaccessreviewdefinitioninstancestagedecisionbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelAuthority
 
 ## SYNOPSIS
-Read the properties and relationships of a authorityTemplate object.
+Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a authorityTemplate object.
+Specifies the underlying authority that describes the type of content to be retained and its retention schedule.
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelauthority)
-
-[https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-authoritytemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-authorities?view=graph-rest-1.0)
 
 
 

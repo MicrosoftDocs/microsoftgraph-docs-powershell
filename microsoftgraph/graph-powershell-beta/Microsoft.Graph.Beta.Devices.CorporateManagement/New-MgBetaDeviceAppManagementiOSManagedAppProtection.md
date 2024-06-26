@@ -24,6 +24,7 @@ New-MgBetaDeviceAppManagementiOSManagedAppProtection [-ResponseHeadersVariable <
  [-AllowedOutboundClipboardSharingExceptionLength <Int32>]
  [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
  [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+ [-AppActionIfAccountIsClockedOut <ManagedAppRemediationAction>]
  [-AppActionIfDeviceComplianceRequired <ManagedAppRemediationAction>]
  [-AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
@@ -184,6 +185,21 @@ Data can be transferred from/to these classes of apps
 
 ```yaml
 Type: ManagedAppDataTransferLevel
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppActionIfAccountIsClockedOut
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -379,7 +395,6 @@ Accept wildcard characters: False
 
 ### -CustomBrowserProtocol
 A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
 
 ```yaml
 Type: String
@@ -1467,6 +1482,7 @@ Default is anyApp.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
@@ -1476,7 +1492,6 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.

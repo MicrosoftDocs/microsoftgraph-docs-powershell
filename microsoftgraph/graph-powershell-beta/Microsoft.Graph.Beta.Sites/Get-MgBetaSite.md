@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSite
 
 ## SYNOPSIS
-Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-1.0)
@@ -37,7 +37,7 @@ Get-MgBetaSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Retrieve properties and relationships for a \[site\]\[\] resource.A site resource represents a team site in SharePoint.
+Retrieve properties and relationships for a site resource.A site resource represents a team site in SharePoint.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -366,9 +366,9 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasite)
 
-[https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-search?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-list?view=graph-rest-beta)
 
 
 

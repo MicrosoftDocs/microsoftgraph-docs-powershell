@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupEventInstanceExceptionOccurrenceAttachment
 
 ## SYNOPSIS
-Delete an attachment from a user calendar event, message, Outlook task, or post.
+Delete navigation property attachments for groups
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaGroupEventInstanceExceptionOccurrenceAttachment -InputObject <ICale
 ```
 
 ## DESCRIPTION
-Delete an attachment from a user calendar event, message, Outlook task, or post.
+Delete navigation property attachments for groups
 
 ## PARAMETERS
 
@@ -263,8 +263,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventinstanceexceptionoccurrenceattachment)
-
-[https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-delete?view=graph-rest-1.0)
 
 
 

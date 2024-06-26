@@ -386,8 +386,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistcolumn)
 
-[https://learn.microsoft.com/graph/api/list-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list-columns?view=graph-rest-1.0)
-
 
 
 

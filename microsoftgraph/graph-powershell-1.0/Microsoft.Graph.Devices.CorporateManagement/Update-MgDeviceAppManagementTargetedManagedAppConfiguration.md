@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
-Update the properties of a targetedManagedAppConfiguration object.
+Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Update the properties of a targetedManagedAppConfiguration object.
+Update the navigation property targetedManagedAppConfigurations in deviceAppManagement
 
 ## PARAMETERS
 
@@ -505,8 +505,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementtargetedmanagedappconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-update?view=graph-rest-1.0)
 
 
 

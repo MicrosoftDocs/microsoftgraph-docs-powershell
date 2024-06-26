@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaAvailableIdentityProviderType
 
 ## SYNOPSIS
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgAvailableIdentityProviderType?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Invoke-MgBetaAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Invoke function availableProviderTypes
+Get all identity providers supported in a directory.
 
 ## EXAMPLES
 ### Example 1: Using the Invoke-MgBetaAvailableIdentityProviderType Cmdlet
@@ -183,6 +183,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaavailableidentityprovidertype)
+
+[https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityproviderbase-availableprovidertypes?view=graph-rest-beta)
 
 
 

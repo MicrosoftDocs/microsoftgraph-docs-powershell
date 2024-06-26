@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedAppRegistrationOperation
 
 ## SYNOPSIS
-Read properties and relationships of the managedAppOperation object.
+Zero or more long running operations triggered on the app registration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedAppOperation object.
+Zero or more long running operations triggered on the app registration.
 
 ## PARAMETERS
 
@@ -341,10 +341,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationoperation)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-list?view=graph-rest-1.0)
 
 
 

@@ -277,7 +277,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/rename-mgbetacommunicationcallscreensharingrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/rename-mgbetacommunicationcallscreensharingrole)
 
-[https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-changescreensharingrole?view=graph-rest-beta)
 
 
 

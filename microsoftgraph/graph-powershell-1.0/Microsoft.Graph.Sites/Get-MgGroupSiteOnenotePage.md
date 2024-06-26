@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgGroupSiteOnenotePage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a page object.
-Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
+The pages in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
@@ -39,8 +40,9 @@ Get-MgGroupSiteOnenotePage -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a page object.
-Getting page information Access a page's metadata by page identifier: Getting page content You can use the page's content endpoint to get the HTML content of a page: The includeIDs=true query option is used to update pages.
+The pages in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -359,16 +361,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotepage)
-
-[https://learn.microsoft.com/graph/api/page-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/page-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-list-pages?view=graph-rest-1.0)
 
 
 

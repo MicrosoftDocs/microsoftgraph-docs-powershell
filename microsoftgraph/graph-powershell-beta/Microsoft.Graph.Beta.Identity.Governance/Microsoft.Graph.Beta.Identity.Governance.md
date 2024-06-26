@@ -2759,13 +2759,7 @@ Locale: en-US
 ### [Remove-MgBetaEntitlementManagementConnectedOrganization](Remove-MgBetaEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef.md)

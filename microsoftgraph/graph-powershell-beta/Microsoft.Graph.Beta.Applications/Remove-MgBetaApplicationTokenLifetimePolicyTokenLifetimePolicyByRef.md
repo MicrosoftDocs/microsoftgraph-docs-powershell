@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Remove a tokenLifetimePolicy from an application or servicePrincipal.
+Delete ref of navigation property tokenLifetimePolicies for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaApplicationTokenLifetimePolicyTokenLifetimePolicyByRef -InputObject
 ```
 
 ## DESCRIPTION
-Remove a tokenLifetimePolicy from an application or servicePrincipal.
+Delete ref of navigation property tokenLifetimePolicies for applications
 
 ## PARAMETERS
 
@@ -240,8 +240,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenlifetimepolicytokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenlifetimepolicytokenlifetimepolicybyref)
-
-[https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

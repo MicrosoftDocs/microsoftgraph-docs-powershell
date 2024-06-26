@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
-Update the properties of a delegatedAdminAccessAssignment object.
+Update the navigation property accessAssignments in tenantRelationships
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ```
 
 ## DESCRIPTION
-Update the properties of a delegatedAdminAccessAssignment object.
+Update the navigation property accessAssignments in tenantRelationships
 
 ## PARAMETERS
 
@@ -364,8 +364,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/update-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
-
-[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-update?view=graph-rest-1.0)
 
 
 

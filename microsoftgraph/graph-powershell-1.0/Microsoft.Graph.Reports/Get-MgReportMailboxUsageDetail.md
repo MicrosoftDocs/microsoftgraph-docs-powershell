@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportMailboxUsageDetail
 
 ## SYNOPSIS
-Invoke function getMailboxUsageDetail
+Get details about mailbox usage.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageDetail?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportMailboxUsageDetail -InputObject <IReportsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke function getMailboxUsageDetail
+Get details about mailbox usage.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagedetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagedetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-1.0)
 
 
 

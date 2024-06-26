@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource
 
 ## SYNOPSIS
-Delete a unifiedGroupSource object.
+Delete navigation property unifiedGroupSources for compliance
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <I
 ```
 
 ## DESCRIPTION
-Delete a unifiedGroupSource object.
+Delete navigation property unifiedGroupSources for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -250,8 +250,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianunifiedgroupsource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-delete?view=graph-rest-1.0)
 
 
 

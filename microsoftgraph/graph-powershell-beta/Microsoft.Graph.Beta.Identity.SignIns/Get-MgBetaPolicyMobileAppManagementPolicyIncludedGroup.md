@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
-Get the list of groups that are included in a mobile app management policy.
+Microsoft Entra groups under the scope of the mobility management application if appliesTo is selected
 
 ## SYNTAX
 
@@ -20,7 +20,7 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicy
 ```
 
 ## DESCRIPTION
-Get the list of groups that are included in a mobile app management policy.
+Microsoft Entra groups under the scope of the mobility management application if appliesTo is selected
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
@@ -265,8 +265,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list-includedgroups?view=graph-rest-1.0)
 
 
 

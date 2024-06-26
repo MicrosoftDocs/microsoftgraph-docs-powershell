@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyPermissionGrantPolicyExclude
 
 ## SYNOPSIS
-Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
+Delete navigation property excludes for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Deletes a permissionGrantConditionSet from the excludes collection of a permissionGrantPolicy.
+Delete navigation property excludes for policies
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy exclude
@@ -296,8 +296,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicyexclude)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete-excludes?view=graph-rest-1.0)
 
 
 

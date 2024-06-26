@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileLanguage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a languageProficiency object within a user's profile.
+Represents detailed information about languages that a user has added to their profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a languageProficiency object within a user's profile.
+Represents detailed information about languages that a user has added to their profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilelanguage)
-
-[https://learn.microsoft.com/graph/api/languageproficiency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/languageproficiency-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-languages?view=graph-rest-1.0)
 
 
 

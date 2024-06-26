@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Assign a claimsMappingPolicy to a servicePrincipal.
+Create new navigation property ref to claimsMappingPolicies for servicePrincipals
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Assign a claimsMappingPolicy to a servicePrincipal.
+Create new navigation property ref to claimsMappingPolicies for servicePrincipals
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -295,8 +295,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalclaimmappingpolicybyref)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrivilegedAccessRoleSetting
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a governanceRoleSetting.
+A collection of role settings for the provider.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a governanceRoleSetting.
+A collection of role settings for the provider.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPrivilegedAccessRoleSetting Cmdlet
@@ -410,8 +410,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessrolesetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaprivilegedaccessrolesetting)
-
-[https://learn.microsoft.com/graph/api/governancerolesetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/governancerolesetting-get?view=graph-rest-1.0)
 
 
 

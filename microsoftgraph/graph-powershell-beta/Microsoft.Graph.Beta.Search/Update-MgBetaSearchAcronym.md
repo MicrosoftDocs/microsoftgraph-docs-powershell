@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSearchAcronym
 
 ## SYNOPSIS
-Update the properties of an acronym object.
+Update the navigation property acronyms in search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the properties of an acronym object.
+Update the navigation property acronyms in search
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet
@@ -383,6 +383,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -401,8 +403,6 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchacronym)
-
-[https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-acronym-update?view=graph-rest-1.0)
 
 
 

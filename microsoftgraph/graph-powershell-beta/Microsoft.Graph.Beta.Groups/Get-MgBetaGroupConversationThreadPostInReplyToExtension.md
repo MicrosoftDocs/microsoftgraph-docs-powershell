@@ -8,9 +8,10 @@ schema: 2.0.0
 # Get-MgBetaGroupConversationThreadPostInReplyToExtension
 
 ## SYNOPSIS
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToExtension?view=graph-powershell-1.0)
@@ -41,9 +42,10 @@ Get-MgBetaGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIde
 ```
 
 ## DESCRIPTION
-Get an open extension (openTypeExtension object) identified by name or fully qualified name.
-The table in the Permissions section lists the resources that support open extensions.
-The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -389,8 +391,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpostinreplytoextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
 
 
 

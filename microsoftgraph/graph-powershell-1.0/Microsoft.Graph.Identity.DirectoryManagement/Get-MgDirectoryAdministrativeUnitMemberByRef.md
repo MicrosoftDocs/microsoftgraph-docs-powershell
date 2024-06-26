@@ -254,8 +254,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmemberbyref)
 
-[https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-list-members?view=graph-rest-1.0)
-
 
 
 

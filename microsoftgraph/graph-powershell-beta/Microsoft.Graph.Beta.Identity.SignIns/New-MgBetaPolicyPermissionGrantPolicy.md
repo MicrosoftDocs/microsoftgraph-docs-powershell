@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -34,9 +32,7 @@ New-MgBetaPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionG
 ```
 
 ## DESCRIPTION
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy
@@ -395,8 +391,6 @@ Default is any.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0)
 
 
 

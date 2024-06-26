@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityAttackSimulationTrainingCampaign
 
 ## SYNOPSIS
-Create a new trainingCampaign object.
+Create new navigation property to trainingCampaigns for security
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ New-MgBetaSecurityAttackSimulationTrainingCampaign -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new trainingCampaign object.
+Create new navigation property to trainingCampaigns for security
 
 ## PARAMETERS
 
@@ -620,8 +620,6 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtrainingcampaign)
-
-[https://learn.microsoft.com/graph/api/attacksimulationroot-post-trainingcampaigns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-post-trainingcampaigns?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 
 ## SYNOPSIS
-Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
@@ -41,7 +41,7 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -InputObject
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessReviewInstanceDecisionItem object.
+Each user reviewed in an accessReviewStage has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ## EXAMPLES
 ### Example 1: Retrieve a decision from a stage of a multi-stage access review
@@ -418,10 +418,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision)
-
-[https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-list-decisions?view=graph-rest-1.0)
 
 
 

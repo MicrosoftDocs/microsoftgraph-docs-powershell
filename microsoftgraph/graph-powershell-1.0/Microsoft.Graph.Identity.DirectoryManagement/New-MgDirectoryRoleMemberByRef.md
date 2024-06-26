@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Create a new directory role member.
-You can use both the object ID and template ID of the directoryRole with this API.
-The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
-For details, see Role template IDs.
+Create new navigation property ref to members for directoryRoles
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
@@ -48,10 +45,7 @@ New-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Create a new directory role member.
-You can use both the object ID and template ID of the directoryRole with this API.
-The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center.
-For details, see Role template IDs.
+Create new navigation property ref to members for directoryRoles
 
 ## EXAMPLES
 ### Example 1: Add a member to a directory role
@@ -263,6 +257,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -288,8 +284,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref)
-
-[https://learn.microsoft.com/graph/api/directoryrole-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-post-members?view=graph-rest-1.0)
 
 
 

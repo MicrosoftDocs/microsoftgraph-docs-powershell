@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserEvent
 
 ## SYNOPSIS
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+Delete navigation property events for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEvent?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaUserEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-Re
 ```
 
 ## DESCRIPTION
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+Delete navigation property events for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -236,8 +234,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetauserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetauserevent)
-
-[https://learn.microsoft.com/graph/api/event-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-delete?view=graph-rest-1.0)
 
 
 

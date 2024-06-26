@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgEducationClassAssignment
 
 ## SYNOPSIS
-Update an educationAssignment object.
-Only teachers can perform this action.
-Alternatively, request to change the status of an assignment with publish action.
-Don't use a PATCH operation for this purpose.
+Update the navigation property assignments in education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
@@ -63,10 +60,7 @@ Update-MgEducationClassAssignment -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update an educationAssignment object.
-Only teachers can perform this action.
-Alternatively, request to change the status of an assignment with publish action.
-Don't use a PATCH operation for this purpose.
+Update the navigation property assignments in education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -890,8 +884,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignment)
-
-[https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-update?view=graph-rest-1.0)
 
 
 

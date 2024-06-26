@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaGroupEventExceptionOccurrenceAttachment
 
 ## SYNOPSIS
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+Create new navigation property to attachments for groups
 
 ## SYNTAX
 
@@ -44,8 +43,7 @@ New-MgBetaGroupEventExceptionOccurrenceAttachment -InputObject <ICalendarIdentit
 ```
 
 ## DESCRIPTION
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachmentresource.
+Create new navigation property to attachments for groups
 
 ## PARAMETERS
 
@@ -357,8 +355,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventexceptionoccurrenceattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventexceptionoccurrenceattachment)
-
-[https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/eventmessage-post-attachments?view=graph-rest-1.0)
 
 
 

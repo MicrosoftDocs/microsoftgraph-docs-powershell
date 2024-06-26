@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationPlatformCredentialMethod
 
 ## SYNOPSIS
-Delete a platformCredentialAuthenticationMethod object.
+Delete navigation property platformCredentialMethods for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserAuthenticationPlatformCredentialMethod -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Delete a platformCredentialAuthenticationMethod object.
+Delete navigation property platformCredentialMethods for users
 
 ## PARAMETERS
 
@@ -281,8 +281,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationplatformcredentialmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationplatformcredentialmethod)
-
-[https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/platformcredentialauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

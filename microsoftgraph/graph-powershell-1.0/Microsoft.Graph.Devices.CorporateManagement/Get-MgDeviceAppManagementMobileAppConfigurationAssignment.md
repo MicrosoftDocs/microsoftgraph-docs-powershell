@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementMobileAppConfigurationAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object.
+The list of group assignemenets for app configration.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationAssignment?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementMobileAppConfigurationAssignment -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object.
+The list of group assignemenets for app configration.
 
 ## PARAMETERS
 
@@ -341,10 +341,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationassignment-list?view=graph-rest-1.0)
 
 
 

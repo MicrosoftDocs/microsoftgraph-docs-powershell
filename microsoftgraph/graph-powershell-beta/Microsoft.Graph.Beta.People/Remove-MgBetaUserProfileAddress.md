@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileAddress
 
 ## SYNOPSIS
-Deletes an itemAddress object.
+Delete navigation property addresses for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Deletes an itemAddress object.
+Delete navigation property addresses for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,8 +239,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaddress)
-
-[https://learn.microsoft.com/graph/api/itemaddress-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemaddress-delete?view=graph-rest-1.0)
 
 
 

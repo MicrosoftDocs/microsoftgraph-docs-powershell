@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgServicePrincipalByAppId
 
 ## SYNOPSIS
-Update entity in servicePrincipals by appId
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalByAppId?view=graph-powershell-beta)
+Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
 ## SYNTAX
 
@@ -101,7 +98,7 @@ Update-MgServicePrincipalByAppId -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update entity in servicePrincipals by appId
+Create a new servicePrincipal object if it doesn't exist, or update the properties of an existing servicePrincipal object.
 
 ## PARAMETERS
 
@@ -1498,6 +1495,7 @@ It has a limit of 600 characters.
 Required.
     - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -2056,6 +2054,7 @@ It has a limit of 600 characters.
 Required.
   - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -2116,6 +2115,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -2576,6 +2576,8 @@ VERIFIEDPUBLISHER `<IMicrosoftGraphVerifiedPublisher>`: verifiedPublisher
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalbyappid)
+
+[https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-upsert?view=graph-rest-1.0)
 
 
 

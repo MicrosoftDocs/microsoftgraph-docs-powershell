@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportM365AppPlatformUserCount
 
 ## SYNOPSIS
-Invoke function getM365AppPlatformUserCounts
+Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppPlatformUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppPlatformUserCount?view=graph-powershell-1.0)
@@ -29,7 +29,7 @@ Get-MgBetaReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFil
 ```
 
 ## DESCRIPTION
-Invoke function getM365AppPlatformUserCounts
+Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
 ## EXAMPLES
 
@@ -206,6 +206,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportm365appplatformusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getm365appplatformusercounts?view=graph-rest-beta)
 
 
 

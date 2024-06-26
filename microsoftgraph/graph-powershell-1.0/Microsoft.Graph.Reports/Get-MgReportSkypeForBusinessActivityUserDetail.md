@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSkypeForBusinessActivityUserDetail
 
 ## SYNOPSIS
-Invoke function getSkypeForBusinessActivityUserDetail
+Get details about Skype for Business activity by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Get-MgReportSkypeForBusinessActivityUserDetail -InputObject <IReportsIdentity> -
 ```
 
 ## DESCRIPTION
-Invoke function getSkypeForBusinessActivityUserDetail
+Get details about Skype for Business activity by user.
 
 ## PARAMETERS
 
@@ -212,6 +212,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessactivityuserdetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-1.0)
 
 
 

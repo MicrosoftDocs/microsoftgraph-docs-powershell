@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAuditLogSignIn
 
 ## SYNOPSIS
-Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
+Get signIns from auditLogs
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAuditLogSignIn](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignIn?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get a signIn object that contains a specific user sign-in event for your tenant that includes sign-ins where a user is asked to enter a username or password, and session tokens.
+Get signIns from auditLogs
 
 ## EXAMPLES
 ### Example 1: List all sign-ins
@@ -369,10 +369,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaauditlogsignin)
-
-[https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0)
 
 
 

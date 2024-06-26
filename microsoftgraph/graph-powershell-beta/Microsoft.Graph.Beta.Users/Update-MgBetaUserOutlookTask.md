@@ -8,11 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Change writable properties of an Outlook task.
-The completedDateTime property can be set by the complete action, or explicitly by a PATCH operation.
-If you use PATCH to set completedDateTime, make sure you set status to completed as well.
-By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Update the navigation property tasks in users
 
 ## SYNTAX
 
@@ -63,11 +59,7 @@ Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Change writable properties of an Outlook task.
-The completedDateTime property can be set by the complete action, or explicitly by a PATCH operation.
-If you use PATCH to set completedDateTime, make sure you set status to completed as well.
-By default, this operation (and the POST, GET, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Update the navigation property tasks in users
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
@@ -835,8 +827,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask)
-
-[https://learn.microsoft.com/graph/api/outlooktask-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-update?view=graph-rest-1.0)
 
 
 

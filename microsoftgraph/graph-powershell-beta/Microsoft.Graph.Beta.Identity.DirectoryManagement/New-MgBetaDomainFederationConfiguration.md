@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDomainFederationConfiguration
 
 ## SYNOPSIS
-Create a new internalDomainFederation object.
+Create new navigation property to federationConfiguration for domains
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-1.0)
@@ -54,7 +54,7 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Create a new internalDomainFederation object.
+Create new navigation property to federationConfiguration for domains
 
 ## EXAMPLES
 ### Example 1: Configure federation settings for a federated domain
@@ -554,8 +554,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration)
-
-[https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-post-federationconfiguration?view=graph-rest-1.0)
 
 
 

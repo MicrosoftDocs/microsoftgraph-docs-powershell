@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserDeviceRegisteredOwnerDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove a user as a registered owner of the device.
+Delete ref of navigation property registeredOwners for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserDeviceRegisteredOwnerDirectoryObjectByRef -InputObject <ICrossD
 ```
 
 ## DESCRIPTION
-Remove a user as a registered owner of the device.
+Delete ref of navigation property registeredOwners for users
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregisteredownerdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/remove-mgbetauserdeviceregisteredownerdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-delete-registeredowners?view=graph-rest-1.0)
 
 
 

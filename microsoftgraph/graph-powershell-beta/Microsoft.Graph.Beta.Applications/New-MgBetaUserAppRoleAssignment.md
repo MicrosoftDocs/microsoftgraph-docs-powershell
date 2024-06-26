@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserAppRoleAssignment
 
 ## SYNOPSIS
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-1.0)
@@ -49,8 +48,7 @@ New-MgBetaUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 ## EXAMPLES
 ### Example 1: Assign a user an application role
@@ -429,8 +427,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetauserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetauserapproleassignment)
-
-[https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0)
 
 
 

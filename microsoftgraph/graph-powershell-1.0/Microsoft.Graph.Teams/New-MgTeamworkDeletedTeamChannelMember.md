@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Create new navigation property to members for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ New-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Create new navigation property to members for teamwork
 
 ## PARAMETERS
 
@@ -339,8 +337,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-members?view=graph-rest-1.0)
 
 
 

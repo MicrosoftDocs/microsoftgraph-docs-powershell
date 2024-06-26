@@ -301,7 +301,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/stop-mgbetabookingbusinessappointment)
 
-[https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta](https://learn.microsoft.com/graph/api/bookingappointment-cancel?view=graph-rest-beta)
 
 
 

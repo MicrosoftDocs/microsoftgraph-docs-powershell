@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgGroupSetting
 
 ## SYNOPSIS
-Retrieve the properties of a specific group setting object.
-The setting can be a tenant-level or group-specific setting.
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSetting?view=graph-powershell-beta)
@@ -60,8 +60,8 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a specific group setting object.
-The setting can be a tenant-level or group-specific setting.
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## PARAMETERS
 

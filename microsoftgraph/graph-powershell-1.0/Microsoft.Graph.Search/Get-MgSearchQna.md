@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchQna
 
 ## SYNOPSIS
-Read the properties and relationships of a qna object.
+Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchQna?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a qna object.
+Administrative answer in Microsoft Search results that provide answers for specific search keywords in an organization.
 
 ## PARAMETERS
 
@@ -298,10 +298,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchqna)
-
-[https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-qnas?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceWindowsProtectionState
 
 ## SYNOPSIS
-Read properties and relationships of the windowsProtectionState object.
+The device protection status.
+This property is read-only.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
@@ -30,7 +31,8 @@ Get-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateMan
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsProtectionState object.
+The device protection status.
+This property is read-only.
 
 ## PARAMETERS
 
@@ -211,8 +213,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgusermanageddevicewindowsprotectionstate)
-
-[https://learn.microsoft.com/graph/api/intune-devices-windowsprotectionstate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-windowsprotectionstate-get?view=graph-rest-1.0)
 
 
 
