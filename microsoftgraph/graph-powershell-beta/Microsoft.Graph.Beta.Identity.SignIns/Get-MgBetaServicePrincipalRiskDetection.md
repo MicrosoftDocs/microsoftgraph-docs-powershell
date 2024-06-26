@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalRiskDetection
 
 ## SYNOPSIS
-Read the properties and relationships of a servicePrincipalRiskDetection object.
+Represents information about detected at-risk service principals in a Microsoft Entra tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a servicePrincipalRiskDetection object.
+Represents information about detected at-risk service principals in a Microsoft Entra tenant.
 
 ## EXAMPLES
 ### Example: Get a specific risk detection object
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaserviceprincipalriskdetection)
-
-[https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipalriskdetection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityprotectionroot-list-serviceprincipalriskdetections?view=graph-rest-1.0)
 
 
 

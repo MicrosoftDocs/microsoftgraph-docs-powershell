@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
-Update the properties of a tokenIssuancePolicy object.
+Update the navigation property tokenIssuancePolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenIssuancePolicy?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -
 ```
 
 ## DESCRIPTION
-Update the properties of a tokenIssuancePolicy object.
+Update the navigation property tokenIssuancePolicies in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -429,8 +429,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenissuancepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenissuancepolicy-update?view=graph-rest-1.0)
 
 
 

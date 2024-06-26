@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyAppManagementPolicy
 
 ## SYNOPSIS
-Delete an appManagementPolicy object.
+Delete navigation property appManagementPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Delete an appManagementPolicy object.
+Delete navigation property appManagementPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -282,8 +282,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-delete?view=graph-rest-1.0)
 
 
 

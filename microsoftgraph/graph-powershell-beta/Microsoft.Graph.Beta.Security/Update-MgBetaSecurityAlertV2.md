@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
-Update the properties of an alert object.
+Update the navigation property alerts_v2 in security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlertV2?view=graph-powershell-1.0)
@@ -62,7 +62,7 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the properties of an alert object.
+Update the navigation property alerts_v2 in security
 
 ## PARAMETERS
 
@@ -876,8 +876,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
-
-[https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-alert-update?view=graph-rest-1.0)
 
 
 

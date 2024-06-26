@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Delete an accessReviewScheduleDefinition object.
+Delete navigation property definitions for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGov
 ```
 
 ## DESCRIPTION
-Delete an accessReviewScheduleDefinition object.
+Delete navigation property definitions for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -304,8 +304,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceaccessreviewdefinition)
-
-[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0)
 
 
 

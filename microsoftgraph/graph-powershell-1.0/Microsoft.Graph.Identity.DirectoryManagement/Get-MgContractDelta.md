@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgContractDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaContractDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContractDelta?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Get-MgContractDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## PARAMETERS
 
@@ -236,6 +238,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontractdelta)
+
+[https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-1.0)
 
 
 

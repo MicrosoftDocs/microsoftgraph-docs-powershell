@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationFido2Method
 
 ## SYNOPSIS
-Deletes a user's FIDO2 Security Key Authentication Method object.
+Delete navigation property fido2Methods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentit
 ```
 
 ## DESCRIPTION
-Deletes a user's FIDO2 Security Key Authentication Method object.
+Delete navigation property fido2Methods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -297,8 +297,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationfido2method)
-
-[https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-delete?view=graph-rest-1.0)
 
 
 

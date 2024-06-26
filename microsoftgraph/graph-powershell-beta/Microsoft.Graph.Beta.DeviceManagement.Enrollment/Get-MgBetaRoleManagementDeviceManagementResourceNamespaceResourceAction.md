@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 
 ## SYNOPSIS
-Read the properties and relationships of an unifiedRbacResourceAction object.
+Operations that an authorized principal is allowed to perform.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an unifiedRbacResourceAction object.
+Operations that an authorized principal is allowed to perform.
 
 ## PARAMETERS
 
@@ -332,10 +332,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction)
-
-[https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourceaction-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedrbacresourcenamespace-list-resourceactions?view=graph-rest-1.0)
 
 
 

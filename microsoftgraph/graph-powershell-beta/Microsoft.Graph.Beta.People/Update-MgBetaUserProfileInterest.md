@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileInterest
 
 ## SYNOPSIS
-Update the properties of a personInterest object in a user's profile.
+Update the navigation property interests in users
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the properties of a personInterest object in a user's profile.
+Update the navigation property interests in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -567,8 +567,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileinterest)
-
-[https://learn.microsoft.com/graph/api/personinterest-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personinterest-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create a new staff member in the specified bookingBusiness.
+Create new navigation property to staffMembers for bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
@@ -84,7 +84,7 @@ New-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new staff member in the specified bookingBusiness.
+Create new navigation property to staffMembers for bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessStaffMember Cmdlet
@@ -598,8 +598,6 @@ For example, 08:00:00.0000000.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessstaffmember)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0)
 
 
 

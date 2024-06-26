@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserPlannerMyDayTask
 
 ## SYNOPSIS
-Get myDayTasks from users
+Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaUserPlannerMyDayTask -InputObject <IPlannerIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get myDayTasks from users
+Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Update the properties of a identityUserFlowAttributeAssignment object.
+Update the navigation property userAttributeAssignments in identity
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Update the properties of a identityUserFlowAttributeAssignment object.
+Update the navigation property userAttributeAssignments in identity
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
@@ -469,8 +469,6 @@ Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelec
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflowuserattributeassignment)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-update?view=graph-rest-1.0)
 
 
 

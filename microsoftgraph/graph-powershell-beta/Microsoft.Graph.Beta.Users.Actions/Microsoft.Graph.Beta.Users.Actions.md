@@ -245,6 +245,9 @@ Locale: en-US
 ### [Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadUserManagedDeviceAppDiagnostic.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadUserManagedDeviceLogCollectionRequestDeviceLog.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaDownUserManagedDeviceShut](Invoke-MgBetaDownUserManagedDeviceShut.md)
 {{ Fill in the Description }}
 

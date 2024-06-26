@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelAuthority
 
 ## SYNOPSIS
-Create a new authorityTemplate object.
+Create new navigation property to authorities for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelAuthority?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgSecurityLabelAuthority -BodyParameter <Hashtable> [-ResponseHeadersVariabl
 ```
 
 ## DESCRIPTION
-Create a new authorityTemplate object.
+Create new navigation property to authorities for security
 
 ## PARAMETERS
 
@@ -231,8 +231,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelauthority)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-authorities?view=graph-rest-1.0)
 
 
 

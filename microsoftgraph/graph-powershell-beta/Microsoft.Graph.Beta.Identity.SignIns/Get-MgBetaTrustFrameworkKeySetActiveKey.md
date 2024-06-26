@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaTrustFrameworkKeySetActiveKey
 
 ## SYNOPSIS
-Invoke function getActiveKey
+Get the currently active trustFrameworkKey in a trustFrameworkKeySet.
+Only one key is active in the keyset at a time.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ Get-MgBetaTrustFrameworkKeySetActiveKey -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function getActiveKey
+Get the currently active trustFrameworkKey in a trustFrameworkKeySet.
+Only one key is active in the keyset at a time.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTrustFrameworkKeySetActiveKey Cmdlet
@@ -213,6 +215,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetactivekey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetatrustframeworkkeysetactivekey)
+
+[https://learn.microsoft.com/graph/api/trustframeworkkeyset-getactivekey?view=graph-rest-beta](https://learn.microsoft.com/graph/api/trustframeworkkeyset-getactivekey?view=graph-rest-beta)
 
 
 

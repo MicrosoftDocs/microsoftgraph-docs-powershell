@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -HorizontalSections
-.
+Collection of horizontal sections on the SharePoint page.
 To construct, see NOTES section for HORIZONTALSECTIONS properties and create a hash table.
 
 ```yaml
@@ -288,16 +288,19 @@ BODYPARAMETER `<IMicrosoftGraphCanvasLayout>`: canvasLayout
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: 
+  - `[HorizontalSections <IMicrosoftGraphHorizontalSection- `[]`>]`: Collection of horizontal sections on the SharePoint page.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: 
+    - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+      - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
         - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-      - `[Width <Int32?>]`: 
+      - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
     - `[Emphasis <String>]`: sectionEmphasisType
     - `[Layout <String>]`: horizontalSectionLayoutType
   - `[VerticalSection <IMicrosoftGraphVerticalSection>]`: verticalSection
@@ -305,18 +308,21 @@ Read-only.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[Emphasis <String>]`: sectionEmphasisType
-    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
 
-HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection- `[]`>: .
+HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection- `[]`>: Collection of horizontal sections on the SharePoint page.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: 
+  - `[Columns <IMicrosoftGraphHorizontalSectionColumn- `[]`>]`: The set of vertical columns in this section.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+    - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The collection of WebParts in this column.
       - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[Width <Int32?>]`: 
+    - `[Width <Int32?>]`: Width of the column.
+A horizontal section is divided into 12 grids.
+A column should have a value of 1-12 to represent its range spans.
+For example, there can be two columns both have a width of 6 in a section.
   - `[Emphasis <String>]`: sectionEmphasisType
   - `[Layout <String>]`: horizontalSectionLayoutType
 
@@ -362,6 +368,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -370,7 +377,7 @@ VERTICALSECTION `<IMicrosoftGraphVerticalSection>`: verticalSection
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[Emphasis <String>]`: sectionEmphasisType
-  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: 
+  - `[Webparts <IMicrosoftGraphWebPart- `[]`>]`: The set of web parts in this section.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
 

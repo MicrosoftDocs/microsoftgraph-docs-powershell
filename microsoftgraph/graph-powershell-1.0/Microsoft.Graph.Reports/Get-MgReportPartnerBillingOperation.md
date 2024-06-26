@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportPartnerBillingOperation
 
 ## SYNOPSIS
-Read the properties and relationships of an operation object.
+Represents an operation to export the billing data of a partner.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingOperation](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgReportPartnerBillingOperation -InputObject <IReportsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an operation object.
+Represents an operation to export the billing data of a partner.
 
 ## PARAMETERS
 
@@ -312,8 +312,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingoperation)
-
-[https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-operation-get?view=graph-rest-1.0)
 
 
 

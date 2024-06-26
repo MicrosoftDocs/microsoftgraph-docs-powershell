@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 
 ## SYNOPSIS
-Update the properties of a continuousAccessEvaluationPolicy object.
+Update the navigation property continuousAccessEvaluationPolicy in identity
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgBetaIdentityContinuouAccessEvaluationPolicy
 ```
 
 ## DESCRIPTION
-Update the properties of a continuousAccessEvaluationPolicy object.
+Update the navigation property continuousAccessEvaluationPolicy in identity
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
@@ -302,8 +302,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentitycontinuouaccessevaluationpolicy)
-
-[https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-1.0)
 
 
 

@@ -271,7 +271,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/restore-mgbetagroupdriveitemversion)
 
-[https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitemversion-restore?view=graph-rest-beta)
 
 
 

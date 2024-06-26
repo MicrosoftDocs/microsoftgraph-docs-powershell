@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update directory
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectory?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -23,7 +20,8 @@ Update-MgDirectory [-ResponseHeadersVariable <String>] [-AdditionalProperties <H
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
  [-DeviceLocalCredentials <IMicrosoftGraphDeviceLocalCredentialInfo[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
- [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>] [-Headers <IDictionary>]
+ [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
+ [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -236,6 +234,22 @@ Optional Response Headers Variable.
 Type: String
 Parameter Sets: (All)
 Aliases: RHV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Subscriptions
+.
+To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCompanySubscription[]
+Parameter Sets: UpdateExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -474,6 +488,27 @@ This flag should be enabled again after any soft matching has been completed and
       - `[UnifiedGroupWritebackEnabled <Boolean?>]`: Used to indicate that Microsoft 365 Group write-back is enabled.
       - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
       - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
+  - `[Subscriptions <IMicrosoftGraphCompanySubscription- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CommerceSubscriptionId <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[IsTrial <Boolean?>]`: 
+    - `[NextLifecycleDateTime <DateTime?>]`: 
+    - `[OwnerId <String>]`: 
+    - `[OwnerTenantId <String>]`: 
+    - `[OwnerType <String>]`: 
+    - `[ServiceStatus <IMicrosoftGraphServicePlanInfo- `[]`>]`: 
+      - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+      - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+      - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+      - `[ServicePlanName <String>]`: The name of the service plan.
+    - `[SkuId <String>]`: 
+    - `[SkuPartNumber <String>]`: 
+    - `[Status <String>]`: 
+    - `[TotalLicenses <Int32?>]`: 
 
 CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition- `[]`>: Schema of a custom security attributes (key-value pairs).
   - `[Id <String>]`: The unique identifier for an entity.
@@ -572,6 +607,28 @@ This flag should be enabled again after any soft matching has been completed and
     - `[UnifiedGroupWritebackEnabled <Boolean?>]`: Used to indicate that Microsoft 365 Group write-back is enabled.
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
+
+SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription- `[]`>: .
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[CommerceSubscriptionId <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[IsTrial <Boolean?>]`: 
+  - `[NextLifecycleDateTime <DateTime?>]`: 
+  - `[OwnerId <String>]`: 
+  - `[OwnerTenantId <String>]`: 
+  - `[OwnerType <String>]`: 
+  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo- `[]`>]`: 
+    - `[AppliesTo <String>]`: The object the service plan can be assigned to.
+The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan.
+The possible values are:Success - Service is fully provisioned.Disabled - Service is disabled.Error - The service plan isn't provisioned and is in an error state.PendingInput - The service isn't provisioned and is awaiting service confirmation.PendingActivation - The service is provisioned but requires explicit activation by an administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it isn't activated in the tenant.
+    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+    - `[ServicePlanName <String>]`: The name of the service plan.
+  - `[SkuId <String>]`: 
+  - `[SkuPartNumber <String>]`: 
+  - `[Status <String>]`: 
+  - `[TotalLicenses <Int32?>]`:
 
 ## RELATED LINKS
 

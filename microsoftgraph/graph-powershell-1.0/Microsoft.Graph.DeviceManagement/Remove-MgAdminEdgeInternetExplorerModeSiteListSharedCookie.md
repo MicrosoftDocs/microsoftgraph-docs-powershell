@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-Delete a browserSharedCookie from a browserSiteList.
+Delete navigation property sharedCookies for admin
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Delete a browserSharedCookie from a browserSiteList.
+Delete navigation property sharedCookies for admin
 
 ## PARAMETERS
 
@@ -261,8 +261,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgadminedgeinternetexplorermodesitelistsharedcookie)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-delete-sharedcookies?view=graph-rest-1.0)
 
 
 

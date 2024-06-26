@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
-Deletes a userInstallStateSummary.
+Delete navigation property userStateSummary for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Deletes a userInstallStateSummary.
+Delete navigation property userStateSummary for deviceAppManagement
 
 ## PARAMETERS
 
@@ -243,8 +243,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmanagedebookuserstatesummary)
-
-[https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-delete?view=graph-rest-1.0)
 
 
 

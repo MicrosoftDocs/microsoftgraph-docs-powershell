@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelCitation
 
 ## SYNOPSIS
-Delete a citationTemplate object.
+Delete navigation property citations for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCitation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCitation?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete a citationTemplate object.
+Delete navigation property citations for security
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcitation)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-delete-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-citations?view=graph-rest-1.0)
 
 
 

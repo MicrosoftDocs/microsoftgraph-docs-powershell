@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEvent
 
 ## SYNOPSIS
-Get an event object.
+The group's calendar events.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [-Respo
 ```
 
 ## DESCRIPTION
-Get an event object.
+The group's calendar events.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -296,10 +296,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupevent)
-
-[https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-event?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-events?view=graph-rest-1.0)
 
 
 

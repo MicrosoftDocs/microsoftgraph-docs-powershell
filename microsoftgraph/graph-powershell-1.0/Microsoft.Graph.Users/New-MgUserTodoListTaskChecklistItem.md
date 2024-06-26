@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Create a new checklistItem object.
+Create new navigation property to checklistItems for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create a new checklistItem object.
+Create new navigation property to checklistItems for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -358,8 +358,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem)
-
-[https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-post-checklistitems?view=graph-rest-1.0)
 
 
 

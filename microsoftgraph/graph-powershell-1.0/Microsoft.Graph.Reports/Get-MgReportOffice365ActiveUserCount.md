@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365ActiveUserCount
 
 ## SYNOPSIS
-Invoke function getOffice365ActiveUserCounts
+Get the count of daily active users in the reporting period by product.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActiveUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365ActiveUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportOffice365ActiveUserCount -InputObject <IReportsIdentity> -OutFile <S
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365ActiveUserCounts
+Get the count of daily active users in the reporting period by product.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activeusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-1.0)
 
 
 

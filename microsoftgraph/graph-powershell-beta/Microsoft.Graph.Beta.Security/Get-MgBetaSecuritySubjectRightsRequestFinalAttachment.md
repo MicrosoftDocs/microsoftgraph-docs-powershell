@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaSecuritySubjectRightsRequestFinalAttachment
 
 ## SYNOPSIS
-Invoke function getFinalAttachment
+Get the final attachment for a subject rights request.
+The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestFinalAttachment](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestFinalAttachment?view=graph-powershell-1.0)
@@ -30,7 +31,8 @@ Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Invoke function getFinalAttachment
+Get the final attachment for a subject rights request.
+The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 ## EXAMPLES
 
@@ -245,6 +247,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment)
+
+[https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-beta](https://learn.microsoft.com/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-beta)
 
 
 

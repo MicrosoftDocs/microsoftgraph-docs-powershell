@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserOutlookTaskFolderTask
 
 ## SYNOPSIS
-Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+Create new navigation property to tasks for users
 
 ## SYNTAX
 
@@ -60,8 +59,7 @@ New-MgBetaUserOutlookTaskFolderTask -InputObject <IUsersIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create an Outlook task in the specified task folder.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
+Create new navigation property to tasks for users
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskFolderTask Cmdlet
@@ -834,8 +832,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskfoldertask)
-
-[https://learn.microsoft.com/graph/api/outlooktaskfolder-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-post-tasks?view=graph-rest-1.0)
 
 
 

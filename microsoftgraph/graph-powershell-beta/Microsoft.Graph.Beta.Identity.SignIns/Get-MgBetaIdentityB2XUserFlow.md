@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2XUserFlow
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a b2xIdentityUserFlow object.
+Represents entry point for B2X and self-service sign-up identity userflows.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlow?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a b2xIdentityUserFlow object.
+Represents entry point for B2X and self-service sign-up identity userflows.
 
 ## EXAMPLES
 ### Example 1: List all b2xIdentityUserFlow objects
@@ -391,10 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflow)
-
-[https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2xidentityuserflow-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-1.0)
 
 
 

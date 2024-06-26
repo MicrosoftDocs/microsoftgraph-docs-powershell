@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Update properties of a  permissionGrantPolicy.
+Update the navigation property permissionGrantPolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update properties of a  permissionGrantPolicy.
+Update the navigation property permissionGrantPolicies in policies
 
 ## EXAMPLES
 ### Example 1: Update a permission grant policy
@@ -510,8 +510,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0)
 
 
 

@@ -338,10 +338,9 @@ Read-only.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 MEMBERS <IMicrosoftGraphDirectoryObject- `[]`>: Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
@@ -363,16 +362,15 @@ Read-only.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole)
 
-[https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryrole-post-directoryroles?view=graph-rest-beta)
 
 
 

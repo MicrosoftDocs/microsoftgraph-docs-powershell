@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportSecurityAttackSimulationRepeatOffender
 
 ## SYNOPSIS
-Invoke function getAttackSimulationRepeatOffenders
+List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Get-MgReportSecurityAttackSimulationRepeatOffender [-Count] [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Invoke function getAttackSimulationRepeatOffenders
+List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
+This function supports @odata.nextLink for pagination.
 
 ## PARAMETERS
 
@@ -160,6 +162,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsecurityattacksimulationrepeatoffender)
+
+[https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationrepeatoffenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityreportsroot-getattacksimulationrepeatoffenders?view=graph-rest-1.0)
 
 
 

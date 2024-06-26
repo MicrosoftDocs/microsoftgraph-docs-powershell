@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 
 ## SYNOPSIS
-Delete a delegatedAdminAccessAssignment object.
+Delete navigation property accessAssignments for tenantRelationships
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ```
 
 ## DESCRIPTION
-Delete a delegatedAdminAccessAssignment object.
+Delete navigation property accessAssignments for tenantRelationships
 
 ## PARAMETERS
 
@@ -215,8 +215,6 @@ INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner/remove-mgbetatenantrelationshipdelegatedadminrelationshipaccessassignment)
-
-[https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/delegatedadminaccessassignment-delete?view=graph-rest-1.0)
 
 
 

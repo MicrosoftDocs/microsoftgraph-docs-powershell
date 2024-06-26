@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceHostSslCertificate
 
 ## SYNOPSIS
-Get the properties and relationships of a hostSslCertificate object.
+Retrieve details about hostSslCertificate objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostSslCertificate](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostSslCertificate?view=graph-powershell-beta)
@@ -74,7 +74,7 @@ Get-MgSecurityThreatIntelligenceHostSslCertificate -InputObject <ISecurityIdenti
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a hostSslCertificate object.
+Retrieve details about hostSslCertificate objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -402,10 +402,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsslcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostsslcertificate)
-
-[https://learn.microsoft.com/graph/api/security-hostsslcertificate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostsslcertificate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-sslcertificates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-sslcertificates?view=graph-rest-1.0)
 
 
 

@@ -19,7 +19,7 @@ Update teamwork
 ```
 Update-MgTeamwork [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
  [-DeletedChats <IMicrosoftGraphDeletedChat[]>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>] [-Id <String>]
- [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
+ [-IsTeamsEnabled] [-Region <String>] [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
  [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-Headers <IDictionary>]
  [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -129,6 +129,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsTeamsEnabled
+Indicates whether Microsoft Teams is enabled for the organization.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ProgressAction
 {{ Fill ProgressAction Description }}
 
@@ -136,6 +151,24 @@ Accept wildcard characters: False
 Type: ActionPreference
 Parameter Sets: (All)
 Aliases: proga
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Region
+Represents the region of the organization.
+>` The region property contains the organization's or the user's region.
+The property contains the user's region (if available) for users who have a valid multigeo license.
+For users without multigeo licenses, the region property contains the organization's region.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
 
 Required: False
 Position: Named
@@ -503,7 +536,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
                 - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
-                - `[EnrollmentType <String>]`: 
+                - `[EnrollmentType <String>]`: Enrollment type of the device.
+This property is set by Intune.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
                 - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -516,8 +551,11 @@ Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-                - `[IsRooted <Boolean?>]`: 
-                - `[ManagementType <String>]`: 
+                - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
+                - `[ManagementType <String>]`: The management channel of the device.
+This property is set by Intune.
+Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
                 - `[Manufacturer <String>]`: Manufacturer of the device.
 Read-only.
                 - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
@@ -1341,18 +1379,18 @@ Read-write.
             - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
               - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`.
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive.
+See drive resource for values.
               - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
               - `[Name <String>]`: The name of the item being referenced.
 Read-only.
               - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-              - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+              - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
               - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -1363,14 +1401,14 @@ Read-only.
                 - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
                 - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
               - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
             - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
 Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-            - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+            - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
             - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives will return personal.
@@ -1462,7 +1500,7 @@ Read-only.
                   - `[ListId <String>]`: The unique identifier of the lookup source list.
                   - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-                - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+                - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
                 - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2115,7 +2153,7 @@ Nullable.
 Read-only.
 Nullable.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
-            - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: 
+            - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[CreatedByUser <IMicrosoftGraphUser>]`: user
               - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
@@ -2137,7 +2175,7 @@ Read-only.
 Read-only.
               - `[PageLayout <String>]`: pageLayoutType
               - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
-              - `[Title <String>]`: 
+              - `[Title <String>]`: Title of the sitePage.
             - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The permissions associated with the site.
 Nullable.
               - `[Id <String>]`: The unique identifier for an entity.
@@ -2829,7 +2867,9 @@ Nullable.
 Nullable.
               - `[TransitiveMembers <IMicrosoftGraphDirectoryObject- `[]`>]`: The direct and transitive members of a group.
 Nullable.
-              - `[UniqueName <String>]`: 
+              - `[UniqueName <String>]`: The unique identifier that can be assigned to a group and used as an alternate key.
+Immutable.
+Read-only.
               - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -4238,6 +4278,8 @@ Read-only.
               - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
               - `[Chat <IMicrosoftGraphChat>]`: chat
+            - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
+            - `[Region <String>]`: The region of the user in Microsoft Teams.
           - `[Todo <IMicrosoftGraphTodo>]`: todo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -4381,7 +4423,7 @@ Read-only.
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Album <IMicrosoftGraphAlbum>]`: album
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+            - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
           - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -4570,8 +4612,8 @@ Read-only.
         - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
         - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+        - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -4588,7 +4630,7 @@ This is only available when a folder thumbnail is requested.
           - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
           - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
         - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -4939,6 +4981,11 @@ A navigation property.
 This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel.
 This URL should be treated as an opaque blob, and not parsed.
 Read-only.
+  - `[IsTeamsEnabled <Boolean?>]`: Indicates whether Microsoft Teams is enabled for the organization.
+  - `[Region <String>]`: Represents the region of the organization.
+> The region property contains the organization's or the user's region.
+The property contains the user's region (if available) for users who have a valid multigeo license.
+For users without multigeo licenses, the region property contains the organization's region.
   - `[TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]`: teamsAppSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity.
@@ -5224,7 +5271,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
               - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
-              - `[EnrollmentType <String>]`: 
+              - `[EnrollmentType <String>]`: Enrollment type of the device.
+This property is set by Intune.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
               - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -5237,8 +5286,11 @@ Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-              - `[IsRooted <Boolean?>]`: 
-              - `[ManagementType <String>]`: 
+              - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
+              - `[ManagementType <String>]`: The management channel of the device.
+This property is set by Intune.
+Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
               - `[Manufacturer <String>]`: Manufacturer of the device.
 Read-only.
               - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
@@ -6062,18 +6114,18 @@ Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
             - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`.
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive.
+See drive resource for values.
             - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
             - `[Name <String>]`: The name of the item being referenced.
 Read-only.
             - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-            - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+            - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
             - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -6084,14 +6136,14 @@ Read-only.
               - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
               - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
             - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
           - `[WebUrl <String>]`: URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats).
 Read-only.
           - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-          - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of - `[bundles]`- `[bundle]` (albums and multi-select-shared sets of items).
+          - `[Bundles <IMicrosoftGraphDriveItem- `[]`>]`: Collection of bundles (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
           - `[DriveType <String>]`: Describes the type of drive represented by this resource.
 OneDrive personal drives will return personal.
@@ -6183,7 +6235,7 @@ Read-only.
                 - `[ListId <String>]`: The unique identifier of the lookup source list.
                 - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-              - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+              - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
               - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6836,7 +6888,7 @@ Nullable.
 Read-only.
 Nullable.
           - `[Operations <IMicrosoftGraphRichLongRunningOperation- `[]`>]`: The collection of long-running operations on the site.
-          - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: 
+          - `[Pages <IMicrosoftGraphBaseSitePage- `[]`>]`: The collection of pages in the baseSitePages list in this site.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[CreatedByUser <IMicrosoftGraphUser>]`: user
             - `[CreatedDateTime <DateTime?>]`: Date and time of item creation.
@@ -6858,7 +6910,7 @@ Read-only.
 Read-only.
             - `[PageLayout <String>]`: pageLayoutType
             - `[PublishingState <IMicrosoftGraphPublicationFacet>]`: publicationFacet
-            - `[Title <String>]`: 
+            - `[Title <String>]`: Title of the sitePage.
           - `[Permissions <IMicrosoftGraphPermission- `[]`>]`: The permissions associated with the site.
 Nullable.
             - `[Id <String>]`: The unique identifier for an entity.
@@ -7550,7 +7602,9 @@ Nullable.
 Nullable.
             - `[TransitiveMembers <IMicrosoftGraphDirectoryObject- `[]`>]`: The direct and transitive members of a group.
 Nullable.
-            - `[UniqueName <String>]`: 
+            - `[UniqueName <String>]`: The unique identifier that can be assigned to a group and used as an alternate key.
+Immutable.
+Read-only.
             - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group.
 Returned only on $select.
 Supported only on the Get group API (GET /groups/{ID}).
@@ -8959,6 +9013,8 @@ Read-only.
             - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
             - `[Chat <IMicrosoftGraphChat>]`: chat
+          - `[Locale <String>]`: The chosen locale of a user in Microsoft Teams.
+          - `[Region <String>]`: The region of the user in Microsoft Teams.
         - `[Todo <IMicrosoftGraphTodo>]`: todo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique identifier for an entity.
@@ -9102,7 +9158,7 @@ Read-only.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Album <IMicrosoftGraphAlbum>]`: album
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[CoverImageItemId <String>]`: Unique identifier of the - `[driveItem]`- `[]` that is the cover of the album.
+          - `[CoverImageItemId <String>]`: Unique identifier of the driveItem that is the cover of the album.
         - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
       - `[CTag <String>]`: An eTag for the content of the item.
 This eTag isn't changed if only the metadata is changed.
@@ -9291,8 +9347,8 @@ Read-only.
       - `[SpecialFolder <IMicrosoftGraphSpecialFolder>]`: specialFolder
       - `[Subscriptions <IMicrosoftGraphSubscription- `[]`>]`: The set of subscriptions on the item.
 Only supported on the root of a drive.
-      - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of - `[thumbnailSet]`- `[]` objects associated with the item.
-For more information, see - `[getting thumbnails]`- `[]`.
+      - `[Thumbnails <IMicrosoftGraphThumbnailSet- `[]`>]`: Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
         - `[Id <String>]`: The unique identifier for an entity.
@@ -9309,7 +9365,7 @@ This is only available when a folder thumbnail is requested.
         - `[Small <IMicrosoftGraphThumbnail>]`: thumbnail
         - `[Source <IMicrosoftGraphThumbnail>]`: thumbnail
       - `[Versions <IMicrosoftGraphDriveItemVersion- `[]`>]`: The list of previous versions of the item.
-For more info, see - `[getting previous versions]`- `[]`.
+For more info, see getting previous versions.
 Read-only.
 Nullable.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet

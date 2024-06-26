@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoList
 
 ## SYNOPSIS
-Deletes a todoTaskList object.
+Delete navigation property lists for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoList?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-Respon
 ```
 
 ## DESCRIPTION
-Deletes a todoTaskList object.
+Delete navigation property lists for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -236,8 +236,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolist)
-
-[https://learn.microsoft.com/graph/api/todotasklist-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-delete?view=graph-rest-1.0)
 
 
 

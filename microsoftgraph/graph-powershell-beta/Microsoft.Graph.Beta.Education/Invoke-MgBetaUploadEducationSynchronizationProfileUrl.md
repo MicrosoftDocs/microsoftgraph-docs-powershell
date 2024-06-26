@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaUploadEducationSynchronizationProfileUrl
 
 ## SYNOPSIS
-Invoke function uploadUrl
+Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data synchronization profile in the tenant.
+The SAS token has a validity of one hour.
+The upload URL is provided only for the CSV data provider.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ Invoke-MgBetaUploadEducationSynchronizationProfileUrl -InputObject <IEducationId
 ```
 
 ## DESCRIPTION
-Invoke function uploadUrl
+Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data synchronization profile in the tenant.
+The SAS token has a validity of one hour.
+The upload URL is provided only for the CSV data provider.
 
 ## EXAMPLES
 
@@ -148,6 +152,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl)
+
+[https://learn.microsoft.com/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta)
 
 
 

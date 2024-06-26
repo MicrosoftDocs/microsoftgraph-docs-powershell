@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileNote
 
 ## SYNOPSIS
-Create a new personAnnotation object in a user's profile.
+Create new navigation property to notes for users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new personAnnotation object in a user's profile.
+Create new navigation property to notes for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -510,8 +510,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilenote)
-
-[https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-notes?view=graph-rest-1.0)
 
 
 

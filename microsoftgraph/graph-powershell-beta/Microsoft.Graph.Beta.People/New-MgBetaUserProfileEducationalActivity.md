@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileEducationalActivity
 
 ## SYNOPSIS
-Create a new educationalActivity in a user's profile.
+Create new navigation property to educationalActivities for users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Create a new educationalActivity in a user's profile.
+Create new navigation property to educationalActivities for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -616,8 +616,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity)
-
-[https://learn.microsoft.com/graph/api/profile-post-educationalactivities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-educationalactivities?view=graph-rest-1.0)
 
 
 

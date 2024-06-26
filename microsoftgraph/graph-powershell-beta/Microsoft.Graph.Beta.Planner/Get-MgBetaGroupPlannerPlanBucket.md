@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaGroupPlannerPlanBucket
 
 ## SYNOPSIS
-Retrieve a list of plannerBucket objects contained by a plannerPlan object.
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-1.0)
@@ -23,7 +25,9 @@ Get-MgBetaGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve a list of plannerBucket objects contained by a plannerPlan object.
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -269,8 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplanbucket)
-
-[https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-list-buckets?view=graph-rest-1.0)
 
 
 

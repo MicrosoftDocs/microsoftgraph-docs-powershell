@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a connectedOrganization object.
+References to a directory or domain of another organization whose users can request access.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernan
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a connectedOrganization object.
+References to a directory or domain of another organization whose users can request access.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -370,10 +370,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganization)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-connectedorganizations?view=graph-rest-1.0)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgEducationClassModule
 
 ## SYNOPSIS
-Update an educationModule object in a class.
-Only teachers in the class can perform this operation.
-You can't use a PATCH request to change the status of a module.
-Use the publish action to change the module status.
+Update the navigation property modules in education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassModule?view=graph-powershell-beta)
@@ -52,10 +49,7 @@ Update-MgEducationClassModule -InputObject <IEducationIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update an educationModule object in a class.
-Only teachers in the class can perform this operation.
-You can't use a PATCH request to change the status of a module.
-Use the publish action to change the module status.
+Update the navigation property modules in education
 
 ## PARAMETERS
 
@@ -445,8 +439,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassmodule)
-
-[https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-update?view=graph-rest-1.0)
 
 
 

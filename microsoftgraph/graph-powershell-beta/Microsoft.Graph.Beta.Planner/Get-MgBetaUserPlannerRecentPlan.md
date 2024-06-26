@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Get-MgBetaUserPlannerRecentPlan -InputObject <IPlannerIdentity> [-ExpandProperty
 ## DESCRIPTION
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -328,8 +328,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan)
-
-[https://learn.microsoft.com/graph/api/planneruser-list-recentplans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-recentplans?view=graph-rest-1.0)
 
 
 

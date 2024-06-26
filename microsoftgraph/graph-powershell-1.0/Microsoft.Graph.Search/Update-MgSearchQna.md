@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSearchQna
 
 ## SYNOPSIS
-Update the properties of a qna object.
+Update the navigation property qnas in search
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSearchQna](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaSearchQna?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the properties of a qna object.
+Update the navigation property qnas in search
 
 ## PARAMETERS
 
@@ -551,8 +551,6 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgsearchqna)
-
-[https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-qna-update?view=graph-rest-1.0)
 
 
 

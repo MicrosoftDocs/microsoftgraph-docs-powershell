@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Retrieve an educationCategory object.
-Only teachers, students, and applications with application permissions can perform this operation.
+All categories associated with this class.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-1.0)
@@ -47,11 +47,8 @@ Get-MgBetaEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve an educationCategory object.
-Only teachers, students, and applications with application permissions can perform this operation.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/educationcategory-get-permissions.md)]
+All categories associated with this class.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Get assignment categories
@@ -386,12 +383,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassassignmentcategory)
-
-[https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-categories?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 
 
 

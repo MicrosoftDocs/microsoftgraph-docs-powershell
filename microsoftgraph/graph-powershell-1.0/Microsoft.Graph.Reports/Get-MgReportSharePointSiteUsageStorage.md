@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSharePointSiteUsageStorage
 
 ## SYNOPSIS
-Invoke function getSharePointSiteUsageStorage
+Get the trend of storage allocated and consumed during the reporting period.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutFile 
 ```
 
 ## DESCRIPTION
-Invoke function getSharePointSiteUsageStorage
+Get the trend of storage allocated and consumed during the reporting period.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagestorage)
+
+[https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-1.0)
 
 
 

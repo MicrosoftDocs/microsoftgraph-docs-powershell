@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteContentType
 
 ## SYNOPSIS
-Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+The collection of content types defined for this site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteContentType?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[content type\]\[contentType\] in a \[site\]\[\] or a \[list\]\[\].
+The collection of content types defined for this site.
 
 ## EXAMPLES
 
@@ -359,16 +359,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitecontenttype)
-
-[https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-contenttypes?view=graph-rest-1.0)
 
 
 

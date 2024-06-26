@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTrustFrameworkKeySet
 
 ## SYNOPSIS
-Update the properties of a trustFrameworkKeyset.
-This operation will replace the content of an existing keyset.
-Specifying the ID in the request payload is optional.
+Update the navigation property keySets in trustFramework
 
 ## SYNTAX
 
@@ -43,9 +41,7 @@ Update-MgBetaTrustFrameworkKeySet -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a trustFrameworkKeyset.
-This operation will replace the content of an existing keyset.
-Specifying the ID in the request payload is optional.
+Update the navigation property keySets in trustFramework
 
 ## PARAMETERS
 
@@ -376,8 +372,6 @@ Possible values are: sig (signature), enc (encryption)
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframeworkkeyset)
-
-[https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframeworkkeyset-update?view=graph-rest-1.0)
 
 
 

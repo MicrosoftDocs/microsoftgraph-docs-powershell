@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule
 
 ## SYNOPSIS
-Retrieve the schedule for an active role assignment operation.
+Get roleAssignmentSchedules from roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedule -InputObject
 ```
 
 ## DESCRIPTION
-Retrieve the schedule for an active role assignment operation.
+Get roleAssignmentSchedules from roleManagement
 
 ## PARAMETERS
 
@@ -389,10 +389,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagemententitlementmanagementroleassignmentschedule)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignmentschedules?view=graph-rest-1.0)
 
 
 

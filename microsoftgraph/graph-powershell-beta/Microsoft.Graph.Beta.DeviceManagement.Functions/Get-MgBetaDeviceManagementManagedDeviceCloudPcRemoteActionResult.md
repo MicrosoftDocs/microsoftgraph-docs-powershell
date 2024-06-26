@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult
 
 ## SYNOPSIS
-Invoke function getCloudPcRemoteActionResults
+Check the Cloud PC-specified remote action results for a Cloud PC device.
+Cloud PC supports reprovision and resize remote actions.
 
 ## SYNTAX
 
@@ -28,7 +29,11 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult
 ```
 
 ## DESCRIPTION
-Invoke function getCloudPcRemoteActionResults
+Check the Cloud PC-specified remote action results for a Cloud PC device.
+Cloud PC supports reprovision and resize remote actions.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcremoteactionresults-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet
@@ -244,6 +249,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcremoteactionresult](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcremoteactionresult)
+
+[https://learn.microsoft.com/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-getcloudpcremoteactionresults?view=graph-rest-beta)
 
 
 

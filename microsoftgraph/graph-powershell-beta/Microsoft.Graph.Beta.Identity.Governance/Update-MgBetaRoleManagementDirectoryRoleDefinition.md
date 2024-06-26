@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a unifiedRoleDefinition object for an RBAC provider.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Update the navigation property roleDefinitions in roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
@@ -55,10 +52,7 @@ Update-MgBetaRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovern
 ```
 
 ## DESCRIPTION
-Update the properties of a unifiedRoleDefinition object for an RBAC provider.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
-The following RBAC providers are currently supported:- Cloud PC- device management (Intune)- directory (Microsoft Entra ID)
+Update the navigation property roleDefinitions in roleManagement
 
 ## PARAMETERS
 
@@ -621,8 +615,6 @@ Not supported for custom roles.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetarolemanagementdirectoryroledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
 
 
 

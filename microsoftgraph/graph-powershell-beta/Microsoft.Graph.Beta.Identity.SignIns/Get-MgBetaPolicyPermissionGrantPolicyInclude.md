@@ -408,8 +408,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicyinclude)
 
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-list-includes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list-includes?view=graph-rest-1.0)
-
 
 
 

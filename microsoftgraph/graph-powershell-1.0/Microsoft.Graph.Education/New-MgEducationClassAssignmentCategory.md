@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Create a new educationCategory on an educationClass.
-Only teachers can perform this operation.
+Create new navigation property to assignmentCategories for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
@@ -73,8 +72,7 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create a new educationCategory on an educationClass.
-Only teachers can perform this operation.
+Create new navigation property to assignmentCategories for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -320,10 +318,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory)
-
-[https://learn.microsoft.com/graph/api/educationclass-post-category?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-category?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)
 
 
 

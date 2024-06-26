@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportMailboxUsageMailboxCount
 
 ## SYNOPSIS
-Invoke function getMailboxUsageMailboxCounts
+Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
+A mailbox is considered active if the user sent or read any email.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageMailboxCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportMailboxUsageMailboxCount -InputObject <IReportsIdentity> -OutFile <S
 ```
 
 ## DESCRIPTION
-Invoke function getMailboxUsageMailboxCounts
+Get the total number of user mailboxes in your organization and how many are active each day of the reporting period.
+A mailbox is considered active if the user sent or read any email.
 
 ## EXAMPLES
 
@@ -184,6 +186,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagemailboxcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-1.0)
 
 
 

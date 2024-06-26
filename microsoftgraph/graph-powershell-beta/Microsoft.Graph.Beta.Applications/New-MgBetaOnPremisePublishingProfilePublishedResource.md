@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOnPremisePublishingProfilePublishedResource
 
 ## SYNOPSIS
-Create a new publishedResource object.
+Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Create a new publishedResource object.
+Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
@@ -402,8 +402,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaonpremisepublishingprofilepublishedresource)
-
-[https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/publishedresource-post?view=graph-rest-1.0)
 
 
 

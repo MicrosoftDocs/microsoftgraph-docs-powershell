@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-Create a new browserSharedCookie object in a browserSiteList.
+Create new navigation property to sharedCookies for admin
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Create a new browserSharedCookie object in a browserSiteList.
+Create new navigation property to sharedCookies for admin
 
 ## PARAMETERS
 
@@ -532,8 +532,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsharedcookie)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sharedcookies?view=graph-rest-1.0)
 
 
 

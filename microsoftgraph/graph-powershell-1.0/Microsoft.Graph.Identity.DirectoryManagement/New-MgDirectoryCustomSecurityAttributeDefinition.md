@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
-Create a new customSecurityAttributeDefinition object.
+Create new navigation property to customSecurityAttributeDefinitions for directory
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDirectoryCustomSecurityAttributeDefinition
 ```
 
 ## DESCRIPTION
-Create a new customSecurityAttributeDefinition object.
+Create new navigation property to customSecurityAttributeDefinitions for directory
 
 ## PARAMETERS
 
@@ -380,8 +380,6 @@ If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectorycustomsecurityattributedefinition)
-
-[https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-customsecurityattributedefinitions?view=graph-rest-1.0)
 
 
 

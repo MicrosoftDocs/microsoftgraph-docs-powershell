@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveItemListItemDocumentSetVersion
 
 ## SYNOPSIS
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaGroupDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 ## PARAMETERS
 
@@ -360,10 +360,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemlistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

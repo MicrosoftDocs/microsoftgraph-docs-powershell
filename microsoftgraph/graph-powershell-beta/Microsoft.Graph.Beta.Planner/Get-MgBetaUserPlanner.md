@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserPlanner
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a plannerUser object.
-The returned properties include the user's favorite plans and recently viewed plans.
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlanner?view=graph-powershell-1.0)
@@ -53,8 +54,9 @@ Get-MgBetaUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a plannerUser object.
-The returned properties include the user's favorite plans and recently viewed plans.
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -345,8 +347,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplanner)
-
-[https://learn.microsoft.com/graph/api/planneruser-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-get?view=graph-rest-1.0)
 
 
 
