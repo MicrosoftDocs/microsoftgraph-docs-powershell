@@ -8,7 +8,7 @@ schema: 2.0.0
 # Search-MgBetaUserDriveItem
 
 ## SYNOPSIS
-Invoke function search
+Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Search-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Functions/Search-MgUserDriveItem?view=graph-powershell-1.0)
@@ -32,7 +32,10 @@ Search-MgBetaUserDriveItem -InputObject <IUsersFunctionsIdentity> [-Count] [-Exp
 ```
 
 ## DESCRIPTION
-Invoke function search
+Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-search-permissions.md)]
 
 ## PARAMETERS
 
@@ -336,6 +339,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/search-mgbetauserdriveitem)
+
+[https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-beta)
 
 
 

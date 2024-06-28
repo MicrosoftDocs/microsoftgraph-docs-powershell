@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-Update the properties of a mobileThreatDefenseConnector object.
+Update the navigation property mobileThreatDefenseConnectors in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Update the properties of a mobileThreatDefenseConnector object.
+Update the navigation property mobileThreatDefenseConnectors in deviceManagement
 
 ## PARAMETERS
 
@@ -538,8 +538,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementmobilethreatdefenseconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementmobilethreatdefenseconnector)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-mobilethreatdefenseconnector-update?view=graph-rest-1.0)
 
 
 

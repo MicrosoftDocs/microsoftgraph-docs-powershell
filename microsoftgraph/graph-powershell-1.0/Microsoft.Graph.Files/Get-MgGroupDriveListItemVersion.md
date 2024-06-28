@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupDriveListItemVersion
 
 ## SYNOPSIS
-Retrieve the metadata for a specific version of a ListItem.
+The list of previous versions of the list item.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaGroupDriveListItemVersion?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgGroupDriveListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a specific version of a ListItem.
+The list of previous versions of the list item.
 
 ## PARAMETERS
 
@@ -360,10 +360,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemversion)
-
-[https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0)
 
 
 

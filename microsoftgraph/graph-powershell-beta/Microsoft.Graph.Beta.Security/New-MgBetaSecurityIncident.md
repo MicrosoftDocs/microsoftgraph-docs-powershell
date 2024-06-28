@@ -350,7 +350,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvingComment
-.
+User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
 
 ```yaml
 Type: String
@@ -610,7 +611,8 @@ Free editable text.
     - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
-  - `[ResolvingComment <String>]`: 
+  - `[ResolvingComment <String>]`: User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.

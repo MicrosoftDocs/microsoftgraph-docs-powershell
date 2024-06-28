@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSearchBookmark
 
 ## SYNOPSIS
-Delete a bookmark object.
+Delete navigation property bookmarks for search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchBookmark?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a bookmark object.
+Delete navigation property bookmarks for search
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaSearchBookmark Cmdlet
@@ -211,6 +211,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -220,8 +222,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/remove-mgbetasearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
 
 
 

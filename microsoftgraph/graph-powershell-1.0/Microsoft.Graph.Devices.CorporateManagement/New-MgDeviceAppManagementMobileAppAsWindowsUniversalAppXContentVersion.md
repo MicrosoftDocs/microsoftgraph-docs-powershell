@@ -268,6 +268,9 @@ Read-only.
   - `[Files <IMicrosoftGraphMobileAppContentFile- `[]`>]`: The list of files for this app content version.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+    - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
     - `[Manifest <Byte- `[]`>]`: The manifest information.
     - `[Name <String>]`: the file name.
     - `[Size <Int64?>]`: The size of the file prior to encryption.
@@ -281,6 +284,9 @@ Read-only.
 FILES <IMicrosoftGraphMobileAppContentFile- `[]`>: The list of files for this app content version.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
+  - `[IsDependency <Boolean?>]`: Indicates whether this content file is a dependency for the main content file.
+TRUE means that the content file is a dependency, FALSE means that the content file is not a dependency and is the main content file.
+Defaults to FALSE.
   - `[Manifest <Byte- `[]`>]`: The manifest information.
   - `[Name <String>]`: the file name.
   - `[Size <Int64?>]`: The size of the file prior to encryption.

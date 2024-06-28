@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgSiteListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgBetaSiteListContentTypeWithHubSite?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 ## EXAMPLES
 
@@ -331,6 +331,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

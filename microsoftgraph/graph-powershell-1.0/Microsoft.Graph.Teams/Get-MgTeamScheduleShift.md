@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamScheduleShift
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a shift object by ID.
+The shifts in the schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleShift?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a shift object by ID.
+The shifts in the schedule.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -335,10 +335,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamscheduleshift)
-
-[https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-shifts?view=graph-rest-1.0)
 
 
 

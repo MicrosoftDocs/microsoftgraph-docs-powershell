@@ -8,7 +8,13 @@ schema: 2.0.0
 # Get-MgBetaUserCloudPcFrontlineCloudPcAccessState
 
 ## SYNOPSIS
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
 
 ## SYNTAX
 
@@ -27,7 +33,16 @@ Get-MgBetaUserCloudPcFrontlineCloudPcAccessState -InputObject <IUsersFunctionsId
 ```
 
 ## DESCRIPTION
-Invoke function getFrontlineCloudPcAccessState
+Get the frontlineCloudPcAccessState of a frontline Cloud PC.
+This API only supports shared-use licenses.
+For more information, see cloudPcProvisioningPolicy.
+Shared-use licenses allow three users per license, with one user signed in at a time.
+Callers can get the latest frontline Cloud PC accessState and determine whether the frontline Cloud PC is accessible to a user.
+If a web client needs to connect to a frontline Cloud PC, the sharedCloudPcAccessState validates the bookmark scenario.
+If sharedCloudPcAccessState isn't active/activating/standbyMode, the web client shows a bad bookmark.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getfrontlinecloudpcaccessstate-permissions.md)]
 
 ## PARAMETERS
 
@@ -181,6 +196,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcfrontlinecloudpcaccessstate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcfrontlinecloudpcaccessstate)
+
+[https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getfrontlinecloudpcaccessstate?view=graph-rest-beta)
 
 
 

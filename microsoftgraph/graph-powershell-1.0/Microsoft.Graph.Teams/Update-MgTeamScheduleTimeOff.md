@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Replace an existing timeOff object.
-If the specified timeOff object doesn't exist, this method returns 404 Not found.
+Update the navigation property timesOff in teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -49,8 +48,7 @@ Update-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Replace an existing timeOff object.
-If the specified timeOff object doesn't exist, this method returns 404 Not found.
+Update the navigation property timesOff in teams
 
 ## PARAMETERS
 
@@ -394,8 +392,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduletimeoff)
-
-[https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-put?view=graph-rest-1.0)
 
 
 

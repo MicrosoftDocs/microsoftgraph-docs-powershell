@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteList
 
 ## SYNOPSIS
-Returns the metadata for a \[list\]\[\].
+The collection of lists under this site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Returns the metadata for a \[list\]\[\].
+The collection of lists under this site.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -355,16 +355,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelist)
-
-[https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 
 

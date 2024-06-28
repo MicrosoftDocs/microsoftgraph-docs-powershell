@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Retrieve the existing synchronization job and its properties.
+Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve the existing synchronization job and its properties.
+Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
 ## PARAMETERS
 
@@ -315,6 +315,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -328,10 +329,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationsynchronizationjob)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
 
 
 

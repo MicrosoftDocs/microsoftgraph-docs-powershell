@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupMemberDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove a member from a group via the members navigation property.
-You can't remove a member from groups with dynamic memberships.
+Delete ref of navigation property members for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupMemberDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupMemberDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaGroupMemberDirectoryObjectByRef -InputObject <IGroupsIdentity> [-If
 ```
 
 ## DESCRIPTION
-Remove a member from a group via the members navigation property.
-You can't remove a member from groups with dynamic memberships.
+Delete ref of navigation property members for groups
 
 ## PARAMETERS
 
@@ -255,8 +253,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupmemberdirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupmemberdirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delete-members?view=graph-rest-1.0)
 
 
 

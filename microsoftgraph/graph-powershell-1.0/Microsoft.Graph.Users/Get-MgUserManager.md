@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgUserManager
 
 ## SYNOPSIS
-Returns the user or organizational contact assigned as the user's manager.
-Optionally, you can expand the manager's chain up to the root node.
+The user or contact that is this user's manager.
+Read-only.
+Supports $expand.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
@@ -31,8 +32,9 @@ Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ```
 
 ## DESCRIPTION
-Returns the user or organizational contact assigned as the user's manager.
-Optionally, you can expand the manager's chain up to the root node.
+The user or contact that is this user's manager.
+Read-only.
+Supports $expand.
 
 ## EXAMPLES
 ### Example 1: Get a user's manager
@@ -191,8 +193,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermanager)
-
-[https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-manager?view=graph-rest-1.0)
 
 
 

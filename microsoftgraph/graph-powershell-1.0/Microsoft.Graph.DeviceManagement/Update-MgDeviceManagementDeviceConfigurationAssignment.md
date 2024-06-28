@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationAssignment
 
 ## SYNOPSIS
-Update the properties of a deviceConfigurationAssignment object.
+Update the navigation property assignments in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceManagementDeviceConfigurationAssignment -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceConfigurationAssignment object.
+Update the navigation property assignments in deviceManagement
 
 ## PARAMETERS
 
@@ -317,8 +317,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationassignment)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationassignment-update?view=graph-rest-1.0)
 
 
 

@@ -201,7 +201,7 @@ BODYPARAMETER `<IPathsYkfdhbAdminServiceannouncementMessagesMicrosoftGraphUnarch
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetaunarchiveserviceannouncementmessage)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-unarchive?view=graph-rest-beta)
 
 
 

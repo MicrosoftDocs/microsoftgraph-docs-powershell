@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Retrieve a single permissionGrantPolicy object.
+The policy that specifies the conditions under which consent can be granted.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity> [-
 ```
 
 ## DESCRIPTION
-Retrieve a single permissionGrantPolicy object.
+The policy that specifies the conditions under which consent can be granted.
 
 ## EXAMPLES
 ### Example 1:  List all permission grant policies
@@ -416,10 +416,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-list?view=graph-rest-1.0)
 
 
 

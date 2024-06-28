@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
+See Using Delta Query for details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
@@ -22,7 +23,8 @@ Get-MgGroupDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Property <Str
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection.
+See Using Delta Query for details.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgGroupDelta Cmdlet
@@ -245,6 +247,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdelta)
+
+[https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-delta?view=graph-rest-1.0)
 
 
 

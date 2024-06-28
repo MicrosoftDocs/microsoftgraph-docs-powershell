@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamShift
 
 ## SYNOPSIS
-Invoke function getShifts
+Get all shift objects across all teams to which a user is a direct member.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaTeamShift [-Count] [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ```
 
 ## DESCRIPTION
-Invoke function getShifts
+Get all shift objects across all teams to which a user is a direct member.
 
 ## PARAMETERS
 
@@ -202,6 +202,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamshift)
+
+[https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/team-getshifts?view=graph-rest-beta)
 
 
 

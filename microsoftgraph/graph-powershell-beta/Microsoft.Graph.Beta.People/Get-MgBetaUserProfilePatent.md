@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfilePatent
 
 ## SYNOPSIS
-Read the properties and relationships of an itemPatent object.
+Represents patents that a user has added to their profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an itemPatent object.
+Represents patents that a user has added to their profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilepatent)
-
-[https://learn.microsoft.com/graph/api/itempatent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempatent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-patents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-patents?view=graph-rest-1.0)
 
 
 

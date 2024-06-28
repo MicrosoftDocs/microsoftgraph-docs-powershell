@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
+Represents the resource-specific role which a subject has been assigned through an access package assignment.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -InputObject 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
+Represents the resource-specific role which a subject has been assigned through an access package assignment.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -400,10 +400,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageassignmentresourcerole)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentresourcerole-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentresourcerole-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentresourceroles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageassignmentresourceroles?view=graph-rest-1.0)
 
 
 

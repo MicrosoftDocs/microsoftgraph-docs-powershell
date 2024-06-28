@@ -326,6 +326,9 @@ Locale: en-US
 ### [Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount](Get-MgDriveListItemCreatedByUserServiceProvisioningErrorCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgDriveListItemDelta](Get-MgDriveListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
 {{ Fill in the Description }}
 
@@ -1137,6 +1140,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount](Get-MgShareListItemCreatedByUserServiceProvisioningErrorCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgShareListItemDelta](Get-MgShareListItemDelta.md)
 {{ Fill in the Description }}
 
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)

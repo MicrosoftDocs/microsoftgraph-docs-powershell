@@ -383,9 +383,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaoauth2permissiongrant)
 
-[https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-beta](https://learn.microsoft.com/graph/api/oauth2permissiongrant-get?view=graph-rest-beta)
 
-[https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-beta](https://learn.microsoft.com/graph/api/oauth2permissiongrant-list?view=graph-rest-beta)
 
 
 

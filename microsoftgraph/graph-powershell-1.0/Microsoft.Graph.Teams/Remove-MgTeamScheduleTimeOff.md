@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Delete a timeOff instance from a schedule.
+Delete navigation property timesOff for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a timeOff instance from a schedule.
+Delete navigation property timesOff for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -253,8 +253,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoff](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamscheduletimeoff)
-
-[https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoff-delete?view=graph-rest-1.0)
 
 
 

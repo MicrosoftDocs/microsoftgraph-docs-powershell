@@ -331,7 +331,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityb2xuserflowapiconnectorconfigurationpostfederationsignupclientcertificate)
 
-[https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta](https://learn.microsoft.com/graph/api/identityapiconnector-uploadclientcertificate?view=graph-rest-beta)
 
 
 

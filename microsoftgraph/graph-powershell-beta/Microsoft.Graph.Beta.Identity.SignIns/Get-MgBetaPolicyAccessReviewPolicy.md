@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of an accessReviewPolicy object.
+The policy that contains directory-level access review settings.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessReviewPolicy object.
+The policy that contains directory-level access review settings.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -125,8 +125,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy)
-
-[https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewpolicy-get?view=graph-rest-1.0)
 
 
 

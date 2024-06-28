@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementManagedEBook
 
 ## SYNOPSIS
-Update the properties of a iosVppEBook object.
+Update the navigation property managedEBooks in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
@@ -55,7 +55,7 @@ Update-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-Update the properties of a iosVppEBook object.
+Update the navigation property managedEBooks in deviceAppManagement
 
 ## PARAMETERS
 
@@ -576,8 +576,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebook)
-
-[https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-iosvppebook-update?view=graph-rest-1.0)
 
 
 

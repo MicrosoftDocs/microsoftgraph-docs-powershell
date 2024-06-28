@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserChatOperation
 
 ## SYNOPSIS
-Get the specified Teams async operation that ran or is running on a specific resource.
+A collection of all the Teams async operations that ran or are running on the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +36,8 @@ Get-MgBetaUserChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get the specified Teams async operation that ran or is running on a specific resource.
+A collection of all the Teams async operations that ran or are running on the chat.
+Nullable.
 
 ## PARAMETERS
 
@@ -358,10 +360,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchatoperation)
-
-[https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamsasyncoperation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-operations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurrentUser?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ Invoke-MgFilterIdentityGovernancePrivilegedAccessGroupAssignmentScheduleByCurren
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In PIM for groups, retrieve the schedules for membership or ownership assignments for the calling principal to groups that are governed by PIM.
 
 ## PARAMETERS
 
@@ -321,6 +321,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupassignmentschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceprivilegedaccessgroupassignmentschedulebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedule-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupassignmentschedule-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

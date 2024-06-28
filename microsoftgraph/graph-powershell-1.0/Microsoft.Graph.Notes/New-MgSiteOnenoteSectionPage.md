@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteOnenoteSectionPage
 
 ## SYNOPSIS
-Create a new page in the specified section.
+Create new navigation property to pages for sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteSectionPage?view=graph-powershell-beta)
@@ -52,10 +52,7 @@ New-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new page in the specified section.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/section-post-pages-permissions.md)]
+Create new navigation property to pages for sites
 
 ## PARAMETERS
 
@@ -878,8 +875,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectionpage)
-
-[https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0)
 
 
 

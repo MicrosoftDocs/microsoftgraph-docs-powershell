@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
-Read the properties and relationships of a customSecurityAttributeDefinition object.
+Schema of a custom security attributes (key-value pairs).
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a customSecurityAttributeDefinition object.
+Schema of a custom security attributes (key-value pairs).
 
 ## PARAMETERS
 
@@ -289,6 +289,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -314,10 +316,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorycustomsecurityattributedefinition)
-
-[https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customsecurityattributedefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-list-customsecurityattributedefinitions?view=graph-rest-1.0)
 
 
 

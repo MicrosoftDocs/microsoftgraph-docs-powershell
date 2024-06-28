@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent
 
 ## SYNOPSIS
-Retrieve the properties and relationships of chatMessageHostedContent object.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageHostedContent?view=graph-powershell-1.0)
@@ -55,7 +55,7 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIde
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of chatMessageHostedContent object.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -426,10 +426,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagehostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagehostedcontent)
-
-[https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
 
 
 

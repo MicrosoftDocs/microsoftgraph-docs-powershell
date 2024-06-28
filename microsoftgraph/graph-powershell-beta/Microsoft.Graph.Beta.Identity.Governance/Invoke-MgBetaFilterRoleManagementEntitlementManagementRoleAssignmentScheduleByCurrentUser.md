@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleByCu
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve the schedules for active role assignment operations for which the signed-in user is the principal.
 
 ## PARAMETERS
 
@@ -353,6 +353,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleassignmentschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleassignmentschedulebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedule-filterbycurrentuser?view=graph-rest-beta)
 
 
 

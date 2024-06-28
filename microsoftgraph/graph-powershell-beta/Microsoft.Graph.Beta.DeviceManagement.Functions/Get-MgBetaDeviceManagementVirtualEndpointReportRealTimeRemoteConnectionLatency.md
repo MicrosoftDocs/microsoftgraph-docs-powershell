@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 
 ## SYNOPSIS
-Invoke function getRealTimeRemoteConnectionLatency
+Get the real-time connection latency information for a Cloud PC.
 
 ## SYNTAX
 
@@ -27,7 +27,10 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
 ```
 
 ## DESCRIPTION
-Invoke function getRealTimeRemoteConnectionLatency
+Get the real-time connection latency information for a Cloud PC.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpcreports-getrealtimeremoteconnectionlatency-permissions.md)]
 
 ## PARAMETERS
 
@@ -189,6 +192,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionlatency](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointreportrealtimeremoteconnectionlatency)
+
+[https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionlatency?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getrealtimeremoteconnectionlatency?view=graph-rest-beta)
 
 
 

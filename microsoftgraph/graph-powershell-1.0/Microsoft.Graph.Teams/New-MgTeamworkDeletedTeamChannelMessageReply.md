@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkDeletedTeamChannelMessageReply
 
 ## SYNOPSIS
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
@@ -61,7 +61,7 @@ New-MgTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new reply to a chatMessage in a specified channel.
+Create new navigation property to replies for teamwork
 
 ## PARAMETERS
 
@@ -1040,8 +1040,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmessagereply)
-
-[https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-post-messagereply?view=graph-rest-1.0)
 
 
 

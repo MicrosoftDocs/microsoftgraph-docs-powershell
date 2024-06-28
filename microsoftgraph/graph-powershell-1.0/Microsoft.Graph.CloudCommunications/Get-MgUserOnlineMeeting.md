@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an onlineMeeting object.
-For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
-For details, see Online meeting artifacts and permissions.
+Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -40,9 +38,7 @@ Get-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an onlineMeeting object.
-For example, you can: Teams live event attendee report (deprecated) is an online meeting artifact.
-For details, see Online meeting artifacts and permissions.
+Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
 ## EXAMPLES
 ### Example 1: Retrieve an online meeting by meeting ID
@@ -361,8 +357,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
 
 
 

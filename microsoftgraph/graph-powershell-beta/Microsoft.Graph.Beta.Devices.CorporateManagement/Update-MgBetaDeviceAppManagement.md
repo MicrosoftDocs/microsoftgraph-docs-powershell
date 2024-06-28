@@ -1270,11 +1270,11 @@ Default is anyApp.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+    - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
     - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
     - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
     - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -1323,6 +1323,40 @@ E.g.
 app running on rooted device
     - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy- `[]`>]`: Zero or more policies admin intended for the app as of now.
     - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+    - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the app.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+      - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
+      - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+      - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+      - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+      - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+      - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
+        - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+        - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+        - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
+      - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+      - `[Version <String>]`: Version of the entity.
     - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
     - `[ManagementSdkVersion <String>]`: App management SDK version
@@ -1630,7 +1664,7 @@ A MinDeviceOccurrence of 0 means setting is optional
         - `[OffsetUri <String>]`: Offset CSP Path from Base
         - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
           - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
         - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
         - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
         - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -1829,6 +1863,7 @@ Read-only.
     - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
     - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment- `[]`>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
     - `[DeployedAppCount <Int32?>]`: Indicates the total number of applications for which the current policy is deployed.
+    - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
     - `[IsAssigned <Boolean?>]`: When TRUE, indicates that the policy is deployed to some inclusion groups.
 When FALSE, indicates that the policy is not deployed to any inclusion groups.
 Default value is FALSE.
@@ -2207,6 +2242,7 @@ Default is anyApp.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work.
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfIosDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppDataEncryptionType <ManagedAppDataEncryptionType?>]`: Represents the level to which app data is encrypted for managed apps
   - `[Apps <IMicrosoftGraphManagedMobileApp- `[]`>]`: List of apps to which the policy is deployed.
@@ -2216,7 +2252,6 @@ Read-only.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Version <String>]`: Version of the entity.
   - `[CustomBrowserProtocol <String>]`: A custom browser protocol to open weblink on iOS.
-When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
@@ -2287,6 +2322,40 @@ E.g.
 app running on rooted device
   - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy- `[]`>]`: Zero or more policies admin intended for the app as of now.
   - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+  - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the app.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
+    - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+    - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+    - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+    - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
+      - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+      - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+      - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
+    - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+    - `[Version <String>]`: Version of the entity.
   - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
   - `[ManagementSdkVersion <String>]`: App management SDK version
@@ -2645,7 +2714,7 @@ A MinDeviceOccurrence of 0 means setting is optional
       - `[OffsetUri <String>]`: Offset CSP Path from Base
       - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
         - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
       - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
       - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
       - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -2921,6 +2990,17 @@ Read-only.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[DeployedAppCount <Int32?>]`: Indicates the total number of applications for which the current policy is deployed.
+  - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[ConfigurationDeployedUserCount <Int32?>]`: 
+    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>]`: 
+      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
+      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+    - `[DisplayName <String>]`: 
+    - `[LastRefreshTime <DateTime?>]`: 
+    - `[Version <String>]`: Version of the entity.
   - `[IsAssigned <Boolean?>]`: When TRUE, indicates that the policy is deployed to some inclusion groups.
 When FALSE, indicates that the policy is not deployed to any inclusion groups.
 Default value is FALSE.

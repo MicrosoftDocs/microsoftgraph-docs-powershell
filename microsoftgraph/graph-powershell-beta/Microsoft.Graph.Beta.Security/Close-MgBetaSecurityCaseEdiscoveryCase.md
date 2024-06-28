@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Close-MgBetaSecurityCaseEdiscoveryCase
@@ -279,7 +278,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/close-mgbetasecuritycaseediscoverycase)
 
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycase-close?view=graph-rest-beta)
 
 
 

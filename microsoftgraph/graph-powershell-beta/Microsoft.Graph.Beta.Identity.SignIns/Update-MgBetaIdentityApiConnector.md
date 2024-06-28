@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
-Update the properties of an identityApiConnector object.
+Update the navigation property apiConnectors in identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityApiConnector?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an identityApiConnector object.
+Update the navigation property apiConnectors in identity
 
 ## EXAMPLES
 ### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
@@ -399,8 +399,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityapiconnector)
-
-[https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-update?view=graph-rest-1.0)
 
 
 

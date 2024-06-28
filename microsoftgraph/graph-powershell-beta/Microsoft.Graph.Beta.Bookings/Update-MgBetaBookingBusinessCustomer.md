@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Update the properties of a bookingCustomer object.
+Update the navigation property customers in bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomer?view=graph-powershell-1.0)
@@ -80,7 +80,7 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a bookingCustomer object.
+Update the navigation property customers in bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessCustomer Cmdlet
@@ -438,8 +438,6 @@ PHONES <IMicrosoftGraphPhone- `[]`>: Phone numbers associated with the customer,
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinesscustomer)
-
-[https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-update?view=graph-rest-1.0)
 
 
 

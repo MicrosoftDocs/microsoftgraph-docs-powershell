@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgGroupSiteListContentTypePublished
 
 ## SYNOPSIS
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaGroupSiteListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupSiteListContentTypePublished?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Test-MgGroupSiteListContentTypePublished -InputObject <IGroupsIdentity> [-Respon
 ```
 
 ## DESCRIPTION
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 ## PARAMETERS
 
@@ -216,6 +216,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsitelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupsitelistcontenttypepublished)
+
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

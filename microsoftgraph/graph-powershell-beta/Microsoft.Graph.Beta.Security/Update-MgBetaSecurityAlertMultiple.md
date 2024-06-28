@@ -224,7 +224,7 @@ Read-only.
     - `[AzureSubscriptionId <String>]`: Azure subscription ID, present if this alert is related to an Azure resource.
     - `[AzureTenantId <String>]`: Microsoft Entra tenant ID.
 Required.
-    - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware, etc.).
+    - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware).
     - `[ClosedDateTime <DateTime?>]`: Time at which the alert was closed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
@@ -241,7 +241,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
     - `[Description <String>]`: Alert description.
     - `[DetectionIds <String- `[]`>]`: Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
-    - `[EventDateTime <DateTime?>]`: Time at which the event(s) that served as the trigger(s) to generate the alert occurred.
+    - `[EventDateTime <DateTime?>]`: Time at which the event or events that served as the trigger to generate the alert occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
@@ -371,9 +371,9 @@ For example, for some alerts this can have the Azure Resource value.
 Required.
       - `[ResourceType <String>]`: securityResourceType
     - `[Severity <String>]`: alertSeverity
-    - `[SourceMaterials <String- `[]`>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search, etc.
+    - `[SourceMaterials <String- `[]`>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search.
     - `[Status <String>]`: alertStatus
-    - `[Tags <String- `[]`>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW', etc.) (supports update).
+    - `[Tags <String- `[]`>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW') (supports update).
     - `[Title <String>]`: Alert title.
 Required.
     - `[Triggers <IMicrosoftGraphAlertTrigger- `[]`>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
@@ -433,7 +433,7 @@ Read-only.
   - `[AzureSubscriptionId <String>]`: Azure subscription ID, present if this alert is related to an Azure resource.
   - `[AzureTenantId <String>]`: Microsoft Entra tenant ID.
 Required.
-  - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware, etc.).
+  - `[Category <String>]`: Category of the alert (for example, credentialTheft, ransomware).
   - `[ClosedDateTime <DateTime?>]`: Time at which the alert was closed.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
@@ -450,7 +450,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
   - `[Description <String>]`: Alert description.
   - `[DetectionIds <String- `[]`>]`: Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
-  - `[EventDateTime <DateTime?>]`: Time at which the event(s) that served as the trigger(s) to generate the alert occurred.
+  - `[EventDateTime <DateTime?>]`: Time at which the event or events that served as the trigger to generate the alert occurred.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
@@ -580,9 +580,9 @@ For example, for some alerts this can have the Azure Resource value.
 Required.
     - `[ResourceType <String>]`: securityResourceType
   - `[Severity <String>]`: alertSeverity
-  - `[SourceMaterials <String- `[]`>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search, etc.
+  - `[SourceMaterials <String- `[]`>]`: Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search.
   - `[Status <String>]`: alertStatus
-  - `[Tags <String- `[]`>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW', etc.) (supports update).
+  - `[Tags <String- `[]`>]`: User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW') (supports update).
   - `[Title <String>]`: Alert title.
 Required.
   - `[Triggers <IMicrosoftGraphAlertTrigger- `[]`>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
@@ -634,7 +634,7 @@ Required
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple)
 
-[https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/alert-updatealerts?view=graph-rest-beta)
 
 
 

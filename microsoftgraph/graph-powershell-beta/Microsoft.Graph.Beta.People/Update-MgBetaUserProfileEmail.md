@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileEmail
 
 ## SYNOPSIS
-Update the properties of an itemEmail object in a user's profile.
+Update the navigation property emails in users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the properties of an itemEmail object in a user's profile.
+Update the navigation property emails in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -512,8 +512,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofileemail)
-
-[https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itememail-update?view=graph-rest-1.0)
 
 
 

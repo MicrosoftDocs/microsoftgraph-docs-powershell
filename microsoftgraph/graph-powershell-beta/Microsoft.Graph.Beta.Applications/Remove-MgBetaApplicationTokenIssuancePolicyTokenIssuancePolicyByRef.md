@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Remove a tokenIssuancePolicy from an application.
+Delete ref of navigation property tokenIssuancePolicies for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject
 ```
 
 ## DESCRIPTION
-Remove a tokenIssuancePolicy from an application.
+Delete ref of navigation property tokenIssuancePolicies for applications
 
 ## PARAMETERS
 
@@ -240,8 +240,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationtokenissuancepolicytokenissuancepolicybyref)
-
-[https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

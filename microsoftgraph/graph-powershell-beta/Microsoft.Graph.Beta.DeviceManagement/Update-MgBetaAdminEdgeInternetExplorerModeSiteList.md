@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaAdminEdgeInternetExplorerModeSiteList
 
 ## SYNOPSIS
-Update the properties of a browserSiteList object.
+Update the navigation property siteLists in admin
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Update the properties of a browserSiteList object.
+Update the navigation property siteLists in admin
 
 ## PARAMETERS
 
@@ -392,10 +392,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: The date and time when the site list was last modified.
@@ -599,10 +598,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -611,10 +609,9 @@ PUBLISHEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -635,10 +632,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Path <String>]`: The path of the cookie.
@@ -671,10 +667,9 @@ If true, indicates that the site will open in Internet Explorer 11 or Microsoft 
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[MergeType <BrowserSiteMergeType?>]`: browserSiteMergeType
@@ -690,8 +685,6 @@ When the unique identifier is unavailable, the displayName property is provided 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetaadminedgeinternetexplorermodesitelist)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-update?view=graph-rest-1.0)
 
 
 

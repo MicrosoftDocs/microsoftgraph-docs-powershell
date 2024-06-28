@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementMonitoringAlertRule
 
 ## SYNOPSIS
-Update the properties of an alertRule object.
+Update the navigation property alertRules in deviceManagement
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Update the properties of an alertRule object.
+Update the navigation property alertRules in deviceManagement
 
 ## PARAMETERS
 
@@ -575,8 +575,6 @@ THRESHOLD `<IMicrosoftGraphDeviceManagementRuleThreshold>`: ruleThreshold
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoringalertrule)
-
-[https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/devicemanagement-alertrule-update?view=graph-rest-1.0)
 
 
 

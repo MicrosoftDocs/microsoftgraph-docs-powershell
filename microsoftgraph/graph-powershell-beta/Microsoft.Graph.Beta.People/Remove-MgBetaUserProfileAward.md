@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileAward
 
 ## SYNOPSIS
-Deletes a personAward object from a user's profile.
+Delete navigation property awards for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Deletes a personAward object from a user's profile.
+Delete navigation property awards for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,8 +239,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaward](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileaward)
-
-[https://learn.microsoft.com/graph/api/personaward-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personaward-delete?view=graph-rest-1.0)
 
 
 

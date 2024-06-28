@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupSiteTermStoreGroup
 
 ## SYNOPSIS
-Delete a group object in a term \[store\].
+Delete navigation property groups for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroup?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete a group object in a term \[store\].
+Delete navigation property groups for groups
 
 ## PARAMETERS
 
@@ -274,8 +274,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitetermstoregroup)
-
-[https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-delete?view=graph-rest-1.0)
 
 
 

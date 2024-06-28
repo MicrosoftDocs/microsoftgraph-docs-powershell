@@ -8,12 +8,7 @@ schema: 2.0.0
 # New-MgUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Add a new phone authentication method for a user.
-A user may only have one phone of each type, captured in the phoneType property.
-This means, for example, adding a mobile phone to a user with a pre-existing mobile phone fails.
-Additionally, a user must always have a mobile phone before adding an alternateMobile phone.
-Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
-Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
+Create new navigation property to phoneMethods for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
@@ -51,12 +46,7 @@ New-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Add a new phone authentication method for a user.
-A user may only have one phone of each type, captured in the phoneType property.
-This means, for example, adding a mobile phone to a user with a pre-existing mobile phone fails.
-Additionally, a user must always have a mobile phone before adding an alternateMobile phone.
-Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
-Additionally, if a user is enabled by policy to use SMS sign-in and a mobile number is added, the system attempts to register the number for use in that system.
+Create new navigation property to phoneMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -313,6 +303,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -324,6 +315,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -338,6 +330,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -368,8 +361,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod)
-
-[https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-post-phonemethods?view=graph-rest-1.0)
 
 
 

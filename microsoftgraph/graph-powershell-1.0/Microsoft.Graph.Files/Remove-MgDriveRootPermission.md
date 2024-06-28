@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveRootPermission
 
 ## SYNOPSIS
-Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Delete navigation property permissions for drives
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveRootPermission?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Remove access to a DriveItem.
-Only sharing permissions that are not inherited can be deleted.The inheritedFrom property must be null.
+Delete navigation property permissions for drives
 
 ## PARAMETERS
 
@@ -233,8 +231,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdriverootpermission)
-
-[https://learn.microsoft.com/graph/api/permission-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-delete?view=graph-rest-1.0)
 
 
 

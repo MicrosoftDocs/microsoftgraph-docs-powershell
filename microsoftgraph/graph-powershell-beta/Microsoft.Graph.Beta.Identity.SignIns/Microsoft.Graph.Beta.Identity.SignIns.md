@@ -1235,9 +1235,6 @@ Locale: en-US
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderBaseByRef.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaIdentityB2XUserFlowLanguage](Remove-MgBetaIdentityB2XUserFlowLanguage.md)
 {{ Fill in the Description }}
 
@@ -1398,9 +1395,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyFeatureRolloutPolicy](Remove-MgBetaPolicyFeatureRolloutPolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
@@ -1581,6 +1575,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaTenantRelationshipMultiTenantOrganization](Set-MgBetaTenantRelationshipMultiTenantOrganization.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaTrustFrameworkPolicyContent](Set-MgBetaTrustFrameworkPolicyContent.md)
@@ -1793,9 +1790,6 @@ Locale: en-US
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 {{ Fill in the Description }}
 
-### [Update-MgBetaPolicyDeviceRegistrationPolicy](Update-MgBetaPolicyDeviceRegistrationPolicy.md)
-{{ Fill in the Description }}
-
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 {{ Fill in the Description }}
 
@@ -1872,9 +1866,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgBetaServicePrincipalRiskDetection](Update-MgBetaServicePrincipalRiskDetection.md)
-{{ Fill in the Description }}
-
-### [Update-MgBetaTenantRelationshipMultiTenantOrganization](Update-MgBetaTenantRelationshipMultiTenantOrganization.md)
 {{ Fill in the Description }}
 
 ### [Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest](Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest.md)

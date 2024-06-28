@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Update a user's phone number associated with a phone authentication method object.
-You can't change a phone's type.
-To change a phone's type, add a new number of the desired type and then delete the object with the original type.
-If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
+Update the navigation property phoneMethods in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
@@ -49,10 +46,7 @@ Update-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update a user's phone number associated with a phone authentication method object.
-You can't change a phone's type.
-To change a phone's type, add a new number of the desired type and then delete the object with the original type.
-If a user is enabled by policy to use SMS to sign in and the mobile number is changed, the system will attempt to register the number for use in that system.
+Update the navigation property phoneMethods in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -324,6 +318,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -335,6 +330,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -349,6 +345,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -379,8 +376,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationphonemethod)
-
-[https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-update?view=graph-rest-1.0)
 
 
 

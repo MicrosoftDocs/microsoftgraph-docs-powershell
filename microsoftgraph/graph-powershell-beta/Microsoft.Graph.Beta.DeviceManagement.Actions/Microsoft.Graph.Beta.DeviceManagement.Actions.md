@@ -473,7 +473,13 @@ Locale: en-US
 ### [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementComanagedDeviceAppDiagnostic.md)
 {{ Fill in the Description }}
 
+### [Invoke-MgBetaDownloadDeviceManagementComanagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadDeviceManagementComanagedDeviceLogCollectionRequestDeviceLog.md)
+{{ Fill in the Description }}
+
 ### [Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic](Invoke-MgBetaDownloadDeviceManagementManagedDeviceAppDiagnostic.md)
+{{ Fill in the Description }}
+
+### [Invoke-MgBetaDownloadDeviceManagementManagedDeviceLogCollectionRequestDeviceLog](Invoke-MgBetaDownloadDeviceManagementManagedDeviceLogCollectionRequestDeviceLog.md)
 {{ Fill in the Description }}
 
 ### [Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction](Invoke-MgBetaEnrollDeviceManagementComanagedDeviceNowAction.md)
@@ -803,6 +809,9 @@ Locale: en-US
 ### [Revoke-MgBetaDeviceManagementComanagedDeviceAppleVppLicense](Revoke-MgBetaDeviceManagementComanagedDeviceAppleVppLicense.md)
 {{ Fill in the Description }}
 
+### [Revoke-MgBetaDeviceManagementElevationRequest](Revoke-MgBetaDeviceManagementElevationRequest.md)
+{{ Fill in the Description }}
+
 ### [Revoke-MgBetaDeviceManagementManagedDeviceAppleVppLicense](Revoke-MgBetaDeviceManagementManagedDeviceAppleVppLicense.md)
 {{ Fill in the Description }}
 
@@ -879,6 +888,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceManagementGroupPolicyConfiguration](Set-MgBetaDeviceManagementGroupPolicyConfiguration.md)
+{{ Fill in the Description }}
+
+### [Set-MgBetaDeviceManagementHardwareConfiguration](Set-MgBetaDeviceManagementHardwareConfiguration.md)
 {{ Fill in the Description }}
 
 ### [Set-MgBetaDeviceManagementIntent](Set-MgBetaDeviceManagementIntent.md)

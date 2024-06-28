@@ -377,7 +377,7 @@ TORECIPIENTS <IMicrosoftGraphRecipient- `[]`>: .
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupthreadpostinreplyto)
 
-[https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta](https://learn.microsoft.com/graph/api/post-forward?view=graph-rest-beta)
 
 
 

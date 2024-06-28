@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create a new audioRoutingGroup.
+Create new navigation property to audioRoutingGroups for communications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Create a new audioRoutingGroup.
+Create new navigation property to audioRoutingGroups for communications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -317,8 +317,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallaudioroutinggroup)
-
-[https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-post-audioroutinggroups?view=graph-rest-1.0)
 
 
 

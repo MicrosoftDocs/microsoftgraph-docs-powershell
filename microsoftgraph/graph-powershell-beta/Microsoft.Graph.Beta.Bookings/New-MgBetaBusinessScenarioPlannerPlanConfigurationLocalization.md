@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-Create a new plannerPlanConfigurationLocalization object.
+Create new navigation property to localizations for solutions
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ```
 
 ## DESCRIPTION
-Create a new plannerPlanConfigurationLocalization object.
+Create new navigation property to localizations for solutions
 
 ## PARAMETERS
 
@@ -308,8 +308,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabusinessscenarioplannerplanconfigurationlocalization)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-post-localizations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalConnection
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an externalConnection.
+Get connections from external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an externalConnection.
+Get connections from external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -313,6 +313,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -322,10 +324,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnection)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-list?view=graph-rest-1.0)
 
 
 

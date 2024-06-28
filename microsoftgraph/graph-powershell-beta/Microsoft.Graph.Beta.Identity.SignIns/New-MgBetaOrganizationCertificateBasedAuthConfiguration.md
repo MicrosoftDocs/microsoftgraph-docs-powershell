@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Create a new certificateBasedAuthConfiguration object.
+Create new navigation property to certificateBasedAuthConfiguration for organization
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Create a new certificateBasedAuthConfiguration object.
+Create new navigation property to certificateBasedAuthConfiguration for organization
 
 ## PARAMETERS
 
@@ -347,8 +347,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaorganizationcertificatebasedauthconfiguration)
-
-[https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration?view=graph-rest-1.0)
 
 
 

@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty
 schema: 2.0.0
-ms.prod: people
 ---
 
 # Get-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Retrieve the properties of a profileCardProperty entity.
-The profileCardProperty is identified by its directoryPropertyName property.
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
@@ -40,11 +38,7 @@ Get-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a profileCardProperty entity.
-The profileCardProperty is identified by its directoryPropertyName property.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/profilecardproperty-get-permissions.md)]
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
 
 ## PARAMETERS
 
@@ -295,6 +289,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -320,10 +316,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadminpeopleprofilecardproperty)
-
-[https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/peopleadminsettings-list-profilecardproperties?view=graph-rest-1.0)
 
 
 

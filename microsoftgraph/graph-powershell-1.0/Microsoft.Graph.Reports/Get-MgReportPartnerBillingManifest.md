@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportPartnerBillingManifest
 
 ## SYNOPSIS
-Read the properties and relationships of a manifest object.
+Represents metadata for the exported data.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportPartnerBillingManifest](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportPartnerBillingManifest?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgReportPartnerBillingManifest -InputObject <IReportsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a manifest object.
+Represents metadata for the exported data.
 
 ## PARAMETERS
 
@@ -312,8 +312,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportpartnerbillingmanifest)
-
-[https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/partners-billing-manifest-get?view=graph-rest-1.0)
 
 
 

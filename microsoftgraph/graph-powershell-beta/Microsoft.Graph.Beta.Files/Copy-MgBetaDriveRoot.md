@@ -8,7 +8,7 @@ schema: 2.0.0
 # Copy-MgBetaDriveRoot
 
 ## SYNOPSIS
-Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Copy-MgBetaDriveRoot -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Asynchronously creates a copy of an \[driveItem\]\[item-resource\] (including any children), under a new parent item or with a new name.
+Asynchronously creates a copy of an driveItem (including any children), under a new parent item or with a new name.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/driveitem-copy-permissions.md)]
@@ -247,18 +247,18 @@ BODYPARAMETER `<IPaths11Forp5DrivesDriveIdRootMicrosoftGraphCopyPostRequestbodyC
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
     - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
     - `[Name <String>]`: The name of the item being referenced.
 Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
     - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -269,7 +269,7 @@ Read-only.
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
@@ -302,18 +302,18 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem.
-Only returned if the item is located in a - `[drive]`- `[]`.
+Only returned if the item is located in a drive.
 Read-only.
   - `[DriveType <String>]`: Identifies the type of drive.
-Only returned if the item is located in a - `[drive]`- `[]`. 
-See - `[drive]`- `[]` resource for values.
+Only returned if the item is located in a drive. 
+See drive resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list.
 Read-only.
   - `[Name <String>]`: The name of the item being referenced.
 Read-only.
   - `[Path <String>]`: Path that can be used to navigate to the item.
 Read-only.
-  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the - `[Shares]`- `[]` API.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the Shares API.
   - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
@@ -324,7 +324,7 @@ Read-only.
     - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource.
-The value is the same as the id property of that - `[site]`- `[]` resource.
+The value is the same as the id property of that site resource.
 It is an opaque string that consists of three identifiers of the site.
 For OneDrive, this property is not populated.
 
@@ -332,7 +332,7 @@ For OneDrive, this property is not populated.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/copy-mgbetadriveroot)
 
-[https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-copy?view=graph-rest-beta)
 
 
 

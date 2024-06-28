@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementExchangeRoleAssignment
 
 ## SYNOPSIS
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgBetaRoleManagementExchangeRoleAssignment -BodyParameter <IMicrosoftGraphUn
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -513,8 +513,6 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementexchangeroleassignment)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0)
 
 
 

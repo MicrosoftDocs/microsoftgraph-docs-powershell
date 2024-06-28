@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserDeviceRegisteredUserByRef
 
 ## SYNOPSIS
-Add a registered user for the device.
+Create new navigation property ref to registeredUsers for users
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIde
 ```
 
 ## DESCRIPTION
-Add a registered user for the device.
+Create new navigation property ref to registeredUsers for users
 
 ## PARAMETERS
 
@@ -265,8 +265,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregistereduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/new-mgbetauserdeviceregistereduserbyref)
-
-[https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-registeredusers?view=graph-rest-1.0)
 
 
 

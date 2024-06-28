@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail
 
 ## SYNOPSIS
-Invoke function getTeamsLicensingDetails
+Get the license status of a user in Microsoft Teams.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsLicensingDetails
+Get the license status of a user in Microsoft Teams.
 
 ## PARAMETERS
 
@@ -160,6 +160,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail)
+
+[https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule
 
 ## SYNOPSIS
-Read properties and relationships of the deviceComplianceScheduledActionForRule object.
+The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
@@ -39,7 +40,8 @@ Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceComplianceScheduledActionForRule object.
+The list of scheduled action per rule for this compliance policy.
+This is a required property when creating any individual per-platform compliance policies.
 
 ## PARAMETERS
 
@@ -360,10 +362,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicyscheduledactionforrule)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancescheduledactionforrule-list?view=graph-rest-1.0)
 
 
 

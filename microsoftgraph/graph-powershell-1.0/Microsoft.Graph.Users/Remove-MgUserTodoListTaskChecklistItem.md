@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Delete a checklistItem object.
+Delete navigation property checklistItems for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskChecklistItem?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete a checklistItem object.
+Delete navigation property checklistItems for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -266,8 +266,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttaskchecklistitem)
-
-[https://learn.microsoft.com/graph/api/checklistitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-delete?view=graph-rest-1.0)
 
 
 

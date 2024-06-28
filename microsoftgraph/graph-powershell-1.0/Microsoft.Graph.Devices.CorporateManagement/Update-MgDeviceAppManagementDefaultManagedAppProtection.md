@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementDefaultManagedAppProtection
 
 ## SYNOPSIS
-Update the properties of a defaultManagedAppProtection object.
+Update the navigation property defaultManagedAppProtections in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
@@ -82,7 +82,7 @@ Update-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Update the properties of a defaultManagedAppProtection object.
+Update the navigation property defaultManagedAppProtections in deviceAppManagement
 
 ## PARAMETERS
 
@@ -1064,8 +1064,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementdefaultmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementdefaultmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-defaultmanagedappprotection-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
-Delete a conversationMember from a channel.
+Delete navigation property members for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete a conversationMember from a channel.
+Delete navigation property members for teamwork
 
 ## PARAMETERS
 
@@ -255,8 +255,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmember-delete?view=graph-rest-1.0)
 
 
 

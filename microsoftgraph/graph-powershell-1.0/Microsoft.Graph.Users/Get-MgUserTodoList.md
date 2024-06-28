@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTodoList
 
 ## SYNOPSIS
-Read the properties and relationships of a todoTaskList object.
+The task lists in the users mailbox.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoList?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgUserTodoList -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a todoTaskList object.
+The task lists in the users mailbox.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,10 +334,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolist](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodolist)
-
-[https://learn.microsoft.com/graph/api/todotasklist-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/todo-list-lists?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todo-list-lists?view=graph-rest-1.0)
 
 
 

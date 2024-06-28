@@ -286,7 +286,7 @@ A MinDeviceOccurrence of 0 means setting is optional
     - `[OffsetUri <String>]`: Offset CSP Path from Base
     - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
       - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
     - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
     - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
     - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
@@ -323,6 +323,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[IosLobAppProvisioningConfigurationId <String>]`: The unique identifier of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
   - `[IosVppAppAssignedLicenseId <String>]`: The unique identifier of iosVppAppAssignedLicense
+  - `[ManagedAppLogCollectionRequestId <String>]`: The unique identifier of managedAppLogCollectionRequest
   - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
   - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
   - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
@@ -397,7 +398,7 @@ A MinDeviceOccurrence of 0 means setting is optional
   - `[OffsetUri <String>]`: Offset CSP Path from Base
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation- `[]`>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting.
-Applicable for reusable setting.
+Applicable for reusable setting
   - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
   - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX

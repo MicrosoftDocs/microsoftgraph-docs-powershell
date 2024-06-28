@@ -2051,13 +2051,7 @@ Locale: en-US
 ### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
 {{ Fill in the Description }}
 
-### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsorDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef.md)

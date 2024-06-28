@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 
 ## SYNOPSIS
-Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object.
+The windows information protection network learning summaries.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object.
+The windows information protection network learning summaries.
 
 ## PARAMETERS
 
@@ -346,10 +346,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementwindowsinformationprotectionnetworklearningsummary)
-
-[https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionnetworklearningsummary-list?view=graph-rest-1.0)
 
 
 

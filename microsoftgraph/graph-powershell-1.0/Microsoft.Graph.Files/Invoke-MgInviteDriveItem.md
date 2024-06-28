@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgInviteDriveItem
 
 ## SYNOPSIS
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaInviteDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaInviteDriveItem?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Invoke-MgInviteDriveItem -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a \[sharing link\]\[\].
+Sends a sharing invitation for a driveItem.A sharing invitation provides permissions to the recipients and optionally sends them an email with a sharing link.
 
 ## PARAMETERS
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-Delete a plannerPlanConfigurationLocalization object.
+Delete navigation property localizations for solutions
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ```
 
 ## DESCRIPTION
-Delete a plannerPlanConfigurationLocalization object.
+Delete navigation property localizations for solutions
 
 ## PARAMETERS
 
@@ -228,8 +228,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannerplanconfigurationlocalization)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-delete-localizations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaBookingBusinessAppointment
 
 ## SYNOPSIS
-Create a new bookingAppointment for the specified bookingBusiness.
+Create new navigation property to appointments for bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-1.0)
@@ -120,7 +120,7 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new bookingAppointment for the specified bookingBusiness.
+Create new navigation property to appointments for bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet
@@ -1247,8 +1247,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/new-mgbetabookingbusinessappointment)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-appointments?view=graph-rest-1.0)
 
 
 

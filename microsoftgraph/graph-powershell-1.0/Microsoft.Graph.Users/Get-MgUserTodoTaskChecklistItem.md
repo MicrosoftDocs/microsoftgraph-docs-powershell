@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTodoTaskChecklistItem
 
 ## SYNOPSIS
-Read the properties and relationships of a checklistItem object.
+A collection of checklistItems linked to a task.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTaskChecklistItem?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a checklistItem object.
+A collection of checklistItems linked to a task.
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotaskchecklistitem)
-
-[https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/checklistitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-checklistitems?view=graph-rest-1.0)
 
 
 

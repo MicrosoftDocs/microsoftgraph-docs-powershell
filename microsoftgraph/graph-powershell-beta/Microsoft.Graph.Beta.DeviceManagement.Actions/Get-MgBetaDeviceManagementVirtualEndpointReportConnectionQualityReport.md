@@ -311,7 +311,7 @@ BODYPARAMETER `<IPaths1Rd0Fy0DevicemanagementVirtualendpointReportsMicrosoftGrap
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementvirtualendpointreportconnectionqualityreport)
 
-[https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta)
 
 
 

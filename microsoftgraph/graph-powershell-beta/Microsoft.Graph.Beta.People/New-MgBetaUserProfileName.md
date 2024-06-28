@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileName
 
 ## SYNOPSIS
-Use this API to create a new personName object in a user's profile.
+Create new navigation property to names for users
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Use this API to create a new personName object in a user's profile.
+Create new navigation property to names for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -651,8 +651,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilename)
-
-[https://learn.microsoft.com/graph/api/profile-post-names?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-names?view=graph-rest-1.0)
 
 
 

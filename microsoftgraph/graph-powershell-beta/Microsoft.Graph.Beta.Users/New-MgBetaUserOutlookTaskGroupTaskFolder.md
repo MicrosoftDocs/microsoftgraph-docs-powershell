@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserOutlookTaskGroupTaskFolder
 
 ## SYNOPSIS
-Create an Outlook task folder under a specified outlookTaskGroup.
+Create new navigation property to taskFolders for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create an Outlook task folder under a specified outlookTaskGroup.
+Create new navigation property to taskFolders for users
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
@@ -607,8 +607,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskgrouptaskfolder)
-
-[https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskgroup-post-taskfolders?view=graph-rest-1.0)
 
 
 

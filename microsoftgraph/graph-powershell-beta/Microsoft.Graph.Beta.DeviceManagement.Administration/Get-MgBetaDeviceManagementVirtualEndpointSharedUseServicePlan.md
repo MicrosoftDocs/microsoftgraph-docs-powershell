@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcSharedUseServicePlan object.
+Get sharedUseServicePlans from deviceManagement
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcSharedUseServicePlan object.
+Get sharedUseServicePlans from deviceManagement
 
 ## PARAMETERS
 
@@ -345,10 +345,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointshareduseserviceplan)
-
-[https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcshareduseserviceplan-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-shareduseserviceplans?view=graph-rest-1.0)
 
 
 

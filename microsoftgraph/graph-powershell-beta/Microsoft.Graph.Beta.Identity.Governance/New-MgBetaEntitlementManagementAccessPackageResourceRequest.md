@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageResourceRequest
 
 ## SYNOPSIS
-Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
-A resource must be included in an access package catalog before a role of that resource can be added to an access package.
+Create new navigation property to accessPackageResourceRequests for identityGovernance
 
 ## SYNTAX
 
@@ -31,8 +30,7 @@ New-MgBetaEntitlementManagementAccessPackageResourceRequest
 ```
 
 ## DESCRIPTION
-Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog.
-A resource must be included in an access package catalog before a role of that resource can be added to an access package.
+Create new navigation property to accessPackageResourceRequests for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Create a new access package resource request
@@ -628,8 +626,6 @@ Alternate key.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerequest)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-post-accesspackageresourcerequests?view=graph-rest-1.0)
 
 
 

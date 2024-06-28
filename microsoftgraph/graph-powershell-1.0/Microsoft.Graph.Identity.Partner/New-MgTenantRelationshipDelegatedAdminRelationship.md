@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTenantRelationshipDelegatedAdminRelationship
 
 ## SYNOPSIS
-Create a new delegatedAdminRelationship object.
+Create new navigation property to delegatedAdminRelationships for tenantRelationships
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ New-MgTenantRelationshipDelegatedAdminRelationship -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new delegatedAdminRelationship object.
+Create new navigation property to delegatedAdminRelationships for tenantRelationships
 
 ## PARAMETERS
 
@@ -516,8 +516,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/new-mgtenantrelationshipdelegatedadminrelationship)
-
-[https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tenantrelationship-post-delegatedadminrelationships?view=graph-rest-1.0)
 
 
 

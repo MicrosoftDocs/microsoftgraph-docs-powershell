@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityB2CUserFlow
 
 ## SYNOPSIS
-Update the properties of a b2cIdentityUserFlow object.
+Update the navigation property b2cUserFlows in identity
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a b2cIdentityUserFlow object.
+Update the navigation property b2cUserFlows in identity
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaIdentityB2CUserFlow Cmdlet
@@ -626,8 +626,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2cuserflow)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-update?view=graph-rest-1.0)
 
 
 

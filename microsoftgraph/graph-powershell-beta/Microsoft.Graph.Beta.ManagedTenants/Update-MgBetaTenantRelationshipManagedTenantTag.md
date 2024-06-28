@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipManagedTenantTag
 
 ## SYNOPSIS
-Update the properties of a tenantTag object.
+Update the navigation property tenantTags in tenantRelationships
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIde
 ```
 
 ## DESCRIPTION
-Update the properties of a tenantTag object.
+Update the navigation property tenantTags in tenantRelationships
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaTenantRelationshipManagedTenantTag Cmdlet
@@ -449,8 +449,6 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenanttag)
-
-[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-update?view=graph-rest-1.0)
 
 
 

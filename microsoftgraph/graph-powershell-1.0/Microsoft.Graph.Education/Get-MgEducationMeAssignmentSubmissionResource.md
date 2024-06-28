@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentSubmissionResource
 
 ## SYNOPSIS
-Retrieve the properties of a specific resource associated with a submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-This resource is in the 'working' resource list and should be considered work in process by a student.
-This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
+Get resources from education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -42,10 +39,7 @@ Get-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentity> 
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a specific resource associated with a submission.
-Only teachers, students, and applications with application permissions can perform this operation.
-This resource is in the 'working' resource list and should be considered work in process by a student.
-This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
+Get resources from education
 
 ## EXAMPLES
 
@@ -342,10 +336,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentsubmissionresource)
-
-[https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmissionresource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-list-resources?view=graph-rest-1.0)
 
 
 

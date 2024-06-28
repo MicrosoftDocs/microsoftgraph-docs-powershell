@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupTeamChannelTab
 
 ## SYNOPSIS
-Retrieve the properties and relationships of the specified tab in a channel within a team.
+A collection of all the tabs in the channel.
+A navigation property.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of the specified tab in a channel within a team.
+A collection of all the tabs in the channel.
+A navigation property.
 
 ## EXAMPLES
 
@@ -355,10 +357,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteamchanneltab)
-
-[https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-tabs?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-tabs?view=graph-rest-1.0)
 
 
 

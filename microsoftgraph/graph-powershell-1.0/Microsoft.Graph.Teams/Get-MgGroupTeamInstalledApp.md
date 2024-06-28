@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupTeamInstalledApp
 
 ## SYNOPSIS
-Retrieve the app installed in the specified team.
+The apps installed in this team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the app installed in the specified team.
+The apps installed in this team.
 
 ## EXAMPLES
 
@@ -340,10 +340,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mggroupteaminstalledapp)
-
-[https://learn.microsoft.com/graph/api/team-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get-installedapps?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/team-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-list-installedapps?view=graph-rest-1.0)
 
 
 
