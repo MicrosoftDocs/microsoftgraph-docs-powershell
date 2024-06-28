@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathpage
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgSiteGetByPathPage
 
 ## SYNOPSIS
-Get pages from sites
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPathPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPathPage?view=graph-powershell-beta)
+The collection of pages in the baseSitePages list in this site.
 
 ## SYNTAX
 
@@ -32,7 +29,19 @@ Get-MgSiteGetByPathPage -Path <String> -SiteId <String> -Path1 <String> [-Expand
 ```
 
 ## DESCRIPTION
-Get pages from sites
+The collection of pages in the baseSitePages list in this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -291,8 +300,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitegetbypathpage)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting
@@ -29,6 +29,18 @@ Update-MgBetaDeviceManagementWindowsAutopilotSetting -BodyParameter <IMicrosoftG
 
 ## DESCRIPTION
 Update the navigation property windowsAutopilotSettings in deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -216,19 +228,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotSettings>`: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsAutopilotSettings\>: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastManualSyncTriggerDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[LastSyncDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
+  \[LastManualSyncTriggerDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[LastSyncDateTime \<DateTime?\>\]: Last data sync date time with DDS service.
+  \[SyncStatus \<WindowsAutopilotSyncStatus?\>\]: windowsAutopilotSyncStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting)
-
-
-
-
 

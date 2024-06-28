@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenant
@@ -47,6 +47,22 @@ Update-MgBetaTenantRelationshipManagedTenant -InputObject <IManagedTenantsIdenti
 
 ## DESCRIPTION
 Update the navigation property tenants in tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -333,158 +349,154 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsTenant>`: tenant
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsTenant\>: tenant
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Contract <IMicrosoftGraphManagedTenantsTenantContract>]`: tenantContract
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContractType <Int32?>]`: The type of relationship that exists between the managing entity and tenant.
+  \[Contract \<IMicrosoftGraphManagedTenantsTenantContract\>\]: tenantContract
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[ContractType \<Int32?\>\]: The type of relationship that exists between the managing entity and tenant.
 Optional.
 Read-only.
-    - `[DefaultDomainName <String>]`: The default domain name for the tenant.
+    \[DefaultDomainName \<String\>\]: The default domain name for the tenant.
 Required.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the tenant.
+    \[DisplayName \<String\>\]: The display name for the tenant.
 Optional.
 Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time the tenant was created in the multi-tenant management platform.
+  \[CreatedDateTime \<DateTime?\>\]: The date and time the tenant was created in the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the tenant.
+  \[DisplayName \<String\>\]: The display name for the tenant.
 Required.
 Read-only.
-  - `[LastUpdatedDateTime <DateTime?>]`: The date and time the tenant was last updated within the multi-tenant management platform.
+  \[LastUpdatedDateTime \<DateTime?\>\]: The date and time the tenant was last updated within the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: The Microsoft Entra tenant identifier for the managed tenant.
+  \[TenantId \<String\>\]: The Microsoft Entra tenant identifier for the managed tenant.
 Optional.
 Read-only.
-  - `[TenantStatusInformation <IMicrosoftGraphManagedTenantsTenantStatusInformation>]`: tenantStatusInformation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DelegatedPrivilegeStatus <String>]`: delegatedPrivilegeStatus
-    - `[LastDelegatedPrivilegeRefreshDateTime <DateTime?>]`: The date and time the delegated admin privileges status was updated.
+  \[TenantStatusInformation \<IMicrosoftGraphManagedTenantsTenantStatusInformation\>\]: tenantStatusInformation
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DelegatedPrivilegeStatus \<String\>\]: delegatedPrivilegeStatus
+    \[LastDelegatedPrivilegeRefreshDateTime \<DateTime?\>\]: The date and time the delegated admin privileges status was updated.
 Optional.
 Read-only.
-    - `[OffboardedByUserId <String>]`: The identifier for the account that offboarded the managed tenant.
+    \[OffboardedByUserId \<String\>\]: The identifier for the account that offboarded the managed tenant.
 Optional.
 Read-only.
-    - `[OffboardedDateTime <DateTime?>]`: The date and time when the managed tenant was offboarded.
+    \[OffboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was offboarded.
 Optional.
 Read-only.
-    - `[OnboardedByUserId <String>]`: The identifier for the account that onboarded the managed tenant.
+    \[OnboardedByUserId \<String\>\]: The identifier for the account that onboarded the managed tenant.
 Optional.
 Read-only.
-    - `[OnboardedDateTime <DateTime?>]`: The date and time when the managed tenant was onboarded.
+    \[OnboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was onboarded.
 Optional.
 Read-only.
-    - `[OnboardingStatus <String>]`: tenantOnboardingStatus
-    - `[TenantOnboardingEligibilityReason <String>]`: tenantOnboardingEligibilityReason
-    - `[WorkloadStatuses <IMicrosoftGraphManagedTenantsWorkloadStatus- `[]`>]`: The collection of workload statues for the managed tenant.
+    \[OnboardingStatus \<String\>\]: tenantOnboardingStatus
+    \[TenantOnboardingEligibilityReason \<String\>\]: tenantOnboardingEligibilityReason
+    \[WorkloadStatuses \<IMicrosoftGraphManagedTenantsWorkloadStatus\[\]\>\]: The collection of workload statues for the managed tenant.
 Optional.
 Read-only.
-      - `[DisplayName <String>]`: The display name for the workload.
+      \[DisplayName \<String\>\]: The display name for the workload.
 Required.
 Read-only.
-      - `[OffboardedDateTime <DateTime?>]`: The date and time the workload was offboarded.
+      \[OffboardedDateTime \<DateTime?\>\]: The date and time the workload was offboarded.
 Optional.
 Read-only.
-      - `[OnboardedDateTime <DateTime?>]`: The date and time the workload was onboarded.
+      \[OnboardedDateTime \<DateTime?\>\]: The date and time the workload was onboarded.
 Optional.
 Read-only.
-      - `[OnboardingStatus <String>]`: workloadOnboardingStatus
+      \[OnboardingStatus \<String\>\]: workloadOnboardingStatus
 
-CONTRACT `<IMicrosoftGraphManagedTenantsTenantContract>`: tenantContract
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ContractType <Int32?>]`: The type of relationship that exists between the managing entity and tenant.
+CONTRACT \<IMicrosoftGraphManagedTenantsTenantContract\>: tenantContract
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[ContractType \<Int32?\>\]: The type of relationship that exists between the managing entity and tenant.
 Optional.
 Read-only.
-  - `[DefaultDomainName <String>]`: The default domain name for the tenant.
+  \[DefaultDomainName \<String\>\]: The default domain name for the tenant.
 Required.
 Read-only.
-  - `[DisplayName <String>]`: The display name for the tenant.
+  \[DisplayName \<String\>\]: The display name for the tenant.
 Optional.
 Read-only.
 
-INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
-  - `[AggregatedPolicyComplianceId <String>]`: The unique identifier of aggregatedPolicyCompliance
-  - `[AppPerformanceId <String>]`: The unique identifier of appPerformance
-  - `[AuditEventId <String>]`: The unique identifier of auditEvent
-  - `[CloudPcConnectionId <String>]`: The unique identifier of cloudPcConnection
-  - `[CloudPcDeviceId <String>]`: The unique identifier of cloudPcDevice
-  - `[CloudPcOverviewTenantId <String>]`: The unique identifier of cloudPcOverview
-  - `[ConditionalAccessPolicyCoverageId <String>]`: The unique identifier of conditionalAccessPolicyCoverage
-  - `[CredentialUserRegistrationsSummaryId <String>]`: The unique identifier of credentialUserRegistrationsSummary
-  - `[DeviceAppPerformanceId <String>]`: The unique identifier of deviceAppPerformance
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
-  - `[DeviceHealthStatusId <String>]`: The unique identifier of deviceHealthStatus
-  - `[ManagedDeviceComplianceId <String>]`: The unique identifier of managedDeviceCompliance
-  - `[ManagedDeviceComplianceTrendId <String>]`: The unique identifier of managedDeviceComplianceTrend
-  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
-  - `[ManagedTenantAlertLogId <String>]`: The unique identifier of managedTenantAlertLog
-  - `[ManagedTenantAlertRuleDefinitionId <String>]`: The unique identifier of managedTenantAlertRuleDefinition
-  - `[ManagedTenantAlertRuleId <String>]`: The unique identifier of managedTenantAlertRule
-  - `[ManagedTenantApiNotificationId <String>]`: The unique identifier of managedTenantApiNotification
-  - `[ManagedTenantEmailNotificationId <String>]`: The unique identifier of managedTenantEmailNotification
-  - `[ManagedTenantTicketingEndpointId <String>]`: The unique identifier of managedTenantTicketingEndpoint
-  - `[ManagementActionId <String>]`: The unique identifier of managementAction
-  - `[ManagementActionTenantDeploymentStatusId <String>]`: The unique identifier of managementActionTenantDeploymentStatus
-  - `[ManagementIntentId <String>]`: The unique identifier of managementIntent
-  - `[ManagementTemplateCollectionId <String>]`: The unique identifier of managementTemplateCollection
-  - `[ManagementTemplateCollectionTenantSummaryId <String>]`: The unique identifier of managementTemplateCollectionTenantSummary
-  - `[ManagementTemplateId <String>]`: The unique identifier of managementTemplate
-  - `[ManagementTemplateStepDeploymentId <String>]`: The unique identifier of managementTemplateStepDeployment
-  - `[ManagementTemplateStepId <String>]`: The unique identifier of managementTemplateStep
-  - `[ManagementTemplateStepTenantSummaryId <String>]`: The unique identifier of managementTemplateStepTenantSummary
-  - `[ManagementTemplateStepVersionId <String>]`: The unique identifier of managementTemplateStepVersion
-  - `[MyRoleTenantId <String>]`: The unique identifier of myRole
-  - `[TenantCustomizedInformationId <String>]`: The unique identifier of tenantCustomizedInformation
-  - `[TenantDetailedInformationId <String>]`: The unique identifier of tenantDetailedInformation
-  - `[TenantGroupId <String>]`: The unique identifier of tenantGroup
-  - `[TenantId <String>]`: The unique identifier of tenant
-  - `[TenantTagId <String>]`: The unique identifier of tenantTag
-  - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
-  - `[WindowsProtectionStateId <String>]`: The unique identifier of windowsProtectionState
+INPUTOBJECT \<IManagedTenantsIdentity\>: Identity Parameter
+  \[AggregatedPolicyComplianceId \<String\>\]: The unique identifier of aggregatedPolicyCompliance
+  \[AppPerformanceId \<String\>\]: The unique identifier of appPerformance
+  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
+  \[CloudPcConnectionId \<String\>\]: The unique identifier of cloudPcConnection
+  \[CloudPcDeviceId \<String\>\]: The unique identifier of cloudPcDevice
+  \[CloudPcOverviewTenantId \<String\>\]: The unique identifier of cloudPcOverview
+  \[ConditionalAccessPolicyCoverageId \<String\>\]: The unique identifier of conditionalAccessPolicyCoverage
+  \[CredentialUserRegistrationsSummaryId \<String\>\]: The unique identifier of credentialUserRegistrationsSummary
+  \[DeviceAppPerformanceId \<String\>\]: The unique identifier of deviceAppPerformance
+  \[DeviceCompliancePolicySettingStateSummaryId \<String\>\]: The unique identifier of deviceCompliancePolicySettingStateSummary
+  \[DeviceHealthStatusId \<String\>\]: The unique identifier of deviceHealthStatus
+  \[ManagedDeviceComplianceId \<String\>\]: The unique identifier of managedDeviceCompliance
+  \[ManagedDeviceComplianceTrendId \<String\>\]: The unique identifier of managedDeviceComplianceTrend
+  \[ManagedTenantAlertId \<String\>\]: The unique identifier of managedTenantAlert
+  \[ManagedTenantAlertLogId \<String\>\]: The unique identifier of managedTenantAlertLog
+  \[ManagedTenantAlertRuleDefinitionId \<String\>\]: The unique identifier of managedTenantAlertRuleDefinition
+  \[ManagedTenantAlertRuleId \<String\>\]: The unique identifier of managedTenantAlertRule
+  \[ManagedTenantApiNotificationId \<String\>\]: The unique identifier of managedTenantApiNotification
+  \[ManagedTenantEmailNotificationId \<String\>\]: The unique identifier of managedTenantEmailNotification
+  \[ManagedTenantTicketingEndpointId \<String\>\]: The unique identifier of managedTenantTicketingEndpoint
+  \[ManagementActionId \<String\>\]: The unique identifier of managementAction
+  \[ManagementActionTenantDeploymentStatusId \<String\>\]: The unique identifier of managementActionTenantDeploymentStatus
+  \[ManagementIntentId \<String\>\]: The unique identifier of managementIntent
+  \[ManagementTemplateCollectionId \<String\>\]: The unique identifier of managementTemplateCollection
+  \[ManagementTemplateCollectionTenantSummaryId \<String\>\]: The unique identifier of managementTemplateCollectionTenantSummary
+  \[ManagementTemplateId \<String\>\]: The unique identifier of managementTemplate
+  \[ManagementTemplateStepDeploymentId \<String\>\]: The unique identifier of managementTemplateStepDeployment
+  \[ManagementTemplateStepId \<String\>\]: The unique identifier of managementTemplateStep
+  \[ManagementTemplateStepTenantSummaryId \<String\>\]: The unique identifier of managementTemplateStepTenantSummary
+  \[ManagementTemplateStepVersionId \<String\>\]: The unique identifier of managementTemplateStepVersion
+  \[MyRoleTenantId \<String\>\]: The unique identifier of myRole
+  \[TenantCustomizedInformationId \<String\>\]: The unique identifier of tenantCustomizedInformation
+  \[TenantDetailedInformationId \<String\>\]: The unique identifier of tenantDetailedInformation
+  \[TenantGroupId \<String\>\]: The unique identifier of tenantGroup
+  \[TenantId \<String\>\]: The unique identifier of tenant
+  \[TenantTagId \<String\>\]: The unique identifier of tenantTag
+  \[WindowsDeviceMalwareStateId \<String\>\]: The unique identifier of windowsDeviceMalwareState
+  \[WindowsProtectionStateId \<String\>\]: The unique identifier of windowsProtectionState
 
-TENANTSTATUSINFORMATION `<IMicrosoftGraphManagedTenantsTenantStatusInformation>`: tenantStatusInformation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DelegatedPrivilegeStatus <String>]`: delegatedPrivilegeStatus
-  - `[LastDelegatedPrivilegeRefreshDateTime <DateTime?>]`: The date and time the delegated admin privileges status was updated.
+TENANTSTATUSINFORMATION \<IMicrosoftGraphManagedTenantsTenantStatusInformation\>: tenantStatusInformation
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[DelegatedPrivilegeStatus \<String\>\]: delegatedPrivilegeStatus
+  \[LastDelegatedPrivilegeRefreshDateTime \<DateTime?\>\]: The date and time the delegated admin privileges status was updated.
 Optional.
 Read-only.
-  - `[OffboardedByUserId <String>]`: The identifier for the account that offboarded the managed tenant.
+  \[OffboardedByUserId \<String\>\]: The identifier for the account that offboarded the managed tenant.
 Optional.
 Read-only.
-  - `[OffboardedDateTime <DateTime?>]`: The date and time when the managed tenant was offboarded.
+  \[OffboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was offboarded.
 Optional.
 Read-only.
-  - `[OnboardedByUserId <String>]`: The identifier for the account that onboarded the managed tenant.
+  \[OnboardedByUserId \<String\>\]: The identifier for the account that onboarded the managed tenant.
 Optional.
 Read-only.
-  - `[OnboardedDateTime <DateTime?>]`: The date and time when the managed tenant was onboarded.
+  \[OnboardedDateTime \<DateTime?\>\]: The date and time when the managed tenant was onboarded.
 Optional.
 Read-only.
-  - `[OnboardingStatus <String>]`: tenantOnboardingStatus
-  - `[TenantOnboardingEligibilityReason <String>]`: tenantOnboardingEligibilityReason
-  - `[WorkloadStatuses <IMicrosoftGraphManagedTenantsWorkloadStatus- `[]`>]`: The collection of workload statues for the managed tenant.
+  \[OnboardingStatus \<String\>\]: tenantOnboardingStatus
+  \[TenantOnboardingEligibilityReason \<String\>\]: tenantOnboardingEligibilityReason
+  \[WorkloadStatuses \<IMicrosoftGraphManagedTenantsWorkloadStatus\[\]\>\]: The collection of workload statues for the managed tenant.
 Optional.
 Read-only.
-    - `[DisplayName <String>]`: The display name for the workload.
+    \[DisplayName \<String\>\]: The display name for the workload.
 Required.
 Read-only.
-    - `[OffboardedDateTime <DateTime?>]`: The date and time the workload was offboarded.
+    \[OffboardedDateTime \<DateTime?\>\]: The date and time the workload was offboarded.
 Optional.
 Read-only.
-    - `[OnboardedDateTime <DateTime?>]`: The date and time the workload was onboarded.
+    \[OnboardedDateTime \<DateTime?\>\]: The date and time the workload was onboarded.
 Optional.
 Read-only.
-    - `[OnboardingStatus <String>]`: workloadOnboardingStatus
+    \[OnboardingStatus \<String\>\]: workloadOnboardingStatus
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenant)
-
-
-
-
 

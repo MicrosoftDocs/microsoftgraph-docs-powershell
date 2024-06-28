@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionlabelpolicysetting
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityInformationProtectionLabelPolicySetting
 
 ## SYNOPSIS
-Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ## SYNTAX
 
@@ -20,10 +19,19 @@ Get-MgBetaSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the moreInfoUrl property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -116,9 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionlabelpolicysetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionlabelpolicysetting)
-
-[https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-informationprotectionpolicysetting-get?view=graph-rest-1.0)
-
-
-
 

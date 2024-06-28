@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction
@@ -30,6 +30,18 @@ New-MgBetaDeviceManagementVirtualEndpointBulkAction -BodyParameter <IMicrosoftGr
 
 ## DESCRIPTION
 Create new navigation property to bulkActions for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -96,7 +108,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time when the bulk action was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Name of the bulk action.
 
 ```yaml
 Type: String
@@ -187,7 +201,9 @@ Accept wildcard characters: False
 ```
 
 ### -ScheduledDuringMaintenanceWindow
-.
+Indicates whether the bulk actions can be initiated during maintenance window.
+When true, bulk action will use maintenance window to schedule action, When false means bulk action will not use the maintenance window.
+Default value is false.
 
 ```yaml
 Type: SwitchParameter
@@ -248,35 +264,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-ACTIONSUMMARY `<IMicrosoftGraphCloudPcBulkActionSummary>`: cloudPcBulkActionSummary
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[FailedCount <Int32?>]`: 
-  - `[InProgressCount <Int32?>]`: 
-  - `[NotSupportedCount <Int32?>]`: 
-  - `[PendingCount <Int32?>]`: 
-  - `[SuccessfulCount <Int32?>]`: 
+ACTIONSUMMARY \<IMicrosoftGraphCloudPcBulkActionSummary\>: cloudPcBulkActionSummary
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[FailedCount \<Int32?\>\]: The number of Cloud PCs where the action failed.
+  \[InProgressCount \<Int32?\>\]: The number of Cloud PCs where the action is in progress.
+  \[NotSupportedCount \<Int32?\>\]: The number of Cloud PCs where the action isn't supported.
+  \[PendingCount \<Int32?\>\]: The number of Cloud PCs where the action is pending.
+  \[SuccessfulCount \<Int32?\>\]: The number of Cloud PCs where the action is successful.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcBulkAction>`: cloudPcBulkAction
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphCloudPcBulkAction\>: cloudPcBulkAction
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>]`: cloudPcBulkActionSummary
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[FailedCount <Int32?>]`: 
-    - `[InProgressCount <Int32?>]`: 
-    - `[NotSupportedCount <Int32?>]`: 
-    - `[PendingCount <Int32?>]`: 
-    - `[SuccessfulCount <Int32?>]`: 
-  - `[CloudPcIds <String- `[]`>]`: 
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ScheduledDuringMaintenanceWindow <Boolean?>]`:
+  \[ActionSummary \<IMicrosoftGraphCloudPcBulkActionSummary\>\]: cloudPcBulkActionSummary
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[FailedCount \<Int32?\>\]: The number of Cloud PCs where the action failed.
+    \[InProgressCount \<Int32?\>\]: The number of Cloud PCs where the action is in progress.
+    \[NotSupportedCount \<Int32?\>\]: The number of Cloud PCs where the action isn't supported.
+    \[PendingCount \<Int32?\>\]: The number of Cloud PCs where the action is pending.
+    \[SuccessfulCount \<Int32?\>\]: The number of Cloud PCs where the action is successful.
+  \[CloudPcIds \<String\[\]\>\]: 
+  \[CreatedDateTime \<DateTime?\>\]: The date and time when the bulk action was created.
+The timestamp type represents date and time information using ISO 8601 format and is always in UTC.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  \[DisplayName \<String\>\]: Name of the bulk action.
+  \[ScheduledDuringMaintenanceWindow \<Boolean?\>\]: Indicates whether the bulk actions can be initiated during maintenance window.
+When true, bulk action will use maintenance window to schedule action, When false means bulk action will not use the maintenance window.
+Default value is false.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointbulkaction)
-
-
-
-
 

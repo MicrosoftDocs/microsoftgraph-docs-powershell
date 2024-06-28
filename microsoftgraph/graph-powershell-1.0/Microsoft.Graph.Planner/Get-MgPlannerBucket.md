@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket
@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerBucket
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a plannerBucket object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerBucket?view=graph-powershell-beta)
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## SYNTAX
 
@@ -37,20 +36,18 @@ Get-MgPlannerBucket -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a plannerBucket object.
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerBucket
-
-```
-This example shows how to use the Get-MgPlannerBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -297,21 +294,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerbucket)
-
-[https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-list-buckets?view=graph-rest-1.0)
-
-
-
 

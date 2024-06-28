@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan
@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 
 ## SYNTAX
 
@@ -39,21 +39,17 @@ Get-MgBetaUserPlannerRecentPlan -InputObject <IPlannerIdentity> [-ExpandProperty
 ## DESCRIPTION
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerRecentPlan -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPlannerRecentPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -315,22 +311,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
-  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
-  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
-  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
-  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPlannerIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PlannerBucketId \<String\>\]: The unique identifier of plannerBucket
+  \[PlannerDeltaId \<String\>\]: The unique identifier of plannerDelta
+  \[PlannerPlanId \<String\>\]: The unique identifier of plannerPlan
+  \[PlannerRosterId \<String\>\]: The unique identifier of plannerRoster
+  \[PlannerRosterMemberId \<String\>\]: The unique identifier of plannerRosterMember
+  \[PlannerTaskId \<String\>\]: The unique identifier of plannerTask
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan)
-
-[https://learn.microsoft.com/graph/api/planneruser-list-recentplans?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-list-recentplans?view=graph-rest-1.0)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta
@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgBetaDirectoryRoleTemplateDelta
 
 ## SYNOPSIS
-Invoke function delta
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-1.0)
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
 
 ## SYNTAX
 
@@ -23,7 +21,20 @@ Get-MgBetaDirectoryRoleTemplateDelta [-ExpandProperty <String[]>] [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection.
+For more information about the delta function, see Use delta query to track changes in Microsoft Graph data for details.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -238,7 +249,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryroletemplatedelta)
 
-
-
-
+[https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-delta?view=graph-rest-beta)
 
