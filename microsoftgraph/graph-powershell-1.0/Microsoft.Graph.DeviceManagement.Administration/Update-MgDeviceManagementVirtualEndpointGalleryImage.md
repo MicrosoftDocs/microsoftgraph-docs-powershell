@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage
@@ -383,64 +383,67 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER \<IMicrosoftGraphCloudPcGalleryImage\>: cloudPcGalleryImage
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphCloudPcGalleryImage>`: cloudPcGalleryImage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[DisplayName \<String\>\]: The display name of this gallery image.
+  - `[DisplayName <String>]`: The display name of this gallery image.
 For example, Windows 11 Enterprise + Microsoft 365 Apps 22H2.
 Read-only.
-  \[EndDate \<DateTime?\>\]: The date when the status of the image becomes supportedWithWarning.
+  - `[EndDate <DateTime?>]`: The date when the status of the image becomes supportedWithWarning.
 Users can still provision new Cloud PCs if the current time is later than endDate and earlier than expirationDate.
 For example, assume the endDate of a gallery image is 2023-9-14 and expirationDate is 2024-3-14, users are able to provision new Cloud PCs if today is 2023-10-01.
 Read-only.
-  \[ExpirationDate \<DateTime?\>\]: The date when the image is no longer available.
+  - `[ExpirationDate <DateTime?>]`: The date when the image is no longer available.
 Users are unable to provision new Cloud PCs if the current time is later than expirationDate.
 The value is usually endDate plus six months.
 For example, if the startDate is 2025-10-14, the expirationDate is usually 2026-04-14.
 Read-only.
-  \[OfferName \<String\>\]: The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
+  - `[OfferName <String>]`: The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.
-  \[PublisherName \<String\>\]: The publisher name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
+  - `[PublisherName <String>]`: The publisher name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.
-  \[SizeInGb \<Int32?\>\]: Indicates the size of this image in gigabytes.
+  - `[SizeInGb <Int32?>]`: Indicates the size of this image in gigabytes.
 For example, 64.
 Read-only.
-  \[SkuName \<String\>\]: The SKU name of this image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
+  - `[SkuName <String>]`: The SKU name of this image that is passed to Azure Resource Manager (ARM) to retrieve the image resource.
 Read-only.
-  \[StartDate \<DateTime?\>\]: The date when the Cloud PC image is available for provisioning new Cloud PCs.
+  - `[StartDate <DateTime?>]`: The date when the Cloud PC image is available for provisioning new Cloud PCs.
 For example, 2022-09-20.
 Read-only.
-  \[Status \<String\>\]: cloudPcGalleryImageStatus
+  - `[Status <String>]`: cloudPcGalleryImageStatus
 
-INPUTOBJECT \<IDeviceManagementAdministrationIdentity\>: Identity Parameter
-  \[AuditEventId \<String\>\]: The unique identifier of auditEvent
-  \[CloudPcAuditEventId \<String\>\]: The unique identifier of cloudPcAuditEvent
-  \[CloudPcDeviceImageId \<String\>\]: The unique identifier of cloudPcDeviceImage
-  \[CloudPcGalleryImageId \<String\>\]: The unique identifier of cloudPcGalleryImage
-  \[CloudPcId \<String\>\]: The unique identifier of cloudPC
-  \[CloudPcOnPremisesConnectionId \<String\>\]: The unique identifier of cloudPcOnPremisesConnection
-  \[CloudPcProvisioningPolicyAssignmentId \<String\>\]: The unique identifier of cloudPcProvisioningPolicyAssignment
-  \[CloudPcProvisioningPolicyId \<String\>\]: The unique identifier of cloudPcProvisioningPolicy
-  \[CloudPcUserSettingAssignmentId \<String\>\]: The unique identifier of cloudPcUserSettingAssignment
-  \[CloudPcUserSettingId \<String\>\]: The unique identifier of cloudPcUserSetting
-  \[ComplianceManagementPartnerId \<String\>\]: The unique identifier of complianceManagementPartner
-  \[DeviceAndAppManagementRoleAssignmentId \<String\>\]: The unique identifier of deviceAndAppManagementRoleAssignment
-  \[DeviceManagementExchangeConnectorId \<String\>\]: The unique identifier of deviceManagementExchangeConnector
-  \[DeviceManagementPartnerId \<String\>\]: The unique identifier of deviceManagementPartner
-  \[IosUpdateDeviceStatusId \<String\>\]: The unique identifier of iosUpdateDeviceStatus
-  \[MobileThreatDefenseConnectorId \<String\>\]: The unique identifier of mobileThreatDefenseConnector
-  \[RemoteAssistancePartnerId \<String\>\]: The unique identifier of remoteAssistancePartner
-  \[ResourceOperationId \<String\>\]: The unique identifier of resourceOperation
-  \[RoleAssignmentId \<String\>\]: The unique identifier of roleAssignment
-  \[RoleDefinitionId \<String\>\]: The unique identifier of roleDefinition
-  \[TelecomExpenseManagementPartnerId \<String\>\]: The unique identifier of telecomExpenseManagementPartner
-  \[TermsAndConditionsAcceptanceStatusId \<String\>\]: The unique identifier of termsAndConditionsAcceptanceStatus
-  \[TermsAndConditionsAssignmentId \<String\>\]: The unique identifier of termsAndConditionsAssignment
-  \[TermsAndConditionsId \<String\>\]: The unique identifier of termsAndConditions
-  \[UserId \<String\>\]: The unique identifier of user
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+  - `[AuditEventId <String>]`: The unique identifier of auditEvent
+  - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+  - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+  - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+  - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+  - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+  - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+  - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+  - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+  - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+  - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage)
+
+
+
 

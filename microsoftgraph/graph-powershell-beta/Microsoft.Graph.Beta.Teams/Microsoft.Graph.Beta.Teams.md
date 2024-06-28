@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Teams
 Module Guid: e264919d-7ae2-4a89-ba8b-524bd93ddc08
 Download Help Link: {{ Update Download Link }}
@@ -2395,4 +2395,5 @@ Locale: en-US
 
 ### [Update-MgBetaUserTeamworkAssociatedTeam](Update-MgBetaUserTeamworkAssociatedTeam.md)
 {{ Fill in the Description }}
+
 
