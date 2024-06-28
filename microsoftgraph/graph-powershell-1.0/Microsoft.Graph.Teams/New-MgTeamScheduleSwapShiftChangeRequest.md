@@ -53,11 +53,11 @@ New-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 Create new navigation property to swapShiftsChangeRequests for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	senderShiftId = "5ad10161-6524-4c7c-9beb-4e8677ba2f6d"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgTeamScheduleSwapShiftChangeRequest -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamScheduleSwapShiftChangeRequest Cmdlet.
+
 
 ## PARAMETERS
 

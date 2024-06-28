@@ -40,20 +40,28 @@ The languages supported for customization within the user flow.
 Language customization is not enabled by default in B2C user flows.
 
 ## EXAMPLES
+### Example 1: Retrieve a list of all languages
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will retrieve a list of all languages
 
-Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -Filter "isEnabled eq true"
+### Example 2: Retrieve a list of only enabled languages
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -Filter "isEnabled eq true" 
+
+```
+This example will retrieve a list of only enabled languages
+
 
 ## PARAMETERS
 

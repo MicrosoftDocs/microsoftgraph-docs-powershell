@@ -36,16 +36,6 @@ NavigationProperty/Containment; navigation property to the associated activity.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivityHistoryItemId

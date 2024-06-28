@@ -41,13 +41,17 @@ Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdenti
 Access packages define the collection of resource roles and the policies for which subjects can request or be assigned access to those resources.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackage
+
+```
+This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
+
 
 ## PARAMETERS
 

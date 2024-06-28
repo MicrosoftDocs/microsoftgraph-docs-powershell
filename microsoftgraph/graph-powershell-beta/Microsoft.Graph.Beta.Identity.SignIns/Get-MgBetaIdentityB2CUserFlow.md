@@ -38,20 +38,28 @@ Get-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 Represents entry point for B2C identity userflows.
 
 ## EXAMPLES
+### Example 1: List all b2cIdentityUserFlow objects
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2CUserFlow
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will list all b2cidentityuserflow objects
 
-Get-MgBetaIdentityB2CUserFlow -ExpandProperty "identityProviders"
+### Example 2: List all b2cIdentityUserFlow objects and expand identityProviders
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaIdentityB2CUserFlow -ExpandProperty "identityProviders" 
+
+```
+This example will list all b2cidentityuserflow objects and expand identityproviders
+
 
 ## PARAMETERS
 

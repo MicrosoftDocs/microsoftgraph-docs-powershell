@@ -31,11 +31,11 @@ Submit-MgBetaSecurityTiIndicator
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	value = @(
@@ -43,9 +43,8 @@ $params = @{
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose.
-Take no action on any observables set in this indicator."
-			expirationDateTime = \[System.DateTime\]::Parse("2019-03-01T21:44:03.1668987+00:00")
+			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1668987+00:00")
 			externalId = "Test--8586509942423126760MS164-0"
 			fileHashType = "sha256"
 			fileHashValue = "b555c45c5b1b01304217e72118d6ca1b14b7013644a078273cea27bbdc1cf9d6"
@@ -64,9 +63,8 @@ Take no action on any observables set in this indicator."
 			activityGroupNames = @(
 			)
 			confidence = 0
-			description = "This is a canary indicator for demo purpose.
-Take no action on any observables set in this indicator."
-			expirationDateTime = \[System.DateTime\]::Parse("2019-03-01T21:44:03.1748779+00:00")
+			description = "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."
+			expirationDateTime = [System.DateTime]::Parse("2019-03-01T21:44:03.1748779+00:00")
 			externalId = "Test--8586509942423126760MS164-1"
 			fileHashType = "sha256"
 			fileHashValue = "1796b433950990b28d6a22456c9d2b58ced1bdfcdf5f16f7e39d6b9bdca4213b"
@@ -85,6 +83,10 @@ Take no action on any observables set in this indicator."
 }
 
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
+
+```
+This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
+
 
 ## PARAMETERS
 

@@ -33,13 +33,17 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 Delete navigation property workforceIntegrations for teamwork
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
+
+```
+This example shows how to use the Remove-MgBetaTeamworkWorkforceIntegration Cmdlet.
+
 
 ## PARAMETERS
 

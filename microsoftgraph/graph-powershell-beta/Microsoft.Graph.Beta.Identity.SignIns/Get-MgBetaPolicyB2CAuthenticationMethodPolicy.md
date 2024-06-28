@@ -22,13 +22,17 @@ Get-MgBetaPolicyB2CAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Pro
 The Azure AD B2C policies that define how end users register via local accounts.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyB2CAuthenticationMethodPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyB2CAuthenticationMethodPolicy Cmdlet.
+
 
 ## PARAMETERS
 

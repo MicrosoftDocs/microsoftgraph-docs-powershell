@@ -41,20 +41,28 @@ Get-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdent
 The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.
 
 ## EXAMPLES
+### Example 1: Get all authentication strength policies
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAuthenticationStrengthPolicy
 
-### EXAMPLE 2
 ```
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
+This example will get all authentication strength policies
 
-Get-MgBetaPolicyAuthenticationStrengthPolicy -Filter "allowedCombinations/any(x:x has 'sms, password')"
+### Example 2: Get policies that include specific authentication method modes
+
+```powershell
+
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+Get-MgBetaPolicyAuthenticationStrengthPolicy -Filter "allowedCombinations/any(x:x has 'sms, password')" 
+
+```
+This example will get policies that include specific authentication method modes
+
 
 ## PARAMETERS
 

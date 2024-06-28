@@ -50,17 +50,21 @@ Update-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 Update the navigation property administrativeUnits in directory
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	displayName = "Greater Seattle District Technical Schools"
 }
 
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgDirectoryAdministrativeUnit Cmdlet.
+
 
 ## PARAMETERS
 

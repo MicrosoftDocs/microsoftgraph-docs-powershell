@@ -25,13 +25,17 @@ Get-MgPolicyCrossTenantAccessPolicyDefault [-ExpandProperty <String[]>] [-Proper
 Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicyDefault
+
+```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
+
 
 ## PARAMETERS
 

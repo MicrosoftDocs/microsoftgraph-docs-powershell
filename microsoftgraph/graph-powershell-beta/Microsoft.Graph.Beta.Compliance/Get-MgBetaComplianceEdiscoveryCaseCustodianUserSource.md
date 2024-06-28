@@ -40,13 +40,17 @@ Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
+
+```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+
 
 ## PARAMETERS
 

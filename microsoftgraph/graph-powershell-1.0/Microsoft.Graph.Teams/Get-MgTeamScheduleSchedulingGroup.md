@@ -40,13 +40,17 @@ Get-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-Property <Stri
 The logical grouping of users in the schedule (usually by role).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleSchedulingGroup -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleSchedulingGroup Cmdlet.
+
 
 ## PARAMETERS
 

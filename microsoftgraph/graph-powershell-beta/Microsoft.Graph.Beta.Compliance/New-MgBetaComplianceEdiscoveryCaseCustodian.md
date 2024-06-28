@@ -54,11 +54,11 @@ New-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity>
 Create new navigation property to custodians for compliance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Compliance
-```
 
 $params = @{
 	email = "AdeleV@contoso.com"
@@ -66,6 +66,10 @@ $params = @{
 }
 
 New-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+
 
 ## PARAMETERS
 

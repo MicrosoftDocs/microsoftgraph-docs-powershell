@@ -41,13 +41,17 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 The collection of content types defined for this site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteContentType -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteContentType Cmdlet.
+
 
 ## PARAMETERS
 

@@ -52,16 +52,15 @@ New-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> -BodyParameter <
 Create new navigation property to publications for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	description = "One persons journey to the top of the branding management field."
-	displayName = "Got Brands?
-The story of Innocenty Popov and his journey to the top."
+	displayName = "Got Brands? The story of Innocenty Popov and his journey to the top."
 	publishedDate = "Date"
 	publisher = "International Association of Branding Management Publishing"
 	thumbnailUrl = "https://iabm.io/sdhdfhsdhshsd.jpg"
@@ -70,6 +69,10 @@ The story of Innocenty Popov and his journey to the top."
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePublication -UserId $userId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaUserProfilePublication Cmdlet.
+
 
 ## PARAMETERS
 

@@ -37,16 +37,15 @@ New-MgBetaEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-Resp
 Create new navigation property to schools for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Fabrikam High School"
-	description = "Magnate school for the arts.
-Los Angeles School District"
+	description = "Magnate school for the arts. Los Angeles School District"
 	externalSource = "String"
 	principalEmail = "AmyR@fabrikam.com"
 	principalName = "Amy Roebuck"
@@ -66,6 +65,10 @@ Los Angeles School District"
 }
 
 New-MgBetaEducationSchool -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaEducationSchool Cmdlet.
+
 
 ## PARAMETERS
 

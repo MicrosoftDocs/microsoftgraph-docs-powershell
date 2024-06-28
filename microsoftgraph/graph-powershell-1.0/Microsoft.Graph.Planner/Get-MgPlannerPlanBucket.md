@@ -30,13 +30,17 @@ Nullable.
 Collection of buckets in the plan.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Planner
-```
 
 Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
+
+```
+This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,30 +39,34 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 The external partner settings on a Cloud PC.
 
 ## EXAMPLES
-
-### EXAMPLE 1
-```
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -CloudPcExternalPartnerSettingId $cloudPcExternalPartnerSettingId
 ```
-
-### EXAMPLE 2
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
-
-### EXAMPLE 3
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"  -OutFile $outFileId
 ```
-
-### EXAMPLE 4
-```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
+```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"
+Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection" 
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

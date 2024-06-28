@@ -41,13 +41,17 @@ Get-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 The open shift requests in the schedule.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOpenShiftChangeRequest -TeamId $teamId
+
+```
+This example shows how to use the Get-MgTeamScheduleOpenShiftChangeRequest Cmdlet.
+
 
 ## PARAMETERS
 

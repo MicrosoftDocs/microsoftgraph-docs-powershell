@@ -49,11 +49,11 @@ New-MgBetaPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 Create new navigation property to taskTriggers for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	event = "jobStarted"
@@ -61,6 +61,10 @@ $params = @{
 }
 
 New-MgBetaPrintPrinterTaskTrigger -PrinterId $printerId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 

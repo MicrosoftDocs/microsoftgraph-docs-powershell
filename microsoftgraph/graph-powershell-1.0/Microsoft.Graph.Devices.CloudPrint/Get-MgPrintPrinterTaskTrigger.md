@@ -41,13 +41,17 @@ Get-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-Expand
 A list of task triggers that are associated with the printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinterTaskTrigger -PrinterId $printerId
+
+```
+This example shows how to use the Get-MgPrintPrinterTaskTrigger Cmdlet.
+
 
 ## PARAMETERS
 
