@@ -32,22 +32,6 @@ Set-MgBetaShareItemContent -InputObject <IFilesIdentity> [-Data <Stream>] [-Resp
 ## DESCRIPTION
 Update content for the navigation property items in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentType
@@ -266,6 +250,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/set-mgbetashareitemcontent)
+
 
 
 

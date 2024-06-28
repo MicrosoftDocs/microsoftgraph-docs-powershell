@@ -30,18 +30,6 @@ Get-MgGroupEventCount -InputObject <ICalendarIdentity> [-Filter <String>] [-Resp
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -167,6 +155,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventcount](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventcount)
+
 
 
 

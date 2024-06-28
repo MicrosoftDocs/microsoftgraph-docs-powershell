@@ -47,22 +47,6 @@ New-MgUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Create new navigation property to deviceManagementTroubleshootingEvents for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -313,6 +297,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserdevicemanagementtroubleshootingevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserdevicemanagementtroubleshootingevent)
+
 
 
 

@@ -36,22 +36,6 @@ The user (or application) that created the group.
 NOTE: This is not set if the user is an administrator.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -222,6 +206,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupcreatedonbehalfof)
+
 
 
 

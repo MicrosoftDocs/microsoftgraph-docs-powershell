@@ -32,18 +32,6 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter <IMicrosoftGraphProfileCardP
 ## DESCRIPTION
 Create new navigation property to profileCardProperties for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -244,6 +232,7 @@ Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, Postal
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadminpeopleprofilecardproperty)
+
 
 
 

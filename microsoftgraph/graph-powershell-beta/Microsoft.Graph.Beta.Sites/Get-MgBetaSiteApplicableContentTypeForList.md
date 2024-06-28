@@ -34,22 +34,6 @@ Get-MgBetaSiteApplicableContentTypeForList -InputObject <ISitesIdentity> [-Count
 ## DESCRIPTION
 Get site contentTypes that can be added to a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -338,6 +322,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasiteapplicablecontenttypeforlist)
 
 [https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta)
+
 
 
 

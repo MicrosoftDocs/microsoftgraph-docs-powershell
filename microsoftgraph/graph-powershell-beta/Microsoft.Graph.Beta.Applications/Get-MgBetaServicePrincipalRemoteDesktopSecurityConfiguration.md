@@ -34,18 +34,6 @@ Get-MgBetaServicePrincipalRemoteDesktopSecurityConfiguration -InputObject <IAppl
 The remoteDesktopSecurityConfiguration object applied to this service principal.
 Supports $filter (eq) for isRemoteDesktopProtocolEnabled property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -207,6 +195,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalremotedesktopsecurityconfiguration)
+
 
 
 

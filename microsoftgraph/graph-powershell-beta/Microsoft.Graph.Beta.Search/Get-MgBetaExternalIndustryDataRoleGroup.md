@@ -37,18 +37,6 @@ Get-MgBetaExternalIndustryDataRoleGroup -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Set of groups of individual roles that makes role-based admin simpler.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,6 +308,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarolegroup)
+
 
 
 

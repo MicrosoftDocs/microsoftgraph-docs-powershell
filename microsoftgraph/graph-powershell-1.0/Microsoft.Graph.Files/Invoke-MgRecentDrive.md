@@ -34,22 +34,6 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-ExpandProperty <St
 ## DESCRIPTION
 List a set of items that have been recently used by the signed in user.This collection includes items that are in the user's drive and items they have access to from other drives.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -295,6 +279,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.files/invoke-mgrecentdrive)
 
 [https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
+
 
 
 

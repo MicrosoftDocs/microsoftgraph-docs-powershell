@@ -50,18 +50,6 @@ Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice -InputObject <IDeviceMa
 ## DESCRIPTION
 Clean Windows device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -276,6 +264,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowsdevice)
 
 [https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-cleanwindowsdevice?view=graph-rest-1.0)
+
 
 
 

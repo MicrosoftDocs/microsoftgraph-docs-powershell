@@ -64,18 +64,6 @@ Update-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property alerts_v2 in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -888,6 +876,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertv2)
+
 
 
 

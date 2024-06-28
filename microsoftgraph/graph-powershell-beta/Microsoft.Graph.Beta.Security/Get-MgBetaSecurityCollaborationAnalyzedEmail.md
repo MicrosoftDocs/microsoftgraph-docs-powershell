@@ -37,18 +37,6 @@ Get-MgBetaSecurityCollaborationAnalyzedEmail -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Contains metadata for analyzed emails.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -381,6 +369,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycollaborationanalyzedemail)
+
 
 
 

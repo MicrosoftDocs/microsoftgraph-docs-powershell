@@ -48,18 +48,6 @@ New-MgSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISecurityI
 ## DESCRIPTION
 Create new navigation property to dispositionReviewStages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,6 +339,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabeldispositionreviewstage](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabeldispositionreviewstage)
+
 
 
 

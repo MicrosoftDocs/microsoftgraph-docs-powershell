@@ -29,18 +29,6 @@ Get-MgBetaUserOnlineMeetingByJoinWebUrl -InputObject <ICloudCommunicationsIdenti
 ## DESCRIPTION
 Information about a meeting, including the URL used to join a meeting, the attendees list, and the description.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -204,6 +192,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingbyjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetauseronlinemeetingbyjoinweburl)
+
 
 
 

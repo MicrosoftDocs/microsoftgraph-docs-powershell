@@ -23,22 +23,6 @@ Get-MgReportOffice365ActivationUserCount -OutFile <String> [-ResponseHeadersVari
 ## DESCRIPTION
 Get the count of users that are enabled and those that have activated the Office subscription on desktop or devices or shared computers.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Headers
@@ -132,6 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365activationusercount)
 
 [https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-1.0)
+
 
 
 

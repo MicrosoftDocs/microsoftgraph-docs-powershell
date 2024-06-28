@@ -45,18 +45,6 @@ Deny-MgBetaDeviceManagementElevationRequest -InputObject <IDeviceManagementActio
 ## DESCRIPTION
 Invoke action deny
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,6 +300,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/deny-mgbetadevicemanagementelevationrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/deny-mgbetadevicemanagementelevationrequest)
+
 
 
 

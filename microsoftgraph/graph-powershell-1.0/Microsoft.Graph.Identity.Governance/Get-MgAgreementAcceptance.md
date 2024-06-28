@@ -42,22 +42,6 @@ Get-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-ExpandPro
 Read-only.
 Information about acceptances of this agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -390,6 +374,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementacceptance)
+
 
 
 

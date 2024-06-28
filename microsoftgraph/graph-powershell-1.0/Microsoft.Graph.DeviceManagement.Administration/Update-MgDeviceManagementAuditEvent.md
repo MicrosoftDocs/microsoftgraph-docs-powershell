@@ -53,18 +53,6 @@ Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministratio
 ## DESCRIPTION
 Update the navigation property auditEvents in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -487,6 +475,7 @@ RESOURCES <IMicrosoftGraphAuditResource- `[]`>: Resources being modified.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent)
+
 
 
 

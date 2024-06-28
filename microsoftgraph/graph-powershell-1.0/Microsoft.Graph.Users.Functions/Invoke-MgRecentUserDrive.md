@@ -37,22 +37,6 @@ List a set of items that have been recently used by the signed in user.This coll
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/drive-recent-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -315,6 +299,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgrecentuserdrive)
 
 [https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/drive-recent?view=graph-rest-1.0)
+
 
 
 

@@ -32,18 +32,6 @@ Remove-MgBetaTenantRelationshipMultiTenantOrganizationTenant -InputObject <IIden
 ## DESCRIPTION
 Delete navigation property tenants for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -281,6 +269,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetatenantrelationshipmultitenantorganizationtenant)
+
 
 
 

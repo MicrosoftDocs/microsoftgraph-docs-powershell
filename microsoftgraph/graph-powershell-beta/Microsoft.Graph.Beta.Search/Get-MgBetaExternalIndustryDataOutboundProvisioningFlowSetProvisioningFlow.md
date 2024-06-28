@@ -39,18 +39,6 @@ Get-MgBetaExternalIndustryDataOutboundProvisioningFlowSetProvisioningFlow -Input
 ## DESCRIPTION
 A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,6 +325,7 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydataoutboundprovisioningflowsetprovisioningflow)
+
 
 
 
