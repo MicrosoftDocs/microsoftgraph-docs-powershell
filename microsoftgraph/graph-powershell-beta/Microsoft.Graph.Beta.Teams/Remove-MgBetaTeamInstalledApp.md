@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property installedApps for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

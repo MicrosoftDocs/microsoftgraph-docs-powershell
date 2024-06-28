@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The most recent whoisRecord for this host.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostWhoi](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostWhoi?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

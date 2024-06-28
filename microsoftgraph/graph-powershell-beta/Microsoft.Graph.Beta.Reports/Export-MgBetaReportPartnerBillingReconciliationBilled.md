@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Export the billed invoice reconciliation data.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgReportPartnerBillingReconciliationBilled](/powershell/module/Microsoft.Graph.Reports/Export-MgReportPartnerBillingReconciliationBilled?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -29,6 +32,9 @@ Export-MgBetaReportPartnerBillingReconciliationBilled
 
 ## DESCRIPTION
 Export the billed invoice reconciliation data.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/partners-billing-billedreconciliation-export-permissions.md)]
 
 ## EXAMPLES
 

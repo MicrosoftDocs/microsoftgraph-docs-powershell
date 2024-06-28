@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get calls from communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

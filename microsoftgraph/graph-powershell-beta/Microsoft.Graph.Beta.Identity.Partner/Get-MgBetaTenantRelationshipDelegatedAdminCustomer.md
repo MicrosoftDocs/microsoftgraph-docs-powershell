@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The customer who has a delegated admin relationship with a Microsoft partner.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of lists under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteGetByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteGetByPath?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The synchronization schema configured for the job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

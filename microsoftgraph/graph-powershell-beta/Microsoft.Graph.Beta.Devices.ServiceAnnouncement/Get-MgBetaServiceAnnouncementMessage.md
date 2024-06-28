@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of service messages for tenant.
 This property is a contained navigation property, it is nullable and readonly.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

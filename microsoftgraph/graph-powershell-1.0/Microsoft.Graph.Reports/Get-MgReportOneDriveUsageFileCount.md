@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the total number of files across all sites and how many are active files.
 A file is considered active if it has been saved, synced, modified, or shared within the specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

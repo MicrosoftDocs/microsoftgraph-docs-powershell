@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns a collection of the specified authentication context class references.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

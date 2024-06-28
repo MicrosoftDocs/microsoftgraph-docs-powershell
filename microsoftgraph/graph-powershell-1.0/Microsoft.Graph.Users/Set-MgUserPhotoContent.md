@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserPhotoContent](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgBetaUserPhotoContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

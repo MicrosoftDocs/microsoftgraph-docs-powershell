@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The credentials of the device's local administrator account backed up to Microsoft Entra ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeviceLocalCredential](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryDeviceLocalCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

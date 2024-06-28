@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Schema of a custom security attributes (key-value pairs).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

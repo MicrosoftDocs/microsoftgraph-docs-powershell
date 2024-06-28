@@ -13,6 +13,9 @@ Getting an operations collection isn't supported, but you can get the status of 
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

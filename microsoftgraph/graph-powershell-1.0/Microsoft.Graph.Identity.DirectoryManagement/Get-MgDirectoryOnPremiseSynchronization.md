@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A container for on-premises directory synchronization functionalities that are available for the organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryOnPremiseSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

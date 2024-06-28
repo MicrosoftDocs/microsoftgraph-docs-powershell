@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.baseSitePage as microsoft.graph.sitePage
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageAsSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageAsSitePage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

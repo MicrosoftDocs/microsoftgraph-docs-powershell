@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The apps installed in the personal scope of this user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

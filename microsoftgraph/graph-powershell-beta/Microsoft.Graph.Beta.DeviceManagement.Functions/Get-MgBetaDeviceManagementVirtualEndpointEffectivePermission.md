@@ -21,6 +21,9 @@ Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission [-Count] [-Filter <
 ## DESCRIPTION
 Get the effective permissions of the currently authenticated user, helping UX hide or disable content that the current user doesn't have access to.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-geteffectivepermissions-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

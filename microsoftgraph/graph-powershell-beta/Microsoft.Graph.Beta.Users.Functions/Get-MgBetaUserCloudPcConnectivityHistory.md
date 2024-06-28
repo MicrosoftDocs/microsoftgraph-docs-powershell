@@ -29,6 +29,9 @@ Get-MgBetaUserCloudPcConnectivityHistory -InputObject <IUsersFunctionsIdentity> 
 ## DESCRIPTION
 Get the connectivity history of a specific Cloud PC.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpcconnectivityhistory-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

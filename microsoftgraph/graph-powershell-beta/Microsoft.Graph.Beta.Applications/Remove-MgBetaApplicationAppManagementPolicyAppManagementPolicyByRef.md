@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property appManagementPolicies for applications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

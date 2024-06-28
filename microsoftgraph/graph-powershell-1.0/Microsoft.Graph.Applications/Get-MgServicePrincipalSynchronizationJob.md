@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

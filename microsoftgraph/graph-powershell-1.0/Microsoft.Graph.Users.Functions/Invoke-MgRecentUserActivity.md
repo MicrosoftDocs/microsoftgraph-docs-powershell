@@ -17,6 +17,9 @@ The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filteri
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recent (Default)
@@ -44,6 +47,9 @@ This means that activities without historyItems won't be included in the respons
 The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned.
 This server-side filtering might result in empty pages if the user is active and other applications have created more recent activities.
 To get your application's activities, use the nextLink property to paginate.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/projectrome-get-recent-activities-permissions.md)]
 
 ## EXAMPLES
 

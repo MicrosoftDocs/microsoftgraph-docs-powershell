@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents administrator settings that manage the support of pronouns in an organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeoplePronoun](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeoplePronoun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

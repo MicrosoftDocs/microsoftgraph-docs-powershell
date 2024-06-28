@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get calls from communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

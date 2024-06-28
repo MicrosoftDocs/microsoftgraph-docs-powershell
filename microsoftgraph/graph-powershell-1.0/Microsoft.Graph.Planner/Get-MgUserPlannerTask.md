@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans shared with the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

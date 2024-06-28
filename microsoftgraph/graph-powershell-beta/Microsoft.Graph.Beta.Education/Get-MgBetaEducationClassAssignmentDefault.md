@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies class-level defaults respected by new assignments created in the class.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)

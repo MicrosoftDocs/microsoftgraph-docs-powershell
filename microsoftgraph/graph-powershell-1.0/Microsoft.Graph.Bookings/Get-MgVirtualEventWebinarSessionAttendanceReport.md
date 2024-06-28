@@ -11,6 +11,9 @@ schema: 2.0.0
 The attendance reports of an online meeting.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarSessionAttendanceReport](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarSessionAttendanceReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
