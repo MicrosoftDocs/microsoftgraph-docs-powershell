@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDriveRootListItemDocumentSetVersion
 
 ## SYNOPSIS
-Create a new version of a document set item in a list.
+Create new navigation property to documentSetVersions for drives
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ New-MgDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Create a new version of a document set item in a list.
+Create new navigation property to documentSetVersions for drives
 
 ## PARAMETERS
 
@@ -480,8 +480,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mgdriverootlistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-post-documentsetversions?view=graph-rest-1.0)
 
 
 

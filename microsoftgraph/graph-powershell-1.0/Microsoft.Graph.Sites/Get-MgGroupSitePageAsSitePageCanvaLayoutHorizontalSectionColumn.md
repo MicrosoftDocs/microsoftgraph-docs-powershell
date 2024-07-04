@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn
 
 ## SYNOPSIS
-Get columns from groups
+The set of vertical columns in this section.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSectionColumn -InputObject <IS
 ```
 
 ## DESCRIPTION
-Get columns from groups
+The set of vertical columns in this section.
 
 ## PARAMETERS
 
@@ -389,6 +389,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

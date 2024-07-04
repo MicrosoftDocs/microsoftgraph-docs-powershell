@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Close-MgBetaComplianceEdiscoveryCase
@@ -211,7 +210,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/close-mgbetacomplianceediscoverycase)
 
-[https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-beta](https://learn.microsoft.com/graph/api/ediscovery-case-close?view=graph-rest-beta)
 
 
 

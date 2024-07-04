@@ -350,7 +350,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/join-mgbetasitecontenttypewithhubsite)
 
-[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-associatewithhubsites?view=graph-rest-beta)
 
 
 

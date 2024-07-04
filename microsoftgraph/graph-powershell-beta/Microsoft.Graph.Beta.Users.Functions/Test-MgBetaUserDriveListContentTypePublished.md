@@ -32,6 +32,9 @@ Test-MgBetaUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdenti
 ## DESCRIPTION
 Invoke function isPublished
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/contenttype-ispublished-permissions.md)]
+
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -199,6 +202,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/test-mgbetauserdrivelistcontenttypepublished)
+
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
 
 
 

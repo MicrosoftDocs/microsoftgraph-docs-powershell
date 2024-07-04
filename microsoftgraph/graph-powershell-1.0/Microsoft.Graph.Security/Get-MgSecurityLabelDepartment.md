@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelDepartment
 
 ## SYNOPSIS
-Read the properties and relationships of a departmentTemplate object.
+Specifies the department or business unit of an organization to which a label belongs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a departmentTemplate object.
+Specifies the department or business unit of an organization to which a label belongs.
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabeldepartment)
-
-[https://learn.microsoft.com/graph/api/security-departmenttemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-departmenttemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-list-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-departments?view=graph-rest-1.0)
 
 
 

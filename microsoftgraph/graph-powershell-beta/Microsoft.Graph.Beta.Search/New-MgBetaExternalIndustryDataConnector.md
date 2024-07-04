@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new industryDataConnector object.
+Create new navigation property to dataConnectors for external
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create a new industryDataConnector object.
+Create new navigation property to dataConnectors for external
 
 ## PARAMETERS
 
@@ -279,8 +279,6 @@ Maximum supported length is 100 characters.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector)
-
-[https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-industrydataconnector-post?view=graph-rest-1.0)
 
 
 

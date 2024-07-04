@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserOnlineMeeting
 
 ## SYNOPSIS
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeeting?view=graph-powershell-1.0)
@@ -76,7 +76,7 @@ New-MgBetaUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create an online meeting on behalf of a user.
+Create new navigation property to onlineMeetings for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -964,10 +964,9 @@ Read-only.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee.
@@ -1018,10 +1017,9 @@ Read-only.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
       - `[Role <String>]`: Role of the attendee.
@@ -1284,10 +1282,9 @@ Read-only.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
     - `[Role <String>]`: Role of the attendee.
@@ -1308,10 +1305,9 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Role <String>]`: onlineMeetingRole
@@ -1337,10 +1333,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this recording.
@@ -1395,10 +1390,9 @@ Read-only.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+      - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[MeetingOrganizerId <String>]`: The unique identifier of the organizer of the onlineMeeting related to this transcript.
@@ -1416,8 +1410,6 @@ WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProte
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-onlinemeetings?view=graph-rest-1.0)
 
 
 

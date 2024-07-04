@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
+Update the navigation property registration in communications
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBetaCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunic
 ```
 
 ## DESCRIPTION
-Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
+Update the navigation property registration in communications
 
 ## PARAMETERS
 
@@ -452,8 +452,6 @@ SPEAKERS <IMicrosoftGraphMeetingSpeaker- `[]`>: The meeting speaker's informatio
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingregistration)
-
-[https://learn.microsoft.com/graph/api/meetingregistration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-update?view=graph-rest-1.0)
 
 
 

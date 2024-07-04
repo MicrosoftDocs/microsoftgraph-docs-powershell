@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationEmailMethod
 
 ## SYNOPSIS
-Deletes a user's email Authentication Method object.
+Delete navigation property emailMethods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationEmailMethod?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 ```
 
 ## DESCRIPTION
-Deletes a user's email Authentication Method object.
+Delete navigation property emailMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -297,8 +297,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationemailmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationemailmethod)
-
-[https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/emailauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
 
 ## SYNOPSIS
-Invoke function getUserIdsWithFlaggedAppRegistration
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration 
 ```
 
 ## DESCRIPTION
-Invoke function getUserIdsWithFlaggedAppRegistration
+Not yet documented
 
 ## PARAMETERS
 
@@ -160,6 +160,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration)
+
+[https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-getuseridswithflaggedappregistration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappregistration-getuseridswithflaggedappregistration?view=graph-rest-1.0)
 
 
 

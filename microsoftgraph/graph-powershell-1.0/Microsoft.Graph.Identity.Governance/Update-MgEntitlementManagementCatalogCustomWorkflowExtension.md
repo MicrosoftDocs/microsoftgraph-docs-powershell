@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the navigation property customWorkflowExtensions in identityGovernance
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Update-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Update the properties of an accessPackageAssignmentWorkflowExtension object.
+Update the navigation property customWorkflowExtensions in identityGovernance
 
 ## PARAMETERS
 
@@ -408,8 +408,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementcatalogcustomworkflowextension)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-update?view=graph-rest-1.0)
 
 
 

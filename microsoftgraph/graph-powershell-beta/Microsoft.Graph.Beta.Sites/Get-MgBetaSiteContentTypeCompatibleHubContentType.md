@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgBetaSiteContentTypeCompatibleHubContentType
 
 ## SYNOPSIS
-Invoke function getCompatibleHubContentTypes
+Get compatible content types in the content type hub that can be added to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeCompatibleHubContentType?view=graph-powershell-1.0)
@@ -32,7 +35,10 @@ Get-MgBetaSiteContentTypeCompatibleHubContentType -InputObject <ISitesIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke function getCompatibleHubContentTypes
+Get compatible content types in the content type hub that can be added to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
 ## PARAMETERS
 
@@ -305,6 +311,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitecontenttypecompatiblehubcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-beta)
 
 
 

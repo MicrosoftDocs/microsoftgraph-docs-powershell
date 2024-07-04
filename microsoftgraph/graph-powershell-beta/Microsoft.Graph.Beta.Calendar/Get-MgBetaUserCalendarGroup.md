@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserCalendarGroup
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a calendar group object.
+The user's calendar groups.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroup?view=graph-powershell-1.0)
@@ -37,7 +39,9 @@ Get-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> [-Property <String[
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a calendar group object.
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -301,10 +305,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroup)
-
-[https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-calendargroups?view=graph-rest-1.0)
 
 
 

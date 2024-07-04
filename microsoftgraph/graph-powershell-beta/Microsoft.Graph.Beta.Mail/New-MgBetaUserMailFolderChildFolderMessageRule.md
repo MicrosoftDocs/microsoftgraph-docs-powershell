@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserMailFolderChildFolderMessageRule
 
 ## SYNOPSIS
-Create a messageRule object by specifying a set of conditions and actions.
-Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
+Create new navigation property to messageRules for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-1.0)
@@ -51,8 +50,7 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Create a messageRule object by specifying a set of conditions and actions.
-Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
+Create new navigation property to messageRules for users
 
 ## PARAMETERS
 
@@ -558,8 +556,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessagerule)
-
-[https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelSharedWithTeam
 
 ## SYNOPSIS
-Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a membershipType value of shared.
+A collection of teams with which a channel is shared.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelSharedWithTeam?view=graph-powershell-beta)
@@ -53,8 +52,7 @@ Get-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get a team that has been shared with a specified channel.
-This operation is allowed only for channels with a membershipType value of shared.
+A collection of teams with which a channel is shared.
 
 ## EXAMPLES
 
@@ -357,10 +355,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteam)
-
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/sharedwithchannelteaminfo-list?view=graph-rest-1.0)
 
 
 

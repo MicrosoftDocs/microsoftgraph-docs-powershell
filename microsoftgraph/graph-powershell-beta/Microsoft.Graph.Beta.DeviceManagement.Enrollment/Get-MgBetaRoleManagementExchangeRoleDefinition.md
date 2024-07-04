@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementExchangeRoleDefinition
 
 ## SYNOPSIS
-Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online
+The roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## SYNTAX
 
@@ -36,8 +35,7 @@ Get-MgBetaRoleManagementExchangeRoleDefinition -InputObject <IDeviceManagementEn
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)- directory (Microsoft Entra directory roles)- entitlement management (Microsoft Entra entitlement management)- Exchange Online
+The roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## PARAMETERS
 
@@ -316,10 +314,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementexchangeroledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0)
 
 
 

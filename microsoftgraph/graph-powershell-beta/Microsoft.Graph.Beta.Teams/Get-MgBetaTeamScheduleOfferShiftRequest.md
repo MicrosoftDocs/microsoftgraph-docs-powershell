@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamScheduleOfferShiftRequest
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an offerShiftRequest object.
+The offer requests for shifts in the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOfferShiftRequest?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an offerShiftRequest object.
+The offer requests for shifts in the schedule.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,10 +359,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleoffershiftrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamscheduleoffershiftrequest)
-
-[https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/offershiftrequest-list?view=graph-rest-1.0)
 
 
 

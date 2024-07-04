@@ -370,8 +370,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfolderchildfolder)
 
-[https://learn.microsoft.com/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)
-
 
 
 

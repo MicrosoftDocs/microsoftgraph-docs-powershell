@@ -8,11 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
-To include the key property in the response, use the $select OData query parameter.
-Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
-You can find the log in Microsoft Entra audit logs under the KeyManagement category.
+The recovery keys associated with the bitlocker entity.
 
 ## SYNTAX
 
@@ -39,11 +35,7 @@ Get-MgBetaGroupSiteInformationProtectionBitlockerRecoveryKey -InputObject <ISite
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a bitlockerRecoveryKey object.
-By default, this operation does not return the key property that represents the actual recovery key.
-To include the key property in the response, use the $select OData query parameter.
-Including the $select query parameter triggers a Microsoft Entra audit of the operation and generates an audit log.
-You can find the log in Microsoft Entra audit logs under the KeyManagement category.
+The recovery keys associated with the bitlocker entity.
 
 ## PARAMETERS
 
@@ -377,10 +369,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionbitlockerrecoverykey](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionbitlockerrecoverykey)
-
-[https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlockerrecoverykey-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bitlocker-list-recoverykeys?view=graph-rest-1.0)
 
 
 

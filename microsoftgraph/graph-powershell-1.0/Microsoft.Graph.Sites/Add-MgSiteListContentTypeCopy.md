@@ -8,7 +8,7 @@ schema: 2.0.0
 # Add-MgSiteListContentTypeCopy
 
 ## SYNOPSIS
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type from a site to a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add a copy of a \[content type\]\[contentType\] from a \[site\]\[site\] to a \[list\]\[list\].
+Add a copy of a content type from a site to a list.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-addcopy-permissions.md)]
@@ -301,6 +301,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

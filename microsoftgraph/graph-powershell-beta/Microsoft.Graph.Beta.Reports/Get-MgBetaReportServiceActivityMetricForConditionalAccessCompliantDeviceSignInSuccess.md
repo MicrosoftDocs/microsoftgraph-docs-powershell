@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSuccess
 
 ## SYNOPSIS
-Invoke function getMetricsForConditionalAccessCompliantDevicesSignInSuccess
+Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance.
+Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
 
 ## SYNTAX
 
@@ -30,7 +31,8 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessCompliantDeviceSignInSu
 ```
 
 ## DESCRIPTION
-Invoke function getMetricsForConditionalAccessCompliantDevicesSignInSuccess
+Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance.
+Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
 
 ## PARAMETERS
 
@@ -280,6 +282,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccesscompliantdevicesigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccesscompliantdevicesigninsuccess)
+
+[https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess?view=graph-rest-beta)
 
 
 

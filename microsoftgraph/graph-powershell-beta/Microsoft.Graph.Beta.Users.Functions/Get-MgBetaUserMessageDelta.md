@@ -361,7 +361,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermessagedelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausermessagedelta)
 
-[https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-delta?view=graph-rest-beta)
 
 
 

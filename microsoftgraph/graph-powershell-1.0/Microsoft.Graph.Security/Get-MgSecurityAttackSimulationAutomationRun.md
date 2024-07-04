@@ -380,8 +380,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomationrun)
 
-[https://learn.microsoft.com/graph/api/simulationautomation-list-runs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/simulationautomation-list-runs?view=graph-rest-1.0)
-
 
 
 

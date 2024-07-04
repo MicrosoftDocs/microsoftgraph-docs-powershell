@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSitePermission
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a permission object on a site.
+The permissions associated with the site.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSitePermission?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a permission object on a site.
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -355,16 +357,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitepermission)
-
-[https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-get-permission?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/site-list-permissions?view=graph-rest-1.0)
 
 
 

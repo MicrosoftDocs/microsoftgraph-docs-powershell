@@ -233,8 +233,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotaskattachmentcontent)
 
-[https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-attachments?view=graph-rest-1.0)
-
 
 
 

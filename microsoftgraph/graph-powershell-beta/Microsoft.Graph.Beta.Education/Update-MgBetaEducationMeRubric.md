@@ -8,11 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEducationMeRubric
 
 ## SYNOPSIS
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assignments/{id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
+Update the navigation property rubrics in education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeRubric?view=graph-powershell-1.0)
@@ -54,11 +50,7 @@ Update-MgBetaEducationMeRubric -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an educationRubric object.
-Only teachers can perform this operation.
-Updating a rubric attached to an assignment (PATCH /education/classes/{id}/assignments/{id}/rubric) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under /education/users/{id}/rubrics.
-After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment.
-That rubric can be retrieved using GET /education/classes/{id}/assignments/{id}/rubric, but it cannot be updated.
+Update the navigation property rubrics in education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -468,8 +460,6 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmerubric)
-
-[https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationrubric-update?view=graph-rest-1.0)
 
 
 

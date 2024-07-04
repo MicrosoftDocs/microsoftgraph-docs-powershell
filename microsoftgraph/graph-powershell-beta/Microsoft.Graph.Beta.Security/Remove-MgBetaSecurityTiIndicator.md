@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
-Delete a tiIndicator object.
+Delete navigation property tiIndicators for security
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete a tiIndicator object.
+Delete navigation property tiIndicators for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -284,8 +284,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicator)
-
-[https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-delete?view=graph-rest-1.0)
 
 
 

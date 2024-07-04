@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupDriveListItem
 
 ## SYNOPSIS
-Removes an item from a \[list\]\[\].
+Delete navigation property items for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveListItem?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupDriveListItem -InputObject <IFilesIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Removes an item from a \[list\]\[\].
+Delete navigation property items for groups
 
 ## PARAMETERS
 
@@ -246,8 +246,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetagroupdrivelistitem)
-
-[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
 
 
 

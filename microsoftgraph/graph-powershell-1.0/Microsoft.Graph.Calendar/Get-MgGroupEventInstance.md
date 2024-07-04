@@ -344,8 +344,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventinstance)
 
-[https://learn.microsoft.com/graph/api/event-list-instances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-instances?view=graph-rest-1.0)
-
 
 
 

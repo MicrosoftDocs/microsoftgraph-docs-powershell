@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserChatMember
 
 ## SYNOPSIS
-Remove a conversationMember from a chat.
+Delete navigation property members for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Remove a conversationMember from a chat.
+Delete navigation property members for users
 
 ## PARAMETERS
 
@@ -263,8 +263,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetauserchatmember)
-
-[https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-members?view=graph-rest-1.0)
 
 
 

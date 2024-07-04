@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRiskyUserHistory
 
 ## SYNOPSIS
-Get a riskyUserHistoryItem object of a riskyUser.
+Get history from identityProtection
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get a riskyUserHistoryItem object of a riskyUser.
+Get history from identityProtection
 
 ## EXAMPLES
 ### Example 1: List history of a specific user
@@ -417,10 +417,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory)
-
-[https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuserhistoryitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyuser-list-history?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTenantRelationshipManagedTenantTag
 
 ## SYNOPSIS
-Create a new tenantTag object.
+Create new navigation property to tenantTags for tenantRelationships
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgBetaTenantRelationshipManagedTenantTag -BodyParameter <IMicrosoftGraphMana
 ```
 
 ## DESCRIPTION
-Create a new tenantTag object.
+Create new navigation property to tenantTags for tenantRelationships
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaTenantRelationshipManagedTenantTag Cmdlet
@@ -360,8 +360,6 @@ Optional.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenanttag)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-post-tenanttags?view=graph-rest-1.0)
 
 
 

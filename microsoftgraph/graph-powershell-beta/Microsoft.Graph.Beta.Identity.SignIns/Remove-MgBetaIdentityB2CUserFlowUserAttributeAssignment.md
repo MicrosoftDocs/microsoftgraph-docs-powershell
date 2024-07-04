@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Delete an identityUserFlowAttributeAssignment object.
+Delete navigation property userAttributeAssignments for identity
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment -InputObject <IIdentityS
 ```
 
 ## DESCRIPTION
-Delete an identityUserFlowAttributeAssignment object.
+Delete navigation property userAttributeAssignments for identity
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
@@ -291,8 +291,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowuserattributeassignment)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattributeassignment-delete?view=graph-rest-1.0)
 
 
 

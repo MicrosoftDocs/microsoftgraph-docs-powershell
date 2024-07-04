@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy
 
 ## SYNOPSIS
-Invoke function asHierarchy
+List eDiscovery review tags with the tag hierarchy shown.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Security/Invoke-MgAsSecurityCaseEdiscoveryCaseTagHierarchy?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Invoke function asHierarchy
+List eDiscovery review tags with the tag hierarchy shown.
 
 ## EXAMPLES
 
@@ -337,6 +337,8 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/invoke-mgbetaassecuritycaseediscoverycasetaghierarchy)
+
+[https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-ashierarchy?view=graph-rest-beta)
 
 
 

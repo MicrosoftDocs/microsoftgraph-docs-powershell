@@ -8,10 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserCalendarEvent
 
 ## SYNOPSIS
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarEvent?view=graph-powershell-1.0)
@@ -26,10 +25,9 @@ Get-MgBetaUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, orget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 ### Example 1: Create an event in a specific calendar
@@ -343,8 +341,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent)
-
-[https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-list-events?view=graph-rest-1.0)
 
 
 

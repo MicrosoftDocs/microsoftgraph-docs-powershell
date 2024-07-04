@@ -388,9 +388,9 @@ Once set, this property is read-only and cannot be changed.
 Supports $filter (eq).
   - `[Properties <IMicrosoftGraphExtensionSchemaProperty- `[]`>]`: The collection of property names and types that make up the schema extension definition.
     - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
-    - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
-Allowed values are Binary, Boolean, DateTime, Integer or String.
-See the table below for more details.
+    - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
+Allowed values are Binary, Boolean, DateTime, Integer, or String.
+For more information, see Supported property data types.
   - `[Status <String>]`: The lifecycle state of the schema extension.
 Possible states are InDevelopment, Available, and Deprecated.
 Automatically set to InDevelopment on creation.
@@ -401,15 +401,15 @@ Select from administrativeUnit, contact, device, event, group, message, organiza
 
 PROPERTIES <IMicrosoftGraphExtensionSchemaProperty- `[]`>: The collection of property names and types that make up the schema extension definition.
   - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
-  - `[Type <String>]`: The type of the property that is defined as part of a schema extension. 
-Allowed values are Binary, Boolean, DateTime, Integer or String.
-See the table below for more details.
+  - `[Type <String>]`: The type of the property that is defined as part of a schema extension.
+Allowed values are Binary, Boolean, DateTime, Integer, or String.
+For more information, see Supported property data types.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/new-mgbetaschemaextension)
 
-[https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/schemaextension-post-schemaextensions?view=graph-rest-beta)
 
 
 

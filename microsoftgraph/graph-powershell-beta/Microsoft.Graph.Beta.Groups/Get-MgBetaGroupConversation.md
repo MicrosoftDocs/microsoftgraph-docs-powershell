@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupConversation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of conversation object.
+The group's conversations.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-1.0)
@@ -37,10 +37,7 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of conversation object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/conversation-get-permissions.md)]
+The group's conversations.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,10 +348,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversation)
-
-[https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
 
 
 

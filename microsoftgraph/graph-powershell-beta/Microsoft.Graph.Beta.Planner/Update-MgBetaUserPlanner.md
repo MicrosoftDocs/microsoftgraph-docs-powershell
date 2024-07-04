@@ -232,7 +232,9 @@ Accept wildcard characters: False
 ```
 
 ### -MyDayTasks
-.
+Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
 To construct, see NOTES section for MYDAYTASKS properties and create a hash table.
 
 ```yaml
@@ -296,7 +298,7 @@ Accept wildcard characters: False
 ### -RecentPlans
 Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
 To construct, see NOTES section for RECENTPLANS properties and create a hash table.
 
 ```yaml
@@ -451,10 +453,9 @@ Read-only.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+          - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[StatusChangedDateTime <DateTime?>]`: 
@@ -711,13 +712,15 @@ Read-only.
 Nullable.
     - `[Title <String>]`: Required.
 Title of the plan.
-  - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: 
+  - `[MyDayTasks <IMicrosoftGraphPlannerTask- `[]`>]`: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
   - `[Plans <IMicrosoftGraphPlannerPlan- `[]`>]`: 
   - `[RecentPlanReferences <IMicrosoftGraphPlannerRecentPlanReferenceCollection>]`: plannerRecentPlanReferenceCollection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RecentPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
   - `[RosterPlans <IMicrosoftGraphPlannerPlan- `[]`>]`: Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
@@ -738,10 +741,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1009,7 +1011,9 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-MYDAYTASKS <IMicrosoftGraphPlannerTask- `[]`>: .
+MYDAYTASKS <IMicrosoftGraphPlannerTask- `[]`>: Read-only.
+Nullable.
+Returns the plannerTasks to be shown in the My Day view of the user.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: The number of checklist items with value set to false, representing incomplete items.
@@ -1023,10 +1027,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1206,10 +1209,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1469,7 +1471,7 @@ Title of the plan.
 
 RECENTPLANS <IMicrosoftGraphPlannerPlan- `[]`>: Read-only.
 Nullable.
-Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+Returns the plannerPlans that the user recently viewed in apps that support recent plans.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[ArchivalInfo <IMicrosoftGraphPlannerArchivalInfo>]`: plannerArchivalInfo
@@ -1480,10 +1482,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -1754,10 +1755,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -2031,10 +2031,9 @@ Read-only.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+        - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[StatusChangedDateTime <DateTime?>]`: 
@@ -2206,8 +2205,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetauserplanner)
-
-[https://learn.microsoft.com/graph/api/planneruser-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planneruser-update?view=graph-rest-1.0)
 
 
 

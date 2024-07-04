@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource
 
 ## SYNOPSIS
-Create a new userSource object.
+Create new navigation property to userSources for security
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 ```
 
 ## DESCRIPTION
-Create a new userSource object.
+Create new navigation property to userSources for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -481,8 +481,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritycaseediscoverycaselegalholdusersource)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-post-usersources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryholdpolicy-post-usersources?view=graph-rest-1.0)
 
 
 

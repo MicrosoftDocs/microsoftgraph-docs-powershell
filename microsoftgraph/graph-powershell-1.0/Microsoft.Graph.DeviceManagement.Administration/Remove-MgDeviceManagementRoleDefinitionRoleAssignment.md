@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Deletes a roleAssignment.
+Delete navigation property roleAssignments for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Deletes a roleAssignment.
+Delete navigation property roleAssignments for deviceManagement
 
 ## PARAMETERS
 
@@ -232,8 +232,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementroledefinitionroleassignment)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-delete?view=graph-rest-1.0)
 
 
 

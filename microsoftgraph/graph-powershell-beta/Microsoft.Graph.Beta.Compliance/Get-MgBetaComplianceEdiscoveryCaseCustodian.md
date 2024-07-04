@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Read the properties and relationships of a custodian object.
+Returns a list of case custodian objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -36,10 +36,8 @@ Get-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a custodian object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-custodian-get-permissions.md)]
+Returns a list of case custodian objects for this case.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,10 +334,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodian](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodian)
-
-[https://learn.microsoft.com/graph/api/ediscovery-custodian-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/ediscovery-case-list-custodians?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-case-list-custodians?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaBookingBusinessStaffMember
 
 ## SYNOPSIS
-Update the properties of a bookingStaffMember in the specified bookingBusiness.
+Update the navigation property staffMembers in bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-1.0)
@@ -86,7 +86,7 @@ Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a bookingStaffMember in the specified bookingBusiness.
+Update the navigation property staffMembers in bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
@@ -600,8 +600,6 @@ For example, 08:00:00.0000000.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessstaffmember)
-
-[https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamChannelMember
 
 ## SYNOPSIS
-Delete a conversationMember from a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Delete navigation property members for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamChannelMember?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete a conversationMember from a channel.
-This operation is allowed only for channels with a membershipType value of private or shared.
+Delete navigation property members for groups
 
 ## EXAMPLES
 
@@ -267,8 +265,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamchannelmember)
-
-[https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-members?view=graph-rest-1.0)
 
 
 

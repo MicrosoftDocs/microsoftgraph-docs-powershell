@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 
 ## SYNOPSIS
-Create a new localizedNotificationMessage object.
+Create new navigation property to localizedNotificationMessages for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 ```
 
 ## DESCRIPTION
-Create a new localizedNotificationMessage object.
+Create new navigation property to localizedNotificationMessages for deviceManagement
 
 ## PARAMETERS
 
@@ -373,8 +373,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
-
-[https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-create?view=graph-rest-1.0)
 
 
 

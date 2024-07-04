@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteTermStoreGroup
 
 ## SYNOPSIS
-Read the properties and relationships of a term store group object.
+Collection of all groups available in the term store.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroup?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgGroupSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a term store group object.
+Collection of all groups available in the term store.
 
 ## EXAMPLES
 
@@ -396,16 +396,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroup](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroup)
-
-[https://learn.microsoft.com/graph/api/termstore-group-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-group-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/termstore-list-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-list-groups?view=graph-rest-1.0)
 
 
 

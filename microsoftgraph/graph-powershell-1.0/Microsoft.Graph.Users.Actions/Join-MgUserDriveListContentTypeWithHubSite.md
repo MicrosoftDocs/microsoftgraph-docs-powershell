@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgUserDriveListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Join-MgBetaUserDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Join-MgBetaUserDriveListContentTypeWithHubSite?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Join-MgUserDriveListContentTypeWithHubSite -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-associatewithhubsites-permissions.md)]

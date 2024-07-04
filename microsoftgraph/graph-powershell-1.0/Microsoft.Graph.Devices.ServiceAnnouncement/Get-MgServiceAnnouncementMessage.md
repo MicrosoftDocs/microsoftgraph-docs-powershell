@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgServiceAnnouncementMessage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a serviceUpdateMessage object.
-This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
+A collection of service messages for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
@@ -40,9 +39,8 @@ Get-MgServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncementIdenti
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a serviceUpdateMessage object.
-This operation retrieves a specified service update message for the tenant.
-The operation returns an error if the message does not exist for the tenant.
+A collection of service messages for tenant.
+This property is a contained navigation property, it is nullable and readonly.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -311,10 +309,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessage)
-
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0)
 
 
 

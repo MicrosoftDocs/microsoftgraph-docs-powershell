@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportExportJob
 
 ## SYNOPSIS
-Read properties and relationships of the deviceManagementExportJob object.
+Entity representing a job to export a report
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReportExportJob?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceManagementExportJob object.
+Entity representing a job to export a report
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -325,10 +325,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportexportjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreportexportjob)
-
-[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementexportjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementexportjob-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementexportjob-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementexportjob-list?view=graph-rest-1.0)
 
 
 

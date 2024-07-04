@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Get the properties and relationships of a bookingCustomer object.
+All the customers of this business.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-1.0)
@@ -60,7 +62,9 @@ Get-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a bookingCustomer object.
+All the customers of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaBookingBusinessCustomer Cmdlet
@@ -366,10 +370,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusinesscustomer)
-
-[https://learn.microsoft.com/graph/api/bookingcustomer-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-list-customers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-customers?view=graph-rest-1.0)
 
 
 

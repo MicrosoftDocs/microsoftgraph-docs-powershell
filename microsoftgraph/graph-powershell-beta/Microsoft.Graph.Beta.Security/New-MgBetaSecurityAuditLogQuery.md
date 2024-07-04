@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityAuditLogQuery
 
 ## SYNOPSIS
-Create a new auditLogQuery object.
+Create new navigation property to queries for security
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgBetaSecurityAuditLogQuery -BodyParameter <IMicrosoftGraphSecurityAuditLogQ
 ```
 
 ## DESCRIPTION
-Create a new auditLogQuery object.
+Create new navigation property to queries for security
 
 ## PARAMETERS
 
@@ -441,8 +441,6 @@ It indicates that the 'user' who performed the activity was an application with 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityauditlogquery)
-
-[https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditcoreroot-post-auditlogqueries?view=graph-rest-1.0)
 
 
 

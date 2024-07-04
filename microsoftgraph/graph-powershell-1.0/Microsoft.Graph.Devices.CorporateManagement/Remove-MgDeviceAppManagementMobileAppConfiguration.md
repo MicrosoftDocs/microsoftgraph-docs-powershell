@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Deletes a iosMobileAppConfiguration.
+Delete navigation property mobileAppConfigurations for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Deletes a iosMobileAppConfiguration.
+Delete navigation property mobileAppConfigurations for deviceAppManagement
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-delete?view=graph-rest-1.0)
 
 
 

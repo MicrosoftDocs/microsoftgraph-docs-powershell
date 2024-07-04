@@ -221,7 +221,7 @@ BODYPARAMETER `<IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostReques
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe)
 
-[https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-beta](https://learn.microsoft.com/graph/api/signin-confirmsafe?view=graph-rest-beta)
 
 
 

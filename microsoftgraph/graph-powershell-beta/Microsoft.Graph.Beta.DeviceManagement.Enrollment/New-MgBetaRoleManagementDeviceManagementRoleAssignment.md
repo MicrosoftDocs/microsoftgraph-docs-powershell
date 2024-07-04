@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementDeviceManagementRoleAssignment
 
 ## SYNOPSIS
-Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+Create new navigation property to roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -32,8 +31,7 @@ New-MgBetaRoleManagementDeviceManagementRoleAssignment
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune) For other Microsoft 365 applications (like Microsoft Entra ID), use unifiedRoleAssignment.
+Create new navigation property to roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -522,8 +520,6 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementroleassignment)
-
-[https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplicationmultiple-post-roleassignments?view=graph-rest-1.0)
 
 
 

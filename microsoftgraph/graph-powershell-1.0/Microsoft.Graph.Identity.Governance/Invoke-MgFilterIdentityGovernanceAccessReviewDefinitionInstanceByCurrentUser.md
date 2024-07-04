@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ Invoke-MgFilterIdentityGovernanceAccessReviewDefinitionInstanceByCurrentUser
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve all accessReviewInstance objects on a given accessReviewScheduleDefinition where the calling user is a reviewer on one or more accessReviewInstanceDecisionItem objects.
 
 ## PARAMETERS
 
@@ -337,6 +337,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceaccessreviewdefinitioninstancebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

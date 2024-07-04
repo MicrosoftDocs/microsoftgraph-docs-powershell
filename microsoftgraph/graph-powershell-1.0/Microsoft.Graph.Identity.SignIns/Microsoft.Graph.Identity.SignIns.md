@@ -29,6 +29,12 @@ Locale: en-US
 ### [Get-MgIdentityApiConnectorCount](Get-MgIdentityApiConnectorCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgIdentityAuthenticationEventListener](Get-MgIdentityAuthenticationEventListener.md)
+{{ Fill in the Description }}
+
+### [Get-MgIdentityAuthenticationEventListenerCount](Get-MgIdentityAuthenticationEventListenerCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgIdentityB2XUserFlow](Get-MgIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
@@ -117,6 +123,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgIdentityConditionalAccessTemplateCount](Get-MgIdentityConditionalAccessTemplateCount.md)
+{{ Fill in the Description }}
+
+### [Get-MgIdentityCustomAuthenticationExtension](Get-MgIdentityCustomAuthenticationExtension.md)
+{{ Fill in the Description }}
+
+### [Get-MgIdentityCustomAuthenticationExtensionCount](Get-MgIdentityCustomAuthenticationExtensionCount.md)
 {{ Fill in the Description }}
 
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
@@ -275,6 +287,15 @@ Locale: en-US
 ### [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 {{ Fill in the Description }}
 
+### [Get-MgPolicyCrossTenantAccessPolicyTemplate](Get-MgPolicyCrossTenantAccessPolicyTemplate.md)
+{{ Fill in the Description }}
+
+### [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
+{{ Fill in the Description }}
+
+### [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
+{{ Fill in the Description }}
+
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -416,6 +437,18 @@ Locale: en-US
 ### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
 {{ Fill in the Description }}
 
+### [Get-MgTenantRelationshipMultiTenantOrganization](Get-MgTenantRelationshipMultiTenantOrganization.md)
+{{ Fill in the Description }}
+
+### [Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest](Get-MgTenantRelationshipMultiTenantOrganizationJoinRequest.md)
+{{ Fill in the Description }}
+
+### [Get-MgTenantRelationshipMultiTenantOrganizationTenant](Get-MgTenantRelationshipMultiTenantOrganizationTenant.md)
+{{ Fill in the Description }}
+
+### [Get-MgTenantRelationshipMultiTenantOrganizationTenantCount](Get-MgTenantRelationshipMultiTenantOrganizationTenantCount.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
 {{ Fill in the Description }}
 
@@ -512,6 +545,9 @@ Locale: en-US
 ### [New-MgIdentityApiConnector](New-MgIdentityApiConnector.md)
 {{ Fill in the Description }}
 
+### [New-MgIdentityAuthenticationEventListener](New-MgIdentityAuthenticationEventListener.md)
+{{ Fill in the Description }}
+
 ### [New-MgIdentityB2XUserFlow](New-MgIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
@@ -540,6 +576,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
+{{ Fill in the Description }}
+
+### [New-MgIdentityCustomAuthenticationExtension](New-MgIdentityCustomAuthenticationExtension.md)
 {{ Fill in the Description }}
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
@@ -641,6 +680,9 @@ Locale: en-US
 ### [New-MgServicePrincipalRiskDetection](New-MgServicePrincipalRiskDetection.md)
 {{ Fill in the Description }}
 
+### [New-MgTenantRelationshipMultiTenantOrganizationTenant](New-MgTenantRelationshipMultiTenantOrganizationTenant.md)
+{{ Fill in the Description }}
+
 ### [New-MgUserAuthenticationEmailMethod](New-MgUserAuthenticationEmailMethod.md)
 {{ Fill in the Description }}
 
@@ -662,13 +704,13 @@ Locale: en-US
 ### [Remove-MgIdentityApiConnector](Remove-MgIdentityApiConnector.md)
 {{ Fill in the Description }}
 
+### [Remove-MgIdentityAuthenticationEventListener](Remove-MgIdentityAuthenticationEventListener.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef](Remove-MgIdentityB2XUserFlowIdentityProviderBaseByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgIdentityB2XUserFlowLanguage](Remove-MgIdentityB2XUserFlowLanguage.md)
@@ -702,6 +744,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgIdentityConditionalAccessPolicy](Remove-MgIdentityConditionalAccessPolicy.md)
+{{ Fill in the Description }}
+
+### [Remove-MgIdentityCustomAuthenticationExtension](Remove-MgIdentityCustomAuthenticationExtension.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
@@ -767,13 +812,19 @@ Locale: en-US
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 {{ Fill in the Description }}
 
+### [Remove-MgPolicyCrossTenantAccessPolicyTemplate](Remove-MgPolicyCrossTenantAccessPolicyTemplate.md)
+{{ Fill in the Description }}
+
+### [Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
+{{ Fill in the Description }}
+
+### [Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Remove-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
-{{ Fill in the Description }}
-
-### [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef](Remove-MgPolicyFeatureRolloutPolicyApplyToDirectoryObjectByRef.md)
@@ -830,6 +881,9 @@ Locale: en-US
 ### [Remove-MgServicePrincipalRiskDetection](Remove-MgServicePrincipalRiskDetection.md)
 {{ Fill in the Description }}
 
+### [Remove-MgTenantRelationshipMultiTenantOrganizationTenant](Remove-MgTenantRelationshipMultiTenantOrganizationTenant.md)
+{{ Fill in the Description }}
+
 ### [Remove-MgUserAuthenticationEmailMethod](Remove-MgUserAuthenticationEmailMethod.md)
 {{ Fill in the Description }}
 
@@ -875,10 +929,19 @@ Locale: en-US
 ### [Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Set-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
 {{ Fill in the Description }}
 
+### [Set-MgTenantRelationshipMultiTenantOrganization](Set-MgTenantRelationshipMultiTenantOrganization.md)
+{{ Fill in the Description }}
+
+### [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration.md)
+{{ Fill in the Description }}
+
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 {{ Fill in the Description }}
 
 ### [Update-MgIdentityApiConnector](Update-MgIdentityApiConnector.md)
+{{ Fill in the Description }}
+
+### [Update-MgIdentityAuthenticationEventListener](Update-MgIdentityAuthenticationEventListener.md)
 {{ Fill in the Description }}
 
 ### [Update-MgIdentityB2XUserFlow](Update-MgIdentityB2XUserFlow.md)
@@ -909,6 +972,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
+{{ Fill in the Description }}
+
+### [Update-MgIdentityCustomAuthenticationExtension](Update-MgIdentityCustomAuthenticationExtension.md)
 {{ Fill in the Description }}
 
 ### [Update-MgIdentityProvider](Update-MgIdentityProvider.md)
@@ -977,6 +1043,15 @@ Locale: en-US
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 {{ Fill in the Description }}
 
+### [Update-MgPolicyCrossTenantAccessPolicyTemplate](Update-MgPolicyCrossTenantAccessPolicyTemplate.md)
+{{ Fill in the Description }}
+
+### [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization](Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationIdentitySynchronization.md)
+{{ Fill in the Description }}
+
+### [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration.md)
+{{ Fill in the Description }}
+
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 {{ Fill in the Description }}
 
@@ -1032,6 +1107,12 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgServicePrincipalRiskDetection](Update-MgServicePrincipalRiskDetection.md)
+{{ Fill in the Description }}
+
+### [Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest](Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest.md)
+{{ Fill in the Description }}
+
+### [Update-MgTenantRelationshipMultiTenantOrganizationTenant](Update-MgTenantRelationshipMultiTenantOrganizationTenant.md)
 {{ Fill in the Description }}
 
 ### [Update-MgUserAuthenticationEmailMethod](Update-MgUserAuthenticationEmailMethod.md)

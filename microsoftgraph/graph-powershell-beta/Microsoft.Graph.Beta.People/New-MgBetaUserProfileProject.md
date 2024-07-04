@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileProject
 
 ## SYNOPSIS
-Use this API to create a new projectParticipation object in a user's profile.
+Create new navigation property to projects for users
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ New-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to create a new projectParticipation object in a user's profile.
+Create new navigation property to projects for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -696,8 +696,6 @@ SPONSORS <IMicrosoftGraphRelatedPerson- `[]`>: The Person or people who sponsore
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileproject)
-
-[https://learn.microsoft.com/graph/api/profile-post-projects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-projects?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDomainFederationConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of an internalDomainFederation object.
+Domain settings configured by a customer when federated with Microsoft Entra ID.
+Supports $expand.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an internalDomainFederation object.
+Domain settings configured by a customer when federated with Microsoft Entra ID.
+Supports $expand.
 
 ## EXAMPLES
 ### Example 1: Get the federation settings for a federated domain
@@ -329,6 +331,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -354,10 +358,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)
-
-[https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list-federationconfiguration?view=graph-rest-1.0)
 
 
 

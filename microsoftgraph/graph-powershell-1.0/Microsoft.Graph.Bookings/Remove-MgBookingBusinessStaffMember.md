@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Delete a bookingStaffMember in the specified bookingBusiness.
+Delete navigation property staffMembers for solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete a bookingStaffMember in the specified bookingBusiness.
+Delete navigation property staffMembers for solutions
 
 ## PARAMETERS
 
@@ -222,8 +222,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessstaffmember)
-
-[https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSearchBookmark
 
 ## SYNOPSIS
-Update the properties of a bookmark object.
+Update the navigation property bookmarks in search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-1.0)
@@ -56,7 +56,7 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the properties of a bookmark object.
+Update the navigation property bookmarks in search
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
@@ -577,6 +577,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -611,8 +613,6 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-update?view=graph-rest-1.0)
 
 
 

@@ -366,8 +366,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpassivedns](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostpassivedns)
 
-[https://learn.microsoft.com/graph/api/security-host-list-passivedns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-passivedns?view=graph-rest-1.0)
-
 
 
 

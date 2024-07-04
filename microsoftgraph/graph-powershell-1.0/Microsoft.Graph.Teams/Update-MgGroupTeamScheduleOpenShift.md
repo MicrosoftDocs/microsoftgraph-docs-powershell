@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamScheduleOpenShift
 
 ## SYNOPSIS
-Update the properties of an openShift object.
+Update the navigation property openShifts in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties of an openShift object.
+Update the navigation property openShifts in groups
 
 ## PARAMETERS
 
@@ -447,8 +447,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleopenshift)
-
-[https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-update?view=graph-rest-1.0)
 
 
 

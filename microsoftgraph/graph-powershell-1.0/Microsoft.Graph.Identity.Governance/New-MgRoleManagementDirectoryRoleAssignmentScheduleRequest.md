@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 
 ## SYNOPSIS
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
-See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
+Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest?view=graph-powershell-beta)
@@ -40,8 +39,7 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
 ```
 
 ## DESCRIPTION
-In PIM, carry out the following operations through the unifiedRoleAssignmentScheduleRequest object: To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
-See Enable per-user Microsoft Entra multifactor authentication to secure sign-in events.
+Create new navigation property to roleAssignmentScheduleRequests for roleManagement
 
 ## PARAMETERS
 
@@ -1152,8 +1150,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagementdirectoryroleassignmentschedulerequest)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignmentschedulerequests?view=graph-rest-1.0)
 
 
 

@@ -351,8 +351,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationendusernotification)
 
-[https://learn.microsoft.com/graph/api/attacksimulationroot-list-endusernotifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-endusernotifications?view=graph-rest-1.0)
-
 
 
 

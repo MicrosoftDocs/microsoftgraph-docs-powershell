@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Get-MgBetaBusinessScenarioPlannerTaskAssignedToTaskBoardFormat -InputObject <IBo
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of plannerAssignedToTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## PARAMETERS
 
@@ -197,8 +201,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskassignedtotaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskassignedtotaskboardformat)
-
-[https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerassignedtotaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

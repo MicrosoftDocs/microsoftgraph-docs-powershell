@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 
 ## SYNOPSIS
-Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
+Update the navigation property decisions in identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-beta)
@@ -59,7 +59,7 @@ Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 ```
 
 ## DESCRIPTION
-Update access decisions, known as accessReviewInstanceDecisionItems, for which the user is the reviewer.
+Update the navigation property decisions in identityGovernance
 
 ## EXAMPLES
 ### Example 1: Update a decision on an accessReviewInstance
@@ -727,8 +727,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdefinitioninstancestagedecision)
-
-[https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-1.0)
 
 
 

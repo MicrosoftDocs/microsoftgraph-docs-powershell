@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupTeamChannelTab
 
 ## SYNOPSIS
-Removes (unpins) a tab from the specified channel within a team.
+Delete navigation property tabs for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Removes (unpins) a tab from the specified channel within a team.
+Delete navigation property tabs for groups
 
 ## EXAMPLES
 
@@ -257,8 +257,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mggroupteamchanneltab)
-
-[https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0)
 
 
 

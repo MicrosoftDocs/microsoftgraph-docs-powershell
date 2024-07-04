@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Update the properties of a tokenLifetimePolicy object.
+Update the navigation property tokenLifetimePolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> -
 ```
 
 ## DESCRIPTION
-Update the properties of a tokenLifetimePolicy object.
+Update the navigation property tokenLifetimePolicies in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -429,8 +429,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicytokenlifetimepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-update?view=graph-rest-1.0)
 
 
 

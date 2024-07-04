@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityLabelCategory
 
 ## SYNOPSIS
-Read the properties and relationships of a categoryTemplate object.
+Specifies a group of similar types of content in a particular department.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategory?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a categoryTemplate object.
+Specifies a group of similar types of content in a particular department.
 
 ## PARAMETERS
 
@@ -372,10 +372,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcategory)
-
-[https://learn.microsoft.com/graph/api/security-categorytemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-categorytemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-categories?view=graph-rest-1.0)
 
 
 

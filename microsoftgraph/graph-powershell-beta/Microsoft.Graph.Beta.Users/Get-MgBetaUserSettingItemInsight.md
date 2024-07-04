@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaUserSettingItemInsight
 
 ## SYNOPSIS
-Get the user-customizable privacy settings for itemInsights and meeting hours insights.
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get the user-customizable privacy settings for itemInsights and meeting hours insights.
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserSettingItemInsight Cmdlet
@@ -194,8 +196,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight)
-
-[https://learn.microsoft.com/graph/api/userinsightssettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userinsightssettings-get?view=graph-rest-1.0)
 
 
 

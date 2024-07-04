@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceConfigurationUserStatus
 
 ## SYNOPSIS
-Read properties and relationships of the deviceConfigurationUserStatus object.
+Device configuration installation status by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceConfigurationUserStatus object.
+Device configuration installation status by user.
 
 ## PARAMETERS
 
@@ -360,10 +360,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationuserstatus)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-list?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileName
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a personName object in a user's profile.
+Represents the names a user has added to their profile.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a personName object in a user's profile.
+Represents the names a user has added to their profile.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofilename)
-
-[https://learn.microsoft.com/graph/api/personname-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personname-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-names?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-names?view=graph-rest-1.0)
 
 
 

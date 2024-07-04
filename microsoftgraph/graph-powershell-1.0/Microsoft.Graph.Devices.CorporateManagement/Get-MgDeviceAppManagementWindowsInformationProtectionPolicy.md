@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementWindowsInformationProtectionPolicy
 
 ## SYNOPSIS
-Read properties and relationships of the windowsInformationProtectionPolicy object.
+Windows information protection for apps running on devices which are not MDM enrolled.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementWindowsInformationProtectionPolicy -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windowsInformationProtectionPolicy object.
+Windows information protection for apps running on devices which are not MDM enrolled.
 
 ## PARAMETERS
 
@@ -325,10 +325,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementwindowsinformationprotectionpolicy)
-
-[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-windowsinformationprotectionpolicy-list?view=graph-rest-1.0)
 
 
 

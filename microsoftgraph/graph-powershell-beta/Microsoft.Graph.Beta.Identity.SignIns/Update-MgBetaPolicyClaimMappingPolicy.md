@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyClaimMappingPolicy
 
 ## SYNOPSIS
-Update the properties of a claimsMappingPolicy object.
+Update the navigation property claimsMappingPolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> -B
 ```
 
 ## DESCRIPTION
-Update the properties of a claimsMappingPolicy object.
+Update the navigation property claimsMappingPolicies in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -425,8 +425,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyclaimmappingpolicy)
-
-[https://learn.microsoft.com/graph/api/claimsmappingpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-update?view=graph-rest-1.0)
 
 
 

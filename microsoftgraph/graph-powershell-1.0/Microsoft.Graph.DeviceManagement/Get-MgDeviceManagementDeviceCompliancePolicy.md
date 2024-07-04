@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicy
 
 ## SYNOPSIS
-Read properties and relationships of the windows10MobileCompliancePolicy object.
+The device compliance policies.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIden
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the windows10MobileCompliancePolicy object.
+The device compliance policies.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -357,10 +357,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicy)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10mobilecompliancepolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-windows10compliancepolicy-list?view=graph-rest-1.0)
 
 
 

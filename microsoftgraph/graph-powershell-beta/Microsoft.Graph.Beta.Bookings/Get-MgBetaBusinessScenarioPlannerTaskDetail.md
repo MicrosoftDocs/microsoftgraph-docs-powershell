@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTaskDetail
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a plannerTaskDetails object.
+Read-only.
+Nullable.
+More details about the task.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ Get-MgBetaBusinessScenarioPlannerTaskDetail -InputObject <IBookingsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a plannerTaskDetails object.
+Read-only.
+Nullable.
+More details about the task.
 
 ## PARAMETERS
 
@@ -196,8 +200,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskdetail)
-
-[https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskdetails-get?view=graph-rest-1.0)
 
 
 

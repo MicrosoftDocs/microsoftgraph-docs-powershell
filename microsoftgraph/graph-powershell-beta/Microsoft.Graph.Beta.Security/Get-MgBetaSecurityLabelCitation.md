@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityLabelCitation
 
 ## SYNOPSIS
-Read the properties and relationships of a citationTemplate object.
+The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCitation?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a citationTemplate object.
+The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
 ## PARAMETERS
 
@@ -372,10 +372,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritylabelcitation)
-
-[https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-citationtemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-citations?view=graph-rest-1.0)
 
 
 

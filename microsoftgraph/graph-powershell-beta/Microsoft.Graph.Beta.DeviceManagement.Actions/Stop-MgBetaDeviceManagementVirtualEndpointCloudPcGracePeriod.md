@@ -227,6 +227,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
   - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+  - `[HardwareConfigurationId <String>]`: The unique identifier of hardwareConfiguration
   - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
@@ -249,7 +250,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementvirtualendpointcloudpcgraceperiod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementvirtualendpointcloudpcgraceperiod)
 
-[https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-endgraceperiod?view=graph-rest-beta)
 
 
 

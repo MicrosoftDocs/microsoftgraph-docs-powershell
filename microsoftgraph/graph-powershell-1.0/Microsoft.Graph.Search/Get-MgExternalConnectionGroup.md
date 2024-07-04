@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionGroup
 
 ## SYNOPSIS
-Get an externalGroup object.
+Get groups from external
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
@@ -38,10 +38,7 @@ Get-MgExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get an externalGroup object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/externalconnectors-externalgroup-get-permissions.md)]
+Get groups from external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,8 +327,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectiongroup)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalgroup-get?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage
 
 ## SYNOPSIS
-Retrieve the properties of an approvalStage object.
-An approval stage is contained within an approval object.
+A collection of stages in the approval decision.
 
 ## SYNTAX
 
@@ -37,8 +36,7 @@ Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStage -InputObjec
 ```
 
 ## DESCRIPTION
-Retrieve the properties of an approvalStage object.
-An approval stage is contained within an approval object.
+A collection of stages in the approval decision.
 
 ## PARAMETERS
 
@@ -372,10 +370,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupassignmentapprovalstage)
-
-[https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-list-stages?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Delete a conditionalAccessPolicy object.
+Delete navigation property policies for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Delete a conditionalAccessPolicy object.
+Delete navigation property policies for identity
 
 ## EXAMPLES
 ### Example 1: Remove a conditional access policy
@@ -280,8 +280,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityconditionalaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-delete?view=graph-rest-1.0)
 
 
 

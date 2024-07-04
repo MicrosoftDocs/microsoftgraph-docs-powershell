@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a crossTenantAccessPolicy object.
+The custom rules that define an access scenario when interacting with external Microsoft Entra tenants.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a crossTenantAccessPolicy object.
+The custom rules that define an access scenario when interacting with external Microsoft Entra tenants.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,8 +128,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-get?view=graph-rest-1.0)
 
 
 

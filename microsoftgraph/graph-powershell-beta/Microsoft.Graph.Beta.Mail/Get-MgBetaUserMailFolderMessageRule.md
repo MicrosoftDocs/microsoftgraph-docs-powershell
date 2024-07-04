@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
-Get the properties and relationships of a messageRule object.
+The collection of rules that apply to the user's Inbox folder.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageRule?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <Str
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a messageRule object.
+The collection of rules that apply to the user's Inbox folder.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -314,10 +314,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagerule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagerule)
-
-[https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/messagerule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0)
 
 
 

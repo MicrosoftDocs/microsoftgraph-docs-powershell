@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationClassGroup
 
 ## SYNOPSIS
-Retrieve the Microsoft 365 group that corresponds to this educationClass.
+Get group from education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationClassGroup](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassGroup?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the Microsoft 365 group that corresponds to this educationClass.
+Get group from education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -192,8 +192,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationclassgroup)
-
-[https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-get-group?view=graph-rest-1.0)
 
 
 

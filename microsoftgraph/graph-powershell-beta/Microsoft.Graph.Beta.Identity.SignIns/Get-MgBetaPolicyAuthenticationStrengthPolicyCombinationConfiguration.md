@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of an authenticationCombinationConfiguration object.
+Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Get-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObjec
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an authenticationCombinationConfiguration object.
+Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.
 
 ## PARAMETERS
 
@@ -383,10 +383,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
-
-[https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationcombinationconfiguration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-list-combinationconfigurations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Delete a reviewSetQuery object.
+Delete navigation property queries for compliance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIde
 ```
 
 ## DESCRIPTION
-Delete a reviewSetQuery object.
+Delete navigation property queries for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -249,8 +249,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasereviewsetquery)
-
-[https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-reviewsetquery-delete?view=graph-rest-1.0)
 
 
 

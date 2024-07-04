@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaApplicationSynchronizationJob
 
 ## SYNOPSIS
-Stop the synchronization job, and permanently delete all the state associated with it.
-Synchronized accounts are left as-is.
+Delete navigation property jobs for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Stop the synchronization job, and permanently delete all the state associated with it.
-Synchronized accounts are left as-is.
+Delete navigation property jobs for applications
 
 ## PARAMETERS
 
@@ -241,8 +239,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/remove-mgbetaapplicationsynchronizationjob)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-delete?view=graph-rest-1.0)
 
 
 

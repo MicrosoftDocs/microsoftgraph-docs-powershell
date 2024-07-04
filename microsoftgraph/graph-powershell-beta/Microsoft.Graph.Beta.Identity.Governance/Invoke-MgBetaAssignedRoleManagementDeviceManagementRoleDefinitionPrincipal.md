@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal
 
 ## SYNOPSIS
-Invoke function assignedPrincipals
+Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively.
+You can use the $count query parameter to also get the count.
+To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Invoke-MgBetaAssignedRoleManagementDeviceManagementRoleDefinitionPrincipal
 ```
 
 ## DESCRIPTION
-Invoke function assignedPrincipals
+Get the list of security principals (users, groups, and service principals) that are assigned to a specific role for different scopes either directly or transitively.
+You can use the $count query parameter to also get the count.
+To list the direct and transitive role assignments for a specific principal, use the List transitiveRoleAssignments API.
 
 ## PARAMETERS
 
@@ -397,6 +401,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagementdevicemanagementroledefinitionprincipal](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaassignedrolemanagementdevicemanagementroledefinitionprincipal)
+
+[https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroledefinition-assignedprincipals?view=graph-rest-beta)
 
 
 

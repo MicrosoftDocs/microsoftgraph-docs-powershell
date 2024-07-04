@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSearchBookmark
 
 ## SYNOPSIS
-Create a new bookmark object.
+Create new navigation property to bookmarks for search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/New-MgSearchBookmark?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-Respon
 ```
 
 ## DESCRIPTION
-Create a new bookmark object.
+Create new navigation property to bookmarks for search
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -566,8 +566,6 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-bookmarks?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgSitePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Grant-MgSitePermission -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 ## EXAMPLES
 
@@ -304,6 +304,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementConnectedOrganization
 
 ## SYNOPSIS
-Update a connectedOrganization object to change one or more of its properties.
+Update the navigation property connectedOrganizations in identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Update a connectedOrganization object to change one or more of its properties.
+Update the navigation property connectedOrganizations in identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -479,8 +479,6 @@ Always null when the object hasn't been deleted.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-update?view=graph-rest-1.0)
 
 
 

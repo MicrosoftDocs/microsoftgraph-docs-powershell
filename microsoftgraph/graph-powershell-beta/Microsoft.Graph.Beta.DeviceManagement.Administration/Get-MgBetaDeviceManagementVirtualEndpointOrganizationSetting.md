@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
-A tenant has only one cloudPcOrganizationSettings object.
+The Cloud PC organization settings for a tenant.
 
 ## SYNTAX
 
@@ -20,8 +19,7 @@ Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
-A tenant has only one cloudPcOrganizationSettings object.
+The Cloud PC organization settings for a tenant.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
@@ -123,8 +121,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointorganizationsetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcorganizationsettings-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl
 
 ## SYNOPSIS
-Invoke function getVirtualAppointmentJoinWebUrl
+Get a join web URL for a Microsoft Virtual Appointment.
+This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
+With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <IClou
 ```
 
 ## DESCRIPTION
-Invoke function getVirtualAppointmentJoinWebUrl
+Get a join web URL for a Microsoft Virtual Appointment.
+This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms.
+With Teams Premium, you can configure a custom lobby room experience for attendees by adding your company logo and access the Virtual Appointments usage report for organizational analytics.
 
 ## PARAMETERS
 
@@ -145,6 +149,8 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingvirtualappointmentjoinweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingvirtualappointmentjoinweburl)
+
+[https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualappointment-getvirtualappointmentjoinweburl?view=graph-rest-1.0)
 
 
 

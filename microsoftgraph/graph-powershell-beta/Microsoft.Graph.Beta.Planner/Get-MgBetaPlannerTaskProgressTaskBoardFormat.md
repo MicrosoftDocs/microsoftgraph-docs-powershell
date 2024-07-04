@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ Get-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -182,8 +186,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskprogresstaskboardformat)
-
-[https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

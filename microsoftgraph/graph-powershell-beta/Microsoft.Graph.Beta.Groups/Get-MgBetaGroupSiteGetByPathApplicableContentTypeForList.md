@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList
 
 ## SYNOPSIS
-Invoke function getApplicableContentTypesForList
+Get site contentTypes that can be added to a list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteGetByPathApplicableContentTypeForList?view=graph-powershell-1.0)
@@ -32,7 +32,7 @@ Get-MgBetaGroupSiteGetByPathApplicableContentTypeForList -InputObject <IGroupsId
 ```
 
 ## DESCRIPTION
-Invoke function getApplicableContentTypesForList
+Get site contentTypes that can be added to a list.
 
 ## PARAMETERS
 
@@ -344,6 +344,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupsitegetbypathapplicablecontenttypeforlist)
+
+[https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getapplicablecontenttypesforlist?view=graph-rest-beta)
 
 
 

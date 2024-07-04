@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalConnectionGroup
 
 ## SYNOPSIS
-Create a new externalGroup object.
+Create new navigation property to groups for external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new externalGroup object.
+Create new navigation property to groups for external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -318,6 +318,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -333,8 +335,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnectiongroup)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-post-groups?view=graph-rest-1.0)
 
 
 

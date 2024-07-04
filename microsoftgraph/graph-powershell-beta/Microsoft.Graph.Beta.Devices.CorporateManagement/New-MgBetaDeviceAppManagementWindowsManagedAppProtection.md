@@ -21,7 +21,8 @@ New-MgBetaDeviceAppManagementWindowsManagedAppProtection [-ResponseHeadersVariab
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
  [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
- [-DeployedAppCount <Int32>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAssigned]
+ [-DeployedAppCount <Int32>] [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAssigned]
  [-LastModifiedDateTime <DateTime>] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
  [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
  [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
@@ -194,6 +195,22 @@ Aliases:
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeploymentSummary
+The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+To construct, see NOTES section for DEPLOYMENTSUMMARY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphManagedAppPolicyDeploymentSummary
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -702,6 +719,17 @@ Read-only.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[DeployedAppCount <Int32?>]`: Indicates the total number of applications for which the current policy is deployed.
+  - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[ConfigurationDeployedUserCount <Int32?>]`: 
+    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>]`: 
+      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
+      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+    - `[DisplayName <String>]`: 
+    - `[LastRefreshTime <DateTime?>]`: 
+    - `[Version <String>]`: Version of the entity.
   - `[IsAssigned <Boolean?>]`: When TRUE, indicates that the policy is deployed to some inclusion groups.
 When FALSE, indicates that the policy is not deployed to any inclusion groups.
 Default value is FALSE.
@@ -738,6 +766,19 @@ A timespan value of PT0S indicates that managed data will never be wiped when th
   - `[PrintBlocked <Boolean?>]`: When TRUE, indicates that printing is blocked from managed apps.
 When FALSE, indicates that printing is allowed from managed apps.
 Default value is FALSE.
+
+DEPLOYMENTSUMMARY `<IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[ConfigurationDeployedUserCount <Int32?>]`: 
+  - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp- `[]`>]`: 
+    - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
+    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: 
+  - `[LastRefreshTime <DateTime?>]`: 
+  - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
 

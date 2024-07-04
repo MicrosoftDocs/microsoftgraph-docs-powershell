@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or isn't in that folder, the POST request will fail.
+Create new navigation property to outcomes for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
@@ -50,10 +47,7 @@ New-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdentity
 ```
 
 ## DESCRIPTION
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or isn't in that folder, the POST request will fail.
+Create new navigation property to outcomes for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -359,8 +353,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionoutcome](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionoutcome)
-
-[https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationfeedbackresourceoutcome-post-outcomes?view=graph-rest-1.0)
 
 
 

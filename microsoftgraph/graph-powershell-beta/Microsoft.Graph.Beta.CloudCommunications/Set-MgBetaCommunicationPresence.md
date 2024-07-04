@@ -314,7 +314,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence)
 
-[https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setpresence?view=graph-rest-beta)
 
 
 

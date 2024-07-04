@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 
 ## SYNOPSIS
-Delete a cloudPcProvisioningPolicy object.
-You can't delete a policy that's in use.
+Delete navigation property provisioningPolicies for deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-1.0)
@@ -32,8 +31,7 @@ Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 ```
 
 ## DESCRIPTION
-Delete a cloudPcProvisioningPolicy object.
-You can't delete a policy that's in use.
+Delete navigation property provisioningPolicies for deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
@@ -261,8 +259,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/remove-mgbetadevicemanagementvirtualendpointprovisioningpolicy)
-
-[https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcprovisioningpolicy-delete?view=graph-rest-1.0)
 
 
 

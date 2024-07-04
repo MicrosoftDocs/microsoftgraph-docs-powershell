@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the deviceAndAppManagementRoleAssignment object.
+The Role Assignments.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementRoleAssignment -InputObject <IDeviceManagementAdministrati
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceAndAppManagementRoleAssignment object.
+The Role Assignments.
 
 ## PARAMETERS
 
@@ -315,10 +315,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementroleassignment)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-deviceandappmanagementroleassignment-list?view=graph-rest-1.0)
 
 
 

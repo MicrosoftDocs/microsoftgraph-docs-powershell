@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Deletes a appLogCollectionRequest.
+Delete navigation property appLogCollectionRequests for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Deletes a appLogCollectionRequest.
+Delete navigation property appLogCollectionRequests for deviceManagement
 
 ## PARAMETERS
 
@@ -263,8 +263,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementmobileapptroubleshootingeventapplogcollectionrequest)
-
-[https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-applogcollectionrequest-delete?view=graph-rest-1.0)
 
 
 

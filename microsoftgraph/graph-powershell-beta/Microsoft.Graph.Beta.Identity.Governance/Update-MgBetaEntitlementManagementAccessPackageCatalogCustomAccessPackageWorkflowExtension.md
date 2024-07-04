@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
 
 ## SYNOPSIS
-Update the properties of an existing customAccessPackageWorkflowExtension object.
+Update the navigation property customAccessPackageWorkflowExtensions in identityGovernance
 
 ## SYNTAX
 
@@ -52,7 +52,7 @@ Update-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflo
 ```
 
 ## DESCRIPTION
-Update the properties of an existing customAccessPackageWorkflowExtension object.
+Update the navigation property customAccessPackageWorkflowExtensions in identityGovernance
 
 ## PARAMETERS
 
@@ -490,8 +490,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
-
-[https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customaccesspackageworkflowextension-update?view=graph-rest-1.0)
 
 
 

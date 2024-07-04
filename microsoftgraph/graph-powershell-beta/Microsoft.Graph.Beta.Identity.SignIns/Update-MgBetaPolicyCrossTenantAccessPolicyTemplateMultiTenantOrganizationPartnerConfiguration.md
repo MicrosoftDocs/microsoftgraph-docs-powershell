@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration
 
 ## SYNOPSIS
-Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+Update the navigation property multiTenantOrganizationPartnerConfiguration in policies
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,7 +37,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartner
 ```
 
 ## DESCRIPTION
-Update the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization.
+Update the navigation property multiTenantOrganizationPartnerConfiguration in policies
 
 ## PARAMETERS
 
@@ -374,8 +377,6 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
-
-[https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationpartnerconfigurationtemplate-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment
 
 ## SYNOPSIS
-Delete a unifiedRoleAssignment object.
+Delete navigation property roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGo
 ```
 
 ## DESCRIPTION
-Delete a unifiedRoleAssignment object.
+Delete navigation property roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -304,8 +304,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetarolemanagemententerpriseapproleassignment)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-delete?view=graph-rest-1.0)
 
 
 

@@ -313,7 +313,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/rename-mgbetausercloudpc)
 
-[https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-rename?view=graph-rest-beta)
 
 
 

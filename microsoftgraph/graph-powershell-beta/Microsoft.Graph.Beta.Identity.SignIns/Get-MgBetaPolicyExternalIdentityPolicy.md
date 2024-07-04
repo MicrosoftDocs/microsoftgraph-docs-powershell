@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyExternalIdentityPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls.
+Represents the tenant-wide policy that controls whether guests can leave a Microsoft Entra tenant via self-service controls.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgBetaPolicyExternalIdentityPolicy [-ExpandProperty <String[]>] [-Property <
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of the tenant-wide externalIdentitiesPolicy object that controls whether external users can leave a Microsoft Entra tenant via self-service controls.
+Represents the tenant-wide policy that controls whether guests can leave a Microsoft Entra tenant via self-service controls.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -125,8 +125,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyexternalidentitypolicy)
-
-[https://learn.microsoft.com/graph/api/externalidentitiespolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalidentitiespolicy-get?view=graph-rest-1.0)
 
 
 

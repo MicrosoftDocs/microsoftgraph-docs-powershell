@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgCommunicationCall
 
 ## SYNOPSIS
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+Create new navigation property to calls for communications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-ResponseHeadersVa
 ```
 
 ## DESCRIPTION
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+Create new navigation property to calls for communications
 
 ## EXAMPLES
 ### Example 1: Create peer-to-peer VoIP call with service hosted media
@@ -1336,8 +1334,6 @@ TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall)
-
-[https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-calls?view=graph-rest-1.0)
 
 
 

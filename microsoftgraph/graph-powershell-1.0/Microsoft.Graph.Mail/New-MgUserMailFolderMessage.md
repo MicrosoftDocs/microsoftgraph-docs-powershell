@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderMessage
 
 ## SYNOPSIS
-Use this API to create a new Message in a mailfolder.
+Create new navigation property to messages for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
@@ -70,7 +70,7 @@ New-MgUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Use this API to create a new Message in a mailfolder.
+Create new navigation property to messages for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1036,8 +1036,6 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage)
-
-[https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0)
 
 
 

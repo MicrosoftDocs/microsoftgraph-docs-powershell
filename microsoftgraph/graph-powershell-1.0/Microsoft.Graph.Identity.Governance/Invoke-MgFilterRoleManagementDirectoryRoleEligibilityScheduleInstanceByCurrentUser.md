@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Get the instances of eligible roles for the calling principal.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUser?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstanceByCurrentUs
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Get the instances of eligible roles for the calling principal.
 
 ## PARAMETERS
 
@@ -321,6 +321,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityscheduleinstancebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterrolemanagementdirectoryroleeligibilityscheduleinstancebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

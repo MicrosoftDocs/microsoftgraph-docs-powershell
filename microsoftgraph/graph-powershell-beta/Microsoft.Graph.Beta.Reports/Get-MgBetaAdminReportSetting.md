@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminReportSetting
 
 ## SYNOPSIS
-Get the tenant-level settings for Microsoft 365 reports.
+A container for administrative resources to manage reports.
 
 ## SYNTAX
 
@@ -19,10 +19,7 @@ Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>]
 ```
 
 ## DESCRIPTION
-Get the tenant-level settings for Microsoft 365 reports.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/adminreportsettings-get-permissions.md)]
+A container for administrative resources to manage reports.
 
 ## PARAMETERS
 
@@ -115,8 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting)
-
-[https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/adminreportsettings-get?view=graph-rest-1.0)
 
 
 

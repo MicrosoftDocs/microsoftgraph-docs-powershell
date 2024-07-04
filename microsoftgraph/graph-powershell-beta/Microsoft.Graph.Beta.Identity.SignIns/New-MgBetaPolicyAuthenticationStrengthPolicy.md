@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Create a new custom authenticationStrengthPolicy object.
+Create new navigation property to authenticationStrengthPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuth
 ```
 
 ## DESCRIPTION
-Create a new custom authenticationStrengthPolicy object.
+Create new navigation property to authenticationStrengthPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -350,8 +350,6 @@ For fido2combinationConfigurations use 'fido2', for x509certificatecombinationco
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-post-policies?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a timeOffReason object by ID.
+The set of reasons for a time off in the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Propert
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a timeOffReason object by ID.
+The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 
@@ -333,10 +333,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimeoffreason)
-
-[https://learn.microsoft.com/graph/api/timeoffreason-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffreason-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/schedule-list-timeoffreasons?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-list-timeoffreasons?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItem
 
 ## SYNOPSIS
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+All items contained in the list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItem?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Returns the metadata for an \[item\]\[\] in a \[list\]\[\].
+All items contained in the list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -370,16 +370,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitem)
-
-[https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
 
 
 

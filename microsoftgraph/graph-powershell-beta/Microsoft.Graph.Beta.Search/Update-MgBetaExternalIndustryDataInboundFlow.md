@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the properties of an inboundFlow object.
+Update the navigation property inboundFlows in external
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an inboundFlow object.
+Update the navigation property inboundFlows in external
 
 ## PARAMETERS
 
@@ -455,6 +455,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -484,8 +486,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow)
-
-[https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-inboundflow-update?view=graph-rest-1.0)
 
 
 

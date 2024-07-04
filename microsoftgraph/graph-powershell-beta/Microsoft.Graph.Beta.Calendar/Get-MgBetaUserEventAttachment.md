@@ -8,8 +8,10 @@ schema: 2.0.0
 # Get-MgBetaUserEventAttachment
 
 ## SYNOPSIS
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-1.0)
@@ -39,8 +41,10 @@ Get-MgBetaUserEventAttachment -InputObject <ICalendarIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,10 +338,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventattachment)
-
-[https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attachment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
 
 
 

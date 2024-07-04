@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Read the properties and relationships of a caseOperation object.
+Returns a list of case caseOperation objects for this case.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a caseOperation object.
+Returns a list of case caseOperation objects for this case.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -378,10 +378,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaseoperation)
-
-[https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-caseoperation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-operations?view=graph-rest-1.0)
 
 
 

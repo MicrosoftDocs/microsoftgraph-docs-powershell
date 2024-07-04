@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileWebAccount
 
 ## SYNOPSIS
-Delete a webAccount object from a user's profile.
+Delete navigation property webAccounts for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete a webAccount object from a user's profile.
+Delete navigation property webAccounts for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilewebaccount)
-
-[https://learn.microsoft.com/graph/api/webaccount-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/webaccount-delete?view=graph-rest-1.0)
 
 
 

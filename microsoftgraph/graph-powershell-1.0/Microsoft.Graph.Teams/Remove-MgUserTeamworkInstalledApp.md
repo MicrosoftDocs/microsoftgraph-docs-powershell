@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-Uninstall an app from the personal scope of the specified user.
+Delete navigation property installedApps for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Uninstall an app from the personal scope of the specified user.
+Delete navigation property installedApps for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -253,8 +253,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserteamworkinstalledapp)
-
-[https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userteamwork-delete-installedapps?view=graph-rest-1.0)
 
 
 

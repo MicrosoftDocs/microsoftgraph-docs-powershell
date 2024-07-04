@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantTag
 
 ## SYNOPSIS
-Read the properties and relationships of a tenantTag object.
+The collection of tenant tags across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantTag -InputObject <IManagedTenantsIdenti
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a tenantTag object.
+The collection of tenant tags across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantTag Cmdlet
@@ -341,10 +341,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenanttag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenanttag)
-
-[https://learn.microsoft.com/graph/api/managedtenants-tenanttag-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-tenanttag-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenanttags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-tenanttags?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserPresence
 
 ## SYNOPSIS
-Get a user's presence information.
+Get presence from users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get a user's presence information.
+Get presence from users
 
 ## EXAMPLES
 ### Example 1: Get your own presence information
@@ -200,8 +200,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence)
-
-[https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Create an attack simulation campaign for a tenant.
+Create new navigation property to simulations for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Resp
 ```
 
 ## DESCRIPTION
-Create an attack simulation campaign for a tenant.
+Create new navigation property to simulations for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1065,8 +1065,6 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation)
-
-[https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-post-simulation?view=graph-rest-1.0)
 
 
 

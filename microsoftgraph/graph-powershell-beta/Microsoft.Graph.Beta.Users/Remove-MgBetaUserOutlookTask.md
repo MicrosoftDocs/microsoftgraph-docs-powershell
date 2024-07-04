@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Delete the specified Outlook task in the user's mailbox.
+Delete navigation property tasks for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete the specified Outlook task in the user's mailbox.
+Delete navigation property tasks for users
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOutlookTask Cmdlet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktask)
-
-[https://learn.microsoft.com/graph/api/outlooktask-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktask-delete?view=graph-rest-1.0)
 
 
 

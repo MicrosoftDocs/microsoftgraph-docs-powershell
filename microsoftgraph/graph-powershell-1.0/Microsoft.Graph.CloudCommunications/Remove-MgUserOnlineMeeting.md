@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserOnlineMeeting
 
 ## SYNOPSIS
-Delete an onlineMeeting object.
+Delete navigation property onlineMeetings for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete an onlineMeeting object.
+Delete navigation property onlineMeetings for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -235,8 +235,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting](https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/remove-mguseronlinemeeting)
-
-[https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-delete?view=graph-rest-1.0)
 
 
 

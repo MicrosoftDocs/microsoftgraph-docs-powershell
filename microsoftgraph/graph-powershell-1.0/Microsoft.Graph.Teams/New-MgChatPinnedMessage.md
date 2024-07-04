@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgChatPinnedMessage
 
 ## SYNOPSIS
-Pin a chat message in the specified chat.
-This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+Create new navigation property to pinnedMessages for chats
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatPinnedMessage?view=graph-powershell-beta)
@@ -45,8 +44,7 @@ New-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Pin a chat message in the specified chat.
-This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
+Create new navigation property to pinnedMessages for chats
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -540,8 +538,6 @@ Link to the message in Microsoft Teams.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage)
-
-[https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-pinnedmessages?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Update the properties of an activityBasedTimeoutPolicy object.
+Update the navigation property activityBasedTimeoutPolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIden
 ```
 
 ## DESCRIPTION
-Update the properties of an activityBasedTimeoutPolicy object.
+Update the navigation property activityBasedTimeoutPolicies in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -429,8 +429,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyactivitybasedtimeoutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyactivitybasedtimeoutpolicy)
-
-[https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activitybasedtimeoutpolicy-update?view=graph-rest-1.0)
 
 
 

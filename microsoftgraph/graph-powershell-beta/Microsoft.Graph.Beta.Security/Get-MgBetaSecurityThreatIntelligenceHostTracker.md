@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHostTracker
 
 ## SYNOPSIS
-Read the properties and relationships of a hostTracker object.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ Get-MgBetaSecurityThreatIntelligenceHostTracker -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a hostTracker object.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -409,10 +409,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehosttracker](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehosttracker)
-
-[https://learn.microsoft.com/graph/api/security-hosttracker-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hosttracker-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-trackers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-trackers?view=graph-rest-1.0)
 
 
 

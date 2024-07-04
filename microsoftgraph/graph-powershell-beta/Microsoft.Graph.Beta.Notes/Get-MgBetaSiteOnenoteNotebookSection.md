@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaSiteOnenoteNotebookSection
 
 ## SYNOPSIS
-Retrieve a list of section objects from the specified notebook.
+The sections in the notebook.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSection?view=graph-powershell-1.0)
@@ -23,7 +25,9 @@ Get-MgBetaSiteOnenoteNotebookSection -NotebookId <String> -SiteId <String> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve a list of section objects from the specified notebook.
+The sections in the notebook.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -269,8 +273,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenotenotebooksection)
-
-[https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
-Delete a siteSource object.
+Delete navigation property siteSources for compliance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplian
 ```
 
 ## DESCRIPTION
-Delete a siteSource object.
+Delete navigation property siteSources for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -249,8 +249,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodiansitesource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-sitesource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-sitesource-delete?view=graph-rest-1.0)
 
 
 

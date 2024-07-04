@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPlannerTask
 
 ## SYNOPSIS
-Delete a plannerTask object.
+Delete navigation property tasks for planner
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTask?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a plannerTask object.
+Delete navigation property tasks for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -214,8 +214,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannertask)
-
-[https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertask-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchBookmark
 
 ## SYNOPSIS
-Read the properties and relationships of a bookmark object.
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a bookmark object.
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## PARAMETERS
 
@@ -298,10 +298,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgsearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
 
 
 

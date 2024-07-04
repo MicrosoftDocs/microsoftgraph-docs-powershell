@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserChatTab
 
 ## SYNOPSIS
-Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatTab?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 ```
 
 ## DESCRIPTION
-Add (pin) a tab to the specified chat.
-The corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 ## EXAMPLES
 
@@ -441,8 +439,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mguserchattab)
-
-[https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-post-tabs?view=graph-rest-1.0)
 
 
 

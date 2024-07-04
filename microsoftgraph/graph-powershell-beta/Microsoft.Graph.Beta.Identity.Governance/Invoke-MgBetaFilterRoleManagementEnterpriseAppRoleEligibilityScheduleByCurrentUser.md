@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleByCurrentUs
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilitySchedule objects and their properties associated with a particular principal object.
 
 ## PARAMETERS
 
@@ -365,6 +365,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleeligibilityschedulebycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententerpriseapproleeligibilityschedulebycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedule-filterbycurrentuser?view=graph-rest-beta)
 
 
 

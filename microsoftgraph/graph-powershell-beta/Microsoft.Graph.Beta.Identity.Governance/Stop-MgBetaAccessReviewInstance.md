@@ -295,7 +295,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/stop-mgbetaaccessreviewinstance)
 
-[https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreview-stop?view=graph-rest-beta)
 
 
 

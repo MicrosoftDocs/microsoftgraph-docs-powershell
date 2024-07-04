@@ -397,8 +397,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipalhistory](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyserviceprincipalhistory)
 
-[https://learn.microsoft.com/graph/api/riskyserviceprincipal-list-history?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskyserviceprincipal-list-history?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 
 ## SYNOPSIS
-Read the properties and relationships of a credentialUserRegistrationsSummary object.
+Summary information for user registration for multi-factor authentication and self service password reset across managed tenants.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a credentialUserRegistrationsSummary object.
+Summary information for user registration for multi-factor authentication and self service password reset across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -340,10 +340,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary)
-
-[https://learn.microsoft.com/graph/api/managedtenants-credentialuserregistrationssummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-credentialuserregistrationssummary-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-credentialuserregistrationssummaries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-credentialuserregistrationssummaries?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 
 ## SYNOPSIS
-Update the properties of a managedDeviceMobileAppConfigurationDeviceSummary object.
+Update the navigation property deviceStatusSummary in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceAppManagementMobileAppConfigurationDeviceStatusSummary
 ```
 
 ## DESCRIPTION
-Update the properties of a managedDeviceMobileAppConfigurationDeviceSummary object.
+Update the navigation property deviceStatusSummary in deviceAppManagement
 
 ## PARAMETERS
 
@@ -386,8 +386,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationdevicestatussummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfigurationdevicestatussummary)
-
-[https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-manageddevicemobileappconfigurationdevicesummary-update?view=graph-rest-1.0)
 
 
 

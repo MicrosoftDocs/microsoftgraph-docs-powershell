@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
-Delete a featureRolloutPolicy object.
+Delete navigation property featureRolloutPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> 
 ```
 
 ## DESCRIPTION
-Delete a featureRolloutPolicy object.
+Delete navigation property featureRolloutPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -282,8 +282,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyfeaturerolloutpolicy)
-
-[https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-delete?view=graph-rest-1.0)
 
 
 

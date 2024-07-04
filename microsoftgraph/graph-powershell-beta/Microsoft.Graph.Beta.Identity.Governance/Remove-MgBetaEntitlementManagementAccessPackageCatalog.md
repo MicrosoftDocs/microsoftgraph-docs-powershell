@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementAccessPackageCatalog
 
 ## SYNOPSIS
-Delete an accessPackageCatalog.
+Delete navigation property accessPackageCatalogs for identityGovernance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGo
 ```
 
 ## DESCRIPTION
-Delete an accessPackageCatalog.
+Delete navigation property accessPackageCatalogs for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet
@@ -297,8 +297,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackagecatalog)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-delete?view=graph-rest-1.0)
 
 
 

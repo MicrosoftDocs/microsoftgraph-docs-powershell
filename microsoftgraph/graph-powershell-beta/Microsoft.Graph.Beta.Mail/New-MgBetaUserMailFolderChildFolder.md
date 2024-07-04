@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserMailFolderChildFolder
 
 ## SYNOPSIS
-Create a new mailSearchFolder in the specified user's mailbox.
+Create new navigation property to childFolders for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
@@ -56,7 +56,7 @@ New-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create a new mailSearchFolder in the specified user's mailbox.
+Create new navigation property to childFolders for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1122,8 +1122,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfolder)
-
-[https://learn.microsoft.com/graph/api/mailsearchfolder-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailsearchfolder-post?view=graph-rest-1.0)
 
 
 

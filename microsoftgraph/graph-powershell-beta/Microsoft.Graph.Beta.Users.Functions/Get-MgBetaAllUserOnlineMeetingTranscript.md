@@ -8,7 +8,14 @@ schema: 2.0.0
 # Get-MgBetaAllUserOnlineMeetingTranscript
 
 ## SYNOPSIS
-Invoke function getAllTranscripts
+Get all transcripts from scheduled onlineMeeting instances for which the specified user is the organizer.
+This API currently doesn't support getting call transcripts from channel meetings.
+You can apply the delta function on getAllTranscripts to synchronize and get callTranscript resources as they are added for onlineMeeting instances organized by the specified user.
+Delta query supports both full synchronization that gets all the transcripts for online meetings organized by the user, and incremental synchronization that gets transcripts that have been added since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that transcript view periodically.
+Find more information in the delta query documentation.
+For additional examples, see callTranscript: delta.
+To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
 
 ## SYNTAX
 
@@ -29,7 +36,17 @@ Get-MgBetaAllUserOnlineMeetingTranscript -InputObject <IUsersFunctionsIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke function getAllTranscripts
+Get all transcripts from scheduled onlineMeeting instances for which the specified user is the organizer.
+This API currently doesn't support getting call transcripts from channel meetings.
+You can apply the delta function on getAllTranscripts to synchronize and get callTranscript resources as they are added for onlineMeeting instances organized by the specified user.
+Delta query supports both full synchronization that gets all the transcripts for online meetings organized by the user, and incremental synchronization that gets transcripts that have been added since the last synchronization.
+Typically, you would do an initial full synchronization, and then get incremental changes to that transcript view periodically.
+Find more information in the delta query documentation.
+For additional examples, see callTranscript: delta.
+To learn more about using the Microsoft Teams export APIs to export content, see Export content with the Microsoft Teams export APIs.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/onlinemeeting-getalltranscripts-permissions.md)]
 
 ## PARAMETERS
 
@@ -288,6 +305,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingtranscript](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetaalluseronlinemeetingtranscript)
+
+[https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta](https://learn.microsoft.com/graph/api/onlinemeeting-getalltranscripts?view=graph-rest-beta)
 
 
 

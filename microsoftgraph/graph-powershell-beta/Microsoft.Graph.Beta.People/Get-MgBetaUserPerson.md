@@ -331,8 +331,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson)
 
-[https://learn.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)
-
 
 
 

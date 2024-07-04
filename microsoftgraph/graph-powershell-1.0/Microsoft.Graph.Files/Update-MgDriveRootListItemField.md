@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDriveRootListItemField
 
 ## SYNOPSIS
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in drives
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemField?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDriveRootListItemField -InputObject <IFilesIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in drives
 
 ## PARAMETERS
 
@@ -247,8 +247,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgdriverootlistitemfield)
-
-[https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0)
 
 
 

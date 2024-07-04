@@ -296,7 +296,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouponenotenotebookfromweburl)
 
-[https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-getnotebookfromweburl?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailActivityCount
 
 ## SYNOPSIS
-Invoke function getEmailActivityCounts
+Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportEmailActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke function getEmailActivityCounts
+Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivitycount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailactivitycounts?view=graph-rest-1.0)
 
 
 

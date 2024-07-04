@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyMobileAppManagementPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a mobilityManagementPolicy object.
+The policy that defines autoenrollment configuration for a mobility management (MDM or MAM) application.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a mobilityManagementPolicy object.
+The policy that defines autoenrollment configuration for a mobility management (MDM or MAM) application.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-list?view=graph-rest-1.0)
 
 
 

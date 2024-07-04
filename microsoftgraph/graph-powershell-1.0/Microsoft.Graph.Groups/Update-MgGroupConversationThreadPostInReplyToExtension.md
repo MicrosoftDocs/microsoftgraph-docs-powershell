@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgGroupConversationThreadPostInReplyToExtension
 
 ## SYNOPSIS
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
-See the table in the Permissions section for the list of resources that support open extensions.
+Update the navigation property extensions in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThreadPostInReplyToExtension?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ Update-MgGroupConversationThreadPostInReplyToExtension -InputObject <IGroupsIden
 ```
 
 ## DESCRIPTION
-Update an open extension (openTypeExtension object) with the properties in the request body: The data in an extension can be primitive types, or arrays of primitive types.
-See the table in the Permissions section for the list of resources that support open extensions.
+Update the navigation property extensions in groups
 
 ## PARAMETERS
 
@@ -328,8 +326,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpostinreplytoextension](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupconversationthreadpostinreplytoextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-update?view=graph-rest-1.0)
 
 
 

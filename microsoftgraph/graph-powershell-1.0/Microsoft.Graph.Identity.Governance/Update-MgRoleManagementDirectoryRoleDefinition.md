@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Update the properties of a unifiedRoleDefinition object.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Update the navigation property roleDefinitions in roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -52,9 +50,7 @@ Update-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Update the properties of a unifiedRoleDefinition object.
-You cannot update built-in roles.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Update the navigation property roleDefinitions in roleManagement
 
 ## PARAMETERS
 
@@ -546,8 +542,6 @@ Not yet supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/update-mgrolemanagementdirectoryroledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-update?view=graph-rest-1.0)
 
 
 

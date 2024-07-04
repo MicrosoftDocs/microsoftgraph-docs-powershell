@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgGroupDriveListContentTypePublished
 
 ## SYNOPSIS
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaGroupDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Groups/Test-MgBetaGroupDriveListContentTypePublished?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Test-MgGroupDriveListContentTypePublished -InputObject <IGroupsIdentity> [-Respo
 ```
 
 ## DESCRIPTION
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 ## PARAMETERS
 
@@ -201,6 +201,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/test-mggroupdrivelistcontenttypepublished)
+
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Get-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBookin
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## PARAMETERS
 
@@ -197,8 +201,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskbuckettaskboardformat)
-
-[https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

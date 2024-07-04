@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaAdministrativeUnitDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
+For details, see Using delta query.
 
 ## SYNTAX
 
@@ -20,7 +21,11 @@ Get-MgBetaAdministrativeUnitDelta [-ExpandProperty <String[]>] [-Filter <String>
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted administrativeUnits without having to perform a full read of the entire resource collection.
+For details, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/administrativeunit-delta-permissions.md)]
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAdministrativeUnitDelta Cmdlet
@@ -243,6 +248,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitdelta)
+
+[https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/administrativeunit-delta?view=graph-rest-beta)
 
 
 

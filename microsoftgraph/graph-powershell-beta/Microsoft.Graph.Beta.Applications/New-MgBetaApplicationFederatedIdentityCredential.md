@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
-Create a new federatedIdentityCredential object for an application.
-By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
-Maximum of 20 objects can be added to an application.
+Create new navigation property to federatedIdentityCredentials for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-1.0)
@@ -48,9 +46,7 @@ New-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Create a new federatedIdentityCredential object for an application.
-By configuring a trust relationship between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem.
-Maximum of 20 objects can be added to an application.
+Create new navigation property to federatedIdentityCredentials for applications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -411,8 +407,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationfederatedidentitycredential)
-
-[https://learn.microsoft.com/graph/api/application-post-federatedidentitycredentials?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-federatedidentitycredentials?view=graph-rest-1.0)
 
 
 

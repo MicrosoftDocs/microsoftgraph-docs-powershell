@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcExternalPartnerSetting object.
+The external partner settings on a Cloud PC.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcExternalPartnerSetting object.
+The external partner settings on a Cloud PC.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
@@ -375,10 +375,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-
-[https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcexternalpartnersetting-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-externalpartnersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-externalpartnersettings?view=graph-rest-1.0)
 
 
 

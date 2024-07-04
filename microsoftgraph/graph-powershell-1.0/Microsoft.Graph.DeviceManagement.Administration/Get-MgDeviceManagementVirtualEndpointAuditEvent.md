@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointAuditEvent
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcAuditEvent object.
+A collection of Cloud PC audit events.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointAuditEvent?view=graph-powershell-beta)
@@ -38,10 +38,7 @@ Get-MgDeviceManagementVirtualEndpointAuditEvent -InputObject <IDeviceManagementA
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcAuditEvent object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpcauditevent-get-permissions.md)]
+A collection of Cloud PC audit events.
 
 ## PARAMETERS
 
@@ -318,10 +315,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointauditevent](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointauditevent)
-
-[https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcauditevent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-auditevents?view=graph-rest-1.0)
 
 
 

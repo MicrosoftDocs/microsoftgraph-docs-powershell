@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEducationSchool
 
 ## SYNOPSIS
-Retrieve the properties and relationships of the school object.
+Get schools from education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchool?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of the school object.
+Get schools from education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -321,10 +321,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationschool)
-
-[https://learn.microsoft.com/graph/api/educationschool-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationroot-list-schools?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationroot-list-schools?view=graph-rest-1.0)
 
 
 

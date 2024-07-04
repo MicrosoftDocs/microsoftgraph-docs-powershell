@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaBusinessScenarioPlannerTask
 
 ## SYNOPSIS
-Delete a businessScenarioTask object.
+Delete navigation property tasks for solutions
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete a businessScenarioTask object.
+Delete navigation property tasks for solutions
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenarioplannertask)
-
-[https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/businessscenarioplanner-delete-tasks?view=graph-rest-1.0)
 
 
 

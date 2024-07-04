@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationFido2Method
 
 ## SYNOPSIS
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
+Represents the FIDO2 security keys registered to a user for authentication.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationFido2Method?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> 
 ```
 
 ## DESCRIPTION
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
+Represents the FIDO2 security keys registered to a user for authentication.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -396,10 +396,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationfido2method)
-
-[https://learn.microsoft.com/graph/api/fido2authenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/fido2authenticationmethod-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/fido2authenticationmethod-list?view=graph-rest-1.0)
 
 
 

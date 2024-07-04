@@ -893,9 +893,6 @@ Locale: en-US
 ### [Remove-MgBetaGroup](Remove-MgBetaGroup.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupAcceptedSenderByRef](Remove-MgBetaGroupAcceptedSenderByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef](Remove-MgBetaGroupAcceptedSenderDirectoryObjectByRef.md)
 {{ Fill in the Description }}
 
@@ -947,13 +944,7 @@ Locale: en-US
 ### [Remove-MgBetaGroupLifecyclePolicy](Remove-MgBetaGroupLifecyclePolicy.md)
 {{ Fill in the Description }}
 
-### [Remove-MgBetaGroupMemberByRef](Remove-MgBetaGroupMemberByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgBetaGroupMemberDirectoryObjectByRef](Remove-MgBetaGroupMemberDirectoryObjectByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaGroupOwnerByRef](Remove-MgBetaGroupOwnerByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupOwnerDirectoryObjectByRef](Remove-MgBetaGroupOwnerDirectoryObjectByRef.md)
@@ -966,9 +957,6 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupPhoto](Remove-MgBetaGroupPhoto.md)
-{{ Fill in the Description }}
-
-### [Remove-MgBetaGroupRejectedSenderByRef](Remove-MgBetaGroupRejectedSenderByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef](Remove-MgBetaGroupRejectedSenderDirectoryObjectByRef.md)

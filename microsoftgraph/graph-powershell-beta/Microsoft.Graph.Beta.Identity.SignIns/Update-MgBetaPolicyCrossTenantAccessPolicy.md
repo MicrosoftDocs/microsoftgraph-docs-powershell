@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 ```
 
 ## DESCRIPTION
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -566,8 +566,6 @@ Office365 - Includes the applications mentioned as part of the Office365 suite.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-update?view=graph-rest-1.0)
 
 
 

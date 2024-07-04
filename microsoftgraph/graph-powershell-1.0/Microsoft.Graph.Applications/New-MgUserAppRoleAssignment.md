@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
@@ -49,8 +48,7 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 ## EXAMPLES
 ### Example 1: Assign a user an application role
@@ -425,6 +423,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -438,8 +437,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mguserapproleassignment)
-
-[https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-approleassignments?view=graph-rest-1.0)
 
 
 

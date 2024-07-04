@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-Read the properties and relationships of a plannerPlanConfigurationLocalization object.
+Localized names for the plan configuration.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Get-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBo
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a plannerPlanConfigurationLocalization object.
+Localized names for the plan configuration.
 
 ## PARAMETERS
 
@@ -326,10 +326,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfigurationlocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfigurationlocalization)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfigurationlocalization-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-list-localizations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamPrimaryChannelFileFolder
 
 ## SYNOPSIS
-Get the metadata for the location where the files of a channel are stored.
+Metadata for the location where the channel's files are stored.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamPrimaryChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelFileFolder?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaGroupTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get the metadata for the location where the files of a channel are stored.
+Metadata for the location where the channel's files are stored.
 
 ## EXAMPLES
 
@@ -204,8 +204,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelfilefolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamprimarychannelfilefolder)
-
-[https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-get-filesfolder?view=graph-rest-1.0)
 
 
 

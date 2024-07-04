@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryRoleDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
+See Using Delta Query for details.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleDelta?view=graph-powershell-beta)
@@ -23,7 +24,8 @@ Get-MgDirectoryRoleDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Prope
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection.
+See Using Delta Query for details.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgDirectoryRoleDelta Cmdlet
@@ -246,6 +248,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroledelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroledelta)
+
+[https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryrole-delta?view=graph-rest-1.0)
 
 
 

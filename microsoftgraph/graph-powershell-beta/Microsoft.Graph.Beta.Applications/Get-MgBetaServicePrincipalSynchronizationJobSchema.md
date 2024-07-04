@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Retrieve the schema for a given synchronization job or template.
+The synchronization schema configured for the job.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Retrieve the schema for a given synchronization job or template.
+The synchronization schema configured for the job.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationJobSchema Cmdlet
@@ -231,8 +231,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalsynchronizationjobschema)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-get?view=graph-rest-1.0)
 
 
 

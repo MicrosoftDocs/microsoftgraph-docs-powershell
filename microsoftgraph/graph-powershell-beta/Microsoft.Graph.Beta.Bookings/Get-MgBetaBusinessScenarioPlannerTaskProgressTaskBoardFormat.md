@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## SYNTAX
 
@@ -28,7 +30,9 @@ Get-MgBetaBusinessScenarioPlannerTaskProgressTaskBoardFormat -InputObject <IBook
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of plannerProgressTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## PARAMETERS
 
@@ -197,8 +201,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskprogresstaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannertaskprogresstaskboardformat)
-
-[https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerprogresstaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

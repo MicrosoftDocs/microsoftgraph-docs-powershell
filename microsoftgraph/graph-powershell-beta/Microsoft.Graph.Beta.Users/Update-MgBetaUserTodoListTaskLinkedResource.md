@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Update the properties of a linkedResource object.
+Update the navigation property linkedResources in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a linkedResource object.
+Update the navigation property linkedResources in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -389,8 +389,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttasklinkedresource)
-
-[https://learn.microsoft.com/graph/api/linkedresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/linkedresource-update?view=graph-rest-1.0)
 
 
 

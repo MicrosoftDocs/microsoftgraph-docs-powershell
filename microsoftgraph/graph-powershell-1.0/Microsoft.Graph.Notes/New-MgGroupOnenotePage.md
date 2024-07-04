@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgGroupOnenotePage
 
 ## SYNOPSIS
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
+Create new navigation property to pages for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
@@ -55,13 +52,7 @@ New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create a new OneNote page in the default section of the default notebook.
-To create a page in a different section in the default notebook, you can use the sectionName query parameter.
-Example: ../onenote/pages?sectionName=My%20section The POST /onenote/pages operation is used only to create pages in the current user's default notebook.
-If you're targeting other notebooks, you can create pages in a specified section.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/onenote-post-pages-permissions.md)]
+Create new navigation property to pages for groups
 
 ## PARAMETERS
 
@@ -869,8 +860,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage](https://learn.microsoft.com/powershell/module/microsoft.graph.notes/new-mggrouponenotepage)
-
-[https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onenote-post-pages?view=graph-rest-1.0)
 
 
 

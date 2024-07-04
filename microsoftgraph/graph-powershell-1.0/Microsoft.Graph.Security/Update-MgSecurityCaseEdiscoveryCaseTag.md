@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
-Update the properties of an ediscoveryReviewTag object.
+Update the navigation property tags in security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an ediscoveryReviewTag object.
+Update the navigation property tags in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -504,8 +504,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasetag)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-update?view=graph-rest-1.0)
 
 
 

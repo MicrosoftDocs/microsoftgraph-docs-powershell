@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaGraphReportAuthenticationMethod
 
 ## SYNOPSIS
-Invoke function usersRegisteredByFeature
+Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function usersRegisteredByFeature
+Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
 ## PARAMETERS
 
@@ -211,6 +211,10 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbyfeature?view=graph-rest-beta)
+
+[https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta](https://learn.microsoft.com/graph/api/authenticationmethodsroot-usersregisteredbymethod?view=graph-rest-beta)
 
 
 

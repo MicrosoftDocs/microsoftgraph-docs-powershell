@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+Update the navigation property customQuestions in users
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 ```
 
 ## DESCRIPTION
-Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+Update the navigation property customQuestions in users
 
 ## EXAMPLES
 ### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
@@ -365,8 +365,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistrationcustomquestion)
-
-[https://learn.microsoft.com/graph/api/meetingregistrationquestion-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerActivityUserCount
 
 ## SYNOPSIS
-Invoke function getYammerActivityUserCounts
+Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportYammerActivityUserCount -InputObject <IReportsIdentity> -OutFile <St
 ```
 
 ## DESCRIPTION
-Invoke function getYammerActivityUserCounts
+Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammeractivityusercounts?view=graph-rest-1.0)
 
 
 

@@ -32,6 +32,9 @@ Invoke-MgViewUserReminder -InputObject <IUsersFunctionsIdentity> [-Count] [-Filt
 ## DESCRIPTION
 Invoke function reminderView
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/user-reminderview-permissions.md)]
+
 ## PARAMETERS
 
 ### -Count
@@ -262,6 +265,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/invoke-mgviewuserreminder)
+
+[https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-reminderview?view=graph-rest-1.0)
 
 
 

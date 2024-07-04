@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaContactManager
 
 ## SYNOPSIS
-Get the contact's manager
+The user or contact that is this contact's manager.
+Read-only.
+Supports $expand and $filter (eq) by id.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-1.0)
@@ -30,7 +32,9 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get the contact's manager
+The user or contact that is this contact's manager.
+Read-only.
+Supports $expand and $filter (eq) by id.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -221,8 +225,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetacontactmanager)
-
-[https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/orgcontact-get-manager?view=graph-rest-1.0)
 
 
 

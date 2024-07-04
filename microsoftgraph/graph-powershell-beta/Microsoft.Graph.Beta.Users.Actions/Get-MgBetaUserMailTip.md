@@ -311,7 +311,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetausermailtip)
 
-[https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-getmailtips?view=graph-rest-beta)
 
 
 

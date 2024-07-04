@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaBusinessScenarioPlannerPlanConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of a plannerPlanConfiguration object.
+The configuration of Planner plans that will be created for the scenario.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdenti
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a plannerPlanConfiguration object.
+The configuration of Planner plans that will be created for the scenario.
 
 ## PARAMETERS
 
@@ -181,8 +181,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplanconfiguration)
-
-[https://learn.microsoft.com/graph/api/plannerplanconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplanconfiguration-get?view=graph-rest-1.0)
 
 
 

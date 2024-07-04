@@ -11,7 +11,7 @@ schema: 2.0.0
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Get-MgDomainNameReference -InputObject <IIdentityDirectoryManagementIdentity> [-
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -323,6 +323,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -348,8 +350,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnamereference)
-
-[https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/domain-list-domainnamereferences?view=graph-rest-1.0)
 
 
 

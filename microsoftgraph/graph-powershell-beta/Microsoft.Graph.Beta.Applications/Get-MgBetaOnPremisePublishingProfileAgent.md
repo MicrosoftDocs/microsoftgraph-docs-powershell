@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaOnPremisePublishingProfileAgent
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an onPremisesAgent object.
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an onPremisesAgent object.
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,10 +351,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileagent)
-
-[https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onpremisesagent-list?view=graph-rest-1.0)
 
 
 

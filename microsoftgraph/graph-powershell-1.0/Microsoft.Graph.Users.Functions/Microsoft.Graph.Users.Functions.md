@@ -59,6 +59,9 @@ Locale: en-US
 ### [Get-MgUserDriveListItemActivityByInterval](Get-MgUserDriveListItemActivityByInterval.md)
 {{ Fill in the Description }}
 
+### [Get-MgUserDriveListItemDelta](Get-MgUserDriveListItemDelta.md)
+{{ Fill in the Description }}
+
 ### [Get-MgUserDriveRootActivityByInterval](Get-MgUserDriveRootActivityByInterval.md)
 {{ Fill in the Description }}
 
@@ -72,6 +75,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Get-MgUserEventInstanceDelta](Get-MgUserEventInstanceDelta.md)
+{{ Fill in the Description }}
+
+### [Get-MgUserLicenseDetailTeamLicensingDetail](Get-MgUserLicenseDetailTeamLicensingDetail.md)
 {{ Fill in the Description }}
 
 ### [Get-MgUserMailFolderChildFolderDelta](Get-MgUserMailFolderChildFolderDelta.md)

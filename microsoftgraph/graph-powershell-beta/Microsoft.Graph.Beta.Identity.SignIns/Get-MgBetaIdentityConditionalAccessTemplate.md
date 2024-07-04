@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessTemplate
 
 ## SYNOPSIS
-Read the properties and relationships of a conditionalAccessTemplate object.
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access templates.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessTemplate](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessTemplate?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdenti
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a conditionalAccessTemplate object.
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access templates.
 
 ## EXAMPLES
 ### Example 1: Get the properties a template by ID
@@ -391,10 +395,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesstemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesstemplate)
-
-[https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesstemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-templates?view=graph-rest-1.0)
 
 
 

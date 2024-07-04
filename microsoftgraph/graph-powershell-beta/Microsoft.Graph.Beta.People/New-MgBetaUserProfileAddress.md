@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileAddress
 
 ## SYNOPSIS
-Create a new itemAddress object in a user's profile.
+Create new navigation property to addresses for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create a new itemAddress object in a user's profile.
+Create new navigation property to addresses for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -552,8 +552,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress)
-
-[https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-addresses?view=graph-rest-1.0)
 
 
 

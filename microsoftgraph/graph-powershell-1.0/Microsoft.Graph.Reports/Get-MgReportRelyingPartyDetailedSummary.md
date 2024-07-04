@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportRelyingPartyDetailedSummary
 
 ## SYNOPSIS
-Invoke function getRelyingPartyDetailedSummary
+Get a summary of AD FS relying parties information.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportRelyingPartyDetailedSummary](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportRelyingPartyDetailedSummary?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Get-MgReportRelyingPartyDetailedSummary -InputObject <IReportsIdentity> [-Count]
 ```
 
 ## DESCRIPTION
-Invoke function getRelyingPartyDetailedSummary
+Get a summary of AD FS relying parties information.
 
 ## PARAMETERS
 
@@ -275,6 +275,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportrelyingpartydetailedsummary)
+
+[https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getrelyingpartydetailedsummary?view=graph-rest-1.0)
 
 
 

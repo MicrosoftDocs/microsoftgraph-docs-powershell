@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Delete a permissionGrantPolicy object.
+Delete navigation property permissionGrantPolicies for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicy?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Delete a permissionGrantPolicy object.
+Delete navigation property permissionGrantPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Remove a permission grant policy
@@ -279,8 +279,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-delete?view=graph-rest-1.0)
 
 
 

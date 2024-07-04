@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Update the properties of an ediscoveryReviewSetQuery object.
+Update the navigation property queries in security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-1.0)
@@ -51,7 +51,7 @@ Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Update the properties of an ediscoveryReviewSetQuery object.
+Update the navigation property queries in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -489,8 +489,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasereviewsetquery)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
 
 ## SYNOPSIS
-Deletes a deviceComplianceActionItem.
+Delete navigation property scheduledActionConfigurations for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledAc
 ```
 
 ## DESCRIPTION
-Deletes a deviceComplianceActionItem.
+Delete navigation property scheduledActionConfigurations for deviceManagement
 
 ## PARAMETERS
 
@@ -279,8 +279,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-delete?view=graph-rest-1.0)
 
 
 

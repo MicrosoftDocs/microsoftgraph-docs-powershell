@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Get details about a task definition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
@@ -53,8 +52,7 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get details about a task definition.
-For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,10 +345,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition)
-
-[https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printtaskdefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-taskdefinitions?view=graph-rest-1.0)
 
 
 

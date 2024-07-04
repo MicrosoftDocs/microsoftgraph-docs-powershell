@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgEducationClassAssignmentSetting
 
 ## SYNOPSIS
-Update the properties of an educationAssignmentSettings object.
-Only teachers can update these settings.
+Update the navigation property assignmentSettings in education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ Update-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an educationAssignmentSettings object.
-Only teachers can update these settings.
+Update the navigation property assignmentSettings in education
 
 ## EXAMPLES
 ### Example 1: Update submissionAnimationDisabled
@@ -338,8 +336,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsetting)
-
-[https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentsettings-update?view=graph-rest-1.0)
 
 
 

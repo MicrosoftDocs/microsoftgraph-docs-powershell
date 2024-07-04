@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef
 
 ## SYNOPSIS
-Delete an identity provider from a b2cIdentityUserFlow object.
-For more information about identity providers available for user flows, see the identityProviders API reference.
+Delete ref of navigation property identityProviders for identity
 
 ## SYNTAX
 
@@ -42,8 +41,7 @@ Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySig
 ```
 
 ## DESCRIPTION
-Delete an identity provider from a b2cIdentityUserFlow object.
-For more information about identity providers available for user flows, see the identityProviders API reference.
+Delete ref of navigation property identityProviders for identity
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet
@@ -321,8 +319,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowidentityproviderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflowidentityproviderbyref)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-delete-identityproviders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-delete-identityproviders?view=graph-rest-1.0)
 
 
 

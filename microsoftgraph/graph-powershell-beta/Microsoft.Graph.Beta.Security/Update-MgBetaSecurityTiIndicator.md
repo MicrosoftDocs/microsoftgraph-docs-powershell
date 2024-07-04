@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
-Update the properties of a tiIndicator object.
+Update the navigation property tiIndicators in security
 
 ## SYNTAX
 
@@ -73,7 +73,7 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties of a tiIndicator object.
+Update the navigation property tiIndicators in security
 
 ## EXAMPLES
 ### Example 1: Request without Prefer header
@@ -1356,8 +1356,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicator)
-
-[https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-update?view=graph-rest-1.0)
 
 
 

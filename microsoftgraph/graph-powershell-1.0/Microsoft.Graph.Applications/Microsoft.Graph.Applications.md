@@ -92,6 +92,9 @@ Locale: en-US
 ### [Get-MgApplicationFederatedIdentityCredential](Get-MgApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
+### [Get-MgApplicationFederatedIdentityCredentialByName](Get-MgApplicationFederatedIdentityCredentialByName.md)
+{{ Fill in the Description }}
+
 ### [Get-MgApplicationFederatedIdentityCredentialCount](Get-MgApplicationFederatedIdentityCredentialCount.md)
 {{ Fill in the Description }}
 
@@ -623,9 +626,6 @@ Locale: en-US
 ### [Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyAppManagementPolicyByRef.md)
 {{ Fill in the Description }}
 
-### [Remove-MgApplicationAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgApplicationByAppId](Remove-MgApplicationByAppId.md)
 {{ Fill in the Description }}
 
@@ -638,10 +638,10 @@ Locale: en-US
 ### [Remove-MgApplicationFederatedIdentityCredential](Remove-MgApplicationFederatedIdentityCredential.md)
 {{ Fill in the Description }}
 
-### [Remove-MgApplicationKey](Remove-MgApplicationKey.md)
+### [Remove-MgApplicationFederatedIdentityCredentialByName](Remove-MgApplicationFederatedIdentityCredentialByName.md)
 {{ Fill in the Description }}
 
-### [Remove-MgApplicationOwnerByRef](Remove-MgApplicationOwnerByRef.md)
+### [Remove-MgApplicationKey](Remove-MgApplicationKey.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationOwnerDirectoryObjectByRef](Remove-MgApplicationOwnerDirectoryObjectByRef.md)
@@ -674,13 +674,7 @@ Locale: en-US
 ### [Remove-MgApplicationSynchronizationTemplateSchemaDirectory](Remove-MgApplicationSynchronizationTemplateSchemaDirectory.md)
 {{ Fill in the Description }}
 
-### [Remove-MgApplicationTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef.md)
-{{ Fill in the Description }}
-
-### [Remove-MgApplicationTokenLifetimePolicyByRef](Remove-MgApplicationTokenLifetimePolicyByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef](Remove-MgApplicationTokenLifetimePolicyTokenLifetimePolicyByRef.md)
@@ -701,9 +695,6 @@ Locale: en-US
 ### [Remove-MgServicePrincipalByAppId](Remove-MgServicePrincipalByAppId.md)
 {{ Fill in the Description }}
 
-### [Remove-MgServicePrincipalClaimMappingPolicyByRef](Remove-MgServicePrincipalClaimMappingPolicyByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef](Remove-MgServicePrincipalClaimMappingPolicyClaimMappingPolicyByRef.md)
 {{ Fill in the Description }}
 
@@ -713,16 +704,10 @@ Locale: en-US
 ### [Remove-MgServicePrincipalEndpoint](Remove-MgServicePrincipalEndpoint.md)
 {{ Fill in the Description }}
 
-### [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-{{ Fill in the Description }}
-
 ### [Remove-MgServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef](Remove-MgServicePrincipalHomeRealmDiscoveryPolicyHomeRealmDiscoveryPolicyByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgServicePrincipalKey](Remove-MgServicePrincipalKey.md)
-{{ Fill in the Description }}
-
-### [Remove-MgServicePrincipalOwnerByRef](Remove-MgServicePrincipalOwnerByRef.md)
 {{ Fill in the Description }}
 
 ### [Remove-MgServicePrincipalOwnerDirectoryObjectByRef](Remove-MgServicePrincipalOwnerDirectoryObjectByRef.md)
@@ -831,6 +816,9 @@ Locale: en-US
 {{ Fill in the Description }}
 
 ### [Update-MgApplicationFederatedIdentityCredential](Update-MgApplicationFederatedIdentityCredential.md)
+{{ Fill in the Description }}
+
+### [Update-MgApplicationFederatedIdentityCredentialByName](Update-MgApplicationFederatedIdentityCredentialByName.md)
 {{ Fill in the Description }}
 
 ### [Update-MgApplicationSynchronizationJob](Update-MgApplicationSynchronizationJob.md)

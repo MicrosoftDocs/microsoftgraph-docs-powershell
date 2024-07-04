@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementEntitlementManagementRoleDefinition
 
 ## SYNOPSIS
-Create a new custom unifiedRoleDefinition object.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Create new navigation property to roleDefinitions for roleManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
@@ -34,8 +33,7 @@ New-MgRoleManagementEntitlementManagementRoleDefinition -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new custom unifiedRoleDefinition object.
-This feature requires a Microsoft Entra ID P1 or P2 license.
+Create new navigation property to roleDefinitions for roleManagement
 
 ## PARAMETERS
 
@@ -426,8 +424,6 @@ Not yet supported.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgrolemanagemententitlementmanagementroledefinition)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-1.0)
 
 
 

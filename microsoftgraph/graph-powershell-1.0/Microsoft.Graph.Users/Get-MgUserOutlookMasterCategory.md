@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Get the properties and relationships of the specified outlookCategory object.
+A list of categories defined for the user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of the specified outlookCategory object.
+A list of categories defined for the user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -303,10 +303,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory)
-
-[https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookcategory-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-list-mastercategories?view=graph-rest-1.0)
 
 
 

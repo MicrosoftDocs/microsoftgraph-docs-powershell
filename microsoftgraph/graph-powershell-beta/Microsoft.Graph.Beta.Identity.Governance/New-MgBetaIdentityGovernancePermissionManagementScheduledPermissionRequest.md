@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 
 ## SYNOPSIS
-Create a new scheduledPermissionsRequest object.
+Create new navigation property to scheduledPermissionsRequests for identityGovernance
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgBetaIdentityGovernancePermissionManagementScheduledPermissionRequest
 ```
 
 ## DESCRIPTION
-Create a new scheduledPermissionsRequest object.
+Create new navigation property to scheduledPermissionsRequests for identityGovernance
 
 ## PARAMETERS
 
@@ -442,8 +442,6 @@ TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancepermissionmanagementscheduledpermissionrequest)
-
-[https://learn.microsoft.com/graph/api/permissionsmanagement-post-scheduledpermissionsrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissionsmanagement-post-scheduledpermissionsrequests?view=graph-rest-1.0)
 
 
 

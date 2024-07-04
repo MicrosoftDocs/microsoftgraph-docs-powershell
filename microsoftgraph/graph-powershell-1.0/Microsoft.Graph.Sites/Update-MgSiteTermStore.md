@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteTermStore
 
 ## SYNOPSIS
-Update the properties of a store object.
+Update the navigation property termStore in sites
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteTermStore?view=graph-powershell-beta)
@@ -76,7 +76,7 @@ Update-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the properties of a store object.
+Update the navigation property termStore in sites
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -494,6 +494,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -551,8 +552,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mgsitetermstore)
-
-[https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-store-update?view=graph-rest-1.0)
 
 
 

@@ -8,11 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignmentSubmissionResource
 
 ## SYNOPSIS
-Delete an educationSubmissionResource from the submission.
-Only teachers and students can perform this operation.
-If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
-This allows you to 'reset' the resource to its original state.
-If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
+Delete navigation property resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -35,11 +31,7 @@ Remove-MgEducationUserAssignmentSubmissionResource -InputObject <IEducationIdent
 ```
 
 ## DESCRIPTION
-Delete an educationSubmissionResource from the submission.
-Only teachers and students can perform this operation.
-If the resource was copied from the assignment, a new copy of the resource will be created after the current copy is deleted.
-This allows you to 'reset' the resource to its original state.
-If the resource wasn't copied from the assignment but was added from the student, the resource is deleted.
+Delete navigation property resources for education
 
 ## EXAMPLES
 
@@ -261,8 +253,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentsubmissionresource)
-
-[https://learn.microsoft.com/graph/api/educationsubmissionresource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmissionresource-delete?view=graph-rest-1.0)
 
 
 

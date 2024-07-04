@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedEBookUserStateSummary
 
 ## SYNOPSIS
-Read properties and relationships of the userInstallStateSummary object.
+The list of installation states for this eBook.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookUserStateSummary?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceAppManagementManagedEBookUserStateSummary -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the userInstallStateSummary object.
+The list of installation states for this eBook.
 
 ## PARAMETERS
 
@@ -341,10 +341,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookuserstatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookuserstatesummary)
-
-[https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-userinstallstatesummary-list?view=graph-rest-1.0)
 
 
 

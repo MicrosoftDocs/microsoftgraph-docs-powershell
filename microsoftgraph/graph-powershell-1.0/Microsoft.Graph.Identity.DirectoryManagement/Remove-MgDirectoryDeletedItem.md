@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deletedItems for directory
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -193,6 +190,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -218,8 +217,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectorydeleteditem)
-
-[https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0)
 
 
 

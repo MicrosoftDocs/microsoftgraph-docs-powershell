@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityAuthenticationEventFlow
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
-Only externalUsersSelfServiceSignupEventsFlow object types are available.
+Represents the entry point for self-service sign up and sign in user flows in both Microsoft Entra workforce and customer tenants.
 
 ## SYNTAX
 
@@ -36,11 +35,7 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
-Only externalUsersSelfServiceSignupEventsFlow object types are available.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/authenticationeventsflow-get-permissions.md)]
+Represents the entry point for self-service sign up and sign in user flows in both Microsoft Entra workforce and customer tenants.
 
 ## PARAMETERS
 
@@ -369,10 +364,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventflow)
-
-[https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationeventsflow-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventsflows?view=graph-rest-1.0)
 
 
 

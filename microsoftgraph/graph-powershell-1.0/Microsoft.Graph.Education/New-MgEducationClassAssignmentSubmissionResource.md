@@ -8,11 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentSubmissionResource
 
 ## SYNOPSIS
-Add an educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
+Create new navigation property to resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
@@ -51,11 +47,7 @@ New-MgEducationClassAssignmentSubmissionResource -InputObject <IEducationIdentit
 ```
 
 ## DESCRIPTION
-Add an educationSubmissionResource to a submission resource list.
-Only teachers and students can perform this operation.
-The operation will not succeed if the allowStudentsToAddResources flag is not set to true.
-To create a new file-based resource, upload the file to the resources folder associated with the submission.
-If the file doesn't exist or is not in that folder, the POST request will fail.
+Create new navigation property to resources for education
 
 ## EXAMPLES
 ### Example 1: Create an educationWordResource
@@ -460,8 +452,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmissionresource)
-
-[https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationsubmission-post-resources?view=graph-rest-1.0)
 
 
 

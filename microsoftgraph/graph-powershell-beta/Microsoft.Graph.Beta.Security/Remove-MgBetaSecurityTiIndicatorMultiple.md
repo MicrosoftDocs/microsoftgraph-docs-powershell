@@ -198,7 +198,7 @@ BODYPARAMETER `<IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicators
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple)
 
-[https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tiindicator-deletetiindicators?view=graph-rest-beta)
 
 
 

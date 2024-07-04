@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationUser
 
 ## SYNOPSIS
-Delete a user.
+Delete navigation property users for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUser?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a user.
+Delete navigation property users for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -218,8 +218,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuser](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationuser)
-
-[https://learn.microsoft.com/graph/api/educationuser-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-delete?view=graph-rest-1.0)
 
 
 

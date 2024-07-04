@@ -18,8 +18,8 @@ Invoke action runHuntingQuery
 ### RunExpanded (Default)
 ```
 Start-MgBetaSecurityHuntingQuery [-ResponseHeadersVariable <String>] [-AdditionalProperties <Hashtable>]
- [-Query <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Query <String>] [-Timespan <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Run
@@ -128,6 +128,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Timespan
+.
+
+```yaml
+Type: String
+Parameter Sets: RunExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -177,7 +192,8 @@ For information on hash tables, run Get-Help about_Hash_Tables.
 
 BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Query <String>]`:
+  - `[Query <String>]`: 
+  - `[Timespan <String>]`:
 
 ## RELATED LINKS
 

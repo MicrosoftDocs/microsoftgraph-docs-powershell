@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfilePatent
 
 ## SYNOPSIS
-Create a new itemPatent object within a user's profile.
+Create new navigation property to patents for users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new itemPatent object within a user's profile.
+Create new navigation property to patents for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -567,8 +567,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepatent)
-
-[https://learn.microsoft.com/graph/api/profile-post-patents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-patents?view=graph-rest-1.0)
 
 
 

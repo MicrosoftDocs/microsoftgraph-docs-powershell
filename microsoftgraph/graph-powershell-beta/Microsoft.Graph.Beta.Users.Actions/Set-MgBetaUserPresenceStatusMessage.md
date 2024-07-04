@@ -320,7 +320,7 @@ See below for possible values.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserpresencestatusmessage)
 
-[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta](https://learn.microsoft.com/graph/api/presence-setstatusmessage?view=graph-rest-beta)
 
 
 

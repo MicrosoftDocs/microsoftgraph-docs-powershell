@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaShareListItemDocumentSetVersion
 
 ## SYNOPSIS
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -61,7 +61,7 @@ Get-MgBetaShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a documentSetVersion object.
+Version information for a document set version created by a user.
 
 ## PARAMETERS
 
@@ -367,10 +367,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-documentsetversions?view=graph-rest-1.0)
 
 
 

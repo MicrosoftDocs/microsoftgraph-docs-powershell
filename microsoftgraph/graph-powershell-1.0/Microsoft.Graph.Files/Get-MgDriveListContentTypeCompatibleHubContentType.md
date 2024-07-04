@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeCompatibleHubContentType
 
 ## SYNOPSIS
-Invoke function getCompatibleHubContentTypes
+Get a list of compatible content types from the content type hub that can be added to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
@@ -32,7 +35,10 @@ Get-MgDriveListContentTypeCompatibleHubContentType -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function getCompatibleHubContentTypes
+Get a list of compatible content types from the content type hub that can be added to a target site or a list.
+This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
+The method allows users to pull content types directly from the content type hub to a site or list.
+For more information, see contentType: addCopyFromContentTypeHub and the blog post Syntex Product Updates - August 2021.
 
 ## PARAMETERS
 
@@ -277,6 +283,8 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecompatiblehubcontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdrivelistcontenttypecompatiblehubcontenttype)
+
+[https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-getcompatiblehubcontenttypes?view=graph-rest-1.0)
 
 
 

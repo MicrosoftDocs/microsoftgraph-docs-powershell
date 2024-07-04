@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityLabelRetentionLabel
 
 ## SYNOPSIS
-Update the properties of a retentionLabel object.
-To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+Update the navigation property retentionLabels in security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelRetentionLabel?view=graph-powershell-1.0)
@@ -59,8 +58,7 @@ Update-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a retentionLabel object.
-To update a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+Update the navigation property retentionLabels in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -857,8 +855,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabelretentionlabel)
-
-[https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentionlabel-update?view=graph-rest-1.0)
 
 
 

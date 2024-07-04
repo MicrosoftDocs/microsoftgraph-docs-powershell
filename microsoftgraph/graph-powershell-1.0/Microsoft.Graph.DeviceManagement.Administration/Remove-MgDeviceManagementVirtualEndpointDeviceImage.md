@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
-Delete a cloudPcDeviceImage object.
+Delete navigation property deviceImages for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Delete a cloudPcDeviceImage object.
+Delete navigation property deviceImages for deviceManagement
 
 ## PARAMETERS
 
@@ -217,8 +217,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointdeviceimage)
-
-[https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-delete?view=graph-rest-1.0)
 
 
 

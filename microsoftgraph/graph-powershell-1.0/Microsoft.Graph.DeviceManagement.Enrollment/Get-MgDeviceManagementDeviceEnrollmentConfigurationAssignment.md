@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Read properties and relationships of the enrollmentConfigurationAssignment object.
+The list of group assignments for the device configuration profile
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the enrollmentConfigurationAssignment object.
+The list of group assignments for the device configuration profile
 
 ## PARAMETERS
 
@@ -311,10 +311,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/get-mgdevicemanagementdeviceenrollmentconfigurationassignment)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-list?view=graph-rest-1.0)
 
 
 

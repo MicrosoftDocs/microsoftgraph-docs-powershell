@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTeamScheduleOpenShift
 
 ## SYNOPSIS
-Delete an openShift object.
+Delete navigation property openShifts for teams
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOpenShift?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete an openShift object.
+Delete navigation property openShifts for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,8 +261,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduleopenshift)
-
-[https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-delete?view=graph-rest-1.0)
 
 
 

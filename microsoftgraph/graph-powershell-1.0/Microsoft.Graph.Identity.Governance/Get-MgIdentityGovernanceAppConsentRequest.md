@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAppConsentRequest
 
 ## SYNOPSIS
-Read the properties and relationships of an appConsentRequest object.
+A collection of appConsentRequest objects representing apps for which admin consent has been requested by one or more users.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceIdent
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an appConsentRequest object.
+A collection of appConsentRequest objects representing apps for which admin consent has been requested by one or more users.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -370,10 +370,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceappconsentrequest)
-
-[https://learn.microsoft.com/graph/api/appconsentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentrequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appconsentapprovalroute-list-appconsentrequests?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a reviewSet object.
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a reviewSet object.
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -332,8 +336,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasereviewset)
-
-[https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-reviewset-get?view=graph-rest-1.0)
 
 
 

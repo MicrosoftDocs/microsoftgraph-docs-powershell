@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 
 ## SYNOPSIS
-Read the properties and relationships of a lifecycleManagementSettings object.
+The settings of the lifecycle workflows instance.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a lifecycleManagementSettings object.
+The settings of the lifecycle workflows instance.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,8 +128,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecyclemanagementsettings-get?view=graph-rest-1.0)
 
 
 

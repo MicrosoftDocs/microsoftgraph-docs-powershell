@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaPlannerTaskDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## SYNTAX
 
@@ -20,7 +21,8 @@ Get-MgBetaPlannerTaskDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Pro
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted tasks in either a Planner plan or assigned to the signed-in user without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## PARAMETERS
 
@@ -234,6 +236,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdelta)
+
+[https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannertask-delta?view=graph-rest-beta)
 
 
 

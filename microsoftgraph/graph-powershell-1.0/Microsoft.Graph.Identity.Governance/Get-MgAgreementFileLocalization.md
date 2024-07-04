@@ -386,8 +386,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreementfilelocalization)
 
-[https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreementfile-list-localizations?view=graph-rest-1.0)
-
 
 
 

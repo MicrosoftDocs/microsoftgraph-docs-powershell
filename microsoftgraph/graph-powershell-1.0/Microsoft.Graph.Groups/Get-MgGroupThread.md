@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgGroupThread
 
 ## SYNOPSIS
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+The group's conversation threads.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
@@ -37,8 +37,8 @@ Get-MgGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [-Respon
 ```
 
 ## DESCRIPTION
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.
+The group's conversation threads.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -329,10 +329,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupthread)
-
-[https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-threads?view=graph-rest-1.0)
 
 
 

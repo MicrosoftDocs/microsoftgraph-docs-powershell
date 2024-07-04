@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementAssignmentPolicy
 
 ## SYNOPSIS
-In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
+Delete navigation property assignmentPolicies for identityGovernance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-In Microsoft Entra entitlement management, delete an accessPackageAssignmentPolicy.
+Delete navigation property assignmentPolicies for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -269,8 +269,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementassignmentpolicy)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentpolicy-delete?view=graph-rest-1.0)
 
 
 

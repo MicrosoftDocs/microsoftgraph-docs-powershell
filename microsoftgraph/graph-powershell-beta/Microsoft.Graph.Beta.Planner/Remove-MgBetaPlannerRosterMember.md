@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPlannerRosterMember
 
 ## SYNOPSIS
-Delete a plannerRosterMember object.
+Delete navigation property members for planner
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete a plannerRosterMember object.
+Delete navigation property members for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -225,8 +225,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerrostermember)
-
-[https://learn.microsoft.com/graph/api/plannerrostermember-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerrostermember-delete?view=graph-rest-1.0)
 
 
 

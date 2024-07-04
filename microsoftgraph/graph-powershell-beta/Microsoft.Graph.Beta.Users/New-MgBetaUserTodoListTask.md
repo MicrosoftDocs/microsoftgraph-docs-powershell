@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserTodoListTask
 
 ## SYNOPSIS
-Create a new task object in a specified todoTaskList.
+Create new navigation property to tasks for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserTodoListTask](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTask?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ New-MgBetaUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new task object in a specified todoTaskList.
+Create new navigation property to tasks for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -845,8 +845,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetausertodolisttask)
-
-[https://learn.microsoft.com/graph/api/todotasklist-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-post-tasks?view=graph-rest-1.0)
 
 
 

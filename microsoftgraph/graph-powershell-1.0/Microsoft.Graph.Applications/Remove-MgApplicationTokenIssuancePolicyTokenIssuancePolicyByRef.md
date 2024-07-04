@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Remove a tokenIssuancePolicy from an application.
+Delete ref of navigation property tokenIssuancePolicies for applications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenIssuancePolicyTokenIssuancePolicyByRef?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgApplicationTokenIssuancePolicyTokenIssuancePolicyByRef -InputObject <IA
 ```
 
 ## DESCRIPTION
-Remove a tokenIssuancePolicy from an application.
+Delete ref of navigation property tokenIssuancePolicies for applications
 
 ## PARAMETERS
 
@@ -218,6 +218,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -231,8 +232,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationtokenissuancepolicytokenissuancepolicybyref)
-
-[https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-delete-tokenissuancepolicies?view=graph-rest-1.0)
 
 
 

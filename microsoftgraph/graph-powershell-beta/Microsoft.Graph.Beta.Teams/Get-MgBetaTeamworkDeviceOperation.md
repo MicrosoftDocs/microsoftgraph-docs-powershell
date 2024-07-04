@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeviceOperation
 
 ## SYNOPSIS
-Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
+The async operations on the device.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
+The async operations on the device.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamworkDeviceOperation Cmdlet
@@ -359,10 +359,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceoperation)
-
-[https://learn.microsoft.com/graph/api/teamworkdeviceoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkdeviceoperation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/teamworkdeviceoperation-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamworkdeviceoperation-list?view=graph-rest-1.0)
 
 
 

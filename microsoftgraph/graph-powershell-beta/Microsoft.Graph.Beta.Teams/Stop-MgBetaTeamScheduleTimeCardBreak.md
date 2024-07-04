@@ -308,7 +308,7 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/stop-mgbetateamscheduletimecardbreak)
 
-[https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-beta](https://learn.microsoft.com/graph/api/timecard-endbreak?view=graph-rest-beta)
 
 
 

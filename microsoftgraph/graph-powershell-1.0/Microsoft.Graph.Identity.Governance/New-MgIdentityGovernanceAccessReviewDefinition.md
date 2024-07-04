@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Create a new accessReviewScheduleDefinition object.
+Create new navigation property to definitions for identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ```
 
 ## DESCRIPTION
-Create a new accessReviewScheduleDefinition object.
+Create new navigation property to definitions for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Create an access review on a group
@@ -1258,8 +1258,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition)
-
-[https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0)
 
 
 

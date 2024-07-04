@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Deletes a windowsAutopilotDeviceIdentity.
+Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMan
 ```
 
 ## DESCRIPTION
-Deletes a windowsAutopilotDeviceIdentity.
+Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
 
 ## PARAMETERS
 
@@ -196,8 +196,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/remove-mgdevicemanagementwindowsautopilotdeviceidentity)
-
-[https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-delete?view=graph-rest-1.0)
 
 
 

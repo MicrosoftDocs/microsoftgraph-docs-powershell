@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOauth2PermissionGrantDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
+For details, see Using delta query.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOauth2PermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaOauth2PermissionGrantDelta?view=graph-powershell-beta)
@@ -23,7 +24,8 @@ Get-MgOauth2PermissionGrantDelta [-ExpandProperty <String[]>] [-Filter <String>]
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted oauth2permissiongrant objects without performing a full read of the entire resource collection.
+For details, see Using delta query.
 
 ## EXAMPLES
 
@@ -239,6 +241,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta)
+
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delta?view=graph-rest-1.0)
 
 
 

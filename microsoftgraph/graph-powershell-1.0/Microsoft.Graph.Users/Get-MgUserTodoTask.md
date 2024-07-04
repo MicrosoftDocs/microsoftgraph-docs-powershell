@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTodoTask
 
 ## SYNOPSIS
-Read the properties and relationships of a todoTask object.
+The tasks in this task list.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTask](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserTodoTask?view=graph-powershell-beta)
@@ -38,7 +40,9 @@ Get-MgUserTodoTask -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a todoTask object.
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -335,10 +339,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotask](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusertodotask)
-
-[https://learn.microsoft.com/graph/api/todotask-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/todotasklist-list-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotasklist-list-tasks?view=graph-rest-1.0)
 
 
 

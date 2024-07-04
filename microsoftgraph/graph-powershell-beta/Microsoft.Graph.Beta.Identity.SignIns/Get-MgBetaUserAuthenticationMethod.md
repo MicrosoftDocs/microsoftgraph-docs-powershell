@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationMethod
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an authenticationMethod object.
+Represents all authentication methods registered to a user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationMethod -InputObject <IIdentitySignInsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an authenticationMethod object.
+Represents all authentication methods registered to a user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -397,10 +397,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationmethod)
-
-[https://learn.microsoft.com/graph/api/authenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authentication-list-methods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-methods?view=graph-rest-1.0)
 
 
 

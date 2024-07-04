@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 
 ## SYNOPSIS
-Read the properties and relationships of a certificateBasedApplicationConfiguration object.
+Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a certificateBasedApplicationConfiguration object.
+Defines the trusted certificate authorities for certificates that can be added to apps and service principals in the tenant.
 
 ## PARAMETERS
 
@@ -336,10 +336,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthoritycertificatebasedapplicationconfiguration)
-
-[https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificatebasedapplicationconfiguration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/certificateauthoritypath-list-certificatebasedapplicationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/certificateauthoritypath-list-certificatebasedapplicationconfigurations?view=graph-rest-1.0)
 
 
 

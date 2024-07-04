@@ -207,6 +207,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitecontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsitecontenttypepublished)
 
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-beta)
+
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintPrinter
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a printer object.
+The list of printers registered in the tenant.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinter?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a printer object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printer-get-permissions.md)]
+The list of printers registered in the tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,10 +316,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinter](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprinter)
-
-[https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-printers?view=graph-rest-1.0)
 
 
 

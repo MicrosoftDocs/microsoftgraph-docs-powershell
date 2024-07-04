@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance
 
 ## SYNOPSIS
-Read the properties and relationships of a managedDeviceCompliance object.
+The collection of compliance for managed devices across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagedDeviceCompliance -InputObject <I
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a managedDeviceCompliance object.
+The collection of compliance for managed devices across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliance](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanageddevicecompliance)
-
-[https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-manageddevicecompliance-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-manageddevicecompliances?view=graph-rest-1.0)
 
 
 

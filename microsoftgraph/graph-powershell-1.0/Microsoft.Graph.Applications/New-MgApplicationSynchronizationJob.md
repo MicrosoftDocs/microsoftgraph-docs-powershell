@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for applications
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
@@ -52,9 +50,7 @@ New-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for applications
 
 ## PARAMETERS
 
@@ -566,6 +562,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -800,8 +797,6 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgapplicationsynchronizationjob)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a countryNamedLocation object.
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a countryNamedLocation object.
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ## EXAMPLES
 ### Example 1: Get a list of all named locations
@@ -396,10 +400,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessnamedlocation)
-
-[https://learn.microsoft.com/graph/api/countrynamedlocation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/countrynamedlocation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-namedlocations?view=graph-rest-1.0)
 
 
 

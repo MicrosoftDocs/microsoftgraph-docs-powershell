@@ -364,8 +364,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipaltransitivememberof)
 
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)
-
 
 
 

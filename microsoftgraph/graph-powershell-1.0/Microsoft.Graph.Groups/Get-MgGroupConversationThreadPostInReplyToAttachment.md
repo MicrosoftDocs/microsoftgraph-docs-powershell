@@ -384,8 +384,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostinreplytoattachment)
 
-[https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-list-attachments?view=graph-rest-1.0)
-
 
 
 

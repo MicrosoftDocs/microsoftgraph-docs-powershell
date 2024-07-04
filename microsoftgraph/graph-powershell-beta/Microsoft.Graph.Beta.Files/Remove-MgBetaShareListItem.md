@@ -246,8 +246,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetasharelistitem)
 
-[https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-delete?view=graph-rest-1.0)
-
 
 
 

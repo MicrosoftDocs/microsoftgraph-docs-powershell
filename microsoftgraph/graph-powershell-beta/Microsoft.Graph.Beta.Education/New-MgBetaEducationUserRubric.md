@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationUserRubric
 
 ## SYNOPSIS
-Create a new educationRubric object.
+Create new navigation property to rubrics for education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserRubric?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ New-MgBetaEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new educationRubric object.
+Create new navigation property to rubrics for education
 
 ## EXAMPLES
 
@@ -445,8 +445,6 @@ Weights must add up to 100.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserrubric](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserrubric)
-
-[https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationuser-post-rubrics?view=graph-rest-1.0)
 
 
 

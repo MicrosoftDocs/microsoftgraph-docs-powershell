@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator
 
 ## SYNOPSIS
-Invoke function filterOperators
+List all operators supported in the scoping filters.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator -InputO
 ```
 
 ## DESCRIPTION
-Invoke function filterOperators
+List all operators supported in the scoping filters.
 
 ## PARAMETERS
 
@@ -301,6 +301,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationtemplateschemaoperator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafilterserviceprincipalsynchronizationtemplateschemaoperator)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-filteroperators?view=graph-rest-beta)
 
 
 

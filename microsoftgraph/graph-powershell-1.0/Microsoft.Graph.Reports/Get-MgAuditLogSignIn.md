@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgAuditLogSignIn
 
 ## SYNOPSIS
-Retrieve a specific Microsoft Entra user sign-in event for your tenant.
-Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Get signIns from auditLogs
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
@@ -38,8 +37,7 @@ Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Retrieve a specific Microsoft Entra user sign-in event for your tenant.
-Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
+Get signIns from auditLogs
 
 ## EXAMPLES
 ### Example 1: List all sign-ins
@@ -337,10 +335,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgauditlogsignin)
-
-[https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-list?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment
 
 ## SYNOPSIS
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsAndroidStoreAppAssignment?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementMobileAppAsAndroidStoreAppAssignment
 ```
 
 ## DESCRIPTION
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 ## PARAMETERS
 
@@ -243,8 +243,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasandroidstoreappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasandroidstoreappassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0)
 
 
 

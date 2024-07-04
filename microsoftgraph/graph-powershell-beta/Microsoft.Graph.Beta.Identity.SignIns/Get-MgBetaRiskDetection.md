@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRiskDetection
 
 ## SYNOPSIS
-Retrieve the properties of a riskDetection object.
+Risk detection in Microsoft Entra ID Protection and the associated information about the detection.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a riskDetection object.
+Risk detection in Microsoft Entra ID Protection and the associated information about the detection.
 
 ## EXAMPLES
 ### Example 1: Get all riskDetections
@@ -430,10 +430,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskdetection)
-
-[https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskdetection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/riskdetection-list?view=graph-rest-1.0)
 
 
 

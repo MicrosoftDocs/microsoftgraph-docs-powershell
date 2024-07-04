@@ -392,8 +392,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteonenotenotebooksection)
 
-[https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-list-sections?view=graph-rest-1.0)
-
 
 
 

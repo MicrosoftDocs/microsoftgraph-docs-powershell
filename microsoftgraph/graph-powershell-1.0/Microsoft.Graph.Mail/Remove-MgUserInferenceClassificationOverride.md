@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Delete an override specified by its ID.
+Delete navigation property overrides for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserInferenceClassificationOverride -InputObject <IMailIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete an override specified by its ID.
+Delete navigation property overrides for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -229,8 +229,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mguserinferenceclassificationoverride](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mguserinferenceclassificationoverride)
-
-[https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/inferenceclassificationoverride-delete?view=graph-rest-1.0)
 
 
 

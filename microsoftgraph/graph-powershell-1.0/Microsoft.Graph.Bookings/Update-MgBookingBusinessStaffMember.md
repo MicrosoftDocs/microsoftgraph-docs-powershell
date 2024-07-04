@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Update the properties of a bookingStaffMember in the specified bookingBusiness.
+Update the navigation property staffMembers in solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update the properties of a bookingStaffMember in the specified bookingBusiness.
+Update the navigation property staffMembers in solutions
 
 ## PARAMETERS
 
@@ -253,8 +253,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember)
-
-[https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingstaffmember-update?view=graph-rest-1.0)
 
 
 

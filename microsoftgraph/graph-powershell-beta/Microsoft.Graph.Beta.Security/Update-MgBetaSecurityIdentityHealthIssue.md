@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityIdentityHealthIssue
 
 ## SYNOPSIS
-Update the properties of a healthIssue object.
+Update the navigation property healthIssues in security
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgBetaSecurityIdentityHealthIssue -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a healthIssue object.
+Update the navigation property healthIssues in security
 
 ## PARAMETERS
 
@@ -534,8 +534,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityidentityhealthissue)
-
-[https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-healthissue-update?view=graph-rest-1.0)
 
 
 

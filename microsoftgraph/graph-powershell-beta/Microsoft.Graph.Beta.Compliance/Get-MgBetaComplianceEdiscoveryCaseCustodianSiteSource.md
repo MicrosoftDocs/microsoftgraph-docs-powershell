@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource
 
 ## SYNOPSIS
-Read the properties and relationships of a siteSource object.
+Data source entity for SharePoint sites associated with the custodian.
 
 ## SYNTAX
 
@@ -36,10 +35,7 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a siteSource object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-sitesource-get-permissions.md)]
+Data source entity for SharePoint sites associated with the custodian.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -351,10 +347,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-sitesource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-sitesource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-sitesources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-sitesources?view=graph-rest-1.0)
 
 
 

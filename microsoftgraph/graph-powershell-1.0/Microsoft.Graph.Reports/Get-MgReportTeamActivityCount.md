@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgReportTeamActivityCount
 
 ## SYNOPSIS
-Invoke function getTeamsTeamActivityCounts
+Get the number of team activities across Microsoft Teams.
+The activity types are related to meetings and messages.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamActivityCount?view=graph-powershell-beta)
@@ -29,7 +30,8 @@ Get-MgReportTeamActivityCount -InputObject <IReportsIdentity> -OutFile <String>
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsTeamActivityCounts
+Get the number of team activities across Microsoft Teams.
+The activity types are related to meetings and messages.
 
 ## PARAMETERS
 
@@ -182,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportteamactivitycount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitycounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getteamsteamactivitycounts?view=graph-rest-1.0)
 
 
 

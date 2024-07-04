@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema
 
 ## SYNOPSIS
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionApplicationSynchronizationTemplateSchema?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ Invoke-MgBetaFunctionApplicationSynchronizationTemplateSchema -InputObject <IApp
 ```
 
 ## DESCRIPTION
-Invoke function functions
+List all the functions currently supported in the attributeMappingSource.
 
 ## PARAMETERS
 
@@ -301,6 +301,8 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionapplicationsynchronizationtemplateschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetafunctionapplicationsynchronizationtemplateschema)
+
+[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-functions?view=graph-rest-beta)
 
 
 

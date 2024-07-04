@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUserMessageExtension
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to extensions for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageExtension?view=graph-powershell-beta)
@@ -46,9 +44,7 @@ New-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hashtabl
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to extensions for users
 
 ## PARAMETERS
 
@@ -250,8 +246,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageextension](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermessageextension)
-
-[https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
 
 
 

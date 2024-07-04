@@ -357,8 +357,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserowneddevice)
 
-[https://learn.microsoft.com/graph/api/user-list-owneddevices?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-owneddevices?view=graph-rest-1.0)
-
 
 
 

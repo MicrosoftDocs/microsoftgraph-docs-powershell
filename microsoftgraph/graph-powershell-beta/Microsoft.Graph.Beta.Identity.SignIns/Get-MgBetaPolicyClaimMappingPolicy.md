@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyClaimMappingPolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a claimsMappingPolicy object.
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyClaimMappingPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a claimsMappingPolicy object.
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyclaimmappingpolicy)
-
-[https://learn.microsoft.com/graph/api/claimsmappingpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/claimsmappingpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/claimsmappingpolicy-list?view=graph-rest-1.0)
 
 
 

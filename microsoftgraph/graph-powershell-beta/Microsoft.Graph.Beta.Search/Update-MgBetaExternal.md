@@ -480,6 +480,16 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
       - `[Status <String>]`: longRunningOperationStatus
       - `[StatusDetail <String>]`: Details about the status of the operation.
+    - `[OutboundProvisioningFlowSets <IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet- `[]`>]`: 
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[DisplayName <String>]`: The display name of the flowSet provided by the caller.
+      - `[Filter <IMicrosoftGraphIndustryDataFilter>]`: filter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ProvisioningFlows <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>]`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+        - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+        - `[ReadinessStatus <String>]`: readinessStatus
     - `[ReferenceDefinitions <IMicrosoftGraphIndustryDataReferenceDefinition- `[]`>]`: Set of user modifiable system picker types.
     - `[RoleGroups <IMicrosoftGraphIndustryDataRoleGroup- `[]`>]`: Set of groups of individual roles that makes role-based admin simpler.
     - `[Runs <IMicrosoftGraphIndustryDataRun- `[]`>]`: Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.
@@ -742,6 +752,16 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
     - `[Status <String>]`: longRunningOperationStatus
     - `[StatusDetail <String>]`: Details about the status of the operation.
+  - `[OutboundProvisioningFlowSets <IMicrosoftGraphIndustryDataOutboundProvisioningFlowSet- `[]`>]`: 
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[DisplayName <String>]`: The display name of the flowSet provided by the caller.
+    - `[Filter <IMicrosoftGraphIndustryDataFilter>]`: filter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ProvisioningFlows <IMicrosoftGraphIndustryDataProvisioningFlow- `[]`>]`: A flow that provisions relevant records of a given entity type in the Microsoft 365 tenant.
+      - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+      - `[ReadinessStatus <String>]`: readinessStatus
   - `[ReferenceDefinitions <IMicrosoftGraphIndustryDataReferenceDefinition- `[]`>]`: Set of user modifiable system picker types.
   - `[RoleGroups <IMicrosoftGraphIndustryDataRoleGroup- `[]`>]`: Set of groups of individual roles that makes role-based admin simpler.
   - `[Runs <IMicrosoftGraphIndustryDataRun- `[]`>]`: Set of ephemeral runs which present the point-in-time that diagnostic state of activities performed by the system.

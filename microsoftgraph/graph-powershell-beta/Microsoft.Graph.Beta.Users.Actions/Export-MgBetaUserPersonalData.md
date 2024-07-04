@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
-For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
+For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Export-MgUserPersonalData](/powershell/module/Microsoft.Graph.Users.Actions/Export-MgUserPersonalData?view=graph-powershell-1.0)
@@ -50,7 +50,7 @@ Export-MgBetaUserPersonalData -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 This data includes the user's data stored in OneDrive and their activity reports.
-For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
+For more information about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/user-exportpersonaldata-permissions.md)]
@@ -305,7 +305,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/export-mgbetauserpersonaldata)
 
-[https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta](https://learn.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-beta)
 
 
 

@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgUserSetting
 
 ## SYNOPSIS
-Update the properties of the userSettings object.
-Users in the same organization can have different settings based on their preference or on the organization policies.
-To get the user current settings, see current user settings.
+Update the navigation property settings in users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
@@ -50,9 +48,7 @@ Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the properties of the userSettings object.
-Users in the same organization can have different settings based on their preference or on the organization policies.
-To get the user current settings, see current user settings.
+Update the navigation property settings in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -482,8 +478,6 @@ Refers to the user's Windows device that modified the object at the specified da
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersetting)
-
-[https://learn.microsoft.com/graph/api/usersettings-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-update?view=graph-rest-1.0)
 
 
 

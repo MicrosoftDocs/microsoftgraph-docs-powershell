@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgUserDriveListContentTypePublished
 
 ## SYNOPSIS
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Test-MgBetaUserDriveListContentTypePublished](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Test-MgBetaUserDriveListContentTypePublished?view=graph-powershell-beta)
@@ -30,7 +30,10 @@ Test-MgUserDriveListContentTypePublished -InputObject <IUsersFunctionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke function isPublished
+Check the publishing status of a contentType in a content type hub site.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/contenttype-ispublished-permissions.md)]
 
 ## PARAMETERS
 
@@ -187,6 +190,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished](https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions/test-mguserdrivelistcontenttypepublished)
+
+[https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-ispublished?view=graph-rest-1.0)
 
 
 

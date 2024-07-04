@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
 
 ## SYNOPSIS
-Update the properties of a deviceComplianceActionItem object.
+Update the navigation property scheduledActionConfigurations in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledAc
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceComplianceActionItem object.
+Update the navigation property scheduledActionConfigurations in deviceManagement
 
 ## PARAMETERS
 
@@ -387,8 +387,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyscheduledactionforrulescheduledactionconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecomplianceactionitem-update?view=graph-rest-1.0)
 
 
 

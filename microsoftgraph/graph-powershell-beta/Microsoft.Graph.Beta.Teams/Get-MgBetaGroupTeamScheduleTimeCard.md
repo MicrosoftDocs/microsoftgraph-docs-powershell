@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamScheduleTimeCard
 
 ## SYNOPSIS
-Get the properties and relationships of a timeCard object by ID.
+The time cards in the schedule.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a timeCard object by ID.
+The time cards in the schedule.
 
 ## PARAMETERS
 
@@ -343,10 +343,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduletimecard)
-
-[https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-list?view=graph-rest-1.0)
 
 
 

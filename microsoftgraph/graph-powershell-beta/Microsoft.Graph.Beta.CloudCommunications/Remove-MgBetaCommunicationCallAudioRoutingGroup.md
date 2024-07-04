@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Delete the specified audioRoutingGroup.
+Delete navigation property audioRoutingGroups for communications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 ```
 
 ## DESCRIPTION
-Delete the specified audioRoutingGroup.
+Delete navigation property audioRoutingGroups for communications
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
@@ -235,8 +235,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallaudioroutinggroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallaudioroutinggroup)
-
-[https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/audioroutinggroup-delete?view=graph-rest-1.0)
 
 
 

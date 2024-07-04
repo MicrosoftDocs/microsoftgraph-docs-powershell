@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatSubmissionFileThreat
 
 ## SYNOPSIS
-Read the properties and relationships of a fileThreatSubmission object.
+Get fileThreats from security
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityThreatSubmissionFileThreat -InputObject <ISecurityIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a fileThreatSubmission object.
+Get fileThreats from security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -382,10 +382,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmissionfilethreat)
-
-[https://learn.microsoft.com/graph/api/security-filethreatsubmission-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-filethreatsubmission-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-filethreatsubmission-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-filethreatsubmission-list?view=graph-rest-1.0)
 
 
 

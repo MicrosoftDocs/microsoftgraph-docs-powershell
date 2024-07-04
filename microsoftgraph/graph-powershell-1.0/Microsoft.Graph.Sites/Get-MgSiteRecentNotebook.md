@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteRecentNotebook
 
 ## SYNOPSIS
-Invoke function getRecentNotebooks
+Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <String
 ```
 
 ## DESCRIPTION
-Invoke function getRecentNotebooks
+Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
 ## PARAMETERS
 
@@ -258,12 +258,15 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook)
+
+[https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
 
 
 

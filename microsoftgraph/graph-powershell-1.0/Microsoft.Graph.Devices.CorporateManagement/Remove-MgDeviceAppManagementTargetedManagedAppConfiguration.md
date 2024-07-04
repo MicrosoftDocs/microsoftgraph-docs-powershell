@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementTargetedManagedAppConfiguration
 
 ## SYNOPSIS
-Deletes a targetedManagedAppConfiguration.
+Delete navigation property targetedManagedAppConfigurations for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Deletes a targetedManagedAppConfiguration.
+Delete navigation property targetedManagedAppConfigurations for deviceAppManagement
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementtargetedmanagedappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementtargetedmanagedappconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-targetedmanagedappconfiguration-delete?view=graph-rest-1.0)
 
 
 

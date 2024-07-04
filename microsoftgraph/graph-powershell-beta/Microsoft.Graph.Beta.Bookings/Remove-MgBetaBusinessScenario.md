@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaBusinessScenario
 
 ## SYNOPSIS
-Delete a businessScenario object.
-The deletion of a scenario causes all data associated with the scenario to be deleted.
+Delete navigation property businessScenarios for solutions
 
 ## SYNTAX
 
@@ -28,8 +27,7 @@ Remove-MgBetaBusinessScenario -InputObject <IBookingsIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete a businessScenario object.
-The deletion of a scenario causes all data associated with the scenario to be deleted.
+Delete navigation property businessScenarios for solutions
 
 ## PARAMETERS
 
@@ -214,8 +212,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenario](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabusinessscenario)
-
-[https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/businessscenario-delete?view=graph-rest-1.0)
 
 
 

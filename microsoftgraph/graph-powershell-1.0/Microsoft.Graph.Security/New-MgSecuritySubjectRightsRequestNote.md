@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecuritySubjectRightsRequestNote
 
 ## SYNOPSIS
-Create a new authoredNote object.
+Create new navigation property to notes for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecuritySubjectRightsRequestNote?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgSecuritySubjectRightsRequestNote -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create a new authoredNote object.
+Create new navigation property to notes for security
 
 ## PARAMETERS
 
@@ -365,8 +365,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritysubjectrightsrequestnote)
-
-[https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
 
 
 

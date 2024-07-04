@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityAction
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a securityAction object.
+Get securityActions from security
 
 ## SYNTAX
 
@@ -35,10 +35,7 @@ Get-MgBetaSecurityAction -InputObject <ISecurityIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a securityAction object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/securityaction-get-permissions.md)]
+Get securityActions from security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -385,10 +382,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityaction)
-
-[https://learn.microsoft.com/graph/api/securityaction-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityaction-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/securityactions-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityactions-list?view=graph-rest-1.0)
 
 
 

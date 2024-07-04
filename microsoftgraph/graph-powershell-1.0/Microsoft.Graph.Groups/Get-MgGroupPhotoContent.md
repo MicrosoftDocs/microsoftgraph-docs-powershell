@@ -229,8 +229,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphotocontent](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupphotocontent)
 
-[https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-photos?view=graph-rest-1.0)
-
 
 
 

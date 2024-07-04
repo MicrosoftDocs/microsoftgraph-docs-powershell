@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 
 ## SYNOPSIS
-Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+Get microsoftApplicationDataAccess from organization
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdent
 ```
 
 ## DESCRIPTION
-Get the settings in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
+Get microsoftApplicationDataAccess from organization
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
@@ -214,8 +214,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess)
-
-[https://learn.microsoft.com/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationsettings-list-microsoftapplicationdataaccess?view=graph-rest-1.0)
 
 
 

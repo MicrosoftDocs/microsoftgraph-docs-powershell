@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteGetByPathList
 
 ## SYNOPSIS
-Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
+The collection of lists under this site.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathList?view=graph-powershell-1.0)
@@ -24,8 +23,7 @@ Get-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -Path1 <String
 ```
 
 ## DESCRIPTION
-Get the collection of \[lists\]\[\] for a \[site\]\[\].
-Lists with the \[system\]\[\] facet are hidden by default.To list them, include system in your $select statement.
+The collection of lists under this site.
 
 ## PARAMETERS
 
@@ -299,8 +297,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathlist)
-
-[https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-list?view=graph-rest-1.0)
 
 
 

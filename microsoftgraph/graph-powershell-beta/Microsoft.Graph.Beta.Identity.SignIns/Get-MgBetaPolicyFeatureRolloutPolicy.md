@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a featureRolloutPolicy object.
+The feature rollout policy associated with a directory object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a featureRolloutPolicy object.
+The feature rollout policy associated with a directory object.
 
 ## EXAMPLES
 ### Example 1: Get a feature rollout policy
@@ -391,10 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyfeaturerolloutpolicy)
-
-[https://learn.microsoft.com/graph/api/featurerolloutpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/featurerolloutpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/list-featurerolloutpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-featurerolloutpolicies?view=graph-rest-1.0)
 
 
 

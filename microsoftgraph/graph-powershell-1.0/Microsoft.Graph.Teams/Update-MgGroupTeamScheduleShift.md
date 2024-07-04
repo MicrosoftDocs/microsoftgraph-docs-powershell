@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamScheduleShift
 
 ## SYNOPSIS
-Replace an existing shift.
-If the specified shift doesn't exist, this method returns 404 Not found.
-The duration of a shift can't be less than 1 minute or longer than 24 hours.
+Update the navigation property shifts in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleShift?view=graph-powershell-beta)
@@ -50,9 +48,7 @@ Update-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Replace an existing shift.
-If the specified shift doesn't exist, this method returns 404 Not found.
-The duration of a shift can't be less than 1 minute or longer than 24 hours.
+Update the navigation property shifts in groups
 
 ## PARAMETERS
 
@@ -468,8 +464,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleshift)
-
-[https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/shift-put?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemVersion
 
 ## SYNOPSIS
-Retrieve the metadata for a specific version of a ListItem.
+The list of previous versions of the list item.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteListItemVersion?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a specific version of a ListItem.
+The list of previous versions of the list item.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -385,16 +385,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversion](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitelistitemversion)
-
-[https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitemversion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list-versions?view=graph-rest-1.0)
 
 
 

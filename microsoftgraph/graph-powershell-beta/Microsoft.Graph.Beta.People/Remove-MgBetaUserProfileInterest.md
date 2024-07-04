@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileInterest
 
 ## SYNOPSIS
-Deletes a personInterest object from a user's profile.
+Delete navigation property interests for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileInterest -InputObject <IPeopleIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Deletes a personInterest object from a user's profile.
+Delete navigation property interests for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileinterest)
-
-[https://learn.microsoft.com/graph/api/personinterest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personinterest-delete?view=graph-rest-1.0)
 
 
 

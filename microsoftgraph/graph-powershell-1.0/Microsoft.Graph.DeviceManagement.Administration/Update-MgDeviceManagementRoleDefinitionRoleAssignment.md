@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementRoleDefinitionRoleAssignment
 
 ## SYNOPSIS
-Update the properties of a roleAssignment object.
+Update the navigation property roleAssignments in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgDeviceManagementRoleDefinitionRoleAssignment -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Update the properties of a roleAssignment object.
+Update the navigation property roleAssignments in deviceManagement
 
 ## PARAMETERS
 
@@ -405,8 +405,6 @@ These must match the actionName that is defined as part of the rolePermission.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-roleassignment-update?view=graph-rest-1.0)
 
 
 

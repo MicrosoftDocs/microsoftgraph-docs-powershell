@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserTodoTaskLinkedResource
 
 ## SYNOPSIS
-Read the properties and relationships of a linkedResource object.
+A collection of resources linked to the task.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskLinkedResource?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserTodoTaskLinkedResource -InputObject <IUsersIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a linkedResource object.
+A collection of resources linked to the task.
 
 ## PARAMETERS
 
@@ -361,10 +361,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausertodotasklinkedresource)
-
-[https://learn.microsoft.com/graph/api/linkedresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/linkedresource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/todotask-list-linkedresources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/todotask-list-linkedresources?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserDriveListItemField
 
 ## SYNOPSIS
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserDriveListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemField?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Update-MgBetaUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in users
 
 ## PARAMETERS
 
@@ -277,8 +277,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetauserdrivelistitemfield)
-
-[https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0)
 
 
 

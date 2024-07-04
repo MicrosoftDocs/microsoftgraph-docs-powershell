@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagementIntent
 
 ## SYNOPSIS
-Read the properties and relationships of a managementIntent object.
+The collection of baseline management intents across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagementIntent -InputObject <IManaged
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a managementIntent object.
+The collection of baseline management intents across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTenantRelationshipManagedTenantManagementIntent Cmdlet
@@ -341,10 +341,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementintent)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementintent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementintents?view=graph-rest-1.0)
 
 
 

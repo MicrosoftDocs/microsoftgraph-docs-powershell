@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Delete the specified bookingCustomer object.
+Delete navigation property customers for bookingBusinesses
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCustomer?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Remove-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete the specified bookingCustomer object.
+Delete navigation property customers for bookingBusinesses
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaBookingBusinessCustomer Cmdlet
@@ -253,8 +253,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer)
-
-[https://learn.microsoft.com/graph/api/bookingcustomer-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomer-delete?view=graph-rest-1.0)
 
 
 

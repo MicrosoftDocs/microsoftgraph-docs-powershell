@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Read the properties and relationships of a unifiedRoleDefinition object.
-The following role-based access control (RBAC) providers are currently supported:
+Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgRoleManagementDirectoryRoleDefinition -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a unifiedRoleDefinition object.
-The following role-based access control (RBAC) providers are currently supported:
+Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## PARAMETERS
 
@@ -359,10 +357,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectoryroledefinition)
-
-[https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroledefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-1.0)
 
 
 

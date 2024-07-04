@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of an authenticationFlowsPolicy object.
+The policy configuration of the self-service sign-up experience of guests.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-1.0)
@@ -22,7 +22,7 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an authenticationFlowsPolicy object.
+The policy configuration of the self-service sign-up experience of guests.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -128,8 +128,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationflowspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationflowspolicy-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment
 
 ## SYNOPSIS
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgDeviceAppManagementMobileAppAsManagedAndroidLobAppAssignment
 ```
 
 ## DESCRIPTION
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 ## PARAMETERS
 
@@ -243,8 +243,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmanagedandroidlobappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasmanagedandroidlobappassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0)
 
 
 

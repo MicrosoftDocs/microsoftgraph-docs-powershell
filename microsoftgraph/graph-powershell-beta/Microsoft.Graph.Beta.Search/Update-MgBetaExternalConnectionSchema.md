@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalConnectionSchema
 
 ## SYNOPSIS
-Update the properties of a schema for an externalConnection.
+Update the navigation property schema in external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaExternalConnectionSchema -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a schema for an externalConnection.
+Update the navigation property schema in external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,6 +327,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -375,8 +377,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionschema)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-schema-update?view=graph-rest-1.0)
 
 
 

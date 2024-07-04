@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleShift
 
 ## SYNOPSIS
-Create a new shift instance in a schedule.
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+Create new navigation property to shifts for teams
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamScheduleShift?view=graph-powershell-beta)
@@ -49,8 +48,7 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create a new shift instance in a schedule.
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+Create new navigation property to shifts for teams
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -502,8 +500,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamscheduleshift)
-
-[https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/schedule-post-shifts?view=graph-rest-1.0)
 
 
 

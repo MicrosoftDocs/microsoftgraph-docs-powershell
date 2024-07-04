@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportSlaAzureAdAuthentication
 
 ## SYNOPSIS
-Read the properties and relationships of an azureADAuthentication object to find the level of Microsoft Entra authentication availability for your tenant.
-The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Microsoft Entra SLA performance.
-This object provides you with your tenant's actual performance against this commitment.
+Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant.
 
 ## SYNTAX
 
@@ -21,9 +19,7 @@ Get-MgBetaReportSlaAzureAdAuthentication [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an azureADAuthentication object to find the level of Microsoft Entra authentication availability for your tenant.
-The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Microsoft Entra SLA performance.
-This object provides you with your tenant's actual performance against this commitment.
+Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant.
 
 ## PARAMETERS
 
@@ -116,8 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
-
-[https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/azureadauthentication-get?view=graph-rest-1.0)
 
 
 

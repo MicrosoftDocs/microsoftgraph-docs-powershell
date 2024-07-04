@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerTask
 
 ## SYNOPSIS
-Create a new plannerTask.
+Create new navigation property to tasks for planner
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerTask?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Create a new plannerTask.
+Create new navigation property to tasks for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -755,8 +755,6 @@ For details about the supported format, see Using order hints in Planner.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/new-mgplannertask)
-
-[https://learn.microsoft.com/graph/api/planner-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/planner-post-tasks?view=graph-rest-1.0)
 
 
 

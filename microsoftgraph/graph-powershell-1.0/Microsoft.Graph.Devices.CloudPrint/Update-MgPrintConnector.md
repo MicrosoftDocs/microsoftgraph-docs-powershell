@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintConnector
 
 ## SYNOPSIS
-Update the properties of a printConnector object.
+Update the navigation property connectors in print
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgBetaPrintConnector?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a printConnector object.
+Update the navigation property connectors in print
 
 ## PARAMETERS
 
@@ -389,8 +389,6 @@ The elements should be in hierarchical order.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector)
-
-[https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-update?view=graph-rest-1.0)
 
 
 

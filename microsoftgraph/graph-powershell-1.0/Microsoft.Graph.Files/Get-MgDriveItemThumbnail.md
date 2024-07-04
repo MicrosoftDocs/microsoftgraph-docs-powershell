@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgDriveItemThumbnail
 
 ## SYNOPSIS
-Collection of \[thumbnailSet\]\[\] objects associated with the item.
-For more information, see \[getting thumbnails\]\[\].
+Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
@@ -41,8 +41,8 @@ Get-MgDriveItemThumbnail -InputObject <IFilesIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Collection of \[thumbnailSet\]\[\] objects associated with the item.
-For more information, see \[getting thumbnails\]\[\].
+Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
@@ -374,8 +374,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgdriveitemthumbnail)
-
-[https://learn.microsoft.com/graph/api/driveitem-list-thumbnails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-thumbnails?view=graph-rest-1.0)
 
 
 

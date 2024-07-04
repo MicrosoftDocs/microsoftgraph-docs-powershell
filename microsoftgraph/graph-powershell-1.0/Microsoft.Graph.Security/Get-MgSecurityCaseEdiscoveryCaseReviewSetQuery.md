@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Read the properties and relationships of an ediscoveryReviewSetQuery object.
+Represents queries within the review set.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> 
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an ediscoveryReviewSetQuery object.
+Represents queries within the review set.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -394,10 +394,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasereviewsetquery)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewsetquery-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-queries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-list-queries?view=graph-rest-1.0)
 
 
 

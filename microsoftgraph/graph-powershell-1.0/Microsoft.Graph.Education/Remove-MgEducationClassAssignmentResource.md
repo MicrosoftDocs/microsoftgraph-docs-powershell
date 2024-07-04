@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Delete a specific educationAssignmentResource attached to an assignment.
-In general, only teachers in the class can remove a resource.
-However, teachers can't remove resources marked as 'distributeToStudents', after the assignment has been published to students.
+Delete navigation property resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
@@ -33,9 +31,7 @@ Remove-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete a specific educationAssignmentResource attached to an assignment.
-In general, only teachers in the class can remove a resource.
-However, teachers can't remove resources marked as 'distributeToStudents', after the assignment has been published to students.
+Delete navigation property resources for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -253,8 +249,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationclassassignmentresource)
-
-[https://learn.microsoft.com/graph/api/educationassignmentresource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentresource-delete?view=graph-rest-1.0)
 
 
 

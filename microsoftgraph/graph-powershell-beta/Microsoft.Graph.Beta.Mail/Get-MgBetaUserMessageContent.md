@@ -186,8 +186,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessagecontent)
 
-[https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/opentypeextension-get?view=graph-rest-1.0)
-
 
 
 

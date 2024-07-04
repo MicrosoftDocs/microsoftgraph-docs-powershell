@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupCalendarPermission
 
 ## SYNOPSIS
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create new navigation property to calendarPermissions for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create new navigation property to calendarPermissions for groups
 
 ## PARAMETERS
 
@@ -337,8 +337,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mggroupcalendarpermission)
-
-[https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-calendarpermissions?view=graph-rest-1.0)
 
 
 

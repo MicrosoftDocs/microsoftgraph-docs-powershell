@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedEBookInstallSummary
 
 ## SYNOPSIS
-Read properties and relationships of the eBookInstallSummary object.
+Mobile App Install Summary.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorpor
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the eBookInstallSummary object.
+Mobile App Install Summary.
 
 ## PARAMETERS
 
@@ -196,8 +196,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookinstallsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedebookinstallsummary)
-
-[https://learn.microsoft.com/graph/api/intune-books-ebookinstallsummary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-ebookinstallsummary-get?view=graph-rest-1.0)
 
 
 

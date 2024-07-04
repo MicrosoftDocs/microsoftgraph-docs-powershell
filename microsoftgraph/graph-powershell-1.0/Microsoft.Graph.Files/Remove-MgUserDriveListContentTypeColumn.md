@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserDriveListContentTypeColumn
 
 ## SYNOPSIS
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+Delete navigation property columns for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaUserDriveListContentTypeColumn?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserDriveListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Remove a \[column\]\[columndefinition\] from a \[site\]\[\], a \[list\]\[\], or a \[content type\]\[contentType\].
+Delete navigation property columns for users
 
 ## PARAMETERS
 
@@ -261,8 +261,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdrivelistcontenttypecolumn)
-
-[https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-delete?view=graph-rest-1.0)
 
 
 

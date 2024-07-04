@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityApiConnector
 
 ## SYNOPSIS
-Create a new identityApiConnector object.
+Create new navigation property to apiConnectors for identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnect
 ```
 
 ## DESCRIPTION
-Create a new identityApiConnector object.
+Create new navigation property to apiConnectors for identity
 
 ## EXAMPLES
 ### Example 1: Create an API connector with basic authentication
@@ -274,8 +274,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector)
-
-[https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityapiconnector-create?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityAction
 
 ## SYNOPSIS
-Create a new securityAction object.
+Create new navigation property to securityActions for security
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-Respon
 ```
 
 ## DESCRIPTION
-Create a new securityAction object.
+Create new navigation property to securityActions for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -508,8 +508,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityaction)
-
-[https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityactions-post?view=graph-rest-1.0)
 
 
 

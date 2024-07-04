@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -321,7 +324,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration)
 
-[https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-beta](https://learn.microsoft.com/graph/api/customauthenticationextension-validateauthenticationconfiguration?view=graph-rest-beta)
 
 
 

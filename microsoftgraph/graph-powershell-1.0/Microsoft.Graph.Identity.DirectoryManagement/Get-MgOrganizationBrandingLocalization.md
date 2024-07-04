@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of id in the URL.
+Add different branding based on a locale.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an organizationalBrandingLocalization object.
-To retrieve a localization branding object, specify the value of id in the URL.
+Add different branding based on a locale.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,6 +317,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -344,10 +344,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandinglocalization)
-
-[https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbrandinglocalization-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organizationalbranding-list-localizations?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataYear
 
 ## SYNOPSIS
-Create a new yearTimePeriodDefinition object.
+Create new navigation property to years for external
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYe
 ```
 
 ## DESCRIPTION
-Create a new yearTimePeriodDefinition object.
+Create new navigation property to years for external
 
 ## PARAMETERS
 
@@ -254,8 +254,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatayear)
-
-[https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-yeartimeperioddefinition-post?view=graph-rest-1.0)
 
 
 

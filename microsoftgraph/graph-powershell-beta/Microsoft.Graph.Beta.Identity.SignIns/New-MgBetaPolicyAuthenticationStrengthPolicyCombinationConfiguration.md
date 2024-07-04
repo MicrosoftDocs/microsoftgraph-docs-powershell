@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
-Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
+Create new navigation property to combinationConfigurations for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObjec
 ```
 
 ## DESCRIPTION
-Create a new authenticationCombinationConfiguration object which can be of one of the following derived types:* fido2combinationConfigurations* x509certificatecombinationconfiguration
+Create new navigation property to combinationConfigurations for policies
 
 ## PARAMETERS
 
@@ -328,8 +328,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-post-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-post-combinationconfigurations?view=graph-rest-1.0)
 
 
 

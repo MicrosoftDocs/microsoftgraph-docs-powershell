@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Read the properties and relationships of an accessReviewScheduleDefinition object.
-To retrieve the instances of the access review series, use the list accessReviewInstance API.
+Represents the template and scheduling for an access review.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgIdentityGovernanceAccessReviewDefinition -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessReviewScheduleDefinition object.
-To retrieve the instances of the access review series, use the list accessReviewInstance API.
+Represents the template and scheduling for an access review.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -372,10 +370,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewdefinition)
-
-[https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-list-definitions?view=graph-rest-1.0)
 
 
 

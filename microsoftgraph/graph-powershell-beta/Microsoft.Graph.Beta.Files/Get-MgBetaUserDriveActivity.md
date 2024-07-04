@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserDriveActivity
 
 ## SYNOPSIS
-List the recent activities that took place on an item or under a hierarchy.
+The list of recent activities that took place under this drive.
 
 ## SYNTAX
 
@@ -20,7 +20,7 @@ Get-MgBetaUserDriveActivity -DriveId <String> -UserId <String> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-List the recent activities that took place on an item or under a hierarchy.
+The list of recent activities that took place under this drive.
 
 ## PARAMETERS
 
@@ -264,8 +264,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdriveactivity)
-
-[https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/activities-list?view=graph-rest-1.0)
 
 
 

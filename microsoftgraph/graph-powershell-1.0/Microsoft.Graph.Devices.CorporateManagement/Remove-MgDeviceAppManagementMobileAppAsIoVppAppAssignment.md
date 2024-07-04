@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment
 
 ## SYNOPSIS
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementMobileAppAsIoVppAppAssignment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgDeviceAppManagementMobileAppAsIoVppAppAssignment -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-Deletes a mobileAppAssignment.
+Delete navigation property assignments for deviceAppManagement
 
 ## PARAMETERS
 
@@ -242,8 +242,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasiovppappassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmanagementmobileappasiovppappassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-delete?view=graph-rest-1.0)
 
 
 

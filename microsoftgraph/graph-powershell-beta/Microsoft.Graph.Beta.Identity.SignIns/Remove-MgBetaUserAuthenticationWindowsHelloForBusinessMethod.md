@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod
 
 ## SYNOPSIS
-Deletes a windowsHelloForBusinessAuthenticationMethod object.
+Delete navigation property windowsHelloForBusinessMethods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaUserAuthenticationWindowsHelloForBusinessMethod -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Deletes a windowsHelloForBusinessAuthenticationMethod object.
+Delete navigation property windowsHelloForBusinessMethods for users
 
 ## PARAMETERS
 
@@ -285,8 +285,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationwindowshelloforbusinessmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetauserauthenticationwindowshelloforbusinessmethod)
-
-[https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowshelloforbusinessauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

@@ -8,11 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlowLanguage
 
 ## SYNOPSIS
-Read the properties and relationships of a userFlowLanguageConfiguration object.
-These objects represent a language available in a user flow.
-Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
-For more information, see Update b2cIdentityUserFlow.
-Language customization is enabled by default in Microsoft Entra user flows.
+The languages supported for customization within the user flow.
+Language customization is not enabled by default in B2C user flows.
 
 ## SYNTAX
 
@@ -39,11 +36,8 @@ Get-MgBetaIdentityB2CUserFlowLanguage -InputObject <IIdentitySignInsIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a userFlowLanguageConfiguration object.
-These objects represent a language available in a user flow.
-Note: To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow.
-For more information, see Update b2cIdentityUserFlow.
-Language customization is enabled by default in Microsoft Entra user flows.
+The languages supported for customization within the user flow.
+Language customization is not enabled by default in B2C user flows.
 
 ## EXAMPLES
 ### Example 1: Retrieve a list of all languages
@@ -411,10 +405,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflowlanguage)
-
-[https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userflowlanguageconfiguration-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-list-languages?view=graph-rest-1.0)
 
 
 

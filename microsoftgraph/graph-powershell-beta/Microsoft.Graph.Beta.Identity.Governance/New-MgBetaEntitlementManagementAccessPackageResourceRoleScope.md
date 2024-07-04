@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageResourceRoleScope
 
 ## SYNOPSIS
-Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
-The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
-Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
+Create new navigation property to accessPackageResourceRoleScopes for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-1.0)
@@ -52,9 +50,7 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIde
 ```
 
 ## DESCRIPTION
-Create a new accessPackageResourceRoleScope for adding a resource role to an access package.
-The access package resource, for a group, an app, or a SharePoint Online site, must already exist in the access package catalog, and the originId for the resource role retrieved from the list of the resource roles.
-Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
+Create new navigation property to accessPackageResourceRoleScopes for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Create a new access package resource role scope
@@ -726,8 +722,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope)
-
-[https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-post-accesspackageresourcerolescopes?view=graph-rest-1.0)
 
 
 

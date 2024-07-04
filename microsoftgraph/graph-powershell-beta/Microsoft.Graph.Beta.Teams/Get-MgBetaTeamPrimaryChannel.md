@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamPrimaryChannel
 
 ## SYNOPSIS
-Get the default channel, General, of a team.
+The general channel for the team.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannel?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Get-MgBetaTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get the default channel, General, of a team.
+The general channel for the team.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -215,8 +215,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamprimarychannel)
-
-[https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-get-primarychannel?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Read the properties and relationships of a specific cloudPC object.
+Cloud managed virtual desktops.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a specific cloudPC object.
+Cloud managed virtual desktops.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointCloudPC Cmdlet
@@ -370,10 +370,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpointcloudpc)
-
-[https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpc-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-1.0)
 
 
 

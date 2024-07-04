@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Get a browserSite that resides on a browserSiteList.
+A collection of sites defined for the site list.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagem
 ```
 
 ## DESCRIPTION
-Get a browserSite that resides on a browserSiteList.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/browsersite-get-permissions.md)]
+A collection of sites defined for the site list.
 
 ## PARAMETERS
 
@@ -449,10 +446,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedgeinternetexplorermodesitelistsite)
-
-[https://learn.microsoft.com/graph/api/browsersite-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersite-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-list-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-list-sites?view=graph-rest-1.0)
 
 
 

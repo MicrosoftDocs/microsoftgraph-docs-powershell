@@ -8,7 +8,10 @@ schema: 2.0.0
 # Remove-MgBetaIdentityCustomAuthenticationExtension
 
 ## SYNOPSIS
-Delete a customAuthenticationExtension object.
+Delete navigation property customAuthenticationExtensions for identity
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityCustomAuthenticationExtension](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityCustomAuthenticationExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,7 +30,7 @@ Remove-MgBetaIdentityCustomAuthenticationExtension -InputObject <IIdentitySignIn
 ```
 
 ## DESCRIPTION
-Delete a customAuthenticationExtension object.
+Delete navigation property customAuthenticationExtensions for identity
 
 ## PARAMETERS
 
@@ -266,8 +269,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentitycustomauthenticationextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentitycustomauthenticationextension)
-
-[https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/customauthenticationextension-delete?view=graph-rest-1.0)
 
 
 

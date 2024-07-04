@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation
 
 ## SYNOPSIS
-Get the last estimateStatisticsOperation object associated with a source collection.
+The last estimate operation associated with the sourceCollection.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperatio
 ```
 
 ## DESCRIPTION
-Get the last estimateStatisticsOperation object associated with a source collection.
+The last estimate operation associated with the sourceCollection.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -205,8 +205,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionlastestimatestatisticsoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionlastestimatestatisticsoperation)
-
-[https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-list-lastestimatestatisticsoperation?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyB2CAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the properties of a b2cAuthenticationMethodsPolicy object.
+Update the navigation property b2cAuthenticationMethodsPolicy in policies
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Update the properties of a b2cAuthenticationMethodsPolicy object.
+Update the navigation property b2cAuthenticationMethodsPolicy in policies
 
 ## PARAMETERS
 
@@ -227,8 +227,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy)
-
-[https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-1.0)
 
 
 

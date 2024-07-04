@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Add a user as a registered owner of the device.
+Create new navigation property ref to registeredOwners for devices
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
@@ -45,7 +45,7 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 ```
 
 ## DESCRIPTION
-Add a user as a registered owner of the device.
+Create new navigation property ref to registeredOwners for devices
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -261,6 +261,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -286,8 +288,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref)
-
-[https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/device-post-registeredowners?view=graph-rest-1.0)
 
 
 

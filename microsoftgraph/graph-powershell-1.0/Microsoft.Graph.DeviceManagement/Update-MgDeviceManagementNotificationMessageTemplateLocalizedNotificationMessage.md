@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 
 ## SYNOPSIS
-Update the properties of a localizedNotificationMessage object.
+Update the navigation property localizedNotificationMessages in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage?view=graph-powershell-beta)
@@ -50,7 +50,7 @@ Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage
 ```
 
 ## DESCRIPTION
-Update the properties of a localizedNotificationMessage object.
+Update the navigation property localizedNotificationMessages in deviceManagement
 
 ## PARAMETERS
 
@@ -388,8 +388,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementnotificationmessagetemplatelocalizednotificationmessage)
-
-[https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-notification-localizednotificationmessage-update?view=graph-rest-1.0)
 
 
 

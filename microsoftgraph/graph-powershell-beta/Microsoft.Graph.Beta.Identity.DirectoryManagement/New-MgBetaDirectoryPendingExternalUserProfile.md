@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDirectoryPendingExternalUserProfile
 
 ## SYNOPSIS
-Create a new pendingExternalUserProfile object.
+Create new navigation property to pendingExternalUserProfiles for directory
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgBetaDirectoryPendingExternalUserProfile -BodyParameter <Hashtable> [-Respo
 ```
 
 ## DESCRIPTION
-Create a new pendingExternalUserProfile object.
+Create new navigation property to pendingExternalUserProfiles for directory
 
 ## PARAMETERS
 
@@ -375,8 +375,6 @@ It's a free-format string value, for example, 'United States'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorypendingexternaluserprofile)
-
-[https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-post-pendingexternaluserprofile?view=graph-rest-1.0)
 
 
 

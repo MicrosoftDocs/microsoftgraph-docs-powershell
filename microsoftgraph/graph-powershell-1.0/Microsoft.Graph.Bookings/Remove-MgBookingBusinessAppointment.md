@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Delete a bookingAppointment in the specified bookingBusiness.
+Delete navigation property appointments for solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete a bookingAppointment in the specified bookingBusiness.
+Delete navigation property appointments for solutions
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -235,8 +235,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessappointment](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinessappointment)
-
-[https://learn.microsoft.com/graph/api/bookingappointment-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingappointment-delete?view=graph-rest-1.0)
 
 
 

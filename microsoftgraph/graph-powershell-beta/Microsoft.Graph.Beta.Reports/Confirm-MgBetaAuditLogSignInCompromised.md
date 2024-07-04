@@ -223,7 +223,7 @@ BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPost
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsignincompromised)
 
-[https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta](https://learn.microsoft.com/graph/api/signin-confirmcompromised?view=graph-rest-beta)
 
 
 

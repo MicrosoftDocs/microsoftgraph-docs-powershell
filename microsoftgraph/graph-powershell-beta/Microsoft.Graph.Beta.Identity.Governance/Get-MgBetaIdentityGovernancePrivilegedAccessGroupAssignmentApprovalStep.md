@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep
 
 ## SYNOPSIS
-Retrieve the properties of an approvalStep object.
+Used to represent the decision associated with a single step in the approval process configured in approvalStage.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep
 ```
 
 ## DESCRIPTION
-Retrieve the properties of an approvalStep object.
+Used to represent the decision associated with a single step in the approval process configured in approvalStage.
 
 ## PARAMETERS
 
@@ -403,10 +403,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccessgroupassignmentapprovalstep)
-
-[https://learn.microsoft.com/graph/api/approvalstep-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approvalstep-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/approval-list-steps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-list-steps?view=graph-rest-1.0)
 
 
 

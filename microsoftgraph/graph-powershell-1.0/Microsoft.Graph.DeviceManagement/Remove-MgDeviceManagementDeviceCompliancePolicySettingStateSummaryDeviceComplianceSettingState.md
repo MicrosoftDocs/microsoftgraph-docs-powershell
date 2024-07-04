@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState
 
 ## SYNOPSIS
-Deletes a deviceComplianceSettingState.
+Delete navigation property deviceComplianceSettingStates for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplian
 ```
 
 ## DESCRIPTION
-Deletes a deviceComplianceSettingState.
+Delete navigation property deviceComplianceSettingStates for deviceManagement
 
 ## PARAMETERS
 
@@ -263,8 +263,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdevicecompliancepolicysettingstatesummarydevicecompliancesettingstate)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancesettingstate-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancesettingstate-delete?view=graph-rest-1.0)
 
 
 

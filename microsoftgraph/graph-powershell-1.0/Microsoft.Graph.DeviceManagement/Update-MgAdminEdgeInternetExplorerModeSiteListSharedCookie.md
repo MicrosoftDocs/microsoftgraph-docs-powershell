@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie
 
 ## SYNOPSIS
-Update the properties of a browserSharedCookie object.
+Update the navigation property sharedCookies in admin
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
@@ -53,7 +53,7 @@ Update-MgAdminEdgeInternetExplorerModeSiteListSharedCookie -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Update the properties of a browserSharedCookie object.
+Update the navigation property sharedCookies in admin
 
 ## PARAMETERS
 
@@ -548,8 +548,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedgeinternetexplorermodesitelistsharedcookie)
-
-[https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersharedcookie-update?view=graph-rest-1.0)
 
 
 

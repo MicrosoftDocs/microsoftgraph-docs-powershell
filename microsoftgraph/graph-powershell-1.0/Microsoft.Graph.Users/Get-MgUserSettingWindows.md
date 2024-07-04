@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingWindows
 
 ## SYNOPSIS
-Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL.
-This method gets the setting for the signed-in user.
+Get windows from users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserSettingWindows](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSettingWindows?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgUserSettingWindows -InputObject <IUsersIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a windowsSetting object by passing the ID of the setting in the URL.
-This method gets the setting for the signed-in user.
+Get windows from users
 
 ## PARAMETERS
 
@@ -322,10 +320,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindows](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersettingwindows)
-
-[https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/windowssetting-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/usersettings-list-windows?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension
 
 ## SYNOPSIS
-Create a new customAccessPackageWorkflowExtension object and add it to an existing accessPackageCatalog object.
+Create new navigation property to customAccessPackageWorkflowExtensions for identityGovernance
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowEx
 ```
 
 ## DESCRIPTION
-Create a new customAccessPackageWorkflowExtension object and add it to an existing accessPackageCatalog object.
+Create new navigation property to customAccessPackageWorkflowExtensions for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet
@@ -497,8 +497,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogcustomaccesspackageworkflowextension)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-post-customaccesspackageworkflowextensions?view=graph-rest-1.0)
 
 
 

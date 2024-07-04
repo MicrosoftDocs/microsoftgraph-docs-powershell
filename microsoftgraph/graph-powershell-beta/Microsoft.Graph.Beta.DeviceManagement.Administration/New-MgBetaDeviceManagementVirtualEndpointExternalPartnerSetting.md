@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 
 ## SYNOPSIS
-Create a new cloudPcExternalPartnerSetting object.
+Create new navigation property to externalPartnerSettings for deviceManagement
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
 ## DESCRIPTION
-Create a new cloudPcExternalPartnerSetting object.
+Create new navigation property to externalPartnerSettings for deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
@@ -283,8 +283,6 @@ For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointexternalpartnersetting)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-externalpartnersettings?view=graph-rest-1.0)
 
 
 

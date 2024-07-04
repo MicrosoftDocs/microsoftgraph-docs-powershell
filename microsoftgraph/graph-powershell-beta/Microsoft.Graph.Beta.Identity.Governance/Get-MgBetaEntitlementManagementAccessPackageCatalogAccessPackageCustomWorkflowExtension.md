@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
 
 ## PARAMETERS
 
@@ -404,10 +404,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentworkflowextension-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
 
 
 

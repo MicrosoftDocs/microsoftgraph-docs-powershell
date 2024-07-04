@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAssignmentAdditional
 
 ## SYNOPSIS
-Invoke function additionalAccess
+In Microsoft Entra Entitlement Management, retrieve a collection of accessPackageAssignment objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.
+This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Get-MgEntitlementManagementAssignmentAdditional -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Invoke function additionalAccess
+In Microsoft Entra Entitlement Management, retrieve a collection of accessPackageAssignment objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.
+This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 ## EXAMPLES
 
@@ -342,6 +344,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentadditional)
+
+[https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignment-additionalaccess?view=graph-rest-1.0)
 
 
 

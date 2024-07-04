@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTeamworkTeamTemplateDefinition
 
 ## SYNOPSIS
-Read the properties and relationships of a teamTemplateDefinition object.
+A generic representation of a team template definition for a team with a specific structure and configuration.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a teamTemplateDefinition object.
+A generic representation of a team template definition for a team with a specific structure and configuration.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaTeamworkTeamTemplateDefinition Cmdlet
@@ -352,8 +352,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplatedefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkteamtemplatedefinition)
-
-[https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/teamtemplatedefinition-get?view=graph-rest-1.0)
 
 
 

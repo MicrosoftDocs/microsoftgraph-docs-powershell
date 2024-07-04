@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportAzureAdApplicationSignInSummary
 
 ## SYNOPSIS
-Invoke function getAzureADApplicationSignInSummary
+Retrieve applicationSigninSummary objects within either the last seven or 30 days.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaReportAzureAdApplicationSignInSummary -InputObject <IReportsIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke function getAzureADApplicationSignInSummary
+Retrieve applicationSigninSummary objects within either the last seven or 30 days.
 
 ## EXAMPLES
 
@@ -296,6 +296,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportazureadapplicationsigninsummary)
+
+[https://learn.microsoft.com/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reportroot-getazureadapplicationsigninsummary?view=graph-rest-beta)
 
 
 

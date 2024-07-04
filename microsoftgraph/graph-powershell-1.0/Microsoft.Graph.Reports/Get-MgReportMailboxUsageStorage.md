@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportMailboxUsageStorage
 
 ## SYNOPSIS
-Invoke function getMailboxUsageStorage
+Get the amount of storage used in your organization.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageStorage?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportMailboxUsageStorage -InputObject <IReportsIdentity> -OutFile <String
 ```
 
 ## DESCRIPTION
-Invoke function getMailboxUsageStorage
+Get the amount of storage used in your organization.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagestorage)
+
+[https://learn.microsoft.com/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-1.0)
 
 
 

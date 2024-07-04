@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPlannerPlan
 
 ## SYNOPSIS
-Delete a plannerPlan object.
+Delete navigation property plans for planner
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerPlan?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a plannerPlan object.
+Delete navigation property plans for planner
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -214,8 +214,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/remove-mgbetaplannerplan)
-
-[https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplan-delete?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Delete an accessPackage object.
-You cannot delete an access package if it has any accessPackageAssignment.
+Delete navigation property accessPackages for identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
@@ -31,8 +30,7 @@ Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Delete an accessPackage object.
-You cannot delete an access package if it has any accessPackageAssignment.
+Delete navigation property accessPackages for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -274,8 +272,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgentitlementmanagementaccesspackage)
-
-[https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-delete?view=graph-rest-1.0)
 
 
 

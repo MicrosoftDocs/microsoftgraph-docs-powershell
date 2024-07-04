@@ -39,9 +39,6 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>]
 ## DESCRIPTION
 The group's conversations.
 
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/group-get-conversation-permissions.md)]
-
 ## EXAMPLES
 ### Example 1: Code snippet
 
@@ -346,10 +343,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupconversation)
-
-[https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-get-conversation?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-conversations?view=graph-rest-1.0)
 
 
 

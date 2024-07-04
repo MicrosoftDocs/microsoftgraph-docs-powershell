@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupDriveItemThumbnail
 
 ## SYNOPSIS
-Collection of \[thumbnailSet\]\[\] objects associated with the item.
-For more information, see \[getting thumbnails\]\[\].
+Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
@@ -42,8 +42,8 @@ Get-MgBetaGroupDriveItemThumbnail -InputObject <IFilesIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Collection of \[thumbnailSet\]\[\] objects associated with the item.
-For more information, see \[getting thumbnails\]\[\].
+Collection of thumbnailSet objects associated with the item.
+For more information, see getting thumbnails.
 Read-only.
 Nullable.
 
@@ -366,8 +366,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemthumbnail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetagroupdriveitemthumbnail)
-
-[https://learn.microsoft.com/graph/api/driveitem-list-thumbnails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-list-thumbnails?view=graph-rest-1.0)
 
 
 

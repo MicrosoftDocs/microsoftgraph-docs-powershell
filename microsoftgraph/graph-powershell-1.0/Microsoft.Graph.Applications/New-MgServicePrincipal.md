@@ -1428,6 +1428,7 @@ It has a limit of 600 characters.
 Required.
     - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).
@@ -1986,6 +1987,7 @@ It has a limit of 600 characters.
 Required.
   - `[Name <String>]`: The unique identifier for the federated identity credential, which has a limit of 120 characters and must be URL friendly.
 The string is immutable after it's created.
+Alternate key.
 Required.
 Not nullable.
 Supports $filter (eq).

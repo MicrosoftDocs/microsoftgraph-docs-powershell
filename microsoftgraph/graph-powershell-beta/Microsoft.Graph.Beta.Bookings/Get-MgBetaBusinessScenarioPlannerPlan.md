@@ -259,7 +259,7 @@ TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTa
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan)
 
-[https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta](https://learn.microsoft.com/graph/api/businessscenarioplanner-getplan?view=graph-rest-beta)
 
 
 

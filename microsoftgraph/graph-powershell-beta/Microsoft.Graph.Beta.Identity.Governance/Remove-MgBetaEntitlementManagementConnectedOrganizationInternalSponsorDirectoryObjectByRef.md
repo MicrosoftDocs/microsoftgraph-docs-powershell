@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef
 
 ## SYNOPSIS
-Remove a user or a group from the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Delete ref of navigation property internalSponsors for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorDirectoryObjectByRef?view=graph-powershell-1.0)
@@ -33,8 +32,7 @@ Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorDirectoryO
 ```
 
 ## DESCRIPTION
-Remove a user or a group from the connected organization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Delete ref of navigation property internalSponsors for identityGovernance
 
 ## PARAMETERS
 
@@ -310,8 +308,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganizationinternalsponsordirectoryobjectbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementconnectedorganizationinternalsponsordirectoryobjectbyref)
-
-[https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connectedorganization-delete-internalsponsors?view=graph-rest-1.0)
 
 
 

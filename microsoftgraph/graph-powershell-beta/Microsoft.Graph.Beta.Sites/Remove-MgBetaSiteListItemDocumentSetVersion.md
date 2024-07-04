@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSiteListItemDocumentSetVersion
 
 ## SYNOPSIS
-Delete a version of a document set in a list.
+Delete navigation property documentSetVersions for sites
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete a version of a document set in a list.
+Delete navigation property documentSetVersions for sites
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -303,8 +303,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitemdocumentsetversion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelistitemdocumentsetversion)
-
-[https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/documentsetversion-delete?view=graph-rest-1.0)
 
 
 

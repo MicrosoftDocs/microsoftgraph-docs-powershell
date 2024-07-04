@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 
 ## SYNOPSIS
-Create a new localized agreement file.
+Create new navigation property to files for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Create a new localized agreement file.
+Create new navigation property to files for identityGovernance
 
 ## PARAMETERS
 
@@ -546,8 +546,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancetermsofuseagreementfile)
-
-[https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/agreement-post-files?view=graph-rest-1.0)
 
 
 

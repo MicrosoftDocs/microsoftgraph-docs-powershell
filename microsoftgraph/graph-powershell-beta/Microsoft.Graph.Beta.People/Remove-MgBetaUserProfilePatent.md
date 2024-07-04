@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfilePatent
 
 ## SYNOPSIS
-Deletes an itemPatent object.
+Delete navigation property patents for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Deletes an itemPatent object.
+Delete navigation property patents for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,8 +239,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilepatent)
-
-[https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempatent-delete?view=graph-rest-1.0)
 
 
 

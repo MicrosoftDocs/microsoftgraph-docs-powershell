@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Assign a Microsoft Entra role with administrative unit scope.
-For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
+Create new navigation property to scopedRoleMembers for directory
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
@@ -48,8 +47,7 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 ```
 
 ## DESCRIPTION
-Assign a Microsoft Entra role with administrative unit scope.
-For a list of roles that can be assigned with administrative unit scope, see Assign Microsoft Entra roles with administrative unit scope.
+Create new navigation property to scopedRoleMembers for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,6 +317,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -351,8 +351,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitscopedrolemember)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-post-scopedrolemembers?view=graph-rest-1.0)
 
 
 

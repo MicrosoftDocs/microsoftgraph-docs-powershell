@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserMailFolderChildFolderMessageMention
 
 ## SYNOPSIS
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
-For example, you can delete a specific @-mention of the specified user in the message.
+Delete navigation property mentions for users
 
 ## SYNTAX
 
@@ -29,8 +28,7 @@ Remove-MgBetaUserMailFolderChildFolderMessageMention -InputObject <IMailIdentity
 ```
 
 ## DESCRIPTION
-Delete a message in the specified user's mailbox, or delete a relationship of the message.
-For example, you can delete a specific @-mention of the specified user in the message.
+Delete navigation property mentions for users
 
 ## PARAMETERS
 
@@ -262,8 +260,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagemention](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/remove-mgbetausermailfolderchildfoldermessagemention)
-
-[https://learn.microsoft.com/graph/api/message-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-delete?view=graph-rest-1.0)
 
 
 

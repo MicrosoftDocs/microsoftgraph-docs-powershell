@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Create a new ediscoverySearch object.
+Create new navigation property to searches for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create a new ediscoverySearch object.
+Create new navigation property to searches for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -931,8 +931,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasesearch)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-searches?view=graph-rest-1.0)
 
 
 

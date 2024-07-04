@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
@@ -34,9 +32,7 @@ New-MgPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrant
 ```
 
 ## DESCRIPTION
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy
@@ -139,7 +135,7 @@ Accept wildcard characters: False
 ```
 
 ### -Excludes
-Condition sets which are excluded in this permission grant policy.
+Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
@@ -187,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -Includes
-Condition sets which are included in this permission grant policy.
+Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
@@ -290,7 +286,7 @@ Required.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets which are excluded in this permission grant policy.
+  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -313,10 +309,10 @@ The id of resource-specific application permissions can be found in the resource
 Default is the single value all.
     - `[ResourceApplication <String>]`: The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
-  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets which are included in this permission grant policy.
+  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets which are excluded in this permission grant policy.
+EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -340,7 +336,7 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets which are included in this permission grant policy.
+INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -367,8 +363,6 @@ Default is any.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-permissiongrantpolicies?view=graph-rest-1.0)
 
 
 

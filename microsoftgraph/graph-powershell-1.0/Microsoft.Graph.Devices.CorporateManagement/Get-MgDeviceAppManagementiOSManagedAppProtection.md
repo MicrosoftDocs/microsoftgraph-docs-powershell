@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementiOSManagedAppProtection
 
 ## SYNOPSIS
-Read properties and relationships of the iosManagedAppProtection object.
+iOS managed app policies.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementiOSManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementiOSManagedAppProtection?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementiOSManagedAppProtection -InputObject <IDevicesCorporate
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the iosManagedAppProtection object.
+iOS managed app policies.
 
 ## PARAMETERS
 
@@ -325,10 +325,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementiosmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-iosmanagedappprotection-list?view=graph-rest-1.0)
 
 
 

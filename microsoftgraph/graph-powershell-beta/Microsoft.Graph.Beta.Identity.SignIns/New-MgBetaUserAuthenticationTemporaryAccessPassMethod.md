@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
-Create a new temporaryAccessPassAuthenticationMethod object on a user.
-A user can only have one Temporary Access Pass that's usable within its specified lifetime.
-If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
+Create new navigation property to temporaryAccessPassMethods for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
@@ -49,9 +47,7 @@ New-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 ```
 
 ## DESCRIPTION
-Create a new temporaryAccessPassAuthenticationMethod object on a user.
-A user can only have one Temporary Access Pass that's usable within its specified lifetime.
-If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
+Create new navigation property to temporaryAccessPassMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -418,8 +414,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationtemporaryaccesspassmethod)
-
-[https://learn.microsoft.com/graph/api/authentication-post-temporaryaccesspassmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-post-temporaryaccesspassmethods?view=graph-rest-1.0)
 
 
 

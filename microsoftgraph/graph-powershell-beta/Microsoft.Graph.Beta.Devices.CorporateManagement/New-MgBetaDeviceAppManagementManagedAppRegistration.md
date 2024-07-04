@@ -23,6 +23,7 @@ New-MgBetaDeviceAppManagementManagedAppRegistration [-ResponseHeadersVariable <S
  [-CreatedDateTime <DateTime>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
  [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
  [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-LastSyncDateTime <DateTime>]
+ [-ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest[]>]
  [-ManagedDeviceId <String>] [-ManagementSdkVersion <String>]
  [-Operations <IMicrosoftGraphManagedAppOperation[]>] [-PlatformVersion <String>] [-UserId <String>]
  [-Version <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm]
@@ -304,6 +305,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ManagedAppLogCollectionRequests
+Zero or more log collection requests triggered for the app.
+To construct, see NOTES section for MANAGEDAPPLOGCOLLECTIONREQUESTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphManagedAppLogCollectionRequest[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ManagedDeviceId
 The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
@@ -513,6 +530,40 @@ E.g.
 app running on rooted device
   - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy- `[]`>]`: Zero or more policies admin intended for the app as of now.
   - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+  - `[ManagedAppLogCollectionRequests <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>]`: Zero or more log collection requests triggered for the app.
+    - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+    - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
+    - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+    - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+    - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+    - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+    - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
+      - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+      - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+      - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
+    - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
+    - `[Version <String>]`: Version of the entity.
   - `[ManagedDeviceId <String>]`: The Managed Device identifier of the host device.
 Value could be empty even when the host device is managed.
   - `[ManagementSdkVersion <String>]`: App management SDK version
@@ -535,6 +586,41 @@ Read-only.
   - `[DisplayName <String>]`: Policy display name.
   - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
   - `[RoleScopeTagIds <String- `[]`>]`: List of Scope Tags for this Entity instance.
+  - `[Version <String>]`: Version of the entity.
+
+MANAGEDAPPLOGCOLLECTIONREQUESTS <IMicrosoftGraphManagedAppLogCollectionRequest- `[]`>: Zero or more log collection requests triggered for the app.
+  - `[Id <String>]`: The unique identifier for an entity.
+Read-only.
+  - `[CompletedDateTime <DateTime?>]`: DateTime of when the log upload request was completed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+  - `[ManagedAppRegistrationId <String>]`: The unique identifier of the app instance for which diagnostic logs were collected.
+Read-only.
+  - `[RequestedBy <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+  - `[RequestedByUserPrincipalName <String>]`: The user principal name associated with the request for the managed application log collection.
+Read-only.
+  - `[RequestedDateTime <DateTime?>]`: DateTime of when the log upload request was received.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
+  - `[Status <String>]`: Indicates the status for the app log collection request - pending, completed or failed.
+Default is pending.
+  - `[UploadedLogs <IMicrosoftGraphManagedAppLogUpload- `[]`>]`: The collection of log upload results as reported by each component on the device.
+Such components can be the application itself, the Mobile Application Management (MAM) SDK, and other on-device components that are requested to upload diagnostic logs.
+Read-only.
+    - `[ManagedAppComponent <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+    - `[ManagedAppComponentDescription <String>]`: The Mobile Application Management (MAM) Logs Uploading Component.
+Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs.
+Read-only.
+    - `[ReferenceId <String>]`: A provider-specific reference id for the uploaded logs.
+Read-only.
+  - `[UserLogUploadConsent <ManagedAppLogUploadConsent?>]`: Represents the current consent status of the associated \`managedAppLogCollectionRequest\`.
   - `[Version <String>]`: Version of the entity.
 
 OPERATIONS <IMicrosoftGraphManagedAppOperation- `[]`>: Zero or more long running operations triggered on the app registration.

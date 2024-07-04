@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassModuleResource
 
 ## SYNOPSIS
-Create a resource in a module.
-Only teachers can perform this operation.
-You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+Create new navigation property to resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassModuleResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassModuleResource?view=graph-powershell-beta)
@@ -47,9 +45,7 @@ New-MgEducationClassModuleResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create a resource in a module.
-Only teachers can perform this operation.
-You can create the following types of module resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+Create new navigation property to resources for education
 
 ## PARAMETERS
 
@@ -307,8 +303,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmoduleresource)
-
-[https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-post-resources?view=graph-rest-1.0)
 
 
 

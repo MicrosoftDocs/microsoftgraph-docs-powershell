@@ -222,7 +222,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/complete-mgbetadirectoryrecommendation)
 
-[https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/recommendation-complete?view=graph-rest-beta)
 
 
 

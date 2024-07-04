@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of plannerBucketTaskBoardTaskFormat object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -179,8 +183,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskbuckettaskboardformat](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskbuckettaskboardformat)
-
-[https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbuckettaskboardtaskformat-get?view=graph-rest-1.0)
 
 
 

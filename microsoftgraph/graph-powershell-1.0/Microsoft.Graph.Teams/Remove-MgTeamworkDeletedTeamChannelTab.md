@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamworkDeletedTeamChannelTab
 
 ## SYNOPSIS
-Removes (unpins) a tab from the specified channel within a team.
+Delete navigation property tabs for teamwork
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Removes (unpins) a tab from the specified channel within a team.
+Delete navigation property tabs for teamwork
 
 ## PARAMETERS
 
@@ -255,8 +255,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchanneltab](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchanneltab)
-
-[https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-delete-tabs?view=graph-rest-1.0)
 
 
 

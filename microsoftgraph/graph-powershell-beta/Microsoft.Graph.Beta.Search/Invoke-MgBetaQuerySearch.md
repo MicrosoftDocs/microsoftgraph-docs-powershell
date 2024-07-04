@@ -426,7 +426,7 @@ Optional.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/invoke-mgbetaquerysearch)
 
-[https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta](https://learn.microsoft.com/graph/api/search-query?view=graph-rest-beta)
 
 
 

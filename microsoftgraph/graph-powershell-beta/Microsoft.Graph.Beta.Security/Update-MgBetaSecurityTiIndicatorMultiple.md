@@ -381,7 +381,7 @@ Required.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytiindicatormultiple)
 
-[https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta](https://learn.microsoft.com/graph/api/tiindicator-updatetiindicators?view=graph-rest-beta)
 
 
 

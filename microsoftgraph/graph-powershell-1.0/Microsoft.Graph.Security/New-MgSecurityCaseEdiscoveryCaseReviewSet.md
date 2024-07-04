@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityCaseEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Create a new ediscoveryReviewSet object.
+Create new navigation property to reviewSets for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Create a new ediscoveryReviewSet object.
+Create new navigation property to reviewSets for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -423,8 +423,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasereviewset](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasereviewset)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-post-reviewsets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-post-reviewsets?view=graph-rest-1.0)
 
 
 

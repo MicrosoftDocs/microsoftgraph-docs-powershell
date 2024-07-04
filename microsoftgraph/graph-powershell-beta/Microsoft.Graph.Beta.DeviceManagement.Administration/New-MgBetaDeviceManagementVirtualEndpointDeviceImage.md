@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
-Create a new cloudPcDeviceImage object.
-Upload a custom OS image that you can later provision on Cloud PCs.
+Create new navigation property to deviceImages for deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-1.0)
@@ -34,8 +33,7 @@ New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create a new cloudPcDeviceImage object.
-Upload a custom OS image that you can later provision on Cloud PCs.
+Create new navigation property to deviceImages for deviceManagement
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
@@ -423,8 +421,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointdeviceimage)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-deviceimages?view=graph-rest-1.0)
 
 
 

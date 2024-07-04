@@ -411,8 +411,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouptransitivemember)
 
-[https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0)
-
 
 
 

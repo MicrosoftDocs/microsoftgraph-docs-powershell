@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityAttackSimulationTrainingCampaign
 
 ## SYNOPSIS
-Read the properties and relationships of a trainingCampaign object.
+Represents a training campaign in a tenant.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIdenti
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a trainingCampaign object.
+Represents a training campaign in a tenant.
 
 ## PARAMETERS
 
@@ -369,10 +369,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityattacksimulationtrainingcampaign)
-
-[https://learn.microsoft.com/graph/api/trainingcampaign-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trainingcampaign-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainingcampaigns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-list-trainingcampaigns?view=graph-rest-1.0)
 
 
 

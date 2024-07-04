@@ -269,7 +269,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/stop-mgbetacommunicationcallmediaprocessing)
 
-[https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-beta](https://learn.microsoft.com/graph/api/call-cancelmediaprocessing?view=graph-rest-beta)
 
 
 

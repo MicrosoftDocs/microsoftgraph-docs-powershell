@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgEducationUserAssignmentResource
 
 ## SYNOPSIS
-Get the properties of an education assignment resource associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)
@@ -40,8 +41,9 @@ Get-MgEducationUserAssignmentResource -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get the properties of an education assignment resource associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## EXAMPLES
 
@@ -338,10 +340,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentresource)
-
-[https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignmentresource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-resources?view=graph-rest-1.0)
 
 
 

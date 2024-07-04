@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupTeamScheduleOpenShift
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an openshift object.
+The set of open shifts in a scheduling group in the schedule.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleOpenShift?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an openshift object.
+The set of open shifts in a scheduling group in the schedule.
 
 ## EXAMPLES
 
@@ -348,10 +348,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshift](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetagroupteamscheduleopenshift)
-
-[https://learn.microsoft.com/graph/api/openshift-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/openshift-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/openshift-list?view=graph-rest-1.0)
 
 
 

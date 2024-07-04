@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintPrinterCapability
 
 ## SYNOPSIS
-Invoke function getCapabilities
+Get a list of capabilities for the printer.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgBetaPrintPrinterCapability -InputObject <IDevicesCloudPrintIdentity> [-Res
 ```
 
 ## DESCRIPTION
-Invoke function getCapabilities
+Get a list of capabilities for the printer.
 
 ## EXAMPLES
 
@@ -141,6 +141,8 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintercapability](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintercapability)
+
+[https://learn.microsoft.com/graph/api/printer-getcapabilities?view=graph-rest-beta](https://learn.microsoft.com/graph/api/printer-getcapabilities?view=graph-rest-beta)
 
 
 

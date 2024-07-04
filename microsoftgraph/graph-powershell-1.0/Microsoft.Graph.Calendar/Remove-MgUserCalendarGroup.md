@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserCalendarGroup
 
 ## SYNOPSIS
-Delete a calendar group other than the default calendar group.
+Delete navigation property calendarGroups for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete a calendar group other than the default calendar group.
+Delete navigation property calendarGroups for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -232,8 +232,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendargroup)
-
-[https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-delete?view=graph-rest-1.0)
 
 
 

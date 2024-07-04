@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantManagementAction
 
 ## SYNOPSIS
-Read the properties and relationships of a managementAction object.
+The collection of baseline management actions across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantManagementAction -InputObject <IManaged
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a managementAction object.
+The collection of baseline management actions across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantmanagementaction)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managementaction-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managementaction-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-managementactions?view=graph-rest-1.0)
 
 
 

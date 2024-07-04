@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTermAndCondition
 
 ## SYNOPSIS
-Create a new termsAndConditions object.
+Create new navigation property to termsAndConditions for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndCo
 ```
 
 ## DESCRIPTION
-Create a new termsAndConditions object.
+Create new navigation property to termsAndConditions for deviceManagement
 
 ## PARAMETERS
 
@@ -409,8 +409,6 @@ Incremented when an administrator makes a change to the terms and wishes to requ
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition)
-
-[https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-companyterms-termsandconditions-create?view=graph-rest-1.0)
 
 
 

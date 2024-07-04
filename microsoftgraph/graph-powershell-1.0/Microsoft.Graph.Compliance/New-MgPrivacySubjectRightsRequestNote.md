@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrivacySubjectRightsRequestNote
 
 ## SYNOPSIS
-Create a new authoredNote object.
+Create new navigation property to notes for privacy
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create a new authoredNote object.
+Create new navigation property to notes for privacy
 
 ## PARAMETERS
 
@@ -308,8 +308,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote](https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/new-mgprivacysubjectrightsrequestnote)
-
-[https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaAllGroupSite
 
 ## SYNOPSIS
-Invoke function getAllSites
+List sites across geographies in an organization.
+For more details, see Best practices for discovering files and detecting changes at scale.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgAllGroupSite](/powershell/module/Microsoft.Graph.Groups/Get-MgAllGroupSite?view=graph-powershell-1.0)
@@ -32,7 +33,11 @@ Get-MgBetaAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Invoke function getAllSites
+List sites across geographies in an organization.
+For more details, see Best practices for discovering files and detecting changes at scale.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
 
 ## PARAMETERS
 
@@ -299,6 +304,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetaallgroupsite)
+
+[https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
 
 
 

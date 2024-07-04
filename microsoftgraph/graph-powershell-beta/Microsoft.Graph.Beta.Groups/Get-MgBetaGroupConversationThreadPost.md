@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupConversationThreadPost
 
 ## SYNOPSIS
-Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
-Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
+Get posts from groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-1.0)
@@ -54,9 +52,7 @@ Get-MgBetaGroupConversationThreadPost -InputObject <IGroupsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a post in a specified thread.
-You can specify both the parentconversation and the thread, or, you can specify the thread without referencing the parent conversation.
-Since the post resource supports extensions, you can also use the GET operation to get custom properties and extension data in a post instance.
+Get posts from groups
 
 ## EXAMPLES
 
@@ -386,10 +382,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupconversationthreadpost)
-
-[https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/post-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationthread-list-posts?view=graph-rest-1.0)
 
 
 

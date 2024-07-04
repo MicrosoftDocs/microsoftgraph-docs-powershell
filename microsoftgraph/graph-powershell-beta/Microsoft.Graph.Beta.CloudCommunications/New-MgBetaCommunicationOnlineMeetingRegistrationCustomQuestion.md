@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+Create new navigation property to customQuestions for communications
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <ICl
 ```
 
 ## DESCRIPTION
-Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+Create new navigation property to customQuestions for communications
 
 ## PARAMETERS
 
@@ -313,8 +313,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationonlinemeetingregistrationcustomquestion)
-
-[https://learn.microsoft.com/graph/api/meetingregistration-post-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistration-post-customquestions?view=graph-rest-1.0)
 
 
 

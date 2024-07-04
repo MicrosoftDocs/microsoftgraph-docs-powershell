@@ -344,8 +344,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereport](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingattendancereport)
 
-[https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingattendancereport-get?view=graph-rest-1.0)
-
 
 
 

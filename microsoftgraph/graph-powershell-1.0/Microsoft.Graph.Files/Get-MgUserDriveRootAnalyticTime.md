@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDriveRootAnalyticTime
 
 ## SYNOPSIS
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+Get allTime from users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticTime?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgUserDriveRootAnalyticTime -InputObject <IFilesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get \[itemAnalytics\]\[\] about the views that took place under this resource.The itemAnalytics resource is a convenient way to get activity stats for allTime and the lastSevenDays.For a custom time range or interval, use the \[getActivitiesByInterval\]\[\] API.
+Get allTime from users
 
 ## PARAMETERS
 
@@ -200,8 +200,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalytictime)
-
-[https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemanalytics-get?view=graph-rest-1.0)
 
 
 

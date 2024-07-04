@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Update the properties of an authenticationStrengthPolicy object.
-You cannot update the allowed auth method combinations using this request.
-To do so, use the Update allowed combinations action.
+Update the navigation property authenticationStrengthPolicies in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -52,9 +50,7 @@ Update-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationStrengthPolicy object.
-You cannot update the allowed auth method combinations using this request.
-To do so, use the Update allowed combinations action.
+Update the navigation property authenticationStrengthPolicies in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -478,8 +474,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-update?view=graph-rest-1.0)
 
 
 

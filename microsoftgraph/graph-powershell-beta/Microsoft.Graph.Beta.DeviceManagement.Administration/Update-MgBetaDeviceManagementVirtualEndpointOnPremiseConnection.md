@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-Update the properties of a cloudPcOnPremisesConnection object.
+Update the navigation property onPremisesConnections in deviceManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ Update-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 
 ## DESCRIPTION
-Update the properties of a cloudPcOnPremisesConnection object.
+Update the navigation property onPremisesConnections in deviceManagement
 
 ## PARAMETERS
 
@@ -731,8 +731,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointonpremiseconnection)
-
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-update?view=graph-rest-1.0)
 
 
 

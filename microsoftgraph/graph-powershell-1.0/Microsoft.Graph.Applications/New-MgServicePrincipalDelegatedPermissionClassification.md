@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -314,6 +314,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -327,8 +328,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-post-delegatedpermissionclassifications?view=graph-rest-1.0)
 
 
 

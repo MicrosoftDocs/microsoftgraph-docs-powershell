@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileAddress
 
 ## SYNOPSIS
-Read the properties and relationships of an itemAddress object.
+Represents details of addresses associated with the user.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an itemAddress object.
+Represents details of addresses associated with the user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileaddress)
-
-[https://learn.microsoft.com/graph/api/itemaddress-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemaddress-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-addresses?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-addresses?view=graph-rest-1.0)
 
 
 

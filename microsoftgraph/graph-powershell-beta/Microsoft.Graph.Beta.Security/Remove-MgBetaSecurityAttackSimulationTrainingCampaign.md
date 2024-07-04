@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSecurityAttackSimulationTrainingCampaign
 
 ## SYNOPSIS
-Delete a trainingCampaign object.
+Delete navigation property trainingCampaigns for security
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Delete a trainingCampaign object.
+Delete navigation property trainingCampaigns for security
 
 ## PARAMETERS
 
@@ -271,8 +271,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityattacksimulationtrainingcampaign)
-
-[https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationroot-delete-trainingcampaigns?view=graph-rest-1.0)
 
 
 

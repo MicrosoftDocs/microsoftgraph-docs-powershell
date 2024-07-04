@@ -302,7 +302,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetausermessage)
 
-[https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta](https://learn.microsoft.com/graph/api/message-copy?view=graph-rest-beta)
 
 
 

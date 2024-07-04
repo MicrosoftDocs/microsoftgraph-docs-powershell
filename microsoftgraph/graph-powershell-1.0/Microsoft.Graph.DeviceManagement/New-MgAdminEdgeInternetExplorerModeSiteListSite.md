@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAdminEdgeInternetExplorerModeSiteListSite
 
 ## SYNOPSIS
-Create a new browserSite object in a browserSiteList.
+Create new navigation property to sites for admin
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ New-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManagementI
 ```
 
 ## DESCRIPTION
-Create a new browserSite object in a browserSiteList.
+Create new navigation property to sites for admin
 
 ## PARAMETERS
 
@@ -536,8 +536,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgadminedgeinternetexplorermodesitelistsite)
-
-[https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/browsersitelist-post-sites?view=graph-rest-1.0)
 
 
 

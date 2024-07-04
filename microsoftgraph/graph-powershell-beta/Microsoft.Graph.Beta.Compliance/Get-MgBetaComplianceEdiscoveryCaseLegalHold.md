@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseLegalHold
 
 ## SYNOPSIS
-Read the properties and relationships of a legalHold object.
+Returns a list of case legalHold objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -36,10 +36,8 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity> [
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a legalHold object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-legalhold-get-permissions.md)]
+Returns a list of case legalHold objects for this case.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -336,8 +334,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycaselegalhold)
-
-[https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-legalhold-get?view=graph-rest-1.0)
 
 
 

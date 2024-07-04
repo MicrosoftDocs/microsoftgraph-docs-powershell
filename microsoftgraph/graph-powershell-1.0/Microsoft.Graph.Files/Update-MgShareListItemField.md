@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListItemField
 
 ## SYNOPSIS
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in shares
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaShareListItemField?view=graph-powershell-beta)
@@ -72,7 +72,7 @@ Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ```
 
 ## DESCRIPTION
-Update the properties on a \[listItem\]\[\].
+Update the navigation property fields in shares
 
 ## PARAMETERS
 
@@ -290,8 +290,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemfield](https://learn.microsoft.com/powershell/module/microsoft.graph.files/update-mgsharelistitemfield)
-
-[https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-update?view=graph-rest-1.0)
 
 
 

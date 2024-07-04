@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDriveRootActivityByInterval
 
 ## SYNOPSIS
-Invoke function getActivitiesByInterval
+Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
+Analytics aggregates might not be available for all action types.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDriveRootActivityByInterval?view=graph-powershell-beta)
@@ -49,7 +50,8 @@ Get-MgGroupDriveRootActivityByInterval -InputObject <IGroupsIdentity> [-Count] [
 ```
 
 ## DESCRIPTION
-Invoke function getActivitiesByInterval
+Get a collection of itemActivityStats resources for the activities that took place on this resource within the specified time interval.
+Analytics aggregates might not be available for all action types.
 
 ## PARAMETERS
 
@@ -371,6 +373,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdriverootactivitybyinterval](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggroupdriverootactivitybyinterval)
+
+[https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itemactivitystat-getactivitybyinterval?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgSecurityLabelRetentionLabel
 
 ## SYNOPSIS
-Create a new retentionLabel object.
-To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+Create new navigation property to retentionLabels for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityLabelRetentionLabel?view=graph-powershell-beta)
@@ -38,8 +37,7 @@ New-MgSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetenti
 ```
 
 ## DESCRIPTION
-Create a new retentionLabel object.
-To create a disposition review stage, include the actionAfterRetentionPeriod property in the request body with one of the possible values specified.
+Create new navigation property to retentionLabels for security
 
 ## PARAMETERS
 
@@ -687,8 +685,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel](https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritylabelretentionlabel)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-1.0)
 
 
 

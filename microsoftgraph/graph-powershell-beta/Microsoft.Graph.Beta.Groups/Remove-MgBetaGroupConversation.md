@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupConversation
 
 ## SYNOPSIS
-Delete conversation.
+Delete navigation property conversations for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete conversation.
+Delete navigation property conversations for groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -266,8 +266,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/remove-mgbetagroupconversation)
-
-[https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversation-delete?view=graph-rest-1.0)
 
 
 

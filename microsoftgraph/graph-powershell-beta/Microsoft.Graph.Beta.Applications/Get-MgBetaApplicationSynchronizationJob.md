@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaApplicationSynchronizationJob
 
 ## SYNOPSIS
-Retrieve the existing synchronization job and its properties.
+Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve the existing synchronization job and its properties.
+Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
 
 ## EXAMPLES
 
@@ -339,10 +339,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationsynchronizationjob)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationjob-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-list-jobs?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserChatMessageReplyHostedContent
 
 ## SYNOPSIS
-Retrieve the properties and relationships of chatMessageHostedContent object.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMessageReplyHostedContent?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Get-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of chatMessageHostedContent object.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -447,10 +447,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereplyhostedcontent](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserchatmessagereplyhostedcontent)
-
-[https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessagehostedcontent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0)
 
 
 

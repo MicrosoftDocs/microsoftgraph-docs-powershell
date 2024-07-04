@@ -235,7 +235,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasubscribegroupbymail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasubscribegroupbymail)
 
-[https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-beta](https://learn.microsoft.com/graph/api/group-subscribebymail?view=graph-rest-beta)
 
 
 

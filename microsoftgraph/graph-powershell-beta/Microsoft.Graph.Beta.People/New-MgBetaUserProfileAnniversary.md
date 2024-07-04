@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileAnniversary
 
 ## SYNOPSIS
-Use this API to create a new personAnniversary object in a user's profile.
+Create new navigation property to anniversaries for users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to create a new personAnniversary object in a user's profile.
+Create new navigation property to anniversaries for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -498,8 +498,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileanniversary)
-
-[https://learn.microsoft.com/graph/api/profile-post-anniversaries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-anniversaries?view=graph-rest-1.0)
 
 
 

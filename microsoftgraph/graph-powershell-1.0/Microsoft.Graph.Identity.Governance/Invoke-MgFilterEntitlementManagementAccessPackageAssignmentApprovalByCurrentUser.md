@@ -8,7 +8,10 @@ schema: 2.0.0
 # Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser?view=graph-powershell-beta)
@@ -33,7 +36,10 @@ Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In Microsoft Entra entitlement management, return a collection of access package assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
+In PIM for groups, return a collection of assignment approvals.
+The objects returned are those that are in scope for approval by the calling user.
 
 ## PARAMETERS
 
@@ -321,6 +327,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/approval-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

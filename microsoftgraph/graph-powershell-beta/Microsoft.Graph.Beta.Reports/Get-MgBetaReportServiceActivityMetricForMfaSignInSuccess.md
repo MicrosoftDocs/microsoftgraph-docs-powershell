@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess
 
 ## SYNOPSIS
-Invoke function getMetricsForMfaSignInSuccess
+Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgBetaReportServiceActivityMetricForMfaSignInSuccess -InputObject <IReportsI
 ```
 
 ## DESCRIPTION
-Invoke function getMetricsForMfaSignInSuccess
+Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 
 ## PARAMETERS
 
@@ -279,6 +279,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricformfasigninsuccess)
+
+[https://learn.microsoft.com/graph/api/serviceactivity-getmetricsformfasigninsuccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsformfasigninsuccess?view=graph-rest-beta)
 
 
 

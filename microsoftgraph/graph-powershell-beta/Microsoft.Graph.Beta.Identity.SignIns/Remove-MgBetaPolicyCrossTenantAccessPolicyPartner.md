@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Delete a partner-specific configuration in a cross-tenant access policy.
-If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
+Delete navigation property partners for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignIns
 ```
 
 ## DESCRIPTION
-Delete a partner-specific configuration in a cross-tenant access policy.
-If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
+Delete navigation property partners for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -284,8 +282,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicycrosstenantaccesspolicypartner)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationpartner-delete?view=graph-rest-1.0)
 
 
 

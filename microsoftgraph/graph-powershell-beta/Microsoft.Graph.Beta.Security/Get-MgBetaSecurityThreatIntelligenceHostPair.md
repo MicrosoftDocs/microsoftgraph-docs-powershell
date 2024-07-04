@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceHostPair
 
 ## SYNOPSIS
-Read the properties and relationships of a hostPair object.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostPair?view=graph-powershell-1.0)
@@ -60,7 +60,7 @@ Get-MgBetaSecurityThreatIntelligenceHostPair -InputObject <ISecurityIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a hostPair object.
+Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -409,10 +409,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpair](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencehostpair)
-
-[https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostpair-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-hostpairs?view=graph-rest-1.0)
 
 
 

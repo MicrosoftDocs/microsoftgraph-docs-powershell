@@ -9,9 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the properties of domain object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDomain?view=graph-powershell-beta)
+Only verified domains can be updated.
 
 ## SYNTAX
 
@@ -56,6 +54,7 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 
 ## DESCRIPTION
 Update the properties of domain object.
+Only verified domains can be updated.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -101,6 +100,7 @@ The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
 Not nullable.
+To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
 
 ```yaml
 Type: String
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
 ```yaml
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsAdminManaged
-The value of the property is false if the DNS record management of the domain has been delegated to Microsoft 365.
+The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
 
@@ -264,7 +264,7 @@ Accept wildcard characters: False
 
 ### -IsDefault
 true if this is the default domain that is used for user creation.
-There is only one default domain per company.
+There's only one default domain per company.
 Not nullable
 
 ```yaml
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 
 ### -IsInitial
 true if this is the initial domain created by Microsoft Online Services (contoso.com).
-There is only one initial domain per company.
+There's only one initial domain per company.
 Not nullable
 
 ```yaml
@@ -361,7 +361,7 @@ Accept wildcard characters: False
 
 ### -PasswordNotificationWindowInDays
 Specifies the number of days before a user receives notification that their password will expire.
-If the property is not set, a default value of 14 days will be used.
+If the property isn't set, a default value of 14 days is used.
 
 ```yaml
 Type: Int32
@@ -377,7 +377,7 @@ Accept wildcard characters: False
 
 ### -PasswordValidityPeriodInDays
 Specifies the length of time that a password is valid before it must be changed.
-If the property is not set, a default value of 90 days will be used.
+If the property isn't set, a default value of 90 days is used.
 
 ```yaml
 Type: Int32
@@ -458,7 +458,7 @@ Accept wildcard characters: False
 ### -SupportedServices
 The capabilities assigned to the domain.
 Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer.
+The values that you can add or remove using the API include: Email, OfficeCommunicationsOnline, Yammer.
 Not nullable.
 
 ```yaml
@@ -547,14 +547,15 @@ Read-only.
 The value is either Managed or Federated.
 Managed indicates a cloud managed domain where Microsoft Entra ID performs user authentication.
 Federated indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services.
-Not nullable.
+Not nullable. 
+To update this property in delegated scenarios, the calling app must be assigned the Directory.AccessAsUser.All delegated permission.
   - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is used.
 When the verify action is used, a domain entity is returned in the response.
 The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject- `[]`>]`: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -592,14 +593,14 @@ Read-only.
 For a list of statuses, see certificateUpdateResult status.
       - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated.
 Read-only.
-  - `[IsAdminManaged <Boolean?>]`: The value of the property is false if the DNS record management of the domain has been delegated to Microsoft 365.
+  - `[IsAdminManaged <Boolean?>]`: The value of the property is false if the DNS record management of the domain is delegated to Microsoft 365.
 Otherwise, the value is true.
 Not nullable
   - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation.
-There is only one default domain per company.
+There's only one default domain per company.
 Not nullable
   - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (contoso.com).
-There is only one initial domain per company.
+There's only one initial domain per company.
 Not nullable
   - `[IsRoot <Boolean?>]`: true if the domain is a verified root domain.
 Otherwise, false if the domain is a subdomain or unverified.
@@ -609,15 +610,15 @@ Not nullable
   - `[Manufacturer <String>]`: 
   - `[Model <String>]`: 
   - `[PasswordNotificationWindowInDays <Int32?>]`: Specifies the number of days before a user receives notification that their password will expire.
-If the property is not set, a default value of 14 days will be used.
+If the property isn't set, a default value of 14 days is used.
   - `[PasswordValidityPeriodInDays <Int32?>]`: Specifies the length of time that a password is valid before it must be changed.
-If the property is not set, a default value of 90 days will be used.
+If the property isn't set, a default value of 90 days is used.
   - `[ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable.
 Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-    - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+    - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
     - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
     - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.
 The value can be CName, Mx, Srv, or Txt.
@@ -630,14 +631,14 @@ Not nullable.
     - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
     - `[Operation <String>]`: Type of asynchronous operation.
-The values can be ForceDelete or Verification
+The values can be ForceDelete or Verification.
     - `[Status <String>]`: Current status of the operation. 
-Scheduled - Operation has been scheduled but has not started. 
-InProgress - Task has started and is in progress. 
-Failed - Operation has failed.
+Scheduled - Operation is scheduled but hasn't started. 
+InProgress - Task is in progress. 
+Failed - The operation failed.
   - `[SupportedServices <String- `[]`>]`: The capabilities assigned to the domain.
 Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
-The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer.
+The values that you can add or remove using the API include: Email, OfficeCommunicationsOnline, Yammer.
 Not nullable.
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord- `[]`>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
@@ -646,7 +647,7 @@ Supports $expand.
 DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject- `[]`>: The objects such as users and groups that reference the domain ID.
 Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
-For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
+For example, /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
@@ -690,6 +691,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -717,7 +720,7 @@ Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+  - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
   - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.
 The value can be CName, Mx, Srv, or Txt.
@@ -731,18 +734,18 @@ STATE `<IMicrosoftGraphDomainState>`: domainState
   - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred.
 The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
   - `[Operation <String>]`: Type of asynchronous operation.
-The values can be ForceDelete or Verification
+The values can be ForceDelete or Verification.
   - `[Status <String>]`: Current status of the operation. 
-Scheduled - Operation has been scheduled but has not started. 
-InProgress - Task has started and is in progress. 
-Failed - Operation has failed.
+Scheduled - Operation is scheduled but hasn't started. 
+InProgress - Task is in progress. 
+Failed - The operation failed.
 
 VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord- `[]`>: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Microsoft Entra ID.
 Read-only, Nullable.
 Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[IsOptional <Boolean?>]`: If false, this record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain.
+  - `[IsOptional <Boolean?>]`: If false, the customer must configure this record at the DNS host for Microsoft Online Services to operate correctly with the domain.
   - `[Label <String>]`: Value used when configuring the name of the DNS record at the DNS host.
   - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.
 The value can be CName, Mx, Srv, or Txt.

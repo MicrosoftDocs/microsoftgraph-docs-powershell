@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgExternalConnectionOperation
 
 ## SYNOPSIS
-Read the properties and relationships of a connectionOperation object.
+Get operations from external
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a connectionOperation object.
+Get operations from external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,8 +327,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionoperation)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-connectionoperation-get?view=graph-rest-1.0)
 
 
 

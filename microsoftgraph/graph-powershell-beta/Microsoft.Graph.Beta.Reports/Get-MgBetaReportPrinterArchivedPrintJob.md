@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaReportPrinterArchivedPrintJob
 
 ## SYNOPSIS
-Invoke function getPrinterArchivedPrintJobs
+Get a list of archived print jobs that were queued for particular printer.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count]
 ```
 
 ## DESCRIPTION
-Invoke function getPrinterArchivedPrintJobs
+Get a list of archived print jobs that were queued for particular printer.
 
 ## PARAMETERS
 
@@ -281,6 +281,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob)
+
+[https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta](https://learn.microsoft.com/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta)
 
 
 

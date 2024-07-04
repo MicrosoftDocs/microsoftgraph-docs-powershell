@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfilePatent
 
 ## SYNOPSIS
-Update the properties of an itemPatent object.
+Update the navigation property patents in users
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the properties of an itemPatent object.
+Update the navigation property patents in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -578,8 +578,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilepatent)
-
-[https://learn.microsoft.com/graph/api/itempatent-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itempatent-update?view=graph-rest-1.0)
 
 
 

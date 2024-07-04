@@ -409,7 +409,7 @@ The message appears in administrative logs.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetausersecurityinformationprotectionsensitivitylabelapplication)
 
-[https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-sensitivitylabel-evaluateapplication?view=graph-rest-beta)
 
 
 

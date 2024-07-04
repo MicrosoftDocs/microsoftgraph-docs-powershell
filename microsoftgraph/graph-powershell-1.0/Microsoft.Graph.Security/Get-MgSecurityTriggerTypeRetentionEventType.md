@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityTriggerTypeRetentionEventType
 
 ## SYNOPSIS
-Read the properties and relationships of a retentionEventType object.
+Get retentionEventTypes from security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity> [-E
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a retentionEventType object.
+Get retentionEventTypes from security
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertyperetentioneventtype)
-
-[https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-retentioneventtype-list?view=graph-rest-1.0)
 
 
 

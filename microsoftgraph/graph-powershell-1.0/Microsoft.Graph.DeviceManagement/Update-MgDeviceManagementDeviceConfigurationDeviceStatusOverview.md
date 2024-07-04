@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview
 
 ## SYNOPSIS
-Update the properties of a deviceConfigurationDeviceOverview object.
+Update the navigation property deviceStatusOverview in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <I
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceConfigurationDeviceOverview object.
+Update the navigation property deviceStatusOverview in deviceManagement
 
 ## PARAMETERS
 
@@ -399,8 +399,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatusoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationdevicestatusoverview)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdeviceoverview-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdeviceoverview-update?view=graph-rest-1.0)
 
 
 

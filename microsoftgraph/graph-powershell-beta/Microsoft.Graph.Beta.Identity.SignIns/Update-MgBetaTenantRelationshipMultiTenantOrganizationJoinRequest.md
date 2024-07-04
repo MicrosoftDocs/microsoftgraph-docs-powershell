@@ -8,10 +8,10 @@ schema: 2.0.0
 # Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 
 ## SYNOPSIS
-Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
-Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
-To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
-Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
+Update the navigation property joinRequest in tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTenantRelationshipMultiTenantOrganizationJoinRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -31,10 +31,7 @@ Update-MgBetaTenantRelationshipMultiTenantOrganizationJoinRequest
 ```
 
 ## DESCRIPTION
-Join a multi-tenant organization, after the owner of the multi-tenant organization has added your tenant to the multi-tenant organization as pending.
-Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the joining tenant must submit a join request.
-To allow for asynchronous processing, you must wait a minimum of 2 hours between creation and joining a multi-tenant organization.
-Furthermore, to allow for asynchronous processing, you must wait up to 4 hours before joining a multi-tenant organization is completed.
+Update the navigation property joinRequest in tenantRelationships
 
 ## PARAMETERS
 
@@ -266,8 +263,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatenantrelationshipmultitenantorganizationjoinrequest)
-
-[https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganizationjoinrequestrecord-update?view=graph-rest-1.0)
 
 
 

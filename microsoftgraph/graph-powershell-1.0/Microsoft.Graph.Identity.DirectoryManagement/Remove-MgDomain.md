@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDomain
 
 ## SYNOPSIS
-Deletes a domain from a tenant.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomain?view=graph-powershell-beta)
+Delete a domain from a tenant.
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Deletes a domain from a tenant.
+Delete a domain from a tenant.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -204,6 +201,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

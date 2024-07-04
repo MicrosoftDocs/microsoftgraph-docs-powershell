@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Create a new remoteAssistancePartner object.
+Create new navigation property to remoteAssistancePartners for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRem
 ```
 
 ## DESCRIPTION
-Create a new remoteAssistancePartner object.
+Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -268,8 +268,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner)
-
-[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-create?view=graph-rest-1.0)
 
 
 

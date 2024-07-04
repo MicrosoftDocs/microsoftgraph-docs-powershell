@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a conditionalAccessPolicy object.
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access policies.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
@@ -38,7 +40,9 @@ Get-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a conditionalAccessPolicy object.
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access policies.
 
 ## EXAMPLES
 ### Example 1: Get a list of all conditional access policies in Azure AD.
@@ -420,10 +424,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-list-policies?view=graph-rest-1.0)
 
 
 

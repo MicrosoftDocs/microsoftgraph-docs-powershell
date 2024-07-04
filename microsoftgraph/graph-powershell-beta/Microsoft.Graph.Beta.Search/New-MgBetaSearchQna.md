@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSearchQna
 
 ## SYNOPSIS
-Create a new qna object.
+Create new navigation property to qnas for search
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgSearchQna](/powershell/module/Microsoft.Graph.Search/New-MgSearchQna?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-ResponseHeadersV
 ```
 
 ## DESCRIPTION
-Create a new qna object.
+Create new navigation property to qnas for search
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -533,8 +533,6 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchqna)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-post-qnas?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## SYNOPSIS
-Create a new windowsAutopilotDeviceIdentity object.
+Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ New-MgDeviceManagementWindowsAutopilotDeviceIdentity
 ```
 
 ## DESCRIPTION
-Create a new windowsAutopilotDeviceIdentity object.
+Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
 ## PARAMETERS
 
@@ -441,8 +441,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementwindowsautopilotdeviceidentity)
-
-[https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-enrollment-windowsautopilotdeviceidentity-create?view=graph-rest-1.0)
 
 
 

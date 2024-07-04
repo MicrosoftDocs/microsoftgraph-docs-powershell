@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus
 
 ## SYNOPSIS
-Read properties and relationships of the deviceComplianceDeviceStatus object.
+List of DeviceComplianceDeviceStatus.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the deviceComplianceDeviceStatus object.
+List of DeviceComplianceDeviceStatus.
 
 ## PARAMETERS
 
@@ -360,10 +360,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatus)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedevicestatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedevicestatus-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedevicestatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancedevicestatus-list?view=graph-rest-1.0)
 
 
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+Delete navigation property profileCardProperties for admin
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Delete the profileCardProperty object specified by its directoryPropertyName from the organization's profile card, and remove any localized customizations for that property.
+Delete navigation property profileCardProperties for admin
 
 ## PARAMETERS
 
@@ -191,6 +188,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -216,8 +215,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgadminpeopleprofilecardproperty)
-
-[https://learn.microsoft.com/graph/api/profilecardproperty-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-delete?view=graph-rest-1.0)
 
 
 

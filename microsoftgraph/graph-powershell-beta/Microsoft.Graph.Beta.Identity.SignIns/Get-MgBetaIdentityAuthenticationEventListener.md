@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get authenticationEventListeners from identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventListener?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -377,8 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventlistener](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityauthenticationeventlistener)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventlisteners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-authenticationeventlisteners?view=graph-rest-1.0)
 
 
 

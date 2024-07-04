@@ -8,12 +8,7 @@ schema: 2.0.0
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
+Update the properties of a organization object.
 
 ## SYNTAX
 
@@ -68,9 +63,7 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the currently authenticated organization.
-In this case, organization is defined as a collection of exactly one record, and so its ID must be specified in the request.
-The ID is also known as the tenantId of the organization.
+Update the properties of a organization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -962,7 +955,7 @@ Not nullable.
     - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
     - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
     - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-    - `[Name <String>]`: The domain name; for example, contoso.com\`.
+    - `[Name <String>]`: The domain name; for example, contoso.com.
     - `[Type <String>]`: For example, Managed.
 
 BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
@@ -1144,6 +1137,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -1185,14 +1180,14 @@ Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
-  - `[Name <String>]`: The domain name; for example, contoso.com\`.
+  - `[Name <String>]`: The domain name; for example, contoso.com.
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization)
 
-[https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/organization-update?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-organization-update?view=graph-rest-1.0)
 
 
 

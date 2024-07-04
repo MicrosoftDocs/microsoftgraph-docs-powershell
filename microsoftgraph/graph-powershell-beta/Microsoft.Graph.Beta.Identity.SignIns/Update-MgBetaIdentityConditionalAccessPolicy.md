@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Update the properties of a conditionalAccessPolicy object.
+Update the navigation property policies in identity
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
@@ -52,7 +52,7 @@ Update-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Update the properties of a conditionalAccessPolicy object.
+Update the navigation property policies in identity
 
 ## EXAMPLES
 ### Example 1: Add sign in risk levels to an existing conditional access policy
@@ -736,8 +736,6 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls>`: conditional
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccesspolicy)
-
-[https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccesspolicy-update?view=graph-rest-1.0)
 
 
 

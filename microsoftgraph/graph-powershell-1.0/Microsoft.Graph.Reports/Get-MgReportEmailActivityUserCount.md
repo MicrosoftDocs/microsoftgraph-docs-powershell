@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportEmailActivityUserCount
 
 ## SYNOPSIS
-Invoke function getEmailActivityUserCounts
+Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportEmailActivityUserCount?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportEmailActivityUserCount -InputObject <IReportsIdentity> -OutFile <Str
 ```
 
 ## DESCRIPTION
-Invoke function getEmailActivityUserCounts
+Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive.
 
 ## EXAMPLES
 
@@ -184,6 +184,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportemailactivityusercount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityAttackSimulationOperation
 
 ## SYNOPSIS
-Get an attack simulation operation to track a long-running operation request for a tenant.
+Represents an attack simulation training operation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityAttackSimulationOperation?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get an attack simulation operation to track a long-running operation request for a tenant.
+Represents an attack simulation training operation.
 
 ## PARAMETERS
 
@@ -350,8 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationoperation)
-
-[https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/attacksimulationoperation-get?view=graph-rest-1.0)
 
 
 

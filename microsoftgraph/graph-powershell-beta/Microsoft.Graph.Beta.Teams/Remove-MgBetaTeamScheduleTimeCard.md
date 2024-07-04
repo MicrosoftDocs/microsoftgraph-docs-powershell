@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaTeamScheduleTimeCard
 
 ## SYNOPSIS
-Delete a timeCard instance in a schedule.
+Delete navigation property timeCards for teams
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete a timeCard instance in a schedule.
+Delete navigation property timeCards for teams
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaTeamScheduleTimeCard Cmdlet
@@ -254,8 +254,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimecard](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamscheduletimecard)
-
-[https://learn.microsoft.com/graph/api/timecard-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timecard-delete?view=graph-rest-1.0)
 
 
 

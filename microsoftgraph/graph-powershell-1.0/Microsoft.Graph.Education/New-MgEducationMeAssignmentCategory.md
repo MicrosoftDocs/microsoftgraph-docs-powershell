@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
-Add one or more existing educationCategory objects to the specified  educationAssignment.
-Only teachers can perform this operation.
+Create new navigation property to categories for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentCategory?view=graph-powershell-beta)
@@ -45,8 +44,7 @@ New-MgEducationMeAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Add one or more existing educationCategory objects to the specified  educationAssignment.
-Only teachers can perform this operation.
+Create new navigation property to categories for education
 
 ## EXAMPLES
 
@@ -262,8 +260,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationmeassignmentcategory)
-
-[https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-categories?view=graph-rest-1.0)
 
 
 

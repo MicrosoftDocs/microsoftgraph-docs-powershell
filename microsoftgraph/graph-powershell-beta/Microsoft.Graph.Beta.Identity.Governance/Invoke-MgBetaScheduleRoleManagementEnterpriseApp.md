@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaScheduleRoleManagementEnterpriseApp
 
 ## SYNOPSIS
-Invoke function roleScheduleInstances
+Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Invoke-MgBetaScheduleRoleManagementEnterpriseApp -InputObject <IIdentityGovernan
 ```
 
 ## DESCRIPTION
-Invoke function roleScheduleInstances
+Retrieve both roleAssignmentScheduleInstances and roleEligibilityScheduleInstances.
 
 ## PARAMETERS
 
@@ -411,6 +411,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententerpriseapp](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaschedulerolemanagemententerpriseapp)
+
+[https://learn.microsoft.com/graph/api/rbacapplication-rolescheduleinstances?view=graph-rest-beta](https://learn.microsoft.com/graph/api/rbacapplication-rolescheduleinstances?view=graph-rest-beta)
 
 
 

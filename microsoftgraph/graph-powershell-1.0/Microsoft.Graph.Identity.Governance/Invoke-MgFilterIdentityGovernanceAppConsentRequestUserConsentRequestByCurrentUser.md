@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgBetaFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUser?view=graph-powershell-beta)
@@ -33,7 +33,7 @@ Invoke-MgFilterIdentityGovernanceAppConsentRequestUserConsentRequestByCurrentUse
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve a collection of userConsentRequest objects for accessing a specified app, for which the current user is the reviewer.
 
 ## PARAMETERS
 
@@ -336,6 +336,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceappconsentrequestuserconsentrequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/invoke-mgfilteridentitygovernanceappconsentrequestuserconsentrequestbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/userconsentrequest-filterbycurrentuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/userconsentrequest-filterbycurrentuser?view=graph-rest-1.0)
 
 
 

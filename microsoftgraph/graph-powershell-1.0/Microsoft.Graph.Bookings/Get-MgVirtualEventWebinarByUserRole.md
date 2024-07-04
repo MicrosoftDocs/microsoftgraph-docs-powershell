@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgVirtualEventWebinarByUserRole
 
 ## SYNOPSIS
-Invoke function getByUserRole
+Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaVirtualEventWebinarByUserRole](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaVirtualEventWebinarByUserRole?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Get-MgVirtualEventWebinarByUserRole -InputObject <IBookingsIdentity> [-Count] [-
 ```
 
 ## DESCRIPTION
-Invoke function getByUserRole
+Get a virtualEventWebinar collection where the signed-in user is either the organizer or a coorganizer.
 
 ## PARAMETERS
 
@@ -268,6 +268,8 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgvirtualeventwebinarbyuserrole)
+
+[https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-1.0)
 
 
 

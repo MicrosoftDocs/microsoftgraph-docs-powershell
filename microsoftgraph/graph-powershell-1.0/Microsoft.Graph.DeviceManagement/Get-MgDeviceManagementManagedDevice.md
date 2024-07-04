@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDevice
 
 ## SYNOPSIS
-Read properties and relationships of the managedDevice object.
+The list of managed devices.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDevice?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity> [-E
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedDevice object.
+The list of managed devices.
 
 ## PARAMETERS
 
@@ -344,10 +344,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevice](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementmanageddevice)
-
-[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-devices-manageddevice-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-devices-manageddevice-list?view=graph-rest-1.0)
 
 
 

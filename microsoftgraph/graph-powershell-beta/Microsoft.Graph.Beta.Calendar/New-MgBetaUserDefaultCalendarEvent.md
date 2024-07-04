@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserDefaultCalendarEvent
 
 ## SYNOPSIS
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+Create new navigation property to events for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserDefaultCalendarEvent?view=graph-powershell-1.0)
@@ -77,8 +76,7 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+Create new navigation property to events for users
 
 ## PARAMETERS
 
@@ -2333,8 +2331,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetauserdefaultcalendarevent)
-
-[https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendar-post-events?view=graph-rest-1.0)
 
 
 

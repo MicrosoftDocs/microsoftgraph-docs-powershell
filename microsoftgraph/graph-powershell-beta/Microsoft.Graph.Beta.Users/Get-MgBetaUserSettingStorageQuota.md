@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserSettingStorageQuota
 
 ## SYNOPSIS
-Read the properties and relationships of a unifiedStorageQuota object.
+Get quota from users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Get-MgBetaUserSettingStorageQuota -InputObject <IUsersIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a unifiedStorageQuota object.
+Get quota from users
 
 ## PARAMETERS
 
@@ -184,8 +184,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingstoragequota)
-
-[https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedstoragequota-get?view=graph-rest-1.0)
 
 
 

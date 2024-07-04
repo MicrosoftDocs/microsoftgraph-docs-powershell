@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaSecurityThreatSubmissionUrlThreat
 
 ## SYNOPSIS
-Create a new urlThreatSubmission object.
+Create new navigation property to urlThreats for security
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecur
 ```
 
 ## DESCRIPTION
-Create a new urlThreatSubmission object.
+Create new navigation property to urlThreats for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -430,8 +430,6 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat)
-
-[https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-urlthreatsubmission-post-urlthreats?view=graph-rest-1.0)
 
 
 

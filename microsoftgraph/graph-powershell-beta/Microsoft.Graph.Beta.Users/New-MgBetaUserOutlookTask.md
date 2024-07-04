@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserOutlookTask
 
 ## SYNOPSIS
-Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
-By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Create new navigation property to tasks for users
 
 ## SYNTAX
 
@@ -62,10 +59,7 @@ New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create an Outlook task in the default task group (My Tasks) and default task folder (Tasks) in the user's mailbox.
-The POST method always ignores the time portion of startDateTime and dueDateTime in the request body, and assumes the time to be always midnight in the specified time zone.
-By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-You can use the Prefer: outlook.timezone header to have all the date-related properties in the response represented in a time zone different than UTC.
+Create new navigation property to tasks for users
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaUserOutlookTask Cmdlet
@@ -823,8 +817,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask)
-
-[https://learn.microsoft.com/graph/api/outlookuser-post-tasks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-post-tasks?view=graph-rest-1.0)
 
 
 

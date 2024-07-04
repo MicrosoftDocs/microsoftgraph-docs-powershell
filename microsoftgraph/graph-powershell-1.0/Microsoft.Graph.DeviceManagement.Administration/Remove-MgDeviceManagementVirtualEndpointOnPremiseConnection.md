@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-Delete a specific cloudPcOnPremisesConnection object.
-When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
-You cannot delete an Azure network connection when it's in use, as indicated by the inUse property.
+Delete navigation property onPremisesConnections for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
@@ -33,9 +31,7 @@ Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 
 ## DESCRIPTION
-Delete a specific cloudPcOnPremisesConnection object.
-When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
-You cannot delete an Azure network connection when it's in use, as indicated by the inUse property.
+Delete navigation property onPremisesConnections for deviceManagement
 
 ## PARAMETERS
 
@@ -222,8 +218,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointonpremiseconnection)
-
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-Remove a group from the list of groups marked as incompatible on an accessPackage.
+Delete ref of navigation property incompatibleGroups for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef
 ```
 
 ## DESCRIPTION
-Remove a group from the list of groups marked as incompatible on an accessPackage.
+Delete ref of navigation property incompatibleGroups for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -320,8 +320,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaentitlementmanagementaccesspackageincompatiblegroupbyref)
-
-[https://learn.microsoft.com/graph/api/accesspackage-delete-incompatiblegroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-delete-incompatiblegroup?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityLabelFilePlanReference
 
 ## SYNOPSIS
-Read the properties and relationships of a filePlanReferenceTemplate object.
+Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityLabelFilePlanReference?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a filePlanReferenceTemplate object.
+Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritylabelfileplanreference)
-
-[https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-fileplanreferencetemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-list-fileplanreferences?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
@@ -25,8 +25,9 @@ New-MgPolicyCrossTenantAccessPolicyPartner [-ResponseHeadersVariable <String>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider] [-TenantId <String>]
- [-Headers <IDictionary>] [-ProgressAction <ActionPreference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsInMultiTenantOrganization]
+ [-IsServiceProvider] [-TenantId <String>] [-Headers <IDictionary>] [-ProgressAction <ActionPreference>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -38,7 +39,7 @@ New-MgPolicyCrossTenantAccessPolicyPartner
 ```
 
 ## DESCRIPTION
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,6 +240,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IsInMultiTenantOrganization
+Identifies whether a tenant is a member of a multitenant organization.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -IsServiceProvider
 Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
 
@@ -428,6 +444,7 @@ This property has no impact on existing users who have already been synchronized
     - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
     - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
     - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+  - `[IsInMultiTenantOrganization <Boolean?>]`: Identifies whether a tenant is a member of a multitenant organization.
   - `[IsServiceProvider <Boolean?>]`: Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
   - `[TenantId <String>]`: The tenant identifier for the partner Microsoft Entra organization.
 Read-only.
@@ -455,8 +472,6 @@ INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenant
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicycrosstenantaccesspolicypartner](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgpolicycrosstenantaccesspolicypartner)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicy-post-partners?view=graph-rest-1.0)
 
 
 

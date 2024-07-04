@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
-Use this API to create a new Message in a mailfolder.
+Create new navigation property to messages for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolderChildFolderMessage?view=graph-powershell-1.0)
@@ -75,7 +75,7 @@ New-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> -BodyPar
 ```
 
 ## DESCRIPTION
-Use this API to create a new Message in a mailfolder.
+Create new navigation property to messages for users
 
 ## PARAMETERS
 
@@ -1162,8 +1162,6 @@ UNIQUEBODY `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessage)
-
-[https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-post-messages?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementManagedAppRegistrationOperation
 
 ## SYNOPSIS
-Create a new managedAppOperation object.
+Create new navigation property to operations for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppRegistrationOperation?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceAppManagementManagedAppRegistrationOperation -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Create a new managedAppOperation object.
+Create new navigation property to operations for deviceAppManagement
 
 ## PARAMETERS
 
@@ -330,8 +330,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedappregistrationoperation)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappoperation-create?view=graph-rest-1.0)
 
 
 

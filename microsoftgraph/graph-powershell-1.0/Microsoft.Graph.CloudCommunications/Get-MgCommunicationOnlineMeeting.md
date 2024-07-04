@@ -541,8 +541,6 @@ For example, if a user changes their display name, the API might show the new va
 
 [https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-createorget?view=graph-rest-1.0)
 
-[https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/onlinemeeting-get?view=graph-rest-1.0)
-
 
 
 

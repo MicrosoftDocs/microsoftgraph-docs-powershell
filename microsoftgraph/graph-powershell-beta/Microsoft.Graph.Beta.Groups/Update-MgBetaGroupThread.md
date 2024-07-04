@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaGroupThread
 
 ## SYNOPSIS
-Update a thread object.
+Update the navigation property threads in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-1.0)
@@ -48,7 +48,7 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update a thread object.
+Update the navigation property threads in groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -663,8 +663,6 @@ Returned only on $select.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagroupthread)
-
-[https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-thread?view=graph-rest-1.0)
 
 
 

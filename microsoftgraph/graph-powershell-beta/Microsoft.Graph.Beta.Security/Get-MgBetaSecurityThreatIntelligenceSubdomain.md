@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceSubdomain
 
 ## SYNOPSIS
-Read the properties and relationships of a subdomain object.
+Retrieve details about the subdomain.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a subdomain object.
+Retrieve details about the subdomain.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -372,8 +372,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligencesubdomain)
-
-[https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-subdomain-get?view=graph-rest-1.0)
 
 
 

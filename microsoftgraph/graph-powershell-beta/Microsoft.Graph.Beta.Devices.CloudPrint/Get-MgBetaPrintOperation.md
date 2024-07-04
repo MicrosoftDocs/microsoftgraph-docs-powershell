@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPrintOperation
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a printOperation object.
+Get operations from print
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintOperation?view=graph-powershell-1.0)
@@ -38,10 +38,7 @@ Get-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a printOperation object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/printoperation-get-permissions.md)]
+Get operations from print
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -319,8 +316,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintoperation)
-
-[https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printoperation-get?view=graph-rest-1.0)
 
 
 

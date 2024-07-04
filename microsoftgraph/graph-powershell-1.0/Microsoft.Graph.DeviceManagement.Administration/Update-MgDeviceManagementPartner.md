@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementPartner
 
 ## SYNOPSIS
-Update the properties of a deviceManagementPartner object.
+Update the navigation property deviceManagementPartners in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgDeviceManagementPartner -InputObject <IDeviceManagementAdministrationId
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceManagementPartner object.
+Update the navigation property deviceManagementPartners in deviceManagement
 
 ## PARAMETERS
 
@@ -415,8 +415,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementpartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementpartner)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicemanagementpartner-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementVirtualEndpointScopedPermission
 
 ## SYNOPSIS
-Invoke function retrieveScopedPermissions
+Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
 ## SYNTAX
 
@@ -19,7 +19,10 @@ Get-MgBetaDeviceManagementVirtualEndpointScopedPermission [-Count] [-Filter <Str
 ```
 
 ## DESCRIPTION
-Invoke function retrieveScopedPermissions
+Get the permissions and corresponding scope IDs for which the authenticated user has access.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/virtualendpoint-retrievescopedpermissions-permissions.md)]
 
 ## PARAMETERS
 
@@ -157,6 +160,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointscopedpermission)
+
+[https://learn.microsoft.com/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/virtualendpoint-retrievescopedpermissions?view=graph-rest-beta)
 
 
 

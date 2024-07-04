@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Delete an ediscoveryReviewSetQuery object.
+Delete navigation property queries for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentit
 ```
 
 ## DESCRIPTION
-Delete an ediscoveryReviewSetQuery object.
+Delete navigation property queries for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -296,8 +296,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasereviewsetquery)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewset-delete-queries?view=graph-rest-1.0)
 
 
 

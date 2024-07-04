@@ -11,9 +11,6 @@ schema: 2.0.0
 Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
 Optionally clears existing the synchronization state and previous errors.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restart-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RestartExpanded (Default)
@@ -280,6 +277,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob

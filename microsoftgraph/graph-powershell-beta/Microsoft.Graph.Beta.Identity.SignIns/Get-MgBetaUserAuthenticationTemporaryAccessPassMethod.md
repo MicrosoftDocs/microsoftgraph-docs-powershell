@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserAuthenticationTemporaryAccessPassMethod
 
 ## SYNOPSIS
-Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
+Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 ```
 
 ## DESCRIPTION
-Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
+Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -395,10 +395,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationtemporaryaccesspassmethod](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetauserauthenticationtemporaryaccesspassmethod)
-
-[https://learn.microsoft.com/graph/api/temporaryaccesspassauthenticationmethod-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/temporaryaccesspassauthenticationmethod-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authentication-list-temporaryaccesspassmethods?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authentication-list-temporaryaccesspassmethods?view=graph-rest-1.0)
 
 
 

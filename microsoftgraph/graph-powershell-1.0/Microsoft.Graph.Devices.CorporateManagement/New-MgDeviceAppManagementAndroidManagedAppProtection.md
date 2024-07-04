@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
-Create a new androidManagedAppProtection object.
+Create new navigation property to androidManagedAppProtections for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ New-MgDeviceAppManagementAndroidManagedAppProtection
 ```
 
 ## DESCRIPTION
-Create a new androidManagedAppProtection object.
+Create new navigation property to androidManagedAppProtections for deviceAppManagement
 
 ## PARAMETERS
 
@@ -956,8 +956,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementandroidmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-create?view=graph-rest-1.0)
 
 
 

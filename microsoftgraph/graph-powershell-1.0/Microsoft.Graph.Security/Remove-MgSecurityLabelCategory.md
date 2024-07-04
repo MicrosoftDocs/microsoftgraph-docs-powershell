@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelCategory
 
 ## SYNOPSIS
-Delete a categoryTemplate object.
+Delete navigation property categories for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelCategory](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelCategory?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete a categoryTemplate object.
+Delete navigation property categories for security
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabelcategory)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-categories?view=graph-rest-1.0)
 
 
 

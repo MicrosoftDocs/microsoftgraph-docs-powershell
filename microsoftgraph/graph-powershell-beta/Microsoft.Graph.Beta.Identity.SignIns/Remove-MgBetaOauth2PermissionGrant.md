@@ -287,7 +287,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaoauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaoauth2permissiongrant)
 
-[https://learn.microsoft.com/graph/api/oauth2permissiongrant-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delete?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/oauth2permissiongrant-delete?view=graph-rest-beta](https://learn.microsoft.com/graph/api/oauth2permissiongrant-delete?view=graph-rest-beta)
 
 
 

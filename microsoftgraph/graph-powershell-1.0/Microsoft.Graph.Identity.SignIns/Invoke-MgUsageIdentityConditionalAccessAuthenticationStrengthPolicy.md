@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Invoke function usage
+Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject
 ```
 
 ## DESCRIPTION
-Invoke function usage
+Allows the caller to see which Conditional Access policies reference a specified authentication strength policy.
+The policies are returned in two collections, one containing Conditional Access policies that require an MFA claim and the other containing Conditional Access policies that do not require such a claim.
+Policies in the former category are restricted in what kinds of changes may be made to them to prevent undermining the MFA requirement of those policies.
 
 ## PARAMETERS
 
@@ -131,6 +135,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -142,6 +147,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -156,6 +162,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -186,6 +193,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgusageidentityconditionalaccessauthenticationstrengthpolicy)
+
+[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-usage?view=graph-rest-1.0)
 
 
 

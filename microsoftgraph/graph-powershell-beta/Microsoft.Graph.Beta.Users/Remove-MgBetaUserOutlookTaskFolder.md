@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOutlookTaskFolder
 
 ## SYNOPSIS
-Delete the specified Outlook task folder.
+Delete navigation property taskFolders for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete the specified Outlook task folder.
+Delete navigation property taskFolders for users
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOutlookTaskFolder Cmdlet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/remove-mgbetauseroutlooktaskfolder)
-
-[https://learn.microsoft.com/graph/api/outlooktaskfolder-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlooktaskfolder-delete?view=graph-rest-1.0)
 
 
 

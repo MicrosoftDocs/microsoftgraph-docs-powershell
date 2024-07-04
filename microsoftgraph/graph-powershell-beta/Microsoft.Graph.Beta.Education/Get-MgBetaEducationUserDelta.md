@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaEducationUserDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created or updated educationUser without having to perform a full read of the entire collection.
+See Use delta query for details.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEducationUserDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserDelta?view=graph-powershell-1.0)
@@ -23,7 +24,8 @@ Get-MgBetaEducationUserDelta [-ExpandProperty <String[]>] [-Filter <String>] [-P
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created or updated educationUser without having to perform a full read of the entire collection.
+See Use delta query for details.
 
 ## EXAMPLES
 
@@ -239,6 +241,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationuserdelta)
+
+[https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/educationuser-delta?view=graph-rest-beta)
 
 
 

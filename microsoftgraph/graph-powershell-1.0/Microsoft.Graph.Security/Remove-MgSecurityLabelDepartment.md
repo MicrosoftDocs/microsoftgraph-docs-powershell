@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSecurityLabelDepartment
 
 ## SYNOPSIS
-Delete a departmentTemplate object.
+Delete navigation property departments for security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityLabelDepartment?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete a departmentTemplate object.
+Delete navigation property departments for security
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment](https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritylabeldepartment)
-
-[https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-labelsroot-delete-departments?view=graph-rest-1.0)
 
 
 

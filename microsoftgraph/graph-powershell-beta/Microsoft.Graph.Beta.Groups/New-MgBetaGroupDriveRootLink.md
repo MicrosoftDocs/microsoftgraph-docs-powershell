@@ -420,7 +420,7 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupdriverootlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupdriverootlink)
 
-[https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/driveitem-createlink?view=graph-rest-beta)
 
 
 

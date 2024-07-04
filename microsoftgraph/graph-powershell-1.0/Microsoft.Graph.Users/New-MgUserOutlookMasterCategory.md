@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Create an outlookCategory object in the user's master list of categories.
+Create new navigation property to masterCategories for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create an outlookCategory object in the user's master list of categories.
+Create new navigation property to masterCategories for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,8 +299,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory](https://learn.microsoft.com/powershell/module/microsoft.graph.users/new-mguseroutlookmastercategory)
-
-[https://learn.microsoft.com/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0)
 
 
 

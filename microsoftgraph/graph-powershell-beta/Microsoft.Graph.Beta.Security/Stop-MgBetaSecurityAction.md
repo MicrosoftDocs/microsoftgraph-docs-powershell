@@ -270,7 +270,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/stop-mgbetasecurityaction)
 
-[https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta](https://learn.microsoft.com/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
 
 
 

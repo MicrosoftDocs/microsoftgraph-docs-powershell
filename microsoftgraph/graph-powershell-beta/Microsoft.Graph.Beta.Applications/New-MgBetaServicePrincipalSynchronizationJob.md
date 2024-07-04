@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaServicePrincipalSynchronizationJob
 
 ## SYNOPSIS
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for servicePrincipals
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-1.0)
@@ -52,9 +50,7 @@ New-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Create new synchronization job with a default synchronization schema.
-The job is created in a disabled state.
-Call Start job to start synchronization.
+Create new navigation property to jobs for servicePrincipals
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJob Cmdlet
@@ -829,8 +825,6 @@ Some settings are inherited from the template.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationjob)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronization-post-jobs?view=graph-rest-1.0)
 
 
 

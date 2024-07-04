@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
+The collection of column definitions for this content type.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteContentTypeColumn?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a \[site\]\[\], a \[list\]\[\], or a \[contentType\]\[\] \[column\]\[columnDefinition\].
+The collection of column definitions for this content type.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -370,16 +370,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsitecontenttypecolumn)
-
-[https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/columndefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-list-columns?view=graph-rest-1.0)
 
 
 

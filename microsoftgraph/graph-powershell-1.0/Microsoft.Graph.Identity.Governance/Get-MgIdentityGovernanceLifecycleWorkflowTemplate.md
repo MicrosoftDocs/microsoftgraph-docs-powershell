@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowTemplate
 
 ## SYNOPSIS
-Read the properties and relationships of a workflowTemplate object.
+The workflow templates in the lifecycle workflow instance.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGoverna
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a workflowTemplate object.
+The workflow templates in the lifecycle workflow instance.
 
 ## PARAMETERS
 
@@ -357,10 +357,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtemplate)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-workflowtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflowtemplate-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-workflowtemplates?view=graph-rest-1.0)
 
 
 

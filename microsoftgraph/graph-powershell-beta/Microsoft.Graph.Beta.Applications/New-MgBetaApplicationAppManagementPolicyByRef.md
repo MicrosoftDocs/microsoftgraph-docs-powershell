@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationAppManagementPolicyByRef
 
 ## SYNOPSIS
-Assign an appManagementPolicy policy object to an application or service principal object.
-The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
-Only one policy object can be assigned to an application or service principal.
+Create new navigation property ref to appManagementPolicies for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-1.0)
@@ -47,9 +45,7 @@ New-MgBetaApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Assign an appManagementPolicy policy object to an application or service principal object.
-The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
-Only one policy object can be assigned to an application or service principal.
+Create new navigation property ref to appManagementPolicies for applications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -298,8 +294,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationappmanagementpolicybyref)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-post-appliesto?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-post-appliesto?view=graph-rest-1.0)
 
 
 

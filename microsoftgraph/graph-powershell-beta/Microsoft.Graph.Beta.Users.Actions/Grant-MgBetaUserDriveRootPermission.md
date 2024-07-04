@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgBetaUserDriveRootPermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveRootPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveRootPermission?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ Grant-MgBetaUserDriveRootPermission -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/permission-grant-permissions.md)]
@@ -359,7 +359,7 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriverootpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/grant-mgbetauserdriverootpermission)
 
-[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta](https://learn.microsoft.com/graph/api/permission-grant?view=graph-rest-beta)
 
 
 

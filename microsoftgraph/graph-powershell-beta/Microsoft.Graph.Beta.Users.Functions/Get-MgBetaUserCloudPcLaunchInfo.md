@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserCloudPcLaunchInfo
 
 ## SYNOPSIS
-Invoke function getCloudPcLaunchInfo
+Get the cloudPCLaunchInfo for the signed-in user.
 
 ## SYNTAX
 
@@ -25,7 +25,10 @@ Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [-Respons
 ```
 
 ## DESCRIPTION
-Invoke function getCloudPcLaunchInfo
+Get the cloudPCLaunchInfo for the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/cloudpc-getcloudpclaunchinfo-permissions.md)]
 
 ## EXAMPLES
 
@@ -181,6 +184,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo)
+
+[https://learn.microsoft.com/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta](https://learn.microsoft.com/graph/api/cloudpc-getcloudpclaunchinfo?view=graph-rest-beta)
 
 
 

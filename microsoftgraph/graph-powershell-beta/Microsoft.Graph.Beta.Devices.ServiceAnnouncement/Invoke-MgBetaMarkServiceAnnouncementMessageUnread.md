@@ -201,7 +201,7 @@ BODYPARAMETER `<IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkun
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/invoke-mgbetamarkserviceannouncementmessageunread)
 
-[https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceupdatemessage-markunread?view=graph-rest-beta)
 
 
 

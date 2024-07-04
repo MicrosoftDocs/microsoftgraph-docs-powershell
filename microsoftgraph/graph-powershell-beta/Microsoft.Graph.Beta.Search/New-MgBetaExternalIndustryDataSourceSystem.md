@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataSourceSystem
 
 ## SYNOPSIS
-Create a new sourceSystemDefinition object.
+Create new navigation property to sourceSystems for external
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgBetaExternalIndustryDataSourceSystem -BodyParameter <IMicrosoftGraphIndust
 ```
 
 ## DESCRIPTION
-Create a new sourceSystemDefinition object.
+Create new navigation property to sourceSystems for external
 
 ## PARAMETERS
 
@@ -282,8 +282,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydatasourcesystem)
-
-[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-post?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-post?view=graph-rest-1.0)
 
 
 

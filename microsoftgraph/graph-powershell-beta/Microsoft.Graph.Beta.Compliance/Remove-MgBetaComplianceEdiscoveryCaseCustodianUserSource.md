@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Delete a userSource object.
+Delete navigation property userSources for compliance
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplian
 ```
 
 ## DESCRIPTION
-Delete a userSource object.
+Delete navigation property userSources for compliance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -249,8 +249,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianusersource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycasecustodianusersource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-usersource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-usersource-delete?view=graph-rest-1.0)
 
 
 

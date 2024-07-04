@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgGroupTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Replace an existing timeOffReason.
-If the specified timeOffReason doesn't exist, this method returns 404 Not found.
+Update the navigation property timeOffReasons in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
@@ -47,8 +46,7 @@ Update-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Replace an existing timeOffReason.
-If the specified timeOffReason doesn't exist, this method returns 404 Not found.
+Update the navigation property timeOffReasons in groups
 
 ## PARAMETERS
 
@@ -370,8 +368,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduletimeoffreason](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduletimeoffreason)
-
-[https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffreason-put?view=graph-rest-1.0)
 
 
 

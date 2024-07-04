@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaApplicationExtensionProperty
 
 ## SYNOPSIS
-Read a directory extension definition represented by an extensionProperty object.
+Read-only.
+Nullable.
+Supports $expand and $filter (/$count eq 0, /$count ne 0).
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-1.0)
@@ -38,10 +40,9 @@ Get-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Read a directory extension definition represented by an extensionProperty object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/extensionproperty-get-permissions.md)]
+Read-only.
+Nullable.
+Supports $expand and $filter (/$count eq 0, /$count ne 0).
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -353,10 +354,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaapplicationextensionproperty)
-
-[https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/extensionproperty-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-list-extensionproperty?view=graph-rest-1.0)
 
 
 

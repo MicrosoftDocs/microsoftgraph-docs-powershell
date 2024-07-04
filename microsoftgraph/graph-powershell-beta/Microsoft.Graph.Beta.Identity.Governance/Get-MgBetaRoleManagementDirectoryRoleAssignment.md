@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRoleManagementDirectoryRoleAssignment
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaRoleManagementDirectoryRoleAssignment -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a unifiedRoleAssignment object.
+Get roleAssignments from roleManagement
 
 ## PARAMETERS
 
@@ -389,10 +389,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetarolemanagementdirectoryroleassignment)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-list-roleassignments?view=graph-rest-1.0)
 
 
 

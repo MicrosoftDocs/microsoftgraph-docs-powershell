@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaFilterUserPendingAccessReviewInstanceDecisionByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
+A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
 
 ## SYNTAX
 
@@ -29,7 +30,11 @@ Invoke-MgBetaFilterUserPendingAccessReviewInstanceDecisionByCurrentUser -InputOb
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Retrieve the accessReviewInstanceDecisionItem objects for a specific accessReviewInstance.
+A list of zero or more accessReviewInstanceDecisionItem objects are returned, including all of their nested properties.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/accessreviewinstance-list-decisions-permissions.md)]
 
 ## PARAMETERS
 
@@ -318,6 +323,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancedecisionbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetafilteruserpendingaccessreviewinstancedecisionbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta](https://learn.microsoft.com/graph/api/accessreviewinstance-list-decisions?view=graph-rest-beta)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties associated with the currently signed in principal object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +33,7 @@ Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurren
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+Get a list of the unifiedRoleEligibilityScheduleRequest objects and their properties associated with the currently signed in principal object.
 
 ## PARAMETERS
 
@@ -353,6 +353,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleeligibilityschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagementdirectoryroleeligibilityschedulerequestbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleeligibilityschedulerequest-filterbycurrentuser?view=graph-rest-beta)
 
 
 

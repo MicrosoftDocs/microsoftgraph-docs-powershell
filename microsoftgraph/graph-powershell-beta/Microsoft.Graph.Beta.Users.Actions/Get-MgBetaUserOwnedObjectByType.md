@@ -199,7 +199,7 @@ BODYPARAMETER `<IPathsSidp1OUsersMicrosoftGraphGetuserownedobjectsPostRequestbod
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserownedobjectbytype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserownedobjectbytype)
 
-[https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directory-deleteditems-getuserownedobjects?view=graph-rest-beta)
 
 
 

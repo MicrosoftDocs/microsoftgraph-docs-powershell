@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeletedTeamChannelMessage
 
 ## SYNOPSIS
-Retrieve a single message or a message reply in a channel or a chat.
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-1.0)
@@ -54,7 +56,9 @@ Get-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Retrieve a single message or a message reply in a channel or a chat.
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## EXAMPLES
 
@@ -410,9 +414,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessage)
 
-[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/channel-list-messages?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta](https://learn.microsoft.com/graph/api/channel-getallmessages?view=graph-rest-beta)
 
 
 

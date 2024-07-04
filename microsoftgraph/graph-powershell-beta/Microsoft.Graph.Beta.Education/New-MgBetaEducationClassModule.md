@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaEducationClassModule
 
 ## SYNOPSIS
-Create a new module in a class.
-Only teachers in a class can create a module.
-Modules start in the draft state, which means that students won't see the modules until publication.
+Create new navigation property to modules for education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassModule?view=graph-powershell-1.0)
@@ -50,9 +48,7 @@ New-MgBetaEducationClassModule -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create a new module in a class.
-Only teachers in a class can create a module.
-Modules start in the draft state, which means that students won't see the modules until publication.
+Create new navigation property to modules for education
 
 ## PARAMETERS
 
@@ -432,8 +428,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationclassmodule)
-
-[https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-module?view=graph-rest-1.0)
 
 
 

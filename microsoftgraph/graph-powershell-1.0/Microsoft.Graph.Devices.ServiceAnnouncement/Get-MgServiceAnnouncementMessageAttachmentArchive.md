@@ -168,8 +168,6 @@ INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive)
 
-[https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0)
-
 
 
 

@@ -344,10 +344,6 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolder)
 
-[https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mailfolder-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-mailfolders?view=graph-rest-1.0)
-
 
 
 

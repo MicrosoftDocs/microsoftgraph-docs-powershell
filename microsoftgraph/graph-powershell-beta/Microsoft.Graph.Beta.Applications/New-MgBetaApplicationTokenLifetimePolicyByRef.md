@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Assign a tokenLifetimePolicy to an application or servicePrincipal.
-You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
+Create new navigation property ref to tokenLifetimePolicies for applications
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-1.0)
@@ -46,8 +45,7 @@ New-MgBetaApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Assign a tokenLifetimePolicy to an application or servicePrincipal.
-You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
+Create new navigation property ref to tokenLifetimePolicies for applications
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -296,8 +294,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenlifetimepolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationtokenlifetimepolicybyref)
-
-[https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-tokenlifetimepolicies?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceArticle
 
 ## SYNOPSIS
-Read the properties and relationships of an article object.
+A list of article objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an article object.
+A list of article objects.
 
 ## PARAMETERS
 
@@ -350,10 +350,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencearticle)
-
-[https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-article-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-threatintelligence-list-articles?view=graph-rest-1.0)
 
 
 

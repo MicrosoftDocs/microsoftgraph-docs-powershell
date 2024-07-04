@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the properties of an authenticationMethodsPolicy object.
+Update the navigation property authenticationMethodsPolicy in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-1.0)
@@ -36,7 +36,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationMethodsPolicy object.
+Update the navigation property authenticationMethodsPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -477,8 +477,6 @@ SYSTEMCREDENTIALPREFERENCES `<IMicrosoftGraphSystemCredentialPreferences>`: syst
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationmethodpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationmethodspolicy-update?view=graph-rest-1.0)
 
 
 

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgReportDailyPrintUsageByUser
 
 ## SYNOPSIS
-Retrieve a user's usage summary for a particular time period.
-For descriptions of each endpoint, see printUsageByUser.
+Retrieve a list of daily print usage summaries, grouped by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
@@ -39,8 +38,7 @@ Get-MgReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Retrieve a user's usage summary for a particular time period.
-For descriptions of each endpoint, see printUsageByUser.
+Retrieve a list of daily print usage summaries, grouped by user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -327,10 +325,6 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser)
-
-[https://learn.microsoft.com/graph/api/printusagebyuser-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printusagebyuser-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyuser?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-list-dailyprintusagebyuser?view=graph-rest-1.0)
 
 
 

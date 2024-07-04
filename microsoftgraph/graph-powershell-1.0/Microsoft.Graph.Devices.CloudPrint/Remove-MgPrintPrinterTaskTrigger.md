@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
+Delete navigation property taskTriggers for print
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintPrinterTaskTrigger?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete the task trigger of a printer to prevent related print events from triggering tasks on the specified printer.
+Delete navigation property taskTriggers for print
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -233,8 +233,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintprintertasktrigger)
-
-[https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printer-delete-tasktrigger?view=graph-rest-1.0)
 
 
 

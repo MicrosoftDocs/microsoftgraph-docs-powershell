@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcConnection object.
+The collection of cloud PC connections across managed tenants.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaTenantRelationshipManagedTenantCloudPcConnection -InputObject <IManage
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcConnection object.
+The collection of cloud PC connections across managed tenants.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IManagedTenantsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/get-mgbetatenantrelationshipmanagedtenantcloudpcconnection)
-
-[https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-cloudpcconnection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/managedtenants-managedtenant-list-cloudpcconnections?view=graph-rest-1.0)
 
 
 

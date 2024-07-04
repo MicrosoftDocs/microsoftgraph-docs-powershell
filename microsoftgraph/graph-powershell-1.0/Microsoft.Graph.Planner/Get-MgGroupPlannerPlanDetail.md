@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a plannerPlanDetails object.
+Read-only.
+Nullable.
+Extra details about the plan.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaGroupPlannerPlanDetail?view=graph-powershell-beta)
@@ -30,7 +32,9 @@ Get-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a plannerPlanDetails object.
+Read-only.
+Nullable.
+Extra details about the plan.
 
 ## EXAMPLES
 
@@ -183,8 +187,6 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail)
-
-[https://learn.microsoft.com/graph/api/plannerplandetails-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerplandetails-get?view=graph-rest-1.0)
 
 
 

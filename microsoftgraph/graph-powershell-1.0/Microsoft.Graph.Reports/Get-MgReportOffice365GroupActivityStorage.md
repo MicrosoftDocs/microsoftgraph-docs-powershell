@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOffice365GroupActivityStorage
 
 ## SYNOPSIS
-Invoke function getOffice365GroupsActivityStorage
+Get the total storage used across all group mailboxes and group sites.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOffice365GroupActivityStorage?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportOffice365GroupActivityStorage -InputObject <IReportsIdentity> -OutFi
 ```
 
 ## DESCRIPTION
-Invoke function getOffice365GroupsActivityStorage
+Get the total storage used across all group mailboxes and group sites.
 
 ## PARAMETERS
 
@@ -183,6 +183,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitystorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportoffice365groupactivitystorage)
+
+[https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-1.0)
 
 
 

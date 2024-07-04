@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityB2CUserFlow
 
 ## SYNOPSIS
-Delete a b2cIdentityUserFlow object.
+Delete navigation property b2cUserFlows for identity
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete a b2cIdentityUserFlow object.
+Delete navigation property b2cUserFlows for identity
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlow Cmdlet
@@ -275,8 +275,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetaidentityb2cuserflow)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-delete?view=graph-rest-1.0)
 
 
 

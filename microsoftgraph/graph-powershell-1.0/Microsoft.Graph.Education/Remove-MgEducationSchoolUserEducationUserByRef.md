@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationSchoolUserEducationUserByRef
 
 ## SYNOPSIS
-Delete a user from a school.
+Delete ref of navigation property users for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolUserEducationUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationSchoolUserEducationUserByRef?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgEducationSchoolUserEducationUserByRef -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Delete a user from a school.
+Delete ref of navigation property users for education
 
 ## PARAMETERS
 
@@ -220,8 +220,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/remove-mgeducationschoolusereducationuserbyref)
-
-[https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationschool-delete-users?view=graph-rest-1.0)
 
 
 

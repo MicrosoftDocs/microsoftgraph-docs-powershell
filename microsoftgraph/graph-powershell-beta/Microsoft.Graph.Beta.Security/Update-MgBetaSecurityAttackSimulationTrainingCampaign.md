@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityAttackSimulationTrainingCampaign
 
 ## SYNOPSIS
-Update the properties of a trainingCampaign object.
+Update the navigation property trainingCampaigns in security
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ Update-MgBetaSecurityAttackSimulationTrainingCampaign -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Update the properties of a trainingCampaign object.
+Update the navigation property trainingCampaigns in security
 
 ## PARAMETERS
 
@@ -758,8 +758,6 @@ TRAININGSETTING `<IMicrosoftGraphTrainingSetting>`: trainingSetting
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationtrainingcampaign)
-
-[https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trainingcampaign-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassMemberByRef
 
 ## SYNOPSIS
-Add an educationUser member to an educationClass.
+Create new navigation property ref to members for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Add an educationUser member to an educationClass.
+Create new navigation property ref to members for education
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -274,8 +274,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassmemberbyref)
-
-[https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-post-members?view=graph-rest-1.0)
 
 
 

@@ -344,10 +344,6 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem](https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mgsharelistitem)
 
-[https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-list?view=graph-rest-1.0)
-
 
 
 

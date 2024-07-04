@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagementManagedAppStatus
 
 ## SYNOPSIS
-Read properties and relationships of the managedAppStatus object.
+The managed app statuses.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedAppStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppStatus?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgDeviceAppManagementManagedAppStatus -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Read properties and relationships of the managedAppStatus object.
+The managed app statuses.
 
 ## PARAMETERS
 
@@ -325,10 +325,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmanagedappstatus)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-managedappstatus-list?view=graph-rest-1.0)
 
 
 

@@ -327,8 +327,6 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity](https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity)
 
-[https://learn.microsoft.com/graph/api/projectrome-get-activities?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectrome-get-activities?view=graph-rest-1.0)
-
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage
 
 ## SYNOPSIS
-Create a new page in the specified section.
+Create new navigation property to pages for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage -InputObject <ISitesIdenti
 ```
 
 ## DESCRIPTION
-Create a new page in the specified section.
+Create new navigation property to pages for groups
 
 ## PARAMETERS
 
@@ -674,6 +674,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -954,8 +955,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroupsectionpage](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mggroupsiteonenotenotebooksectiongroupsectionpage)
-
-[https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/section-post-pages?view=graph-rest-1.0)
 
 
 

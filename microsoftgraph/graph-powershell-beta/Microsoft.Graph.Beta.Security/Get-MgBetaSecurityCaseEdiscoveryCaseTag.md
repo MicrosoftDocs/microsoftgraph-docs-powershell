@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityCaseEdiscoveryCaseTag
 
 ## SYNOPSIS
-Read the properties and relationships of an ediscoveryReviewTag object.
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an ediscoveryReviewTag object.
+Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -400,10 +400,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetag](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasetag)
-
-[https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoveryreviewtag-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-list-tags?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-list-tags?view=graph-rest-1.0)
 
 
 

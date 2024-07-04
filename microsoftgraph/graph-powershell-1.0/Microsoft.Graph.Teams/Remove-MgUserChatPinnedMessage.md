@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserChatPinnedMessage
 
 ## SYNOPSIS
-Unpin a message from a chat.
+Delete navigation property pinnedMessages for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatPinnedMessage?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Unpin a message from a chat.
+Delete navigation property pinnedMessages for users
 
 ## EXAMPLES
 
@@ -257,8 +257,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/remove-mguserchatpinnedmessage)
-
-[https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-delete-pinnedmessages?view=graph-rest-1.0)
 
 
 

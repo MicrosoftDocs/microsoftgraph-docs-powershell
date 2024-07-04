@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition
 
 ## SYNOPSIS
-Read the details of a built-in workflow task.
+The definition of tasks within the lifecycle workflows instance.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinition -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Read the details of a built-in workflow task.
+The definition of tasks within the lifecycle workflows instance.
 
 ## PARAMETERS
 
@@ -357,10 +357,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskdefinition)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-taskdefinition-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-lifecycleworkflowscontainer-list-taskdefinitions?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 
 ## SYNOPSIS
-Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
+The schedule requests for operations to create, update, delete, extend, and renew an eligibility.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-beta)
@@ -40,7 +40,7 @@ Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
+The schedule requests for operations to create, update, delete, extend, and renew an eligibility.
 
 ## PARAMETERS
 
@@ -359,10 +359,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccessgroupeligibilityschedulerequest)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroupeligibilityschedulerequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedulerequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/privilegedaccessgroup-list-eligibilityschedulerequests?view=graph-rest-1.0)
 
 
 

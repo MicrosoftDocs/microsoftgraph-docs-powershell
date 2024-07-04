@@ -340,8 +340,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusercreatedobject)
 
-[https://learn.microsoft.com/graph/api/user-list-createdobjects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-createdobjects?view=graph-rest-1.0)
-
 
 
 

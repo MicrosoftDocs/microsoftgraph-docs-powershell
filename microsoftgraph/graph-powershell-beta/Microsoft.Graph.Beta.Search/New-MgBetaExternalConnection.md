@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalConnection
 
 ## SYNOPSIS
-Create a new externalConnection.
+Create new navigation property to connections for external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnection?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 ```
 
 ## DESCRIPTION
-Create a new externalConnection.
+Create new navigation property to connections for external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -776,8 +776,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalconnection)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-external-post-connections?view=graph-rest-1.0)
 
 
 

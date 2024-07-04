@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSuccess
 
 ## SYNOPSIS
-Invoke function getMetricsForConditionalAccessManagedDevicesSignInSuccess
+Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
+Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
 ## SYNTAX
 
@@ -30,7 +31,8 @@ Get-MgBetaReportServiceActivityMetricForConditionalAccessManagedDeviceSignInSucc
 ```
 
 ## DESCRIPTION
-Invoke function getMetricsForConditionalAccessManagedDevicesSignInSuccess
+Get the number of user authentication requests, during a specific time period, that satisfy a Conditional Access policy requiring devices to be managed.
+Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.
 
 ## PARAMETERS
 
@@ -280,6 +282,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportserviceactivitymetricforconditionalaccessmanageddevicesigninsuccess)
+
+[https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta](https://learn.microsoft.com/graph/api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess?view=graph-rest-beta)
 
 
 

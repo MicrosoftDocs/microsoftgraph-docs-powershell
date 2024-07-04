@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaRoleManagementDirectoryRoleAssignment
 
 ## SYNOPSIS
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-1.0)
@@ -34,7 +34,7 @@ New-MgBetaRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphU
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -516,8 +516,6 @@ Read-only when isBuiltIn is true.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignment)
-
-[https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/rbacapplication-post-roleassignments?view=graph-rest-1.0)
 
 
 

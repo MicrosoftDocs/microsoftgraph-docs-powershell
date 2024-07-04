@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
+The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-1.0)
@@ -23,7 +24,8 @@ Get-MgBetaServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [
 ```
 
 ## DESCRIPTION
-List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
+The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -224,8 +226,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicybyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalclaimmappingpolicybyref)
-
-[https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/serviceprincipal-list-claimsmappingpolicies?view=graph-rest-1.0)
 
 
 

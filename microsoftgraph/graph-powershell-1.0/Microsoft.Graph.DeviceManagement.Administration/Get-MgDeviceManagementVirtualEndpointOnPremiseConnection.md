@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-Read the properties and relationships of the cloudPcOnPremisesConnection object.
+A defined collection of Azure resource information that can be used to establish Azure network connections for Cloud PCs.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
@@ -38,10 +38,7 @@ Get-MgDeviceManagementVirtualEndpointOnPremiseConnection -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of the cloudPcOnPremisesConnection object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/cloudpconpremisesconnection-get-permissions.md)]
+A defined collection of Azure resource information that can be used to establish Azure network connections for Cloud PCs.
 
 ## PARAMETERS
 
@@ -318,10 +315,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointonpremiseconnection)
-
-[https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/cloudpconpremisesconnection-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-list-onpremisesconnections?view=graph-rest-1.0)
 
 
 

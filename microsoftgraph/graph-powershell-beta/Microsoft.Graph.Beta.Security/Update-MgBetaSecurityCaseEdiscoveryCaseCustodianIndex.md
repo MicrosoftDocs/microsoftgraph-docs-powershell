@@ -373,7 +373,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritycaseediscoverycasecustodianindex)
 
-[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-updateindex?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-updateindex?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/security-ediscoverycustodian-updateindex?view=graph-rest-beta](https://learn.microsoft.com/graph/api/security-ediscoverycustodian-updateindex?view=graph-rest-beta)
 
 
 

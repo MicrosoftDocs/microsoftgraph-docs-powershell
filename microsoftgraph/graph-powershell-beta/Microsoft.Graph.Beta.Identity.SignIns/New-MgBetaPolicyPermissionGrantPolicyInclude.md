@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyPermissionGrantPolicyInclude
 
 ## SYNOPSIS
-Add conditions under which a permission grant event is *included* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
+Create new navigation property to includes for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-1.0)
@@ -53,8 +52,7 @@ New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Add conditions under which a permission grant event is *included* in a permission grant policy.
-You do this by adding a permissionGrantConditionSet to the includes collection of a  permissionGrantPolicy.
+Create new navigation property to includes for policies
 
 ## EXAMPLES
 ### Example 1: Create a permission grant policy include 
@@ -509,8 +507,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyinclude](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyinclude)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-post-includes?view=graph-rest-1.0)
 
 
 

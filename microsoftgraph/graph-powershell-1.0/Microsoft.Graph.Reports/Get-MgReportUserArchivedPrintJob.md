@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportUserArchivedPrintJob
 
 ## SYNOPSIS
-Invoke function getUserArchivedPrintJobs
+Get a list of archived print jobs for a particular user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportUserArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportUserArchivedPrintJob?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportUserArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filt
 ```
 
 ## DESCRIPTION
-Invoke function getUserArchivedPrintJobs
+Get a list of archived print jobs for a particular user.
 
 ## PARAMETERS
 
@@ -258,6 +258,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportuserarchivedprintjob)
+
+[https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-1.0)
 
 
 

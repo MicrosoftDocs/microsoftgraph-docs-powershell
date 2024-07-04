@@ -11,9 +11,6 @@ schema: 2.0.0
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -227,6 +224,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

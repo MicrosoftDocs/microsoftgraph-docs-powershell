@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Update the properties of a resourceOperation object.
+Update the navigation property resourceOperations in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceManagementResourceOperation -InputObject <IDeviceManagementAdmini
 ```
 
 ## DESCRIPTION
-Update the properties of a resourceOperation object.
+Update the navigation property resourceOperations in deviceManagement
 
 ## PARAMETERS
 
@@ -308,8 +308,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementresourceoperation)
-
-[https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-rbac-resourceoperation-update?view=graph-rest-1.0)
 
 
 

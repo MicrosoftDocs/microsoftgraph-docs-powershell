@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEducationClassModuleResource
 
 ## SYNOPSIS
-Update a resource in a module.
-Only teachers can perform this operation.
-The only one property that can be updated is displayName, for all resource types.
+Update the navigation property resources in education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationClassModuleResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassModuleResource?view=graph-powershell-1.0)
@@ -48,9 +46,7 @@ Update-MgBetaEducationClassModuleResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update a resource in a module.
-Only teachers can perform this operation.
-The only one property that can be updated is displayName, for all resource types.
+Update the navigation property resources in education
 
 ## PARAMETERS
 
@@ -328,8 +324,6 @@ This property is read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassmoduleresource)
-
-[https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmoduleresource-update?view=graph-rest-1.0)
 
 
 

@@ -435,7 +435,7 @@ security groups).
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdrivelistitemlink](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdrivelistitemlink)
 
-[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta](https://learn.microsoft.com/graph/api/listitem-createlink?view=graph-rest-beta)
 
 
 

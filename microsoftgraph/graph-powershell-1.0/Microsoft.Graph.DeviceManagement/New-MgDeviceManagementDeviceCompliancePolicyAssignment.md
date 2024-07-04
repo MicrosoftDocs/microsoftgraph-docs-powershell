@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicyAssignment
 
 ## SYNOPSIS
-Create a new deviceCompliancePolicyAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCompliancePolicyAssignment?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgDeviceManagementDeviceCompliancePolicyAssignment -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Create a new deviceCompliancePolicyAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 ## PARAMETERS
 
@@ -300,8 +300,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicyassignment)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-devicecompliancepolicyassignment-create?view=graph-rest-1.0)
 
 
 

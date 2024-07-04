@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityThreatIntelligenceHostComponent
 
 ## SYNOPSIS
-Read the properties and relationships of a hostComponent object.
+Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
@@ -60,7 +60,7 @@ Get-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a hostComponent object.
+Retrieve details about hostComponent objects.Note: List retrieval is not yet supported.
 
 ## PARAMETERS
 
@@ -387,10 +387,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritythreatintelligencehostcomponent)
-
-[https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-hostcomponent-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-host-list-components?view=graph-rest-1.0)
 
 
 

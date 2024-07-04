@@ -338,7 +338,7 @@ For example, midnight UTC on Jan 1, 2014 appears as 2014-01-01T00:00:00Z.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetausermanageddevicecloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetausermanageddevicecloudpcreviewstatus)
 
-[https://learn.microsoft.com/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-setcloudpcreviewstatus?view=graph-rest-beta)
 
 
 

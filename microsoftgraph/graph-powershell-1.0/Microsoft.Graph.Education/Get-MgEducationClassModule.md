@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassModule
 
 ## SYNOPSIS
-Get the properties and relationships of a module.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
+All modules in the class.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassModule](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassModule?view=graph-powershell-beta)
@@ -40,9 +39,8 @@ Get-MgEducationClassModule -InputObject <IEducationIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of a module.
-Only teachers, students, and applications with application permissions can perform this operation.
-Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
+All modules in the class.
+Nullable.
 
 ## PARAMETERS
 
@@ -322,10 +320,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassmodule)
-
-[https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationclass-list-modules?view=graph-rest-1.0)
 
 
 

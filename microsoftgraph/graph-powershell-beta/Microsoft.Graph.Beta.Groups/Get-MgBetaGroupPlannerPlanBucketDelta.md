@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupPlannerPlanBucketDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## SYNTAX
 
@@ -29,7 +30,8 @@ Get-MgBetaGroupPlannerPlanBucketDelta -InputObject <IGroupsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get newly created, updated, or deleted buckets in a Planner plan without having to perform a full read of the entire resource collection.
+For details, see Use delta query to track changes in Microsoft Graph data.
 
 ## PARAMETERS
 
@@ -357,6 +359,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbucketdelta](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupplannerplanbucketdelta)
+
+[https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta](https://learn.microsoft.com/graph/api/plannerbucket-delta?view=graph-rest-beta)
 
 
 

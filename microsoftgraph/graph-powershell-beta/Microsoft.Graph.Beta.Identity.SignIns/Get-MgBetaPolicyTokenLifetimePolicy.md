@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyTokenLifetimePolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a tokenLifetimePolicy object.
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenLifetimePolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a tokenLifetimePolicy object.
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Microsoft Entra ID.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicytokenlifetimepolicy)
-
-[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tokenlifetimepolicy-list?view=graph-rest-1.0)
 
 
 

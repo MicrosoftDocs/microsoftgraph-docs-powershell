@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaEducationClassModule
 
 ## SYNOPSIS
-Delete an existing module in a class.
-Only teachers within a class can delete modules.
+Delete navigation property modules for education
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassModule](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassModule?view=graph-powershell-1.0)
@@ -31,8 +30,7 @@ Remove-MgBetaEducationClassModule -InputObject <IEducationIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete an existing module in a class.
-Only teachers within a class can delete modules.
+Delete navigation property modules for education
 
 ## PARAMETERS
 
@@ -227,8 +225,6 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmodule](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/remove-mgbetaeducationclassmodule)
-
-[https://learn.microsoft.com/graph/api/educationmodule-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationmodule-delete?view=graph-rest-1.0)
 
 
 

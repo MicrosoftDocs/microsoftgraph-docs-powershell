@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportYammerActivityUserDetail
 
 ## SYNOPSIS
-Invoke function getYammerActivityUserDetail
+Get details about Yammer activity by user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportYammerActivityUserDetail?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Get-MgReportYammerActivityUserDetail -InputObject <IReportsIdentity> -OutFile <S
 ```
 
 ## DESCRIPTION
-Invoke function getYammerActivityUserDetail
+Get details about Yammer activity by user.
 
 ## PARAMETERS
 
@@ -210,6 +210,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityuserdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportyammeractivityuserdetail)
+
+[https://learn.microsoft.com/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getyammeractivityuserdetail?view=graph-rest-1.0)
 
 
 

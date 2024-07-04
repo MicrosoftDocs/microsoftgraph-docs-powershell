@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create a new bookingStaffMember in the specified bookingBusiness.
+Create new navigation property to staffMembers for solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create a new bookingStaffMember in the specified bookingBusiness.
+Create new navigation property to staffMembers for solutions
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -330,8 +330,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-1.0)
 
 
 

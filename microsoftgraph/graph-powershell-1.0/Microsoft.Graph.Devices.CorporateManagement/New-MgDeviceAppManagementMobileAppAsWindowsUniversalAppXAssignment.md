@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment
 
 ## SYNOPSIS
-Create a new mobileAppAssignment object.
+Create new navigation property to assignments for deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ New-MgDeviceAppManagementMobileAppAsWindowsUniversalAppXAssignment
 ```
 
 ## DESCRIPTION
-Create a new mobileAppAssignment object.
+Create new navigation property to assignments for deviceAppManagement
 
 ## PARAMETERS
 
@@ -318,8 +318,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswindowsuniversalappxassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmobileappaswindowsuniversalappxassignment)
-
-[https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-mobileappassignment-create?view=graph-rest-1.0)
 
 
 

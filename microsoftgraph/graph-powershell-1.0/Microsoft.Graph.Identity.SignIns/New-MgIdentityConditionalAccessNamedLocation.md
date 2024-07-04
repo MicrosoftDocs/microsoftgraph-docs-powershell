@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Create a new namedLocation object.
-Named locations can be either ipNamedLocation or countryNamedLocation objects.
+Create new navigation property to namedLocations for identity
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -32,8 +31,7 @@ New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphName
 ```
 
 ## DESCRIPTION
-Create a new namedLocation object.
-Named locations can be either ipNamedLocation or countryNamedLocation objects.
+Create new navigation property to namedLocations for identity
 
 ## EXAMPLES
 ### Example 1: Create a country named location
@@ -295,8 +293,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation)
-
-[https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conditionalaccessroot-post-namedlocations?view=graph-rest-1.0)
 
 
 

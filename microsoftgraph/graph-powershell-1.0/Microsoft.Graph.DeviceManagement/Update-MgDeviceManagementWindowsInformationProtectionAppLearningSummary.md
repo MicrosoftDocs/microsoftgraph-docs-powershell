@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-Update the properties of a windowsInformationProtectionAppLearningSummary object.
+Update the navigation property windowsInformationProtectionAppLearningSummaries in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)
@@ -52,7 +52,7 @@ Update-MgDeviceManagementWindowsInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-Update the properties of a windowsInformationProtectionAppLearningSummary object.
+Update the navigation property windowsInformationProtectionAppLearningSummaries in deviceManagement
 
 ## PARAMETERS
 
@@ -339,8 +339,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowsinformationprotectionapplearningsummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementwindowsinformationprotectionapplearningsummary)
-
-[https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-wip-windowsinformationprotectionapplearningsummary-update?view=graph-rest-1.0)
 
 
 

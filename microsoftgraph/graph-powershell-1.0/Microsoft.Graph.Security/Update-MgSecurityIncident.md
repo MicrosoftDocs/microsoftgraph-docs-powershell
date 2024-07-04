@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSecurityIncident
 
 ## SYNOPSIS
-Update the properties of an incident object.
+Update the navigation property incidents in security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityIncident?view=graph-powershell-beta)
@@ -54,7 +54,7 @@ Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the properties of an incident object.
+Update the navigation property incidents in security
 
 ## PARAMETERS
 
@@ -367,7 +367,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvingComment
-.
+User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
 
 ```yaml
 Type: String
@@ -625,7 +626,8 @@ Free editable text.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
-  - `[ResolvingComment <String>]`: 
+  - `[ResolvingComment <String>]`: User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The system tags associated with the incident.
@@ -701,8 +703,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityincident)
-
-[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
 
 
 

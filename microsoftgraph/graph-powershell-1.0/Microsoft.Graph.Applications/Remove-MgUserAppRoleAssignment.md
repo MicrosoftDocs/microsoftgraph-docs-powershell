@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Delete an appRoleAssignment that has been granted to a user.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
+Delete navigation property appRoleAssignments for users
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete an appRoleAssignment that has been granted to a user.
+Delete navigation property appRoleAssignments for users
 
 ## EXAMPLES
 ### Example 1: Remove a user's application role assignment
@@ -228,6 +225,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -241,8 +239,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment)
-
-[https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-delete-approleassignments?view=graph-rest-1.0)
 
 
 

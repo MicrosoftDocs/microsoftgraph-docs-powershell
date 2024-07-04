@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementAndroidManagedAppProtection
 
 ## SYNOPSIS
-Update the properties of a androidManagedAppProtection object.
+Update the navigation property androidManagedAppProtections in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
@@ -84,7 +84,7 @@ Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCo
 ```
 
 ## DESCRIPTION
-Update the properties of a androidManagedAppProtection object.
+Update the navigation property androidManagedAppProtections in deviceAppManagement
 
 ## PARAMETERS
 
@@ -1060,8 +1060,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection)
-
-[https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-mam-androidmanagedappprotection-update?view=graph-rest-1.0)
 
 
 

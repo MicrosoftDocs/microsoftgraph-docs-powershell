@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAppManagementPolicy
 
 ## SYNOPSIS
-Read the properties of an appManagementPolicy object.
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAppManagementPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Read the properties of an appManagementPolicy object.
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyappmanagementpolicy)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/appmanagementpolicy-list?view=graph-rest-1.0)
 
 
 

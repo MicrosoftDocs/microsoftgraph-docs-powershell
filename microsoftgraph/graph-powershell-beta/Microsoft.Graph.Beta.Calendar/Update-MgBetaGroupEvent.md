@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaGroupEvent
 
 ## SYNOPSIS
-Update an event object.
+Update the navigation property events in groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-1.0)
@@ -76,7 +76,7 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update an event object.
+Update the navigation property events in groups
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -2359,8 +2359,6 @@ See below for possible values.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupevent)
-
-[https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-update-event?view=graph-rest-1.0)
 
 
 

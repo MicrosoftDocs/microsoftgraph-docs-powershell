@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgShareListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Join-MgBetaShareListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Files/Join-MgBetaShareListContentTypeWithHubSite?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Join-MgShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a published \[content type\]\[contentType\] present in a content type hub with a list of hub sites.
+Associate a published content type present in a content type hub with a list of hub sites.
 
 ## PARAMETERS
 

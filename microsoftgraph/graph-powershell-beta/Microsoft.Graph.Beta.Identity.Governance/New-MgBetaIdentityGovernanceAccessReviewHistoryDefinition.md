@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
-Create a new accessReviewHistoryDefinition object.
+Create new navigation property to historyDefinitions for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-1.0)
@@ -35,7 +35,7 @@ New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition
 ```
 
 ## DESCRIPTION
-Create a new accessReviewHistoryDefinition object.
+Create new navigation property to historyDefinitions for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -419,10 +419,9 @@ Read-only.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+    - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[CreatedDateTime <DateTime?>]`: Timestamp when the access review definition was created.
@@ -503,10 +502,9 @@ Required.
 CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity.
-The display name might not always be available or up to date.
-For example, if a user changes their display name the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
-When the unique identifier is unavailable, the displayName property is provided for the identity, but the id property isn't included in the response.
+This property is read-only.
+  - `[Id <String>]`: The identifier of the identity.
+This property is read-only.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
@@ -570,8 +568,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernanceaccessreviewhistorydefinition)
-
-[https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewset-post-historydefinitions?view=graph-rest-1.0)
 
 
 

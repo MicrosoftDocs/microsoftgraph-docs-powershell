@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupDriveListColumn
 
 ## SYNOPSIS
-Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Create new navigation property to columns for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveListColumn?view=graph-powershell-beta)
@@ -66,7 +66,7 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a column for a \[list\]\[list\] with a request that specifies a \[columnDefinition\]\[columnDefinition\].
+Create new navigation property to columns for groups
 
 ## PARAMETERS
 
@@ -473,7 +473,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The API-facing name of the column as it appears in the \[fields\]\[\] on a \[listItem\]\[\].
+The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
 
 ```yaml
@@ -813,7 +813,7 @@ Read-only.
     - `[ListId <String>]`: The unique identifier of the lookup source list.
     - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-  - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+  - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
   - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1066,7 +1066,7 @@ Read-only.
     - `[ListId <String>]`: The unique identifier of the lookup source list.
     - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup.
 Use the list item looked up by the primary as the source for the column named here.
-  - `[Name <String>]`: The API-facing name of the column as it appears in the - `[fields]`- `[]` on a - `[listItem]`- `[]`.
+  - `[Name <String>]`: The API-facing name of the column as it appears in the fields on a listItem.
 For the user-facing name, see displayName.
   - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1253,8 +1253,6 @@ For examples, see Examples of common formulas in lists.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn)
-
-[https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/list-post-columns?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementReport
 
 ## SYNOPSIS
-Update the properties of a deviceManagementReports object.
+Update the navigation property reports in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceManagementReports object.
+Update the navigation property reports in deviceManagement
 
 ## PARAMETERS
 
@@ -230,8 +230,6 @@ Filter, Select, and OrderBy cannot be specified together with a CachedReportConf
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport)
-
-[https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-reporting-devicemanagementreports-update?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupSiteTermStoreSetParentGroupSetTerm
 
 ## SYNOPSIS
-Update the properties of a term object.
+Update the navigation property terms in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-beta)
@@ -94,7 +94,7 @@ Update-MgGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a term object.
+Update the navigation property terms in groups
 
 ## EXAMPLES
 
@@ -623,6 +623,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -741,8 +742,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoresetparentgroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoresetparentgroupsetterm)
-
-[https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
 
 
 

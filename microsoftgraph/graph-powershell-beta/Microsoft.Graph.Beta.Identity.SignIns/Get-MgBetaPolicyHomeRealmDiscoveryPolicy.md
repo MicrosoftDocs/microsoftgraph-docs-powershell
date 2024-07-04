@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+The policy to control Microsoft Entra authentication behavior for federated users.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+The policy to control Microsoft Entra authentication behavior for federated users.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyhomerealmdiscoverypolicy)
-
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0)
 
 
 

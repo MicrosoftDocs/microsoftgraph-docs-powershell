@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgChatInstalledApp
 
 ## SYNOPSIS
-Get an app installed in a chat.
+A collection of all the apps in the chat.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatInstalledApp?view=graph-powershell-beta)
@@ -38,7 +39,8 @@ Get-MgChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get an app installed in a chat.
+A collection of all the apps in the chat.
+Nullable.
 
 ## EXAMPLES
 ### Example 1 : Get the app installed in the specified chat
@@ -362,10 +364,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mgchatinstalledapp)
-
-[https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-get-installedapps?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chat-list-installedapps?view=graph-rest-1.0)
 
 
 

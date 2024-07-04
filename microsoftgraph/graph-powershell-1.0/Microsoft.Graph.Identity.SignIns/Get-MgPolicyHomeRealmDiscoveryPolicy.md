@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+The policy to control Microsoft Entra authentication behavior for federated users.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+The policy to control Microsoft Entra authentication behavior for federated users.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -303,6 +303,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -314,6 +315,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -328,6 +330,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -358,10 +361,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicyhomerealmdiscoverypolicy)
-
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/homerealmdiscoverypolicy-list?view=graph-rest-1.0)
 
 
 

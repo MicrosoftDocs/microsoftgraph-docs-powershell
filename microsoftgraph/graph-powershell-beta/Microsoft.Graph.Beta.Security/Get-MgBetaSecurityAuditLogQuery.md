@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityAuditLogQuery
 
 ## SYNOPSIS
-Read the properties and relationships of an auditLogQuery object.
+Get queries from security
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityAuditLogQuery -InputObject <ISecurityIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an auditLogQuery object.
+Get queries from security
 
 ## PARAMETERS
 
@@ -369,10 +369,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityauditlogquery)
-
-[https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditlogquery-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-auditcoreroot-list-auditlogqueries?view=graph-rest-1.0)
 
 
 

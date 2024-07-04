@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an securescorecontrolprofile object.
+Get secureScoreControlProfiles from security
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
@@ -38,7 +38,7 @@ Get-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an securescorecontrolprofile object.
+Get secureScoreControlProfiles from security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -363,10 +363,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritysecurescorecontrolprofile)
-
-[https://learn.microsoft.com/graph/api/securescorecontrolprofile-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescorecontrolprofile-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/security-list-securescorecontrolprofiles?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-list-securescorecontrolprofiles?view=graph-rest-1.0)
 
 
 

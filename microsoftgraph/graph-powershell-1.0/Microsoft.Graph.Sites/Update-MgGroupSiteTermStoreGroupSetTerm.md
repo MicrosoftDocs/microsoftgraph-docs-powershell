@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupSiteTermStoreGroupSetTerm
 
 ## SYNOPSIS
-Update the properties of a term object.
+Update the navigation property terms in groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
@@ -91,7 +91,7 @@ Update-MgGroupSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a term object.
+Update the navigation property terms in groups
 
 ## EXAMPLES
 
@@ -620,6 +620,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
@@ -738,8 +739,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/update-mggroupsitetermstoregroupsetterm)
-
-[https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termstore-term-update?view=graph-rest-1.0)
 
 
 

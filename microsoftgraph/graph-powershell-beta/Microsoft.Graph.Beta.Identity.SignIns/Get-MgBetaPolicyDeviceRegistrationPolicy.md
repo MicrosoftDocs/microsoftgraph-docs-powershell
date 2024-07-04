@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyDeviceRegistrationPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a deviceRegistrationPolicy object.
-Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+Get deviceRegistrationPolicy from policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-1.0)
@@ -22,8 +21,7 @@ Get-MgBetaPolicyDeviceRegistrationPolicy [-Property <String[]>] [-ResponseHeader
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a deviceRegistrationPolicy object.
-Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+Get deviceRegistrationPolicy from policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -114,8 +112,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy)
-
-[https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/deviceregistrationpolicy-get?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAuditEventAuditCategory
 
 ## SYNOPSIS
-Invoke function getAuditCategories
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
@@ -22,7 +22,7 @@ Get-MgDeviceManagementAuditEventAuditCategory [-Count] [-Filter <String>] [-Sear
 ```
 
 ## DESCRIPTION
-Invoke function getAuditCategories
+Not yet documented
 
 ## PARAMETERS
 
@@ -160,6 +160,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditcategory)
+
+[https://learn.microsoft.com/graph/api/intune-auditing-auditevent-getauditcategories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-auditing-auditevent-getauditcategories?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation
 
 ## SYNOPSIS
-Get the last addToReviewSetOperation object associated with a source collection.
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -Input
 ```
 
 ## DESCRIPTION
-Get the last addToReviewSetOperation object associated with a source collection.
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -204,8 +204,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionaddtoreviewsetoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasesourcecollectionaddtoreviewsetoperation)
-
-[https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-list-addtoreviewsetoperation?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-sourcecollection-list-addtoreviewsetoperation?view=graph-rest-1.0)
 
 
 

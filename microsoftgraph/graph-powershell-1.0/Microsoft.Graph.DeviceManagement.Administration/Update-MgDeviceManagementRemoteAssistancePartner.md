@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Update the properties of a remoteAssistancePartner object.
+Update the navigation property remoteAssistancePartners in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Update the properties of a remoteAssistancePartner object.
+Update the navigation property remoteAssistancePartners in deviceManagement
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -343,8 +343,6 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementremoteassistancepartner](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementremoteassistancepartner)
-
-[https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-remoteassistance-remoteassistancepartner-update?view=graph-rest-1.0)
 
 
 

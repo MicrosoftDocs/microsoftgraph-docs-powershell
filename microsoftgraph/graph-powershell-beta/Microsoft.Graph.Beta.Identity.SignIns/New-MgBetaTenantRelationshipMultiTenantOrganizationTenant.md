@@ -8,10 +8,10 @@ schema: 2.0.0
 # New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 
 ## SYNOPSIS
-Add a tenant to a multitenant organization.
-The administrator of an owner tenant has the permissions to add tenants to the multitenant organization.
-The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
-A tenant can be part of only one multitenant organization.
+Create new navigation property to tenants for tenantRelationships
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipMultiTenantOrganizationTenant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTenantRelationshipMultiTenantOrganizationTenant?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -33,10 +33,7 @@ New-MgBetaTenantRelationshipMultiTenantOrganizationTenant
 ```
 
 ## DESCRIPTION
-Add a tenant to a multitenant organization.
-The administrator of an owner tenant has the permissions to add tenants to the multitenant organization.
-The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request.
-A tenant can be part of only one multitenant organization.
+Create new navigation property to tenants for tenantRelationships
 
 ## PARAMETERS
 
@@ -358,8 +355,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatenantrelationshipmultitenantorganizationtenant)
-
-[https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/multitenantorganization-post-tenants?view=graph-rest-1.0)
 
 
 

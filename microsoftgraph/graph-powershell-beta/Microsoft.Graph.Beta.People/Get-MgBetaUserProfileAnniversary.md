@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileAnniversary
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a personAnniversary object in a user's profile.
+Represents the details of meaningful dates associated with a person.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a personAnniversary object in a user's profile.
+Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileanniversary)
-
-[https://learn.microsoft.com/graph/api/personanniversary-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personanniversary-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-anniversaries?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-anniversaries?view=graph-rest-1.0)
 
 
 

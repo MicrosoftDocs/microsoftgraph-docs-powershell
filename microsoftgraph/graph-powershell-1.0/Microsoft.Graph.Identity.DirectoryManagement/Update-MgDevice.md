@@ -11,9 +11,6 @@ schema: 2.0.0
 Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDevice?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -364,7 +361,9 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentType
-.
+Enrollment type of the device.
+This property is set by Intune.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
 
 ```yaml
 Type: String
@@ -479,7 +478,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsRooted
-.
+true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
 
 ```yaml
 Type: SwitchParameter
@@ -494,7 +494,9 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementType
-.
+The management channel of the device.
+This property is set by Intune.
+Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
 
 ```yaml
 Type: String
@@ -932,7 +934,9 @@ Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $
   - `[EnrollmentProfileName <String>]`: Enrollment profile applied to the device.
 For example, Apple Device Enrollment Profile, Device enrollment - Corporate device identifiers, or Windows Autopilot profile name.
 This property is set by Intune.
-  - `[EnrollmentType <String>]`: 
+  - `[EnrollmentType <String>]`: Enrollment type of the device.
+This property is set by Intune.
+Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
   - `[Extensions <IMicrosoftGraphExtension- `[]`>]`: The collection of open extensions defined for the device.
 Read-only.
 Nullable.
@@ -945,8 +949,11 @@ Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false.
 This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
 Supports $filter (eq, ne, not).
-  - `[IsRooted <Boolean?>]`: 
-  - `[ManagementType <String>]`: 
+  - `[IsRooted <Boolean?>]`: true if the device is rooted; false if the device is jail-broken.
+This property can only be updated by Intune.
+  - `[ManagementType <String>]`: The management channel of the device.
+This property is set by Intune.
+Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
   - `[Manufacturer <String>]`: Manufacturer of the device.
 Read-only.
   - `[MdmAppId <String>]`: Application identifier used to register device into MDM.
@@ -1018,6 +1025,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Update properties of a  permissionGrantPolicy.
+Update the navigation property permissionGrantPolicies in policies
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update properties of a  permissionGrantPolicy.
+Update the navigation property permissionGrantPolicies in policies
 
 ## EXAMPLES
 ### Example 1: Update a permission grant policy
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -Excludes
-Condition sets which are excluded in this permission grant policy.
+Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
 To construct, see NOTES section for EXCLUDES properties and create a hash table.
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 ```
 
 ### -Includes
-Condition sets which are included in this permission grant policy.
+Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 To construct, see NOTES section for INCLUDES properties and create a hash table.
 
@@ -326,7 +326,7 @@ Required.
 Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets which are excluded in this permission grant policy.
+  - `[Excludes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
     - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -349,10 +349,10 @@ The id of resource-specific application permissions can be found in the resource
 Default is the single value all.
     - `[ResourceApplication <String>]`: The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
-  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets which are included in this permission grant policy.
+  - `[Includes <IMicrosoftGraphPermissionGrantConditionSet- `[]`>]`: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
 
-EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets which are excluded in this permission grant policy.
+EXCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are excluded in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -376,7 +376,7 @@ Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (for example the API) for which a permission is being granted, or any to match with any resource application or API.
 Default is any.
 
-INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets which are included in this permission grant policy.
+INCLUDES <IMicrosoftGraphPermissionGrantConditionSet- `[]`>: Condition sets that are included in this permission grant policy.
 Automatically expanded on GET.
   - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
@@ -405,6 +405,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -416,6 +417,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -430,6 +432,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -460,8 +463,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy)
-
-[https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/permissiongrantpolicy-update?view=graph-rest-1.0)
 
 
 

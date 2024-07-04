@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestByCurrentUser
 
 ## SYNOPSIS
-Invoke function filterByCurrentUser
+In PIM, retrieve the requests for active role assignments for a particular principal.
+The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequestByCurrentUser?view=graph-powershell-1.0)
@@ -33,7 +34,8 @@ Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequ
 ```
 
 ## DESCRIPTION
-Invoke function filterByCurrentUser
+In PIM, retrieve the requests for active role assignments for a particular principal.
+The principal can be the creator or approver of the unifiedRoleAssignmentScheduleRequest object, or they can be the target of the assignment.
 
 ## PARAMETERS
 
@@ -353,6 +355,8 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleassignmentschedulerequestbycurrentuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetafilterrolemanagemententitlementmanagementroleassignmentschedulerequestbycurrentuser)
+
+[https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-filterbycurrentuser?view=graph-rest-beta](https://learn.microsoft.com/graph/api/unifiedroleassignmentschedulerequest-filterbycurrentuser?view=graph-rest-beta)
 
 
 

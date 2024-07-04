@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the base policy in the directory for multi-tenant organization settings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

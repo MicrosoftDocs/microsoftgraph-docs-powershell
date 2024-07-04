@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaTeamworkDeletedTeamChannelMessageReply
 
 ## SYNOPSIS
-Retrieve a single message or a message reply in a channel or a chat.
+Replies for a specified message.
+Supports $expand for channel messages.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
@@ -40,7 +41,8 @@ Get-MgBetaTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity> [
 ```
 
 ## DESCRIPTION
-Retrieve a single message or a message reply in a channel or a chat.
+Replies for a specified message.
+Supports $expand for channel messages.
 
 ## EXAMPLES
 
@@ -380,10 +382,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereply](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereply)
-
-[https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/chatmessage-list-replies?view=graph-rest-1.0)
 
 
 

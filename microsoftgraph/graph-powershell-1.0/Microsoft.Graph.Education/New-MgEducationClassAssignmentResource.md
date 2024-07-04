@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Create an assignment resource.
-Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+Create new navigation property to resources for education
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
@@ -48,9 +46,7 @@ New-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create an assignment resource.
-Only teachers can perform this operation.
-You can create the following types of assignment resources: Every resource has an @odata.type property to indicate which type of resource is being created.
+Create new navigation property to resources for education
 
 ## EXAMPLES
 ### Example 1: Create an educationLinkResource
@@ -471,8 +467,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource](https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentresource)
-
-[https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-post-resource?view=graph-rest-1.0)
 
 
 

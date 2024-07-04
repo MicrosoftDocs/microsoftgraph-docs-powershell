@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecuritySecureScoreControlProfile
 
 ## SYNOPSIS
-Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
+Update the navigation property secureScoreControlProfiles in security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ Update-MgBetaSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 ```
 
 ## DESCRIPTION
-Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote.
+Update the navigation property secureScoreControlProfiles in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -687,8 +687,6 @@ Required
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritysecurescorecontrolprofile)
-
-[https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0)
 
 
 

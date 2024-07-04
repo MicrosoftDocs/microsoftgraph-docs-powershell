@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportOneDriveUsageStorage
 
 ## SYNOPSIS
-Invoke function getOneDriveUsageStorage
+Get the trend on the amount of storage you're using in OneDrive for Business.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportOneDriveUsageStorage?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ Get-MgReportOneDriveUsageStorage -InputObject <IReportsIdentity> -OutFile <Strin
 ```
 
 ## DESCRIPTION
-Invoke function getOneDriveUsageStorage
+Get the trend on the amount of storage you're using in OneDrive for Business.
 
 ## PARAMETERS
 
@@ -182,6 +182,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportonedriveusagestorage)
+
+[https://learn.microsoft.com/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-1.0)
 
 
 

@@ -8,12 +8,7 @@ schema: 2.0.0
 # Remove-MgUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Delete a user's phone authentication method.
-This removes the phone number from the user and they'll no longer be able to use the number for authentication, whether via SMS or voice calls.
-A user can't have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted.
-Have the user change their default authentication method, and then delete the number.
+Delete navigation property phoneMethods for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
@@ -35,12 +30,7 @@ Remove-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Delete a user's phone authentication method.
-This removes the phone number from the user and they'll no longer be able to use the number for authentication, whether via SMS or voice calls.
-A user can't have an alternateMobile number without a mobile number.
-If you want to remove a mobile number from a user that also has an alternateMobile number, first update the mobile number to the new number, then delete the alternateMobile number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it can't be deleted.
-Have the user change their default authentication method, and then delete the number.
+Delete navigation property phoneMethods for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -231,6 +221,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -242,6 +233,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
   - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
   - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
   - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
@@ -256,6 +248,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MultiTenantOrganizationMemberId <String>]`: The unique identifier of multiTenantOrganizationMember
   - `[NamedLocationId <String>]`: The unique identifier of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -286,8 +279,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationphonemethod](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationphonemethod)
-
-[https://learn.microsoft.com/graph/api/phoneauthenticationmethod-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/phoneauthenticationmethod-delete?view=graph-rest-1.0)
 
 
 

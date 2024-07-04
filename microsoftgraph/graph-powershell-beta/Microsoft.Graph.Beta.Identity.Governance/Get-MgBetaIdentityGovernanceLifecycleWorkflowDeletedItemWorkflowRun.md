@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun
 
 ## SYNOPSIS
-Read the properties and relationships of a run object.
+Workflow runs.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun -InputObject
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a run object.
+Workflow runs.
 
 ## EXAMPLES
 
@@ -406,10 +406,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowrun](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowdeleteditemworkflowrun)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-run-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitygovernance-workflow-list-runs?view=graph-rest-1.0)
 
 
 

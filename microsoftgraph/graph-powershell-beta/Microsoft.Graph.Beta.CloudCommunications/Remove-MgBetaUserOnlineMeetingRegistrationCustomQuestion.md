@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion
 
 ## SYNOPSIS
-Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
+Delete navigation property customQuestions for users
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCom
 ```
 
 ## DESCRIPTION
-Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
+Delete navigation property customQuestions for users
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
@@ -249,8 +249,6 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationcustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetauseronlinemeetingregistrationcustomquestion)
-
-[https://learn.microsoft.com/graph/api/meetingregistrationquestion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/meetingregistrationquestion-delete?view=graph-rest-1.0)
 
 
 

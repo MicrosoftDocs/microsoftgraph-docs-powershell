@@ -8,9 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaRoleManagementCloudPcRoleAssignment
 
 ## SYNOPSIS
-Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
-This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
+Delete navigation property roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -29,9 +27,7 @@ Remove-MgBetaRoleManagementCloudPcRoleAssignment -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
-This is applicable for a RBAC application that supports multiple principals and scopes.
-The following RBAC providers are currently supported:- Cloud PC - device management (Intune)
+Delete navigation property roleAssignments for roleManagement
 
 ## PARAMETERS
 
@@ -220,8 +216,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroleassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/remove-mgbetarolemanagementcloudpcroleassignment)
-
-[https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-1.0)
 
 
 

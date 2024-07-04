@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategoryDelta
 
 ## SYNOPSIS
-Invoke function delta
+Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentCategoryDelta?view=graph-powershell-beta)
@@ -48,7 +48,7 @@ Get-MgEducationClassAssignmentCategoryDelta -InputObject <IEducationIdentity> [-
 ```
 
 ## DESCRIPTION
-Invoke function delta
+Get a list of newly created or updated educationCategory objects without having to perform a full read of the collection.
 
 ## EXAMPLES
 
@@ -345,6 +345,8 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentcategorydelta)
+
+[https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationcategory-delta?view=graph-rest-1.0)
 
 
 

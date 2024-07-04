@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPrintPrinterShareAllowedUserByRef
 
 ## SYNOPSIS
-Grant the specified user access to submit print jobs to the associated printerShare.
+Create new navigation property ref to allowedUsers for print
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgBetaPrintPrinterShareAllowedUserByRef -InputObject <IDevicesCloudPrintIden
 ```
 
 ## DESCRIPTION
-Grant the specified user access to submit print jobs to the associated printerShare.
+Create new navigation property ref to allowedUsers for print
 
 ## EXAMPLES
 
@@ -257,8 +257,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharealloweduserbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintprintersharealloweduserbyref)
-
-[https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-post-allowedusers?view=graph-rest-1.0)
 
 
 

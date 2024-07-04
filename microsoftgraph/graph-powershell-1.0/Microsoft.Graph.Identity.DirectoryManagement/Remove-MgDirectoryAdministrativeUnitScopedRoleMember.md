@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Remove a Microsoft Entra role assignment with administrative unit scope.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+Delete navigation property scopedRoleMembers for directory
 
 ## SYNTAX
 
@@ -31,7 +28,7 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 ```
 
 ## DESCRIPTION
-Remove a Microsoft Entra role assignment with administrative unit scope.
+Delete navigation property scopedRoleMembers for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -220,6 +217,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -245,8 +244,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-delete-scopedrolemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-delete-scopedrolemembers?view=graph-rest-1.0)
 
 
 

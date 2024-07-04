@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyCrossTenantAccessPolicyDefault
 
 ## SYNOPSIS
-Update the default configuration of a cross-tenant access policy.
+Update the navigation property default in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
@@ -39,7 +39,7 @@ Update-MgBetaPolicyCrossTenantAccessPolicyDefault
 ```
 
 ## DESCRIPTION
-Update the default configuration of a cross-tenant access policy.
+Update the navigation property default in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -478,8 +478,6 @@ For example, device.deviceAttribute2 -eq 'PrivilegedAccessWorkstation'.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicydefault)
-
-[https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/crosstenantaccesspolicyconfigurationdefault-update?view=graph-rest-1.0)
 
 
 

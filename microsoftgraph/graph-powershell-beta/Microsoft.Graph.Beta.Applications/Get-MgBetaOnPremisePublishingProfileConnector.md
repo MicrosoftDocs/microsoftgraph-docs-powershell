@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaOnPremisePublishingProfileConnector
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a connector object.
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -35,7 +37,9 @@ Get-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a connector object.
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -347,10 +351,6 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnector)
-
-[https://learn.microsoft.com/graph/api/connector-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connector-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/connector-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/connector-list?view=graph-rest-1.0)
 
 
 

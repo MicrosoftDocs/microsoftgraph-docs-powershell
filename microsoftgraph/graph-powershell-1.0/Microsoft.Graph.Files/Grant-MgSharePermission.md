@@ -8,7 +8,7 @@ schema: 2.0.0
 # Grant-MgSharePermission
 
 ## SYNOPSIS
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Grant-MgBetaSharePermission?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Grant-MgSharePermission -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Grant users access to a link represented by a \[permission\]\[\].
+Grant users access to a link represented by a permission.
 
 ## EXAMPLES
 ### Example 1: Using the Grant-MgSharePermission Cmdlet

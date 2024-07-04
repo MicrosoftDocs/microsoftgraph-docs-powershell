@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaSecurityCaseEdiscoveryCaseSearch
 
 ## SYNOPSIS
-Delete an ediscoverySearch object.
+Delete navigation property searches for security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Delete an ediscoverySearch object.
+Delete navigation property searches for security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -302,8 +302,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasesearch](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritycaseediscoverycasesearch)
-
-[https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-searches?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-ediscoverycase-delete-searches?view=graph-rest-1.0)
 
 
 

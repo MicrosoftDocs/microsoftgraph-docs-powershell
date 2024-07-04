@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamInstalledApp
 
 ## SYNOPSIS
-Install an app to the specified team.
+Create new navigation property to installedApps for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Install an app to the specified team.
+Create new navigation property to installedApps for groups
 
 ## EXAMPLES
 
@@ -432,8 +432,6 @@ For example, if a user changes their display name, the API might show the new va
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteaminstalledapp](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteaminstalledapp)
-
-[https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post-installedapps?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaInformationProtectionPolicyLabel
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an informationProtectionLabel object.
+Get labels from informationProtection
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentit
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an informationProtectionLabel object.
+Get labels from informationProtection
 
 ## EXAMPLES
 
@@ -366,10 +366,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicylabel](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetainformationprotectionpolicylabel)
-
-[https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionlabel-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotectionpolicy-list-labels?view=graph-rest-1.0)
 
 
 

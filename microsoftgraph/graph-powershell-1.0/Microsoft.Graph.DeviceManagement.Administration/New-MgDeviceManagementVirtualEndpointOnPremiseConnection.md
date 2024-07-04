@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointOnPremiseConnection
 
 ## SYNOPSIS
-Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
+Create new navigation property to onPremisesConnections for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ New-MgDeviceManagementVirtualEndpointOnPremiseConnection
 ```
 
 ## DESCRIPTION
-Create a new cloudPcOnPremisesConnection object for provisioning Cloud PCs.
+Create new navigation property to onPremisesConnections for deviceManagement
 
 ## PARAMETERS
 
@@ -543,8 +543,6 @@ Read-Only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointonpremiseconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointonpremiseconnection)
-
-[https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-1.0)
 
 
 

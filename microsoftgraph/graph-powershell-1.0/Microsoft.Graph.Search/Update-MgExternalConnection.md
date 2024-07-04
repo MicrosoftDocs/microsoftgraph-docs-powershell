@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgExternalConnection
 
 ## SYNOPSIS
-Update the properties of an externalConnection object.
+Update the navigation property connections in external
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnection?view=graph-powershell-beta)
@@ -56,7 +56,7 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an externalConnection object.
+Update the navigation property connections in external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -713,8 +713,6 @@ Required.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/update-mgexternalconnection)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalconnection-update?view=graph-rest-1.0)
 
 
 

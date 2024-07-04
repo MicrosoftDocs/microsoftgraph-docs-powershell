@@ -444,7 +444,7 @@ Accept wildcard characters: False
 ### -IdentifierUris
 Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://`<application-client-id>`, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://`<appId>`, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -1383,7 +1383,7 @@ Always null when the object hasn't been deleted.
 Read-only.
   - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -2163,7 +2163,7 @@ Always null when the object hasn't been deleted.
 Read-only.
     - `[IdentifierUris <String- `[]`>]`: Also known as App ID URI, this value is set when an application is used as a resource app.
 The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique.
-You can use the default value provided, which is in the form api://<application-client-id>, or specify a more readable URI like https://contoso.com/api.
+You can use the default value provided, which is in the form api://<appId>, or specify a more readable URI like https://contoso.com/api.
 For more information on valid identifierUris patterns and best practices, see Microsoft Entra application registration security best practices.
 Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
@@ -3395,7 +3395,7 @@ Only available for applications that support the PersonalMicrosoftAccount signIn
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplication)
 
-[https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta](https://learn.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta)
 
 
 

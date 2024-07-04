@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
-Delete a timeOffRequest object.
+Delete navigation property timeOffRequests for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete a timeOffRequest object.
+Delete navigation property timeOffRequests for groups
 
 ## EXAMPLES
 
@@ -250,8 +250,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetagroupteamscheduletimeoffrequest)
-
-[https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/timeoffrequest-delete?view=graph-rest-1.0)
 
 
 

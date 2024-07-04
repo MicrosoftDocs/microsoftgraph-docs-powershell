@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalConnectionItem
 
 ## SYNOPSIS
-Get the properties and relationships of an externalitem object.
-This API is provided for diagnostic purposes only.
-It isn't intended to be used for any other purpose.
-Repeated requests to this API might result in 429 HTTP errors.
+Get items from external
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-1.0)
@@ -41,10 +38,7 @@ Get-MgBetaExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get the properties and relationships of an externalitem object.
-This API is provided for diagnostic purposes only.
-It isn't intended to be used for any other purpose.
-Repeated requests to this API might result in 429 HTTP errors.
+Get items from external
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -334,6 +328,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -343,8 +339,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionitem)
-
-[https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/externalconnectors-externalitem-get?view=graph-rest-1.0)
 
 
 

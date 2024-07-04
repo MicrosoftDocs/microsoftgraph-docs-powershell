@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementMobileAppConfiguration
 
 ## SYNOPSIS
-Update the properties of a iosMobileAppConfiguration object.
+Update the navigation property mobileAppConfigurations in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ Update-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Update the properties of a iosMobileAppConfiguration object.
+Update the navigation property mobileAppConfigurations in deviceAppManagement
 
 ## PARAMETERS
 
@@ -549,8 +549,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration)
-
-[https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-apps-iosmobileappconfiguration-update?view=graph-rest-1.0)
 
 
 

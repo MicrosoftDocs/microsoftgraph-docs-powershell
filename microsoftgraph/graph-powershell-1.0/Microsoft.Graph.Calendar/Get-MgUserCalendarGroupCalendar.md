@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserCalendarGroupCalendar
 
 ## SYNOPSIS
-Retrieve a list of calendars belonging to a calendar group.
+The calendars in the calendar group.
+Navigation property.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarGroupCalendar?view=graph-powershell-beta)
@@ -23,7 +26,10 @@ Get-MgUserCalendarGroupCalendar -CalendarGroupId <String> -UserId <String> [-Fil
 ```
 
 ## DESCRIPTION
-Retrieve a list of calendars belonging to a calendar group.
+The calendars in the calendar group.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgUserCalendarGroupCalendar Cmdlet
@@ -247,8 +253,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar)
-
-[https://learn.microsoft.com/graph/api/calendargroup-list-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-list-calendars?view=graph-rest-1.0)
 
 
 

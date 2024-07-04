@@ -284,7 +284,7 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty)
 
-[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta](https://learn.microsoft.com/graph/api/directoryobject-validateproperties?view=graph-rest-beta)
 
 
 

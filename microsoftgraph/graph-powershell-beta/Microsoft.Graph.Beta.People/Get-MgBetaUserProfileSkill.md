@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileSkill
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a skillproficiency object in a user's profile.
+Represents detailed information about skills associated with a user in various services.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a skillproficiency object in a user's profile.
+Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileskill](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileskill)
-
-[https://learn.microsoft.com/graph/api/skillproficiency-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/skillproficiency-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-skills?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-skills?view=graph-rest-1.0)
 
 
 

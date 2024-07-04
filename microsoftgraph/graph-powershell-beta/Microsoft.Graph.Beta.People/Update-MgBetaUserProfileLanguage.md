@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserProfileLanguage
 
 ## SYNOPSIS
-Update the properties of a languageProficiency object in a user's profile.
+Update the navigation property languages in users
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgBetaUserProfileLanguage -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a languageProficiency object in a user's profile.
+Update the navigation property languages in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -580,8 +580,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilelanguage)
-
-[https://learn.microsoft.com/graph/api/languageproficiency-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/languageproficiency-update?view=graph-rest-1.0)
 
 
 

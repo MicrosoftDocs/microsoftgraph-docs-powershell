@@ -388,7 +388,7 @@ This property is settable only for members of a chat.
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/add-mgbetateammember)
 
-[https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-1.0)
+[https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta](https://learn.microsoft.com/graph/api/conversationmembers-add?view=graph-rest-beta)
 
 
 

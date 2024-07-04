@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a identityUserFlowAttribute object.
+Represents entry point for identity userflow attributes.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaIdentityUserFlowAttribute -InputObject <IIdentitySignInsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a identityUserFlowAttribute object.
+Represents entry point for identity userflow attributes.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -380,10 +380,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityuserflowattribute)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identityuserflowattribute-list?view=graph-rest-1.0)
 
 
 

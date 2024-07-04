@@ -8,7 +8,7 @@ schema: 2.0.0
 # Search-MgGroupDrive
 
 ## SYNOPSIS
-Invoke function search
+Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDrive?view=graph-powershell-beta)
@@ -32,7 +32,7 @@ Search-MgGroupDrive -InputObject <IGroupsIdentity> [-Count] [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Invoke function search
+Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
 ## PARAMETERS
 
@@ -324,6 +324,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdrive](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/search-mggroupdrive)
+
+[https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/driveitem-search?view=graph-rest-1.0)
 
 
 

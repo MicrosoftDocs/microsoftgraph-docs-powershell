@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportMailboxUsageQuotaStatusMailboxCount
 
 ## SYNOPSIS
-Invoke function getMailboxUsageQuotaStatusMailboxCounts
+Get the count of user mailboxes in each quota category.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMailboxUsageQuotaStatusMailboxCount?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> 
 ```
 
 ## DESCRIPTION
-Invoke function getMailboxUsageQuotaStatusMailboxCounts
+Get the count of user mailboxes in each quota category.
 
 ## EXAMPLES
 
@@ -185,6 +185,8 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount](https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount)
+
+[https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-1.0)
 
 
 

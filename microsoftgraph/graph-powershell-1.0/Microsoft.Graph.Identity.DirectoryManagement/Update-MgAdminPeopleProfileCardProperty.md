@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgAdminPeopleProfileCardProperty
 
 ## SYNOPSIS
-Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminPeopleProfileCardProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaAdminPeopleProfileCardProperty?view=graph-powershell-beta)
+Update the navigation property profileCardProperties in admin
 
 ## SYNTAX
 
@@ -46,7 +43,7 @@ Update-MgAdminPeopleProfileCardProperty -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Update the properties of a profileCardProperty object, identified by its directoryPropertyName property.
+Update the navigation property profileCardProperties in admin
 
 ## PARAMETERS
 
@@ -281,6 +278,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -306,8 +305,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/update-mgadminpeopleprofilecardproperty)
-
-[https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profilecardproperty-update?view=graph-rest-1.0)
 
 
 

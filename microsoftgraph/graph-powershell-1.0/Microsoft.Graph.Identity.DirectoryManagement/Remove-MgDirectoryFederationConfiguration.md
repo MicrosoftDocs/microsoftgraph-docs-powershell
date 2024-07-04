@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgDirectoryFederationConfiguration
 
 ## SYNOPSIS
-Delete a samlOrWsFedExternalDomainFederation object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+Delete navigation property federationConfigurations for directory
 
 ## SYNTAX
 
@@ -30,7 +27,7 @@ Remove-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Delete a samlOrWsFedExternalDomainFederation object.
+Delete navigation property federationConfigurations for directory
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -204,6 +201,8 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -229,8 +228,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryfederationconfiguration)
-
-[https://learn.microsoft.com/graph/api/samlorwsfedexternaldomainfederation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/samlorwsfedexternaldomainfederation-delete?view=graph-rest-1.0)
 
 
 

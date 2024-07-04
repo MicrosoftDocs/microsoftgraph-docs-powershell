@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageResourceEnvironment object.
+A reference to the geolocation environment in which a resource is located.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -InputObject <II
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageResourceEnvironment object.
+A reference to the geolocation environment in which a resource is located.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -399,10 +399,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageresourceenvironment)
-
-[https://learn.microsoft.com/graph/api/accesspackageresourceenvironment-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageresourceenvironment-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageresourceenvironment?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-accesspackageresourceenvironment?view=graph-rest-1.0)
 
 
 

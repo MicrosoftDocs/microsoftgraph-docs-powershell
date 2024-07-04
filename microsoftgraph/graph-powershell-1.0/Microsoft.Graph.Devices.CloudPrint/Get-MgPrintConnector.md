@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintConnector
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a printConnector object.
+The list of available print connectors.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintConnector?view=graph-powershell-beta)
@@ -37,10 +37,7 @@ Get-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a printConnector object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/printconnector-get-permissions.md)]
+The list of available print connectors.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -318,10 +315,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintconnector](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintconnector)
-
-[https://learn.microsoft.com/graph/api/printconnector-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printconnector-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/print-list-connectors?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/print-list-connectors?view=graph-rest-1.0)
 
 
 

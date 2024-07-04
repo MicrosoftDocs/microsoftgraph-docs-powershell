@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaSecurityIncident
 
 ## SYNOPSIS
-Update the properties of an incident object.
+Update the navigation property incidents in security
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-1.0)
@@ -56,7 +56,7 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Update the properties of an incident object.
+Update the navigation property incidents in security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -421,7 +421,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResolvingComment
-.
+User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
 
 ```yaml
 Type: String
@@ -682,7 +683,8 @@ Free editable text.
     - `[KqlText <String>]`: The query string.
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
-  - `[ResolvingComment <String>]`: 
+  - `[ResolvingComment <String>]`: User input that explains the resolution of the incident and the classification choice.
+This property contains free editable text.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
   - `[SystemTags <String- `[]`>]`: The collection of system tags that are associated with the incident.
@@ -783,8 +785,6 @@ RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery- `[]`>
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityincident)
-
-[https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/security-incident-update?view=graph-rest-1.0)
 
 
 

@@ -345,8 +345,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauseroauth2permissiongrant)
 
-[https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-list-oauth2permissiongrants?view=graph-rest-1.0)
-
 
 
 

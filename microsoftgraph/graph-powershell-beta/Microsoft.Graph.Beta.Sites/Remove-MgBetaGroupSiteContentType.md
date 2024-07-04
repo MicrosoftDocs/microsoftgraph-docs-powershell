@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaGroupSiteContentType
 
 ## SYNOPSIS
-Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
+Delete navigation property contentTypes for groups
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteContentType?view=graph-powershell-1.0)
@@ -30,7 +30,7 @@ Remove-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Remove a \[content type\]\[contentType\] from a \[list\]\[\] or a \[site\]\[\].
+Delete navigation property contentTypes for groups
 
 ## EXAMPLES
 
@@ -276,8 +276,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetagroupsitecontenttype)
-
-[https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/contenttype-delete?view=graph-rest-1.0)
 
 
 

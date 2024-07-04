@@ -394,7 +394,8 @@ Read-only.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[IsApprovalRequired <Boolean?>]`: 
+      - `[IsApprovalRequired <Boolean?>]`: Specifies whether approval is required to complete the plannerTask.
+When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.
     - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
@@ -417,7 +418,8 @@ COMPLETIONREQUIREMENTS `<IMicrosoftGraphPlannerTaskCompletionRequirementDetails>
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApprovalRequirement <IMicrosoftGraphPlannerApprovalRequirement>]`: plannerApprovalRequirement
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsApprovalRequired <Boolean?>]`: 
+    - `[IsApprovalRequired <Boolean?>]`: Specifies whether approval is required to complete the plannerTask.
+When this property is set to true, the task can only be marked complete if an approval is created for the task and approved.
   - `[ChecklistRequirement <IMicrosoftGraphPlannerChecklistRequirement>]`: plannerChecklistRequirement
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RequiredChecklistItemIds <String- `[]`>]`: A collection of required plannerChecklistItems identifiers to complete the plannerTask.
@@ -459,8 +461,6 @@ NOTES `<IMicrosoftGraphItemBody>`: itemBody
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannertaskdetail)
-
-[https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannertaskdetails-update?view=graph-rest-1.0)
 
 
 

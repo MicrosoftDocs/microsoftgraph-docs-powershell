@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserProfileProject
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a projectParticipation object in a user's profile.
+Represents detailed information about projects associated with a user.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaUserProfileProject -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a projectParticipation object in a user's profile.
+Represents detailed information about projects associated with a user.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -338,10 +338,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileproject](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofileproject)
-
-[https://learn.microsoft.com/graph/api/projectparticipation-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/projectparticipation-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/profile-list-projects?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-list-projects?view=graph-rest-1.0)
 
 
 

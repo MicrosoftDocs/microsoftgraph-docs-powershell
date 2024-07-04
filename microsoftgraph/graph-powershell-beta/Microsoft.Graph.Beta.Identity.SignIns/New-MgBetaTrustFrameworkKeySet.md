@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgBetaTrustFrameworkKeySet
 
 ## SYNOPSIS
-Create a new trustFrameworkKeySet.
-The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
-The modified ID will be available in the response and in the location header.
+Create new navigation property to keySets for trustFramework
 
 ## SYNTAX
 
@@ -29,9 +27,7 @@ New-MgBetaTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeyS
 ```
 
 ## DESCRIPTION
-Create a new trustFrameworkKeySet.
-The ID of the trustFrameworkKeySet is expected in the create request; however, it can be modified by the service.
-The modified ID will be available in the response and in the location header.
+Create new navigation property to keySets for trustFramework
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
@@ -295,8 +291,6 @@ Possible values are: sig (signature), enc (encryption)
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkkeyset)
-
-[https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/trustframework-post-keysets?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Get a Microsoft Entra role assignment with administrative unit scope.
+Scoped-role members of this administrative unit.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Get a Microsoft Entra role assignment with administrative unit scope.
+Scoped-role members of this administrative unit.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaAdministrativeUnitScopedRoleMember Cmdlet
@@ -365,10 +365,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaadministrativeunitscopedrolemember)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-get-scopedrolemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-get-scopedrolemembers?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/administrativeunit-list-scopedrolemembers?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/administrativeunit-list-scopedrolemembers?view=graph-rest-1.0)
 
 
 

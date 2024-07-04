@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Delete a linkedResource object.
+Delete navigation property linkedResources for users
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
@@ -31,7 +31,7 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete a linkedResource object.
+Delete navigation property linkedResources for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -267,8 +267,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource](https://learn.microsoft.com/powershell/module/microsoft.graph.users/remove-mgusertodolisttasklinkedresource)
-
-[https://learn.microsoft.com/graph/api/linkedresource-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/linkedresource-delete?view=graph-rest-1.0)
 
 
 

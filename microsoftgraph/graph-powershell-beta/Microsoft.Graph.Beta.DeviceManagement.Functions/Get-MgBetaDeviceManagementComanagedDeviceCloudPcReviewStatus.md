@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus
 
 ## SYNOPSIS
-Invoke function getCloudPcReviewStatus
+Get the review status of a specific Cloud PC device.
 
 ## SYNTAX
 
@@ -27,7 +27,10 @@ Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Invoke function getCloudPcReviewStatus
+Get the review status of a specific Cloud PC device.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/manageddevice-getcloudpcreviewstatus-permissions.md)]
 
 ## PARAMETERS
 
@@ -159,6 +162,8 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddevicecloudpcreviewstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddevicecloudpcreviewstatus)
+
+[https://learn.microsoft.com/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta](https://learn.microsoft.com/graph/api/manageddevice-getcloudpcreviewstatus?view=graph-rest-beta)
 
 
 

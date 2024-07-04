@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-Create a new deviceCategory object.
+Create new navigation property to deviceCategories for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceCategory?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCatego
 ```
 
 ## DESCRIPTION
-Create a new deviceCategory object.
+Create new navigation property to deviceCategories for deviceManagement
 
 ## PARAMETERS
 
@@ -218,8 +218,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecategory)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-devicecategory-create?view=graph-rest-1.0)
 
 
 

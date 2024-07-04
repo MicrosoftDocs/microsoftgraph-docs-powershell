@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementCatalog
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an accessPackageCatalog object.
+A container for access packages.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Get-MgEntitlementManagementCatalog [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an accessPackageCatalog object.
+A container for access packages.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -415,10 +415,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalog](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalog)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/entitlementmanagement-list-catalogs?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/entitlementmanagement-list-catalogs?view=graph-rest-1.0)
 
 
 

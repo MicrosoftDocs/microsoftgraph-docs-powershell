@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection
 
 ## SYNOPSIS
-Get verticalSection from groups
+Vertical section on the SharePoint page.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayoutVerticalSection?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutVerticalSection -InputObject <ISitesIden
 ```
 
 ## DESCRIPTION
-Get verticalSection from groups
+Vertical section on the SharePoint page.
 
 ## PARAMETERS
 
@@ -228,6 +228,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

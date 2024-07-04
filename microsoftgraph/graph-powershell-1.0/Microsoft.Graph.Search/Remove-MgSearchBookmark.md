@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSearchBookmark
 
 ## SYNOPSIS
-Delete a bookmark object.
+Delete navigation property bookmarks for search
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaSearchBookmark?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgSearchBookmark -InputObject <ISearchIdentity> [-IfMatch <String>] [-Res
 ```
 
 ## DESCRIPTION
-Delete a bookmark object.
+Delete navigation property bookmarks for search
 
 ## PARAMETERS
 
@@ -201,8 +201,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgsearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-delete?view=graph-rest-1.0)
 
 
 

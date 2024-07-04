@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
+Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 ```
 
 ## DESCRIPTION
-Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
+Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -269,8 +269,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyidentitysecuritydefaultenforcementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyidentitysecuritydefaultenforcementpolicy)
-
-[https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitysecuritydefaultsenforcementpolicy-update?view=graph-rest-1.0)
 
 
 

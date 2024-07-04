@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-Delete a bookingCustomQuestion object.
+Delete navigation property customQuestions for solutions
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -30,7 +30,7 @@ Remove-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete a bookingCustomQuestion object.
+Delete navigation property customQuestions for solutions
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -235,8 +235,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomquestion)
-
-[https://learn.microsoft.com/graph/api/bookingcustomquestion-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomquestion-delete?view=graph-rest-1.0)
 
 
 

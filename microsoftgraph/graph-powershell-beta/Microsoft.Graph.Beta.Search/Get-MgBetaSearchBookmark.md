@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSearchBookmark
 
 ## SYNOPSIS
-Read the properties and relationships of a bookmark object.
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a bookmark object.
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -313,6 +313,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -322,10 +324,6 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetasearchbookmark)
-
-[https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-bookmark-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/search-searchentity-list-bookmarks?view=graph-rest-1.0)
 
 
 

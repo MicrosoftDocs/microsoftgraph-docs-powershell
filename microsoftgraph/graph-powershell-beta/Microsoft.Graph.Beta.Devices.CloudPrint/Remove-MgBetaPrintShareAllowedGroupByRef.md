@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPrintShareAllowedGroupByRef
 
 ## SYNOPSIS
-Revoke the specified group's access to submit print jobs to the associated printerShare.
+Delete ref of navigation property allowedGroups for print
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareAllowedGroupByRef?view=graph-powershell-1.0)
@@ -44,7 +44,7 @@ Remove-MgBetaPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentit
 ```
 
 ## DESCRIPTION
-Revoke the specified group's access to submit print jobs to the associated printerShare.
+Delete ref of navigation property allowedGroups for print
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -262,8 +262,6 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintshareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintshareallowedgroupbyref)
-
-[https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/printershare-delete-allowedgroup?view=graph-rest-1.0)
 
 
 

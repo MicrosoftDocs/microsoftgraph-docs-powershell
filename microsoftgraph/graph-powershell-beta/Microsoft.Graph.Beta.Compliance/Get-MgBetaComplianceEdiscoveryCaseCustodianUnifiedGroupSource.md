@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Beta.Compliance-help.xml
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource
 schema: 2.0.0
-ms.prod: ediscovery
 ---
 
 # Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource
 
 ## SYNOPSIS
-Read the properties and relationships of a unifiedGroupSource object.
+Data source entity for groups associated with the custodian.
 
 ## SYNTAX
 
@@ -37,10 +36,7 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ICom
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a unifiedGroupSource object.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-unifiedgroupsource-get-permissions.md)]
+Data source entity for groups associated with the custodian.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -352,10 +348,6 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianunifiedgroupsource)
-
-[https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-unifiedgroupsource-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/ediscovery-custodian-list-unifiedgroupsources?view=graph-rest-1.0)
 
 
 

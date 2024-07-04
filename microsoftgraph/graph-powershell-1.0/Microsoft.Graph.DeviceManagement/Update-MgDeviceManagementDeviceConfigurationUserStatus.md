@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationUserStatus
 
 ## SYNOPSIS
-Update the properties of a deviceConfigurationUserStatus object.
+Update the navigation property userStatuses in deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceConfigurationUserStatus?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ Update-MgDeviceManagementDeviceConfigurationUserStatus -InputObject <IDeviceMana
 ```
 
 ## DESCRIPTION
-Update the properties of a deviceConfigurationUserStatus object.
+Update the navigation property userStatuses in deviceManagement
 
 ## PARAMETERS
 
@@ -383,8 +383,6 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationuserstatus](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationuserstatus)
-
-[https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-update?view=graph-rest-1.0)
 
 
 

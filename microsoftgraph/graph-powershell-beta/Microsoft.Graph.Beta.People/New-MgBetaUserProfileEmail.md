@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserProfileEmail
 
 ## SYNOPSIS
-Create a new itemEmail object in a user's profile.
+Create new navigation property to emails for users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create a new itemEmail object in a user's profile.
+Create new navigation property to emails for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -497,8 +497,6 @@ SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileemail)
-
-[https://learn.microsoft.com/graph/api/profile-post-emails?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/profile-post-emails?view=graph-rest-1.0)
 
 
 

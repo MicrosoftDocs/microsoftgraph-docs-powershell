@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserCalendarGroup
 
 ## SYNOPSIS
-Update the properties of calendargroup object.
+Update the navigation property calendarGroups in users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-1.0)
@@ -46,7 +46,7 @@ Update-MgBetaUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the properties of calendargroup object.
+Update the navigation property calendarGroups in users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -891,8 +891,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendargroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetausercalendargroup)
-
-[https://learn.microsoft.com/graph/api/calendargroup-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/calendargroup-update?view=graph-rest-1.0)
 
 
 

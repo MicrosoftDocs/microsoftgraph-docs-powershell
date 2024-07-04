@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
-Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
+Delete navigation property combinationConfigurations for policies
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-1.0)
@@ -31,7 +31,7 @@ Remove-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputOb
 ```
 
 ## DESCRIPTION
-Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
+Delete navigation property combinationConfigurations for policies
 
 ## PARAMETERS
 
@@ -285,8 +285,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-delete-combinationconfigurations?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-delete-combinationconfigurations?view=graph-rest-1.0)
 
 
 

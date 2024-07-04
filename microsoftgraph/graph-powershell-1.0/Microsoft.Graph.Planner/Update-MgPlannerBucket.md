@@ -515,8 +515,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/update-mgplannerbucket)
 
-[https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/plannerbucket-update?view=graph-rest-1.0)
-
 
 
 

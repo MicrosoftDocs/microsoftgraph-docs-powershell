@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+Get customWorkflowExtensions from identityGovernance
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Get-MgEntitlementManagementResourceRequestCatalogCustomWorkflowExtension
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
+Get customWorkflowExtensions from identityGovernance
 
 ## PARAMETERS
 
@@ -372,10 +372,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementresourcerequestcatalogcustomworkflowextension)
-
-[https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackageassignmentrequestworkflowextension-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackagecatalog-list-accesspackagecustomworkflowextensions?view=graph-rest-1.0)
 
 
 

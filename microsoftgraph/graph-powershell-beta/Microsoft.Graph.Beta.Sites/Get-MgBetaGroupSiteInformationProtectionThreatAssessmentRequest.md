@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types:
+Get threatAssessmentRequests from groups
 
 ## SYNTAX
 
@@ -37,8 +36,7 @@ Get-MgBetaGroupSiteInformationProtectionThreatAssessmentRequest -InputObject <IS
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a specified threatAssessmentRequest object.
-A threat assessment request can be one of the following types:
+Get threatAssessmentRequests from groups
 
 ## PARAMETERS
 
@@ -372,10 +370,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionthreatassessmentrequest](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsiteinformationprotectionthreatassessmentrequest)
-
-[https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/threatassessmentrequest-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-1.0)
 
 
 

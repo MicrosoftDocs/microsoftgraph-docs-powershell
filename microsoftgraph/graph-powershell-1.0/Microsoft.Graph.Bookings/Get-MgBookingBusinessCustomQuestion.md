@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-Read the properties and relationships of a bookingCustomQuestion object.
+All the custom questions of this business.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
@@ -38,7 +40,9 @@ Get-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a bookingCustomQuestion object.
+All the custom questions of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -333,10 +337,6 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomquestion](https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomquestion)
-
-[https://learn.microsoft.com/graph/api/bookingcustomquestion-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingcustomquestion-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/bookingbusiness-list-customquestions?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/bookingbusiness-list-customquestions?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagementManagedEBookAssignment
 
 ## SYNOPSIS
-Update the properties of a managedEBookAssignment object.
+Update the navigation property assignments in deviceAppManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ Update-MgDeviceAppManagementManagedEBookAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Update the properties of a managedEBookAssignment object.
+Update the navigation property assignments in deviceAppManagement
 
 ## PARAMETERS
 
@@ -314,8 +314,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedebookassignment)
-
-[https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-books-managedebookassignment-update?view=graph-rest-1.0)
 
 
 

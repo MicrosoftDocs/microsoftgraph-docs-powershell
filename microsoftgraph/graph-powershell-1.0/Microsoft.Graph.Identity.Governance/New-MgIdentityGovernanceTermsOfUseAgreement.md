@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceTermsOfUseAgreement
 
 ## SYNOPSIS
-Create a new agreement object.
+Create new navigation property to agreements for identityGovernance
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
@@ -34,7 +34,7 @@ New-MgIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphAgree
 ```
 
 ## DESCRIPTION
-Create a new agreement object.
+Create new navigation property to agreements for identityGovernance
 
 ## PARAMETERS
 
@@ -586,8 +586,6 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermsofuseagreement)
-
-[https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/termsofusecontainer-post-agreements?view=graph-rest-1.0)
 
 
 

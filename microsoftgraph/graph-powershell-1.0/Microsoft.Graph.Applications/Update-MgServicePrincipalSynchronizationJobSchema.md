@@ -8,13 +8,7 @@ schema: 2.0.0
 # Update-MgServicePrincipalSynchronizationJobSchema
 
 ## SYNOPSIS
-Update the synchronization schema for a given job or template.
-This method fully replaces the current schema with the one provided in the request.
-To update the schema of a template, make the call on the application object.
-You must be the owner of the application.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
+Update the navigation property schema in servicePrincipals
 
 ## SYNTAX
 
@@ -51,10 +45,7 @@ Update-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Update the synchronization schema for a given job or template.
-This method fully replaces the current schema with the one provided in the request.
-To update the schema of a template, make the call on the application object.
-You must be the owner of the application.
+Update the navigation property schema in servicePrincipals
 
 ## PARAMETERS
 
@@ -496,6 +487,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[FederatedIdentityCredentialId <String>]`: The unique identifier of federatedIdentityCredential
   - `[GroupId <String>]`: The unique identifier of group
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[Name <String>]`: Alternate key of federatedIdentityCredential
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
   - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
@@ -593,8 +585,6 @@ Must match one of the directory definitions in synchronizationSchema.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationjobschema)
-
-[https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/synchronization-synchronizationschema-update?view=graph-rest-1.0)
 
 
 

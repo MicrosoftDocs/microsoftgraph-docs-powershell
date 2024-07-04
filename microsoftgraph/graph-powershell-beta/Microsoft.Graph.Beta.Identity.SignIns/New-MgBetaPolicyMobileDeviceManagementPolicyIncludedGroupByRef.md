@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef
 
 ## SYNOPSIS
-Add groups to be included in a mobile app management policy.
+Create new navigation property ref to includedGroups for policies
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -InputObject <IId
 ```
 
 ## DESCRIPTION
-Add groups to be included in a mobile app management policy.
+Create new navigation property ref to includedGroups for policies
 
 ## EXAMPLES
 ### Example 1: Using the New-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
@@ -342,8 +342,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicymobiledevicemanagementpolicyincludedgroupbyref)
-
-[https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-post-includedgroups?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/mobileappmanagementpolicies-post-includedgroups?view=graph-rest-1.0)
 
 
 

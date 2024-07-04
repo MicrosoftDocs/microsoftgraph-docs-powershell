@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 
 ## SYNOPSIS
-Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
+Create new navigation property ref to incompatibleAccessPackages for identityGovernance
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-1.0)
@@ -47,7 +47,7 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 ```
 
 ## DESCRIPTION
-Add an accessPackage to the list of access packages marked as incompatible on an accessPackage.
+Create new navigation property ref to incompatibleAccessPackages for identityGovernance
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -363,8 +363,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackagebyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackagebyref)
-
-[https://learn.microsoft.com/graph/api/accesspackage-post-incompatibleaccesspackage?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accesspackage-post-incompatibleaccesspackage?view=graph-rest-1.0)
 
 
 

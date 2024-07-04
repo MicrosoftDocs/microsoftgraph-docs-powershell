@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalIndustryDataSourceSystem
 
 ## SYNOPSIS
-Update the properties of a sourceSystemDefinition object.
+Update the navigation property sourceSystems in external
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgBetaExternalIndustryDataSourceSystem -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of a sourceSystemDefinition object.
+Update the navigation property sourceSystems in external
 
 ## PARAMETERS
 
@@ -315,6 +315,8 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
   - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[OutboundProvisioningFlowSetId <String>]`: The unique identifier of outboundProvisioningFlowSet
+  - `[ProvisioningFlowId <String>]`: The unique identifier of provisioningFlow
   - `[QnaId <String>]`: The unique identifier of qna
   - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
   - `[RoleGroupId <String>]`: The unique identifier of roleGroup
@@ -350,8 +352,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatasourcesystem)
-
-[https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/industrydata-sourcesystemdefinition-update?view=graph-rest-1.0)
 
 
 

@@ -325,8 +325,6 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mggroupeventattachment)
 
-[https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/event-list-attachments?view=graph-rest-1.0)
-
 
 
 

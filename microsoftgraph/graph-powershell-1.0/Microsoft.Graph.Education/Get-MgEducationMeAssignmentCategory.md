@@ -8,8 +8,9 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentCategory?view=graph-powershell-beta)
@@ -24,8 +25,9 @@ Get-MgEducationMeAssignmentCategory -EducationAssignmentId <String> [-ExpandProp
 ```
 
 ## DESCRIPTION
-List all the categories associated with an assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 
@@ -254,8 +256,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategory](https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategory)
-
-[https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/educationassignment-list-categories?view=graph-rest-1.0)
 
 
 

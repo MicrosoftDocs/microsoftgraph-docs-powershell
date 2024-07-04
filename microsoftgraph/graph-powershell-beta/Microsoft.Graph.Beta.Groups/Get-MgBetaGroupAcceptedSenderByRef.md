@@ -8,9 +8,8 @@ schema: 2.0.0
 # Get-MgBetaGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-Get a list of users or groups that are in the accepted-senders list for this group.
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
-Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
+The list of users or groups allowed to create posts or calendar events in this group.
+If this list is non-empty, then only users or groups listed here can post.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
@@ -24,12 +23,8 @@ Get-MgBetaGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <
 ```
 
 ## DESCRIPTION
-Get a list of users or groups that are in the accepted-senders list for this group.
-Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).
-Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
-
-**Permissions**
-[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/group-list-acceptedsenders-permissions.md)]
+The list of users or groups allowed to create posts or calendar events in this group.
+If this list is non-empty, then only users or groups listed here can post.
 
 ## EXAMPLES
 
@@ -215,8 +210,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
-
-[https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/group-list-acceptedsenders?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileNote
 
 ## SYNOPSIS
-Deletes a personAnnotation object from a user's profile.
+Delete navigation property notes for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Deletes a personAnnotation object from a user's profile.
+Delete navigation property notes for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -239,8 +239,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofilenote)
-
-[https://learn.microsoft.com/graph/api/personannotation-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/personannotation-delete?view=graph-rest-1.0)
 
 
 

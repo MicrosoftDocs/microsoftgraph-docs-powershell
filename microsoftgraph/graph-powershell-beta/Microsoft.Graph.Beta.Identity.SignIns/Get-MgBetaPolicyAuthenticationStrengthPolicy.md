@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaPolicyAuthenticationStrengthPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of an authenticationStrengthPolicy object.
+The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-1.0)
@@ -38,7 +38,7 @@ Get-MgBetaPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdent
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an authenticationStrengthPolicy object.
+The authentication method combinations that are to be used in scenarios defined by Microsoft Entra Conditional Access.
 
 ## EXAMPLES
 ### Example 1: Get all authentication strength policies
@@ -391,10 +391,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationstrengthpolicy)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthpolicy-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/authenticationstrengthroot-list-policies?view=graph-rest-1.0)
 
 
 

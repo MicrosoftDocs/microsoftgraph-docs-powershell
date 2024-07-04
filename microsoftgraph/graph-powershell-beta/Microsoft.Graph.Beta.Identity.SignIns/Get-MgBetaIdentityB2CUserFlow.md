@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityB2CUserFlow
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a b2cUserFlow object.
+Represents entry point for B2C identity userflows.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a b2cUserFlow object.
+Represents entry point for B2C identity userflows.
 
 ## EXAMPLES
 ### Example 1: List all b2cIdentityUserFlow objects
@@ -388,10 +388,6 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2cuserflow)
-
-[https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/b2cidentityuserflow-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-1.0)
 
 
 

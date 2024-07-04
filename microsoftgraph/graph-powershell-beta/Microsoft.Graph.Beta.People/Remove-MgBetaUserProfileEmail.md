@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserProfileEmail
 
 ## SYNOPSIS
-Delete an itemEmail object from a user's profile.
+Delete navigation property emails for users
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Remove-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete an itemEmail object from a user's profile.
+Delete navigation property emails for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -240,8 +240,6 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileemail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/remove-mgbetauserprofileemail)
-
-[https://learn.microsoft.com/graph/api/itememail-delete?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/itememail-delete?view=graph-rest-1.0)
 
 
 

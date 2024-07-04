@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOnenoteRecentNotebook
 
 ## SYNOPSIS
-Invoke function getRecentNotebooks
+Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserOnenoteRecentNotebook](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserOnenoteRecentNotebook?view=graph-powershell-1.0)
@@ -30,7 +30,10 @@ Get-MgBetaUserOnenoteRecentNotebook -InputObject <IUsersFunctionsIdentity> [-Cou
 ```
 
 ## DESCRIPTION
-Invoke function getRecentNotebooks
+Get a list of recentNotebook instances that have been accessed by the signed-in user.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/notebook-getrecentnotebooks-permissions.md)]
 
 ## PARAMETERS
 
@@ -259,6 +262,8 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetauseronenoterecentnotebook)
+
+[https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-beta)
 
 
 

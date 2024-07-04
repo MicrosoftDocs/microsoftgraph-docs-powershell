@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage
 
 ## SYNOPSIS
-Retrieve the properties and relationships of an accessReviewStage object.
+If the instance has multiple stages, this returns the collection of stages.
+A new stage will only be created when the previous stage ends.
+The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
 ## SYNTAX
 
@@ -36,7 +38,9 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of an accessReviewStage object.
+If the instance has multiple stages, this returns the collection of stages.
+A new stage will only be created when the previous stage ends.
+The existence, number, and settings of stages on a review instance are created based on the accessReviewStageSettings on the parent accessReviewScheduleDefinition.
 
 ## PARAMETERS
 
@@ -402,10 +406,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewdecisioninstancestage)
-
-[https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewstage-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/accessreviewinstance-list-stages?view=graph-rest-1.0)
 
 
 

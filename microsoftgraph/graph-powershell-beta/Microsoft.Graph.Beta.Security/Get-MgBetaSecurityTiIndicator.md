@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityTiIndicator
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a tiIndicator object.
+Get tiIndicators from security
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a tiIndicator object.
+Get tiIndicators from security
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -382,10 +382,6 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritytiindicator)
-
-[https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicator-get?view=graph-rest-1.0)
-
-[https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/tiindicators-list?view=graph-rest-1.0)
 
 
 

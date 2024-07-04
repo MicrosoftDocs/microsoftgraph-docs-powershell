@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection
 
 ## SYNOPSIS
-Get horizontalSections from groups
+Collection of horizontal sections on the SharePoint page.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePageAsSitePageCanvaLayoutHorizontalSection?view=graph-powershell-beta)
@@ -39,7 +39,7 @@ Get-MgGroupSitePageAsSitePageCanvaLayoutHorizontalSection -InputObject <ISitesId
 ```
 
 ## DESCRIPTION
-Get horizontalSections from groups
+Collection of horizontal sections on the SharePoint page.
 
 ## PARAMETERS
 
@@ -373,6 +373,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
+  - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 

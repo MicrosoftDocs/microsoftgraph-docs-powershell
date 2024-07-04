@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupTeamMember
 
 ## SYNOPSIS
-Add a new conversationMember to a team.
+Create new navigation property to members for groups
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamMember?view=graph-powershell-beta)
@@ -45,7 +45,7 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Add a new conversationMember to a team.
+Create new navigation property to members for groups
 
 ## EXAMPLES
 
@@ -323,8 +323,6 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteammember](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mggroupteammember)
-
-[https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/team-post-members?view=graph-rest-1.0)
 
 
 

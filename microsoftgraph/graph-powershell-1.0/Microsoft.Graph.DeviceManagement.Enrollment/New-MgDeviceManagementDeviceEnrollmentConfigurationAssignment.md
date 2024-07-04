@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Create a new enrollmentConfigurationAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
@@ -46,7 +46,7 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 ```
 
 ## DESCRIPTION
-Create a new enrollmentConfigurationAssignment object.
+Create new navigation property to assignments for deviceManagement
 
 ## PARAMETERS
 
@@ -252,8 +252,6 @@ INPUTOBJECT `<IDeviceManagementEnrollmentIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/new-mgdevicemanagementdeviceenrollmentconfigurationassignment)
-
-[https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-create?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/intune-onboarding-enrollmentconfigurationassignment-create?view=graph-rest-1.0)
 
 
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaUserCalendar
 
 ## SYNOPSIS
-Create a new calendar for a user.
+Create new navigation property to calendars for users
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserCalendar](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendar?view=graph-powershell-1.0)
@@ -58,7 +58,7 @@ New-MgBetaUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new calendar for a user.
+Create new navigation property to calendars for users
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -1460,8 +1460,6 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausercalendar)
-
-[https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/user-post-calendars?view=graph-rest-1.0)
 
 
 
