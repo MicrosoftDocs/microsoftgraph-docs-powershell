@@ -33,13 +33,17 @@ Remove-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>
 Delete navigation property shares for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintShare -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Remove-MgPrintShare Cmdlet.
+
 
 ## PARAMETERS
 

@@ -39,13 +39,17 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -InputObject 
 Represents the resource-specific role which a subject has been assigned through an access package assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole
+
+```
+This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet.
+
 
 ## PARAMETERS
 

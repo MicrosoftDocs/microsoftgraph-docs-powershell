@@ -33,13 +33,17 @@ Remove-MgBetaEducationClass -InputObject <IEducationIdentity> [-IfMatch <String>
 Delete navigation property classes for education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClass -EducationClassId $educationClassId
+
+```
+This example shows how to use the Remove-MgBetaEducationClass Cmdlet.
+
 
 ## PARAMETERS
 

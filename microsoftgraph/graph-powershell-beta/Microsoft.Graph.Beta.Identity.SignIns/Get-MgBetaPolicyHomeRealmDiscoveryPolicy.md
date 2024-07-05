@@ -41,13 +41,17 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 The policy to control Microsoft Entra authentication behavior for federated users.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyHomeRealmDiscoveryPolicy
+
+```
+This example shows how to use the Get-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
+
 
 ## PARAMETERS
 

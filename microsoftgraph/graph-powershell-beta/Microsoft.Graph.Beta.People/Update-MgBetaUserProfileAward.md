@@ -52,11 +52,11 @@ Update-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the navigation property awards in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 $params = @{
 	issuingAuthority = "International Association of Branding Management"
@@ -64,6 +64,10 @@ $params = @{
 }
 
 Update-MgBetaUserProfileAward -UserId $userId -PersonAwardId $personAwardId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgBetaUserProfileAward Cmdlet.
+
 
 ## PARAMETERS
 

@@ -41,13 +41,17 @@ Get-MgReportDailyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandPro
 Retrieve a list of daily print usage summaries, grouped by printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportDailyPrintUsageByPrinter
+
+```
+This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
+
 
 ## PARAMETERS
 

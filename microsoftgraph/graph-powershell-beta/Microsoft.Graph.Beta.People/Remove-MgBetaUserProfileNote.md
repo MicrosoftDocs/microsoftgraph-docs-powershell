@@ -30,13 +30,17 @@ Remove-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete navigation property notes for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.People
-```
 
 Remove-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId
+
+```
+This example shows how to use the Remove-MgBetaUserProfileNote Cmdlet.
+
 
 ## PARAMETERS
 

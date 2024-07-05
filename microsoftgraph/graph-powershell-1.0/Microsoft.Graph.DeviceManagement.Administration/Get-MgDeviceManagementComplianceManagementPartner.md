@@ -41,13 +41,17 @@ Get-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagemen
 The list of Compliance Management Partners configured by the tenant.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.DeviceManagement.Administration
-```
 
 Get-MgDeviceManagementComplianceManagementPartner
+
+```
+This example shows how to use the Get-MgDeviceManagementComplianceManagementPartner Cmdlet.
+
 
 ## PARAMETERS
 

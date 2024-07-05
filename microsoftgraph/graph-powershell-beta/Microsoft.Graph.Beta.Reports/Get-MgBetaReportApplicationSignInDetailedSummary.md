@@ -38,13 +38,17 @@ Get-MgBetaReportApplicationSignInDetailedSummary -InputObject <IReportsIdentity>
 Represents a detailed summary of an application sign-in.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportApplicationSignInDetailedSummary
+
+```
+This example shows how to use the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet.
+
 
 ## PARAMETERS
 

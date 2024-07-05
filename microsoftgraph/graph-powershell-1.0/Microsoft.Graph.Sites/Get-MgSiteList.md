@@ -41,13 +41,17 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 The collection of lists under this site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteList -SiteId $siteId
+
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
 
 ## PARAMETERS
 

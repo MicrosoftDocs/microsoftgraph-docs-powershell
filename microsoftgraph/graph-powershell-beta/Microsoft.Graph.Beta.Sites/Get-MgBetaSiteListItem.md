@@ -41,13 +41,17 @@ Get-MgBetaSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 All items contained in the list.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
-Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)"
+Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ExpandProperty "fields(select=Name,Color,Quantity)" 
+
+```
+This example shows how to use the Get-MgBetaSiteListItem Cmdlet.
+
 
 ## PARAMETERS
 

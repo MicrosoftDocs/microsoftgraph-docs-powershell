@@ -41,13 +41,17 @@ Get-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 Add different branding based on a locale.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgOrganizationBrandingLocalization -OrganizationId $organizationId
+
+```
+This example shows how to use the Get-MgOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

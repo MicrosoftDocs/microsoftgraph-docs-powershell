@@ -48,11 +48,11 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 Create new navigation property to tags for teams
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Finance"
@@ -67,6 +67,10 @@ $params = @{
 }
 
 New-MgTeamTag -TeamId $teamId -BodyParameter $params
+
+```
+This example shows how to use the New-MgTeamTag Cmdlet.
+
 
 ## PARAMETERS
 

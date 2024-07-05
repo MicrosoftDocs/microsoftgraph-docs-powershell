@@ -32,16 +32,6 @@ Get media content for the navigation property overridesPages from identity
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId

@@ -61,12 +61,11 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 A container of access packages.
 
 ## EXAMPLES
+### Example 1: Get a list of all access package catalogs
 
-### EXAMPLE 1
-```
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
-```
 
 AccessPackageResourceRoles  :
 AccessPackageResourceScopes :
@@ -83,12 +82,15 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
-
-### EXAMPLE 2
 ```
+
+This command returns a list of all the access package catalogs.
+
+### Example 2: Filter the access package catalogs by the display name
+
+```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
-```
 
 AccessPackageResourceRoles  :
 AccessPackageResourceScopes :
@@ -105,6 +107,9 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
+```
+
+This command returns the access package catalogs that meet the defined filter.
 
 ## PARAMETERS
 

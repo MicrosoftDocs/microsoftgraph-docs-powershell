@@ -41,13 +41,17 @@ Get-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-ExpandProper
 Get ediscoveryCases from security
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCase
+
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCase Cmdlet.
+
 
 ## PARAMETERS
 

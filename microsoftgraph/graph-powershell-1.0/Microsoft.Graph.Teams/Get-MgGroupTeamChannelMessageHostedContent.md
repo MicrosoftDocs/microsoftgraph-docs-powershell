@@ -58,16 +58,6 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All

@@ -26,13 +26,17 @@ Get-MgPrintShareAllowedUser -PrinterShareId <String> [-ExpandProperty <String[]>
 The users who have access to print using the printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintShareAllowedUser -PrinterShareId $printerShareId
+
+```
+This example shows how to use the Get-MgPrintShareAllowedUser Cmdlet.
+
 
 ## PARAMETERS
 

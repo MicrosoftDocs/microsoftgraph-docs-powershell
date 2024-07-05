@@ -50,13 +50,17 @@ Get-MgEntitlementManagementAssignment [-ExpandProperty <String[]>] [-Property <S
 The assignment of an access package to a subject for a period of time.
 
 ## EXAMPLES
+### Example scenarios for using query parameters
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment
+
+```
+This example will### example scenarios for using query parameters
+
 
 ## PARAMETERS
 

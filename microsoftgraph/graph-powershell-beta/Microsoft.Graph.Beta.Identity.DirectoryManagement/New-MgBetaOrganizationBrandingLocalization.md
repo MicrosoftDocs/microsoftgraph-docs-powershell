@@ -72,11 +72,11 @@ New-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManag
 Create new navigation property to localizations for organization
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -85,6 +85,10 @@ $params = @{
 }
 
 New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
+
+```
+This example shows how to use the New-MgBetaOrganizationBrandingLocalization Cmdlet.
+
 
 ## PARAMETERS
 

@@ -62,17 +62,21 @@ Update-MgBetaEntitlementManagementAccessPackage -InputObject <IIdentityGovernanc
 Update the navigation property accessPackages in identityGovernance
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Access Package New Name"
 }
 
 Update-MgBetaEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaEntitlementManagementAccessPackage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

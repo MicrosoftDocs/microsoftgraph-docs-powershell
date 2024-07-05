@@ -44,16 +44,6 @@ You can use the Prefer: outlook.timezone header to have all the date-related pro
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers

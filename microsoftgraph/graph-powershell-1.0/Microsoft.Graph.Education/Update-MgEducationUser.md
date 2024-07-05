@@ -75,11 +75,11 @@ Update-MgEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMicros
 Update the navigation property users in education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
-```
+```powershell
+
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Rogelio Cazares"
@@ -89,6 +89,10 @@ $params = @{
 }
 
 Update-MgEducationUser -EducationUserId $educationUserId -BodyParameter $params
+
+```
+This example shows how to use the Update-MgEducationUser Cmdlet.
+
 
 ## PARAMETERS
 
