@@ -13,11 +13,11 @@ ms.author: eunicewaweru
 
 # Authentication module cmdlets in Microsoft Graph PowerShell
 
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate. In this article, we'll look at the different cmdlets that are associated with authentication.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication, for example, environment, application ID, and certificate. In this article, we look at the different cmdlets that are associated with authentication.
 
-## Using Connect-MgGraph
+## Use Connect-MgGraph
 
-You must invoke `Connect-MgGraph` before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library.
+Invoke `Connect-MgGraph` before any commands that access Microsoft Graph. This cmdlet gets the access token using the Microsoft Authentication Library.
 
 ### Delegated access
 
@@ -45,7 +45,7 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
 
 Follow the steps below to create custom applications that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to isolate and limit the consent permissions granted for Microsoft Graph PowerShell usage.
 
-1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Azure portal - App registrations</a> > **New Registration**.
+1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Microsoft Entra admin center - App registrations</a> > **New Registration**.
     1. Enter a **Name** for your application, for example *Microsoft Graph PowerShell - High Privilege admin use only*.
     1. For **Supported account types**, select **Accounts in this organization directory**.
     1. For **Redirect URI**:
@@ -67,7 +67,7 @@ Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
 
 ### App-only access
 
-#### Using client credential with a certificate
+#### Use client credential with a certificate
 
 To use app-only access, you can load the certificate from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\*, when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
@@ -92,7 +92,7 @@ To use app-only access, you can load the certificate from either *Cert:\CurrentU
 
     To use a certificate stored in your machine's certificate store or another location when connecting to Microsoft Graph, specify the certificate's location.
 
-#### Using client secret credentials
+#### Use client secret credentials
 
 If you need interactions in the background, without a user to sign in, this type of grant will help you. Support for client secret credentials was added by adding **-ClientSecretCredential** parameter to **Connect-MgGraph**. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
 
@@ -105,31 +105,27 @@ Connect-MgGraph -TenantId "Tenant_Id" -ClientSecretCredential $ClientSecretCrede
 >[!NOTE]
 >It's recommended to use PowerShell 7 and above when using client secret credentials.
 
-#### Using managed identity
+#### Use managed identity
 
-A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Azure resources that are protected by Microsoft Entra ID. The identity is managed by the Azure platform and does not require you to provision or rotate any secrets.
+A common challenge when writing automation scripts is the management of secrets, credentials, certificates, and keys used to secure communication between services. Eliminate the need to manage credentials by allowing the module to obtain access tokens for Microsoft Entra resources that are protected by Microsoft Entra ID. The identity is managed by the Microsoft Entra platform and does not require you to provision or rotate any secrets.
 
-- System-assigned managed identity:
-
-    Uses an automatically managed identity on a service instance. The identity is tied to the lifecycle of a service instance.
+- System-assigned managed identity: Uses an automatically managed identity on a service instance. The identity is tied to the lifecycle of a service instance.
 
     ```powershell
     Connect-MgGraph -Identity
     ```
 
-- User-assigned managed identity:
-
-    Uses a user created managed identity as a standalone Azure resource.
+- User-assigned managed identity: Uses a user created managed identity as a standalone Microsoft Entra resource.
 
     ```powershell
     Connect-MgGraph -Identity -ClientId "User_Assigned_Managed_identity_Client_Id"
     ```
 
-### Connecting to an environment or cloud
+### Connect to an environment or cloud
 
 By default, `Connect-MgGraph` targets the global public cloud. To target other clouds, see [Using Get-MgEnvironment](#using-get-mgenvironment).
 
-### Connecting to an environment as a different identity
+### Connect to an environment as a different identity
 
 To connect as a different identity other than CurrentUser, specify the `-ContextScope` parameter with the value **Process**.
 
@@ -137,7 +133,7 @@ To connect as a different identity other than CurrentUser, specify the `-Context
 Connect-MgGraph -ContextScope Process
 ```
 
-### Using passwordless authentication
+### Use passwordless authentication
 
 Passwordless authentication is a method of verifying a user’s identity without the use of a password. Passwords are a primary attack vector and passwordless authentication is a strategy to mitigate attacks where bad actors use social engineering, phishing, and spray attacks to compromise passwords.
 
@@ -153,7 +149,7 @@ Microsoft Graph PowerShell supports the following passwordless authentication me
 
 For more information, see [Passwordless authentication options for Microsoft Entra ID](/azure/active-directory/authentication/concept-authentication-passwordless) and [Microsoft Entra certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication).
 
-## Using Disconnect-MgGraph
+## Use Disconnect-MgGraph
 
 Once you're signed in, you'll remain signed in until you invoke `Disconnect-MgGraph`. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
 
@@ -163,7 +159,7 @@ Use `Disconnect-MgGraph` to sign out.
 Disconnect-MgGraph
 ```
 
-## Using Get-MgEnvironment
+## Use Get-MgEnvironment
 
 When you use `Connect-MgGraph`, you can choose to target other environments. By default, `Connect-MgGraph` targets the global public cloud.
 
@@ -191,7 +187,7 @@ Connect-MgGraph -Environment USGov
 >[!NOTE]
 >Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
 
-## Using Get-MgContext
+## Use Get-MgContext
 
 `Get-MgContext` is used to retrieve the details about your current session, which include:
 
@@ -257,7 +253,7 @@ User.Read
 User.ReadWrite.All
 ```
 
-## Using Invoke-MgGraphRequest
+## Use Invoke-MgGraphRequest
 
 `Invoke-MgGraphRequest` issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method, and optional body parameter. This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
 
@@ -288,5 +284,5 @@ surname                        Administrator
 
 For more information about navigating Microsoft Graph PowerShell, see:
 
-- [Using Find-MgGraphCommand cmdlet](find-mg-graph-command.md)
-- [Using Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)
+- [Use Find-MgGraphCommand cmdlet](find-mg-graph-command.md)
+- [Use Find-MgGraphPermission cmdlet](find-mg-graph-permission.md)
