@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Domain settings configured by a customer when federated with Microsoft Entra ID.
 Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -43,10 +40,11 @@ Domain settings configured by a customer when federated with Microsoft Entra ID.
 Supports $expand.
 
 ## EXAMPLES
-### Example 1: Get the federation settings for a federated domain
 
-```powershell
-Get-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' | Format-List  
+### EXAMPLE 1
+```
+Get-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' | Format-List
+```
 
 ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
 DisplayName                           : Contoso 
@@ -62,10 +60,7 @@ PromptLoginBehavior                   :
 SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
 SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
 SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
-AdditionalProperties                    : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
-```
-
-This examples retrieves the federation settings for the specified domain.
+AdditionalProperties                    : {\[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity\]}
 
 ## PARAMETERS
 
@@ -327,38 +322,35 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
-  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
-  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
-  - `[CommerceSubscriptionId <String>]`: Alternate key of companySubscription
-  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
-  - `[ContractId <String>]`: The unique identifier of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: The unique identifier of device
-  - `[DeviceLocalCredentialInfoId <String>]`: The unique identifier of deviceLocalCredentialInfo
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
-  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
-  - `[DomainId <String>]`: The unique identifier of domain
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
-  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
-  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: The unique identifier of orgContact
-  - `[OrganizationId <String>]`: The unique identifier of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
-  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
-  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
-  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
-  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IIdentityDirectoryManagementIdentity\>: Identity Parameter
+  \[AdministrativeUnitId \<String\>\]: The unique identifier of administrativeUnit
+  \[AllowedValueId \<String\>\]: The unique identifier of allowedValue
+  \[AttributeSetId \<String\>\]: The unique identifier of attributeSet
+  \[CommerceSubscriptionId \<String\>\]: Alternate key of companySubscription
+  \[CompanySubscriptionId \<String\>\]: The unique identifier of companySubscription
+  \[ContractId \<String\>\]: The unique identifier of contract
+  \[CustomSecurityAttributeDefinitionId \<String\>\]: The unique identifier of customSecurityAttributeDefinition
+  \[DeviceId \<String\>\]: The unique identifier of device
+  \[DeviceLocalCredentialInfoId \<String\>\]: The unique identifier of deviceLocalCredentialInfo
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[DirectoryRoleId \<String\>\]: The unique identifier of directoryRole
+  \[DirectoryRoleTemplateId \<String\>\]: The unique identifier of directoryRoleTemplate
+  \[DomainDnsRecordId \<String\>\]: The unique identifier of domainDnsRecord
+  \[DomainId \<String\>\]: The unique identifier of domain
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[IdentityProviderBaseId \<String\>\]: The unique identifier of identityProviderBase
+  \[InternalDomainFederationId \<String\>\]: The unique identifier of internalDomainFederation
+  \[OnPremisesDirectorySynchronizationId \<String\>\]: The unique identifier of onPremisesDirectorySynchronization
+  \[OrgContactId \<String\>\]: The unique identifier of orgContact
+  \[OrganizationId \<String\>\]: The unique identifier of organization
+  \[OrganizationalBrandingLocalizationId \<String\>\]: The unique identifier of organizationalBrandingLocalization
+  \[ProfileCardPropertyId \<String\>\]: The unique identifier of profileCardProperty
+  \[RoleTemplateId \<String\>\]: Alternate key of directoryRole
+  \[ScopedRoleMembershipId \<String\>\]: The unique identifier of scopedRoleMembership
+  \[SubscribedSkuId \<String\>\]: The unique identifier of subscribedSku
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainfederationconfiguration)
-
-
-
 

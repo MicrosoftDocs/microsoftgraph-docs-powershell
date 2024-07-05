@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy
@@ -29,6 +29,22 @@ New-MgBetaDirectoryFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRo
 
 ## DESCRIPTION
 Create new navigation property to featureRolloutPolicies for directory
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -263,34 +279,30 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-APPLIESTO <IMicrosoftGraphDirectoryObject- `[]`>: Nullable.
+APPLIESTO \<IMicrosoftGraphDirectoryObject\[\]\>: Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+  \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphFeatureRolloutPolicy\>: featureRolloutPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject- `[]`>]`: Nullable.
+  \[AppliesTo \<IMicrosoftGraphDirectoryObject\[\]\>\]: Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted.
+    \[DeletedDateTime \<DateTime?\>\]: Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
-  - `[Description <String>]`: A description for this feature rollout policy.
-  - `[DisplayName <String>]`: The display name for this  feature rollout policy.
-  - `[Feature <String>]`: stagedFeatureName
-  - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
-  - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
+  \[Description \<String\>\]: A description for this feature rollout policy.
+  \[DisplayName \<String\>\]: The display name for this  feature rollout policy.
+  \[Feature \<String\>\]: stagedFeatureName
+  \[IsAppliedToOrganization \<Boolean?\>\]: Indicates whether this feature rollout policy should be applied to the entire organization.
+  \[IsEnabled \<Boolean?\>\]: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryfeaturerolloutpolicy)
-
-
-
-
 

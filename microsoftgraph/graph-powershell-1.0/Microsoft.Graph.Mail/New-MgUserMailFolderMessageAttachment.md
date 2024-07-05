@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageattachment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to attachments for users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -49,6 +46,16 @@ New-MgUserMailFolderMessageAttachment -InputObject <IMailIdentity> -BodyParamete
 Create new navigation property to attachments for users
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -329,31 +336,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAttachment\>: attachment
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[ContentType <String>]`: The MIME type.
-  - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+  \[ContentType \<String\>\]: The MIME type.
+  \[IsInline \<Boolean?\>\]: true if the attachment is an inline attachment; otherwise, false.
+  \[LastModifiedDateTime \<DateTime?\>\]: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
-  - `[Size <Int32?>]`: The length of the attachment in bytes.
+  \[Name \<String\>\]: The attachment's file name.
+  \[Size \<Int32?\>\]: The length of the attachment in bytes.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: The unique identifier of attachment
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: The unique identifier of mailFolder
-  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
-  - `[MessageId <String>]`: The unique identifier of message
-  - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IMailIdentity\>: Identity Parameter
+  \[AttachmentId \<String\>\]: The unique identifier of attachment
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
+  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
+  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
+  \[MessageId \<String\>\]: The unique identifier of message
+  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageattachment)
-
-
-
 

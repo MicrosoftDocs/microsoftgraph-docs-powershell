@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
@@ -42,18 +42,14 @@ Trending documents are calculated based on activity of the user's closest networ
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.People
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserTrendingInsight -UserId $userId
-
-```
-This example shows how to use the Get-MgUserTrendingInsight Cmdlet.
-
 
 ## PARAMETERS
 
@@ -315,17 +311,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
-  - `[PersonId <String>]`: The unique identifier of person
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IPeopleIdentity\>: Identity Parameter
+  \[PersonId \<String\>\]: The unique identifier of person
+  \[SharedInsightId \<String\>\]: The unique identifier of sharedInsight
+  \[TrendingId \<String\>\]: The unique identifier of trending
+  \[UsedInsightId \<String\>\]: The unique identifier of usedInsight
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight](https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight)
-
-
-
 

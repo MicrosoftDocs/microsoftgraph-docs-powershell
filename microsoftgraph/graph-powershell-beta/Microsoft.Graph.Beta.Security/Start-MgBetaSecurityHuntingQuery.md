@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke action runHuntingQuery
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,6 +31,16 @@ Start-MgBetaSecurityHuntingQuery
 Invoke action runHuntingQuery
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -190,15 +197,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Query <String>]`: 
-  - `[Timespan <String>]`:
+BODYPARAMETER \<IPathsU5PqctSecurityMicrosoftGraphSecurityRunhuntingqueryPostRequestbodyContentApplicationJsonSchema\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Query \<String\>\]: 
+  \[Timespan \<String\>\]:
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecurityhuntingquery)
-
-
-
 

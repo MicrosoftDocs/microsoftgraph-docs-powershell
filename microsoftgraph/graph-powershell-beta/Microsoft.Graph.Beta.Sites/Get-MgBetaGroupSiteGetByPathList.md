@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathlist
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of lists under this site.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteGetByPathList](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteGetByPathList?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,6 +21,18 @@ Get-MgBetaGroupSiteGetByPathList -GroupId <String> -Path <String> -Path1 <String
 
 ## DESCRIPTION
 The collection of lists under this site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -297,8 +306,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathlist](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitegetbypathlist)
-
-
-
-
 

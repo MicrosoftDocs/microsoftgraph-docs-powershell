@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerConfiguration?view=graph-powershell-1.0)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgBetaPolicyCrossTenantAccessPolicyTemplateMultiTenantOrganizationPartnerCon
 
 ## DESCRIPTION
 Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,8 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
-
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The user's profile photo.
 Read-only.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -53,17 +50,15 @@ The user's profile photo.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Get a user's photo properties
 
-```powershell
+### EXAMPLE 1
+```
 Get-MgUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
+```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
-```
-
-This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
@@ -295,27 +290,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
-  - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
-  - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
-  - `[ChecklistItemId <String>]`: The unique identifier of checklistItem
-  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
-  - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
-  - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
-  - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[TodoTaskId <String>]`: The unique identifier of todoTask
-  - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
-  - `[UserId <String>]`: The unique identifier of user
-  - `[WindowsSettingId <String>]`: The unique identifier of windowsSetting
-  - `[WindowsSettingInstanceId <String>]`: The unique identifier of windowsSettingInstance
+INPUTOBJECT \<IUsersIdentity\>: Identity Parameter
+  \[AttachmentBaseId \<String\>\]: The unique identifier of attachmentBase
+  \[AttachmentSessionId \<String\>\]: The unique identifier of attachmentSession
+  \[ChecklistItemId \<String\>\]: The unique identifier of checklistItem
+  \[DirectoryObjectId \<String\>\]: The unique identifier of directoryObject
+  \[ExtensionId \<String\>\]: The unique identifier of extension
+  \[LicenseDetailsId \<String\>\]: The unique identifier of licenseDetails
+  \[LinkedResourceId \<String\>\]: The unique identifier of linkedResource
+  \[OAuth2PermissionGrantId \<String\>\]: The unique identifier of oAuth2PermissionGrant
+  \[OutlookCategoryId \<String\>\]: The unique identifier of outlookCategory
+  \[ProfilePhotoId \<String\>\]: The unique identifier of profilePhoto
+  \[TodoTaskId \<String\>\]: The unique identifier of todoTask
+  \[TodoTaskListId \<String\>\]: The unique identifier of todoTaskList
+  \[UserId \<String\>\]: The unique identifier of user
+  \[WindowsSettingId \<String\>\]: The unique identifier of windowsSetting
+  \[WindowsSettingInstanceId \<String\>\]: The unique identifier of windowsSettingInstance
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto](https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserphoto)
-
-
-
 

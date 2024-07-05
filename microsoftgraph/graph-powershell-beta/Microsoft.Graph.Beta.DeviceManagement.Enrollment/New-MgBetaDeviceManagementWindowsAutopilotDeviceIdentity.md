@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeviceidentity
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -44,6 +41,18 @@ New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity
 
 ## DESCRIPTION
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -608,357 +617,353 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphWindowsAutopilotDeviceIdentity>`: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphWindowsAutopilotDeviceIdentity\>: The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AddressableUserName <String>]`: Addressable user name.
-  - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
-  - `[AzureAdDeviceId <String>]`: AAD Device ID
-  - `[DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AddressableUserName \<String\>\]: Addressable user name.
+  \[AzureActiveDirectoryDeviceId \<String\>\]: AAD Device ID - to be deprecated
+  \[AzureAdDeviceId \<String\>\]: AAD Device ID
+  \[DeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>]`: The list of assigned devices for the profile.
-    - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment- `[]`>]`: The list of group assignments for the profile.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[AssignedDevices \<IMicrosoftGraphWindowsAutopilotDeviceIdentity\[\]\>\]: The list of assigned devices for the profile.
+    \[Assignments \<IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment\[\]\>\]: The list of group assignments for the profile.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-      - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-    - `[CreatedDateTime <DateTime?>]`: Profile creation time
-    - `[Description <String>]`: Description of the profile
-    - `[DeviceNameTemplate <String>]`: The template used to name the AutoPilot Device.
+      \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+      \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+      \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+        \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+        \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+        \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+    \[CreatedDateTime \<DateTime?\>\]: Profile creation time
+    \[Description \<String\>\]: Description of the profile
+    \[DeviceNameTemplate \<String\>\]: The template used to name the AutoPilot Device.
 This can be a custom text and can also contain either the serial number of the device, or a randomly generated number.
 The total length of the text generated by the template can be no more than 15 characters.
-    - `[DeviceType <WindowsAutopilotDeviceType?>]`: windowsAutopilotDeviceType
-    - `[DisplayName <String>]`: Name of the profile
-    - `[EnableWhiteGlove <Boolean?>]`: Enable Autopilot White Glove for the profile.
-    - `[EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]`: Enrollment status screen setting
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AllowDeviceUseBeforeProfileAndAppInstallComplete <Boolean?>]`: Allow or block user to use device before profile and app installation complete
-      - `[AllowDeviceUseOnInstallFailure <Boolean?>]`: Allow the user to continue using the device on installation failure
-      - `[AllowLogCollectionOnInstallFailure <Boolean?>]`: Allow or block log collection on installation failure
-      - `[BlockDeviceSetupRetryByUser <Boolean?>]`: Allow the user to retry the setup on installation failure
-      - `[CustomErrorMessage <String>]`: Set custom error message to show upon installation failure
-      - `[HideInstallationProgress <Boolean?>]`: Show or hide installation progress to user
-      - `[InstallProgressTimeoutInMinutes <Int32?>]`: Set installation progress timeout in minutes
-    - `[ExtractHardwareHash <Boolean?>]`: HardwareHash Extraction for the profile
-    - `[HardwareHashExtractionEnabled <Boolean?>]`: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
+    \[DeviceType \<WindowsAutopilotDeviceType?\>\]: windowsAutopilotDeviceType
+    \[DisplayName \<String\>\]: Name of the profile
+    \[EnableWhiteGlove \<Boolean?\>\]: Enable Autopilot White Glove for the profile.
+    \[EnrollmentStatusScreenSettings \<IMicrosoftGraphWindowsEnrollmentStatusScreenSettings\>\]: Enrollment status screen setting
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AllowDeviceUseBeforeProfileAndAppInstallComplete \<Boolean?\>\]: Allow or block user to use device before profile and app installation complete
+      \[AllowDeviceUseOnInstallFailure \<Boolean?\>\]: Allow the user to continue using the device on installation failure
+      \[AllowLogCollectionOnInstallFailure \<Boolean?\>\]: Allow or block log collection on installation failure
+      \[BlockDeviceSetupRetryByUser \<Boolean?\>\]: Allow the user to retry the setup on installation failure
+      \[CustomErrorMessage \<String\>\]: Set custom error message to show upon installation failure
+      \[HideInstallationProgress \<Boolean?\>\]: Show or hide installation progress to user
+      \[InstallProgressTimeoutInMinutes \<Int32?\>\]: Set installation progress timeout in minutes
+    \[ExtractHardwareHash \<Boolean?\>\]: HardwareHash Extraction for the profile
+    \[HardwareHashExtractionEnabled \<Boolean?\>\]: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
 When TRUE, indicates if hardware extraction and Windows Autopilot registration will happen on the next successful check-in.
 When FALSE, hardware hash extraction and Windows Autopilot registration will not happen.
 Default value is FALSE.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-    - `[Language <String>]`: Language configured on the device
-    - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
-    - `[Locale <String>]`: The locale (language) to be used when configuring the device.
+    \[Language \<String\>\]: Language configured on the device
+    \[LastModifiedDateTime \<DateTime?\>\]: Profile last modified time
+    \[Locale \<String\>\]: The locale (language) to be used when configuring the device.
 E.g.
 en-US.
 The default value is os-default.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-    - `[ManagementServiceAppId <String>]`: The Entra management service App ID which gets used during client device-based enrollment discovery.
+    \[ManagementServiceAppId \<String\>\]: The Entra management service App ID which gets used during client device-based enrollment discovery.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-    - `[OutOfBoxExperienceSetting <IMicrosoftGraphOutOfBoxExperienceSetting>]`: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
+    \[OutOfBoxExperienceSetting \<IMicrosoftGraphOutOfBoxExperienceSetting\>\]: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-      - `[EscapeLinkHidden <Boolean?>]`: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+      \[EscapeLinkHidden \<Boolean?\>\]: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
 When false, the link that allows user to start over with a different account on company sign-in is available.
 Default value is FALSE.
-      - `[EulaHidden <Boolean?>]`: When TRUE, EULA is hidden to the end user during OOBE.
+      \[EulaHidden \<Boolean?\>\]: When TRUE, EULA is hidden to the end user during OOBE.
 When FALSE, EULA is shown to the end user during OOBE.
 Default value is FALSE.
-      - `[KeyboardSelectionPageSkipped <Boolean?>]`: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
+      \[KeyboardSelectionPageSkipped \<Boolean?\>\]: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
 When FALSE, the keyboard selection page is skipped during OOBE.
-      - `[PrivacySettingsHidden <Boolean?>]`: When TRUE, privacy settings is hidden to the end user during OOBE.
+      \[PrivacySettingsHidden \<Boolean?\>\]: When TRUE, privacy settings is hidden to the end user during OOBE.
 When FALSE, privacy settings is shown to the end user during OOBE.
 Default value is FALSE.
-      - `[UserType <String>]`: windowsUserType
-    - `[OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>]`: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
+      \[UserType \<String\>\]: windowsUserType
+    \[OutOfBoxExperienceSettings \<IMicrosoftGraphOutOfBoxExperienceSettings\>\]: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
 Read-Only.
 Starting from May 2024 this property will no longer be supported and will be marked as deprecated.
 Use outOfBoxExperienceSetting instead.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-      - `[HideEscapeLink <Boolean?>]`: If set to true, then the user can't start over with different account, on company sign-in
-      - `[HideEula <Boolean?>]`: Show or hide EULA to user
-      - `[HidePrivacySettings <Boolean?>]`: Show or hide privacy settings to user
-      - `[SkipKeyboardSelectionPage <Boolean?>]`: If set, then skip the keyboard selection page if Language and Region are set
-      - `[UserType <String>]`: windowsUserType
-    - `[PreprovisioningAllowed <Boolean?>]`: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+      \[HideEscapeLink \<Boolean?\>\]: If set to true, then the user can't start over with different account, on company sign-in
+      \[HideEula \<Boolean?\>\]: Show or hide EULA to user
+      \[HidePrivacySettings \<Boolean?\>\]: Show or hide privacy settings to user
+      \[SkipKeyboardSelectionPage \<Boolean?\>\]: If set, then skip the keyboard selection page if Language and Region are set
+      \[UserType \<String\>\]: windowsUserType
+    \[PreprovisioningAllowed \<Boolean?\>\]: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
 When TRUE, indicates that Windows Autopilot for pre-provisioned deployment mode for OOBE is allowed to be used.
 When false, Windows Autopilot for pre-provisioned deployment mode for OOBE is not allowed.
 The default is FALSE.
-    - `[RoleScopeTagIds <String- `[]`>]`: Scope tags for the profile.
-  - `[DeploymentProfileAssignedDateTime <DateTime?>]`: Profile set time of the Windows autopilot device.
-  - `[DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus?>]`: windowsAutopilotProfileAssignmentDetailedStatus
-  - `[DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus?>]`: windowsAutopilotProfileAssignmentStatus
-  - `[DeviceAccountPassword <String>]`: Surface Hub Device Account Password
-  - `[DeviceAccountUpn <String>]`: Surface Hub Device Account Upn
-  - `[DeviceFriendlyName <String>]`: Surface Hub Device Friendly Name
-  - `[DisplayName <String>]`: Display Name
-  - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-  - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-  - `[IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-  - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
-  - `[ManagedDeviceId <String>]`: Managed Device ID
-  - `[Manufacturer <String>]`: Oem manufacturer of the Windows autopilot device.
-  - `[Model <String>]`: Model name of the Windows autopilot device.
-  - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-  - `[PurchaseOrderIdentifier <String>]`: Purchase Order Identifier of the Windows autopilot device.
-  - `[RemediationState <WindowsAutopilotDeviceRemediationState?>]`: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
-  - `[RemediationStateLastModifiedDateTime <DateTime?>]`: RemediationState set time of Autopilot device.
-  - `[ResourceName <String>]`: Resource Name.
-  - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-  - `[SkuNumber <String>]`: SKU Number
-  - `[SystemFamily <String>]`: System Family
-  - `[UserPrincipalName <String>]`: User Principal Name.
-  - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
+    \[RoleScopeTagIds \<String\[\]\>\]: Scope tags for the profile.
+  \[DeploymentProfileAssignedDateTime \<DateTime?\>\]: Profile set time of the Windows autopilot device.
+  \[DeploymentProfileAssignmentDetailedStatus \<WindowsAutopilotProfileAssignmentDetailedStatus?\>\]: windowsAutopilotProfileAssignmentDetailedStatus
+  \[DeploymentProfileAssignmentStatus \<WindowsAutopilotProfileAssignmentStatus?\>\]: windowsAutopilotProfileAssignmentStatus
+  \[DeviceAccountPassword \<String\>\]: Surface Hub Device Account Password
+  \[DeviceAccountUpn \<String\>\]: Surface Hub Device Account Upn
+  \[DeviceFriendlyName \<String\>\]: Surface Hub Device Friendly Name
+  \[DisplayName \<String\>\]: Display Name
+  \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+  \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
+  \[IntendedDeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+  \[LastContactedDateTime \<DateTime?\>\]: Intune Last Contacted Date Time of the Windows autopilot device.
+  \[ManagedDeviceId \<String\>\]: Managed Device ID
+  \[Manufacturer \<String\>\]: Oem manufacturer of the Windows autopilot device.
+  \[Model \<String\>\]: Model name of the Windows autopilot device.
+  \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
+  \[PurchaseOrderIdentifier \<String\>\]: Purchase Order Identifier of the Windows autopilot device.
+  \[RemediationState \<WindowsAutopilotDeviceRemediationState?\>\]: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
+  \[RemediationStateLastModifiedDateTime \<DateTime?\>\]: RemediationState set time of Autopilot device.
+  \[ResourceName \<String\>\]: Resource Name.
+  \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
+  \[SkuNumber \<String\>\]: SKU Number
+  \[SystemFamily \<String\>\]: System Family
+  \[UserPrincipalName \<String\>\]: User Principal Name.
+  \[UserlessEnrollmentStatus \<WindowsAutopilotUserlessEnrollmentStatus?\>\]: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
 
-DEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+DEPLOYMENTPROFILE \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>: Windows Autopilot Deployment Profile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>]`: The list of assigned devices for the profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AssignedDevices \<IMicrosoftGraphWindowsAutopilotDeviceIdentity\[\]\>\]: The list of assigned devices for the profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AddressableUserName <String>]`: Addressable user name.
-    - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
-    - `[AzureAdDeviceId <String>]`: AAD Device ID
-    - `[DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-    - `[DeploymentProfileAssignedDateTime <DateTime?>]`: Profile set time of the Windows autopilot device.
-    - `[DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus?>]`: windowsAutopilotProfileAssignmentDetailedStatus
-    - `[DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus?>]`: windowsAutopilotProfileAssignmentStatus
-    - `[DeviceAccountPassword <String>]`: Surface Hub Device Account Password
-    - `[DeviceAccountUpn <String>]`: Surface Hub Device Account Upn
-    - `[DeviceFriendlyName <String>]`: Surface Hub Device Friendly Name
-    - `[DisplayName <String>]`: Display Name
-    - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-    - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-    - `[IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-    - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
-    - `[ManagedDeviceId <String>]`: Managed Device ID
-    - `[Manufacturer <String>]`: Oem manufacturer of the Windows autopilot device.
-    - `[Model <String>]`: Model name of the Windows autopilot device.
-    - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-    - `[PurchaseOrderIdentifier <String>]`: Purchase Order Identifier of the Windows autopilot device.
-    - `[RemediationState <WindowsAutopilotDeviceRemediationState?>]`: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
-    - `[RemediationStateLastModifiedDateTime <DateTime?>]`: RemediationState set time of Autopilot device.
-    - `[ResourceName <String>]`: Resource Name.
-    - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-    - `[SkuNumber <String>]`: SKU Number
-    - `[SystemFamily <String>]`: System Family
-    - `[UserPrincipalName <String>]`: User Principal Name.
-    - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
-  - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment- `[]`>]`: The list of group assignments for the profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[AddressableUserName \<String\>\]: Addressable user name.
+    \[AzureActiveDirectoryDeviceId \<String\>\]: AAD Device ID - to be deprecated
+    \[AzureAdDeviceId \<String\>\]: AAD Device ID
+    \[DeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+    \[DeploymentProfileAssignedDateTime \<DateTime?\>\]: Profile set time of the Windows autopilot device.
+    \[DeploymentProfileAssignmentDetailedStatus \<WindowsAutopilotProfileAssignmentDetailedStatus?\>\]: windowsAutopilotProfileAssignmentDetailedStatus
+    \[DeploymentProfileAssignmentStatus \<WindowsAutopilotProfileAssignmentStatus?\>\]: windowsAutopilotProfileAssignmentStatus
+    \[DeviceAccountPassword \<String\>\]: Surface Hub Device Account Password
+    \[DeviceAccountUpn \<String\>\]: Surface Hub Device Account Upn
+    \[DeviceFriendlyName \<String\>\]: Surface Hub Device Friendly Name
+    \[DisplayName \<String\>\]: Display Name
+    \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+    \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
+    \[IntendedDeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+    \[LastContactedDateTime \<DateTime?\>\]: Intune Last Contacted Date Time of the Windows autopilot device.
+    \[ManagedDeviceId \<String\>\]: Managed Device ID
+    \[Manufacturer \<String\>\]: Oem manufacturer of the Windows autopilot device.
+    \[Model \<String\>\]: Model name of the Windows autopilot device.
+    \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
+    \[PurchaseOrderIdentifier \<String\>\]: Purchase Order Identifier of the Windows autopilot device.
+    \[RemediationState \<WindowsAutopilotDeviceRemediationState?\>\]: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
+    \[RemediationStateLastModifiedDateTime \<DateTime?\>\]: RemediationState set time of Autopilot device.
+    \[ResourceName \<String\>\]: Resource Name.
+    \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
+    \[SkuNumber \<String\>\]: SKU Number
+    \[SystemFamily \<String\>\]: System Family
+    \[UserPrincipalName \<String\>\]: User Principal Name.
+    \[UserlessEnrollmentStatus \<WindowsAutopilotUserlessEnrollmentStatus?\>\]: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
+  \[Assignments \<IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment\[\]\>\]: The list of group assignments for the profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[CreatedDateTime <DateTime?>]`: Profile creation time
-  - `[Description <String>]`: Description of the profile
-  - `[DeviceNameTemplate <String>]`: The template used to name the AutoPilot Device.
+    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+    \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[CreatedDateTime \<DateTime?\>\]: Profile creation time
+  \[Description \<String\>\]: Description of the profile
+  \[DeviceNameTemplate \<String\>\]: The template used to name the AutoPilot Device.
 This can be a custom text and can also contain either the serial number of the device, or a randomly generated number.
 The total length of the text generated by the template can be no more than 15 characters.
-  - `[DeviceType <WindowsAutopilotDeviceType?>]`: windowsAutopilotDeviceType
-  - `[DisplayName <String>]`: Name of the profile
-  - `[EnableWhiteGlove <Boolean?>]`: Enable Autopilot White Glove for the profile.
-  - `[EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]`: Enrollment status screen setting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowDeviceUseBeforeProfileAndAppInstallComplete <Boolean?>]`: Allow or block user to use device before profile and app installation complete
-    - `[AllowDeviceUseOnInstallFailure <Boolean?>]`: Allow the user to continue using the device on installation failure
-    - `[AllowLogCollectionOnInstallFailure <Boolean?>]`: Allow or block log collection on installation failure
-    - `[BlockDeviceSetupRetryByUser <Boolean?>]`: Allow the user to retry the setup on installation failure
-    - `[CustomErrorMessage <String>]`: Set custom error message to show upon installation failure
-    - `[HideInstallationProgress <Boolean?>]`: Show or hide installation progress to user
-    - `[InstallProgressTimeoutInMinutes <Int32?>]`: Set installation progress timeout in minutes
-  - `[ExtractHardwareHash <Boolean?>]`: HardwareHash Extraction for the profile
-  - `[HardwareHashExtractionEnabled <Boolean?>]`: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
+  \[DeviceType \<WindowsAutopilotDeviceType?\>\]: windowsAutopilotDeviceType
+  \[DisplayName \<String\>\]: Name of the profile
+  \[EnableWhiteGlove \<Boolean?\>\]: Enable Autopilot White Glove for the profile.
+  \[EnrollmentStatusScreenSettings \<IMicrosoftGraphWindowsEnrollmentStatusScreenSettings\>\]: Enrollment status screen setting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AllowDeviceUseBeforeProfileAndAppInstallComplete \<Boolean?\>\]: Allow or block user to use device before profile and app installation complete
+    \[AllowDeviceUseOnInstallFailure \<Boolean?\>\]: Allow the user to continue using the device on installation failure
+    \[AllowLogCollectionOnInstallFailure \<Boolean?\>\]: Allow or block log collection on installation failure
+    \[BlockDeviceSetupRetryByUser \<Boolean?\>\]: Allow the user to retry the setup on installation failure
+    \[CustomErrorMessage \<String\>\]: Set custom error message to show upon installation failure
+    \[HideInstallationProgress \<Boolean?\>\]: Show or hide installation progress to user
+    \[InstallProgressTimeoutInMinutes \<Int32?\>\]: Set installation progress timeout in minutes
+  \[ExtractHardwareHash \<Boolean?\>\]: HardwareHash Extraction for the profile
+  \[HardwareHashExtractionEnabled \<Boolean?\>\]: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
 When TRUE, indicates if hardware extraction and Windows Autopilot registration will happen on the next successful check-in.
 When FALSE, hardware hash extraction and Windows Autopilot registration will not happen.
 Default value is FALSE.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[Language <String>]`: Language configured on the device
-  - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
-  - `[Locale <String>]`: The locale (language) to be used when configuring the device.
+  \[Language \<String\>\]: Language configured on the device
+  \[LastModifiedDateTime \<DateTime?\>\]: Profile last modified time
+  \[Locale \<String\>\]: The locale (language) to be used when configuring the device.
 E.g.
 en-US.
 The default value is os-default.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[ManagementServiceAppId <String>]`: The Entra management service App ID which gets used during client device-based enrollment discovery.
+  \[ManagementServiceAppId \<String\>\]: The Entra management service App ID which gets used during client device-based enrollment discovery.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[OutOfBoxExperienceSetting <IMicrosoftGraphOutOfBoxExperienceSetting>]`: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
+  \[OutOfBoxExperienceSetting \<IMicrosoftGraphOutOfBoxExperienceSetting\>\]: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-    - `[EscapeLinkHidden <Boolean?>]`: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+    \[EscapeLinkHidden \<Boolean?\>\]: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
 When false, the link that allows user to start over with a different account on company sign-in is available.
 Default value is FALSE.
-    - `[EulaHidden <Boolean?>]`: When TRUE, EULA is hidden to the end user during OOBE.
+    \[EulaHidden \<Boolean?\>\]: When TRUE, EULA is hidden to the end user during OOBE.
 When FALSE, EULA is shown to the end user during OOBE.
 Default value is FALSE.
-    - `[KeyboardSelectionPageSkipped <Boolean?>]`: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
+    \[KeyboardSelectionPageSkipped \<Boolean?\>\]: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
 When FALSE, the keyboard selection page is skipped during OOBE.
-    - `[PrivacySettingsHidden <Boolean?>]`: When TRUE, privacy settings is hidden to the end user during OOBE.
+    \[PrivacySettingsHidden \<Boolean?\>\]: When TRUE, privacy settings is hidden to the end user during OOBE.
 When FALSE, privacy settings is shown to the end user during OOBE.
 Default value is FALSE.
-    - `[UserType <String>]`: windowsUserType
-  - `[OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>]`: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
+    \[UserType \<String\>\]: windowsUserType
+  \[OutOfBoxExperienceSettings \<IMicrosoftGraphOutOfBoxExperienceSettings\>\]: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
 Read-Only.
 Starting from May 2024 this property will no longer be supported and will be marked as deprecated.
 Use outOfBoxExperienceSetting instead.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-    - `[HideEscapeLink <Boolean?>]`: If set to true, then the user can't start over with different account, on company sign-in
-    - `[HideEula <Boolean?>]`: Show or hide EULA to user
-    - `[HidePrivacySettings <Boolean?>]`: Show or hide privacy settings to user
-    - `[SkipKeyboardSelectionPage <Boolean?>]`: If set, then skip the keyboard selection page if Language and Region are set
-    - `[UserType <String>]`: windowsUserType
-  - `[PreprovisioningAllowed <Boolean?>]`: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+    \[HideEscapeLink \<Boolean?\>\]: If set to true, then the user can't start over with different account, on company sign-in
+    \[HideEula \<Boolean?\>\]: Show or hide EULA to user
+    \[HidePrivacySettings \<Boolean?\>\]: Show or hide privacy settings to user
+    \[SkipKeyboardSelectionPage \<Boolean?\>\]: If set, then skip the keyboard selection page if Language and Region are set
+    \[UserType \<String\>\]: windowsUserType
+  \[PreprovisioningAllowed \<Boolean?\>\]: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
 When TRUE, indicates that Windows Autopilot for pre-provisioned deployment mode for OOBE is allowed to be used.
 When false, Windows Autopilot for pre-provisioned deployment mode for OOBE is not allowed.
 The default is FALSE.
-  - `[RoleScopeTagIds <String- `[]`>]`: Scope tags for the profile.
+  \[RoleScopeTagIds \<String\[\]\>\]: Scope tags for the profile.
 
-INTENDEDDEPLOYMENTPROFILE `<IMicrosoftGraphWindowsAutopilotDeploymentProfile>`: Windows Autopilot Deployment Profile
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+INTENDEDDEPLOYMENTPROFILE \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>: Windows Autopilot Deployment Profile
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity- `[]`>]`: The list of assigned devices for the profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[AssignedDevices \<IMicrosoftGraphWindowsAutopilotDeviceIdentity\[\]\>\]: The list of assigned devices for the profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[AddressableUserName <String>]`: Addressable user name.
-    - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
-    - `[AzureAdDeviceId <String>]`: AAD Device ID
-    - `[DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-    - `[DeploymentProfileAssignedDateTime <DateTime?>]`: Profile set time of the Windows autopilot device.
-    - `[DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus?>]`: windowsAutopilotProfileAssignmentDetailedStatus
-    - `[DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus?>]`: windowsAutopilotProfileAssignmentStatus
-    - `[DeviceAccountPassword <String>]`: Surface Hub Device Account Password
-    - `[DeviceAccountUpn <String>]`: Surface Hub Device Account Upn
-    - `[DeviceFriendlyName <String>]`: Surface Hub Device Friendly Name
-    - `[DisplayName <String>]`: Display Name
-    - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
-    - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-    - `[IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
-    - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
-    - `[ManagedDeviceId <String>]`: Managed Device ID
-    - `[Manufacturer <String>]`: Oem manufacturer of the Windows autopilot device.
-    - `[Model <String>]`: Model name of the Windows autopilot device.
-    - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-    - `[PurchaseOrderIdentifier <String>]`: Purchase Order Identifier of the Windows autopilot device.
-    - `[RemediationState <WindowsAutopilotDeviceRemediationState?>]`: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
-    - `[RemediationStateLastModifiedDateTime <DateTime?>]`: RemediationState set time of Autopilot device.
-    - `[ResourceName <String>]`: Resource Name.
-    - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-    - `[SkuNumber <String>]`: SKU Number
-    - `[SystemFamily <String>]`: System Family
-    - `[UserPrincipalName <String>]`: User Principal Name.
-    - `[UserlessEnrollmentStatus <WindowsAutopilotUserlessEnrollmentStatus?>]`: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
-  - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment- `[]`>]`: The list of group assignments for the profile.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[AddressableUserName \<String\>\]: Addressable user name.
+    \[AzureActiveDirectoryDeviceId \<String\>\]: AAD Device ID - to be deprecated
+    \[AzureAdDeviceId \<String\>\]: AAD Device ID
+    \[DeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+    \[DeploymentProfileAssignedDateTime \<DateTime?\>\]: Profile set time of the Windows autopilot device.
+    \[DeploymentProfileAssignmentDetailedStatus \<WindowsAutopilotProfileAssignmentDetailedStatus?\>\]: windowsAutopilotProfileAssignmentDetailedStatus
+    \[DeploymentProfileAssignmentStatus \<WindowsAutopilotProfileAssignmentStatus?\>\]: windowsAutopilotProfileAssignmentStatus
+    \[DeviceAccountPassword \<String\>\]: Surface Hub Device Account Password
+    \[DeviceAccountUpn \<String\>\]: Surface Hub Device Account Upn
+    \[DeviceFriendlyName \<String\>\]: Surface Hub Device Friendly Name
+    \[DisplayName \<String\>\]: Display Name
+    \[EnrollmentState \<EnrollmentState?\>\]: enrollmentState
+    \[GroupTag \<String\>\]: Group Tag of the Windows autopilot device.
+    \[IntendedDeploymentProfile \<IMicrosoftGraphWindowsAutopilotDeploymentProfile\>\]: Windows Autopilot Deployment Profile
+    \[LastContactedDateTime \<DateTime?\>\]: Intune Last Contacted Date Time of the Windows autopilot device.
+    \[ManagedDeviceId \<String\>\]: Managed Device ID
+    \[Manufacturer \<String\>\]: Oem manufacturer of the Windows autopilot device.
+    \[Model \<String\>\]: Model name of the Windows autopilot device.
+    \[ProductKey \<String\>\]: Product Key of the Windows autopilot device.
+    \[PurchaseOrderIdentifier \<String\>\]: Purchase Order Identifier of the Windows autopilot device.
+    \[RemediationState \<WindowsAutopilotDeviceRemediationState?\>\]: Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
+    \[RemediationStateLastModifiedDateTime \<DateTime?\>\]: RemediationState set time of Autopilot device.
+    \[ResourceName \<String\>\]: Resource Name.
+    \[SerialNumber \<String\>\]: Serial number of the Windows autopilot device.
+    \[SkuNumber \<String\>\]: SKU Number
+    \[SystemFamily \<String\>\]: System Family
+    \[UserPrincipalName \<String\>\]: User Principal Name.
+    \[UserlessEnrollmentStatus \<WindowsAutopilotUserlessEnrollmentStatus?\>\]: Userless enrollment block status, indicating whether the next device enrollment will be blocked.
+  \[Assignments \<IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment\[\]\>\]: The list of group assignments for the profile.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[CreatedDateTime <DateTime?>]`: Profile creation time
-  - `[Description <String>]`: Description of the profile
-  - `[DeviceNameTemplate <String>]`: The template used to name the AutoPilot Device.
+    \[Source \<DeviceAndAppManagementAssignmentSource?\>\]: Represents source of assignment.
+    \[SourceId \<String\>\]: Identifier for resource used for deployment to a group
+    \[Target \<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget\>\]: Base type for assignment targets.
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[DeviceAndAppManagementAssignmentFilterId \<String\>\]: The Id of the filter for the target assignment.
+      \[DeviceAndAppManagementAssignmentFilterType \<DeviceAndAppManagementAssignmentFilterType?\>\]: Represents type of the assignment filter.
+  \[CreatedDateTime \<DateTime?\>\]: Profile creation time
+  \[Description \<String\>\]: Description of the profile
+  \[DeviceNameTemplate \<String\>\]: The template used to name the AutoPilot Device.
 This can be a custom text and can also contain either the serial number of the device, or a randomly generated number.
 The total length of the text generated by the template can be no more than 15 characters.
-  - `[DeviceType <WindowsAutopilotDeviceType?>]`: windowsAutopilotDeviceType
-  - `[DisplayName <String>]`: Name of the profile
-  - `[EnableWhiteGlove <Boolean?>]`: Enable Autopilot White Glove for the profile.
-  - `[EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]`: Enrollment status screen setting
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AllowDeviceUseBeforeProfileAndAppInstallComplete <Boolean?>]`: Allow or block user to use device before profile and app installation complete
-    - `[AllowDeviceUseOnInstallFailure <Boolean?>]`: Allow the user to continue using the device on installation failure
-    - `[AllowLogCollectionOnInstallFailure <Boolean?>]`: Allow or block log collection on installation failure
-    - `[BlockDeviceSetupRetryByUser <Boolean?>]`: Allow the user to retry the setup on installation failure
-    - `[CustomErrorMessage <String>]`: Set custom error message to show upon installation failure
-    - `[HideInstallationProgress <Boolean?>]`: Show or hide installation progress to user
-    - `[InstallProgressTimeoutInMinutes <Int32?>]`: Set installation progress timeout in minutes
-  - `[ExtractHardwareHash <Boolean?>]`: HardwareHash Extraction for the profile
-  - `[HardwareHashExtractionEnabled <Boolean?>]`: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
+  \[DeviceType \<WindowsAutopilotDeviceType?\>\]: windowsAutopilotDeviceType
+  \[DisplayName \<String\>\]: Name of the profile
+  \[EnableWhiteGlove \<Boolean?\>\]: Enable Autopilot White Glove for the profile.
+  \[EnrollmentStatusScreenSettings \<IMicrosoftGraphWindowsEnrollmentStatusScreenSettings\>\]: Enrollment status screen setting
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AllowDeviceUseBeforeProfileAndAppInstallComplete \<Boolean?\>\]: Allow or block user to use device before profile and app installation complete
+    \[AllowDeviceUseOnInstallFailure \<Boolean?\>\]: Allow the user to continue using the device on installation failure
+    \[AllowLogCollectionOnInstallFailure \<Boolean?\>\]: Allow or block log collection on installation failure
+    \[BlockDeviceSetupRetryByUser \<Boolean?\>\]: Allow the user to retry the setup on installation failure
+    \[CustomErrorMessage \<String\>\]: Set custom error message to show upon installation failure
+    \[HideInstallationProgress \<Boolean?\>\]: Show or hide installation progress to user
+    \[InstallProgressTimeoutInMinutes \<Int32?\>\]: Set installation progress timeout in minutes
+  \[ExtractHardwareHash \<Boolean?\>\]: HardwareHash Extraction for the profile
+  \[HardwareHashExtractionEnabled \<Boolean?\>\]: Indicates whether the profile supports the extraction of hardware hash values and registration of the device into Windows Autopilot.
 When TRUE, indicates if hardware extraction and Windows Autopilot registration will happen on the next successful check-in.
 When FALSE, hardware hash extraction and Windows Autopilot registration will not happen.
 Default value is FALSE.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[Language <String>]`: Language configured on the device
-  - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
-  - `[Locale <String>]`: The locale (language) to be used when configuring the device.
+  \[Language \<String\>\]: Language configured on the device
+  \[LastModifiedDateTime \<DateTime?\>\]: Profile last modified time
+  \[Locale \<String\>\]: The locale (language) to be used when configuring the device.
 E.g.
 en-US.
 The default value is os-default.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[ManagementServiceAppId <String>]`: The Entra management service App ID which gets used during client device-based enrollment discovery.
+  \[ManagementServiceAppId \<String\>\]: The Entra management service App ID which gets used during client device-based enrollment discovery.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-  - `[OutOfBoxExperienceSetting <IMicrosoftGraphOutOfBoxExperienceSetting>]`: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
+  \[OutOfBoxExperienceSetting \<IMicrosoftGraphOutOfBoxExperienceSetting\>\]: The Windows Autopilot Deployment Profile settings used by the device for the out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-    - `[EscapeLinkHidden <Boolean?>]`: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+    \[EscapeLinkHidden \<Boolean?\>\]: When TRUE, the link that allows user to start over with a different account on company sign-in is hidden.
 When false, the link that allows user to start over with a different account on company sign-in is available.
 Default value is FALSE.
-    - `[EulaHidden <Boolean?>]`: When TRUE, EULA is hidden to the end user during OOBE.
+    \[EulaHidden \<Boolean?\>\]: When TRUE, EULA is hidden to the end user during OOBE.
 When FALSE, EULA is shown to the end user during OOBE.
 Default value is FALSE.
-    - `[KeyboardSelectionPageSkipped <Boolean?>]`: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
+    \[KeyboardSelectionPageSkipped \<Boolean?\>\]: When TRUE, the keyboard selection page is hidden to the end user during OOBE if Language and Region are set.
 When FALSE, the keyboard selection page is skipped during OOBE.
-    - `[PrivacySettingsHidden <Boolean?>]`: When TRUE, privacy settings is hidden to the end user during OOBE.
+    \[PrivacySettingsHidden \<Boolean?\>\]: When TRUE, privacy settings is hidden to the end user during OOBE.
 When FALSE, privacy settings is shown to the end user during OOBE.
 Default value is FALSE.
-    - `[UserType <String>]`: windowsUserType
-  - `[OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>]`: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
+    \[UserType \<String\>\]: windowsUserType
+  \[OutOfBoxExperienceSettings \<IMicrosoftGraphOutOfBoxExperienceSettings\>\]: The Windows Autopilot Deployment Profile settings used by the Autopilot device for out-of-box experience.
 Supports: $select, $top, $skip.
 $Search, $orderBy and $filter are not supported.
 Read-Only.
 Starting from May 2024 this property will no longer be supported and will be marked as deprecated.
 Use outOfBoxExperienceSetting instead.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceUsageType <WindowsDeviceUsageType?>]`: windowsDeviceUsageType
-    - `[HideEscapeLink <Boolean?>]`: If set to true, then the user can't start over with different account, on company sign-in
-    - `[HideEula <Boolean?>]`: Show or hide EULA to user
-    - `[HidePrivacySettings <Boolean?>]`: Show or hide privacy settings to user
-    - `[SkipKeyboardSelectionPage <Boolean?>]`: If set, then skip the keyboard selection page if Language and Region are set
-    - `[UserType <String>]`: windowsUserType
-  - `[PreprovisioningAllowed <Boolean?>]`: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[DeviceUsageType \<WindowsDeviceUsageType?\>\]: windowsDeviceUsageType
+    \[HideEscapeLink \<Boolean?\>\]: If set to true, then the user can't start over with different account, on company sign-in
+    \[HideEula \<Boolean?\>\]: Show or hide EULA to user
+    \[HidePrivacySettings \<Boolean?\>\]: Show or hide privacy settings to user
+    \[SkipKeyboardSelectionPage \<Boolean?\>\]: If set, then skip the keyboard selection page if Language and Region are set
+    \[UserType \<String\>\]: windowsUserType
+  \[PreprovisioningAllowed \<Boolean?\>\]: Indicates whether the user is allowed to use Windows Autopilot for pre-provisioned deployment mode during Out of Box experience (OOBE).
 When TRUE, indicates that Windows Autopilot for pre-provisioned deployment mode for OOBE is allowed to be used.
 When false, Windows Autopilot for pre-provisioned deployment mode for OOBE is not allowed.
 The default is FALSE.
-  - `[RoleScopeTagIds <String- `[]`>]`: Scope tags for the profile.
+  \[RoleScopeTagIds \<String\[\]\>\]: Scope tags for the profile.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeviceidentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementwindowsautopilotdeviceidentity)
-
-
-
-
 

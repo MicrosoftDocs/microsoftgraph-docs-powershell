@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get presences from communications
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -41,17 +38,13 @@ Get-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Ex
 Get presences from communications
 
 ## EXAMPLES
-### Example 1: Get the presence information of another user
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 Get-MgBetaCommunicationPresence -PresenceId $presenceId
-
-```
-This example will get the presence information of another user
-
 
 ## PARAMETERS
 
@@ -298,31 +291,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
-  - `[CallId <String>]`: The unique identifier of call
-  - `[CallRecordId <String>]`: The unique identifier of callRecord
-  - `[CallRecordingId <String>]`: The unique identifier of callRecording
-  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
-  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
-  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
-  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
-  - `[JoinWebUrl <String>]`: Alternate key of onlineMeeting
-  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
-  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
-  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
-  - `[ParticipantId <String>]`: The unique identifier of participant
-  - `[PresenceId <String>]`: The unique identifier of presence
-  - `[SessionId <String>]`: The unique identifier of session
-  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<ICloudCommunicationsIdentity\>: Identity Parameter
+  \[AttendanceRecordId \<String\>\]: The unique identifier of attendanceRecord
+  \[AudioRoutingGroupId \<String\>\]: The unique identifier of audioRoutingGroup
+  \[CallId \<String\>\]: The unique identifier of call
+  \[CallRecordId \<String\>\]: The unique identifier of callRecord
+  \[CallRecordingId \<String\>\]: The unique identifier of callRecording
+  \[CallTranscriptId \<String\>\]: The unique identifier of callTranscript
+  \[CommsOperationId \<String\>\]: The unique identifier of commsOperation
+  \[ContentSharingSessionId \<String\>\]: The unique identifier of contentSharingSession
+  \[FromDateTime \<DateTime?\>\]: Usage: fromDateTime={fromDateTime}
+  \[JoinWebUrl \<String\>\]: Alternate key of onlineMeeting
+  \[MeetingAttendanceReportId \<String\>\]: The unique identifier of meetingAttendanceReport
+  \[MeetingRegistrantBaseId \<String\>\]: The unique identifier of meetingRegistrantBase
+  \[MeetingRegistrationQuestionId \<String\>\]: The unique identifier of meetingRegistrationQuestion
+  \[OnlineMeetingId \<String\>\]: The unique identifier of onlineMeeting
+  \[ParticipantId \<String\>\]: The unique identifier of participant
+  \[PresenceId \<String\>\]: The unique identifier of presence
+  \[SessionId \<String\>\]: The unique identifier of session
+  \[ToDateTime \<DateTime?\>\]: Usage: toDateTime={toDateTime}
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationpresence)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket
@@ -11,9 +11,6 @@ schema: 2.0.0
 Collection of buckets in the plan.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,17 +27,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgBetaPlannerPlanBucket Cmdlet.
-
 
 ## PARAMETERS
 
@@ -269,7 +262,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerplanbucket)
-
-
-
 

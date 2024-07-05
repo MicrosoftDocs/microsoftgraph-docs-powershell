@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask
@@ -11,9 +11,6 @@ schema: 2.0.0
 Read-only.
 Nullable.
 Collection of tasks in the plan.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,17 +27,13 @@ Nullable.
 Collection of tasks in the plan.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerPlanTask -PlannerPlanId $plannerPlanId
-
-```
-This example shows how to use the Get-MgPlannerPlanTask Cmdlet.
-
 
 ## PARAMETERS
 
@@ -269,7 +262,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask](https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannerplantask)
-
-
-
 

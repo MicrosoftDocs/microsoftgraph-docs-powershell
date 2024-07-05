@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathoperation
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of long-running operations on the site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,6 +30,18 @@ Get-MgGroupSiteGetByPathOperation -GroupId <String> -Path <String> -SiteId <Stri
 
 ## DESCRIPTION
 The collection of long-running operations on the site.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -306,8 +315,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathoperation](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathoperation)
-
-
-
-
 

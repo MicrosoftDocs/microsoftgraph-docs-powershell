@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property ref to allowedGroups for print
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -47,21 +44,17 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 Create new navigation property ref to allowedGroups for print
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/groups/{groupId}"
 }
 
 New-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -BodyParameter $params
-
-```
-This example shows how to use the New-MgPrintShareAllowedGroupByRef Cmdlet.
-
 
 ## PARAMETERS
 
@@ -251,30 +244,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IReferenceCreate>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  OdataId `<String>`: The entity reference URL of the resource.
+BODYPARAMETER \<IReferenceCreate\>: .
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  OdataId \<String\>: The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshareallowedgroupbyref)
-
-
-
 

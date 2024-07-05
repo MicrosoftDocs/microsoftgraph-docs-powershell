@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,17 +22,13 @@ Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Proper
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyDefaultAppManagementPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -128,7 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy)
-
-
-
 

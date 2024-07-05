@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup
@@ -23,20 +23,18 @@ Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicy
 Microsoft Entra groups under the scope of the mobility management application if appliesTo is selected
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet
-```powershell
+
+### EXAMPLE 2
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
-This example shows how to use the Get-MgBetaPolicyMobileAppManagementPolicyIncludedGroup Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -265,7 +263,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicymobileappmanagementpolicyincludedgroup)
-
-
-
 

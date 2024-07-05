@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar
@@ -12,9 +12,6 @@ The calendars in the calendar group.
 Navigation property.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarGroupCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroupCalendar?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -32,14 +29,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserCalendarGroupCalendar Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId
 ```
-This example shows how to use the Get-MgBetaUserCalendarGroupCalendar Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -253,7 +249,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendargroupcalendar)
-
-
-
 

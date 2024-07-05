@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationinternalsponsor
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get internalSponsors from identityGovernance
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationInternalSponsor?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,17 +23,13 @@ Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOr
 Get internalSponsors from identityGovernance
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrganizationId $connectedOrganizationId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor Cmdlet.
-
 
 ## PARAMETERS
 
@@ -265,7 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationinternalsponsor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementconnectedorganizationinternalsponsor)
-
-
-
 

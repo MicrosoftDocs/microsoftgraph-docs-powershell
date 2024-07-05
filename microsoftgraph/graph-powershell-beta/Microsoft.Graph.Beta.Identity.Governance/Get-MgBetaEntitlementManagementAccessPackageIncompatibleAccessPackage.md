@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The  access packages whose assigned users are ineligible to be assigned this access package.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,17 +23,13 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPac
 The  access packages whose assigned users are ineligible to be assigned this access package.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
-
-```
-This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet.
-
 
 ## PARAMETERS
 
@@ -265,7 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackageincompatibleaccesspackage)
-
-
-
 

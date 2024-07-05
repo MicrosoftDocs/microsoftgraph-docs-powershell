@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The device configuration device state summary for this account.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,22 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <St
 
 ## DESCRIPTION
 The device configuration device state summary for this account.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -115,8 +128,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary)
-
-
-
-
 

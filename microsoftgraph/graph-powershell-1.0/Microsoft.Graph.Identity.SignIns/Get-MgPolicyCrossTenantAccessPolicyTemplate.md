@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplate
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the base policy in the directory for multitenant organization settings.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyTemplate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -23,6 +20,18 @@ Get-MgPolicyCrossTenantAccessPolicyTemplate [-ExpandProperty <String[]>] [-Prope
 
 ## DESCRIPTION
 Represents the base policy in the directory for multitenant organization settings.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -115,8 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplate](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicytemplate)
-
-
-
-
 

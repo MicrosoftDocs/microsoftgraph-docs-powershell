@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpermission
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The permissions associated with the site.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteGetByPathPermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteGetByPathPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +32,18 @@ Get-MgGroupSiteGetByPathPermission -GroupId <String> -Path <String> -SiteId <Str
 ## DESCRIPTION
 The permissions associated with the site.
 Nullable.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -308,8 +317,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpermission](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitegetbypathpermission)
-
-
-
-
 

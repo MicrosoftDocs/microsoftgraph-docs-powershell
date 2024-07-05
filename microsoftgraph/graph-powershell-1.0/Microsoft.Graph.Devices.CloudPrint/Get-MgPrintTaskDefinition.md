@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List of abstract definition for a task that can be triggered when various events occur within Universal Print.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -55,17 +52,13 @@ Get-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProp
 List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Devices.CloudPrint
+```
 
 Get-MgPrintTaskDefinition
-
-```
-This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -327,25 +320,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: The unique identifier of group
-  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
-  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
-  - `[PrintJobId <String>]`: The unique identifier of printJob
-  - `[PrintOperationId <String>]`: The unique identifier of printOperation
-  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
-  - `[PrintServiceId <String>]`: The unique identifier of printService
-  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
-  - `[PrintTaskId <String>]`: The unique identifier of printTask
-  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
-  - `[PrinterId <String>]`: The unique identifier of printer
-  - `[PrinterShareId <String>]`: The unique identifier of printerShare
-  - `[UserId <String>]`: The unique identifier of user
+INPUTOBJECT \<IDevicesCloudPrintIdentity\>: Identity Parameter
+  \[GroupId \<String\>\]: The unique identifier of group
+  \[PrintConnectorId \<String\>\]: The unique identifier of printConnector
+  \[PrintDocumentId \<String\>\]: The unique identifier of printDocument
+  \[PrintJobId \<String\>\]: The unique identifier of printJob
+  \[PrintOperationId \<String\>\]: The unique identifier of printOperation
+  \[PrintServiceEndpointId \<String\>\]: The unique identifier of printServiceEndpoint
+  \[PrintServiceId \<String\>\]: The unique identifier of printService
+  \[PrintTaskDefinitionId \<String\>\]: The unique identifier of printTaskDefinition
+  \[PrintTaskId \<String\>\]: The unique identifier of printTask
+  \[PrintTaskTriggerId \<String\>\]: The unique identifier of printTaskTrigger
+  \[PrinterId \<String\>\]: The unique identifier of printer
+  \[PrinterShareId \<String\>\]: The unique identifier of printerShare
+  \[UserId \<String\>\]: The unique identifier of user
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinition)
-
-
-
 

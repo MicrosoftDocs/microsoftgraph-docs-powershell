@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get tokenLifetimePolicies from applications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,17 +23,13 @@ Get-MgApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandProperty <S
 Get tokenLifetimePolicies from applications
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Applications
+```
 
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
-
-```
-This example shows how to use the Get-MgApplicationTokenLifetimePolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -265,7 +258,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgapplicationtokenlifetimepolicy)
-
-
-
 

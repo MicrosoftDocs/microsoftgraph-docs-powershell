@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent
@@ -11,9 +11,6 @@ schema: 2.0.0
 The events in the calendar.
 Navigation property.
 Read-only.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -30,10 +27,11 @@ Navigation property.
 Read-only.
 
 ## EXAMPLES
-### Example 1: Create an event in a specific calendar
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	Subject = "Let's go for lunch"
@@ -66,15 +64,11 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
+
+### EXAMPLE 2
 ```
-This example shows how to use the Get-MgBetaUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create and enable an event as an online meeting
-
-```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+```
 
 $params = @{
 	Subject = "Let's go for lunch"
@@ -108,11 +102,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 New-MgBetaUserCalendarEvent -UserId $userId -CalendarId $calendarId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaUserCalendarEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -341,7 +330,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarevent)
-
-
-
 

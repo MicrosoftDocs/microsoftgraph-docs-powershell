@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnection
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property connections for external
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -33,17 +30,13 @@ Remove-MgExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String>]
 Delete navigation property connections for external
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Search
+```
 
 Remove-MgExternalConnection -ExternalConnectionId $externalConnectionId
-
-```
-This example shows how to use the Remove-MgExternalConnection Cmdlet.
-
 
 ## PARAMETERS
 
@@ -200,21 +193,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
-  - `[AcronymId <String>]`: The unique identifier of acronym
-  - `[BookmarkId <String>]`: The unique identifier of bookmark
-  - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
-  - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
-  - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
-  - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
-  - `[ExternalItemId <String>]`: The unique identifier of externalItem
-  - `[IdentityId <String>]`: The unique identifier of identity
-  - `[QnaId <String>]`: The unique identifier of qna
+INPUTOBJECT \<ISearchIdentity\>: Identity Parameter
+  \[AcronymId \<String\>\]: The unique identifier of acronym
+  \[BookmarkId \<String\>\]: The unique identifier of bookmark
+  \[ConnectionOperationId \<String\>\]: The unique identifier of connectionOperation
+  \[ExternalActivityId \<String\>\]: The unique identifier of externalActivity
+  \[ExternalConnectionId \<String\>\]: The unique identifier of externalConnection
+  \[ExternalGroupId \<String\>\]: The unique identifier of externalGroup
+  \[ExternalItemId \<String\>\]: The unique identifier of externalItem
+  \[IdentityId \<String\>\]: The unique identifier of identity
+  \[QnaId \<String\>\]: The unique identifier of qna
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnection](https://learn.microsoft.com/powershell/module/microsoft.graph.search/remove-mgexternalconnection)
-
-
-
 

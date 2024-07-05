@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy
@@ -30,16 +30,15 @@ Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessRevie
 Update the navigation property accessReviewPolicy in policies
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	IsGroupOwnerManagementEnabled = $true
 }
 Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -229,20 +228,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewPolicy>`: accessReviewPolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphAccessReviewPolicy\>: accessReviewPolicy
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Description <String>]`: Description for this policy.
+  \[Description \<String\>\]: Description for this policy.
 Read-only.
-  - `[DisplayName <String>]`: Display name for this policy.
+  \[DisplayName \<String\>\]: Display name for this policy.
 Read-only.
-  - `[IsGroupOwnerManagementEnabled <Boolean?>]`: If true, group owners can create and manage access reviews on groups they own.
+  \[IsGroupOwnerManagementEnabled \<Boolean?\>\]: If true, group owners can create and manage access reviews on groups they own.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy)
-
-
-
 

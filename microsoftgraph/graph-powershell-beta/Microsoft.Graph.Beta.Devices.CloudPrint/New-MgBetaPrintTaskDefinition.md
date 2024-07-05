@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to taskDefinitions for print
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintTaskDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,11 +31,11 @@ New-MgBetaPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition
 Create new navigation property to taskDefinitions for print
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+```
 
 $params = @{
 	displayName = "Test TaskDefinitionName"
@@ -48,10 +45,6 @@ $params = @{
 }
 
 New-MgBetaPrintTaskDefinition -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaPrintTaskDefinition Cmdlet.
-
 
 ## PARAMETERS
 
@@ -243,81 +236,78 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphPrintTaskDefinition\>: printTaskDefinition
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
-    - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-    - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
-    - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-  - `[DisplayName <String>]`: The name of the printTaskDefinition.
-  - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
+  \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[AppId \<String\>\]: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
+    \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+    \[ServicePrincipalId \<String\>\]: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
+    \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+  \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+  \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
-    - `[Id <String>]`: The unique identifier for an entity.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[ParentUrl <String>]`: The URL for the print entity that triggered this task.
+    \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
 For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}.
 Read-only.
-    - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-      - `[State <String>]`: printTaskProcessingState
-    - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity.
+    \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+      \[State \<String\>\]: printTaskProcessingState
+    \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-      - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[Event <String>]`: printEvent
+      \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+      \[Event \<String\>\]: printEvent
 
-CREATEDBY `<IMicrosoftGraphAppIdentity>`: appIdentity
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
-  - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-  - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
-  - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
+CREATEDBY \<IMicrosoftGraphAppIdentity\>: appIdentity
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[AppId \<String\>\]: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
+  \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+  \[ServicePrincipalId \<String\>\]: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
+  \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
 
-TASKS <IMicrosoftGraphPrintTask- `[]`>: A list of tasks that have been created based on this definition.
+TASKS \<IMicrosoftGraphPrintTask\[\]\>: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
-  - `[Id <String>]`: The unique identifier for an entity.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AppId <String>]`: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
-      - `[DisplayName <String>]`: Refers to the application name displayed in the Microsoft Entra admin center.
-      - `[ServicePrincipalId <String>]`: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
-      - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
-    - `[DisplayName <String>]`: The name of the printTaskDefinition.
-    - `[Tasks <IMicrosoftGraphPrintTask- `[]`>]`: A list of tasks that have been created based on this definition.
+    \[CreatedBy \<IMicrosoftGraphAppIdentity\>\]: appIdentity
+      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+      \[AppId \<String\>\]: Refers to the unique identifier representing application ID in the Microsoft Entra ID.
+      \[DisplayName \<String\>\]: Refers to the application name displayed in the Microsoft Entra admin center.
+      \[ServicePrincipalId \<String\>\]: Refers to the unique identifier indicating service principal ID in Microsoft Entra ID for the corresponding App.
+      \[ServicePrincipalName \<String\>\]: Refers to the Service Principal Name is the Application name in the tenant.
+    \[DisplayName \<String\>\]: The name of the printTaskDefinition.
+    \[Tasks \<IMicrosoftGraphPrintTask\[\]\>\]: A list of tasks that have been created based on this definition.
 The list includes currently running tasks and recently completed tasks.
 Read-only.
-  - `[ParentUrl <String>]`: The URL for the print entity that triggered this task.
+  \[ParentUrl \<String\>\]: The URL for the print entity that triggered this task.
 For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}.
 Read-only.
-  - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
-    - `[State <String>]`: printTaskProcessingState
-  - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity.
+  \[Status \<IMicrosoftGraphPrintTaskStatus\>\]: printTaskStatus
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Description \<String\>\]: A human-readable description of the current processing state of the printTask.
+    \[State \<String\>\]: printTaskProcessingState
+  \[Trigger \<IMicrosoftGraphPrintTaskTrigger\>\]: printTaskTrigger
+    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+    \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-    - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[Event <String>]`: printEvent
+    \[Definition \<IMicrosoftGraphPrintTaskDefinition\>\]: printTaskDefinition
+    \[Event \<String\>\]: printEvent
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprinttaskdefinition)
-
-
-
 

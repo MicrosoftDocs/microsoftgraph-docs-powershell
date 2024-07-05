@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview
@@ -37,6 +37,22 @@ New-MgBetaTenantRelationshipManagedTenantCloudPcOverview
 
 ## DESCRIPTION
 Create new navigation property to cloudPcsOverview for tenantRelationships
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -517,74 +533,70 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphManagedTenantsCloudPcOverview>`: cloudPcOverview
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphManagedTenantsCloudPcOverview\>: cloudPcOverview
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[LastRefreshedDateTime <DateTime?>]`: Date and time the entity was last updated in the multi-tenant management platform.
+  \[LastRefreshedDateTime \<DateTime?\>\]: Date and time the entity was last updated in the multi-tenant management platform.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusFailed <Int32?>]`: The number of cloud PC connections that have a status of failed.
+  \[NumberOfCloudPcConnectionStatusFailed \<Int32?\>\]: The number of cloud PC connections that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPassed <Int32?>]`: The number of cloud PC connections that have a status of passed.
+  \[NumberOfCloudPcConnectionStatusPassed \<Int32?\>\]: The number of cloud PC connections that have a status of passed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusPending <Int32?>]`: The number of cloud PC connections that have a status of pending.
+  \[NumberOfCloudPcConnectionStatusPending \<Int32?\>\]: The number of cloud PC connections that have a status of pending.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusRunning <Int32?>]`: The number of cloud PC connections that have a status of running.
+  \[NumberOfCloudPcConnectionStatusRunning \<Int32?\>\]: The number of cloud PC connections that have a status of running.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcConnectionStatusUnkownFutureValue <Int32?>]`: The number of cloud PC connections that have a status of unknownFutureValue.
+  \[NumberOfCloudPcConnectionStatusUnkownFutureValue \<Int32?\>\]: The number of cloud PC connections that have a status of unknownFutureValue.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusDeprovisioning <Int32?>]`: The number of cloud PCs that have a status of deprovisioning.
+  \[NumberOfCloudPcStatusDeprovisioning \<Int32?\>\]: The number of cloud PCs that have a status of deprovisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusFailed <Int32?>]`: The number of cloud PCs that have a status of failed.
+  \[NumberOfCloudPcStatusFailed \<Int32?\>\]: The number of cloud PCs that have a status of failed.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusInGracePeriod <Int32?>]`: The number of cloud PCs that have a status of inGracePeriod.
+  \[NumberOfCloudPcStatusInGracePeriod \<Int32?\>\]: The number of cloud PCs that have a status of inGracePeriod.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusNotProvisioned <Int32?>]`: The number of cloud PCs that have a status of notProvisioned.
+  \[NumberOfCloudPcStatusNotProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of notProvisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioned <Int32?>]`: The number of cloud PCs that have a status of provisioned.
+  \[NumberOfCloudPcStatusProvisioned \<Int32?\>\]: The number of cloud PCs that have a status of provisioned.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusProvisioning <Int32?>]`: The number of cloud PCs that have a status of provisioning.
+  \[NumberOfCloudPcStatusProvisioning \<Int32?\>\]: The number of cloud PCs that have a status of provisioning.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUnknown <Int32?>]`: The number of cloud PCs that have a status of unknown.
+  \[NumberOfCloudPcStatusUnknown \<Int32?\>\]: The number of cloud PCs that have a status of unknown.
 Optional.
 Read-only.
-  - `[NumberOfCloudPcStatusUpgrading <Int32?>]`: The number of cloud PCs that have a status of upgrading.
+  \[NumberOfCloudPcStatusUpgrading \<Int32?\>\]: The number of cloud PCs that have a status of upgrading.
 Optional.
 Read-only.
-  - `[TenantDisplayName <String>]`: The display name for the managed tenant.
+  \[TenantDisplayName \<String\>\]: The display name for the managed tenant.
 Optional.
 Read-only.
-  - `[TenantId <String>]`: 
-  - `[TotalBusinessLicenses <Int32?>]`: The total number of cloud PC devices that have the Business SKU.
+  \[TenantId \<String\>\]: 
+  \[TotalBusinessLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Business SKU.
 Optional.
 Read-only.
-  - `[TotalCloudPcConnectionStatus <Int32?>]`: The total number of cloud PC connection statuses for the given managed tenant.
+  \[TotalCloudPcConnectionStatus \<Int32?\>\]: The total number of cloud PC connection statuses for the given managed tenant.
 Optional.
 Read-only.
-  - `[TotalCloudPcStatus <Int32?>]`: The total number of cloud PC statues for the given managed tenant.
+  \[TotalCloudPcStatus \<Int32?\>\]: The total number of cloud PC statues for the given managed tenant.
 Optional.
 Read-only.
-  - `[TotalEnterpriseLicenses <Int32?>]`: The total number of cloud PC devices that have the Enterprise SKU.
+  \[TotalEnterpriseLicenses \<Int32?\>\]: The total number of cloud PC devices that have the Enterprise SKU.
 Optional.
 Read-only.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcloudpcoverview)
-
-
-
-
 

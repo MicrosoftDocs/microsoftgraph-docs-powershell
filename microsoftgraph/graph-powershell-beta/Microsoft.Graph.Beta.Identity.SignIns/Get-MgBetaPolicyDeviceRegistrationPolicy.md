@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get deviceRegistrationPolicy from policies
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -24,17 +21,13 @@ Get-MgBetaPolicyDeviceRegistrationPolicy [-Property <String[]>] [-ResponseHeader
 Get deviceRegistrationPolicy from policies
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyDeviceRegistrationPolicy
-
-```
-This example shows how to use the Get-MgBetaPolicyDeviceRegistrationPolicy Cmdlet.
-
 
 ## PARAMETERS
 
@@ -112,7 +105,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy)
-
-
-
 

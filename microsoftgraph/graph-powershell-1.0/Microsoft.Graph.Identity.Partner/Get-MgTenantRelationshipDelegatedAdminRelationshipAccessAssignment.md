@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Partner-help.xml
 Module Name: Microsoft.Graph.Identity.Partner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The access assignments associated with the delegated admin relationship.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -40,6 +37,18 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment -InputObject 
 
 ## DESCRIPTION
 The access assignments associated with the delegated admin relationship.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -301,19 +310,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT `<IIdentityPartnerIdentity>`: Identity Parameter
-  - `[DelegatedAdminAccessAssignmentId <String>]`: The unique identifier of delegatedAdminAccessAssignment
-  - `[DelegatedAdminCustomerId <String>]`: The unique identifier of delegatedAdminCustomer
-  - `[DelegatedAdminRelationshipId <String>]`: The unique identifier of delegatedAdminRelationship
-  - `[DelegatedAdminRelationshipOperationId <String>]`: The unique identifier of delegatedAdminRelationshipOperation
-  - `[DelegatedAdminRelationshipRequestId <String>]`: The unique identifier of delegatedAdminRelationshipRequest
-  - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
+INPUTOBJECT \<IIdentityPartnerIdentity\>: Identity Parameter
+  \[DelegatedAdminAccessAssignmentId \<String\>\]: The unique identifier of delegatedAdminAccessAssignment
+  \[DelegatedAdminCustomerId \<String\>\]: The unique identifier of delegatedAdminCustomer
+  \[DelegatedAdminRelationshipId \<String\>\]: The unique identifier of delegatedAdminRelationship
+  \[DelegatedAdminRelationshipOperationId \<String\>\]: The unique identifier of delegatedAdminRelationshipOperation
+  \[DelegatedAdminRelationshipRequestId \<String\>\]: The unique identifier of delegatedAdminRelationshipRequest
+  \[DelegatedAdminServiceManagementDetailId \<String\>\]: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner/get-mgtenantrelationshipdelegatedadminrelationshipaccessassignment)
-
-
-
-
 

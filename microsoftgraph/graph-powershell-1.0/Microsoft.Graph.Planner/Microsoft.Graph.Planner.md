@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Planner
 Module Guid: 580b1826-770a-4cde-8389-8d058d508b17
 Download Help Link: {{ Update Download Link }}
@@ -148,5 +148,4 @@ Locale: en-US
 
 ### [Update-MgUserPlanner](Update-MgUserPlanner.md)
 {{ Fill in the Description }}
-
 

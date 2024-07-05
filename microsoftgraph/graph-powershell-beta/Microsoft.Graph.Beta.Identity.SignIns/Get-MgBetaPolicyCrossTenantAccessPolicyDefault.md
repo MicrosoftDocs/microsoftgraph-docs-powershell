@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicydefault
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,17 +22,13 @@ Get-MgBetaPolicyCrossTenantAccessPolicyDefault [-ExpandProperty <String[]>] [-Pr
 Defines the default configuration for how your organization interacts with external Microsoft Entra organizations.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaPolicyCrossTenantAccessPolicyDefault
-
-```
-This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyDefault Cmdlet.
-
 
 ## PARAMETERS
 
@@ -128,7 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicydefault](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicycrosstenantaccesspolicydefault)
-
-
-
 

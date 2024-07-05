@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of users or groups allowed to create posts or calendar events in this group.
 If this list is non-empty, then only users or groups listed here can post.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSenderByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -27,6 +24,16 @@ The list of users or groups allowed to create posts or calendar events in this g
 If this list is non-empty, then only users or groups listed here can post.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -210,7 +217,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupacceptedsenderbyref)
-
-
-
 

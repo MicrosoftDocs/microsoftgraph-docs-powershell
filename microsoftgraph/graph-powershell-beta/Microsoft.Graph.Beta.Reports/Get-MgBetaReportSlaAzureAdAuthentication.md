@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Reports-help.xml
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication
@@ -20,6 +20,18 @@ Get-MgBetaReportSlaAzureAdAuthentication [-ExpandProperty <String[]>] [-Property
 
 ## DESCRIPTION
 Collects the Microsoft Entra SLA attainment for each month for a Microsoft Entra tenant.
+
+## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -112,8 +124,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication)
-
-
-
-
 

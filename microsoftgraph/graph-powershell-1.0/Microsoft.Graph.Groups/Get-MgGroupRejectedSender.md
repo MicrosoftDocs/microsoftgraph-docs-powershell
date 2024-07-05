@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of users or groups not allowed to create posts or calendar events in this group.
 Nullable
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSender?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27,13 +24,12 @@ The list of users or groups not allowed to create posts or calendar events in th
 Nullable
 
 ## EXAMPLES
-### Example 1: Using the Get-MgGroupRejectedSender Cmdlet
-```powershell
+
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupRejectedSender -GroupId $groupId
 ```
-This example shows how to use the Get-MgGroupRejectedSender Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -232,7 +228,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender](https://learn.microsoft.com/powershell/module/microsoft.graph.groups/get-mggrouprejectedsender)
-
-
-
 

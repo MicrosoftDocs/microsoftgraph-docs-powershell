@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The settings of the lifecycle workflows instance.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -25,17 +22,13 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>
 The settings of the lifecycle workflows instance.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.Governance
+```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
-
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-
 
 ## PARAMETERS
 
@@ -128,7 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The groups whose members are ineligible to be assigned this access package.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,6 +23,16 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId 
 The groups whose members are ineligible to be assigned this access package.
 
 ## EXAMPLES
+
+### EXAMPLE 1
+```
+{{ Add code here }}
+```
+
+### EXAMPLE 2
+```
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -224,7 +231,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref](https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatiblegroupbyref)
-
-
-
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Planner-help.xml
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get plans from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerPlan?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -26,18 +23,14 @@ Get-MgBetaUserPlannerPlan -UserId <String> [-ExpandProperty <String[]>] [-Filter
 Get plans from users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPlannerPlan -UserId $userId
-
-```
-This example shows how to use the Get-MgBetaUserPlannerPlan Cmdlet.
-
 
 ## PARAMETERS
 
@@ -266,7 +259,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerplan)
-
-
-
 

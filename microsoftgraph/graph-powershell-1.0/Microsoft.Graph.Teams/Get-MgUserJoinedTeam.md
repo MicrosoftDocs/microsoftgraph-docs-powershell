@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get joinedTeams from users
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26,18 +23,14 @@ Get-MgUserJoinedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter <Str
 Get joinedTeams from users
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
-
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Teams
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserJoinedTeam -UserId $userId
-
-```
-This example shows how to use the Get-MgUserJoinedTeam Cmdlet.
-
 
 ## PARAMETERS
 
@@ -266,7 +259,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam](https://learn.microsoft.com/powershell/module/microsoft.graph.teams/get-mguserjoinedteam)
-
-
-
 

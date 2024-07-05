@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to userFlowAttributes for identity
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -34,10 +31,11 @@ New-MgBetaIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserF
 Create new navigation property to userFlowAttributes for identity
 
 ## EXAMPLES
-### Example 1: Code snippet
 
-```powershell
+### EXAMPLE 1
+```
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	displayName = "Hobby"
@@ -46,11 +44,6 @@ $params = @{
 }
 
 New-MgBetaIdentityUserFlowAttribute -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityUserFlowAttribute Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -254,20 +247,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity.
+BODYPARAMETER \<IMicrosoftGraphIdentityUserFlowAttribute\>: identityUserFlowAttribute
+  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
+  \[Id \<String\>\]: The unique identifier for an entity.
 Read-only.
-  - `[DataType <String>]`: identityUserFlowAttributeDataType
-  - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
-  - `[DisplayName <String>]`: The display name of the user flow attribute. 
+  \[DataType \<String\>\]: identityUserFlowAttributeDataType
+  \[Description \<String\>\]: The description of the user flow attribute that's shown to the user at the time of sign-up.
+  \[DisplayName \<String\>\]: The display name of the user flow attribute. 
 Supports $filter (eq, ne).
-  - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
+  \[UserFlowAttributeType \<String\>\]: identityUserFlowAttributeType
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityuserflowattribute)
-
-
-
 
