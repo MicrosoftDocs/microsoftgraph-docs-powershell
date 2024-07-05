@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration
@@ -300,90 +300,93 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties.
 For information on hash tables, run Get-Help about_Hash_Tables.
 
-AUTOMATICUSERCONSENTSETTINGS \<IMicrosoftGraphInboundOutboundPolicyConfiguration\>: inboundOutboundPolicyConfiguration
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[InboundAllowed \<Boolean?\>\]: Defines whether external users coming inbound are allowed.
-  \[OutboundAllowed \<Boolean?\>\]: Defines whether internal users are allowed to go outbound.
+AUTOMATICUSERCONSENTSETTINGS `<IMicrosoftGraphInboundOutboundPolicyConfiguration>`: inboundOutboundPolicyConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[InboundAllowed <Boolean?>]`: Defines whether external users coming inbound are allowed.
+  - `[OutboundAllowed <Boolean?>]`: Defines whether internal users are allowed to go outbound.
 
-B2BCOLLABORATIONINBOUND \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>: crossTenantAccessPolicyB2BSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AccessType \<String\>\]: crossTenantAccessPolicyTargetConfigurationAccessType
-    \[Targets \<IMicrosoftGraphCrossTenantAccessPolicyTarget\[\]\>\]: Specifies whether to target users, groups, or applications with this rule.
-      \[Target \<String\>\]: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+B2BCOLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+      - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
 Office365 - Includes the applications mentioned as part of the Office365 suite.
-      \[TargetType \<String\>\]: crossTenantAccessPolicyTargetType
-  \[UsersAndGroups \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
+      - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+  - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BCOLLABORATIONOUTBOUND \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>: crossTenantAccessPolicyB2BSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AccessType \<String\>\]: crossTenantAccessPolicyTargetConfigurationAccessType
-    \[Targets \<IMicrosoftGraphCrossTenantAccessPolicyTarget\[\]\>\]: Specifies whether to target users, groups, or applications with this rule.
-      \[Target \<String\>\]: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+B2BCOLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+      - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
 Office365 - Includes the applications mentioned as part of the Office365 suite.
-      \[TargetType \<String\>\]: crossTenantAccessPolicyTargetType
-  \[UsersAndGroups \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
+      - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+  - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTINBOUND \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>: crossTenantAccessPolicyB2BSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AccessType \<String\>\]: crossTenantAccessPolicyTargetConfigurationAccessType
-    \[Targets \<IMicrosoftGraphCrossTenantAccessPolicyTarget\[\]\>\]: Specifies whether to target users, groups, or applications with this rule.
-      \[Target \<String\>\]: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+B2BDIRECTCONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+      - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
 Office365 - Includes the applications mentioned as part of the Office365 suite.
-      \[TargetType \<String\>\]: crossTenantAccessPolicyTargetType
-  \[UsersAndGroups \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
+      - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+  - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTOUTBOUND \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>: crossTenantAccessPolicyB2BSetting
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[AccessType \<String\>\]: crossTenantAccessPolicyTargetConfigurationAccessType
-    \[Targets \<IMicrosoftGraphCrossTenantAccessPolicyTarget\[\]\>\]: Specifies whether to target users, groups, or applications with this rule.
-      \[Target \<String\>\]: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+    - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+      - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
 Office365 - Includes the applications mentioned as part of the Office365 suite.
-      \[TargetType \<String\>\]: crossTenantAccessPolicyTargetType
-  \[UsersAndGroups \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
+      - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+  - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-BODYPARAMETER \<IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate\>: multiTenantOrganizationPartnerConfigurationTemplate
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[Id \<String\>\]: The unique identifier for an entity.
+BODYPARAMETER `<IMicrosoftGraphMultiTenantOrganizationPartnerConfigurationTemplate>`: multiTenantOrganizationPartnerConfigurationTemplate
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity.
 Read-only.
-  \[AutomaticUserConsentSettings \<IMicrosoftGraphInboundOutboundPolicyConfiguration\>\]: inboundOutboundPolicyConfiguration
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[InboundAllowed \<Boolean?\>\]: Defines whether external users coming inbound are allowed.
-    \[OutboundAllowed \<Boolean?\>\]: Defines whether internal users are allowed to go outbound.
-  \[B2BCollaborationInbound \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>\]: crossTenantAccessPolicyB2BSetting
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[Applications \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-      \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-      \[AccessType \<String\>\]: crossTenantAccessPolicyTargetConfigurationAccessType
-      \[Targets \<IMicrosoftGraphCrossTenantAccessPolicyTarget\[\]\>\]: Specifies whether to target users, groups, or applications with this rule.
-        \[Target \<String\>\]: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
+  - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[InboundAllowed <Boolean?>]`: Defines whether external users coming inbound are allowed.
+    - `[OutboundAllowed <Boolean?>]`: Defines whether internal users are allowed to go outbound.
+  - `[B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AccessType <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
+      - `[Targets <IMicrosoftGraphCrossTenantAccessPolicyTarget- `[]`>]`: Specifies whether to target users, groups, or applications with this rule.
+        - `[Target <String>]`: Can be one of the following values:  The unique identifier of the user, group, or application  AllUsers  AllApplications - Refers to any Microsoft cloud application. 
 Office365 - Includes the applications mentioned as part of the Office365 suite.
-        \[TargetType \<String\>\]: crossTenantAccessPolicyTargetType
-    \[UsersAndGroups \<IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration\>\]: crossTenantAccessPolicyTargetConfiguration
-  \[B2BCollaborationOutbound \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>\]: crossTenantAccessPolicyB2BSetting
-  \[B2BDirectConnectInbound \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>\]: crossTenantAccessPolicyB2BSetting
-  \[B2BDirectConnectOutbound \<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting\>\]: crossTenantAccessPolicyB2BSetting
-  \[InboundTrust \<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust\>\]: crossTenantAccessPolicyInboundTrust
-    \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-    \[IsCompliantDeviceAccepted \<Boolean?\>\]: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
-    \[IsHybridAzureAdJoinedDeviceAccepted \<Boolean?\>\]: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
-    \[IsMfaAccepted \<Boolean?\>\]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
-  \[TemplateApplicationLevel \<String\>\]: templateApplicationLevel
+        - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
+    - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
+  - `[B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+  - `[B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+  - `[B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]`: crossTenantAccessPolicyB2BSetting
+  - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
+    - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
+    - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+  - `[TemplateApplicationLevel <String>]`: templateApplicationLevel
 
-INBOUNDTRUST \<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust\>: crossTenantAccessPolicyInboundTrust
-  \[(Any) \<Object\>\]: This indicates any property can be added to this object.
-  \[IsCompliantDeviceAccepted \<Boolean?\>\]: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
-  \[IsHybridAzureAdJoinedDeviceAccepted \<Boolean?\>\]: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
-  \[IsMfaAccepted \<Boolean?\>\]: Specifies whether MFA from external Microsoft Entra organizations is trusted.
+INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Microsoft Entra organizations are trusted.
+  - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether Microsoft Entra hybrid joined devices from external Microsoft Entra organizations are trusted.
+  - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Microsoft Entra organizations is trusted.
 
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicytemplatemultitenantorganizationpartnerconfiguration)
+
+
+
 
