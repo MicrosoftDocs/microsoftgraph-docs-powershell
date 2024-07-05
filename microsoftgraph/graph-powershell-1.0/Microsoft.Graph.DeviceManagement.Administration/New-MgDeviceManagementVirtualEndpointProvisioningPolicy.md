@@ -38,18 +38,6 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicy
 ## DESCRIPTION
 Create new navigation property to provisioningPolicies for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9957,6 +9945,7 @@ The default value is en-US, which corresponds to English (United States).
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy](https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy)
+
 
 
 

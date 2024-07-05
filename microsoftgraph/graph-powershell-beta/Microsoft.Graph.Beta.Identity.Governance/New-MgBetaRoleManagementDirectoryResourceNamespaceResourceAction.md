@@ -54,18 +54,6 @@ New-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction -InputObject <I
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -552,6 +540,7 @@ Read-only.
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryresourcenamespaceresourceaction](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryresourcenamespaceresourceaction)
+
 
 
 

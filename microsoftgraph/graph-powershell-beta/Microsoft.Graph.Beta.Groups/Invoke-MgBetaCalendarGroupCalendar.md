@@ -32,22 +32,6 @@ Invoke-MgBetaCalendarGroupCalendar -InputObject <IGroupsIdentity> [-Count] [-Fil
 ## DESCRIPTION
 Invoke function allowedCalendarSharingRoles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -283,6 +267,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacalendargroupcalendar)
+
 
 
 

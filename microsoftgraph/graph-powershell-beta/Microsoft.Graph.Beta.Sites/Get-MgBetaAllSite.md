@@ -29,18 +29,6 @@ For more details, see Best practices for discovering files and detecting changes
 **Permissions**
 [!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/site-getallsites-permissions.md)]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -224,6 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetaallsite)
 
 [https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta](https://learn.microsoft.com/graph/api/site-getallsites?view=graph-rest-beta)
+
 
 
 

@@ -32,18 +32,6 @@ Get-MgBetaSiteLastModifiedByUser -InputObject <ISitesIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get lastModifiedByUser from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -240,6 +228,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyuser](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelastmodifiedbyuser)
+
 
 
 

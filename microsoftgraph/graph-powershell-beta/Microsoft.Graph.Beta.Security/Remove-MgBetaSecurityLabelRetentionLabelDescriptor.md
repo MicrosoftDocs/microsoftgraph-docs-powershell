@@ -32,18 +32,6 @@ Remove-MgBetaSecurityLabelRetentionLabelDescriptor -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Delete navigation property descriptors for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -286,6 +274,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabeldescriptor](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritylabelretentionlabeldescriptor)
+
 
 
 

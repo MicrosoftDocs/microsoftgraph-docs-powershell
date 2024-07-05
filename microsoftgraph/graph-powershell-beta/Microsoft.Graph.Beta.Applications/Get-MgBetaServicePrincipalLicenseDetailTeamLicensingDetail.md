@@ -29,18 +29,6 @@ Get-MgBetaServicePrincipalLicenseDetailTeamLicensingDetail -InputObject <IApplic
 ## DESCRIPTION
 Get the license status of a user in Microsoft Teams.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Headers
@@ -174,6 +162,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipallicensedetailteamlicensingdetail)
 
 [https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta](https://learn.microsoft.com/graph/api/licensedetails-getteamslicensingdetails?view=graph-rest-beta)
+
 
 
 

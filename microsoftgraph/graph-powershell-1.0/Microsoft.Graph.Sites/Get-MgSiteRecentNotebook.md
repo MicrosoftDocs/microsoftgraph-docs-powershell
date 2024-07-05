@@ -32,22 +32,6 @@ Get-MgSiteRecentNotebook -InputObject <ISitesIdentity> [-Count] [-Filter <String
 ## DESCRIPTION
 Get a list of recentNotebook instances that have been accessed by the signed-in user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -283,6 +267,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
 [https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook](https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgsiterecentnotebook)
 
 [https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/notebook-getrecentnotebooks?view=graph-rest-1.0)
+
 
 
 

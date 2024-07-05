@@ -39,18 +39,6 @@ Get-MgGroupSettingTemplateGroupSettingTemplate -InputObject <IGroupsIdentity> [-
 A group setting template represents a template of settings from which settings may be created within a tenant.
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -346,6 +334,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
 [https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsettingtemplate-get?view=graph-rest-1.0)
 
 [https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0](https://learn.microsoft.com/graph/api/groupsettingtemplate-list?view=graph-rest-1.0)
+
 
 
 

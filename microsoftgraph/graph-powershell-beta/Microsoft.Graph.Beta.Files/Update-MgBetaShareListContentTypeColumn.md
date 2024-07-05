@@ -69,22 +69,6 @@ Update-MgBetaShareListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property columns in shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1285,6 +1269,7 @@ For examples, see Examples of common formulas in lists
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistcontenttypecolumn)
+
 
 
 

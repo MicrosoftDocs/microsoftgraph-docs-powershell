@@ -32,22 +32,6 @@ Update-MgBetaSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-Respons
 ## DESCRIPTION
 Update search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Acronyms
@@ -478,6 +462,7 @@ When users select this answer variation from the search results, they're directe
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity)
+
 
 
 
