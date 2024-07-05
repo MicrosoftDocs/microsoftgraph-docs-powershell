@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Notifications for suspicious or potential security issues in a customer's tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

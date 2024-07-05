@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to installedApps for teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -12,6 +12,9 @@ A collection of all the messages in the channel.
 A navigation property.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

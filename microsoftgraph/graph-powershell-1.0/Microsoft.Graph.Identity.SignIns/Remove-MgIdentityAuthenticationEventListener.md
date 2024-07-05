@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property authenticationEventListeners for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityAuthenticationEventListener?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

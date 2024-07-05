@@ -12,6 +12,9 @@ The user or contact that is this contact's manager.
 Read-only.
 Supports $expand and $filter (eq) by id.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactManager](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactManager?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

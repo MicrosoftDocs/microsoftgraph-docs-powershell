@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The logical grouping of users in the schedule (usually by role).
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List all the functions currently supported in the attributeMappingSource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Function (Default)

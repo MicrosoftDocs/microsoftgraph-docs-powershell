@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a report that provides the trend of active users across all apps for each platform (Windows, Mac, web, and mobile) in your organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppPlatformUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportM365AppPlatformUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

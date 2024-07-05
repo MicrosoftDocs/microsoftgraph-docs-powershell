@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property rubric in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

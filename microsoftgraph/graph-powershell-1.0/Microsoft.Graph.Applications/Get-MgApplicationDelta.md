@@ -11,6 +11,9 @@ schema: 2.0.0
 Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.
 For details, see Using delta query.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```
@@ -23,6 +26,9 @@ Get-MgApplicationDelta [-ExpandProperty <String[]>] [-Filter <String>] [-Propert
 ## DESCRIPTION
 Get newly created, updated, or deleted applications without performing a full read of the entire resource collection.
 For details, see Using delta query.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/v1.0/includes/permissions/application-delta-permissions.md)]
 
 ## EXAMPLES
 

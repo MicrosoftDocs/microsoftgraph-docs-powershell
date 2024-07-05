@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the number of Microsoft Teams users by activity type.
 The activity types are number of teams chat messages, private chat messages, calls, or meetings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamUserActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportTeamUserActivityUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

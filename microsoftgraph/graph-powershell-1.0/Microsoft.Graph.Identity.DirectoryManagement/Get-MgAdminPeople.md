@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a setting to control people-related admin settings in the tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminPeople](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaAdminPeople?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

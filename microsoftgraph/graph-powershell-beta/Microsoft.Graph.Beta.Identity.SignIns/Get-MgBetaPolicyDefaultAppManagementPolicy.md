@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

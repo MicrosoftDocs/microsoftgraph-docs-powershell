@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve details about hostTracker objects.Note: List retrieval is not yet supported.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPair](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPair?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

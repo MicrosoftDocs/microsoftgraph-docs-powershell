@@ -51,6 +51,9 @@ Export-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 Initiate an export from a reviewSet.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/ediscovery-reviewset-export-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

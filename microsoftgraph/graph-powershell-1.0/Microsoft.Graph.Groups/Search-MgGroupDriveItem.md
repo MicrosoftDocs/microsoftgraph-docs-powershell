@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Search the hierarchy of items for items matching a query.You can search within a folder hierarchy, a whole drive, or files shared with the current user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Microsoft Entra service principals that are at risk.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipal?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

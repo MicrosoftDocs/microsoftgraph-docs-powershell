@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to calls for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

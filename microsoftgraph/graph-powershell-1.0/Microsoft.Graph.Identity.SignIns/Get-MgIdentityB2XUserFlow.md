@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents entry point for B2X/self-service sign-up identity userflows.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityB2XUserFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

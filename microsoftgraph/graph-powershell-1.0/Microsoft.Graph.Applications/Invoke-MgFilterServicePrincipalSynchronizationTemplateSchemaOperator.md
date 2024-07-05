@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List all operators supported in the scoping filters.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaFilterServicePrincipalSynchronizationTemplateSchemaOperator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Filter (Default)

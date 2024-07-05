@@ -11,6 +11,9 @@ schema: 2.0.0
 Close an eDiscovery case.
 For details, see Close a case.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Close (Default)
@@ -30,6 +33,9 @@ Close-MgBetaSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Respon
 ## DESCRIPTION
 Close an eDiscovery case.
 For details, see Close a case.
+
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/security-ediscoverycase-close-permissions.md)]
 
 ## EXAMPLES
 

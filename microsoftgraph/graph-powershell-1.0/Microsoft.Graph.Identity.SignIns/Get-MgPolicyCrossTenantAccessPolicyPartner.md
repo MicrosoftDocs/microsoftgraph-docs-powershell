@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines partner-specific configurations for external Microsoft Entra organizations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

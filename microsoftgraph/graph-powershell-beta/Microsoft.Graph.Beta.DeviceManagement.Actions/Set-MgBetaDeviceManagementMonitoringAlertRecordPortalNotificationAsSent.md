@@ -29,6 +29,9 @@ Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 ## DESCRIPTION
 Set the status of the notification associated with the specified alertRecord on the Microsoft EndPoint Manager admin center as sent, by setting the isPortalNotificationSent property of the portal notification to true.
 
+**Permissions**
+[!INCLUDE [permissions-table](~/../graphref/api-reference/beta/includes/permissions/devicemanagement-alertrecord-setportalnotificationassent-permissions.md)]
+
 ## EXAMPLES
 
 ### EXAMPLE 1

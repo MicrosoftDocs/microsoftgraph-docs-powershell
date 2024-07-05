@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```

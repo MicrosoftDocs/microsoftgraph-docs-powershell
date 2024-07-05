@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of users or groups not allowed to create posts or calendar events in this group.
 Nullable
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSenderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

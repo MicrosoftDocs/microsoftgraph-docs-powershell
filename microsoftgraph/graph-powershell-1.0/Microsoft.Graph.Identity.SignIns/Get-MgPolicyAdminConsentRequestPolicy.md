@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The policy by which consent requests are created and managed for the entire tenant.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property ref to owners for servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

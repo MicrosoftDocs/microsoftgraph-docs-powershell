@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get operations from external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

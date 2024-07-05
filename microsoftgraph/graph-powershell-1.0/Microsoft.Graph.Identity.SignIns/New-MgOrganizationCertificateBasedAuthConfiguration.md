@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to certificateBasedAuthConfiguration for organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

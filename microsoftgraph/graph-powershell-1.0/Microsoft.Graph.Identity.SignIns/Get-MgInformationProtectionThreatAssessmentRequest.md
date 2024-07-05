@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get threatAssessmentRequests from informationProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

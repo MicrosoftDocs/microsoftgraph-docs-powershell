@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to identityProviders for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

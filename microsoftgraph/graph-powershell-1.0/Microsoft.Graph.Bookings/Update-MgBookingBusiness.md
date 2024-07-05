@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property bookingBusinesses in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get secureScores from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

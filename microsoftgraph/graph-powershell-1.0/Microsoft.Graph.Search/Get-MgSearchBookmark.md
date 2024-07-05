@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Administrative answer in Microsoft Search results for common search queries in an organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchBookmark](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaSearchBookmark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

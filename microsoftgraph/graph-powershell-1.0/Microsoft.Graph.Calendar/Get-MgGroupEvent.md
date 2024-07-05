@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The group's calendar events.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

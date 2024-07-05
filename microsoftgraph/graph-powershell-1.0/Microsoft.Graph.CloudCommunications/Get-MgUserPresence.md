@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get presence from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

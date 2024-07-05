@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the tabs in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

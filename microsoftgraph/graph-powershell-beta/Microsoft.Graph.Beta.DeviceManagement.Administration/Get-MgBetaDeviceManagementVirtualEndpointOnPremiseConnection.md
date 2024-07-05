@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)

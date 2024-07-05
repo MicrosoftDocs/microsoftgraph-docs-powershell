@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents a calculated reputation of this host.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostReputation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
