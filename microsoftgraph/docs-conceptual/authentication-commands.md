@@ -3,7 +3,7 @@ title: "Use Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 07/10/2023
+ms.date: 07/08/2024
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -94,7 +94,7 @@ To use app-only access, you can load the certificate from either *Cert:\CurrentU
 
 #### Use client secret credentials
 
-If you need interactions in the background, without a user to sign in, this type of grant will help you. Support for client secret credentials was added by adding **-ClientSecretCredential** parameter to **Connect-MgGraph**. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
+This type of grant will help when you need interactions in the background without a user to sign in. Support for client secret credentials was added by adding **-ClientSecretCredential** parameter to **Connect-MgGraph**. See [Get-Credential](/powershell/module/microsoft.powershell.security/get-credential) on how to get or create credentials.
 
 ```powershell
 $ClientSecretCredential = Get-Credential -Credential "Client_Id"
@@ -185,7 +185,7 @@ Connect-MgGraph -Environment USGov
 ```
 
 >[!NOTE]
->Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
+>Globally registered apps don't replicate to Azure China. You need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
 
 ## Use Get-MgContext
 
