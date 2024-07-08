@@ -48,7 +48,11 @@ function Get-FilesByProfile{
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
 		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "examples"
-        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+        try {
+            Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+        } catch {
+            Write-Error "Failed to copy files for module $ModuleName" 
+        }
     }
 
 }
