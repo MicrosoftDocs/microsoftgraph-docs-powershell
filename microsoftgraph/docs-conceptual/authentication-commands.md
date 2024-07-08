@@ -1,5 +1,5 @@
 ---
-title: "Using Microsoft Graph PowerShell authentication commands"
+title: "Use Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: how-to
@@ -23,19 +23,19 @@ Invoke `Connect-MgGraph` before any commands that access Microsoft Graph. This c
 
 There are three ways to allow delegated access using `Connect-MgGraph`:
 
-- Using interactive authentication, where you provide the scopes that you require during your session:
+- Use interactive authentication, where you provide the scopes that you require during your session:
 
     ```powershell
     Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All"
     ```
 
-- Using device code flow:
+- Use device code flow:
 
     ```powershell
     Connect-MgGraph -Scopes "User.Read.All", "Group.ReadWrite.All" -UseDeviceAuthentication
     ```
 
-- Using your own access token:
+- Use your own access token:
 
     ```powershell
     Connect-MgGraph -AccessToken $AccessToken
@@ -71,19 +71,19 @@ Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
 
 To use app-only access, you can load the certificate from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\*, when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
-- Using Certificate Thumbprint:
+- Use Certificate Thumbprint:
 
     ```powershell
     Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -CertificateThumbprint "YOUR_CERT_THUMBPRINT"
     ```
 
-- Using Certificate name:
+- Use Certificate name:
 
     ```powershell
     Connect-MgGraph -ClientId "YOUR_APP_ID" -TenantId "YOUR_TENANT_ID" -CertificateName "YOUR_CERT_SUBJECT"
     ```
 
-- Using a certificate:
+- Use a certificate:
 
     ```powershell
     $Cert = Get-ChildItem Cert:\LocalMachine\My\$CertThumbprint
@@ -123,7 +123,7 @@ A common challenge when writing automation scripts is the management of secrets,
 
 ### Connect to an environment or cloud
 
-By default, `Connect-MgGraph` targets the global public cloud. To target other clouds, see [Using Get-MgEnvironment](#using-get-mgenvironment).
+By default, `Connect-MgGraph` targets the global public cloud. To target other clouds, see [Use Get-MgEnvironment](#use-get-mgenvironment).
 
 ### Connect to an environment as a different identity
 
