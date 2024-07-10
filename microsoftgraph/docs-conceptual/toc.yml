@@ -8,13 +8,13 @@
       href: installation.md
     - name: Use PowerShell
       href: get-started.md 
-    - name: Navigating the SDK
+    - name: Navigate the SDK
       href: navigating.md
-    - name: Using authentication cmdlets
+    - name: Use authentication cmdlets
       href: authentication-commands.md  
-    - name: Using Find-MgGraphCommand
+    - name: Use Find-MgGraphCommand
       href: find-mg-graph-command.md
-    - name: Using Find-MgGraphPermission
+    - name: Use Find-MgGraphPermission
       href: find-mg-graph-permission.md   
 - name: Learn
   items:
