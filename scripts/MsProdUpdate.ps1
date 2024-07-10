@@ -147,7 +147,7 @@ function WebScrapping {
 
         while (-not $readStream.EndOfStream) {
             $Line = $readStream.ReadLine()
-            if ($Line -match "ms.prod") {
+            if ($Line -match "ms.subservice") {
                 $MsprodContent = $Line
             }
         }
